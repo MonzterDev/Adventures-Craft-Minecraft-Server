@@ -1,0 +1,53 @@
+quester: Merit
+first: goBack,greeting
+NPC_options:
+  goBack:
+    text:  Go back and finish &aDuncan's&7 quests before talking to me! 
+    conditions: '!default-Mine-Duncan.q5_completed'        
+  greeting:
+    text: So you think your bold because you made it this far, &a%player%&7? It's just gonna keep getting harder the further you go!
+    pointers: hey, quest, bye
+    conditions: 'default-Mine-Duncan.q5_completed'        
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: Diamonds &7are such a sought after commodity! These are often a sign of wealth and commonly used to "flex" on nons.
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: I actually do need some help down here...
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: These &bDiamonds &7aren't gonna mine themselves...
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: I wanna flex on nons!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

@@ -1,0 +1,469 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fWands §7§l«§f§l«
+max-queue-size: 100
+items:
+  fill:
+    material: PURPLE_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  RESOLVE:
+    output:
+      type: WAND
+      id: RESOLVE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_AZURE_BLUET,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=1}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  RESOLVE2:
+    output:
+      type: WAND
+      id: RESOLVE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=RESOLVE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_AZURE_BLUET,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  TARGETED_FIREBALL:
+    output:
+      type: WAND
+      id: TARGETED_FIREBALL
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_RED_MUSHROOM,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=1}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  TARGETED_FIREBALL2:
+    output:
+      type: WAND
+      id: TARGETED_FIREBALL2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=TARGETED_FIREBALL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_RED_MUSHROOM,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  SPARKLE:
+    output:
+      type: WAND
+      id: SPARKLE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STAR_SHARD,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  SPARKLE2:
+    output:
+      type: WAND
+      id: SPARKLE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=SPARKLE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STAR_SHARD,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  BUNNY_MODE:
+    output:
+      type: WAND
+      id: BUNNY_MODE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_RABBIT_FOOT,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  BUNNY_MODE2:
+    output:
+      type: WAND
+      id: BUNNY_MODE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=BUNNY_MODE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_RABBIT_FOOT,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  ARCANE_RIFT:
+    output:
+      type: WAND
+      id: ARCANE_RIFT
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CORNFLOWER,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  ARCANE_RIFT2:
+    output:
+      type: WAND
+      id: ARCANE_RIFT2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=ARCANE_RIFT,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CORNFLOWER,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  BURNING_HANDS:
+    output:
+      type: WAND
+      id: BURNING_HANDS
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CRIMSON_FUNGUS,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  BURNING_HANDS2:
+    output:
+      type: WAND
+      id: BURNING_HANDS2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=BURNING_HANDS,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CRIMSON_FUNGUS,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  FREEZING_CURSE:
+    output:
+      type: WAND
+      id: FREEZING_CURSE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_TUBE_CORAL,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  FREEZING_CURSE2:
+    output:
+      type: WAND
+      id: FREEZING_CURSE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=FREEZING_CURSE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_TUBE_CORAL,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=700}
+  SHULKER_MISSILE:
+    output:
+      type: WAND
+      id: SHULKER_MISSILE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  SHULKER_MISSILE2:
+    output:
+      type: WAND
+      id: SHULKER_MISSILE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=SHULKER_MISSILE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=6}
+    triggers:
+    - exp{profession=Spellforging,amount=600}
+  ARCANE_HAIL:
+    output:
+      type: WAND
+      id: ARCANE_HAIL
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ALLIUM,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=1}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  ARCANE_HAIL2:
+    output:
+      type: WAND
+      id: ARCANE_HAIL2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=ARCANE_HAIL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ALLIUM,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  FROZEN_AURA:
+    output:
+      type: WAND
+      id: FROZEN_AURA
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CORNFLOWER,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  FROZEN_AURA2:
+    output:
+      type: WAND
+      id: FROZEN_AURA2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=FROZEN_AURA,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CORNFLOWER,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=700}
+  MAGMA_FISSURE:
+    output:
+      type: WAND
+      id: MAGMA_FISSURE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MAGMA_CREAM,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=1}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  MAGMA_FISSURE2:
+    output:
+      type: WAND
+      id: MAGMA_FISSURE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=MAGMA_FISSURE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MAGMA_CREAM,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  ICE_CRYSTAL:
+    output:
+      type: WAND
+      id: ICE_CRYSTAL
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ALPHA_SOUL,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  ICE_CRYSTAL2:
+    output:
+      type: WAND
+      id: ICE_CRYSTAL2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=ICE_CRYSTAL,amount=1}
+    - mmoitem{type=MATERIAL,id=ALPHA_SOUL,amount=32}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  CORRUPTED_FANGS:
+    output:
+      type: WAND
+      id: CORRUPTED_FANGS
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ROSE_BUSH,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  CORRUPTED_FANGS2:
+    output:
+      type: WAND
+      id: CORRUPTED_FANGS2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=CORRUPTED_FANGS,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ROSE_BUSH,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  BLACK_HOLE:
+    output:
+      type: WAND
+      id: BLACK_HOLE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  BLACK_HOLE2:
+    output:
+      type: WAND
+      id: BLACK_HOLE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=BLACK_HOLE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=8}
+    triggers:
+    - exp{profession=Spellforging,amount=800}
+  BOUNCY_FIREBALL:
+    output:
+      type: WAND
+      id: BOUNCY_FIREBALL
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PUFFERFISH,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  BOUNCY_FIREBALL2:
+    output:
+      type: WAND
+      id: BOUNCY_FIREBALL2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=BOUNCY_FIREBALL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PUFFERFISH,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=6}
+    triggers:
+    - exp{profession=Spellforging,amount=600}
+  CURSED_BEAM:
+    output:
+      type: WAND
+      id: CURSED_BEAM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  CURSED_BEAM2:
+    output:
+      type: WAND
+      id: CURSED_BEAM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=CURSED_BEAM,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  LIFE_ENDER:
+    output:
+      type: WAND
+      id: LIFE_ENDER
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  LIFE_ENDER2:
+    output:
+      type: WAND
+      id: LIFE_ENDER2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=LIFE_ENDER,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  CORRUPT:
+    output:
+      type: WAND
+      id: CORRUPT
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  CORRUPT2:
+    output:
+      type: WAND
+      id: CORRUPT2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=CORRUPT,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  CONTAMINATION_RITUAL:
+    output:
+      type: WAND
+      id: CONTAMINATION_RITUAL
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SLIME_BALL,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  CONTAMINATION_RITUAL2:
+    output:
+      type: WAND
+      id: CONTAMINATION_RITUAL2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=CONTAMINATION_RITUAL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SLIME_BALL,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=700}

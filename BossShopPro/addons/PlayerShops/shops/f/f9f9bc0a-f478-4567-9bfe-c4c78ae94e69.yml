@@ -1,0 +1,59 @@
+Owner: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
+OwnerName: MonzterSlayer
+Reward: 0.0
+Worth: 0.0
+Slots: 9
+Rent:
+  Start: 0
+  Paid: -3750.0
+Priority: 4
+Icon:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2580
+  type: REDSTONE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §aMonzterSlayer's Redstone Shop
+    lore:
+    - ''
+    - §7§l» §eClick to Access
+    ItemFlags:
+    - HIDE_ATTRIBUTES
+item:
+  '0':
+    a:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2580
+      type: ROTTEN_FLESH
+    b: 0
+    c: 1.0
+  '1':
+    a:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2580
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        lore:
+        - §fSword
+        - ''
+        - '§c✜ Damage: §c9999999'
+        - ''
+        - '§e§lBlizzard§f: §fRight Click'
+        - '§7Duration: §c5'
+        - '§7Damage: §c1000'
+        - '§7Cooldown: §c0'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: mmoitemsDecoy
+            uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+            operation: 0
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAAAONiYGBjEPP19fcMcfUNjncMCXF09o53cfR1dHd1TBY6/4CBgYGDQQCuAETGe7owMLv7u3AwCCE0Onn6eIZ4ugYzZERXK3mmKFkpOfl4RkU5Brko6Sg5JxaX+OanpAJFgzzdPULinX08nb2BEkDBzLTM1KJiJatqpZTSosSSzPw8JStTPQMdpZTE3MR0oBZDAwMDED85Pz8nJb8cKA3k1tbGIlsPdlZoKNBhKklJ5qlpxpaJuqlm5oa6JhbmSbqWaUlmumZp5olJlmaWlgZJZhhaQyIDXBlYg8P9g1wYACiTYjsTAQAA
+    b: 0
+    c: 999999.0

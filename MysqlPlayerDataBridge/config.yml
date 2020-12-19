@@ -1,0 +1,266 @@
+# default config.yml for MysqlPlayerDataBridge
+# config version 3.35.0
+
+#MySQL Database details
+database:
+    mysql:
+        #MySQL server address
+        host: 127.0.0.1
+        #MySQL server port (default 3306)
+        port: 3306
+        #Database name (NOTE! You need to create the database, then the plugin will create the tables.)
+        databaseName: 'minecraft_live'
+        #Tables names (the plugin will auto create them)
+        TablesNames:
+            #Inventory and Armor table name.
+            inventoryTableName: 'mpdb_inventory'
+            #Enderchest table name.
+            enderchestTableName: 'mpdb_enderchest'
+            #Experience table name.
+            experienceTableName: 'mpdb_experience'
+            #PotionEffects table name.
+            potionEffectsTableName: 'mpdb_potionEffects'
+            #Health, food and air table name.
+            healthFoodAirTableName: 'mpdb_health_food_air'
+            #Location table name.
+            locationTableName: 'mpdb_location'
+            #Economy table name.
+            economyTableName: 'mpdb_economy'
+        #User name
+        user: 'minecraft'
+        #User password
+        password: 'kWz7Y8eK0tMCUvr0Cm'
+        #SSL connection
+        sslEnabled: false
+    #This maintenance task runs async with a 2 min delay after the server starts.
+    removeOldAccounts:
+        #Enable or disable database clean up of old accounts. | (true or false)
+        enabled: false
+        #Inactivity in days. Default 60 days.
+        inactivity: 60
+     
+     
+#Other configurable options
+General:
+    #Enable or disable sharing of player data features
+    enableModules:
+        #Share players inventory | (true or false)
+        shareInventory: true
+        #Share players gamemode | (true or false)
+        shareGamemode: true
+        #Share players equipped armor | (true or false)
+        shareArmor: true
+        #Share players enderchest | (true or false)
+        shareEnderchest: false
+        #Share experience | (true or false)
+        shareExperience: true
+        #Share potion effects | (true or false)
+        sharePotionEffects: true
+        #Share players health level | (true or false)
+        shareHealth: true
+        #Share players food and saturation level | (true or false)
+        shareFood: true
+        #Share players air level | (true or false)
+        shareAir: true
+        #Share players location | (true or false)
+        #NOTE! Sharing bed spawn location requires share location enabled!
+        shareLocation: false
+        shareBedSpawn: false
+        #Share players economy accounts | (true or false)
+        #!!! NOTE !!!! For economy sync you need to install Vault and an Economy system.
+        shareEconomy: true
+    #Extra economy sync options. Note that this requires the economy sync to be enabled.
+    economyOptions:
+        #Enable support for ChestShop offline money sync. | (true or false)
+        #NOTE! A server restart is required if you change settings here.
+        #Only available for UUID compatible servers. (1.7.10 and up)
+        #------------------------------------------------------------------
+        #Enable support for the popular ChestShop plugin: https://dev.bukkit.org/projects/chestshop
+        ChestShop-Support: false
+        #Enable support for QuickShop plugin: https://dev.bukkit.org/bukkit-plugins/quickshop-notlikeme/
+        #Because the QuickShop API does not provide info about the tax I had to code it in this plugin too, this setting should be the same as in QuickShop config.
+        #To disable the tax set it to:  QuickShop-SalesTax: 0.00
+        QuickShop-Support: false
+        QuickShop-SalesTax: 0.05
+        #Enable support for premium plugin Shop: https://www.spigotmc.org/resources/shop-a-simple-intuitive-shop-plugin.9628/
+        #Important! Only works for virtual currency. The Shop plugin needs players data files to work do not remove the world/playerdata folder.
+        Shop-Support: false
+        #Enable support for plugin AuctionHouse: https://www.spigotmc.org/resources/auctionhouse.61836/
+        AuctionHouse-Support: false
+        #Enable support for plugin CrazyAuctions: https://www.spigotmc.org/resources/crazy-auctions.25219/
+        CrazyAuctions-Support: false
+        #Enable support for plugin ShopChest: https://www.spigotmc.org/resources/shopchest.11431/
+        ShopChest-Support: false
+        #Enable support for plugin ShopChestPlayerShopGUI+: https://www.spigotmc.org/resources/playershopgui.37707/
+        PlayerShopGUI-Support: false
+        #Enable support for plugin CMI: https://www.spigotmc.org/resources/cmi-270-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/
+        # !!IMPORTANT!!! If you use CMI economy and enable support for CMI disable all other shop plugins support!
+        # CMI has it's own events and integration with other shop plugins is no longer needed as changes will be taken from CMI directly.
+        CMI-Support: true
+        #Enable support for plugin zAuctionHouse: https://www.spigotmc.org/resources/zauctionhouse-lite-1-7-1-15-auction-house-plugin.63926/
+        zAuctionHouse-Support: false
+        #Enable support for Essentials Economy commands for offline players.
+        #Will handle eco commands: /eco take|give|set|reset  for offline players that are in the database.
+        EssentialsEconomyCommands-Support: false
+    #Save online players data task. If you disable this task data will only be saved when the player disconnects.
+    saveDataTask:
+        #Enable or disable the data save task. | (true or false)
+        enabled: true
+        #Time between data saves in minutes. | Default 3 min.
+        interval: 3
+        #Hide the data save task log messages.
+        hideLogMessages: false
+    #Disable sounds generated by this plugin. The sync confirmation sound for example. | (true or false)
+    disableSounds: false
+    #This will disable inventory, armor and enderchest sync for players in creative mode. | (true or false)
+    #Can be useful in certain cases where you have 2 survival servers and give cretive access to some in one survival server and don't want them to get the creative items on the other servers. Note that you will require another plugin to create a separate inventory for creative mode.
+    disableCreativeItemShare: false
+    #Kick players when sync fails.
+    kickOnFailedSync: true
+    #Extra options for location sync.
+    locationSyncOptions:
+        #Players need to be online some time in order to update their location.
+        #In seconds. Set to 0 to disable. (Default 0 seconds)
+        onlineTimeToSaveLocation: 0
+        
+#Commands that will run for players that join for the first time. Commands will be executed as console after sync is complete.
+#Supports multiple commands. The tag <PlayerName> will be replaced by the player name that joined for the first time.
+#To disable this feature just remove all commands.
+New-Players-Cmd:
+    
+    
+#This feature allows you to delete folders or files when the server shuts down or restarts.
+#For example: Players data and stats folder, or other plugins that store data as file based and are not needed.
+#As in time the server will store many players data there is a need to clean up unneeded files.
+DataCleanup:
+    #Enable or disabled data clean up | true or false
+    Enabled: false
+    #This can include folders or files. The root directory is the server main folder. (Tested on Linux)
+    #NOTE!!! Some plugins need the world/playerdata files for offline players else they will have problems.
+    CleanUp-Paths:
+        - 'world/playerdata'
+        - 'world/stats'
+     
+
+#Debug console messages.
+Debug:
+    #Economy sync debug messages.
+    EconomySync: false
+    #Inventory sync debug messages.
+    InventorySync: false
+    #Health sync debug messages.
+    HealthSync: false
+     
+     
+#Chat messages, supports color and format codes. To disable a chat message set it to ''  Example: loginSyncConfirmation: ''
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes
+ChatMessage:
+    #This message will be sent to players after data sync is complete.
+    loginSyncConfirmation: ''
+    loginSyncStarted: ''
+    loginSyncFailed: '&4&l[MPDB] &cFailed to load your data! Contact a staff member.'
+    noPermission: '&2&l[MPDB] &eYou do not have permission.'
+    configReload: '&2&l[MPDB] &eConfig reload complete! Check the server log or console for details.'
+    importingData: '&2&l[MPDB] &eImporting players data to the database... Check server console for details.'
+    importingDataComplete: '&2&l[MPDB] &eData import complete!'
+    inventorySyncError: '&4[WARNING] &cError loading your inventory! Contact the staff team.'
+    inventorySyncBackup: '&6[!] &eRestored the local inventory! Don''t leave items in your inventory when you disconnect!'
+    armorSyncError: '&4[WARNING] &cError loading your armor! Contact the staff team.'
+    armorSyncBackup: '&6[!] &eRestored the local armor! Don''t leave items in your inventory when you disconnect!'
+    #The place holder  %money%  will be replaced by the amount of money the player will receive.
+    offlineMoneyReceived: '&2&l[MPDB] &eYou received&6 %money% &emoney from your shop sales.'
+    syncInProgress: '&4&l[MPDB] &cData sync in progress! Please wait...'
+    reloadCmdWarning: '&4&l[MPDB] &cThis plugin does not recommend server reloads. If you have issues after running this command stop using it.'
+    #Help menu with multi line support.
+    helpMenu:
+        header:
+        - ' '
+        - '&6-=-=-=-=-=-< &e&lMySQL Player Data Bridge&6 >-=-=-=-=-=-=-'
+        - ' '
+        footer:
+        - ' '
+        - '&6-=-=-=-=-=-=-=-=-=-< &e&lHelp Page&6 >-=-=-=-=-=-=-=-=-=-'
+        - ' '
+        footer-moderator:
+        - ' '
+        - '&6-=-=-=-=-=-=-=-=-< &e&lModerator Help Page&6 >-=-=-=-=-=-=-=-=-'
+        - ' '
+        footer-admin:
+        - ' '
+        - '&6-=-=-=-=-=-=-=-=-< &e&lAdmin Help Page&6 >-=-=-=-=-=-=-=-=-'
+        - ' '
+        text-default:
+        - '&7&oSync players data across servers.'
+        - '&7&lPlugin Download:&f https://goo.gl/PE8pDM'
+        text-moderator:
+        - '&7        Open a players inventory:'
+        - '&8&l>> &f/mpdb inv <name>'
+        - '&7        View a player armor:'
+        - '&8&l>> &f/mpdb armor <name>'
+        - '&7        Edit a player enderchest:'
+        - '&8&l>> &f/mpdb end <name>'
+        - '&7        Check a player balance:'
+        - '&8&l>> &f/mpdb ecoBal <name>'
+        - '&7        Change a player balance:'
+        - '&8&l>> &f/mpdb ecoSet <name> <amount>'
+        text-admin:
+        - '&7        Reload plugin config:'
+        - '&8&l>> &f/mpdb reload'
+        - '&7        Kick all players and save data:'
+        - '&8&l>> &f/mpdb saveAndKick'
+        - '&7        Import players data into the database:'
+        - '&8&l>> &f/mpdb importData'
+        - '&7        Delete a player from the database:'
+        - '&8&l>> &f/mpdb delete <name>'
+        text-console:
+        - '&7        Check a player balance:'
+        - '&8&l>> &f/mpdb ecoBal <name>'
+        - '&7        Change a player balance:'
+        - '&8&l>> &f/mpdb ecoSet <name> <amount>'
+        - '&7        Reload plugin config:'
+        - '&8&l>> &f/mpdb reload'
+        - '&7        Import players data into the database:'
+        - '&8&l>> &f/mpdb importData'
+        - '&7        Delete a player from the database:'
+        - '&8&l>> &f/mpdb delete <name>'
+        - '&7        Kick all players and save data:'
+        - '&8&l>> &f/mpdb saveAndKick'
+    #Other messages
+    Commands:
+        inventoryUsage: '&cUsage: &6/mpdb inv <name>'
+        inventoryInfo: '&cInfo: &7Open a player inventory. Replace <name> with the player name.'
+        armorUsage: '&cUsage: &6/mpdb armor <name>'
+        armorInfo: '&cInfo: &7Edit a player armor. Replace <name> with the player name.'
+        enderchestUsage: '&cUsage: &6/mpdb end <name>'
+        enderchestInfo: '&cInfo: &7Edit a player enderchest. Replace <name> with the player name.'
+        ecoBalUsage: '&cUsage: &6/mpdb ecoBal <name>'
+        ecoBalInfo: '&cInfo: &7Check a player balance. Replace <name> with the player name.'
+        ecoSetUsage: '&cUsage: &6/mpdb ecoSet <name> <amount>'
+        ecoSetInfo: '&cInfo: &7Change a player balance. Replace <name> with the player name and <amount> with new balance.'
+        ecoSetTip: '&2&l[MPDB] &eReplace <amount> with a number!'
+        deleteUsage: '&cUsage: &6/mpdb delete <name>'
+        deleteInfo: '&cInfo: &7Delete a player from the database. Replace <name> with the player name.'
+        cmdNotFound: '&cCommand not found! For help do: &6/mpdb help'
+        playerNotFound: '&2&l[MPDB] &ePlayer not found!'
+        #The place holder %playerName% will get replaced by the player name.
+        inventoryOpen: '&2&l[MPDB]&c %playerName% &einventory.'
+        armorOpen: '&2&l[MPDB]&c %playerName% &earmor.'
+        enderchestOpen: '&2&l[MPDB]&c %playerName% &eenderchest.'
+        deleteData: '&2&l[MPDB]&c %playerName% &edata deleted!'
+        #The place holder %balance% will be replaced by the player balance.
+        ecoSet: '&2&l[MPDB]&c %playerName% &ebalance set! New balance: %balance%'
+        ecoBalance: '&2&l[MPDB]&c %playerName% &ebalance: %balance%'
+        #Essentials eco commands messages.
+        userNotInDB: '&4&l[MPDB] &cCould not find user in database!'
+        userOnline: '&4&l[MPDB] &cPlayer is online on another server in sync!'
+        essentialsEcoReset: '&2&l[MPDB] &aUser balance reset complete!'
+        essentialsEcoGive: '&2&l[MPDB] &aAdded money successfully!'
+        essentialsEcoTake: '&2&l[MPDB] &aRemoved money successfully!'
+        essentialsEcoSet: '&2&l[MPDB] &aBalance set successfully!'
+        essentialsEcoBal: '&2&l[MPDB] &aBalance for %name% is: %balance%'
+      
+
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes      
+KickMessages:
+    saveAndKickCommand: '&cServer is restarting please come back in 20 seconds.'
+    syncFailedKick: '&cData sync failed! Join again or contact the staff team.'

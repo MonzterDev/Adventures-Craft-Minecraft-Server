@@ -1,0 +1,28 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/advancedconfig.yml
+ 
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+    - ignoredworld
+    - build
+  shared-playerlist-world-groups:
+    lobby:
+      - lobby1
+      - lobby2
+    minigames:
+      - paintball
+      - bedwars
+    DoNotDoThis:
+      - ThisIsASingleWorldSoThereIsNoPointInEvenCreatingGroupForIt
+      
+sort-players-by-permissions: false
+fix-pet-names: false
+use-primary-group: true
+primary-group-finding-list:
+  - Owner
+  - Admin
+  - Helper
+  - default
+bukkit-bridge-mode: false
+assign-groups-by-permissions: false

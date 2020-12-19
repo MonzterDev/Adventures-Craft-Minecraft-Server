@@ -1,0 +1,329 @@
+#You can edit specific menu settings in menu_name.yml from the menus folder.
+#Background colors:
+#Put 0 for white
+#Put 1 for orange
+#Put 2 for magenta
+#Put 3 for light blue
+#Put 4 for yellow
+#Put 5 for lime
+#Put 6 for pink
+#Put 7 for gray
+#Put 8 for light gray
+#Put 9 for cyan
+#Put 10 for purple
+#Put 11 for blue
+#Put 12 for brown
+#Put 13 for green
+#Put 14 for red
+#Put 15 for black
+weapons-menu-color: 1
+armor-menu-color: 11
+tools-menu-color: 10
+blocks-menu-color: 12
+others-menu-color: 13
+consumables-menu-color: 14
+
+background-color: 15
+use-background-glass: true
+
+use-decimals: true
+
+#How much time you want to add to an auction
+#when a player bids:
+#Time in seconds
+add-time-to-auction: 30
+
+#This option allows players to end their
+#auctions at any time they want
+use-end-own-auction: true
+#If you want just some players to have this option
+use-end-own-auction-permission: 'none'
+end-own-auction-fee: 500
+end-own-auction-item: '347'
+end-own-auction-name: '&aEnd Auction Now'
+end-own-auction-lore:
+  - ''
+  - '&6Price: &e&e⛂ 500 Coins'
+end-own-auction-message: '&aYour auction was ended!'
+end-own-auction-no-money-message: '&cYou don''t have enough coins to end this auction.'
+
+#Enabling global category could have an
+#impact on the plugin performance
+#It is up to you if you will use it or not
+#If you enable global category, it will be set
+#as the default category when opening the menu
+use-global-category: false
+global-menu-color: 15
+global-category-item: 'skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y0MDk0MmYzNjRmNmNiY2VmZmNmMTE1MTc5NjQxMDI4NmE0OGIxYWViYTc3MjQzZTIxODAyNmMwOWNkMSJ9fX0='
+global-category-name: '&9Global Items'
+global-category-lore:
+  - '&fAll items from every'
+  - '&fcategory in the'
+  - '&fsame place!'
+
+#If you want to use anvil gui instead of the sign gui
+#set the option bellow to true
+#Sign lines will become the lore of the paper
+#inside the anvil gui
+use-anvil-instead-sign: false
+
+#If you want to use th chat instead of the sign gui
+#set the option bellow to true
+#Sign lines will become the message sent in chat
+#The player has 10 seconds to give a price, afterwards
+#the listener closes
+listener-expire-message: '&cYou took too long...'
+use-chat-instead-sign: true
+
+#How often should the database be updated
+#It is updated by default when the plugin is unloaded
+#but in case of forced stops or crashes, we update the database
+#from time to time.
+#This is the time in minutes, please put just a number that would represent the number of minutes!
+update-period: 10
+
+#Set this to false if you want players to not be able to outbid theirselves
+outbid-yourself: false
+can-not-outbid-message: '&cYou can not outbid yourself!'
+
+broadcast-new-auction: false
+#Use %seller-username% for the name of the seller
+#Use %seller-display-name% for the display name of the seller
+#Use %item-display-name% for the item's display name
+#Use %coins% for the starting bid
+broadcast-new-auction-message: '&6[Auctions] %seller-display-name% &fcreated an auction for %item-display-name%&f! &e&lCLICK TO VIEW'
+broadcast-new-auction-permission: 'none'
+#If you want commands to execute make a list in the setting broadcast-commands
+#If you want to use only commands and cancel the auction-message set it to 'none'
+broadcast-commands: []
+
+#If the duration time loading is slow, this is the message
+#displayed while waiting for the duration to appear
+auction-loading-placeholder: '&eLoading...'
+
+#If you set this to true, the plugin will begin to check
+#players for the permission 'auctionmaster.limit.bids.number'
+#where number is the maximum number of bids a player can have at the same time.
+#If the permission is not found, it will be set to the maximum (28)
+#If a player has 2 permissions, the bigger number has priority
+#Example: a player with permission 'auctionmaster.limit.bids.6' can have maximum 6
+#bids at once
+use-bid-limit: false
+bid-limit-reached-message: '&cYou reached your maximum bid limit. You can''t bid on another auction until you collect one.'
+
+#If you set this to true, the plugin will begin to check
+#players for the permission 'auctionmaster.limit.auctions.number'
+#where number is the maximum number of auctions a player can have at the same time.
+#If the permission is not found, it will be set to the maximum (28)
+#If a player has 2 permissions, the bigger number has priority
+#Example: a player with permission 'auctionmaster.limit.auctions.6' can have maximum 6
+#auctions at once
+use-auction-limit: false
+auction-limit-reached-message: '&cYou reached your maximum auction limit. You can''t create another auction until you collect one.'
+
+#If you set this to true, the plugin will begin to check
+#players for the permission 'auctionmaster.limit.duration.number'
+#where number is the maximum number of hours a player can have on an auction.
+#If a player has 2 permissions, the bigger number has priority
+#Example: a player with permission 'auctionmaster.limit.duration.6' can have a maximum 6
+#hours long auction
+#ATTENTION! Don't set your default duration over a limit you are giving because
+#the plugin WILL NOT check for it.
+#ATTENTION AGAIN! You can limit the number of hours up to 48 hours, the plugin will not check for more
+use-duration-limit: false
+duration-limit-reached-message: '&cThe selected duration is over your limit. Automatically set it to your maximum.'
+
+
+#Message added to the category item's lore when you are browsing it
+category-browsing: '&aCurrently viewing!'
+
+#Message added to the category item's lore when you are not browsing it
+category-no-browsing: '&8&l» &eClick to View'
+
+#ATTENTION: Please don't use the same name for items in the menu
+#or the same name for the menus themselves, some checks are made
+#based on name so you can bug the system by giving the same name to
+#two items in the same inventory
+
+go-back-item: '262'
+go-back-item-name: '&aBack'
+go-back-item-lore:
+  - ''
+  - '&8&l» &eClick to Go Back'
+
+previous-page-item: '262'
+#Use %page-number% for the current page's number
+previous-page-item-name: '&aPage %page-number%'
+previous-page-item-lore:
+  - ''
+  - '&8&l» &eClick to Browse'
+
+next-page-item: '262'
+#Use %page-number% for the current page's number
+next-page-item-name: '&aPage %page-number%'
+next-page-item-lore:
+  - ''
+  - '&8&l» &eClick to Browse'
+
+starting-menu-name: '&8Auction Menu'
+close-menu-item: '166'
+close-menu-item-name: '&cClose'
+close-menu-item-lore:
+  - ''
+  - '&8&l» &eClick to Close'
+
+browsing-menu-name: '&8Auction Browser'
+browsing-menu-item: '41'
+browsing-menu-item-name: '&6Auction Browser'
+browsing-menu-item-lore:
+  - ''
+  - '&8&l» &eClick to Browse'
+
+view-bids-menu-name: '&8Auction Bids Viewer'
+view-bids-menu-item: '175'
+#Use %total-bids% for the number of auctions the player has bid on
+#Use %total-top-bid% for the number of auctions the player holds the top bid on
+view-bids-menu-item-name: '&aView Bids'
+view-bids-menu-item-lore:
+  with-bids:
+  - ''
+  - '&8&l» &eClick to View Bids'
+  without-bids:
+  - ''
+  - '&8&l» &eClick to View Bids'
+
+no-bids-message: '&cYou don''t have any bids!'
+
+delivery-menu-name: '&8Delivery Menu'
+use-delivery-system: false
+
+#This is the item for deliveries in the main menu
+delivery-menu-item-name: '&aDeliveries'
+delivery-menu-item: '54'
+delivery-menu-item-lore:
+  - '&7Here come the items and'
+  - '&7coins sent from admins!'
+
+delivery-have-message: '&aYou have deliveries!'
+
+#This is the item for deliveries in the delivery menu
+delivery-item:
+  no-delivery-name: '&cNo Delivery'
+  no-delivery-lore:
+    - '&7You don''t have'
+    - '&7any delivery'
+    - '&7to claim. :('
+  #Use %coins% for the amount of coins the player has in their delivery
+  #Use %items-count% for the amount of items the player has in their delivery
+  yes-delivery-name: '&aClaim Delivery'
+  yes-delivery-lore:
+    - '&7You have a delivery!'
+    - ''
+    - '&7Delivery contains:'
+    - '&7 - &6%coins% coins'
+    - '&7 - &e%items-count% items'
+    - ''
+    - '&aClick to claim!'
+
+delivery-claimed-message: '&aYou just claimed your delivery!'
+not-enough-space-delivery: '&cYou don''t have enough space to claim the whole delivery!'
+no-delivery-to-claim: '&cYou don''t have a delivery to claim!'
+
+delivery-alert-join-message: '&6[Auction] &fYou have unclaimed deliveries!'
+
+#This message appears when the delivery is sent and only if
+#the player is online
+#Use %coins% for coins
+#Use %item-count% for amount of items
+delivery-got-message: '&6[Auction] &fYou have received &6%coins% coins &fand &e%item-count% items&f!'
+
+#The message shown in chat when a player executes /ah help
+#P.S: /ahadmin won't be translated, you are an admin, you know english
+#you know how to use commands, therefore no need for translation
+player-commands-help-display:
+  - '&7&m---------------------------------------'
+  - '&c/auctionhouse &8- &7Open auctions menu'
+  - '&c/ah <player name> &8- &7Open a player''s auctions'
+  - '&c/ah delivery &8- &7Open delivery menu'
+  - '&4/ahadmin &8- &7Open the admin menu'
+  - '&4/ahadmin help &8- &7Show help commands for admin'
+  - '&7&m---------------------------------------'
+
+#Do you want the auction to be exclusive for players with a
+#specific permission? Set it here, if you don't, let the permission
+#to be 'none'
+#ATTENTION: This option will block the npc too (if you are using any)
+auction-use-permission: 'none'
+auction-no-permission: '&cYou don''t have the permission to open the menu!'
+
+#Maybe you want just some players to use the '/ah name' command
+#And if you wonder what's the difference between this option and the one above:
+#this one blocks the command only, the above option also blocks the npc
+auction-command-use-permission: 'none'
+auction-command-deny: '&cYou don''t have the permission to use this command!'
+
+#The permission for using admin commands/menus
+admin-perks-use-permission: 'auctionmaster.admin'
+admin-perks-deny: '&cYou can''t use admin commands!'
+
+#This option will make the command '/ah' open the main menu
+#If you set it to false, the command will require a player as it's argument
+auction-command-menu: true
+
+#The message sent when the option above is false
+auction-command-missing: '&cYou should use /ah <player name>!'
+
+#Use %player% for player's username
+player-auction-menu-name: '&8%player%''s Auctions'
+
+#The message sent when the entered player does not have any auctions
+no-auctions-message: '&eThis player does not have any active auctions.'
+
+#This is false by default because you will need Citizens & HolographicDisplays if you want to use it
+#After setting this to true just use /ahadmin npc
+#If the title bugs use /ahadmin debugNames to regenerate them
+auction-npc-use: false
+#You can only have 2 lines, sorry
+auction-npc-title:
+  line-1: '&6Auction Master'
+  line-1-height: 2.05
+  line-1-height: 2.05
+  line-2: '&e&lCLICK'
+
+#When the option below is set to false, it will use 'auction-npc-skin-name' setting
+#When the option below is set to true, it will use 'auction-npc-skin-signature' and 'auction-npc-skin-data'
+#You can use https://mineskin.org/ to upload a custom skin
+auction-npc-skin-texture: true
+
+#For npc's skin you can put the name of a player
+#This setting matters only when 'auction-npc-skin-texture' is false
+auction-npc-skin-name: 'qKing12'
+
+auction-npc-skin-signature: 'SbvoR6xYRP30lvCJqIumNCul8IdwHXuBTh4/Gukr4HzFMpouEM1boRvRwPRzRo45UFlxQnsYZzbBnAeCHAYVgql6jvIbXLpQmhdSH1kSKZ6pmjhTzufK/R6S3pWLZlv77oaTfFT+7Ccd7bXFSwimG0wIK4jHhfrKa2kdMMZi7Y21ecVZr3DoJTYpJi9k18ewy1KSPm4aqkxE8rFr0U79IKoUBm1glT/jJYsMVARCJlouHMLEk0x2fHuwPF/Tpf3+yPdCQXCQrqKug0klcyhTNYqv238aqws/x0RsFyegvoxl3fwfIshjqXEVQpnmJ9N9tcD6MzKqm2mC1TjycEpYHvfaxircs7XU9hRbNbiLTKFVGYda9OMh40GmoCriJItYZBLngliNUCbIysE3YKosjXQdOTPVSU/9hZbTN242dL035to2a1r+rq5kkj5YabbvGIFyyaYDg/6plnb7ZWstMJlb6yzEldyfk+7hVb5W1ahsbZ+DCZIeEhewdJDghaiizWHE7m5L+L+49Q9QAyW/I+mM0MS7JlDSUNn/CeaijMB0YfWI12EoM7KVEJC8RnVc09HFs1HSXNA7Gcy073NrNOWxlCXG2NYSosYTiZ/2UWIHBkH0KTwHHwWdQSgtdl6o0gz40OsqzwuU8DyxQk8RfGb7RKdwiIPxukExSNyn+EQ='
+auction-npc-skin-data: 'eyJ0aW1lc3RhbXAiOjE1Njc5NjQyNTU5OTUsInByb2ZpbGVJZCI6IjgyYzYwNmM1YzY1MjRiNzk4YjkxYTEyZDNhNjE2OTc3IiwicHJvZmlsZU5hbWUiOiJOb3ROb3RvcmlvdXNOZW1vIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82NWRhZjZlN2Y1ZTExOGZjYTQwOGUzZTQzMzM0ZmQxZmIxMzNiMzFkYWE3Yjk4MTRiYjVlMGRhZWQ4YzA0NjhiIiwibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn19fX0='
+
+#If you want a certain item id to be blocked from auction
+#specify it here, by default the items that can't be put in
+#any category, they go to "others menu"
+blacklist-item-id:
+  - '2267'
+#This is a setting for custom items, if you want to block a certain name of an item
+blacklist-item-name:
+  - '&6Coins'
+  - '&aMenu'
+
+blacklist-item-lore:
+  1:
+    - '&eLine1'
+    - '&eLine2'
+  2:
+    - '&e1 Line1'
+    - '&e1 Line2'
+
+blacklist-item-message: '&cThis item is not auctionable!'
+
+#You can make custom item names to go in a specific category
+#This option is configurable in menu's file.
+
+#Please do not modify this
+version: 3.22

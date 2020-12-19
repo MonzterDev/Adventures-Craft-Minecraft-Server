@@ -1,0 +1,21 @@
+name: Warp
+lore:
+- Teleports you to target location.
+- 'Max. Range: &5{range}'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: ENDER_PEARL
+mana:
+  base: 8.0
+  per-level: 3.0
+cooldown:
+  base: 15.0
+  per-level: -0.3
+  max: 15.0
+  min: 2.0
+range:
+  base: 16.0
+  per-level: 1.0
+  max: 100.0
+  min: 0.0

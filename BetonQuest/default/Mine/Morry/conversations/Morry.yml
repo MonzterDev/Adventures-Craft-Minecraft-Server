@@ -1,0 +1,53 @@
+quester: Morry
+first: goBack,greeting
+NPC_options:
+  goBack:
+    text:  Go back and finish &aLenny's&7 quests before talking to me! 
+    conditions: '!default-Mine-Lenny.q5_completed'        
+  greeting:
+    text:  Hey &a%player%&7, the &aGold Mine&7 is just great, isn't it? 
+    pointers: hey, quest, bye
+    conditions: 'default-Mine-Lenny.q5_completed'        
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: The &aGold Mine &7as you probably could have guessed, supplies the Town with our &eGolden Coins&7!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Once you finish my quests, I might take you down to the &cRedstone Mine&7!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: First I need you to bring me back some Coal! We always need more fuel for the furnace!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Wow, I cannot wait to become rich!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "Ultimate Fuel" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

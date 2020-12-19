@@ -1,0 +1,991 @@
+ShopName: BowEnchants
+DisplayName: '&7&l»»&fBow Enchants&7&l««'
+Command: BowEnchants
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  Power1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPower 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §91 Enchanted Arrows'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Power 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:ARROW
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Arrow
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPower 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'        
+    InventoryLocation: 12
+  Power1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cPower 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 1'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 12
+  Power2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPower 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §740 EXP'
+    - 'lore9:§8§l» §98 Enchanted Arrows'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Power 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:ARROW
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Arrow
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPower 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 13
+  Power2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cPower 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 3'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 13
+  Power3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPower 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §760 EXP'
+    - 'lore9:§8§l» §916 Enchanted Arrows'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Power 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 60.0
+      PriceType2: ITEM
+      Price2:
+        - type:ARROW
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Arrow
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPower 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting5
+    InventoryLocation: 14
+  Power3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cPower 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 5'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 14
+  Power4:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPower 4 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §780 EXP'
+    - 'lore9:§8§l» §932 Enchanted Arrows'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Power 4
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 80.0
+      PriceType2: ITEM
+      Price2:
+        - type:ARROW
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Arrow
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPower 4&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 15
+  Power4L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cPower 4 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 7'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 15
+  Power5:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPower 5 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §7100 EXP'
+    - 'lore9:§8§l» §964 Enchanted Arrows'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Power 5
+    - mmocore admin exp give %name% enchanting 500
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 100.0
+      PriceType2: ITEM
+      Price2:
+        - type:ARROW
+        - amount:64
+        - durability:0
+        - name:&9Enchanted Arrow
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPower 5&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting9
+    InventoryLocation: 16
+  Power5L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cPower 5 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 9'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 16
+  Punch1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPunch 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §710 EXP'
+    - 'lore9:§8§l» §91 Enchanted Slime Ball'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Punch 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPunch 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting2
+    InventoryLocation: 21
+  Punch1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rPunch 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 2'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 21
+  Punch2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPunch 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §98 Enchanted Slime Balls'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Punch 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPunch 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 22
+  Punch2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rPunch 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 4'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 22
+  Punch3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rPunch 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §916 Enchanted Slime Balls'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Punch 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aPunch 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting6
+    InventoryLocation: 23
+  Punch3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rPunch 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send mobs back when they get hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 6'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 23
+  Flame1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rFlame 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Ignite enemies on fire when hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §725 EXP'
+    - 'lore9:§8§l» §98 Enchanted Magma Cream'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Flame 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:MAGMA_CREAM
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Magma Cream
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aFlame 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:BOW'    
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 30
+  Flame1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rFlame 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Ignite enemies on fire when hit!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBow'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 4'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 30
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+
+  46:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+
+  47:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 47
+    ExtraPermission: ''
+    Condition:
+  48:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 48
+    ExtraPermission: ''
+    Condition:
+
+  49:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 49
+    ExtraPermission: ''
+    Condition:
+
+  50:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 50
+    ExtraPermission: ''
+    Condition:
+
+  51:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 51
+    ExtraPermission: ''
+    Condition:
+  52:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 52
+    ExtraPermission: ''
+    Condition:
+  53:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 53
+    ExtraPermission: ''
+    Condition:
+  54:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:

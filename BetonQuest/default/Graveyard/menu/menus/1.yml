@@ -1,0 +1,376 @@
+height: 4
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Graveyard-Cirl.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Cirl in the Graveyard'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q1_part1,!default-Graveyard-Cirl.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Cirl in the Graveyard'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q1_completed,!default-Graveyard-Cirl.q1_rewards_unclaimed,default-Graveyard-Cirl.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q1_rewards_unclaimed,!default-Graveyard-Cirl.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward1_Claim
+      left: default-Graveyard-Cirl.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Graveyard-Cirl.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Undead'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q2_part1,!default-Graveyard-Cirl.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Undead'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q2_completed,!default-Graveyard-Cirl.q2_rewards_unclaimed,default-Graveyard-Cirl.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+  quest2_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q2_rewards_unclaimed,!default-Graveyard-Cirl.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward2_Claim
+      left: default-Graveyard-Cirl.QuestReward2_Claim
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Graveyard-Cirl.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Silver Stool'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q3_part1,!default-Graveyard-Cirl.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Silver Stool'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q3_completed,!default-Graveyard-Cirl.q3_rewards_unclaimed,default-Graveyard-Cirl.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q3_rewards_unclaimed,!default-Graveyard-Cirl.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward3_Claim
+      left: default-Graveyard-Cirl.QuestReward3_Claim
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Graveyard-Cirl.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Archers'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q4_part1,!default-Graveyard-Cirl.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Archers'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q4_completed,!default-Graveyard-Cirl.q4_rewards_unclaimed,default-Graveyard-Cirl.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q4_rewards_unclaimed,!default-Graveyard-Cirl.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward4_Claim
+      left: default-Graveyard-Cirl.QuestReward4_Claim
+#FIFTH QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Graveyard-Cirl.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lApproaching the Castle'
+        - '&f&o'
+        - '&fEnter the &aCastle Courtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Castle Courtyard'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Ruler'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q5_part1,!default-Graveyard-Cirl.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lApproaching the Castle'
+        - '&f&o'
+        - '&fEnter the &aCastle Courtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Castle Courtyard'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Ruler'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lApproaching the Castle'
+        - '&f&o'
+        - '&fEnter the &aCastle Courtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Castle Courtyard'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu    
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  16-18: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  19-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-15: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed,quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed
+  31: back
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass

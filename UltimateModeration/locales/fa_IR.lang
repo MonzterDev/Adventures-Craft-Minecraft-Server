@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7chat ra pak kard!'
+    immune: '&aShoma nmitavanid chat konid chon permission nadarid.'
+  togglechat:
+    toggledOn: '&aChate hamegani unmute shod'
+    toggledOff: '&cChate hamegani mute shod'
+    bypass: '&aShoma nmitavanid chat konid chon permission nadarid.'
+    muted: '&cChat dar hal hazer faal nist lotfan badan talash konid.'
+  vanish:
+    toggledOn: '&7Shoma vanish shodid.'
+    toggledOff: '&7Shoma unvanish shodid.'
+  freeze:
+    add: '&7Shoma &6%player%&7 ra freeze kardid.'
+    remove: '&7Shoma &6%player%&7 ra unfreeze kardid.'
+    alertadd: '&7Shoma freeze shodid.'
+    alertremove: '&7SHoma unfreeze shodid.'
+    nope: '&cShoma nmitavanid in kar ra anjam dahid chon freeze hastid'
+  revive:
+    noloot: '&cHich looti peyda nashod ke player ra revive konid.'
+    success: '&7Shoma &6%player% &7ra revive kardid.'
+    revived: '&7SHoma revive shodid.'
+  spy:
+    returned: '&7Shoma be makan qabli bazgashtid'
+    success: '&7Shoma roye &6%player%&7 jasosi mikonid. Ba command &6/spy &7az in halat kharej shavid.'
+    cant: Shoma nmitavanid roye khod jasosi koid.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Command spy on'
+    toggleOff: '&7Command spy off'
+# Event Messages
+event:
+  general:
+    nopermission: '&cShoma permission kafi baraye anjam in kar ra nadarid.'
+  command:
+    blocked: '&cShoma nmitavanid az in command estefade konid'
+  punish:
+    reason: ' &7for &6%reason%'
+    theirduration: '&7. &7Mojazat in player be &6%duration% taqir kard'
+    yourduration: '&7. &7Mojazat shoma be &6%duration% taqir kard'
+  ban:
+    success: '&7Shoma &6%player%&7 ra ban kardid'
+    message: '&7Shoma ban shodid'
+    already: '&cIn user dar hal hazer ban ast.'
+  unban:
+    success: '&7Shoma &6%player%&7 ra unban kardid'
+  mute:
+    success: '&7Shoma &6%player%&7 ra mute kardid'
+    message: '&7Shoma mute shodid'
+    already: '&cIn user dar hal hazer mute ast.'
+  unmute:
+    success: '&7Shoma &6%player%&& ra unmute kardid'
+  kick:
+    success: '&7Shoma &6%player%&7 ra kick kardid'
+    message: '&7Shoma kick shodid'
+  warning:
+    success: '&7Shoma &6%player%&7 ra warn dadid'
+    message: '&7Shoma warn shodid'
+  staffchat:
+    leave: '&7Shoma az channel &6%channel% &7raftid.'
+    join: '&7Shoma be channel &6%channel% &7raftid.'
+    allleave: '&6%player% &7channel ra tark kard.'
+    alljoin: '&6%player% be channel amad.'
+    nochannels: '&cShoma dakhel hich channeli nistid.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Halat aram &6%delay% &7seconds left.'
+    done: '&7Halat aram tamam shod.'
+    enabled: '&7Halat aram faal shod. Delay : &6%delay%&7.'
+    disabled: '&7Shoma halat aram ra qeyr faal kardid.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Safheye qabli'
+    next: '&6Safheye badi'
+    back: '&6Bazgasht'
+    none: None
+    permanent: Permanent
+    reason: Reason
+    templatename: Template Name
+  players:
+    title: '&8Players'
+    click: '&6Baraye diddan player click konid.'
+    notickets: '&7Hich ticketi roye in player baz nist.'
+    tickets: '&7In player &6%amount% &7ticket baz darad.'
+    ticketsone: '&7In player &61 &7ticket baz darad.'
+    nowarnings: '&7Hich warningi moshahede nmishavad.'
+    warnings: '&7In player &6%amount% &7warning gerefte ast.'
+    warningsone: '&7In player &61 &7warning gerefte ast.'
+    online:
+      online: Online
+      offline: Offline
+      both: Both
+    button:
+      tickets: '&7Tickets'
+      templatemanager: '&6&lTemplate Manager'
+    name: Player Name
+    search: '&7Ba esm search konid'
+    nonefound: '&cHich playeri yaft nashod.'
+  templateselector:
+    title: '&8Select a Template'
+    click: '&7Click to select this template.'
+  templatemanager:
+    title: '&8Templates'
+    create: '&6&lCreate Template'
+    leftclick: '&7Left-Click to edit.'
+    rightclick: '&7Right-Click to destroy.'
+  punishments:
+    title: '&8%toModerate% > Punishments'
+    reason: '&6Dalil'
+    duration: '&6Initial Duration'
+    punisher: '&6Mojazat konande'
+    remaining: '&6Time Remaining'
+    click: '&7Baraye tamam kardan in mojazat click konid.'
+    activity:
+      both: Both
+      active: Active
+      expired: Expired
+  punishmenttypes:
+    all: All
+    ban: Ban
+    kick: Kick
+    warning: Warning
+    mute: Mute
+  punish:
+    title:
+      template: '&8Create a Template'
+      message: '&8%toModerate% > Punish'
+    submit: '&a&lSubmit'
+    type:
+      punishment:
+        click: '&7Baraye avaz kardan model click konid.'
+        message: '&6&lMojazat konande'
+      template:
+        current: '&7Select shode: &6%template%&7.'
+        none: '&7No templates to choose from.'
+        click: '&7Click to choose a template.'
+        message: '&6&lTemplate'
+      name:
+        current:
+          click: '&7Baraye avaz kardan name click konid.'
+          message: '&7Name : &6%name%&7.'
+        message: '&6&lName'
+      duration:
+        leftclick: '&7Left-Click to set a duration.'
+        rightclick: '&7Right-Click Click to set to forever.'
+        current: '&7Currently set to:'
+        message: '&c&lDuration'
+      reason:
+        click: '&7Baraye set kardan dalil, click konid.'
+        current: '&7Currently set to:'
+        message: '&b&lReason'
+    template:
+      create: '&7Click to create a template'
+      create2: '&7from this punishment.'
+      leftclick: '&7Left-Click to update the'
+      leftclick2: '&7template &6%template%&7.'
+      rightclick: '&7Right-Click to save as a new Template.'
+  player:
+    title: '&8Players > %toModerate%'
+    punish: '&6&lMojazat'
+    moderate: '&b&lModerate'
+    punishments: '&c&lMojazat'
+    notes: '&a&lNotes'
+    tickets: '&7&lTickets'
+  moderate:
+    title: '&8%toModerate% > Moderate'
+  notes:
+    title: '&8%tonotes% > Notes'
+    create: '&6Create Note'
+    remove: '&cBaraye remove click konid'
+    type: Type in your note.
+    createdon: '&7Created on &6%sent%&7.'
+    createdby: '&7Created by &6%player%&7.'
+  tickets:
+    title: '&8&lTickets'
+    titlesingle: '&8%toModerate% > Tickets'
+    create: '&6Sakhtan yek ticket'
+    click: '&6Baraye modiriayt click konid.'
+    player: '&7Player &6%player%&7.'
+    what: '&6Dost darid che begoid dar aval ticket khud?'
+    subject: Ticket Subject
+  ticket:
+    title: '&8Tickets > %id%'
+    type: '&7Type &6%type%&7.'
+    picktype: '&8Pick a ticket type.'
+    clicktotele: '&6Teleport kardan be makan ticket.'
+    createdon: '&7Created on &6%sent%&7.'
+    respond: '&6Respond'
+    status: '&7Status &6%status%&7.'
+    postedby: '&7Posted by &6%player%&7.'
+    what: '&6Chi dost darid begoid?'
+notify:
+  block:
+    main: '&a Has mined [&6%material%&a] at &6'
+  ticket:
+    created: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Has been created!'
+    status: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] New Status: &6%status%'
+    response: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Has a new response!'

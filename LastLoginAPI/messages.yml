@@ -1,0 +1,83 @@
+# / =========================================== \
+# |  This is the messages file of LastLoginAPI  |
+# \ =========================================== /
+#
+# For any problem be sure to:
+# - Read the entire documentation on: https://alessiodp.com/docs/lastloginapi/
+# - Join our Discord for further help: https://discord.alessiodp.com/
+#
+
+# / =============================== \
+# |      LASTLOGINAPI MESSAGES      |
+# \ =============================== /
+lastloginapi:
+  # [Special tags]
+  # => %version%     = New version found
+  # => %thisversion% = Version LastLoginAPI
+  update-available: '&6New version of LastLoginAPI found: %version% (Current: %thisversion%)'
+  # [Special tags]
+  # => %config%      = The configuration file name that is outdated
+  configuration-outdated: '&cThe configuration file ''%config%'' of LastLoginAPI is outdated!'
+  # [Special tags]
+  # => %permission%  = Missing permission
+  no-permission: '&cYou do not have access to that command'
+  common-messages:
+    invalid-command: '&cInvalid command'
+    configuration-reloaded: '&aConfiguration reloaded'
+
+  syntax:
+    wrong-message: '&cWrong syntax: Type &7/%syntax%'
+    player: 'player'
+    unknown: 'unknown'
+
+
+# / =============================== \
+# |        COMMANDS MESSAGES        |
+# \ =============================== /
+commands:
+  info:
+    header: '&6============== &l%player%''s Info &r&6=============='
+    text:
+      - "&6Last login since: &7%last_login_elapsed%"
+      - "&6Last logout since: &7%last_logout_elapsed%"
+    footer: ''
+    player-not-found: '&c%player% not found!'
+
+  version:
+    # [Special tags]
+    # => %version%    = LastLoginAPI version
+    # => %newversion% = Latest LastLoginAPI version
+    # => %platform%   = Platform of the plugin (e.g. Bukkit, BungeeCord)
+    updated: '&6&lLastLoginAPI &6%version% &7(%platform%) - Developed by &6AlessioDP'
+    outdated: "&6&lLastLoginAPI &6%version% &7(%platform%) - Developed by &6AlessioDP\n&aNew version found: &6%newversion%"
+
+
+# / =============================== \
+# |          HELP MESSAGES          |
+# \ =============================== /
+help:
+  header: '&6============= &lLastLoginAPI Help Page &r&6============='
+  footer: ''
+  perform-command: 'Perform the command'
+  console-help:
+    header: 'You can only make these commands:'
+    command: ' > %command% - %description%'
+  commands:
+    # [Special tags]
+    # => %syntax%          = Command syntax
+    # => %description%     = Description
+    # => %run_command%     = Command run syntax
+    # => %perform_command% = Perform command message
+    help: '{"text":"&6/%syntax% &7- %description%","clickEvent":{"action":"suggest_command","value":"/%run_command% "},"hoverEvent":{"action":"show_text","value":{"text":"&6%perform_command%"}}}'
+    info: '{"text":"&6/%syntax% &7- %description%","clickEvent":{"action":"suggest_command","value":"/%run_command% "},"hoverEvent":{"action":"show_text","value":{"text":"&6%perform_command%"}}}'
+    reload: '{"text":"&6/%syntax% &7- %description%","clickEvent":{"action":"run_command","value":"/%run_command% "},"hoverEvent":{"action":"show_text","value":{"text":"&6%perform_command%"}}}'
+    version: '{"text":"&6/%syntax% &7- %description%","clickEvent":{"action":"run_command","value":"/%run_command% "},"hoverEvent":{"action":"show_text","value":{"text":"&6%perform_command%"}}}'
+  command-descriptions:
+    help: 'Show help pages'
+    info: 'Show player info'
+    reload: 'Reload LastLoginAPI configuration files'
+    version: 'Show LastLoginAPI information'
+
+
+dont-edit-this:
+  version: 2

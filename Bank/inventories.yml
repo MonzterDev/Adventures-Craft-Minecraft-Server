@@ -1,0 +1,87 @@
+# This config file handles all inventory sizes and titles for this plugin allowing all items to be dynamically changed
+#
+# Inventory Node parameters
+# Required: Size, Title
+# Extra: Permission
+Bank:
+  Items:
+    Size: 54
+    Title: Bank Items
+    Permission: bank.open.items
+    Add:
+      Size: 9
+      Title: Item Transfer
+      Permission: bank.items.add
+    Remove:
+      Size: 9
+      Title: Items Remover
+      Permission: bank.items.remove
+    Sort:
+      Size: 9
+      Title: Bank Sorter
+      Permission: bank.items.sort
+    Trashcan:
+      Size: 18
+      Title: Trashcan
+      Permission: bank.items.trashcan
+    Buy:
+      Tabs:
+        Size: 9
+        Title: Bank Items Buy Tabs
+        Permission: bank.items.tabs.buy
+      Slots:
+        Size: 9
+        Title: Bank Items Buy Slot
+        Permission: bank.items.tabs.slot
+  Main:
+    Menu:
+      Size: 9
+      Title: Bank Main Menu
+  Exp:
+    Size: 9
+    Title: Bank Exp
+    Permission: bank.open.exp
+  Money:
+    Size: 9
+    Title: Bank Money
+    Permission: bank.open.money
+  Pin:
+    Menu:
+      Size: 9
+      Title: Bank Pin
+      Permission: bank.open.pin
+    Set:
+      Size: 54
+      Title: Bank Pin Set
+      Permission: bank.pin.set
+    Enter:
+      Size: 54
+      Title: Bank Pin Enter
+  Admin:
+    Blacklist:
+      Size: 54
+      Title: Bank Admin Blacklist
+      Permission: bank.admin.blacklist.open
+      Item:
+        Size: 9
+        Title: Bank Admin Blacklist Item Editor
+        Permission: bank.admin.blacklist.edit
+    Permission:
+      History:
+        Size: 54
+        Title: Bank Admin Permission History
+        Permission: bank.admin.permission.history
+  Loans:
+    Size: 9
+    Title: Bank Loans
+    Permission: bank.open.loans
+  Loan:
+    View:
+      Size: 9
+      Title: Bank View Loan
+      Permission: bank.open.loans.view
+    Take:
+      Out:
+        Size: 9
+        Title: Bank Take Out Loan
+        Permission: bank.open.loans.takeout

@@ -1,0 +1,39 @@
+npc_effects:
+  check_interval: 100
+  disabled: false
+  default:
+    class: VortexEffect
+    iterations: 20
+    particle: crit_magic
+    helixes: 3
+    circles: 1
+    grow: 0.1
+    radius: 0.5
+    interval: 100
+notifications:
+  info:
+    io: chat
+    sound: ENTITY_ARROW_HIT_PLAYER	
+hide_npcs:
+  84: 'q5_part1_completed'
+  85: '!q5_part1_completed'
+  86: 'q5_part2_completed'
+  87: '!q5_part2_completed'
+  88: 'q5_part3_completed'
+  89: '!q5_part3_completed'
+  90: '!q5_part4_completed'
+  91: 'q5_part4_completed'
+  92: '!q5_part5_completed'
+  93: 'q5_part5_completed'
+  53: '!q5_Ander'
+npc_holograms:
+  check_interval: 100
+  follow: false
+  disabled: false
+  default:
+    lines:
+    - '&e&lTALK TO ME!'
+    vector: 0;2.55;0
+    conditions: "!q1_part1"
+    npcs:
+      - 30

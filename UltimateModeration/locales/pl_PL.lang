@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7wyczyścił czat!'
+    immune: '&aNie możesz wyczyścić czatu ponieważ nie masz wystarczających uprawnień.'
+  togglechat:
+    toggledOn: '&aCzat został odmutowany...'
+    toggledOff: '&cCzat został zmutowany...'
+    bypass: '&aNie możesz wyłączyć czatu ponieważ nie masz wystarczających uprawnień.'
+    muted: '&cCzat aktualnie jest wyłączony, spróbuj później.'
+  vanish:
+    toggledOn: '&7Jesteś teraz niewidoczny.'
+    toggledOff: '&7Jesteś teraz widoczny.'
+  freeze:
+    add: '&7Zamroziłeś gracza &6%player%&7.'
+    remove: '&7Odmroziłeś gracza &6%player%&7.'
+    alertadd: '&7Zostałeś zamrożony.'
+    alertremove: '&7Zostałeś odmrożony.'
+    nope: '&cNie możesz tego zrobić będąc aktualnie zamrożony...'
+  revive:
+    noloot: '&cNie znaleziono przedmiotów z którymi można przywrócić gracza do życia.'
+    success: '&7Ożywiłeś gracza &6%player% &7.'
+    revived: '&7Zostałeś ożywiony.'
+  spy:
+    returned: '&7Zostałeś przywrócony do poprzedniej lokalizacji'
+    success: '&7Szpiegujesz gracza &6%player%&7. Użyj komendy &6/spy &7aby powrócić do poprzedniej lokalizacji.'
+    cant: Nie możesz szpiegować samego siebie.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Komenda szpieguj: włączona'
+    toggleOff: '&7Komenda szpieguj: wyłączona'
+# Event Messages
+event:
+  general:
+    nopermission: '&cNie masz uprawnień aby to zrobić.'
+  command:
+    blocked: '&cNie możesz użyć tej komendy...'
+  punish:
+    reason: ' &7za &6%reason%'
+    theirduration: '&7. &7Kara zakończy się za &6%duration%'
+    yourduration: '&7. &7Twoja kara zakończy się za &6%duration%'
+  ban:
+    success: '&7Zbanowałeś gracza &6%player%'
+    message: '&7Zostałeś zbanowany'
+    already: '&cTen gracz jest już zbanowany.'
+  unban:
+    success: '&7Odbanowałeś gracza &6%player%'
+  mute:
+    success: '&7Wyciszyłeś gracza &6%player%'
+    message: '&7Zostałeś wyciszony'
+    already: '&cTen gracz jest już wyciszony.'
+  unmute:
+    success: '&7Zdjąłeś wyciszenie z gracza &6%player%'
+  kick:
+    success: '&7Wyrzuciłeś gracza &6%player%'
+    message: '&7Zostałeś wyrzucony'
+  warning:
+    success: '&7Dałeś ostrzeżenie graczowi &6%player%'
+    message: '&7Dostałeś ostrzeżenie'
+  staffchat:
+    leave: '&7Opuściłeś &6%channel% &7.'
+    join: '&7Dołączyłeś do kanału &6%channel%&7.'
+    allleave: '&6%player% &7opuścił kanał.'
+    alljoin: '&6%player% &7dołączył do kanału.'
+    nochannels: '&cNie jesteś na żadnym kanale.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Tryb spowolnienia, pozostało do końca &6%delay%&7.'
+    done: '&7Tryb spowolnienia zakończył się.'
+    enabled: '&7Tryb spowolnienia został włączony na okres czasu &6%delay% &7sekund.'
+    disabled: '&7Wyłaczyleś tryb spowolnienia.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Poprzednia strona'
+    next: '&6Następna strona'
+    back: '&6Powrót'
+    none: Brak
+    permanent: Permamentnie
+    reason: Powrót
+    templatename: Nazwa szablonu
+  players:
+    title: '&8Gracze'
+    click: '&6Kliknij aby zobaczyć graczy.'
+    notickets: '&7Brak zgłoszeń odnośnie tego gracza.'
+    tickets: '&7Ten gracz ma aktualnie &6%amount% &7otwartych zgłoszeń.'
+    ticketsone: '&7Ten gracz ma otwarte &61 &7zgłoszenie.'
+    nowarnings: '&7Brak zarejestrowanych ostrzeżeń.'
+    warnings: '&7Ten gracz otrzymał łącznie &6%amount% &7ostrzeżeń.'
+    warningsone: '&7Ten gracz otrzymał &61 &7ostrzeżenie.'
+    online:
+      online: Online
+      offline: Offline
+      both: Oba
+    button:
+      tickets: '&7Zgłoszenia'
+      templatemanager: '&6&lZarządzanie schematami'
+    name: Nazwa gracza
+    search: '&7Szukaj gracza'
+    nonefound: '&cNie odnaleziono graczy.'
+  templateselector:
+    title: '&8Wybierz schemat'
+    click: '&7Kliknij aby wybrać ten schemat.'
+  templatemanager:
+    title: '&8Schematy'
+    create: '&6&lStwórz schemat'
+    leftclick: '&7LPM - edycja schematu.'
+    rightclick: '&7PPM - usuń schemat.'
+  punishments:
+    title: '&8%toModerate% > Kary'
+    reason: '&6Powody kar'
+    duration: '&6Czas trwania kary'
+    punisher: '&6Ukarał'
+    remaining: '&6Pozostały czas'
+    click: '&7Kliknij aby zakończyć karę.'
+    activity:
+      both: Obie
+      active: Aktywne
+      expired: Wydane
+  punishmenttypes:
+    all: Wszystkie
+    ban: Ban
+    kick: Wyrzucenie
+    warning: Ostrzeżenie
+    mute: Wyciszenie
+  punish:
+    title:
+      template: '&8Stwórz schemat'
+      message: '&8%toModerate% > Ukaraj'
+    submit: '&a&lPrześlij'
+    type:
+      punishment:
+        click: '&7Kliknij aby zmienić typ kary.'
+        message: '&6&lKara'
+      template:
+        current: '&7Aktualnie wybrany: &6%template%&7.'
+        none: '&7Brak dostępnych schematów do wyboru.'
+        click: '&7Kliknij aby wybrać schemat.'
+        message: '&6&lSchemat'
+      name:
+        current:
+          click: '&7Kliknij aby zarządzać nazwą.'
+          message: '&7Aktualnie ustawiono: &6%name%&7.'
+        message: '&6&lNazwa'
+      duration:
+        leftclick: '&7LPM - ustaw czas trwania.'
+        rightclick: '&7PPM - kara permamentna.'
+        current: '&7Aktualnie ustawiono:'
+        message: '&c&lCzas trwania'
+      reason:
+        click: '&7Kliknij aby podać powód.'
+        current: '&7Aktualnie ustawiono:'
+        message: '&b&lPowód'
+    template:
+      create: '&7Kliknij aby stworzyć schemat'
+      create2: '&7tej kary.'
+      leftclick: '&7LPM - aktualizacja aktualnie wybranego'
+      leftclick2: '&7schematu &6%template%&7.'
+      rightclick: '&7PPM - zapisz jako osobny schemat.'
+  player:
+    title: '&8Gracze > %toModerate%'
+    punish: '&6&lUkaraj'
+    moderate: '&b&lZarządzaj'
+    punishments: '&c&lKary'
+    notes: '&a&lNotatki'
+    tickets: '&7&lZgłoszenia'
+  moderate:
+    title: '&8%toModerate% > Zarządzaj'
+  notes:
+    title: '&8%tonotes% > Notatki'
+    create: '&6Stwórz notatkę'
+    remove: '&cKliknij aby usunąć notatkę'
+    type: Wpisz notatkę.
+    createdon: '&7Utworzono na &6%sent%&7.'
+    createdby: '&7Utworzono przez &6%player%&7.'
+  tickets:
+    title: '&8&lZgłoszenia'
+    titlesingle: '&8%toModerate% > Zgłoszenia'
+    create: '&6Stwórz zgłoszenie'
+    click: '&6Kliknij aby zarządzać.'
+    player: '&7Gracz &6%player%&7.'
+    what: '&6Jaka jest treść zgłoszenia które chcesz przesłać?'
+    subject: Temat zgłoszenia
+  ticket:
+    title: '&8Zgłoszenia > %id%'
+    type: '&7Typ &6%type%&7.'
+    picktype: '&8Wybierz typ zgłoszenia.'
+    clicktotele: '&6Teleportacja do celu zgłoszenia.'
+    createdon: '&7Stworzono na &6%sent%&7.'
+    respond: '&6Odpowiedz'
+    status: '&7Status &6%status%&7.'
+    postedby: '&7Napisano przez &6%player%&7.'
+    what: '&6Co chciałbyś napisać w treści zgłoszenia?'
+notify:
+  block:
+    main: '&a Wykopano [&6%material%&a] na &6'
+  ticket:
+    created: '&7[UM] &a[Zgłoszenie #%tid% - %type% - %player%&a] zostało stworzone!'
+    status: '&7[UM] &a[Zgłoszenie #%tid% - %type% - %player%&a] Nowy status: &6%status%'
+    response: '&7[UM] &a[Zgłoszenie #%tid% - %type% - %player%&a] otrzymało odpowiedź!'

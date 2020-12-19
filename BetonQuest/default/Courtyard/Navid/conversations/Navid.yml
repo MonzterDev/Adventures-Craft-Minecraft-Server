@@ -1,0 +1,49 @@
+quester: Navid
+first: greeting
+NPC_options:
+  greeting:
+    text: Welcome to the Courtyard! The Undead have made there way from the Graveyard and taken over the Castle! You must get into there and take their source out!
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: This town used to be home for many Villagers. This plague originated in the Graveyard and has overthrown the Castle and the entire Village! It has been said, if the source of the Undead known as &cMorden&7, is defeated, the plague will end...
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: You can help me by returning our Village back to what it once was!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: The &cUndead &7here are gonna be much tougher than the &cGraveyard &7ones! I recommend you purchase some equipment from the &eCourtyard Shop &7next to me to help you on this adventure!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: I promise I will defeat Morden!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "The Undead Slayer" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

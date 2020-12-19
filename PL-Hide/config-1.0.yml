@@ -1,0 +1,76 @@
+#OP-protection: Player can only be op'ed if they are in the "allowed-operators" list
+op-protection: true
+allowed-operators:
+  - MonzterYT
+  - MonzterSlayer
+  - MonzterLIVE
+  - SuperKoalaG
+#If you try to Op someone who isn't in the list
+op-message: "&cThe Player isn't a listed operator!!!"
+#Players who are operators and are not in the list can't connect and will be deop'ed.
+unauthorized-operator-kick-message: '&cYou are not allowed to be an operator'
+
+#If true Op's bypasses the commandblock, tabcomplete and can use plhide commands
+op-can-use-plugin: true
+
+#Message if you type a blocked command | Enter none to disable
+blocked-command-message: "&7Unknown command"
+#Message shown if you type /pl | Enter none to disable
+/pl-message: 'Plugins (0):'
+
+#Stay on the newest version to get better features!
+#Enable or disable automatic ingame update notification on join
+update-notify: true
+
+
+#!if the command is not registered via bukkit it's not possible to list them!
+#A unified global tabcompletion
+custom-tab: false
+tab:
+  - example1
+  - example2
+
+groups:
+  #if no group is set via plhide.group.<group> this will be applied
+  #do not rename the default group!
+  default:
+    commands:
+      - ver
+      - version
+      - enchanter
+      - about
+      - bukkit
+      - icanhasbukkit
+      - help
+      - '?'
+      - me
+      - minecraft:me
+      - minecraft:help
+      - bukkit:?
+      - bukkit:help
+      - plugins
+      - pl
+      - bukkit:pl
+      - bukkit:plugins
+      - bukkit:ver
+      - bukkit:version
+      - bukkit:about
+      #The plugin commands
+      - pl-hide:plhide
+      - plhide
+    should-list-block: true
+    #here you can add other groups
+    #only the same group type will be applied (should-list-block)
+    included-groups:
+      - Test
+  #add permission plhide.group.test to apply this group
+  Test:
+    commands:
+      - none
+    should-list-block: true
+    included-groups:
+      - none
+
+
+#Don't change
+version: "1.0"

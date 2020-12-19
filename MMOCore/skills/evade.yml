@@ -1,0 +1,19 @@
+name: Evade
+lore:
+- You become imune to damage for &8{duration} &7seconds.
+- Cancels when dealing weapon damage.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: LEATHER_BOOTS
+duration:
+  base: 2.0
+  per-level: 0.3
+  max: 10.0
+  min: 2.0
+mana:
+  base: 8.0
+  per-level: 3.0
+cooldown:
+  base: 20.0
+  per-level: 0.0

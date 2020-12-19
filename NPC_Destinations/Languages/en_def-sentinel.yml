@@ -1,0 +1,14 @@
+﻿language:
+  version: 1.0.1
+
+sentinel:
+  plugin_icon: "☠"
+  plugin_description: "&6Sentinel Plugin \n&eUsage&2:\n  &f/npcdest locsentinel <loc#> <&7get&f/&7set&f/&7clear&f> &6--npc #\n&eDescription&2:\n  &fSets sentinel settings per location.\n&7    set&f - Stores current sentinel settings for this location\n&7    get&f - Sets current sentinel settings for editing\n&7    Clear&f - Clears the settings for this location\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locsentinel" 
+  plugin_destination: ",{\"text\":\"&a☠&e\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest locsentinel --npc <npc.id> <location.id> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"                 &6Sentinel Settings \n&eCurrent Settings\n&7  Active&2: &f <location.sentinel>\n&eUsage&2:\n  &f/npcdest locsentinel <loc#> <&7get&f/&7set&f/&7clear&f> &6--npc #\n&eDescription&2:\n  &fSets sentinel settings per location.\n&7    set&f - Stores current sentinel settings for this location\n&7    get&f - Sets current sentinel settings for editing\n&7    Clear&f - Clears the settings for this location\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locsentinel\"}}"
+
+console_messages:
+  sentinel_found: Sentinel (<message>) was found, adding support for sentinel in locations.
+  sentinel_notfound: Sentinel was not found, there will be no sentinel support in locations.
+
+command_jsonhelp:
+  command_locsentinel_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest <commandname> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&6Sentinel Plugin \n&eUsage&2:\n  &f/npcdest <commandname> <loc#> <&7get&f/&7set&f/&7clear&f> &6--npc #\n&eDescription&2:\n  &fSets sentinel settings per location.\n&7    set&f - Stores current sentinel settings for this location\n&7    get&f - Sets current sentinel settings for editing\n&7    Clear&f - Clears the settings for this location\n&ePermission&2:\n<permission>\"}}" 

@@ -1,0 +1,17 @@
+﻿language:
+  version: 1.0.1
+
+jobs_reborn:
+  plugin_icon: "☎"
+  plugin_description: "JobsReborn Addon\n&f  This plugin allows you to limit a location based on\n&f information from Jobs Reborn.\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locjobs" 
+  plugin_destination: ",{\"text\":\"&a☎&e\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest locjobs --npc <npc.id> <location.id> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"                 &6JobsReborn Settings \n&eCurrent Settings\n&7  Job Name&2: &f <location.jobname>\n&7  Active&2: &f <location.jobmax>\n&eUsage&2:\n  &f/npcdest locjobs <loc#> <&7>&f/&7<&f> <Max Users> <jobname> &6--npc #\n&eDescription&2:\n  &fAllow or deny based on users currently in a job.\n&ePermission&2:\n  &fnpcdestinations.edit<own/all>.locjobs\"}}"
+  job_inactive: Inactive, no job name
+  job_max: Job at max
+  job_more: More than <message> players.
+  job_less: Less than <message> players.
+  max_distance: Max Distance
+  region_name: Region Name
+  not_set: Not Set
+
+command_jsonhelp:
+  command_locjobs_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/npcdest <commandname> \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"                 &6JobsReborn Settings \n&eUsage&2:\n  &f/npcdest <commandname> <loc#> <&7>&f/&7<&f> <Max Users> <jobname> &6--npc #\n&eDescription&2:\n  &fAllow or deny based on users currently in a job.\n&ePermission&2:\n<permission>\"}}" 

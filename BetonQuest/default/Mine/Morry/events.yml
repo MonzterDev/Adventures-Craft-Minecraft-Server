@@ -1,0 +1,90 @@
+#FIRST QUEST The Great Slaughter
+quest1_start: 'objective start Coal'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f Mine 128 Coal&f!"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% Mining 100 ^command money give %player% 75"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+
+
+#SECOND QUEST Spruce Tumbles
+quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
+quest2_start: 'objective start MineSpider'
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: "run ^message \n&6&lQuest Complete:&f \nUltimate Fuel&f! \n \n \n&8&l » &d 100 EXP \n&8&l » &d 100 Mining EXP \n&8&l » &e 75 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Slay 10 Mine Spiders with the Gold Mine!"
+#FINISHING THE SECOND QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give ARMOR STEEL_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 125 ^command mmocore admin exp give %player% Mining 125 ^command money give %player% 100"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aCoal Miner &cto redeem your rewards!"
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give ARMOR STEEL_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 125 ^command mmocore admin exp give %player% Mining 125 ^command money give %player% 100"
+QuestReward2_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#SECOND QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal remove q2_part1'
+
+#THIRD QUEST Dark Oak Tumbles
+quest3_starer: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
+quest3_start: 'objective start GoldFinger'
+tag_q3_part1: 'tag add q3_part1'
+entry_q3_part1: 'journal add q3_part1'
+q3_start_message: "run ^message \n&6&lQuest Complete:&f \nMine Spider Slayer&f! \n \n \n &6&lRewards: \n&8&l » &f Steel Chestplate \n&8&l » &d 125 EXP \n&8&l » &d 125 Mining EXP \n&8&l » &e 100 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Mine 192 Gold Ore!"
+#FINISHING THE THIRD QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
+QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
+QuestReward3_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE4 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
+QuestReward3_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aBat Hunter &cto redeem your rewards!"
+QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
+#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
+Claim_QuestReward3: "run ^command mmoitems give TOOL MINER_PICKAXE4 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+QuestReward3_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
+QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
+#THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q3_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
+entry_q3_completed: 'journal add q3_completed'
+tag_q3_completed: 'tag add q3_completed'
+entry_q3_part1_remove: 'journal remove q3_part1'
+
+#FORTH QUEST Birch Tumbles
+quest4_starer: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message,LiftOperatorMine2Compass'
+quest4_start: 'objective start Lift'
+tag_q4_part1: 'tag add q4_part1'
+entry_q4_part1: 'journal add q4_part1'
+LiftOperatorMine2Compass: 'run ^opsudo calcomp show ^opsudo calcomp toggle LiftOperatorMine2 enable'
+LiftOperatorMine2CompassHide: 'run ^opsudo calcomp toggle LiftOperatorMine2 disable'
+HideCompass: 'run ^opsudo calebcompass hide'
+q4_start_message: "run ^message \n&6&lQuest Complete:&f \nGold Finger&f! \n \n \n &6&lRewards: \n&8&l » &e Miners Pickaxe \n&8&l » &d 150 EXP \n&8&l » &d 150 Mining EXP \n&8&l » &e 100 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Talk to the &aLift Operator &fin the Gold Mine and travel to the Redstone Mine!"
+#FINISHING THE FOURTH QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward4: "run ^command lp user %player% permission set warp.redstonemine true ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Mining 50 ^command money give %player% 25"
+#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q4_complete: 'folder LiftOperatorMine2CompassHide,HideCompass,default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed,q4_finish_message'
+entry_q4_completed: 'journal add q4_completed'
+tag_q4_completed: 'tag add q4_completed'
+entry_q4_part1_remove: 'journal remove q4_part1'
+q4_finish_message: "run ^message \n&6&lQuest Complete:&f \nMeet Morry! \n \n \n &6&lRewards: \n&8&l » &a Access to the &cRedstone Mine \n&8&l » &d 50 EXP \n&8&l » &d 50 Mining EXP \n&8&l » &e 25 Coins"
+

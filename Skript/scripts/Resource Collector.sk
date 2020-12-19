@@ -1,0 +1,219 @@
+options:
+	prefix: &7[&eResource Collector&7] &8&l» &r
+
+	itemAdded: &a%arg-2% &fwill now be automatically put into your collector! Use &a/Collector &fto view your current resources!
+
+
+on pick up of Cobblestone:
+    if event-item is not enchanted:
+        if player has permission "Cobblestone.COLLECT":
+            execute console command "/q point %player% add items.Cobblestone %item amount of event-item%"
+            delete event-entity
+            cancel event
+on pick up of Stone:
+    if event-item is not enchanted:
+        if player has permission "Stone.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.Stone %item amount of event-item%"
+on pick up of Coal:
+    if event-item is not enchanted:
+        if player has permission "Coal.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.Coal %item amount of event-item%"
+on pick up of Iron Ingot:
+    if event-item is not enchanted:
+        if player has permission "IronIngot.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.IronIngot %item amount of event-item%"
+on pick up of Gold Ingot:
+    if event-item is not enchanted:
+        if player has permission "GoldIngot.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.GoldIngot %item amount of event-item%"
+on pick up of Redstone:
+    if event-item is not enchanted:
+        if player has permission "Redstone.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.Redstone %item amount of event-item%"
+on pick up of Lapis Lazuli:
+    if event-item is not enchanted:
+        if player has permission "LapisLazuli.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.LapisLazuli %item amount of event-item%"
+on pick up of Diamond:
+    if event-item is not enchanted:
+        if player has permission "Diamond.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.Diamond %item amount of event-item%"
+on pick up of Emerald:
+    if event-item is not enchanted:
+        if player has permission "Emerald.COLLECT":
+            delete event-entity
+            cancel event
+            execute console command "/q point %player% add items.Emerald %item amount of event-item%"
+                    
+
+command /Collector [<string>] [<string>] [<player>]:
+    executable by: console
+    trigger:
+        if arg 1 is "Cobblestone":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Cobblestone -1"
+                execute console command "/give %arg-3% Cobblestone 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Cobblestone -64"
+                execute console command "/give %arg-3% Cobblestone 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Cobblestone -512"
+                execute console command "/give %arg-3% Cobblestone 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "Stone":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Stone -1"
+                execute console command "/give %arg-3% Stone 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Stone -64"
+                execute console command "/give %arg-3% Stone 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Stone -512"
+                execute console command "/give %arg-3% Stone 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "Coal":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Coal -1"
+                execute console command "/give %arg-3% Coal 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Coal -64"
+                execute console command "/give %arg-3% Coal 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Coal -512"
+                execute console command "/give %arg-3% Coal 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "IronIngot":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.IronIngot -1"
+                execute console command "/give %arg-3% IronIngot 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.IronIngot -64"
+                execute console command "/give %arg-3% IronIngot 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.IronIngot -512"
+                execute console command "/give %arg-3% IronIngot 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "GoldIngot":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.GoldIngot -1"
+                execute console command "/give %arg-3% GoldIngot 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.GoldIngot -64"
+                execute console command "/give %arg-3% GoldIngot 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.GoldIngot -512"
+                execute console command "/give %arg-3% GoldIngot 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "Redstone":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Redstone -1"
+                execute console command "/give %arg-3% Redstone 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Redstone -64"
+                execute console command "/give %arg-3% Redstone 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Redstone -512"
+                execute console command "/give %arg-3% Redstone 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "LapisLazuli":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.LapisLazuli -1"
+                execute console command "/give %arg-3% LapisLazuli 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.LapisLazuli -64"
+                execute console command "/give %arg-3% LapisLazuli 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.LapisLazuli -512"
+                execute console command "/give %arg-3% LapisLazuli 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "Diamond":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Diamond -1"
+                execute console command "/give %arg-3% Diamond 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Diamond -64"
+                execute console command "/give %arg-3% Diamond 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Diamond -512"
+                execute console command "/give %arg-3% Diamond 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+        if arg 1 is "Emerald":    
+            if arg 2 is "1":    
+                execute console command "/q point %arg-3% add items.Emerald -1"
+                execute console command "/give %arg-3% Emerald 1"
+            if arg 2 is "64":    
+                execute console command "/q point %arg-3% add items.Emerald -64"
+                execute console command "/give %arg-3% Emerald 64"
+            if arg 2 is "512":    
+                execute console command "/q point %arg-3% add items.Emerald -512"
+                execute console command "/give %arg-3% Emerald 512"
+            else: 
+                send "&cIf you're seeing this report to Admin! (Resource Collector)"
+
+# options:
+# 	prefix: &7[&eResource Collector&7] &8&l» &r
+
+# 	itemAdded: &a%arg-2% &fwill now be automatically put into your collector! Use &a/Collector &fto view your current resources!
+
+
+# on pick up:
+#     if {resourceCollect::%player%::*} contains event-item:
+#         if event-item is not enchanted:
+#             send "%event-item%" to player
+#             add item amount of event-item to {resourceCollect::%player%::*}
+#             delete event-entity
+#             remove event-item from player
+        
+# command /bps:
+#     trigger:
+#         send "%{resourceCollect::%player%::*}%" to player
+
+# command /ResourceCollect [<text>] [<text>] [<number>]:
+#     trigger:
+#         if arg 1 is "Withdraw":
+#             remove arg-3 from {resourceCollect::%player%::*}
+#             give arg-3 {resourceCollect::%player%::*} to player
+#             send "You withdrew %arg-3% %{resourceCollect::%player%::*}%, you have %{resourceCollect::%player%::*}% left in storage!" to player        
+#         if arg 1 is "add":
+#             if player has permission "itemfilter.add":
+#                 set {_item} to itemChecker(arg-2)
+#                 if {_item} is set:
+#                     add {_item} to {resourceCollect::%player%::*}
+#                     send "{@prefix}{@itemAdded}"
+#         if arg 1 is "remove":
+#             if player has permission "itemfilter.remove":
+#                 set {_item} to itemChecker(arg-2)
+#                 if {_item} is set:
+#                     remove {_item} from {resourceCollect::%player%::*}
+#                     send "{@prefix}&a%arg-2% will no longer be automatically put into your collector!"
+#                 else:
+#                     send formatted "{@prefix}&cThat is not a valid item!"
+
+
+# command /RCS [<text>] [<text>] [<number>]:
+#     trigger:
+#         send "You withdrew %arg-3% %{resourceCollect::%player%::*}%, you have %{resourceCollect::%player%::carrot}% left in storage!" to player        
+
+

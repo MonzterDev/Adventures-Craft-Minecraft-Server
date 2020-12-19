@@ -1,0 +1,45 @@
+#################################################
+# General settings for the plugin
+#################################################
+# Seek time is how many seconds the plugin is allowed to look for a path per NPC. 10 = 10 seconds
+seek-time: 10
+
+# Max Distance is the max distance from the NPC it will allow it to search for a path. This is not the total blocks it needs to walk, but the raw distance between the NPC and the destination.
+max-distance: 500
+
+# Default language to use for the plugin.  en-default is the file that is wrote out by the plugin each startup. You can however copy that file to a new one aka sp-mx for spanish-mexico and then edit that. Put sp-mx after language and it will use that language for the plugin.
+language: en_def
+
+# Citizens Save file backup interval (in hours) -- Creates a backup upon startup as well, then every interval after.
+backup-interval: 24
+
+# Citizens backup history to keep (in days)
+backup-history: 1
+
+#################################################
+# Permission's supported in this plugin
+#################################################
+#
+#  Permission Bundles: 
+#    npcdestinations.info
+#       Allows access to commands like debug, allstatus,enginestatus,autoset
+#    npcdestinations.settings:
+#       Grants permission to all commands directly related to NPC's
+#    npcdesitnations.editown:
+#       Gives the NPC owner permission to access all commands for NPC's they own, and no others. Use npcdestinations.editown.<command> to limit that functionality.
+#
+#  individual_commands:  
+#    npcdestinations.editown.<command> or npcdestinations.editall.<command>
+#      EditOwn: Allows editing an NPC owned by the calling user
+#      EditAll: The user can edit the NPCDestination settings for any NPC with the trait.
+#
+#    <Prefix>.debug.*:
+#      Provides access to all levels of debug commands  (Granted by npcdestinations.info)
+#    <Prefix>.debug.npc:
+#      Provides access to see debug information for one NPC only.
+#    <Prefix>.debug.all:
+#      Provides access to see debug information for all NPC's
+#    <Prefix>.debug.set:
+#      Provides access to set the internal debug log level. Limit to OP's as it can eat drive space very quickly if abused
+#
+#

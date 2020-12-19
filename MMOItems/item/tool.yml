@@ -1,0 +1,501 @@
+JACKS_AXE1:
+  base:
+    material: WOODEN_AXE
+    lore:
+    - '&fJack''s bad Axe!'
+    tier: COMMON
+    unbreakable: true
+    perm-effects:
+      FAST_DIGGING: 1
+    name: '&fJack''s Worst Axe'
+    attack-damage: 15.0
+    enchants:
+      efficiency: 2.0
+JACKS_AXE2:
+  base:
+    material: STONE_AXE
+    name: '&2Jack''s Poor Axe'
+    tier: UNCOMMON
+    unbreakable: true
+    perm-effects:
+      FAST_DIGGING: 1
+    lore:
+    - '&fJack''s first Axe!'
+    attack-damage: 25.0
+    enchants:
+      efficiency: 2.0
+JACKS_AXE3:
+  base:
+    material: IRON_AXE
+    will-break: false
+    bouncing-crack: false
+    unbreakable: true
+    disable-repairing: false
+    disable-smelting: true
+    hide-enchants: false
+    tier: RARE
+    name: '&9Jack''s Decent Axe'
+    perm-effects:
+      FAST_DIGGING: 1
+    lore:
+    - '&fJack''s upgraded Axe!'
+    attack-damage: 35.0
+    enchants:
+      efficiency: 2.0
+JACKS_AXE4:
+  base:
+    material: DIAMOND_AXE
+    unbreakable: true
+    perm-effects:
+      FAST_DIGGING: 1
+    tier: LEGENDARY
+    name: '&5Jack''s Better Axe'
+    lore:
+    - '&fJack''s more upgraded Axe!'
+    attack-damage: 50.0
+    enchants:
+      efficiency: 2.0
+    gem-sockets:
+    - Uncolored
+
+JACKS_AXE5:
+  base:
+    material: GOLDEN_AXE
+    lore:
+    - '&fJack''s upgradedest Axe!'
+    tier: EXOTIC
+    unbreakable: true
+    perm-effects:
+      FAST_DIGGING: 1
+    name: '&eJack''s Best Axe!'
+    attack-damage: 65.0
+    critical-strike-power: 15.0
+    enchants:
+      efficiency: 2.0
+QUEST_COMPASS:
+  base:
+    material: COMPASS
+    name: §fQuest Compass
+    lore:
+    - §fUse this to guide you on Quests!
+    disable-interaction: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    unbreakable: true
+WOODEN_AXE:
+  base:
+    material: WOODEN_AXE
+    name: §fWooden Axe
+    unbreakable: true
+    tier: COMMON
+STONE_AXE:
+  base:
+    material: STONE_AXE
+    name: §fStone Axe
+    unbreakable: true
+    tier: COMMON
+IRON_AXE:
+  base:
+    material: IRON_AXE
+    name: §fIron Axe
+    unbreakable: true
+    tier: COMMON
+GOLDEN_AXE:
+  base:
+    material: GOLDEN_AXE
+    name: §fGold Axe
+    unbreakable: true
+    tier: COMMON
+DIAMOND_AXE:
+  base:
+    material: DIAMOND_AXE
+    name: §fDiamond Axe
+    unbreakable: true
+    tier: COMMON
+WOODEN_PICKAXE:
+  base:
+    material: WOODEN_PICKAXE
+    name: §fWooden Pickaxe
+    unbreakable: true
+    tier: COMMON
+STONE_PICKAXE:
+  base:
+    material: STONE_PICKAXE
+    name: §fStone Pickaxe
+    unbreakable: true
+    tier: COMMON
+IRON_PICKAXE:
+  base:
+    material: IRON_PICKAXE
+    name: §fIron Pickaxe
+    unbreakable: true
+    tier: COMMON
+GOLDEN_PICKAXE:
+  base:
+    material: GOLDEN_PICKAXE
+    name: §fGold Pickaxe
+    unbreakable: true
+    tier: COMMON
+DIAMOND_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §fDiamond Pickaxe
+    unbreakable: true
+    tier: COMMON
+WOODEN_HOE:
+  base:
+    material: WOODEN_HOE
+    name: §fWooden Hoe
+    unbreakable: true
+    tier: COMMON
+STONE_HOE:
+  base:
+    material: STONE_HOE
+    name: §fStone Hoe
+    unbreakable: true
+    tier: COMMON
+IRON_HOE:
+  base:
+    material: IRON_HOE
+    name: §fIron Hoe
+    unbreakable: true
+    tier: COMMON
+GOLDEN_HOE:
+  base:
+    material: GOLDEN_HOE
+    name: §fGold Hoe
+    unbreakable: true
+    tier: COMMON
+DIAMOND_HOE:
+  base:
+    material: DIAMOND_HOE
+    name: §fDiamond Hoe
+    unbreakable: true
+    tier: COMMON
+WOODEN_SHOVEL:
+  base:
+    material: WOODEN_SHOVEL
+    name: §fWooden Shovel
+    unbreakable: true
+    tier: COMMON
+STONE_SHOVEL:
+  base:
+    material: STONE_SHOVEL
+    name: §fStone Shovel
+    unbreakable: true
+    tier: COMMON
+IRON_SHOVEL:
+  base:
+    material: IRON_SHOVEL
+    name: §fIron Shovel
+    unbreakable: true
+    tier: COMMON
+GOLDEN_SHOVEL:
+  base:
+    material: GOLDEN_SHOVEL
+    name: §fGold Shovel
+    unbreakable: true
+    tier: COMMON
+DIAMOND_SHOVEL:
+  base:
+    material: DIAMOND_SHOVEL
+    name: §fDiamond Shovel
+    unbreakable: true
+    tier: COMMON
+JACKS_BESTER_AXE:
+  base:
+    material: GOLDEN_AXE
+    name: §eJack's Bester Axe
+    lore:
+    - §7Jack's Axe is even bester!
+    perm-effects:
+      FAST_DIGGING: 2
+    enchants:
+      efficiency: 5
+    unbreakable: true
+    tier: EXOTIC
+JACKS_BESTEST_AXE:
+  base:
+    material: GOLDEN_AXE
+    name: §eJack's Bestest Axe
+    lore:
+    - §7Jack's got §aHaste 3§7!
+    unbreakable: true
+    tier: EXOTIC
+    perm-effects:
+      FAST_DIGGING: 3
+MINER_PICKAXE:
+  base:
+    material: WOODEN_PICKAXE
+    name: §fMiners Pickaxe
+    unbreakable: true
+    tier: COMMON
+    lore:
+    - §7Grants §aHaste 1§7!
+    perm-effects:
+      FAST_DIGGING: 1
+    enchants:
+      efficiency: 2.0
+MINER_PICKAXE1:
+  base:
+    material: STONE_PICKAXE
+    name: §2Miners Pickaxe
+    unbreakable: true
+    tier: UNCOMMON
+    lore:
+    - §7Grants §aHaste 1§7!
+    perm-effects:
+      FAST_DIGGING: 1
+    enchants:
+      efficiency: 2.0
+MINER_PICKAXE2:
+  base:
+    material: IRON_PICKAXE
+    name: §9Miners Pickaxe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7Grants §aHaste 1§7!
+    perm-effects:
+      FAST_DIGGING: 1
+    enchants:
+      efficiency: 2.0
+MINER_PICKAXE3:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Miners Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 1§7!
+    perm-effects:
+      FAST_DIGGING: 1
+    enchants:
+      efficiency: 2.0
+    gem-sockets:
+    - Uncolored
+
+MINER_PICKAXE4:
+  base:
+    material: GOLDEN_PICKAXE
+    name: §eMiners Pickaxe
+    unbreakable: true
+    tier: EXOTIC
+    lore:
+    - §7Grants §aHaste 1§7!
+    perm-effects:
+      FAST_DIGGING: 1
+    enchants:
+      efficiency: 2.0
+CEMENTED_STONE_PICKAXE:
+  base:
+    material: IRON_PICKAXE
+    name: §9Cemented Stone Pickaxe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7This stone pickaxe is heavily reinforced with cement!
+    enchants:
+      efficiency: 3.0
+EMERALD_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Emerald Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Since when has Emeralds been blue?
+    enchants:
+      efficiency: 4.0
+      fortune: 2.0
+    gem-sockets:
+    - Uncolored
+
+GEORGES_PICKAXE:
+  base:
+    material: GOLDEN_PICKAXE
+    name: §9Georges Pickaxe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7Grants §aHaste 3§7!
+    perm-effects:
+      FAST_DIGGING: 3
+    enchants:
+      efficiency: 3.0
+GEORGES_PICKAXE2:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Georges Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 3§7!
+    perm-effects:
+      FAST_DIGGING: 3
+    enchants:
+      efficiency: 5.0
+    gem-sockets:
+    - Uncolored
+
+LENNYS_PICKAXE:
+  base:
+    material: IRON_PICKAXE
+    name: §9Lennys Pickaxe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7Grants §aHaste 5§7!
+    perm-effects:
+      FAST_DIGGING: 5
+    enchants:
+      efficiency: 2.0
+LENNYS_PICKAXE2:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Lennys Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 6§7!
+    perm-effects:
+      FAST_DIGGING: 6
+    enchants:
+      efficiency: 3.0
+    gem-sockets:
+    - Uncolored
+
+MORRYS_PICKAXE:
+  base:
+    material: IRON_PICKAXE
+    name: §9Lennys Pickaxe
+    unbreakable: true
+    hide-enchants: true
+    tier: RARE
+    lore:
+    - §7Blessed with an &aEnchantment
+    - §7Fortune II
+    enchants:
+      efficiency: 3.0
+MORRYS_PICKAXE2:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Lennys Pickaxe
+    unbreakable: true
+    hide-enchants: true
+    tier: LEGENDARY
+    lore:
+    - §7Blessed with an &aEnchantment
+    - §7Fortune III
+    enchants:
+      efficiency: 5.0
+    gem-sockets:
+    - Uncolored
+
+LUKES_AXE:
+  base:
+    material: GOLDEN_AXE
+    name: §9Lukes Axe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7Grants §aHaste 3§7!
+    perm-effects:
+      FAST_DIGGING: 3
+    enchants:
+      efficiency: 3.0
+LUKES_AXE2:
+  base:
+    material: DIAMOND_AXE
+    name: §5Lukes Axe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 3§7!
+    perm-effects:
+      FAST_DIGGING: 3
+    enchants:
+      efficiency: 5.0
+    gem-sockets:
+    - Uncolored
+JENNYS_AXE:
+  base:
+    material: IRON_AXE
+    name: §9Jennys Axe
+    unbreakable: true
+    tier: RARE
+    lore:
+    - §7Grants §aHaste 5§7!
+    perm-effects:
+      FAST_DIGGING: 5
+    enchants:
+      efficiency: 2.0
+JENNYS_AXE2:
+  base:
+    material: DIAMOND_AXE
+    name: §5Jennys Axe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 6§7!
+    perm-effects:
+      FAST_DIGGING: 6
+    enchants:
+      efficiency: 4.0
+    gem-sockets:
+    - Uncolored
+
+MAXES_AXE:
+  base:
+    material: DIAMOND_AXE
+    name: §9Maxes Axe
+    unbreakable: true
+    hide-enchants: true
+    tier: RARE
+    enchants:
+      efficiency: 6.0
+    movement-speed: 0.025
+MAXES_AXE2:
+  base:
+    material: GOLDEN_AXE
+    name: §5Maxes Axe
+    unbreakable: true
+    hide-enchants: true
+    tier: LEGENDARY
+    enchants:
+      efficiency: 6.0
+    movement-speed: 0.05
+    gem-sockets:
+    - Uncolored
+
+CORRUPT_PICKAXE:
+  base:
+    material: NETHERITE_PICKAXE
+    name: §5Corrupt Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7May corrupt User
+    - §7use with §ecaution§7!
+    enchants:
+      efficiency: 5.0
+    gem-sockets:
+    - Uncolored
+
+DRACS_PICKAXE:
+  base:
+    material: DIAMOND_PICKAXE
+    name: §5Dracs Pickaxe
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - §7Grants §aHaste 2§7!
+    perm-effects:
+      FAST_DIGGING: 2
+    enchants:
+      efficiency: 6.0
+    gem-sockets:
+    - Uncolored
+    defense: 10

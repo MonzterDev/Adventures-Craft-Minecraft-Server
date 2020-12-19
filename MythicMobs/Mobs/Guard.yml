@@ -1,0 +1,28 @@
+VillageGuard:
+  Type: IRON_GOLEM
+  Display: '&7[&fLVL 100&7] &aGuard'
+  Damage: 10000
+  Health: 10000
+  Faction: VillageGuards
+  Disguise:
+    Type: PLAYER
+    Player: '&7[&fLVL 100&7] &aGuard'
+    Skin: 0cel0t
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomstroll
+  - 2 meleeattack
+  - 3 float
+  - 4 opendoors
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters
+  Modules:
+    ThreatTable: false
+  Options:
+    AlwaysShowName: true
+    Despawn: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MovementSpeed: 0.36
+    Silent: true

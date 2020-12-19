@@ -1,0 +1,45 @@
+configversion: 2
+plugins:
+  force-enable-later: []
+  ensure-enable: []
+hooks:
+  prevent-add: []
+  set-speed:
+    enabled: false
+    fly-speed: 0.1
+    walk-speed: 0.2
+  citizens2:
+    enabled: true
+  player-class:
+    enabled: false
+    exempt-names: []
+    exempt-all: true
+    class-names:
+    - SpoutCraftPlayer
+    - SpoutPlayer
+    - SpoutPlayerSnapshot
+    - CraftPlayer
+    - SpoutClientPlayer
+    super-class: true
+  block-break:
+    enabled: true
+    exempt-names:
+    - ArtificialBlockBreakEvent
+    - FakeBlockBreakEvent
+    - MagicSpellsBlockBreakEvent
+  block-place:
+    enabled: true
+    exempt-names:
+    - ArtificialBlockPlaceEvent
+    - MagicSpellsBlockPlaceEvent
+  insta-break:
+    enabled: true
+  entity-damage-by-entity:
+    enabled: true
+    exempt-names:
+    - WeaponDamageEntityEvent
+    - MagicSpellsEntityDamageByEntityEvent
+  player-interact:
+    enabled: true
+    exempt-names:
+    - MagicSpellsPlayerInteractEvent

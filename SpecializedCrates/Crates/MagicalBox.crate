@@ -1,0 +1,143 @@
+enabled: true
+obtain-method: STATIC
+inventory-name: '&8Magical Box'
+
+display:
+  type: Block
+
+crate:
+  material: CHEST
+  name: '&f&l»&7&l» &8Magical Box &7&l«&f&l«'
+  glow: false
+  amount: 1
+  damage: 0
+
+key:
+  require: true
+  material: TRIPWIRE_HOOK
+  name: '&f&l»&7&l» &8Magical Box &7&l«&f&l«'
+  glow: false
+  amount: 1
+  damage: 0
+
+rewards:
+- Resolve
+- Resolve1
+- Fireball
+- Fireball1
+- Sparkle
+- Sparkle1
+- Bunny_Mode
+- Bunny_Mode1
+- Burning_Hands
+- Freezing_Curse
+- Burning_Hands1
+- Freezing_Curse1
+- Shulker_Missile
+- Shulker_Missile1
+- Arcane_Hail
+- Arcane_Hail1
+- Frozen_Aura
+- Frozen_Aura1
+- Magma_Fissure
+- Magma_Fissure1
+- Ice_Crystal
+- Ice_Crystal1
+- Corrupted_Fangs1
+- Corrupted_Fangs2
+- Black_Hole
+- Black_Hole1
+- Bouncy_Fireball
+- Bouncy_Fireball1
+- Cursed_Beam
+- Cursed_Beam1
+- Ender_Meteor
+- Ender_Meteor1
+- Corrupt
+- Corrupt1
+- Arcane_Rift
+- Arcane_Rift1
+- Contamination_Ritual
+- Contamination_Ritual1
+
+hologram:
+  reward-hologram: '&a%reward%'
+  lines:
+  - '&f&l»&7&l» &c&lMagical Box &7&l«&f&l«'
+  animation:
+    prefixes: []
+    type: NONE
+    speed: 20
+  reward-hologram-duration: 60
+  reward-hologram-yoffset: 0.0
+
+play:
+  particles:
+    '1':
+      type: FLAME
+      range-x: -0.1
+      range-y: 0.0
+      range-z: -0.1
+      speed: 0.05
+      amount: 100
+      animation: NONE
+      center-x: 0.0
+      center-y: -1.5
+      center-z: 0.0
+      color:
+        enabled: false
+        red: 255
+        green: 0
+        blue: 0
+open:
+  crate-animation: INV_CSGO
+
+  tier-actions-override-defaults: false
+
+  particles:
+    '1':
+      type: LAVA
+      range-x: 1.0
+      range-y: 1.0
+      range-z: 1.0
+      speed: 1.0
+      amount: 10
+      animation: NONE
+      center-x: 0.0
+      center-y: 0.0
+      center-z: 0.0
+      color:
+        enabled: false
+        red: 255
+        green: 0
+        blue: 0
+    '2':
+      type: HEART
+      range-x: 1.0
+      range-y: 1.0
+      range-z: 1.0
+      speed: 1.0
+      amount: 10
+      animation: NONE
+      center-x: 0.0
+      center-y: 0.0
+      center-z: 0.0
+      color:
+        enabled: false
+        red: 255
+        green: 0
+        blue: 0
+
+  fireworks:
+  - RED;ORANGE;GREEN;PURPLE, black, true, true, BALL_LARGE, 0
+
+  sounds:
+  - ENTITY_PLAYER_LEVELUP, 10, 10
+cooldown: 0
+cost: -1
+allow-skip-animation: true
+hologram-offset: 0.0
+auto-close: true
+reward-display:
+  type: IN_ORDER
+  require-permission: false

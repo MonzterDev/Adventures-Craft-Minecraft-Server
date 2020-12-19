@@ -1,0 +1,7 @@
+EnterFarm: location 177;20;-191;Spawn 9999 events:tag_q1_part2,entry_q1_part2,q1_part2_start,q1_part2_start_message,FarmCompassHide,ForestCompass conditions:Farm
+EnterForest: location 281;16;-36;Spawn 9999 events:tag_q1_part3,entry_q1_part3,q1_part3_start,q1_part3_start_message,ForestCompassHide,MineCompass conditions:Forest
+EnterMine: location -41;32;-885;Spawn 9999 events:tag_q1_part4,entry_q1_part4,q1_part4_start,q1_part4_start_message,MineCompassHide,GraveyardCompass conditions:Mine
+EnterGraveyard: location -141;16;48;Spawn 9999 events:tag_q1_part5,entry_q1_part5,q1_part5_start,q1_part5_start_message,GraveyardCompassHide,BankCompass conditions:Graveyard
+Bank: location -32;16;-49;Spawn 3 events:openBank,tag_q1_part6,entry_q1_part6,q1_part6_start,q1_part6_start_message,q5_reward_message,BankCompassHide,EnterTownHallCompass
+EnterTownHall: location -79;15;-50;Spawn 5 events:tag_q1_part7,entry_q1_part7,q1_part7_start,q1_part7_start_message,EnterTownHallCompassHide,BuyHomeCompass
+BuyHome: npcinteract 7 events:tag_q1_complete,entry_q1_complete,BuyHomeCompassHide

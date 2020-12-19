@@ -1,0 +1,1307 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fTester Shop §7§l«§f§l«
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  BORGS_BOX:
+    output:
+      type: CONSUMABLE
+      id: BORGS_BOX
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HORSE_MOUNT:
+    output:
+      type: MOUNT
+      id: HORSE1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HORSE_MOUNT2:
+    output:
+      type: MOUNT
+      id: HORSE2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HORSE_MOUNT3:
+    output:
+      type: MOUNT
+      id: HORSE3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_SKELETON1:
+    output:
+      type: COMPANION
+      id: PET_SKELETON1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_SKELETONARCHER:
+    output:
+      type: COMPANION
+      id: PET_SKELETONARCHER
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_LOSTSOUL:
+    output:
+      type: COMPANION
+      id: PET_LOSTSOUL
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_UNDEADSPIDER:
+    output:
+      type: COMPANION
+      id: PET_UNDEADSPIDER
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_REAPER:
+    output:
+      type: COMPANION
+      id: PET_REAPER
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_ALPHASOUL:
+    output:
+      type: COMPANION
+      id: PET_ALPHASOUL
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_UNDEADCASTER:
+    output:
+      type: COMPANION
+      id: PET_UNDEADCASTER
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PET_BOSS:
+    output:
+      type: COMPANION
+      id: PET_BOSS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  GRAVE_DIGGER:
+    output:
+      type: HAMMER
+      id: GRAVE_DIGGER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BONE_SWORD2:
+    output:
+      type: SWORD
+      id: BONE_SWORD2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_GEM2:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_GEM3:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_CATALYST:
+    output:
+      type: Catalyst
+      id: UNDEAD_CATALYST
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEAD_CATALYST:
+    output:
+      type: Catalyst
+      id: DEAD_CATALYST
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  TARGETED_FIREBALL:
+    output:
+      type: WAND
+      id: TARGETED_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SPARKLE:
+    output:
+      type: WAND
+      id: SPARKLE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BUNNY_MODE:
+    output:
+      type: WAND
+      id: BUNNY_MODE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCANE_RIFT:
+    output:
+      type: WAND
+      id: ARCANE_RIFT
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BURNING_HANDS:
+    output:
+      type: WAND
+      id: BURNING_HANDS
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FREEZING_CURSE:
+    output:
+      type: WAND
+      id: FREEZING_CURSE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SHULKER_MISSILE:
+    output:
+      type: WAND
+      id: SHULKER_MISSILE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCANE_HAIL:
+    output:
+      type: WAND
+      id: ARCANE_HAIL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FROZEN_AURA:
+    output:
+      type: WAND
+      id: FROZEN_AURA
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MAGMA_FISSURE:
+    output:
+      type: WAND
+      id: MAGMA_FISSURE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ICE_CRYSTAL:
+    output:
+      type: WAND
+      id: ICE_CRYSTAL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CORRUPTED_FANGS:
+    output:
+      type: WAND
+      id: CORRUPTED_FANGS
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BLACK_HOLE:
+    output:
+      type: WAND
+      id: BLACK_HOLE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BOUNCY_FIREBALL:
+    output:
+      type: WAND
+      id: BOUNCY_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CURSED_BEAM:
+    output:
+      type: WAND
+      id: CURSED_BEAM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LIFE_ENDER:
+    output:
+      type: WAND
+      id: LIFE_ENDER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CORRUPT:
+    output:
+      type: WAND
+      id: CORRUPT
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CONTAMINATION:
+    output:
+      type: WAND
+      id: CONTAMINATION
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  TARGETED_FIREBALL1:
+    output:
+      type: SPELL
+      id: TARGETED_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SPARKLE1:
+    output:
+      type: SPELL
+      id: SPARKLE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BUNNY_MODE1:
+    output:
+      type: SPELL
+      id: BUNNY_MODE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCANE_RIFT1:
+    output:
+      type: SPELL
+      id: ARCANE_RIFT
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BURNING_HANDS1:
+    output:
+      type: SPELL
+      id: BURNING_HANDS
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FREEZING_CURSE1:
+    output:
+      type: SPELL
+      id: FREEZING_CURSE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SHULKER_MISSILE1:
+    output:
+      type: SPELL
+      id: SHULKER_MISSILE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCANE_HAIL1:
+    output:
+      type: SPELL
+      id: ARCANE_HAIL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FROZEN_AURA1:
+    output:
+      type: SPELL
+      id: FROZEN_AURA
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MAGMA_FISSURE1:
+    output:
+      type: SPELL
+      id: MAGMA_FISSURE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MAGICAL_PATH1:
+    output:
+      type: SPELL
+      id: MAGICAL_PATH
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ICE_CRYSTAL1:
+    output:
+      type: SPELL
+      id: ICE_CRYSTAL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CORRUPTED_FANGS1:
+    output:
+      type: SPELL
+      id: CORRUPTED_FANGS
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BLACK_HOLE1:
+    output:
+      type: SPELL
+      id: BLACK_HOLE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BOUNCY_FIREBALL1:
+    output:
+      type: SPELL
+      id: BOUNCY_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CURSED_BEAM1:
+    output:
+      type: SPELL
+      id: CURSED_BEAM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LIFE_ENDER1:
+    output:
+      type: SPELL
+      id: LIFE_ENDER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CORRUPT1:
+    output:
+      type: SPELL
+      id: CORRUPT
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  CONTAMINATION1:
+    output:
+      type: SPELL
+      id: CONTAMINATION
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenTotem:
+    output:
+      type: TOTEM
+      id: REGEN_TOTEM
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenTotem2:
+    output:
+      type: TOTEM
+      id: REGEN_TOTEM2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenTotem3:
+    output:
+      type: TOTEM
+      id: REGEN_TOTEM3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  STRENGTHTotem:
+    output:
+      type: TOTEM
+      id: STRENGTH_TOTEM
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  STRENGTHTotem2:
+    output:
+      type: TOTEM
+      id: STRENGTH_TOTEM2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  STRENGTHTotem3:
+    output:
+      type: TOTEM
+      id: STRENGTH_TOTEM3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftTotem:
+    output:
+      type: TOTEM
+      id: SWIFT_TOTEM
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftTotem2:
+    output:
+      type: TOTEM
+      id: SWIFT_TOTEM2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftTotem3:
+    output:
+      type: TOTEM
+      id: SWIFT_TOTEM3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftTotem4:
+    output:
+      type: TOTEM
+      id: SWIFT_TOTEM4
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JumpTotem:
+    output:
+      type: TOTEM
+      id: JUMP_TOTEM
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JumpTotem2:
+    output:
+      type: TOTEM
+      id: JUMP_TOTEM2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JumpTotem3:
+    output:
+      type: TOTEM
+      id: JUMP_TOTEM3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HealingStew:
+    output:
+      type: STEW
+      id: HEALING_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HealingStew2:
+    output:
+      type: STEW
+      id: HEALING_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HealingStew3:
+    output:
+      type: STEW
+      id: HEALING_STEW3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ManaStew:
+    output:
+      type: STEW
+      id: MANA_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ManaStew2:
+    output:
+      type: STEW
+      id: MANA_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ManaStew3:
+    output:
+      type: STEW
+      id: MANA_STEW3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenStew:
+    output:
+      type: STEW
+      id: REGEN_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenStew2:
+    output:
+      type: STEW
+      id: REGEN_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RegenStew3:
+    output:
+      type: STEW
+      id: REGEN_STEW3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  StrengthStew:
+    output:
+      type: STEW
+      id: STRENGTH_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  StrengthStew2:
+    output:
+      type: STEW
+      id: STRENGTH_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  StrengthStew3:
+    output:
+      type: STEW
+      id: STRENGTH_STEW3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftStew:
+    output:
+      type: STEW
+      id: SWIFT_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftStew2:
+    output:
+      type: STEW
+      id: SWIFT_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SwiftStew3:
+    output:
+      type: STEW
+      id: SWIFT_STEW3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JumpStew:
+    output:
+      type: STEW
+      id: JUMP_STEW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JumpStew2:
+    output:
+      type: STEW
+      id: JUMP_STEW2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MINING1:
+    output:
+      type: CATALYST
+      id: MINING1
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MINING2:
+    output:
+      type: CATALYST
+      id: MINING2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MINING3:
+    output:
+      type: CATALYST
+      id: MINING3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MinerSnack1:
+    output:
+      type: STEW
+      id: MINERS_SNACK
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MinerSnack2:
+    output:
+      type: STEW
+      id: MINERS_SNACK2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MinerSnack3:
+    output:
+      type: STEW
+      id: MINERS_SNACK3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MinerSnack4:
+    output:
+      type: STEW
+      id: MINERS_SNACK4
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  hells-fury-upgrade:
+    item:
+      type: WHIP
+      id: HELLS_FURRY
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCHER_AMULET:
+    output:
+      type: CATALYST
+      id: ARCHER_AMULET
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCHER_AMULET2:
+    output:
+      type: CATALYST
+      id: ARCHER_AMULET2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCHER_AMULET3:
+    output:
+      type: CATALYST
+      id: ARCHER_AMULET3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ARCHER_AMULET4:
+    output:
+      type: CATALYST
+      id: ARCHER_AMULET4
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  EXTINGUISHER:
+    output:
+      type: ACCESSORY
+      id: EXTINGUISHER
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FLAME_BOW:
+    output:
+      type: BOW
+      id: FLAME_BOW
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  NECROMANCER_STAFF:
+    output:
+      type: STAFF
+      id: NECROMANCER_STAFF
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  NECROMANCER_STAFF2:
+    output:
+      type: STAFF
+      id: NECROMANCER_STAFF2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  NECROMANCER_STAFF3:
+    output:
+      type: STAFF
+      id: NECROMANCER_STAFF3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  COMMON_GEM_BASE:
+    output:
+      type: MATERIAL
+      id: COMMON_GEM_BASE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RARE_GEM_BASE:
+    output:
+      type: MATERIAL
+      id: RARE_GEM_BASE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  EXOTIC_GEM_BASE:
+    output:
+      type: MATERIAL
+      id: EXOTIC_GEM_BASE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MANA_GEM:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MANA_GEM2:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MANA_GEM3:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DAMAGE_GEM:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DAMAGE_GEM2:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DAMAGE_GEM3:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEFENSE_GEM:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEFENSE_GEM2:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HEALTH_GEM:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  HEALTH_GEM2:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  OAK_BARK:
+    output:
+      type: ACCESSORY
+      id: OAK_BARK
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RUNNING_SPRITE:
+    output:
+      type: ACCESSORY
+      id: RUNNING_SPRITE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SPEEDY_JUNGLE_WORKER:
+    output:
+      type: ACCESSORY
+      id: SPEEDY_JUNGLE_WORKER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FAST_HITTER:
+    output:
+      type: ACCESSORY
+      id: FAST_HITTER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ROOTING:
+    output:
+      type: WAND
+      id: ROOTING
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MACHETE:
+    output:
+      type: DAGGER
+      id: MACHETE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LOG_HELMET:
+    output:
+      type: ARMOR
+      id: LOG_HELMET
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LOG_CHESTPLATE:
+    output:
+      type: ARMOR
+      id: LOG_CHESTPLATE
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LOG_LEGGINGS:
+    output:
+      type: ARMOR
+      id: LOG_LEGGINGS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LOG_BOOTS:
+    output:
+      type: ARMOR
+      id: LOG_BOOTS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  OAK_BARK2:
+    output:
+      type: ACCESSORY
+      id: OAK_BARK2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ACACIA_HEART:
+    output:
+      type: ACCESSORY
+      id: ACACIA_HEART
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SPEEDY_JUNGLE_WORKER2:
+    output:
+      type: ACCESSORY
+      id: SPEEDY_JUNGLE_WORKER2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FAST_HITTER2:
+    output:
+      type: ACCESSORY
+      id: FAST_HITTER2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RUNNING_SPRITE2:
+    output:
+      type: ACCESSORY
+      id: RUNNING_SPRITE2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  OAK_BARK3:
+    output:
+      type: ACCESSORY
+      id: OAK_BARK3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ACACIA_HEART2:
+    output:
+      type: ACCESSORY
+      id: ACACIA_HEART2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  OAK_BARK4:
+    output:
+      type: ACCESSORY
+      id: OAK_BARK4
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FAST_HITTER3:
+    output:
+      type: ACCESSORY
+      id: FAST_HITTER3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RUNNING_SPRITE3:
+    output:
+      type: ACCESSORY
+      id: RUNNING_SPRITE3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  ACACIA_HEART3:
+    output:
+      type: ACCESSORY
+      id: ACACIA_HEART3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  OAK_BARK5:
+    output:
+      type: ACCESSORY
+      id: OAK_BARK5
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  JACKS_BESTEST_AXE:
+    output:
+      type: TOOL
+      id: JACKS_BESTEST_AXE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  RICH_AXE:
+    output:
+      type: AXE
+      id: RICH_AXE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  richest-axe-upgrade:
+    item:
+      type: AXE
+      id: RICH_AXE
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  log-helmet-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_HELMET
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  log-chestplate-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_CHESTPLATE
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  log-leggings-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_LEGGINGS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  log-boots-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_BOOTS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FARMER_HAT:
+    item:
+      type: ARMOR
+      id: FARMER_HAT
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FARMER_SHIRT:
+    item:
+      type: ARMOR
+      id: FARMER_SHIRT
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FARMER_PANTS:
+    item:
+      type: ARMOR
+      id: FARMER_PANTS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  FARMER_SHOES:
+    item:
+      type: ARMOR
+      id: FARMER_SHOES
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  SEED_STAFF:
+    output:
+      type: STAFF
+      id: SEED_STAFF
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  WHEAT_STAFF:
+    output:
+      type: STAFF
+      id: WHEAT_STAFF
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PARROT_CHEST:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PARROT_CHEST2:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  PARROT_CHEST3:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MELON_HAT:
+    output:
+      type: ARMOR
+      id: MELON_HAT
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MELON_HAT2:
+    output:
+      type: ARMOR
+      id: MELON_HAT2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  MELON_HAT3:
+    output:
+      type: ARMOR
+      id: MELON_HAT3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  POWERFUL_NECKLACE:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  POWERFUL_NECKLACE2:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  POWERFUL_NECKLACE3:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LUCKY_STRIKER:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LUCKY_STRIKER2:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  LUCKY_STRIKER3:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEEP_IMPACTOR:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEEP_IMPACTOR2:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  DEEP_IMPACTOR3:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR3
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_HEAD:
+    output:
+      type: ARMOR
+      id: UNDEAD_HEAD
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_CHEST:
+    output:
+      type: ARMOR
+      id: UNDEAD_CHEST
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_LEGS:
+    output:
+      type: ARMOR
+      id: UNDEAD_LEGS
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_FEET:
+    output:
+      type: ARMOR
+      id: UNDEAD_FEET
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  BONE_SWORD1:
+    output:
+      type: SWORD
+      id: BONE_SWORD1
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []
+  UNDEAD_GEM:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=1}
+    conditions: []

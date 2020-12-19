@@ -1,0 +1,159 @@
+# / ===================================================== \
+# |  This is the main configuration file of LastLoginAPI  |
+# \ ===================================================== /
+#
+# For any problem be sure to:
+# - Read the entire documentation on: https://alessiodp.com/docs/lastloginapi/
+# - Join our Discord for further help: https://discord.alessiodp.com/
+#
+
+# / =============================== \
+# |      LASTLOGINAPI SETTINGS      |
+# \ =============================== /
+lastloginapi:
+  # [Check for plugins updates]
+  # LastLoginAPI will check for updates when the server finishes to load.
+  updates:
+    check: true
+    warn: true
+
+  # [Enable logging system]
+  # => debug:      Print debug messages
+  # => save-file:  Save any log into a text file
+  logging:
+    debug: false
+    save-file:
+      enable: false
+      format: "%date% [%time%] %message%\n"
+      file: log.txt
+
+  # [Enable BungeeCord support]
+  # Everything is handled by LastLoginAPI in BungeeCord
+  # This plugin will only get data from the database without write into it
+  # Be sure to use a remote database synchronized with BungeeCord version
+  bungeecord:
+    enable: false
+
+  authme:
+    # Update timestamps only on successful login
+    enable: false
+
+  login-security:
+    # Update timestamps only on successful login
+    enable: false
+
+
+# / =============================== \
+# |        STORAGE  SETTINGS        |
+# \ =============================== /
+storage:
+  # [Database type]
+  # What type of storage the plugin should use? Database storage types:
+  # => mysql      | [Remote] Save the data into a MySQL database
+  # => sqlite     | [File]   Save the data into a SQLite database
+  # => h2         | [File]   Save the data into a H2 database (default)
+  database-storage-type: h2
+
+  storage-settings:
+    # [General SQL settings]
+    # General settings for sql databases, recommended to use default values
+    general-sql-settings:
+      prefix: 'lastloginapi_'
+
+    # [SQLite settings]
+    sqlite:
+      database-file: database.db
+
+    # [H2 settings]
+    h2:
+      database-file: database
+
+    # [MySQL settings]
+    mysql:
+      address: localhost
+      port: '3306'
+      database: database
+      username: username
+      password: password
+      # Size of the connection pool
+      pool-size: 10
+      # Lifetime of each connection, in milliseconds (Default: 30 minutes = 1800000ms)
+      connection-lifetime: 1800000
+      # Property used to alert when the connection is not using a valid SSL certificate
+      use-ssl: false
+      charset: 'utf8'
+
+
+# / =============================== \
+# |      PLACEHOLDERS SETTINGS      |
+# \ =============================== /
+placeholders:
+  # Formats:
+  # => format: The text to show when the player is offline
+  # => online: The text to show when the player is online
+  # => unknown: The text to show when a player isn't found
+  #   You can use %time_elapsed% and %date% to insert above formats
+  # Time elapsed formats:
+  # => large    = More than 1 day
+  # => medium   = More than 1 hour
+  # => small    = More than 1 minute
+  # => smallest = More than 1 second
+  name:
+    # The name of the player
+    format: '%name%'
+    format-unknown: 'Unknown'
+
+  last-login-date:
+    # Date of latest login
+    format: 'yyyy-MM-dd'
+    format-online: 'Online'
+    format-unknown: 'Unknown'
+
+  last-login-elapsed:
+    format:
+      large: "d'd' H'h'"
+      medium: "H'h' m'm'"
+      small: "m'm' s's'"
+      smallest: "s's'"
+    format-online:
+      large: "d'd' H'h'"
+      medium: "H'h' m'm'"
+      small: "m'm' s's'"
+      smallest: "s's'"
+    format-unknown: 'Unknown'
+
+  last-logout-date:
+    # Date of latest logout
+    format: 'yyyy-MM-dd'
+    format-unknown: 'Unknown'
+
+  last-logout-elapsed:
+    format:
+      large: "d'd' H'h'"
+      medium: "H'h' m'm'"
+      small: "m'm' s's'"
+      smallest: "s's'"
+    format-unknown: 'Unknown'
+
+
+# / =============================== \
+# |        COMMANDS SETTINGS        |
+# \ =============================== /
+commands:
+  # Enable tab support (/llapi <tab> to see every allowed command)
+  tab-support: true
+  llapi-description: LastLoginAPI help page
+  main-commands:
+    help: help
+    llapi: llapi
+    info: info
+    reload: reload
+    version: version
+  order:
+    - help
+    - info
+    - reload
+    - version
+
+dont-edit-this:
+  version: 3

@@ -1,0 +1,208 @@
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "tool":
+		if player's tool is diamond axe:
+			set the result to "tool"
+		if player's tool is gold axe:
+			set the result to "tool"
+		if player's tool is iron axe:
+			set the result to "tool"
+		if player's tool is stone axe:
+			set the result to "tool"
+		if player's tool is wooden axe:
+			set the result to "tool"
+		if player's tool is diamond pickaxe:
+			set the result to "tool"
+		if player's tool is gold pickaxe:
+			set the result to "tool"
+		if player's tool is iron pickaxe:
+			set the result to "tool"
+		if player's tool is stone pickaxe:
+			set the result to "tool"
+		if player's tool is wooden pickaxe:
+			set the result to "tool"
+		if player's tool is diamond hoe:
+			set the result to "tool"
+		if player's tool is gold hoe:
+			set the result to "tool"
+		if player's tool is iron hoe:
+			set the result to "tool"
+		if player's tool is stone hoe:
+			set the result to "tool"
+		if player's tool is wooden hoe:
+			set the result to "tool"
+		if player's tool is diamond shovel:
+			set the result to "tool"
+		if player's tool is gold shovel:
+			set the result to "tool"
+		if player's tool is iron shovel:
+			set the result to "tool"
+		if player's tool is stone shovel:
+			set the result to "tool"
+		if player's tool is wooden shovel:
+			set the result to "tool"
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "weapon":
+		if player's tool contains diamond axe:
+			set the result to "weapon"
+		if player's tool is gold axe:
+			set the result to "weapon"
+		if player's tool is iron axe:
+			set the result to "weapon"
+		if player's tool is stone axe:
+			set the result to "weapon"
+		if player's tool is wooden axe:
+			set the result to "weapon"
+		if player's tool is diamond sword:
+			set the result to "weapon"
+		if player's tool is gold sword:
+			set the result to "weapon"
+		if player's tool is iron sword:
+			set the result to "weapon"
+		if player's tool is stone sword:
+			set the result to "weapon"
+		if player's tool is wooden sword:
+			set the result to "weapon"
+		if player's tool is diamond hoe:
+			set the result to "weapon"
+		if player's tool is gold hoe:
+			set the result to "weapon"
+		if player's tool is iron hoe:
+			set the result to "weapon"
+		if player's tool is stone hoe:
+			set the result to "weapon"
+		if player's tool is wooden hoe:
+			set the result to "weapon"
+		if player's tool is diamond shovel:
+			set the result to "weapon"
+		if player's tool is gold shovel:
+			set the result to "weapon"
+		if player's tool is iron shovel:
+			set the result to "weapon"
+		if player's tool is stone shovel:
+			set the result to "weapon"
+		if player's tool is wooden shovel:
+			set the result to "weapon"
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "bow":
+		if player's tool is bow:
+			set the result to "bow"
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "helmet":
+		if player's tool is diamond helmet:
+			set the result to "helmet"
+		if player's tool is gold helmet:
+			set the result to "helmet"
+		if player's tool is iron helmet:
+			set the result to "helmet"
+		if player's tool is chainmail helmet:
+			set the result to "helmet"
+		if player's tool is leather helmet:
+			set the result to "helmet"
+		if player's tool is player head:
+			set the result to "helmet"
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "chestplate":
+		if player's tool is diamond chestplate:
+			set the result to "chestplate"
+		if player's tool is gold chestplate:
+			set the result to "chestplate"
+		if player's tool is iron chestplate:
+			set the result to "chestplate"
+		if player's tool is chainmail chestplate:
+			set the result to "chestplate"
+		if player's tool is leather chestplate:
+			set the result to "chestplate"
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "leggings":
+		if player's tool is diamond leggings:
+			set the result to "leggings"
+		if player's tool is gold leggings:
+			set the result to "leggings"
+		if player's tool is iron leggings:
+			set the result to "leggings"
+		if player's tool is chainmail leggings:
+			set the result to "leggings"
+		if player's tool is leather leggings:
+			set the result to "leggings"
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "boots":
+		if player's tool is diamond boots:
+			set the result to "boots"
+		if player's tool is gold boots:
+			set the result to "boots"
+		if player's tool is iron boots:
+			set the result to "boots"
+		if player's tool is chainmail boots:
+			set the result to "boots"
+		if player's tool is leather boots:
+			set the result to "boots"
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "login":
+		set the result to "%{claimed::%player%}%"
+
+
+#Locations
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "location":
+		if player is in region "Town":
+			set the result to "&aEarth, &aTown"
+
+		if player is in region "Farm":
+			set the result to "&aEarth, &aFarm"
+		if player is in region "Valley":
+			set the result to "&aEarth, &cValley"
+		if player is in region "Estate":
+			set the result to "&aEarth, &aEstate"
+		if player is in region "goblin_town":
+			set the result to "&aEarth, &cGoblin Town"
+		if player is in region "spirit_grounds":
+			set the result to "&aEarth, &dSpirit Grounds"
+
+		if player is in region "Forest":
+			set the result to "&aEarth, &aForest"
+		if player is in region "Oak_Forest":
+			set the result to "&aEarth, &aOak Forest"
+		if player is in region "Birch_Forest":
+			set the result to "&aEarth, &aBirch Forest"
+		if player is in region "DarkOak_Forest":
+			set the result to "&aEarth, &aDark Oak Forest"
+		if player is in region "Spruce_Forest":
+			set the result to "&aEarth, &aSpruce Forest"
+		if player is in region "Jungle_Forest":
+			set the result to "&aEarth, &aJungle Forest"
+		if player is in region "Acacia_Forest":
+			set the result to "&aEarth, &aAcacia Forest"
+		if player is in region "Hive":
+			set the result to "&aEarth, &eHive"
+
+		if player is in region "Mine":
+			set the result to "&aEarth, &aCoal Mine"
+		if player is in region "Gold":
+			set the result to "&aEarth, &aGold Mine"
+		if player is in region "Redstone":
+			set the result to "&aEarth, &aRedstone Mine"
+		if player is in region "Lapis":
+			set the result to "&aEarth, &aLapis Mine"
+		if player is in region "Diamond":
+			set the result to "&aEarth, &aDiamond Mine"
+		if player is in region "Emerald":
+			set the result to "&aEarth, &aEmerald Mine"
+			
+		if player is in region "Graveyard":
+			set the result to "&aEarth, &2Graveyard"
+		if player is in region "Courtyard":
+			set the result to "&aEarth, &cCourtyard"
+		if player is in region "Castle":
+			set the result to "&aEarth, &cCastle"
+		if player is in region "Hell":
+			set the result to "&aEarth, &4Hell"
+		if player is in region "Void":
+			set the result to "&aEarth, &5Void"
+		if player is in region "Void_Maze":
+			set the result to "&aEarth, &5Void Maze"
+		if "%region at player%" is "<none>":
+			set the result to "&8Unknown?!"

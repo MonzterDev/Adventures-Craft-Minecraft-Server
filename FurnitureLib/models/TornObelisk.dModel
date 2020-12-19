@@ -1,0 +1,40 @@
+# ------------------------------------  #
+#                                       #
+#       never touch the system-ID !     #
+#                                       #
+# ------------------------------------  #
+
+TornObelisk:
+  displayName: '&cTornObelisk'
+  system-ID: TornObelisk
+  spawnMaterial: PIG_SPAWN_EGG
+  itemGlowEffect: false
+  itemLore: []
+  crafting:
+    disable: true
+    recipe: xxx,xxx,xxx
+    index:
+      x: BEDROCK
+  placeAbleSide: TOP
+  projectData:
+    blockList:
+      '0':
+        blockData: minecraft:barrier
+        xOffset: 0.0
+        yOffset: 1.0
+        zOffset: 0.0
+      '1':
+        blockData: minecraft:barrier
+        xOffset: 0.0
+        yOffset: 2.0
+        zOffset: 0.0
+      '2':
+        blockData: minecraft:barrier
+        xOffset: 0.0
+        yOffset: 3.0
+        zOffset: 0.0
+      '3':
+        blockData: minecraft:barrier
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0

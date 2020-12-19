@@ -1,0 +1,85 @@
+
+# GUI display name
+name: Player Attributes
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 36
+
+items:
+    reallocate:
+        slots: [31]
+        function: reallocation
+        item: CAULDRON
+        name: '&aReallocate Points'
+        lore:
+        - ''
+        - '&7Current Reallocation Tokens: &6{points}'
+        - ''
+        - 'You have spent &6{total}&7 Attribute Points.'
+        - '&7Right click to reallocate them.'
+        - ''
+        - '&8&l» &eClick to Reallocate Points'
+    Wizardly:
+        slots: [11]
+        function: attribute_Wizardly
+        name: '&a{name}'
+        item: DIAMOND_HOE
+        lore:
+        - '&7Current Attribute Points:&f {attribute_points}'
+        - ''
+        - '&7Points Spent: &6{spent}&7/&6{max}'
+        - '&7Current Level: &6&l{current}'
+        - ''
+        - '&eWhen Leveled Up:'
+        - '&7  +{buff_max_health} Max Health (&a+{total_max_health}&7)'
+        - '&7  +{buff_max_mana} Max Mana (&a+{total_max_mana}&7)'
+        - '&7  +{buff_weapon_damage} Weapon Damage (&a+{total_weapon_damage}&7)'        
+        - '&7  +{buff_health_regeneration} Health Regeneration (&a+{total_health_regeneration}&7)'
+        - '&7  +{buff_mana_regeneration} Mana Regeneration (&a+{total_mana_regeneration}&7)'       
+        - '&7  +{buff_defense} Defense (&a+{total_defense}&7)'        
+        - '&7  +{buff_cooldown_reduction} Cooldown Reduction (&a+{total_cooldown_reduction}&7)'
+        - ''
+        - '&8&l» &eClick to Level Up'
+    Guardian:
+        slots: [13]
+        function: attribute_Guardian
+        name: '&a{name}'
+        item: DIAMOND_CHESTPLATE
+        lore:
+        - '&7Current Attribute Points:&f {attribute_points}'
+        - ''
+        - '&7Points Spent: &6{spent}&7/&6{max}'
+        - '&7Current Level: &6&l{current}'
+        - ''
+        - '&eWhen Leveled Up:'
+        - '&7  +{buff_max_health} Max Health (&a+{total_max_health}&7)'
+        - '&7  +{buff_max_mana} Max Mana (&a+{total_max_mana}&7)'
+        - '&7  +{buff_weapon_damage} Weapon Damage (&a+{total_weapon_damage}&7)'        
+        - '&7  +{buff_health_regeneration} Health Regeneration (&a+{total_health_regeneration}&7)'
+        - '&7  +{buff_mana_regeneration} Mana Regeneration (&a+{total_mana_regeneration}&7)'        
+        - '&7  +{buff_defense} Defense (&a+{total_defense}&7)'
+        - ''
+        - '&8&l» &eClick to Level Up'
+    Slasher:
+        slots: [15]
+        function: attribute_Slasher
+        name: '&a{name}'
+        item: DIAMOND_SWORD
+        lore:
+        - '&7Current Attribute Points:&f {attribute_points}'
+        - ''
+        - '&7Points Spent: &6{spent}&7/&6{max}'
+        - '&7Current Level: &6&l{current}'
+        - ''
+        - '&eWhen Leveled Up:'
+        - '&7  +{buff_max_health} Max Health (&a+{total_max_health}&7)'
+        - '&7  +{buff_max_mana} Max Mana (&a+{total_max_mana}&7)'
+        - '&7  +{buff_weapon_damage} Weapon Damage (&a+{total_weapon_damage}&7)'  
+        - '&7  +{buff_health_regeneration} Health Regeneration (&a+{total_health_regeneration}&7)'
+        - '&7  +{buff_mana_regeneration} Mana Regeneration (&a+{total_mana_regeneration}&7)'                
+        - '&7  +{buff_defense} Defense (&a+{total_defense}&7)'
+        - '&7  +{buff_critical_strike_chance} Critical Strike Chance (&a+{total_critical_strike_chance}&7)'        
+        - '&7  +{buff_critical_strike_power} Critical Strike Damage (&a+{total_critical_strike_power}&7)'                
+        - ''
+        - '&8&l» &eClick to Level Up'

@@ -1,0 +1,202 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7Limpou O Chat!'
+    immune: '&aVoce Era Imune Ao Limpamento Do Chat Por Causa Das Suas Permissoes!'
+  togglechat:
+    toggledOn: '&aO Chat Global Foi Desmutado!'
+    toggledOff: '&cO Chat Global Foi Mutado!'
+    bypass: '&aVoce Foi Imute Para A Alternancia Do Chat Por Causa De Suas Permissoes!'
+    muted: '&cO Chat Esta Atualmente Desativado! Tente Mais Tarde!'
+  vanish:
+    toggledOn: '&7Voce Agora Esta Invisivel!'
+    toggledOff: '&7Voce Agora Esta Visivel!'
+  freeze:
+    add: '&7Voce Congelou &6%player%&7 Corretamente!'
+    remove: '&7Voce Descongelou &6%player%&7 Corretamente!'
+    alertadd: '&7Voce Foi Congelado!'
+    alertremove: '&7Voce Foi Descongelado!'
+    nope: '&cVoce Nao Pode Fazer Isso Pois Voce Esta Congelado!'
+  revive:
+    noloot: '&cNenhum Saque Foi Encontrado Para Reviver O Player Com.'
+    success: '&7Voce Reviveu &6%player% &7Corretamente!'
+    revived: '&7Voce Foi Reavivado!'
+  spy:
+    returned: '&7Voce Retornou A Sua Posiçao Anterior!'
+    success: '&7Voce Agora Esta Espiando &6%player%&7. Use O Comando &6/spy &7Para Retornar Para A Sua Posiçao Anterior&7'
+    cant: Voce Nao Pode Espiar Voce Mesmo!.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Comando de espionagem ON'
+    toggleOff: '&7Comando de espionagem OFF'
+# Event Messages
+event:
+  general:
+    nopermission: '&cVoce Nao Tem Permissao Para Isso!'
+  command:
+    blocked: '&cVoce Nao Pode Usar Isto!'
+  punish:
+    reason: ' &7Por &6%reason%'
+    theirduration: '&7. &7A Sua Punicao Deles Vai Ser Retirado Em: &6%duration%'
+    yourduration: '&7. &7A Sua Punicao Deles Vai Ser Retirado Em: &6%duration%'
+  ban:
+    success: '&7Voce Baniu &6%player%'
+    message: '&7Voce Foi Banido!'
+    already: '&cEste Usuario Ja Esta Banido!'
+  unban:
+    success: '&7Voce Desbaniu &6%player%'
+  mute:
+    success: '&7Voce Mutou &6%player%'
+    message: '&7Voce Foi Mutado!'
+    already: '&cEste Usuario Ja Esta Mutado'
+  unmute:
+    success: '&7Voce Desmutou &6%player%'
+  kick:
+    success: '&7Voce Kickou &6%player%'
+    message: '&7Voce Foi Kickado!'
+  warning:
+    success: '&7Voce Avisou &6%player%'
+    message: '&7Voce Foi Avisado!'
+  staffchat:
+    leave: '&7Voce Deixou &6%channel% &7Corretamente!'
+    nochannels: '&cVoce Nao Esta Em Nenhum Canal!'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Modo Lento &6%delay% &7Segundos Restantes.'
+    done: '&7Modo Lento Expirou.'
+    enabled: '&7Modo Lento Foi Ativado Com O Delay De &6%delay%&7.'
+    disabled: '&7Voce Desativou Modo Lento!'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Pagina Anterior'
+    next: '&6Proxima Pagina'
+    back: '&6Voltar'
+    none: Nenhum
+    permanent: Permanente
+    reason: Razao
+    templatename: Nome Do Template
+  players:
+    title: '&8Players'
+    click: '&6Clique Para Ver Players!'
+    notickets: '&7Nenhum Ticket Aberto Deste Player.'
+    tickets: '&7Este Player Tem &6%amount% &7Tickets Abertos!'
+    ticketsone: '&7Este Player Tem &61 &7Ticket Aberto!'
+    nowarnings: '&7Nenhum Aviso Recordado.'
+    warnings: '&7Este Player Recebeu &6%amount% &7Avisos!'
+    warningsone: '&7Este Player Recebeu &61 &7Aviso!'
+    online:
+      online: Online
+      offline: Offline
+      both: Os Dois
+    button:
+      tickets: '&7Tickets'
+      templatemanager: '&6&lGerenciar Templates'
+    name: Nome Do Player
+    search: '&7Buscar Por Player'
+    nonefound: '&cNenhum Player Encontrado!'
+  templateselector:
+    title: '&8Selecione Um Template'
+    click: '&7Clique Para Selecionar Este Template'
+  templatemanager:
+    title: '&8Templates'
+    create: '&6&lCriar Template'
+    leftclick: '&7Clique Esquerdo Para Editar!'
+    rightclick: '&7Clique Direito Para Destruir'
+  punishments:
+    title: '&8%toModerate% > Punicoes'
+    reason: '&6Razao'
+    duration: '&6Duracao Inicial'
+    punisher: '&6Punidor'
+    remaining: '&6Tempo Restante'
+    click: '&7Clique Para Expirar Este Punimento.'
+    activity:
+      both: Os Dois
+      active: Ativo
+      expired: Expirado
+  punishmenttypes:
+    all: Todos
+    ban: Ban
+    kick: Kick
+    warning: Aviso
+    mute: Mute
+  punish:
+    title:
+      template: '&8Criar Um Tempalte'
+      message: '&8%toModerate% > Punir'
+    submit: '&a&lEnviar'
+    type:
+      punishment:
+        click: '&7Clique Para Trocar O Tipo'
+        message: '&6&lPunicao'
+      template:
+        current: '&7Atualmente Selecionado: &6%template%&7.'
+        none: '&7Nenhum Template Para Selecionar.'
+        click: '&7Clique Para Selecioanr Um Temeplate.'
+        message: '&6&lTemplate'
+      name:
+        current:
+          click: '&7Clique Para Mudar O Nome!'
+          message: '&7Atualmente Colocado Para: &6%name%&7.'
+        message: '&6&lNome'
+      duration:
+        leftclick: '&7Clique Esquerdo Para Defenir Uma Duracao!'
+        rightclick: '&7Clique Direito Para Defenir Para Sempre!'
+        current: '&7Atualmente Colocado Para:'
+        message: '&c&lDuracao'
+      reason:
+        click: '&7Clique Para Setar Uma Razao.'
+        current: '&7Atualmente Colocado Para:'
+        message: '&b&lRazao'
+    template:
+      create: '&7Clique Para Criar Um Template'
+      create2: '&7Deste Punimento'
+      leftclick: '&7Clique Esquerdo Para Alterar O'
+      leftclick2: '&7Template &6%template%&7.'
+      rightclick: '&7Clique Direito Para Salvar Isto Como Um Novo Template!'
+  player:
+    title: '&8Players > %toModerate%'
+    punish: '&6&lPunir'
+    moderate: '&b&lModerar'
+    punishments: '&c&lPunicoes'
+    notes: '&a&lNotas'
+    tickets: '&7&lTickets'
+  moderate:
+    title: '&8%toModerate% > Moderar'
+  notes:
+    title: '&8%tonotes% > Notas'
+    create: '&6Criar Nota!'
+    remove: '&cClique Para Remover!'
+    type: Digite A Sua Nota!.
+    createdon: '&7Criado Em &6%sent%&7.'
+    createdby: '&7Criado Por &6%player%&7.'
+  tickets:
+    title: '&8&lTickets'
+    titlesingle: '&8%toModerate% > Tickets'
+    create: '&6Criar Um Ticeket'
+    click: '&6Clique Para Gerenciar'
+    player: '&7Player &6%player%&7.'
+    what: '&6O Que Voce Quer Dizer No Seu Ticket?'
+    subject: Assunto Do Ticket
+  ticket:
+    title: '&8Tickets > %id%'
+    type: '&7Tipo &6%type%&7.'
+    picktype: '&8Escolha Um Tipo De Ticket!.'
+    clicktotele: '&6Teleportar Para A Localizacao Do Ticket.'
+    createdon: '&7Criado Em &6%sent%&7.'
+    respond: '&6Responder'
+    status: '&7Status &6%status%&7.'
+    postedby: '&7Postado Por &6%player%&7.'
+    what: '&6O Que Voce Quer Dizer?'
+notify:
+  block:
+    main: '&a Minerou [&6%material%&a] em &6'
+  ticket:
+    created: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Foi Criado!'
+    status: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Novo Status: &6%status%'
+    response: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Tem Uma Nova Resposta!'

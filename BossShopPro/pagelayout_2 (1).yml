@@ -1,0 +1,1070 @@
+# BossShopPro
+# by Felix Neubauer
+# Check out following page for more information: https://www.spigotmc.org/wiki/bossshoppro-configuration#
+#
+#
+#
+# ShowIfMultiplePagesOnly: 
+# If set to true the layout shopitems are only shown as soon as the inventory size is exceeded and multiple pages need to be created.
+# If you want to display the layout shopitems in any case set this to 'false'.
+ShowIfMultiplePagesOnly: false
+#
+#
+# MaxRows:
+# This is the amount of rows that a shop can have without needing a second page. '6' is the limit but you can optionally make shops smaller.
+MaxRows: 6
+#
+#
+# ReservedSlotsStart:
+# Here you enter the first slot that should be reserved in case of the layout being active (When multiple pages are needed or 'ShowIfMultiplePagesOnly' is set to 'false').
+# All higher slots of the same page including the given slot are reserved: Shopitems will automatically be put into the next page if they are equal or higher than the given slot.
+# You can use the reserverd slots to put in static layout shopitems. In this case the last (6.) row of every page is reserved in case of needing multiple pages.
+ReservedSlotsStart: 46
+#
+#
+# items:
+# Here you set up the shopitems that you want to be displayed in case of the layout being active. They are set up just like every other shopitem and can work with conditions.
+# Tip: Here you can use the additional conditions flag "page" that allows you to display components depending on the current page. 
+# Also you can use the variable %maxpage% inside page conditions. In this example there is a 'previous' button, that is shown when the player has a page higher than 1 opened
+# and there is a 'next' button, which is shown when their is an other page after the current one. Also there is a 'menu' button that is always visible as soon as the layout is active.
+items:
+  Previous:
+    RewardType: page
+    Reward: previous
+    PriceType: nothing
+    MenuItem:
+    - type:ARROW
+    - amount:1
+    - name:&f&lPrevious
+    - 'lore:&7Go back to the previous page.'
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - over:1
+  Next:
+    RewardType: page
+    Reward: next
+    PriceType: nothing
+    MenuItem:
+    - type:ARROW
+    - amount:1
+    - name:&f&lNext
+    - 'lore:&7Open the next page.'
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%       
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  46:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%   
+  47:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 47
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  48:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 48
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  49:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 49
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  50:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 50
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  51:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 51
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%  
+  52:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 52
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%   
+  53:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 53
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  54:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  55:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 55
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  56:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 56
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  57:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 57
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  58:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 58
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  59:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 59
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  60:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 60
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  61:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 61
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  62:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 62
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  63:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 63
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  64:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 64
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  65:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 65
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  66:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 66
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  67:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 67
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  68:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 68
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  69:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 69
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  70:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 70
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  71:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 71
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  72:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 72
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  73:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 73
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  74:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 74
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  75:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 75
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  76:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 76
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  77:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 77
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  78:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 78
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  79:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 79
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  80:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 80
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  81:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 81
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  82:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 82
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  83:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 83
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  84:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 84
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  85:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 85
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  86:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 86
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  87:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 87
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  88:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 88
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  89:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 89
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  90:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 90
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  91:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 91
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  92:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 92
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  93:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 93
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  94:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 94
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  95:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 95
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  96:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 96
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  97:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 97
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  98:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 98
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  99:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 99
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    
+  100:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 100
+    ExtraPermission: ''
+    Condition:
+    - type:page
+    - under:%maxpage%    

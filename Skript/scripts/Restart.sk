@@ -1,0 +1,52 @@
+every 6 hours:
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&a30 minutes&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 15 minutes
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&a15 minutes&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 5 minutes
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&a10 minutes&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 5 minutes
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&a5 minutes&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	execute console command "serverrestorer save"
+	wait 4 minutes
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&a1 minute&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 30 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c30 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 25 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c5 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 1 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c4 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 1 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c3 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 1 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c2 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	execute console command "mm mobs killall"
+	execute console command "killall -named"
+	wait 1 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer will be restarting in &l&c1 seconds&e!" to all players
+	send formatted "&c---------------------------------" to all players
+	wait 1 seconds
+	send formatted "&c---------------------------------" to all players
+	send formatted "&eServer is restarting!" to all players
+	send formatted "&c---------------------------------" to all players
+	stop the server

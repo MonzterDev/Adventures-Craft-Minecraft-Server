@@ -1,0 +1,83 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: Courtyard Shop
+max-queue-size: 10
+items:
+  fill:
+    material: RED_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  UNDEAD_HEAD:
+    output:
+      type: ARMOR
+      id: UNDEAD_HEAD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=LOST_SOUL,amount=5}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=384}
+    conditions: []
+  UNDEAD_CHEST:
+    output:
+      type: ARMOR
+      id: UNDEAD_CHEST
+    ingredients:
+    - mmoitem{type=MATERIAL,id=LOST_SOUL,amount=8}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=512}
+    conditions: []
+  UNDEAD_LEGS:
+    output:
+      type: ARMOR
+      id: UNDEAD_LEGS
+    ingredients:
+    - mmoitem{type=MATERIAL,id=LOST_SOUL,amount=7}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=448}
+    conditions: []
+  UNDEAD_FEET:
+    output:
+      type: ARMOR
+      id: UNDEAD_FEET
+    ingredients:
+    - mmoitem{type=MATERIAL,id=LOST_SOUL,amount=4}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=256}
+    conditions: []
+  BONE_SWORD1:
+    output:
+      type: SWORD
+      id: BONE_SWORD1
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=LOST_SOUL,amount=2}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1280}
+    - mmoitem{type=CONSUMABLE,id=MAGICAL_ESSENSE,amount=8}
+    conditions: []
+  UNDEAD_GEM:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=256}
+    conditions: []
+  BONE_FRAGMENT:
+    output:
+      type: MATERIAL
+      id: BONE_FRAGMENT
+      amount: 4
+    ingredients:
+    - vanilla{type=Bone,amount=1}
+    conditions: []
+  BONE:
+    options:
+      output-item: false
+    output:
+      type: MATERIAL
+      id: BONE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=16}
+    triggers:
+    - vanilla{type=Bone,amount=1}
+    conditions: []

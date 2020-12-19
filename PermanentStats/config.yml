@@ -1,0 +1,26 @@
+# PermanentStats by Sek
+#
+# Requires MMOLib and MMOCore.
+#
+
+
+# Sets the name of the database file.
+#
+sqlite:
+  database-name: 'database'
+
+# Set the messages found throughout the plugin.
+#
+messages:
+  prefix: '&8[&9PermanentStats&8] &r'
+  plugin-reloaded: '&aPlugin has been reloaded.'
+  permission-denied: '&cYou do not have permission to use this.'
+  plugin-enabled: '&aPlugin has successfully enabled.'
+  unknown-command: '&cUnknown command.'
+  no-modifiers-set: '&cThere are no modifiers for this player.'
+  player-not-online: '&cThat player is not online.'
+  player-only-command: '&cThis command can only be used by players.'
+  no-id-set: '&cThat ID does not exist.'
+  stat-added: '&aStat has been successfully added.'
+  stat-removed: '&aStat has been successfully removed.'
+  stat-removed-cancelled: '&cStat has NOT been removed.'

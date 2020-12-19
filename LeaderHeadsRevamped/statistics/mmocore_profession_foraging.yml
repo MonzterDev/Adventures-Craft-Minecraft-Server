@@ -1,0 +1,153 @@
+# -----------------------------------------
+# 
+#            Statistic config
+# 
+#            Name: %mmocore_profession_foraging%
+# 
+# -----------------------------------------
+# 
+#     Explanation of options:
+# 
+#     statistic-name: the name of the statistic. If you change this, signs will no longer be linked to 
+#        this statistic. The statistic-name is mainly used for the database.
+# 
+#     placeholder: the actual placeholder being used. By default this will be the same as
+#        statistic-name, but you can change this to something different without changing the statistic-name
+# 
+#     order-mode: how this statistic will be ordered in the leaderboard. Options: descending, ascending
+# 
+#     update-interval: the time in seconds between updates of this statistic
+# 
+#     force-update: whether the plugin should update the data
+#        of this statistic in the background even if no sign is made for its leaderboard
+# 
+#     enable-commas: whether to add commas to the format of the statistic (e.g. 9,000,000)
+# 
+#     statistic-type: The type of the statistic is used when formatting its value in signs, menus, holograms etc.
+#        money: if your statistic represents a very large monetary amount, such as 5 quadrillion, this will format 
+#            your very large numbers properly, using the money-format configured in the config.yml
+#        time-seconds: if your statistic represents a time in seconds his will format your time properly 
+#            and split it into days, hours, minutes and seconds using the time-format configured in the config.yml
+#        time-milliseconds: similar to the other time options, this type is used for statistic that represent a time in milliseconds
+#        time-minutes: similar to the other time options, this type is used for statistic that represent a time in minutes
+#        time-hours: similar to the other time options, this type is used for statistic that represent a time in hours
+# 
+#     sign-lines: the lines on the sign of the leaderboard. Variables: {rank}, {name}, {value}
+# 
+#     menu-lines: the lines on the skulls in the menu of the leaderboard. Variables: {rank}, {name}, {value}
+# 
+#     menu-enabled: whether the menu for checking the leaderboard players should be enabled
+# 
+#     menu-title: the title of the menu for checking the leaderboard players. Variables: {page}
+# 
+#     menu-command: the command used for opening the menu for checking the leaderboard players
+# 
+#     menu-size: the size of the menu for checking the leaderboard players. If you set this higher 
+#        than 54, multiple pages will be created 
+# 
+#     citizens-nametag: the nametag that will be used when creating a Citizens NPC linked to a sign.
+#        Variables: {rank}, {name}, {value}
+# 
+#     armorstand-nametag: the nametag that will be used when creating an armorstand linked to a sign.
+#        Set this to an empty string to disable this feature
+#        Variables: {rank}, {name}, {value}
+# 
+# -----------------------------------------
+
+statistic-name: '%mmocore_profession_foraging%'
+placeholder: '%mmocore_profession_foraging%'
+order-mode: descending
+update-interval: 30
+statistic-type: default
+force-update: false
+enable-commas: true
+alltime:
+  sign-lines:
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-lines:
+  - '&f&m----&f< &b{rank} &f>&m----'
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-enabled: true
+  menu-title: '&1Mmocore Profession Foraging &0#{page}'
+  menu-command: /topmmocoreprofessionforaging
+  menu-size: 27
+  citizens-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+  armorstand-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+daily:
+  sign-lines:
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-lines:
+  - '&f&m----&f< &b{rank} &f>&m----'
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-enabled: true
+  menu-title: '&1Mmocore Profession Foraging Daily &0#{page}'
+  menu-command: /topmmocoreprofessionforagingdaily
+  menu-size: 27
+  citizens-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+  armorstand-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+weekly:
+  sign-lines:
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-lines:
+  - '&f&m----&f< &b{rank} &f>&m----'
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-enabled: true
+  menu-title: '&1Mmocore Profession Foraging Weekly &0#{page}'
+  menu-command: /topmmocoreprofessionforagingweekly
+  menu-size: 27
+  citizens-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+  armorstand-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+monthly:
+  sign-lines:
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-lines:
+  - '&f&m----&f< &b{rank} &f>&m----'
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-enabled: true
+  menu-title: '&1Mmocore Profession Foraging Monthly &0#{page}'
+  menu-command: /topmmocoreprofessionforagingmonthly
+  menu-size: 27
+  citizens-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+  armorstand-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+yearly:
+  sign-lines:
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-lines:
+  - '&f&m----&f< &b{rank} &f>&m----'
+  - '&c&m------------'
+  - '&a{name}'
+  - '&e{value}'
+  - '&c&m------------'
+  menu-enabled: true
+  menu-title: '&1Mmocore Profession Foraging Yearly &0#{page}'
+  menu-command: /topmmocoreprofessionforagingyearly
+  menu-size: 27
+  citizens-nametag: '&6&l#{rank} &b{name} &f- &b{value}'
+  armorstand-nametag: '&6&l#{rank} &b{name} &f- &b{value}'

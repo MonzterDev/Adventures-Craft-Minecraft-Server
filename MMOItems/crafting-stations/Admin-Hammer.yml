@@ -1,0 +1,32 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fTest Shop §7§l«§f§l«
+items:
+  fill:
+    material: YELLOW_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  GOBLIN_HAMMER:
+    output:
+      type: HAMMER
+      id: GOBLIN_HAMMER
+    conditions:
+    - 'level{level=0}'
+    
+  GRAVE_DIGGER:
+    output:
+      type: HAMMER
+      id: GRAVE_DIGGER
+    conditions:
+    - 'level{level=0}'
+
+  CHIEF_HAMMER:
+    output:
+      type: HAMMER
+      id: CHIEF_HAMMER
+    conditions:
+    - 'level{level=0}'

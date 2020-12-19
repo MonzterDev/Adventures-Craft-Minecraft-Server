@@ -1,0 +1,11 @@
+Convert:
+  # Read below, and then set to true to convert SaveTypes.
+  # Ensure mysql.yml and all relevant files are correct before proceeding.
+  # Note this cannot be done on /bank reload, a complete server restart is recommended.
+  # Bank will kick all players until completed.
+  Confirm: false
+  To:
+    # config.yml and convert.yml SaveTypes must be different! config.yml will automatically change after conversion.
+    # If you are wanting to convert to MYSQL set this to 'MYSQL', and config.yml to 'SQLITE'.
+    # If you are wanting to convert to SQLITE set this to 'SQLITE', and config.yml to 'MYSQL'
+    Savetype: MYSQL

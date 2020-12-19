@@ -1,0 +1,140 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+SmashAttack:
+  Cooldown: 8
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! I will crush you, fool!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+  
+ReaperTP:
+  Skills:
+  - teleportto{location=-96,15,176}
+
+ReaperSpawnText:
+  Cooldown: 15
+  Skills:
+  - message{m="&7[&fLVL 10&7] &cReaper &7is being summoned near the &fCastle&7!"} @PIR{r=150}
+
+SummonSoul:
+  Cooldown: 100
+  Skills:
+  #- prison{material=IRON_BLOCK;duration=200;breakable=true} @Target
+  - summon{type=LostSoul;amount=1;radius=4;onSurface=true} @PIR{r=5}
+  - message{m="<mob.name> &fSummoned a &cLost Soul&f!"} @PIR{r=5} 
+  
+Disguise:
+  Cooldown: 100
+  Skills:
+  - doppleganger @NearestPlayer ~onEnterCombat
+  - message{m="&fThe &cLost Soul &fhas taken over your soul"} @NearestPlayer
+  - lightning @self
+Disguise2:
+  Cooldown: 100
+  Skills:
+  - doppleganger @Target ~onEnterCombat
+  - lightning @self
+
+cDisguise:
+  Cooldown: 100
+  Skills:
+  - disguise{type=player;player=&cFurious Soul;skin=Mad} @NearestPlayer ~onEnterCombat
+  - message{m="&fThe &cCursed Soul &fbecame a &cFurious Soul&f!"} @target
+  - potion{type=BLINDNESS;duration=100;level=4} @target ~onSpawn
+  - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+  - orbital{onTick=IceShield-Tick;onStart=IceShield-Hit;points=20;interval=1;duration=200;charges=1}
+  - equip{item=diamond_sword:0}
+
+
+IceShield-Tick:
+  Skills:
+  - effect:particles{p=reddust;color=#b30000;amount=1;speed=0;hS=0.2;vS=0.2;y=1} @self
+
+
+
+#Reaper
+SummonReaper:
+  Cooldown: 2.5
+  Skills:
+  - summon{type=ReaperBoss;amount=1;radius=1;onSurface=true} @self
+  - message{m="&7[&fLVL 10&7] &cReaper &7has been summoned!"} @PIR{r=50}
+SummonSkeletons:
+  Cooldown: 25
+  Skills:
+  - stun{d=100;f=true} @self
+  - summon{type=ReaperMinion;amount=1;radius=4;onSurface=true} @PIR{r=5} 
+  - message{m="<mob.name> Summons the lost souls!"} @PIR{r=5}
+  
+Slow:
+  Cooldown: 25
+  Skills:
+  - potion{type=SLOW;duration=60;level=4}
+  - message{m="You've been slown!"}
+Heal:
+  Cooldown: 20
+  Skills:
+  - heal{amount=100} @self ~onAttack
+  - message{m="&c[EFFECT] &fThe enemy drained some of your life!"}
+  - effect:particles{particle=heart;amount=10;hS=1;vS=1;speed=1} @self
+
+  
+AngrySludgePoison:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+
+##Castle Undead Caster
+SpawnSummoner:
+  Cooldown: 1000
+  Skills:
+  - summon{type=UndeadSummoner;amount=2;radius=5;onSurface=true} @PIR{r=5} 
+
+Lightning1:
+  Cooldown: 5
+  Skills:
+  - lightning{damage=25} @target ~onAttack
+  - ignite{ticks=100} @target ~onAttack @target
+  - message{m="<mob.name> &fstruck you with &clightning&f!"} @target
+Prison1:
+  Cooldown: 20
+  Skills:
+  - prison{material=ICE;duration=100;breakable=true}
+  - message{m="<mob.name> &cfroze &fyou inside &cice&f!"} @target
+Stun1:
+  Cooldown: 20
+  Skills:
+  - stun{d=60;f=true} @target ~onAttack
+  - message{m="<mob.name> &cstunned &fyou for &c3 seconds&f!"} @target
+  
+##Castle Undead Summoner
+SpawnGolem:
+  Cooldown: 1000
+  Skills:
+  - summon{type=UndeadGuard;amount=1;radius=4;onSurface=true} @PIR{r=5} 
+  - message{m="<mob.name> &fsummoned an &cUndead Guard &fupon death!"} @PIR{r=5}
+  
+##Castle Undead Warrior
+CrushingLeap:
+  Skills:
+  - leap{velocity=300} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}
+
+Dash:
+  Skills:
+  - leap{velocity=300} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}

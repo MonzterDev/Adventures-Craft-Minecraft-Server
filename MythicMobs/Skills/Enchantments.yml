@@ -1,0 +1,375 @@
+CULLING1:
+  TargetConditions:
+  - health_ext{p=<25;action=true}
+  Skills:
+  - damage{amount=15} @trigger 
+CULLING2:
+  TargetConditions:
+  - health_ext{p=<35;action=true}
+  Skills:
+  - damage{amount=25} @trigger 
+CULLING3:
+  TargetConditions:
+  - health_ext{p=<50;action=true}
+  Skills:
+  - damage{amount=35} @trigger 
+
+########################################################################################################
+#Broken
+HASTEN1:
+  TargetConditions:
+  - isbehind{view=90;action=true}
+  Skills:
+  - potion{type=SPEED;duration=100;level=1} @self
+
+########################################################################################################
+#This will likely have issues in the future, all skills procing at the highest amount of players, but we'll see!
+IMPAIRMENT_LIST1:
+  Skills:
+  - skill{skill=IMPAIRMENT_LEVEL1_1}
+  - skill{skill=IMPAIRMENT_LEVEL1_2}
+  - skill{skill=IMPAIRMENT_LEVEL1_3}
+IMPAIRMENT_LEVEL1_1:
+  Target:
+  - pir{amount=>4;radius=2;action=true}
+  Skills:
+  - damage{amount=5} @trigger 
+IMPAIRMENT_LEVEL1_2:
+  Target:
+  - pir{amount=>3;radius=2;action=true}
+  Skills:
+  - damage{amount=7.5} @trigger 
+IMPAIRMENT_LEVEL1_3:
+  Target:
+  - pir{amount=>2;radius=2;action=true}
+  Skills:
+  - damage{amount=10} @trigger 
+
+IMPAIRMENT_LIST2:
+  Skills:
+  - skill{skill=IMPAIRMENT_LEVEL2_1}
+  - skill{skill=IMPAIRMENT_LEVEL2_2}
+  - skill{skill=IMPAIRMENT_LEVEL2_3}
+IMPAIRMENT_LEVEL2_1:
+  Target:
+  - pir{amount=>4;radius=3;action=true}
+  Skills:
+  - damage{amount=10} @trigger 
+IMPAIRMENT_LEVEL2_2:
+  Target:
+  - pir{amount=>3;radius=3;action=true}
+  Skills:
+  - damage{amount=12.5} @trigger 
+IMPAIRMENT_LEVEL2_3:
+  Target:
+  - pir{amount=>2;radius=3;action=true}
+  Skills:
+  - damage{amount=15} @trigger 
+
+IMPAIRMENT_LIST3:
+  Skills:
+  - skill{skill=IMPAIRMENT_LEVEL3_1}
+  - skill{skill=IMPAIRMENT_LEVEL3_2}
+  - skill{skill=IMPAIRMENT_LEVEL3_3}
+IMPAIRMENT_LEVEL3_1:
+  Target:
+  - pir{amount=>4;radius=5;action=true}
+  Skills:
+  - damage{amount=15} @trigger 
+IMPAIRMENT_LEVEL3_2:
+  Target:
+  - pir{amount=>3;radius=5;action=true}
+  Skills:
+  - damage{amount=17.5} @trigger 
+IMPAIRMENT_LEVEL3_3:
+  Target:
+  - pir{amount=>2;radius=5;action=true}
+  Skills:
+  - damage{amount=20} @trigger 
+
+##############################################################################
+STAGGER1:
+  Cooldown: 10
+  Skills:
+  - stun{d=30;f=true} @target
+STAGGER2:
+  Cooldown: 5
+  Skills:
+  - stun{d=40;f=true} @target
+
+
+##############################################################################
+GNASH1:
+  Cooldown: 20
+  TargetConditions:
+  - health_ext{p=<15;action=true}
+  Skills:
+  - damagepercent{percent=0.02} @trigger 
+GNASH2:
+  Cooldown: 15
+  TargetConditions:
+  - health_ext{p=<25;action=true}
+  Skills:
+  - damagepercent{percent=0.03} @trigger 
+GNASH3:
+  Cooldown: 10
+  TargetConditions:
+  - health_ext{p=<50;action=true}
+  Skills:
+  - damagepercent{percent=0.05} @trigger 
+
+##############################################################################
+IGNITE1:
+  TargetConditions:
+  - isburning{action=false}
+  Skills:
+  - ignite{ticks=40} @trigger 
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+IGNITE2:
+  TargetConditions:
+  - isburning{action=false}
+  Skills:
+  - ignite{ticks=60} @trigger 
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+IGNITE3:
+  TargetConditions:
+  - isburning{action=false}
+  Skills:
+  - ignite{ticks=100} @trigger 
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+  - delay 20
+  - damagepercent{percent=0.01} @trigger 
+
+########################################################################################################
+COMBUST1:
+  Cooldown: 10
+  TargetConditions:
+  - isburning{action=true}
+  Skills:
+  - damage{amount=25} @EIR{r=5;ignore=players}
+  - damage{amount=25} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=5;ignore=players}
+COMBUST2:
+  Cooldown: 7.5
+  TargetConditions:
+  - isburning{action=true}
+  Skills:
+  - damage{amount=50} @EIR{r=5;ignore=players}
+  - damage{amount=50} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=5;ignore=players}
+COMBUST3:
+  Cooldown: 5
+  TargetConditions:
+  - isburning{action=false}
+  Skills:
+  - damage{amount=75} @EIR{r=5;ignore=players}
+  - damage{amount=75} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=5;ignore=players}
+########################################################################################################
+POSTHUMOUS1:
+  Skills:
+  - potion{type=SPEED;duration=100;level=2} @self
+POSTHUMOUS2:
+  Skills:
+  - potion{type=SPEED;duration=150;level=3} @self
+  - potion{type=INCREASE_DAMAGE;duration=150;level=3} @self
+POSTHUMOUS3:
+  Skills:
+  - potion{type=SPEED;duration=200;level=5} @self
+  - potion{type=INCREASE_DAMAGE;duration=200;level=5} @self
+  - potion{type=REGENERATION;duration=200;level=5} @self
+############################################################################################################
+LOOTING1:
+  TargetConditions:
+  - mythicmobtype{t=Skeleton1} true
+  Skills:
+  - dropitem{i=Undead1} @trigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ARMOR#
+KAMIKAZE1:
+  Skills:
+  - damage{amount=20} @EIR{r=3;ignore=players}
+  - damage{amount=20} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=3;ignore=players}
+KAMIKAZE2:
+  Skills:
+  - damage{amount=25} @EIR{r=4;ignore=players}
+  - damage{amount=25} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=4;ignore=players}
+KAMIKAZE3:
+  Skills:
+  - damage{amount=30} @EIR{r=5;ignore=players}
+  - damage{amount=30} @target
+  - effect:explosion @target
+  - effect:explosion @EIR{r=5;ignore=players}
+
+LAVA_WALKER1:
+  Conditions:
+  - inblock{b=Lava} true
+  Skills:
+  - fly{duration=1}
+
+REFLECT1:
+  Skills:
+  - damage{a=<skill.var.damage-amount>*0.5} @trigger
+REFLECT2:
+  Skills:
+  - damage{a=<skill.var.damage-amount>*1} @trigger
+REFLECT3:
+  Skills:
+  - damage{a=<skill.var.damage-amount>*1.5} @trigger
+REFLECT4:
+  Skills:
+  - damage{a=<skill.var.damage-amount>*2} @trigger
+
+
+
+#RANGED#
+SHARPNESS1:
+  TargetConditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  Skills:
+  - damage{amount=50} @trigger
+SHARPNESS2:
+  TargetConditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  Skills:
+  - damage{amount=100} @trigger
+SHARPNESS3:
+  TargetConditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  Skills:
+  - damage{amount=150} @trigger
+SHARPNESS4:
+  TargetConditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  Skills:
+  - damage{amount=200} @trigger
+SHARPNESS5:
+  TargetConditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  Skills:
+  - damage{amount=250} @trigger
+########################################################################################################
+REPLENISH1:
+  Skills:
+  - giveitem{i=ARROW;a=1} @self
+########################################################################################################
+DRAW_LIST1:
+  Skills:
+  - skill{skill=DRAW1}
+  - skill{skill=DRAW2}
+  - skill{skill=DRAW3}
+DRAW1:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=<.5;action=true}
+  Skills:
+  - damage{amount=15} @trigger
+DRAW2:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.5;action=true}
+  - lastbowtension{range=<.99;action=true}
+  Skills:
+  - damage{amount=30} @trigger
+DRAW3:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.99;action=true}
+  Skills:
+  - damage{amount=45} @trigger
+
+DRAW_LIST2:
+  Skills:
+  - skill{skill=DRAW2_1}
+  - skill{skill=DRAW2_2}
+  - skill{skill=DRAW2_3}
+DRAW2_1:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=<.5;action=true}
+  Skills:
+  - damage{amount=30} @trigger
+DRAW2_2:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.5;action=true}
+  - lastbowtension{range=<.99;action=true}
+  Skills:
+  - damage{amount=50} @trigger
+DRAW2_3:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.99;action=true}
+  Skills:
+  - damage{amount=70} @trigger
+
+DRAW_LIST3:
+  Skills:
+  - skill{skill=DRAW3_1}
+  - skill{skill=DRAW3_2}
+  - skill{skill=DRAW3_3}
+DRAW3_1:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=<.5;action=true}
+  Skills:
+  - damage{amount=50} @trigger
+DRAW3_2:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.5;action=true}
+  - lastbowtension{range=<.99;action=true}
+  Skills:
+  - damage{amount=75} @trigger
+DRAW3_3:
+  Conditions:
+  - mythicmobtype{t=GHAST_BOSS} false
+  - mythicmobtype{t=WITHER_MINI_BOSS} false
+  - lastbowtension{range=>.99;action=true}
+  Skills:
+  - damage{amount=100} @trigger
+

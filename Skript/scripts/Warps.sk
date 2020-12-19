@@ -1,0 +1,366 @@
+
+#HOME
+on load: # Doesn't have to be in a load event
+    add "Warp Spawn" to tab completions
+    add "Warp Town" to tab completions
+    add "Warp TownHall" to tab completions
+    add "Warp Forest" to tab completions
+    add "Warp SpruceForest" to tab completions
+    add "Warp DarkOakForest" to tab completions
+    add "Warp BirchForest" to tab completions
+    add "Warp AcaciaForest" to tab completions
+    add "Warp JungleForest" to tab completions
+    add "Warp HiveForest" to tab completions
+    add "Warp MineEntrance" to tab completions
+    add "Warp MineCoal" to tab completions
+    add "Warp MineGold" to tab completions
+    add "Warp MineRedstone" to tab completions
+    add "Warp MineLapis" to tab completions
+    add "Warp MineDiamond" to tab completions
+    add "Warp MineEmerald" to tab completions
+    add "Warp Graveyard" to tab completions
+    add "Warp Courtyard" to tab completions
+    add "Warp Castle" to tab completions
+    add "Warp Morden" to tab completions
+    add "Warp Hell" to tab completions
+    add "Warp Hell2" to tab completions
+    add "Warp Estate" to tab completions
+    add "Warp Farm" to tab completions
+    add "Warp GoblinTown" to tab completions
+    add "Warp SpiritGrounds" to tab completions
+
+command /Warp [<text>]:
+    executable by: players
+    trigger:
+        if arg 1 is not set:    
+            make player execute command "/Map"
+
+        if arg 1 is "Spawn" or "Town":
+            warp_town(player)
+        if arg 1 is "Townhall":
+            warp_townHall(player)
+
+        if arg 1 is "Farm":
+            warp_farm(player)
+
+        if arg 1 is "Forest" or "OakForest":
+            warp_forest(player)
+
+        if arg 1 is "ForestSpruce" or "SpruceForest" or "Spruce":
+            if player has permission "warp.SpruceForest":
+                warp_forestSpruce(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "ForestDarkOak" or "DarkOakForest" or "DarkOak":
+            if player has permission "warp.DarkOakForest":
+                warp_forestDarkOak(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "ForestBirch" or "BirchForest" or "Birch":
+            if player has permission "warp.BirchForest":
+                warp_forestBirch(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "ForestAcacia" or "AcaciaForest" or "Acacia":
+            if player has permission "warp.AcaciaForest":
+                warp_forestAcacia(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "ForestJungle" or "JungleForest" or "Jungle":
+            if player has permission "warp.JungleForest":
+                warp_forestJungle(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "ForestHive" or "HiveForest" or "Hive":
+            if player has permission "warp.HiveForest":
+                warp_forestHive(player)
+            else:
+                warp_locked(player)
+
+        if arg 1 is "MineEntrance" or "EntranceMine" or "Entrance":
+            warp_mineEntrance(player)
+        if arg 1 is "MineCoal" or "CoalMine" or "Coal":
+            warp_mineCoal(player)
+        if arg 1 is "MineGold" or "GoldMine" or "Gold":
+            if player has permission "warp.goldmine":
+                warp_mineGold(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "MineRedstone" or "RedstoneMine" or "Redstone":
+            if player has permission "warp.redstonemine":
+                warp_mineRedstone(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "MineLapis" or "LapisMine" or "Lapis":
+            if player has permission "warp.lapismine":
+                warp_mineLapis(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "MineDiamond" or "DiamondMine" or "Diamond":
+            if player has permission "warp.diamondmine":
+                warp_mineDiamond(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "MineEmerald" or "EmeraldMine" or "Emerald":
+            if player has permission "warp.emeraldmine":
+                warp_mineEmerald(player)
+            else:
+                warp_locked(player)
+
+        if arg 1 is "Graveyard" or "Grave":
+            warp_Graveyard(player)
+        if arg 1 is "Courtyard":
+            if player has permission "warp.courtyard":
+                warp_Courtyard(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "Castle":
+            if player has permission "warp.castle":
+                warp_Castle(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "Morden":
+            if player has permission "warp.castle":
+                warp_Morden(player)
+            else:
+                warp_locked(player)
+
+        if arg 1 is "Estate":
+            if player has permission "warp.Estate":
+                warp_Estate(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "GoblinTown" or "Goblin":
+            if player has permission "warp.goblintown":
+                warp_GoblinTown(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "SpiritGrounds" or "SpiritGround" or "Spirit":
+            if player has permission "warp.spiritgrounds":
+                warp_SpiritGrounds(player)
+            else:
+                warp_locked(player)
+
+        if arg 1 is "Hell" or "UpperHell":
+            if player has permission "cmi.command.portal.hell":
+                warp_Hell(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "Hell2" or "LowerHell" or "BottomHell" or "HellBottom":
+            if player has permission "warp.hellbottom":
+                warp_HellBottom(player)
+            else:
+                warp_locked(player)
+
+        if arg 1 is "Void" or "LowerVoid":
+            if player has permission "warp.Void":
+                warp_lowerVoid(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "Void2" or "UpperVoid":
+            if player has permission "warp.Void2":
+                warp_upperVoid(player)
+            else:
+                warp_locked(player)
+
+#FAST TRAVELS
+        if arg 1 is "Enchant" or "Enchanting" or "Enchanter" or "Wizard" or "FastEnchant":
+            if player has permission "Rank3":
+                warp_Enchant(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "Auction" or "Auc" or "FastAuction":
+            if player has permission "Rank3":
+                warp_Auction(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "Dracula" or "VoidDracula" or "FastDracula":
+            if player has permission "Rank3":
+                warp_Dracula(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "Reaper" or "FastReaper":
+            if player has permission "Rank3":
+                warp_Reaper(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "FastMorden":
+            if player has permission "Rank3":
+                warp_MordenFast(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "VoidWither" or "Wither" or "FastVoidWither":
+            if player has permission "Rank3":
+                warp_VoidWither(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "VoidMagma" or "Magma" or "FastVoidMagma":
+            if player has permission "Rank3":
+                warp_VoidMagma(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "Ghastly" or "Ghast" or "FastGhastly":
+            if player has permission "Rank3":
+                warp_Ghastly(player)
+            else:
+                warp_Fastlocked(player)
+
+function warp_town(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eTown&a!" to {_p}
+    teleport {_p} to location(30, 17, -2.5, world "Spawn", 89, 0) 
+function warp_townHall(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eTown Hall&a!" to {_p}
+    teleport {_p} to location(-80, 17, -51, world "Spawn", 89, 6.4) 
+
+function warp_farm(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eFarm&a!" to {_p}
+    teleport {_p} to location(-70, 16, -382, world "Spawn", -250, 0.65) 
+
+function warp_forest(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eForest&a!" to {_p}
+    teleport {_p} to location(282.39, 16, -33.7, world "Spawn", 278.22, 4.21) 
+function warp_forestSpruce(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eSpruce Forest&a!" to {_p}
+    teleport {_p} to location(320.38, 22.38, -38.5, world "Spawn", 263.47, 2.85) 
+function warp_forestDarkOak(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eDark Oak Forest&a!" to {_p}
+    teleport {_p} to location(375.48, 26.38, -48.5, world "Spawn", -91.1, 1.1) 
+function warp_forestBirch(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eBirch Forest&a!" to {_p}
+    teleport {_p} to location(419.14, 36.38, -30.2, world "Spawn", -90.1, 6.1) 
+function warp_forestAcacia(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eAcacia Forest&a!" to {_p}
+    teleport {_p} to location(473.39, 44.38, -50.2, world "Spawn", -90.8, 3.3) 
+function warp_forestJungle(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eJungle Forest&a!" to {_p}
+    teleport {_p} to location(520.43, 54.36, -50.4, world "Spawn", -126.2, 3.3) 
+function warp_forestHive(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eHive Forest&a!" to {_p}
+    teleport {_p} to location(569, 63.36, -47.8, world "Spawn", -83.3, 4) 
+
+function warp_mineEntrance(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eMine Entrance&a!" to {_p}
+    teleport {_p} to location(-75.48, 35.38, -160.7, world "Spawn", 179.9, 1.7) 
+function warp_mineCoal(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eCoal Mine&a!" to {_p}
+    teleport {_p} to location(-41.48, 33.38, -891.8, world "Spawn", 179.5, 9) 
+function warp_mineGold(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eGold Mine&a!" to {_p}
+    teleport {_p} to location(-98.36, 4.05, -958.5, world "Spawn", -.83, -3.25) 
+function warp_mineRedstone(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eRedstone Mine&a!" to {_p}
+    teleport {_p} to location(-69.63, 44.0, -1011.69, world "Spawn", 179.79, 3.04) 
+function warp_mineLapis(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eLapis Mine&a!" to {_p}
+    teleport {_p} to location(-69.5, 16.0, -1012.8, world "Spawn", 179.73, -2.5) 
+function warp_mineDiamond(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eDiamond Mine&a!" to {_p}
+    teleport {_p} to location(-41.46, 7.0, -1169.73, world "Spawn", 175.3, -8.35) 
+function warp_mineEmerald(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eEmerald Mine&a!" to {_p}
+    teleport {_p} to location(-97.43, 7.06, -1164.65, world "Spawn", 180.41, -2.71) 
+
+function warp_Graveyard(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eGraveyard&a!" to {_p}
+    teleport {_p} to location(-140.9, 17, 48.34, world "Spawn", 41.8, 4.6) 
+function warp_Courtyard(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eCourtyard&a!" to {_p}
+    teleport {_p} to location(-111.5, 16, 248.82, world "Spawn", -.1, 3.4) 
+function warp_Castle(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eCastle&a!" to {_p}
+    teleport {_p} to location(-85.2, 17, 434.51, world "Spawn", -90.3, 3.1) 
+function warp_Morden(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &cMorden&a!" to {_p}
+    teleport {_p} to location(-66.2, 18, 434.51, world "Spawn", -90.3, 3.1) 
+
+function warp_Estate(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eEstate&a!" to {_p}
+    teleport {_p} to location(-673.38, 26, -491.57, world "Spawn", .5, 4.1) 
+function warp_GoblinTown(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eGoblin Town&a!" to {_p}
+    teleport {_p} to location(-894.63, 32, -396.59, world "Spawn", -14.9, 2.5) 
+function warp_SpiritGrounds(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eSpirit Grounds&a!" to {_p}
+    teleport {_p} to location(-892.26, 32, -509.90, world "Spawn", -178.5, 2.1) 
+
+function warp_Hell(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eHell&a!" to {_p}
+    teleport {_p} to location(-146.96, 48, -1153.16, world "Spawn", 180, .3) 
+function warp_HellBottom(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eLower Hell&a!" to {_p}
+    teleport {_p} to location(-230, 12, -1260.16, world "Spawn", -.1, 1.1) 
+
+function warp_lowerVoid(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eVoid&a!" to {_p}
+    teleport {_p} to location(-217.6, 32, -1099.9, world "Spawn", .6, 6.1) 
+function warp_upperVoid(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eVoid Maze&a!" to {_p}
+    teleport {_p} to location(-191.5, 13, -821.5, world "Spawn", -0, 8.5) 
+
+function warp_locked(p: player):
+    send "&cYou haven't unlocked this area yet!" to {_p}
+
+#FAST TRAVELS
+function warp_Enchant(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eEnchanter&a!" to {_p}
+    teleport {_p} to location(-45.54, 15, -13.03, world "Spawn", -.63, 7.34) 
+function warp_Auction(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eAuction&a!" to {_p}
+    teleport {_p} to location(-38.5, 16, -48.12, world "Spawn", -179.05, 6.5) 
+function warp_Dracula(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eDracula&a!" to {_p}
+    teleport {_p} to location(-91.5, 24, -1247.41, world "Spawn", 359.27, -0.52) 
+function warp_Reaper(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eReaper&a!" to {_p}
+    teleport {_p} to location(-99.27, 15, 176.49, world "Spawn", -89.91, 1.81) 
+function warp_MordenFast(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eMorden&a!" to {_p}
+    teleport {_p} to location(-41.35, 17, 434.56, world "Spawn", 90.44, 0.62) 
+function warp_VoidWither(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eVoid Wither&a!" to {_p}
+    teleport {_p} to location(-237.37, 50, -1239.88, world "Spawn", -.05, -11.28) 
+function warp_VoidMagma(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to the &eVoid Magma&a!" to {_p}
+    teleport {_p} to location(-161.74, 29, -1224.26, world "Spawn", 207.88, 1.54) 
+function warp_Ghastly(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eGhastly&a!" to {_p}
+    teleport {_p} to location(-152.91, 12, -1171.05, world "Spawn", 303, -1.69) 
+
+function warp_Fastlocked(p: player):
+    send "&cYou must be &9Conquerer &crank to use this!" to {_p}

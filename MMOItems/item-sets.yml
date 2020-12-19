@@ -1,0 +1,110 @@
+# Item sets let you create links betweens the different items you create.
+# By wearing multiple items from the same set, the player will benefit from
+# set bonuses which incites him to use items from the same type.
+# This is a very powerful system for RPG items.
+#
+# You can also use potion effects as set bonuses, e.g
+# - "potion-speed: 2" gives permanent Speed II
+# - "potion-increase_damage: 3" gives permanent Strength III
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+#
+# You may also add abilities as full set bonuses. The ability ID
+# must start with 'ability-' but it is only used as reference.
+# You can configure the ability cast mode, type & modifiers as usual.
+    
+FARMER:
+    name: '&cFarmer Set'
+    bonuses:
+        '1':
+            potion-speed: 1
+    lore-tag:
+    - '&eFarmer Set Bonus:'
+    - '&cSpeed I'
+
+STEEL:
+    name: '&8Steel Set'
+    bonuses:
+        '1':
+            damage-reduction: 5
+    lore-tag:
+    - '&eSteel Set Bonus:'
+    - '§fDamage Reduction §c+10%'
+    
+HELL:
+    name: '&eHell Set Bonus'
+    bonuses:
+        '4':
+            ability-1:
+                type: HELLSPLOSHION
+                cooldown: 30
+                mana: 50
+                mode: SHIFT_LEFT_CLICK
+                    
+    lore-tag:
+    - '&eHell Set Bonus:'
+    - '&e&lHellsploshion&f: Shift Left Click'
+    - '&7Cooldown: &c30'
+    - '&7Mana: &c50'
+    - '&e'
+    - '&7Give yourself &aStrength 20 &7for 15secs!'
+    - '&cDamage&7 all enemies within 15 blocks,'
+    - '&7dealing &cmore damage &7the more Mobs!'
+
+HATRED:
+    name: '&cUndead Set'
+    bonuses:
+        '1':
+            ability1:
+                type: GRAND_HEAL
+                heal: 75.0
+                mode: WHEN_HIT
+                radius: 10.0
+    lore-tag:
+    - '&eUndead Set Bonus:'
+    - '§cHealed §7upon being hit for,'
+    - '§c50 HP §7with a §c15sec cooldown§7.'
+
+CURSED:
+    name: '&eCursed Set Bonus'
+    bonuses:
+        '4':
+            cooldown-reduction: 20.0
+    lore-tag:
+    - '&eCursed Set Bonus:'
+    - '&fCooldown Reduction: &c20%'
+
+LOG:
+    name: '&eLog Set Bonus'
+    bonuses:
+        '4':
+            ability-1:
+                type: MEGAROOT
+                cooldown: 15
+                mana: 10
+                mode: WHEN_HIT
+    lore-tag:
+    - '&eLog Set Bonus:'
+    - '&e&lMegaroot&f: When Hit'
+    - '&7Cooldown: &c15'
+    - '&7Mana: &c510'
+    - '&e'
+    - '&7Stun enemies within a 5 block'
+    - '&7radius for 5 seconds when hit!'
+
+HEAVY:
+    name: '&aHeavy Set'
+    bonuses:
+        '4':
+            potion-INCREASE_DAMAGE: 10
+    lore-tag:
+    - '&eHeavy Set Bonus:'
+    - '&7Gain &aStrength 10 &7while wearing!'
+
+MORDEN:
+    name: '&eMorden Set Bonus'
+    bonuses:
+        '4':
+            potion-REGENERATION: 3
+    lore-tag:
+    - '&eHell Set Bonus:'
+    - '&7Gain &aRegeneration 3 &7while wearing!'

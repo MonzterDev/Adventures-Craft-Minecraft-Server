@@ -1,0 +1,107 @@
+GUIName: '&cPet Spawner'
+showPermissions: true
+hasPerms: 'Has Permissions: '
+permsYes: 'Yes'
+permsNo: 'No'
+hideIfNoPerms: true
+lore:
+  isDisguised: '&cYou''re currently &adisguised'
+  isNotDisguised: '&cYou''re currently &4not disguised'
+  isRiding: '&cYou''re currently &ariding his pet'
+  isNotRiding: '&cYou''re currently &4not riding his pet'
+items:
+  nextPage:
+    Material: ARROW
+    Amount: 1
+    Data: 0
+    Name: §r§aNext Page
+  previousPage:
+    Material: ARROW
+    Amount: 1
+    Data: 0
+    Name: §r§aPrevious Page
+  removePet:
+    Material: WHITE_WOOL
+    Amount: 1
+    Data: 1
+    Name: §r§cRemove your pet
+  noPet:
+    Material: WHITE_WOOL
+    Amount: 1
+    Data: 14
+    Name: §r§cYou don't have a pet yet!
+  callPet:
+    Material: WHITE_WOOL
+    Amount: 1
+    Data: 12
+    Name: §r§cTeleport your pet
+  changeName:
+    Material: WHITE_WOOL
+    Amount: 1
+    Data: 12
+    Name: §r§cName your pet
+petInteract:
+  title: '&c%owner%&c''s Pet'
+  noName: '&cNo Name'
+  adminView:
+    clearName: '&cRight click to clear name'
+    isDisguised: '&c%owner%&c is currently &adisguised'
+    isNotDisguised: '&c%owner%&c is currently &4not disguised'
+    isRiding: '&c%owner%&c is currently &ariding his pet'
+    isNotRiding: '&c%owner%&c is currently &4not riding his pet'
+  playerView:
+    changeName: '&aRight click to change name'
+    isDisguised: '&cYou''re currently &adisguised'
+    isNotDisguised: '&cYou''re currently &4not disguised'
+    isRiding: '&cYou''re currently &ariding his pet'
+    isNotRiding: '&cYou''re currently &4not riding his pet'
+  items:
+    changeName:
+      Material: WHITE_WOOL
+      Amount: 1
+      Data: 10
+      Name: THIS GETS OVVERIDEN ALWAYS
+    disguise:
+      Material: WHITE_WOOL
+      Amount: 1
+      Data: 12
+      Name: §aDisguise as your pet
+    ride:
+      Material: WHITE_WOOL
+      Amount: 1
+      Data: 12
+      Name: §aRide your pet
+    removePet:
+      Material: WHITE_WOOL
+      Amount: 1
+      Data: 1
+      Name: §cRemove Pet
+    blank:
+      Material: WHITE_WOOL
+      Amount: 1
+      Data: 8
+      Name: ' '
+  messages:
+    changeName:
+      playerMessage: '&cAn admin have removed your pet''s name'
+      adminMessage: '&cYou removed %owner%&4''s pet name'
+    disguise:
+      adminUndisguiseMessage: '&cAn admin undisguised you'
+      adminMessage: '&aYou undisguised %owner%'
+    ride:
+      adminEjectMessage: '&cAn admin ejected you off the pet'
+      adminMessage: '&aYou ejected %owner%&a off his pet'
+    removePet:
+      adminMessage: '&cYou removed &c%owner%&c''s pet'
+      playerMessage: '&cAn admin have removed your pet'
+mainCommand:
+  disguise:
+    rideInterrupt: '&cYou can''t disguise as your pet while you''re riding it'
+    toUndisguise: '&aTo undisguise use the disguise command agian'
+    disguised: '&aYou are now disguised'
+    notDisguised: '&cYou are now not disguised'
+  ride:
+    disguiseInterrupt: '&cYou can''t ride your pet while you''re disguised'
+    ridingMessage: '&aYou are now riding your pet'
+    notRidingMessage: '&cYou are now not riding your pet'
+useGenericItemIfNoPerms: true

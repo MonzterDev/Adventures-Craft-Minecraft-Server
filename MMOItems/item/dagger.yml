@@ -1,0 +1,214 @@
+STEEL_DAGGER:
+  base:
+    material: IRON_SWORD
+    name: '&fSteel Dagger'
+    gem-sockets: []
+    ability: {}
+    tier: COMMON
+    attack-damage: 30.0
+    unbreakable: true
+    durability: 7.0
+BONE_DAGGER:
+  base:
+    material: STONE_SWORD
+    attack-damage: 50.0
+    undead-damage: 20
+    tier: RARE
+    name: '&9Bone Dagger'
+    unbreakable: true
+    durability: 1.0
+STEAK:
+  base:
+    material: WOODEN_SWORD
+    lore:
+    - '&fPut it through the Vampire''s hearts!'
+    attack-damage: 45.0
+    critical-strike-power: 15.0
+    tier: UNCOMMON
+    name: '&2Stake'
+    unbreakable: true
+    durability: 1.0
+STEAK2:
+  base:
+    material: WOODEN_SWORD
+    lore:
+    - '&fPut it through the Vampire''s hearts!'
+    attack-damage: 65.0
+    critical-strike-power: 25.0
+    tier: RARE
+    unbreakable: true
+    name: '&9Stake'
+    durability: 2.0
+DRACULA_DAGGER:
+  base:
+    material: IRON_SWORD
+    tier: UNCOMMON
+    name: '&2Drac''s Dagger'
+    gem-sockets: []
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ON_HIT
+        drain: 10.0
+        cooldown: 10.0
+    lore:
+    - §7Every §c10§7sec, hitting an
+    - §7enemy §cdrains §7their health,
+    - §chealing §7you for §c50 HP§7.
+    hide-enchants: true
+    disable-smelting: true
+    unbreakable: true
+    upgrade: {}
+    attack-damage: 65.0
+    critical-strike-chance: 10.0
+    critical-strike-power: 5.0
+    durability: 3.0
+DRACULA_DAGGER2:
+  base:
+    material: IRON_SWORD
+    tier: RARE
+    name: '&9Drac''s Dagger'
+    gem-sockets: []
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ON_HIT
+        drain: 20.0
+        cooldown: 5.0
+    lore:
+    - §7Every §c10§7sec, hitting an
+    - §7enemy §cdrains §7their health,
+    - §chealing §7you for §c50 HP§7.
+    hide-enchants: true
+    disable-smelting: true
+    unbreakable: true
+    upgrade: {}
+    attack-damage: 100
+    critical-strike-chance: 25.0
+    critical-strike-power: 15.0
+    durability: 4.0
+PANDA_CLAW:
+  base:
+    material: END_ROD
+    name: §2Panda Claw
+    unbreakable: true
+    tier: UNCOMMON
+    attack-damage: 55.0
+    critical-strike-power: 15.0
+    disable-crafting: true
+    disable-interaction: true
+PANDA_CLAW2:
+  base:
+    material: END_ROD
+    name: §9Panda Claw
+    unbreakable: true
+    tier: RARE
+    attack-damage: 75.0
+    critical-strike-power: 25.0
+    disable-crafting: true
+    disable-interaction: true
+EMERALD_DAGGER:
+  base:
+    material: IRON_SWORD
+    name: §2Emerald Dagger
+    attack-damage: 75.0
+    unbreakable: true
+    tier: UNCOMMON
+    gem-sockets:
+    - Uncolored
+    will-break: false
+    durability: 6.0
+MACHETE:
+  base:
+    material: IRON_SWORD
+    name: §9Machete
+    attack-damage: 75.0
+    unbreakable: true
+    tier: RARE
+    ability:
+      ability1:
+        type: ROOT
+        mana: 15.0
+        cooldown: 10.0
+        mode: RIGHT_CLICK
+    lore:
+    - §cRoot §7enemies for 3 seconds!
+    durability: 5.0
+GOBLIN_CLUB:
+  base:
+    material: WOODEN_SWORD
+    name: '&9Goblin Club'
+    displayed-type: Club
+    attack-damage: 35.0
+    critical-strike-chance: 25.0
+    attack-speed: 10.0
+    tier: RARE
+    unbreakable: true
+    knockback-resistance: 0.5
+    durability: 3.0
+BLAZE_ARM:
+  base:
+    material: BLAZE_ROD
+    tier: RARE
+    name: '&9Blaze Arm'
+    gem-sockets:
+    - Uncolored
+    lore:
+    - §7Not only did you break his arm...
+    - §7you're using it as a weapon too!
+    hide-enchants: true
+    disable-smelting: true
+    unbreakable: true
+    attack-damage: 95
+    critical-strike-chance: 5.0
+    critical-strike-power: 10.0
+    faction-damage-void: 25.0
+SHADOW_DAGGER:
+  base:
+    material: STONE_SWORD
+    tier: RARE
+    name: '&9Shadow Dagger'
+    gem-sockets:
+    - Uncolored
+    lore:
+    - §7Dash &c2 blocks §7head when blocking!
+    - §7
+    - §7Stolen from a sneaky §cVoid Assassin§7!
+    hide-enchants: true
+    disable-smelting: true
+    unbreakable: true
+    attack-damage: 115
+    faction-damage-void: 25.0
+    movement-speed: 0.05
+    ability:
+      ability1:
+        type: VOID_WARP
+        mode: RIGHT_CLICK
+        mana: 25.0
+        cooldown: 5.0
+SHADOW_DAGGER2:
+  base:
+    material: NETHERITE_SWORD
+    tier: LEGENDARY
+    name: '&5Shadow Dagger'
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    lore:
+    - §7Dash &c3 blocks §7head when blocking!
+    - §7
+    - §7Stolen from a sneaky §cVoid Assassin§7!
+    hide-enchants: true
+    disable-smelting: true
+    unbreakable: true
+    attack-damage: 150
+    faction-damage-void: 50.0
+    movement-speed: 0.1
+    critical-strike-chance: 15.0
+    critical-strike-power: 20.0
+    ability:
+      ability1:
+        type: VOID_WARP
+        mode: RIGHT_CLICK
+        mana: 30.0
+        cooldown: 2.0

@@ -1,0 +1,107 @@
+
+# Display options
+display:
+    name: 'Arcane Mage'
+    lore:
+    - 'The Mage has mastered the power of the'
+    - 'Arcanes, taking down any enemy on his path'
+    - 'using powerful magic & ranged abilities.'
+    attribute-lore:
+    - '&a+ &7Mana Regeneration'
+    - '&a+ &7Health Regeneration'
+    - '&a+ &7Max Mana'
+    - '&c- &7Max Health'
+    - ''
+    - '&8&lStrength'
+    - '&7  Attack Damage: &c1 &7(+&c0&7)'
+    - '&7  Attack Speed: &c4 &7(+&c0&7)'
+    - '&7  Max Health: &c18 &7(+&c0&7)'
+    - ''
+    - '&8&lDexterity'
+    - '&7  Knockback Resistance: &a0% &7(+&a0%&7)'
+    - '&7  Movement Speed: &a20 &7(+&a0&7)'
+    - '&7  Speed Malus Reduction: &a0% &7(+&a0%&7)'
+    - ''
+    - '&8&lIntellect'
+    - '&7  Max Mana: &930 &7(+&91.3&7)'
+    - '&7  Health Regen: &90.13 &7(+&90&7)'
+    - '&7  Mana Regen: &90.2 &7(+&90.04&7)'
+    item: BLAZE_POWDER:1 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# Players cannot go further than Lvl 100
+max-level: 100
+
+# This class must not display in /class
+# becasue it is a subclass of mage
+options:
+    display: false
+
+triggers:
+    level-up:
+    - 'command{format="mmocore admin skill-points give %player% 1"}'
+
+attributes:
+    max-health:
+        base: 18
+        per-level: 0
+    max-mana:
+        base: 30
+        per-level: 1.3
+    mana-regeneration:
+        base: .2
+        per-level: .04
+    health-regeneration:
+        base: 0.13
+        per-level: 0
+
+skills:
+    FIRE_STORM:
+        level: 1
+        max-level: 30
+        damage:
+            base: 8.0
+            per-level: 4.0
+        ignite:
+            base: 2.0
+            per-level: 0.1
+        mana:
+            base: 15.0
+            per-level: 2.0
+        cooldown:
+            base: 5.0
+            per-level: -0.1
+            max: 5.0
+            min: 1.0
+
+    POWER_MARK:
+        level: 3
+        max-level: 30
+    FIREBALL:
+        level: 5
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 6
+        max-level: 30
+    ICE_SPIKES:
+        level: 8
+        max-level: 30
+    AMBERS:
+        level: 9
+        max-level: 30
+    WEAKEN:
+        level: 10
+        max-level: 30
+    WARP:
+        level: 13
+        max-level: 30
+    GREATER_HEALINGS:
+        level: 15
+        max-level: 30
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

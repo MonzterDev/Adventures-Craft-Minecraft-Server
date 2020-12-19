@@ -1,0 +1,404 @@
+# on mythicmob deathevent:
+# #    broadcast "%{_looterslist::*}%"
+#     #Morden
+#     if displayname of activemob event-activemob contains "&7[&fLVL 10&7] &cMorden the Revived":
+#         set {_looterslist::%player%::*} to get threattable of activemob event-activemob
+#         set {MordenDrop::%player%} to random integer from 1 and 3
+#         if {MordenDrop::%player%} = 1:
+#             broadcast "RNG = %{MordenDrop::%player%}% & %{_looterslist::%player%::*}%"
+#             message "&c&lMorden the Revive &awas defeat by &e%{_looterslist::*}%&a!" to {_looterslist::%player%::*}
+#             message "%nl%&e&lRewards:" to {_looterslist::%player%::*}
+#         if {MordenDrop::%player%} = 2:
+#             broadcast "RNG = %{MordenDrop::%player%}% & %{_looterslist::%player%::*}%"
+#             message "&c&lMorden the Revive &awas defeat by &e%{_looterslist::*}%&a!" to {_looterslist::%player%::*}
+#             message "%nl%&e&lRewards:" to {_looterslist::%player%::*}
+#         if {MordenDrop::%player%} = 3:
+#             broadcast "RNG = %{MordenDrop::%player%}% & %{_looterslist::%player%::*}%"
+#             message "&c&lMorden the Revive &awas defeat by &e%{_looterslist::*}%&a!" to {_looterslist::%player%::*}
+#             message "%nl%&e&lRewards:" to {_looterslist::%player%::*}
+
+
+# on mythicmob deathevent:
+#     if displayname of activemob event-activemob contains "&7[&fLVL 10&7] &cMorden the Revived":
+#         set {_looterslist::%player%::*} to get threattable of activemob event-activemob
+#         message "&c&lMorden the Revive &awas defeat by &e%{_looterslist::%player%::*}%&a!" to {_looterslist::%player%::*}
+#         message "%nl%&aUse &e&l/BossRewards &ato claim your rewards!" to {_looterslist::*}
+#         make {_looterslist::%player%::*} execute command "/dm open Testmenu"
+
+command /ReaperClaim [<number>]:
+    trigger:
+        set {ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
+        if {ReaperPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {ReaperPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.ReaperReward -1"
+                        wait 10 ticks       
+                        set {ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
+                        send "%nl%&aYou have %{ReaperPoints::%player%}% &cReaper &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 98%:
+                            send "&8&l» &9Enchanted Bones &f98%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_BONE %player% 1-3"
+                        if chance of 1%:
+                            send "&8&l» &9Reaper Head &f1%%" 
+                            execute console command "/mi give QUEST REAPER_HEAD %player% 1"
+                        if chance of .95%:
+                            send "&8&l» &eBone Whip &f.55%%" 
+                            execute console command "/mi give WHIP BONEWHIP2 %player% 1"
+                        if chance of .85%:
+                            send "&8&l» &5Golden Skull &f.85%%" 
+                            execute console command "/mi give ARMOR GOLDEN_SKULL %player% 1"
+                        if chance of .65%:
+                            send "&8&l» &9Reaper Companion &f.65%%" 
+                            execute console command "/mi give COMPANION PET_REAPER %player% 1"
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /MordenClaim [<number>]:
+    trigger:
+        set {MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
+        if {MordenPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {MordenPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.MordenReward -1"
+                        wait 10 ticks       
+                        set {MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
+                        send "%nl%&aYou have %{MordenPoints::%player%}% &cMorden &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 100%:
+                            send "&8&l» &9Morden Flesh &f100%%" 
+                            send "&8&l» &9Enchanted Bones &f100%%" 
+                            execute console command "/mi give MATERIAL MORDEN_FLESH %player% 1-3"
+                            execute console command "/mi give MATERIAL ENCHANTED_BONE %player% 1-3"
+
+                        if chance of 5%:
+                            send "&8&l» &9Undead Catalyst &f5%%" 
+                            execute console command "/mi give CATALYST UNDEAD_CATALYST %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &5Undead Gem &f5%%" 
+                            execute console command "/mi give GEM_STONE UNDEAD_GEM3 %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &5Dead Catalyst &f1%%" 
+                            execute console command "/mi give CATALYST DEAD_CATALYST %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &9Morden Head &f1%%" 
+                            execute console command "/mi give QUEST MORDEN_HEAD %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &5Undead Bow &f1%%" 
+                            execute console command "/mi give BOW LUNDEAD_BOW %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eUndead Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE UNDEAD_GEM4 %player% 1"
+
+                        if chance of .5%:
+                            send "&8&l» &5Morden Head &f.5%%" 
+                            execute console command "/mi give ARMOR MORDEN_HEAD %player% 1"
+                        if chance of .5%:
+                            send "&8&l» &eGrave Digger &f.5%%" 
+                            execute console command "/mi give HAMMER GRAVE_DIGGER %player% 1"
+                        if chance of .5%:
+                            send "&8&l» &5Morden Boots &f.5%%" 
+                            execute console command "/mi give ARMOR MORDEN_FEET %player% 1"
+
+                        if chance of .25%:
+                            send "&8&l» &5Morden Chestplate &f.25%%" 
+                            execute console command "/mi give ARMOR MORDEN_CHEST %player% 1"
+                        if chance of .25%:
+                            send "&8&l» &5Morden Leggings &f.25%%" 
+                            execute console command "/mi give ARMOR MORDEN_LEGS %player% 1"
+                        if chance of .25%:
+                            send "&8&l» &eBone Sword &f.25%%" 
+                            execute console command "/mi give SWORD BONE_SWORD2 %player% 1"
+                        if chance of .25%:
+                            send "&8&l» &eMorden Companion &f.25%%" 
+                            execute console command "/mi give COMPANION PET_BOSS %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+
+command /DraculaClaim [<number>]:
+    trigger:
+        set {DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
+        if {DraculaPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {DraculaPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.DraculaReward -1"
+                        wait 10 ticks       
+                        set {DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
+                        send "%nl%&aYou have %{DraculaPoints::%player%}% &cDracula &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 25%:
+                            send "&8&l» &2Dracs Heart &f25%%" 
+                            execute console command "/mi give CONSUMABLE DRAC_HEART %player% 1-3"
+
+                        if chance of 7%:
+                            send "&8&l» &2Steak &f7%%" 
+                            execute console command "/mi give DAGGER STEAK %player% 1"
+
+                        if chance of 5%:
+                            send "&8&l» &2Dracs Dagger &f5%%" 
+                            execute console command "/mi give DAGGER DRACULA_DAGGER %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Void Dracula Head &f5%%" 
+                            execute console command "/mi give QUEST DRACULA_HEAD %player% 1"
+
+                        if chance of 3%:
+                            send "&8&l» &9Steak &f3%%" 
+                            execute console command "/mi give DAGGER STEAK2 %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &9Dracs Dagger &f2%%" 
+                            execute console command "/mi give DAGGER DRACULA_DAGGER2 %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &9Dracs Fang &f1%%" 
+                            execute console command "/mi give ACCESSORY DRACS_FANG %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &9Vein Drainer &f1%%" 
+                            execute console command "/mi give GEM_STONE VEIN_DRAIN %player% 1"
+
+                        if chance of .9%:
+                            send "&8&l» &5Dracs Pickaxe &f.9%%" 
+                            execute console command "/mi give TOOL DRACS_PICKAXE %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /DryadClaim [<number>]:
+    trigger:
+        set {DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
+        if {DryadPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {DryadPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.DryadReward -1"
+                        wait 10 ticks       
+                        set {DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
+                        send "%nl%&aYou have %{DryadPoints::%player%}% &cDryad &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 100%:
+                            send "&8&l» &91-6 Enchanted Logs &f100%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_OAK_LOG %player% 0-1"
+                            execute console command "/mi give MATERIAL ENCHANTED_DARK_OAK_LOG %player% 0-1"
+                            execute console command "/mi give MATERIAL ENCHANTED_JUNGLE_LOG %player% 0-1"
+                            execute console command "/mi give MATERIAL ENCHANTED_ACACIA_LOG %player% 0-1"
+                            execute console command "/mi give MATERIAL ENCHANTED_BIRCH_LOG %player% 0-1"
+                            execute console command "/mi give MATERIAL ENCHANTED_SPRUCE_LOG %player% 0-1"
+
+                        if chance of 5%:
+                            send "&8&l» &9Dryad Head &f5%%" 
+                            execute console command "/mi give QUEST DRYAD_HEAD %player% 1"
+
+                        if chance of 3%:
+                            send "&8&l» &5Dryad Weak Vine &f3%%" 
+                            execute console command "/mi give WAND DRYAD_WEAK_VINE %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &5Carving Axe &f2%%" 
+                            execute console command "/mi give AXE CARVING_AXE %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &5Dryad Charm &f2%%" 
+                            execute console command "/mi give ACCESSORY DRYAD_CHARM %player% 1"
+
+                        if chance of .9%:
+                            send "&8&l» &eDryad Bark &f.9%%" 
+                            execute console command "/mi give QUEST DRYAD_BARK %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /GoblinChiefClaim [<number>]:
+    trigger:
+        set {GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
+        if {GoblinChiefPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {GoblinChiefPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.GoblinChiefReward -1"
+                        wait 10 ticks       
+                        set {GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
+                        send "%nl%&aYou have %{GoblinChiefPoints::%player%}% &cGoblin Chief &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 5%:
+                            send "&8&l» &2Goblin Hammer &f5%%" 
+                            execute console command "/mi give HAMMER GOBLIN_HAMMER %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Goblin Chief Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE CHIEF_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Goblin Chief Head &f5%%" 
+                            execute console command "/mi give QUEST CHIEF_HEAD %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &5Chief Hammer &f2%%" 
+                            execute console command "/mi give HAMMER CHIEF_HAMMER %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &eChief Jukebox &f1%%" 
+                            execute console command "/mm items give %player% CHIEF_JUKE_ITEM"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+
+command /VoidWitherClaim [<number>]:
+    trigger:
+        set {VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
+        if {VoidWitherPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {VoidWitherPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.VoidWitherReward -1"
+                        wait 10 ticks       
+                        set {VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
+                        send "%nl%&aYou have %{VoidWitherPoints::%player%}% &cVoid Wither &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 5%:
+                            send "&8&l» &9Void Wither Head &f5%%" 
+                            execute console command "/mi give QUEST WITHER_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Void Wither Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE WITHER_HEAD %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &5Cursed Boots &f1%%" 
+                            execute console command "/mi give ARMOR CURSED_BOOTS %player% 1"
+
+                        if chance of .95%:
+                            send "&8&l» &5Cursed Helmet &f.95%%" 
+                            execute console command "/mi give ARMOR CURSED_HELMET %player% 1"
+
+                        if chance of .90%:
+                            send "&8&l» &5Cursed Leggings &f.9%%" 
+                            execute console command "/mi give ARMOR CURSED_LEGGINGS %player% 1"
+
+                        if chance of .85%:
+                            send "&8&l» &5Cursed Chestplate &f.85%%" 
+                            execute console command "/mi give ARMOR CURSED_CHESTPLATE %player% 1"
+
+                        if chance of .05%:
+                            send "&8&l» &eDevil Helmet &f.05%%" 
+                            execute console command "/mi give ARMOR DEVIL_HEAD %player% 1"
+                        if chance of .05%:
+                            send "&8&l» &eDevil Boots &f.05%%" 
+                            execute console command "/mi give ARMOR DEVIL_BOOTS %player% 1"
+
+                        if chance of .01%:
+                            send "&8&l» &eDevil Chestplate &f.01%%" 
+                            execute console command "/mi give ARMOR DEVIL_CHEST %player% 1"
+                        if chance of .01%:
+                            send "&8&l» &eDevil Leggings &f.01%%" 
+                            execute console command "/mi give ARMOR DEVIL_LEGS %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /VoidMagmaClaim [<number>]:
+    trigger:
+        set {VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
+        if {VoidMagmaPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {VoidMagmaPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.VoidMagmaReward -1"
+                        wait 10 ticks       
+                        set {VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
+                        send "%nl%&aYou have %{VoidMagmaPoints::%player%}% &cVoid Magma &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 100%:
+                            send "&8&l» &9Void Magma Coins &f100%%" 
+                            execute console command "/mi give MATERIAL MAGMA_COIN %player% 1-2"
+
+                        if chance of 75%:
+                            send "&8&l» &9Enchanted Magma Cream &f75%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_MAGMA_CREAM %player% 1-3"
+
+                        if chance of 5%:
+                            send "&8&l» &9Void Magma Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE VOIDMAGMA_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Void Magma Head &f5%%" 
+                            execute console command "/mi give QUEST VOIDMAGMA_HEAD %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &2Magma Fissure &f2%%" 
+                            execute console command "/mi give SPELL MAGMA_FISSURE %player% 2-5"
+
+                        if chance of 1%:
+                            send "&8&l» &9Magma Fissure &f1%%" 
+                            execute console command "/mi give SPELL MAGMA_FISSURE2 %player% 2-5"
+
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /GhastlyClaim [<number>]:
+    trigger:
+        set {GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
+        if {GhastlyPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {GhastlyPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.GhastlyReward -1"
+                        wait 10 ticks       
+                        set {GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
+                        send "%nl%&aYou have %{GhastlyPoints::%player%}% &cGhastly &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 100%:
+                            send "&8&l» &9Void Magma Coins &f100%%" 
+                            execute console command "/mi give QUEST GHASTLY_TEAR %player% 1"
+
+                        if chance of 5%:
+                            send "&8&l» &9Void Magma Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE GHASTLY_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Void Magma Head &f5%%" 
+                            execute console command "/mi give QUEST GHASTLY_HEAD %player% 1"
+
+                        if chance of .75%:
+                            send "&8&l» &eDevil's Head &f.75%%" 
+                            execute console command "/mi give ARMOR DEVIL_HEAD %player% 1"
+                        if chance of .75%:
+                            send "&8&l» &eDevil's Boots &f.75%%" 
+                            execute console command "/mi give ARMOR DEVIL_BOOTS %player% 1"
+
+                        if chance of .5%:
+                            send "&8&l» &eDevil's Chest &f.5%%" 
+                            execute console command "/mi give ARMOR DEVIL_CHEST %player% 1"
+                        if chance of .5%:
+                            send "&8&l» &eDevil's Legs &f.5%%" 
+                            execute console command "/mi give ARMOR DEVIL_LEGS %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player

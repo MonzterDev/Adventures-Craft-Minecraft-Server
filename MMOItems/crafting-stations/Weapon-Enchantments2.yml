@@ -1,0 +1,177 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §8Weapon Enchantments §7§l«§f§l«
+max-queue-size: 10
+layout: Weapon_Enchantments2
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: RED_STAINED_GLASS_PANE
+  no-queue-item:
+    material: RED_STAINED_GLASS_PANE
+    name: '&c&lLOCKED'
+
+recipes:
+  IMPAIRMENT1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IMPAIRMENT1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant IMPAIRMENT 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  IMPAIRMENT2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IMPAIRMENT2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant IMPAIRMENT 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  IMPAIRMENT3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IMPAIRMENT3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant IMPAIRMENT 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+
+  GNASH1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: GNASH1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant GNASH 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  GNASH2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: GNASH2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant GNASH 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  GNASH3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: GNASH3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant GNASH 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+
+  IGNITE1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IGNITE1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant IGNITE 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  IGNITE2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IGNITE2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant IGNITE 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  IGNITE3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: IGNITE3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant IGNITE 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+
+  COMBUST1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: COMBUST1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant COMBUST 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  COMBUST2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: COMBUST2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant COMBUST 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  COMBUST3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: COMBUST3
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant COMBUST 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+

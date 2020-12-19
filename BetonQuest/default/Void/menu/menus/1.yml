@@ -1,0 +1,862 @@
+height: 5
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_part1,!default-Void-Khazix.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_completed, default-Void-Khazix.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_rewards_unclaimed,!default-Void-Khazix.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward1_Claim
+      left: default-Void-Khazix.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lWorshiper Wonder'
+        - '&f&o'
+        - '&fHarvest 50 &cVoid Worshipers'
+        - '&fBring &l50x Void DNA &fback to &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Thrall Thrashing'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q2_part1,!default-Void-Khazix.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWorshiper Wonder'
+        - '&f&o'
+        - '&fVanquish 50 &cVoid Worshipers'
+        - '&fBring &l50x Void DNA &fback to &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Thrall Thrashing'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lWorshiper Wonder'
+        - '&f&o'
+        - '&fHarvest 50 &cVoid Worshipers'
+        - '&fBring &l50x Void DNA &fback to &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Worshiper Wonder'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_part1,!default-Void-Khazix.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_completed, default-Void-Khazix.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_rewards_unclaimed,!default-Void-Khazix.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward3_Claim
+      left: default-Void-Khazix.QuestReward3_Claim
+
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven after completing Unblighted'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_part1,!default-Void-Khazix.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_completed, default-Void-Khazix.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_rewards_unclaimed,!default-Void-Khazix.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward4_Claim
+      left: default-Void-Khazix.QuestReward4_Claim
+
+#FIRST QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSpiral Crystals'
+        - '&f&o'
+        - '&fDestroy 12 Ender Crystals atop the Bedrock & Obsidian spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bulblin & Bulbo'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q5_part1,!default-Void-Khazix.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpiral Crystals'
+        - '&f&o'
+        - '&fDestroy 12 Ender Crystals atop the Bedrock & Obsidian spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lSpiral Crystals'
+        - '&f&o'
+        - '&fDestroy 12 Ender Crystals atop the Bedrock & Obsidian spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+
+#SECOND QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Khazix.q6_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spiral Crystals'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_part1,!default-Void-Khazix.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spiral Crystals'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_completed,default-Void-Khazix.q6_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+  quest6_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_rewards_unclaimed,!default-Void-Khazix.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward6_Claim
+      left: default-Void-Khazix.QuestReward6_Claim
+    
+
+#SECOND QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kassadin.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Kassadin in the Void'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_part1,!default-Void-Kassadin.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Kassadin in the Void'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_completed,default-Void-Kassadin.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+  quest7_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_rewards_unclaimed,!default-Void-Kassadin.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward1_Claim
+      left: default-Void-Kassadin.QuestReward1_Claim
+#SECOND QUEST
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kassadin.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Corrupt Land'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_part1,!default-Void-Kassadin.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Corrupt Land'        
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_completed,default-Void-Kassadin.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+  quest8_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_rewards_unclaimed,!default-Void-Kassadin.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward2_Claim
+      left: default-Void-Kassadin.QuestReward2_Claim
+#SECOND QUEST
+  quest9_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kassadin.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Hardencity'        
+    close: false
+  quest9_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_part1,!default-Void-Kassadin.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Hardencity'        
+    close: false
+  quest9_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_completed,default-Void-Kassadin.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+    close: false
+  quest9_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_rewards_unclaimed,!default-Void-Kassadin.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward3_Claim
+      left: default-Void-Kassadin.QuestReward3_Claim
+#SECOND QUEST
+  quest10_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kassadin.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ring Around the Wither Roses'        
+    close: false
+  quest10_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_part1,!default-Void-Kassadin.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ring Around the Wither Roses'        
+    close: false
+  quest10_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_completed,default-Void-Kassadin.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+    close: false
+  quest10_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_rewards_unclaimed,!default-Void-Kassadin.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward4_Claim
+      left: default-Void-Kassadin.QuestReward4_Claim
+#SECOND QUEST
+  quest11_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kassadin.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pop a Vein'        
+    close: false
+  quest11_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_part1,!default-Void-Kassadin.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pop a Vein'        
+    close: false
+  quest11_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_completed,default-Void-Kassadin.q5_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+  quest11_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_rewards_unclaimed,!default-Void-Kassadin.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward5_Claim
+      left: default-Void-Kassadin.QuestReward5_Claim
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  17-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  25-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  31-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-16: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest3_inactive,quest3_active,quest3_completed,quest4_inactive,quest4_active,quest4_completed,quest5_inactive,quest5_active,quest5_completed,quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed
+  20-24: quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed,quest9_inactive,quest9_active,quest9_completed,quest9_unclaimed,quest10_inactive,quest10_active,quest10_completed,quest10_unclaimed,quest11_inactive,quest11_active,quest11_completed,quest11_unclaimed
+  40: back

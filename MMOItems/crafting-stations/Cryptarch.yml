@@ -1,0 +1,49 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §8Cryptarch §7§l«§f§l«
+max-queue-size: 10
+layout: Cryptarch
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: RED_STAINED_GLASS_PANE
+  no-queue-item:
+    material: RED_STAINED_GLASS_PANE
+    name: '&c&lLOCKED'
+recipes:
+  ENGRAM1:
+    options:
+        output-item: false
+    output:
+      type: MATERIAL
+      id: ENGRAM1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENGRAM1,amount=1}
+    triggers:
+    #- exp{profession=CRYPTARCH;amount=100}
+    - command{format="mm items get RARE_ENGRAM",sender=OP}
+  ENGRAM2:
+    options:
+        output-item: false
+    output:
+      type: MATERIAL
+      id: ENGRAM2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENGRAM2,amount=1}
+    triggers:
+    #- exp{profession=CRYPTARCH;amount=200}
+    - command{format="mm items get LEGENDARY_ENGRAM",sender=OP}
+  ENGRAM3:
+    options:
+        output-item: false
+    output:
+      type: MATERIAL
+      id: ENGRAM3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENGRAM3,amount=1}
+    triggers:
+    #- exp{profession=CRYPTARCH;amount=300}
+    - command{format="mm items get EXOTIC_ENGRAM",sender=OP}    

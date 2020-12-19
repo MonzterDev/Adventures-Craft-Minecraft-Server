@@ -1,0 +1,46 @@
+# default config.yml for ConsoleSpamFix
+# config version 1.8.1
+
+#Add here the messages you want to hide from your console and logs.
+#Each line represents a new message.
+#NOTE! You dont need to add the full message!
+#The plugin will hide all messages that contain the text added below.
+#  EXAMPLE:
+#
+#    Messages-To-Hide-Filter:
+#    - 'WARNING: unlocalizedName'
+#
+#  All messages that will appear in the server console that contain these words 'WARNING: unlocalizedName' will be hidden and they will not appear on logs or console.
+#  If you have large errors you dont have to type the full error. But the more words you add the more accurate will be and will not hide other messages that may contain the words added in the filter.
+
+Messages-To-Hide-Filter:
+- 'Could not pass event EntityTargetLivingEntityEvent to WorldGuardEliminate v1.5'
+- 'PlayerInteractEvent to BankSystem v2.0.3'
+- 'WorldGuardEliminate v1.5 generated an exception'
+- '[WorldGuardEliminate] Task #19'
+- '[WorldGuard] Registering session'
+- '[ASkyBlock] Unknown material'
+- '[PacketFilterManager] [ExploitFixer] Unsupported client packet'
+- '[PlaceholderAPI] IslandBorder is currently using'
+- '[PlaceholderAPI] CrazyCrates is currently using'
+- '[PlaceholderAPI] SkyLevels is currently using'
+- '[CrazyEnchantments] MassiveStats was unable to'
+- '[CrazyCrates] MassiveStats was unable to communicate'
+- 'Ignored advancement'
+- 'Establishing SSL connection without'
+- 'Ignoring unknown attribute'
+- 'Plugin Scoreboard-revision vR3 1.4.2 RELEASE generated an exception'
+- 'Use the Notify system instead: https://betonquest.github.io/BetonQuest/versions/dev/User-Documentation/Notifications/'
+- 'ViaVersion'
+- 'ViaBackwards'
+- 'Metadata for entity'
+- '[ViaBackwards] Metadata'
+- "org.bukkit.command.CommandException: Unhandled exception executing command 'itemjoin' in plugin ItemJoin v5.1.0-RELEASE-b545"
+#Chat messages with color and format codes support.
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
+ChatMessages:
+    NoPermission: '&4[System] &cYou don''t have permission!'
+    CmdHelp: '&4[System] &cAvailable commands:&6 /csf reload'
+    CmdReload: '&2[System] &aConfig reload complete!'
+
+    

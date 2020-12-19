@@ -1,0 +1,260 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fSpells §7§l«§f§l«
+max-queue-size: 100
+layout: default
+items:
+  fill:
+    material: PINK_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  TARGETED_FIREBALL:
+    output:
+      type: SPELL
+      id: TARGETED_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=NETHERRACK,amount=64}
+    - vanilla{type=BLAZE_ROD,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=1}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  SPARKLE:
+    output:
+      type: SPELL
+      id: SPARKLE
+      amount: 1
+    ingredients:
+    - vanilla{type=BONE,amount=64}
+    - vanilla{type=IRON_INGOT,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  BUNNY_MODE:
+    output:
+      type: SPELL
+      id: BUNNY_MODE
+      amount: 1
+    ingredients:
+    - vanilla{type=RABBIT_FOOT,amount=64}
+    - vanilla{type=SUGAR,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=2}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  ARCANE_RIFT:
+    output:
+      type: SPELL
+      id: ARCANE_RIFT
+      amount: 1
+    ingredients:
+    - vanilla{type=END_STONE,amount=64}
+    - vanilla{type=ENDER_PEARL,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  BURNING_HANDS:
+    output:
+      type: SPELL
+      id: BURNING_HANDS
+      amount: 1
+    ingredients:
+    - vanilla{type=MAGMA_CREAM,amount=64}
+    - vanilla{type=NETHERRACK,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  FREEZING_CURSE:
+    output:
+      type: SPELL
+      id: FREEZING_CURSE
+      amount: 1
+    ingredients:
+    - vanilla{type=ICE,amount=64}
+    - vanilla{type=SNOW,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=3}
+    triggers:
+    - exp{profession=Spellforging,amount=100}
+  SHULKER_MISSILE:
+    output:
+      type: SPELL
+      id: SHULKER_MISSILE
+      amount: 1
+    ingredients:
+    - vanilla{type=FEATHER,amount=64}
+    - vanilla{type=ENDER_PEARL,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  ARCANE_HAIL:
+    output:
+      type: SPELL
+      id: ARCANE_HAIL
+      amount: 1
+    ingredients:
+    - vanilla{type=ICE,amount=64}
+    - vanilla{type=MELON_SLICE,amount=128}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  FROZEN_AURA:
+    output:
+      type: SPELL
+      id: FROZEN_AURA
+      amount: 1
+    ingredients:
+    - vanilla{type=ICE,amount=128}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  MAGMA_FISSURE:
+    output:
+      type: SPELL
+      id: MAGMA_FISSURE
+      amount: 1
+    ingredients:
+    - vanilla{type=MAGMA_CREAM,amount=64}
+    - vanilla{type=BONE,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  MAGICAL_PATH:
+    output:
+      type: SPELL
+      id: MAGICAL_PATH
+      amount: 1
+    ingredients:
+    - vanilla{type=PUMPKIN,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  ICE_CRYSTAL:
+    output:
+      type: SPELL
+      id: ICE_CRYSTAL
+      amount: 1
+    ingredients:
+    - vanilla{type=ICE,amount=64}
+    - vanilla{type=DIAMOND,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  CORRUPTED_FANGS:
+    output:
+      type: SPELL
+      id: CORRUPTED_FANGS
+      amount: 1
+    ingredients:
+    - vanilla{type=END_STONE,amount=64}
+    - vanilla{type=ENDER_PEARL,amount=64}
+    - vanilla{type=NETHER_WART,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=200}
+  BLACK_HOLE:
+    output:
+      type: SPELL
+      id: BLACK_HOLE
+      amount: 1
+    ingredients:
+    - vanilla{type=END_STONE,amount=64}
+    - vanilla{type=ENDER_PEARL,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=6}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  BOUNCY_FIREBALL:
+    output:
+      type: SPELL
+      id: BOUNCY_FIREBALL
+      amount: 1
+    ingredients:
+    - vanilla{type=MAGMA_CREAM,amount=64}
+    - vanilla{type=LEATHER,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=6}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  CURSED_BEAM:
+    output:
+      type: SPELL
+      id: CURSED_BEAM
+      amount: 1
+    ingredients:
+    - vanilla{type=GUNPOWDER,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=6}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  LIFE_ENDER:
+    output:
+      type: SPELL
+      id: LIFE_ENDER
+      amount: 1
+    ingredients:
+    - vanilla{type=ENDER_PEARL,amount=64}
+    - vanilla{type=END_STONE,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  CORRUPT:
+    output:
+      type: SPELL
+      id: CORRUPT
+      amount: 1
+    ingredients:
+    - vanilla{type=MAGMA_CREAM,amount=64}
+    - vanilla{type=LEATHER,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=300}
+  CONTAMINATION:
+    output:
+      type: SPELL
+      id: CONTAMINATION
+      amount: 1
+    ingredients:
+    - vanilla{type=CACTUS,amount=64}
+    - vanilla{type=RED_MUSHROOM,amount=64}
+    - vanilla{type=BROWN_MUSHROOM,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=9}
+    triggers:
+    - exp{profession=Spellforging,amount=300}

@@ -1,0 +1,21 @@
+#Slay Undead 
+SlayHell: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 events:Hell_Mob_Point,Restart_Hell_Mob global
+
+#Slay Undead 1
+SlayHell1_Reward: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 conditions:HellMob1,!Hell_Mob_Complete1 events:Hell_Mob_Complete1 global
+SlayHell2_Reward: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 conditions:HellMob2,!Hell_Mob_Complete2 events:Hell_Mob_Complete2 global
+SlayHell3_Reward: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 conditions:HellMob3,!Hell_Mob_Complete3 events:Hell_Mob_Complete3 global
+SlayHell4_Reward: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 conditions:HellMob4,!Hell_Mob_Complete4 events:Hell_Mob_Complete4 global
+SlayHell5_Reward: mmobkill VOID_PIGMAN,VOID_DEMON,VOID_BLAZE2,VOID_NECROMANCER,VOID_PROTECTOR,VOID_HEALER,VOID_MAGMA,VOID_MAGMA2,VOID_MAGMA3,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2 amount:1 conditions:HellMob5,!Hell_Mob_Complete5 events:Hell_Mob_Complete5 global
+
+HellWither1_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Wither1,Hell,!Hell_Wither_Complete1 events:Hell_Wither_Complete1 global
+HellWither2_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Wither2,Hell,!Hell_Wither_Complete2 events:Hell_Wither_Complete2 global
+HellWither3_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Wither3,Hell,!Hell_Wither_Complete3 events:Hell_Wither_Complete3 global
+HellWither4_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Wither4,Hell,!Hell_Wither_Complete4 events:Hell_Wither_Complete4 global
+HellWither5_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Wither5,Hell,!Hell_Wither_Complete5 events:Hell_Wither_Complete5 global
+
+HellGhastly1_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Ghastly1,Hell,!Hell_Ghastly_Complete1 events:Hell_Ghastly_Complete1 global
+HellGhastly2_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Ghastly2,Hell,!Hell_Ghastly_Complete2 events:Hell_Ghastly_Complete2 global
+HellGhastly3_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Ghastly3,Hell,!Hell_Ghastly_Complete3 events:Hell_Ghastly_Complete3 global
+HellGhastly4_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Ghastly4,Hell,!Hell_Ghastly_Complete4 events:Hell_Ghastly_Complete4 global
+HellGhastly5_Reward: location -145;52;-1213;Spawn 500 conditions:Hell_Ghastly5,Hell,!Hell_Ghastly_Complete5 events:Hell_Ghastly_Complete5 global

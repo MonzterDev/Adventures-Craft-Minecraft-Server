@@ -1,0 +1,33 @@
+#     ___       ______    __       ___      
+#    /   \     |   _  \  |  |     /   \     
+#   /  ^  \    |  |_)  | |  |    /  ^  \    
+#  /  /_\  \   |      /  |  |   /  /_\  \   
+# /  _____  \  |  |\  \  |  |  /  _____  \  
+#/__/     \__\ | _| `._| |__| /__/     \__\ 
+# (A)nother (R)eally (I)nconvenient (A)PI
+# - by ASangarin
+#
+# Spigot: https://www.spigotmc.org/resources/80188/
+
+# A few small tweaks. These are usually requests
+# or other small features that are hard to come by
+# without filling up your plugins list.
+tweaks:
+  # 'true' makes bedrock drop itself when broken.
+  bedrock-drops: false
+  # 'true' prevents the dragon egg from teleporting
+  # away from or into protected regions. (REQUIRES WORLDGUARD)
+  limit-dragon-eggs: false
+  
+# Debug messages for many events.
+# Helps developers check what's going on
+# during different events. Stores the data
+# in 'event.log' inside the data folder.
+# EVENT CHECKER ONLY WORKS ON 1.13+!!
+event-checker:
+  block: false
+  entity: false
+  inventory: false
+  player: false
+  server: false
+  world: false

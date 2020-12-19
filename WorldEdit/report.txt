@@ -1,0 +1,231 @@
+================================
+System Information
+================================
+
+Java: Oracle Corporation 1.8.0_251 (http://java.oracle.com/)
+Operating System: Windows 10 10.0 (amd64)
+Available Processors: 16
+Free Memory: 2151 MB
+Max Memory: 4096 MB
+Total Memory: 4096 MB
+System Load Average: -1.0
+Java Uptime: 9 minutes
+Startup: 
+	Input Arguments: 
+		-Xms4G
+		-Xmx4G
+		-XX:+UseG1GC
+		-XX:+ParallelRefProcEnabled
+		-XX:MaxGCPauseMillis=200
+		-XX:+UnlockExperimentalVMOptions
+		-XX:+DisableExplicitGC
+		-XX:-OmitStackTraceInFastThrow
+		-XX:+AlwaysPreTouch
+		-XX:G1NewSizePercent=30
+		-XX:G1MaxNewSizePercent=40
+		-XX:G1HeapRegionSize=8M
+		-XX:G1ReservePercent=20
+		-XX:G1HeapWastePercent=5
+		-XX:G1MixedGCCountTarget=8
+		-XX:InitiatingHeapOccupancyPercent=15
+		-XX:G1MixedGCLiveThresholdPercent=90
+		-XX:G1RSetUpdatingPauseTimePercent=5
+		-XX:SurvivorRatio=32
+		-XX:MaxTenuringThreshold=1
+		-Dusing.aikars.flags=true
+		-Daikars.new.flags=true
+Virtual Machine: 
+	Name: Java HotSpot(TM) 64-Bit Server VM
+	Vendor: Oracle Corporation
+	Version: Oracle Corporation
+Specification: 
+	Name: Java Virtual Machine Specification
+	Vendor: Oracle Corporation
+	Version: 1.8
+Class Loader: 
+	Loaded Class Count: 28077
+	Total Loaded Class Count: 28318
+	Unloaded Class Count: 241
+Garbage Collectors: 
+	G1 Young Generation: 
+		Collection Count: 45
+		Collection Time: 695ms
+	G1 Old Generation: 
+		Collection Count: 0
+		Collection Time: 0ms
+Threads: 
+	#413 pool-31-thread-29: TIMED_WAITING
+	#412 pool-31-thread-28: TIMED_WAITING
+	#411 pool-31-thread-27: TIMED_WAITING
+	#410 pool-31-thread-26: TIMED_WAITING
+	#409 pool-31-thread-25: TIMED_WAITING
+	#408 pool-31-thread-24: TIMED_WAITING
+	#407 pool-31-thread-23: TIMED_WAITING
+	#406 pool-31-thread-22: TIMED_WAITING
+	#405 pool-31-thread-21: TIMED_WAITING
+	#404 pool-31-thread-20: TIMED_WAITING
+	#403 pool-31-thread-19: TIMED_WAITING
+	#402 pool-31-thread-18: TIMED_WAITING
+	#401 pool-31-thread-17: TIMED_WAITING
+	#400 pool-31-thread-16: TIMED_WAITING
+	#399 pool-31-thread-15: TIMED_WAITING
+	#398 pool-31-thread-14: TIMED_WAITING
+	#397 pool-31-thread-13: TIMED_WAITING
+	#396 pool-31-thread-12: TIMED_WAITING
+	#394 Craft Scheduler Thread - 69: TIMED_WAITING
+	#392 Craft Scheduler Thread - 68: TIMED_WAITING
+	#390 Craft Scheduler Thread - 67: TIMED_WAITING
+	#388 Craft Scheduler Thread - 66: TIMED_WAITING
+	#382 Craft Scheduler Thread - 65: TIMED_WAITING
+	#381 WorldGuard Region Chunk Table - Spawn: TIMED_WAITING
+	#380 Craft Scheduler Thread - 64: TIMED_WAITING
+	#379 Server-Worker-73: TIMED_WAITING
+	#378 Server-Worker-72: WAITING
+	#377 Server-Worker-71: WAITING
+	#374 Server-Worker-68: WAITING
+	#372 WorldGuard Task Executor - 3: TIMED_WAITING
+	#371 pool-31-thread-11: TIMED_WAITING
+	#370 ForkJoinPool.commonPool-worker-3: TIMED_WAITING
+	#369 ForkJoinPool-3-worker-3: WAITING
+	#368 ForkJoinPool-2-worker-8: WAITING
+	#367 ForkJoinPool-2-worker-15: WAITING
+	#366 ForkJoinPool-3-worker-10: TIMED_WAITING
+	#363 User Authenticator #4: TIMED_WAITING
+	#361 luckperms-scheduler-worker-4: TIMED_WAITING
+	#360 Craft Scheduler Thread - 63: TIMED_WAITING
+	#349 Craft Scheduler Thread - 61: TIMED_WAITING
+	#346 Craft Scheduler Thread - 60: TIMED_WAITING
+	#342 Craft Scheduler Thread - 59: TIMED_WAITING
+	#341 Craft Scheduler Thread - 58: TIMED_WAITING
+	#323 ForkJoinPool-2-worker-22: TIMED_WAITING
+	#320 Timer-2: WAITING
+	#299 lumine-scheduler-1: TIMED_WAITING
+	#283 Netty Server IO #3: RUNNABLE
+	#277 Craft Scheduler Thread - 57: TIMED_WAITING
+	#242 Netty Server IO #2: RUNNABLE
+	#210 Craft Scheduler Thread - 46: TIMED_WAITING
+	#204 Craft Scheduler Thread - 43: TIMED_WAITING
+	#193 pool-28-thread-1: WAITING
+	#189 pool-27-thread-1: WAITING
+	#180 Netty Server IO #1: RUNNABLE
+	#143 Craft Scheduler Thread - 31: TIMED_WAITING
+	#142 Craft Scheduler Thread - 30: TIMED_WAITING
+	#140 Craft Scheduler Thread - 28: TIMED_WAITING
+	#138 Craft Scheduler Thread - 26: TIMED_WAITING
+	#137 Craft Scheduler Thread - 25: TIMED_WAITING
+	#136 Craft Scheduler Thread - 24: TIMED_WAITING
+	#133 Craft Scheduler Thread - 21: TIMED_WAITING
+	#131 Craft Scheduler Thread - 19: TIMED_WAITING
+	#130 Craft Scheduler Thread - 18: TIMED_WAITING
+	#128 Craft Scheduler Thread - 16: TIMED_WAITING
+	#127 Craft Scheduler Thread - 15: TIMED_WAITING
+	#126 Craft Scheduler Thread - 14: TIMED_WAITING
+	#125 Craft Scheduler Thread - 13: TIMED_WAITING
+	#124 Craft Scheduler Thread - 12: TIMED_WAITING
+	#123 Craft Scheduler Thread - 11: TIMED_WAITING
+	#122 Craft Scheduler Thread - 10: TIMED_WAITING
+	#121 Craft Scheduler Thread - 9: TIMED_WAITING
+	#120 Craft Scheduler Thread - 8: TIMED_WAITING
+	#119 Craft Scheduler Thread - 7: TIMED_WAITING
+	#118 Craft Scheduler Thread - 6: TIMED_WAITING
+	#117 Craft Scheduler Thread - 5: TIMED_WAITING
+	#116 Craft Scheduler Thread - 4: TIMED_WAITING
+	#115 Craft Async Scheduler Management Thread: WAITING
+	#112 lumine-scheduler-timer: TIMED_WAITING
+	#99 pool-31-thread-5: TIMED_WAITING
+	#98 pool-31-thread-4: TIMED_WAITING
+	#97 pool-31-thread-3: TIMED_WAITING
+	#96 pool-31-thread-2: TIMED_WAITING
+	#94 pool-31-thread-1: TIMED_WAITING
+	#93 pool-29-thread-1: TIMED_WAITING
+	#91 WorldGuard Region I/O: TIMED_WAITING
+	#76 ProtocolLib-StructureCompiler 0: WAITING
+	#70 Paper RegionFile IO Thread: WAITING
+	#68 Timer-1: TIMED_WAITING
+	#64 MVStore background writer nio:C:/Users/Monzt/Desktop/1.15/Backups/5.3 SkyBlock - 1.5/plugins/LuckPerms/luckperms-h2.mv.db: TIMED_WAITING
+	#62 mysql-cj-abandoned-connection-cleanup: TIMED_WAITING
+	#61 Thread-16: RUNNABLE
+	#59 luckperms-scheduler: TIMED_WAITING
+	#58 WorldEdit Session Manager: TIMED_WAITING
+	#57 Netty Server IO #0: RUNNABLE
+	#56 ObjectCleanerThread: TIMED_WAITING
+	#55 Timer-0: TIMED_WAITING
+	#54 Paper Watchdog Thread: TIMED_WAITING
+	#53 Paper Async Chunk Urgent Task Thread: WAITING
+	#52 Paper Async Chunk Task Thread #7: WAITING
+	#51 Paper Async Chunk Task Thread #6: WAITING
+	#50 Paper Async Chunk Task Thread #5: WAITING
+	#49 Paper Async Chunk Task Thread #4: WAITING
+	#48 Paper Async Chunk Task Thread #3: WAITING
+	#47 Paper Async Chunk Task Thread #2: WAITING
+	#46 Paper Async Chunk Task Thread #1: WAITING
+	#45 Paper Async Chunk Task Thread #0: WAITING
+	#43 Java2D Disposer: WAITING
+	#42 Craft Scheduler Thread - 3: TIMED_WAITING
+	#41 Craft Scheduler Thread - 2: TIMED_WAITING
+	#40 Craft Scheduler Thread - 1: TIMED_WAITING
+	#39 Craft Scheduler Thread - 0: TIMED_WAITING
+	#38 Server console handler: TIMED_WAITING
+	#37 DestroyJavaVM: RUNNABLE
+	#34 Server thread: RUNNABLE
+	#36 Server Infinisleeper: TIMED_WAITING
+	#33 Snooper Timer: WAITING
+	#32 Paper Async Task Handler Thread - 0: WAITING
+	#24 WindowsStreamPump: RUNNABLE
+	#21 Log4j2-TF-1-AsyncLogger[AsyncContext@5c647e05]-1: TIMED_WAITING
+	#6 Attach Listener: RUNNABLE
+	#5 Signal Dispatcher: RUNNABLE
+	#3 Finalizer: WAITING
+	#2 Reference Handler: WAITING
+
+================================
+WorldEdit Configuration
+================================
+
+Configuration: 
+	noOpPermissions: false
+	commandBlockSupport: false
+	profile: false
+	traceUnflushedSessions: false
+	disallowedBlocks: [46, 69, 26, 27, 28, 29, 50, 51, 73, 74, 31, 75, 32, 76, 33, 77, 34, 56, 14, 36, 15, 37, 59, 16, 38, 39, 6, 7, 81, 83, 40]
+	defaultChangeLimit: -1
+	maxChangeLimit: -1
+	defaultMaxPolygonalPoints: -1
+	maxPolygonalPoints: 20
+	defaultMaxPolyhedronPoints: -1
+	maxPolyhedronPoints: 20
+	shellSaveType: null
+	snapshotsConfigured: false
+	snapshotRepo: null
+	snapshotDatabase: null
+	maxRadius: -1
+	maxSuperPickaxeSize: 5
+	maxBrushRadius: 30
+	logCommands: false
+	logFile: worldedit.log
+	logFormat: [%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS %4$s]: %5$s%6$s%n
+	registerHelp: true
+	wandItem: minecraft:wooden_axe
+	superPickaxeDrop: true
+	superPickaxeManyDrop: false
+	useInventory: false
+	useInventoryOverride: true
+	useInventoryCreativeOverride: false
+	navigationUseGlass: true
+	navigationWand: minecraft:compass
+	navigationWandMaxDistance: 100
+	scriptTimeout: 3000
+	calculationTimeout: 100
+	maxCalculationTimeout: 300
+	allowedDataCycleBlocks: []
+	saveDir: schematics
+	scriptsDir: craftscripts
+	showHelpInfo: true
+	butcherDefaultRadius: -1
+	butcherMaxRadius: -1
+	allowSymlinks: false
+	serverSideCUI: true
+	extendedYLimit: false
+	defaultLocaleName: default
+	defaultLocale: en_US
+

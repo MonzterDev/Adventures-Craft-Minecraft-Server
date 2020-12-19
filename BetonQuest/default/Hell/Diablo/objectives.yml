@@ -1,0 +1,12 @@
+#1
+SlayPigmen: mmobkill VOID_PIGMAN2 amount:3 events:quest1_part2_starter notify
+SlayMiniMagmas: mmobkill VOID_MAGMA3 amount:5 events:quest1_part3_starter notify
+SlayHellMobs: mmobkill VOID_MAGMA3,VOID_MAGMA2,VOID_MAGMA,VOID_SKELETON2,VOID_PIGMAN2,VOID_NECROMANCER2, amount:25 events:entry_q1_complete,QuestReward1,quest2_starter notify
+#2
+HarvestWarts: mmocorebreakblock 32 block:NETHER_WART_BLOCK events:quest2_part2_starter notify
+HarvestQuartz: mmocorebreakblock 64 block:QUARTZ_BLOCK events:quest2_part3_starter notify
+SlayMagma: mmobkill VOID_MAGMA amount:1 events:q2_party notify
+#3
+Ghastly: npcinteract 77 conditions:HoldingTear events:entry_q3_complete,QuestReward3  notify
+
+

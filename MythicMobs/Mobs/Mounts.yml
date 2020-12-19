@@ -1,0 +1,178 @@
+MountHog:
+  Type: PIG
+  Display: '&7[&fLVL 1&7] &aHog'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters  
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+
+MountHorse1:
+  Type: Horse
+  Display: '&7[&fLVL 1&7] &aHorse'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    HorseColor: WHITE
+    HorseStyle: WHITEFIELD
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters  
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+
+MountHorseRank2:
+  Type: ZOMBIE_HORSE
+  Display: '&7[&fLVL 1&7] &cZombie Horse'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.40
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters  
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - remove{delay=1} @self ~onDamaged
+  - remove{delay=1} @self ~onEnterCombat
+  - remove{delay=1} @self ~onCombat
+
+MountHorseRank3:
+  Type: SKELETON_HORSE
+  Display: '&7[&fLVL 1&7] &cBone Horse'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.50
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters  
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - remove{delay=1} @self ~onDamaged
+  - remove{delay=1} @self ~onEnterCombat
+  - remove{delay=1} @self ~onCombat
+  - effect:particlering{particle=flame;radius=1;points=15;amount=1;hS=1;vS=0} @self ~onTimer:10
+
+BORG_STEED:
+  Type: SKELETON_HORSE
+  Display: '&7[&fLVL 1&7] &cBorg''s Steed'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.50
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters  
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - remove{delay=1} @self ~onDamaged
+  - remove{delay=1} @self ~onEnterCombat
+  - remove{delay=1} @self ~onCombat
+  - skill{s=BORGABILITY} ~onTimer:250

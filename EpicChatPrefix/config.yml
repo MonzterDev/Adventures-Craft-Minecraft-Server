@@ -1,0 +1,28 @@
+# Variables: %player%, %world by default with the plugin, the plugin is compatible with PlaceHolderAPI
+ChatFormat: '%vault_suffix%%vault_prefix%%player% §8§l» &7%msg%'
+Chat:
+  ChatColor: '&7'
+  ChatInItalic: false
+  ChatInBold: false
+  ChatInUnderline: false
+Title: '&a%player%''s Profile'
+SuggestCommand: true
+PerWorldChat: false
+PerformCommand: true
+Command: /playerinfo view %player%
+NoPermission: '&cYou don''t have permission to do this!'
+HoverText: |-
+  &7Location: %custom_location%
+  &a
+  &a❤ HP: &a%mmocore_health%/%mmocore_max_health%
+  &b⭐ Mana: &b%mmocore_mana%/%mmocore_stat_max_mana%
+  &e⛨ Armor: &e%mmoitems_stat_defense%
+  &2✤ Speed: &2%mmocore_stat_movement_speed%
+  &c✜ Damage: &c%mmocore_stat_attack_damage%
+  &3⌭ Attack Speed: &3%mmocore_stat_attack_speed%
+  &6✧ Crit Chance: &6%mmocore_stat_critical_strike_chance%
+  &4✦ Crit Damage: &4%mmocore_stat_critical_strike_power%
+  &a
+  &eCoins&f: &e⛂ &f%vault_eco_balance_commas%
+  &a
+  &8&l» &eLeft-Click to View

@@ -1,0 +1,34 @@
+blazing_air:
+    Cooldown: 1
+    Skills:
+    - itemprojectile{pobject=BLAZE_SPAWN_EGG;targetable=false;eyedir=true;bounce=false;bred=false;onbounce=false;onTick=blazing_air-Tick;onEnd=blazing_air-End;v=12;i=1;hR=1;vR=1;gravity=1;hnp=false;hp=false;StopAtBlock=true}
+blazing_air-Tick:
+    Skills:
+    - effect:particles{p=flame;amount=8;speed=0;hS=0.1;vS=0} @origin
+blazing_air-End:
+    Skills:
+    - summon{type=blaze_totem;amount=1;radius=0.1} @origin
+##############################
+blaze_air:
+  Skills:
+  - effect:sound{s=entity.firework.blast_far;v=1;p=0.7} @PIR{r=60}
+  - effect:sound{s=block.enderchest.open;v=1;p=0.7} @PIR{r=60}
+  - delay 10
+  - projectile{onTick=blaze_air-TICK;onEnd=blaze_air-END;v=10;i=1;hR=1;vR=1;StopAtBlock=true;HitNonPlayers=false;hp=false;g=0.5;vO=1.8} @Ring{radius=2;points=4}
+blaze_air-TICK:
+  Skills:
+  - effect:particles{p=redstone;amount=1;speed=0;hR=0.2;vR=0.2} @origin
+  - effect:particles{p=flame;amount=1;speed=0;hR=0.2;vR=0.2} @origin
+blaze_air-END:
+  Skills:
+  - effect:sound{s=block.enderchest.close;v=1;p=2}
+  - summon{type=blaze_air_stand;amount=1;radius=0.1} @origin
+RemoveMe_blaze:
+  Skills:
+  - delay 200
+  - remove @self
+
+RemoveMe_blaze2:
+  Skills:
+  - delay 220
+  - remove @self

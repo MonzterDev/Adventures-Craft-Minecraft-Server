@@ -1,0 +1,18 @@
+ShopName: ExtraShop
+signs:
+  text: '[ExtraShop]'
+  NeedPermissionToCreateSign: false
+shop:
+  Example:
+    RewardType: command
+    PriceType: money
+    Price: 5000
+    Reward:
+    - tell %name% Example
+    MenuItem:
+    - type:STONE
+    - amount:1
+    - name:&8Example
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''

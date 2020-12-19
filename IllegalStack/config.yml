@@ -1,0 +1,148 @@
+ConfigVersion: '2.0'
+Exploits:
+  Other:
+    PreventCommandsInBed: true
+    DisableChestsOnMobs: true
+    PreventInvalidPotions: true
+    PreventItemSwapLagExploit: true
+    PreventBedrockDestruction: true
+    PreventHoppersToUnloadedChunks: true
+    PreventInvalidElytraFlight: true
+    PreventRailDupe: true
+    PreventEndPortalDestruction: true
+    PreventNestedShulkers: true
+    PunishForChestsOnMobs: false
+    DisableRidingExploitableMobs: true
+    PreventMinecartsInBoats: true
+    PreventBedExplosions: true
+  1_14_Exploits:
+    Traders:
+      BlockVillagerTradeCheesing: true
+      ZombieVillagerTransformChance: 100
+      VillagerRestockTime: 10
+  DropperDupe:
+    BlockLoopedDroppers: false
+  MineCart:
+    MinecartBlockWhiteList: []
+    PreventMinecartGlitch: true
+    RemoveExistingGlitchedMinecarts: false
+    PreventHeadInsideBlocks: false
+  Nether:
+    ExcludeNetherWorldFromHeightCheck: []
+    NetherYLevel: 128
+    BlockPlayersAboveNether: true
+    KillPlayersBelowNether: false
+  OverStack:
+    PreventOverStackedItemInHoppers: true
+    GroupStack: []
+    AllowStack:
+    - IRON_PICKAXE
+    - DIAMOND_SWORD
+    - STONE_AXE
+    - WATER_BUCKET
+    - BOW
+    - IRON_AXE
+    - DIAMOND_HOE
+    - IRON_SWORD
+    - SHIELD
+    - MUSHROOM_STEW
+    - IRON_CHESTPLATE
+    - POTION
+    - STONE_SWORD
+    RemoveItemsOfType: []
+    RemoveOverstackedItems: true
+    StackWhiteListMode: true
+    FixOverstackedItemInstead: false
+  Fishing:
+    KickForAutoClickerFishing: true
+  RNGEnchant:
+    PreventRNGEnchant: true
+  PortalDupe:
+    NotifyBlockedPortalAttempts: false
+    EndWhiteListMode: true
+    NetherWhiteListMode: true
+    BlockNonPlayersInNetherPortal: true
+    EndWhiteList: []
+    NetherWhiteList: []
+    BlockNonPlayersInEndPortal: true
+  EndGateway:
+    PreventEndGatewayCrashExploit: true
+  BookExploit:
+    DisableBookWriting: false
+  FishMod:
+    MaxFishToNotifyStaffThenBlock: 5
+    WatchForAutoFishMod: true
+    MaxFishAllowedBeforeKick: 5
+    WarnPlayerThenKickInsteadOfNotify: false
+  3rdParty:
+    BlockCMIShulkerStacking: true
+  Enchants:
+    FixIllegalEnchants: false
+    RemoveUnbreakableFlag: false
+    AllowBypass: false
+    RemoveCustomAttributes: false
+    OnlyFunctionInWorlds: []
+    EnchantedItemWhitelist: []
+    CustomEnchantOverride: []
+    DestroyIllegallyEnchantedItemsInstead: false
+  1_15_Exploits:
+    Dupes:
+      PreventTripwireDupe: true
+  SignExploit:
+    DestroyBadSignsOnChunkLoad: false
+  NetherPortal:
+    PreventPortalTrap: true
+  Teleport:
+    PearlPhasing: true
+  Looting:
+    PreventLootingExploit: true
+  TNTDupe:
+    PreventIndirectTNTPowerDupe: true
+  Minecart:
+    AlsoPreventHeadInside:
+    - COMPOSTER
+  LavaDupe:
+    PreventLavaDupe: true
+  1_16_Exploits:
+    Dupes:
+      PreventPiglinDupe: true
+UserRequested:
+  ItemRemoval:
+    BlockRepairsInstead: false
+    NameLoreStrictMatchMode: false
+    ItemLoresToRemove: []
+    BlockEnchantingInstead: false
+    RemoveItemsMatchingName: false
+    ItemNamesToRemove: []
+  Obsure:
+    Misc:
+      RemoveAllRenamedItems: false
+  Obscure:
+    HackedShulker:
+      DestroyInvalidShulkers: false
+      CheckGroundForBadShulkerAtLogin: false
+    HopperCheck:
+      IgnoreAllHopperChecks: false
+    BlockBadItemsFromCreativeTab: false
+    IgnoreAllShulkerPlaceChecks: false
+  Cobble:
+    PreventCobbleGenerators: false
+  Mobs:
+    PreventZombieItemPickup: false
+  Misc:
+    NotifyInsteadOfBlock: []
+Exploit:
+  LagMachines:
+    End Crystal: true
+    ArmorStand: true
+  Teleport:
+    CorrectionNotify: false
+Misc:
+  DisableInWorlds: []
+  InGameOffenseNotifications: true
+  NotifyNearbyPlayers: false
+  LogOffensesInSeparateFile: true
+  BreakMachinesInsteadOfDroppingItems: true
+  ItemScanTimer: 10
+  Spawners:
+    PreventSpawnEggsOnSpawners: true

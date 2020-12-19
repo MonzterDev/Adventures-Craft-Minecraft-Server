@@ -1,0 +1,495 @@
+UNDEAD_CATALYST:
+  base:
+    material: BONE
+    unbreakable: true
+    tier: RARE
+    disable-crafting: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-interaction: false
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    unstackable: true
+    name: §9Undead Catalyst
+    faction-damage-undead: 20.0
+    lore:
+    - §8Must be held in §fOff-Hand§8,
+    - §8to receive effects
+DEAD_CATALYST:
+  base:
+    material: BLACK_DYE
+    unbreakable: true
+    tier: LEGENDARY
+    faction-damage-undead: 50.0
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    name: §5Dead Catalyst
+    lore:
+    - §8Must be held in §fOff-Hand§8,
+    - §8to receive effects
+FIRE_CATALYST:
+  base:
+    material: BLAZE_POWDER
+    unbreakable: true
+    tier: LEGENDARY
+    name: §5Fire Catalyst
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    unstackable: true
+    fire-damage-reduction: 50.0
+FEATHER_CATALYST:
+  base:
+    material: FEATHER
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    unbreakable: true
+    tier: UNCOMMON
+    name: §2Feather Talisman
+    disable-crafting: true
+    disable-interaction: true
+    fall-damage-reduction: 50.0
+MINING1:
+  base:
+    material: STONE_BUTTON
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    unbreakable: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    perm-effects:
+      FAST_DIGGING: 1
+    name: §9Miner's Catalyst
+    lore:
+    - §fGrants §aHaste 1 §fwhen held.
+MINING2:
+  base:
+    material: STONE_BUTTON
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    unbreakable: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: LEGENDARY
+    perm-effects:
+      FAST_DIGGING: 2
+    name: §5Miner's Amulet
+    lore:
+    - §fGrants §aHaste 2 §fwhen held.
+MINING3:
+  base:
+    material: STONE_BUTTON
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    unbreakable: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: EXOTIC
+    perm-effects:
+      FAST_DIGGING: 3
+    name: §eMiner's Crescent
+    lore:
+    - §fGrants §aHaste 3 §fwhen held.
+MANA_SPHERE:
+  base:
+    material: BLUE_DYE
+    unbreakable: true
+    tier: UNCOMMON
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    name: §2Mana Sphere
+    max-mana: 25.0
+    lore:
+    - §fIncrease your §bmana
+    - §fwhen held in off-hand!
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 4
+    projectile-damage-reduction: 100.0
+MANA_LOTUS:
+  base:
+    material: POPPY
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    unbreakable: true
+    tier: RARE
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    name: §9Mana Lotus
+    mana-regeneration: 2.0
+ARCHER_AMULET:
+  base:
+    material: GRAY_DYE
+    name: '&fArcher Amulet'
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 1
+    projectile-damage: 15.0
+    tier: COMMON
+ARCHER_AMULET2:
+  base:
+    material: GRAY_DYE
+    name: '&2Archer Amulet'
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 1
+    projectile-damage: 25.0
+    tier: UNCOMMON
+ARCHER_AMULET3:
+  base:
+    material: GRAY_DYE
+    name: '&9Archer Amulet'
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 1
+    projectile-damage: 50.0
+    tier: RARE
+ARCHER_AMULET4:
+  base:
+    material: GRAY_DYE
+    name: '&eArcher Amulet'
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 1
+    projectile-damage: 75.0
+    tier: EXOTIC
+BIRCH_BARK:
+  base:
+    material: PLAYER_HEAD
+    unbreakable: true
+    name: §9Birch Bark
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    lore:
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    defense: 50.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
+      uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
+BIRCH_BARK2:
+  base:
+    material: PLAYER_HEAD
+    unbreakable: true
+    name: §5Birch Bark
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: LEGENDARY
+    lore:
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    defense: 100.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
+      uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
+BIRCH_BARK3:
+  base:
+    material: PLAYER_HEAD
+    unbreakable: true
+    name: §eBirch Bark
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: EXOTIC
+    lore:
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    defense: 250.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
+      uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
+COAL_CATALYST:
+  base:
+    material: COAL
+    name: '&9Coal Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Coal &fwhen'
+    - '&fbreaking a &aCoal Ore &fand'
+    - '&a1 Coal Block &fwhen breaking'
+    - '&fan &aCoal Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+IRON_CATALYST:
+  base:
+    material: IRON_INGOT
+    name: '&9Iron Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Iron &fwhen'
+    - '&fbreaking a &aIron Ore &fand'
+    - '&a1 Iron Block &fwhen breaking'
+    - '&fan &aIron Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+GOLD_CATALYST:
+  base:
+    material: GOLD_INGOT
+    name: '&9Gold Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Gold &fwhen'
+    - '&fbreaking a &aGold Ore &fand'
+    - '&a1 Gold Block &fwhen breaking'
+    - '&fan &aGold Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+REDSTONE_CATALYST:
+  base:
+    material: REDSTONE
+    name: '&9Redstone Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Redstone &fwhen'
+    - '&fbreaking a &aRedstone Ore &fand'
+    - '&a1 Redstone Block &fwhen breaking'
+    - '&fan &aRedstone Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+LAPIS_CATALYST:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9Lapis Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Lapis &fwhen'
+    - '&fbreaking a &aLapis Ore &fand'
+    - '&a1 Lapis Block &fwhen breaking'
+    - '&fan &aLapis Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+DIAMOND_CATALYST:
+  base:
+    material: DIAMOND
+    name: '&9Diamond Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Diamond &fwhen'
+    - '&fbreaking a &aDiamond Ore &fand'
+    - '&a1 Diamond Block &fwhen breaking'
+    - '&fan &aDiamond Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+EMERALD_CATALYST:
+  base:
+    material: EMERALD
+    name: '&9Emerald Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-5 Emerald &fwhen'
+    - '&fbreaking an &aEmerald Ore &fand'
+    - '&a1 Emerald Block &fwhen breaking'
+    - '&fan &aEmerald Block &fwithin the Mine!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+WOOD_CATALYST:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg4YzQ3MzllMjI4M2FhYTYyODE5NTk0ODZkMTQ5ZjMwNmI2ZTY3MjlhNmExYjNiZjljODUzYTIyYTkifX19
+      uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
+    name: '&9Wood Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&fHolding this item will give'
+    - '&fyou between &a1-2 Logs &fwhen'
+    - '&fbreaking a &aLog in the &aForest&f!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+WOOD_CATALYST2:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FkNTdkMWY2MDQ3OGFmNmFlMWI2YjFjMjhjZWU1MzRkNWRiYjhjOGNhYjg3OTYzZTljMmVmMGM2YWM1OCJ9fX0=
+      uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
+    name: '&5Wood Catalyst'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: LEGENDARY
+    lore:
+    - '&fHolding this item will &adouble &fyour'
+    - '&fchances of getting &9Enchanted Logs'
+    - '&fwhen breaking &aLogs in the &aForest&f!'
+    - ''
+    - §7Hold in your Off-Hand,
+    - §7to receive the stat boost!
+    hide-enchants: true
+UNBLINDER:
+  base:
+    material: SOUL_TORCH
+    name: '&9Unblinder'
+    tier: RARE
+    enchants:
+      unbreaking: 5.0
+    hide-enchants: true
+    lore:
+    - '&7Remove the blights of &cVoid Blinders'
+    - '&7while deep in the corruption of the &5Void&7!'
+    disable-interaction: true
+    faction-damage-void: 15.0
+HASTY_VOID:
+  base:
+    material: END_STONE
+    name: '&5Hasty Void'
+    tier: LEGENDARY
+    enchants:
+      unbreaking: 5.0
+    hide-enchants: true
+    lore:
+    - '&7Provides &aHaste 7 &7while in the &5Void&7!'
+    disable-interaction: true
+    faction-damage-void: 5.0
+VOID_STONE:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    tier: RARE
+    faction-damage-void: 25.0
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    name: §9Void Stone
+    lore:
+    - §8Must be held in §fOff-Hand§8,
+    - §8to receive effects
+VOID_STONE2:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    tier: LEGENDARY
+    faction-damage-void: 50.0
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    name: §5Void Stone
+    lore:
+    - §8Must be held in §fOff-Hand§8,
+    - §8to receive effects
+VOID_STONE3:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    tier: EXOTIC
+    faction-damage-void: 75.0
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    hide-enchants: true
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    name: §eVoid Stone
+    lore:
+    - §8Must be held in §fOff-Hand§8,
+    - §8to receive effects

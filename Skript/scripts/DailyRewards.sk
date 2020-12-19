@@ -1,0 +1,96 @@
+on join:
+    if now < {rewardcd::%player%}:
+        send "&fCome back in &e%difference between {rewardcd::%player%} and now% for your next &aDaily Token&f!" to player
+    else:
+        set {rewardcd::%player%} to 24 hours later
+        add 1 to {claimed::%player%}
+        send "&aYou just received &e1x Daily Token&a, which can be used in &e/Daily&a! You can come back in &e%difference between {rewardcd::%player%} and now% &afor your next one!" to player
+
+            
+command /claimrewarddailyreset:
+    trigger:
+        if player has permission "*":    
+            send "%{rewardcd::%player%}%" to player
+            wait 1 tick 
+            clear {rewardcd::%player%}
+            send "%{rewardcd::%player%}%" to player 
+
+
+command /DRClaim:
+    trigger:
+        if {claimed::%player%} >= 1:
+            execute console command "/mi give MATERIAL ENGRAM1 %player% 1"
+            remove 1 from {claimed::%player%} # Change to Beton Points
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 1x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+command /DRClaim2:
+    trigger:
+        if {claimed::%player%} >= 2:
+            execute console command "/mi give CONSUMABLE MAGICAL_BOX %player% 4"
+            remove 2 from {claimed::%player%}
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 2x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+command /DRClaim3:
+    trigger:
+        if {claimed::%player%} >= 3:
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            remove 3 from {claimed::%player%}
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 3x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+command /DRClaim4:
+    trigger:
+        if {claimed::%player%} >= 4:
+            execute console command "/cmi money give %player% 25,000"
+            remove 4 from {claimed::%player%}
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 4x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+command /DRClaim5:
+    trigger:
+        if {claimed::%player%} >= 5:
+            execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+            remove 5 from {claimed::%player%}
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 5x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+command /DRClaim6:
+    trigger:
+        if {claimed::%player%} >= 6:
+            execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+            remove 6 from {claimed::%player%}
+            send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+        else:
+            send "&cThis costs 6x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+# command /DRClaim7:
+#     trigger:
+#         if {claimed::%player%} >= 7:
+#             execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+#             remove 7 from {claimed::%player%}
+#             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
+#         else:
+#             send "&cThis costs 7x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
+
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "login":
+		set the result to "%{claimed::%player%}%"
+	if the identifier is "time":
+		set the result to "%difference between {rewardcd::%player%} and now%"
+
+# command /claimrewarddaily:
+#     trigger:
+#         if difference between {rewardcd.%player%} and now is less than 5 seconds:
+#             send "&cYou must wait %difference between {rewardcd.%player%} and now% before you can claim your reward again!" to player
+#             stop
+#         if difference between {rewardcd.%player%} and now is more than 5 seconds:
+#             send "&cYou must wait %difference between {rewardcd.%player%} and now% before you can claim your reward again!" to player
+#             stop
+#         set {rewardcd.%player%} to 24 hours from now
+#         add 1 to {claimed::%player%}
+#         if {claimed::%player%} = 1:
+#             add 250 to player's balance
+#             close player's inventory
+#             send "&aYou claimed your reward!"

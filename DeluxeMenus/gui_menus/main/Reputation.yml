@@ -1,0 +1,81 @@
+menu_title: '&f&l»&7&l» &8Reputation &7&l«&f&l«'
+open_command: Reputation
+size: 35
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 31
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[openguimenu] main"
+
+###TOP ROW
+  'Void':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY3NzhmNzJlYWNhNDUyZWUwMTM4OTNlMmJjNTNkOGQ1YjFmY2E0NGNmZTI3MDM4NjViMDU0YzI4YTNkZDcifX19
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&5Void &6Reputation Level %mmocore_profession_Void%'
+    lore:
+    - '&7Complete quests & slay mobs'
+    - '&7within the &5Void &7to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Void%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Void% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    click_commands:
+    - "[openguimenu] VoidReputation"

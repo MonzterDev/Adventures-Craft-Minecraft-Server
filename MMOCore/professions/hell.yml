@@ -1,0 +1,34 @@
+
+# Display options
+name: Hell
+
+# Experience given to the main level
+# when leveling up this profession
+experience:
+    base: 0
+    per-level: 0
+exp-curve: hell
+max-level: 5
+
+# This part of the config is ONLY for custom mining.
+# Custom Mining must be setup in config.yml and it
+# will render any block not referenced in here as unminable.
+# If you do not wish to use custom mining it is recommended
+# to follow the format in woodcutting.yml for experience and
+# configure drop tables with MMOItems.
+# Block Regen is currently only possible using custom mining.
+exp-sources:
+##Mine
+- 'killmythicmob{type=VOID_PIGMAN;amount=2}'
+- 'killmythicmob{type=VOID_DEMON;amount=1}'
+- 'killmythicmob{type=VOID_BLAZE2;amount=3}'
+- 'killmythicmob{type=VOID_NECROMANCER;amount=4}'
+- 'killmythicmob{type=WITHER_MINI_BOSS;amount=25}'
+- 'killmythicmob{type=VOID_PROTECTOR;amount=5}'
+- 'killmythicmob{type=VOID_HEALER;amount=4}'
+- 'killmythicmob{type=VOID_MAGMA;amount=15}'
+- 'killmythicmob{type=VOID_MAGMA2;amount=3}'
+- 'killmythicmob{type=VOID_MAGMA3;amount=3}'
+- 'killmythicmob{type=VOID_SKELETON2;amount=3}'
+- 'killmythicmob{type=VOID_PIGMAN2;amount=3}'
+- 'killmythicmob{type=VOID_NECROMANCER2;amount=5}'

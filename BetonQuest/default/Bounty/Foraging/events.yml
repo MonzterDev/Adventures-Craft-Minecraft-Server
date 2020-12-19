@@ -1,0 +1,79 @@
+del_QuestCooldown24_tag: tag del QuestCooldown24
+del_tag_q1_completed: tag del q1_completed
+del_q1_part1: tag del q1_part1
+tag_QuestCooldown24: tag add QuestCooldown24
+tag_q1_part1: tag add q1_part1
+q1_part1: objective start QuestCooldown24
+
+StartBreakBlock: objective start BreakBlock
+
+entry_q1_complete: folder default-Points.GiveBountyPoint,tag_q1_completed,q1_finish_message,QuestReward1,del_q1_part1
+QuestReward1: run ^command mmocore admin exp give %player% main 250 ^command mmocore
+  admin exp give %player% Foraging 250 ^command money give %player% 200
+tag_q1_completed: tag add q1_completed
+q1_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name1$ \n \n \n\
+  \ &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »\
+  \  $quest_reward1-3$"
+
+
+del_Quest2Cooldown24_tag: tag del Quest2Cooldown24
+del_tag_q2_completed: tag del q2_completed
+del_q2_part1: tag del q2_part1
+tag_Quest2Cooldown24: tag add Quest2Cooldown24
+tag_q2_part1: tag add q2_part1
+q2_part1: objective start Quest2Cooldown24
+
+StartBreakBlock2: folder RestartObjectiveOakLog,RestartObjectiveSpruceLog,RestartObjectiveDarkOakLog,RestartObjectiveBirchLog,RestartObjectiveJungleLog,RestartObjectiveAcaciaLog
+
+GivePointOakLog: point OakLog 1
+GivePointDarkOakLog: point DarkOakLog 1
+GivePointSpruceLog: point SpruceLog 1
+GivePointBirchLog: point BirchLog 1
+GivePointJungleLog: point JungleLog 1
+GivePointAcaciaLog: point AcaciaLog 1
+
+RestartObjectiveOakLog: objective start BreakOakLog
+RestartObjectiveDarkOakLog: objective start BreakDarkOakLog
+RestartObjectiveSpruceLog: objective start BreakSpruceLog
+RestartObjectiveBirchLog: objective start BreakBirchLog
+RestartObjectiveJungleLog: objective start BreakJungleLog
+RestartObjectiveAcaciaLog: objective start BreakAcaciaLog
+
+BreakOakLogStop: objective delete BreakOakLog
+BreakDarkOakLogStop: objective delete BreakDarkOakLog
+BreakSpruceLogStop: objective delete BreakSpruceLog
+BreakBirchLogStop: objective delete BreakBirchLog
+BreakJungleLogStop: objective delete BreakJungleLog
+BreakAcaciaLogStop: objective delete BreakAcaciaLog
+
+entry_q2_complete: folder default-Points.GiveBountyPoint,BreakSpruceLogStop,BreakOakLogStop,BreakDarkOakLogStop,BreakBirchLogStop,BreakJungleLogStop,BreakAcaciaLogStop,tag_q2_completed,q2_finish_message,QuestReward2,del_q2_part1
+QuestReward2: run ^command mmocore admin exp give %player% main 500 ^command mmocore
+  admin exp give %player% Foraging 500 ^command money give %player% 250
+tag_q2_completed: tag add q2_completed
+q2_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name2$ \n \n \n\
+  \ &6&lRewards: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »\
+  \  $quest_reward2-3$"
+
+Completing2nd: objective start Completing2nd
+
+
+
+del_Quest3Cooldown24_tag: tag del Quest3Cooldown24
+del_tag_q3_completed: tag del q3_completed
+del_q3_part1: tag del q3_part1
+tag_Quest3Cooldown24: tag add Quest3Cooldown24
+tag_q3_part1: tag add q3_part1
+
+q3_part1: objective start Quest3Cooldown24
+
+Start3: objective start SlayDryad
+
+entry_q3_complete: folder default-Points.GiveBountyPoint,tag_q3_completed,q3_finish_message,QuestReward3,del_q3_part1
+QuestReward3: run ^command mmocore admin exp give %player% main 750 ^command mmocore
+  admin exp give %player% Foraging 750 ^command money give %player% 500
+tag_q3_completed: tag add q3_completed
+q3_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name3$ \n \n \n\
+  \ &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »\
+  \  $quest_reward3-3$"
+
+BountyMenu: run ^command dm open Bounty %player%

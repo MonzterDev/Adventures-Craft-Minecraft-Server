@@ -1,0 +1,45 @@
+
+# # Waypoint ID, used as reference.
+# # Make sure the waypoints have different IDs.
+# spawn:
+
+    # # Name of waypoint displayed in the waypoint GUI.
+    # name: Spawn
+    
+    # # Location of waypoint: <world> <x y z> <yaw> <pitch>
+    # # Yaw and pitch are where the player will be looking at when teleported.
+    # location: 'world 69 71 136 136 0'
+    
+    # # Radius of waypoint around the specified location.
+    # radius: 1.5
+    
+    # # Stellium cost in order to use the waypoint.
+    # # Stellium is like stamina however it's not used
+    # # by skills and regens much slower than mana.
+    # stellium: 3
+    
+    # # When enabled, players can unlock the waypoint
+    # # by sneaking on it, and can open the waypoint menu
+    # # from the specified location (true by default).
+    # sneak: true
+    
+    # # Should be waypoint be unlocked by default?
+    # default: true
+
+# spawn1:
+    # name: Spawn1
+    # location: 'world 69 71 136 136 0'
+    # radius: 1.5
+    # stellium: 3
+    # default: false
+    
+    # # Can be teleported to even when not standing
+    # # on any waypoint (waypoint must be unlocked).
+    # dynamic: true
+
+# spawn2:
+    # name: Spawn2
+    # location: 'world 69 71 136 136 0'
+    # radius: 1.5
+    # stellium: 3
+    # sneak: false

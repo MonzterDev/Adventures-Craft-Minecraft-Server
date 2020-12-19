@@ -1,0 +1,42 @@
+# Hiscores config file
+Hiscore:
+  Money:
+    # Enable money hiscores
+    Enabled: false
+    # Amount per page to display
+    Page: 10
+    Cache:
+      # Dont change, or set to 0 to rebuild cache from scratch
+      Last: 0
+      # Set only 1 server to true
+      Main: true
+      Include:
+        # Include offline money in hiscores
+        Offline: true
+      # Time in seconds to update the cache next
+      Update: 1800
+      # Amount of players to cache in memory by default
+      Default: 100
+    Placeholder:
+      # Format for placeholder return, only works with placeholderapi
+      Format: '&6$<amount> &a<name>'
+  Exp:
+    # Enable exp hiscores
+    Enabled: false
+    # Amount per page to display
+    Page: 10
+    Cache:
+      # Dont change, or set to 0 to rebuild cache from scratch
+      Last: 0
+      # Set only 1 server to true
+      Main: true
+      Include:
+        # Include offline exp in hiscores
+        Offline: true
+      # Time in seconds to update the cache next
+      Update: 1800
+      # Amount of players to cache in memory by default
+      Default: 100
+    Placeholder:
+      # Format for placeholder return, only works with placeholderapi
+      Format: '&6$<amount> &a<name>'

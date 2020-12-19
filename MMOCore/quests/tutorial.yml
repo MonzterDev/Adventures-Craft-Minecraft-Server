@@ -1,0 +1,69 @@
+
+# Levels players must have in
+# order to unlock this quest.
+level-req:
+    main: 10
+    mining: 5
+
+# Quest name displayed in the quest menu.
+name: 'A Whole New World'
+
+# Quest lore displayed in the quest menu.
+lore:
+- 'This is the tutorial quest.'
+- 'Lore example...'
+- ''
+- '&eRewards:'
+- '&7► Wooden Tools'
+- '&7► Leather Armor'
+- '&7► 100 EXP'
+
+# Quests the player must finish
+# in order to unlock this one.
+parent: []
+
+# Cooldown in hours. Don't put any
+# to make the quest a one-time quest.
+# Put it to 0 to make it instantly redoable.
+delay: 12
+
+# Objectives the player needs to
+# complete. Once they're all complete,
+# the quest will end.
+objectives:
+    1:
+        type: 'goto{world="world";x=56;y=68;z=115;range=5}'
+        lore: 'Head to the camp.'
+        triggers:
+        - 'message{format="&aBlacksmith> &fHello, %player%! I am currently looking for some help."}'
+        - 'message{format="&aBlacksmith> &fCould you please get me 3 oak logs?"}'
+        - 'sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP}'
+    2:
+        type: 'mineblock{type="OAK_LOG";amount=3}'
+        lore: 'Get three oak logs!'
+        triggers:
+        - 'message{format="&aBlacksmith> &fGood job, now bring these logs back to me!"}'
+        - 'sound{sound="ENTITY_EXPERIENCE_ORB_PICKUP"}'
+    3:
+        type: 'getitem{type="OAK_LOG";amount=3;npc=0}'
+        lore: 'Give these oak logs to the blacksmith.'
+        triggers:
+        - 'message{format="&aBlacksmith> &fGood job, now talk to the blacksmith again to claim your weapons!"}'
+        - 'sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP}'
+    4:
+        type: 'talkto{npc=0}'
+        lore: 'Get your weapons from the blacksmith!'
+        triggers:
+        - 'item{type=WOODEN_SWORD}'
+        - 'item{type=WOODEN_AXE}'
+        - 'item{type=BOW}'
+        - 'message{format="&aBlacksmith> &fNow go kill 5 skeletal knights to finish tutorial!"}'
+        - 'sound{sound=ENTITY_PLAYER_LEVELUP}'
+    5:
+        type: 'killmythicmob{name="SkeletalKnight";amount=5}'
+        lore: 'Kill 5 skeletal knights!'
+        triggers:
+        - 'message{format="&aYou have successfully finished the tutorial!"}'
+        - 'sound{sound="ENTITY_PLAYER_LEVELUP"}'
+        - 'mmoitem{type=SWORD;id=CUTLASS}'
+        - 'experience{amount=100}'

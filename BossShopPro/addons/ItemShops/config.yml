@@ -1,0 +1,134 @@
+# BossShopPro
+# by Felix Neubauer
+# Check out following page for more information: https://www.spigotmc.org/wiki/bossshoppro-addons
+#
+#
+# PriceMultiplier:
+# The price players need to pay to buy items = worth * PriceMultiplier.
+# Hint: You can set up fix prices by adding "PriceBuy: <fix price>" to your items.
+PriceMultiplier: 1.2
+#
+#
+# RewardMultiplier:
+# Hint: You can set up fix rewards by adding "RewardSell: <fix reward>" to your items.
+# The rewards players get when selling items = worth * RewardMultiplier.
+RewardMultiplier: 0.6
+#
+#
+# WorthIsForOneUnit:
+# If enabled, the given worth counts for one unit of the item only. If disabled the worth will count for the whole given item.
+# Examples:
+# Feature enabled: worth of 64 log = 64 * given value
+# Feature disabled: worth of 64 log = given value
+WorthIsForOneUnit: true
+#
+#
+# CurrencyType:
+# This is the kind of currency that is used for all items. Supported are all currencies that work with numbers (Money, Points, Exp).
+CurrencyType: money
+#
+#
+# UseAdvancedStyle:
+# If enabled, each shopitem gets its own sub-shop where players can specify the amount of items they want to buy/sell.
+# If disabled, some special features are not supported (including a Buy-All button which allows players to fill their inventory).
+UseAdvancedStyle: true
+#
+#
+# AllowSell:
+# If enabled, players will be able to sell their items.
+# This is a general setting that can be overridden by items of your choice by simply adding the line "AllowSell: <true/false>" to that item (supported by advanced style only).
+AllowSell: true
+#
+#
+# AllowBuy:
+# If enabled, players will be able to buy items from the shop.
+# This is a general setting that can be overridden by items of your choice by simply adding the line "AllowBuy: <true/false>" to that item (supported by advanced style only).
+AllowBuy: true
+#
+#
+# AllowSellAll:
+# If enabled, players will be able to sell all their items of a certain type, with one click.
+# Will automatically be disabled if "AllowSell" is disabled.
+# This is a general setting that can be overridden by items of your choice by simply adding the line "AllowSellAll: <true/false>" to that item (supported by advanced style only).
+AllowSellAll: true
+#
+#
+# AllowBuyAll:
+# If enabled, players will be able to purchase enough items, of a certain type, to fill their complete inventory, with one click.
+# Will automatically be disabled if "AllowBuy" is disabled.
+# This is a general setting that can be overridden by items of your choice by simply adding the line "AllowBuyAll: <true/false>" to that item (supported by advanced style only).
+AllowBuyAll: true
+#
+#
+# ShopItemLookSimple:
+# Here you can define the look of all shopitems when having the simple mode activated.
+ShopItemLookSimple:
+  MenuItem:
+  - 'lore:&eClick &2left &eto buy &b%reward% &efor &c%price%&e.'
+  - 'lore:&eClick &2right &eto sell &c%price_right% &efor &b%reward_right%&e.'
+  - 'lore:&eClick your &2mousewheel &eto sell &c%price_middle% &efor &b%reward_middle%&e.'
+  MessageBuy: '&eYou''ve bought &3%reward% &efor &c%price%&e'
+  MessageSell: '&eYou''ve sold &c%price_right% &efor &3%reward_right%&e.'
+  MessageSellAll: '&eYou''ve sold &c%price_middle% &efor &3%reward_middle%&e.'
+#
+#
+# ShopItemLookAdvanced
+# Here you can define the look of all shopitems when having the advanced mode activated.
+ShopItemLookAdvanced:
+  SubShop:
+    Displayname: '&8%type%'
+  Preview:
+    MenuItem:
+    - amount:%amount%
+  Buy:
+    MenuItem:
+    - type:STAINED_GLASS_PANE:5
+    - name:&aBuy
+    - amount:1
+    - 'lore:&fAmount: &e%amount%'
+    - 'lore:&fCost: &e%price%'
+    - 'lore:'
+    - 'lore:&f&nClick to buy.'
+    Message: '&eYou''ve bought &3%reward% &efor &3%price%&e.'
+  Sell:
+    MenuItem:
+    - type:STAINED_GLASS_PANE:6
+    - name:&cSell
+    - amount:1
+    - 'lore:&fAmount: &e%amount%'
+    - 'lore:&fReward: &e%reward%'
+    - 'lore:'
+    - 'lore:&f&nClick to sell.'
+    Message: '&eYou''ve sold &3%price% &efor &3%reward%&e.'
+  SellAll:
+    MenuItem:
+    - type:BUCKET
+    - 'name:&cSell All'
+    - amount:1
+    - 'lore:&fReceive &e%reward%.'
+    - 'lore:'
+    - 'lore:&f&nClick to sell all.'
+    Message: '&eYou''ve sold &3%price% &efor &3%reward%&e.'
+  BuyAll:
+    MenuItem:
+    - type:CHEST
+    - 'name:&aFill inventory'
+    - amount:1
+    - 'lore:&fCost: &e%price%'
+    - 'lore:'
+    - 'lore:&f&nClick to fill your inventory.'
+    Message: '&eYou''ve bought &3%reward% &efor &3%price%&e.'
+  Back:
+    MenuItem:
+    - type:REDSTONE
+    - amount:1
+    - name:&cBack
+    - 'lore:&f&nClick to go back to the shop.'
+    Message: ''
+  Close:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&cClose
+    - 'lore:&f&nClick to close the menu.'
+    Message: ''

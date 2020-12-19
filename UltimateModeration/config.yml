@@ -1,0 +1,83 @@
+Main:
+
+  # Show particles and play sound when going in and out of vanish.
+  Enable Vanish Effects: true
+
+  # Sound to be played when going into vanish.
+  Vanish Sound: ENTITY_GENERIC_EXPLODE
+
+  # Shows bats when entering vanish.
+  Release Bats On Vanish: true
+
+  # Show particles when entering vanish.
+  Vanish Particle: EXPLOSION_NORMAL
+
+  # Limits how often a player can send a chat message by the corresponding amount.
+  SLOW_MODE: 0s
+
+  # Prevents players from running the specified commands.
+  Blocked Commands:
+  - Fly
+  - Op
+  - Plugins
+  - Pl
+
+  # The amount of time in between saving to file.
+  # This is purely a safety function to prevent against unplanned crashes or
+  # restarts. With that said it is advised to keep this enabled.
+  # If however you enjoy living on the edge, feel free to turn it off.
+  Auto Save Interval In Seconds: 15
+
+  # Color of messages sent in staff chat.
+  Staff Chat Color Code: b
+
+  # Types of tickets players can open.
+  Ticket Types:
+  - Player Report
+  - Bug Report
+  - Suggestion
+  - Other
+
+  # Commands disabled when a player is muted.
+  Mute Disabled Commands:
+  - minecraft:me
+  - minecraft:tell
+
+  # Notify Staff on Block Break
+  Notify Blocks: false
+
+  # Blocks that will give a notification when mined.
+  Notify Blocks List:
+  - DIAMOND_ORE
+  - EMERALD_ORE
+
+Interfaces:
+
+  Glass Type 1: GRAY_STAINED_GLASS_PANE
+
+  Glass Type 2: BLUE_STAINED_GLASS_PANE
+
+  Glass Type 3: LIGHT_BLUE_STAINED_GLASS_PANE
+
+System:
+
+  # The enabled language file.
+  # More language files (if available) can be found in the plugins data folder.
+  Language Mode: en_US
+
+MySQL:
+
+  # Set to 'true' to use MySQL instead of SQLite for data storage.
+  Enabled: false
+
+  Hostname: localhost
+
+  Port: 3306
+
+  Database: your-database
+
+  Username: user
+
+  Password: pass
+
+  Use SSL: false

@@ -1,0 +1,633 @@
+height: 6
+title: '&fUndead Achievements'
+items:
+#FIRST QUEST
+  achievement1:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayUndead1,!default-Achievements-Undead.q1_completed'
+    text:
+      en:
+        - '&a&lUndead Hunter I'
+        - '&f&o'
+        - '&fSlay 500 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+    close: false
+  achievement1_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &e&lUndead Hunter I'
+        - '&f&o'
+        - '&fSlay 500 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+    close: false
+
+#SECOND QUEST
+  achievement2:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayUndead2,!default-Achievements-Undead.q2_completed'
+    text:
+      en:
+        - '&2&lUndead Hunter II'
+        - '&f&o'
+        - '&fSlay 1,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+  achievement2_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &e&lUndead Hunter II'
+        - '&f&o'
+        - '&fSlay 1,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+
+#SECOND QUEST
+  achievement3:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayUndead3,!default-Achievements-Undead.q3_completed'
+    text:
+      en:
+        - '&9&lUndead Hunter III'
+        - '&f&o'
+        - '&fSlay 5,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+  achievement3_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &e&lUndead Hunter III'
+        - '&f&o'
+        - '&fSlay 5,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+
+#SECOND QUEST
+  achievement4:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayUndead4,!default-Achievements-Undead.q4_completed'
+    text:
+      en:
+        - '&c&lUndead Hunter IV'
+        - '&f&o'
+        - '&fSlay 10,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+  achievement4_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &e&lUndead Hunter IV'
+        - '&f&o'
+        - '&fSlay 10,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+
+#FIFTH QUEST
+  achievement5:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayUndead5,!default-Achievements-Undead.q5_completed'
+    text:
+      en:
+        - '&4&lUndead Hunter V'
+        - '&f&o'
+        - '&fSlay 25,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eCursed Staff'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e10,00 Coins'
+    close: false
+    
+  achievement5_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q5_completed,default-Achievements-Undead.q5_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &e&lUndead Hunter V'
+        - '&f&o'
+        - '&fSlay 25,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eCursed Staff'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e10,00 Coins'
+    close: false
+#5    
+  achievement5_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Achievements-Undead.q5_rewards_unclaimed,!default-Achievements-Undead.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lUndead Hunter'
+        - '&f&o'
+        - '&fSlay 25,000 &cUndead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eCursed Staff'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e10,00 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Achievements-Undead.QuestReward5_Claim
+      left: default-Achievements-Undead.QuestReward5_Claim
+
+
+#REAPER
+  achievement6:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayReaper1,!default-Achievements-Undead.q6_completed'
+    text:
+      en:
+        - '&a&lReaper Slayer I'
+        - '&f&o'
+        - '&fSlay 1 &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+  achievement6_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q6_completed'
+    text:
+      en:
+        - '&e&l[Complete] &a&lReaper Slayer I'
+        - '&f&o'
+        - '&fSlay 1 &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+#2
+  achievement7:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayReaper2,!default-Achievements-Undead.q7_completed'
+    text:
+      en:
+        - '&2&lReaper Slayer II'
+        - '&f&o'
+        - '&fSlay 25 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+  achievement7_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q7_completed'
+    text:
+      en:
+        - '&e&l[Complete] &2&lReaper Slayer II'
+        - '&f&o'
+        - '&fSlay 25 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+#3
+  achievement8:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayReaper3,!default-Achievements-Undead.q8_completed'
+    text:
+      en:
+        - '&9&lReaper Slayer III'
+        - '&f&o'
+        - '&fSlay 50 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+  achievement8_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q8_completed'
+    text:
+      en:
+        - '&e&l[Complete] &9&lReaper Slayer III'
+        - '&f&o'
+        - '&fSlay 50 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+#4
+  achievement9:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayReaper4,!default-Achievements-Undead.q9_completed'
+    text:
+      en:
+        - '&c&lReaper Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Reaper Head'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+    close: false
+  achievement9_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q9_completed,default-Achievements-Undead.q9_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &9&lReaper Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Reaper Head'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+    close: false
+  achievement9_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Achievements-Undead.q9_rewards_unclaimed,!default-Achievements-Undead.q9_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &9&lReaper Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Reaper Head'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Achievements-Undead.QuestReward9_Claim
+      left: default-Achievements-Undead.QuestReward9_Claim
+#5
+  achievement10:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayReaper5,!default-Achievements-Undead.q10_completed'
+    text:
+      en:
+        - '&4&lReaper Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eReaper Head'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+    close: false
+  achievement10_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q10_completed,default-Achievements-Undead.q10_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &4&lReaper Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eReaper Head'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+    close: false
+  achievement10_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Achievements-Undead.q10_rewards_unclaimed,!default-Achievements-Undead.q10_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &4&lReaper Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cReapers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eReaper Head'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Achievements-Undead.QuestReward10_Claim
+      left: default-Achievements-Undead.QuestReward10_Claim
+
+
+
+
+#MORDEN
+#1
+  achievement11:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayMorden1,!default-Achievements-Undead.q11_completed'
+    text:
+      en:
+        - '&a&lMorden Slayer I'
+        - '&f&o'
+        - '&fSlay 1 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+  achievement11_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q11_completed'
+    text:
+      en:
+        - '&e&l[Complete] &a&lMorden Slayer I'
+        - '&f&o'
+        - '&fSlay 1 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+#2
+  achievement12:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayMorden2,!default-Achievements-Undead.q12_completed'
+    text:
+      en:
+        - '&2&lMorden Slayer II'
+        - '&f&o'
+        - '&fSlay 25 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,500 EXP'
+        - '&8&l» &d1,500 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+  achievement12_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q12_completed'
+    text:
+      en:
+        - '&e&l[Complete] &2&lMorden Slayer II'
+        - '&f&o'
+        - '&fSlay 25 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d1,500 EXP'
+        - '&8&l» &d1,500 Slayer EXP'
+        - '&8&l» &e2,500 Coins'
+    close: false
+#3
+  achievement13:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayMorden3,!default-Achievements-Undead.q13_completed'
+    text:
+      en:
+        - '&9&lMorden Slayer III'
+        - '&f&o'
+        - '&fSlay 50 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+  achievement13_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q13_completed'
+    text:
+      en:
+        - '&e&l[Complete] &9&lMorden Slayer III'
+        - '&f&o'
+        - '&fSlay 50 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d2,500 EXP'
+        - '&8&l» &d2,500 Slayer EXP'
+        - '&8&l» &e5,000 Coins'
+    close: false
+#4
+  achievement14:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayMorden4,!default-Achievements-Undead.q14_completed'
+    text:
+      en:
+        - '&c&lMorden Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGrave Digger'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+    close: false
+  achievement14_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q14_completed,default-Achievements-Undead.q14_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &c&lMorden Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGrave Digger'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+    close: false
+  achievement14_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Achievements-Undead.q14_rewards_unclaimed,!default-Achievements-Undead.q14_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &c&lMorden Slayer IV'
+        - '&f&o'
+        - '&fSlay 100 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGrave Digger'
+        - '&8&l» &d10,000 EXP'
+        - '&8&l» &d10,000 Slayer EXP'
+        - '&8&l» &e50,000 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Achievements-Undead.QuestReward14_Claim
+      left: default-Achievements-Undead.QuestReward14_Claim
+#5
+  achievement15:
+    item: paper
+    amount: 1
+    conditions: 'default-Achievements-Undead.global-SlayMorden5,!default-Achievements-Undead.q15_completed'
+    text:
+      en:
+        - '&4&lMorden Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Morden The Companion'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+    close: false
+  achievement15_completed:
+    item: book
+    amount: 1
+    conditions: 'default-Achievements-Undead.q15_completed,default-Achievements-Undead.q15_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &4&lMorden Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Morden The Companion'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+    close: false
+  achievement15_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Achievements-Undead.q15_rewards_unclaimed,!default-Achievements-Undead.q15_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &4&lMorden Slayer V'
+        - '&f&o'
+        - '&fSlay 250 &cMorden The Undead'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Morden The Companion'
+        - '&8&l» &d20,000 EXP'
+        - '&8&l» &d20,000 Slayer EXP'
+        - '&8&l» &e100,000 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Achievements-Undead.QuestReward15_Claim
+      left: default-Achievements-Undead.QuestReward15_Claim
+
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Achievements-Undead.Achievements
+      left: default-Achievements-Undead.Achievements
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  16-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  25-28: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  34-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  40-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11: achievement1,achievement1_completed
+  12: achievement2,achievement2_completed
+  13: achievement3,achievement3_completed
+  14: achievement4,achievement4_completed
+  15: achievement5,achievement5_completed,achievement5_unclaimed
+  20: achievement6,achievement6_completed
+  21: achievement7,achievement7_completed
+  22: achievement8,achievement8_completed
+  23: achievement9,achievement9_completed,achievement9_unclaimed
+  24: achievement10,achievement10_completed,achievement10_unclaimed
+  29: achievement11,achievement11_completed
+  30: achievement12,achievement12_completed
+  31: achievement13,achievement13_completed
+  32: achievement14,achievement14_completed,achievement14_unclaimed
+  33: achievement15,achievement15_completed,achievement15_unclaimed
+  49: back

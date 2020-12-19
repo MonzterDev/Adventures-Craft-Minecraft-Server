@@ -1,0 +1,364 @@
+height: 4
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Courtyard-Navid.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Navid in the Courtyard'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q1_part1,!default-Courtyard-Navid.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Navid in the Courtyard'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q1_completed,!default-Courtyard-Navid.q1_rewards_unclaimed,default-Courtyard-Navid.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q1_rewards_unclaimed,!default-Courtyard-Navid.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward1_Claim
+      left: default-Courtyard-Navid.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Courtyard-Navid.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Slayer'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q2_part1,!default-Courtyard-Navid.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Slayer'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q2_completed,!default-Courtyard-Navid.q2_rewards_unclaimed,default-Courtyard-Navid.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest2_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q2_rewards_unclaimed,!default-Courtyard-Navid.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward2_Claim
+      left: default-Courtyard-Navid.QuestReward2_Claim
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Courtyard-Navid.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Magical Hunt'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q3_part1,!default-Courtyard-Navid.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Magical Hunt'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q3_completed,!default-Courtyard-Navid.q3_rewards_unclaimed,default-Courtyard-Navid.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q3_rewards_unclaimed,!default-Courtyard-Navid.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward3_Claim
+      left: default-Courtyard-Navid.QuestReward3_Claim
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Courtyard-Navid.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lLuring out The Guards'
+        - '&f&o'
+        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spider Exterminator'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q4_part1,!default-Courtyard-Navid.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lLuring out The Guards'
+        - '&f&o'
+        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spider Exterminator'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q4_completed,!default-Courtyard-Navid.q4_rewards_unclaimed,default-Courtyard-Navid.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lLuring out The Guards'
+        - '&f&o'
+        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q4_rewards_unclaimed,!default-Courtyard-Navid.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lLuring out The Guards'
+        - '&f&o'
+        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward4_Claim
+      left: default-Courtyard-Navid.QuestReward4_Claim
+#FIFTH QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Courtyard-Navid.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Village Hero'
+        - '&f&o'
+        - '&fSave the trapped &aVillagers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Castle'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Luring out The Guards'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q5_part1,!default-Courtyard-Navid.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Village Hero'
+        - '&f&o'
+        - '&fSave the trapped &aVillagers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Castle'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Luring out The Guards'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Village Hero'
+        - '&f&o'
+        - '&fSave the trapped &aVillagers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Castle'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  16-18: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  19-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass  
+  11-15: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed,quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed
+  31: back

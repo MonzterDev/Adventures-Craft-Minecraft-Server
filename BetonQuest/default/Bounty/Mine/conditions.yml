@@ -1,0 +1,53 @@
+#STATIC CONDITIONS
+#Used to make sure people aren't in plot world when breaking / placing blocks
+inSpawn: world Spawn
+#Checks if inventory is full for Advanced Quest Reward Delivery
+empty0: empty 0 equal
+##
+
+#Makes quest reset after 24 hours
+QuestCooldown24: tag QuestCooldown24
+
+q1_part1: tag q1_part1
+q1_completed: tag q1_completed
+
+#Used for when player gets 500 points from mining stone
+500stone: point stone 500
+
+
+#2
+#Makes quest reset after 24 hours
+Quest2Cooldown24: tag Quest2Cooldown24
+
+q2_part1: tag q2_part1
+q2_completed: tag q2_completed
+
+#Used for when player gets 128 points
+64Coal: point Coal 128
+64Iron: point Iron 128
+64Gold: point Gold 128
+64Redstone: point Redstone 128
+64Lapis: point Lapis 128
+64Diamond: point Diamond 128
+64Emerald: point Emerald 128
+
+
+#3
+#Makes quest reset after 24 hours
+Quest3Cooldown24: tag Quest3Cooldown24
+
+q3_part1: tag q3_part1
+q3_completed: tag q3_completed
+
+#Points are assigned when materials are delivered
+MatieralPoint: point Matieral 2
+MatieralPoint1: point Matieral 1
+
+#This checks inventory if player has one of the enchanted materials
+eCoal: 'item eCoal'
+eIron: 'item eIron'
+eGold: 'item eGold'
+eRedstone: 'item eRedstone'
+eLapis: 'item eLapis'
+eDiamond: 'item eDiamond'
+eEmerald: 'item eEmerald'

@@ -1,0 +1,28 @@
+name: Power Mark
+lore:
+- Attacking an enemy applies a deadly
+- magical mark which spreads accross the
+- ground. This mark accumulates &6{ratio}%
+- of the damage dealt to the initial
+- target over &6{duration} &7seconds.
+- ''
+- After this duration, the mark bursts, dealing
+- accumulated damage to nearby enemies and
+- stunning them for &6{stun}+ &7seconds.
+- ''
+- The more damage, the longer the stun.
+- ''
+- '&e{cooldown}s Cooldown'
+material: WITHER_SKELETON_SKULL
+duration:
+  base: 10.0
+  per-level: 0.1
+cooldown:
+  base: 30.0
+  per-level: 0.0
+stun:
+  base: 0.4
+  per-level: 0.03
+ratio:
+  base: 10.0
+  per-level: 5.0

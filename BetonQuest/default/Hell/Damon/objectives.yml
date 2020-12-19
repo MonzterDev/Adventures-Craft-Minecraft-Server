@@ -1,0 +1,17 @@
+#1
+MineNetherrack: mmocorebreakblock 256 block:NETHERRACK events:quest1_part2_starter notify
+MineNetherwart: mmocorebreakblock 192 block:NETHER_WART events:quest1_part3_starter notify
+MineQuartz: mmocorebreakblock 128 block:NETHER_QUARTZ_ORE events:quest1_part4_starter notify
+MineGlowstone: mmocorebreakblock 64 block:GLOWSTONE events:entry_q1_complete,QuestReward1,quest2_starter notify
+#2
+SlayPigmen: mmobkill VOID_PIGMAN amount:15 events:quest2_part2_starter notify
+SlayDemons: mmobkill VOID_DEMON amount:10 events:quest2_part3_starter notify
+SlayNecro: mmobkill VOID_NECROMANCER amount:5 events:quest2_part4_starter notify
+SlayBlaze: mmobkill VOID_BLAZE2 amount:5 events:quest2_part5_starter notify
+SlayWither: mmobkill WITHER_MINI_BOSS amount:1 events:q2_party notify
+#3
+Obsi: mmocorebreakblock 64 block:OBSIDIAN events:entry_q3_complete,QuestReward3,quest4_starter  notify
+#4
+NPC1: npcinteract 77 events:entry_q4_complete,QuestReward4
+
+

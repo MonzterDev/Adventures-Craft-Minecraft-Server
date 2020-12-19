@@ -1,0 +1,825 @@
+ShopName: Wizard
+DisplayName: '&8Wizard'
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  ENCHANTING_BOOK:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&fEnchanting Book
+    - 'lore2:&7Used when enchanting gear'
+    - 'lore3:&7with common enchantments!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 100 Coins'
+    - 'lore7:&f- &bΞ 10 EXP'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give ENCHANTMENT ENCHANTING_BOOK %player%
+    - mmocore admin exp give %name% enchanting 10
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: MONEY
+      Price2: 100.0
+    Message: '&aWizard &8&l» &fYou bought an &aEnchanting Book&f!'
+    InventoryLocation: 12
+
+  ENCHANTING_BOOK2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&2Enchanting Book
+    - 'lore2:&7Used when enchanting gear'
+    - 'lore3:&7with uncommon enchantments!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 250 Coins'
+    - 'lore7:&f- &bΞ 20 EXP'
+    - 'lore8:&f- &78 &9Enchanted Paper'
+    - 'lore10:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give ENCHANTMENT ENCHANTING_BOOK2 %player%
+    - mmocore admin exp give %name% enchanting 20
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: MONEY
+      Price2: 250.0
+      PriceType3: ITEM
+      Price3:
+        - type:PAPER
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Paper
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &2Enchanting Book&f!'
+    InventoryLocation: 13
+
+  ENCHANTING_BOOK3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&9Enchanting Book
+    - 'lore2:&7Used when enchanting gear'
+    - 'lore3:&7with rare enchantments!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 500 Coins'
+    - 'lore7:&f- &bΞ 30 EXP'
+    - 'lore8:&f- &716 &9Enchanted Paper'
+    - 'lore10:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give ENCHANTMENT ENCHANTING_BOOK3 %player%
+    - mmocore admin exp give %name% enchanting 30
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: MONEY
+      Price2: 500.0
+      PriceType3: ITEM
+      Price3:
+        - type:PAPER
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Paper
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &9Enchanting Book&f!'
+    InventoryLocation: 14
+
+  ENCHANTING_BOOK4:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&5Enchanting Book
+    - 'lore2:&7Used when enchanting gear'
+    - 'lore3:&7with legendary enchantments!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 1,000 Coins'
+    - 'lore7:&f- &bΞ 40 EXP'
+    - 'lore8:&f- &732 &9Enchanted Paper'
+    - 'lore10:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give ENCHANTMENT ENCHANTING_BOOK4 %player%
+    - mmocore admin exp give %name% enchanting 40
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: MONEY
+      Price2: 1000.0
+      PriceType3: ITEM
+      Price3:
+        - type:PAPER
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Paper
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &5Enchanting Book&f!'
+    InventoryLocation: 15
+
+  ENCHANTING_BOOK5:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&eEnchanting Book
+    - 'lore2:&7Used when enchanting gear'
+    - 'lore3:&7with exotic enchantments!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 1,500 Coins'
+    - 'lore7:&f- &bΞ 50 EXP'
+    - 'lore8:&f- &764 &9Enchanted Paper'
+    - 'lore10:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give ENCHANTMENT ENCHANTING_BOOK5 %player%
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: MONEY
+      Price2: 1500.0
+      PriceType3: ITEM
+      Price3:
+        - type:PAPER
+        - amount:64
+        - durability:0
+        - name:&9Enchanted Paper
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &eEnchanting Book&f!'
+    InventoryLocation: 16
+
+  ENCHANTED_BOX1:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY1MDViMWJlZmJhMjQyMTcwYTQ2ZTg5NDdiNTJhZWE1NGE1OTA2MGYzZTFjMzZmMjFjZWJiNDQ2OTBmOGIwYyJ9fX0=
+    - amount:1
+    - name:&fEnchanted Box
+    - 'lore2:&7Rewards a random Enchanting Stone with'
+    - 'lore3:&7a lower chance to reward rare stones!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 150 Coins'
+    - 'lore7:&f- &bΞ 15 EXP'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE ENCHANTED_BOX1 %player%
+    - mmocore admin exp give %name% enchanting 15
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 15.0
+      PriceType2: MONEY
+      Price2: 150.0
+    Message: '&aWizard &8&l» &fYou bought an &fEnchanted Box&f!'
+    InventoryLocation: 21
+
+  ENCHANTED_BOX2:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMwMzBjYzM1ZmRlMDIxOGRlZDViYTVkNTU3Y2NhOWUwM2RjYmM4NGY5ZTY3MjkxMWRhNTRmZTA3YzVmZGJiYiJ9fX0=
+    - amount:1
+    - name:&2Enchanted Box
+    - 'lore2:&7Rewards a random Enchanting Stone with'
+    - 'lore3:&7a lower chance to reward rare stones!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 250 Coins'
+    - 'lore7:&f- &bΞ 25 EXP'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE ENCHANTED_BOX2 %player%
+    - mmocore admin exp give %name% enchanting 25
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: MONEY
+      Price2: 250.0
+    Message: '&aWizard &8&l» &fYou bought an &2Enchanted Box&f!'
+    InventoryLocation: 22
+
+  ENCHANTED_BOX3:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJlMmJhZjQwZmQ4NWViNTczZmU1YjJlNWI2Yzg4MTdjZjUwZjg4M2Q5NTc2OTQxNTgwN2FiMDcyODhhNDdjZCJ9fX0=
+    - amount:1
+    - name:&9Enchanted Box
+    - 'lore2:&7Rewards a random Enchanting Stone with'
+    - 'lore3:&7a lower chance to reward rare stones!'
+    - 'lore5:&fIngredients:'
+    - 'lore6:&f- &e⛂ 350 Coins'
+    - 'lore7:&f- &bΞ 35 EXP'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE ENCHANTED_BOX3 %player%
+    - mmocore admin exp give %name% enchanting 35
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 35.0
+      PriceType2: MONEY
+      Price2: 350.0
+    Message: '&aWizard &8&l» &fYou bought an &9Enchanted Box&f!'
+    InventoryLocation: 23
+
+  XP_BOTTLE1:
+    MenuItem:
+    - type:EXPERIENCE_BOTTLE	
+    - amount:1
+    - name:&fExperience Bottle
+    - 'lore2:&7Consume to receive experience orbs!'
+    - 'lore4:&fIngredients:'
+    - 'lore5:&f- &e⛂ 5 Coins'
+    - 'lore6:&f- &71 &9Enchanted Lapis'
+    - 'lore8:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE XP_BOTTLE1 %player%
+    - mmocore admin exp give %name% enchanting 1
+    PriceType: AND
+    Price:
+      PriceType1: MONEY
+      Price1: 5.0
+      PriceType2: ITEM
+      Price2:
+        - type:LAPIS_LAZULI	
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Lapis
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &fXP Bottle&f!'
+    InventoryLocation: 30
+
+  XP_BOTTLE2:
+    MenuItem:
+    - type:EXPERIENCE_BOTTLE	
+    - amount:1
+    - name:&2Experience Bottle
+    - 'lore2:&7Consume to receive experience orbs!'
+    - 'lore4:&fIngredients:'
+    - 'lore5:&f- &e⛂ 10 Coins'
+    - 'lore6:&f- &78 &9Enchanted Lapis'
+    - 'lore8:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE XP_BOTTLE2 %player%
+    - mmocore admin exp give %name% enchanting 3
+    PriceType: AND
+    Price:
+      PriceType1: MONEY
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:LAPIS_LAZULI	
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Lapis
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &2XP Bottle&f!'
+    InventoryLocation: 31
+
+  XP_BOTTLE3:
+    MenuItem:
+    - type:EXPERIENCE_BOTTLE	
+    - amount:1
+    - name:&9Experience Bottle
+    - 'lore2:&7Consume to receive experience orbs!'
+    - 'lore4:&fIngredients:'
+    - 'lore5:&f- &e⛂ 25 Coins'
+    - 'lore6:&f- &716 &9Enchanted Lapis'
+    - 'lore8:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - mi give CONSUMABLE XP_BOTTLE3 %player%
+    - mmocore admin exp give %name% enchanting 3
+    PriceType: AND
+    Price:
+      PriceType1: MONEY
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:LAPIS_LAZULI	
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Lapis
+        - lore1:&fMaterial
+    Message: '&aWizard &8&l» &fYou bought an &9XP Bottle&f!'
+    InventoryLocation: 32
+
+
+  SELL:
+    MenuItem:
+    - type:CAULDRON
+    - amount:1
+    - name:&aSell Items
+    - 'lore2:&8&l» &eClick to Sell'    
+    RewardType: opcommand
+    Reward:
+    - 'ushop open %player%'
+    PriceType: NOTHING
+    InventoryLocation: 50
+
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+
+  46:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+
+  47:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 47
+    ExtraPermission: ''
+    Condition:
+
+  48:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 48
+    ExtraPermission: ''
+    Condition:
+
+  49:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 49
+    ExtraPermission: ''
+    Condition:
+
+  50:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 50
+    ExtraPermission: ''
+    Condition:
+
+  51:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 51
+    ExtraPermission: ''
+    Condition:
+
+  52:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 52
+    ExtraPermission: ''
+    Condition:
+
+  53:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 53
+    ExtraPermission: ''
+    Condition:
+
+  54:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:

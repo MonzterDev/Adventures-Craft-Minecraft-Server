@@ -1,0 +1,472 @@
+# Void Blaze  
+ENDERMANTP:
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @self
+
+THRALLSUMMON:
+  Conditions:
+  - mobsinradius_ext{mobtypes=VOID_DEMON;a=5to10;r=50;action=FALSE}
+  Skills:
+  - summon{type=VOID_DEMON;amount=1;radius=4} @target
+
+ASSASSINSTUN:
+  Cooldown: 10
+  Skills:
+  - shootpotion{type=SLOW;duration=40;level=10;velocity=1}
+  - message{m="<mob.name> &fthrew a &cStun Potion &fat you!"} 
+
+ASSASSINUNDRESS:
+  Skills:
+  - potion{type=INVISIBILITY;duration=100;level=4}
+  - effect:ender 
+  - effect:particlering{particle=dragon_breath;radius=5;points=15;amount=10;hS=0;vS=0;s=.15}
+  - equip{item=air:HEAD}
+  - equip{item=air:CHEST}
+  - equip{item=air:LEGS}
+  - equip{item=air:FEET}
+  - equip{item=air:HAND}
+  - equip{item=air:OFFHAND}
+  - delay 100
+  - skill{s=ASSASSINDRESS} 
+ASSASSINDRESS:
+  Skills:
+  - effect:ender 
+  - effect:particlering{particle=dragon_breath;radius=5;points=15;amount=10;hS=0;vS=0;s=.15}
+  - equip{item=ASSASSIN:HEAD}
+  - equip{item=ASSASSIN_CHEST:CHEST}
+  - equip{item=ASSASSIN_LEGS:LEGS}
+  - equip{item=ASSASSIN_BOOTS:FEET}
+  - equip{item=ASSASSIN_SWORD:HAND}
+  - equip{item=ASSASSIN_SWORD:OFFHAND}
+
+
+#This sets the Boss to an Archer and non moving at first spawn
+VOID_STANCE1:
+  Cooldown: 1000
+  Skills:
+    - runaigoalselector{goal=clear}
+    - runaigoalselector{goal=arrowattack}
+    - setspeed{speed=.00001;type=walking}
+#This sets the Boss to Melee and moving at specific point
+VOID_STANCE2:
+  Cooldown: 1000
+  Skills:
+    - runaigoalselector{goal=clear}
+    - runaigoalselector{goal=meleeattack}
+    - setspeed{speed=.3;type=walking}
+
+MINIONS_PHASE1:
+  Skills:
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-1;hO=0}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-1;sfo=-1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-1;sfo=0;sso=1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-1;sfo=0;sso=-1}
+MINIONS_PHASE2:
+  Skills:
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-.5;hO=0}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-.5;sfo=-1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-.5;sfo=0;sso=1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=-.5;sfo=0;sso=-1}
+MINIONS_PHASE3:
+  Skills:
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;hO=0}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=-1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=0;sso=1}
+    - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=0;sso=-1}
+
+VOID_MINION_SPAWN:
+  Cooldown: 1000
+  Skills:
+  - summon{type=VOID_BOSS_MINION1;amount=1;radius=4} @target
+  - summon{type=VOID_BOSS_MINION1;amount=1;radius=4} @target
+  - summon{type=VOID_BOSS_MINION1;amount=1;radius=4} @target
+  - summon{type=VOID_BOSS_MINION1;amount=1;radius=4} @target
+
+VOID_PARTICLES:
+  Skills:
+  - onAttack{auraName=SA1;charges=5;duration=99999999;i=10;onTick=V2;onHit=V3} @self
+  - effect:particles{p=smoke;a=20;y=0.2;hs=0.3;vs=0.2} @self
+  - sound{s=entity.wither.shoot;p=0.7} @self
+V2:
+  Skills:
+  - effect:particleorbital{p=smoke;a=1;points=18;r=1;in=1;ticks=20;y=2.4} @self
+  - effect:particlesphere{p=reddust;color=#000000;a=20;y=1.2;r=0.3;repeat=5;repeatInterval=2} @self
+V3:
+  Skills:
+  - damage{a=25}                                                      #Damage of additional attacks
+  - effect:particleline{p=reddust;color=#000000;y=0.8;syo=0.8;a=1;}
+  - effect:particles{p=sweepAttack;a=1;y=0.85;hs=0.1;vs=0.1}
+  - sound{s=entity.player.attack.sweep;p=0.7}
+
+
+
+
+#Passively heals mobs every X (1) Second for 10 HP
+VOID_BOSS_PASSIVE_HEAL:
+  Cooldown: 1
+  Skills:
+  - heal{amount=10} @self
+###################################################
+##############    BULL RIDER   #########################
+###################################################
+
+#Makes the Rider an Archer stance and hold bow
+BULBLIN_ARCHER:
+  Conditions:
+  - mobsInRadius{types=VOID_BULLBO;amount=1;radius=100}
+  Skills:
+    - runaigoalselector{goal=clear}
+    - runaigoalselector{goal=arrowattack}
+    - equip{item=BULBLIN_BOW:0}
+#Archer Agro / AI stance
+BULBLIN_ARCHER_AGRO:
+
+  Conditions:
+  - playerwithin{d=50} true
+  - holding{m=GOLDEN_SWORD} false
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=arrowattack}
+#Archer Damage
+BULBLIN_ARCHER_ATTACK:
+  Conditions:
+  - holding{m=GOLDEN_SWORD} false
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#LIFE STEAL ON ATTACK
+VOID_BULBLIN_LIFESTEAL:
+  Cooldown: 1
+  Skills:
+  - heal{amount=75} @self
+
+#Archer Ability which pulls player towards them
+BULBLIN_ARCHER_PULL:
+  Cooldown: 7.5
+  Conditions:
+  - holding{m=GOLDEN_SWORD} false
+  Skills:
+  - pull{velocity=10} @target
+  - effect:ender @self
+  - sound{s=block.end_portal_frame.fill;p=2} @target
+  - sound{s=block.end_portal_frame.fill;p=2} @target
+  - delay 1
+  - sound{s=block.end_portal_frame.fill;p=2} @target
+  - sound{s=block.end_portal_frame.fill;p=2} @target
+#Archer Ability which blinds & posions player
+BULBLIN_ARCHER_BLIND:
+  Cooldown: 7.5
+  Conditions:
+  - holding{m=GOLDEN_SWORD} false
+  Skills:
+  - potion{type=BLINDNESS;duration=60;level=5} @target
+  - potion{type=POISON;duration=60;level=5} @target
+  - message{m="&7[&fLVL 50&7] &cVoid Bulblin &8&lblinded &fyou with his &2&lMectin Bow&f!"} @target
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - delay 20
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - delay 20
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+
+
+#This sets the Boss to Melee and moving at specific point, when dismounted, then remounts them after 10 seconds
+BULBLIN_DISMOUNT:
+  Skills:
+    - dismount
+    - skill{s=BULBLIN_MELEE} @self
+    - delay 300
+    - skill{s=BULBLIN_REMOUNT} @self
+
+#(FIXED I THINK) BUG: Unable to get the Arrowattack AI Goal when it remounts. I believe it is due to it riding an IRON_GOLEM and taking its properties
+#Remounts the Rider and swaps to bow
+BULBLIN_REMOUNT:
+  Conditions:
+  - mobsInRadius{types=VOID_BULLBO;amount=1;radius=100}
+  Skills:
+    - mounttarget @MobsInRadius{r=100;t=VOID_BULLBO}
+    - runaigoalselector{goal=clear} @self
+    - runaigoalselector{goal=arrowattack} @self
+    - equip{item=BULBLIN_BOW:HAND}
+
+
+#Rider Melee Stance
+BULBLIN_MELEE:
+  Skills:
+    - runaigoalselector{goal=clear}
+    - runaigoalselector{goal=meleeattack}
+    - equip{item=BULBLIN_SWORD:0} 
+#Rider Melee Agro
+BULBLIN_MELEE_AGRO:
+  Conditions:
+  - playerwithin{d=50} true
+  - holding{m=BOW} false
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=meleeattack}
+#Rider Melee Damage
+BULBLIN_MELEE_ATTACK:
+  Conditions:
+  - holding{m=GOLDEN_SWORD} true
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  
+#Shockslam ability when mob turns to sword holding
+BULBLIN_SHOCK_SLAM:
+  Conditions:
+  - holding{m=GOLDEN_SWORD} true
+  Cooldown: 10
+  Skills:
+  - message{m="&7[&fLVL 50&7] &cVoid Bulblin &fused his &4&lTremulous Sword &fto cause a &4&lShockwave&f!"} @PlayersInRadius{r=25}
+  - throw{velocity=7;velocityY=15} @PIR{r=5}
+  - damage{a=50;i=false} @PIR{r=5}
+  - effect:particles{p=hugeexplode;a=5;vs=0.5;hs=0.5;s=0;y=1} @Self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.5} @Self
+  - effect:sound{s=entity.generic.explode;v=2;p=1;repeat=5;repeatInterval=2} @Self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=1} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=2} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=3} @Self
+  - delay 2 
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=4} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=20;radius=5} @Self
+
+
+BULBLIN_ARMOR:
+  Skills:
+  - equip{item=BULBLIN_CHEST:CHEST}
+  - equip{item=BULBLIN_LEGS:LEGS}
+  - equip{item=BULBLIN_BOOTS:FEET}
+BULBLIN_REMOVE_CHEST:
+  Skills:
+  - equip{item=AIR:CHEST}
+  - sound{s=item.armor.equip_leather} @PIR{r=20}
+BULBLIN_REMOVE_LEGS:
+  Skills:
+  - equip{item=AIR:LEGS}
+  - sound{s=item.armor.equip_leather} @PIR{r=20}
+BULBLIN_REMOVE_FEET:
+  Skills:
+  - equip{item=AIR:FEET}
+  - sound{s=item.armor.equip_leather} @PIR{r=20}
+
+
+###################################################
+##############    BULL    #########################
+###################################################
+
+#Agro States
+VOID_BULLBO_AGROA:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=50} true
+  TargetConditions:
+  - region{r=void} true
+  Skills:
+  - runaigoalselector{goal=meleeattack}
+VOID_BULLBO_AGROB:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=50} false
+  TargetConditions:
+  - region{r=void} true
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=randomstroll}
+  - runaigoalselector{goal=randomlookaround}
+
+#LIFE STEAL ON ATTACK
+VOID_BULLBO_LIFESTEAL:
+  Cooldown: 1
+  Skills:
+  - heal{amount=50} @self
+
+#Periodic dash which dismounts the Rider  
+BULLBO_DASH:
+  Conditions:
+  - playerwithin{d=10} true
+  Cooldown: 15
+  Skills:
+  - look{headOnly=false;immediately=true} @self
+  - lunge{velocity=2.5;velocityY=.15} @target
+  - delay 20
+  - effect:explosion @self
+  - potion{type=SLOW;duration=40;level=4} @PIR{r=5}
+  - damage{amount=25} @PIR{r=5}
+  - signal{s=DISMOUNT} @MobsInRadius{r=100;t=VOID_BULBLIN}
+
+
+
+#Bull's Mega Dash which occurs when he is below 50% HP. Warns player, with message, sound, & particle, then dashes onto target
+BULLBO_MEGA_DASH:
+  Conditions:
+  - playerwithin{d=15} true
+  TargetConditions:
+  - region{r=void} true
+  Cooldown: 25
+  Skills:
+  - message{m="&c&c<mob.name> &fis preparing to do a &4&lMega Dash&f!"} @PlayersInRadius{r=25}
+  - stun{d=80;f=true} @self
+  - sound{s=entity.ravager.attack;p=0.5} @PIR{r=20}
+  - effect:particletornado{p=block_crack;cp=largeexplode;mr=1;h=1;i=4;d=40;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self
+  - delay 40
+  - sound{s=entity.ravager.attack;p=0.5} @PIR{r=20}
+  - effect:particletornado{p=block_crack;cp=largeexplode;mr=1;h=1.5;i=4;d=40;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self  
+  - delay 40
+  - sound{s=entity.ravager.attack;p=0.5} @PIR{r=20}
+  - effect:particletornado{p=block_crack;cp=largeexplode;mr=1;h=2;i=4;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self
+  - look{headOnly=false;immediately=true} @self
+  - lunge{velocity=2.5;velocityY=.15} @target
+  - delay 20
+  - effect:explosion @self
+  - potion{type=SLOW;duration=60;level=4} @PIR{r=7.5}
+  - damage{amount=100} @PIR{r=7.5}
+  - sound{s=entity.ravager.roar;p=0.5} @PIR{r=20}
+
+#Summons Bulb minions, will not summon if there are any others around
+BULB_SUMMON:
+  Conditions:
+  - mobsInRadius{types=VOID_BULB;amount=0;radius=100}
+  Cooldown: 30
+  Skills:
+  - message{m="&c&c<mob.name> &fis calling upon his &4&lBulbs&f!"} @PlayersInRadius{r=25}
+  - stun{d=60;f=true} @self
+  - sound{s=entity.ravager.roar;p=0.75} @PIR{r=25}
+  - delay 10
+  - sound{s=entity.ravager.roar;p=0.75} @PIR{r=25}
+  - delay 10
+  - sound{s=entity.ravager.roar;p=0.75} @PIR{r=25}
+  - delay 10
+  - sound{s=entity.ravager.roar;p=0.75} @PIR{r=25}
+  - delay 10
+  - sound{s=entity.ravager.roar;p=0.5} @PIR{r=25}
+  - delay 20
+  - summon{type=VOID_BULB;amount=2;radius=4} @self
+
+
+
+
+
+
+
+###################################################
+##############    BULL MINIONS (PIGS)   #########################
+###################################################
+#Makes Bulbs agro the boss and walk towards him, then heal
+BULLBO_CONSUME:
+  Skills:
+  - delay 200  
+  - runaigoalselector{goal=clear}  
+  - runaigoalselector{goal=gotoparent}
+  - addtag{t=Die} @self
+  - delay 20
+  - skill{s=BULLBO_HEAL} 
+
+#Heals the Boss when the mob should be eaten
+BULLBO_HEAL:
+  Conditions:
+  - mobsInRadius{types=VOID_BULLBO;amount=1;radius=5}
+  - hastag{t=Die} true
+  Skills:
+  - heal{amount=500} @parent
+  - sound{s=entity.pig.death;v=2;p=.5} @PIR{r=15}
+  - remove @self 
+
+#Removes Bulbs which roam
+BULLBO_PURGE:
+  Skills:
+  - delay 600
+  - remove @self 
+
+#This makes the Pig Minions aggressive
+VOID_BOSS_AGRO:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=50} true
+  - hastag{t=Die} false
+  TargetConditions:
+  - region{r=void} true
+  Skills:
+  - runaigoalselector{goal=meleeattack}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###MAZE
+
+BOOMER_DAMAGE:
+  Skills:
+  - throw{velocity=7;velocityY=15} @PIR{r=4}
+  - damage{a=50;i=false} @PIR{r=4}
+  - effect:sound{s=entity.generic.explode;v=1.25;p=0.5} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
+
+
+BOOMER_MEGA:
+  Conditions:
+  - playerwithin{d=15} true
+  Skills:
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.75} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.95} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - message{m="<mob.name> combusted&f!"} @PIR{r=7}
+  - throw{velocity=25;velocityY=25} @PIR{r=7}
+  - damage{a=500;i=false} @PIR{r=7}
+  - damage{a=2500;i=false} @self
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
+
+CHAMPION_CHOSE:
+  Skills:
+  - randomskill{skills=CHAMPION_DISGUISE3,CHAMPION_DISGUISE4,CHAMPION_DISGUISE5,CHAMPION_DISGUISE6,CHAMPION_DISGUISE7}
+CHAMPION_DISGUISE3:
+  Skills:
+  - disguise{type=stray}
+CHAMPION_DISGUISE4:
+  Skills:
+  - disguise{type=husk}
+CHAMPION_DISGUISE5:
+  Skills:
+  - disguise{type=evoker}
+CHAMPION_DISGUISE6:
+  Skills:
+  - disguise{type=vindicator}
+CHAMPION_DISGUISE7:
+  Skills:
+  - disguise{type=pillager}

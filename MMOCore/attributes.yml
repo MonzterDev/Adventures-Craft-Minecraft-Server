@@ -1,0 +1,40 @@
+Wizardly:
+    name: Wizardly
+    max-points: 10
+    buff:
+        max_health: 10
+        max_mana: 25
+        weapon_damage: 5     
+        health_regeneration: .015     
+        mana_regeneration: .025
+        defense: 10        
+        cooldown_reduction: 2.5
+Guardian:
+    name: Guardian
+    max-points: 10
+    buff:
+        max_health: 25
+        max_mana: 10        
+        weapon_damage: 5        
+        health_regeneration: .025
+        mana_regeneration: .020
+        defense: 20
+Slasher:
+    name: Slasher
+    max-points: 10
+    buff:
+        max_health: 20
+        max_mana: 20  
+        weapon_damage: 15
+        health_regeneration: .020
+        mana_regeneration: .020
+        defense: 10
+        critical_strike_chance: 2.5
+        critical_strike_power: 5
+
+#Void:
+#    name: Void
+#    max-points: 5
+#    buff:
+#        max_mana: 5  
+#        faction_damage_void: 10.0

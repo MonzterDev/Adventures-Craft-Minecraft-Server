@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&7¡&6%player% &7ha limpiado el chat!'
+    immune: '&aFuiste inmune a la limpieza de chat debido a tus permisos.'
+  togglechat:
+    toggledOn: '&aEl chat fue globalmente desenmudecido...'
+    toggledOff: '&cEl chat fue globalmente silenciado...'
+    bypass: '&aFuiste inmune a la desactivacion del chat debido a tus permisos.'
+    muted: '&cEl chat esta actualmente desactivado, intenta más tarde.'
+  vanish:
+    toggledOn: '&7Ahora eres invisible.'
+    toggledOff: '&7Ahora eres visible.'
+  freeze:
+    add: '&7Has congelado a &6%player%&7 satisfactoriamente.'
+    remove: '&7Has descongelado a &6%player%&7 satisfactoriamente.'
+    alertadd: '&7Has sido congelado.'
+    alertremove: '&7Has sido descongelado.'
+    nope: '&cNo puedes hacer eso porque estás congelado....'
+  revive:
+    noloot: '&cNo se pudo encontrar botín para revivir al jugador con el.'
+    success: '&7Has revivido a &6%player% &7satisfactoriamente.'
+    revived: '&7Has sido revivido.'
+  spy:
+    returned: '&7Has sido devuelto a su ubicación anterior'
+    success: '&7Ahora estas espiando a &6%player%&7. Usa el comando &6/spy &7para volver a tu ubicación anterior&7'
+    cant: No puedes espiarte a ti mismo.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Espia de comandos activado'
+    toggleOff: '&7Espia de comandos desactivado'
+# Event Messages
+event:
+  general:
+    nopermission: '&cNo tienes permiso para hacer eso.'
+  command:
+    blocked: '&cNo puedes usar ese comando...'
+  punish:
+    reason: ' &7por &6%reason%'
+    theirduration: '&7. &7Su castigo será levantado en &6%duration%'
+    yourduration: '&7. &7Tu castigo será levantado en &6%duration%'
+  ban:
+    success: '&7Has suspendido a &6%player%'
+    message: '&7Has sido suspendido por &6%reason%&7. Tu suspension expirará en &6%duration%&7.'
+    already: '&cEste usuario ya esta suspendido.'
+  unban:
+    success: '&7Has eliminado la suspensión de &6%player%'
+  mute:
+    success: '&7Has silenciado a &6%player%'
+    message: '&7Has sido silenciado'
+    already: '&cEste usuario ya esta silenciado.'
+  unmute:
+    success: '&7Has desenmudecido a &6%player%'
+  kick:
+    success: '&7Has expulsado a &6%player%'
+    message: '&7Has sido expulsado por &6%reason%&7'
+  warning:
+    success: '&7Has advertido a &6%player%'
+    message: '&7Has sido advertido'
+  staffchat:
+    leave: '&7Te has ido de &6%channel% &7satisfactoriamente.'
+    join: '&7Te has unido a &6%channel% &7satisfactoriamente.'
+    allleave: '&6%player% &7ha dejado el canal.'
+    alljoin: '&6%player% se ha unido al canal.'
+    nochannels: '&cNo estas en ningún canal.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Modo lento &6%delay% &7segundos restantes.'
+    done: '&7Modo lento agotado.'
+    enabled: '&7El modo lento se ha habilitado con un retraso de &6%delay% &7segundos.'
+    disabled: '&7Has desactivado el modo lento.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Pagina Anterior'
+    next: '&6Pagina Siguiente'
+    back: '&6Atras'
+    none: Ninguna
+    permanent: Permanente
+    reason: Razón
+    templatename: Nombre de la Plantilla
+  players:
+    title: '&8Jugadores'
+    click: '&6Click para ver al jugador.'
+    notickets: '&7No hay tickets actualmente abiertos para este jugador.'
+    tickets: '&7Este jugador tiene &6%amount% &7tickets abiertos.'
+    ticketsone: '&7Este jugador tiene &61 &7ticket abiertos.'
+    nowarnings: '&7No se han registrado advertencias..'
+    warnings: '&7Este jugador ha recibido &6%amount% &7advertencias.'
+    warningsone: '&7Este jugador ha recibido &61 &7advertencia.'
+    online:
+      online: Conectado
+      offline: Desconectado
+      both: Ambos
+    button:
+      tickets: '&7Tickets'
+      templatemanager: '&6&lManejador de Plantillas'
+    name: Nombre del Jugador
+    search: '&7Buscar a un jugador'
+    nonefound: '&cJugador no encontrado.'
+  templateselector:
+    title: '&8Selecciona una Plantilla'
+    click: '&7Click para seleccionar esta plantilla.'
+  templatemanager:
+    title: '&8Plantillas'
+    create: '&6&lCrear Plantilla'
+    leftclick: '&7Click Izquierdo para editar.'
+    rightclick: '&7Click Derecho para destruir.'
+  punishments:
+    title: '&8%toModerate% > Castigos'
+    reason: '&6Razón'
+    duration: '&6Duración Inicial'
+    punisher: '&6Castigador'
+    remaining: '&6Tiempo Restante'
+    click: '&7Click para expirar este castigo.'
+    activity:
+      both: Ambos
+      active: Activo
+      expired: Expirado
+  punishmenttypes:
+    all: Todos
+    ban: Suspensión
+    kick: Expulsión
+    warning: Advertencia
+    mute: Silencio
+  punish:
+    title:
+      template: '&8Crear una Plantilla'
+      message: '&8%toModerate% > Castigar'
+    submit: '&a&lEnviar'
+    type:
+      punishment:
+        click: '&7Click para cambiar tipo.'
+        message: '&6&lCastigo'
+      template:
+        current: '&7Actualmente seleccionada: &6%template%&7.'
+        none: '&7No hay plantillas para elegir.'
+        click: '&7Click para elegir una plantilla.'
+        message: '&6&lPlantilla'
+      name:
+        current:
+          click: '&7Click para cambiar el nombre.'
+          message: '&7Actualmente configurado en: &6%name%&7.'
+        message: '&6&lNombre'
+      duration:
+        leftclick: '&7Click Izquierdo para configurar una duración.'
+        rightclick: '&7Click Derecho para configurarlo para siempre.'
+        current: '&7Actualmente configurado en:'
+        message: '&c&lDuración'
+      reason:
+        click: '&7Click para configurar una razón.'
+        current: '&7Actualmente configurado en:'
+        message: '&b&lRazón'
+    template:
+      create: '&7Click para crear una plantilla'
+      create2: '&7de este castigo.'
+      leftclick: '&7Click Izquierdo para actualizar la'
+      leftclick2: '&7plantilla &6%template%&7.'
+      rightclick: '&7Click Derecho para guardar como una nueva plantilla.'
+  player:
+    title: '&8Jugadores > %toModerate%'
+    punish: '&6&lCastigar'
+    moderate: '&b&lModerar'
+    punishments: '&c&lCastigos'
+    notes: '&a&lNotas'
+    tickets: '&7&lTickets'
+  moderate:
+    title: '&8%toModerate% > Moderar'
+  notes:
+    title: '&8%tonotes% > Notas'
+    create: '&6Crear una Nota'
+    remove: '&cClick para eliminar'
+    type: Escribe tu nota.
+    createdon: '&7Creado en &6%sent%&7.'
+    createdby: '&7Creado por &6%player%&7.'
+  tickets:
+    title: '&8&lTickets'
+    titlesingle: '&8%toModerate% > Tickets'
+    create: '&6Crear un ticket'
+    click: '&6Click para Administrar.'
+    player: '&7Jugador &6%player%&7.'
+    what: '&6¿Que te gustaria decir en tu primer post del ticket?'
+    subject: Asunto del Ticket
+  ticket:
+    title: '&8Tickets > %subject% %id%'
+    type: '&7Tipo &6%type%&7.'
+    picktype: '&8Elige un tipo de ticket.'
+    clicktotele: '&6Teletransportarte a la ubicación del ticket'
+    createdon: '&7Creado en &6%sent%&7.'
+    respond: '&6Responder'
+    status: '&7Estado &6%status%&7.'
+    postedby: '&7Publicado por &6%player%&7.'
+    what: '&6¿Que te gustaria decir?'
+notify:
+  block:
+    main: '&a ha minado [&6%material%&a] en &6'
+  ticket:
+    created: '&7[UM] &a¡[Ticket #%tid% - %type% - %player%&a] ha sido creado!'
+    status: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Nuevo Estado: &6%status%'
+    response: '&7[UM] &a¡[Ticket #%tid% - %type% - %player%&a] tiene una nueva respuesta!'

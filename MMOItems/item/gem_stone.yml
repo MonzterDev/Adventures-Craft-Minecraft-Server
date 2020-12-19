@@ -1,0 +1,457 @@
+UNDEAD_GEM:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&2Undead Gem'
+    tier: UNCOMMON
+    faction-damage-undead: 15.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM2:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&9Undead Gem'
+    tier: RARE
+    faction-damage-undead: 25.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM3:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&5Undead Gem'
+    tier: LEGENDARY
+    faction-damage-undead: 35.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM4:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&eUndead Gem'
+    tier: EXOTIC
+    faction-damage-undead: 50.0
+    hide-enchants: true
+    unstackable: true
+    success-rate: 100.0
+HEATED_GEM:
+  base:
+    material: ORANGE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&2Heated Gem'
+    tier: UNCOMMON
+    faction-damage-Hell: 15.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM2:
+  base:
+    material: ORANGE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&9Heated Gem'
+    tier: RARE
+    faction-damage-hell: 25.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM3:
+  base:
+    material: ORANGE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&5Heated Gem'
+    tier: LEGENDARY
+    faction-damage-hell: 35.0
+    hide-enchants: true
+    unstackable: true
+MINERS_GEM:
+  base:
+    material: EMERALD
+    gem-color: Uncolored
+    enchants:
+      efficiency: 6
+    hide-enchants: true
+    unstackable: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    unbreakable: true
+    tier: LEGENDARY
+    name: §5Miner's Gem
+    lore:
+    - §fApply §aEfficiency 6§f on any tool!
+    permission:
+    - miners.gem
+HEALTH_GEM:
+  base:
+    material: LIME_DYE
+    max-health:
+      base: 7.5
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §9Health Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aHP§f to any equipment!
+    unbreakable: false
+    tier: RARE
+    gem-color: Uncolored
+HEALTH_GEM2:
+  base:
+    material: LIME_DYE
+    max-health:
+      base: 22.5
+      spread: 0.03333333333333333
+      max-spread: 0.1
+    name: §5Health Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aHP§f to any equipment!
+    unbreakable: false
+    tier: LEGENDARY
+    gem-color: Uncolored
+DEFENSE_GEM:
+  base:
+    material: GREEN_DYE
+    name: §9Defense Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdd §aDefense §fon any equipment!
+    unbreakable: false
+    gem-color: Uncolored
+    tier: RARE
+    defense:
+      base: 27.5
+      spread: 0.027777777777777776
+      max-spread: 0.08333333333333333
+DEFENSE_GEM2:
+  base:
+    material: GREEN_DYE
+    name: §5Defense Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdd §aDefense §fon any equipment!
+    unbreakable: false
+    tier: LEGENDARY
+    gem-color: Uncolored
+    defense:
+      base: 42.5
+      spread: 0.049999999999999996
+      max-spread: 0.15
+MANA_GEM:
+  base:
+    material: CYAN_DYE
+    name: §9Mana Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §bMana§f to any equipment!
+    unbreakable: false
+    gem-color: Uncolored
+    max-mana:
+      base: 17.5
+      spread: 0.09999999999999999
+      max-spread: 0.3
+    tier: RARE
+MANA_GEM2:
+  base:
+    material: CYAN_DYE
+    name: §5Mana Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §bMana§f to any equipment!
+    unbreakable: false
+    gem-color: Uncolored
+    max-mana:
+      base: 32.5
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    tier: LEGENDARY
+MANA_GEM3:
+  base:
+    material: CYAN_DYE
+    name: §eMana Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §bMana§f to any equipment!
+    unbreakable: false
+    gem-color: Uncolored
+    tier: EXOTIC
+    max-mana:
+      base: 45.0
+      spread: 0.03333333333333333
+      max-spread: 0.1
+DAMAGE_GEM:
+  base:
+    material: RED_DYE
+    name: §9Damage Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aDamage§f to any weapon!
+    unbreakable: false
+    gem-color: Uncolored
+    tier: RARE
+    attack-damage:
+      base: 12.5
+      spread: 0.05555555555555555
+      max-spread: 0.16666666666666666
+DAMAGE_GEM2:
+  base:
+    material: RED_DYE
+    name: §5Damage Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aDamage§f to any weapon!
+    unbreakable: false
+    gem-color: Uncolored
+    attack-damage:
+      base: 20.0
+      spread: 0.06666666666666667
+      max-spread: 0.2
+    tier: LEGENDARY
+DAMAGE_GEM3:
+  base:
+    material: RED_DYE
+    name: §eDamage Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aDamage§f to any weapon!
+    unbreakable: false
+    attack-damage:
+      base: 32.5
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    tier: EXOTIC
+    gem-color: Uncolored
+ARCHER_GEM:
+  base:
+    material: EMERALD
+    name: §9Archer Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    lore:
+    - §fAdds §aDamage§f to any weapon!
+    unbreakable: false
+    gem-color: Uncolored
+    tier: RARE
+    attack-damage:
+      base: 12.5
+      spread: 0.05555555555555555
+      max-spread: 0.16666666666666666
+PARTICLE:
+  base:
+    material: EMERALD
+    ability:
+      ability1:
+        type: BLINK
+        mode: RIGHT_CLICK
+        range: 5.0
+        cooldown: 2.0
+FIREBALL_GEM3:
+  base:
+    material: BLAZE_POWDER
+    name: §5Fireball Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    tier: LEGENDARY
+    gem-color: Uncolored
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: RIGHT_CLICK
+        damage: 250.0
+        cooldown: 10
+        ignite: 1
+        mana: 30.0
+FIREBALL_GEM4:
+  base:
+    material: BLAZE_POWDER
+    name: §eFireball Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    tier: EXOTIC
+    gem-color: Uncolored
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: RIGHT_CLICK
+        damage: 500.0
+        cooldown: 7.5
+        ignite: 5.0
+        mana: 50.0
+VOID_GEM:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&fVoid Gem'
+    tier: COMMON
+    faction-damage-void: 10.0
+    attack-damage:
+      base: 5.0
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    hide-enchants: true
+    unstackable: true
+VOID_GEM2:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&2Void Gem'
+    tier: UNCOMMON
+    faction-damage-void: 20.0
+    attack-damage:
+      base: 10.0
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    hide-enchants: true
+    unstackable: true
+VOID_GEM3:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&9Void Gem'
+    attack-damage:
+      base: 20.0
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    tier: RARE
+    faction-damage-void: 30.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM4:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Uncolored
+    name: '&5Void Gem'
+    attack-damage:
+      base: 30.0
+      spread: 0.023809523809523808
+      max-spread: 0.07142857142857142
+    tier: LEGENDARY
+    faction-damage-void: 50.0
+    hide-enchants: true
+    unstackable: true
+VEIN_DRAIN:
+  base:
+    material: RED_DYE
+    name: §9Vein Drainer
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    tier: RARE
+    gem-color: Uncolored
+    ability:
+      ability1:
+        type: VEIN_DRAIN
+        mode: LEFT_CLICK
+    lore:
+    - §7Drain the enemy for §a2.5 HP §7on each attack!
+    attack-damage: 15.0
+VEIN_DRAIN2:
+  base:
+    material: RED_DYE
+    name: §5Vein Drainer
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    tier: LEGENDARY
+    gem-color: Uncolored
+    ability:
+      ability1:
+        type: VEIN_DRAIN
+        mode: LEFT_CLICK
+    lore:
+    - §7Drain the enemy for §a3 HP §7on each attack!

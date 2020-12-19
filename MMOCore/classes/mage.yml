@@ -1,0 +1,147 @@
+display:
+    name: 'Mage'
+    lore:
+    - 'The Mage has mastered the power of the'
+    - 'Arcanes, taking down any enemy on his path'
+    - 'using powerful magic & ranged abilities.'
+    attribute-lore:
+    - '&a+ &7Mana Regeneration'
+    - '&a+ &7Health Regeneration'
+    - '&a+ &7Max Mana'
+    - '&c- &7Max Health'
+    - ''
+    - '&8&lStrength'
+    - '&7  Attack Damage: &c1 &7(+&c0&7)'
+    - '&7  Attack Speed: &c4 &7(+&c0&7)'
+    - '&7  Max Health: &c18 &7(+&c0&7)'
+    - ''
+    - '&8&lDexterity'
+    - '&7  Knockback Resistance: &a0% &7(+&a0%&7)'
+    - '&7  Movement Speed: &a20 &7(+&a0&7)'
+    - '&7  Speed Malus Reduction: &a0% &7(+&a0%&7)'
+    - ''
+    - '&8&lIntellect'
+    - '&7  Max Mana: &927 &7(+&91.2&7)'
+    - '&7  Health Regen: &90.13 &7(+&90&7)'
+    - '&7  Mana Regen: &90.2 &7(+&90.04&7)'
+    item: BLAZE_POWDER
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# Players cannot go further than Lvl 100
+max-level: 100
+
+triggers:
+    level-up:
+    - 'command{format="mmocore admin skill-points give %player% 1"}'
+
+# This is the default mana display options, however it is not mandatory
+# to have it in your class config file. Other classes do not have this
+# section and therefore have the default mana display options.
+#
+# 'char' is the character used to generate the mana bar as a message
+# 'color' are also the colors used to generate the mana bar
+# 'icon' is the icon display on the player action bar
+# 'name' is basically displayed everywhere
+mana:
+    char: ■
+    icon: '&9⭐'
+    color:
+        full: AQUA
+        half: BLUE
+        empty: WHITE
+    name: 'Mana'
+
+cast-particle:
+    particle: SPELL_INSTANT
+
+# Special resource regeneration: (when out of combat),
+# players can regen a set % of their maximum mana/missing mana.
+# This % can scale with the player level.
+# It also works with other player resources: health, stellium and stamina!
+resource:
+    mana:
+    
+        # Scales with max mana.
+        type: MAX
+        
+        # Regen from 3 to 10% of max mana every second
+        value:
+            base: 3
+            per-level: .1
+            max: 10
+        
+        # Only regen when out of combat.
+        off-combat: true
+
+options:
+    off-combat-health-regen: true
+
+attributes:
+    max-health:
+        base: 18
+        per-level: 0
+    max-mana:
+        base: 27
+        per-level: 1.2
+    mana-regeneration:
+        base: .2
+        per-level: .04
+    health-regeneration:
+        base: 0.13
+        per-level: 0
+
+subclasses:
+    ARCANE_MAGE: 10
+
+skills:
+    FIRE_STORM:
+        level: 1
+        max-level: 30
+        
+        # Specific skill modifiers based on class.
+        # Arcane mage's fire storm may deal more damage
+        # than an apprentice mage's fire storm.
+        damage:
+            base: 5.0
+            per-level: 3.0
+        ignite:
+            base: 2.0
+            per-level: 0.1
+        mana:
+            base: 15.0
+            per-level: 2.0
+        cooldown:
+            base: 5.0
+            per-level: -0.1
+            max: 5.0
+            min: 1.0
+    POWER_MARK:
+        level: 3
+        max-level: 30
+    FIREBALL:
+        level: 5
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 6
+        max-level: 30
+    ICE_SPIKES:
+        level: 8
+    AMBERS:
+        level: 9
+        max-level: 30
+    WEAKEN:
+        level: 10
+        max-level: 30
+    WARP:
+        level: 13
+        max-level: 30
+    GREATER_HEALINGS:
+        level: 15
+        max-level: 30
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

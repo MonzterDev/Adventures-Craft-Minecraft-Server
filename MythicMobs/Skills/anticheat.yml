@@ -1,0 +1,22 @@
+anticheatscoreplus:
+  Conditions:
+  - incombat{} true
+  - moving{} false
+  Skills:
+  - modifymobscore{obj=anticheat;a=add;v=1} @Self
+anticheatscoreminus:
+  Conditions:
+  - moving{} true
+  Skills:
+  - modifymobscore{obj=anticheat;a=SET;v=0} @Self
+anticheat:
+  TargetConditions:
+  - distance{d=>1.5} required
+  Conditions:
+  - incombat{} true
+  - moving{} false
+  - score{obj=anticheat;v=>2} true
+  Skills:
+  # - healpercent{m=.05} @self
+  # - message{m="&cDamage negated and mob healed. Do not safespot!"} @Target
+  # - CancelEvent

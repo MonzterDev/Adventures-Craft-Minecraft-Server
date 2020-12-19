@@ -1,0 +1,945 @@
+ShopName: Lumberjack
+DisplayName: '&8Lumberjack'
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  OAK_LOG:
+    MenuItem:
+    - type:OAK_LOG
+    - amount:32
+    - name:&rOak Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:OAK_LOG
+    PriceType: MONEY
+    Price: 256.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 11
+  OAK_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:OAK_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 11
+
+  SPRUCE_LOG:
+    MenuItem:
+    - type:SPRUCE_LOG
+    - amount:32
+    - name:&rSpruce Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:SPRUCE_LOG
+    PriceType: MONEY
+    Price: 512.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 12
+  SPRUCE_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:SPRUCE_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 12
+
+  DARK_OAK_LOG:
+    MenuItem:
+    - type:DARK_OAK_LOG
+    - amount:32
+    - name:&rDark Oak Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:DARK_OAK_LOG
+    PriceType: MONEY
+    Price: 1920.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 13
+  DARK_OAK_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:DARK_OAK_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 13
+
+  BIRCH_LOG:
+    MenuItem:
+    - type:BIRCH_LOG
+    - amount:32
+    - name:&rBirch Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:BIRCH_LOG
+    PriceType: MONEY
+    Price: 640.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 14
+  BIRCH_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:BIRCH_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 14
+
+  ACACIA_LOG:
+    MenuItem:
+    - type:ACACIA_LOG
+    - amount:32
+    - name:&rAcacia Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:ACACIA_LOG
+    PriceType: MONEY
+    Price: 768.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 15
+  ACACIA_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:ACACIA_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 15
+
+  JUNGLE_LOG:
+    MenuItem:
+    - type:JUNGLE_LOG
+    - amount:32
+    - name:&rJungle Log
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:JUNGLE_LOG
+    PriceType: MONEY
+    Price: 832.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 16
+  JUNGLE_LOG2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:JUNGLE_LOG%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 16
+
+  OAK_LEAVES:
+    MenuItem:
+    - type:OAK_LEAVES
+    - amount:32
+    - name:&rOak Leaves
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:OAK_LEAVES
+    PriceType: MONEY
+    Price: 832.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 17
+  OAK_LEAVES2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:OAK_LEAVES%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 17
+
+  SPRUCE_LEAVES:
+    MenuItem:
+    - type:SPRUCE_LEAVES
+    - amount:32
+    - name:&rSpruce Leaves
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:SPRUCE_LEAVES
+    PriceType: MONEY
+    Price: 1600.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 20
+  SPRUCE_LEAVES2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:SPRUCE_LEAVES%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 20
+
+  DARK_OAK_LEAVES:
+    MenuItem:
+    - type:DARK_OAK_LEAVES
+    - amount:32
+    - name:&rDark Oak Leaves
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:DARK_OAK_LEAVES
+    PriceType: MONEY
+    Price: 3840.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 21
+  DARK_OAK_LEAVES2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:DARK_OAK_LEAVES%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 21
+
+  BIRCH_LEAVES:
+    MenuItem:
+    - type:BIRCH_LEAVES
+    - amount:32
+    - name:&rBirch Leaves
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:BIRCH_LEAVES
+    PriceType: MONEY
+    Price: 960.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 22
+  BIRCH_LEAVES2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:BIRCH_LEAVES%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 22
+
+  JUNGLE_LEAVES:
+    MenuItem:
+    - type:JUNGLE_LEAVES
+    - amount:32
+    - name:&rJungle Leaves
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:JUNGLE_LEAVES
+    PriceType: MONEY
+    Price: 960.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 23
+  JUNGLE_LEAVES2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:JUNGLE_LEAVES%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 23
+
+  COCOA_BEANS:
+    MenuItem:
+    - type:COCOA_BEANS
+    - amount:32
+    - name:&rCoca Beans
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:COCOA_BEANS
+    PriceType: MONEY
+    Price: 320.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 24
+  COCOA_BEANS2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:COCOA_BEANS%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 24
+
+  HONEYCOMB:
+    MenuItem:
+    - type:HONEYCOMB
+    - amount:32
+    - name:&rHoneycomb
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:HONEYCOMB
+    PriceType: MONEY
+    Price: 128.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 25
+  HONEYCOMB2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:HONEYCOMB%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 25
+
+  RABBIT:
+    MenuItem:
+    - type:RABBIT
+    - amount:32
+    - name:&rRabbit
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:RABBIT
+    PriceType: MONEY
+    Price: 192.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 26
+  RABBIT2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:RABBIT%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 26
+
+  RABBIT_HIDE:
+    MenuItem:
+    - type:RABBIT_HIDE
+    - amount:32
+    - name:&rRabbit Hide
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:RABBIT_HIDE
+    PriceType: MONEY
+    Price: 320.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 29
+  RABBIT_HIDE2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:RABBIT_HIDE%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 29
+
+  RABBIT_FOOT:
+    MenuItem:
+    - type:RABBIT_FOOT
+    - amount:32
+    - name:&rRabbit Foot
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&fBought &c%uses%&7/&a40'    
+    - 'lore5:&8&l» &eClick to Purchase'    
+    RewardType: ITEM
+    Reward:
+    - - amount:32
+      - type:RABBIT_FOOT
+    PriceType: MONEY
+    Price: 320.0
+    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Condition:
+    - type:usescooldown
+    - match:uses:40:cooldown:86400
+    InventoryLocation: 30
+  RABBIT_FOOT2:
+    MenuItem:
+    - type:BARRIER
+    - amount:1
+    - name:&fOut of stock
+    RewardType: NOTHING
+    PriceType: NOTHING
+    Message: '&7You purchased the max amount of this item today, come back in &a%cooldown_Lumberjack:RABBIT_FOOT%&7!'
+    ExtraPermission: ''
+    InventoryLocation: 30
+
+  WOODEN_AXE:
+    MenuItem:
+    - type:WOODEN_AXE
+    - hideflags:all
+    - amount:1
+    - name:&rWooden Axe
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give TOOL WOODEN_AXE %player% 1'
+    PriceType: MONEY
+    Price: 100.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 31
+
+  STONE_AXE:
+    MenuItem:
+    - type:STONE_AXE
+    - hideflags:all
+    - amount:1
+    - name:&rStone Axe
+    - 'lore1:&fPrice: &e⛂ %price%'
+    - 'lore3:&8&l» &eClick to Purchase'    
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give TOOL STONE_AXE %player% 1'
+    PriceType: MONEY
+    Price: 100.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 32
+
+  SELL:
+    MenuItem:
+    - type:CAULDRON
+    - amount:1
+    - name:&aSell Items
+    - 'lore2:&8&l» &eClick to Sell'    
+    RewardType: opcommand
+    Reward:
+    - 'ushop open %player%'
+    PriceType: NOTHING
+    InventoryLocation: 41
+
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+

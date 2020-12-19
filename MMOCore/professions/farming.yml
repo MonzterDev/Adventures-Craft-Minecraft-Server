@@ -1,0 +1,214 @@
+
+# Display options
+name: Farming
+
+# Experience given to the main level
+# when leveling up this profession
+experience:
+    base: 0
+    per-level: 0
+exp-curve: farming
+max-level: 10
+
+# This part of the config is ONLY for custom mining.
+# Custom Mining must be setup in config.yml and it
+exp-sources:
+- 'killmythicmob{type=Pigs;amount=3}'
+- 'killmythicmob{type=Cows;amount=3}'
+- 'killmythicmob{type=Chickens;amount=3}'
+- 'killmythicmob{type=Sheeps;amount=3}'
+- 'killmythicmob{type=Rabbits;amount=3}'
+- 'killmythicmob{type=Wolfs;amount=3}'
+- 'killmythicmob{type=Goblin;amount=5}'
+- 'killmythicmob{type=Grown_Goblin;amount=5}'
+- 'killmythicmob{type=Hound;amount=5}'
+- 'killmythicmob{type=Warg;amount=5}'
+- 'killmythicmob{type=Pandas;amount=4}'
+- 'killmythicmob{type=Foxs;amount=4}'
+- 'killmythicmob{type=Turtles;amount=4}'
+- 'killmythicmob{type=Parrots;amount=4}'
+on-mine:
+    WHEAT:
+        material: vanilla{type=WHEAT,age=7}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=WHEAT_SEEDS} 1 1-2'
+            - 'vanilla{type=WHEAT} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_WHEAT} 0.00347222222 1'                                    
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=1}'
+    CARROTS:
+        material: vanilla{type=CARROTS,age=7}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=CARROT} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_CARROT} 0.00347222222 1'                        
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=1}'       
+    POTATOES:
+        material: vanilla{type=POTATOES,age=7}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=POTATO} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_POTATO} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=1}'               
+    SUGAR_CANE:
+        material: vanilla{type=SUGAR_CANE}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=SUGAR_CANE} 1 1-3'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_SUGAR_CANE} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'               
+    BAMBOO:
+        material: vanilla{type=BAMBOO}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BAMBOO} 1 1-4'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=3}'               
+    CACTUS:
+        material: vanilla{type=CACTUS}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=CACTUS} 1 1-4'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=3}'               
+    MELON:
+        material: vanilla{type=MELON}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=MELON_SLICE} 1 1-4'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_MELON} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=MELON_STEM,age=7}
+        triggers:
+        - 'exp{profession=farming;amount=4}'               
+    PUMPKIN:
+        material: vanilla{type=PUMPKIN}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=PUMPKIN} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_PUMPKIN} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=PUMPKIN_STEM,age=7}
+        triggers:
+        - 'exp{profession=farming;amount=4}'               
+    BEETROOTS:
+        material: vanilla{type=BEETROOTS,age=3}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BEETROOT} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BEETROOT} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=TRIPWIRE}
+        triggers:
+        - 'exp{profession=farming;amount=3}'
+    BROWN_MUSHROOM:
+        material: vanilla{type=BROWN_MUSHROOM}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BROWN_MUSHROOM} 1 1'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'
+    RED_MUSHROOM:
+        material: vanilla{type=RED_MUSHROOM}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=RED_MUSHROOM} 1 1'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_RED_MUSHROOM} 0.00347222222 1'                 
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'
+    RED_MUSHROOM_BLOCK:
+        material: vanilla{type=RED_MUSHROOM_BLOCK}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=RED_MUSHROOM} .5 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_RED_MUSHROOM} 0.00647222222 1'          
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'
+    BROWN_MUSHROOM_BLOCK:
+        material: vanilla{type=BROWN_MUSHROOM_BLOCK}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BROWN_MUSHROOM} .5 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM} 0.00647222222 1'                      
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'
+    MUSHROOM_STEM:
+        material: vanilla{type=MUSHROOM_STEM}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BROWN_MUSHROOM} .5 1-2'
+            - 'vanilla{type=RED_MUSHROOM} .5 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM} 0.00647222222 1'                      
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_RED_MUSHROOM} 0.00647222222 1'          
+        vanilla-drops: true
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=farming;amount=3}'

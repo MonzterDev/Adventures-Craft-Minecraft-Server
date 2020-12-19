@@ -1,0 +1,39 @@
+
+# GUI display name
+name: Class Confirmation
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    yes:
+        slots: [12]
+        function: 'yes'
+        
+        # Displayed when the player had already selected this class
+        # before (only if class slots are enabled in the config).
+        unlocked:
+            item: GREEN_TERRACOTTA
+            name: '&aSelect {class}'
+            lore:
+            - ''
+            - '&7Class Level: &e{level}'
+            - '&7Progression: &e{exp} / {next_level}'
+            - '&8[&e{progress}&8] &e{percent}%'
+            - ''
+            - '&7Skill Points: &6{skill_points}'
+            - '&7Skills You Unlocked: &6{unlocked_skills}&7/&6{class_skills}'
+        
+        # Displayed when the class is being chosen for the first time.
+        locked:
+            item: GREEN_TERRACOTTA
+            name: '&aSelect {class}'
+            lore: {}
+        
+    back:
+        slots: [14]
+        item: RED_TERRACOTTA
+        function: back
+        name: '&aBack'
+        lore: {}

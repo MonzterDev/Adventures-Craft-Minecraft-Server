@@ -1,0 +1,60 @@
+#ALLOW QUEST TO BE TAKEN AGAIN
+QuestCooldown24: delay 86400 seconds events:del_QuestCooldown24_tag,del_tag_q1_completed,del_q1_part1
+
+#Slay Undead 1
+BreakBlock: mmocorebreakblock 1 block:STONE events:GivePoint,RestartObjective,RunOn500Points conditions:inSpawn
+RunOn500Points: mmocorebreakblock 1 block:STONE events:entry_q1_complete conditions:500stone
+
+
+#2
+#ALLOW QUEST TO BE TAKEN AGAIN
+Quest2Cooldown24: delay 86400 seconds events:del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1
+
+#Break Coal
+BreakCoal: mmocorebreakblock 1 block:COAL_ORE events:GivePointCoal,RestartObjectiveCoal,Completing2nd conditions:inSpawn
+BreakCoalBlock: mmocorebreakblock 1 block:COAL_BLOCK events:GivePointCoalBlock,RestartObjectiveCoalBlock,Completing2nd conditions:inSpawn
+#Break Coal
+BreakIron: mmocorebreakblock 1 block:IRON_ORE events:GivePointIron,RestartObjectiveIron,Completing2nd conditions:inSpawn
+BreakIronBlock: mmocorebreakblock 1 block:IRON_BLOCK events:GivePointIronBlock,RestartObjectiveIronBlock,Completing2nd conditions:inSpawn
+#Break Gold
+BreakGold: mmocorebreakblock 1 block:GOLD_ORE events:GivePointGold,RestartObjectiveGold,Completing2nd conditions:inSpawn
+BreakGoldBlock: mmocorebreakblock 1 block:GOLD_BLOCK events:GivePointGoldBlock,RestartObjectiveGoldBlock,Completing2nd conditions:inSpawn
+#Break Redstone
+BreakRedstone: mmocorebreakblock 1 block:REDSTONE_ORE events:GivePointRedstone,RestartObjectiveRedstone,Completing2nd conditions:inSpawn
+BreakRedstoneBlock: mmocorebreakblock 1 block:REDSTONE_BLOCK events:GivePointRedstoneBlock,RestartObjectiveRedstoneBlock,Completing2nd conditions:inSpawn
+#Break Lapis
+BreakLapis: mmocorebreakblock 1 block:LAPIS_ORE events:GivePointLapis,RestartObjectiveLapis,Completing2nd conditions:inSpawn
+BreakLapisBlock: mmocorebreakblock 1 block:LAPIS_BLOCK events:GivePointLapisBlock,RestartObjectiveLapisBlock,Completing2nd conditions:inSpawn
+#Break Diamond
+BreakDiamond: mmocorebreakblock 1 block:DIAMOND_ORE events:GivePointDiamond,RestartObjectiveDiamond,Completing2nd conditions:inSpawn
+BreakDiamondBlock: mmocorebreakblock 1 block:DIAMOND_BLOCK events:GivePointDiamondBlock,RestartObjectiveDiamondBlock,Completing2nd conditions:inSpawn
+#Break Emerald
+BreakEmerald: mmocorebreakblock 1 block:EMERALD_ORE events:GivePointEmerald,RestartObjectiveEmerald,Completing2nd conditions:inSpawn
+BreakEmeraldBlock: mmocorebreakblock 1 block:EMERALD_BLOCK events:GivePointEmeraldBlock,RestartObjectiveEmeraldBlock,Completing2nd conditions:inSpawn
+#Completes quest once enough Points
+Completing2nd: location 100;200;300;Spawn 100000000000 events:entry_q2_complete conditions:64Coal,64Iron,64Gold,64Lapis,64Redstone,64Diamond,64Diamond
+
+
+#3
+#ALLOW QUEST TO BE TAKEN AGAIN
+Quest3Cooldown24: delay 86400 seconds events:del_Quest3Cooldown24_tag,del_tag_q3_completed,del_q3_part1
+
+#Break Coal
+eCoal: npcinteract 65 events:GivePointMaterial,RestartObjectiveeCoal,Completing3rd,1Material,eCoalTake conditions:eCoal
+#Break Coal
+eIron: npcinteract 65 events:GivePointMaterial,RestartObjectiveeIron,Completing3rd,1Material,eIronTake conditions:eIron
+#Break Gold
+eGold: npcinteract 65 events:GivePointMaterial,RestartObjectiveeGold,Completing3rd,1Material,eGoldTake conditions:eGold
+#Break Redstone
+eRedstone: npcinteract 65 events:GivePointMaterial,RestartObjectiveeRedstone,Completing3rd,1Material,eRedstoneTake conditions:eRedstone
+#Break Lapis
+eLapis: npcinteract 65 events:GivePointMaterial,RestartObjectiveeLapis,Completing3rd,1Material,eLapisTake conditions:eLapis
+#Break Diamond
+eDiamond: npcinteract 65 events:GivePointMaterial,RestartObjectiveeDiamond,Completing3rd,1Material,eDiamondTake conditions:eDiamond
+#Break Emerald
+eEmerald: npcinteract 65 events:GivePointMaterial,RestartObjectiveeEmerald,Completing3rd,1Material,eEmeraldTake conditions:eEmerald
+#Completes quest once enough Points
+Completing3rd: location 100;200;300;Spawn 100000000000 events:entry_q3_complete conditions:MatieralPoint
+1Material: location 100;200;300;Spawn 100000000000 events:1Material_Message conditions:MatieralPoint1
+
+

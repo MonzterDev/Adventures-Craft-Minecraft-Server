@@ -1,0 +1,88 @@
+menu_title: '&f&l»&7&l» &8Weatherman &7&l«&f&l«'
+size: 26
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+
+  'Shine':
+    material: SUNFLOWER
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aSunshine'
+    lore:
+    - ''
+    - '&7Change the weather to sunshine!'
+    - ''
+    - '&fPrice: &e⛂ 5000'
+    - ''
+    - '&8&l» &eClick to Purchase'
+    left_click_commands:
+    - "[console] lp user %player_name% permission set cmi.command.weather true"
+    - "[player] weather Spawn clear<delay=20>"
+    - "[message] &aEnjoy the shine!"
+    - "[takemoney] 5000"
+    - "[console] lp user %player_name% permission set cmi.command.weather false<delay=40>"
+    left_click_requirement:
+      requirements: 
+        Cash:
+          type: has money
+          amount: 5000                
+      deny_commands:
+      - "[message] &cUnfortunately you do not have enough coins!"
+
+  'Rain':
+    material: WATER_BUCKET
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aRain'
+    lore:
+    - ''
+    - '&7Change the weather to rainy!'
+    - ''
+    - '&fPrice: &e⛂ 5000'
+    - ''
+    - '&8&l» &eClick to Purchase'
+    left_click_commands:
+    - "[console] lp user %player_name% permission set cmi.command.weather true"
+    - "[player] weather Spawn rain<delay=20>"
+    - "[message] &aEnjoy the rain!"
+    - "[takemoney] 5000"
+    - "[console] lp user %player_name% permission set cmi.command.weather false<delay=40>"
+    left_click_requirement:
+      requirements: 
+        Cash:
+          type: has money
+          amount: 5000                
+      deny_commands:
+      - "[message] &cUnfortunately you do not have enough coins!"

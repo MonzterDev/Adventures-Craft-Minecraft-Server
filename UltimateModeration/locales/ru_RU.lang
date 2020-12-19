@@ -1,0 +1,205 @@
+# Основные сообщения
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Сообщения команд
+command:
+  clearchat:
+    cleared: '&6%player% &7очистил чат!'
+    immune: '&aВы имеете разрешение-исключение на очистку чата.'
+  togglechat:
+    toggledOn: '&aГлобальный чат был включен...'
+    toggledOff: '&cГлобальный чат был выключен...'
+    bypass: '&aВы имеете разрешение-исключение на переключение чата.'
+    muted: '&cВ настоящее время чат выключен, попробуйте позже.'
+  vanish:
+    toggledOn: '&7Вы стали невидимы.'
+    toggledOff: '&7Вы снова видны.'
+  freeze:
+    add: '&7Вы успешно заморозили &6%player%&7.'
+    remove: '&7Вы успешно разморозили &6%player%&7.'
+    alertadd: '&7Вы были заморожены.'
+    alertremove: '&7Вы были разморожены.'
+    nope: '&cВы не можете сделать это, потому что заморожены...'
+  revive:
+    noloot: '&cНе удалось найти лут для возрождения.'
+    success: '&7Вы успешно возродили лут &6%player%&7.'
+    revived: '&7Ваш лут был возрожден.'
+  spy:
+    returned: '&7Вы были возвращены на прежнее место.'
+    success: '&7Вы теперь шпионите за &6%player%&7. Используйте команду &6/spy&7, чтобы вернуться в предыдущее местоположение.'
+    cant: Вы не можете шпионить за собой.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Команда шпиона включена'
+    toggleOff: '&7Команда шпиона выключена'
+# Сообщения событий
+event:
+  general:
+    nopermission: '&cУ вас недостаточно разрешений.'
+  command:
+    blocked: '&cВы не можете использовать эту команду...'
+  punish:
+    reason: ' &7за &6%reason%'
+    theirduration: '&7. &7Его наказание будет отменено через &6%duration%'
+    yourduration: '&7. &7Ваше наказание будет отменено через &6%duration%'
+  ban:
+    success: '&7Вы забанили &6%player%'
+    message: '&7Вас забанили за &6%reason%&7. Ваш бан истечет &6%duration%&7.'
+    already: '&cЭтот пользователь уже забанен.'
+  unban:
+    success: '&7Вы разбанили &6%player%'
+  mute:
+    success: '&7Вы замутили &6%player%'
+    message: '&7Вас замутили'
+    already: '&cЭтот пользователь уже замутен.'
+  unmute:
+    success: '&7Вы размутили &6%player%'
+  kick:
+    success: '&7Вы кикнули &6%player%'
+    message: '&7Вы были кикнуты за &6%reason%&7.'
+  warning:
+    success: '&7Вы предупредили &6%player%'
+    message: '&7Вы получили предупреждение'
+  staffchat:
+    leave: '&7Вы успешно покинули канал &6%channel%&7.'
+    join: '&7Вы успешно вошли в канал &6%channel%&7.'
+    allleave: '&6%player% &7покинул канал.'
+    alljoin: '&6%player% вошел в канал.'
+    nochannels: '&cВас нет ни в одном канале.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Медленный режим: Осталось &6%delay% &7секунд.'
+    done: '&7Время медленного режима вышло.'
+    enabled: '&7Медленный режим был включен с задержкой &6%delay%&7.'
+    disabled: '&7Вы выключили медленный режим.'
+# Графические сообщения
+gui:
+  general:
+    previous: '&6Предыдущая страница'
+    next: '&6Следующая страница'
+    back: '&6Назад'
+    none: Никто
+    permanent: Навсегда
+    reason: Причина
+    templatename: Название шаблона
+  players:
+    title: '&8Игроки'
+    click: '&6Нажмите для просмотра игрока!'
+    notickets: '&7Нет актуальных обращений.'
+    tickets: '&7Имеется &6%amount% &7открытых обращений.'
+    ticketsone: '&7Имеется &61 &7открытое обращение.'
+    nowarnings: '&7Нет актуальных предупреждений.'
+    warnings: '&7Имеется &6%amount% &7предупреждений.'
+    warningsone: '&7Имеется &61 &7 предупреждение.'
+    online:
+      online: Онлайн
+      offline: Оффлайн
+      both: Все
+    button:
+      tickets: '&7Обращения'
+      templatemanager: '&6Шаблоны'
+    name: Имя игрока
+    search: '&7Поиск игрока'
+    nonefound: '&cИгроки не найдены.'
+  templateselector:
+    title: '&8Выберите шаблон'
+    click: '&7Нажмите для выбора шаблона.'
+  templatemanager:
+    title: '&8Шаблоны'
+    create: '&6Создать шаблон'
+    leftclick: '&7Нажмите ЛКМ для изменения!'
+    rightclick: '&7Нажмите ПКМ для удаления!'
+  punishments:
+    title: '&8%toModerate% > Наказания'
+    reason: '&6Причина'
+    duration: '&6Продолжительность'
+    punisher: '&6Палач'
+    remaining: '&6Времени осталось'
+    click: '&7Нажмите для завершения наказания!'
+    activity:
+      both: Все
+      active: Активные
+      expired: Истекшие
+  punishmenttypes:
+    all: Все
+    ban: Бан
+    kick: Кик
+    warning: Варн
+    mute: Мут
+  punish:
+    title:
+      template: '&8Создать шаблон'
+      message: '&8%toModerate% > Наказать'
+    submit: '&a&lРазместить'
+    type:
+      punishment:
+        click: '&7Нажмите для смены типа!'
+        message: '&6&lНаказание'
+      template:
+        current: '&7Текущий шаблон: &6%template%&7.'
+        none: '&7Нет шаблонов на выбор.'
+        click: '&7Нажмите для выбора шаблона!'
+        message: '&6&lШаблон'
+      name:
+        current:
+          click: '&7Нажмите для изменения названия!'
+          message: '&7Текущее название: &6%name%&7.'
+        message: '&6&lНазвание'
+      duration:
+        leftclick: '&7Нажмите ЛКМ для установки времени!'
+        rightclick: '&7Нажмите ПКМ для установки навсегда!'
+        current: '&7Текущее время:'
+        message: '&c&lПродолжительность'
+      reason:
+        click: '&7Нажмите для установки причины!'
+        current: '&7Текущая причина:'
+        message: '&b&lПричина'
+    template:
+      create: '&7Нажмите для создания шаблона'
+      create2: '&7от этого наказания.'
+      leftclick: '&7Нажмите ЛКМ для обновления'
+      leftclick2: '&7шаблона &6%template%&7.'
+      rightclick: '&7Нажмите ПКМ для сохранения нового шаблона.'
+  player:
+    title: '&8Игроки > %toModerate%'
+    punish: '&6&lНаказать'
+    moderate: '&b&lМодерация'
+    punishments: '&c&lНаказания'
+    notes: '&a&lЗаметки'
+    tickets: '&7&lОбращения'
+  moderate:
+    title: '&8%toModerate% > Модерация'
+  notes:
+    title: '&8%tonotes% > Заметки'
+    create: '&6Создать заметку'
+    remove: '&cНажмите для удаления!'
+    type: Введите заметку...
+    createdon: '&7Создано &6%sent%&7.'
+    createdby: '&7Создал &6%player%&7.'
+  tickets:
+    title: '&8Обращения'
+    titlesingle: '&8%toModerate% > Обращения'
+    create: '&6Создать обращение'
+    click: '&6Нажмите для управления!'
+    player: '&7Игрок &6%player%&7.'
+    what: '&6О чём бы вы хотели сообщить в обращении?'
+    subject: Тема обращения
+  ticket:
+    title: '&8Обращение > %subject% %id%'
+    type: '&7Тип &6%type%&7.'
+    picktype: '&8Выберите тип обращения.'
+    clicktotele: '&6Телепортирование на место обращения'
+    createdon: '&7Создано &6%sent%&7.'
+    respond: '&6Ответить'
+    status: '&7Статус &6%status%&7.'
+    postedby: '&7Сообщение от &6%player%&7.'
+    what: '&6Что бы вы хотели ответить?'
+notify:
+  block:
+    main: '&a Добыл [&6%material%&a] в &6'
+  ticket:
+    created: '&7[UM] &a[Обращение #%tid% - %type% - %player%&a] Был создан!'
+    status: '&7[UM] &a[Обращение #%tid% - %type% - %player%&a] Новый статус: &6%status%'
+    response: '&7[UM] &a[Обращение #%tid% - %type% - %player%&a] Новый ответ!'

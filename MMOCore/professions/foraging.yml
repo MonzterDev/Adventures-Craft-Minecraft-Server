@@ -1,0 +1,204 @@
+
+# Display options
+name: Foraging
+
+# Experience given to the main level
+# when leveling up this profession
+experience:
+    base: 0
+    per-level: 0
+exp-curve: foraging
+max-level: 10
+
+# This part of the config is ONLY for custom mining.
+# Custom Mining must be setup in config.yml and it
+# will render any block not referenced in here as unminable.
+# If you do not wish to use custom mining it is recommended
+# to follow the format in woodcutting.yml for experience and
+# configure drop tables with MMOItems.
+# Block Regen is currently only possible using custom mining.
+exp-sources:
+- 'killmythicmob{type=Bees;amount=1}'
+- 'killmythicmob{type=Queen_Bee;amount=5}'
+- 'killmythicmob{type=Orc;amount=3}'
+- 'killmythicmob{type=Orc2;amount=4}'
+- 'killmythicmob{type=Orc3;amount=5}'
+- 'killmythicmob{type=Orc_Boss;amount=25}'
+
+on-mine:
+    OAK_LOG:
+        material: vanilla{type=OAK_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=OAK_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG} 0.00347222222 1'                        
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    SPRUCE_LOG:
+        material: vanilla{type=SPRUCE_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=SPRUCE_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG} 0.00347222222 1'                                    
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    DARK_OAK_LOG:
+        material: vanilla{type=DARK_OAK_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=DARK_OAK_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG} 0.00347222222 1'                        
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    BIRCH_LOG:
+        material: vanilla{type=BIRCH_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BIRCH_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG} 0.00347222222 1'                                    
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    JUNGLE_LOG:
+        material: vanilla{type=JUNGLE_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=JUNGLE_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG} 0.00347222222 1'                                    
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    ACACIA_LOG:
+        material: vanilla{type=ACACIA_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=ACACIA_LOG} 1 1-2'
+            - 'mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG} 0.00347222222 1'                        
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    OAK_LEAVES:
+        material: vanilla{type=OAK_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=OAK_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    SPRUCE_LEAVES:
+        material: vanilla{type=SPRUCE_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=SPRUCE_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    DARK_OAK_LEAVES:
+        material: vanilla{type=DARK_OAK_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=DARK_OAK_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    BIRCH_LEAVES:
+        material: vanilla{type=BIRCH_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=BIRCH_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    JUNGLE_LEAVES:
+        material: vanilla{type=JUNGLE_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=JUNGLE_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    ACACIA_LEAVES:
+        material: vanilla{type=ACACIA_LEAVES}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=ACACIA_LEAVES} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=3}'
+    BEE_NEST:
+        material: vanilla{type=BEE_NEST}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=HONEYCOMB} 1 1-2'
+            - 'mmoitem{type=CONSUMABLE,id=TASTY_HONEY} 0.00347222222 1-2'                                    
+        vanilla-drops: false
+        regen:
+            time: 400
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=4}'
+    COCOA:
+        material: vanilla{type=COCOA,age=2}
+        drop-table:
+            items:
+            - 'mmoitem{type=CONSUMABLE;id=BORGS_BOX} 0.0002 1'
+            - 'vanilla{type=COCOA_BEANS} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 400
+            temp-block: vanilla{type=AIR}
+        triggers:
+        - 'exp{profession=Foraging;amount=4}'
+        - 'exp{profession=Farming;amount=4}'

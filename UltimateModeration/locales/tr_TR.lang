@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7sohbeti temizledi!'
+    immune: '&aYetkilerinden dolayı sohbet temizleme sana etki etmedi.'
+  togglechat:
+    toggledOn: '&aSohbet herkese açıldı...'
+    toggledOff: '&cSohbet herkese kapatıldı...'
+    bypass: '&aYetkilerinden dolayı sohbetin kapanmasından etkilenmedin.'
+    muted: '&cSohbet şuanda kapalı.'
+  vanish:
+    toggledOn: '&7Artık görünmezsin.'
+    toggledOff: '&7Artık görünürsün.'
+  freeze:
+    add: '&6%player%&7 adlı oyuncuyu başarıyla dondurdun.'
+    remove: '&6%player%&7 adlı oyuncunun dondurulmasını başarıyla kaldırdın.'
+    alertadd: '&7Donduruldun.'
+    alertremove: '&7Dondurulman kaldırıldı.'
+    nope: '&cDondurulduğun için bunu yapamazsın...'
+  revive:
+    noloot: '&cOyuncunun canlanırken alacak eşyası yok.'
+    success: '&6%player% &7adlı oyuncuyu başarıyla canlandırdın.'
+    revived: '&7Canlandırıldın.'
+  spy:
+    returned: '&7Eski yerine götürüldün'
+    success: '&6%player% &7adlı oyuncuyu gözetliyorsun. &6/spy &7komutunu kullanarak eski yerine dönebilirsin.'
+    cant: Kendini gözetleyemezsin.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Komut gözetleme açık'
+    toggleOff: '&7Komut gözetleme kapalı'
+# Event Messages
+event:
+  general:
+    nopermission: '&cBunu yapmak için yeterli yetkin yok.'
+  command:
+    blocked: '&cBu komutu kullanamazsın...'
+  punish:
+    reason: '&6%reason% &7nedeniyle'
+    theirduration: '&7. &7Ceza şu süre içinde kalkıcak: &6%duration%'
+    yourduration: '&7. &7Cezan şu süre içinde kalkıcak: &6%duration%'
+  ban:
+    success: '&6%player% &7adlı oyunucuyu yasakladın.'
+    message: '&7Yasaklandın.'
+    already: '&cBu oyuncu zaten yasaklı.'
+  unban:
+    success: '&6%player% &7adlı oyuncunun yasaklamasını kaldırdın.'
+  mute:
+    success: '&&6%player% &7adlı oyuncuyu susturdun.'
+    message: '&7Susturuldun.'
+    already: '&cBu oyuncu zaten susturulmuş.'
+  unmute:
+    success: '&6%player% &7adlı oyuncunun susturmasını kaldırdın.'
+  kick:
+    success: '&6%player% &7adlı oyuncuyu attın.'
+    message: '&7Atıldın.'
+  warning:
+    success: '&6%player% &7adlı oyuncuyu uyardın.'
+    message: '&7Uyarıldın.'
+  staffchat:
+    leave: '&6%channel% &7kanalından başarıyla ayrıldın.'
+    join: '&6%channel% &7kanalına başarıyla katıldın.'
+    allleave: '&6%player% &7kanaldan ayrıldı.'
+    alljoin: '&6%player% &7kanala katıldı.'
+    nochannels: '&cHerhangi bir kanalda değilsin.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Yavaş mod: &6%delay% &7saniye kaldı.'
+    done: '&7Yavaş mod kalktı.'
+    enabled: '&7Yavaş mod: &6%delay% &7saniye ile açıldı.'
+    disabled: '&7Yavaş modu kapatdın.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Önceki Sayfa'
+    next: '&6Sonraki Sayfa'
+    back: '&6Geri'
+    none: Yok
+    permanent: Kalıcı
+    reason: Neden
+    templatename: Şablon İsmi
+  players:
+    title: '&8Oyuncular'
+    click: '&6Oyuncuyu görüntülemek için tıklayın.'
+    notickets: '&7Bu oyuncu hakkında destek talebi açılmamış.'
+    tickets: '&7Bu oyuncu &6%amount% &7adet destek talebine sahip.'
+    ticketsone: '&7Bu oyuncu &61 &7destek talebine sahip.'
+    nowarnings: '&7Hiçbir uyarısı yok.'
+    warnings: '&7Bu oyuncunun &6%amount% &7uyarısı var.'
+    warningsone: '&7Bu oyuncunun &61 &7uyarısı var.'
+    online:
+      online: Çevrimiçi
+      offline: Çevrimdışı
+      both: İkiside
+    button:
+      tickets: '&7Destek Talepleri'
+      templatemanager: '&6&lŞablon Yöneticisi'
+    name: Oyuncu Adı
+    search: '&7Oyuncuları Ara'
+    nonefound: '&cBöyle bir oyuncu bulunamadı.'
+  templateselector:
+    title: '&8Şablon Seç'
+    click: '&7Şablonu seçmek için tıkla.'
+  templatemanager:
+    title: '&8Şablonlar'
+    create: '&6&lŞablon Oluştur'
+    leftclick: '&7Düzenlemek için sol tıkla.'
+    rightclick: '&7Yok etmek için sağ tıkla.'
+  punishments:
+    title: '&8%toModerate% > Cezalar'
+    reason: '&6Neden'
+    duration: '&6Süre'
+    punisher: '&6Cezayı Veren'
+    remaining: '&6Kalan Süre'
+    click: '&7Cezayı kaldırmak için tıkla.'
+    activity:
+      both: İkiside
+      active: Aktif
+      expired: Bitmiş
+  punishmenttypes:
+    all: Hepsi
+    ban: Yasaklama
+    kick: Atma
+    warning: Uyarı
+    mute: Susturma
+  punish:
+    title:
+      template: '&8Şablon Yarat'
+      message: '&8%toModerate% > Cezalandır'
+    submit: '&a&lGönder'
+    type:
+      punishment:
+        click: '&7Tür Değiştirmek İçin Tıkla.'
+        message: '&6&lCeza'
+      template:
+        current: '&7Şuanda Seçili: &6%template%&7.'
+        none: '&7Seçilebilecek şablon yok.'
+        click: '&7Şablon seçmek için tıkla.'
+        message: '&6&lŞablon'
+      name:
+        current:
+          click: '&7İşim değiştirmek için tıkla.'
+          message: '&7Şuanda Ayarlı: &6%name%&7.'
+        message: '&6&lİsim'
+      duration:
+        leftclick: '&7Süre ayarlamak için sol tıkla.'
+        rightclick: '&7Süreyi sınırsız yapmak için sağ tıkla.'
+        current: '&7Şuanki ayarlı süre:'
+        message: '&c&lSüre'
+      reason:
+        click: '&7Neden seçmek için tıkla.'
+        current: '&7Şuanki ayarlı neden:'
+        message: '&b&lNeden'
+    template:
+      create: '&7Bu ceza ayarından'
+      create2: '&7Şablon oluşturmak için tıkla.'
+      leftclick: '&6%template%&7 adlı şablonu'
+      leftclick2: '&7kaydetmek için sol tıkla.'
+      rightclick: '&7Yeni bir şablon yaratmak için sağ tıkla.'
+  player:
+    title: '&8Oyuncular > %toModerate%'
+    punish: '&6&lCezalandır'
+    moderate: '&b&lYönet'
+    punishments: '&c&lCezalar'
+    notes: '&a&lNotlar'
+    tickets: '&7&lDestek Talepleri'
+  moderate:
+    title: '&8%toModerate% > Yönet'
+  notes:
+    title: '&8%tonotes% > Notlar'
+    create: '&6Not Oluştur'
+    remove: '&cSilmek için tıkla'
+    type: Notu giriniz.
+    createdon: '&6%sent% &7adlı oyuncu için yazıldı.'
+    createdby: '&6%player% &7adlı oyuncu tarafından yazıldı.'
+  tickets:
+    title: '&8&lDestek Talepleri'
+    titlesingle: '&8%toModerate% > Destek Talepleri'
+    create: '&6Destek Talebi Oluştur'
+    click: '&6Yönetmek için tıkla.'
+    player: '&7Oyuncu: &6%player%&7.'
+    what: '&6Destek talebinde ne söylemek istersiniz?'
+    subject: Destek Talebi Konusu
+  ticket:
+    title: '&8Destek Talepleri > %id%'
+    type: '&7Tür: &6%type%&7.'
+    picktype: '&8Destek talebi türü seçiniz.'
+    clicktotele: '&6Destek talebi yerine gitmek için tıklayın.'
+    createdon: '&6%sent% &7için yaratıldı.'
+    respond: '&6Yanıtla'
+    status: '&7Durum: &6%status%&7.'
+    postedby: '&6%player% &7tarafından gönderildi.'
+    what: '&6Ne söylemek istersiniz?'
+notify:
+  block:
+    main: '[&6%material%&a] &aKırıldı.'
+  ticket:
+    created: '&7[UM] &a[Destek Talebi #%tid% - %type% - %player%&a] Yaratıldı !'
+    status: '&7[UM] &a[Destek Talebi #%tid% - %type% - %player%&a] Yeni durum: &6%status%'
+    response: '&7[UM] &a[Destek Talebi #%tid% - %type% - %player%&a] Yeni yanıt var !'

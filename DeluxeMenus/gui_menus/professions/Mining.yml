@@ -1,0 +1,452 @@
+menu_title: '&f&l»&7&l» &8Mining &7&l«&f&l«'
+open_command: Mining
+update_interval: 1    
+size: 54
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+
+  'Mining':
+    material: Diamond_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aMining Skill Level %mmocore_profession_Mining%'
+    lore:
+    - '&7Adventure through the Mine and'
+    - '&7excavate rare minerals to earn XP!'
+    - '&7'
+    - '&fCurrent Level: &e%mmocore_profession_Mining%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Mining%% &f/ &e100%'
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 49
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] professions"
+    left_click_commands:
+    - "[openguimenu] professions"
+
+
+  '20':
+    material: WOODEN_PICKAXE
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining1          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 1'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L1_R1%'
+    - '%textph_Mining_L1_R2%'
+    - '%textph_Mining_L1_R3%'
+    - '%textph_Mining_L1_R4%'
+    - '%textph_Mining_L1_R5%'
+    - ''
+    - '%textph_Mining_L1_EXP%'
+  '21':
+    material: WOODEN_PICKAXE
+    slot: 21
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining2          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 2'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L2_R1%'
+    - '%textph_Mining_L2_R2%'
+    - '%textph_Mining_L2_R3%'
+    - '%textph_Mining_L2_R4%'
+    - '%textph_Mining_L2_R5%'
+    - '%textph_Mining_L2_R6%'
+    - ''
+    - '%textph_Mining_L2_EXP%'
+  '22':
+    material: WOODEN_PICKAXE
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining3          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 3'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L3_R1%'
+    - '%textph_Mining_L3_R2%'
+    - '%textph_Mining_L3_R3%'
+    - '%textph_Mining_L3_R4%'
+    - '%textph_Mining_L3_R5%'
+    - ''
+    - '%textph_Mining_L3_EXP%'
+  '23':
+    material: WOODEN_PICKAXE
+    slot: 23
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining4          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 4'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L4_R1%'
+    - '%textph_Mining_L4_R2%'
+    - '%textph_Mining_L4_R3%'
+    - '%textph_Mining_L4_R4%'
+    - '%textph_Mining_L4_R5%'
+    - '%textph_Mining_L4_R6%'
+    - ''
+    - '%textph_Mining_L4_EXP%'
+  '24':
+    material: WOODEN_PICKAXE
+    slot: 24
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining5          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 5'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L5_R1%'
+    - '%textph_Mining_L5_R2%'
+    - '%textph_Mining_L5_R3%'
+    - '%textph_Mining_L5_R4%'
+    - '%textph_Mining_L5_R5%'
+    - ''
+    - '%textph_Mining_L5_EXP%'
+  '29':
+    material: WOODEN_PICKAXE
+    slot: 29
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining6          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 6'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L6_R1%'
+    - '%textph_Mining_L6_R2%'
+    - '%textph_Mining_L6_R3%'
+    - '%textph_Mining_L6_R4%'
+    - '%textph_Mining_L6_R5%'
+    - ''
+    - '%textph_Mining_L6_EXP%'
+  '30':
+    material: WOODEN_PICKAXE
+    slot: 30
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining7          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 7'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L7_R1%'
+    - '%textph_Mining_L7_R2%'
+    - '%textph_Mining_L7_R3%'
+    - '%textph_Mining_L7_R4%'
+    - '%textph_Mining_L7_R5%'
+    - ''
+    - '%textph_Mining_L7_EXP%'
+  '31':
+    material: WOODEN_PICKAXE
+    slot: 31
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining8          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 8'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L8_R1%'
+    - '%textph_Mining_L8_R2%'
+    - '%textph_Mining_L8_R3%'
+    - '%textph_Mining_L8_R4%'
+    - '%textph_Mining_L8_R5%'
+    - ''
+    - '%textph_Mining_L8_EXP%'
+  '32':
+    material: WOODEN_PICKAXE
+    slot: 32
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining9          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 9'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L9_R1%'
+    - '%textph_Mining_L9_R2%'
+    - '%textph_Mining_L9_R3%'
+    - '%textph_Mining_L9_R4%'
+    - '%textph_Mining_L9_R5%'
+    - ''
+    - '%textph_Mining_L9_EXP%'
+  '33':
+    material: WOODEN_PICKAXE
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Mining10          
+    hide_attributes: true
+    priority: 1
+    display_name: '&aMining Skill Level 10'
+    lore:
+    - '  &eLearn&f:'
+    - '%textph_Mining_L10_R1%'
+    - '%textph_Mining_L10_R2%'
+    - '%textph_Mining_L10_R3%'
+    - '%textph_Mining_L10_R4%'
+    - '%textph_Mining_L10_R5%'
+    - ''
+    - '%textph_Mining_L10_EXP%'
+
+##LOCKED
+
+  'l20':
+    material: STONE_PICKAXE
+    slot: 20
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 1'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L1_R1%'
+    - '%textph_Mining_L1_R2%'
+    - '%textph_Mining_L1_R3%'
+    - '%textph_Mining_L1_R4%'
+    - '%textph_Mining_L1_R5%'
+    - ''
+    - '&aUnlocked'
+  'l21':
+    material: STONE_PICKAXE
+    slot: 21
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 2'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L2_R1%'
+    - '%textph_Mining_L2_R2%'
+    - '%textph_Mining_L2_R3%'
+    - '%textph_Mining_L2_R4%'
+    - '%textph_Mining_L2_R5%'
+    - '%textph_Mining_L2_R6%'
+    - ''
+    - '&aUnlocked'
+  'l22':
+    material: STONE_PICKAXE
+    slot: 22
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 3'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L3_R1%'
+    - '%textph_Mining_L3_R2%'
+    - '%textph_Mining_L3_R3%'
+    - '%textph_Mining_L3_R4%'
+    - '%textph_Mining_L3_R5%'
+    - ''
+    - '&aUnlocked'
+  'l23':
+    material: STONE_PICKAXE
+    slot: 23
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 4'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L4_R1%'
+    - '%textph_Mining_L4_R2%'
+    - '%textph_Mining_L4_R3%'
+    - '%textph_Mining_L4_R4%'
+    - '%textph_Mining_L4_R5%'
+    - '%textph_Mining_L4_R6%'
+    - ''
+    - '&aUnlocked'
+  'l24':
+    material: STONE_PICKAXE
+    slot: 24
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 5'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L5_R1%'
+    - '%textph_Mining_L5_R2%'
+    - '%textph_Mining_L5_R3%'
+    - '%textph_Mining_L5_R4%'
+    - '%textph_Mining_L5_R5%'
+    - ''
+    - '&aUnlocked'
+  'l29':
+    material: STONE_PICKAXE
+    slot: 29
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 6'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L6_R1%'
+    - '%textph_Mining_L6_R2%'
+    - '%textph_Mining_L6_R3%'
+    - '%textph_Mining_L6_R4%'
+    - '%textph_Mining_L6_R5%'
+    - ''
+    - '&aUnlocked'
+  'l30':
+    material: STONE_PICKAXE
+    slot: 30
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 7'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L7_R1%'
+    - '%textph_Mining_L7_R2%'
+    - '%textph_Mining_L7_R3%'
+    - '%textph_Mining_L7_R4%'
+    - '%textph_Mining_L7_R5%'
+    - ''
+    - '&aUnlocked'
+  'l31':
+    material: STONE_PICKAXE
+    slot: 31
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 8'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L8_R1%'
+    - '%textph_Mining_L8_R2%'
+    - '%textph_Mining_L8_R3%'
+    - '%textph_Mining_L8_R4%'
+    - '%textph_Mining_L8_R5%'
+    - ''
+    - '&aUnlocked'
+  'l32':
+    material: STONE_PICKAXE
+    slot: 32
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 9'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L9_R1%'
+    - '%textph_Mining_L9_R2%'
+    - '%textph_Mining_L9_R3%'
+    - '%textph_Mining_L9_R4%'
+    - '%textph_Mining_L9_R5%'
+    - ''
+    - '&aUnlocked'
+  'l33':
+    material: STONE_PICKAXE
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: 'Mining10'          
+    hide_attributes: true
+    priority: 2
+    display_name: '&aMining Skill Level 10'
+    lore:
+    - '  &eLearned&f:'
+    - '%textph_Mining_L10_R1%'
+    - '%textph_Mining_L10_R2%'
+    - '%textph_Mining_L10_R3%'
+    - '%textph_Mining_L10_R4%'
+    - '%textph_Mining_L10_R5%'
+    - ''
+    - '&aUnlocked'
+    

@@ -1,0 +1,26 @@
+
+# You may create as many drop tables as you want. You can also
+# make drop tables refer to other drop tables.
+#
+# DON'T TRY to create recursive drop tables (drop tables
+# which call themselves to multiply items dropped).
+
+BorgBox:
+  MaxItems: 1
+  Drops:
+  - mmoitem{type=CONSUMABLE;id=BORGS_BOX} 1 0.0002
+
+
+#Farm
+WHEAT:
+  MaxItems: 1
+  Drops:
+  - mmoitem{type=STAFF;id=FARMER_STAFF} 1 .25%
+CANE:
+  MaxItems: 1
+  Drops:
+  - mmoitem{type=STAFF;id=CANE_STAFF} 1 1%
+MUSHROOM:
+  MaxItems: 1
+  Drops:
+  - mmoitem{type=STAFF;id=SHROOM_STAFF} 1 .5%

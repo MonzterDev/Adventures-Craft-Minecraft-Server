@@ -1,0 +1,146 @@
+bids-menu-name: '&8Auction View'
+
+bid-history-item: '358:0'
+bid-history-item-name: '&fBid History'
+bid-history-item-lore:
+  no-bids:
+    - '&7No bids have been placed on'
+    - '&7this item yet.'
+    - ''
+    - '&7Be the first to bid on it!'
+  #The lore of the bid history item is dynamic when
+  #it has bids on it, the structure below repeats itself
+  #at every new bid, adding to the lore
+  #Use %bid-amount% for the amount of the bid
+  #Use %bidder-display-name% for bidder's display name
+  #Use %when-bidded% for when the bid was placed (eg. 2 Days) (Ago is not included so you can modify)
+  bid-structure:
+    - '&8&m--------------'
+    - '&7Bid: &6%bid-amount% coins'
+    - '&7By: %bidder-display-name%'
+    - '&b%when-bidded% Ago'
+
+
+#This is the message items with "Ending soon" will give when clicked
+too-late-to-open-now: '&cIt is too late to open this now!'
+
+#When the auction is claimed by the seller, the bid history
+#no longer updates %when-bidded% and the message below is added
+#to the bid history item lore
+#Use %date% for the date of the last updated
+bid-history-last-updated-message: '&8Last updated on %date%'
+
+submit-bid-cannot-afford-item: '394'
+#Use %bid-amount% for the needed amount (that the player does not have)
+submit-bid-cannot-afford-item-name: '&6Submit Bid'
+submit-bid-cannot-afford-item-lore:
+  - ''
+  - '&7New Bid: &6%bid-amount% coins'
+  - ''
+  - '&cCannot afford bid!'
+
+submit-bid-item: '371'
+submit-bid-item-name: '&6Submit Bid'
+submit-bid-item-lore:
+  no-previous-bids:
+    - ''
+    - '&7New Bid: &6%bid-amount% coins'
+    - ''
+    - '&eClick to bid!'
+  #Use %bid-amount% for the amount the bid will have
+  #Use %previous-bid% for the previous bid's amount
+  #Use %coins-to-pay% for the difference between previous bid and actual bid
+  with-previous-bids:
+    - ''
+    - '&7New Bid: &6%bid-amount% coins'
+    - '&7Previous Bid: &e%previous-bid% coins'
+    - ''
+    - '&7You pay: &6%coins-to-pay% coins'
+    - ''
+    - '&eClick to bid!'
+
+collect-bid-item: '41'
+collect-bid-item-name: '&6Collect Auction'
+collect-bid-item-lore:
+  #Use %coins% for the amount of coins the player could collect
+  collect-coins:
+    - ''
+    - '&7You have &6%coins% coins'
+    - '&7to collect from this'
+    - '&7auction.'
+    - ''
+    - '&eClick to collect!'
+  collect-item:
+    - ''
+    - '&7You have items to'
+    - '&7collect from this auction'
+    - ''
+    - '&eClick to collect!'
+
+#What amount of the previous bid is needed for a new bid
+#Default Example: to bid over a 100 coins bid you need '100 + 15% from 100' minimum
+#If you remove the % it will just take 15 coins instead of a percent
+bid-step: '15%'
+
+#When a bid is lower than this amount
+#the next bid will jump here
+#Set it to 0 to disable it but make sure you know
+#how to handle it
+bid-jump: 20
+
+edit-bid-item: '266'
+#Use %current-bid% for the amount the player has selected to bid
+edit-bid-item-name: '&fBid Amount: &6%current-bid% coins'
+#Use %minimum-bid% for the minimum amount you have to bid on the auction
+edit-bid-item-lore:
+  - '&7You need to bid at least'
+  - '&6%minimum-bid% coins &7to hold the top'
+  - '&7bid on this auction.'
+  - ''
+  - '&7The &etop bid&7 on auction'
+  - '&7end wins the item.'
+  - ''
+  - '&7If you do not win, you can'
+  - '&7claim your bid coins back.'
+  - ''
+  - '&eClick to edit amount!'
+
+#The sign used for editing has the same text
+#as the starting bid on auction creator
+
+#Message for when you try to edit the bid with a value smaller than needed
+edit-bid-deny-message: '&cYour bid is too low.'
+
+#Message for when the bid is placed successfully
+placed-bid-message: '&aYour bid was successfully placed!'
+
+#Message for when you have 28 bids (reached the limit)
+max-bids-reached: '&cYou can have maximum 28 bids on different auctions at the same time.'
+
+#Message sent to players when they get outbidded
+#Use %outbid-player-display-name% for the name of the outbidder
+#Use %top-bid% for the new top bid
+#Use %bid-item% for the name of the item
+outbid-message:
+  - '&6[Auction] &fYou got outbidded by %outbid-player-display-name%&f on %bid-item%&f.'
+  - '&fThe new top bid is &6%top-bid% coins&f. &e&lCLICK TO VIEW'
+
+#Message sent to the seller when someone bids on their auction
+#Use %bidder% for bidder's display name
+#Use %bid-amount% for the bidded amount
+#Use %bid-item% for the name of the item
+bid-message: '&6[Auction] %bidder% &fput a bid of &6%bid-amount% coins &fon your %bid-item%&f!'
+
+not-enough-money-bid: '&cYou don''t have enough money to bid this amount.'
+
+#This message is added to the lore of some items
+#to let the player know it is their own auction
+own-auction-message: '&aThis is your own auction!'
+
+#To prevent a bug where two players bid the same amount
+#on the same auction (that happening when 2 players have the same view auction menu opened
+#at the same time) this message will be sent to the player if the value they try to submit
+#is already in there
+bid-error-message:
+  - '&c[Auction Error] &fWhile you were thinking about submitting someone already bid.'
+  - '&cReopening menu...'

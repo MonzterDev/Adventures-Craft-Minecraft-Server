@@ -1,0 +1,307 @@
+Skeleton1:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cUndead Skeleton'
+  Health: 150
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Player: '&7[&fLVL 5&7] &cUndead Skeleton'
+    Type: Player
+    Skin: skeleton
+  Modules:
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    AttackSpeed: 10
+  Equipment:
+  - iron_sword:0
+  - UNDEAD_CHESTPLATE:CHEST
+  - UNDEAD_BOOTS:FEET
+  - shield:5
+  Drops:
+  - BorgBox 1 100%
+  - Undead_Skeleton 1 100%
+  - mmoitems{type=MATERIAL;id=BONE_FRAGMENT} 1-2 100%
+  - mmoitems{type=COMPANION;id=PET_SKELETON1} 1 .001%
+  - Bone 1-2 100%
+  - EXP 2-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=SummonSoul} ~onDeath .01
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=Agro8A} @self ~onTimer:20
+  - skill{s=Agro8B} @self ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.Skeleton1 1"} @ThreatTablePlayers ~onDeath
+SkeletonArcher:
+  Type: SKELETON
+  Display: '&7[&fLVL 5&7] &cUndead Archer'
+  Health: 100
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &cUndead Archer'
+    Skin: ranger
+  Modules:
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.25
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: .5
+  Equipment:
+  - BorgBox 1 100%
+  - Undead_Skeleton 1 100%
+  - BOW:0
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=MATERIAL;id=BONE_FRAGMENT} 1-3 100%
+  - mmoitems{type=COMPANION;id=PET_SKELETONARCHER} 1 .001%  
+  - Bone 1-3 100%
+  - Arrow 1-3 100%  
+  - EXP 2-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 arrowattack
+  - 4 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - skill{s=SummonSoul} ~onDeath .01
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.SkeletonArcher 1"} @ThreatTablePlayers ~onDeath
+LostSoul:
+  Type: ZOMBIE
+  Display: '&cLost Soul'
+  Health: 100
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&cLost Soul'
+    Skin: lostsoul
+  Modules:
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    NoDamageTicks: 10
+    AttackSpeed: 100
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=CONSUMABLE;id=SOUL} 1 50%
+  - mmoitems{type=MATERIAL;id=LOST_SOUL} 1 60%
+  - EXP 5-7 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=Disguise}
+  - damage{amount=5;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.LostSoul 1"} @ThreatTablePlayers ~onDeath
+
+
+
+Reaper:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cReaper Egg'
+  Health: 2500
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: BLOCK
+    Block: WITHER_ROSE	
+    BlockData: 0
+    ShowName: true
+  Modules:
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true    
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 10
+    MaxCombatDistance: 50
+    MovementSpeed: 0
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    AttackSpeed: 0
+  Equipment:
+  Drops:
+  - BorgBox 1 100%
+  - Undead_Skeleton 1 100%
+  AIGoalSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=ReaperSpawnText} ~onDamaged
+  - skill{s=SummonReaper} ~onDeath
+  - skill{s=ReaperTP} @self ~onTimer:20
+  - effect:particlesphere{particle=dragon_breath;amount=10;radius=1} @self ~onTimer:10
+  - effect:sound{s=entity.elder_guardian.hurt;v=1;p=0} 
+  - effect:sound{s=entity.ender_dragon.death;v=1;p=0} @PlayersInRadius{r=25} ~onDeath
+  - command{c="q point <target.name> add mobs.Reaper 1"} @ThreatTablePlayers ~onDeath
+
+
+ReaperBoss:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cReaper'
+  Health: 7500
+  Damage: 0
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 10&7] &cReaper <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: RED
+    Style: SOLID
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &cReaper'
+    Skin: reaper
+  Modules:
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true    
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.30
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    AttackSpeed: 1
+  Equipment:
+  - iron_hoe:0
+  Drops:
+  - BorgBox 1 100%
+  - Undead_Skeleton 1 100%
+  - mmoitems{type=MATERIAL;id=BONE_FRAGMENT} 10-15 100%
+  - Bone 10-25 100%
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - skill{s=SummonSkeletons} =40%-50%
+  - skill{s=Slow} .05
+  - skill{s=Heal} .10
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add bosses.ReaperReward 1"} @ThreatTablePlayers ~onDeath
+  - command{c="q point <target.name> add bosses.Reaper 1"} @ThreatTablePlayers ~onDeath
+  - message{m="&eYou have defeated the &cReaper&e! Claim your rewards in &l/Bossdex&e!"} @ThreatTablePlayers ~onDeath
+ReaperMinion:
+  Type: ZOMBIE
+  Display: '&cCursed Soul'
+  Health: 1000
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&cCursed Soul'
+    Skin: SOUL
+  Modules:
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 16
+    MovementSpeed: 0.34
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+    AttackSpeed: 10
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  Skills:
+  - damage{amount=0;ignoreArmor=false} @target ~onAttack
+  - forcepull{spread=1} @EntitiesInRadius{r=5} .15
+  - remove{delay=100} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged  
+  - command{c="q point <target.name> add mobs.ReaperMinion 1"} @ThreatTablePlayers ~onDeath

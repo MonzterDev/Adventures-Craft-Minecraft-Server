@@ -1,0 +1,1915 @@
+ShopName: WeaponEnchants
+DisplayName: '&7&l»»&fWeapon Enchants&7&l««'
+Command: WeaponEnchants
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  Sharpness1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSharpness 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eAxes'
+    - 'lore6:§8§l» §eBows'
+    - 'lore7:§8§l» §eDaggers'
+    - 'lore8:§8§l» §eHammers'
+    - 'lore9:§8§l» §eSwords'
+    - 'lore10:§8'
+    - 'lore11:§f&lPrice:'
+    - 'lore12:§8§l» §710 EXP'
+    - 'lore13:§8§l» §91 Enchanted Bone'
+    - 'lore14:§8'
+    - 'lore15:§f&lRequirements:'    
+    - 'lore16:§8§l» §aEnchanting Level 1'    
+    RewardType: opcommand
+    Reward:
+    - artifacts enchant Sharpness 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:BONE
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Bone
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSharpness 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE,'            
+    InventoryLocation: 12
+  Sharpness1UL:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&aSharpness 1 Enchantment &lUNLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eAxes'
+    - 'lore6:§8§l» §eBows'
+    - 'lore7:§8§l» §eDaggers'
+    - 'lore8:§8§l» §eHammers'
+    - 'lore9:§8§l» §eSwords'
+    - 'lore10:§8'
+    - 'lore11:§f&lPrice:'
+    - 'lore12:§8§l» §710 EXP'
+    - 'lore13:§8§l» §91 Enchanted Bone'
+    - 'lore14:§8'
+    - 'lore15:§f&lRequirements:'    
+    - 'lore16:§8§l» §aEnchanting Level 1'    
+    - 'lore18:§cMake sure to hold the item in hand'    
+    - 'lore19:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 12
+
+  Sharpness100:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSharpness 100 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §720 EXP'
+    - 'lore11:§8§l» §98 Enchanted Bones'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Sharpness 100
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:BONE
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Bone
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSharpness 100&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 13
+  Sharpness100L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cSharpness 100 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 3'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 13
+  Sharpness150:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSharpness 150 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §730 EXP'
+    - 'lore11:§8§l» §916 Enchanted Bones'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Sharpness 150
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:BONE
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Bone
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSharpness 150&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 14
+  Sharpness150L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cSharpness 150 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 5'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 14
+  Sharpness200:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSharpness 200 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §740 EXP'
+    - 'lore11:§8§l» §932 Enchanted Bones'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Sharpness 200
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:BONE
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Bone
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSharpness 200&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 15
+  Sharpness200L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cSharpness 200 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 7'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 15
+  Sharpness250:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSharpness 250 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §750 EXP'
+    - 'lore11:§8§l» §964 Enchanted Bones'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Sharpness 250
+    - mmocore admin exp give %name% enchanting 500
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:BONE
+        - amount:64
+        - durability:0
+        - name:&9Enchanted Bone
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSharpness 250&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting9
+    InventoryLocation: 16
+  Sharpness250L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cSharpness 250 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your weapon damage!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 9'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 16
+  Smite25:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSmite 25 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §710 EXP'
+    - 'lore11:§8§l» §91 Enchanted Rotten Flesh'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Smite 25
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:ROTTEN_FLESH
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Rotten Flesh
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSmite 25&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting2
+    InventoryLocation: 21
+  Smite25L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rSmite 25 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 2'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 21
+  Smite50:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSmite 50 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §720 EXP'
+    - 'lore11:§8§l» §98 Enchanted Rotten Flesh'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Smite 50
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:ROTTEN_FLESH
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Rotten Flesh
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSmite 50&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 22
+  Smite50L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rSmite 50 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 4'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 22
+  Smite75:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSmite 75 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §730 EXP'
+    - 'lore11:§8§l» §916 Enchanted Rotten Flesh'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Smite 75
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:ROTTEN_FLESH
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Rotten Flesh
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSmite 75&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting6
+    InventoryLocation: 23
+  Smite75L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rSmite 75 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 6'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 23
+  Smite100:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rSmite 100 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §740 EXP'
+    - 'lore11:§8§l» §932 Enchanted Rotten Flesh'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Smite 100
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:ROTTEN_FLESH
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Rotten Flesh
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aSmite 100&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting8
+    InventoryLocation: 24
+  Smite100L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rSmite 100 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Undead!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 8'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 24
+  BoA25:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rBane of Arthropods 25 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §710 EXP'
+    - 'lore11:§8§l» §91 Enchanted Spider Eye'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Baneofarthropods 25
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:SPIDER_EYE
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Spider Eye
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aBane of Arthropods 25&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting2
+    InventoryLocation: 30
+  BoA25L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rBane of Arthropods 25 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 2'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 30
+  BoA50:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rBane of Arthropods 50 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §720 EXP'
+    - 'lore11:§8§l» §98 Enchanted Spider Eye'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Baneofarthropods 50
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:SPIDER_EYE
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Spider Eye
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aBane of Arthropods 50&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 31
+  BoA50L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rBane of Arthropods 50 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 4'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 31
+  BoA75:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rBane of Arthropods 75 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §730 EXP'
+    - 'lore11:§8§l» §916 Enchanted Spider Eye'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Baneofarthropods 75
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:SPIDER_EYE
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Spider Eye
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aBane of Arthropods 75&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 32
+  BoA75L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rBane of Arthropods 75 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 7'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 32
+  BoA100:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rBane of Arthropods 100 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §740 EXP'
+    - 'lore11:§8§l» §932 Enchanted Spider Eye'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Baneofarthropods 100
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:SPIDER_EYE
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Spider Eye
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aBane of Arthropods 100&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting9
+    InventoryLocation: 33
+  BoA100L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rBane of Arthropods 100 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage against Arthropods!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 9'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 33
+  Rage3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRage 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §725 EXP'
+    - 'lore11:§8§l» §91 Enchanted Blaze Rod'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Rage 3
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:BLAZE_ROD
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Blaze Rod
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aRage 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 39
+  Rage3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRage 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 3'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 39
+  Rage4:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRage 4 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §750 EXP'
+    - 'lore11:§8§l» §98 Enchanted Blaze Rod'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Rage 4
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:BLAZE_ROD
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Blaze Rod
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aRage 4&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting8
+    InventoryLocation: 40
+  Rage4L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRage 4 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 8'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 40
+  Rage5:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRage 5 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §775 EXP'
+    - 'lore11:§8§l» §916 Enchanted Blaze Rod'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Rage 5
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 75.0
+      PriceType2: ITEM
+      Price2:
+        - type:BLAZE_ROD
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Blaze Rod
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aRage 5&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting10
+    InventoryLocation: 41
+  Rage5L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRage 5 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase your damage by landing consecutive hits!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 10'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 41
+  # Looting1:
+  #   MenuItem:
+  #   - type:ENCHANTED_BOOK
+  #   - amount:1
+  #   - name:&rLooting 1 Enchantment
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eDagger'
+  #   - 'lore7:§8§l» §eHammer'
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lPrice:'
+  #   - 'lore10:§8§l» §710 EXP'
+  #   - 'lore11:§8§l» §764 Oak Log'
+  #   - 'lore12:§8'
+  #   - 'lore13:§cMake sure to hold item in hand'    
+  #   - 'lore14:§cwhich you want to be Enchanted!'    
+  #   RewardType: opcommand
+  #   Reward:
+  #   - te enchant %name% Looting 1
+  #   - mmocore admin exp give %name% enchanting 100
+  #   PriceType: AND
+  #   Price:
+  #     PriceType1: EXP
+  #     Price1: 10.0
+  #     PriceType2: ITEM
+  #     Price2:
+  #     - - type:OAK_LOG
+  #       - amount:64
+  #   Message: '&aSERVER » &fYou bought &aLooting 1&f!'
+  #   Condition:
+  #   - type:placeholdermatch
+  #   - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+  #   - type:permission
+  #   - match:Enchanting3
+  #   InventoryLocation: 57
+  # Looting1L:
+  #   MenuItem:
+  #   - type:BOOK
+  #   - amount:1
+  #   - name:&rLooting 1 Enchantment &lLOCKED
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eAxe'
+  #   - 'lore7:§8§l» §eHammer'    
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lRequirement:'
+  #   - 'lore10:§8§l» §cEnchanting Level 4'
+  #   - 'lore12:§cMake sure to hold item in hand'    
+  #   - 'lore13:§cwhich you want to be Enchanted!'        
+  #   InventoryLocation: 57
+  # Looting2:
+  #   MenuItem:
+  #   - type:ENCHANTED_BOOK
+  #   - amount:1
+  #   - name:&rLooting 4 Enchantment
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eDagger'
+  #   - 'lore7:§8§l» §eHammer'
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lPrice:'
+  #   - 'lore10:§8§l» §710 EXP'
+  #   - 'lore11:§8§l» §764 Oak Log'
+  #   - 'lore12:§8'
+  #   - 'lore13:§cMake sure to hold item in hand'    
+  #   - 'lore14:§cwhich you want to be Enchanted!'    
+  #   RewardType: opcommand
+  #   Reward:
+  #   - te enchant %name% Looting 2
+  #   - mmocore admin exp give %name% enchanting 200
+  #   PriceType: AND
+  #   Price:
+  #     PriceType1: EXP
+  #     Price1: 10.0
+  #     PriceType2: ITEM
+  #     Price2:
+  #     - - type:OAK_LOG
+  #       - amount:64
+  #   Message: '&aSERVER » &fYou bought &aLooting 2&f!'
+  #   Condition:
+  #   - type:placeholdermatch
+  #   - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+  #   - type:permission
+  #   - match:Enchanting6
+  #   InventoryLocation: 58
+  # Looting2L:
+  #   MenuItem:
+  #   - type:BOOK
+  #   - amount:1
+  #   - name:&rLooting 2 Enchantment &lLOCKED
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eAxe'
+  #   - 'lore7:§8§l» §eHammer'    
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lRequirement:'
+  #   - 'lore10:§8§l» §cEnchanting Level 6'
+  #   - 'lore12:§cMake sure to hold item in hand'    
+  #   - 'lore13:§cwhich you want to be Enchanted!'        
+  #   InventoryLocation: 58
+  # Looting3:
+  #   MenuItem:
+  #   - type:ENCHANTED_BOOK
+  #   - amount:1
+  #   - name:&rLooting 3 Enchantment
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eDagger'
+  #   - 'lore7:§8§l» §eHammer'
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lPrice:'
+  #   - 'lore10:§8§l» §710 EXP'
+  #   - 'lore11:§8§l» §764 Oak Log'
+  #   - 'lore12:§8'
+  #   - 'lore13:§cMake sure to hold item in hand'    
+  #   - 'lore14:§cwhich you want to be Enchanted!'    
+  #   RewardType: opcommand
+  #   Reward:
+  #   - te enchant %name% Looting 3
+  #   - mmocore admin exp give %name% enchanting 300
+  #   PriceType: AND
+  #   Price:
+  #     PriceType1: EXP
+  #     Price1: 10.0
+  #     PriceType2: ITEM
+  #     Price2:
+  #     - - type:OAK_LOG
+  #       - amount:64
+  #   Message: '&aSERVER » &fYou bought &aLooting 3&f!'
+  #   Condition:
+  #   - type:placeholdermatch
+  #   - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+  #   - type:permission
+  #   - match:Enchanting8
+  #   InventoryLocation: 59
+  # Looting3L:
+  #   MenuItem:
+  #   - type:BOOK
+  #   - amount:1
+  #   - name:&rLooting 3 Enchantment &lLOCKED
+  #   - 'lore1:&e'
+  #   - 'lore2:§7Increase drops and rare loot chances from mobs!'
+  #   - 'lore3:§7'
+  #   - 'lore4:§f§lAPPLICABLE TO:'
+  #   - 'lore5:§8§l» §eSword'
+  #   - 'lore6:§8§l» §eAxe'
+  #   - 'lore7:§8§l» §eHammer'    
+  #   - 'lore8:§8'
+  #   - 'lore9:§f&lRequirement:'
+  #   - 'lore10:§8§l» §cEnchanting Level 8'
+  #   - 'lore12:§cMake sure to hold item in hand'    
+  #   - 'lore13:§cwhich you want to be Enchanted!'        
+  #   InventoryLocation: 59
+  Knockback1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rKnockback 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §725 EXP'
+    - 'lore11:§8§l» §98 Enchanted Slime Ball'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Knockback 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aKnockback 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE,'                
+    InventoryLocation: 66
+  Knockback1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rKnockback 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 1'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 66
+  Knockback2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rKnockback 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §750 EXP'
+    - 'lore11:§8§l» §916 Enchanted Slime Ball'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Knockback 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aKnockback 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 67
+  Knockback2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rKnockback 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 3'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 67
+  Knockback3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rKnockback 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §775 EXP'
+    - 'lore11:§8§l» §932 Enchanted Slime Ball'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Knockback 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 75.0
+      PriceType2: ITEM
+      Price2:
+        - type:SLIME_BALL
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Slime Ball
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aKnockback 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE'            
+    - type:permission
+    - match:Enchanting8
+    InventoryLocation: 68
+  Knockback3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rKnockback 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Send enemies backwards when attacking them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 8'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 68
+  FireAspect1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rFire Aspect 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Ignite enemies hit by your weapon!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eDagger'
+    - 'lore7:§8§l» §eHammer'
+    - 'lore8:§8'
+    - 'lore9:§f&lPrice:'
+    - 'lore10:§8§l» §725 EXP'
+    - 'lore11:§8§l» §98 Enchanted Magma Cream'
+    - 'lore12:§8'
+    - 'lore13:§cMake sure to hold item in hand'    
+    - 'lore14:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% FireAspect 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:MAGMA_CREAM
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Magma Cream
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aFire Aspect 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:WOODEN_SHOVEL,STONE_SHOVEL,IRON_SHOVEL,GOLDEN_SHOVEL,DIAMOND_SHOVEL,WOODEN_AXE,STONE_AXE,IRON_AXE,GOLDEN_AXE,DIAMOND_AXE,WOODEN_SWORD,STONE_SWORD,IRON_SWORD,GOLDEN_SWORD,DIAMOND_SWORD,WOODEN_HOE,STONE_HOE,IRON_HOE,GOLDEN_HOE,DIAMOND_HOE,'                
+    InventoryLocation: 75
+  FireAspect1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rFire Aspect 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Ignite enemies hit by your weapon!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eSword'
+    - 'lore6:§8§l» §eAxe'
+    - 'lore7:§8§l» §eHammer'    
+    - 'lore8:§8'
+    - 'lore9:§f&lRequirement:'
+    - 'lore10:§8§l» §cEnchanting Level 1'
+    - 'lore12:§cMake sure to hold item in hand'    
+    - 'lore13:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 75
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+
+  46:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+  47:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 47
+    ExtraPermission: ''
+    Condition:
+
+  48:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 48
+    ExtraPermission: ''
+    Condition:
+
+  49:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 49
+    ExtraPermission: ''
+    Condition:
+
+  50:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 50
+    ExtraPermission: ''
+    Condition:
+
+  51:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 51
+    ExtraPermission: ''
+    Condition:
+  52:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 52
+    ExtraPermission: ''
+    Condition:
+  53:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 53
+    ExtraPermission: ''
+    Condition:
+
+  54:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:
+
+  55:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 55
+    ExtraPermission: ''
+    Condition:
+
+  56:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 56
+    ExtraPermission: ''
+    Condition:
+
+  57:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 57
+    ExtraPermission: ''
+    Condition:
+
+  58:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 58
+    ExtraPermission: ''
+    Condition:
+
+  59:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 59
+    ExtraPermission: ''
+    Condition:
+
+  60:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 60
+    ExtraPermission: ''
+    Condition:
+
+  61:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 61
+    ExtraPermission: ''
+    Condition:
+
+

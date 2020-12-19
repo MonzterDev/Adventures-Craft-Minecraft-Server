@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7rensade chatten!'
+    immune: '&aDu var immun mot rensningen av chatten på grund av dina behörigheter.'
+  togglechat:
+    toggledOn: '&aChatten blev globalt otystad...'
+    toggledOff: '&cChatten blev globalt tystad...'
+    bypass: '&aDu var immun mot växlingen av chatten på grund av dina behörigheter.'
+    muted: '&cChatten är för närvarande inaktiverad, försök igen senare.'
+  vanish:
+    toggledOn: '&7Du är nu osynlig.'
+    toggledOff: '&7Du har nu synlig.'
+  freeze:
+    add: '&7Du har fryst &6%player%&7.'
+    remove: '&7Du har ofryst &6%player%&7.'
+    alertadd: '&7Du har blivit fryst.'
+    alertremove: '&7Du har blivit ofryst.'
+    nope: '&cDu kan inte göra det eftersom du är fryst...'
+  revive:
+    noloot: '&cInga föremål kunde hittas för att återuppliva spelaren.'
+    success: '&7Du har återupplivat &6%player%&7.'
+    revived: '&7Du har återupplivats.'
+  spy:
+    returned: '&7Du återlämnades till din senaste position.'
+    success: '&7Du spionerar nu på &6%player%&7. Använd kommandot &6/spy &7för att återlämnas till din senaste position&7'
+    cant: Du kan inte spionera på dig själv.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Kommand spionering på'
+    toggleOff: '&7Kommand spionering av'
+# Event Messages
+event:
+  general:
+    nopermission: '&cDu har inte tillåtelse för det!'
+  command:
+    blocked: '&cDu kan inte använda det kommandot...'
+  punish:
+    reason: ' &7för &6%reason%'
+    theirduration: '&7. &7Deras straff kommer att upphävas om &6%duration%'
+    yourduration: '&7. &7Ditt straff kommer att upphävas om &6%duration%'
+  ban:
+    success: '&7Du har bannat &6%player%'
+    message: '&7Du har blivit bannad.'
+    already: '&cDenna spelaren är redan bannad.'
+  unban:
+    success: '&7Du har tagit bort bannlysningen från &6%player%'
+  mute:
+    success: '&7Du tystade &6%player%'
+    message: '&7Du har blivit tystad'
+    already: '&cDenna spelaren är redan tystad.'
+  unmute:
+    success: '&7Du har otystat &6%player%'
+  kick:
+    success: '&7Du har sparkat &6%player%'
+    message: '&7Du har blivit sparkad'
+  warning:
+    success: '&7Du har varnat &6%player%'
+    message: '&7Du har blivit varnad'
+  staffchat:
+    leave: '&7Du lämnade &6%channel%&7.'
+    join: '&7Du anslöt till &6%channel%&7.'
+    allleave: '&6%player% &7har lämnat kanalen.'
+    alljoin: '&6%player% har anslutit till kanalen.'
+    nochannels: '&cDu är inte i någon kanal.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Långsamt läge, &6%delay% &7sekunder kvar.'
+    done: '&7Timeout för långsamt läge.'
+    enabled: '&7Långsamt läge har aktiverats med fördröjningen &6%delay%&7.'
+    disabled: '&7Du inaktiverade långsamt läge.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Förra sidan'
+    next: '&6Nästa sida'
+    back: '&6Tillbaka'
+    none: Inga
+    permanent: Permanent
+    reason: Anledning
+    templatename: Mall Namn
+  players:
+    title: '&8Spelare'
+    click: '&6Klicka för att visa spelare.'
+    notickets: '&7För närvarande har inga biljetter öppnats för den här spelaren.'
+    tickets: '&7Den här spelaren har &6%amount% &7öppna biljetter.'
+    ticketsone: '&7Den här spelaren har &61 &7öppen biljett.'
+    nowarnings: '&7Inga varningar registrerade.'
+    warnings: '&7Den här spelaren har fått &6%amount% &7varningar.'
+    warningsone: '&7Den här spelaren har fått &61 &7varning.'
+    online:
+      online: Online
+      offline: Offline
+      both: Båda
+    button:
+      tickets: '&7Biljetter'
+      templatemanager: '&6&lMall Redigerare'
+    name: Spelarnamn
+    search: '&7Sök på en spelare'
+    nonefound: '&cInga spelare hittades.'
+  templateselector:
+    title: '&8Välj en mall'
+    click: '&7Klicka för att välja denna mallen.'
+  templatemanager:
+    title: '&8Mallar'
+    create: '&6&lSkapa mall'
+    leftclick: '&7Vänsterklicka för att redigera.'
+    rightclick: '&7Högerklicka för att ta sönder.'
+  punishments:
+    title: '&8%toModerate% > Straff'
+    reason: '&6Anledning'
+    duration: '&Inledande varaktighet'
+    punisher: '&6Bestraffare'
+    remaining: '&6Tid kvar'
+    click: '&7Klicka för att ta bort detta straff.'
+    activity:
+      both: Båda
+      active: Aktiv
+      expired: Utgånget
+  punishmenttypes:
+    all: Alla
+    ban: Bannlysa
+    kick: Sparka
+    warning: Varning
+    mute: Tysta
+  punish:
+    title:
+      template: '&8Skapa en mall'
+      message: '&8%toModerate% > Straffa'
+    submit: '&a&lSkicka in'
+    type:
+      punishment:
+        click: '&7Klicka för att växla typ.'
+        message: '&6&lStraff'
+      template:
+        current: '&7Vald just nu: &6%template%&7.'
+        none: '&7Inga mallar att välja på'
+        click: '&7Klicka för att välja en mall.'
+        message: '&6&lMall'
+      name:
+        current:
+          click: '&7Klicka för att byta namn.'
+          message: '&7Inställd på: &6%name%&7.'
+        message: '&6&lName'
+      duration:
+        leftclick: '&7Vänsterklicka för att ställa in en varaktighet.'
+        rightclick: '&7Högerklicka för att ställa in för alltid.'
+        current: '&7Inställd på:'
+        message: '&c&lVarkaktighet'
+      reason:
+        click: '&7Klicka för att välja en anledning.'
+        current: '&7Inställd på:'
+        message: '&b&lAnledning'
+    template:
+      create: '&7Klicka för att skapa en mall'
+      create2: '&7från detta straffet.'
+      leftclick: '&7Vänsterklicka för att uppdatera'
+      leftclick2: '&7mallen &6%template%&7.'
+      rightclick: '&7Högerklicka för att spara som en ny mall.'
+  player:
+    title: '&8Spelare > %toModerate%'
+    punish: '&6&lStraffa'
+    moderate: '&b&lModerera'
+    punishments: '&c&lStraff'
+    notes: '&a&lAnteckningar'
+    tickets: '&7&lBiljetter'
+  moderate:
+    title: '&8%toModerate% > Moderera'
+  notes:
+    title: '&8%tonotes% > Anteckningar'
+    create: '&6Skapa anteckning'
+    remove: '&cKlicka för att ta bort'
+    type: Skriv din anteckning.
+    createdon: '&7Skapad på &6%sent%&7.'
+    createdby: '&7Skapad av &6%player%&7.'
+  tickets:
+    title: '&8&lBiljetter'
+    titlesingle: '&8%toModerate% > Biljetter'
+    create: '&6Skapa en biljett'
+    click: '&6Klicka för att hantera.'
+    player: '&7Spelare &6%player%&7.'
+    what: '&6Vad vill du säga i din första biljettpost?'
+    subject: Ticket Subject
+  ticket:
+    title: '&8Biljetter > %id%'
+    type: '&7Typ &6%type%&7.'
+    picktype: '&8Välj en biljett typ.'
+    clicktotele: '&6Teleportera till en biljett plats.'
+    createdon: '&7Skapad på &6%sent%&7.'
+    respond: '&6Svara'
+    status: '&7Status &6%status%&7.'
+    postedby: '&7Postad av &6%player%&7.'
+    what: '&6Vad vill du säga?'
+notify:
+  block:
+    main: '&a Har huggt [&6%material%&a] vid &6'
+  ticket:
+    created: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Har blivit skapad!'
+    status: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Ny status: &6%status%'
+    response: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] Har ett nytt svar!'

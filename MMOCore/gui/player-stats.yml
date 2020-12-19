@@ -1,0 +1,122 @@
+
+# GUI display name
+name: Your Stats
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    boost-display:
+        slots: [47,48,49,50,51]
+        function: boost
+        item: BARRIER
+        no-boost:
+            item: GRAY_STAINED_GLASS_PANE
+            name: '&aNo Booster'
+            lore: {}
+        
+        # Profession experience boosters
+        profession:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7Profession: &6{profession}'
+            - '&7'
+            - '&eStarted by {author}'
+        
+        # Main class experience boosters
+        main-level:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7'
+            - '&eStarted by {author}'
+    boost-next:
+        slots: [52]
+        function: boost-next
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        name: '&aNext'
+        lore: {}
+    boost-prev:
+        slots: [46]
+        function: boost-previous
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        name: '&aPrevious'
+        lore: {}
+    party:
+        slots: [14]
+        item: CAKE
+        name: '&aParty Morale'
+        lore:
+        - '&7&oPlaying with your friends'
+        - '&7&ogreatly encourages you!'
+        - ''
+        - '&7Party Bonuses ({count}):'
+        - '&8- +{buff_additional_experience} Experience Earned!'
+        - '&8- +{buff_health_regeneration} Health Regeneration'
+    stats:
+        slots: [15]
+        function: profile
+        item: PLAYER_HEAD
+        name: '&e{player}'
+        lore:
+        - ''
+        - '&7Current Level: &e{level}'
+        - '&7Next Level: &e{exp} / {next_level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - ''
+        - '&7Current Class: &c{class}'
+        - '&7Class Points: &c{class_points}'
+    phys:
+        slots: [32]
+        function: stats
+        name: '&cPhysical'
+        item: GOLDEN_APPLE
+        hide-flags: true
+        lore:
+        - ''
+        - 'Current Strength: &c&l{attribute_strength}'
+        - ''
+        - '✦ Attack Damage: &c{attack_damage} &7(&c{attack_damage_base} &7+ &c{attack_damage_extra}&7)'
+        - '✦ Attack Speed: &c{attack_speed} &7(&c{attack_speed_base} &7+ &c{attack_speed_extra}&7)'
+        - ''
+        - '❤ Max Health: &c{max_health} &7(&c{max_health_base} &7+ &c{max_health_extra}&7)'
+        - '❤ Health Regen: &c{health_regeneration} &7(&c{health_regeneration_base} &7+ &c{health_regeneration_extra}&7)'
+        - ''
+        - '❖ Armor: &c{armor} &7(&c{armor_base} &7+ &c{armor_extra}&7)'
+        - '❖ Armor Toughness: &c{armor_toughness} &7(&c{armor_toughness_base} &7+ &c{armor_toughness_extra}&7)'
+    dex:
+        slots: [33]
+        function: stats
+        name: '&aDexterity'
+        item: LEATHER_BOOTS
+        hide-flags: true
+        lore:
+        - ''
+        - 'Current Dexterity: &a&l{attribute_dexterity}'
+        - ''
+        - '✤ Knockback Resistance: &f{knockback_resistance} &7(&f{knockback_resistance_base} &7+ &f{knockback_resistance_extra}&7)'
+        - '✤ Movement Speed: &f{movement_speed} &7(&f{movement_speed_base} &7+ &f{movement_speed_extra}&7)'
+    int:
+        slots: [34]
+        function: stats
+        name: '&bIntellect'
+        item: BOOK
+        hide-flags: true
+        lore:
+        - ''
+        - 'Current Intelligence: &b&l{attribute_intelligence}'
+        - ''
+        - '✤ Max Mana: &9{max_mana} &7(&9{max_mana_base} &7+ &9{max_mana_extra}&7)'
+        - '✤ Mana Regen: &9{mana_regeneration} &7(&9{mana_regeneration_base} &7+ &9{mana_regeneration_extra}&7)'
+        - ''
+        - '✤ Skill Cooldown Reduction: &9{cooldown_reduction} &7(&9{cooldown_reduction_base} &7+ &9{cooldown_reduction_extra}&7)'
+        - '✤ Bonus EXP: &9{additional_experience} &7(&9{additional_experience_base} &7+ &9{additional_experience_extra}&7)'
+        
