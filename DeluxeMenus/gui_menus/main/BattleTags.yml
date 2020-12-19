@@ -1,6 +1,6 @@
 menu_title: '&f&l»&7&l» &8Battle Tags &7&l«&f&l«'
 update_interval: 1    
-size: 44
+size: 36
 items:
   'Decoration':
     material: BLACK_STAINED_GLASS_PANE		
@@ -54,60 +54,20 @@ items:
 
   'Back':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
-    slot: 40
+    slot: 31
     priority: 1
     display_name: '&aGo Back'
     click_commands:
     - "[openguimenu] Settings"
 
-  'UNDEAD_SLAYER_LOCKED':
-    material: SKELETON_SKULL
-    hide_attributes: true
+  'ProfessionPrestiges':
+    material: DIAMOND_HOE
+    slot: 11
     priority: 1
-    slot: 10
-    view_requirement:
-      requirements:
-        Pex:
-          type: "!has permission"
-          permission: TAG.UNDEAD_SLAYER1              
-    display_name: "&cUndead Slayer I &lLOCKED"
-    lore:
-    - ''
-    - '&aBattle Tag: &cUndead Slayer I'
-    - ''
-    - '&7Slay &c%betonquest_default-Achievements-Hell:point.Slay_Hell.amount% &7more &cUndead&7 to unlock!'
-  'UNDEAD_SLAYER_UNLOCKED':
-    material: SKELETON_SKULL
     hide_attributes: true
-    priority: 2
-    slot: 10
-    view_requirement:
-      requirements:
-        Pex:
-          type: has permission
-          permission: TAG.UNDEAD_SLAYER1              
-    display_name: "&aUndead Slayer I &lUNLOCKED"
+    display_name: '&aProfession Prestiges'
     lore:
     - ''
-    - '&aBattle Tag: &cUndead Slayer I'
-    - ''
-    - '&8&l» &eClick to Use'
+    - '&8&l» &eClick to View'
     click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&cUndead Slayer I "'
-    - "[message] &aYour Battle Tag has been changed to &cUndead Slayer I&a!"
-
-  'TAG_RESET':
-    material: NAME_TAG
-    hide_attributes: true
-    priority: 1
-    slot: 41
-    display_name: "&aReset Tag"
-    lore:
-    - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - "[message] &aYour Battle Tag has been reset!"
-
-
+    - "[openguimenu] ProfessionPrestiges"

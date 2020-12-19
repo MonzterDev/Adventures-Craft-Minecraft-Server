@@ -24,7 +24,9 @@ on load:
 	set {msglists::21} to "&8[&e♦&8] &7You can invite others to a &9party &7by using &a/p invite <Name>&7!" 
 	set {msglists::22} to "&8[&e♦&8] &7Use &a/home &7to quickly travel home!" 
 	set {msglists::23} to "&8[&e♦&8] &5Legendary Engrams &7have a very rare chance of dropping from any enemy!" 
-	set {msglists::24} to "&8[&e♦&8] &5You can easily view vendor shops by using &a/Shop <Name>&7!" 
+	set {msglists::24} to "&8[&e♦&8] &7You can easily view vendor shops by using &a/Shop <Name>&7!" 
+	set {msglists::25} to "&8[&e♦&8] &7Upon reaching Level 10 of any Profession, you can speak with &aKing Donny &7in the &aTown Hall &7to prestige for rewards!" 
+	set {msglists::26} to "&8[&e♦&8] &7You can use the &eResource Collector&7, to automatically store resources you pickup by using &a/Resources&7!" 
 
 every 90 seconds:
 	send formatted "%random element of {msglists::*}%" to all players where [input has permission "Tips"]
