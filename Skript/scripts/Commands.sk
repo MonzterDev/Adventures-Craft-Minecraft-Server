@@ -427,3 +427,10 @@ command /Bosses:
     executable by: players
     trigger:
         make console execute command "/dm open Bosses %player%"
+
+command /ResourceCollector:
+    aliases: /Resource, /Collector
+    description: Return to the Lobby
+    executable by: players
+    trigger:
+        make player execute "resources"

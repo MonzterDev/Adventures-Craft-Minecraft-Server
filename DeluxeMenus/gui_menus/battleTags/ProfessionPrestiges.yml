@@ -1,4 +1,4 @@
-menu_title: '&f&l»&7&l» &8Profession Prestige Tags&7&l«&f&l«'
+menu_title: '&f&l»&7&l» &8Prestige Tags &7&l«&f&l«'
 update_interval: 1    
 size: 54
 items:
@@ -65,17 +65,26 @@ items:
 
   'Back':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
-    slot: 49
+    slot: 45
     priority: 1
     display_name: '&aGo Back'
     click_commands:
-    - "[openguimenu] Settings"
+    - "[openguimenu] BattleTags"
+  'Next':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM5ZWM3MWMxMDY4ZWM2ZTAzZDJjOTI4N2Y5ZGE5MTkzNjM5ZjNhNjM1ZTJmYmQ1ZDg3YzJmYWJlNjQ5OSJ9fX0=
+    slot: 53
+    priority: 1
+    display_name: '&aNext Page'
+    click_commands:
+    - "[openguimenu] ProfessionPrestiges2"
 
+
+#FARMING
   'FARMING_LOCKED':
     material: DIAMOND_HOE
     hide_attributes: true
     priority: 1
-    slot: 10
+    slot: 11
     view_requirement:
       requirements:
         Pex:
@@ -92,7 +101,7 @@ items:
     hide_attributes: true
     hide_enchantments: true
     priority: 2
-    slot: 10
+    slot: 11
     enchantments:
     - THORNS;1
     view_requirement:
@@ -111,11 +120,777 @@ items:
     - '[console] lp user %player_name% meta setsuffix 1 "&fFarmer✦ "'
     - "[message] &aYour Battle Tag has been changed to &fFarmer✦&a!"
 
+  'FARMING_LOCKED2':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FARMING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Farmer✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Farmer✦'
+    - ''
+    - '&7Reach &aFarming Prestige 2 &7to unlock!'
+  'FARMING_UNLOCKED2':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 12
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FARMING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Farmer✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Farmer✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Farmer✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Farmer✦&a!"
+
+  'FARMING_LOCKED3':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FARMING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Farmer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Farmer✦✦'
+    - ''
+    - '&7Reach &aFarming Prestige 3 &7to unlock!'
+  'FARMING_UNLOCKED3':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 13
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FARMING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Farmer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Farmer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Farmer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Farmer✦✦&a!"
+
+  'FARMING_LOCKED4':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FARMING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Farmer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Farmer✦✦'
+    - ''
+    - '&7Reach &aFarming Prestige 4 &7to unlock!'
+  'FARMING_UNLOCKED4':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 14
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FARMING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Farmer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Farmer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Farmer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Farmer✦✦&a!"
+
+  'FARMING_LOCKED5':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FARMING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Farmer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Farmer✦✦'
+    - ''
+    - '&7Reach &aFarming Prestige 5 &7to unlock!'
+  'FARMING_UNLOCKED5':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 15
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FARMING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Farmer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Farmer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Farmer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Farmer✦✦&a!"
+
+#FORAGING
+  'FORAGING_LOCKED':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FORAGING.PRESTIGE.1.CLAIMED              
+    display_name: "&fForager✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fForager✦'
+    - ''
+    - '&7Reach &aForaging Prestige 1 &7to unlock!'
+  'FORAGING_UNLOCKED':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 20
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FORAGING.PRESTIGE.1.CLAIMED              
+    display_name: "&fForager✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fForager✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&fForager✦ "'
+    - "[message] &aYour Battle Tag has been changed to &fForager✦&a!"
+
+  'FORAGING_LOCKED2':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FORAGING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Forager✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Forager✦'
+    - ''
+    - '&7Reach &aForaging Prestige 2 &7to unlock!'
+  'FORAGING_UNLOCKED2':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 21
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FORAGING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Forager✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Forager✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Forager✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Forager✦&a!"
+
+  'FORAGING_LOCKED3':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FORAGING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Forager✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Forager✦✦'
+    - ''
+    - '&7Reach &aForaging Prestige 3 &7to unlock!'
+  'FORAGING_UNLOCKED3':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 22
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FORAGING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Forager✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Forager✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Forager✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Forager✦✦&a!"
+
+  'FORAGING_LOCKED4':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FORAGING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Forager✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Forager✦✦'
+    - ''
+    - '&7Reach &aForaging Prestige 4 &7to unlock!'
+  'FORAGING_UNLOCKED4':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 23
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FORAGING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Forager✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Forager✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Forager✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Forager✦✦&a!"
+
+  'FORAGING_LOCKED5':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 24
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: FORAGING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Forager✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Forager✦✦'
+    - ''
+    - '&7Reach &aForaging Prestige 5 &7to unlock!'
+  'FORAGING_UNLOCKED5':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 24
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: FORAGING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Forager✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Forager✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Forager✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Forager✦✦&a!"
+
+
+#MINING
+  'MINING_LOCKED':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 29
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: MINING.PRESTIGE.1.CLAIMED              
+    display_name: "&fMiner✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fMiner✦'
+    - ''
+    - '&7Reach &aMining Prestige 1 &7to unlock!'
+  'MINING_UNLOCKED':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 29
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: MINING.PRESTIGE.1.CLAIMED              
+    display_name: "&fMiner✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fMiner✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&fMiner✦ "'
+    - "[message] &aYour Battle Tag has been changed to &fMiner✦&a!"
+
+  'MINING_LOCKED2':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 30
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: MINING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Miner✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Miner✦'
+    - ''
+    - '&7Reach &aMining Prestige 2 &7to unlock!'
+  'MINING_UNLOCKED2':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 30
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: MINING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Miner✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Miner✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Miner✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Miner✦&a!"
+
+  'MINING_LOCKED3':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 31
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: MINING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Miner✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Miner✦✦'
+    - ''
+    - '&7Reach &aMining Prestige 3 &7to unlock!'
+  'MINING_UNLOCKED3':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 31
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: MINING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Miner✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Miner✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Miner✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Miner✦✦&a!"
+
+  'MINING_LOCKED4':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 32
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: MINING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Miner✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Miner✦✦'
+    - ''
+    - '&7Reach &aMining Prestige 4 &7to unlock!'
+  'MINING_UNLOCKED4':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 32
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: MINING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Miner✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Miner✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Miner✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Miner✦✦&a!"
+
+  'MINING_LOCKED5':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: MINING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Miner✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Miner✦✦'
+    - ''
+    - '&7Reach &aMining Prestige 5 &7to unlock!'
+  'MINING_UNLOCKED5':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 33
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: MINING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Miner✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Miner✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Miner✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Miner✦✦&a!"
+
+
+#SLAYER
+  'SLAYER_LOCKED':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 38
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SLAYER.PRESTIGE.1.CLAIMED              
+    display_name: "&fSlayer✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fSlayer✦'
+    - ''
+    - '&7Reach &aSlayer Prestige 1 &7to unlock!'
+  'SLAYER_UNLOCKED':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 38
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SLAYER.PRESTIGE.1.CLAIMED              
+    display_name: "&fSlayer✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fSlayer✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&fSlayer✦ "'
+    - "[message] &aYour Battle Tag has been changed to &fSlayer✦&a!"
+
+  'SLAYER_LOCKED2':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 39
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SLAYER.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Slayer✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Slayer✦'
+    - ''
+    - '&7Reach &aSlayer Prestige 2 &7to unlock!'
+  'SLAYER_UNLOCKED2':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 39
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SLAYER.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Slayer✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Slayer✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Slayer✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Slayer✦&a!"
+
+  'SLAYER_LOCKED3':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 40
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SLAYER.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Slayer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Slayer✦✦'
+    - ''
+    - '&7Reach &aSlayer Prestige 3 &7to unlock!'
+  'SLAYER_UNLOCKED3':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 40
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SLAYER.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Slayer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Slayer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Slayer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Slayer✦✦&a!"
+
+  'SLAYER_LOCKED4':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 41
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SLAYER.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Slayer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Slayer✦✦'
+    - ''
+    - '&7Reach &aSlayer Prestige 4 &7to unlock!'
+  'SLAYER_UNLOCKED4':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 41
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SLAYER.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Slayer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Slayer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Slayer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Slayer✦✦&a!"
+
+  'SLAYER_LOCKED5':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 42
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SLAYER.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Slayer✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Slayer✦✦'
+    - ''
+    - '&7Reach &aSlayer Prestige 5 &7to unlock!'
+  'SLAYER_UNLOCKED5':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 42
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SLAYER.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Slayer✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Slayer✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Slayer✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Slayer✦✦&a!"
+
+
   'TAG_RESET':
     material: NAME_TAG
     hide_attributes: true
     priority: 1
-    slot: 50
+    slot: 49
     display_name: "&aReset Tag"
     lore:
     - ''
