@@ -1,0 +1,183 @@
+# Skungee (Spigot) - The Skript addon for Bungeecord.
+
+# The version is to help determine which version this config is. Please don't modify this value.
+version: "1.0.15"
+
+# Print additional information in the console. The developers of Skungee may ask you to enable this when reporting an error.
+debug: false
+
+# Ignores the packets that spam alot such as GLOBALSCRIPTS and HEARTBEAT in the debug.
+# Developers of Skungee may notify you to disable this option when reporting an error.
+IgnoreSpamPackets: true
+
+# The details of the Skungee Bungeecord plugin. Place the same login credentials as the Bungeecord Skungee here.
+host: 0.0.0.0
+port: 4777
+
+# All security options to protect your Skungee on Bungeecord and Spigot from possible external sources.
+# Everything in this section must match the same values as the Skungee config.yml on the Spigot servers.
+security:
+    # Debug option for security, a Skungee developer may ask you to enable this.
+    debug: false
+    # All strings get decoded in UTF_8, some symbols may not apply.
+    password:
+        # Should all packets require a password in order to be processed.
+        enabled: false
+        # Password can't be "hashed" unless instructed too (read below)
+        password: "insert password"
+        # Should Skungee add a protected hash to the password using a one-way encryption.
+        # This makes the password nearly impossible to decode if an external source somehow gets it.
+        hash: true
+        # If the hashFile option is true, set the password and then restart the server.
+        # Skungee will create a hashed file in the Skungee folder location containing your password in a hashed format.
+        # Keep in mind that the hash option above needs to be set to true.
+        # After the file has been generated, set the password option above to "hashed" (Case sensitive)
+        # Skungee will remember your original password until you change the password to anything other than "hashed" and this will be repeated.
+        # This creates a more secure system so that if someone invades your servers files, your Skungee password is protected and all your Skungee servers are protected.
+        # If you require any assistance with this option, please contact a Skungee developer.
+        hashFile: false
+        # Choose which algorithm you would like to use for the hash.
+        # Algorithms at the time this was written: MD5, SHA-1 and SHA-256 (Strongest)
+        hashAlgorithm: "SHA-256"
+    encryption:
+        # Should Skungee encrypt all sent packets.
+        enabled: false
+        # Set which Cipher algorithm you would like to use.
+        cipherAlgorithm: "AES/CBC/PKCS5Padding"
+        # The cipher key is like another password.
+        cipherKey: "insert 16 length"
+        # Should Skungee print any errors that may happen.
+        # If you come across any errors with encryption, make sure you message the developers of Skungee, and not to users in a public setting.
+        printEncryptionErrors: true
+    breaches:
+        # Breaches are even more added security, Breaches require the password or encryption option to be enabled for this to work.
+        # Breaches is a system designed to stop constant failed attempts. Since there is no threshold for how many packets can be sent a tick, this option aims to add
+        # security for that. If a(n) IP/Server fails X amount of times, what should Skungee do to protect your server. Choose from the options below.
+        enabled: false
+        # The amount of times a(n) IP/Server can fail at successfully sending security details.
+        attempts: 30
+        # Should Skungee shutdown the server if there is such an issue of security breaching?
+        # Keep in mind that someone could use this to shutdown your server, this option should only be used if you really trust the security of your server
+        # or that you have files and data that you really want to protect. We suggest not enabling it, but it's here for anyone who wants hardcore security.
+        # This option is also good to be used if your server is private.
+        shutdown: false
+        # Should Skungee block the IP/Server from sending packets if it fails X amount of times?
+        # This only blocks the IP/Server until the server is restarted again.
+        blockAddress: true
+        # Should Skungee log all events that meet the settings above in a `log.txt` within the Skungee folder?
+        log: true
+        # If the log system has picked up any external sources address, you can put it in this list below, and Skungee will remember and always block that address.
+        # Don't include the port as they could use a different port.
+        blacklisted:
+            - 123.456.7.890
+
+# Configurations related to the Socket connection between Spigot and Bungeecord Skungees'
+connection:
+    # The delay is in milliseconds between each connect.
+    delay: 1000
+    # The max amount of times Skungee should try to connect to the Skungee on the Bungeecord.
+    attempts: 20
+    # If Bungeecord Skungee is not found, Skungee will run a small non performance enducing task to constantly keep checking when the Bungeecord comes online.
+    # This option allows to define how long to wait in seconds.
+    keep-alive: 10
+    # The delay in milliseconds between each handshake packet attempt.
+    handshake-delay: 2000
+    # If the connection could not be created should Skungee disable itself?
+    disable: false
+    # When the Bungeecord disconnects, Skungee will go into keep alive mode.
+    # This defines the time in ticks before the keep alive task starts.
+    # This value should not be modified, only if a Skungee developer lets you know you can.
+    bungeecord-keep-alive-delay: 100
+
+# Reciever, this will allow for some syntax to work. Like "evaluate", "server is online", "global scripts", "network variables" and lots more.
+# This also needs to be enabled in order to run events.
+# Keep in mind that this port must not already be in use. If you run all your servers on the same machine, you will need to make
+# the port option different on each Spigot server. Like 1339, 5670, 25567... etc any port that isn't already in use.
+reciever:
+    enabled: true
+    # The port that the Reciever should run on.
+    port: 1338
+    # Should Skungee automatically determine which port to use that is open?
+    # If this is false it will use the port option above.
+    automatic: true
+    # Define the range that should be scanned for the Automatic port finder.
+    starting-port: 1000
+    max-port: 65534
+
+# This is how fast the keeping alive packet should be sent back and forth to Skungee.
+# The lower this is, the faster the accuracy. (A fast rate would be 5-10) This all depends on your server's network speeds.
+# Heartbeat is in ticks
+heartbeat: 50
+
+# Should Skungee hault the server until it recieves a value.
+# This can be critical for some users such as grabbing important network variables.
+# Information: basically Skungee will wait until the Skungee on the Bungeecord becomes active while a value is being called.
+# So if you do something like `set {_value} to network variable {example}` and this node is false and the Bungeecord Skungee is offline, this will return null.
+# If this node is true below, it will wait until the Bungeecord Skungee is found/online.
+
+# There is an alternaitve async method to this in the form of a syntax:
+# `wait until skungee connects`
+# This syntax will wait in an async thread until Skungee connects and this walking down the rest of the trigger. Which is also recommeneded.
+hault: false
+
+# Broadcast all the syntax that didn't register to the console.
+NotRegisteredSyntax: false
+
+# Converts the Enum's into proper english enums like `FADE_TYPE` will be `fade type` or `fading type` as defined in the english.lang of the jar. (Which can be edited, they parent aliases parsing)
+UseEnglishEnums: true
+
+# Disables the message saying the addon was enabled.
+DisableRegisteredInfo: false
+
+# Disables all messages to the console. Only important stack traces and information logger will be sent.
+# If you don't like Skungee constantly notifing what is going on, you can disable this.
+DisableConsoleMessages: false
+
+# Disables the colour in the console.
+DisableConsoleColour: false
+
+# Settings for GlobalScripts
+GlobalScripts:
+    # Sends a message to console stating that a script has been automatically reloaded or created. (This happens when the file on the Bungeecord gets edited/saved)
+    Messages: true
+    # Should all the scripts of this server mimic the exact scripts on the Bungeecord Skungee.
+    # WARNING: This will override any scripts that don't match the ones in the Bungeecord Skungee scripts folder.
+    # Make sure you don't have any scripts in the scripts folder of Skript on the Spigot servers.
+    MimicExact: false
+
+# Should Skungee return all players as a UUID to the spigot servers.
+# If you run a cracked offline Bungeecord network, it is best to keep this false.
+ReturnUUIDs: true
+
+# When a player is returned from Bungeecord it can't be a Player or ProxiedPlayer because for the Player class, the
+# player actually has to be online the server the syntax is calling from, and it can't be ProxiedPlayer because Spigot doesn't have that class.
+# So Skungee makes it's own custom system to handle it, and you get these wonderful settings to define how you would like it.
+#
+# Define in the node below how Skungee should return the value of "players".
+#
+# The following types are "STRING", "UUID" and "OFFLINEPLAYER" (Capitalization doesn't matter)
+# This option is best to keep on "STRING" or "OFFLINEPLAYER" if you have a cracked offline Bungeecord network.
+# Else if you run your Bungeecord network with `online_mode`, `ip_forward` and `bungeecord` option true (Online Bungeecord network), the best option would be having it as "OFFLINEPLAYER"
+SkungeeReturn: "string"
+
+# If the UUID is present, should Skungee convert to the option above using the UUID. This makes the returned "players" more accurate and less prone to mistakes.
+# If you have a cracked offline Bungeecord network, and you're using the "OFFLINEPLAYER" option, set this option to false.
+SkungeeReturnUUID: true
+
+# If a syntax returns a number that can be parsed as a timespan, should Skungee convert it into a Timespan?
+# Example: '5 minutes and 27 seconds'
+Timespans: true
+
+# Bungeecord events.
+Events: true
+
+# You can enable this to allow "set bungeecord server list version protocol to X" to work with any protocol version, X being any protocol ID
+# You may look for protocol IDs here http://wiki.vg/index.php?title=Protocol_History&printable=yes
+# Keeping this false will make Skungee recommend using the supported Bungeecord protocols and cancel any other inputed protocol.
+# This is handy if you want to make some cool text around your version/ping icon. (Example: https://imgur.com/a/t3EvLye)
+# The image was done by setting the protocol to a version that the client is older than, and then setting the name of the protocol.
+PingEventProtocolOverride: false
+
+# If you have purchased the ServerInstances expansion you will need to enable this so the Syntax can get registered to Skript.
+# This option does nothing without the expansion purchased and installed on the Bungeecord.
+ServerInstances: false

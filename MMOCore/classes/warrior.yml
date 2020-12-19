@@ -1,0 +1,123 @@
+display:
+    name: 'Warrior'
+    lore:
+    - 'The warrior has extraordinary fighting and'
+    - 'evolving capabilities, which grant him much'
+    - 'higher per-level stats than other classes.'
+    - ''
+    - 'The warrior collects rage when casting skills,'
+    - 'temporarily increasing his base damage.'
+    attribute-lore:
+    - '&a+ &7Attack Damage'
+    - '&a+ &7Attack Speed'
+    - '&a+ &7Max Health'
+    - '&a+ &7Speed Malus Reduction'
+    - '&c- &7Movement Speed'
+    - ''
+    - '&8&lStrength'
+    - '&7  Attack Damage: &c2 &7(+&c0.1&7)'
+    - '&7  Attack Speed: &c4.2 &7(+&c0.05&7)'
+    - '&7  Max Health: &c24 &7(+&c0.5&7)'
+    - ''
+    - '&8&lDexterity'
+    - '&7  Knockback Resistance: &a0% &7(+&a0%&7)'
+    - '&7  Movement Speed: &a19 &7(+&a0&7)'
+    - '&7  Speed Malus Reduction: &a40% &7(+&a2%&7)'
+    - ''
+    - '&8&lWill'
+    - '&7  Max Rage: &c20 &7(+&c1&7)'
+    - '&7  Health Regen: &90.1 &7(+&90&7)'
+    - '&7  Rage Degeneration: &9-0.5&7/s'
+    item: IRON_SWORD:0 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# Players cannot go further than Lvl 100
+max-level: 100
+
+# Warrior has rage which he gains while casting spells
+# Rage increase its skill damage. Use <mmocore.rage>
+# to get the player's rage (MythicMobs formulas)
+#
+# 'char' is the character used to generate the mana bar as a message
+# 'color' are also the colors used to generate the mana bar
+# 'icon' is the icon display on the player action bar
+# 'name' is basically displayed everywhere
+mana:
+    char: ♦
+    icon: '&4♦'
+    color:
+        full: DARK_RED
+        half: RED
+        empty: WHITE
+    name: 'Rage'
+
+# Rage charges when dealing weapon and physical damage.
+triggers:
+    weapon-damage:
+    - 'mana{operation=GIVE;amount=2-3}'
+    physical-damage:
+    - 'mana{operation=GIVE;amount=2-3}'
+    
+    level-up:
+    - 'command{format="mmocore admin skill-points give %player% 1"}'
+
+cast-particle:
+    particle: REDSTONE
+    color:
+        red: 255
+        green: 0
+        blue: 0
+
+# Rage only decays when out of combat
+options:
+    off-combat-mana-regen: true
+
+skills:
+    DEEP_WOUND:
+        level: 1
+        max-level: 30
+    WEAKEN:
+        level: 3
+        max-level: 30
+    EMPOWERED_ATTACK:
+        level: 5
+        max-level: 30
+    COMBO_ATTACK:
+        level: 7
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 10
+        max-level: 30
+    FIRE_BERSERKER:
+        level: 15
+    
+attributes:
+    mana-regeneration:
+        base: -0.5
+        per-level: 0
+    speed-malus-reduction:
+        base: 50
+        per-level: 2
+    max-mana:
+        base: 20
+        per-level: 1
+    max-health:
+        base: 24
+        per-level: 0.5
+    movement-speed:
+        base: .19
+        per-level: 0
+    attack-damage:
+        base: 2
+        per-level: 0.1
+    attack-speed:
+        base: 4.2
+        per-level: 0.05
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'
+

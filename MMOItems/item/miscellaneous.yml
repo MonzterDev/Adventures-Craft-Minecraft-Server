@@ -1,0 +1,51 @@
+ALPHA:
+  base:
+    material: BEDROCK
+    disable-repairing: false
+    disable-enchanting: false
+    name: '&eAlpharock'
+    disable-crafting: true
+    lore:
+    - '&7This item was exclusively'
+    - '&7given to the 10 most dedicated'
+    - '&7Alpha Testers in August 2020!'
+    - ''
+    - '&8&l» &eRight-Click to Make Noise'
+    disable-interaction: true
+    unbreakable: true
+    tier: EXOTIC
+    unstackable: true
+    sounds:
+      on-right-click:
+        sound: entity.firework_rocket.blast
+        volume: 0.5
+        pitch: 1.0
+    enchants:
+      unbreaking: 5.0
+    hide-enchants: true
+BUG_FINDER:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDViZWU5MTViODhmMWU0YjllODI2YmVkZmQyNDA0ODBiOGVmZTRhYWVjYTIwMGRlMTQ0NDQyNmQ5Y2YyMDA1NiJ9fX0=
+      uuid: f497b9e5-19b4-4cc6-91f9-9c07a2796771
+    tier: SPECIAL
+    unbreakable: true
+    disable-interaction: true
+    name: '&3&lBug Finder'
+    lore:
+    - '&7This is given to users who'
+    - '&7found and reported a bug without'
+    - '&7abusing it for personal gains!'
+    - '&f'
+    - '&fYou''re a true &aHERO&f!'
+UNAVAILABLE:
+  base:
+    material: RED_STAINED_GLASS_PANE
+    name: '&c&lUNAVAILABLE'
+TEST:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFhOGU2ZDI3Yjk2YzBhYTRkZjViODM0NzI2MGViMDUxYzU2OTQ0Yzk3ZDgzN2YyMjY1NWQ4ZWNiYzQ0OTEzNyJ9fX0=
+      uuid: 21e7f2f6-730c-4c7b-bac9-578518de42a0

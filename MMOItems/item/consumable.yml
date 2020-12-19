@@ -1,0 +1,834 @@
+LARGE_HEALTH_POTION:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQzNmMzMjkxZmUwMmQxNDJjNGFmMjhkZjJmNTViYjAzOTdlMTk4NTU0ZTgzNDU5OTBkYmJjZDRjMTQwMzE2YiJ9fX0=
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: '&cHeart'
+    lore: []
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    restore-health: 100.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+JOY_SOUP:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: '&fJoy Soup'
+    item-cooldown: 2.5
+    lore: []
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    restore-health: 20.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+JOY_SOUP2:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: '&9Joy Soup'
+    item-cooldown: 2
+    lore: []
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    restore-health: 50.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+JOY_SOUP3:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: '&5Joy Soup'
+    item-cooldown: 1.5
+    lore: []
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    restore-health: 75.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+LARGE_MANA_POTION:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg0NTlmM2I2NWIyM2NmYThjOWIxNDQzMjViOWJhODE0MDdiZTkzODJjZDg1OTkyZWY5NzljZjBlNzgzZjYifX19
+      uuid: 9d127b24-85df-4eab-b9fd-f419da0f2e2b
+    name: '&fLarge Mana Potion'
+    restore-mana:
+      base: 35.0
+      spread: 0.041666666666666664
+      max-spread: 0.125
+    item-cooldown: 15.0
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+SOUL:
+  base:
+    material: PLAYER_HEAD
+    name: '&5Soul'
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: false
+    lore:
+    - '&fGives you a temporary boost'
+    - '&ffrom the previous Soul owner!'
+    unbreakable: true
+    tier: LEGENDARY
+    vanilla-eating: false
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUyMDhhMDI1OGIxZWIxYTg2MDIxMjMzNDhjMjRjNWZjNjUzZDg0Njg1MjEzY2RkMzRjNjc5NTM1NDJkMGQ5MiJ9fX0=
+      uuid: 5fd69b00-23f2-4702-b513-e653a32d9d51
+    item-cooldown: 30.0
+    unstackable: true
+    effects:
+      LEVITATION:
+        duration: 5.0
+        amplifier: 1.0
+      SPEED:
+        duration: 180.0
+        amplifier: 5.0
+      ABSORPTION:
+        duration: 180.0
+        amplifier: 5.0
+      GLOWING:
+        duration: 10.0
+        amplifier: 5.0
+      INCREASE_DAMAGE:
+        duration: 180.0
+        amplifier: 5.0
+      REGENERATION:
+        duration: 120.0
+        amplifier: 3.0
+MAGICAL_ESSENSE:
+  base:
+    material: PURPLE_DYE
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    unbreakable: false
+    restore-mana: 25.0
+    tier: UNCOMMON
+    lore: []
+    name: §2Magical Essense
+MAGICAL_ESSENSE2:
+  base:
+    material: PURPLE_DYE
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    unbreakable: false
+    restore-mana: 50.0
+    tier: RARE
+    lore: []
+    name: §9Magical Essense
+MINING_BOOSTEROP:
+  base:
+    material: GLASS_BOTTLE
+    name: §9Mining Skill EXP Booster
+    lore:
+    - §fBoosts §9Mining Skill §fEXP
+    - §fby §9100% §ffor §910 mins§f.
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create mining 1 600 %player%
+        delay: 0.0
+        op: true
+    disable-interaction: false
+FORAGING_BOOSTER:
+  base:
+    material: GLASS_BOTTLE
+    name: §2Foraging Skill EXP Booster
+    lore:
+    - §fBoosts §aForaging Skill §fEXP
+    - §fby §a20% §ffor §a10 mins§f.
+    max-consume: 1.0
+    tier: UNCOMMON
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: mmocore booster create foraging .2 600 %player%
+        delay: 0.0
+        op: true
+UNDEAD_FLESH:
+  base:
+    material: DRIED_KELP
+    max-consume: 2.0
+    unbreakable: false
+    tier: RARE
+    item-cooldown: 60.0
+    name: §9Undead Flesh
+    lore:
+    - §cHeals §ffor 100 §cHP§f, §fand §cincreases
+    - §cdamage 50x §ffor 5 seconds!
+    effects:
+      INCREASE_DAMAGE:
+        duration: 5.0
+        amplifier: 50.0
+    restore-health: 150.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+EDUST:
+  base:
+    material: BOOK
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Material
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: crazyenchantments dust success 1 %player% 100
+        delay: 0.0
+    ability: {}
+    tier: RARE
+    name: §9Enchantment Bind
+    permission:
+    - enchanting.1
+    lore:
+    - '§fBinded to: §eEnchantments'
+    - §f
+    - §fIncreases enchantments
+    - §asuccess §arate §fto §a100%§f!
+    - §f
+    - '&8&l» &eRight-Click to Open'
+EPIERCING:
+  base:
+    material: BOOK
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Enchantment
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: crazyenchantments book Piercing 1 1 %player%
+        delay: 0.0
+    ability: {}
+    tier: RARE
+    name: §9Piercing I
+    permission:
+    - enchanting.1
+    lore:
+    - '§fApplied to: §eBows'
+    - §f
+    - §fHas a chance to deal
+    - §cdouble damage §fto your enemy.
+    - §f
+    - '&8&l» &eRight-Click to Consume'
+DRAC_HEART:
+  base:
+    material: PLAYER_HEAD
+    name: §2Drac's Heart
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ1ZjRkMTM5YzllODkyNjJlYzA2YjI3YWFhZDczZmE0ODhhYjQ5MjkwZDJjY2Q2ODVhMjU1NDcyNTM3M2M5YiJ9fX0=
+      uuid: 87428893-6272-4025-b021-a8da0aa6b1a5
+    restore-health: 150.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+TASTY_HONEY:
+  base:
+    material: HONEYCOMB
+    disable-crafting: true
+    enchants:
+      unbreaking: 54
+    hide-enchants: true
+    name: '&9Tasty Honey'
+    tier: RARE
+    max-consume: 3.0
+    item-cooldown: 25.0
+    restore-mana: 20.0
+    effects:
+      REGENERATION:
+        duration: 25.0
+        amplifier: 5.0
+    restore-health: 20.0
+    restore-food: 0.0
+    restore-saturation: 0.0
+REAPER_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Reaper Head
+    lore:
+    - §7Ripped right from
+    - §7the §cReaper's §7body!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set Reaper.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set Reaper.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - Reaper.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+MORDEN_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0aW1lc3RhbXAiOjE1ODYxMTkyMzk1MzAsInByb2ZpbGVJZCI6Ijc1MTQ0NDgxOTFlNjQ1NDY4Yzk3MzlhNmUzOTU3YmViIiwicHJvZmlsZU5hbWUiOiJUaGFua3NNb2phbmciLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVmYzExMTFmYzBlMGYyYzAwNDBjOTVlZDBhNjkwZWM5YWIwZDMyZTNjMDZhNTRiMTAxYzI0Mjc2MGYxMjY3ZWUifX19
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Morden Head
+    lore:
+    - §7Ripped right from the
+    - §cMorden the Undead's §7body!
+    displayed-type: Quest
+    unstackable: true
+DRACULA_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0aW1lc3RhbXAiOjE1NjM1NzMwMjMzMzQsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIyYzJlOGFiNDg5ODY0OGQyYjYwOGU2MzA0MDJlNzM0YzQ4ODc0ZTE3ZTBhODU0OGExOTAxMmQ4MDY2MzYzNiJ9fX0=
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Void Dracula Head
+    lore:
+    - §7Ripped right from the
+    - §cVoid Dracula's §7body!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set Dracula.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set Dracula.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - Dracula.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+DRYAD_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0aW1lc3RhbXAiOjE1NzE3MDkwMDQwMjMsInByb2ZpbGVJZCI6ImRlNTcxYTEwMmNiODQ4ODA4ZmU3YzlmNDQ5NmVjZGFkIiwicHJvZmlsZU5hbWUiOiJNSEZfTWluZXNraW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5ZmU1OTdkNDg3MTYxMTRhYjk0ODVlOTA3OWFjNjE1M2UzZjA1ZTljNTFiN2RjMmIxNGYzNjlhNjU0NTk1OTUifX19
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Dryad Head
+    lore:
+    - §7Ripped right from §cDryad's §7body!
+    unstackable: true
+CHIEF_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Chief Head
+    lore:
+    - §7Ripped right from the
+    - §cGoblin Chief's §7body!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set GoblinChief.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set GoblinChief.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - GoblinChief.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+WITHER_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Wither Head
+    lore:
+    - §7Ripped right from the §cVoid Wither§7!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set VoidWither.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set VoidWither.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - VoidWither.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+VOIDMAGMA_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Void Magma Head
+    lore:
+    - §7Ripped right from §cVoid Magma§7!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set VoidMagma.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set VoidMagma.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - VoidMagma.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+GHASTLY_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Ghastly Head
+    lore:
+    - §7Ripped right from §cGhastly§7!
+    - §a
+    - '&8&l» &eRight-Click to Consume'
+    commands:
+      cmd0:
+        format: lp user %player% permission set Ghastly.Timer
+        delay: 0.0
+        console: true
+      cmd1:
+        format: lp user %player% permission set Ghastly.Timer.Locked false
+        delay: 0.0
+        console: true
+    permission:
+    - Ghastly.Timer.Locked
+    max-consume: 1.0
+    displayed-type: Quest
+    unstackable: true
+BORGS_BOX:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eBorgs Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJmOTRlMzZmNjk4NjQ5YmMzZDU4ZGZkZTFiMmI2NTUyZDA2ODIwMGJmZDhiMTM3MmUzM2Q0NTY2ZTZhNzhkOCJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&cBorg''s box &7have been scattered'
+    - '&7through the world and you found one!'
+    - '&7'
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen BorgsBox %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+MAGICAL_BOX:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eMagical Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ1ZTljNDY5ZDUzY2ZiYjE2ZjlmNmVmY2FhYzY5ZmI3YWZjYjdiODcxMzU5MzdhODIwOThkMzRhZDEwNjliYSJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&5Magical boxes &7hold &dSpells'
+    - '&7created by powerful &4Warlocks&7!'
+    - '&7'
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen MagicalBox %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+PROFESSION_BOOSTER_BOX:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eProfession Booster Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen BoosterBox %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+UNDEAD_BOX:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eUndead Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen UndeadSkins %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+HELL_BOX:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eHell Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen HellSkins %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+BANK_TOKEN:
+  base:
+    material: SUNFLOWER
+    name: '&9Bank Token'
+    unstackable: true
+    tier: RARE
+    lore:
+    - '&7Gain an extra 18 Bank Slots!'
+    - '&7'
+    - '&8&l» &eClick to Use'
+    commands:
+      cmd0:
+        format: bank admin slots add %player% 18
+        delay: 0.0
+        op: true
+    max-consume: 1.0
+BANK_TOKEN4:
+  base:
+    material: SUNFLOWER
+    name: '&eBank Token'
+    unstackable: true
+    tier: EXOTIC
+    lore:
+    - '&7Gain an extra 54 Bank Slots!'
+    - '&7'
+    - '&8&l» &eClick to Use'
+    commands:
+      cmd0:
+        format: bank admin slots add %player% 54
+        delay: 0.0
+        op: true
+    max-consume: 1.0
+UNLIMITED_WATER:
+  base:
+    material: WATER_BUCKET
+    name: '&9Unlimited Water Bucket'
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&7The bucket which never runs out!'
+    commands:
+      cmd0:
+        format: GiveUnlimitedWaterBucket
+        delay: 0.0
+        op: true
+    max-consume: 1.0
+    hide-enchants: true
+    displayed-type: Miscellaneous
+XP_BOTTLE1:
+  base:
+    material: EXPERIENCE_BOTTLE
+    tier: COMMON
+    name: '&fExperience Bottle'
+    max-consume: 1.0
+    lore:
+    - '&7Consume to receive experience orbs!'
+    commands:
+      cmd0:
+        format: experience add %player% 2500
+        delay: 0.0
+        op: true
+    sounds:
+      on-consume:
+        sound: minecraft:entity.experience_orb.pickup
+        volume: 1.0
+        pitch: 2.0
+XP_BOTTLE2:
+  base:
+    material: EXPERIENCE_BOTTLE
+    tier: UNCOMMON
+    name: '&2Experience Bottle'
+    max-consume: 1.0
+    lore:
+    - '&7Consume to receive experience orbs!'
+    commands:
+      cmd0:
+        format: experience add %player% 25000
+        delay: 0.0
+        op: true
+    sounds:
+      on-consume:
+        sound: minecraft:entity.experience_orb.pickup
+        volume: 1.0
+        pitch: 1.5
+XP_BOTTLE3:
+  base:
+    material: EXPERIENCE_BOTTLE
+    tier: RARE
+    name: '&9Experience Bottle'
+    max-consume: 1.0
+    lore:
+    - '&7Consume to receive experience orbs!'
+    commands:
+      cmd0:
+        format: experience add %player% 250000
+        delay: 0.0
+        op: true
+    sounds:
+      on-consume:
+        sound: minecraft:entity.experience_orb.pickup
+        volume: 1.0
+        pitch: 1
+ENCHANTED_BOX1:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&fEnchanted Box'
+    tier: COMMON
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY1MDViMWJlZmJhMjQyMTcwYTQ2ZTg5NDdiNTJhZWE1NGE1OTA2MGYzZTFjMzZmMjFjZWJiNDQ2OTBmOGIwYyJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&7Rewards a random Enchanting Stone with'
+    - '&7a lower chance to reward rare stones!'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen Enchanting1 %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+ENCHANTED_BOX2:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&2Enchanted Box'
+    tier: UNCOMMON
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMwMzBjYzM1ZmRlMDIxOGRlZDViYTVkNTU3Y2NhOWUwM2RjYmM4NGY5ZTY3MjkxMWRhNTRmZTA3YzVmZGJiYiJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&7Rewards a random Enchanting Stone with'
+    - '&7a low chance to reward rare stones!'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen Enchanting2 %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+ENCHANTED_BOX3:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&9Enchanted Box'
+    tier: RARE
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJlMmJhZjQwZmQ4NWViNTczZmU1YjJlNWI2Yzg4MTdjZjUwZjg4M2Q5NTc2OTQxNTgwN2FiMDcyODhhNDdjZCJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&7Rewards a random Enchanting Stone with'
+    - '&7a fair chance to reward rare stones!'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen Enchanting3 %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+ENCHANTED_BOX4:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&5Enchanted Box'
+    tier: LEGENDARY
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM5MmU1MTExZWE3ZDdlYjNmMDU1ODMzZTFmMzVkNjUxYzBkYTU1NjQzYzkzODNlMGJjZTZjMjM2OTZkNThiOSJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&7Rewards a random Enchanting Stone with'
+    - '&7a high chance of reward rare stones!'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen Enchanting3 %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+ENCHANTED_BOX5:
+  base:
+    material: PLAYER_HEAD
+    disable-interaction: false
+    name: '&eEnchanted Box'
+    tier: EXOTIC
+    max-consume: 1.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUzZmExYjU3ZTRmNzg0ZDE2ZTVhMmRhYTJmNzQ2YjJlY2ZlNjI0Y2NkNzRhNGQ0YWNjNmEyZTZhMDgzZjU0ZSJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    lore:
+    - '&7Rewards a random Enchanting Stone with'
+    - '&7a higher chance of reward rare stones!'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    commands:
+      cmd0:
+        format: crates forceopen Enchanting3 %player%
+        delay: 0.0
+        op: true
+    displayed-type: Lootbox
+THRALL_BALL:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMDFiOTUzYzg4ODU5NGE1N2EzNzY1YjA4YjU5NzIxNTcyNmM2NTkwYTJmNzMwZjA0N2NiOTU1YTI5ZmRmYWI2In19fQ==
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    name: §9Thraw Ball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: THRALL_BALL
+        mode: RIGHT_CLICK
+        cooldown: 2.0
+        mana: 5.0
+        heal: 25.0
+        damage: 100.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Throw the ball of &cVoid Thrall
+    - §eeggs §7at &cenemies&7, corrupting them!
+    item-cooldown: 2.0
+    max-consume: 1.0
+CHORUS_LEAP:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU5MzM1ZDkxYmIzOWJhNjg1YmE1NjEyY2NmY2FlOGFhZGEzNDYxYTlkMDc4NjZjZDRlMGIyNjZjODY0ZTEwNyJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    name: §9Chorus Leap
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Use to traverse deeper into the §5Void§7!
+    - ''
+    - '&8&l» &eRight-Click to Use'
+    item-cooldown: 2.0
+    max-consume: 1.0
+    commands:
+      cmd0:
+        format: warp Void2
+        delay: 0.0
+        op: true

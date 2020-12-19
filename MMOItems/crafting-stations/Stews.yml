@@ -1,0 +1,275 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fStews §7§l«§f§l«
+items:
+  fill:
+    material: BROWN_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  HealingStew:
+    output:
+      type: STEW
+      id: HEALING_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=MELON_SLICE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  HealingStew2:
+    output:
+      type: STEW
+      id: HEALING_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=MELON_SLICE,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=2}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  HealingStew3:
+    output:
+      type: STEW
+      id: HEALING_STEW3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MELON,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=4}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  ManaStew:
+    output:
+      type: STEW
+      id: MANA_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=LAPIS_LAZULI,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  ManaStew2:
+    output:
+      type: STEW
+      id: MANA_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=LAPIS_LAZULI,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=3}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  ManaStew3:
+    output:
+      type: STEW
+      id: MANA_STEW3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=4}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  RegenStew:
+    output:
+      type: STEW
+      id: REGEN_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=GHAST_TEAR,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  RegenStew2:
+    output:
+      type: STEW
+      id: REGEN_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=GHAST_TEAR,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=3}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  RegenStew3:
+    output:
+      type: STEW
+      id: REGEN_STEW3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GHAST_TEAR,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=6}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  StrengthStew:
+    output:
+      type: STEW
+      id: STRENGTH_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=BLAZE_ROD,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  StrengthStew2:
+    output:
+      type: STEW
+      id: STRENGTH_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=BLAZE_ROD,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=4}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  StrengthStew3:
+    output:
+      type: STEW
+      id: STRENGTH_STEW3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=8}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  SwiftStew:
+    output:
+      type: STEW
+      id: SWIFT_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=SUGAR,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  SwiftStew2:
+    output:
+      type: STEW
+      id: SWIFT_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=SUGAR,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=3}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  SwiftStew3:
+    output:
+      type: STEW
+      id: SWIFT_STEW3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SUGAR,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=6}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  JumpStew:
+    output:
+      type: STEW
+      id: JUMP_STEW
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=RABBIT_FOOT,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=1}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  JumpStew2:
+    output:
+      type: STEW
+      id: JUMP_STEW2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=RABBIT_FOOT,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=4}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  MinerSnack1:
+    output:
+      type: STEW
+      id: MINERS_SNACK
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=64}
+    - vanilla{type=COAL,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=2}
+    - profession{profession=Mining,level=2}
+    triggers:
+    - exp{profession=Cooking,amount=100}
+  MinerSnack2:
+    output:
+      type: STEW
+      id: MINERS_SNACK2
+    ingredients:
+    - vanilla{type=NETHER_WART,amount=128}
+    - vanilla{type=COAL,amount=128}
+    - vanilla{type=GLOWSTONE_DUST,amount=64}
+    - vanilla{type=REDSTONE,amount=64}
+    conditions:
+    - profession{profession=Cooking,level=3}
+    - profession{profession=Mining,level=3}
+    triggers:
+    - exp{profession=Cooking,amount=200}
+  MinerSnack3:
+    output:
+      type: STEW
+      id: MINERS_SNACK3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=1}
+    conditions:
+    - profession{profession=Cooking,level=4}
+    - profession{profession=Mining,level=5}
+    triggers:
+    - exp{profession=Cooking,amount=300}
+  MinerSnack4:
+    output:
+      type: STEW
+      id: MINERS_SNACK4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=8}
+    conditions:
+    - profession{profession=Cooking,level=5}
+    - profession{profession=Mining,level=7}
+    triggers:
+    - exp{profession=Cooking,amount=400}

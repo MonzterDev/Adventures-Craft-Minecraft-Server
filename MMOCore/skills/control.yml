@@ -1,0 +1,24 @@
+name: Control
+lore:
+- Your target is temporarily slowed for &8{duration} &7seconds.
+- As soon as you left click, it gets
+- pushed back where you are looking at.
+- 'Knockback force: &f{knockback}%'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: MAGENTA_DYE
+duration:
+  base: 2.0
+  per-level: 0.0
+mana:
+  base: 15.0
+  per-level: 1.5
+cooldown:
+  base: 18.0
+  per-level: -0.3
+  max: 20.0
+  min: 10.0
+knockback:
+  base: 30.0
+  per-level: 3.0

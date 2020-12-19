@@ -1,0 +1,38 @@
+'1':
+  base:
+    required-power: 2
+    min-xp: 10
+    max-xp: 20
+    gen-template: basic-template
+    material: STONE
+    block-id: 1
+    name: '&aMy First Custom Block'
+'2':
+  base:
+    material: STONE
+    block-id: 2
+    name: '&bMy Second Custom Block'
+'3':
+  base:
+    lore: []
+    material: END_STONE
+    block-id: 3
+BEDROCK:
+  base:
+    material: BEDROCK
+    tier: EXOTIC
+    unbreakable: true
+    lore:
+    - '&cThis is placeable, and unable'
+    - '&cto be broken or unplaced!'
+    - '&cPlace with CAUTION!'
+    name: '&eBedrock'
+TEST:
+  base:
+    material: DIRT
+    lore:
+    - lore est
+    custom-nbt:
+    - NBT TEst
+    name: '&ATest'
+    tier: RARE

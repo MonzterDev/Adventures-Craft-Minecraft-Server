@@ -1,0 +1,275 @@
+menu_title: '&f&l»&7&l» &8Home &7&l«&f&l«'
+size: 54
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 49
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[openguimenu] main"
+
+  'HomeInfo':
+    material: head-%plotsquared_currentplot_owner%
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    view_requirement:
+      requirements:
+        example_2:
+          type: "!string equals"
+          input: "%plotsquared_currentplot_owner%"
+          output: ""
+    display_name: "&a%plotsquared_currentplot_owner%'s Home"
+    lore:
+    - ''
+    - '&8&l» &eClick to View Info'
+    right_click_commands:
+    - "[player] p info"
+    left_click_commands:
+    - "[player] p info"
+  'HomeInfo2':
+    material: OAK_SIGN
+    hide_attributes: true
+    priority: 0
+    slot: 13
+    view_requirement:
+      requirements:
+        example_2:
+          type: string equals
+          input: "%plotsquared_currentplot_owner%"
+          output: ""
+    display_name: "&aHome Info"
+    lore:
+    - ''
+    - '&7You must be in a Home to view info!'
+
+  'VISIT':
+    material: OAK_DOOR
+    hide_attributes: true
+    priority: 1
+    slot: 19
+    display_name: '&a/Home Visit <name>'
+    lore:
+    - ''
+    - '&7Visit another player''s Home!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Visit (name) &e- &fVisit another player's home"
+
+  'CHAT':
+    material: OAK_SIGN
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    display_name: '&a/Home Chat'
+    lore:
+    - ''
+    - '&7Toggle your chat to only members in your Home!'
+    - ''
+    - '&8&l» &eClick to Toggle'
+    click_commands:
+    - "[player] p toggle chat"
+
+  'DELETE':
+    material: CAULDRON
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    display_name: '&a/Home Delete'
+    lore:
+    - ''
+    - '&7Deletes your entire Home (USE WITH CAUTION)!'
+    - ''
+    - '&8&l» &eClick to Delete'
+    click_commands:
+    - "[player] p delete"
+
+  'KICK':
+    material: OAK_BOAT
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    display_name: '&a/Home Kick <name>'
+    lore:
+    - ''
+    - '&7Remove a User who is currently in your Home!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Kick (name) &e- &fRemoves a User who is currently in your Home!"
+
+  'BAN':
+    material: TNT_MINECART
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    display_name: '&a/Home Ban <name>'
+    lore:
+    - ''
+    - '&7Prevent a User from entering your home!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Ban (name) &e- &fPrevent a User from entering your Home!"
+
+  'UNBAN':
+    material: MINECART
+    hide_attributes: true
+    priority: 1
+    slot: 24
+    display_name: '&a/Home Unban <name>'
+    lore:
+    - ''
+    - '&7Allows a banned User back into your Home!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Unban (name) &e- &fAllows a banned User back into your home"
+
+  'SET':
+    material: LIGHT_WEIGHTED_PRESSURE_PLATE
+    hide_attributes: true
+    priority: 1
+    slot: 25
+    display_name: '&a/Home Set'
+    lore:
+    - ''
+    - '&7Change the position of /home!'
+    - ''
+    - '&8&l» &eClick to Set'
+    click_commands:
+    - "[player] home set"
+
+  'SETOWNER':
+    material: HOPPER
+    hide_attributes: true
+    priority: 1
+    slot: 28
+    display_name: '&a/Home SetOwner <name>'
+    lore:
+    - ''
+    - '&7Sets a new Owner of your Home (USE WITH CAUTION)!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home SetOwner (name) &e- &fSets a new Owner of your home (USE WITH CAUTION)"
+
+  'ADD':
+    material: CHEST
+    hide_attributes: true
+    priority: 1
+    slot: 29
+    display_name: '&a/Home Add <name>'
+    lore:
+    - ''
+    - '&7Allow the User to build in the'
+    - '&7home while the Owner is online!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Add (name) &e- &fAllow the User to build in the home while the Owner is online"
+  'UNADD':
+    material: TRAPPED_CHEST
+    hide_attributes: true
+    priority: 1
+    slot: 30
+    display_name: '&a/Home Unadd <name>'
+    lore:
+    - ''
+    - '&7Removes a User who was given permission'
+    - '&7to build while the Owner is online!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Unadd (name) &e- &fRemoves a User who was given permission to build while the Owner is online"
+
+  'TRUST':
+    material: LAVA_BUCKET
+    hide_attributes: true
+    priority: 1
+    slot: 31
+    display_name: '&a/Home Trust <name>'
+    lore:
+    - ''
+    - '&7Allow the User to build in the home at all times!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Trust (name) &e- &fAllow the User to build in the home at all times"
+  'UNTRUST':
+    material: BUCKET
+    hide_attributes: true
+    priority: 1
+    slot: 32
+    display_name: '&a/Home Untrust <name>'
+    lore:
+    - ''
+    - '&7Removes User from building in the home at all times!'
+    - ''
+    - '&8&l» &eClick to View Command'
+    click_commands:
+    - "[message] &6/Home Trust (name) &e- &fAllow the User to build in the home at all times"

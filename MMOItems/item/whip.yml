@@ -1,0 +1,199 @@
+BONEWHIP:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    attack-damage: 40.0
+    unbreakable: true
+    tier: LEGENDARY
+    name: '&5Bonewhip'
+    range: 3.0
+    attack-speed: 2.0
+    unstackable: true
+    faction-damage-undead: 15.0
+BONEWHIP2:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    attack-damage: 95.0
+    unbreakable: true
+    tier: EXOTIC
+    name: '&eBonewhip'
+    attack-speed: 4
+    ability:
+      ability1:
+        type: CORRUPT
+        mode: RIGHT_CLICK
+        mana: 10.0
+        damage: 20.0
+        cooldown: 5.0
+    lore:
+    - §7The &cReaper &7used this
+    - §7for his own Minions!
+    range: 4.0
+    unstackable: true
+    faction-damage-undead: 20.0
+HELLS_FURRY:
+  base:
+    material: LEAD
+    name: §5Hell's Fury
+    tier: LEGENDARY
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+    upgrade:
+      max: 10
+      template: hells-fury
+      workbench: true
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    lore:
+    - §7Unleash §chell §7upon your enemies!
+    unstackable: true
+    attack-damage: 75.0
+    range: 3.0
+    faction-damage-hell: 20.0
+VOID_WHIP:
+  base:
+    material: LEAD
+    name: §9Void Whip
+    tier: RARE
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+    critical-strike-power: 25.0
+    lore:
+    - §7Unleash §chell §7upon your enemies!
+    unstackable: true
+    attack-damage: 100.0
+    range: 3.0
+    faction-damage-hell: 10.0
+THUNDRA_WHIP:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    unbreakable: true
+    attack-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 45
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 2
+      spread: 0.1
+      max-spread: 0.3
+    range: 3.0
+    tier: RARE
+    name: '&9Thundra Whip'
+    faction-damage-hell: 30.0
+    unstackable: true
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: ON_HIT
+        damage: 25.0
+        radius: 1.0
+        cooldown: 2.5
+THUNDRA_WHIP2:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    unbreakable: true
+    attack-damage:
+      base: 100
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 5
+      spread: 0.1
+      max-spread: 0.3
+    range: 4.0
+    tier: LEGENDARY
+    name: '&5Thundra Whip'
+    faction-damage-hell: 50.0
+    unstackable: true
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: ON_HIT
+        damage: 50.0
+        radius: 2.0
+        cooldown: 2.5
+    gem-sockets:
+    - Uncolored      
+STEEL_WHIP:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    unbreakable: true
+    attack-damage:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 10
+      spread: 0.1
+      max-spread: 0.3
+    projectile-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    range: 4.0
+    tier: RARE
+    name: '&9Steel Whip'
+    faction-damage-void: 30.0
+    unstackable: true
+STEEL_WHIP2:
+  base:
+    material: LEAD
+    will-break: true
+    disable-smelting: true
+    disable-enchanting: false
+    disable-repairing: false
+    disable-crafting: true
+    unbreakable: true
+    attack-damage:
+      base: 80
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 15
+      spread: 0.1
+      max-spread: 0.3
+    projectile-damage:
+      base: 60
+      spread: 0.1
+      max-spread: 0.3
+    range: 4.0
+    tier: LEGENDARY
+    name: '&5Steel Whip'
+    faction-damage-void: 50.0
+    unstackable: true
+    gem-sockets:
+    - Uncolored      

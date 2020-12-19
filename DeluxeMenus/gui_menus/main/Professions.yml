@@ -1,0 +1,208 @@
+menu_title: '&f&l»&7&l» &8Professions &7&l«&f&l«'
+open_command: Professions
+size: 44
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[openguimenu] main"
+
+###TOP ROW
+  'Farming':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aFarming Skill Level %mmocore_profession_Farming%'
+    lore:
+    - '&7Help around the Farm, and'
+    - '&7harvest crops to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Farming%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Farming% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Farming"
+    left_click_commands:
+    - "[openguimenu] Farming"
+    
+  'Foraging':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aForaging Skill Level %mmocore_profession_Foraging%'
+    lore:
+    - '&7Chop down trees and help'
+    - '&7in the Forest to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Foraging%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Foraging% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Foraging"
+    left_click_commands:
+    - "[openguimenu] Foraging"
+    
+  'Mining':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aMining Skill Level %mmocore_profession_Mining%'
+    lore:
+    - '&7Adventure through the Mine and'
+    - '&7excavate rare minerals to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Mining%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Mining% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Mining"
+    left_click_commands:
+    - "[openguimenu] Mining"
+    
+  'Slayer':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aSlayer Skill Level %mmocore_profession_Slayer%'
+    lore:
+    - '&7Help around the world by'
+    - '&7defeating monsters to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Slayer%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Slayer% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Slayer"
+    left_click_commands:
+    - "[openguimenu] Slayer"
+    
+  'Enchanting':
+    material: Book
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: '&aEnchanting Skill Level %mmocore_profession_Enchanting%'
+    lore:
+    - '&7Improve your gear at the'
+    - '&aEnchanter &7to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Enchanting%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Enchanting% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Enchanting"
+    left_click_commands:
+    - "[openguimenu] Enchanting"
+
+###SECOND ROW
+
+  'Cooking':
+    material: RABBIT_STEW
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    display_name: '&aCooking Skill Level %mmocore_profession_Cooking%'
+    lore:
+    - '&7Cook Stews & Totems with'
+    - '&7the &aChef &7to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Cooking%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Cooking% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Cooking"
+    left_click_commands:
+    - "[openguimenu] Cooking"
+
+  'Spellforging':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    display_name: '&aSpellforging Skill Level %mmocore_profession_Spellforging%'
+    lore:
+    - '&7Forge Spells & Wands at'
+    - '&7the &aWizard &7to earn XP!'
+    - ''
+    - '&fCurrent Level: &e%mmocore_profession_Spellforging%'
+    - '&7Progress to next level: &e%mmocore_profession_percent_Spellforging% &f/ &e100%'
+    - ''
+    - '&8&l» &eClick to View'
+    right_click_commands:
+    - "[openguimenu] Spellforging"
+    left_click_commands:
+    - "[openguimenu] Spellforging"
+
+  'Fishing':
+    material: FISHING_ROD
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    display_name: '&aFishing Skill'
+    lore:
+    - '&7Coming soon...'

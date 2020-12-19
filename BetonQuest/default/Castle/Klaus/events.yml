@@ -1,0 +1,24 @@
+#FIRST QUEST Hunting the Undead
+quest1_start: 'objective start KillUndead'
+quest1_KillUndeadFirst: 'objective start KillUndeadFirst'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f Slay 100 Undead within the Courtyard&f!"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: 'folder reward_message,QuestRewards'
+reward_message: "run ^message \n&6&lQuest Complete:&f \nRevive Morden&f! \n \n \n &6&lRewards: \n&8&l » &d 100 EXP \n&8&l » &d 100 Slayer EXP \n&8&l » &e 50 Coins \n \n \n&aThis quest can be repeated from /questmenu!"
+QuestRewards: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 50"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder GiveKlausPoint,entry_q1_part1_remove,tag_q1_part1_remove,tag_q1_completed'
+tag_q1_part1_remove: 'tag del q1_part1'
+entry_q1_part1_remove: 'journal remove q1_part1'
+tag_q1_completed: 'tag add q1_part1_completed'
+
+spawnboss: 'run ^command mm mobs spawn GammaBoss 1 Spawn,-43,17,434,-27,12'
+warpplayer: 'run ^sudo warp Morden'
+mordenrewards: 'chat /mordenrewards'
+questmenu: 'run ^command dm open Quests %player%'
+minequestmenu: 'run ^command dm open Minequests %player%'
+GiveKlausPoint: 'point Klaus 1'

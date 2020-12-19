@@ -1,0 +1,182 @@
+WOODENSWORD:
+  base:
+    material: wooden_sword
+    name: §fWooden Sword
+    attack-damage: 4.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+STONESWORD:
+  base:
+    material: STONE_sword
+    name: '&fStone sword'
+    attack-damage: 5.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+GOLDSWORD:
+  base:
+    material: golden_sword
+    name: '&fGolden sword'
+    attack-damage: 5.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+IRONSWORD:
+  base:
+    material: iron_sword
+    name: '&fIron sword'
+    attack-damage: 6.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+DIAMONDSWORD:
+  base:
+    material: diamond_sword
+    name: '&fDiamond sword'
+    attack-damage: 7.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+    custom-model-data: 0.0
+SILVER_SWORD:
+  base:
+    material: IRON_SWORD
+    name: '&fSilver Sword'
+    attack-damage: 30.0
+    lore:
+    - '&7May be upgraded.'
+    unbreakable: true
+    tier: COMMON
+    upgrade:
+      template: silver-sword
+      workbench: true
+      max: 10
+    faction-damage-undead: 5.0
+    durability: 1.0
+BASIC_SWORD:
+  base:
+    material: WOODEN_SWORD
+    attack-damage: 15.0
+    unbreakable: true
+    enchants:
+      sharpness: 5
+    name: §rBasic Sword
+    hide-enchants: true
+    lore:
+    - §rEnjoy your §lBasic Sword§r!
+    disable-interaction: false
+    tier: COMMON
+    ability: {}
+BONE_SWORD1:
+  base:
+    material: IRON_SWORD
+    disable-interaction: false
+    disable-crafting: true
+    unbreakable: true
+    tier: RARE
+    name: §9Bone Sword
+    faction-damage-undead: 50.0
+    attack-damage: 95.0
+    critical-strike-power: 15.0
+    gem-sockets:
+    - Uncolored
+    durability: 2.0
+BONE_SWORD2:
+  base:
+    material: GOLDEN_SWORD
+    disable-interaction: false
+    disable-crafting: true
+    unbreakable: true
+    tier: EXOTIC
+    name: §eBone Sword
+    faction-damage-undead: 75.0
+    attack-damage: 125.0
+    critical-strike-power: 30.0
+    lore:
+    - §7This sword is a trophy for those
+    - §7who defeated §cMorden the Revived§7!
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    durability: 1.0
+GOD:
+  base:
+    material: IRON_SWORD
+    attack-damage: 9999999.0
+    ability:
+      ability1:
+        type: BLIZZARD
+        duration: 5.0
+        damage: 1000.0
+        cooldown: 0.0
+        mode: RIGHT_CLICK
+MAGMA_BLADE:
+  base:
+    material: GOLDEN_SWORD
+    name: '&5Magma Blade'
+    disable-crafting: true
+    attack-damage: 125.0
+    critical-strike-chance: 15.0
+    unbreakable: true
+    tier: LEGENDARY
+    fire-damage-reduction: 100.0
+    gem-sockets:
+    - Uncolored
+    lore:
+    - '&cIgnite &7enemy for &c5secs &7dealing &c100 damage'
+    - '&7per second. If the enemy is already ignited,'
+    - '&7they will be hit with an additional &c1500 damage&7!'
+    ability:
+      ability1:
+        type: HELLFIRE
+        mode: RIGHT_CLICK
+        mana: 20.0
+        cooldown: 2.5
+    critical-strike-power: 35.0
+    faction-damage-void: 25.0
+    durability: 2.0
+BULBLIN_SWORD:
+  base:
+    material: DIAMOND_SWORD
+    disable-interaction: false
+    disable-crafting: true
+    unbreakable: true
+    tier: LEGENDARY
+    name: §5Bulblin Sword
+    faction-damage-void: 25.0
+    attack-damage: 175.0
+    critical-strike-power: 45.0
+    lore:
+    - §7Forged deep in the §5Void §7from massive
+    - §7amounts of darkness and §8corruption§7!
+    gem-sockets:
+    - Uncolored
+BULBLIN_SWORD2:
+  base:
+    material: NETHERITE_SWORD
+    disable-interaction: false
+    disable-crafting: true
+    unbreakable: true
+    tier: EXOTIC
+    name: §eBulblin Sword
+    faction-damage-void: 50.0
+    attack-damage: 250.0
+    critical-strike-power: 75.0
+    lore:
+    - §aHeal §7yourself for up to §a50% §7of your §amax HP
+    - §7and deal up to §c1,250 damage §7to nearby enemies,
+    - §7based on how many enemies are around you!
+    - §7
+    - §7Forged deep in the §5Void §7from massive
+    - §7amounts of darkness and §8corruption§7!
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    - Uncolored
+    ability:
+      ability1:
+        type: DRAIN
+        mode: RIGHT_CLICK
+        mana: 50.0
+        cooldown: 10

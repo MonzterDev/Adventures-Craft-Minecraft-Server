@@ -1,0 +1,48 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fTest Shop §7§l«§f§l«
+items:
+  fill:
+    material: YELLOW_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  MARKING_BOW:
+    output:
+      type: BOW
+      id: MARKING_BOW
+    conditions:
+    - 'level{level=0}'
+  UNDEAD_BOW:
+    output:
+      type: BOW
+      id: UNDEAD_BOW
+    conditions:
+    - 'level{level=0}'
+  LUNDEAD_BOW:
+    output:
+      type: BOW
+      id: LUNDEAD_BOW
+    conditions:
+    - 'level{level=0}'
+  FLAME_BOW:
+    output:
+      type: BOW
+      id: FLAME_BOW
+    conditions:
+    - 'level{level=0}'
+  JOYS_BOW:
+    output:
+      type: BOW
+      id: JOYS_BOW
+    conditions:
+    - 'level{level=0}'
+  HEAVY_BOW:
+    output:
+      type: BOW
+      id: HEAVY_BOW
+    conditions:
+    - 'level{level=0}'

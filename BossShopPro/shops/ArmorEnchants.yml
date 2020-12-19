@@ -1,0 +1,1977 @@
+ShopName: ArmorEnchants
+DisplayName: '&7&l»»&fArmor Enchants&7&l««'
+Command: ArmorEnchants
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  Protection5:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rProtection 5 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §710 EXP'
+    - 'lore9:§8§l» §764 Diamonds'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Protection 5
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+      - - type:DIAMOND
+        - amount:64
+    Message: '&aSERVER » &fYou bought &aProtection 5&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    InventoryLocation: 12
+  Protection5L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cProtection 5 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 1'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 12
+  Protection10:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rProtection 10 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §91 Enchanted Diamond'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Protection 10
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:Diamond
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Diamond
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aProtection 10&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting3
+    InventoryLocation: 13
+  Protection10L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cProtection 10 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 3'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 13
+  Protection15:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rProtection 15 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §98 Enchanted Diamonds'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Protection 15
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:Diamond
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Diamond
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aProtection 15&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting5
+    InventoryLocation: 14
+  Protection15L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cProtection 15 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 5'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 14
+  Protection20:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rProtection 20 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §740 EXP'
+    - 'lore9:§8§l» §916 Enchanted Diamonds'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Protection 20
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:Diamond
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Diamond
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aProtection 20&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 15
+  Protection20L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cProtection 20 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 7'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 15
+  Protection25:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rProtection 25 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §750 EXP'
+    - 'lore9:§8§l» §932 Enchanted Diamonds'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Protection 25
+    - mmocore admin exp give %name% enchanting 500
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:Diamond
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Diamond
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aProtection 25&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting10
+    InventoryLocation: 16
+  Protection25L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&cProtection 25 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Reduce your damage taken from enemies!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 10'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 16
+  Thorns25:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rThorns 25 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §710 EXP'
+    - 'lore9:§8§l» §91 Enchanted Cactus'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Thorns 25
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+        - type:Cactus
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Cactus
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aThorns 25&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting2
+    InventoryLocation: 21
+  Thorns25L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rThorns 25 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 2'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 21
+  Thorns50:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rThorns 50 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §98 Enchanted Cactus'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Thorns 50
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:Cactus
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Cactus
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aThorns 50&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 22
+  Thorns50L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rThorns 50 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 4'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 22
+  Thorns75:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rThorns 75 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §916 Enchanted Cactus'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Thorns 75
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:Cactus
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Cactus
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aThorns 75&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting6
+    InventoryLocation: 23
+  Thorns75L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rThorns 75 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 6'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 23
+  Thorns100:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rThorns 100 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §740 EXP'
+    - 'lore9:§8§l» §932 Enchanted Cactus'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Thorns 100
+    - mmocore admin exp give %name% enchanting 400
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:Cactus
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Cactus
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aThorns 100&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting8
+    InventoryLocation: 24
+  Thorns100L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rThorns 100 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 8'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 24
+  Thorns125:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rThorns 125 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §750 EXP'
+    - 'lore9:§8§l» §964 Enchanted Cactus'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Thorns 125
+    - mmocore admin exp give %name% enchanting 500
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:Cactus
+        - amount:64
+        - durability:0
+        - name:&9Enchanted Cactus
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aThorns 125&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,DIAMOND_CHESTPLATE,DIAMOND_LEGGINGS,DIAMOND_BOOTS,GOLDEN_HELMET,GOLDEN_CHESTPLATE,GOLDEN_LEGGINGS,GOLDEN_BOOTS,LEATHER_HELMET,LEATHER_CHESTPLATE,LEATHER_LEGGINGS,LEATHER_BOOTS,IRON_HELMET,IRON_CHESTPLATE,IRON_LEGGINGS,IRON_BOOTS,CHAINMAIL_HELMET,CHAINMAIL_CHESTPLATE,CHAINMAIL_LEGGINGS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting10
+    InventoryLocation: 25
+  Thorns125L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rThorns 125 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Redirect damage from your enemies back to them!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eArmor'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 10'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 25
+  Respiration1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRespiration 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §710 EXP'
+    - 'lore9:§8§l» §764 Raw Cod'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Respiration 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 10.0
+      PriceType2: ITEM
+      Price2:
+      - - type:COD
+        - amount:64
+    Message: '&aSERVER » &fYou bought &aRespiration 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,GOLDEN_HELMET,LEATHER_HELMET,IRON_HELMET,CHAINMAIL_HELMET'            
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 30
+  Respiration1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRespiration 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 4'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 30
+  Respiration2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRespiration 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §91 Enchanted Fish'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Respiration 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:COD
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Fish
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aRespiration 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,GOLDEN_HELMET,LEATHER_HELMET,IRON_HELMET,CHAINMAIL_HELMET'            
+    - type:permission
+    - match:Enchanting6
+    InventoryLocation: 31
+  Respiration2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRespiration 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 6'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 31
+  Respiration3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rRespiration 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §98 Enchanted Fish'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Respiration 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:COD
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Fish
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aRespiration 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,GOLDEN_HELMET,LEATHER_HELMET,IRON_HELMET,CHAINMAIL_HELMET'            
+    - type:permission
+    - match:Enchanting8
+    InventoryLocation: 32
+  Respiration3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rRespiration 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Extends how long you can breathe underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 8'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 32
+  FeatherFalling1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rFeather Falling 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §725 EXP'
+    - 'lore9:§8§l» §91 Enchanted Feather'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% FeatherFall 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 25.0
+      PriceType2: ITEM
+      Price2:
+        - type:FEATHER
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Feather
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aFeather Falling 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting5
+    InventoryLocation: 39
+  FeatherFalling1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rFeather Falling 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 5'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 39
+  FeatherFalling2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rFeather Falling 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §750 EXP'
+    - 'lore9:§8§l» §98 Enchanted Feathers'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% FeatherFall 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:FEATHER
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Feather
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aFeather Falling 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 40
+  FeatherFalling2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rFeather Falling 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 7'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 40
+  FeatherFalling3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rFeather Falling 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §775 EXP'
+    - 'lore9:§8§l» §916 Enchanted Feathers'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% FeatherFall 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 75.0
+      PriceType2: ITEM
+      Price2:
+        - type:FEATHER
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Feather
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aFeather Falling 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting9
+    InventoryLocation: 41
+  FeatherFalling3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rFeather Falling 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Decrease the amount of damage you take from high falls!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 9'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 41
+  DepthStrider1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rDepth Strider 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §720 EXP'
+    - 'lore9:§8§l» §91 Enchanted Red Mushroom'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Depth 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 20.0
+      PriceType2: ITEM
+      Price2:
+        - type:RED_MUSHROOM
+        - amount:1
+        - durability:0
+        - name:&9Enchanted Red Mushroom
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aDepth Strider 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting4
+    InventoryLocation: 57
+  DepthStrider1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rDepth Strider 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 4'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 57
+  DepthStrider2:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rDepth Strider 2 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §98 Enchanted Red Mushrooms'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Depth 2
+    - mmocore admin exp give %name% enchanting 200
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:RED_MUSHROOM
+        - amount:8
+        - durability:0
+        - name:&9Enchanted Red Mushroom
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aDepth Strider 2&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting6
+    InventoryLocation: 58
+  DepthStrider2L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rDepth Strider 2 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 6'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 58
+  DepthStrider3:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rDepth Strider 3 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §740 EXP'
+    - 'lore9:§8§l» §916 Enchanted Red Mushrooms'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Depth 3
+    - mmocore admin exp give %name% enchanting 300
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 40.0
+      PriceType2: ITEM
+      Price2:
+        - type:RED_MUSHROOM
+        - amount:16
+        - durability:0
+        - name:&9Enchanted Red Mushroom
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aDepth Strider 3&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting7
+    InventoryLocation: 59
+  DepthStrider3L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rDepth Strider 3 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you move in water!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 7'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 59
+
+  AquaAffinity1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rAqua Affinity 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you mine underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §750 EXP'
+    - 'lore9:§8§l» §932 Enchanted Red Mushrooms'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% Aquaaffinity 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 50.0
+      PriceType2: ITEM
+      Price2:
+        - type:RED_MUSHROOM
+        - amount:32
+        - durability:0
+        - name:&9Enchanted Red Mushroom
+        - lore1:&fMaterial
+    Message: '&aSERVER » &fYou bought &aAqua Affinity 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:PLAYER_HEAD,DIAMOND_HELMET,GOLDEN_HELMET,LEATHER_HELMET,IRON_HELMET,CHAINMAIL_HELMET'            
+    - type:permission
+    - match:Enchanting10
+    InventoryLocation: 66
+  AquaAffinity1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rAqua Affinity 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Increase how fast you mine underwater!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eHelmet'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 10'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 66
+
+  Magmawalker1:
+    MenuItem:
+    - type:ENCHANTED_BOOK
+    - amount:1
+    - name:&rMagma Walker 1 Enchantment
+    - 'lore1:&e'
+    - 'lore2:§7Turn Lava beneath you into obsidian!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lPrice:'
+    - 'lore8:§8§l» §730 EXP'
+    - 'lore9:§8§l» §94 Magma Coin'
+    - 'lore10:§8'
+    - 'lore11:§cMake sure to hold item in hand'    
+    - 'lore12:§cwhich you want to be Enchanted!'    
+    RewardType: opcommand
+    Reward:
+    - te enchant %name% MagmaWalker 1
+    - mmocore admin exp give %name% enchanting 100
+    PriceType: AND
+    Price:
+      PriceType1: EXP
+      Price1: 30.0
+      PriceType2: ITEM
+      Price2:
+        - type:MAGMA_CREAM
+        - amount:4
+        - durability:0
+        - name:&9Magma Coin
+        - lore1:&fMaterial
+        - 'lore2:'
+        - lore3:&7Hot coin rarely found
+        - lore4:&7inside of &cVoid Magmas&7!
+        - 'lore5:'
+        - lore6:&9&lRARE ITEM
+        - itemflag:HIDE_ATTRIBUTES
+    Message: '&aSERVER » &fYou bought &aMagma Walker 1&f!'
+    Condition:
+    - type:placeholdermatch
+    - '%item_in_hand%:match:DIAMOND_BOOTS,GOLDEN_BOOTS,LEATHER_BOOTS,IRON_BOOTS,CHAINMAIL_BOOTS'            
+    - type:permission
+    - match:Enchanting5
+    InventoryLocation: 75
+  Magmawalker1L:
+    MenuItem:
+    - type:BOOK
+    - amount:1
+    - name:&rMagma Walker 1 Enchantment &lLOCKED
+    - 'lore1:&e'
+    - 'lore2:§7Turn Lava beneath you into obsidian!'
+    - 'lore3:§7'
+    - 'lore4:§f§lAPPLICABLE TO:'
+    - 'lore5:§8§l» §eBoots'
+    - 'lore6:§8'
+    - 'lore7:§f&lRequirement:'
+    - 'lore8:§8§l» §cEnchanting Level 5'
+    - 'lore10:§cMake sure to hold item in hand'    
+    - 'lore11:§cwhich you want to be Enchanted!'        
+    InventoryLocation: 75
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+
+  37:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 37
+    ExtraPermission: ''
+    Condition:
+
+  38:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 38
+    ExtraPermission: ''
+    Condition:
+
+  39:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 39
+    ExtraPermission: ''
+    Condition:
+
+  40:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 40
+    ExtraPermission: ''
+    Condition:
+
+  41:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 41
+    ExtraPermission: ''
+    Condition:
+
+  42:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 42
+    ExtraPermission: ''
+    Condition:
+
+  43:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 43
+    ExtraPermission: ''
+    Condition:
+
+  44:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 44
+    ExtraPermission: ''
+    Condition:
+
+  45:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 45
+    ExtraPermission: ''
+    Condition:
+
+  46:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 46
+    ExtraPermission: ''
+    Condition:
+  47:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 47
+    ExtraPermission: ''
+    Condition:
+
+  48:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 48
+    ExtraPermission: ''
+    Condition:
+
+  49:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 49
+    ExtraPermission: ''
+    Condition:
+
+  50:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 50
+    ExtraPermission: ''
+    Condition:
+
+  51:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 51
+    ExtraPermission: ''
+    Condition:
+  52:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 52
+    ExtraPermission: ''
+    Condition:
+  53:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 53
+    ExtraPermission: ''
+    Condition:
+
+  54:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 54
+    ExtraPermission: ''
+    Condition:
+
+  55:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 55
+    ExtraPermission: ''
+    Condition:
+
+  56:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 56
+    ExtraPermission: ''
+    Condition:
+
+  57:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 57
+    ExtraPermission: ''
+    Condition:
+
+  58:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 58
+    ExtraPermission: ''
+    Condition:
+
+  59:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 59
+    ExtraPermission: ''
+    Condition:
+
+  60:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 60
+    ExtraPermission: ''
+    Condition:
+
+  61:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 61
+    ExtraPermission: ''
+    Condition:
+
+  62:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 62
+    ExtraPermission: ''
+    Condition:
+
+  63:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 63
+    ExtraPermission: ''
+    Condition:
+
+  64:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 64
+    ExtraPermission: ''
+    Condition:
+
+  65:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 65
+    ExtraPermission: ''
+    Condition:
+
+  66:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 66
+    ExtraPermission: ''
+    Condition:
+
+  67:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 67
+    ExtraPermission: ''
+    Condition:
+
+  68:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 68
+    ExtraPermission: ''
+    Condition:
+
+  69:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 69
+    ExtraPermission: ''
+    Condition:
+
+  70:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 70
+    ExtraPermission: ''
+    Condition:
+
+  71:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 71
+    ExtraPermission: ''
+    Condition:
+
+  72:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 72
+    ExtraPermission: ''
+    Condition:
+
+  73:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 73
+    ExtraPermission: ''
+    Condition:
+
+  74:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 74
+    ExtraPermission: ''
+    Condition:
+
+  75:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 75
+    ExtraPermission: ''
+    Condition:
+
+  76:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 76
+    ExtraPermission: ''
+    Condition:
+
+  77:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 77
+    ExtraPermission: ''
+    Condition:
+
+  78:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 78
+    ExtraPermission: ''
+    Condition:
+
+  79:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 79
+    ExtraPermission: ''
+    Condition:
+
+  80:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 80
+    ExtraPermission: ''
+    Condition:
+
+  81:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 81
+    ExtraPermission: ''
+    Condition:
+
+  82:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 82
+    ExtraPermission: ''
+    Condition:
+
+  83:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 83
+    ExtraPermission: ''
+    Condition:
+
+  84:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 84
+    ExtraPermission: ''
+    Condition:
+
+  85:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 85
+    ExtraPermission: ''
+    Condition:
+
+  86:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 86
+    ExtraPermission: ''
+    Condition:
+
+  87:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 87
+    ExtraPermission: ''
+    Condition:
+
+  88:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 88
+    ExtraPermission: ''
+    Condition:
+
+  89:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 89
+    ExtraPermission: ''
+    Condition:
+  90:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 90
+    ExtraPermission: ''
+    Condition:

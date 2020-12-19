@@ -1,0 +1,33 @@
+REPLENISH:
+  Display: 'Replenish'
+  MinLevel: 1
+  MaxLevel: 3
+  ItemType: WEAPON
+  Options:
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  EnchantableItems:
+  - BOW
+  Skills:
+  - skill{skill=REPLENISH1} ?enchantlevel{level=1} @self ~onShoot .20
+  - skill{skill=REPLENISH1} ?enchantlevel{level=2} @self ~onShoot .40
+  - skill{skill=REPLENISH1} ?enchantlevel{level=3} @self ~onShoot .60
+
+DRAW:
+  Display: 'Draw'
+  MinLevel: 1
+  MaxLevel: 3
+  ItemType: WEAPON
+  Options:
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  EnchantableItems:
+  - BOW
+  Skills:
+  - skill{skill=DRAW_LIST1} ?enchantlevel{level=1} @trigger ~onBowHit
+  - skill{skill=DRAW_LIST2} ?enchantlevel{level=2} @trigger ~onBowHit
+  - skill{skill=DRAW_LIST3} ?enchantlevel{level=3} @trigger ~onBowHit

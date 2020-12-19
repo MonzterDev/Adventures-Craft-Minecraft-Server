@@ -1,0 +1,420 @@
+options:
+	# Delete tab completions when the server starts
+	delete-tab-completions-on-server-start: false # true/false
+
+import:
+	org.bukkit.event.server.TabCompleteEvent
+	java.util.Arrays
+
+plural expression tab completions:
+	return type: string
+	loop of: string
+	get:
+		return {tabcompletions::*}
+	add:
+		add change values where [{tabcompletions::*} does not contain input] to {tabcompletions::*}
+	set:
+		set {tabcompletions::*} to change values
+	remove:
+		remove change values from {tabcompletions::*}
+	delete:
+		delete {tabcompletions::*}
+	reset:
+		delete {tabcompletions::*}
+
+effect:
+	patterns:
+		create tab complet(er|ion) for %strings%
+		make tab complet(er|ion) for %strings%
+	trigger:
+		set {_l::*} to expression-1
+		loop {_l::*}:
+			add loop-value to tab completions
+
+on skript load:
+	{@delete-tab-completions-on-server-start} is true
+	delete tab completions
+
+function firstXElementsCompare(l1: objects, l2: objects, x: number) :: boolean:
+	loop {_x} times:
+		{_l1::%loop-num%} != {_l2::%loop-num%}
+		return false
+	return true
+
+on TabCompleteEvent:
+	loop {tabcompletions::*}:
+		set {_l} to loop-value.split(" ", 2)
+		event.getBuffer() starts with "/%{_l}[0]% "
+		add {_l}[1] to {_fullcmds::*}
+	{_fullcmds::*} is set
+	set {_cmd} to event.getBuffer().split(" ", 2)[1]
+	if {_cmd} is not set:
+		loop {_fullcmds::*}:
+			set {_l2::*} to split loop-value at " "
+			{_out::*} does not contain {_l2::1}
+			add {_l2::1} to {_out::*}
+	else:
+		set {_cmd1::*} to split {_cmd} at " "
+		set {_s} to size of {_cmd1::*}
+		set {_cmd-last} to last element of {_cmd1::*}
+		loop {_fullcmds::*}:
+			delete {_l::*}
+			set {_l::*} to split loop-value at " "
+			firstXElementsCompare({_l::*}, {_cmd1::*}, {_s}-1) = true
+			{_l::%{_s}%} is set
+			{_l::%{_s}%} starts with {_cmd-last}
+			{_cmd-last} is not {_l::%{_s}%}
+			{_out::*} does not contain {_l::%{_s}%}
+			add {_l::%{_s}%} to {_out::*}
+	{_out::*} is set
+	set {_a} to Arrays.asList([{_out::*}])
+	event.setCompletions({_a})
+
+command /Spawn:
+    aliases: /town
+    description: Teleport to the Town
+#    permission: cake.is_a_lie
+    executable by: players
+#    cooldown: a day
+#    cooldown storage: {cake::%player's uuid%}
+#    cooldown message: One cake is enough for you today! Try again %remaining time% later.
+#    cooldown bypass: cake.eater
+    trigger:
+        teleport player to location(30, 17, -2.5, world "Spawn", 89, 0) 
+
+
+command /Hub:
+    aliases: /Lobby
+    description: Return to the Lobby
+    executable by: players
+    trigger:
+        connect player to "lobby"
+command /Live:
+    description: Join the Live Server
+    executable by: players
+    trigger:
+        connect player to "Live"
+command /Live2:
+    description: Join the Live Server
+    executable by: players
+    trigger:
+        connect player to "Live2"
+command /Test:
+    description: Join the Test Server
+    executable by: players
+    trigger:
+        connect player to "Test"
+command /Test2:
+    description: Join the Test Server
+    executable by: players
+    trigger:
+        connect player to "Test2"
+
+command /Testmenu:
+    description: Join the Test Server
+    executable by: players
+    trigger:
+        if the current bungee cord server of player is "Test" or "Test2":
+            if player has permission "test.menu":
+                make player execute command "/dm open Testmenu"
+
+command /Discord:
+    executable by: players
+    trigger:
+        send formatted "&7Join our &9Discord &a<tooltip:&aClick to join the Discord!><url:https://discord.com/invite/bw4DztR>https://discord.com/invite/bw4DztR<reset>&7!" to player
+
+#HOME
+on load: # Doesn't have to be in a load event
+    add "home visit <player>" to tab completions
+    add "home help <1><2><3>" to tab completions
+    add "home chat" to tab completions
+    add "home delete" to tab completions
+    add "home kick <player>" to tab completions
+    add "home ban <player>" to tab completions
+    add "home unban <player>" to tab completions
+    add "home set" to tab completions
+    add "home setowner <player>" to tab completions
+    add "home add <player>" to tab completions
+    add "home unadd <player>" to tab completions
+    add "home trust <player>" to tab completions
+    add "home untrust <player>" to tab completions
+
+command /Home [<text>] [<string>]:
+    executable by: players
+    trigger:
+        if the current bungee cord server of player is not "Homes":
+            if arg 1 is not set:    
+                connect player to "Homes"
+            if arg 1 is not "help":    
+                connect player to "Homes"
+            if arg 1 is "help":
+                if arg 2 is not "2":
+                    if arg 2 is not "3":
+                        send "&6/Home &e- &fReturn to your home" to player
+                        send "&6/Home Visit <name> &e- &fVisit another player's home" to player
+                        send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
+                        send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
+                        send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
+                        send "&e----------Use /Home Help <1-3>----------" to player
+                if arg 2 is "2":
+                    send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
+                    send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
+                    send "&6/Home Set &e- &fChange the position of /home" to player
+                    send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
+                    send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
+                    send "&e----------Use /Home Help <2-3>----------" to player
+                if arg 2 is "3":
+                    send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
+                    send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
+                    send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
+                    send "&e----------Use /Home Help <3-3>----------" to player
+
+        if the current bungee cord server of player is "Homes":
+            if arg 1 is "help":
+                if arg 2 is not "2":
+                    if arg 2 is not "3":
+                        send "&6/Home &e- &fReturn to your home" to player
+                        send "&6/Home Visit <name> &e- &fVisit another player's home" to player
+                        send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
+                        send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
+                        send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
+                        send "&e----------Use /Home Help <1-3>----------" to player
+                if arg 2 is "2":
+                    send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
+                    send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
+                    send "&6/Home Set &e- &fChange the position of /home" to player
+                    send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
+                    send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
+                    send "&e----------Use /Home Help <2-3>----------" to player
+                if arg 2 is "3":
+                    send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
+                    send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
+                    send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
+                    send "&e----------Use /Home Help <3-3>----------" to player
+                                
+            if arg 1 is not set:    
+                make player execute command "/p h"
+    #Visit plot                
+            if arg 1 is "visit":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p visit %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Plot Chat                
+            if arg 1 is "chat":
+                make player execute command "/p toggle chat"
+    #Deletes plot                
+            if arg 1 is "delete":
+                make player execute command "/p delete"
+    #Kick player                
+            if arg 1 is "kick":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p kick %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Ban player                
+            if arg 1 is "ban":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p ban %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Unban player                
+            if arg 1 is "unban":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p unban %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Sethome                
+            if arg 1 is "set":
+                make player execute command "/p sethome"
+    #Set owner               
+            if arg 1 is "setowner":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p setowner %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Add user               
+            if arg 1 is "add":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p add %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Unadd user               
+            if arg 1 is "unadd":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p remove %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Trust user               
+            if arg 1 is "trust":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p trust %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Untrust user               
+            if arg 1 is "untrust":
+                if arg-2 parsed as offline player has played before:
+                    make player execute command "/p untrust %arg-2%"
+                else:
+                    send "&cPlease enter a valid Player!" to player
+    #Info               
+            if arg 1 is "info":
+                make player execute command "/p info"
+    #Confirm               
+            if arg 1 is "confirm":
+                make player execute command "/p confirm"
+
+#Referal
+command /Referal [<string>]:
+    executable by: players
+    trigger:
+        send "&aYou have refered &ePLACEHOLDER &aplayers!" to player
+        if arg 1 is not set:    
+            if player doesn't have permission "REFERED":
+                if arg-1 parsed as offline player has played before:
+                    send "&aYou have been refered by &e%arg-1%&a, both of you have received a reward!" to player
+                else:
+                    send "&cPlease enter a player's name!" to player
+            else:
+                send "&6/Referal <name> &e- &fEnter the User's name who brought you to the Server to receive a reward and give them a reward!" to player
+            if player has permission "REFERED":
+                send "&cYou have already chosen who refered you!" to player
+
+on load: # Doesn't have to be in a load event
+    add "ProfileViewer [<player>]" to tab completions
+    add "Pv" to tab completions
+
+command /ProfileViewer [<player>]:
+    description: View other user's profile
+    executable by: players
+    trigger:
+        if arg-1 is not set:
+            make player execute command "/playerprofiles:playerinformation view %player%"
+        if arg-1 is set:
+            make player execute command "/playerprofiles:playerinformation view %arg-1%"
+command /Pv [<player>]:
+    description: View other user's profile
+    executable by: players
+    trigger:
+        if arg-1 is not set:
+            make player execute command "/playerprofiles:playerinformation view %player%"
+        if arg-1 is set:
+            make player execute command "/playerprofiles:playerinformation view %arg-1%"
+
+
+
+#MUSIC
+on load:
+    add "music stop" to tab completions
+    add "music off" to tab completions
+    add "music play" to tab completions
+    add "music start" to tab completions
+    add "music on" to tab completions
+    add "music volume <1-100>" to tab completions
+
+command /Music [<text>] [<string>]:
+    executable by: players
+    trigger:
+        if arg 1 is "stop":    
+            make player execute command "/anbs song stop"
+            execute console command "/lp user %player% permission set Music.ON false"
+        if arg 1 is "off":    
+            make player execute command "/anbs song stop"
+            execute console command "/lp user %player% permission set Music.ON false"
+        if arg 1 is "play":    
+            make player execute command "/anbs song play"
+            execute console command "/lp user %player% permission set Music.ON true"
+        if arg 1 is "start":    
+            make player execute command "/anbs song play"
+            execute console command "/lp user %player% permission set Music.ON true"
+        if arg 1 is "on":    
+            make player execute command "/anbs song play"
+            execute console command "/lp user %player% permission set Music.ON true"
+        if arg 1 is "volume":    
+            if arg 2 is set:    
+                make player execute command "/anbs song volume %arg-2%"
+            else:
+                send "&6/Music Volume <1-100> &e- &fAdjust the volume of the music!" to player
+
+
+on load:
+    add "rp enable" to tab completions
+    add "rp disable" to tab completions
+    add "rp download" to tab completions
+
+command /rp <string>:
+	executable by: players
+	trigger:
+		if arg 1 is "enable":    
+			if player doesn't have permission "RP.DOWNLOAD":
+				send message "&aResource Pack have been enabled! Use /RP Download or relog to get it!" to player
+				execute console command "/lp user %player% permission set RP.DOWNLOAD true"
+			if player has permission "RP.DOWNLOAD":
+				send message "&aResource Pack already enabled! Use /RP Download or relog to get it!" to player
+		if arg 1 is "disable":    
+			if player has permission "RP.DOWNLOAD":
+				send message "&cResource Pack have been disabled!" to player
+				execute console command "/lp user %player% permission set RP.DOWNLOAD false"
+			if player doesn't have permission "RP.DOWNLOAD":
+				send message "&cResource Pack already disabled!" to player
+		if arg 1 is "download":    
+			send message "&aResource Pack is now loading!" to player
+			send the resource pack from "https://www.dropbox.com/s/9ame51dgtjdmadq/AdventuresCraft3.zip?dl=1" with hash "f2e3f6cbda5745e5a08fbb43e3ea881de9f8c30b" to the player
+			wait 10 seconds
+			if the player doesn't have a resource pack loaded:
+				send message "&cIf you're not seeing the Resource Pack, you must enable the setting before joining the server!" to player
+
+command /Quest:
+    executable by: players
+    trigger:
+        make console execute command "/dm open Quests %player%"
+command /Quests:
+    executable by: players
+    trigger:
+        make console execute command "/dm open Quests %player%"
+command /Questsmenu:
+    executable by: players
+    trigger:
+        make console execute command "/dm open Quests %player%"
+
+on load: # Doesn't have to be in a load event
+    add "shop farming" to tab completions
+    add "shop foraging" to tab completions
+    add "shop mining" to tab completions
+    add "shop slayer" to tab completions
+    add "shop cooking" to tab completions
+    add "shop wand" to tab completions
+    add "shop hell" to tab completions
+    add "shop enchanted" to tab completions
+
+
+command /Shop [<text>]:
+    executable by: players
+    trigger:
+        if arg 1 is "farming":    
+            make console execute command "/mmoitems stations open farming %player%"
+        if arg 1 is "foraging":    
+            make console execute command "/mmoitems stations open foraging %player%"
+        if arg 1 is "mining":    
+            make console execute command "/mmoitems stations open miner-shop %player%"
+        if arg 1 is "slayer":    
+            make console execute command "/mmoitems stations open slayer %player%"
+        if arg 1 is "cooking":    
+            make console execute command "/mmoitems stations open stews %player%"
+        if arg 1 is "wand" or "wands":    
+            make console execute command "/mmoitems stations open wand %player%"
+        if arg 1 is "hell":    
+            make console execute command "/mmoitems stations open hell %player%"
+        if arg 1 is "enchanted" or "material" or "materials" or "enchanted material":    
+            make console execute command "/mmoitems stations open enchanted-materials %player%"
+
+on load:
+    add "bossdex" to tab completions
+    add "bosses" to tab completions
+    add "boss" to tab completions
+
+command /Bosses:
+    aliases: /Boss, /Bossdex
+    executable by: players
+    trigger:
+        make console execute command "/dm open Bosses %player%"

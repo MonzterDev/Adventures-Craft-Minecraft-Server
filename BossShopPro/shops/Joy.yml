@@ -1,0 +1,449 @@
+ShopName: Joy
+DisplayName: '&7Joy'
+Sound:
+  Shop:
+    Open: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+    ChangeShop: BLOCK_ENCHANTMENT_TABLE_USE:1:1
+shop:
+  JOY_STEW:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&a&f&fJoy Soup
+    - lore1:&fConsumable
+    - 'lore2:'
+    - lore3:&rRestores &a20 &rHealth
+    - 'lore4:'
+    - lore5:&f&lCOMMON ITEM
+    - 'lore7:&fPrice: &e⛂ %price%'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+    - itemflag:HIDE_ATTRIBUTES
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give CONSUMABLE JOY_SOUP %player% 1'
+    - 'mmocore admin exp give %player% cooking 5'
+    PriceType: MONEY
+    Price: 100.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 11
+  JOY_STEW2:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&a&f&9Joy Soup
+    - lore1:&fConsumable
+    - 'lore2:'
+    - lore3:&rRestores &a50 &rHealth
+    - 'lore4:'
+    - lore5:&9&lRARE ITEM
+    - 'lore7:&fPrice: &e⛂ %price%'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+    - itemflag:HIDE_ATTRIBUTES
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give CONSUMABLE JOY_SOUP2 %player% 1'
+    - 'mmocore admin exp give %player% cooking 15'
+    PriceType: MONEY
+    Price: 250.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 12
+  JOY_STEW3:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&a&f&5Joy Soup
+    - lore1:&fConsumable
+    - 'lore2:'
+    - lore3:&rRestores &a75 &rHealth
+    - 'lore4:'
+    - lore5:&5&lLEGENDARY ITEM
+    - 'lore7:&fPrice: &e⛂ %price%'
+    - 'lore9:&8&l» &eClick to Purchase'    
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
+    - itemflag:HIDE_ATTRIBUTES
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give CONSUMABLE JOY_SOUP3 %player% 1'
+    - 'mmocore admin exp give %player% cooking 25'
+    PriceType: MONEY
+    Price: 500.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 13
+  JOY_BOW:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - type:BOW
+    - amount:1
+    - durability:0
+    - name:&2Joys Bow
+    - lore1:&fBow
+    - 'lore2:'
+    - 'lore3:&c✜ Damage: &c25'
+    - 'lore4:'
+    - lore5:&7Upgradeable bow of love!
+    - 'lore6:'
+    - lore7:&2&lUNCOMMON ITEM
+    - 'lore9:&fPrice: &e⛂ %price%'
+    - 'lore11:&8&l» &eClick to Purchase'    
+    - itemflag:HIDE_ENCHANTS
+    - itemflag:HIDE_ATTRIBUTES
+    - itemflag:HIDE_UNBREAKABLE
+    - unbreakable:true
+    RewardType: opcommand
+    Reward:
+    - 'mmoitems give BOW JOYS_BOW %player% 1'
+    PriceType: MONEY
+    Price: 5000.0
+    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    InventoryLocation: 14
+
+  SELL:
+    MenuItem:
+    - type:CAULDRON
+    - amount:1
+    - name:&aSell Items
+    - 'lore2:&8&l» &eClick to Sell'    
+    RewardType: opcommand
+    Reward:
+    - 'ushop open %player%'
+    PriceType: NOTHING
+    InventoryLocation: 32
+
+  1:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 1
+    ExtraPermission: ''
+    Condition:
+
+  2:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 2
+    ExtraPermission: ''
+    Condition:
+
+  3:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 3
+    ExtraPermission: ''
+    Condition:
+
+  4:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 4
+    ExtraPermission: ''
+    Condition:
+
+  5:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 5
+    ExtraPermission: ''
+    Condition:
+
+  6:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 6
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  7:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 7
+    ExtraPermission: ''
+    Condition:
+
+  8:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 8
+    ExtraPermission: ''
+    Condition:
+
+  9:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 9
+    ExtraPermission: ''
+    Condition:
+
+  10:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 10
+    ExtraPermission: ''
+    Condition:
+
+  11:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 11
+    ExtraPermission: ''
+    Condition:
+   
+  12:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 12
+    ExtraPermission: ''
+    Condition:
+
+  13:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 13
+    ExtraPermission: ''
+    Condition:
+
+  14:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 14
+    ExtraPermission: ''
+    Condition:
+
+  15:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 15
+    ExtraPermission: ''
+    Condition:
+
+  16:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 16
+    ExtraPermission: ''
+    Condition:
+
+  17:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 17
+    ExtraPermission: ''
+    Condition:
+
+  18:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 18
+    ExtraPermission: ''
+    Condition:
+
+  19:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 19
+    ExtraPermission: ''
+    Condition:
+
+  20:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 20
+    ExtraPermission: ''
+    Condition:
+
+  21:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 21
+    ExtraPermission: ''
+    Condition:
+
+  22:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 22
+    ExtraPermission: ''
+    Condition:
+
+  23:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 23
+    ExtraPermission: ''
+    Condition:
+
+  24:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 24
+    ExtraPermission: ''
+    Condition:
+
+  25:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 25
+    ExtraPermission: ''
+    Condition:
+
+  26:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 26
+    ExtraPermission: ''
+    Condition:
+
+  27:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 27
+    ExtraPermission: ''
+    Condition:
+
+  28:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 28
+    ExtraPermission: ''
+    Condition:
+
+  29:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 29
+    ExtraPermission: ''
+    Condition:
+
+  30:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 30
+    ExtraPermission: ''
+    Condition:
+
+  31:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 31
+    ExtraPermission: ''
+    Condition:
+
+  32:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 32
+    ExtraPermission: ''
+    Condition:
+
+  33:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 33
+    ExtraPermission: ''
+    Condition:
+
+  34:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 34
+    ExtraPermission: ''
+    Condition:
+
+  35:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 35
+    ExtraPermission: ''
+    Condition:
+
+  36:
+    MenuItem:
+    - type:BLACK_STAINED_GLASS_PANE
+    - amount:1
+    Message: ''
+    InventoryLocation: 36
+    ExtraPermission: ''
+    Condition:
+

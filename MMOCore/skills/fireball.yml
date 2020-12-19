@@ -1,0 +1,27 @@
+name: Fireball
+lore:
+- Casts a deadly fireball onto your
+- target, dealing &c{damage} &7damage upon contact
+- and igniting it for &c{ignite} &7seconds.
+- ''
+- Shatters into 3 blazing hot shards which stick
+- to walls and explode 3 seconds later, dealing
+- 33% of the initial spell damage.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: FIRE_CHARGE
+damage:
+  base: 5.0
+  per-level: 3.0
+ignite:
+  base: 2.0
+  per-level: 0.1
+mana:
+  base: 15.0
+  per-level: 1.0
+cooldown:
+  base: 9.0
+  per-level: -0.1
+  max: 5.0
+  min: 1.0

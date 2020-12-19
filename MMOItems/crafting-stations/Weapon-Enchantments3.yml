@@ -1,0 +1,43 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §8Weapon Enchantments §7§l«§f§l«
+max-queue-size: 10
+layout: Weapon_Enchantments3
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: RED_STAINED_GLASS_PANE
+  no-queue-item:
+    material: RED_STAINED_GLASS_PANE
+    name: '&c&lLOCKED'
+
+recipes:
+  STAGGER1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: STAGGER1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant STAGGER 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  STAGGER2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: STAGGER2
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=0}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant STAGGER 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}

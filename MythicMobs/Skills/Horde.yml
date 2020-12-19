@@ -1,0 +1,101 @@
+#ZONE 1
+EGGDEATH1:
+  Skills:
+  - message{m="&fThe &c<mob.name> &fhas been &ccracked open&f!"} @PlayersInRadius{r=200}
+  - effect:sound{s=entity.turtle.egg_crack;v=1;p=1} @PlayersInRadius{r=200}
+  - delay 1
+  - effect:sound{s=entity.turtle.egg_crack;v=1;p=1} @PlayersInRadius{r=200}
+  - delay 2
+  - effect:sound{s=entity.turtle.egg_crack;v=1;p=1} @PlayersInRadius{r=200}
+  - delay 1
+  - effect:sound{s=entity.turtle.egg_crack;v=1;p=1} @PlayersInRadius{r=200}
+#Summons hidden egg so Waves can easily be spawned at a specific location
+EGGSUMMONBASE1:
+  Skills:
+  - summon{type=HIDDEN_EGG1;amount=1;radius=0} @self
+#Summons wave 1
+EGGSUMMON1:
+  Skills:
+  - delay 20  
+  - summon{type=SkeletonH1;amount=3;radius=5} @self
+  - summon{type=SkeletonArcherH1;amount=2;radius=5} @self
+#Summons in Wave 2 when all of Wave 1 has been slayed
+EGGSUMMON1W2:
+  Conditions:
+  - mobsInRadius{types=SkeletonH1;amount=0to1;radius=200}
+  - mobsInRadius{types=SkeletonArcherH1;amount=0to1;radius=200}
+  Skills:
+  - delay 20  
+  - summon{type=AlphaSoulH1;amount=3;radius=5} @self
+  - summon{type=SkeletonArcherH1;amount=2;radius=5} @self
+
+
+
+# Void Blaze  
+ENDERMANTP:
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @self
+
+THRALLSUMMON:
+  Conditions:
+  - mobsinradius_ext{mobtypes=VOID_DEMON;a=5to10;r=50;action=FALSE}
+  Skills:
+  - summon{type=VOID_DEMON;amount=1;radius=4} @target
+
+ASSASSINSTUN:
+  Cooldown: 10
+  Skills:
+  - shootpotion{type=SLOW;duration=40;level=10;velocity=1}
+  - message{m="<mob.name> &fthrew a &cStun Potion &fat you!"} 
+
+ASSASSINUNDRESS:
+  Skills:
+  - potion{type=INVISIBILITY;duration=100;level=4}
+  - effect:ender 
+  - effect:particlering{particle=dragon_breath;radius=5;points=15;amount=10;hS=0;vS=0;s=.15}
+  - equip{item=air:HEAD}
+  - equip{item=air:CHEST}
+  - equip{item=air:LEGS}
+  - equip{item=air:FEET}
+  - equip{item=air:HAND}
+  - equip{item=air:OFFHAND}
+  - delay 100
+  - skill{s=ASSASSINDRESS} 
+ASSASSINDRESS:
+  Skills:
+  - effect:ender 
+  - effect:particlering{particle=dragon_breath;radius=5;points=15;amount=10;hS=0;vS=0;s=.15}
+  - equip{item=ASSASSIN:HEAD}
+  - equip{item=ASSASSIN_CHEST:CHEST}
+  - equip{item=ASSASSIN_LEGS:LEGS}
+  - equip{item=ASSASSIN_BOOTS:FEET}
+  - equip{item=ASSASSIN_SWORD:HAND}
+  - equip{item=ASSASSIN_SWORD:OFFHAND}
+
+TESTP:
+  Skills:
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false}
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false;syo=1.75}
+
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false;sfo=1.5;sso=.41}
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false;syo=1.75;sfo=1.5;sso=.41}
+
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false;sfo=1.5;sso=-.63}
+    - projectile{bulletType=BLOCK;material=CHORUS_FLOWER;mr=0;i=40;hR=1;vR=1;sE=false;sB=false;syo=1.75;sfo=2.1;sso=-.3}
+
+KindletronJRInit:
+  Skills:
+  - CancelEvent
+  - skill{s=KindletronJRPunch} @self
+
+KindletronJRPunch:
+  Cooldown: 1.05
+  Skills:
+  - state{s=attack;li=3;lo=2} @self
+  - stun{d=25} @self
+  - delay 25
+  - totem{ch=1;onStart=KindletronJRPunchDamage;int=1;hR=3;md=1} @Forward{f=0.5}
+
+KindletronJRPunchDamage:
+  Skills:
+  - damage{amount=3} @EntitiesNearOrigin{r=2}

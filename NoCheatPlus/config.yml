@@ -1,0 +1,828 @@
+# This configuration is property of MarkElf and is not to be distibuted!
+savebackconfig: true
+logging:
+  active: true
+  maxqueuesize: 2500
+  extended:
+    status: false
+    commands:
+      actions: false
+    allviolations:
+      debug: false
+      debugonly: true
+      backend:
+        trace: false
+        notify: false
+  backend:
+    console:
+      active: true
+      asynchronous: true
+    file:
+      active: false
+      prefix: ''
+      filename: nocheatplus.log
+    ingamechat:
+      active: true
+      prefix: ''
+data:
+  expiration:
+    active: true
+    duration: 20
+    history: false
+  consistencychecks:
+    active: true
+    interval: 10
+    maxtime: 2
+    suppresswarnings: true
+permissions:
+  policy:
+    default: ALWAYS
+    rules:
+    - 'nocheatplus.notify :: INTERVAL:60, -world, -offline'
+    - 'nocheatplus.admin.debug :: INTERVAL:10'
+    - 'nocheatplus.admin* :: ALWAYS'
+    - 'nocheatplus.command* :: ALWAYS'
+    - 'nocheatplus.bypass* :: ALWAYS'
+    - 'regex:^nocheatplus\.checks\..*\.silent$ :: FALSE'
+    - 'nocheatplus.checks.chat.relog :: INTERVAL:10'
+    - 'nocheatplus.checks.chat.logins :: INTERVAL:10'
+    - 'nocheatplus.checks.chat.* :: INTERVAL:4'
+    - 'nocheatplus.checks.net.* :: INTERVAL:4'
+    - 'nocheatplus.checks.moving.survivalfly.* :: INTERVAL:10'
+protection:
+  plugins:
+    hide:
+      active: true
+      nopermission:
+        message: '&7(&c!&7) &cSorry, permission denied.'
+        commands:
+        - plugins
+        - version
+        - icanhasbukkit
+        - /calc
+      unknowncommand:
+        message: '&7(&c!&7) &cSorry, command not found.'
+        commands:
+        - ncp
+  commands:
+    consoleonly:
+      active: true
+      message: '&7(&c!&7) &cSorry, command could not be executed, try via console!'
+      commands:
+      - op
+      - deop
+      - reload
+      - rl
+      - restart
+      - stop
+      - minecraft:me
+      - minecraft:version
+      - minecraft:plugins
+      - minecraft:reload
+      - minecraft:tell
+  clients:
+    motd:
+      active: false
+      allowall: false
+checks:
+  active: true
+  lag: true
+  debug: false
+  blockbreak:
+    active: true
+    direction:
+      active: true
+      actions: cancel vl>6 cmdc:blockdirectionbreak:1:11 cancel
+    fastbreak:
+      active: true
+      strict: true
+      delay: 95
+      intervalsurvival: 100
+      grace: 950
+      actions: cancel vl>3 cmdc:fastbreak1:1:12 cancel vl>25 cmdc:fastbreak2:1:11 cancel vl>45 log:fastbreak3:1:11:i cancel
+    frequency:
+      active: true
+      intervalcreative: 95
+      intervalsurvival: 45
+      shortterm:
+        ticks: 5
+        limit: 6
+      actions: cancel vl>40 log:instantnuker:0:11:i cancel cmd:javaerror:1:10
+    noswing:
+      active: true
+      actions: cancel vl>10 cmdc:noswing:1:11 cancel
+    reach:
+      active: true
+      actions: cancel vl>6 cmdc:blockreach:1:11 cancel
+    wrongblock:
+      active: true
+      level: 20
+      improbable:
+        feedonly: false
+        weight: 2.0
+      actions: cancel
+  blockinteract:
+    active: true
+    direction:
+      active: true
+      actions: cancel
+    reach:
+      active: true
+      actions: cancel
+    speed:
+      active: true
+      interval: 2000
+      limit: 55
+      actions: cancel vl>10 cmdc:blockspeed:1:11 cancel cmd:javaerror:1:10
+    visible:
+      active: false
+      actions: cancel
+  blockplace:
+    active: true
+    against:
+      active: false
+      actions: cancel
+    autosign:
+      active: true
+      skipempty: false
+      actions: cancel vl>10 log:autosign:1:11:i cancel
+    direction:
+      active: true
+      actions: cancel vl>5 cmdc:blockdirectionplace:1:11 cancel
+    fastplace:
+      active: true
+      limit: 15
+      shortterm:
+        ticks: 11
+        limit: 5
+      improbable:
+        feedonly: false
+        weight: 0.5
+      actions: cancel vl>6 cmdc:fastplace1:1:15 cancel vl>240 cmdc:fastplace2:1:12 cancel vl>750 log:fastplace3:1:12:i cancel
+    reach:
+      active: false
+      actions: cancel vl>6 cmdc:blockreach:1:11 cancel
+    noswing:
+      active: true
+      exceptions:
+      - ANVIL
+      - FLINT_AND_STEEL
+      - GRAVEL
+      - LILY_PAD
+      - SAND
+      actions: cancel vl>10 cmdc:noswing:1:11 cancel
+    scaffold:
+      active: true
+      angle: true
+      time:
+        active: true
+        average: 7
+      rotate:
+        active: true
+        difference: 90
+      toolswitch: true
+      actions: cancel vl>12 cmdc:scaffold1:1:11 cancel vl>55 cmdc:scaffold2:1:12 cancel vl>90 log:scaffold3:1:11:i cancel cmd:javaerror:1:10
+    speed:
+      active: true
+      interval: 35
+      improbable:
+        feedonly: false
+        weight: 0.3
+      actions: cancel vl>80 log:projectilespeed:1:15:i cancel
+    preventmisc:
+      boatsanywhere: true
+  chat:
+    active: true
+    captcha:
+      active: true
+      skip:
+        commands: false
+      characters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?
+      length: 5
+      question: '&7(&c!&7) &cPlease type ''''&6[captcha]&c'''' to continue sending messages/commands.'
+      success: '&aOK, it sounds like you''''re not a spambot.'
+      tries: 2
+      actions: cancel cmd:kickcaptcha vl>3 cancel cmd:kickchat5
+    commands:
+      active: true
+      exclusions:
+      - /join
+      - /hub
+      - /reload
+      - /levelup
+      - /rankup
+      - /f claim
+      - /f unclaim
+      - /f help
+      - /undo
+      - /redo
+      handleaschat:
+      - /tpa
+      - /etpa
+      - /essentials:tpa
+      - /call
+      - /ecall
+      - /essentials:call
+      - /tpahere
+      - /essentials:tpahere
+      - /m
+      - /em
+      - /essentials:m
+      - /msg
+      - /emsg
+      - /essentials:msg
+      - /say
+      - /esay
+      - /essentials:say
+      - /tell
+      - /etell
+      - /essentials:tell
+      - /whisper
+      - /ewhisper
+      - /essentials:whisper
+      - /r
+      - /er
+      - /essentials:r
+      - /reply
+      - /ereply
+      - /essentials:reply
+      - /pm
+      - /epm
+      - /essentials:pm
+      - /t
+      - /tell
+      - /etell
+      - /essentials:tell
+      - /heal
+      - /eheal
+      - /essentials:heal
+      level: 10
+      shortterm:
+        ticks: 18
+        level: 3
+      actions: cancel
+    text:
+      active: true
+      allowvlreset: true
+      frequency:
+        normal:
+          minimum: 0.0
+          factor: 0.9
+          weight: 6
+          level: 140
+          actions: cancel vl>20 cmd:kickchatnormal vl>40 cancel cmd:kickchat5
+        shortterm:
+          minimum: 2.0
+          factor: 0.7
+          weight: 3.0
+          level: 20.0
+          actions: cancel vl>20 cmd:kickchat1 vl>40 cancel cmd:kickchat5
+      message:
+        lettercount: 1.0
+        partition: 1.0
+        uppercase: 1.2
+        afterjoin: 1.5
+        nomoving: 1.2
+        repeatviolation: 2.0
+        repeatglobal: 1.0
+        repeatself: 1.5
+        words:
+          lengthav: 1.0
+          lengthmsg: 1.0
+          noletter: 0.2
+      global:
+        active: true
+        weight: 1.0
+        words:
+          active: true
+        prefixes:
+          active: false
+        similarity:
+          active: true
+      player:
+        active: true
+        words:
+          active: true
+        prefixes:
+          active: false
+        similarity:
+          active: true
+    warning:
+      active: true
+      level: 67
+      message: |-
+        &7&m---------------------------------------------------
+        &cPlease slow down chat, you might get kicked for spam.
+        &7&m---------------------------------------------------
+      timeout: 11
+    relog:
+      active: true
+      timeout: 2750
+      warning:
+        message: '&7(&c!&7) &cYou relogged really fast!'
+        number: 1
+        timeout: 60000
+      kickmessage: You relogged really fast! Try with a little delay.
+      actions: cancel
+    logins:
+      active: true
+      startupdelay: 600
+      perworldcount: false
+      seconds: 10
+      limit: 8
+      kickmessage: Too many people logging in, retry soon.
+  combined:
+    active: true
+    bedleave:
+      active: true
+      actions: cancel cmdc:bedleave:1:11 cmd:kickbedleave
+    enderpearl:
+      active: true
+      preventclickblock: true
+    improbable:
+      active: true
+      level: 150
+      actions: cancel vl>20 cancel log:improbable1:3:12:i vl>450 cancel cmdc:improbable2:1:11 vl>2500 cancel log:improbable3:1:11:i
+    invulnerable:
+      active: true
+      triggers:
+        always: false
+        falldistance: true
+      initialticks:
+        join: -1
+      ignore:
+      - FALL
+      modifiers:
+        all: 0
+    munchhausen:
+      active: false
+      actions: cancel
+    yawrate:
+      rate: 105
+      penalty:
+        factor: 2.0
+        minimum: 250
+        maximum: 2000
+      improbable:
+        feedonly: false
+        weight: 90.0
+  fight:
+    active: true
+    canceldead: true
+    maxloopletencyticks: 8
+    toolchangepenalty: 150
+    pvp:
+      knockbackvelocity: default
+    yawrate:
+      active: true
+    angle:
+      active: true
+      threshold:
+        average_move: 100
+        average_time: 150
+        average_yaw: 60
+        average_switch: 50
+      actions: cancel vl>75 log:fightangle1:2:12:i cancel vl>175 cmdc:fightangle2:1:12 cancel vl>350 log:fightangle3:1:12:i cancel
+    clickpattern:
+      active: true
+      range: 13
+      penalty: 150
+      actions: vl>2 cancel vl>8 cmdc:clickpattern1:1:12 cancel vl>25 cmdc:clickpattern2:1:12 cancel vl>55 log:clickpattern3:1:12:i cancel
+    critical:
+      active: true
+      falldistance: 0.06249
+      actions: cancel vl>30 cmdc:crits1:1:11 cancel vl>70 log:crits2:1:11:i cancel
+    direction:
+      active: true
+      strict: true
+      failall: true
+      penalty: 80
+      actions: vl>3 log:fightdirection1:3:11:i cancel vl>14 cmdc:fightdirection2:1:11 cancel vl>45 cmdc:fightdirection3:1:12 cancel
+    fastheal:
+      active: true
+      interval: 4000
+      buffer: 1000
+      actions: cancel vl>10 cmdc:fastheal1:1:11 cancel vl>35 cmdc:fastheal2:1:12 cancel
+    godmode:
+      active: true
+      minage: 1100
+      maxage: 5000
+      actions: cancel
+    noswing:
+      active: true
+      actions: cancel vl>10 cmdc:noswing:1:11 cancel
+    pitchpattern:
+      active: true
+      alwaysactive: false
+      limit: 10
+      sample: 34.0
+      gcdDiff: 0.001
+      deltaGCD: 1.0E-5
+      actions: vl>6 log:pitchpattern1:6:11:i vl>55 cmdc:pitchpattern2:1:11
+    reach:
+      active: true
+      survivaldistance: 3.387
+      penalty: 280
+      reduce: true
+      reducedistance: 0.087
+      reducestep: 0.08
+      improbable:
+        feedonly: false
+        weight: 2.0
+      actions: cancel vl>1 log:fightreach1:4:11:i cancel vl>13 log:fightreach2:1:11:i cancel vl>35 log:fightreach3:1:11:i cancel
+    selfhit:
+      active: true
+      delay: 1100
+      excludeprojectile: false
+      warn: true
+      message: '&7(&c!&7) &cSelf-velocity is not allowed!'
+      actions: cancel vl>8 log:selfhit:1:11:i cancel cmd:kickselfhit
+    speed:
+      active: true
+      limit: 13
+      actions: cancel vl>2 cmdc:fightspeed1:1:11 cancel vl>15 cmdc:fightspeed2:1:11 cancel vl>50 log:fightspeed3:1:11:i cancel
+      shortterm:
+        ticks: 7
+        limit: 5
+      improbable:
+        feedonly: false
+        weight: 2.0
+  inventory:
+    active: true
+    drop:
+      active: true
+      limit: 60
+      timeframe: 20
+      actions: cancel cmd:kickdrop:1:10
+    fastclick:
+      active: true
+      exclude:
+      - Inventory Name Here
+      sparecreative: true
+      tweaks1_5: true
+      limit:
+        shortterm: 4
+        normal: 15
+        chest: 140
+      improbable:
+        weight: 0.7
+      actions: cancel vl>300 log:fastclick1:4:15:i cancel vl>9500 cmdc:fastclick2:1:20 cancel
+    instantbow:
+      active: true
+      strict: true
+      delay: 130
+      improbable:
+        feedonly: false
+        weight: 0.3
+      actions: cancel vl>15 cmdc:fastbow:1:11 cancel
+    instanteat:
+      active: true
+      actions: cmdc:instanteat:1:11 cancel
+    fastconsume:
+      active: true
+      duration: 1.39
+      whitelist: false
+      items:
+      - DRIED_KELP
+      actions: cmdc:fastconsume:1:11 cancel
+    inventorymove:
+      active: true
+      disable_creative: true
+      hdist_leniency: 0.005
+      hdist_min: 0.1
+      actions: cancel vl>2 cmdc:inventorymove:1:12 cancel
+    gutenberg:
+      active: true
+      pagelimit: 30
+      actions: cancel log:gutenberg:0:11:i cmd:kickinvaliddata:1:10
+    items:
+      active: true
+    open:
+      active: true
+      close: true
+      cancelother: true
+    hotfix:
+      duplication:
+        fallingblockendportal: true
+  moving:
+    active: true
+    creativefly:
+      active: true
+      ignoreallowflight: true
+      ignorecreative: false
+      model:
+        creative:
+          horizontal:
+            speed: 130
+          vertical:
+            ascend:
+              speed: 140
+            maxheight: 128
+        spectator:
+          horizontal:
+            speed: 500
+          vertical:
+            ascend:
+              speed: 400
+            maxheight: 128
+          ground: false
+        levitation:
+          horizontal:
+            speed: 50
+          vertical:
+            ascend:
+              speed: 10
+            maxheight: 128
+            gravity: false
+          modifiers: false
+          ground: false
+        slowfalling:
+          horizontal:
+            speed: 110
+          vertical:
+            ascend:
+              speed: 10
+            maxheight: 128
+            gravity: false
+          modifiers: false
+          ground: true
+        elytra:
+          horizontal:
+            speed: 460
+            modsprint: 1.0
+          vertical:
+            ascend:
+              speed: 0
+            maxheight: 767
+          modifiers: false
+          resetFwOnground: false
+          strict: true
+      actions: cancel vl>480 cancel log:notifyflyspeed1:2:20:i vl>3500 cancel cmdc:notifyflyspeed2:1:15 vl>8500 cancel log:notifyflyspeed3:1:11:i cancel
+    morepackets:
+      active: true
+      seconds: 6
+      epsideal: 20
+      epsmax: 22
+      burst:
+        packets: 20
+        directviolation: 24
+        epmviolation: 26
+      setbackage: 88
+      actions: cancel vl>20 cmdc:morepackets1:1:12 cancel vl>75 cmdc:morepackets2:1:11 cancel cmd:javaerror:1:10
+    nofall:
+      active: true
+      dealdamage: true
+      skipallowflight: true
+      resetonviolation: false
+      resetonteleport: false
+      resetonvehicle: true
+      anticriticals: true
+      actions: cancel log:nofall:1:11:i
+    passable:
+      active: true
+      actions: cancel vl>16 cmdc:phase1:1:12 cancel vl>40 cmdc:phase2:1:11 cancel vl>80 log:phase3:1:11:i cancel
+      untracked:
+        teleport:
+          active: true
+        command:
+          active: true
+          tryteleport: true
+          prefixes:
+          - sethome
+          - home set
+          - setwarp
+          - warp set
+          - setback
+          - set back
+          - back set
+          - warp
+          - home
+          - tp
+          - tpo
+          - tpask
+          - tpyes
+          - rtp
+          - wild
+    survivalfly:
+      active: true
+      stepheight: default
+      extended:
+        vertical-accounting: true
+        horizontal-accounting: true
+        reset-activeitem: true
+      leniency:
+        hbufmax: 1.0
+        freezecount: 40
+        freezeinair: true
+        violationfrequency:
+          active: true
+          debug: false
+          maxleniencyvl: 35
+          mintoadd: 5
+          morevls: 5
+          movecount: 10
+      setbackpolicy:
+        falldamage: true
+        voidtovoid: false
+      actions: cancel vl>310 cancel log:notifyfly1:3:12:i vl>1300 cancel cmdc:notifyfly2:1:11 vl>5500 cancel log:notifyfly3:2:11:i
+      hover:
+        active: true
+        step: 5
+        ticks: 85
+        loginticks: 100
+        falldamage: true
+        sfviolation: 200
+    velocity:
+      activationcounter: 80
+      activationticks: 140
+      strictinvalidation: true
+    splitmoves: default
+    ignorestance: default
+    tempkickillegal: true
+    loadchunks:
+      join: true
+      move: true
+      teleport: true
+      worldchange: true
+    sprintinggrace: 2.0
+    assumesprint: true
+    speedgrace: 4.0
+    enforcelocation: default
+    setback:
+      method: default
+    vehicle:
+      preventdestroyown: true
+      enforcelocation: default
+      schedulesetbacks: default
+      schedulesetpassenger: default
+      morepackets:
+        active: true
+        actions: cancel vl>15 cmdc:morepackets2:0:11 cancel
+      envelope:
+        active: default
+        hdistcap:
+          default: 0.9
+          pig: 0.3
+        actions: cancel vl>30 cancel log:vehicleenvelope:0:11:i
+    message:
+      illegalplayermove: Illegal move.
+      illegalvehiclemove: Illegal vehicle move.
+  net:
+    active: default
+    attackfrequency:
+      active: true
+      limitforseconds:
+        half: 9
+        one: 16
+        two: 28
+        four: 50
+        eight: 96
+      improbable:
+        weight: 3.0
+      actions: cancel vl>10 cmdc:attackfrequency1:1:12 cancel vl>35 cmdc:attackfrequency2:1:11 cancel vl>80 log:attackfrequency3:1:11:i cancel
+    flyingfrequency:
+      active: default
+      seconds: 5
+      packetspersecond: 60
+      actions: vl>20 cancel vl>40 cmdc:flyingfrequency:1:11 cancel
+      reduceredundant:
+        active: true
+        seconds: 3
+        actions: cancel
+    keepalivefrequency:
+      active: default
+      seconds: 20
+      actions: cancel vl>10 log:keepalive:1:11:i cancel
+    packetfrequency:
+      active: default
+      limitpersecond: 300
+      seconds: 4
+      actions: cancel cmd:kickpacketfrequency:1:10
+    sounddistance:
+      active: default
+      maxdistance: 320
+    superseded:
+      flying:
+        cancelwaiting: true
+    wrongturn:
+      active: default
+      actions: cancel cmdc:javaerror:1:10 cmdc:wrongturn:1:11
+strings:
+  attackfrequency1: conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.5 do ncp log stream notify &7(&a!&7) &a[player] &7may be using an &aAutoClicker &7(Fast Clicking) (&a[violations]VL&7)
+  attackfrequency2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is using an &6AutoClicker &7(Fast Clicking) (&6[violations]VL&7)
+  attackfrequency3: '&7(&c!&7) &c[player] &7is using an &cAutoClicker &7(Fast Clicking) (&c[violations]VL&7)'
+  autosign: '&7(&c!&7) &c[player] &7failed &cAutosSign&7 ([tags]) (&c[violations]VL&7)'
+  ban: ban [player]
+  ban-ip: ban-ip [ip]
+  bedleave: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cBedFucker (&c[violations]VL&7)
+  blockdirectionbreak: conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed (Block-related) Direction &7(&cNuker&7) (&c[violations]VL&7)
+  blockdirectionplace: conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed (Block-related) Direction &7(Schematica?) (&c[violations]VL&7)
+  blockreach: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed (Block-related) &cReach &7(&c[violations]VL&7)
+  blockspeed: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player]&7 &7failed (Block-interact) Speed (&cNuker&7/&cFastPlace&7) (&c[violations]VL&7)
+  clickpattern1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&a!&7) &a[player] &7is clicking in a pattern (&aAutoClicker&7/&aAimBot&7) (&a[violations]VL&7)
+  clickpattern2: conditionalcommands:ccmd [player] unless -ping->281|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7triggered &6ClickPattern &7(&6[violations]VL&7)
+  clickpattern3: '&7(&c!&7) &c[player] &7does not click like a human (&cAutoClicker&7) (&c[violations]VL&7) (&c[violations]VL&7)'
+  crits1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6Crits (&6[violations]VL&7)
+  crits2: '&7(&c!&7) &c[player] &7failed &cCrits &7(&c[violations]VL&7)'
+  fastbow: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cFastBow &7(&c[violations]VL&7)
+  fastbreak1: 'conditionalcommands:ccmd [player] unless -ping->161|-tps-<18.5 do ncp log stream notify &7(&a!&7) &a[player] &7failed &aFastMine &7(Block: [blocktype]) (&a[violations]VL&7)'
+  fastbreak2: 'conditionalcommands:ccmd [player] unless -ping->281|-tps-<18.5 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6FastMine &7(Block: [blocktype]) (&6[violations]VL&7)'
+  fastbreak3: '&7(&c!&7) &c[player] &7failed &cFastMine &7(Block: [blocktype]) (&c[violations]VL&7)'
+  fastclick1: '&7(&6!&7) &6[player] &7failed &6ChestSteal &7(&6[violations]VL&7)'
+  fastclick2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cChestSteal &7(&c[violations]VL&7) (Kicked)
+  fastconsume: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cFastEat &7([food]) (&c[violations]VL&7)
+  fastheal1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6FastHeal &7(&6[violations]VL&7)
+  fastheal2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cFastHeal &7(&c[violations]VL&7)
+  fastplace1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&a!&7) &a[player] &7failed &aFastPlace &7(&a[violations]VL&7)
+  fastplace2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6FastPlace &7(&6[violations]VL&7)
+  fastplace3: '&7(&c!&7) &c[player] &7failed &cFastPlace &7(&c[violations]VL&7)'
+  flyingfrequency: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7is sending movement packets (&cSpeed&7) (&c[violations]VL&7)
+  gutenberg: '&7(&c!&7) &c[player] &7created a book with too many pages! (&cGutenberg&7) (&c[violations]VL&7)'
+  instantnuker: '&7(&c!&7) &c[player] &7failed (Instant) &cNuker &7(&c[violations]VL&7)'
+  inventorymove: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cInventoryMove &7([tags]) (&c[violations]VL&7)
+  fightangle1: '&7(&a!&7) &a[player] &7might be using an &aAimBot &7(Angle) ([tags]) (&a[violations]VL&7)'
+  fightangle2: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is using an &6AimBot &7(Angle)([tags]) (&6[violations]VL&7)
+  fightangle3: '&7(&c!&7) &c[player] &7is using an &cAimBot &7(Angle) ([tags]) (&c[violations]VL&7)'
+  fightdirection1: '&7(&a!&7) &a[player] &7might be using an &aAimBot &7(Direction) (&a[violations]VL&7)'
+  fightdirection2: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is using an &6AimBot &7(Direction) (&6[violations]VL&7)
+  fightdirection3: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7is using an &cAimBot &7(Direction) (&c[violations]VL&7)
+  fightreach1: '&7(&a!&7) &a[player] &7failed (Combat) &aReach &7([reachdistance] Blocks) (&a[violations]VL&7)'
+  fightreach2: '&7(&6!&7) &6[player] &7failed (Combat) &6Reach &7([reachdistance] Blocks) (&6[violations]VL&7)'
+  fightreach3: '&7(&c!&7) &c[player] &7failed (Combat) &cReach &7([reachdistance] Blocks) (&c[violations]VL&7)'
+  fightspeed1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&a!&7) &a[player] &7failed (Combat) &aSpeed &7([cps] CPS) (&a[violations]VL&7)
+  fightspeed2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7failed (Combat) &6Speed &7([cps] CPS) (&6[violations]VL&7)
+  fightspeed3: '&7(&c!&7) &c[player] &7failed (Combat) &cSpeed &7([cps] CPS) (&c[violations]VL&7)'
+  improbable1: '&7(&a!&7) &a[player] &7is using an &aAimBot &7(Improbable) (&a[violations]VL&7)'
+  improbable2: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is using an &6AimBot &7(Improbable) (&6[violations]VL&7)
+  improbable3: '&7(&c!&7) &c[player] &7is likely using an &cAimBot &7(Improbable) (&c[violations]VL&7)'
+  instanteat: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cInstantEat &7(&c[violations]VL&7)
+  javaerror: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do kick [player] Internal Exception; io.netty.handler.timeout.ReadTimeoutException
+  keepalive: '&7(&c!&7) &c[player] &7failed sending &cKeep-alive packets&7(&c[violations]VL&7)'
+  kickbedleave: kick [player] Go find a bed!
+  kickcaptcha: kick [player] Enter the captcha!
+  kickchat1: ncp tempkick [player] 5 You are not intended to spam!
+  kickchat5: ncp tempkick [player] 5 You are not intended to spam!
+  kickchatfast: kick [player] You are not allowed to spam in chat!
+  kickchatnormal: kick [player] Too many chat messages, take a break.
+  kickcommands: ncp tempkick [player] 1 You're not allowed to spam commands!
+  kickdrop: kick [player] Dropping items too fast.
+  kickinvaliddata: kick [player] Invalid data.
+  kickpacketfrequency: kick [player] Too many packets.
+  kickselfhit: kick [player] You tried to hit yourself!
+  morepackets1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&6!&7) &6[player] &7is sending too many movement packets &7(&6Timer&7/&6Blink&7) (&6[violations]VL&7)
+  morepackets2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7is sending too many packets &7(&cTimer&7/&cBlink&7) (&c[violations]VL&7)
+  nofall: '&7(&c!&7) &c[player] &7failed &cNoFall &7(&c[violations]VL&7)'
+  notifyfly1: '&7(&a!&7) &a[player] &7is moving suspiciously (&aSurvivalFly&7) ([subchecks]) (&a[violations]VL&7)'
+  notifyfly2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is moving suspiciously (&6SurvivalFly&7) ([subchecks]) (&6[violations]VL&7)
+  notifyfly3: '&7(&c!&7) &c[player] &7tried to &cFly &7([subchecks]) (&c[violations]VL&7)'
+  notifyflyspeed1: '&7(&a!&7) &a[player] &7is moving too quickly (&aExtraElytra&7?) (&a[violations]VL&7)'
+  notifyflyspeed2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7is moving too quickly (&6ExtraElytra&7?) (&6[violations]VL&7)
+  notifyflyspeed3: '&7(&c!&7) &c[player] &7is moving too quickly (&cExtraElytra&7) (&c[violations]VL&7)'
+  noswing: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cNoSwing &7(&c[violations]VL&7)
+  phase1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&a!&7) &a[player] &7failed &aPhase &7(&a[violations]VL&7)
+  phase2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6Phase &7(&6[violations]VL&7)
+  phase3: '&7(&c!&7) &c[player] &7failed &cPhase &7(&c[violations]VL&7)'
+  pitchpattern1: '&7(&6!&7) &6[player] &7is using an &6AimBot &7(PitchPattern) (&6[violations]VL&7)'
+  pitchpattern2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7is using an &cAimBot &7(PitchPattern) (&c[violations]VL&7)
+  projectilespeed: '&7(&c!&7) &c[player] &7is throwing projectiles very quickly &7(&c[violations]VL&7)'
+  scaffold1: conditionalcommands:ccmd [player] unless -ping->191|-tps-<18.5 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6Scaffold &7([tags]) (&6[violations]VL&7)
+  scaffold2: conditionalcommands:ccmd [player] unless -ping->261|-tps-<18.5 do ncp log stream notify &7(&6!&7) &6[player] &7failed &6Scaffold &7([tags]) (&6[violations]VL&7)
+  scaffold3: '&7(&c!&7) &c[player] &7failed &cScaffold &7([tags]) (&c[violations]VL&7)'
+  selfhit: '&7(&c!&7) &c[player] &7failed &cSelfHit &7(&c[violations]VL&7)'
+  vehicleenvelope: '&7(&c!&7) &c[player] &7failed (Vehicle Movement) &cSpeed &7 ([tags]) (&c[violations]VL&7)'
+  wrongturn: conditionalcommands:ccmd [player] unless -ping->251|-tps-<18.0 do ncp log stream notify &7(&c!&7) &c[player] &7failed &cWrongTurn &7(&c[violations]VL&7)
+compatibility:
+  exemptions:
+    wildcard:
+      default:
+        metadata:
+          active: true
+          keys:
+          - nocheat.exempt
+      npc:
+        active: true
+        bukkitnpc: true
+        metadata:
+          active: true
+          keys:
+          - NPC
+    remove:
+      join: true
+      leave: true
+  server:
+    cbdedicated:
+      enable: true
+    cbreflect:
+      enable: true
+  blocks:
+    breakingtime:
+      IRON_BLOCK:PICKAXE:DIAMOND:12: 1139
+    allowinstantbreak: []
+    overrideflags:
+      snow: default
+    changetracker:
+      active: true
+      pistons: true
+      maxageticks: 20
+      perworld:
+        maxentries: 1000

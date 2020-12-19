@@ -1,0 +1,595 @@
+MINING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fMining Profession Booster
+    lore:
+    - §fBoosts §aMining Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create mining .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 0 255
+    hide-potion-effects: true
+MINING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Mining Profession Booster
+    lore:
+    - §fBoosts §aMining Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create mining .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 0 255
+    hide-potion-effects: true
+MINING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Mining Profession Booster
+    lore:
+    - §fBoosts §aMining Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create mining .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 0 255
+    hide-potion-effects: true
+MINING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Mining Profession Booster
+    lore:
+    - §fBoosts §aMining Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create mining .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 0 255
+    hide-potion-effects: true
+MINING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eMining Profession Booster
+    lore:
+    - §fBoosts §aMining Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create mining .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 0 255
+    hide-potion-effects: true
+FORAGING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fForaging Profession Booster
+    lore:
+    - §fBoosts §aForaging Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Foraging .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 0
+    hide-potion-effects: true
+FORAGING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Foraging Profession Booster
+    lore:
+    - §fBoosts §aForaging Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Foraging .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 0
+    hide-potion-effects: true
+FORAGING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Foraging Profession Booster
+    lore:
+    - §fBoosts §aForaging Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Foraging .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 0
+    hide-potion-effects: true
+FORAGING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Foraging Profession Booster
+    lore:
+    - §fBoosts §aForaging Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Foraging .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 0
+    hide-potion-effects: true
+FORAGING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eForaging Profession Booster
+    lore:
+    - §fBoosts §aForaging Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Foraging .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 0
+    hide-potion-effects: true
+FARMING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fFarming Profession Booster
+    lore:
+    - §fBoosts §aFarming Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Farming .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 255 0
+    hide-potion-effects: true
+FARMING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Farming Profession Booster
+    lore:
+    - §fBoosts §aFarming Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Farming .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 255 0
+    hide-potion-effects: true
+FARMING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Farming Profession Booster
+    lore:
+    - §fBoosts §aFarming Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Farming .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 255 0
+    hide-potion-effects: true
+FARMING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Farming Profession Booster
+    lore:
+    - §fBoosts §aFarming Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Farming .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 255 0
+    hide-potion-effects: true
+FARMING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eFarming Profession Booster
+    lore:
+    - §fBoosts §aFarming Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Farming .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 255 0
+    hide-potion-effects: true
+SLAYER_BOOSTER1:
+  base:
+    material: POTION
+    name: §fSlayer Profession Booster
+    lore:
+    - §fBoosts §aSlayer Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Slayer .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 0 0
+    hide-potion-effects: true
+SLAYER_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Slayer Profession Booster
+    lore:
+    - §fBoosts §aSlayer Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Slayer .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 0 0
+    hide-potion-effects: true
+SLAYER_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Slayer Profession Booster
+    lore:
+    - §fBoosts §aSlayer Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Slayer .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 0 0
+    hide-potion-effects: true
+SLAYER_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Slayer Profession Booster
+    lore:
+    - §fBoosts §aSlayer Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Slayer .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 0 0
+    hide-potion-effects: true
+SLAYER_BOOSTER5:
+  base:
+    material: POTION
+    name: §eSlayer Profession Booster
+    lore:
+    - §fBoosts §aSlayer Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Slayer .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 0 0
+    hide-potion-effects: true
+ENCHANTING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fEnchanting Profession Booster
+    lore:
+    - §fBoosts §aEnchanting Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Enchanting .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 40 187
+    hide-potion-effects: true
+ENCHANTING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Enchanting Profession Booster
+    lore:
+    - §fBoosts §aEnchanting Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Enchanting .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 40 187
+    hide-potion-effects: true
+ENCHANTING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Enchanting Profession Booster
+    lore:
+    - §fBoosts §aEnchanting Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Enchanting .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 40 187
+    hide-potion-effects: true
+ENCHANTING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Enchanting Profession Booster
+    lore:
+    - §fBoosts §aEnchanting Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Enchanting .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 40 187
+    hide-potion-effects: true
+ENCHANTING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eEnchanting Profession Booster
+    lore:
+    - §fBoosts §aEnchanting Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Enchanting .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 40 187
+    hide-potion-effects: true
+COOKING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fCooking Profession Booster
+    lore:
+    - §fBoosts §aCooking Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Cooking .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 165 0
+    hide-potion-effects: true
+COOKING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Cooking Profession Booster
+    lore:
+    - §fBoosts §aCooking Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Cooking .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 165 0
+    hide-potion-effects: true
+COOKING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Cooking Profession Booster
+    lore:
+    - §fBoosts §aCooking Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Cooking .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 165 0
+    hide-potion-effects: true
+COOKING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Cooking Profession Booster
+    lore:
+    - §fBoosts §aCooking Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Cooking .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 165 0
+    hide-potion-effects: true
+COOKING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eCooking Profession Booster
+    lore:
+    - §fBoosts §aCooking Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Cooking .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 255 165 0
+    hide-potion-effects: true
+SPELLFORGING_BOOSTER1:
+  base:
+    material: POTION
+    name: §fSpellforging Profession Booster
+    lore:
+    - §fBoosts §aSpellforging Profession EXP
+    - §fby §a10% §ffor §a60 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: COMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Spellforging .1 3600 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 255
+    hide-potion-effects: true
+SPELLFORGING_BOOSTER2:
+  base:
+    material: POTION
+    name: §2Spellforging Profession Booster
+    lore:
+    - §fBoosts §aSpellforging Profession EXP
+    - §fby §a20% §ffor §a90 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: UNCOMMON
+    commands:
+      cmd0:
+        format: mmocore booster create Spellforging .2 5400 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 255
+    hide-potion-effects: true
+SPELLFORGING_BOOSTER3:
+  base:
+    material: POTION
+    name: §9Spellforging Profession Booster
+    lore:
+    - §fBoosts §aSpellforging Profession EXP
+    - §fby §a30% §ffor §a120 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: RARE
+    commands:
+      cmd0:
+        format: mmocore booster create Spellforging .3 7200 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 255
+    hide-potion-effects: true
+SPELLFORGING_BOOSTER4:
+  base:
+    material: POTION
+    name: §5Spellforging Profession Booster
+    lore:
+    - §fBoosts §aSpellforging Profession EXP
+    - §fby §a40% §ffor §a150 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: LEGENDARY
+    commands:
+      cmd0:
+        format: mmocore booster create Spellforging .4 9000 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 255
+    hide-potion-effects: true
+SPELLFORGING_BOOSTER5:
+  base:
+    material: POTION
+    name: §eSpellforging Profession Booster
+    lore:
+    - §fBoosts §aSpellforging Profession EXP
+    - §fby §a50% §ffor §a180 minutes
+    - §ffor the entire serever!
+    max-consume: 1.0
+    tier: EXOTIC
+    commands:
+      cmd0:
+        format: mmocore booster create Spellforging .5 10800 %player%
+        delay: 0.0
+        op: true
+    potion-color: 0 255 255
+    hide-potion-effects: true

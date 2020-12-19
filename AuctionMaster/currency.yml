@@ -1,0 +1,21 @@
+#Let the plugin know what currency you want to use
+#for your player's auctions
+
+#Put 'Vault' for Vault Currency(Default)
+#Put 'TokenManager' for TokenManager Currency
+#Put 'PlayerPoints' for PlayerPoints Currency
+#Put 'Skript' for Skript Currency
+#If you misspell the currency type, it will automatically select Vault
+currency-type: 'Vault'
+
+#If your currency does not work the auction won't either
+#There are two possible errors:
+#Error 404 = The currency plugin is missing
+#Error 505 = The player's currency is unreachable (Frequently caused by undeclared/misspelled skript variables)
+
+#----------- Skript Configuration -----------
+#Use %player% for player's name
+#The variable should be like in skript but without braces
+#Example: {balance.%player%} would be balance.%player%
+skript-variable: 'balance::%player%'
+

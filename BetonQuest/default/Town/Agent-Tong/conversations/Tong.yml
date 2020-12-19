@@ -1,0 +1,50 @@
+quester: Tong
+first: greeting
+NPC_options:
+
+  greeting:
+    text: Hey &a%player%&7, what can I help you with?
+    pointers: rules, bugs, cheating, bye
+
+#Rules
+  rules:
+    text: "You can view the rules on our website: &ahttps://www.adventurescraft.net/rules"
+    pointers: goBack, bye
+
+#Selected from quest1 dialogue, which will start his first quest
+  bugs:
+    text: "Please report the bug to us on Discord: &ahttps://discord.com/invite/bw4DztR &7and we'll send an Agent out to handle this situation! You'll also be &arewarded &7once it's fixed!"
+    pointers: goBack, bye
+
+  cheating:
+    text: "Make sure you've read our &arules&7, then use &c/report &7to report the cheater! One of our Agents will start an investigation. (Bonus item if you submit proof!)"
+    pointers: goBack, bye
+
+  bye:
+    text: "Have a great day &a%player%&7, I'm always here to help you!"
+
+#This is how a player responds and what options they have
+player_options:
+#Rules
+  rules:
+    text: What are the &arules&f?
+    pointers: rules
+#Bugs
+  bugs:
+    text: I think I found a &cbug&f!
+    pointers: bugs
+#Bugs
+  cheating:
+    text: I saw someone &ccheating&f!
+    pointers: cheating
+
+
+#Greeting > Bye    
+  bye:
+    text: That's all I needed, thanks!
+    pointers: bye
+#Town_Info > wow 
+  goBack:
+    text: Thanks, could I ask something else?
+    pointers: greeting
+

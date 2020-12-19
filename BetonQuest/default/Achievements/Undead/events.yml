@@ -1,0 +1,164 @@
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder tag_q1_completed,q1_finish_message,QuestReward1'
+QuestReward1: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Slayer 250 ^command money give %player% 200"
+tag_q1_completed: 'tag add q1_completed'
+q1_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$"
+
+entry_q2_complete: 'folder tag_q2_completed,q2_finish_message,QuestReward2'
+QuestReward2: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 450"
+tag_q2_completed: 'tag add q2_completed'
+q2_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$"
+
+entry_q3_complete: 'folder tag_q3_completed,q3_finish_message,QuestReward3'
+QuestReward3: "run ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Slayer 750 ^command money give %player% 2500"
+tag_q3_completed: 'tag add q3_completed'
+q3_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$"
+
+entry_q4_complete: 'folder tag_q4_completed,q4_finish_message,QuestReward4'
+QuestReward4: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 5000"
+tag_q4_completed: 'tag add q4_completed'
+q4_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name4$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward4-1$ \n&8&l »  $quest_reward4-2$ \n&8&l »  $quest_reward4-3$"
+
+entry_q5_complete: 'folder tag_q5_completed,q5_finish_message,QuestReward5'
+QuestReward5: "if empty0 QuestReward5_Full else QuestReward5_Folder"
+QuestReward5_Folder: 'folder QuestReward5_If_Not_Full,QuestReward5_Claimed_Tag'
+QuestReward5_If_Not_Full: "run ^command mmoitems give STAFF CURSED_STAFF %player% 1 ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 10000"
+QuestReward5_Full: 'folder QuestReward5_Full_message,QuestReward5_Full_Tag'
+QuestReward5_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name5$ &cto redeem your rewards!"
+QuestReward5_Full_Tag: "tag add q5_rewards_unclaimed"
+#SECOND QUEST, this only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward5_Claim: 'folder Claim_QuestReward5,QuestReward5_Claim_message,QuestReward5_Claimed_Tag,QuestReward5_del_Claimed_Tag'
+Claim_QuestReward5: "run ^command mmoitems give STAFF CURSED_STAFF %player% 1 ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 10000"
+QuestReward5_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward5_Claimed_Tag: "tag add q5_rewards_claimed"
+QuestReward5_del_Claimed_Tag: "tag del q5_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+tag_q5_completed: 'tag add q5_completed'
+q5_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name5$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward5-4$ \n&8&l »  $quest_reward5-1$ \n&8&l »  $quest_reward5-2$ \n&8&l »  $quest_reward5-3$"
+
+
+
+#REAPER
+entry_q6_complete: 'folder tag_q6_completed,q6_finish_message,QuestReward6'
+QuestReward6: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 250"
+tag_q6_completed: 'tag add q6_completed'
+q6_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name6$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward6-1$ \n&8&l »  $quest_reward6-2$ \n&8&l »  $quest_reward6-3$"
+
+entry_q7_complete: 'folder tag_q7_completed,q7_finish_message,QuestReward7'
+QuestReward7: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 2500"
+tag_q7_completed: 'tag add q7_completed'
+q7_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name7$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward7-1$ \n&8&l »  $quest_reward7-2$ \n&8&l »  $quest_reward7-3$"
+
+entry_q8_complete: 'folder tag_q8_completed,q8_finish_message,QuestReward8'
+QuestReward8: "run ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 5000"
+tag_q8_completed: 'tag add q8_completed'
+q8_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name8$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward8-1$ \n&8&l »  $quest_reward8-2$ \n&8&l »  $quest_reward8-3$"
+
+entry_q9_complete: 'folder tag_q9_completed,q9_finish_message,QuestReward9'
+QuestReward9: "if empty0 QuestReward9_Full else QuestReward9_Folder"
+QuestReward9_Folder: 'folder QuestReward9_If_Not_Full,QuestReward9_Claimed_Tag'
+QuestReward9_If_Not_Full: "run ^command mmoitems give CONSUMABLE REAPER_HEAD %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 50000"
+QuestReward9_Full: 'folder QuestReward9_Full_message,QuestReward9_Full_Tag'
+QuestReward9_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name9$ &cto redeem your rewards!"
+QuestReward9_Full_Tag: "tag add q9_rewards_unclaimed"
+#SECOND QUEST, this only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward9_Claim: 'folder Claim_QuestReward9,QuestReward9_Claim_message,QuestReward9_Claimed_Tag,QuestReward9_del_Claimed_Tag'
+Claim_QuestReward9: "run ^command mmoitems give CONSUMABLE REAPER_HEAD %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 50000"
+QuestReward9_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward9_Claimed_Tag: "tag add q9_rewards_claimed"
+QuestReward9_del_Claimed_Tag: "tag del q9_rewards_unclaimed"
+tag_q9_completed: 'tag add q9_completed'
+q9_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name9$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward9-4$ \n&8&l »  $quest_reward9-1$ \n&8&l »  $quest_reward9-2$ \n&8&l »  $quest_reward9-3$"
+
+entry_q10_complete: 'folder tag_q10_completed,q10_finish_message,QuestReward10'
+QuestReward10: "if empty0 QuestReward10_Full else QuestReward10_Folder"
+QuestReward10_Folder: 'folder QuestReward10_If_Not_Full,QuestReward10_Claimed_Tag'
+QuestReward10_If_Not_Full: "run ^command mmoitems give ARMOR REAPER_HEAD %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+QuestReward10_Full: 'folder QuestReward10_Full_message,QuestReward10_Full_Tag'
+QuestReward10_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name10$ &cto redeem your rewards!"
+QuestReward10_Full_Tag: "tag add q10_rewards_unclaimed"
+#SECOND QUEST, this only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward10_Claim: 'folder Claim_QuestReward10,QuestReward10_Claim_message,QuestReward10_Claimed_Tag,QuestReward10_del_Claimed_Tag'
+Claim_QuestReward10: "run ^command mmoitems give ARMOR REAPER_HEAD %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+QuestReward10_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward10_Claimed_Tag: "tag add q10_rewards_claimed"
+QuestReward10_del_Claimed_Tag: "tag del q10_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+tag_q10_completed: 'tag add q10_completed'
+q10_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name10$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward10-4$ \n&8&l »  $quest_reward10-1$ \n&8&l »  $quest_reward10-2$ \n&8&l »  $quest_reward10-3$"
+
+
+#MORDEN
+#1
+entry_q11_complete: 'folder tag_q11_completed,q11_finish_message,QuestReward11'
+QuestReward11: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 250"
+tag_q11_completed: 'tag add q11_completed'
+q11_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name11$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward11-1$ \n&8&l »  $quest_reward11-2$ \n&8&l »  $quest_reward11-3$"
+#2
+entry_q12_complete: 'folder tag_q12_completed,q12_finish_message,QuestReward12'
+QuestReward12: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 2500"
+tag_q12_completed: 'tag add q12_completed'
+q12_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name12$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward12-1$ \n&8&l »  $quest_reward12-2$ \n&8&l »  $quest_reward12-3$"
+#3
+entry_q13_complete: 'folder tag_q13_completed,q13_finish_message,QuestReward13'
+QuestReward13: "run ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 5000"
+tag_q13_completed: 'tag add q13_completed'
+q13_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name13$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward13-1$ \n&8&l »  $quest_reward13-2$ \n&8&l »  $quest_reward13-3$"
+#4
+entry_q14_complete: 'folder tag_q14_completed,q14_finish_message,QuestReward14'
+QuestReward14: "if empty0 QuestReward14_Full else QuestReward14_Folder"
+QuestReward14_Folder: 'folder QuestReward14_If_Not_Full,QuestReward14_Claimed_Tag'
+QuestReward14_If_Not_Full: "run ^command mmoitems give HAMMER GRAVE_DIGGER %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 50000"
+QuestReward14_Full: 'folder QuestReward14_Full_message,QuestReward14_Full_Tag'
+QuestReward14_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name14$ &cto redeem your rewards!"
+QuestReward14_Full_Tag: "tag add q14_rewards_unclaimed"
+#SECOND QUEST, this only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward14_Claim: 'folder Claim_QuestReward14,QuestReward14_Claim_message,QuestReward14_Claimed_Tag,QuestReward14_del_Claimed_Tag'
+Claim_QuestReward14: "run ^command mmoitems give HAMMER GRAVE_DIGGER %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 50000"
+QuestReward14_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward14_Claimed_Tag: "tag add q14_rewards_claimed"
+QuestReward14_del_Claimed_Tag: "tag del q14_rewards_unclaimed"
+tag_q14_completed: 'tag add q14_completed'
+q14_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name14$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward14-4$ \n&8&l »  $quest_reward14-1$ \n&8&l »  $quest_reward14-2$ \n&8&l »  $quest_reward14-3$"
+#3
+entry_q15_complete: 'folder tag_q15_completed,q15_finish_message,QuestReward15'
+QuestReward15: "if empty0 QuestReward15_Full else QuestReward15_Folder"
+QuestReward15_Folder: 'folder QuestReward15_If_Not_Full,QuestReward15_Claimed_Tag'
+QuestReward15_If_Not_Full: "run ^command mmoitems give COMPANION PET_BOSS %player% 1 ^command mmocore admin exp give %player% main 200000 ^command mmocore admin exp give %player% Slayer 200000 ^command money give %player% 100000"
+QuestReward15_Full: 'folder QuestReward15_Full_message,QuestReward15_Full_Tag'
+QuestReward15_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name15$ &cto redeem your rewards!"
+QuestReward15_Full_Tag: "tag add q15_rewards_unclaimed"
+#SECOND QUEST, this only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward15_Claim: 'folder Claim_QuestReward15,QuestReward15_Claim_message,QuestReward15_Claimed_Tag,QuestReward15_del_Claimed_Tag'
+Claim_QuestReward15: "run ^command mmoitems give COMPANION PET_BOSS %player% 1 ^command mmocore admin exp give %player% main 200000 ^command mmocore admin exp give %player% Slayer 200000 ^command money give %player% 100000"
+QuestReward15_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward15_Claimed_Tag: "tag add q15_rewards_claimed"
+QuestReward15_del_Claimed_Tag: "tag del q15_rewards_unclaimed"
+
+tag_q15_completed: 'tag add q15_completed'
+q15_finish_message: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name15$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward15-4$ \n&8&l »  $quest_reward15-1$ \n&8&l »  $quest_reward15-2$ \n&8&l »  $quest_reward15-3$"
+
+
+
+Achievements: "run ^command dm open Achievements %player%"
+
+#OpenJournal: "journal SHOW q1_part1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

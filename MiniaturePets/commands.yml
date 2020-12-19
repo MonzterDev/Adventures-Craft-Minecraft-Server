@@ -1,0 +1,76 @@
+mainCommand:
+  command: mpet
+  noArgs: '&6Use the /mpet help '
+  noPermission: '&4You dont have permissions for this command'
+  noSuchCommand: '&4This command doesnt exists'
+  playerOnly: '&4This command is for players only'
+  aliases: []
+  help:
+    command: help
+    help: Use this command to see how to use all other commands
+    noHelp: There is no help for this command at the moment
+    helpFormat: ' &2%command%&a - %help%'
+    title: '&b-------- &3%maincommand% page %currectPage%/%maxPage% &b--------'
+    notANumber: '&c%input% is not a number'
+    outOfBound: '&c%input% is bigger than %mapPage%'
+  open:
+    command: open
+    help: Use this command to open the gui
+  pet:
+    command: pet
+    help: Spawn a specific pet
+    noPet: '&cThe pet %name% doesn''t exists'
+    noPermissionPet: '&cYou dont have permissions to spawn the pet %name%'
+    missingArgs: '&cMissing args , currect usage : /%maincommand% %petcommand% (petName)'
+    playerOnly: '&4This command is for players only'
+    pet:
+      command: pet
+    noPermission: '&4You dont have permissions for this command'
+  reload:
+    command: reload
+    help: Use this command to reload the pets
+    message: '&aReloaded the pets'
+  clear:
+    command: clear
+    help: Use this command to clear nearby pets (10 raduis)
+    commandall: clearall
+    helpall: Clear all pets in all worlds.
+    consoleMessage: '&cCleared all pets'
+    playerMessage: '&cCleared pets in a 10 block raduis'
+  call:
+    command: call
+    help: Call your pet to you!
+    teleportMessage: '&aYour pet has been teleported to you'
+    playerOnly: '&4This command is for players only'
+  setname:
+    command: setName
+    help: Use this command to name your pet - /mpet setName (Name)
+  remove:
+    command: remove
+    help: Use this command to remove your pet - /mpet remove
+  hat:
+    command: hat
+    help: Wear your pet as a hat!
+    disableHat: '&cYou removed your mpet hat'
+    enableHat: '&aYou are now wearing a mpet hat'
+    cantUseHatWhileRiding: '&cYou can''t use the hat command while riding.'
+  ride:
+    command: ride
+    help: Use this command to ride your pet
+    disguiseInterrupt: '&cYou can''t ride your pet while you''re disguised'
+    ridingMessage: '&aYou are now riding your pet'
+    notRidingMessage: '&cYou are now not riding your pet'
+  disguise:
+    command: disguise
+    help: Use this command to disguise as your pet
+    rideInterrupt: '&cYou can''t disguise as your pet while you''re riding it'
+    toUndisguise: '&aTo undisguise use the disguise command agian'
+    disguised: '&aYou are now disguised'
+    notDisguised: '&cYou are now not disguised'
+  sit:
+    command: sit
+    help: Use this command to make your pet sit and not follow you
+    staticError: '&cYour pet is already static'
+    petSit: '&aYour pet is now sitting'
+    petUnsit: '&cYour pet is no longer sitting'
+playerOnly: '&4This command is for players only'

@@ -1,0 +1,300 @@
+# Edit the plugin here
+Bank:
+  Save:
+    # SaveType of the plugin: SQLITE, MYSQL
+    Type: MYSQL
+    Auto:
+      # Enable Auto Save
+      Enabled: true
+      # Auto Save Timer (seconds)
+      Timer: 120
+    Item:
+      # Auto Save when item deposited
+      Deposit: false
+      # Auto Save when item withdrawn
+      Withdraw: false
+    Exp:
+      # Auto Save when exp deposited
+      Deposit: false
+      # Auto Save when exp withdrawn
+      Withdraw: false
+    Money:
+      # Auto Save when money deposited
+      Deposit: false
+      # Auto Save when money withdrawn
+      Withdraw: false
+  Items:
+    # Set bank mode to items only
+    Only: true
+    # Enable bank items
+    Enabled: true
+    Trashcan:
+      # Enable the trashcan in the item gui
+      Enabled: true
+    Tabs:
+      # Enable the tabs in the item gui
+      Enabled: false
+      Permission:
+        # Enable permissions for tabs: bank.tabs.<number>
+        Enabled: true
+      # Default amount of item tabs
+      Default: 1
+      Buy:
+        # Enable buying of tabs
+        Enabled: false
+        # Cost for each new tabs
+        Cost: 50
+    Slots:
+      # Default amount of item slots
+      Default: 45
+      Buy:
+        Per:
+          # Set bought slots unique to each tab
+          Tab: true
+        # Enable buying of slots
+        Enabled: false
+        # Cost for each new slots
+        Cost: 50
+        # Max amount of bought slots
+        Max: 300
+    Blacklist:
+      # Enable item blacklist
+      Enabled: true
+  Pin:
+    # Enable bank pin
+    Enabled: false
+  Exp:
+    # Enable bank exp
+    Enabled: false
+    # Set bank mode to exp only
+    Only: false
+    Format:
+      # Format exp in messages
+      Enabled: true
+    # Set max exp in bank
+    Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+    Interest:
+      # Enable bank exp interest
+      Enabled: false
+      # If running mysql set only 1 server as main
+      Main: false
+      Message:
+        # Enable message on exp interest gained
+        Enabled: false
+      Online:
+        Percent:
+          # Set the amount as a % to gain, 0.01 is 1%
+          Gained: 0.01
+        # Set the max amount of exp gained
+        Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+        # Set the account minimum to give interest
+        Minimum: '0.00'
+      Offline:
+        Percent:
+          # Set the amount as a % to gain, 0.001 is 0.1%
+          Gained: 0.001
+        # Set the max amount of exp gained
+        Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+        # Set the account minimum to give interest
+        Minimum: '0.00'
+      Timer:
+        # Set the time in seconds to give interest, default (1800) 30 mins
+        Time: 1800
+        # Set the amount of time till the next interest given
+        # Once set this cannot be modified in the config whilst the server is running
+        Next: 1800
+  Money:
+    # Enable bank money
+    Enabled: false
+    Format:
+      # Format money in messages
+      Enabled: true
+    Full:
+      # Show only full dollars
+      Dollars: false
+    Deposit:
+      # Only able to deposit full $ (no decimal)
+      Full: false
+    # Set bank mode to money only
+    Only: false
+    # Set max money in bank
+    Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+    Interest:
+      # Enable bank money interest
+      Enabled: false
+      # If running mysql set only 1 server as main
+      Main: false
+      Message:
+        # Enable message on money interest gained
+        Enabled: false
+      Online:
+        Percent:
+          # Set the amount as a % to gain, 0.01 is 1%
+          Gained: 0.01
+        # Set the max amount of money gained
+        Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+        # Set the account minimum to give interest
+        Minimum: '0.00'
+      Offline:
+        Percent:
+          # Set the amount as a % to gain, 0.001 is 0.1%
+          Gained: 0.001
+        # Set the max amount of money gained
+        Max: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+        # Set the account minimum to give interest
+        Minimum: '0.00'
+      Timer:
+        # Set the time in seconds to give interest, default (1800) 30 mins
+        Time: 1800
+        # Set the amount of time till the next interest given
+        # Once set this cannot be modified in the config whilst the server is running
+        Next: 1800
+  Type:
+    Citizens:
+      # Enable Citizens / Use /trait add bank-trait
+      Enabled: false
+    Block:
+      # Enable blocks /bank admin add block
+      Enabled: true
+      # Enabled block locations
+      Locations:
+      - Spawn, -32, 17, -50
+    Sign:
+      # Enable Signs
+      Enabled: false
+      # Sign Text
+      Text: '&2[Bank]'
+  Implementation:
+    Skript:
+      # Enable skript implementation
+      Enabled: false
+    Vault:
+      # Enable bank as the vault override
+      Override: false
+      # Enable bank commands for vault eco (/bank eco)
+      Commands: false
+    Placeholder:
+      # Enable MVDWPlaceholderAPI
+      Mvdw: falsetrue
+      # Enable PlaceholderAPI
+      Api: false
+  Expire:
+    # Enable the bank expire manager
+    Enabled: false
+    # Enable the bank expire manager
+    Days: 30
+  # Enable converters from other plugins here
+  # Keep the other plugins folder!
+  # And delete the other plugin jar
+  Converter:
+    Bankcraft:
+      # Enable bankcraft converter (make sure to backup bankcraft data)
+      Enabled: false
+    Chestbank:
+      # Enable chestbank converter (make sure to backup chestbank data)
+      Enabled: false
+    Economybank:
+      # Enable economybank converter (make sure to backup economybank data)
+      Enabled: false
+    Timeismoney:
+      # Enable timeismoney converter (make sure to backup timeismoney data)
+      Enabled: false
+  Mysql:
+    Utf8mb4:
+      # Force utf8mb4 to deal with unicode
+      Forced: false
+  Sounds:
+    # Enable sounds for the plugin
+    Enabled: false
+    Volume:
+      # Default volume modifier for all sounds
+      Modifier: '1.00'
+  Loans:
+    # Enable bank loans
+    Enabled: false
+    Multiple:
+      # Enable multiple bank loans
+      Enabled: false
+      # Global max multiple loans
+      Max: 5
+    Cost:
+      # Base cost to take out a loan (set to 5, loan of $100 = $105 to pay back)
+      Base: 0.0
+      # Base percent to take out a loan (set to 0.1, loan of $100 = $110 to pay back)
+      Percent: 0.0
+    Amount:
+      # Default amount of loan given to players
+      # See permissions.yml to set amount per player
+      Default: 100.0
+      # Minimum amount to take out loan
+      Minimum: 0.0
+      # Global maximum amount to take out loan
+      Maximum: '179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.00'
+      Permission:
+        # Combine permissions to calculate max loan
+        Combine: false
+    Deadline:
+      # Enable loan deadlines
+      Enabled: false
+      # Remove loan from player when reached
+      Remove: false
+      # The amount of days to payback loan
+      Days: 30
+      # Time in minutes to check deadlines
+      Check: 5
+      # Commands to run when deadline reach (supports chat colors) (variables: <uuid>, <name>, <amount>)
+      Commands:
+      - tempban <uuid> 10m Failed to pay $<amount> loan
+    Payback:
+      # Enable loan automatic payback
+      Enabled: false
+      Timer:
+        Sync:
+          # Sync timer with interest
+          Interest: false
+        # Time in minutes to check payback
+        Time: 1800
+        # Not modifiable unless the server is stopped
+        Next: 0
+        # Set to override the timer next
+        Override: 0
+      # Minimum amount of payback
+      Minimum: 0.0
+      # Rate of payback (0.003 for $100 loan is $0.30 per timer)
+      Rate: 0.003
+      Custom:
+        # Allow custom payback rate
+        Enabled: false
+        # Set the minimum amount for loan custom payback
+        Minimum: 0.0
+      Message:
+        # Enable payback message
+        Enabled: false
+      Failed:
+        # Enable commands on failed payback
+        Enabled: false
+        # Commands to run on failed paybacks
+        # Gets lowest value from set, eg if 1, 5, 10 are set and failed payback is at 6, it will select commands at 5
+        # Available: <name>, <uuid>, <amount>
+        Commands:
+          Commands:
+            '1':
+            - jail <name> 10m Failed to pay loan
+    Interest:
+      # Enable loan interest
+      Enabled: false
+      # Set 1 server to be main offline interest handler
+      Main: false
+      Offline:
+        # Enable offline loan interest
+        Enabled: false
+      Message:
+        # Enable loan interest message
+        Enabled: false
+      Timer:
+        # Time in minutes to add interest
+        Time: 1800
+        # Not modifiable unless the server is stopped
+        Next: 0
+        # Set to override the timer next
+        Override: 0

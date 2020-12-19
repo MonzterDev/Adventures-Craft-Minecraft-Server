@@ -1,0 +1,77 @@
+# Edit messages from the plugin here
+Bank:
+  Admin:
+    Block:
+      Set: Your bank has been increased by <amount> slots!
+      Not: '&aBlock <block> is not a bank'
+      Remove: '&aBlock <block> removed as bank'
+    Slots:
+      Add: Added <amount> slots to <player>, new amount <new_amount>
+      Set: Set <player> slots to <amount>
+    Reload: Bank v<version> reloaded.
+    Loading: '&7Offline loading <player>, do ''/bank admin save'' when complete'
+    Saved: '&aSaved opened player.'
+    Inventory:
+      Prefix: '&cAdmin'
+    Permission:
+      Updated: '&aUpdated permissions for <player>'
+Command:
+  Title:
+    Format: '&7[&a<base>&b<args>&7]'
+  Commands:
+    Format: '&f/&7<base>&b<args>'
+  Message:
+    Format: '&7[&aBank&7] <message>'
+  Unknown:
+    Format: '&cUnknown command /<base> <args>'
+    Player: '&cUnknown player <player>'
+  'No':
+    Permission: '&cYou do not have the permission to perform this command.'
+  Unable:
+    Parse: '&cUnable to parse <value>.'
+Message:
+  Format: '&7[&aBank&7] <message>'
+  Money:
+    Deposit: '&aYou have deposited $<money> to the bank.'
+    Withdraw: '&aYou have withdrawn $<money> from the bank.'
+    Balance: '&aYou have $<money> in the bank.'
+    Not:
+      Enough: '&cYou do not have enough money to do that.'
+    Sent: '&aSuccessfully sent $<money> to <name>'
+    Interest:
+      Gained: '&aYou gained $<amount> in interest'
+  Exp:
+    Deposit: '&aYou have deposited <exp> exp to the bank.'
+    Withdraw: '&aYou have withdrawn <exp> exp from the bank.'
+    Balance: '&aYou have <exp> exp in the bank.'
+    Not:
+      Enough: '&cYou do not have enough exp to do that.'
+    Sent: '&aSuccessfully sent <exp> to <name>'
+    Interest:
+      Gained: '&aYou gained <amount> in exp interest'
+  Bank:
+    Locked: '&cBank locked/loading please wait'
+  Pin:
+    Enter:
+      Before: '&cYou must enter your pin before doing that.'
+  Permission:
+    Requirement: '&cYou require permission: <permission> to do that.'
+  Loans:
+    Payback:
+      Amount: '&aYou payed back $<amount> of your loans'
+    Interest:
+      Gained: '&aYour loans gained $<amount> in interest'
+  Info:
+    Border: '&a-----------------------------------------------------'
+    View:
+    - '&b Bank balance $<bank_money>'
+    - '&b Bank exp <bank_exp>, <bank_exp_level> levels'
+    - '&b Money interest in <bank_interest_money_minutes> minutes (<bank_interest_money_seconds> seconds)'
+    - '&b Exp interest in <bank_interest_exp_minutes> minutes (<bank_interest_exp_seconds> seconds)'
+  Top:
+    Money:
+      Border: '&a-----------------------------------------------------'
+      Info: '&7<number>. &a<name>: &6$<amount>'
+    Exp:
+      Border: '&a-----------------------------------------------------'
+      Info: '&7<number>. &a<name>: &6$<amount>'

@@ -1,0 +1,102 @@
+#Q2
+quest1_starter: 'folder quest1_start,tag_q1_part1,entry_q1_part1,q1_start_message'
+quest1_start: 'objective start SlayPigmen'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+#p2
+quest1_part2_starter: 'folder quest1_part2_start,tag_q1_part2,entry_q1_part2,q1_part2_start_message,tag_q1_part1_completed'
+tag_q1_part1_completed: 'tag add q1_part1_completed'
+quest1_part2_start: 'objective start SlayMiniMagmas'
+tag_q1_part2: 'tag add q1_part2'
+entry_q1_part2: 'journal add q1_part2'
+q1_part2_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective1-2$"
+#p3
+quest1_part3_starter: 'folder quest1_part3_start,tag_q1_part3,entry_q1_part3,q1_part3_start_message,tag_q1_part2_completed'
+tag_q1_part2_completed: 'tag add q1_part2_completed'
+quest1_part3_start: 'objective start SlayHellMobs'
+tag_q1_part3: 'tag add q1_part3'
+entry_q1_part3: 'journal add q1_part3'
+q1_part3_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective1-2$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective1-3$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "run ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Spellforging 300 ^command money give %player% 250"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveHellPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed,entry_q1_part3_remove,entry_q1_part2_remove'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+entry_q1_part2_remove: 'journal remove q1_part2'
+entry_q1_part3_remove: 'journal remove q1_part3'
+
+#Q2
+quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
+quest2_start: 'objective start HarvestWarts'
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2$"
+#p2
+quest2_part2_starter: 'folder quest2_part2_start,tag_q2_part2,entry_q2_part2,q2_part2_start_message,tag_q2_part1_completed'
+tag_q2_part1_completed: 'tag add q2_part1_completed'
+quest2_part2_start: 'objective start HarvestQuartz'
+tag_q2_part2: 'tag add q2_part2'
+entry_q2_part2: 'journal add q2_part2'
+q2_part2_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective2$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective2-2$"
+#p3
+quest2_part3_starter: 'folder quest2_part3_start,tag_q2_part3,entry_q2_part3,q2_part3_start_message,tag_q2_part2_completed,VoidMagmaCompass'
+tag_q2_part2_completed: 'tag add q2_part2_completed'
+quest2_part3_start: 'objective start SlayMagma'
+tag_q2_part3: 'tag add q2_part3'
+entry_q2_part3: 'journal add q2_part3'
+VoidMagmaCompass: 'run ^opsudo calcomp show ^opsudo calcomp toggle VoidMagma enable'
+VoidMagmaCompassHide: 'run ^opsudo calcomp toggle VoidMagma disable'
+HideCompass: 'run ^opsudo calebcompass hide'
+q2_part3_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective2-2$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective2-3$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give MATERIAL MAGMA_COIN %player% 5 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Spellforging 400 ^command money give %player% 350"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give MATERIAL MAGMA_COIN %player% 5 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Spellforging 400 ^command money give %player% 350"
+QuestReward2_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder HideCompass,VoidMagmaCompassHide,default-Points.GiveHellPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,entry_q2_part3_remove,entry_q2_part2_remove'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal remove q2_part1'
+entry_q2_part2_remove: 'journal remove q2_part2'
+entry_q2_part3_remove: 'journal remove q2_part3'
+
+#CALLED BY Q4 OBJECTIVE COMPLETION This says "If in 50 blocks of another player with the tag 'q4_part1' run 'entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4,q4_delete_KillReaper' "
+q2_party: 'party 25 q2_part3 entry_q2_complete,quest3_starter,QuestReward2,q2_delete_KillMagma conditions:!q2_completed'
+#Deletes the objective for other players
+q2_delete_KillMagma: 'objective delete SlayMagma'
+
+
+quest3_starter: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
+quest3_start: 'objective start Ghastly'
+tag_q3_part1: 'tag add q3_part1'
+entry_q3_part1: 'journal add q3_part1'
+q3_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4$ \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective3$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward3: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Spellforging 500 ^command money give %player% 450"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q3_complete: 'folder default-Points.GiveHellPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed,removeitem,q3_completed_message'
+entry_q3_completed: 'journal add q3_completed'
+removeitem: 'take GHAST_TEAR:1'
+tag_q3_completed: 'tag add q3_completed'
+entry_q3_part1_remove: 'journal remove q3_part1'
+q3_completed_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$"
+
+ShopOpen: "run ^command mmoitems stations open hell %player%"

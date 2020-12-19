@@ -1,0 +1,106 @@
+use-buy-it-now: true
+#This will make the buy-it-now auction to be the default one
+#in the create auction menu (use-buy-it-now needs to be enabled)
+use-buy-it-now-as-default: false
+#This will disable normal auctions
+use-only-buy-it-now: false
+
+buy-it-now-select-price:
+  item-id: '27'
+  #Use %price% for the item price
+  name: '&fItem price: &6%price%'
+  lore:
+    - '&7The price at which you want'
+    - '&7to sell this item.'
+    - ''
+    - '&7Extra fee: &6+%fee% coins &e(1%)'
+    - ''
+    - '&eClick to edit!'
+
+#Use percents from 1 to 100
+buy-it-now-fee: 1
+
+switch-button:
+  switch-to-auction:
+    material: '266'
+    name: '&aSwitch to Auction'
+    lore:
+      - '&7With traditional auctions,'
+      - '&7multiple buyers compete for the'
+      - '&7item by bidding turn by turn.'
+      - ''
+      - '&eClick to switch!'
+  switch-to-bin:
+    material: 27
+    name: '&aSwitch to BIN'
+    lore:
+      - '&7BIN Auctions are simple.'
+      - ''
+      - '&7Set a price, then one player may'
+      - '&7buy the item at that price.'
+      - ''
+      - '&8(BIN means Buy It Now)'
+      - ''
+      - '&eClick to switch!'
+
+buy-it-now-lore:
+  on-going:
+    - '&8&m---------------------'
+    - '&7Seller: %display-name-seller%'
+    - '&7Buy It Now: &6%starting-bid% coins'
+    - ''
+    - '&7Ends in: &e%duration%'
+    - ''
+    - '&eClick to inspect!'
+  expired:
+    - '&8&m---------------------'
+    - '&7Seller: %display-name-seller%'
+    - '&7Buy It Now: &6%price% coins'
+    - ''
+    - '&7Status: &cExpired!'
+    - ''
+    - '&eClick to inspect!'
+  #Use %buyer-display-name% for buyer's display name
+  #Use %buyer-name% for buyer's username
+  bought:
+    - '&8&m---------------------'
+    - '&7Seller: %display-name-seller%'
+    - '&7Price: &6%price% coins'
+    - ''
+    - '&7Bought by: %buyer-display-name%'
+    - ''
+    - '&eClick to inspect!'
+
+#Use %item% for item's display name
+#Use %seller-display-name% for seller display's name
+#Use %seller-name% for seller's name
+#Use %coins% for the amount of coins the item was bought for
+bought-item-message: '&eYou purchased &f%item% &efrom %seller-display-name% &efor &6%coins% coins&e!'
+
+#Seller notification for bought item
+bought-seller-notification: '&6[Auction] %bidder-display-name% &fhas bought your %item%&f for &6%price% coins&f!'
+
+sort-item:
+  material: '381'
+  name: '&aBIN Filter'
+  show-all: 'Show All'
+  bin-only: 'BIN Only'
+  auctions-only: 'Auctions Only'
+  click-to-switch: '&eClick to switch filter!'
+
+view-auction-buy-now-button:
+  name: '&6Buy Item Right Now'
+  click-to-buy:
+    material: '371'
+    lore:
+      - ''
+      - '&7Price: &6%price% coins'
+      - ''
+      - '&eClick to purchase!'
+  cannot-afford:
+    material: '394'
+    lore:
+      - ''
+      - '&7Price: &6%price% coins'
+      - ''
+      - '&cCannot afford bid!'

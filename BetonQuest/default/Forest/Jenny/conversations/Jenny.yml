@@ -1,0 +1,108 @@
+quester: Jenny
+first: greeting
+NPC_options:
+  greeting:
+    text: Hi &a%player%&7, I'm &aJenny &7and my father used to run this &aForest&7! 
+    pointers: hey, quest, getteleports, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: The &aForest &7provides the Town with all the materials it needs to expand! If you want to help our Town expand, you better start chopping down some trees!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Of course I have something for your to do!
+    pointers: quest1, quest2, quest_decline
+#This is the Quest offering menu basically
+  teleports:
+    text: If you already completed my quests and didn't get my Teleport rewards, you can claim them here! This only applies to people who completed my quests before 8/18/2020
+    pointers: tp1, tp2, tp3, tp4, tp5, tp6
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: I'm glad you want to help! Take this &7Jack's Worst Axe &7and start chopping down some &aOak Trees&7!
+  quest2accept:
+    text: My father &aJack &7is stuck inside a Honey Comb at the top of the tree (620, 119, -42)! If you rescue him, he'll have a special reward waiting here for you!
+
+  tp1accept:
+    text: Enjoy teleporting to the Spruce Forest!
+  tp2accept:
+    text: Enjoy teleporting to the Dark Oak Forest!
+  tp3accept:
+    text: Enjoy teleporting to the Birch Forest!
+  tp4accept:
+    text: Enjoy teleporting to the Acacia Forest!
+  tp5accept:
+    text: Enjoy teleporting to the Jungle Forest!
+  tp6accept:
+    text: Enjoy teleporting to the Hive!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+#Greeting > Teleports    
+  getteleports:
+    text: I'm looking to claim my Teleports!
+    pointers: teleports    
+    conditions: 'q2_completed,q3_completed,q4_completed,q5_completed,q6_completed,q7_completed'
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: I'll definitely consider it!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "&aThe Town's Expansion&f" Quest
+    events: 'GiveRifle,tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+
+  quest2:
+    text: Take "&aFinding Jack&f" Quest
+    events: 'quest7_starer'    
+    pointers: quest2accept
+    conditions: '!q7_part1'
+
+
+  tp1:
+    text: Claim the "Spruce Forest" Teleport
+    events: 'SpruceUnlock'    
+    pointers: tp1accept
+    conditions: 'q2_completed'
+  tp2:
+    text: Claim the "Dark Oak Forest" Teleport
+    events: 'DarkOakUnlock'    
+    pointers: tp2accept
+    conditions: 'q3_completed'
+  tp3:
+    text: Claim the "Birch Forest" Teleport
+    events: 'BirchUnlock'    
+    pointers: tp3accept
+    conditions: 'q4_completed'
+  tp4:
+    text: Claim the "Acacia Forest" Teleport
+    events: 'AcaciaUnlock'    
+    pointers: tp4accept
+    conditions: 'q5_completed'
+  tp5:
+    text: Claim the "Jungle Forest" Teleport
+    events: 'JungleUnlock'    
+    pointers: tp5accept
+    conditions: 'q6_completed'
+  tp6:
+    text: Claim the "Hive" Teleport
+    events: 'HiveUnlock'    
+    pointers: tp6accept
+    conditions: 'q7_completed'

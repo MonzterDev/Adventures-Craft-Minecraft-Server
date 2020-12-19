@@ -1,0 +1,101 @@
+# PlayerShops
+# by Felix Neubauer
+# Check out following page for more information: https://www.spigotmc.org/resources/29568/
+#
+#This is the currency which will be used. Supported are: "Money" (working with Vault), "Points" (check BossShopPro for more info) and "Exp".
+PriceType: money
+#If enabled players need specific permissions in order to create a shop, purchase additional slots, etc.
+#If disabled anyone can create and handle their own shop. Note: Configurable permissions like the ones needed for a better shoplisting spot are enabled anyways.
+EnablePermissions: false
+#Shopcreation cost and the amount of slots users begin with.
+ShopCreation:
+  Price: 10000.0
+  Slots: 9
+#Delay in seconds which players need to wait between two shop edits (to prevent lag).
+ShopEditDelay: '5'
+#If enabled players will not be able to sell items if other plugins cancel the InventoryClickEvent on that item. That way players can be prevented from selling plugin items like a server selector or a rules book.
+#This feature might be incompatible with other plugins which are not able to distinguish their own GUIs from PlayerShops GUIs and lead to players not being able to sell any item.
+PreventSellingPluginItems: true
+#If enabled players in creative mode won't be able to add items to their shop.
+PreventCreativeAccess: true
+#Items which are out of stock are always hidden from shop visitors, however by default they are not completely removed from the shop, 
+#which allows shop owners to quickly refill items without having to re-enter a price. If You set the following option to 'true' items out of stock will be completely removed from the shops.
+RemoveItemsOutOfStock: false
+#Ability for players to increase their shop slot amount.
+SlotPurchase:
+  Enabled: false
+  #Price per purchase (this calculation makes the price increase every time)
+  Price: '%playershops_slots_current% * 100 - 800'
+  #Amount of slots per purchase
+  Amount: 1
+  #Total slot limit
+  TotalLimit: 54
+#Players with the given permissions get additional shop slots.
+SlotPermissions:
+  Enabled: true
+  List:
+  - 'Permission.Slots.3:3'
+  - 'Permission.Slots.9:9'
+  - 'Permission.Slots.18:18'
+  - 'Permission.Slots.54:54'
+#If enabled players rent better spots in the shop listing
+Renting:
+  Enabled: true
+  #Price per rent. Players can pay rent multiple times at once. The money is added to a player renting balance.
+  Price: '5000'
+  #One renting period. After every period some money is removed from the renting balance. Set this to -1 if you want players to always keep their renting balance.
+  Period: '1800'
+  #This is the amount of money taken every renting period.  
+  PeriodDecrease: 5000
+  #If enabled players can increase their rent while already having a rented shop slot.
+  AllowStacking: true
+  #If enabled players with a higher renting balance will get a better listing spot. 
+  SortAfterRentAmount: true
+  #The maximum amount of players to rent a featured shop slot at the same time. Set it to '-1' to disable it.
+  PlayerLimit: -1
+#Here you can define the order in which shops are listed. You can fill in permissions which players need in order to get a rank,
+#or "renting" in order to define the rank players renting a listing spot will get. 
+#Players will always get the highest possible rank. If two players have the same rank and 'SortAfterRentAmount' is set to true the one with a higher rent balance will get the better spot.
+#If players still have an equal rank their shop slot amount will decide who gets the first spot.
+ShopRanking:
+  List:
+  - renting
+  - Permission.Sponsor
+  - Permission.Donator
+  - Permission.Helper
+  #Useful when having a huge amount of players: Will hide shops of offline players. Shops renting a better spot will be displayed even if the owner is offline.
+  ListOnlinePlayerShopsOnly: false
+#Taxes: Percentage which will be removed from the reward players will get. '1.00' = 100%. 
+Tax: 0.05
+#Price limits to prevent items from being sold way below/above their worth
+Price:
+  Minimum: 1.00
+  Maximum: 1000000000.00
+#Sound:
+#Sound sent to a player. Can be turned off by setting it to ''. Individual sound settings can be added to the configuration sections of your shops and shopitems, else they will inherit the sound settings of their parent.
+#Formatting: <sound name>:<volume>:<pitch>. You can find all available sound names here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+Sound:
+  PlayerPurchasedFromYou: 'ENTITY_PLAYER_LEVELUP:1:1.5'
+#Shop icon settings (Icons used in shop listing GUI)
+ShopIcon:
+  #If enabled players are able to rename their shop
+  AllowShopRename:
+    Permission: ''
+    SlotsNeeded: 99
+  #If players meet the conditions they will be able to use color codes in their shop names
+  ShopRenameAllowColors:
+    Permission: 'PlayerShops.renamecolors'
+    SlotsNeeded: 18
+  #Currently heads need to reload every time the inventory is opened -> not recommended
+  UsePlayerHeads: false
+  #If enabled players are able to select an icon at their own
+  AllowIconSelection: true 
+  #In case of 'AllowIconSelection: true' players can select an item of their inventory if they meet the given conditions
+  AllowInventoryItem: 
+    Permission: 'Inv.Item'
+    SlotsNeeded: 69
+#Signs allow players to either directly open a playershop or the shop listing GUI by simply clicking them.
+Signs:
+  Enabled: false
+  PlayerShopText: '[PlayerShop]'
+  ShopListingText: '[PlayerShops]'

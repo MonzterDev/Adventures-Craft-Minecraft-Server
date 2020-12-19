@@ -1,0 +1,119 @@
+# 
+# sell prices. I suggest to use /ushop setprice in game for adding items, or use /ushop convert in order to use your essentialsx prices!
+
+gui-name: '&8Sell'
+gui-rows: 5
+gui-sellitem:
+  material: CAULDRON
+  displayname: '&eClick to Sell'
+gui-item-enumeration-format: '&a%amount%x &r%material%&r = &a%price%'
+message-sold: '&aSold all items for &e%total%&a!'
+command: sell
+sell-prices-simple:
+- BONE:2.0
+- SPIDER_EYE:3.0
+- STRING:2.0
+- GUNPOWDER:5.0
+- ROTTEN_FLESH:1.5
+- ENDER_PEARL:7.5
+- MAGMA_CREAM:4.0
+- BLAZE_ROD:8.0
+- SLIME_BALL:3.0
+- ARROW:5.0
+- WHEAT_SEEDS:0.25
+- WHEAT:0.25
+- CARROT:0.5
+- POTATO:0.5
+- BEEF:2.5
+- LEATHER:5.0
+- PORKCHOP:3.0
+- MUTTON:3.0
+- CHICKEN:4.0
+- FEATHER:4.0
+- RABBIT:3.0
+- RABBIT_HIDE:5.0
+- RABBIT_FOOT:5.0
+- OAK_LOG:2.5
+- SPRUCE_LOG:2.5
+- DARK_OAK_LOG:2.5
+- BIRCH_LOG:2.5
+- ACACIA_LOG:2.5
+- JUNGLE_LOG:2.5
+- COCOA_BEANS:3.0
+- HONEYCOMB:3.0
+- NETHERRACK:0.25
+- GLOWSTONE:4.0
+- GLOWSTONE_DUST:0.5
+- NETHER_WART:3.0
+- QUARTZ:4.0
+- OBSIDIAN:7.0
+- PUMPKIN:1.5
+- MELON:1.0
+- MELON_SLICE:0.25
+- SUGAR_CANE:1.0
+- CACTUS:0.25
+- BEETROOT:4.0
+- RED_MUSHROOM:3.0
+- BROWN_MUSHROOM:3.0
+- STONE:0.75
+- COBBLESTONE:1.0
+- COAL:3.0
+- IRON_INGOT:3.0
+- GOLD_INGOT:3.0
+- REDSTONE:2.0
+- LAPIS_LAZULI:2.0
+- DIAMOND:4.0
+- EMERALD:5.0
+sell-prices: '[{"material":"BONE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Bone","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":576.0,"flags":[]},{"material":"SPIDER_EYE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Spider Eye","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"STRING","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  String","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":576.0,"flags":[]},{"material":"GUNPOWDER","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Gunpowder","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]},{"material":"ROTTEN_FLESH","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Rotten Flesh","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":432.0,"flags":[]},{"material":"ENDER_PEARL","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Enderpearl","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":2160.0,"flags":[]},{"material":"MAGMA_CREAM","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Magma Cream","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"BLAZE_ROD","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Blaze Rod","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":2304.0,"flags":[]},{"material":"SLIME_BALL","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Slime Ball","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"ARROW","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Arrow","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]},{"material":"WHEAT_SEEDS","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Seed","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":72.0,"flags":[]},{"material":"WHEAT","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Wheat","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":72.0,"flags":[]},{"material":"CARROT","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Carrot","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":144.0,"flags":[]},{"material":"POTATO","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Potato","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":144.0,"flags":[]},{"material":"BEEF","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Beef","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"LEATHER","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Leather","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]},{"material":"PORKCHOP","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Porkchop","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"MUTTON","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Mutton","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"CHICKEN","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Chicken","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"FEATHER","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Feather","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"RABBIT","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Rabbit","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"RABBIT_HIDE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Rabbit Hide","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]},{"material":"RABBIT_FOOT","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Rabbit Foot","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]},{"material":"OAK_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Oak Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"SPRUCE_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Spruce Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"DARK_OAK_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Dark Oak Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"BIRCH_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Birch Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"ACACIA_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Acacia Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"JUNGLE_LOG","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Jungle Log","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":720.0,"flags":[]},{"material":"NETHERRACK","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Netherrack","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":72.0,"flags":[]},{"material":"GLOWSTONE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Glowstone","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"GLOWSTONE_DUST","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Glowstone Dust","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE
+  ITEM"],"price":144.0,"flags":[]},{"material":"NETHER_WART","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Netherwart","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"QUARTZ","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Quartz","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"OBSIDIAN","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Obsidian","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":2016.0,"flags":[]},{"material":"PUMPKIN","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Pumpkin","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":432.0,"flags":[]},{"material":"MELON_SLICE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Melon","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":72.0,"flags":[]},{"material":"SUGAR_CANE","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Sugar Cane","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":288.0,"flags":[]},{"material":"CACTUS","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Cactus","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":72.0,"flags":[]},{"material":"BEETROOT","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Beetroot","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"RED_MUSHROOM","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Red Mushroom","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"BROWN_MUSHROOM","enchantements":{"unbreaking":5},"displayname":"§9Enchanted
+  Brown Mushroom","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE
+  ITEM"],"price":864.0,"flags":[]},{"material":"COBBLESTONE","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Cobblestone","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":288.0,"flags":[]},{"material":"COAL","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Coal","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"IRON_INGOT","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Iron","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"GOLD_INGOT","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Gold","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":864.0,"flags":[]},{"material":"REDSTONE","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Redstone","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":576.0,"flags":[]},{"material":"LAPIS_LAZULI","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Lapis","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":576.0,"flags":[]},{"material":"DIAMOND","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Diamond","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1152.0,"flags":[]},{"material":"EMERALD","enchantements":{"unbreaking":1},"displayname":"§9Enchanted
+  Emerald","hasMeta":true,"durability":0,"lore":["§fMaterial","","§9§lRARE ITEM"],"price":1440.0,"flags":[]}]'

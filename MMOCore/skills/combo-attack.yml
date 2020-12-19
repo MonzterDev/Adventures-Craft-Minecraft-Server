@@ -1,0 +1,24 @@
+name: Combo Attack
+lore:
+- Violenty slashes your target &8{count}
+- times for a total of &8{damage} &7damage.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: IRON_SWORD
+damage:
+  base: 9.0
+  per-level: 0.3
+mana:
+  base: 10.0
+  per-level: -0.1
+  max: 5.0
+  min: 3.0
+cooldown:
+  base: 20.0
+  per-level: -0.1
+  max: 20.0
+  min: 5.0
+count:
+  base: 3.0
+  per-level: 0.2

@@ -1,0 +1,14 @@
+quester: Tommy
+first: greeting
+NPC_options:
+  greeting:
+    text: Would you like a tour around the world &a%player%&7?
+    pointers: yess,bye
+
+#This is how a player responds and what options they have
+player_options:
+  yess:
+    text: 'Take me on a &eTour&f?'
+    events: 'StartTour,TourStarted'      
+  bye:
+    text: I need to go, sorry.

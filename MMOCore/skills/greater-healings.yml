@@ -1,0 +1,19 @@
+name: Greater Healings
+lore:
+- Instantly grants &a{heal} &7HP to the
+- target. Sneak to cast it on yourself.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: GOLDEN_APPLE
+mana:
+  base: 4.0
+  per-level: 2.0
+heal:
+  base: 10.0
+  per-level: 4.0
+cooldown:
+  base: 9.0
+  per-level: -0.1
+  max: 5.0
+  min: 1.0

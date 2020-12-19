@@ -1,0 +1,147 @@
+menu_title: '&f&l»&7&l» &8Mine Quests &7&l«&f&l«'
+size: 44
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] quests"
+    left_click_commands:
+    - "[openguimenu] quests"
+
+###TOP ROW
+  'Coal':
+    material: Coal
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aCoal Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.1 %player_name%"
+    
+  'Gold':
+    material: Gold_Ingot
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aGold Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.1 %player_name%"
+        
+  'Redstone':
+    material: Redstone
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aRedstone Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.2 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.2 %player_name%"
+    
+  'Lapis':
+    material: lapis_lazuli
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    display_name: '&aLapis Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.2 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.2 %player_name%"
+    
+  'Diamond':
+    material: Diamond
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    display_name: '&aDiamond Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.3 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.3 %player_name%"
+        
+  'Emerald':
+    material: Emerald
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    display_name: '&aEmerald Mine'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.3 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Mine-menu.3 %player_name%"

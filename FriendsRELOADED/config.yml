@@ -1,0 +1,599 @@
+Friends:
+  Prefix: ''
+  CheckForUpdates: true
+  CommandAliases:
+  - f
+  - friend
+  - freund
+  - freunde
+  FriendLimit: 25
+  FriendLimitExtended: 50
+  DateFormat: MM/dd/yyyy
+  BungeeMode: false
+  FriendItemOptions:
+    KeepOnDeath: false
+    MoveItemInInventory: false
+  JoinQuitMessages: false
+  FriendsCanPvP: false
+  HitToSendRequest: true
+  Status:
+    EnableFilter: true
+    MaxLenght: 30
+    ChangeDuration: 600
+    AllowFarbcodes: false
+  Nicknames:
+    Enable: false
+    CheckForAbusiveWords: false
+  FriendChat:
+    Enable: true
+    Format: '@f'
+    CheckForAbusiveWords: true
+  FriendMSG:
+    Enable: true
+    CheckForAbusiveWords: true
+    UseMSGCommand: true
+  Commands:
+    EnableClickableMessages: false
+    AddMessage:
+      Enable: false
+      CharacterLimit: 40
+    BlockNote:
+      Enable: true
+      CharacterLimit: 40
+    Jumping:
+      Enable: true
+  DisabledWorlds:
+  - world_end
+  - world_nether
+  FriendItem:
+    Enable: false
+    Name: '&aFriends &7(Rightclick)'
+    Material: player_head
+    Lore: //&7Rightclick this item to open the//&7friend-inventory!
+    InventorySlot: 4
+    DelayedInventorySet: false
+  OpenGUIWithCommand: true
+  FriendInventory:
+    InventoryTitle: '&f&l»&7&l» &8Friends &7&l«&f&l«'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    FriendsItem:
+      OnlineStatus: '&a(Online)'
+      OfflineStatus: '&7(Offline)'
+      Name: '&a%NAME% %ONLINE_STATUS%'
+      LoreOnline: '&7Status: //&r&o%STATUS%// //&7Friends since: %DATE%'
+      LoreOffline: '&7Status: //&r&o%STATUS%// //&7Last online: %LAST_ONLINE% o''clock//&7Friends
+        since: %DATE%'
+      ChangeSkullWhenOffline: true
+      NoStatusReplacement: '-'
+      LastOnlineFormat: MM/dd/yyyy - HH:mm
+      UseDisplaynames: false
+    RequestsItem:
+      ShowItem: true
+      Name: '&aRequests'
+      Material: emerald
+      Lore: '&7Currently: (%REQUESTS_COUNT%)'
+      InventorySlot: 46
+      Base64Value: ''
+    BlockedItem:
+      ShowItem: true
+      Name: '&cBlocked Players'
+      Material: barrier
+      Lore: '&7Currently: (%BLOCKED_COUNT%)'
+      InventorySlot: 47
+      Base64Value: ''
+    OptionsItem:
+      ShowItem: true
+      Name: '&3Options'
+      Material: comparator
+      Lore: ''
+      InventorySlot: 49
+    SortItem:
+      ShowItem: true
+      Name: '&aSorting:'
+      Material: nether_star
+      Lore: '&e%SORTING%'
+      InventorySlot: 51
+      OnOffSorting: '&aOnline &7/ &cOffline'
+      FavoriteSorting: '&eFavorites'
+      LongFriendSorting: '&eLongest Names'
+      Alphabetic: '&eAlphabetic'
+      Base64Value: ''
+    NextPageItem:
+      ShowItem: true
+      Name: '&aNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&aPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    PartyItem:
+      ShowItem: true
+      Name: '&9Your Party'
+      Material: firework_rocket
+      Lore: ''
+      InventorySlot: 50
+      Base64Value: ''
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 48
+      - 52
+    CustomItems: '[]'
+  FriendEditInventory:
+    InventoryTitle: '&3%NAME%'
+    InventorySize: 9
+    FavoriteItem:
+      ShowItem: true
+      Name: '&6Favorite'
+      Material: golden_apple
+      Lore: '&7Currently: %FAVORITE_STATUS%'
+      InventorySlot: 6
+      FavoriteStatusOn: '&aOn'
+      FavoriteStatusOff: '&cOff'
+      Base64Value: ''
+    CanSendMessagesItem:
+      ShowItem: true
+      Name: '&6%NAME% can send you messages'
+      Material: paper
+      Lore: '&7Currently: %SENDMESSAGES_STATUS%// //&7This includes the friendchat,
+        private//&7messages and join/quit notifications!'
+      InventorySlot: 5
+      SendMessagesStatusOn: '&aOn'
+      SendMessagesStatusOff: '&cOff'
+      Base64Value: ''
+    NicknameItem:
+      ShowItem: true
+      Name: '&6Give your friend a nickname!'
+      Material: name_tag
+      Lore: '&7Currently: %NICKNAME%'
+      InventorySlot: 3
+      NoNicknameReplacement: '-'
+      Base64Value: ''
+    RemoveItem:
+      Name: '&cRemove %NAME% from your friends'
+      Material: red_wool
+      Lore: ''
+      InventorySlot: 9
+      Base64Value: ''
+    BackItem:
+      Name: '&7Back to your friends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    JumpItem:
+      ShowItem: true
+      Name: '&9Jump to %NAME%'
+      Material: firework_rocket
+      Lore: ''
+      InventorySlot: 4
+      Base64Value: ''
+    PartyItem:
+      ShowItem: true
+      Name: '&dInvite %NAME% to your Party!'
+      Material: firework_star
+      Lore: ''
+      InventorySlot: 7
+      Base64Value: ''
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 48
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  RequestsInventory:
+    InventoryTitle: '&f&l»&7&l» &8Friend Requests &7&l«&f&l«'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    RequestItem:
+      Name: '&a%NAME%'
+      Lore: '&7Requested: %DATE%//&7Message: //&r&o%MESSAGE%'
+      NoMessageReplacement: '-'
+    AcceptAllItem:
+      ShowItem: true
+      Name: '&aAccept all'
+      Material: lime_wool
+      Lore: '&7Currently: %REQUESTS_COUNT%'
+      InventorySlot: 49
+      Base64Value: ''
+    DenyAllItem:
+      ShowItem: true
+      Name: '&cDeny all'
+      Material: red_wool
+      Lore: '&7Currently: %REQUESTS_COUNT%'
+      InventorySlot: 51
+      Base64Value: ''
+    BackItem:
+      Name: '&aFriends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 46
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&bPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    NextPageItem:
+      ShowItem: true
+      Name: '&bNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  RequestEditInventory:
+    InventoryTitle: '&a%NAME% request:'
+    InventorySize: 9
+    MessageItem:
+      ShowItem: true
+      Name: '&7%NAME%''s message:'
+      Material: paper
+      Lore: '&r&o%MESSAGE%'
+      InventorySlot: 5
+      NoMessageReplacement: '-'
+      Base64Value: ''
+    AcceptItem:
+      Name: '&aAccept %NAME%''s request'
+      Material: lime_wool
+      Lore: ''
+      InventorySlot: 4
+      Base64Value: ''
+    DenyItem:
+      Name: '&cDeny %NAME%''s request'
+      Material: red_wool
+      Lore: ''
+      InventorySlot: 6
+      Base64Value: ''
+    BackItem:
+      Name: '&7Back to your requests'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 48
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  BlockedInventory:
+    InventoryTitle: '&f&l»&7&l» &8Blocked Players &7&l«&f&l«'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    BlockedItem:
+      Name: '&c%NAME%'
+      Lore: '&7Blocked: %DATE%//&7Note: //&r&o%NOTE%'
+      NoNoteReplacement: '-'
+    UnblockAllItem:
+      ShowItem: true
+      Name: '&aUnblock All'
+      Material: lime_wool
+      Lore: '&7Currently: %BLOCKED_COUNT%'
+      InventorySlot: 50
+      Base64Value: ''
+    NextPageItem:
+      ShowItem: true
+      Name: '&bNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&bPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    BackItem:
+      Name: '&aFriends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 46
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 51
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  BlockedEditInventory:
+    InventoryTitle: '&c%NAME%'
+    InventorySize: 9
+    BackItem:
+      Name: '&7Back to your blocked players'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    UnblockItem:
+      Name: '&aUnblock %NAME%'
+      Material: lime_wool
+      Lore: ''
+      InventorySlot: 5
+      Base64Value: ''
+    NoteItem:
+      ShowItem: true
+      Name: '&7Note:'
+      Material: paper
+      Lore: '&r&o%NOTE%'
+      InventorySlot: 6
+      NoNoteReplacement: '-'
+      Base64Value: ''
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 48
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  OptionsInventory:
+    InventoryTitle: '&3Options:'
+    InventorySize: 9
+    OptionStatusOn: '&aOn'
+    OptionStatusOff: '&cOff'
+    BackItem:
+      Name: '&aFriends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+      Base64Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFmYWIwZTZhZWE4ODc0OGNhM2I1NTEyZWQ1MDJhNmQxOGU3NmQ4YWZjNDc3MGQ5OTUyMzNhYzBkYzUxODYifX19
+    ReceiveMessagesItem:
+      ShowItem: true
+      Name: '&6Receive Messages'
+      Material: paper
+      Lore: '&7Currently: %OPTION_MESSAGES_STATUS%// //&7Toggle receiving messages
+        of all kind//&7Includes private messages aswell as//&7the friendchat and join/quit
+        notifications'
+      InventorySlot: 3
+      OnlyFavoritesStatus: '&eOnly Favorites'
+      Base64Value: ''
+    ReceiveRequestsItem:
+      ShowItem: true
+      Name: '&6Receive Requests'
+      Material: player_head
+      Lore: '&7Currently: %OPTION_REQUESTS_STATUS%// //&7Toggle wether you want to
+        receive//&7friendrequests from other players'
+      InventorySlot: 5
+      Base64Value: ''
+    OfflinemodeItem:
+      ShowItem: true
+      Name: '&6Offlinemode'
+      Material: red_bed
+      Lore: '&7Currently: %OPTION_OFFLINEMODE_STATUS%// //&7If enabled, you will be
+        shown//&7as offline to all your friends'
+      InventorySlot: 7
+      Base64Value: ''
+    StatusItem:
+      ShowItem: true
+      Name: '&6Change your status'
+      Material: name_tag
+      Lore: '&7Your current status://&r&o%STATUS%'
+      InventorySlot: 9
+      Base64Value: ''
+    JumpItem:
+      ShowItem: true
+      Name: '&9Jumping'
+      Material: firework_rocket
+      Lore: '&7Currently: %OPTION_JUMPING_STATUS%// //&7If enabled, friends can jump
+        to//&7your current location!'
+      InventorySlot: 4
+      Base64Value: ''
+    PartyItem:
+      ShowItem: true
+      Name: '&dParty Invites'
+      Material: firework_star
+      Lore: '&7Currently: %OPTION_PARTY_STATUS%// //&7Toggle wether you want to receive//&7partyinvites
+        from your friends!'
+      InventorySlot: 2
+      Base64Value: ''
+    Placeholders:
+      Material: gray_stained_glass_pane
+      Base64Value: ''
+      InventorySlots:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 18
+      - 19
+      - 27
+      - 28
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 48
+      - 52
+    CustomItems:
+      NO_ITEMS: []

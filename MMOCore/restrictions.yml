@@ -1,0 +1,151 @@
+# Mining a block in creative will NOT drop any
+# custom drops/will not apply block regen, etc.
+#
+# Any block specified in this config, wherever it
+# is located, MUST be mined using the correct tool
+# otherwise nothing will drop!
+
+# The corresponding tool. It's CASE_SENSITIVE!
+AIR:
+    can-mine:
+    - vanilla{type=WHEAT}
+    - vanilla{type=CARROTS}
+    - vanilla{type=POTATOES}
+    - vanilla{type=SUGAR_CANE}
+    - vanilla{type=MELON}
+    - vanilla{type=PUMPKIN}
+    - vanilla{type=CACTUS}
+    - vanilla{type=BAMBOO}
+    - vanilla{type=GLOWSTONE}    
+    - vanilla{type=OAK_LOG}    
+    - vanilla{type=DARK_OAK_LOG}    
+    - vanilla{type=BIRCH_LOG}    
+    - vanilla{type=JUNGLE_LOG}    
+    - vanilla{type=ACACIA_LOG}    
+    - vanilla{type=SPRUCE_LOG}    
+    - vanilla{type=OAK_LEAVES}    
+    - vanilla{type=DARK_OAK_LEAVES}    
+    - vanilla{type=BIRCH_LEAVES}    
+    - vanilla{type=JUNGLE_LEAVES}    
+    - vanilla{type=ACACIA_LEAVES}    
+    - vanilla{type=SPRUCE_LEAVES}        
+    - vanilla{type=BEE_NEST}    
+    - vanilla{type=BEEHIVE}    
+    - vanilla{type=COCOA}    
+    - vanilla{type=NETHER_WART}    
+    - vanilla{type=NETHER_WART_BLOCK}    
+    - vanilla{type=DEAD_HORN_CORAL_BLOCK}    
+    - vanilla{type=MUSHROOM_STEM}    
+    - vanilla{type=BROWN_MUSHROOM_BLOCK}    
+    - vanilla{type=RED_MUSHROOM_BLOCK}    
+    - vanilla{type=RED_MUSHROOM}    
+    - vanilla{type=BROWN_MUSHROOM}    
+    - vanilla{type=BEETROOTS}    
+    - vanilla{type=IRON_BARS}    
+    - vanilla{type=CHORUS_FLOWER}    
+    
+    - vanilla{type=ROSE_BUSH}    
+    - vanilla{type=WITHER_ROSE}    
+    - vanilla{type=ALLIUM}    
+    - vanilla{type=TUBE_CORAL}    
+    - vanilla{type=CRIMSON_FUNGUS}    
+    - vanilla{type=AZURE_BLUET}    
+    - vanilla{type=CORNFLOWER}    
+    - vanilla{type=OXEYE_DAISY}    
+    - vanilla{type=POPPY}    
+    - vanilla{type=DANDELION}    
+NETHER_WART:
+    parent: AIR
+    can-mine:
+WHEAT_SEEDS:
+    parent: AIR
+    can-mine:
+WHEAT:
+    parent: AIR
+    can-mine:
+POTATOES:
+    parent: AIR
+    can-mine:
+SUGAR_CANE:
+    parent: AIR
+    can-mine:
+CARROTS:
+    parent: AIR
+    can-mine:
+CACTUS:
+    parent: AIR
+    can-mine:
+BEETROOTS:
+    parent: AIR
+    can-mine:
+WOODEN_HOE:
+    parent: AIR
+    can-mine:
+STONE_HOE:
+    parent: WOODEN_HOE
+    can-mine:
+IRON_HOE:
+    parent: STONE_HOE
+    can-mine:
+GOLDEN_HOE:
+    parent: IRON_HOE
+    can-mine:
+DIAMOND_HOE:
+    parent: GOLDEN_HOE
+    can-mine:    
+#AXES    
+WOODEN_AXE:
+    parent: AIR
+    can-mine:
+STONE_AXE:
+    parent: WOODEN_AXE
+    can-mine:
+IRON_AXE:
+    parent: STONE_AXE
+    can-mine:
+GOLDEN_AXE:
+    parent: IRON_AXE
+    can-mine:
+DIAMOND_AXE:
+    parent: GOLDEN_AXE
+    can-mine:    
+
+#PICKAXES
+WOODEN_PICKAXE:
+    parent: AIR
+    can-mine:
+    - vanilla{type=STONE}
+    - vanilla{type=COBBLESTONE}
+    - vanilla{type=COAL_ORE}
+    - vanilla{type=NETHER_QUARTZ_ORE}
+    - vanilla{type=QUARTZ_BLOCK}
+    - vanilla{type=NETHERRACK}
+    - vanilla{type=END_STONE}
+    - vanilla{type=GLOWSTONE}
+STONE_PICKAXE:
+    parent: WOODEN_PICKAXE
+    can-mine:
+    - vanilla{type=IRON_ORE}
+    - vanilla{type=LAPIS_ORE}
+IRON_PICKAXE:
+    parent: STONE_PICKAXE
+    can-mine:
+    - vanilla{type=GOLD_ORE}
+    - vanilla{type=REDSTONE_ORE}
+    - vanilla{type=DIAMOND_ORE}
+    - vanilla{type=EMERALD_ORE}
+    - vanilla{type=COAL_BLOCK}
+    - vanilla{type=IRON_BLOCK}
+    - vanilla{type=GOLD_BLOCK}
+    - vanilla{type=REDSTONE_BLOCK}
+    - vanilla{type=LAPIS_BLOCK}
+    - vanilla{type=DIAMOND_BLOCK}
+    - vanilla{type=EMERALD_BLOCK}
+GOLDEN_PICKAXE:
+    parent: IRON_PICKAXE
+    can-mine:
+DIAMOND_PICKAXE:
+    parent: GOLDEN_PICKAXE
+    can-mine:
+    - vanilla{type=OBSIDIAN}
+

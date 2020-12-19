@@ -1,0 +1,55 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+Spawn:
+  Hell:
+    Loc: -33.0:33.0:62.0:-29.0:37.0:62.0
+    enabled: true
+    effect: END_ROD
+    showParticles: false
+    Tp: Spawn;-145.66;49.16;-1152.32;168.6;-2.52
+    requiresPerm: true
+    informOnMissingPerm: false
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 15
+    commandsWithoutTp: false
+    commands: []
+  LowerHell:
+    Loc: -233.0:13.0:-1265.0:-229.0:17.0:-1265.0
+    enabled: true
+    effect: END_ROD
+    showParticles: false
+    Tp: Spawn;-146.91;49.64;-1153.42;178.71;1.54
+    requiresPerm: true
+    informOnMissingPerm: false
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 15
+    commandsWithoutTp: false
+    commands: []
+  UpperHell:
+    Loc: -149.0:49.0:-1155.0:-146.0:53.0:-1150.0
+    enabled: true
+    effect: END_ROD
+    showParticles: false
+    Tp: Spawn;-230.0;13.68;-1261.32;359.56;2.69
+    requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 15
+    commandsWithoutTp: false
+    commands: []
+  Void:
+    Loc: -141.0:20.0:-168.0:-136.0:20.0:-163.0
+    enabled: true
+    effect: END_ROD
+    showParticles: false
+    Tp: Spawn;-217.67;31.0;-1101.08;-5.63;4.35
+    requiresPerm: true
+    informOnMissingPerm: false
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 15
+    commandsWithoutTp: false
+    commands: []

@@ -1,0 +1,21 @@
+
+# GUI display name
+name: Guild Creation
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    create:
+        slots: [12]
+        item: GREEN_TERRACOTTA
+        function: 'create'
+        name: '&aCreate a guild!'
+        lore: {}
+    back:
+        slots: [14]
+        item: RED_TERRACOTTA
+        function: back
+        name: '&aBack'
+        lore: {}

@@ -1,0 +1,538 @@
+height: 5
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Cole.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMachine Expert'
+        - '&f&o'
+        - '&fMine 128 Redstone Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Cole in the Mine'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q1_part1,!default-Mine-Cole.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMachine Expert'
+        - '&f&o'
+        - '&fMine 128 Redstone Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Cole in the Mine'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMachine Expert'
+        - '&f&o'
+        - '&fMine 128 Redstone Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Cole.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDark Encounter'
+        - '&f&o'
+        - '&fSlay 15 Void Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Machine Expert'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q2_part1,!default-Mine-Cole.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Encounter'
+        - '&f&o'
+        - '&fSlay 15 Void Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Machine Expert'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDark Encounter'
+        - '&f&o'
+        - '&fSlay 15 Void Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Cole.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Encounter'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q3_part1,!default-Mine-Cole.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Encounter'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q3_completed,!default-Mine-Cole.q3_rewards_unclaimed,default-Mine-Cole.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q3_rewards_unclaimed,!default-Mine-Cole.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Cole.QuestReward3_Claim
+      left: default-Mine-Cole.QuestReward3_Claim
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Cole.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDown The Blue Path'
+        - '&f&o'
+        - '&fMeet &aDuncan &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &9Lapis Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Big Boom'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q4_part1,!default-Mine-Cole.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDown The Blue Path'
+        - '&f&o'
+        - '&fMeet &aDuncan &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &9Lapis Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Big Boom'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDown The Blue Path'
+        - '&f&o'
+        - '&fMeet &aDuncan &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &9Lapis Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+    
+#DUNCAN
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Duncan.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven from Duncan in the Mine'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q1_part1,!default-Mine-Duncan.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven from Duncan in the Mine'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q1_completed,default-Mine-Duncan.q1_rewards_claimed,!default-Mine-Duncan.q1_rewards_unclaimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest6_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q1_rewards_unclaimed,!default-Mine-Duncan.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Duncan.QuestReward1_Claim
+      left: default-Mine-Duncan.QuestReward1_Claim
+#SIXTH QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Duncan.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lVoid Research'
+        - '&f&o'
+        - '&fSpecial Void Blocks within the Lapis Mine'
+        - '&fgive you &fVoid Fragments'
+        - '&fDeliver 10 to &aDuncan'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Vampire Slayer'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q2_part1,!default-Mine-Duncan.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lVoid Research'      
+        - '&f&o'
+        - '&fSpecial Void Blocks within the Lapis Mine'
+        - '&fgive you &fVoid Fragments'
+        - '&fDeliver 10 to &aDuncan'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Vampire Slayer'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lVoid Research'
+        - '&f&o'
+        - '&fSpecial Void Blocks within the Lapis Mine'
+        - '&fgive you &fVoid Fragments'
+        - '&fDeliver 10 to &aDuncan'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+#SIXTH QUEST
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Duncan.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Void Hunter'
+        - '&f&o'
+        - '&fSlay 15 Void Mobs within the Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &d150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Void Research'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q3_part1,!default-Mine-Duncan.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Void Hunter'      
+        - '&f&o'
+        - '&fSlay 15 Void Mobs within the Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &d150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Void Research'        
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Void Hunter'
+        - '&f&o'
+        - '&fSlay 15 Void Mobs within the Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &d150 Coins'
+    close: false
+#SIXTH QUEST
+  quest9_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Duncan.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBlue Rocks'
+        - '&f&o'
+        - '&fMine 192 Lapis Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Void Hunter'        
+    close: false
+  quest9_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q4_part1,!default-Mine-Duncan.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBlue Rocks'      
+        - '&f&o'
+        - '&fMine 192 Lapis Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Void Hunter'        
+    close: false
+  quest9_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBlue Rocks'
+        - '&f&o'
+        - '&fMine 192 Lapis Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+#SIXTH QUEST
+  quest10_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Duncan.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lShiny Hard Blue Rocks'
+        - '&f&o'
+        - '&fTalk to the &aLift Operator &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &bDiamond Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Blue Rocks'        
+    close: false
+  quest10_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q5_part1,!default-Mine-Duncan.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lShiny Hard Blue Rocks'      
+        - '&f&o'
+        - '&fTalk to the &aLift Operator &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &bDiamond Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Blue Rocks'        
+    close: false
+  quest10_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lShiny Hard Blue Rocks'
+        - '&f&o'
+        - '&fTalk to the &aLift Operator &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &bDiamond Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.minequestmenu
+      left: default-Castle-Klaus.minequestmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  15-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  25-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-14: quest1_inactive,quest1_active,quest1_completed,quest2_inactive,quest2_active,quest2_completed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed,quest4_inactive,quest4_active,quest4_completed
+  20-24: quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed,quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed,quest9_inactive,quest9_active,quest9_completed,quest10_inactive,quest10_active,quest10_completed
+  40: back

@@ -1,0 +1,37 @@
+#-----------------------------------------#
+#                                         #
+#              LeaderHeads 4              #
+#    A full-fledged solution to manage    #
+#    statistics and create leaderboards   #
+#          (R) Panoply Tech 2019          #
+#                                         #
+#-----------------------------------------#
+#                                         #
+#             Database config             #
+#   The database is used for storing data #
+#   of statististics and players          #
+#                                         #
+#-----------------------------------------#
+
+# Server prefix
+# If you want to save data in a different database table for each server, edit this.
+# This will be used as a prefix. It is best to use an alphanumeric value for this to avoid issues.
+server-prefix: default
+
+# SQLite details
+# SQLite will be used by default
+sqlite:
+  path: data/LeaderHeadsDatabase.db
+
+# MySQL details
+# If MySQL is not enabled, SQLite will be used
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: database
+  username: username
+  password: password
+  connections: 10
+  timeout: 120000
+  ssl: false

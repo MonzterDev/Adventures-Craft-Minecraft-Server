@@ -1,0 +1,24 @@
+name: Ice Spikes
+lore:
+- Ice spikes summon from the ground
+- and shatter, each dealing &9{damage} &7damage
+- to hit enemies and slowing them down
+- for &9{slow} &7seconds.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: SNOWBALL
+damage:
+  base: 3.0
+  per-level: 1.0
+mana:
+  base: 20.0
+  per-level: 2.0
+slow:
+  base: 4.0
+  per-level: 0.0
+cooldown:
+  base: 6.0
+  per-level: -0.1
+  max: 6.0
+  min: 2.0

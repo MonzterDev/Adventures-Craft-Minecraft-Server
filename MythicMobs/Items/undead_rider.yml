@@ -1,0 +1,15 @@
+undead_rider:
+  Id: IRON_AXE
+  Data: 0
+  Display: '&7&lUndead &8&lRider'
+  Lore:
+  - '&6&l-----------------------'
+  - '&6Skill: &eSoulless caravan'
+  - '&aCooldown: 30 seconds'
+  - '&6&l-----------------------'
+  Enchantments:
+  - DURABILITY:1
+  Hide:
+  - ENCHANTS
+  Skills:
+  - skill:soulless_caravan ~onUse

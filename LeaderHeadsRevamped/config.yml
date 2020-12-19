@@ -1,0 +1,39 @@
+#-----------------------------------------#
+#                                         #
+#              LeaderHeads 4              #
+#    A full-fledged solution to manage    #
+#    statistics and create leaderboards   #
+#          (R) Panoply Tech 2019          #
+#                                         #
+#-----------------------------------------#
+#                                         #
+#        This is the main config          #
+#                                         #
+#-----------------------------------------#
+
+# Whether the plugin should debug information to the console
+debug: false
+
+# This is the timezone for saving all data in the database
+# Full list of available timezones: http://joda-time.sourceforge.net/timezones.html
+# The option 'default' will use the machine's timezone.
+timezone: "default"
+
+
+# The format of the statistics with statistic-type set to a time type
+# Placeholders: {days}, {hours}, {minutes}, {seconds}
+time-format: "{days}d, {hours}h, {minutes}m"
+
+
+# The format of the statistics with type statistic-type 'money'
+money-format:
+  # Format high numbers properly. (Example: 9000000 becomes 9M)
+  # This feature will be disabled if enable-commas is enabled
+  thousands-format: k
+  millions-format: M
+  billions-format: B
+  trillions-format: T
+  quadrillions-format: QD
+  quintillions-format: QT
+  sextillions-format: SX
+  septillions-format: SP

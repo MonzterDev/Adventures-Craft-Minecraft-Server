@@ -1,0 +1,186 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fFarming §7§l«§f§l«
+max-queue-size: 10
+items:
+  fill:
+    material: YELLOW_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  UNLIMITED_WATER:
+    output:
+      type: CONSUMABLE
+      id: UNLIMITED_WATER
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SUGAR_CANE,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=3}
+    conditions:
+    - profession{profession=Farming,level=5}
+  SEED_STAFF:
+    output:
+      type: STAFF
+      id: SEED_STAFF
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SEED,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WHEAT,amount=8}
+    conditions:
+    - profession{profession=Farming,level=4}
+  WHEAT_STAFF:
+    output:
+      type: STAFF
+      id: WHEAT_STAFF
+      amount: 1
+    ingredients:
+    - mmoitem{type=STAFF,id=SEED_STAFF,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SEED,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WHEAT,amount=32}
+    conditions:
+    - profession{profession=Farming,level=8}
+  PARROT_CHEST:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_FEATHER,amount=8}
+    conditions:
+    - profession{profession=Farming,level=3}
+  PARROT_CHEST2:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST2
+      amount: 1
+    ingredients:
+    - mmoitem{type=ARMOR,id=PARROT_CHEST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_FEATHER,amount=32}
+    conditions:
+    - profession{profession=Farming,level=6}
+  PARROT_CHEST3:
+    output:
+      type: ARMOR
+      id: PARROT_CHEST3
+      amount: 1
+    ingredients:
+    - mmoitem{type=ARMOR,id=PARROT_CHEST2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_FEATHER,amount=64}
+    conditions:
+    - profession{profession=Farming,level=9}
+  MELON_HAT:
+    output:
+      type: ARMOR
+      id: MELON_HAT
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MELON,amount=5}
+    conditions:
+    - profession{profession=Farming,level=2}
+  MELON_HAT2:
+    output:
+      type: ARMOR
+      id: MELON_HAT2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MELON,amount=50}
+    conditions:
+    - profession{profession=Farming,level=4}
+  MELON_HAT3:
+    output:
+      type: ARMOR
+      id: MELON_HAT3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_MELON,amount=128}
+    conditions:
+    - profession{profession=Farming,level=5}
+  POWERFUL_NECKLACE:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CARROT,amount=9}
+    conditions:
+    - profession{profession=Farming,level=2}
+  POWERFUL_NECKLACE2:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=POWERFUL_NECKLACE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CARROT,amount=32}
+    conditions:
+    - profession{profession=Farming,level=5}
+  POWERFUL_NECKLACE3:
+    output:
+      type: ACCESSORY
+      id: POWERFUL_NECKLACE3
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=POWERFUL_NECKLACE2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CARROT,amount=64}
+    conditions:
+    - profession{profession=Farming,level=7}
+  LUCKY_STRIKER:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_POTATO,amount=9}
+    conditions:
+    - profession{profession=Farming,level=2}
+  LUCKY_STRIKER2:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER2
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=LUCKY_STRIKER,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_POTATO,amount=32}
+    conditions:
+    - profession{profession=Farming,level=5}
+  LUCKY_STRIKER3:
+    output:
+      type: ACCESSORY
+      id: LUCKY_STRIKER3
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=LUCKY_STRIKER2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_POTATO,amount=64}
+    conditions:
+    - profession{profession=Farming,level=7}
+  DEEP_IMPACTOR:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PUMPKIN,amount=9}
+    conditions:
+    - profession{profession=Farming,level=3}
+  DEEP_IMPACTOR2:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR2
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=DEEP_IMPACTOR,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PUMPKIN,amount=32}
+    conditions:
+    - profession{profession=Farming,level=7}
+  DEEP_IMPACTOR3:
+    output:
+      type: ACCESSORY
+      id: DEEP_IMPACTOR3
+      amount: 1
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=DEEP_IMPACTOR2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PUMPKIN,amount=64}
+    conditions:
+    - profession{profession=Farming,level=9}

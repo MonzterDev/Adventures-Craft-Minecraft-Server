@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7heeft de chat opgeschoont!'
+    immune: '&aDoor je permissions ben je immuun voor de chat opschoning.'
+  togglechat:
+    toggledOn: '&aChat is ge-unmutet...'
+    toggledOff: '&cChat is gemutet...'
+    bypass: '&aDoor je permissions ben je immuun voor de chat mute.'
+    muted: '&cChat is op dit moment uitgeschakeld, probeer het later opnieuw.'
+  vanish:
+    toggledOn: '&7Je bent nu onzichtbaar.'
+    toggledOff: '&7Je bent nu zichtbaar.'
+  freeze:
+    add: '&7Je hebt &6%player%&7 successvol bevroren.'
+    remove: '&7Je hebt &6%player%&7 successvol ontdooit.'
+    alertadd: '&7Je bent bevroren.'
+    alertremove: '&7Je bent ontdooit.'
+    nope: '&cJe kunt dat niet doen omdat je bevroren bent...'
+  revive:
+    noloot: '&cEr zijn geen items gevonden om de speler mee tot leven te wekken.'
+    success: '&7Je hebt &6%player% &7successvol tot leven gewekt.'
+    revived: '&7Je bent tot leven gewekt.'
+  spy:
+    returned: '&7Je bent teruggeplaatst naar je vorige locatie'
+    success: '&7Je bespioneert nu &6%player%&7. Gebruik het commando &6/spy &7om terug te keren naar je vorige locatie&7'
+    cant: Je kunt jezelf niet bespioneren.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&7Commando spioneermodus aan'
+    toggleOff: '&7Commando spioneermodus uit'
+# Event Messages
+event:
+  general:
+    nopermission: '&cJe hebt geen toestemming om dat te doen.'
+  command:
+    blocked: '&cJe kunt dat commando niet gebruiken...'
+  punish:
+    reason: ' &7voor &6%reason%'
+    theirduration: '&7. &7De straf wordt opgeheven over &6%duration%'
+    yourduration: '&7. &7Jouw straf wordt opgeheven over &6%duration%'
+  ban:
+    success: '&7Je hebt &6%player% &7geband'
+    message: '&7Je bent geband met als reden: &6%reason%&7. Je ban verloopt over &6%duration%&7.'
+    already: '&cDeze gebruiker is al geband.'
+  unban:
+    success: '&7Je hebt de ban van &6%player% &7opgeheven'
+  mute:
+    success: '&7Je hebt &6%player% &7gemutet'
+    message: '&7Je bent gemutet'
+    already: '&cDeze gebruiker is al gemutet.'
+  unmute:
+    success: '&7Je hebt &6%player% &7ge-unmutet'
+  kick:
+    success: '&7Je hebt &6%player% &7gekickt'
+    message: '&7Je bent gekickt met als reden: &6%reason%&7.'
+  warning:
+    success: '&7Je hebt &6%player% &7gewaarschuwd'
+    message: '&7Je bent gewaarschuwd'
+  staffchat:
+    leave: '&7Je hebt &6%channel% &7successvol verlaten.'
+    join: '&7Je hebt &6%channel% &7successvol gejoint.'
+    allleave: '&6%player% &7heeft het kanaal verlaten.'
+    alljoin: '&6%player% is het kanaal gejoint.'
+    nochannels: '&cJe zit niet in een kanaal.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7Slowmode &6%delay% &7seconden te gaan.'
+    done: '&7Slowmode afgelopen.'
+    enabled: '&7Slowmode is ingeschakeld met een vertraging van &6%delay% &7seconden.'
+    disabled: '&7Je hebt slowmode uitgezet.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6Vorige pagina'
+    next: '&6Volgende pagina'
+    back: '&6Terug'
+    none: Geen
+    permanent: Permanent
+    reason: Reden
+    templatename: Template naam
+  players:
+    title: '&8Spelers'
+    click: '&6Klik om speler te bekijken.'
+    notickets: '&7Er zijn op dit moment geen tickets geopend over deze speler.'
+    tickets: '&7Deze speler heeft &6%amount% &7open tickets.'
+    ticketsone: '&7Deze speler heeft &61 &7open ticket.'
+    nowarnings: '&7Geen waarschuwingen bekend.'
+    warnings: '&7Deze speler heeft &6%amount% &7waarschuwingen ontvangen.'
+    warningsone: '&7Deze speler heeft &61 &7waarschuwing ontvangen.'
+    online:
+      online: Online
+      offline: Offline
+      both: Beide
+    button:
+      tickets: '&7Tickets'
+      templatemanager: '&6&lTemplate beheer'
+    name: Speler naam
+    search: '&7Zoek naar speler'
+    nonefound: '&cGeen spelers gevonden.'
+  templateselector:
+    title: '&8Selecteer een template'
+    click: '&7Klik om dit template te selecteren.'
+  templatemanager:
+    title: '&8Templates'
+    create: '&6&lCreëer Template'
+    leftclick: '&7Klik links om te bewerken.'
+    rightclick: '&7Klik rechts om te verwijderen.'
+  punishments:
+    title: '&8%toModerate% > Straffen'
+    reason: '&6Reden'
+    duration: '&6Initiële duur'
+    punisher: '&6Persoon die gestraft heeft'
+    remaining: '&6Resterende tijd'
+    click: '&7Klik om deze straf te beëindigen.'
+    activity:
+      both: Beide
+      active: Actief
+      expired: Verlopen
+  punishmenttypes:
+    all: Alle
+    ban: Ban
+    kick: Kick
+    warning: Waarschuwing
+    mute: Mute
+  punish:
+    title:
+      template: '&8Creëer een Template'
+      message: '&8%toModerate% > Straffen'
+    submit: '&a&lVerstuur'
+    type:
+      punishment:
+        click: '&7Klik om van type te veranderen.'
+        message: '&6&lStraf'
+      template:
+        current: '&7Momenteel geselecteerd: &6%template%&7.'
+        none: '&7Geen templates om uit te kiezen.'
+        click: '&7Klik om een template te kiezen.'
+        message: '&6&lTemplate'
+      name:
+        current:
+          click: '&7Klik om naam te veranderen.'
+          message: '&7Momenteel ingesteld op: &6%name%&7.'
+        message: '&6&lNaam'
+      duration:
+        leftclick: '&7Klik links om een looptijd in te stellen.'
+        rightclick: '&7Klik rechts om permanent te maken.'
+        current: '&7Momenteel ingesteld op:'
+        message: '&c&lLooptijd'
+      reason:
+        click: '&7Klik om een reden in te geven.'
+        current: '&7Op dit moment ingesteld op:'
+        message: '&b&lReden'
+    template:
+      create: '&7Klik om een template te maken'
+      create2: '&7van deze straf.'
+      leftclick: '&7Klik links om de'
+      leftclick2: '&7template &6%template%&7 te updaten.'
+      rightclick: '&7Klik rechts om op te slaan als een nieuwe template.'
+  player:
+    title: '&8Spelers > %toModerate%'
+    punish: '&6&lStraf'
+    moderate: '&b&lModeraten'
+    punishments: '&c&lStraffen'
+    notes: '&a&lOpmerkingen'
+    tickets: '&7&lTickets'
+  moderate:
+    title: '&8%toModerate% > Moderaten'
+  notes:
+    title: '&8%tonotes% > Opmerking'
+    create: '&6Creëer opmerking'
+    remove: '&cKlik om te verwijderen'
+    type: Voer je opmerking in.
+    createdon: '&7Gemaakt op &6%sent%&7.'
+    createdby: '&7Gemaakt door &6%player%&7.'
+  tickets:
+    title: '&8&lTickets'
+    titlesingle: '&8%toModerate% > Tickets'
+    create: '&6Maak een ticket'
+    click: '&6Klik om te beheren.'
+    player: '&7Speler &6%player%&7.'
+    what: '&6Wat wil je zeggen in je eerste ticket bericht?'
+    subject: Ticket onderwerp
+  ticket:
+    title: '&8Tickets > %subject% %id%'
+    type: '&7Type &6%type%&7.'
+    picktype: '&8Kies een ticket type.'
+    clicktotele: '&6Je bent geteleporteerd naar de locatie van de ticket.'
+    createdon: '&7Gemaakt op &6%sent%&7.'
+    respond: '&6Reageren'
+    status: '&7Status &6%status%&7.'
+    postedby: '&7Geplaatst door &6%player%&7.'
+    what: '&6Wat wil je zeggen?'
+notify:
+  block:
+    main: '&a Heeft een [&6%material%&a] gebroken op &6'
+  ticket:
+    created: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] is aangemaakt!'
+    status: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] nieuwe status: &6%status%'
+    response: '&7[UM] &a[Ticket #%tid% - %type% - %player%&a] heeft een nieuwe reactie!'

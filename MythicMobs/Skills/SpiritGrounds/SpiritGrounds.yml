@@ -1,0 +1,25 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+WITCHSHOT:
+  Skills:
+  - shoot{type=arrow;velocity=1;damage=35}
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true;yt=1;ys=1} 
+WITCHAOE:
+  Skills:
+  - damage{amount=20;ignoreArmor=false} @target
+  - effect:particletornado{p=cloud;cp=largeexplode;mr=5;h=.4;i=4;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self
+
+MOOSHDASH:
+  Cooldown: 5
+  Skills:
+  - lunge{velocity=2;velocityY=0} @Self
+  - effect:explosion @Self
+  - damage{amount=20;ignoreArmor=false} @PIR{r=5}
+
+MOOSHDASH2:
+  Cooldown: 5
+  Skills:
+  - lunge{velocity=2;velocityY=0} @Self
+  - effect:explosion @Self
+  - damage{amount=10;ignoreArmor=false} @PIR{r=5}

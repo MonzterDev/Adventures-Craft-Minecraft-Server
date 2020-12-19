@@ -1,0 +1,71 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying this will cause this file to break and regenerate.
+items-Version: 7
+items-Delay: 0
+items-Overwrite: true
+items-Spamming: false
+items-RestrictCount: false
+items:
+  skull-item:
+    id: PLAYER_HEAD
+    slot: 8
+    name: '&aMenu &8&l» &7Click'
+    skull-texture:
+      '1': eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThkYWExZTNlZDk0ZmYzZTMzZTFkNGM2ZTQzZjAyNGM0N2Q3OGE1N2JhNGQzOGU3NWU3YzkyNjQxMDYifX19
+    commands:
+      interact:
+      - 'op: main'
+      interact-air:
+      - 'op: main'
+      inventory:
+      - 'op: main'
+      inventory-middle:
+      - 'op: main'
+    itemflags: UNBREAKABLE, HIDE-ATTRIBUTES, HIDE-DURABILITY, PLACEMENT, INVENTORY-MODIFY,
+      INVENTORY-CLOSE, ITEM-STORE, DEATH-DROPS, SELF-DROPS
+    triggers: JOIN, RESPAWN, WORLD-SWITCH
+    enabled-worlds: ALL
+  book-item:
+    id: WRITTEN_BOOK
+    author: '&aAdventuresCraft'
+    slot: 8
+    name: '&aAdventuresCraft'
+    pages:
+      '1':
+      - '&c&lAdventuresCraft &0- November 29th: '
+      - ''
+      - '&0- &aResource Collector'
+      - 'Automatically stores resources you harvest!'
+      - ''
+      - '&0- &aSocial'
+      - 'Use /Social to make friends and parties!'
+      - ''
+      - '&8Patch Notes in our <text:&9&lDiscord><open_url:https://discord.gg/bw4DztR><show_text:&6&lClick &eto join our Discord!>&8!'
+
+      '2':
+      - '&c   &lImportant Links'
+      - '-------------------'
+      - ''
+      - '<text:&9&lDiscord><open_url:https://discord.gg/bw4DztR><show_text:&6&lClick &eto join our Discord!>&8!'
+      - '&0Trade, Get Support, View Updates, and much more in Discord!'
+      - ''
+      - '<text:&a&lWebsite><open_url:https://www.adventurescraft.net/><show_text:&6&lClick &eto view our Website!>'
+      - '<text:&2&lStore><open_url:https://store.adventurescraft.net/><show_text:&6&lClick &eto view our Store!>'
+      - '<text:&6&lWiki><open_url:https://www.adventurescraft.net/wiki/site/index.html><show_text:&6&lClick &eto view our Wiki!>'
+      - '<text:&c&lRules><open_url:https://www.adventurescraft.net/rules.html><show_text:&6&lClick &eto view the Rules!>'
+    itemflags: UNBREAKABLE, HIDE-ATTRIBUTES, HIDE-DURABILITY, PLACEMENT, INVENTORY-MODIFY,
+      INVENTORY-CLOSE, ITEM-STORE, DEATH-DROPS, SELF-DROPS
+    triggers: JOIN, RESPAWN, WORLD-SWITCH
+    enabled-worlds: ALL
+    commands:
+      interact:
+      - 'op: main'
+      interact-air:
+      - 'op: main'
+      inventory:
+      - 'op: main'
+      inventory-middle:
+      - 'op: main'

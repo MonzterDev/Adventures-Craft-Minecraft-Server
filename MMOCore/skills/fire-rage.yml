@@ -1,0 +1,30 @@
+name: Fire Rage
+lore:
+- For {duration} seconds, you slow down and are able
+- to cast up to {count} fireballs by left clicking.
+- ''
+- Fireballs deal &c{damage} &7damage upon contact
+- and ignite your target for &c{ignite} &7seconds.
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: FIRE_CHARGE
+duration:
+  base: 8.0
+  per-level: 0.0
+damage:
+  base: 5.0
+  per-level: 3.0
+ignite:
+  base: 2.0
+  per-level: 0.1
+mana:
+  base: 15.0
+  per-level: 1.0
+count:
+  base: 4.0
+  per-level: 0.0
+cooldown:
+  base: 9.0
+  per-level: -0.1
+  max: 5.0
+  min: 1.0

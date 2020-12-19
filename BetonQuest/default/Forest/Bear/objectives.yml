@@ -1,0 +1,25 @@
+#Q1
+Bees: mmobkill Bees amount:10 events:entry_q1_complete,QuestReward1,quest2_starter notify
+
+#Q2
+Burrow1: location 274;14;-65;Spawn 5 events:quest2_part2_starter notify
+SlayHare1: mmobkill Hare amount:3 events:quest2_part3_starter notify
+Rabbit1: npcinteract 129 events:quest2_part4_starter
+#Q2P2
+Burrow2: location 371;28;44;Spawn 5 events:quest2_part5_starter notify
+SlayHare2: mmobkill Hare amount:3 events:quest2_part6_starter notify
+Rabbit2: npcinteract 130 events:quest2_part7_starter
+#Q2P3
+Burrow3: location 484;43;-125;Spawn 5 events:quest2_part8_starter notify
+SlayHare3: mmobkill Hare amount:3 events:quest2_part9_starter notify
+Rabbit3: npcinteract 131 events:entry_q2_complete,QuestReward2,quest3_starter
+
+#Q3
+Delivery: npcinteract 35 conditions:honey events:entry_q3_complete,QuestReward3,quest4_starter,removeHoney
+
+#Q4
+SlayWasp: mmobkill Wasp amount:10 events:entry_q4_complete,QuestReward4,quest5_starter notify
+
+#Q5
+SlayQueenBee: mmobkill Queen_Bee amount:1 events:entry_q5_complete,QuestReward5 notify
+

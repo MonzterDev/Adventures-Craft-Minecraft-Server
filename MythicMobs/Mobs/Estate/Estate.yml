@@ -1,0 +1,513 @@
+GOBLIN:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&7[&fLVL 5&7] &cBaby Goblin'
+  Health: 200
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - Goblin Head
+  - iron_sword:0
+  - leather_chestplate chest
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=HAMMER;id=GOBLIN_HAMMER} 1 2.5%
+  - rotten_flesh 1-3 100%
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - mount{type=Hound} @self ~onFirstSpawn
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.GOBLIN 1"} @ThreatTablePlayers ~onDeath
+
+GROWN_GOBLIN:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cGoblin'
+  Health: 300
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - Goblin Head
+  - iron_sword:0
+  - leather_chestplate chest
+  - chainmail_boots boots
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=HAMMER;id=GOBLIN_HAMMER} 1 1%
+  - rotten_flesh 3-5 100%
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - mount{type=Warg} @self ~onFirstSpawn
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.GROWN_GOBLIN 1"} @ThreatTablePlayers ~onDeath
+
+Hound:
+  Type: WOLF
+  Display: '&7[&fLVL 5&7] &cHound'
+  Health: 150
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+    Baby: true
+  Drops:
+  - BorgBox 1 100%
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - skill{s=VALLEYREMOVE} ~onTimer:20
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.Hound 1"} @ThreatTablePlayers ~onDeath
+
+Warg:
+  Type: WOLF
+  Display: '&7[&fLVL 5&7] &cWarg'
+  Health: 100
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - skill{s=VALLEYREMOVE} ~onTimer:20
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.Warg 1"} @ThreatTablePlayers ~onDeath
+
+#####ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT##################################
+
+BABY_GOBLIN1:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&7[&fLVL 10&7] &cBaby Goblin'
+  Health: 500
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.4
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - Goblin Head
+  - iron_sword:0
+  - leather_chestplate chest
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=HAMMER;id=GOBLIN_HAMMER} 1 2.5%
+  - rotten_flesh 1-3 100%
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=HOUNDMOUNT} @self ~onSpawn
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.BABY_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
+
+GROWN_GOBLIN1:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cGoblin'
+  Health: 750
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.3
+    FollowRange: 12
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - Goblin Head
+  - iron_sword:0
+  - leather_chestplate chest
+  - chainmail_boots boots
+  Drops:
+  - BorgBox 1 100%
+  - mmoitems{type=HAMMER;id=GOBLIN_HAMMER} 1 1%
+  - rotten_flesh 3-5 100%
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=45;ignoreArmor=false} @target ~onAttack
+  - skill{s=WARGMOUNT} @self ~onSpawn
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.GROWN_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
+
+ARCHER_GOBLIN1:
+  Type: SKELETON
+  Display: '&7[&fLVL 10&7] &cGoblin Archer'
+  Health: 500
+  Damage: 0
+  Faction: Valley
+  Disguise:
+    Type: Zombie  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.3
+    FollowRange: 12
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - GoblinArcher Head
+  - Bow:0
+  - chainmail_chestplate chest
+  - chainmail_leggings legs
+  Drops:
+  - BorgBox 1 100%
+  - rotten_flesh 3-5 100%
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 3 arrowattack
+  - 4 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=45;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.ARCHER_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
+
+WARG1:
+  Type: WOLF
+  Display: '&7[&fLVL 10&7] &cWarg'
+  Health: 300
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.46
+    FollowRange: 12
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=VALLEYREMOVE} ~onTimer:20
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add mobs.WARG1 1"} @ThreatTablePlayers ~onDeath
+
+HOUND1:
+  Type: WOLF
+  Display: '&7[&fLVL 10&7] &cHound'
+  Health: 350
+  Damage: 0
+  Faction: Valley
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.46
+    FollowRange: 12
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+    Baby: true
+  Drops:
+  - BorgBox 1 100%
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=VALLEYREMOVE} ~onTimer:20
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20  
+  - command{c="q point <target.name> add mobs.HOUND1 1"} @ThreatTablePlayers ~onDeath
+
+GOBLIN_CHIEF:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 15&7] &cGoblin Chief'
+  Health: 5000
+  Damage: 0
+  Faction: Valley
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 15&7] &cGoblin Chief <caster.hp>&f/&c<caster.mhp>'
+    Range: 30
+    Color: RED
+    Style: SOLID  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .1
+    MaxCombatDistance: 25
+    MovementSpeed: 0.35
+    FollowRange: 12
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - Goblin_Chief Head
+  - CHIEF_JUKE_ITEM:0
+  - CHIEF_CHEST chest
+  - CHIEF_LEGS LEGS
+  - CHIEF_FEET FEET
+  Drops:
+  - BorgBox 1 100%
+  - rotten_flesh 5-10 100%
+  - EXP 15-20 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=45;ignoreArmor=false} @target ~onAttack
+  - skill{s=HOSUMMON} @self ~onDamaged .25
+  - skill{s=WASUMMON} @self ~onDamaged .25
+  - skill{s=GGSUMMON} @self ~onDamaged .15
+  - skill{s=BABYGSUMMON} @self ~onDamaged .15
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - command{c="q point <target.name> add bosses.GOBLIN_CHIEF 1"} @ThreatTablePlayers ~onDeath
+  - command{c="q point <target.name> add bosses.GoblinChiefReward 1"} @ThreatTablePlayers ~onDeath
+  - message{m="&eYou have defeated the &cGoblin Chief&e! Claim your rewards in &l/Bossdex&e!"} @ThreatTablePlayers ~onDeath

@@ -1,0 +1,257 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §8Chestplate Enchantments §7§l«§f§l«
+max-queue-size: 10
+layout: Weapon_Enchantments
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: RED_STAINED_GLASS_PANE
+  no-queue-item:
+    material: RED_STAINED_GLASS_PANE
+    name: '&c&lLOCKED'
+recipes:
+  KAMIKAZE1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE1
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=2}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant KAMIKAZE 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=4}
+  KAMIKAZE2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE2
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=4}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant KAMIKAZE 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=6}
+  KAMIKAZE3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE3
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=8}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant KAMIKAZE 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=8}
+  UNAVAILABLE1:
+    options:
+        output-item: false
+    output:
+      type: MISCELLANEOUS
+      id: UNAVAILABLE
+    ingredients:
+    - vanilla{type=AIR,amount=0}
+  UNAVAILABLE2:
+    options:
+        output-item: false
+    output:
+      type: MISCELLANEOUS
+      id: UNAVAILABLE
+    ingredients:
+    - vanilla{type=AIR,amount=0}
+
+  REFLECT1:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT1
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant REFLECT 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  REFLECT2:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT2
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=4}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant REFLECT 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=6}
+  REFLECT3:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT3
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=8}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant REFLECT 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=7}
+  REFLECT4:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT4
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK4,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=12}
+    triggers:
+    - exp{profession=ENCHANTING;amount=400}
+    - command{format="artifacts enchant REFLECT 4",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=10}
+  UNAVAILABLE3:
+    options:
+        output-item: false
+    output:
+      type: MISCELLANEOUS
+      id: UNAVAILABLE
+    ingredients:
+    - vanilla{type=AIR,amount=0}
+
+
+  KAMIKAZE1T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE1
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant KAMIKAZE 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=4}
+  KAMIKAZE2T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE2
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE2,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant KAMIKAZE 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=6}
+  KAMIKAZE3T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: KAMIKAZE3
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE3,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant KAMIKAZE 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=8}
+  UNAVAILABLE1T:
+    options:
+        output-item: false
+    output:
+      type: MISCELLANEOUS
+      id: UNAVAILABLE
+    ingredients:
+    - vanilla{type=AIR,amount=0}
+  UNAVAILABLE2T:
+    options:
+        output-item: false
+    output:
+      type: MISCELLANEOUS
+      id: UNAVAILABLE
+    ingredients:
+    - vanilla{type=AIR,amount=0}
+
+
+  REFLECT1T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT1
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=100}
+    - command{format="artifacts enchant REFLECT 1",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=3}
+  REFLECT2T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT2
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE2,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=200}
+    - command{format="artifacts enchant REFLECT 2",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=6}
+  REFLECT3T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT3
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE3,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=300}
+    - command{format="artifacts enchant REFLECT 3",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=7}
+  REFLECT4T:
+    options:
+        output-item: false
+    output:
+      type: ENCHANTMENT
+      id: REFLECT4
+    ingredients:
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK4,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE4,amount=1}
+    triggers:
+    - exp{profession=ENCHANTING;amount=400}
+    - command{format="artifacts enchant REFLECT 4",sender=OP}
+    conditions:
+    - profession{profession=Enchanting,level=10}

@@ -1,0 +1,116 @@
+menu_title: '&f&l»&7&l» &8Bounty Tracker &7&l«&f&l«'
+open_command: bountymenu
+size: 35
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 32 
+    - 33
+    - 34
+    - 35
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 31
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] Quests"
+    left_click_commands:
+    - "[openguimenu] Quests"
+  'Points':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 32
+    display_name: '&6%betonquest_default-Points:point.Bounty.amount% &aBounties Completed'
+
+###TOP ROW
+  'Foraging':
+    material: DIAMOND_AXE
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aLuke'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Bounties'
+    click_commands:
+    - "[console] rpgmenu open default-Bounty-Foraging.1 %player_name%"
+  'Farming':
+    material: DIAMOND_HOE
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aDolly'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Bounties'
+    click_commands:
+    - "[console] rpgmenu open default-Bounty-Farming.1 %player_name%"
+  'Mining':
+    material: DIAMOND_PICKAXE
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aGeorge'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Bounties'
+    click_commands:
+    - "[console] rpgmenu open default-Bounty-Mine.1 %player_name%"
+  'Slayer':
+    material: DIAMOND_SWORD
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aMilo'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Bounties'
+    click_commands:
+    - "[console] rpgmenu open default-Bounty-Slayer.1 %player_name%"
+  'Enchanting':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: '&aGanon'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Bounties'
+    click_commands:
+    - "[console] rpgmenu open default-Bounty-Enchanting.1 %player_name%"

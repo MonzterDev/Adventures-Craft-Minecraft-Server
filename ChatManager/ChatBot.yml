@@ -1,0 +1,80 @@
+#=================================================================================================#
+#                                 Main Configuration of Chat Bot
+#=================================================================================================#
+#
+#    1. This feature you can create trigger messages that will activate the chat bot, and the bot will
+#    respond with your bot response.
+#
+#    2. You can execute commands just encase you need to for any reason.
+#
+#    3. You can have a required permission so if the player doesn't have the correct permission
+#    the bot will not do anything towards that player or rank.
+#
+#    4. Sound List
+#       - 1.9 and newer: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#       - 1.8 and older: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+#
+#    5. To learn more on how to use chatbot please go on our wiki page.
+#       - https://github.com/H1DD3NxN1NJA/ChatManager/wiki/Chat-Bot
+#
+#=================================================================================================#
+
+Chat_Bot:
+
+  Enable: false
+  
+  Bot_Prefix: "&cChatBot &9>> &r"
+  
+  #Broadcast the bots response to everyone on the server.
+  Broadcast_Response: true
+  
+  #The time it takes the bot to respond to a player in seconds.
+  Response_Time: 5
+  
+  #The sound that is played when the bot responds to someones question.
+  #Do Sound: '' to disable
+  Sound: ''
+  
+Messages:
+
+  #The name of this section, can be anything.
+  One:
+  
+    #The message the player has to type in chat for the bot to activate, you can add as many as you want.
+    Players_Messages:
+    - "How are you doing today chatbot?"
+    
+    #The message the bot replies with.
+    Bot_Response: "&fI'm good &e{player}&f, thanks for asking"
+    
+    #The required permission to execute this message.
+    Required_Permission: "none"
+    
+    #If you don't have permission the bot will say this:
+    No_Permission_Message: "none"
+    
+    #The command that will execute upon triggering this message.
+    Executed_Command: "none"
+  Two:
+    Players_Messages:
+    - "Where are the crates at?"
+    - "Where are the crates?"
+    Bot_Response: "&fThey are at &e/warp crates &f{player}!"
+    Required_Permission: "ChatBot.Crates"
+    No_Permission_Message: "&cSorry {player}, but you cant use the crates."
+    Executed_Command: "warp crates {player}"
+  Three:
+    Players_Messages:
+    - "help me"
+    - "can someone help me?"
+    Bot_Response: "&fSure thing &e{player}&f, do &e/help&f!"
+    Required_Permission: "ChatBot.help"
+    No_Permission_Message: "&4No"
+    Executed_Command: "none"
+  Four:
+    Players_Messages:
+    - "What world am I in?"
+    Bot_Response: "&fYou are in the world &e '{world}' {display_name}&f!"
+    Required_Permission: "none"
+    No_Permission_Message: "none"
+    Executed_Command: "none"

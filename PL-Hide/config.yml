@@ -1,0 +1,76 @@
+#OP-protection: Player can only be op'ed if they are in the "allowed-operators" list
+op-protection: false
+allowed-operators:
+  - Player1
+  - Player2
+#If you try to Op someone who isn't in the list
+op-message: "&cThe Player isn't a listed operator!!!"
+#Players who are operators and are not in the list can't connect and will be deop'ed.
+unauthorized-operator-kick-message: '&cYou are not allowed to be an operator'
+
+#Message if you type a blocked command | Enter none to disable
+blocked-command-message: "&7Unknown command"
+#Message shown if you type /pl | Enter none to disable | Players with the permission plhide.bypass will see the real plugins
+/pl-message: 'Plugins (0):'
+
+#Stay on the newest version to get better features!
+#Enable or disable automatic ingame update notification on join
+update-notify: true
+
+
+#A tab-completion that applies to all players except for those with the plhide.bypass permission
+#Can only add a whole command.
+custom-tab: false
+tab:
+  - example1
+  - example2
+
+groups:
+  #if no group is set via plhide.group.<group> this will be applied
+  #do not rename the default group!
+  #blocked commands will be automatically removed from the tabcompletion
+  default:
+    commands:
+      - ver
+      - version
+      - about
+      - bukkit
+      - icanhasbukkit
+      - help
+      - '?'
+      - me
+      - minecraft:me
+      - minecraft:help
+      - bukkit:?
+      - bukkit:help
+      - plugins
+      - pl
+      - bukkit:pl
+      - bukkit:plugins
+      - bukkit:ver
+      - bukkit:version
+      - bukkit:about
+      #The plugin commands
+      - pl-hide:plhide
+      - plhide
+   #whether the list is a "blacklist" list or a "whitelist"
+    group-mode: blacklist
+    #If a player is in two groups, the group with the higher priority number is used
+    #The minimum value is 0
+    priority: 0
+    #here you can add other groups
+    #only the same group type will be applied (group-mode)
+    included-groups:
+      - Test
+  #add permission plhide.group.test to apply this group
+  Test:
+    commands:
+      - none
+    group-mode: blacklist
+    priority: 1
+    included-groups:
+      - none
+
+
+#Don't change
+version: "1.3"

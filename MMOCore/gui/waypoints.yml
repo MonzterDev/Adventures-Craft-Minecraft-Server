@@ -1,0 +1,51 @@
+
+# GUI display name
+name: Waypoints
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 45
+
+items:
+    waypoint:
+        slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+        function: waypoint
+        
+        # Displayed when there is no waypoint
+        no-waypoint:
+            item: GRAY_STAINED_GLASS_PANE
+            name: '&a'
+            lore: {}
+        
+        # Displayed when the waypoint has not been unlocked yet.
+        locked:
+            name: '&c- Locked -'
+            item: GRAY_DYE
+            lore: {}
+        
+        # Displayed when the waypoint is unlocked.
+        display:
+            name: '&a{name}'
+            item: ENDER_EYE
+            
+            # Material displayed when the waypoint is not
+            # ready (not dynamic, or not enough stellium)
+            not-ready: ENDER_PEARL
+            
+            lore:
+            - '&7You have unlocked this waypoint.'
+            - '&7Click to teleport for &b{stellium} &7stellium.'
+    next:
+        slots: [26]
+        function: next
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        name: '&aNext Page'
+        lore: []
+    previous:
+        slots: [18]
+        function: previous
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        name: '&aPrevious Page'
+        lore: []

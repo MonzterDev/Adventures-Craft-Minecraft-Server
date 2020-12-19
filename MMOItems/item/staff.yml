@@ -1,0 +1,377 @@
+UNDEAD_STAFF:
+  base:
+    material: STONE_HOE
+    name: §2Undead Staff
+    attack-damage: 45.0
+    unbreakable: true
+    faction-damage-undead: 25.0
+    tier: UNCOMMON
+    lore:
+    - §cStuns §7enemy for §c4 seconds§7,
+    - §7with a cooldown of §c10 seconds§7.
+    durability: 2.0
+NECROMANCER_STAFF0:
+  base:
+    material: STONE_HOE
+    name: §2Necromancer Staff
+    unbreakable: true
+    tier: UNCOMMON
+    attack-damage: 65.0
+    range: 6.0
+    lore:
+    - §7Stolen from the powerful
+    - §cVoid Necromancers§7!
+    durability: 3.0
+NECROMANCER_STAFF:
+  base:
+    material: IRON_HOE
+    name: §9Necromancer Staff
+    unbreakable: true
+    tier: RARE
+    attack-damage: 125.0
+    range: 6.0
+    max-mana: 50.0
+    durability: 1.0
+NECROMANCER_STAFF2:
+  base:
+    material: GOLDEN_HOE
+    name: §5Necromancer Staff
+    unbreakable: true
+    tier: LEGENDARY
+    attack-damage: 175.0
+    range: 6.0
+    max-mana: 75.0
+    lore:
+    - §7Stolen from the powerful
+    - §cVoid Necromancers§7!
+    gem-sockets:
+    - Uncolored
+    durability: 1.0
+NECROMANCER_STAFF3:
+  base:
+    material: DIAMOND_HOE
+    name: §eNecromancer Staff
+    unbreakable: true
+    tier: EXOTIC
+    attack-damage: 225.0
+    range: 7.0
+    max-mana: 125.0
+    lore:
+    - §7Summon &aVoid Demons &7to fight
+    - §7beside you for &a30 seconds &7and
+    - §aheal &7you for &a10 HP&7 each hit!
+    ability:
+      ability1:
+        type: PETSUMMON
+        mode: SHIFT_RIGHT_CLICK
+        mana: 50.0
+        cooldown: 5.0
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    durability: 1.0
+SEED_STAFF:
+  base:
+    material: WOODEN_HOE
+    disable-crafting: true
+    attack-damage: 50.0
+    range: 5.0
+    tier: RARE
+    name: §9Seed Staff
+    ability:
+      ability1:
+        type: SEEDSHOT
+        mode: SHIFT_RIGHT_CLICK
+        mana: 15.0
+        cooldown: 5.0
+    unbreakable: true
+    lore:
+    - '&7Shoot an explosive seed at'
+    - '&7your foe dealing &c500 damage&7!'
+    gem-sockets:
+    - Uncolored
+    durability: 1.0
+FARMER_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage: 40.0
+    range: 3.5
+    tier: RARE
+    name: §9Farmer's Staff
+    durability: 1.0
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+SHROOM_STAFF:
+  base:
+    material: WOODEN_HOE
+    disable-crafting: true
+    attack-damage: 65.0
+    range: 4
+    tier: RARE
+    name: §9Shroom Staff
+    durability: 1.0
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+    magic-damage: 15.0
+    ability:
+      ability1:
+        type: CORRUPT
+        mode: SHIFT_RIGHT_CLICK
+        damage: 200.0
+        duration: 3.0
+        mana: 30.0
+CANE_STAFF:
+  base:
+    material: IRON_HOE
+    disable-crafting: true
+    attack-damage: 50.0
+    range: 3
+    tier: RARE
+    name: §9Cane Staff
+    durability: 1.0
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+WHEAT_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage: 75.0
+    range: 5.0
+    tier: RARE
+    name: §9Wheat Staff
+    ability:
+      ability1:
+        type: SUPERSEED
+        mode: SHIFT_RIGHT_CLICK
+        mana: 20.0
+        cooldown: 7.5
+    durability: 2.0
+    unbreakable: true
+    lore:
+    - '&7Shoot an explosive seed at'
+    - '&7your foe dealing &c1000 damage&7!'
+    gem-sockets:
+    - Uncolored
+HARMING_STAFF:
+  base:
+    material: IRON_HOE
+    name: '&2Harming Staff'
+    tier: UNCOMMON
+    unbreakable: true
+    max-mana: 15.0
+    range: 5.0
+    attack-damage: 25.0
+    critical-strike-power: 50.0
+    durability: 2.0
+    gem-sockets:
+    - Uncolored
+CURSED_STAFF:
+  base:
+    material: GOLDEN_HOE
+    name: §eCursed Staff
+    unbreakable: true
+    tier: EXOTIC
+    attack-damage: 250.0
+    range: 8.0
+    max-mana: 150.0
+    lore:
+    - §7Call upon the &aUndead Rider
+    - §7to stomp through the enemies
+    - §7dealing &c1,2500 damage &7to each!
+    ability:
+      ability1:
+        type: UNDEAD_RIDER
+        mode: SHIFT_RIGHT_CLICK
+        mana: 50.0
+        cooldown: 5.0
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+LOCKHART_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 35
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 25
+      spread: 0.1
+      max-spread: 0.3
+    range: 3
+    tier: RARE
+    name: §9Lockhart Staff
+    unbreakable: true
+    durability: 1.0
+LOCKHART_STAFF2:
+  base:
+    material: IRON_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 35
+      spread: 0.1
+      max-spread: 0.3
+    range: 4
+    tier: LEGENDARY
+    name: §5Lockhart Staff
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+INFECTED_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 25
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 35
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-undead: 25.0
+    range: 4
+    tier: RARE
+    name: §9Infected Staff
+    unbreakable: true
+    durability: 1.0
+INFECTED_STAFF2:
+  base:
+    material: IRON_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 65
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-undead: 40.0
+    range: 6
+    tier: LEGENDARY
+    name: §5Infected Staff
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+HEATED_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-hell: 10.0
+    range: 4
+    tier: RARE
+    name: §9Heated Staff
+    unbreakable: true
+    durability: 1.0
+HEATED_STAFF2:
+  base:
+    material: IRON_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-hell: 15.0
+    range: 5
+    tier: LEGENDARY
+    name: §5Heated Staff
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+DISTILLED_STAFF:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 20
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-void: 20.0
+    range: 4
+    tier: RARE
+    name: §9Distilled Staff
+    unbreakable: true
+    durability: 1.0
+DISTILLED_STAFF2:
+  base:
+    material: IRON_HOE
+    disable-crafting: true
+    attack-damage:
+      base: 80
+      spread: 0.1
+      max-spread: 0.3
+    magic-damage:
+      base: 35
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-void: 40.0
+    range: 5
+    tier: LEGENDARY
+    name: §5Distilled Staff
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+KHAZIX_STAFF:
+  base:
+    material: GOLDEN_HOE
+    name: §9Khazix Staff
+    unbreakable: true
+    tier: RARE
+    attack-damage: 115.0
+    range: 5.0
+    magic-damage: 20
+    faction-damage-void: 20.0
+    lore:
+    - §7Rewarded after helping §aKhazix§7!
+KHAZIX_STAFF2:
+  base:
+    material: DIAMOND_HOE
+    name: §5Khazix Staff
+    unbreakable: true
+    tier: LEGENDARY
+    attack-damage: 175.0
+    range: 7.0
+    magic-damage: 30
+    faction-damage-void: 40.0
+    lore:
+    - §7Shoot forward two §5void spikes
+    - §7dealing §c2,000 damage §7each and
+    - §7temporarily §8slowing §7the enemy!
+    gem-sockets:
+    - Uncolored
+    ability:
+      ability1:
+        type: VOID_SPIKE
+        mode: SHIFT_RIGHT_CLICK
+        cooldown: 5.0
+        mana: 35.0

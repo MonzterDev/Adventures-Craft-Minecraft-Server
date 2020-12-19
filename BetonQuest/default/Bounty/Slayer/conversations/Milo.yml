@@ -1,0 +1,74 @@
+quester: Milo
+first: greeting
+NPC_options:
+  greeting:
+    text: "&a%player%&7, everyday I will have quests for you to go hunt down foes!"
+    pointers: quest, bye
+#This is the Quest offering menu basically
+  quests:
+    text: I'll have a bounty for you every &e24 hours&7!  
+    pointers: quest1, quest2, quest3_1, quest_decline
+    conditions: '!QuestCooldown24'            
+  quests3:
+    text: I'll have a bounty for you every &e24 hours&7!  
+    pointers: quest1, quest2, quest3_1, quest_decline
+    conditions: '!Quest2Cooldown24'            
+  quests3_4:
+    text: I'll have a bounty for you every &e24 hours&7!  
+    pointers: quest1, quest2, quest3_1, quest_decline
+    conditions: '!Quest3Cooldown24'            
+  quests_locked:
+    text: You already took my bounty today! Come back in &e%objective.QuestCooldown24.left%&7!
+    pointers: quest_cooldown
+    conditions: 'QuestCooldown24,Quest2Cooldown24,Quest3Cooldown24'        
+
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: Go slay &c500 Undead&f!
+#Selected from quest1 dialogue, which will start his first quest
+  quest2accept:
+    text: Go slay &c1,000 Hell enemies&f!
+#Selected from quest1 dialogue, which will start his first quest
+  quest3accept:
+    text: Go slay &c1,500 enemies&7 in the &5Void&f!
+
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Quest    
+  quest:
+    text: Do you have any Bounties?
+    pointers: quests,quests3,quests3_4,quests_locked
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Wow, you must be busy!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest decline, when a reject taking a quest
+  quest_cooldown:
+    text: OK, I'll come back later.
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$&f" Bounty
+    events: 'tag_QuestCooldown24,tag_q1_part1,q1_part1,StartSlayUndead'    
+    pointers: quest1accept
+    conditions: '!QuestCooldown24'
+  quest2:
+    text: Take "$quest_name2$&f" Bounty
+    events: 'tag_Quest2Cooldown24,tag_q2_part1,q2_part1,StartSlayHell'    
+    pointers: quest2accept
+    conditions: '!Quest2Cooldown24'
+
+  quest3_1:
+    text: Take "$quest_name3$&f" Bounty
+    events: 'tag_Quest3Cooldown24,tag_q3_part1,q3_part1,StartSlayVoid'    
+    pointers: quest3accept
+    conditions: '!Quest3Cooldown24'
+

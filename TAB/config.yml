@@ -1,0 +1,137 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
+
+change-nametag-prefix-suffix: true
+change-tablist-prefix-suffix: true
+enable-header-footer: true
+header:
+- '%animation:ServerName%'
+- ''
+- '&fLocation: %custom_location%'
+- ''
+footer:
+- ''
+- '%animation:web%'
+group-sorting-priority-list:
+- owner
+- admin
+- mod
+- helper
+- alpha
+- conqueror
+- adventurer
+- explorer
+- default
+Groups:
+  default:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &7'
+    tagprefix: '&7'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  explorer:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &a'  
+    tagprefix: '&a'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  adventurer:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &9'
+    tagprefix: '&9'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  conqueror:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &c'
+    tagprefix: '&c'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  alpha:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &e'
+    tagprefix: '&e'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  helper:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &a'
+    tagprefix: '&a&l'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  mod:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &b'
+    tagprefix: '&b&l'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  admin:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &4'
+    tagprefix: '&4&l'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+  owner:
+    tabprefix: '&7[&fLVL %mmocore_level%&7] &6'
+    tagprefix: '&6&l'
+    belowname: '&a%mmocore_health% &c❤'
+    abovename: '&7[&fLVL %mmocore_level%&7]'
+Users:
+  _NEZNAMY_:
+    tabprefix: '&6&lTAB Author &a'
+    tagprefix: '&6&lTAB &r&a'
+    abovename: '&bOh look, 3 lines of text !'
+    belowname: '&eThere''s only one plugin out there supporting it'
+enable-collision: false
+revert-collision-rule-in-worlds:
+- revertedworld
+do-not-move-spectators: false
+unlimited-nametag-prefix-suffix-mode:
+  enabled: true
+  modify-npc-names: false
+  use-marker-tag-for-1-8-x-clients: false
+per-world-settings:
+  Homes:
+    header:
+    - '%animation:ServerName%'
+    - ''
+    - '%plotsquared_currentplot_owner% &aHome'
+    - ''
+    footer:
+    - ''
+    - '%animation:web%'
+  world2-world3:
+    header:
+    - This is a shared header for
+    - world2 and world3
+placeholders:
+  afk-yes: ' &4*&4&lAFK&4*&r'
+  afk-no: ''
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  remove-strings:
+  - '[]'
+  - < >
+rank-aliases:
+  Owner: '&4&lOWNER'
+disable-features-in-worlds:
+  header-footer:
+  - disabledworld
+  tablist-names:
+  - disabledworld
+  nametag:
+  - disabledworld
+  tablist-objective:
+  - disabledworld
+  bossbar:
+  - disabledworld
+  belowname:
+  - disabledworld
+yellow-number-in-tablist: '%ping%'
+classic-vanilla-belowname:
+  enabled: false
+  number: '%health%'
+  text: Health
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 100
+  server:
+    '%server_uptime%': 1000
+    '%server_tps_1_colored%': 1000
+  player:
+    '%vault_prefix%': 1000
+    '%player_health%': 200
+    '%player_ping%': 1000
+  relational:
+    '%rel_factionsuuid_relation_color%': 500

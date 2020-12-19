@@ -1,0 +1,152 @@
+SLOWNESS_RING:
+  Id: GRAY_DYE
+  Display: "&5Slowness Ring"  
+  Lore:
+  - '&fCatalyst'
+  - ''
+  - '&7Hold this in your off-hand to'  
+  - '&7remove any &cSlowness&7 effects!'  
+  - ''  
+  - '&5&lLEGENDARY ITEM'  
+  Skills:
+  - command{c="effect clear <caster.name> minecraft:blindness"} @self ~onTimer:20
+
+TESTING:
+  Id: DIAMOND_SWORD
+  Data: 1  
+  Options:  
+    Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  - UNBREAKABLE
+
+BLINDER_KILL:
+  Id: GRAY_DYE
+  Display: "&5Slowness Ring"  
+  Lore:
+  - '&fCatalyst'
+  - ''
+  - '&7Hold this in your off-hand to'  
+  - '&7remove any &cSlowness&7 effects!'  
+  - ''  
+  - '&5&lLEGENDARY ITEM'  
+  Skills:
+  - remove @MIR{r=1000;t=VOID_BLINDER} ~onTimer:5
+
+
+BLINDER:
+  Id: GRAY_DYE
+  Display: "&5Slowness Ring"  
+  Lore:
+  - '&fCatalyst'
+  - ''
+  - '&7Hold this in your off-hand to'  
+  - '&7remove any &cSlowness&7 effects!'  
+  - ''  
+  - '&5&lLEGENDARY ITEM'  
+  Skills:
+  - command{c="effect clear <caster.name> minecraft:blindness"} @self ~onTimer:5
+  
+FAST_AS_HELL:
+  Id: RED_DYE
+  Display: "&eFast as Hell"  
+  Lore:
+  - '&fCatalyst'
+  - ''
+  - '&7Hold this in your off-hand to'  
+  - '&7gain &aHaste 5&7 while in &cHell&7!'  
+  - ''  
+  - '&e&lEXOTIC ITEM'  
+  Skills:
+  - skill{skill=FAH} @self ~onTimer:20
+    
+BEE_WINGS:
+  Id: GOLDEN_CHESTPLATE
+  Display: "&fBee Wings"  
+  Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  - UNBREAKABLE    
+  Lore:
+  - '&fArmor'
+  - ''
+  - '&7While in the &aForest&7, you'  
+  - '&7can &afly &7for 3 seconds!'  
+  - ''  
+  - '&f&lCOMMON ITEM'  
+  Skills:
+  - skill{skill=BEEFLY} @self ~onTimer:20	
+BEE_WINGS2:
+  Id: GOLDEN_CHESTPLATE
+  Display: "&9Bee Wings"  
+  Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  - UNBREAKABLE  
+  Lore:
+  - '&fArmor'
+  - ''
+  - '&7While in the &aForest&7, you'  
+  - '&7can &afly &7for 10 seconds!'  
+  - ''  
+  - '&9&lRARE ITEM'  
+  Skills:
+  - skill{skill=BEEFLY2} @self ~onTimer:20	
+
+ROOTER:
+  Id: VINE
+  Display: "&9Rooter"  
+  Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  - UNBREAKABLE  
+  Lore:
+  - '&fArmor'
+  - ''
+  - '&7While in the &aForest&7, you'  
+  - '&7can &afly &7for 10 seconds!'  
+  - ''  
+  - '&9&lRARE ITEM'  
+  Skills:
+  - skill{skill=MASSIVEROOT} @self ~onUse
+
+##VALLEY CHIEF 
+CHIEF_JUKE_ITEM:
+  Id: jukebox
+  Display: '&eChiefs Jukebox'
+  Hide:
+  - ENCHANTS
+  - UNBREAKABLE  
+  Unbreakable: true
+  Enchantments:
+  - DURABILITY:1
+  Skills:
+  - skill{s=CHIEF_JUKE_ITEM} ~onUse
+  Lore:
+  - '&fMagical'
+  - ''    
+  - '&e&lMagical Tune: &fRight Click'    
+  - '&aSpeedy &7Gain &aSpeed 5 &7for 1 minute!'
+  - '&aPower &7Gain &aStrength 10 &7for 30 seconds!'
+  - '&cSmited &7Deal &c500 damage&7 to mobs within 10 blocks!'
+  - '&cSlow &7Gain &cSlowness 1 &7for 15 seconds!'
+  - ''
+  - '&7Play a magical tune from the Chiefs jukebox!'
+  - '&7The tunes can be played every &c90 seconds&7!'
+  - ''  
+  - '&e&lEXOTIC ITEM'
+
+
+#VOID
+BLINDNESSER:
+  Id: RED_DYE
+  Display: "&eFast as Hell"  
+  Lore:
+  - '&fCatalyst'
+  - ''
+  - '&7Hold this in your off-hand to'  
+  - '&7gain &aHaste 5&7 while in &cHell&7!'  
+  - ''  
+  - '&e&lEXOTIC ITEM'  
+  Skills:
+  - skill{skill=BLINDNESS_CLEAERER} @self ~onTimer:40

@@ -1,0 +1,212 @@
+WOOD_CRACKER:
+  base:
+    material: WOODEN_AXE
+    unbreakable: true
+    tier: COMMON
+    name: §fWood Cracker
+    attack-damage: 35.0
+    critical-strike-chance: 34.0
+    durability: 1.0
+RICH_AXE:
+  base:
+    material: GOLDEN_AXE
+    unbreakable: true
+    tier: EXOTIC
+    name: §eRich Axe
+    attack-damage: 100.0
+    critical-strike-power: 15.0
+    critical-strike-chance: 20.0
+    lore:
+    - §7Lose §e100 coins §7each time
+    - §7you use this Axe, consider it tax!
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    upgrade:
+      workbench: true
+      max: 20
+      template: richest-axe
+    durability: 1.0
+BONE_AXE:
+  base:
+    material: IRON_AXE
+    unbreakable: true
+    tier: RARE
+    name: §9Bone Axe
+    attack-damage: 75.0
+    undead-damage: 75
+    critical-strike-power: 10.0
+    gem-sockets:
+    - Uncolored
+    durability: 1.0
+HEAVY_AXE:
+  base:
+    material: IRON_AXE
+    unbreakable: true
+    tier: RARE
+    name: §9Heavy Axe
+    attack-damage: 65.0
+    critical-strike-power: 25.0
+    knockback-resistance: 1
+    gem-sockets:
+    - Uncolored
+    perm-effects:
+      INCREASE_DAMAGE: 3
+    lore:
+    - '&7Gain &aStrength 3 &7while holding!'
+    durability: 1.0
+CARVING_AXE:
+  base:
+    material: IRON_AXE
+    unbreakable: true
+    tier: LEGENDARY
+    name: §5Carving Axe
+    attack-damage: 85.0
+    critical-strike-power: 15.0
+    critical-strike-chance: 10.0
+    gem-sockets:
+    - Uncolored
+    lore:
+    - '&7Carve into your foes!'
+    durability: 5.0
+CARVING_AXE2:
+  base:
+    material: GOLDEN_AXE
+    unbreakable: true
+    tier: EXOTIC
+    name: §eCarving Axe
+    attack-damage: 145.0
+    critical-strike-power: 25.0
+    critical-strike-chance: 15.0
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    lore:
+    - '&7Carve &cfear &7into your foes!'
+    durability: 6.0
+KABUTOWARI_AXE:
+  base:
+    material: STONE_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 55
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-chance:
+      base: 25
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-void: 25.0
+    tier: RARE
+    name: §9Kabutowari Axe
+    unbreakable: true
+    durability: 1.0
+KABUTOWARI_AXE2:
+  base:
+    material: IRON_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 65
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-chance:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-void: 40.0
+    tier: LEGENDARY
+    name: §5Kabutowari Axe
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+ARMADS_AXE:
+  base:
+    material: STONE_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 15
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-hell: 25.0
+    tier: RARE
+    name: §9Armads Axe
+    unbreakable: true
+    durability: 1.0
+ARMADS_AXE2:
+  base:
+    material: IRON_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 35
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-hell: 50.0
+    tier: LEGENDARY
+    name: §5Armads Axe
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored
+GOREHOWL_AXE:
+  base:
+    material: STONE_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 50
+      spread: 0.1
+      max-spread: 0.3
+    defense:
+      base: 20
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-undead: 50.0
+    knockback-resistance: 0.5
+    tier: RARE
+    name: §9Gorehowl Axe
+    unbreakable: true
+    durability: 1.0
+GOREHOWL_AXE2:
+  base:
+    material: IRON_AXE
+    disable-crafting: true
+    attack-damage:
+      base: 75
+      spread: 0.1
+      max-spread: 0.3
+    defense:
+      base: 40
+      spread: 0.1
+      max-spread: 0.3
+    faction-damage-undead: 75.0
+    knockback-resistance: 1
+    tier: LEGENDARY
+    name: §5Gorehowl Axe
+    unbreakable: true
+    durability: 1.0
+    gem-sockets:
+    - Uncolored

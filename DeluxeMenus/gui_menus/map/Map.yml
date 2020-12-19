@@ -1,0 +1,404 @@
+menu_title: '&f&l»&7&l» &8Map &7&l«&f&l«'
+open_command: Map
+size: 44
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  'TownHall':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZiYTRmYmFjNjkyNWEzZWRlYTYxODczM2EyYzczYTI1MDhiNzNkNTQ1NWMyMzc2M2E2NTliYmY4YTMwZjljYSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 39
+    display_name: '&aTown Hall'
+    lore:
+    - ''
+    - '&7The heart of the Town with'
+    - '&7many &eVendors &7to buy from!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp TownHall"
+    left_click_commands:
+    - "[player] warp TownHall"
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[openguimenu] main"
+
+  'FastTravel':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc3ZTNkMGY3ZGQ2NmEyNjFjZjk2MmFhMGMxMzMzYjQ5YmZjZjM2MzlmYWFlZWIxNzRkNTk1NzU3ZGY2MTEifX19
+    hide_attributes: true
+    priority: 1
+    slot: 41
+    display_name: '&aFast Travel'
+    lore:
+    - ''
+    - '&7Quickly travel to more'
+    - '&7convenient locations around'
+    - '&7the map, by becoming a &9Conquerer&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[openguimenu] FastTravel"
+    left_click_commands:
+    - "[openguimenu] FastTravel"
+
+###TOP ROW
+  'TheFarm':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    hide_attributes: true
+    priority: 1
+    slot: 10
+    display_name: '&aThe Farm'
+    lore:
+    - ''
+    - '&7Harvest the crop fields'
+    - '&7and help &aBilly &7& &aMandy&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Farm"
+    left_click_commands:
+    - "[player] warp Farm"
+    
+  'TheForest':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aThe Forest'
+    lore:
+    - ''
+    - '&7Chop wood while fighting'
+    - '&7your way through &cBees&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[openguimenu] Forestmap"
+    left_click_commands:
+    - "[openguimenu] Forestmap"
+
+  'TheMine':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQyMDcwYWNjODE0YmM5NDZlNTk4NzllYzdkYTQ1ZGU5ODRkM2VlOWExNTkzOTNkZWZiNTk4NTNhYmUzYjYifX19
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aMine'
+    lore:
+    - ''
+    - '&7Excavate through the Mine'
+    - '&7in search for rare materials!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[openguimenu] minemap"
+    left_click_commands:
+    - "[openguimenu] minemap"
+
+  'Graveyard':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YzYmU2NDAxNjczNmJlNDRiMWQ1YTVmM2FkYWI2ZDRjMDQzNzgyYzE3ZGQyOWMzYjhjNGNiNmU3M2Y5ODk4In19fQ==
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aGraveyard'
+    lore:
+    - ''
+    - '&7Slay through &cUndead &7on'
+    - '&7your way to the &cCourtyard&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Graveyard"
+    left_click_commands:
+    - "[player] warp Graveyard"
+
+  'Courtyard':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.courtyard          
+    display_name: '&aCourtyard &c&lLocked'
+    lore:
+    - ''
+    - '&7Battle your way up'
+    - '&7to the &cCastle&7!'
+    - ''
+    - '&c&lLocked'
+    - '&aQuest&f: &eApproaching the Castle'
+    
+  'CourtyardUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE5ZmIyZTQ5NzAzYzZjYjk1MTE2YmUxNTM2M2M5ZDU2ODllZjIyOWE3NWM2NTVlZjU3NmJlMzYwZWMzY2JlYiJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 14
+    display_name: '&aCourtyard'
+    lore:
+    - ''
+    - '&7Battle your way'
+    - '&7up to the &cCastle&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Courtyard"
+    left_click_commands:
+    - "[player] warp Courtyard"
+
+  'Castle':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.castle          
+    display_name: '&aCastle &c&lLocked'
+    lore:
+    - ''
+    - '&7Help &aKlaus &7defeat &cMorden'
+    - '&7to restore the &aCourtyard!'
+    - ''
+    - '&c&lLocked'
+    - '&aQuest&f: &eThe Village Hero'
+    
+  'CastleUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDljMTgzMmU0ZWY1YzRhZDljNTE5ZDE5NGIxOTg1MDMwZDI1NzkxNDMzNGFhZjI3NDVjOWRmZDYxMWQ2ZDYxZCJ9fX0==
+    hide_attributes: true
+    priority: 2
+    slot: 15
+    display_name: '&aCastle'
+    lore:
+    - ''
+    - '&7Help &aKlaus &7defeat &cMorden'
+    - '&7to restore the &aCourtyard!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Castle"
+    left_click_commands:
+    - "[player] warp Castle"
+
+  'Estate':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 16
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.Estate          
+    display_name: '&aEstate &c&lLocked'
+    lore:
+    - ''
+    - '&7Fish, Farm, and defeat &cGoblins&7!'
+    - ''
+    - '&c&lLocked'
+    - '&aQuest&f: &eConquering the Valley'
+    
+  'EstateUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzlkYmEyOWM4ODI4YTQ5MDliOTRhZWU0MmRkYTg4ZTgwNGM1YzJkOGZlZTcwODQ3ZmM2NTRjYzI3MGZmNWQzNiJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 16
+    display_name: '&aEstate'
+    lore:
+    - ''
+    - '&7Fish, Farm, and defeat &cGoblins&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Estate"
+    left_click_commands:
+    - "[player] warp Estate"
+
+  'GoblinTown':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 19
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.goblintown          
+    display_name: '&aGoblin Town &c&lLocked'
+    lore:
+    - ''
+    - '&7Raid the &cGoblin Town&7,'
+    - '&7and free ensalved &aVillages&7!'
+    - ''
+    - '&c&lLocked'
+    - '&aQuest&f: &ePrison Break'
+    
+  'GoblinTownUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 19
+    display_name: '&aGoblin Town'
+    lore:
+    - ''
+    - '&7Raid the &cGoblin Town&7, and'
+    - '&7free ensalved &aVillagers&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp GoblinTown"
+    left_click_commands:
+    - "[player] warp GoblinTown"
+
+  'SpiritGrounds':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.spiritgrounds          
+    display_name: '&aSpirit Grounds &c&lLocked'
+    lore:
+    - ''
+    - '&7Farm pumpkins and melons,'
+    - '&7while aiding the witch &aHaze&7l!'
+    - ''
+    - '&c&lLocked'
+    - '&aQuest&f: &eHunting a Witch'
+    
+  'SpiritGroundsUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI2NWQ5OWVlODgxYjc0MTQ2ZTBmMTk4MDkxMmQ0NzZmZmViYmEyOWUxNTQ5MDM4ZTFkOTQ4ZjQwMTQ0MjJlYiJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 20
+    display_name: '&aSpirit Grounds'
+    lore:
+    - ''
+    - '&7Farm pumpkins and melons,'
+    - '&7while aiding the witch &aHaze&7l!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp SpiritGrounds"
+    left_click_commands:
+    - "[player] warp SpiritGrounds"
+
+  'Hell':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: cmi.command.portal.hell         
+    display_name: '&cHell &c&lLocked'
+    lore:
+    - ''
+    - '&7Slay your way through &cDemons&7,'
+    - '&7and eventually defeat &cGhastly&7!'
+    - ''
+    - '&c&lLocked'
+    - '&aSlayer Level&f: 5'
+    
+  'HellUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgzNTcxZmY1ODlmMWE1OWJiMDJiODA4MDBmYzczNjExNmUyN2MzZGNmOWVmZWJlZGU4Y2YxZmRkZSJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 21
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: warp.hellbottom
+    display_name: '&cHell'
+    lore:
+    - ''
+    - '&7Slay your way through &cDemons&7,'
+    - '&7and eventually defeat &cGhastly&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Hell"
+    left_click_commands:
+    - "[player] warp Hell"
+
+  'LowerHellUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgzNTcxZmY1ODlmMWE1OWJiMDJiODA4MDBmYzczNjExNmUyN2MzZGNmOWVmZWJlZGU4Y2YxZmRkZSJ9fX0=
+    hide_attributes: true
+    priority: 3
+    slot: 21
+    display_name: '&cHell'
+    lore:
+    - ''
+    - '&7Slay your way through &cDemons&7,'
+    - '&7and eventually defeat &cGhastly&7!'
+    - ''
+    - '&8&l» &eLeft-Click to Travel to Hell'
+    - '&8&l» &eRight-Click to Travel to Lower Hell'
+    right_click_commands:
+    - "[player] warp HellBottom"
+    left_click_commands:
+    - "[player] warp Hell"

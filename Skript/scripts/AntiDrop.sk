@@ -1,0 +1,116 @@
+import:
+    org.bukkit.event.player.PlayerDropItemEvent
+
+on PlayerDropItemEvent with priority HIGHEST:
+    set {_p} to event.getPlayer()
+    {_p} has permission "DropPerm1":
+        if {_p} has enough space for 1 diamond chestplate:
+            if event.getItemDrop().getItemStack().getItemMeta().getLore().contains("&f&lCOMMON ITEM"):
+                add 1 to {Common::%{_p}%}
+                set {_oldCommon} to {Common::%{_p}%}            
+                event.setCancelled(true)
+                if {Common::%{_p}%} = 1:
+                    send "&cYou've been stopped from dropping this item! (1/2)" to {_p}
+                    event.setCancelled(true)
+                if {Common::%{_p}%} = 2:
+                    send "&cYou've been stopped from dropping this item! (2/2)" to {_p}
+                    event.setCancelled(true)
+                if {Common::%{_p}%} = 3:
+                    event.setCancelled(false)
+                    set {Common::%{_p}%} to 0
+                wait 4 seconds
+                if {_oldCommon} = {Common::%{_p}%}:
+                    set {Common::%{_p}%} to 0
+    {_p} has permission "DropPerm2":
+        if {_p} has enough space for 1 diamond chestplate:
+            if event.getItemDrop().getItemStack().getItemMeta().getLore().contains("&2&lUNCOMMON ITEM"):
+                add 1 to {Uncommon::%{_p}%}
+                set {_oldUncommon} to {Uncommon::%{_p}%}            
+                event.setCancelled(true)
+                if {Uncommon::%{_p}%} = 1:
+                    send "&cYou've been stopped from dropping this item! (1/3)" to {_p}
+                    event.setCancelled(true)
+                if {Uncommon::%{_p}%} = 2:
+                    send "&cYou've been stopped from dropping this item! (2/3)" to {_p}
+                    event.setCancelled(true)
+                if {Uncommon::%{_p}%} = 3:
+                    send "&cYou've been stopped from dropping this item! (3/3)" to {_p}
+                    event.setCancelled(true)
+                if {Uncommon::%{_p}%} = 4:
+                    event.setCancelled(false)
+                    set {Uncommon::%{_p}%} to 0
+                wait 4 seconds
+                if {_oldUncommon} = {Uncommon::%{_p}%}:
+                    set {Uncommon::%{_p}%} to 0
+    {_p} has permission "DropPerm3":
+        if {_p} has enough space for 1 diamond chestplate:
+            if event.getItemDrop().getItemStack().getItemMeta().getLore().contains("&9&lRARE ITEM"):
+                add 1 to {Rare::%{_p}%}
+                set {_oldRare} to {Rare::%{_p}%}            
+                event.setCancelled(true)
+                if {Rare::%{_p}%} = 1:
+                    send "&cYou've been stopped from dropping this item! (1/4)" to {_p}
+                    event.setCancelled(true)
+                if {Rare::%{_p}%} = 2:
+                    send "&cYou've been stopped from dropping this item! (2/4)" to {_p}
+                    event.setCancelled(true)
+                if {Rare::%{_p}%} = 3:
+                    send "&cYou've been stopped from dropping this item! (3/4)" to {_p}
+                    event.setCancelled(true)
+                if {Rare::%{_p}%} = 4:
+                    send "&cYou've been stopped from dropping this item! (4/4)" to {_p}
+                    event.setCancelled(true)
+                if {Rare::%{_p}%} = 5:
+                    event.setCancelled(false)
+                    set {Rare::%{_p}%} to 0
+                wait 4 seconds
+                if {_oldRare} = {Rare::%{_p}%}:
+                    set {Rare::%{_p}%} to 0
+    {_p} has permission "DropPerm4":
+        if {_p} has enough space for 1 diamond chestplate:
+            if event.getItemDrop().getItemStack().getItemMeta().getLore().contains("&5&lLEGENDARY ITEM"):
+                add 1 to {Legendary::%{_p}%}
+                set {_oldLegendary} to {Legendary::%{_p}%}            
+                event.setCancelled(true)
+                if {Legendary::%{_p}%} = 1:
+                    send "&cYou've been stopped from dropping this item! (1/4)" to {_p}
+                    event.setCancelled(true)
+                if {Legendary::%{_p}%} = 2:
+                    send "&cYou've been stopped from dropping this item! (2/4)" to {_p}
+                    event.setCancelled(true)
+                if {Legendary::%{_p}%} = 3:
+                    send "&cYou've been stopped from dropping this item! (3/4)" to {_p}
+                    event.setCancelled(true)
+                if {Legendary::%{_p}%} = 4:
+                    send "&cYou've been stopped from dropping this item! (4/4)" to {_p}
+                    event.setCancelled(true)
+                if {Legendary::%{_p}%} = 5:
+                    event.setCancelled(false)
+                    set {Legendary::%{_p}%} to 0
+                wait 4 seconds
+                if {_oldLegendary} = {Legendary::%{_p}%}:
+                    set {Legendary::%{_p}%} to 0                
+    {_p} has permission "DropPerm5":
+        if {_p} has enough space for 1 diamond chestplate:
+            if event.getItemDrop().getItemStack().getItemMeta().getLore().contains("&e&lEXOTIC ITEM"):
+                add 1 to {Exotic::%{_p}%}
+                set {_oldExotic} to {Exotic::%{_p}%}            
+                event.setCancelled(true)
+                if {Exotic::%{_p}%} = 1:
+                    send "&cYou've been stopped from dropping this item! (1/4)" to {_p}
+                    event.setCancelled(true)
+                if {Exotic::%{_p}%} = 2:
+                    send "&cYou've been stopped from dropping this item! (2/4)" to {_p}
+                    event.setCancelled(true)
+                if {Exotic::%{_p}%} = 3:
+                    send "&cYou've been stopped from dropping this item! (3/4)" to {_p}
+                    event.setCancelled(true)
+                if {Exotic::%{_p}%} = 4:
+                    send "&cYou've been stopped from dropping this item! (4/4)" to {_p}
+                    event.setCancelled(true)
+                if {Exotic::%{_p}%} = 5:
+                    event.setCancelled(false)
+                    set {Exotic::%{_p}%} to 0
+                wait 4 seconds
+                if {_oldExotic} = {Exotic::%{_p}%}:
+                    set {Exotic::%{_p}%} to 0

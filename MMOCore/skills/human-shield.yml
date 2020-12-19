@@ -1,0 +1,35 @@
+name: Human Shield
+lore:
+- Casts a protection charm onto target ally,
+- reducing damage taken by &a{reduction}%&7.
+- '&a{redirect}% &7of this damage is redirected to you.'
+- Charm is cancelled when reaching &c{low}%&7 health.
+- Lasts &a{duration} &7seconds.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: TOTEM_OF_UNDYING
+redirect:
+  base: 30.0
+  per-level: -2.0
+  max: 30.0
+  min: 20.0
+duration:
+  base: 7.0
+  per-level: 0.0
+mana:
+  base: 15.0
+  per-level: 1.5
+low:
+  base: 10.0
+  per-level: 0.0
+cooldown:
+  base: 18.0
+  per-level: -0.3
+  max: 18.0
+  min: 14.0
+reduction:
+  base: 30.0
+  per-level: 3.0
+  max: 70.0
+  min: 30.0

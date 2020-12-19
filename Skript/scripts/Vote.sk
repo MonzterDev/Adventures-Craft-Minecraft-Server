@@ -1,0 +1,49 @@
+on votifier vote:
+    send formatted "&eSomeone just voted and received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to all players
+
+
+on vote:
+    if website of event-vote = "minestatus.net test vote":
+        if now < {vote_mineStatustest::%player%}:
+            send "&fVote again in &e%difference between {vote_mineStatustest::%player%} and now% for more rewards!" to player
+        else:
+            set {vote_mineStatustest::%player%} to 24 hours later
+            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+
+    if website of event-vote = "minestatus.net":
+        if now < {vote_mineStatus::%player%}:
+            send "&fVote again in &e%difference between {vote_mineStatus::%player%} and now% for more rewards!" to player
+        else:
+            set {vote_mineStatus::%player%} to 24 hours later
+            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+
+    if website of event-vote = "MinecraftServers.org":
+        if now < {vote_MinecraftServers::%player%}:
+            send "&fVote again in &e%difference between {vote_MinecraftServers::%player%} and now% for more rewards!" to player
+        else:
+            set {vote_MinecraftServers::%player%} to 24 hours later
+            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+        
+    if website of event-vote = "minestatus.net":
+        if now < {vote_minestatus::%player%}:
+            send "&fVote again in &e%difference between {vote_minestatus::%player%} and now% for more rewards!" to player
+        else:
+            set {vote_minestatus::%player%} to 24 hours later
+            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+        
+    if website of event-vote = "minecraft-mp.com":
+        if now < {vote_minecraftmp::%player%}:
+            send "&fVote again in &e%difference between {vote_minecraftmp::%player%} and now% for more rewards!" to player
+        else:
+            set {vote_minecraftmp::%player%} to 24 hours later
+            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+        
+command /Vote:
+    executable by: player
+    trigger:
+        send formatted "&eVote to received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to player

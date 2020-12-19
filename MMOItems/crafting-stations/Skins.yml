@@ -1,0 +1,69 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: "&f&l»&7&l» &8Skins &7&l«&f&l«"
+max-queue-size: 10
+items:
+  fill:
+    material: ORANGE_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  GREEN_UNDEAD_SWORD:
+    output:
+      type: SKIN
+      id: GREEN_UNDEAD_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=2}
+    conditions: []
+  BLUE_UNDEAD_SWORD:
+    output:
+      type: SKIN
+      id: BLUE_UNDEAD_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=2}
+    conditions: []
+  BROWN_UNDEAD_SWORD:
+    output:
+      type: SKIN
+      id: BROWN_UNDEAD_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=2}
+    conditions: []
+  YELLOW_UNDEAD_SWORD:
+    output:
+      type: SKIN
+      id: YELLOW_UNDEAD_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=2}
+    conditions: []
+  RED_UNDEAD_SWORD:
+    output:
+      type: SKIN
+      id: RED_UNDEAD_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=2}
+    conditions: []
+  UNDEAD_SOUL_SPLITTER_SWORD:
+    output:
+      type: SKIN
+      id: UNDEAD_SOUL_SPLITTER_SWORD
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=4}
+    conditions: []
+  UNDEAD_SERPENT_STAFF:
+    output:
+      type: SKIN
+      id: UNDEAD_SERPENT_STAFF
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=4}
+    conditions: []
+  HOLY_RISER_BLADE:
+    output:
+      type: SKIN
+      id: HOLY_RISER_BLADE
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=10}
+    conditions: []

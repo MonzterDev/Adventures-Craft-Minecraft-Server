@@ -1,0 +1,39 @@
+# import:
+#     org.bukkit.inventory.PlayerInventory
+
+# #Hoe ground enchantment
+# on walking on dirt or grass block:
+#     set {_p} to event.getPlayer()
+#     {_p} can build at the targeted block:
+#         player.getInventory().getHelmet().getItemMeta().getLore().contains("&f&lCOMMON ITEM"):
+#             set block to farmland
+
+# #Will automatically plant seeds
+# on walking on farmland:
+#     set {_p} to event.getPlayer()
+#     {_p} can build at the targeted block:
+#         {_p} has 1 potato in their inventory: 
+#             block above event-block is air:
+#                 player.getInventory().getHelmet().getItemMeta().getLore().contains("&f&lCOMMON ITEM"):
+#                     set block above event-block to potato plant
+#                     remove 1 potato from event-player
+
+# #Will break longer rows of sugar cane
+# on break of sugar cane:
+#     set {_p} to event.getPlayer()
+#     {_p} can build at the targeted block:
+#         player.getInventory().getHelmet().getItemMeta().getLore().contains("&f&lCOMMON ITEM"):
+#             loop blocks in y radius 2 around event-block:
+#                 set loop blocks to sugar cane
+#                 break loop-block naturally
+#                 send "Work" to {_p}
+command /Dash1:
+    executable by: players
+    trigger:
+        if player has permission "*":
+            push player 2 blocks forward
+command /Dash2:
+    executable by: players
+    trigger:
+        if player has permission "*":
+            push player 3 blocks forward

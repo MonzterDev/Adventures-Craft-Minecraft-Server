@@ -1,0 +1,67 @@
+# Saves player inventories data when leaving so it empties the RAM
+# from inventory data. Requires a server reload when changed.
+save-on-leave: true
+
+# MySQL Support
+mysql:
+    enabled: true
+    host: localhost
+    port: 3306
+    database: minecraft_live
+    user: minecraft
+    pass: kWz7Y8eK0tMCUvr0Cm
+    properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+
+# Amount of slots in the inventory - has to be a multiple of 9.
+# Remember to update the slot numbers in items.yml after changing this option.
+inventory-slots: 45
+
+# Enable this option to move the accessory slots to the player
+# inventory. A tutorial is available on the resource page.
+# Requires a server reload when changed.
+no-custom-inventory: false
+
+# This prevents a known dupe bug so it is strongly
+# recommended to keep this set to true.
+disable-equiping-stacked-items: true
+
+# Items will drop (when keep-inventory is disabled) on death.
+# Requires a server reload when changed.
+drop-on-death: false
+
+# MMOItems ornaments support. Costs extra performance because
+# MI loops through the entire player's inventory to check for ornaments.
+# Requires a server reload when changed.
+ornaments-support: false
+
+# Adds a static to the player's inventory.
+# Opens up the custom inventory when clicked.
+# Requires a server reload when changed.
+inventory-button:
+    enabled: false
+    slot: 9
+    item:
+        material: CHEST
+        name: '&6Custom Inventory'
+        lore:
+        - ''
+        - '&eClick to open.'
+        # custom-model-data: 1
+        # skull-texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5Yjk4ZjA0YzMyMjdkMzdkMzE5YmJjZmZjNTFmNTJlNzhkOTZhMDViMTI4NTJkMWI0NjRiYjc0MDhhNzgxMCJ9fX0=
+
+# Enable/disable auto resource pack download. Requires a server reload when changed.
+# Default RP for <1.13: https://www.dropbox.com/s/rq550yj7iebwixl/mmoinventory_rp.zip?dl=1
+# Default RP for 1.14+: https://www.dropbox.com/s/glkg7543n74lui1/mmoinv_rp_newest.zip?dl=1
+resource-pack:
+    enabled: false
+    url: resource_pack_url
+    delay: 20
+    
+    # Kick player if he does not accept the server resource pack or
+    # if the download failed. Requires a server reload when changed.
+    kick:
+        enabled: false
+        message: 'Please accept server resource pack!'

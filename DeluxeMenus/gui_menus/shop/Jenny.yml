@@ -1,0 +1,86 @@
+menu_title: '&f&l»&7&l» &8Jennys Homes &7&l«&f&l«'
+size: 26
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+
+  'Home':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI3MTgwOWJhOTFiNDJmYjQ4NzVhZjRiYTI5OGU1ZTU1ZjQ1ZWQ3MzcyMWJjZWE4NWE0NWRiOTI2Mjg1NzRmIn19fQ==
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Has.Home          
+    display_name: '&aHome'
+    lore:
+    - ''
+    - '&8&l» &eClick to Travel'
+    click_commands:
+    - "[player] home"
+
+  'BuyHome':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI3MTgwOWJhOTFiNDJmYjQ4NzVhZjRiYTI5OGU1ZTU1ZjQ1ZWQ3MzcyMWJjZWE4NWE0NWRiOTI2Mjg1NzRmIn19fQ==
+    hide_attributes: true
+    priority: 2
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Has.Home          
+    display_name: '&aClaim Home'
+    lore:
+    - ''
+    - '&8&l» &eClick to Claim'
+    click_commands:
+    - "[player] home"
+    - "[console] lp user %player_name% permission set Has.Home true"
+    - "[refresh]"
+
+
+  'HomeGuide':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmUzZjUwYmE2MmNiZGEzZWNmNTQ3OWI2MmZlZGViZDYxZDc2NTg5NzcxY2MxOTI4NmJmMjc0NWNkNzFlNDdjNiJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aHome Guide'
+    lore:
+    - ''
+    - '&7Learn important info about being a'
+    - '&aHome Owner&7, and having roommates!'
+    - ''
+    - '&8&l» &eClick to View'
+    click_commands:
+    - "[openguimenu] HomeSettings"

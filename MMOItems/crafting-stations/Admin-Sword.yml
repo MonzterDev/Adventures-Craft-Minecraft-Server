@@ -1,0 +1,45 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fTest Shop §7§l«§f§l«
+items:
+  fill:
+    material: YELLOW_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  SILVER_SWORD:
+    output:
+      type: SWORD
+      id: SILVER_SWORD
+    conditions:
+    - 'level{level=0}'
+    
+  BASIC_SWORD:
+    output:
+      type: SWORD
+      id: BASIC_SWORD
+    conditions:
+    - 'level{level=0}'
+
+  BONE_SWORD1:
+    output:
+      type: SWORD
+      id: BONE_SWORD1
+    conditions:
+    - 'level{level=0}'
+  BONE_SWORD2:
+    output:
+      type: SWORD
+      id: BONE_SWORD2
+    conditions:
+    - 'level{level=0}'
+
+  MAGMA_BLADE:
+    output:
+      type: SWORD
+      id: MAGMA_BLADE
+    conditions:
+    - 'level{level=0}'

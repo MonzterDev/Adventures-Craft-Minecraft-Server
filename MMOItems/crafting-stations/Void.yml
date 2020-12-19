@@ -1,0 +1,221 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: Void
+max-queue-size: 10
+items:
+  fill:
+    material: RED_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  KHAZIX_STAFF2:
+    output:
+      type: STAFF
+      id: KHAZIX_STAFF2
+    ingredients:
+    - mmoitem{type=STAFF,id=KHAZIX_STAFF,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=128}
+  THRALL_BALL:
+    output:
+      type: CONSUMABLE
+      id: THRALL_BALL
+    ingredients:
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=4}
+    conditions: []
+  CHORUS_LEAP:
+    output:
+      type: CONSUMABLE
+      id: CHORUS_LEAP
+    ingredients:
+    - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=64}
+    conditions: []
+  VOID_STONE:
+    output:
+      type: CATALYST
+      id: VOID_STONE
+    ingredients:
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=64}
+    - 'vanilla{type=END_STONE,amount=256}'
+    conditions: []
+  VOID_STONE2:
+    output:
+      type: CATALYST
+      id: VOID_STONE2
+    ingredients:
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=320}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    conditions: []
+  VOID_STONE3:
+    output:
+      type: CATALYST
+      id: VOID_STONE3
+    ingredients:
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=576}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=8}
+    conditions: []
+  VOID_GEM:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM
+    ingredients:
+    - 'vanilla{type=END_STONE,amount=64}'
+    - 'vanilla{type=ENDER_PEARL,amount=128}'
+    conditions: []
+  VOID_GEM2:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=1}
+    conditions: []
+  VOID_GEM3:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=4}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=4}
+    conditions: []
+  VOID_GEM4:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    conditions: []
+  CORRUPT_RELIC:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_RELIC
+    ingredients:
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=64}
+    - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=128}
+    conditions: []
+  CORRUPT_RELIC2:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_RELIC2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=512}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=4}
+    conditions: []
+  CORRUPT_RELIC3:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_RELIC3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=640}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=8}
+    conditions: []
+  CORRUPT_DART:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_DART
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
+    conditions: []
+  CORRUPT_DART2:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_DART2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    conditions: []
+  CORRUPT_DART3:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_DART3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
+    - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=1}
+    conditions: []
+  BULB2:
+    output:
+      type: MOUNT
+      id: BULB2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BULB_LEG,amount=16}
+    - mmoitem{type=MOUNT,id=BULB,amount=1}
+    conditions: []
+  BULB3:
+    output:
+      type: MOUNT
+      id: BULB3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BULB_LEG,amount=64}
+    - mmoitem{type=MOUNT,id=BULB2,amount=1}
+    conditions: []
+  BULLBO2:
+    output:
+      type: MOUNT
+      id: BULLBO2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=16}
+    - mmoitem{type=MOUNT,id=BULLBO,amount=1}
+    conditions: []
+  BULLBO3:
+    output:
+      type: MOUNT
+      id: BULLBO3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=64}
+    - mmoitem{type=MOUNT,id=BULLBO2,amount=1}
+    conditions: []
+  DECEITFUL_BOW:
+    output:
+      type: BOW
+      id: DECEITFUL_BOW
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=6}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=6}
+    conditions: []
+  DECEITFUL_BOW2:
+    output:
+      type: BOW
+      id: DECEITFUL_BOW2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
+    conditions: []
+  SHADOW_DAGGER:
+    output:
+      type: DAGGER
+      id: SHADOW_DAGGER
+    ingredients:
+    - mmoitem{type=MATERIAL,id=SHADOW_ESSENCE,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    conditions: []
+  SHADOW_DAGGER2:
+    output:
+      type: DAGGER
+      id: SHADOW_DAGGER2
+    ingredients:
+    - mmoitem{type=MATERIAL,id=SHADOW_ESSENCE,amount=128}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
+    conditions: []
+  BULBLIN_BOW2:
+    output:
+      type: SWORD
+      id: BULBLIN_BOW2
+    ingredients:
+    - mmoitem{type=SWORD,id=BULBLIN_BOW,amount=1}
+    - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=8}
+    conditions: []
+  BULBLIN_SWORD2:
+    output:
+      type: SWORD
+      id: BULBLIN_SWORD2
+    ingredients:
+    - mmoitem{type=SWORD,id=BULBLIN_SWORD,amount=1}
+    - mmoitem{type=MATERIAL,id=BULBLIN_SWORD_SHAVING,amount=8}
+    conditions: []

@@ -1,0 +1,52 @@
+CONFIRM:
+  name: '&aConfirm'
+  lore: []
+FILL:
+  name: '&8'
+  lore: []
+PREVIOUS_PAGE:
+  name: '&aPrevious Page'
+  lore: []
+NEXT_PAGE:
+  name: '&aNext Page'
+  lore: []
+PREVIOUS_IN_QUEUE:
+  name: '&aPrevious'
+  lore: []
+NEXT_IN_QUEUE:
+  name: '&aNext'
+  lore: []
+BACK:
+  name: '&aBack'
+  lore: []
+CRAFTING_RECIPE_DISPLAY:
+  name: '#name#'
+  lore:
+  - '{conditions}&fRequirements:'
+  - ''
+  - '&fIngredients:'
+  - '#ingredients#'
+  - ''
+  - '&8» &eLeft-Click to Craft!'
+  - '&8» &eRight-Click to view Item!'
+UPGRADING_RECIPE_DISPLAY:
+  name: '&e&lUpgrade&f #name#'
+  lore:
+  - '{conditions}&fRequirements:'
+  - '{conditions}'
+  - ''
+  - '&fIngredients:'
+  - '#ingredients#'
+  - ''
+  - '&8» &eLeft-Click to Craft!'
+  - '&8» &eRight-Click to view Item!'
+QUEUE_ITEM_DISPLAY:
+  name: '&6&lQueued&f: #name#'
+  lore:
+  - '{ready}&7The item was successfully crafted.'
+  - '{queue}&The item is in the crafting queue.'
+  - '{queue}'
+  - '{queue}&7Time Left: &c#left#'
+  - ''
+  - '{ready}&eClick to claim!'
+  - '{queue}&eClick to cancel.'

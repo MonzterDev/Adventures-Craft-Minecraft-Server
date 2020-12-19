@@ -1,0 +1,526 @@
+display:
+    name: 'Human'
+
+options:
+    default: true
+    display: false
+    off-combat-health-regen: true
+    off-combat-mana-regen: false
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+max-level: 10
+
+# Experience sources for main class experience.
+main-exp-sources:
+##Farm
+- 'killmythicmob{type=Pigs;amount=1}'
+- 'killmythicmob{type=Cows;amount=1}'
+- 'killmythicmob{type=Chickens;amount=1}'
+- 'killmythicmob{type=Sheeps;amount=1}'
+- 'killmythicmob{type=Rabbits;amount=1}'
+- 'killmythicmob{type=Wolfs;amount=1}'
+##Goblin Town
+- 'killmythicmob{type=Goblin;amount=2}'
+- 'killmythicmob{type=Grown_Goblin;amount=2}'
+- 'killmythicmob{type=Hound;amount=2}'
+- 'killmythicmob{type=Warg;amount=2}'
+
+- 'killmythicmob{type=BABY_GOBLIN1;amount=3}'
+- 'killmythicmob{type=GROWN_GOBLIN1;amount=3}'
+- 'killmythicmob{type=ARCHER_GOBLIN1;amount=5}'
+- 'killmythicmob{type=WARG1;amount=3}'
+- 'killmythicmob{type=HOUND1;amount=3}'
+- 'killmythicmob{type=GOBLIN_CHIEF;amount=75}'
+##Goblin Town
+- 'killmythicmob{type=WITCH1;amount=5}'
+- 'killmythicmob{type=MOOSHROOM_COW;amount=3}'
+- 'killmythicmob{type=CROP_SPIDER;amount=3}'
+
+##Graveyard
+- 'killmythicmob{type=Skeleton1;amount=1}'
+- 'killmythicmob{type=SkeletonArcher;amount=1}'
+- 'killmythicmob{type=LostSoul;amount=7}'
+- 'killmythicmob{type=ReaperBoss;amount=10}'
+- 'killmythicmob{type=ReaperMinion;amount=5}'
+##Castle
+- 'killmythicmob{type=cSkeleton1;amount=1}'
+- 'killmythicmob{type=cSkeletonArcher;amount=1}'
+- 'killmythicmob{type=AlphaSoul;amount=15}'
+- 'killmythicmob{type=UndeadSummoner;amount=1}'
+- 'killmythicmob{type=UndeadGuard;amount=3}'
+- 'killmythicmob{type=UndeadCaster;amount=3}'
+- 'killmythicmob{type=UndeadWarrior;amount=3}'
+- 'killmythicmob{type=UndeadSpider;amount=2}'
+- 'killmythicmob{type=Boss;amount=25}'
+- 'killmythicmob{type=Boss2;amount=25}'
+- 'killmythicmob{type=Boss3;amount=25}'
+##Forest
+- 'killmythicmob{type=Bees;amount=1}'
+- 'killmythicmob{type=Queen_Bee;amount=3}'
+- 'killmythicmob{type=Hare;amount=2}'
+- 'killmythicmob{type=Wasp;amount=2}'
+##Mine
+- 'killmythicmob{type=ANGRY_BATS;amount=1}'
+- 'killmythicmob{type=MINE_SPIDER;amount=1}'
+- 'killmythicmob{type=VOID_BATS;amount=4}'
+- 'killmythicmob{type=VOID_BOOMER;amount=3}'
+- 'killmythicmob{type=VOID_SPIDER;amount=2}'
+- 'killmythicmob{type=VOID_VAMPIRE;amount=2}'
+- 'killmythicmob{type=VOID_HIVE;amount=4}'
+- 'killmythicmob{type=VOID_ANT;amount=1}'
+- 'killmythicmob{type=VOID_VAMPIRE2;amount=3}'
+- 'killmythicmob{type=VOID_BLAZE;amount=3}'
+- 'killmythicmob{type=VOID_SKELETON;amount=2}'
+- 'killmythicmob{type=VOID_DRACULA;amount=15}'
+##Hell
+- 'killmythicmob{type=VOID_PIGMAN;amount=5}'
+- 'killmythicmob{type=VOID_DEMON;amount=3}'
+- 'killmythicmob{type=VOID_BLAZE2;amount=4}'
+- 'killmythicmob{type=VOID_NECROMANCER;amount=5}'
+- 'killmythicmob{type=WITHER_MINI_BOSS;amount=75}'
+- 'killmythicmob{type=VOID_PROTECTOR;amount=7}'
+- 'killmythicmob{type=VOID_HEALER;amount=3}'
+
+- 'killmythicmob{type=VOID_MAGMA;amount=50}'
+- 'killmythicmob{type=VOID_MAGMA2;amount=10}'
+- 'killmythicmob{type=VOID_MAGMA3;amount=5}'
+- 'killmythicmob{type=VOID_SKELETON2;amount=5}'
+- 'killmythicmob{type=VOID_PIGMAN2;amount=7}'
+- 'killmythicmob{type=VOID_NECROMANCER2;amount=7}'
+
+- 'killmythicmob{type=GHAST_BOSS;amount=200}'
+- 'killmythicmob{type=GHAST_MINION1;amount=35}'
+- 'killmythicmob{type=FIRST_MINION;amount=7}'
+- 'killmythicmob{type=MINION_MINION;amount=5}'
+- 'killmythicmob{type=GHAST_MINION2;amount=7}'
+- 'killmythicmob{type=GHAST_MINION3;amount=7}'
+
+
+triggers:
+#MAIN LEVEL UP
+    level-up-2:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L2_R1%\n       %textph_Main_L2_R2%\n       %textph_Main_L2_R3%\n       %textph_Main_L2_R4%\n       %textph_Main_L2_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level2 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 2"}'
+    level-up-3:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L3_R1%\n       %textph_Main_L3_R2%\n       %textph_Main_L3_R3%\n       %textph_Main_L3_R4%\n       %textph_Main_L3_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level3 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'    
+    level-up-4:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L4_R1%\n       %textph_Main_L4_R2%\n       %textph_Main_L4_R3%\n       %textph_Main_L4_R4%\n       %textph_Main_L4_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level4 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    level-up-5:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L5_R1%\n       %textph_Main_L5_R2%\n       %textph_Main_L5_R3%\n       %textph_Main_L5_R4%\n       %textph_Main_L5_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, & &aAccess to &cHell &eredeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level5 true"}'
+    - 'command{format="lp user %player% permission set rpgdeath.bypass false"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    - 'command{format="lp user %player% permission set cmi.command.portal.hell true"}'
+    level-up-6:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L6_R1%\n       %textph_Main_L6_R2%\n       %textph_Main_L6_R3%\n       %textph_Main_L6_R4%\n       %textph_Main_L6_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level6 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    level-up-7:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L7_R1%\n       %textph_Main_L7_R2%\n       %textph_Main_L7_R3%\n       %textph_Main_L7_R4%\n       %textph_Main_L7_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level7 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    level-up-8:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L8_R1%\n       %textph_Main_L8_R2%\n       %textph_Main_L8_R3%\n       %textph_Main_L8_R4%\n       %textph_Main_L8_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level8 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    level-up-9:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L9_R1%\n       %textph_Main_L9_R2%\n       %textph_Main_L9_R3%\n       %textph_Main_L9_R4%\n       %textph_Main_L9_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e, redeem this by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level9 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    level-up-10:
+    #- 'message{format="&e--------------------------------------------------\n&f                     You leveled up to: &e%mmocore_level%&f!&9\n&a\n&e&l      LEARNED&f:\n       %textph_Main_L10_R1%\n       %textph_Main_L10_R2%\n       %textph_Main_L10_R3%\n       %textph_Main_L10_R4%\n       %textph_Main_L10_R5%\n \n&a--------------------------------------------------"}' 
+    - 'message{format="&eYou leveled up to: &aLevel %mmocore_level%&e!"}' 
+    - 'message{format="&eYou earned &a&l1x Attribute Point&e & &a&l1x Attribute Reset Token&e, redeem these by using &a/attributes&e!"}' 
+    - 'mmskill{id="LEVEL_UP"}'
+    - 'command{format="lp user %player% permission set level10 true"}'
+    - 'command{format="mmocore admin attribute-points give %player% 1"}'
+    - 'command{format="mmocore admin attr-realloc-points give %player% 1"}'
+
+#SLAYER TRIGGER
+    level-up-slayer-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    - 'command{format="lp user %player% permission set slayer2 true"}'
+    level-up-slayer-3:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L3_R1%\n       %textph_Slayer_L3_R2%\n       %textph_Slayer_L3_R3%\n       %textph_Slayer_L3_R4%\n       %textph_Slayer_L3_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer3 true"}'
+    level-up-slayer-4:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L4_R1%\n       %textph_Slayer_L4_R2%\n       %textph_Slayer_L4_R3%\n       %textph_Slayer_L4_R4%\n       %textph_Slayer_L4_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer4 true"}'
+    level-up-slayer-5:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L5_R1%\n       %textph_Slayer_L5_R2%\n       %textph_Slayer_L5_R3%\n       %textph_Slayer_L5_R4%\n       %textph_Slayer_L5_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer5 true"}'
+    level-up-slayer-6:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L6_R1%\n       %textph_Slayer_L6_R2%\n       %textph_Slayer_L6_R3%\n       %textph_Slayer_L6_R4%\n       %textph_Slayer_L6_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer6 true"}'
+    level-up-slayer-7:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L7_R1%\n       %textph_Slayer_L7_R2%\n       %textph_Slayer_L7_R3%\n       %textph_Slayer_L7_R4%\n       %textph_Slayer_L7_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer7 true"}'
+    level-up-slayer-8:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L8_R1%\n       %textph_Slayer_L8_R2%\n       %textph_Slayer_L8_R3%\n       %textph_Slayer_L8_R4%\n       %textph_Slayer_L8_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer8 true"}'
+    level-up-slayer-9:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L9_R1%\n       %textph_Slayer_L9_R2%\n       %textph_Slayer_L9_R3%\n       %textph_Slayer_L9_R4%\n       %textph_Slayer_L9_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer9 true"}'
+    level-up-slayer-10:
+    - 'message{format="&eYou leveled up &c&lSlayer &eto: &aLevel %mmocore_profession_slayer%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/slayer&e!"}' 
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L10_R1%\n       %textph_Slayer_L10_R2%\n       %textph_Slayer_L10_R3%\n       %textph_Slayer_L10_R4%\n       %textph_Slayer_L10_R5%\n \n&e--------------------------------------------------"}'    
+    - 'command{format="lp user %player% permission set slayer10 true"}'
+    - 'command{format="lp user %player% permission set cmi.command.portal.void true"}'
+
+#FARMING TRIGGER
+    level-up-Farming-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L2_R1%\n       %textph_Farming_L2_R2%\n       %textph_Farming_L2_R3%\n       %textph_Farming_L2_R4%\n       %textph_Farming_L2_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming2 true"}'
+    level-up-Farming-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L3_R1%\n       %textph_Farming_L3_R2%\n       %textph_Farming_L3_R3%\n       %textph_Farming_L3_R4%\n       %textph_Farming_L3_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming3 true"}'
+    level-up-Farming-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L4_R1%\n       %textph_Farming_L4_R2%\n       %textph_Farming_L4_R3%\n       %textph_Farming_L4_R4%\n       %textph_Farming_L4_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming4 true"}'
+    level-up-Farming-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L5_R1%\n       %textph_Farming_L5_R2%\n       %textph_Farming_L5_R3%\n       %textph_Farming_L5_R4%\n       %textph_Farming_L5_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming5 true"}'
+    level-up-Farming-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L6_R1%\n       %textph_Farming_L6_R2%\n       %textph_Farming_L6_R3%\n       %textph_Farming_L6_R4%\n       %textph_Farming_L6_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge &e& &a1x &9Bank Token&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming6 true"}'
+    - 'command{format="mmoitems give CONSUMABLE BANK_TOKEN %player% 1"}'    
+    level-up-Farming-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L7_R1%\n       %textph_Farming_L7_R2%\n       %textph_Farming_L7_R3%\n       %textph_Farming_L7_R4%\n       %textph_Farming_L7_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming7 true"}'
+    level-up-Farming-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L8_R1%\n       %textph_Farming_L8_R2%\n       %textph_Farming_L8_R3%\n       %textph_Farming_L8_R4%\n       %textph_Farming_L8_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge &e& &a1x &9Bank Token&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming8 true"}'
+    - 'command{format="mmoitems give CONSUMABLE BANK_TOKEN %player% 1"}'    
+    level-up-Farming-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L9_R1%\n       %textph_Farming_L9_R2%\n       %textph_Farming_L9_R3%\n       %textph_Farming_L9_R4%\n       %textph_Farming_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming9 true"}'
+    level-up-Farming-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iFarming §fLevel: &e%mmocore_profession_Farming%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Farming_L10_R1%\n       %textph_Farming_L10_R2%\n       %textph_Farming_L10_R3%\n       %textph_Farming_L10_R4%\n       %textph_Farming_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &a&lFarming &eto: &aLevel %mmocore_profession_farming%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge &e& &a1x &9Bank Token&e, discover them by using &a/farming&e!"}' 
+    - 'command{format="lp user %player% permission set Farming10 true"}'
+    - 'command{format="mmoitems give CONSUMABLE BANK_TOKEN %player% 1"}'    
+
+#FORAGING TRIGGER
+    level-up-Foraging-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L2_R1%\n       %textph_Foraging_L2_R2%\n       %textph_Foraging_L2_R3%\n       %textph_Foraging_L2_R4%\n       %textph_Foraging_L2_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging2 true"}'
+    level-up-Foraging-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L3_R1%\n       %textph_Foraging_L3_R2%\n       %textph_Foraging_L3_R3%\n       %textph_Foraging_L3_R4%\n       %textph_Foraging_L3_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging3 true"}'
+    level-up-Foraging-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L4_R1%\n       %textph_Foraging_L4_R2%\n       %textph_Foraging_L4_R3%\n       %textph_Foraging_L4_R4%\n       %textph_Foraging_L4_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging4 true"}'
+    level-up-Foraging-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L5_R1%\n       %textph_Foraging_L5_R2%\n       %textph_Foraging_L5_R3%\n       %textph_Foraging_L5_R4%\n       %textph_Foraging_L5_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging5 true"}'
+    level-up-Foraging-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L6_R1%\n       %textph_Foraging_L6_R2%\n       %textph_Foraging_L6_R3%\n       %textph_Foraging_L6_R4%\n       %textph_Foraging_L6_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging6 true"}'
+    level-up-Foraging-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L7_R1%\n       %textph_Foraging_L7_R2%\n       %textph_Foraging_L7_R3%\n       %textph_Foraging_L7_R4%\n       %textph_Foraging_L7_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging7 true"}'
+    level-up-Foraging-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L8_R1%\n       %textph_Foraging_L8_R2%\n       %textph_Foraging_L8_R3%\n       %textph_Foraging_L8_R4%\n       %textph_Foraging_L8_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging8 true"}'
+    level-up-Foraging-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L9_R1%\n       %textph_Foraging_L9_R2%\n       %textph_Foraging_L9_R3%\n       %textph_Foraging_L9_R4%\n       %textph_Foraging_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging9 true"}'
+    level-up-Foraging-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iForaging §fLevel: &e%mmocore_profession_Foraging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Foraging_L10_R1%\n       %textph_Foraging_L10_R2%\n       %textph_Foraging_L10_R3%\n       %textph_Foraging_L10_R4%\n       %textph_Foraging_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &2&lForaging &eto: &aLevel %mmocore_profession_Foraging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/foraging&e!"}' 
+    - 'command{format="lp user %player% permission set Foraging10 true"}'
+
+#MINING TRIGGER
+    level-up-Mining-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L2_R1%\n       %textph_Mining_L2_R2%\n       %textph_Mining_L2_R3%\n       %textph_Mining_L2_R4%\n       %textph_Mining_L2_R5%\n       %textph_Mining_L2_R6%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining2 true"}'
+    level-up-Mining-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L3_R1%\n       %textph_Mining_L3_R2%\n       %textph_Mining_L3_R3%\n       %textph_Mining_L3_R4%\n       %textph_Mining_L3_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining3 true"}'
+    level-up-Mining-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L4_R1%\n       %textph_Mining_L4_R2%\n       %textph_Mining_L4_R3%\n       %textph_Mining_L4_R4%\n       %textph_Mining_L4_R5%\n       %textph_Mining_L4_R6%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining4 true"}'
+    level-up-Mining-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L5_R1%\n       %textph_Mining_L5_R2%\n       %textph_Mining_L5_R3%\n       %textph_Mining_L5_R4%\n       %textph_Mining_L5_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining5 true"}'
+    level-up-Mining-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L6_R1%\n       %textph_Mining_L6_R2%\n       %textph_Mining_L6_R3%\n       %textph_Mining_L6_R4%\n       %textph_Mining_L6_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining6 true"}'
+    level-up-Mining-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L7_R1%\n       %textph_Mining_L7_R2%\n       %textph_Mining_L7_R3%\n       %textph_Mining_L7_R4%\n       %textph_Mining_L7_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining7 true"}'
+    level-up-Mining-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L8_R1%\n       %textph_Mining_L8_R2%\n       %textph_Mining_L8_R3%\n       %textph_Mining_L8_R4%\n       %textph_Mining_L8_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining8 true"}'
+    level-up-Mining-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L9_R1%\n       %textph_Mining_L9_R2%\n       %textph_Mining_L9_R3%\n       %textph_Mining_L9_R4%\n       %textph_Mining_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining9 true"}'
+    level-up-Mining-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iMining §fLevel: &e%mmocore_profession_Mining%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Mining_L10_R1%\n       %textph_Mining_L10_R2%\n       %textph_Mining_L10_R3%\n       %textph_Mining_L10_R4%\n       %textph_Mining_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &9&lMining &eto: &aLevel %mmocore_profession_Mining%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Mining&e!"}' 
+    - 'command{format="lp user %player% permission set Mining10 true"}'
+
+#ENCHANTING TRIGGER
+    level-up-Enchanting-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L2_R1%\n       %textph_Enchanting_L2_R2%\n       %textph_Enchanting_L2_R3%\n       %textph_Enchanting_L2_R4%\n       %textph_Enchanting_L2_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting2 true"}'
+    level-up-Enchanting-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L3_R1%\n       %textph_Enchanting_L3_R2%\n       %textph_Enchanting_L3_R3%\n       %textph_Enchanting_L3_R4%\n       %textph_Enchanting_L3_R5%\n       %textph_Enchanting_L3_R6%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting3 true"}'
+    level-up-Enchanting-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L4_R1%\n       %textph_Enchanting_L4_R2%\n       %textph_Enchanting_L4_R3%\n       %textph_Enchanting_L4_R4%\n       %textph_Enchanting_L4_R5%\n       %textph_Enchanting_L4_R6%\n       %textph_Enchanting_L4_R7%\n       %textph_Enchanting_L4_R8%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting4 true"}'
+    level-up-Enchanting-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L5_R1%\n       %textph_Enchanting_L5_R2%\n       %textph_Enchanting_L5_R3%\n       %textph_Enchanting_L5_R4%\n       %textph_Enchanting_L5_R5%\n       %textph_Enchanting_L5_R6%\n       %textph_Enchanting_L5_R7%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting5 true"}'
+    level-up-Enchanting-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L6_R1%\n       %textph_Enchanting_L6_R2%\n       %textph_Enchanting_L6_R3%\n       %textph_Enchanting_L6_R4%\n       %textph_Enchanting_L6_R5%\n       %textph_Enchanting_L6_R6%\n       %textph_Enchanting_L6_R7%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting6 true"}'
+    level-up-Enchanting-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L7_R1%\n       %textph_Enchanting_L7_R2%\n       %textph_Enchanting_L7_R3%\n       %textph_Enchanting_L7_R4%\n       %textph_Enchanting_L7_R5%\n       %textph_Enchanting_L7_R6%\n       %textph_Enchanting_L7_R7%\n       %textph_Enchanting_L7_R8%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting7 true"}'
+    level-up-Enchanting-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L8_R1%\n       %textph_Enchanting_L8_R2%\n       %textph_Enchanting_L8_R3%\n       %textph_Enchanting_L8_R4%\n       %textph_Enchanting_L8_R5%\n       %textph_Enchanting_L8_R6%\n       %textph_Enchanting_L8_R7%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting8 true"}'
+    level-up-Enchanting-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L9_R1%\n       %textph_Enchanting_L9_R2%\n       %textph_Enchanting_L9_R3%\n       %textph_Enchanting_L9_R4%\n       %textph_Enchanting_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting9 true"}'
+    level-up-Enchanting-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iEnchanting §fLevel: &e%mmocore_profession_Enchanting%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Enchanting_L10_R1%\n       %textph_Enchanting_L10_R2%\n       %textph_Enchanting_L10_R3%\n       %textph_Enchanting_L10_R4%\n       %textph_Enchanting_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &d&lEnchanting &eto: &aLevel %mmocore_profession_Enchanting%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Enchanting&e!"}' 
+    - 'command{format="lp user %player% permission set Enchanting10 true"}'
+
+#SPELLFORGING TRIGGER
+    level-up-Spellforging-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L2_R1%\n       %textph_Spellforging_L2_R2%\n       %textph_Spellforging_L2_R3%\n       %textph_Spellforging_L2_R4%\n       %textph_Spellforging_L2_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging2 true"}'
+    level-up-Spellforging-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L3_R1%\n       %textph_Spellforging_L3_R2%\n       %textph_Spellforging_L3_R3%\n       %textph_Spellforging_L3_R4%\n       %textph_Spellforging_L3_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging3 true"}'
+    level-up-Spellforging-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L4_R1%\n       %textph_Spellforging_L4_R2%\n       %textph_Spellforging_L4_R3%\n       %textph_Spellforging_L4_R4%\n       %textph_Spellforging_L4_R5%\n       %textph_Spellforging_L4_R6%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging4 true"}'
+    level-up-Spellforging-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L5_R1%\n       %textph_Spellforging_L5_R2%\n       %textph_Spellforging_L5_R3%\n       %textph_Spellforging_L5_R4%\n       %textph_Spellforging_L5_R5%\n       %textph_Spellforging_L5_R6%\n       %textph_Spellforging_L5_R7%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging5 true"}'
+    level-up-Spellforging-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L6_R1%\n       %textph_Spellforging_L6_R2%\n       %textph_Spellforging_L6_R3%\n       %textph_Spellforging_L6_R4%\n       %textph_Spellforging_L6_R5%\n       %textph_Spellforging_L6_R6%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging6 true"}'
+    level-up-Spellforging-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L7_R1%\n       %textph_Spellforging_L7_R2%\n       %textph_Spellforging_L7_R3%\n       %textph_Spellforging_L7_R4%\n       %textph_Spellforging_L7_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging7 true"}'
+    level-up-Spellforging-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L8_R1%\n       %textph_Spellforging_L8_R2%\n       %textph_Spellforging_L8_R3%\n       %textph_Spellforging_L8_R4%\n       %textph_Spellforging_L8_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging8 true"}'
+    level-up-Spellforging-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L9_R1%\n       %textph_Spellforging_L9_R2%\n       %textph_Spellforging_L9_R3%\n       %textph_Spellforging_L9_R4%\n       %textph_Spellforging_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging9 true"}'
+    level-up-Spellforging-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSpellforging §fLevel: &e%mmocore_profession_Spellforging%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Spellforging_L10_R1%\n       %textph_Spellforging_L10_R2%\n       %textph_Spellforging_L10_R3%\n       %textph_Spellforging_L10_R4%\n       %textph_Spellforging_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lSpellforging &eto: &aLevel %mmocore_profession_Spellforging%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Spellforging&e!"}' 
+    - 'command{format="lp user %player% permission set Spellforging10 true"}'
+
+#Cooking TRIGGER
+    level-up-Cooking-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L2_R1%\n       %textph_Cooking_L2_R2%\n       %textph_Cooking_L2_R3%\n       %textph_Cooking_L2_R4%\n       %textph_Cooking_L2_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking2 true"}'
+    level-up-Cooking-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L3_R1%\n       %textph_Cooking_L3_R2%\n       %textph_Cooking_L3_R3%\n       %textph_Cooking_L3_R4%\n       %textph_Cooking_L3_R5%\n       %textph_Cooking_L3_R6%\n       %textph_Cooking_L3_R7%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking3 true"}'
+    level-up-Cooking-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L4_R1%\n       %textph_Cooking_L4_R2%\n       %textph_Cooking_L4_R3%\n       %textph_Cooking_L4_R4%\n       %textph_Cooking_L4_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking4 true"}'
+    level-up-Cooking-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L5_R1%\n       %textph_Cooking_L5_R2%\n       %textph_Cooking_L5_R3%\n       %textph_Cooking_L5_R4%\n       %textph_Cooking_L5_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking5 true"}'
+    level-up-Cooking-6:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L6_R1%\n       %textph_Cooking_L6_R2%\n       %textph_Cooking_L6_R3%\n       %textph_Cooking_L6_R4%\n       %textph_Cooking_L6_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking6 true"}'
+    level-up-Cooking-7:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L7_R1%\n       %textph_Cooking_L7_R2%\n       %textph_Cooking_L7_R3%\n       %textph_Cooking_L7_R4%\n       %textph_Cooking_L7_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking7 true"}'
+    level-up-Cooking-8:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L8_R1%\n       %textph_Cooking_L8_R2%\n       %textph_Cooking_L8_R3%\n       %textph_Cooking_L8_R4%\n       %textph_Cooking_L8_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking8 true"}'
+    level-up-Cooking-9:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L9_R1%\n       %textph_Cooking_L9_R2%\n       %textph_Cooking_L9_R3%\n       %textph_Cooking_L9_R4%\n       %textph_Cooking_L9_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking9 true"}'
+    level-up-Cooking-10:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iCooking §fLevel: &e%mmocore_profession_Cooking%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Cooking_L10_R1%\n       %textph_Cooking_L10_R2%\n       %textph_Cooking_L10_R3%\n       %textph_Cooking_L10_R4%\n       %textph_Cooking_L10_R5%\n \n&a--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &6&lCooking &eto: &aLevel %mmocore_profession_Cooking%&e!"}' 
+    - 'message{format="&eYou learned some new &a&lKnowledge&e, discover them by using &a/Cooking&e!"}' 
+    - 'command{format="lp user %player% permission set Cooking10 true"}'
+
+#VOID TRIGGER
+    level-up-void-2:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
+    - 'command{format="lp user %player% permission set Void2 true"}'
+    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
+    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    level-up-void-3:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
+    - 'command{format="lp user %player% permission set Void3 true"}'
+    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
+    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    level-up-void-4:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
+    - 'command{format="lp user %player% permission set Void4 true"}'
+    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
+    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    level-up-void-5:
+    #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
+    - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
+    - 'command{format="lp user %player% permission set Void5 true"}'
+    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 10 %player%"}'
+    - 'command{format="permanentstats stat add MAX_HEALTH 10 %player%"}'

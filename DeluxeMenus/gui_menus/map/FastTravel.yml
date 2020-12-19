@@ -1,0 +1,337 @@
+menu_title: '&f&l»&7&l» &8Fast Travel &7&l«&f&l«'
+open_command: Travel
+size: 44
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] Map"
+    left_click_commands:
+    - "[openguimenu] Map"
+
+###TOP ROW
+  'EnchanterUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2MmExNWIwNDY5MmEyZTRiM2ZiMzY2M2JkNGI3ODQzNGRjZTE3MzJiOGViMWM3YTlmN2MwZmJmNmYifX19
+    hide_attributes: true
+    priority: 1
+    slot: 10
+    display_name: '&aThe Enchanter'
+    lore:
+    - '&f/TravelEnchant &7can be used too'
+    - ''
+    - '&7Improve your Gear & Tools'
+    - '&7easily at the &aEnchanter&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastEnchant"
+    left_click_commands:
+    - "[player] warp FastEnchant"
+
+  'EnchanterLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 10
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aThe Enchanter &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Improve your Gear & Tools'
+    - '&7easily at the &aEnchanter&7!'
+    
+  'AuctionUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM3Y2FlNWM1MWViMTU1OGVhODI4ZjU4ZTBkZmY4ZTZiN2IwYjFhMTgzZDczN2VlY2Y3MTQ2NjE3NjEifX19
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aAuction House'
+    lore:
+    - '&f/TravelAuction &7can be used too'
+    - ''
+    - '&7Purchase Gear and other Items'
+    - '&7easily from the &aAuction House&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastAuction"
+    left_click_commands:
+    - "[player] warp FastAuction"
+
+  'AuctionLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 11
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aAuction House &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Purchase Gear and other Items'
+    - '&7easily from the &aAuction House&7!'
+
+  'DraculaUnlocked':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU5MjIzOTY2MDgzMywKICAicHJvZmlsZUlkIiA6ICJiMGQ3MzJmZTAwZjc0MDdlOWU3Zjc0NjMwMWNkOThjYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPUHBscyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xYzBjMDEyZTNjOWZiMGNkNDAxMTQ4MjIxYzA1NDQ5ZDRkNDg1ZWQxYmNkMTVlZGNmYTk1MjlkZGViMDdhMTliIgogICAgfQogIH0KfQ==
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aDracula Spawn'
+    lore:
+    - '&f/TravelDracula &7can be used too'
+    - ''
+    - '&7Travel directly to where &cDracula'
+    - '&7spawns inside the &aDiamond Mine&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastDracula"
+    left_click_commands:
+    - "[player] warp FastDracula"
+
+  'DraculaLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 12
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aDracula Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where &cDracula'
+    - '&7spawns inside the &aDiamond Mine&7!'
+
+  'ReaperUnlocked':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU4Nzc0NjcyMTg3MiwKICAicHJvZmlsZUlkIiA6ICI4MmM2MDZjNWM2NTI0Yjc5OGI5MWExMmQzYTYxNjk3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb3ROb3RvcmlvdXNOZW1vIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzNjNjlhOWVhYjJiZDUwMDA5YTBkNTdhZDRjM2RmNGRmYTE2NWFiYTM0MDQxNGYxYzgzMjdmYzRlYTcyNDQ2NDEiCiAgICB9CiAgfQp9
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aReaper Spawn'
+    lore:
+    - '&f/TravelReaper &7can be used too'
+    - ''
+    - '&7Travel directly to where &cReaper'
+    - '&7spawns inside the &aGraveyard&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastReaper"
+    left_click_commands:
+    - "[player] warp FastReaper"
+
+  'ReaperLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 13
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aReaper Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where &cReaper'
+    - '&7spawns inside the &aGraveyard&7!'
+
+  'MordenUnlocked':
+    material: basehead-ewogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJpZCIgOiAiNjgxNmRmYzIyZWU3NDY1MGE0ODNhNDljMzRmNjJmM2QiLAogICAgICAidHlwZSIgOiAiU0tJTiIsCiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I4ZDVlMTgwZmJiZDc5ZGY1NWZkYjYzODIyMTU4YThmOTliMWU4YjI1Y2I0Y2JiYjUzZWQzNzMyNTExMGQ0NyIsCiAgICAgICJwcm9maWxlSWQiIDogIjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwKICAgICAgInRleHR1cmVJZCIgOiAiM2I4ZDVlMTgwZmJiZDc5ZGY1NWZkYjYzODIyMTU4YThmOTliMWU4YjI1Y2I0Y2JiYjUzZWQzNzMyNTExMGQ0NyIKICAgIH0KICB9LAogICJza2luIiA6IHsKICAgICJpZCIgOiAiNjgxNmRmYzIyZWU3NDY1MGE0ODNhNDljMzRmNjJmM2QiLAogICAgInR5cGUiIDogIlNLSU4iLAogICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYjhkNWUxODBmYmJkNzlkZjU1ZmRiNjM4MjIxNThhOGY5OWIxZThiMjVjYjRjYmJiNTNlZDM3MzI1MTEwZDQ3IiwKICAgICJwcm9maWxlSWQiIDogIjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwKICAgICJ0ZXh0dXJlSWQiIDogIjNiOGQ1ZTE4MGZiYmQ3OWRmNTVmZGI2MzgyMjE1OGE4Zjk5YjFlOGIyNWNiNGNiYmI1M2VkMzczMjUxMTBkNDciCiAgfSwKICAiY2FwZSIgOiBudWxsCn0=
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aMorden Spawn'
+    lore:
+    - '&f/TravelMorden &7can be used too'
+    - ''
+    - '&7Travel directly to where &cMorden'
+    - '&7spawns inside the &aCastle&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastMorden"
+    left_click_commands:
+    - "[player] warp FastMorden"
+
+  'MordenLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aMorden Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where &cMorden'
+    - '&7spawns inside the &aCastle&7!'
+
+  'VoidWitherUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: '&aVoid Wither Spawn'
+    lore:
+    - '&f/TravelVoidWither &7can be used too'
+    - ''
+    - '&7Travel directly to where the'
+    - '&cVoid Wither &7spawns within &aHell&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastVoidWither"
+    left_click_commands:
+    - "[player] warp FastVoidWither"
+
+  'VoidWitherLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 15
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aVoid Wither Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where the'
+    - '&cVoid Wither &7spawns within &aHell&7!'
+
+  'VoidMagmaUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBkNTQ5ZjM2N2FiY2JlYTM5MjUyYmEyNzVmNWMzYzFjYjE2OTQ1ZmNmNDcyMTIzZWUyNmQ5YzlkZDQwZSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 16
+    display_name: '&aVoid Magma Spawn'
+    lore:
+    - '&f/TravelVoidMagma &7can be used too'
+    - ''
+    - '&7Travel directly to where the'
+    - '&cVoid Magma &7spawns within &aHell&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastVoidMagma"
+    left_click_commands:
+    - "[player] warp FastVoidMagma"
+
+  'VoidMagmaLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 16
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aVoid Magma Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where the'
+    - '&cVoid Magma &7spawns within &aHell&7!'
+
+  'GhastlyUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
+    hide_attributes: true
+    priority: 1
+    slot: 19
+    display_name: '&aVoid Magma Spawn'
+    lore:
+    - '&f/TravelGhastly &7can be used too'
+    - ''
+    - '&7Travel directly to where'
+    - '&cGhastly &7spawns within &aHell&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastGhastly"
+    left_click_commands:
+    - "[player] warp FastGhastly"
+
+  'GhastlyLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 19
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aVoid Magma Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where'
+    - '&cGhastly &7spawns within &aHell&7!'

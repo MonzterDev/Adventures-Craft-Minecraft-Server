@@ -1,0 +1,180 @@
+# This config file handles all commands for this plugin allowing all commands to be dynamically changed
+#
+# Command/Argument Node parameters
+# Required: Command
+# Optional: Permission, Aliases, Info, Cooldown
+#
+# Command node structure is:
+# Base: | Changing this node does nothing
+#   Command: <command> 			| Changing this changes the command/argument for this node
+#   Permission: <permission> 	| Adds permission to this command/argument
+#   Aliases: 					| Add direct command alias to this node
+#   - alias1
+#   - alias2
+#   Info: 						| Add typeahead's for this command
+#   - typeahead1
+#   - typeahead2
+#   Cooldown: <seconds>			| Not yet implemented
+Bank:
+  Command: bank
+  Argument:
+    Admin:
+      Command: admin
+      Permission: bank.admin
+      Argument:
+        Reload:
+          Command: reload
+          Permission: bank.admin.reload
+        Add:
+          Command: add
+          Permission: bank.admin.add
+          Argument:
+            Block:
+              Command: block
+              Permission: bank.admin.add.block
+        Remove:
+          Command: remove
+          Permission: bank.admin.remove
+          Argument:
+            Block:
+              Command: block
+              Permission: bank.admin.remove.block
+        Pin:
+          Command: pin
+          Permission: bank.admin.pin
+          Argument:
+            Reset:
+              Command: reset
+              Permission: bank.admin.pin.reset
+        Item:
+          Command: item
+          Permission: bank.admin.item
+          Argument:
+            Blacklist:
+              Command: blacklist
+              Permission: bank.admin.item.blacklist
+        Permission:
+          Command: permission
+          Permission: bank.admin.permission
+          Argument:
+            History:
+              Command: history
+              Permission: bank.admin.permission.history
+              Info:
+              - <name>
+            Update:
+              Command: update
+              Permission: bank.admin.permission.update
+              Info:
+              - <name>
+        Lookup:
+          Command: lookup
+          Permission: bank.admin.lookup
+          Info:
+          - <name>
+        Open:
+          Command: open
+          Permission: bank.admin.open
+          Info:
+          - <player>
+        Save:
+          Command: save
+          Permission: bank.admin.save
+        Slots:
+          Command: slots
+          Permission: bank.admin.slots
+          Argument:
+            Add:
+              Command: add
+              Permission: bank.admin.slots.add
+              Info:
+              - <player> <amount>
+            Set:
+              Command: set
+              Permission: bank.admin.slots.set
+              Info:
+              - <player> <amount>
+    Eco:
+      Command: eco
+      Permission: bank.admin.eco
+      Argument:
+        Give:
+          Command: give
+          Permission: bank.admin.give
+          Info:
+          - <name> <amount>
+        Set:
+          Command: set
+          Permission: bank.admin.set
+          Info:
+          - <name> <amount>
+        Take:
+          Command: take
+          Permission: bank.admin.take
+          Info:
+          - <name> <amount>
+    Exp:
+      Command: exp
+      Permission: bank.exp
+      Argument:
+        Balance:
+          Command: balance
+          Permission: bank.exp.balance
+        Deposit:
+          Command: deposit
+          Permission: bank.exp.deposit
+          Argument:
+            All:
+              Command: all
+              Permission: bank.exp.deposit.all
+        Withdraw:
+          Command: withdraw
+          Permission: bank.exp.withdraw
+          Argument:
+            All:
+              Command: all
+              Permission: bank.exp.withdraw.all
+    Money:
+      Command: money
+      Permission: bank.money
+      Argument:
+        Balance:
+          Command: balance
+          Permission: bank.money.balance
+        Deposit:
+          Command: deposit
+          Permission: bank.money.deposit
+          Argument:
+            All:
+              Command: all
+              Permission: bank.money.deposit.all
+        Pay:
+          Command: pay
+          Permission: bank.money.pay
+        Withdraw:
+          Command: withdraw
+          Permission: bank.money.withdraw
+          Argument:
+            All:
+              Command: all
+              Permission: bank.money.withdraw.all
+    Open:
+      Command: open
+      Permission: bank.open.command
+    Top:
+      Command: top
+      Permission: bank.top
+      Argument:
+        Money:
+          Command: money
+          Permission: bank.top.money
+          Info:
+          - <page>
+        Exp:
+          Command: exp
+          Permission: bank.top.exp
+          Info:
+          - <page>
+    Info:
+      Command: info
+      Permission: bank.info

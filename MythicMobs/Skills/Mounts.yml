@@ -1,0 +1,41 @@
+#Horse Dismount
+MDISMOUNT:
+  Conditions:
+  - playerwithin{d=1} false
+  Skills:
+  - remove{delay=1}
+
+
+MOUNTHOGA:
+  Cooldown: 0
+  Skills:
+  - mount{type=MountHog}
+
+MOUNTHORSEA:
+  Cooldown: 0
+  Skills:
+  - mount{type=MountHorse1}
+
+MOUNTHORSEB:
+  Cooldown: 0
+  Skills:
+  - mount{type=MountHorseRank2}
+
+MOUNTHORSEC:
+  Cooldown: 0
+  Skills:
+  - mount{type=MountHorseRank3}
+
+MOUNTHORSEC:
+  Cooldown: 0
+  Skills:
+  - mount{type=MountHorseRank3}
+
+MOUNTBORG:
+  Cooldown: 0
+  Skills:
+  - mount{type=BORG_STEED}
+BORGABILITY:
+  Cooldown: 0
+  Skills:
+  - potion{type=SLOW;duration=50;level=4} @EIR{r=5;ignore=players}

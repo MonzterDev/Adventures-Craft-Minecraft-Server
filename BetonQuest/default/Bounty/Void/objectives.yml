@@ -1,0 +1,14 @@
+QuestCooldown24: delay 86400 seconds events:Q1_CD_Rest
+EndIt: mmocorebreakblock 1 block:END_STONE events:GivePointEndStone,StartBreakEndStone,Completing1st
+Completing1st: location 100;200;300;Spawn 100000000000 events:entry_q1_complete,StopBreakEndStone conditions:500EndStone,!q1_completed
+
+
+Quest2Cooldown24: delay 86400 seconds events:Q2_CD_Rest
+WitherPicking: mmocorebreakblock 1 block:WITHER_ROSE events:GivePointWither,RestartObjectiveWither,Completing2nd
+  conditions:inSpawn
+Completing2nd: location 100;200;300;Spawn 100000000000 events:entry_q2_complete conditions:750WitherRose,!q2_completed
+
+
+Quest3Cooldown24: delay 86400 seconds events:Q3_CD_Rest
+MazeSlayer: mmobkill VOID_PROTECTOR,VOID_BOOMER_MAZE,VOID_MONITOR amount:750 events:entry_q3_complete
+  conditions:inSpawn,!q3_completed

@@ -1,0 +1,29 @@
+npcs:
+  '41': Smith
+#Example to call Variable $quest_reward3-4$
+variables:
+    quest_name1: "Majestic Green Rocks"
+    quest_objective1: "Mine 256 Emerald Ore"
+    quest_reward1-1: "&d250 EXP"
+    quest_reward1-2: "&d250 Mining EXP"
+    quest_reward1-3: "&e175 Coins"
+    quest_objective_journal1: "&0Mine 256 Emerald Ore"
+    quest_complete1: "&2Emeralds &0have been treasured by the Town-folk for centuries! "
+
+    quest_name2: "Bloody Teeth"
+    quest_objective2: "Slay &cVoid Vampires &fto collect their Fangs, then bring 15 of their &2Vampire Fangs &fto &aSmith&f!"
+    quest_reward2-1: "&d250 EXP"
+    quest_reward2-2: "&d250 Mining EXP"
+    quest_reward2-3: "&e175 Coins"
+    quest_objective_journal2: "&0Slay &cVoid Vampires &0to collect their Fangs, then bring 15 of their &2Vampire Fangs &0to &aSmith&0!"
+    quest_complete2: "&0With the &2Vampire Fangs &0we might be able to create a spell which can negate the effects of a bite!"
+
+    quest_name3: "Rarest Green Rocks"
+    quest_objective3: "Mine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds&f, bring them to &aSmith&f!"
+    quest_reward3-1: "&d500 EXP"
+    quest_reward3-2: "&d500 Mining EXP"
+    quest_reward3-3: "&e400 Coins"
+    quest_reward3-4: "&9Damage Gem"
+    quest_objective_journal3: "&0Mine &2Emerald Ores &0until you receive 3 &9Enchanted Emeralds&0, then bring them to &aSmith&0!"
+    quest_complete3: "&0Did you know, you have a .00347222222% chance of getting an &9Enchanted Emeralds&0 from an &2Emerald Ore&0?"
+

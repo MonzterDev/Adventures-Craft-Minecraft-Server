@@ -1,0 +1,1920 @@
+RESOLVE:
+  base:
+    material: AZURE_BLUET
+    name: §2Resolve
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: Heal
+        mode: RIGHT_CLICK
+        cooldown: 5
+        mana: 30.0
+        heal: 25.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §aHeal §7yourself for §a25HP ❤§7!
+    item-cooldown: 5
+RESOLVE2:
+  base:
+    material: AZURE_BLUET
+    name: §9Resolve
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: Heal
+        mode: RIGHT_CLICK
+        cooldown: 7.5
+        mana: 50.0
+        heal: 75.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §aHeal §7yourself for §a75HP ❤§7!
+    item-cooldown: 7.5
+TARGETED_FIREBALL:
+  base:
+    material: RED_MUSHROOM
+    name: §2Fireball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: RIGHT_CLICK
+        ignite: 15.0
+        damage: 250.0
+        cooldown: 2.5
+        mana: 40.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Casts a §4fireball §7damaging
+    - §7and §cigniting enemies!
+    item-cooldown: 2.5
+TARGETED_FIREBALL2:
+  base:
+    material: RED_MUSHROOM
+    name: §9Fireball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: TARGETED_FIREBALL
+        mode: RIGHT_CLICK
+        ignite: 20.0
+        damage: 750.0
+        cooldown: 5
+        mana: 60.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Casts a §4fireball §7damaging
+    - §7and §cigniting enemies!
+    item-cooldown: 5
+SPARKLE:
+  base:
+    material: NETHER_STAR
+    name: §2Sparkle
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: SPARKLE
+        mode: RIGHT_CLICK
+        damage: 325.0
+        cooldown: 5
+        radius: 7.5
+        mana: 45.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoots a §estar §7exploding on
+    - §cenemies §7within a medium radius!
+    item-cooldown: 5
+SPARKLE2:
+  base:
+    material: NETHER_STAR
+    name: §9Sparkle
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: SPARKLE
+        mode: RIGHT_CLICK
+        damage: 600.0
+        cooldown: 7.5
+        radius: 10
+        mana: 90.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoots a §estar §7exploding on
+    - §cenemies §7within a medium radius!
+    item-cooldown: 7.5
+BUNNY_MODE:
+  base:
+    material: RABBIT_FOOT
+    name: §2Bunny Mode
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: BUNNY_MODE
+        mode: RIGHT_CLICK
+        duration: 7.5
+        speed: 3.0
+        cooldown: 2.5
+        mana: 30.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Hop and skip like a Bunny!
+    item-cooldown: 7.5
+BUNNY_MODE2:
+  base:
+    material: RABBIT_FOOT
+    name: §9Bunny Mode
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: BUNNY_MODE
+        mode: RIGHT_CLICK
+        duration: 12.5
+        speed: 4.0
+        cooldown: 7.5
+        mana: 60.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Hop and skip like a §aspeedy §7Bunny!
+    item-cooldown: 7.5
+ARCANE_RIFT:
+  base:
+    material: CORNFLOWER
+    name: §2Arcane Rift
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: ARCANE_RIFT
+        mode: RIGHT_CLICK
+        damage: 250.0
+        duration: 4
+        cooldown: 7
+        mana: 60.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Create a §drift §7in the ground
+    - §6slowing §7and damaging enemies!
+    item-cooldown: 7
+ARCANE_RIFT2:
+  base:
+    material: CORNFLOWER
+    name: §9Arcane Rift
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: ARCANE_RIFT
+        mode: RIGHT_CLICK
+        damage: 950.0
+        duration: 5
+        cooldown: 10
+        mana: 120.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Create a §drift §7in the ground
+    - §6slowing §7and damaging enemies!
+    item-cooldown: 10
+BURNING_HANDS:
+  base:
+    material: CRIMSON_FUNGUS
+    name: §2Burning Hands
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: BURNING_HANDS
+        mode: RIGHT_CLICK
+        damage: 100.0
+        duration: 4
+        cooldown: 5
+        mana: 35.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot §cflames §7from your hands
+    - §cigniting §7and damaging enemies!
+    item-cooldown: 5
+BURNING_HANDS2:
+  base:
+    material: CRIMSON_FUNGUS
+    name: §9Burning Hands
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: BURNING_HANDS
+        mode: RIGHT_CLICK
+        damage: 250.0
+        duration: 7.5
+        cooldown: 7.5
+        mana: 90.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot §cflames §7from your hands
+    - §cigniting §7and damaging enemies!
+    item-cooldown: 7.5
+FREEZING_CURSE:
+  base:
+    material: TUBE_CORAL
+    name: §2Freezing Curse
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: FREEZING_CURSE
+        mode: RIGHT_CLICK
+        damage: 400.0
+        radius: 5
+        cooldown: 7.5
+        duration: 4
+        mana: 50.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §bFreeze §7enemies with a §5curse§7,
+    - §6slowing §7and damaging them!
+    item-cooldown: 7.5
+FREEZING_CURSE2:
+  base:
+    material: TUBE_CORAL
+    name: §9Freezing Curse
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: FREEZING_CURSE
+        mode: RIGHT_CLICK
+        damage: 1300.0
+        radius: 10
+        cooldown: 10
+        duration: 5
+        mana: 125.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §bFreeze §7enemies with a §5curse§7,
+    - §6slowing §7and damaging them!
+    item-cooldown: 10
+SHULKER_MISSILE:
+  base:
+    material: SHULKER_SHELL
+    name: §2Shulker Missile
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: SHULKER_MISSILE
+        mode: RIGHT_CLICK
+        damage: 500.0
+        cooldown: 5
+        mana: 50.0
+        duration: 3.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Launch a §5speedy shulker missile§7,
+    - §6levitating §7and damaging the enemy!
+    item-cooldown: 5
+SHULKER_MISSILE2:
+  base:
+    material: SHULKER_SHELL
+    name: §9Shulker Missile
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: SHULKER_MISSILE
+        mode: RIGHT_CLICK
+        damage: 1200.0
+        cooldown: 7.5
+        mana: 75.0
+        duration: 5.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Launch a §5speedy shulker missile§7,
+    - §6levitating §7and damaging the enemy!
+    item-cooldown: 7.5
+ARCANE_HAIL:
+  base:
+    material: ALLIUM
+    name: §2Arcane Hail
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: ARCANE_HAIL
+        mode: RIGHT_CLICK
+        damage: 150.0
+        duration: 5.0
+        radius: 5.0
+        cooldown: 7.5
+        mana: 50.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Rain §darcane hail §7on enemies!
+    item-cooldown: 7.5
+ARCANE_HAIL2:
+  base:
+    material: ALLIUM
+    name: §9Arcane Hail
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: ARCANE_HAIL
+        mode: RIGHT_CLICK
+        damage: 250.0
+        duration: 7.5
+        radius: 7.5
+        cooldown: 10.0
+        mana: 75.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Rain §darcane hail §7on enemies!
+    item-cooldown: 10
+FROZEN_AURA:
+  base:
+    material: CORNFLOWER
+    name: §2Frozen Aura
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: FROZEN_AURA
+        mode: RIGHT_CLICK
+        radius: 4
+        duration: 3
+        cooldown: 7.5
+        mana: 30.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §6Slow §7the enemies with a §bfrozen aura§7!
+    item-cooldown: 7.5
+FROZEN_AURA2:
+  base:
+    material: CORNFLOWER
+    name: §9Frozen Aura
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: FROZEN_AURA
+        mode: RIGHT_CLICK
+        radius: 6
+        duration: 5
+        cooldown: 10.0
+        mana: 70.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §6Slow §7the enemies with a §bfrozen aura§7!
+    item-cooldown: 10
+MAGMA_FISSURE:
+  base:
+    material: MAGMA_CREAM
+    name: §2Magma Fissure
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: MAGMA_FISSURE
+        mode: RIGHT_CLICK
+        ignite: 7.5
+        damage: 400.0
+        cooldown: 2.5
+        mana: 40.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Create a §4fissure §7in the earth
+    - §7damaging and §cigniting §7enemies!
+    item-cooldown: 2.5
+MAGMA_FISSURE2:
+  base:
+    material: MAGMA_CREAM
+    name: §9Magma Fissure
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: MAGMA_FISSURE
+        mode: RIGHT_CLICK
+        ignite: 15.0
+        damage: 1300.0
+        cooldown: 7.5
+        mana: 80.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Create a §4fissure §7in the earth
+    - §7damaging and §cigniting §7enemies!
+    item-cooldown: 7.5
+ICE_CRYSTAL:
+  base:
+    material: SOUL_TORCH
+    name: §2Ice Crystal
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: ICE_CRYSTAL
+        mode: RIGHT_CLICK
+        damage: 500.0
+        duration: 3
+        cooldown: 7.5
+        mana: 45.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot an §bice crystal missile
+    - §6slowing §7and damaging enemies!
+    item-cooldown: 7.5
+ICE_CRYSTAL2:
+  base:
+    material: SOUL_TORCH
+    name: §9Ice Crystal
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: ICE_CRYSTAL
+        mode: RIGHT_CLICK
+        damage: 1235.0
+        duration: 5
+        cooldown: 10.0
+        mana: 75.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot an §bice crystal missile
+    - §6slowing §7and damaging enemies!
+    item-cooldown: 10.0
+CORRUPTED_FANGS:
+  base:
+    material: ROSE_BUSH
+    name: §2Corrupted Fangs
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: CORRUPTED_FANGS
+        mode: RIGHT_CLICK
+        damage: 600.0
+        cooldown: 7.5
+        mana: 65.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Summon §5corrupted fangs §7from
+    - §7the earth to §4chomp §7the enemies!
+    item-cooldown: 7.5
+CORRUPTED_FANGS2:
+  base:
+    material: ROSE_BUSH
+    name: §9Corrupted Fangs
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: CORRUPTED_FANGS
+        mode: RIGHT_CLICK
+        damage: 1450.0
+        cooldown: 10.0
+        mana: 100.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Summon §5corrupted fangs §7from
+    - §7the earth to §4chomp §7the enemies!
+    item-cooldown: 10
+BLACK_HOLE:
+  base:
+    material: FIREWORK_STAR
+    name: §2Black Hole
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: BLACK_HOLE
+        mode: RIGHT_CLICK
+        radius: 7.5
+        duration: 4
+        cooldown: 5
+        mana: 50.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Suck enemies into a §5black hole§7!
+    item-cooldown: 5
+BLACK_HOLE2:
+  base:
+    material: FIREWORK_STAR
+    name: §9Black Hole
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: BLACK_HOLE
+        mode: RIGHT_CLICK
+        radius: 10
+        duration: 5
+        cooldown: 7.5
+        mana: 80.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Suck enemies into a §5black hole§7!
+    item-cooldown: 7.5
+BOUNCY_FIREBALL:
+  base:
+    material: PUFFERFISH
+    name: §2Bouncy Fireball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: BOUNCY_FIREBALL
+        mode: RIGHT_CLICK
+        radius: 7.5
+        damage: 750.0
+        ignite: 15.0
+        cooldown: 5
+        mana: 60.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot a §cfireball§7, §4exploding
+    - §7on enemies after a few bounces!
+    item-cooldown: 5
+BOUNCY_FIREBALL2:
+  base:
+    material: PUFFERFISH
+    name: §9Bouncy Fireball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: BOUNCY_FIREBALL
+        mode: RIGHT_CLICK
+        radius: 10
+        damage: 1650.0
+        ignite: 25.0
+        cooldown: 7.5
+        mana: 130.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Shoot a §cfireball§7, §4exploding
+    - §7on enemies after a few bounces!
+    item-cooldown: 7.5
+CURSED_BEAM:
+  base:
+    material: FIRE_CHARGE
+    name: §2Cursed Beam
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        damage: 500.0
+        cooldown: 5
+        mana: 50.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Blast a §5cursed beam
+    - §4exploding §7on nearby enemies!
+    item-cooldown: 5
+CURSED_BEAM2:
+  base:
+    material: FIRE_CHARGE
+    name: §9Cursed Beam
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        damage: 1650.0
+        cooldown: 7.5
+        mana: 150.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Blast a §5cursed beam
+    - §4exploding §7on nearby enemies!
+    item-cooldown: 7.5
+LIFE_ENDER:
+  base:
+    material: ENDER_PEARL
+    name: §2Ender Meteor
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: RIGHT_CLICK
+        damage: 750.0
+        knockback: 2.0
+        radius: 5
+        cooldown: 7.5
+        mana: 75.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Summon a §dcomet§7, crushing
+    - §7and §6knocking back §7enemies!
+    item-cooldown: 7.5
+LIFE_ENDER2:
+  base:
+    material: ENDER_PEARL
+    name: §9Ender Meteor
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: LIFE_ENDER
+        mode: RIGHT_CLICK
+        damage: 1750.0
+        knockback: 3.0
+        radius: 10
+        cooldown: 10
+        mana: 150.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Summon a §dcomet§7, crushing
+    - §7and §6knocking back §7enemies!
+    item-cooldown: 10
+CORRUPT:
+  base:
+    material: WITHER_ROSE
+    name: §2Corrupt
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: CORRUPT
+        mode: RIGHT_CLICK
+        damage: 800.0
+        cooldown: 5
+        mana: 60.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §5Corrupt §7enemies in front of you!
+    item-cooldown: 5
+CORRUPT2:
+  base:
+    material: WITHER_ROSE
+    name: §9Corrupt
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: CORRUPT
+        mode: RIGHT_CLICK
+        damage: 1750.0
+        cooldown: 7.5
+        mana: 125.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §5Corrupt §7enemies in front of you!
+    item-cooldown: 7.5
+CONTAMINATION_RITUAL:
+  base:
+    material: SLIME_BALL
+    name: §2Contamination Ritual
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: CONTAMINATION
+        mode: RIGHT_CLICK
+        duration: 4
+        damage: 300
+        cooldown: 5
+        mana: 50.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Perform the §2contamination ritual§7,
+    - §7constantly §2contaminating §7enemies
+    - §7within the ritual circle!
+    item-cooldown: 5
+CONTAMINATION_RITUAL2:
+  base:
+    material: SLIME_BALL
+    name: §9Contamination Ritual
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: CONTAMINATION
+        mode: RIGHT_CLICK
+        duration: 5
+        damage: 500
+        cooldown: 7.5
+        mana: 150.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Perform the §2contamination ritual§7,
+    - §7constantly §2contaminating §7enemies
+    - §7within the ritual circle!
+    item-cooldown: 7.5
+
+BLINK:
+  base:
+    material: PAPER
+    name: §fBLINK
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: BLINK
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+BLIZZARD:
+  base:
+    material: PAPER
+    name: §fBlizzard
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: BLIZZARD
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+CHICKEN_WRAITH:
+  base:
+    material: PAPER
+    name: §fChicken Wraith
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: CHICKEN_WRAITH
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+CIRCULAR_SLASH:
+  base:
+    material: PAPER
+    name: §fCircular Slash
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+EARTHQUAKE:
+  base:
+    material: PAPER
+    name: §fEarthquake
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: EARTHQUAKE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+EXPLOSIVE_TURKEY:
+  base:
+    material: PAPER
+    name: §fExplosive Turkey
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: EXPLOSIVE_TURKEY
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+FIRE_METEOR:
+  base:
+    material: PAPER
+    name: §fFire Meteor
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: FIRE_METEOR
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+FIREBOLT:
+  base:
+    material: PAPER
+    name: §fFirebolt
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: FIREBOLT
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+FIREFLY:
+  base:
+    material: PAPER
+    name: §fFirefly
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: FIREFLY
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+FROG_MODE:
+  base:
+    material: PAPER
+    name: §fFrog Mode
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: FROG_MODE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+GRAND_HEAL:
+  base:
+    material: PAPER
+    name: §fGrand Heal
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: GRAND_HEAL
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+HEAL:
+  base:
+    material: PAPER
+    name: §fHeal
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: HEAL
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+HEAVY_CHARGE:
+  base:
+    material: PAPER
+    name: §fHeavy Charge
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: HEAVY_CHARGE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+HOEARTHQUAKE:
+  base:
+    material: PAPER
+    name: §fHoearthquake
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: HOEARTHQUAKE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+HOLY_MISSILE:
+  base:
+    material: PAPER
+    name: §fHoly Missile
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: HOLY_MISSILE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+ITEM_BOMB:
+  base:
+    material: PAPER
+    name: §fItem Bomb
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: ITEM_BOMB
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+ITEM_THROW:
+  base:
+    material: PAPER
+    name: §fItem Throw
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: ITEM_THROW
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+LEAP:
+  base:
+    material: PAPER
+    name: §fLeap
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: LEAP
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+LIGHT_DASH:
+  base:
+    material: PAPER
+    name: §fLight Dash
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+LIGHTNING_BEAM:
+  base:
+    material: PAPER
+    name: §fLightning Beam
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: LIGHTNING_BEAM
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+MAGICAL_SHIELD:
+  base:
+    material: PAPER
+    name: §fMagical Shield
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: MAGICAL_SHIELD
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+OVERLOAD:
+  base:
+    material: PAPER
+    name: §fOverload
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: OVERLOAD
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+PRESENT_THROW:
+  base:
+    material: PAPER
+    name: §fPresent Throw
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: PRESENT_THROW
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+REGEN_ALLY:
+  base:
+    material: PAPER
+    name: §fRegen Ally
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: REGEN_ALLY
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+SHOCKWAVE:
+  base:
+    material: PAPER
+    name: §fShockwave
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: SHOCKWAVE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+SKY_SMASH:
+  base:
+    material: PAPER
+    name: §fSky Smash
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: SKY_SMASH
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+SMITE:
+  base:
+    material: PAPER
+    name: §fSmite
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: SMITE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+SNOWMAN_TURRET:
+  base:
+    material: PAPER
+    name: §fSnowman Turret
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: SNOWMAN_TURRET
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+SWIFTNESS:
+  base:
+    material: PAPER
+    name: §fSwiftness
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: SWIFTNESS
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+TACTICAL_GRENADE:
+  base:
+    material: PAPER
+    name: §fTactical Grenade
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: TACTICAL_GRENADE
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+THROW_UP:
+  base:
+    material: PAPER
+    name: §fThrow Up
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: THROW_UP
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+THRUST:
+  base:
+    material: PAPER
+    name: §fThrust
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: THRUST
+        mode: RIGHT_CLICK
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest
+TNT_THROW:
+  base:
+    material: PAPER
+    name: §fTNT Throw
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Spell
+    tier: COMMON
+    ability:
+      ability1:
+        type: TNT_THROW
+        mode: RIGHT_CLICK
+        force: 5.0
+        mana: 10.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §fTest

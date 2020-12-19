@@ -1,0 +1,47 @@
+getBackupFileDirectory: ''
+saveServerJar: false
+savePluginJars: false
+AutosaveDelay: 0D,12H
+LastAutosave: 1608373807542
+enableautoSaving: true
+FileNameFormat: Backup-%date%
+prefix: '&6[&3ServerRestorer&6]&8'
+kickMessage: '&6[&3ServerRestorer&6]&8 Restoring server to previous save. Please rejoin
+  in a few seconds.'
+EnableFTP: false
+EnableFTPS: false
+EnableSFTP: false
+FTPAdress: www.example.com
+FTPPort: 80
+FTPUsername: User
+FTPPassword: password
+CompressionLevel_Max_9: 9
+FTP_Directory: ''
+exceptions:
+- logs
+- crash-reports
+- backups
+- .console_history
+- banned-ips.json
+- banned-players.json
+- bukkit.yml
+- commands.yml
+- eula.txt
+- help.yml
+- ops.json
+- paper.jar
+- paper.yml
+- permissions.yml
+- server.properties
+- spigot.yml
+- start_server.sh
+- usercache.json
+- version_history.json
+- wepif.yml
+- whitelist.json
+MaxSaveSize: 10G
+MaxFileSaved: 20
+DeleteZipOnFTPTransfer: false
+DeleteZipIfFailed: false
+FolderSeparator: /
+AutoBackup-HourToBackup: -1

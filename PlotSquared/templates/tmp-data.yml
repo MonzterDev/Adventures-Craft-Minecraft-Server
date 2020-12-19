@@ -1,0 +1,54 @@
+generator:
+  plugin: PlotSquared
+plot:
+  height: 100
+  size: 200
+  filling: grass_block
+  floor: dirt
+  bedrock: true
+  biome: minecraft:forest
+  auto_merge: false
+  create_signs: false
+wall:
+  block: stone
+  block_claimed: white_wool
+  filling: green_wool
+  height: 10
+road:
+  width: 10
+  height: 100
+  block: quartz_block
+  flags: {}
+misc_spawn_unowned: false
+home:
+  nonmembers: side
+  default: side
+schematic:
+  specify_on_claim: false
+  on_claim: false
+  file: 'null'
+  schematics: []
+chat:
+  forced: false
+  enabled: true
+economy:
+  prices:
+    merge: 100
+    sell: 100
+    claim: 100
+  use: false
+limits:
+  max-members: 128
+world:
+  max_height: 256
+  gamemode: creative
+  min_height: 1
+  border: false
+event:
+  spawn:
+    egg: false
+    breeding: false
+    custom: true
+natural_mob_spawning: false
+mob_spawner_spawning: false
+flags: {}

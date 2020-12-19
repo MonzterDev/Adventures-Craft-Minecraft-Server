@@ -1,0 +1,38 @@
+Agro8A:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=12} true
+  Skills:
+  - runaigoalselector{goal=meleeattack}
+Agro8B:
+  Cooldown: 3
+  Conditions:
+  - playerwithin{d=12} false
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=randomstroll}
+  - runaigoalselector{goal=randomlookaround}
+  
+RangedAgro8A:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=12} true
+  Skills:
+  - runaigoalselector{goal=arrowattack}
+RangedAgro8B:
+  Cooldown: 3
+  Conditions:
+  - playerwithin{d=12} false
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=randomstroll}
+  - runaigoalselector{goal=randomlookaround}
+
+
+
+HareAgroA:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=20} true
+  Skills:
+  - runaigoalselector{goal=meleeattack}

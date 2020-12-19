@@ -1,0 +1,27 @@
+# *********************************
+# Holographic Extension Animations
+# *********************************
+# Animation Config File.
+#
+example:
+  speed: 0.1
+  frames:
+    - '<pulse color=yellow>&lKite Holographic Extension</pulse>'
+    - '<glow size=5 normal=&7&l start=&e&l middle=&6&l end=&e&l pause=10>Kite Holographic Extension</glow>'
+scroller:
+  speed: 0.1
+  frames:
+    - '<scroll width=32 spacing=32>&cThis is a example scroller.</scroll>'
+typing:
+  speed: 0.1
+  frames:
+    - "<typewriter pause=10 reverse=true>Kite Holographic Extension Example.</typewriter>"
+rainbow:
+  speed: 0.1
+  frames:
+    - "<rainbow>Hey there, %player_name%</rainbow>"
+
+# NOTICE: To use these placeholders, you need PlaceholderAPI, ProtocolLib and the correct extensions
+# /papi ecloud download Player
+# /papi ecloud download Server
+# /papi reload

@@ -1,0 +1,137 @@
+#FIRST QUEST Hunting the Undead
+quest1_start: 'objective start KillUndead'
+GiveSilverSword: 'command mmoitems give SWORD SILVER_SWORD %player% 1'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f Slay 20 Undead Skeletons within the Graveyard&f!"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
+QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
+QuestReward1_If_Not_Full: "run ^command mmoitems give ARMOR BONE_SKULL %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
+QuestReward1_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aSlaying the Undead &cto redeem your rewards!"
+QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
+#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
+Claim_QuestReward1: "run ^command mmoitems give ARMOR BONE_SKULL %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward1_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
+QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveGraveyardPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+
+
+#SECOND QUEST The Graveyard Shop
+quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message,GraveyardShopCompass'
+quest2_start: 'objective start MeetGraveyard'
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: "run ^message \n&6&lQuest Complete:&f \nHunting the Undead&f! \n \n \n &6&lRewards: \n&8&l » &2 Bone Skull \n&8&l » &d 100 EXP \n&8&l » &d 100 Slayer EXP \n&8&l » &e 75 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Access the &cSilver Stool &f(-156, 16, 145)!"
+GraveyardShopCompass: 'run ^opsudo calcomp show ^opsudo calcomp toggle GraveyardShop enable'
+GraveyardShopCompassHide: 'run ^opsudo calcomp toggle GraveyardShop disable'
+#FINISHING THE SECOND QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give ARMOR BONE_CHESTPLATE %player% 1 ^command mmoitems give ARMOR BONE_LEGS %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aThe Silver Stool &cto redeem your rewards!"
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give ARMOR BONE_CHESTPLATE %player% 1 ^command mmoitems give ARMOR BONE_LEGS %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
+QuestReward2_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#SECOND QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveGraveyardPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal remove q2_part1'
+OpenStool: "run ^opsudo mi stations open graveyard"
+
+#THIRD QUEST Hunting the Archers
+quest3_starer: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
+quest3_start: 'objective start KillUndead2'
+tag_q3_part1: 'tag add q3_part1'
+entry_q3_part1: 'journal add q3_part1'
+q3_start_message: "run ^message \n&6&lQuest Complete:&f \nSpeak to the &cSilver Stool&f! \n \n \n &6&lRewards: \n&8&l » &2 Bone Chestplate \n&8&l » &2 Bone Leggings \n&8&l » &d 50 EXP \n&8&l » &d 50 Slayer EXP \n&8&l » &e 25 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Slay 15 of the &cUndead Archers&f!"
+#FINISHING THE THIRD QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
+QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
+QuestReward3_If_Not_Full: "run ^command mmoitems give ARMOR BONE_FEET %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
+QuestReward3_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aHunting the Archers &cto redeem your rewards!"
+QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
+#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
+Claim_QuestReward3: "run ^command mmoitems give ARMOR BONE_FEET %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward3_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
+QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
+#THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q3_complete: 'folder default-Points.GiveGraveyardPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
+entry_q3_completed: 'journal add q3_completed'
+tag_q3_completed: 'tag add q3_completed'
+entry_q3_part1_remove: 'journal remove q3_part1'
+
+#FORTH QUEST The Undead Ruler
+quest4_starer: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message,ReaperCompass'
+quest4_start: 'objective start KillReaper'
+tag_q4_part1: 'tag add q4_part1'
+entry_q4_part1: 'journal add q4_part1'
+q4_start_message: "run ^message \n&6&lQuest Complete:&f \nSlay 15 of the &cUndead Archers&f! \n \n \n &6&lRewards: \n&8&l » &2 Bone Feet \n&8&l » &d 100 EXP \n&8&l » &d 100 Slayer EXP \n&8&l » &e 75 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Slay the &cReaper&f!"
+ReaperCompass: 'run ^opsudo calcomp toggle Reaper enable'
+ReaperCompassHide: 'run ^opsudo calcomp toggle Reaper disable'
+#FINISHING THE FOURTH QUEST WILL check if the players inventory is full
+#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll give rewards instantly
+QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
+QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
+QuestReward4_If_Not_Full: "run ^command mmoitems give WHIP BONEWHIP %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
+QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
+QuestReward4_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &aThe Undead Ruler &cto redeem your rewards!"
+QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
+#FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
+Claim_QuestReward4: "run ^command mmoitems give WHIP BONEWHIP %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
+QuestReward4_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
+QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"
+#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q4_complete: 'folder default-Points.GiveGraveyardPoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed'
+entry_q4_completed: 'journal add q4_completed'
+tag_q4_completed: 'tag add q4_completed'
+entry_q4_part1_remove: 'journal remove q4_part1'
+
+#CALLED BY Q4 OBJECTIVE COMPLETION This says "If in 50 blocks of another player with the tag 'q4_part1' run 'entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4,q4_delete_KillReaper' "
+q4_party: 'party 25 q4_part1 entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4,q4_delete_KillReaper conditions:!q4_completed'
+#Deletes the objective for other players
+q4_delete_KillReaper: 'objective delete KillReaper'
+
+
+
+#FIFTH QUEST Approaching the Castle
+quest5_starer: 'folder quest5_start,tag_q5_part1,entry_q5_part1,q5_start_message,NavidCompass'
+quest5_start: 'objective start EnterCourtyard'
+tag_q5_part1: 'tag add q5_part1'
+entry_q5_part1: 'journal add q5_part1'
+q5_start_message: "run ^message \n&6&lQuest Complete:&f \nSlay the &cReaper&f! \n \n \n &6&lRewards: \n&8&l » &5 Bone Whip \n&8&l » &d 200 EXP \n&8&l » &d 200 Slayer EXP \n&8&l » &e 150 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Enter the &cCastle Courtyard&f and speak to &aNavid&f at -120, 15, 245!"
+NavidCompass: 'run ^opsudo calcomp toggle Navid enable'
+NavidCompassHide: 'run ^opsudo calcomp toggle Navid disable ^opsudo calcomp hide'
+#FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward5: 'run ^command lp user %player% permission set warp.courtyard true ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25'
+#FIFTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q5_complete: 'folder default-Points.GiveGraveyardPoint,default-Points.GiveQuestTotalPoint,entry_q5_completed,entry_q5_part1_remove,q5_end_message,tag_q5_completed'
+entry_q5_completed: 'journal add q5_completed'
+tag_q5_completed: 'tag add q5_completed'
+entry_q5_part1_remove: 'journal remove q5_part1'
+q5_end_message: "run ^message \n&6&lQuest Complete:&f \nEnter the &cCastle Courtyard &fand speak to &aNavid&f! \n \n \n &6&lRewards: \n&8&l » &a Access to Castle Courtyard \n&8&l » &d 50 EXP \n&8&l » &d 50 Slayer EXP \n&8&l » &e 25 Coins"

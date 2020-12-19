@@ -1,0 +1,34 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+ReaperBoss:
+  MaxItems: 2
+  Drops:
+  - mmoitems{type=COMPANION;id=PET_REAPER} 1 .65%  
+  - mmoitems{type=ARMOR;id=GOLDEN_SKULL} 1 .85%
+  - mmoitems{type=WHIP;id=BONEWHIP2} 1 .95%
+  - mmoitems{type=CONSUMABLE;id=REAPER_HEAD} 1 1%
+
+
+Undead_Skeleton:
+  MaxItems: 1
+  Drops:
+  - mmoitems{type=ARMOR;id=BONE_CHESTPLATE2} 1 .5%  
+  - mmoitems{type=ARMOR;id=BONE_FEET2} 1 .5%
+  - mmoitems{type=DAGGER;id=BONE_DAGGER} 1 .5%
+  - mmoitems{type=BOW;id=BONE_BOW} 1 .5%
+
+###LOOTING###
+Undead1:
+  MaxItems: 1
+  Drops:
+  - mmoitems{type=MATERIAL;id=BONE_FRAGMENT} 1 100%
+  - Bone 1 100%
+UndeadArchers1:
+  MaxItems: 1
+  Drops:
+  - Arrow 1 100%
+UndeadSummoner:
+  MaxItems: 1
+  Drops:
+  - Rotten_flesh 1 100%

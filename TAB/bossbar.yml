@@ -1,0 +1,23 @@
+bossbar-enabled: false
+bossbar-toggle-command: /bossbar
+remember-toggle-choice: false
+default-bars:
+- ServerInfo
+per-world:
+  testworld:
+  - test
+bars:
+  ServerInfo:
+    permission-required: false
+    refresh: 1000
+    style: PROGRESS
+    color: '%animation:barcolors%'
+    progress: '100'
+    text: '&fWebsite: &bwww.domain.com'
+  test:
+    permission-required: false
+    refresh: 100
+    style: PROGRESS
+    color: WHITE
+    progress: '100'
+    text: test

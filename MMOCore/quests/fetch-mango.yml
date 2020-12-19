@@ -1,0 +1,39 @@
+
+# Display options
+name: 'The Exotic Fruit'
+
+# Quest lore displayed in the quest menu.
+lore:
+- 'Gimme mangoes please.'
+- ''
+- '&eRewards:'
+- '&7► 10 Gold coins'
+- '&7► 30 EXP'
+
+# Quests the player must finish
+# in order to unlock this one.
+parent: []
+
+# Cooldown in hours. Don't put any
+# to make the quest a one-time quest.
+# Put it to 0 to make it instantly redoable.
+delay: 0
+
+# Objectives the player needs to
+# complete. Once they're all complete,
+# the quest will end.
+objectives:
+    1:
+        type: 'mineblock{type=OAK_LOG;amount=8}'
+        lore: 'Mangoes only grow in Oak trees. Go break 8 oak logs!'
+        triggers:
+        - message{format="&aThank you! Those mangoes are gonna drop from these leaves."}
+        - sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP;pitch=1;volume=1}
+    2:
+        type: 'getitem{type=APPLE;npc=1;amount=2}'
+        lore: 'Bring me mangoes.'
+        triggers:
+        - message{format="&aThis looked like apple. But owell, thanks! Here are a a few coins'"}
+        - sound{sound=ENTITY_EXPERIENCE_ORB_PICKUP;pitch=1;volume=1}
+        - command{format="mmocore coins %player% 10"}
+        - 'experience{amount=30}'

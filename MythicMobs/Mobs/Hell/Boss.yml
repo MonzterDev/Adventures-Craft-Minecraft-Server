@@ -1,0 +1,281 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+# BIG BOSS
+GHAST_BOSS:
+  Type: GIANT
+  Disguise:
+    Type: GHAST
+  Display: '&7[&fLVL 20&7] &cGhastly'
+  Health: 50000
+  Damage: 0
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cGhastly <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID
+  Faction: Hell
+  DamageModifiers:
+  - PROJECTILE -.1
+  - ENTITY_ATTACK 0  
+  - LAVA 0  
+  - SUFFOCATION 0  
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 5000
+    MovementSpeed: 0.01
+    FollowRange: 30
+    Collidable: false
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+    NoGravity: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 arrowattack  
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=100;ignoreArmor=false} @target ~onAttack  
+  - skill{s=GHASTSPAWN} @PIR{r=200} ~onSpawn
+  - skill{s=GHASTSUMMON0} ~onSpawn
+  - skill{s=GHASTTPING} ~onSignal:DAMAGEBOSS0
+  - skill{s=GHASTTPING2} ~onTimer:20 <65%
+  - skill{s=GHASTTPING3} ~onTimer:20 <30%
+  - skill{s=GHASTWIPE} ~onSignal:WIPE
+  - skill{s=GHASTDAMAGE} ~onSignal:DAMAGEBOSS
+  - skill{s=GHASTDAMAGE2} ~onSignal:DAMAGEBOSS2
+  - skill{s=GHASTDAMAGE3} ~onSignal:DAMAGEBOSS3
+  - skill{s=GHASTDEATH} @PlayersInRadius{r=200} ~onDeath
+  - skill{s=HPBAR} @self ~onDamaged
+  - remove @MIR{r=750;t=GHAST_MINION1,GHAST_MINION2,GHAST_MINION3,MINION_MINION} ~onDeath
+
+#MAIN MINION
+GHAST_MINION1:
+  Type: PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cDevoted Pigman'  
+  Health: 15000
+  Damage: 0
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.28
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - DEMON_SWORD:0
+  - DEMON_HEAD:HEAD
+  - DEMON_CHEST:CHEST
+  - DEMON_LEGS:LEGS
+  - DEMON_BOOTS:FEET
+  - DEMON_SHIELD:5
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - damage{amount=75;ignoreArmor=false} @target ~onAttack
+  - skill{s=ANTILAVA} ~onTimer:1
+  - skill{s=MINIONWIPE} ~onDamaged
+  - skill{s=MINIONBOSSDMG} ~onDeath
+  - skill{s=RAGED} <20%
+  - damage{amount=51;ignoreArmor=false} @PIR{r=3} ~onAttack <20%  
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:10 
+  - summon{type=MINION_MINION;amount=1;radius=7} @self ~onTimer:300 <30%    
+  - effect:blockmask{m=obsidian;r=2;d=200} @self ~onTimer:10  
+  - effect:blockmask{m=obsidian;r=5;d=200} @self ~onTimer:10 <30%
+  - command{c="q point <target.name> add mobs.GHAST_MINION1 1"} @ThreatTablePlayers ~onDeath
+
+#FIRST_MINION MINION'S MINION
+FIRST_MINION:
+  Type: GIANT
+  Display: '&7[&fLVL 20&7] &cDevoted Minion'  
+  Health: 2500
+  Damage: 0
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: true
+    Glowing: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.324
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - GOLDEN_SWORD:0
+  - MINION_HEAD:HEAD
+  - MINION_CHEST:CHEST
+  - MINION_BOOTS:FEET
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - damage{amount=55;ignoreArmor=false} @target ~onAttack
+  - skill{s=MINIONBOSSDMG0} ~onDeath 
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=.83} @self ~onTimer:10 
+  - command{c="q point <target.name> add mobs.FIRST_MINION 1"} @ThreatTablePlayers ~onDeath
+#MAIN MINION'S MINION
+MINION_MINION:
+  Type: BABY_PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cDevoted Minion'  
+  Health: 3000
+  Damage: 0
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.324
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - GOLDEN_SWORD:0
+  - MINION_HEAD:HEAD
+  - MINION_CHEST:CHEST
+  - MINION_BOOTS:FEET
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=ANTILAVA} ~onTimer:1  
+  - skill{s=HPBAR} @self ~onDamaged
+  - damage{amount=55;ignoreArmor=false} @target ~onAttack
+  - skill{s=MINIONBOSSDMG2} ~onDeath 
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=.83} @self ~onTimer:10 
+  - command{c="q point <target.name> add mobs.MINION_MINION 1"} @ThreatTablePlayers ~onDeath
+GHAST_MINION2:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 20&7] &cDevoted Skeleton'  
+  Health: 5000
+  Damage: 0
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - DEMON_SWORD:0
+  - DEMON_CHEST:CHEST
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - damage{amount=65;ignoreArmor=false} @target ~onAttack
+  - skill{s=MINIONBOSSDMG3} ~onDeath
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:10 
+  - skill{s=ANTILAVA} ~onTimer:1  
+  - command{c="q point <target.name> add mobs.GHAST_MINION2 1"} @ThreatTablePlayers ~onDeath
+GHAST_MINION3:
+  Type: BLAZE
+  Display: '&7[&fLVL 20&7] &cDevoted Blaze'  
+  Health: 3500
+  Damage: 0
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=BLAZEMINION} ~onTimer:60
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=MINIONBOSSDMG3} ~onDeath
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:10 
+  - effect:blockmask{m=netherrack;r=1;d=200} @self ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:1
+  - command{c="q point <target.name> add mobs.GHAST_MINION3 1"} @ThreatTablePlayers ~onDeath

@@ -1,0 +1,25 @@
+name: Telekinesy
+lore:
+- You take the control over your target
+- for &9{duration} &7seconds. Left click to throw him.
+- 'Knockback force: &f{knockback}%'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: MAGENTA_DYE
+duration:
+  base: 3.0
+  per-level: 0.1
+  max: 6.0
+  min: 3.0
+mana:
+  base: 20.0
+  per-level: 2.0
+cooldown:
+  base: 20.0
+  per-level: -0.3
+  max: 20.0
+  min: 10.0
+knockback:
+  base: 50.0
+  per-level: 10.0

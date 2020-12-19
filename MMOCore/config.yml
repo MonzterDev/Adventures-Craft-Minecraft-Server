@@ -1,0 +1,161 @@
+#
+# ███    ███ ███    ███  ██████   ██████  ██████  ██████  ███████
+# ████  ████ ████  ████ ██    ██ ██      ██    ██ ██   ██ ██
+# ██ ████ ██ ██ ████ ██ ██    ██ ██      ██    ██ ██████  █████
+# ██  ██  ██ ██  ██  ██ ██    ██ ██      ██    ██ ██   ██ ██
+# ██      ██ ██      ██  ██████   ██████  ██████  ██   ██ ███████
+#
+# a Spigot Plugin by Team Requiem
+
+# DO NOT TOUCH
+config-version: 3
+
+# Auto-Save feature automatically saves playerdata
+# (class, level, etc.) and guild data
+# (guild names, members, etc.) at a set interval.
+auto-save:
+    enabled: true
+    interval: 200 # In seconds (1800 = 30 minutes)
+
+# MySQL Support
+mysql:
+    enabled: true
+    host: localhost
+    port: 3306
+    database: minecraft_live
+    user: minecraft
+    pass: kWz7Y8eK0tMCUvr0Cm
+    properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+
+# The default values for all playerdata
+# All new players will start with these values
+default-playerdata:
+  level: 1
+  class-points: 0
+  skill-points: 0
+  attribute-points: 0
+  attribute-realloc-points: 0
+
+# The list of all conditions which must be met for the
+# BLOCK REGEN and BLOCK RESTRICTIONS to apply. Set to
+# 'custom-mine-conditions: []' to disable custom mining entirely.
+custom-mine-conditions:
+ - 'world{name="Spawn"}'
+ - 'region{name="town,void,void_maze,upper_hell,lower_hell,diamond,emerald,lapis,redstone,mine,gold,farm,estate,valley,spirit_grounds,goblin_town,forest"}'
+#
+# custom-mine-conditions:
+# - 'world{name="__global__"}'
+#
+# ^ will enable custom mining server wide
+
+# Set to true to prevent vanilla blocks from being
+# broken when custom mining conditions are met
+protect-custom-mine: true
+
+loot-chests:
+    # Time in seconds it takes for a loot chest to
+    # expire after it was spawned. 600 is 10 minutes.
+    chest-expire-time: 600
+    
+    # Interval in seconds before the same player
+    # spawns two loot chests in ANY region.
+    player-cooldown: 600
+
+# Settings for the default action bar
+action-bar:
+
+    # Whether or not to use the default action bar.
+    # (This doesn't change any other action bars provided by MMOCore.)
+    enabled: true
+    
+    # The decimal format for stats (not including stat formats in stats.yml)
+    decimal: "0.#"
+    
+    # The amount of miliseconds the bar will be faded
+    #out when displaying other action bars.
+    time-out: 0
+    
+    # The amount of ticks before updating the info
+    ticks-to-update: 1
+    
+    # How to display the data.
+    format: "<#ff2a2a>❤ {health}/{max_health} <#51f04b>%player_x%,%player_y%,%player_z% <#2affef>⭐ {mana}/{max_mana}"
+
+party:
+
+    # Edit party buffs here. You may
+    # add as many stats as you want.
+    buff:
+        health-regeneration: 3
+        additional-experience: 5
+    
+    # Prefix you need to put in the chat
+    # to talk in the party chat.
+    chat-prefix: '@'
+
+# Redirects vanilla experience obtained to MMOCore
+# class experience. You can define the % of the vanilla
+# experience that is being transfered as MMOCore exp.
+# Requires a SERVER reload when changed.
+vanilla-exp-redirection:
+    enabled: false
+    ratio: 0.8
+
+# Enable this open to override vanilla EXP and display
+# level progress on the vanilla experience bar.
+# Requires a SERVER reload when changed.
+override-vanilla-exp: true
+
+# Requires a SERVER reload when changed.
+death-exp-loss:
+    enabled: false
+    
+    # Percentage of current EXP you lose when dying.
+    percent: 30
+
+# Allows to toggle exp hologram from gaining experience
+display-exp-holograms: true
+
+# Players can swap their hotbar with the 9 inventory slots
+# right above it by pressing [swap items] while crouching.
+# THis allows players to have two combat item sets.
+hotbar-swap: true
+
+# Use this option if you're having issue with Anvil GUIs.
+# This replaces anvil inputs by chat inputs.
+use-chat-input: true
+
+# Prevents mobs spawned from spawners from giving XP points.
+prevent-spawner-xp: true
+
+# Timer for combat log to expire (in seconds)
+combat-log:
+    timer: 5
+
+# Change this to the name of the color you want for
+# the different resource bar placeholders
+resource-bar-colors:
+    stamina-whole: 'GREEN'
+    stamina-half: 'DARK_GREEN'
+    stamina-empty: 'WHITE'
+
+# Whether or not the admin commands should display
+# the result of the command when ran.
+# For Example: "Players Level is now 10."
+# Accepted Values:
+# true - Always verbose
+# player - Only verbose when ran from a player
+# console - Only verbose when ran from console
+# false - Never verbose
+command-verbose:
+    attribute: true
+    class: true
+    experience: true
+    level: true
+    nocd: true
+    points: true
+    reset: true
+    resource: true

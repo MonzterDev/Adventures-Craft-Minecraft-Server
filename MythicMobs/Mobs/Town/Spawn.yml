@@ -1,0 +1,445 @@
+DummySP:
+  Type: SPIDER
+  Display: '&7[&fLVL 100&7] &aSpider Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aSpider Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:
+  - teleportto{location=-110.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+
+DummySK:
+  Type: SKELETON
+  Display: '&7[&fLVL 100&7] &aSkeleton Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aSkeleton Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: .0001
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:
+  - teleportto{location=-95.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+DummyZ:
+  Type: Zombie
+  Display: '&7[&fLVL 100&7] &aZombie Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aZombie Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: .0001
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:
+  - teleportto{location=-98.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+DummyWOLF:
+  Type: WOLF
+  Display: '&7[&fLVL 100&7] &aHound Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aHound Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: .0001
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:
+  - teleportto{location=-101.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100  
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+DummyG:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&7[&fLVL 100&7] &aBaby Goblin Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aBaby Goblin Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: .0001
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  Equipment:
+  - Goblin Head
+  - iron_sword:0
+  - leather_chestplate chest    
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:  
+  - teleportto{location=-104.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100    
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+DummyE:
+  Type: Enderman
+  Display: '&7[&fLVL 100&7] &aEnderman Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &aEnderman Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: .0001
+    FollowRange: 0
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+    PreventTeleport: true
+  AIGoalSelectors:
+  - 0 clear    
+  Skills:  
+  - teleportto{location=-107.5,16,-34.5;y=179.4;p=4.8} @self ~onTimer:100  
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @Trigger ~onDamaged
+
+Pigs:
+  Type: Pig
+  Display: '&7[&fLVL 1&7] &aPig'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - porkchop 1-3 100%
+  - EXP 1-3 100%
+Cows:
+  Type: Cow
+  Display: '&7[&fLVL 1&7] &aCow'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - leather 1-3 100%
+  - beef 1-3 100%
+  - EXP 1-3 100%
+Chickens:
+  Type: Chicken
+  Display: '&7[&fLVL 1&7] &aChicken'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - feather 1-3 100%
+  - chicken 1-3 100%
+  - EXP 1-3 100%
+Sheeps:
+  Type: Sheep
+  Display: '&7[&fLVL 1&7] &aSheep'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - wool 1-3 100%
+  - mutton 1-3 100%
+  - EXP 1-3 100%
+Pandas:
+  Type: MPET
+  MPet:
+    Type: Panda
+    Anchor: PANDA
+    ShowName: true
+  Display: '&7[&fLVL 1&7] &aPanda'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - bamboo 1-3 100%
+  - EXP 1-3 100%
+Foxs:
+  Type: Fox
+  Display: '&7[&fLVL 1&7] &aFox'
+  Health: 10
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - mutton 1-3 100%
+  - EXP 1-3 100%
+  - mmoitems{type=MATERIAL;id=FOX_TAIL} 1 10%  
+Rabbits:
+  Type: Rabbit
+  Display: '&7[&fLVL 1&7] &aRabbit'
+  Health: 10
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - rabbit_hide 1-2 100%
+  - rabbit 1-2 100%
+  - rabbit_foot 1-2 100%
+  - EXP 1-3 100%
+Parrots:
+  Type: Parrot
+  Display: '&7[&fLVL 1&7] &aParrot'
+  Health: 10
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - feather 1-2 100%
+  - EXP 1-3 100%
+Wolfs:
+  Type: Wolf
+  Display: '&7[&fLVL 1&7] &aWolf'
+  Health: 25
+  Damage: 0
+  Faction: Animal
+  Modules:
+  Modules:
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - BorgBox 1 100%
+  - EXP 1-3 100%

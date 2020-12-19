@@ -1,0 +1,469 @@
+height: 5
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Damon.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q1_part1,!default-Hell-Damon.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q1_completed, default-Hell-Damon.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q1_rewards_unclaimed,!default-Hell-Damon.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Hell-Damon.QuestReward1_Claim
+      left: default-Hell-Damon.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Damon.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lGive Them Hell'
+        - '&f&o'
+        - '&fSlay 15 &cVoid Pigmen'
+        - '&fSlay 10 &cVoid Demons'
+        - '&fSlay 5 &cVoid Necromancers'
+        - '&fSlay 5 &cVoid Blazes'
+        - '&fSlay the &cVoid Wither'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hell''s Resources'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q2_part1,!default-Hell-Damon.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGive Them Hell'
+        - '&f&o'
+        - '&fSlay 15 &cVoid Pigmen'
+        - '&fSlay 10 &cVoid Demons'
+        - '&fSlay 5 &cVoid Necromancers'
+        - '&fSlay 5 &cVoid Blazes'
+        - '&fSlay the &cVoid Wither'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hell''s Resources'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lGive Them Hell'
+        - '&f&o'
+        - '&fSlay 15 &cVoid Pigmen'
+        - '&fSlay 10 &cVoid Demons'
+        - '&fSlay 5 &cVoid Necromancers'
+        - '&fSlay 5 &cVoid Blazes'
+        - '&fSlay the &cVoid Wither'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Damon.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDark Rocks'
+        - '&f&o'
+        - '&fHarvest &a64 Obsidian'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Spellforging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Give Them Hell'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q3_part1,!default-Hell-Damon.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Rocks'
+        - '&f&o'
+        - '&fHarvest &a64 Obsidian'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Spellforging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDark Rocks'
+        - '&f&o'
+        - '&fHarvest &a64 Obsidian'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Spellforging EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Damon.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lIt''s Getting Hotter'
+        - '&f&o'
+        - '&fSpeak to &aDiablo &fdeeper in &cHell'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &cLower Hell'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Spellforging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Rocks'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q4_part1,!default-Hell-Damon.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIt''s Getting Hotter'
+        - '&f&o'
+        - '&fSpeak to &aDiablo &fdeeper in &cHell'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &cLower Hell'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Spellforging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lIt''s Getting Hotter'
+        - '&f&o'
+        - '&fSpeak to &aDiablo &fdeeper in &cHell'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &cLower Hell'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Spellforging EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+
+#FIRST QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Diablo.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lIncreased Heat'
+        - '&f&o'
+        - '&fSlay 3 &cVoid Pigmen'
+        - '&fSlay 5 &cVoid Magma'
+        - '&fSlay 25 &cVoid Mobs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Diablo in the Hell'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q1_part1,!default-Hell-Diablo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIncreased Heat'
+        - '&f&o'
+        - '&fSlay 3 &cVoid Pigmen'
+        - '&fSlay 5 &cVoid Magma'
+        - '&fSlay 25 &cVoid Mobs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Diablo in the Hell'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Diablo.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lIncreased Heat'
+        - '&f&o'
+        - '&fSlay 3 &cVoid Pigmen'
+        - '&fSlay 5 &cVoid Magma'
+        - '&fSlay 25 &cVoid Mobs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+#SECOND QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Diablo.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Heat'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q2_part1,!default-Hell-Diablo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Heat'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Diablo.q2_completed,default-Hell-Diablo.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+    close: false
+  quest6_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Diablo.q2_rewards_unclaimed,!default-Hell-Diablo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Hell-Diablo.QuestReward2_Claim
+      left: default-Hell-Diablo.QuestReward2_Claim
+    
+#THIRD QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Hell-Diablo.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lGhosts Cry'
+        - '&f&o'
+        - '&fSlay &cGhastly'
+        - '&fDeliver &9Ghastly Tear &fto &aDiablo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Resource Mutation'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q3_part1,!default-Hell-Diablo.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGhosts Cry'
+        - '&f&o'
+        - '&fSlay &cGhastly'
+        - '&fDeliver &9Ghastly Tear &fto &aDiablo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Resource Mutation'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Diablo.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lGhosts Cry'
+        - '&f&o'
+        - '&fSlay &cGhastly'
+        - '&fDeliver &9Ghastly Tear &fto &aDiablo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  15-20: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  24-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  31-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-14: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest3_inactive,quest3_active,quest3_completed,quest4_inactive,quest4_active,quest4_completed
+  21-23: quest5_inactive,quest5_active,quest5_completed,quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed,quest7_inactive,quest7_active,quest7_completed
+  40: back

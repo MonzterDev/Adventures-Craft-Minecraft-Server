@@ -1,0 +1,21 @@
+
+# GUI display name
+name: Subclass Confirmation
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 27
+
+items:
+    yes:
+        slots: [12]
+        item: GREEN_TERRACOTTA
+        function: 'yes'
+        name: '&aSelect {class}'
+        lore: {}
+    back:
+        slots: [14]
+        item: RED_TERRACOTTA
+        function: back
+        name: '&aBack'
+        lore: {}

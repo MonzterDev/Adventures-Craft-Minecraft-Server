@@ -1,0 +1,71 @@
+menu_title: '&f&l»&7&l» &8Spellforging &7&l«&f&l«'
+size: 26
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+
+  'Spells':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aSpells'
+    lore:
+    - ''
+    - '&8&l» &eClick to Access'
+    click_commands:
+    - "[console] mmoitems stations open spells %player_name%"
+
+  'Materials':
+    material: BLAZE_POWDER	
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aMaterials'
+    lore:
+    - ''
+    - '&8&l» &eClick to Access'
+    click_commands:
+    - "[console] mmoitems stations open enchanted-materials %player_name%"
+
+  'Wands':
+    material: STICK
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: '&aWands'
+    lore:
+    - ''
+    - '&8&l» &eClick to Access'
+    click_commands:
+    - "[console] mmoitems stations open wand %player_name%"
+

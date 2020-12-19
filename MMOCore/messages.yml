@@ -1,0 +1,161 @@
+
+# Level & Experience
+level-up:
+profession-level-up:
+
+exp-notification: '%&c❤ %mmocore_health%/%mmocore_max_health% &a{profession} &e{progress} &9⭐ %mmocore_mana%/%mmocore_stat_max_mana%'
+exp-hologram: '&e+{exp} EXP!'
+class-select: '&eYou are now a &6{class}&e!'
+already-on-class: '&cYou are already a {class}.'
+death-exp-loss:
+- ''
+- '&4You died and lost {loss} experience.'
+- ''
+
+# General
+booster-main:
+- '&e----------------------------------------------------'
+- '   &e&l{multiplier}x EXP Booster has been activated!'
+- '&e----------------------------------------------------'
+booster-skill:
+- '&e----------------------------------------------------'
+- '   &6&l{multiplier}x {profession} EXP Booster has been activated!'
+- '&e----------------------------------------------------'
+
+# Fishing Profession
+caught-fish: '&cYou caught a fish!'
+fish-out-water: '&aWell done!'
+fish-out-water-crit: '&aCritical Fish!'
+
+# Player Input
+player-input:
+    anvil:
+        friend-request: 'Friend name..'
+        party-invite: 'Player name..'
+        guild-invite: 'Player name..'
+        guild-creation-tag: 'Guild tag..'
+        guild-creation-name: 'Guild name..'
+    chat:
+        friend-request: '&eWrite in the chat the player name.'
+        party-invite: '&eWrite in the chat the player you want to invite.'
+        guild-invite: '&eWrite in the chat the player you want to invite.'
+        guild-creation-tag: '&eWrite in the chat the TAG of the Guild you want to create.'
+        guild-creation-name: '&eWrite in the chat the name of the Guild you want to create.'
+        cancel: '&eWrite &c''cancel'' &eto cancel.'
+
+# Spell Casting
+casting:
+    action-bar:
+        ready: '&6[{index}] &a&l{skill}'
+        on-cooldown: '&6[{index}] &c&l{skill} &6(&c{cooldown}&6)'
+        no-mana: '&6[{index}] &9&l{skill}'
+    split: '&7 &7 - &7 '
+    no-longer: '%&cYou cancelled skill casting.'
+    no-mana: '&cYou do not have enough mana!'
+    on-cooldown: '&cThis skill is on cooldown.'
+
+# Combat Log
+now-in-combat: '&cYou are now in combat!'
+leave-combat: '&aYou have left combat.'
+
+# Waypoints
+new-waypoint: '%&eYou unlocked the &6{waypoint} &ewaypoint!'
+not-enough-stellium: '&cYou don''t have enough stellium: you need {more} more.'
+waypoint-cooldown: '&cPlease wait {cooldown} before using a waypoint again.'
+not-unlocked-waypoint: '&cYou have not unlocked that waypoint yet.'
+not-dynamic-waypoint: '&cYou many only teleport to a non-dynamic waypoint while standing on another waypoint.'
+standing-on-waypoint: '&cYou are already standing on this waypoint.'
+warping-canceled: '%&cWaypoint warping canceled.'
+warping-comencing: '%&cDO NOT MOVE!&e You will be warped in {left}sec.'
+
+# Cash
+deposit: '&eYou successfully deposited &6{worth}g&e.'
+withdrawing: '&eType in the chat the amount of &6gold&e you want to &6withdraw&e.'
+withdraw-cancel: '&eWithdrawing canceled.'
+withdrew: '&eYou successfully withdrew &6{worth}g&e.'
+wrong-number: '&c{arg} is not a valid number.'
+not-enough-money: '&cYou don''t have enough money, you need {left} more gold.'
+stand-near-enderchest: '&cYou must be standing near a bank to do that.'
+
+# Blocks
+cannot-break: '&cYou do not have the right tool in order to break that block.'
+
+# Friends
+no-longer-friends: '&cYou and {unfriend} are no longer friends.'
+not-online-player: '&c{player} is not online.'
+sent-friend-request: '&eYou sent a friend request to &6{player}&e.'
+now-friends: '&eYou are now friends with &6{player}&e.'
+friend-request-cooldown: '&cPlease wait {cooldown}.'
+cant-request-to-yourself: '&cYou can''t send a request to yourself.'
+already-friends: '&cYou are already friends with {player}.'
+friend-request:
+- '{"text":""}'
+- '{"text":"&6{player} &ejust sent you a friend request!"}'
+- '[{"text":"        ","hoverEvent":{}},{"text":"&8[&a&lACCEPT&8]","clickEvent":{"action":"run_command","value":"/friends accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to accept!"}},{"text":"&r             ","hoverEvent":{}},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/friends deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+- '{"text":""}'
+
+# Parties
+party-chat: '&5[Party] {player}: {message}'
+sent-party-invite: '&eYou sent a party invite to &6{player}&e.'
+already-in-party: '&c{player} is already in your party.'
+party-invite:
+- '{"text":""}'
+- '{"text":"&6{player} &ehas invited you to their party!"}'
+- '[{"text":"        ","hoverEvent":{}},{"text":"&8[&a&lACCEPT&8]","clickEvent":{"action":"run_command","value":"/party accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to accept!"}},{"text":"&r             ","hoverEvent":{}},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/party deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+- '{"text":""}'
+party-is-full: '&cSorry, your party is full.'
+party-joined: '&eYou successfully joined &6{owner}&e''s party.'
+party-joined-other: '&6{player}&e joined your party!'
+transfer-party-ownership: '&eYou were transfered the party ownership.'
+kick-from-party: '&eYou successfully kicked &6{player}&e.'
+party-invite-cooldown: '&cPlease wait {cooldown} before inviting {player}.'
+
+# Guilds
+guild-chat: '&a[{tag}] {player}: {message}'
+sent-guild-invite: '&eYou sent a guild invite to &6{player}&e.'
+already-in-guild: '&c{player} is already in your guild.'
+guild-invite:
+- '{"text":""}'
+- '{"text":"&6{player} &ehas invited you to their guild!"}'
+- '[{"text":"        ","hoverEvent":{}},{"text":"&8[&a&lACCEPT&8]","clickEvent":{"action":"run_command","value":"/guild accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to accept!"}},{"text":"&r             ","hoverEvent":{}},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/guild deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+- '{"text":""}'
+#guild-is-full: '&cSorry, your guild is full.' -Unused right now
+guild-joined: '&eYou successfully joined &6{owner}&e''s guild.'
+guild-joined-other: '&6{player}&e joined your guild!'
+transfer-guild-ownership: '&eYou were transfered the guild ownership.'
+kick-from-guild: '&eYou successfully kicked &6{player}&e from the guild.'
+guild-invite-cooldown: '&cPlease wait {cooldown} before inviting {player}.'
+guild-creation:
+    failed: "&cCouldn't create guild: {reason}"
+    reasons:
+        invalid-characters: "&eInvalid character(s)!"
+        invalid-length: "&eThe length must be between {min} and {max}!"
+        already-exists: "&eThat guild tag already exists!"
+
+# Quests
+already-on-quest: '&cYou are already on a quest.'
+cancel-quest: '&eYou successfully canceled your ongoing quest.'
+quest-level-restriction: '&cYou need to be {level} {count}.'
+cant-redo-quest: '&cYou can''t start this quest twice.'
+quest-cooldown: '&cYou need to wait {delay}.'
+start-quest: '&eYou successfully started &6{quest}&e.'
+
+cant-choose-new-class:
+- '&cYou need one class point to perform this action.'
+
+# Attributes
+no-attribute-points-spent: '&cYou have not spent any attribute points.'
+not-attribute-reallocation-point: '&cYou need a reallocation point.'
+not-attribute-point: '&cYou need an attribute point.'
+attribute-points-reallocated: '&7You successfully reset your attributes. You now have &e{points} &7attribute points.'
+attribute-max-points-hit: '&cYou cannot level up this attribute anymore.'
+attribute-level-up: '&7You successfully leveled up your &e{attribute}&7.' # {level}
+
+# Skills
+no-class-skill: '&cYour class has no skill.'
+not-enough-skill-points: '&cYou need one skill point.'
+upgrade-skill: '&eYour &6{skill} &eis now Level &6{level}&e!'
+not-unlocked-skill: '&cYou have not unlocked that skill yet.'
+no-skill-bound: '&cYou don''t have any skill bound to this slot.'
+not-active-skill: '&cThis is not an active skill.'
+skill-max-level-hit: '&cYou already hit the max level for that skill.'

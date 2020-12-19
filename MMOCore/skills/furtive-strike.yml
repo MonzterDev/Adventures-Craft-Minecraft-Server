@@ -1,0 +1,25 @@
+name: Furtive Strike
+lore:
+- Deals &c{damage} &7damage, increased by &c{extra}% &7if
+- there are not any enemies within &c{radius} &7blocks.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: COAL
+damage:
+  base: 5.0
+  per-level: 1.5
+mana:
+  base: 8.0
+  per-level: 3.0
+extra:
+  base: 50.0
+  per-level: 20.0
+cooldown:
+  base: 20.0
+  per-level: -0.1
+  max: 20.0
+  min: 5.0
+radius:
+  base: 7.0
+  per-level: 0.0

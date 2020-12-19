@@ -1,0 +1,47 @@
+quester: Jack
+first: greeting
+NPC_options:
+  greeting:
+    text: "&a%player%&7, the legend, what can I do for you today?" 
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: 'The &cDryad &7is a beast which inhibites trees within our &aForest&7! This beast is capable of altering the minds of nature within our &aForest &7to use against us.'
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: 'The only way to find the &cDryad &7is by chopping trees down throughout the &aForest&7!'
+    pointers: quest1, quest_decline
+    conditions: '!Oak_Start,!Spruce_Start,!DarkOak_Start,!Birch_Start,!Acacia_Start,!Jungle_Start'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: Get out there and chop down every tree until you find the &cDryad&7! 
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: What is a &cDryad&f?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Wow, I cannot wait to help!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quest!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "Searching for the &cDryad&f" Quest
+    events: 'quest1_start,Completed_Journal_Remove,Completed_Tag_Remove'    
+    pointers: quest1accept
+

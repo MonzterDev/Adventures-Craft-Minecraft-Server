@@ -1,0 +1,14 @@
+QuestCooldown24: delay 86400 seconds events:Q1_CD_Rest
+BreakSugarcane: mmocorebreakblock 1 block:SUGAR_CANE events:GivePointSugarCane,StartBreakSugarCane,Completing1st
+Completing1st: location 100;200;300;Spawn 100000000000 events:entry_q1_complete,StopBreakSugarCane conditions:1000SugarCane,!q1_completed
+
+
+Quest2Cooldown24: delay 86400 seconds events:Q2_CD_Rest
+BreakLapis: mmocorebreakblock 1 block:LAPIS_ORE events:GivePointLapis,RestartObjectiveLapis,Completing2nd
+  conditions:inSpawn
+Completing2nd: location 100;200;300;Spawn 100000000000 events:entry_q2_complete conditions:500Lapis,!q2_completed
+
+
+Quest3Cooldown24: delay 86400 seconds events:Q3_CD_Rest
+SlayVoid: mmobkill VOID_BLINDER,VOID_WORSHIPER,VOID_SOURCE,VOID_THRALL,VOID_ASSASSIN,VOID_HEART_HEALER,VOID_VEIN,VOID_ENCHANTRESS,VOID_BOSS_MINION,VOID_BOSS_MINION1,VOID_BULLBO,VOID_BULBLIN,VOID_BULB amount:750 events:entry_q3_complete
+  conditions:inSpawn,!q3_completed

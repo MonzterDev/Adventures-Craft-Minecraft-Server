@@ -1,0 +1,41 @@
+# WARNING! Please note that this file will be changed
+# A LOT during the different phases of Guilds.
+# The layout and settings displayed here are NOT final!
+
+# The prefix character needed for typing in the guild chat.
+# Guild Chat format can be found in 'messages.yml'
+chat-prefix: "*"
+
+# Set to true if guild tags should automatically be
+# converted to Uppercase upon creation.
+uppercase-tags: true
+rules:
+    tag:
+        # The tag characters must match this RegEx string
+        # or the guild creation will fail.
+        # !!! If you don't know RegEx I wouldn't mess with this!
+        # You can always test your expression here: https://regexr.com/
+        matches: "[a-zA-Z-_!?]+"
+        # Minimum and Maximum lengt of a tag
+        min-length: 3
+        max-length: 4
+    name:
+        # The name characters must match this RegEx string
+        # or the guild creation will fail.
+        # !!! If you don't know RegEx I wouldn't mess with this!
+        # You can always test your expression here: https://regexr.com/
+        matches: "[a-zA-Z -_!?]+"
+        # Minimum and Maximum lengt of a tag
+        min-length: 3
+        max-length: 14
+
+
+
+
+
+# Max allowed members
+max-size: 40
+
+# "Guilds 1.0 doesn't have the max members feature
+# A hotfix will be out before Christmas!"
+# - Aria

@@ -1,0 +1,87 @@
+display:
+    name: 'Paladin'
+    lore:
+    - 'The paladin is a heavy tanky fighter'
+    - 'who uses his mana to heal and protect'
+    - 'members from his team.'
+    attribute-lore:
+    - '&a+ &7Max Health'
+    - '&a+ &7Knockback Resistance'
+    - '&a+ &7Speed Malus Reduction'
+    - '&c- &7Movement Speed'
+    - '&c- &7Attack Speed'
+    - ''
+    - '&8&lStrength'
+    - '&7  Attack Damage: &c1 &7(+&c0&7)'
+    - '&7  Attack Speed: &c3.7 &7(+&c0&7)'
+    - '&7  Max Health: &c22 &7(+&c.3&7)'
+    - ''
+    - '&8&lDexterity'
+    - '&7  Knockback Resistance: &a30% &7(+&a1%&7)'
+    - '&7  Movement Speed: &a19 &7(+&a0&7)'
+    - '&7  Speed Malus Reduction: &a30% &7(+&a2%&7)'
+    - ''
+    - '&8&lIntellect'
+    - '&7  Max Mana: &920 &7(+&90&7)'
+    - '&7  Health Regen: &90.1 &7(+&90&7)'
+    - '&7  Mana Regen: &90.166 &7(+&90&7)'
+    item: ENCHANTED_GOLDEN_APPLE:0 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# Players cannot go further than Lvl 100
+max-level: 100
+
+triggers:
+    level-up:
+    - 'command{format="mmocore admin skill-points give %player% 1"}'
+    
+    # Get some mana back when dealing magic damage.
+    magic-damage:
+    - 'mana{operation=GIVE;amount=1}'
+
+cast-particle:
+    particle: VILLAGER_HAPPY
+
+skills:
+    DEEP_WOUND:
+        level: 10
+        max-level: 30
+    WEAKEN:
+        level: 5
+        max-level: 30
+    AMBERS:
+        level: 15
+        max-level: 30
+    GREATER_HEALINGS:
+        level: 7
+        max-level: 30
+    MINOR_HEALINGS:
+        level: 3
+        max-level: 30
+    HUMAN_SHIELD:
+        level: 13
+        max-level: 20
+
+attributes:
+    knockback-resistance:
+        base: 30
+        per-level: 1
+    speed-malus-reduction:
+        base: 30
+        per-level: 2
+    max-health:
+        base: 22
+        per-level: 0.3
+    attack-speed:
+        base: 3.7
+        per-level: 0
+    movement-speed:
+        base: .19
+        per-level: 0
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

@@ -1,0 +1,306 @@
+menu_title: '&f&l»&7&l» &8Quests %betonquest_default-Points:point.QuestTotal.amount% &7&l«&f&l«'
+open_command: Questmenu
+size: 44
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+  'Achievements':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ5MzEzMDUzN2ZjNGQzNThjZGIzODdjOWRiMDgwODg4NDZiOGJlNTRmMWMxMWMyNTZhMzdlYjRjNjM4YzAifX19
+    hide_attributes: true
+    priority: 1
+    slot: 38
+    display_name: '&aAchievements'
+    lore:
+    - ''
+    - '&7Earn special rewards for'
+    - '&7accomplishments while adventuring!'
+    - ''
+    - '&8&l» &eClick to open Achievement Menu'
+    click_commands:
+    - "[openguimenu] Achievements"
+
+  'ActiveQuests':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 39
+    display_name: '&aActive Quests'
+    lore:
+    - ''
+    - '&7View your currently active quests!'
+    - ''
+    - '&8&l» &eClick to View Active Quests'
+    click_commands:
+    - "[console] rpgmenu open default-Menus-menu.active %player_name%"
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 40
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[openguimenu] main"
+
+  'UnclaimedQuests':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 41
+    display_name: '&aUnclaimed Quests'
+    lore:
+    - ''
+    - '&7View your unclaimed quest rewards!'
+    - ''
+    - '&8&l» &eClick to View Unclaimed Rewards'
+    click_commands:
+    - "[console] rpgmenu open default-Menus-menu.unclaimed %player_name%"
+
+  'Bounty':
+    material: WHITE_BANNER
+    hide_attributes: true
+    priority: 1
+    slot: 42
+    display_name: '&aBounty Tracker (&6%betonquest_default-Points:point.Bounty.amount%&a)'
+    lore:
+    - ''
+    - '&7Bounties are repeatable quests given'
+    - '&7from the Villagers around the Town!'
+    - ''
+    - '&8&l» &eClick to open Bounty Tracker'
+    click_commands:
+    - "[openguimenu] Bounty"
+
+###TOP ROW
+  'Town':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmUyY2M0MjAxNWU2Njc4ZjhmZDQ5Y2NjMDFmYmY3ODdmMWJhMmMzMmJjZjU1OWEwMTUzMzJmYzVkYjUwIn19fQ==
+    hide_attributes: true
+    priority: 1
+    slot: 10
+    display_name: '&aTown %betonquest_default-Points:point.Town.amount%&a/7'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Town-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Town-menu.1 %player_name%"
+
+  'TheFarm':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aThe Farm %betonquest_default-Points:point.Farm.amount%&a/3'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Farm-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Farm-menu.1 %player_name%"
+    
+  'TheForest':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aThe Forest %betonquest_default-Points:point.Forest.amount%&a/13'
+    lore:
+    - ''
+    - '&cDryad &csummons: %betonquest_default-Points:point.DryadSummon.amount%'
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Forest-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Forest-menu.1 %player_name%"
+
+  'TheMine':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQyMDcwYWNjODE0YmM5NDZlNTk4NzllYzdkYTQ1ZGU5ODRkM2VlOWExNTkzOTNkZWZiNTk4NTNhYmUzYjYifX19
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aMine %betonquest_default-Points:point.Mine.amount%&a/26'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[openguimenu] minequests"
+    left_click_commands:
+    - "[openguimenu] minequests"
+
+  'Graveyard':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YzYmU2NDAxNjczNmJlNDRiMWQ1YTVmM2FkYWI2ZDRjMDQzNzgyYzE3ZGQyOWMzYjhjNGNiNmU3M2Y5ODk4In19fQ==
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    display_name: '&aGraveyard %betonquest_default-Points:point.Graveyard.amount%&a/5'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Graveyard-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Graveyard-menu.1 %player_name%"
+    
+  'Courtyard':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE5ZmIyZTQ5NzAzYzZjYjk1MTE2YmUxNTM2M2M5ZDU2ODllZjIyOWE3NWM2NTVlZjU3NmJlMzYwZWMzY2JlYiJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    display_name: '&aCourtyard %betonquest_default-Points:point.Courtyard.amount%&a/5'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Courtyard-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Courtyard-menu.1 %player_name%"
+    
+  'Castle':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDljMTgzMmU0ZWY1YzRhZDljNTE5ZDE5NGIxOTg1MDMwZDI1NzkxNDMzNGFhZjI3NDVjOWRmZDYxMWQ2ZDYxZCJ9fX0==
+    hide_attributes: true
+    priority: 1
+    slot: 16
+    display_name: '&aCastle %betonquest_default-Points:point.Castle.amount%&a/1'
+    lore:
+    - ''
+    - '&cMorden &csummons: %betonquest_default-Points:point.MordenSummon.amount%'
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Castle-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Castle-menu.1 %player_name%"
+    
+  'Valley':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNjA1MWY3ZjZmNDM5ZDhmMjE0YzIzNGU4ZTJjNDc3NjMwMDUyNDMyZTQyNjA3ZjA0MDRiODQwYjUzY2VhYiJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 19
+    display_name: '&aValley %betonquest_default-Points:point.Valley.amount%&a/1'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Valley-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Valley-menu.1 %player_name%"
+
+  'Estate':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzlkYmEyOWM4ODI4YTQ5MDliOTRhZWU0MmRkYTg4ZTgwNGM1YzJkOGZlZTcwODQ3ZmM2NTRjYzI3MGZmNWQzNiJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    display_name: '&aEstate %betonquest_default-Points:point.Estate.amount%&a/3'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Estate-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Estate-menu.1 %player_name%"
+
+  'GoblinTown':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    display_name: '&aGoblin Town %betonquest_default-Points:point.GoblinVillage.amount%&a/3'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-GoblinVillage-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-GoblinVillage-menu.1 %player_name%"
+    
+  'SpiritGrounds':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI2NWQ5OWVlODgxYjc0MTQ2ZTBmMTk4MDkxMmQ0NzZmZmViYmEyOWUxNTQ5MDM4ZTFkOTQ4ZjQwMTQ0MjJlYiJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    display_name: '&aSpirit Grounds %betonquest_default-Points:point.SpiritGrounds.amount%&a/3'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-SpiritGrounds-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-SpiritGrounds-menu.1 %player_name%"
+
+  'Hell':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgzNTcxZmY1ODlmMWE1OWJiMDJiODA4MDBmYzczNjExNmUyN2MzZGNmOWVmZWJlZGU4Y2YxZmRkZSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    display_name: '&cHell %betonquest_default-Points:point.Hell.amount%&c/7'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    right_click_commands:
+    - "[console] rpgmenu open default-Hell-menu.1 %player_name%"
+    left_click_commands:
+    - "[console] rpgmenu open default-Hell-menu.1 %player_name%"
+
+  'Void':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY5OTRkNzFiODc1ZjA4N2U2NGRlYTliNGEwYTVjYjlmNGViOWFiMGU4ZDkwNjBkZmRlN2Y2ODAzYmFhMTc3OSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 24
+    display_name: '&5Void %betonquest_default-Points:point.Void.amount%/7'
+    lore:
+    - ''
+    - '&8&l» &eClick to View Quests'
+    click_commands:
+    - "[console] rpgmenu open default-Void-menu.1 %player_name%"

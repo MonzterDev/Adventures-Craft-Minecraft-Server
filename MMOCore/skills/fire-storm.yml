@@ -1,0 +1,24 @@
+name: Fire Storm
+lore:
+- Casts a flurry of 6 fire projectiles onto
+- nearby enemies, proritizing the initial
+- target. Each projectile deals &c{damage} &7damage
+- and ignite the target for &c{ignite} &7seconds.
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: BLAZE_POWDER
+damage:
+  base: 5.0
+  per-level: 3.0
+ignite:
+  base: 2.0
+  per-level: 0.1
+mana:
+  base: 15.0
+  per-level: 2.0
+cooldown:
+  base: 5.0
+  per-level: -0.1
+  max: 5.0
+  min: 1.0

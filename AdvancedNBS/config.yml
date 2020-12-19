@@ -1,0 +1,99 @@
+#First of all, if you need support go to : https://gitlab.com/iiztp/advancednbs/-/wikis/home
+#If you find any bugs or have any suggestion : https://gitlab.com/iiztp/advancednbs/-/issues
+
+debug: false
+
+#Fading nb of ticks between two mode or the regions (min 100 ticks), -1 to deactivate
+#Fading type (LINEAR, LOGARITHMIC)
+fading:
+  in:
+    ticks: 100
+    type: LINEAR
+  out:
+    ticks: 100
+    type: LINEAR
+
+#Randomize the playlist
+isRandom: true
+
+mode:
+  #When the player is taking a fight
+  combat: 
+    #Activate versus monsters
+    monsters: true
+    #Activate versus passive animals
+    animals: true
+    #Activate versus players
+    players: true
+    #Names of the combat sounds, found in the combat folder
+    sounds: []
+    
+    #Unique sounds for entities when taking a fight
+    #If activated, this will have the priority over the 'sounds' playlist
+    useEntities: false
+    #Go to the combat folder and create folders named with the name of the entities, and put the songs you want to play in it
+    entities: []
+      
+    #Number of ticks the player is under combat mode
+    ticks: 200
+    #Will the Combat playlist begin/end with a fading
+    fadingIn: true
+    fadingOut: true
+  #When the player has finished a music, it goes under "withoutMusic" mode
+  withoutMusic:
+    #Number of seconds between two musics
+    ticks: 200
+
+#Radios are basically inspired from the Fallout games
+#To create a radio just put the name below and then create a folder in the playlist folder entitled the name you put
+#and then put your nbs files in it
+radios: []
+
+#Does the radio not stop when engaging a fight
+radioHasPriorityOverFights: true
+
+#WorldGuard Only
+#The playlists are a basic folder inside the folder "playlists" (created by the plugin)
+#You need to create it, and then put the .nbs files you want to put as a playlist
+#and then put the {world}.{region} 
+
+WorldGuard:
+#If true, creates the folders of the regions of WorldGuard and you just need to put the .nbs files in it
+  useRegionFolders: false
+
+  playlists:
+    Upbeat:
+      - Spawn.town
+      - Spawn.forest
+      - Spawn.oak_forest
+      - Spawn.dark_oak_forest
+      - Spawn.spruce_forest
+      - Spawn.birch_forest
+      - Spawn.jungle_forest
+      - Spawn.acacia_forest
+      - Spawn.farm
+      - Spawn.mine
+      - Spawn.gold
+      - Spawn.redstone
+      - Spawn.diamond
+      - Spawn.emerald
+    Lowbeat:
+      - Spawn.graveyard
+      - Spawn.courtyard
+      - Spawn.castle
+      - Spawn.hive
+      - Spawn.upper_hell
+      - Spawn.lower_hell
+#QuestCreator Only
+QuestCreator:
+  playlists:
+    #Put here the playlist folders you want and the quests that will play those playlist, when the player(s)
+    #is/are starting the quest and/or completing it
+    start: 
+      example1:
+        - quest1
+        - quest2
+    complete:
+      example2:
+        - quest2
+        - quest3

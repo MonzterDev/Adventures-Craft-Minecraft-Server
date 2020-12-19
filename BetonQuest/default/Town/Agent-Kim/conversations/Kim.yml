@@ -1,0 +1,59 @@
+quester: Kim
+first: greeting
+NPC_options:
+
+  greeting:
+    text: Hey &a%player%&7, what can I help you with?
+    pointers: store, booster, ranks, coins, bye
+
+#booster
+  store:
+    text: "&7You can visit our &eStore &7for in-game rewards! Check it out here &ahttps://store.adventurescraft.net/"
+    pointers: goBack, bye
+
+#booster
+  booster:
+    text: "&aBoosters &7are used to speedup everyone's experience gain for professions and themselves. You can get them from our &eStore&7!"
+    pointers: store, goBack, bye
+
+#Selected from quest1 dialogue, which will start his first quest
+  ranks:
+    text: "&aRanks &7can be purchased from our &eStore&7! Ranks give you some conveniences and other special rewards!"
+    pointers: store, goBack, bye
+
+  coins:
+    text: "&eAdventure Coins &7are a special currency which can be earned in-game and purchased from our &eStore&7! These coins can be used to purchase special &aSkins, Lootboxes, Bank Slots, Boosters, and more&7!"
+    pointers: store, goBack, bye
+
+  bye:
+    text: "Have a great day &a%player%&7, I'm always here to help you!"
+
+#This is how a player responds and what options they have
+player_options:
+#booster
+  booster:
+    text: How do I get &aboosters&f?
+    pointers: booster
+#Bugs
+  ranks:
+    text: What is a &erank&f?
+    pointers: ranks
+#Bugs
+  coins:
+    text: What are &eAdventure Coins&f?
+    pointers: coins
+
+
+#Greeting > Bye    
+  bye:
+    text: That's all I needed, thanks!
+    pointers: bye
+#Greeting > Bye    
+  store:
+    text: Take me to your &eStore&f!
+    pointers: store
+#Town_Info > wow 
+  goBack:
+    text: Thanks, could I ask something else?
+    pointers: greeting
+

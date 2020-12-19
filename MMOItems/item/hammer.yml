@@ -1,0 +1,100 @@
+GOBLIN_HAMMER:
+  base:
+    material: IRON_AXE
+    name: §9Goblin Hammer
+    unbreakable: true
+    tier: RARE
+    attack-damage: 40.0
+    critical-strike-power: 25.0
+    hide-enchants: true
+    lore:
+    - §fIncreased damage against Goblins!
+    gem-sockets:
+    - Uncolored
+    durability: 2.0
+GRAVE_DIGGER:
+  base:
+    material: DIAMOND_SHOVEL
+    unbreakable: true
+    tier: EXOTIC
+    name: §eGrave Digger
+    disable-smelting: true
+    disable-crafting: true
+    disable-repairing: false
+    faction-damage-undead: 100.0
+    attack-damage: 150.0
+    critical-strike-power: 50.0
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    two-handed: true
+    movement-speed: -0.1
+    custom-model-data: 18.0
+    durability: 1.0
+    critical-strike-chance: 20.0
+CHIEF_HAMMER:
+  base:
+    material: GOLDEN_AXE
+    name: §5Chief's Hammer
+    attack-damage: 85.0
+    critical-strike-chance: 35.0
+    unbreakable: true
+    tier: LEGENDARY
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 150.0
+        length: .1
+        mana: 25.0
+    lore:
+    - §7Dash forward dealing §c150 damage§7!
+    - §7
+    - §7Stolen from the §cGoblin Chief§7!
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    durability: 2.0
+BULLBO_ARM:
+  base:
+    material: IRON_AXE
+    name: §9Bullbo Arm
+    attack-speed: 1.0
+    attack-damage: 150.0
+    critical-strike-chance: 50.0
+    unbreakable: true
+    tier: RARE
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 1000.0
+        length: .25
+        mana: 25.0
+        cooldown: 5.0
+    lore:
+    - §7Torn off a §cBullbo§7!
+    gem-sockets:
+    - Uncolored
+BULLBO_ARM2:
+  base:
+    material: GOLDEN_AXE
+    name: §5Bullbo Arm
+    attack-damage: 215.0
+    attack-speed: 1.5
+    critical-strike-chance: 75.0
+    unbreakable: true
+    tier: LEGENDARY
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 2500.0
+        length: .5
+        mana: 50.0
+        cooldown: 7.5
+    lore:
+    - §7Torn off a §cBullbo§7!
+    gem-sockets:
+    - Uncolored
+    - Uncolored

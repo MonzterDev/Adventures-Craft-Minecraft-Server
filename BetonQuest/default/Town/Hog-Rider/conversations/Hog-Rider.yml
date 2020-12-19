@@ -1,0 +1,48 @@
+quester: Hog-Rider
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "Yaaaa &a%player%&7, you wanna ride a HOG?"
+    pointers: Player_Response1, Player_Response2, Player_Response3, bye
+
+  NPC_Text1:
+    text: "&7You gotta go talk to &aJane &7in the barn behind me! She keeps track of our animals."
+    pointers: goBack, bye
+
+  NPC_Text2:
+    text: "&7Of course you can have one silly! Come ride the Hogs with me!"
+    pointers: goBack, bye
+
+  NPC_Text3:
+    text: "&7I'm a &aHOG RIDAAAAAA&7, of course I've raided villages! I even took down a Town Hall myself!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fHow can I ride?"
+    pointers: NPC_Text1
+
+  Player_Response2:
+    text: "Can I have a &aHOG&f?"
+    pointers: NPC_Text2
+    conditions: "!HogGiven"
+    events: GiveHog, Tag_HogGiven
+
+  Player_Response3:
+    text: "&fHave you raided a village?"
+    pointers: NPC_Text3
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

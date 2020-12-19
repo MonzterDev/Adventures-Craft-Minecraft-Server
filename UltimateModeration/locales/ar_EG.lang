@@ -1,0 +1,205 @@
+# General Messages
+
+general:
+  nametag:
+    prefix: '&7[&6UltimateModeration&7]'
+# Command Messages
+command:
+  clearchat:
+    cleared: '&6%player% &7masa7a almo7adatha!'
+    immune: '&aKont mane3an limas7 almo7adatha besbb ozonatka.'
+  togglechat:
+    toggledOn: '&aTama il3''a2 katm 9ot almo7adatha al3alameya...'
+    toggledOff: '&caTama katm 9ot almo7adatha al3alameya...'
+    bypass: '&aKont mane3an litabdel almo7adatha besbb ozonatika.'
+    muted: '&calmo7adatha mo3a6la 7aleyan, 7awel mara o5ra la7ekan.'
+  vanish:
+    toggledOn: '&7Anta al2an mo5tafyan.'
+    toggledOff: '&7Anta al2an mar2yan.'
+  freeze:
+    add: '&7La8ad jamadt alla3eb &6%player%&7 benaja7.'
+    remove: '&7You have unfrozen &6%player%&7 benaja7.'
+    alertadd: '&7La8ad jomedt.'
+    alertremove: '&7Laqad tam ta7rerok men altajmet.'
+    nope: '&cAnta la yumkinuk fe3l zalek la2nka motajamedon 7aleyan...'
+  revive:
+    noloot: '&cLam yatema al3othor 3ala ay 3''anema le7ya2 haza alla3eb beha'
+    success: '&7La8ad a3adt e7ya2 alla3eb &6%player% &7benaja7.'
+    revived: '&7Laqad tam e7ya2ok.'
+  spy:
+    returned: '&7Tama irja3ouk ela maw8e3oka alsabe8'
+    success: '&7Anta al2an tatajss 3ala &6%player%&7. aista5dem al2amr &6/spy &7lekay ta3ood ela maw8e3oka alsabeq&7'
+    cant: La yomkenoka altajasos 3ala nafsik.
+  commandspy:
+    deny: '&6%player%&7: %command%&7.'
+    toggleOn: '&72amr altajasos mafto7'
+    toggleOff: '&72amr altajasos mo3''lak'
+# Event Messages
+event:
+  general:
+    nopermission: '&cAnta la tamlok al2ezn letaf3l zalek.'
+  command:
+    blocked: '&cAnta la tasta6e3 iste5dam haza al2amr...'
+  punish:
+    reason: ' &7besbb &6%reason%'
+    theirduration: '&7. &7Saof yorf3 3e8abehom 5elal&6%duration%'
+    yourduration: '&7. &7Saof yorf3 3e8abeka 5elal&6%duration%'
+  ban:
+    success: '&7La8ad 7azart &6%player%'
+    message: '&7La8ad tama 7azroka besbb &6%reason%&7. 7azroka Saof yantahy ba3d &6%duration%&7.'
+    already: '&cHaza alsha59 ma7zor belfe3l.'
+  unban:
+    success: '&7La8ad rafa3t al7azr 3an &6%player%'
+  mute:
+    success: '&7La8ad katamt 9ot &6%player%'
+    message: '&7La8ad tam katm 9oteka'
+    already: '&cHaza alsha59 maktom 9otoh belfe3l.'
+  unmute:
+    success: '&7La8ad rafa3t katm al9ot 3an &6%player%'
+  kick:
+    success: '&7La8ad 6aradt &6%player%'
+    message: '&7La8ad tam 6ordeka besbb &6%reason%&7.'
+  warning:
+    success: '&7La8ad 7azart &6%player%'
+    message: '&7La8ad tam ta7zerok'
+  staffchat:
+    leave: '&7Anta 3''adart &6%channel% &7benaja7.'
+    join: '&7Anta da5alt &6%channel% &7benaja7.'
+    allleave: '&6%player% &73''adar al8anah.'
+    alljoin: '&6%player% da5alal8anah.'
+    nochannels: '&cAnta lasto fe ay 8anah.'
+    format: '&%color%[%channel%] %player%&%color%: %message%'
+  slowmode:
+    wait: '&7alwad3 alba6e2 &6%delay% &7sawany motaba8eya.'
+    done: '&7alwad3 alba6e2 nafaz wa8toh.'
+    enabled: '&7alwad3 alba6e2 fo3el beta25er &6%delay%&7.'
+    disabled: '&7Anta 3a6alt alwad3 alba6e2.'
+# GUI Messages
+gui:
+  general:
+    previous: '&6al9af7a alsabeqa'
+    next: '&6al9af7a altaleya'
+    back: '&6Rojo3'
+    none: la shay2
+    permanent: da2em
+    reason: Sabb
+    templatename: Aism al8aleb
+  players:
+    title: '&8alla3eboon'
+    click: '&6Un8ur le3ard alla3eb.'
+    notickets: '&7La tujad tazaker mafto7a 7awl haza alla3eb.'
+    tickets: '&7Haza alla3eb ladayeh &6%amount% &7tazkara mafto7a.'
+    ticketsone: '&7Haza alla3eb ladayeh &6tazkara &7wa7eda mafto7a.'
+    nowarnings: '&7Lam tosajalay ta7zerat.'
+    warnings: '&7Haza alla3eb 7a9al3ala &6%amount% &7ta7zer.'
+    warningsone: '&7Haza alla3eb 7a9al3ala &6ta7zer &7wa7ed.'
+    online:
+      online: Motasel
+      offline: 3'er motasel
+      both: kilahuma
+    button:
+      tickets: '&7Tazaker'
+      templatemanager: '&6&lModer al8aleb'
+    name: Aism alla3eb
+    search: '&7Eb7ath 3an alla3eb'
+    nonefound: '&cLam yatem al3othor 3ala alla3eben.'
+  templateselector:
+    title: '&8E5tar 8aleb'
+    click: '&7Un8ur le ta5tar haza al8aleb.'
+  templatemanager:
+    title: '&8Al8awalib'
+    create: '&6&lE9na3 8aleban'
+    leftclick: '&7Un8ur be alzir alaysar leky to3adel.'
+    rightclick: '&7Un8ur be alzir alayman leky tahdem.'
+  punishments:
+    title: '&8%toModerate% > Al3awa8eb'
+    reason: '&6Sabb'
+    duration: '&6almoda alawaleya'
+    punisher: '&6almo3a8eb'
+    remaining: '&6alwa8t almotaba8y'
+    click: '&7Un8ur l2enha2 hazehe al3o8oba.'
+    activity:
+      both: kilahuma
+      active: Nashe6
+      expired: Montahy
+  punishmenttypes:
+    all: Alkol
+    ban: 7azr
+    kick: 6ard
+    warning: Ta7zer
+    mute: Katm al9ot
+  punish:
+    title:
+      template: '&8E9na3 8aleban'
+      message: '&8%toModerate% > 3a8eb'
+    submit: '&a&lIrsal'
+    type:
+      punishment:
+        click: '&7Un8ur litabdel alno3.'
+        message: '&6&l3e8ab'
+      template:
+        current: '&7almo7dad 7aleyan: &6%template%&7.'
+        none: '&7La tojod 8awaleb lile5tyar men bayneha.'
+        click: '&7Un8ur lie5tyar al8aleb.'
+        message: '&6&lal8aleb'
+      name:
+        current:
+          click: '&7Un8ur lita8yer alaism.'
+          message: '&7Madbot 7aleyan 3ala: &6%name%&7.'
+        message: '&6&lalaism'
+      duration:
+        leftclick: '&7Un8ur be alzir alaysar litad3 moda.'
+        rightclick: '&7Un8ur be alzir alayman litad3ha da2ema.'
+        current: '&7Madbota 7aleyan 3ala:'
+        message: '&c&lModa'
+      reason:
+        click: '&7Un8ur litad3 sabban.'
+        current: '&7Madbota 7aleyan 3ala:'
+        message: '&b&lSabb'
+    template:
+      create: '&7Un8ur leta9na3 8aleban'
+      create2: '&7mn haza al3e8ab.'
+      leftclick: '&7Un8ur be alzir alaysar lekay to7adeth al'
+      leftclick2: '&78aleb &6%template%&7.'
+      rightclick: '&7Un8ur be alzir alayman lita7fz ka8aleb jaded.'
+  player:
+    title: '&8Alla3been > %toModerate%'
+    punish: '&6&l3a8eb'
+    moderate: '&b&lIshraf'
+    punishments: '&c&lAl3awaqeb'
+    notes: '&a&lMola7azat'
+    tickets: '&7&lTazaker'
+  moderate:
+    title: '&8%toModerate% > Ishraf'
+  notes:
+    title: '&8%tonotes% > Mola7azat'
+    create: '&6E9na3 mola7aza'
+    remove: '&cUn8ur lilizala'
+    type: Oktob fe mola7azatak.
+    createdon: '&7Tama insha2oha fe &6%sent%&7.'
+    createdby: '&7Tama insha2oha 3ala yad &6%player%&7.'
+  tickets:
+    title: '&8&lTazaker'
+    titlesingle: '&8%toModerate% > Tazaker'
+    create: '&6E9na3 tazkaratan'
+    click: '&6Un8ur lekay tudir.'
+    player: '&7La3eb &6%player%&7.'
+    what: '&6Maza turid an ta8ol fe awaltazkaratin lak?'
+    subject: Mawdo3 altazkara
+  ticket:
+    title: '&8Tazaker > %subject% %id%'
+    type: '&7No3 &6%type%&7.'
+    picktype: '&8E5tar no3 altazkara.'
+    clicktotele: '&6Enta8el ela mawke3 altazkara.'
+    createdon: '&7Tama insha2oha fe &6%sent%&7.'
+    respond: '&6Rad'
+    status: '&7Al7ala &6%status%&7.'
+    postedby: '&7Manshora 3ala yad &6%player%&7.'
+    what: '&6Maza turid an ta8ol?'
+notify:
+  block:
+    main: '&a 7afar [&6%material%&a] fe &6'
+  ticket:
+    created: '&7[UM] &a[Tazkara #%tid% - %type% - %player%&a] Tam insha2oha!'
+    status: '&7[UM] &a[Tazkara #%tid% - %type% - %player%&a] 7ala jadeda: &6%status%'
+    response: '&7[UM] &a[Tazkara #%tid% - %type% - %player%&a] Ladayha radon jaded!'

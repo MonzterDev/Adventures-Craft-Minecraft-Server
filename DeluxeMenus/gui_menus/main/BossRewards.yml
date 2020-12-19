@@ -1,0 +1,377 @@
+menu_title: '&f&l»&7&l» &8Boss Rewards &7&l«&f&l«'
+open_command: BossRewards
+update_interval: 1    
+size: 54
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+
+  'Info':
+    material: OAK_SIGN	
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aWorld Bosses'
+    lore:
+    - ''
+    - '&fBosses have been spread around'
+    - '&fthe world for you to defeat!'
+    - ''
+    - '&fSome bosses spawn periodically, while'
+    - '&fothers may require a Quest completed!'
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 49
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] main"
+    left_click_commands:
+    - "[commandevent] main"
+
+
+  'Reaper':
+    material: basehead-eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: Reaper.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cReaper'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Reaper Companion &f.65%'
+    - '&8&l» &5Golden Skull &f.85%'
+    - '&8&l» &eBone Whip &f.95%'
+    - '&8&l» &9Reaper Head &f1%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'Reaper2':
+    material: basehead-eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Reaper.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cReaper'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Reaper Companion &f.65%'
+    - '&8&l» &5Golden Skull &f.85%'
+    - '&8&l» &eBone Whip &f.95%'
+    - '&8&l» &9Reaper Head &f1%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_Reaper%'
+  
+  'Morden':
+    material: basehead-eyJ0aW1lc3RhbXAiOjE1ODYxMTkyMzk1MzAsInByb2ZpbGVJZCI6Ijc1MTQ0NDgxOTFlNjQ1NDY4Yzk3MzlhNmUzOTU3YmViIiwicHJvZmlsZU5hbWUiOiJUaGFua3NNb2phbmciLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVmYzExMTFmYzBlMGYyYzAwNDBjOTVlZDBhNjkwZWM5YWIwZDMyZTNjMDZhNTRiMTAxYzI0Mjc2MGYxMjY3ZWUifX19
+    slot: 21
+    hide_attributes: true
+    priority: 1
+    display_name: '&cMorden the Undead'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Morden Flesh &f100%'
+    - '&8&l» &5Morden Head &f.5%'
+    - '&8&l» &5Morden Chestplate &f.25%'
+    - '&8&l» &5Morden Leggings &f.25%'
+    - '&8&l» &5Morden Boots &f.5%'
+    - '&8&l» &5Undead Gem &f.5%'
+    - '&8&l» &9UnDead Catalyst &f1%'
+    - '&8&l» &5Undead Bow &f.1%'    
+    - '&8&l» &5Undead Bone Sword Skin &f2%'    
+    - '&8&l» &5Dead Catalyst &f1%'    
+    - '&8&l» &eUndead Gem &f1%'    
+    - '&8&l» &eGrave Digger &f.5%'    
+    - '&8&l» &eBone Sword &f.25%'    
+    - '&8&l» &eMorden Companion &f.05%'    
+    
+  'Dracula':
+    material: basehead-eyJ0aW1lc3RhbXAiOjE1NjM1NzMwMjMzMzQsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIyYzJlOGFiNDg5ODY0OGQyYjYwOGU2MzA0MDJlNzM0YzQ4ODc0ZTE3ZTBhODU0OGExOTAxMmQ4MDY2MzYzNiJ9fX0=
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: Dracula.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cVoid Dracula'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &2Dracs Heart &f25%'
+    - '&8&l» &2Steak &f7%'
+    - '&8&l» &2Dracs Dagger &f5%'
+    - '&8&l» &9Steak &f3%'
+    - '&8&l» &9Dracs Dagger &f2%'
+    - '&8&l» &9Void Dracula Head &f5%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'Dracula2':
+    material: basehead-eyJ0aW1lc3RhbXAiOjE1NjM1NzMwMjMzMzQsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIyYzJlOGFiNDg5ODY0OGQyYjYwOGU2MzA0MDJlNzM0YzQ4ODc0ZTE3ZTBhODU0OGExOTAxMmQ4MDY2MzYzNiJ9fX0=
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Dracula.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cVoid Dracula'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &2Dracs Heart &f25%'
+    - '&8&l» &2Steak &f7%'
+    - '&8&l» &2Dracs Dagger &f5%'
+    - '&8&l» &9Steak &f3%'
+    - '&8&l» &9Dracs Dagger &f2%'
+    - '&8&l» &9Void Dracula Head &f5%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_mVoidDracula1%'
+
+  'GoblinChief':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+    slot: 23
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: GoblinChief.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cGoblin Chief'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &2Goblin Hammer &f5%'
+    - '&8&l» &9Goblin Chief Head &f5%'
+    - '&8&l» &eChief Hammer &f2%'
+    - '&8&l» &eChief Jukebox &f.5%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'GoblinChief2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+    slot: 23
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: GoblinChief.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cGoblin Chief'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &2Goblin Hammer &f5%'
+    - '&8&l» &9Goblin Chief Head &f5%'
+    - '&8&l» &eChief Hammer &f2%'
+    - '&8&l» &eChief Jukebox &f.5%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_eGoblinChief%'
+
+  'VoidWither':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
+    slot: 24
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: VoidWither.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cVoid Wither'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Void Wither Head &f5%'
+    - '&8&l» &5Cursed Helmet &f.95%'
+    - '&8&l» &5Cursed Boots &f1%'
+    - '&8&l» &5Cursed Chestplate &f.65%'
+    - '&8&l» &5Cursed Leggings &f.75%'
+    - '&8&l» &eDevil Helmet &f.025%'
+    - '&8&l» &eDevil Boots &f.025%'
+    - '&8&l» &eDevil Chestplate &f.01%'
+    - '&8&l» &eDevil Leggings &f.01'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'VoidWither2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
+    slot: 24
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: VoidWither.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cVoid Wither'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Void Wither Head &f5%'
+    - '&8&l» &5Cursed Helmet &f.95%'
+    - '&8&l» &5Cursed Boots &f1%'
+    - '&8&l» &5Cursed Chestplate &f.65%'
+    - '&8&l» &5Cursed Leggings &f.75%'
+    - '&8&l» &eDevil Helmet &f.025%'
+    - '&8&l» &eDevil Boots &f.025%'
+    - '&8&l» &eDevil Chestplate &f.01%'
+    - '&8&l» &eDevil Leggings &f.01'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_HellWither%'
+
+  'VoidMagma':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=
+    slot: 29
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: VoidMagma.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cVoid Magma'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Magma Coin &f5%'
+    - '&8&l» &9Void Magma Head &f5%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'VoidMagma2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=
+    slot: 29
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: VoidMagma.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cVoid Magma'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Magma Coin &f5%'
+    - '&8&l» &9Void Magma Head &f5%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_HellVoidMagma%'
+
+  'Ghastly':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
+    slot: 30
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: Ghastly.Timer          
+    hide_attributes: true
+    priority: 0
+    display_name: '&cGhastly'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Ghastly &f.5%'
+    - '&8&l» &eDevil Helmet &f.3%'
+    - '&8&l» &eDevil Boots &f.3%'
+    - '&8&l» &eDevil Chestplate &f.25%'
+    - '&8&l» &eDevil Leggings &f.25'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'Ghastly2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
+    slot: 30
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Ghastly.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cGhastly'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Ghastly Head &f.5%'
+    - '&8&l» &eDevil Helmet &f.3%'
+    - '&8&l» &eDevil Boots &f.3%'
+    - '&8&l» &eDevil Chestplate &f.25%'
+    - '&8&l» &eDevil Leggings &f.25'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_GHAST_BOSS%'

@@ -1,0 +1,107 @@
+# Void Blaze  
+VOIDBLAZE:
+  Skills:
+  - shoot{type=snowball;velocity=1;damage=35} @target
+  - delay 2    
+  - shootfireball{y=1;v=1;ps=true;smallfireball=false;i=true;ft=60} @target
+  
+  
+# Void Necromancer  
+NECROSUMMON1:
+  Conditions:
+  - mobsinradius_ext{mobtypes=VOID_DEMON;a=5to10;r=50;action=FALSE}
+  Skills:
+  - summon{type=VOID_DEMON;amount=1;radius=4} @target
+
+# Void Necro  
+NECROSHOOT:
+  Skills:
+  - shoot{type=snowball;velocity=1;damage=35}
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} 
+  - delay 2    
+  - shootfireball{y=1;v=1;ps=true;smallfireball=false;i=true;ft=60} 
+  
+# Void Necro  2
+NECROSHOOT2:
+  Skills:
+  - shoot{type=snowball;velocity=1;damage=55}
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true} 
+  - delay 2    
+  - shootfireball{y=1;v=1;ps=true;smallfireball=false;i=true;ft=60} 
+  
+  
+#### Void Wither Shot projectiles
+WITHERTP:
+  Skills:
+  - teleportto{location=-237,60,-1229;y=-167.6;p=9.2}
+#### Void Wither Shot projectiles
+WITHERSHOOT:
+  Skills:
+  - shoot{type=arrow;velocity=1;damage=35}
+  - shootskull{y=1;ps=true} 
+# Void Wither damage PIR 50 every 5 secs
+WITHERDMG:
+  Skills:
+  - damage{amount=10;ignoreArmor=false}
+
+# Void Wither summons Protector
+VPROT1:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VPROT2:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VPROT3:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VPROT4:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+# Void Wither damages himself   
+VWSELFDMG:
+  Skills:
+  - message{m="&fThe &c<mob.name> &fhas been hurt!"} @PIR{r=100}
+  - damage{amount=5000;ignoreArmor=false} @self 
+  - effect:sound{s=entity.wither.hurt;v=1;p=1} @PIR{r=200}
+  - delay 20  
+  - effect:sound{s=entity.wither.hurt;v=1;p=1} @PIR{r=200}
+  - delay 20  
+  - effect:sound{s=entity.wither.hurt;v=1;p=1} @PIR{r=200}
+
+#Void Protector uses this to signal Boss Damage upon Death
+VWMINIONDMGBOSS:
+  Skills:
+  - signal{s=WSELFDMG} @MIR{r=200;t=WITHER_MINI_BOSS} 
+# Void Wither summons Protector
+VHEALER:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_HEALER;amount=2;radius=4} @self
+   
+  
+##### MAGMA
+SummonMagma1:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+SummonMagma2:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+SummonMagma3:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+SummonMagma4:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+  
