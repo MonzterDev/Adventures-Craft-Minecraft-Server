@@ -1,5 +1,7 @@
 import:
     org.bukkit.event.player.PlayerDropItemEvent
+    net.Indyuce.mmoitems.MMOItems
+    net.Indyuce.mmoitems.api.Type
 
 on PlayerDropItemEvent with priority HIGHEST:
     set {_p} to event.getPlayer()
@@ -114,3 +116,12 @@ on PlayerDropItemEvent with priority HIGHEST:
                 wait 4 seconds
                 if {_oldExotic} = {Exotic::%{_p}%}:
                     set {Exotic::%{_p}%} to 0
+
+
+
+#on PlayerDropItemEvent with priority HIGHEST:
+#    set {_p} to event.getPlayer()
+#    set {_item} to event.itemManager.getMMOItem(MMOItems.plugin.getTypes().get("SWORD"), "BASIC_SWORD")
+#    event.itemManager.getMMOItem(MMOItems.plugin.getTypes().get("SWORD"), "BASIC_SWORD")
+#    broadcast "%{_item}%"
+                

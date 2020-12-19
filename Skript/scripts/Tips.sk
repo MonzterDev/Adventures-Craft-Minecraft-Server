@@ -1,23 +1,32 @@
 on load:
-	set {msglists::1} to "&8[&e♦&8] &7Join our &9Discord &a<tooltip:&aClick to join the Discord!><url:https://discord.com/invite/bw4DztR>https://discord.com/invite/bw4DztR<reset>&7!" 
-	set {msglists::2} to "&8[&e♦&8] &7You can view all &aQuests &7by doing /&aquestmenu&7!" 
+	set {msglists::1} to "&8[&e♦&8] &7Join our <tooltip:&aClick to join the Discord!><url:https://discord.com/invite/bw4DztR>&9Discord<reset>&7!" 
+	set {msglists::2} to "&8[&e♦&8] &7You can view all &aQuests &7by using /&aQuests&7!" 
+	set {msglists::2.2} to "&8[&e♦&8] &7You can view your currently &aActive Quests &7by using /&aActiveQuests&7!" 
+	set {msglists::2.1} to "&8[&e♦&8] &7You can find unclaimed &aQuests &7inside your /&aUnclaimedQuests&7!" 
 	set {msglists::3} to "&8[&e♦&8] &7You earn 1 &aAttribute Point &7by leveling up! Do &a/Attributes &7to use &7your points." 
 	set {msglists::4} to "&8[&e♦&8] &aBounties &7are daily quests you can get from folks around the &7Town!" 
 	set {msglists::5} to "&8[&e♦&8] &7Your &aQuest Journal &7is meant to guide you on each quest!" 
-	set {msglists::6} to "&8[&e♦&8] &7Use your &aQuest Menu &7to track your quest progress by doing &a/questmenu&7!" 
+	set {msglists::6} to "&8[&e♦&8] &7Use your &aQuest Menu &7to track your quest progress by using &a/Quests&7!" 
 	set {msglists::7} to "&8[&e♦&8] &9Enchanted Materials &7can all be crafted within a crafting table!" 
 	set {msglists::8} to "&8[&e♦&8] &7Track &cBosses &7around the world in your &aBoss Dex&7!" 
 	set {msglists::9} to "&8[&e♦&8] &7Your &aBank &7can be expanded with &eBank Tokens&7!" 
 	set {msglists::10} to "&8[&e♦&8] &7Leveling up Professions allow you to craft new things!" 
-	set {msglists::11} to "&8[&e♦&8] &7You can donate to get epic rewards from our Store: &a<tooltip:&aClick to visit the Store!><url:https://store.adventurescraft.net>store.AdventuresCraft.net<reset>&7!" 
+	set {msglists::11} to "&8[&e♦&8] &7You can donate to get epic rewards from our <tooltip:&aClick to visit the Store!><url:https://store.adventurescraft.net>&6&lSTORE<reset>&7!" 
 	set {msglists::12} to "&8[&e♦&8] &7It's recommended to play on at least &a1.15.2+ &7as older versions &7will be less compatible, but still work!" 
 	set {msglists::13} to "&8[&e♦&8] &7You can get another &aQuest Journal &7at anytime by using your &aMenu &7or typing &a/Journal&7!" 
 	set {msglists::14} to "&8[&e♦&8] &7Use &a/Spawn &7if you're stuck!" 
 	set {msglists::15} to "&8[&e♦&8] &7Want some free &9Enchanted Materials&7? You can vote for our Server on a few sites! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&7!" 
 	set {msglists::16} to "&8[&e♦&8] &9Engrams &7can be brought to the &aCryptarch &7above the &aWizard &7to be decrypted for rewards!" 
 	set {msglists::17} to "&8[&e♦&8] &7Want more in-depth and accurate information about the server? Checkout our <tooltip:&6&lWIKI><url:https://www.adventurescraft.net/wiki/site/index.html>&6&lWIKI<reset>&7!" 
+	set {msglists::18} to "&8[&e♦&8] &7You can hover over a player's name in chat to view their stats!" 
+	set {msglists::19} to "&8[&e♦&8] &7You can view a player's profile by using &a/pv <Name>&7!" 
+	set {msglists::20} to "&8[&e♦&8] &7You can add others to your &efriends list &7by using &a/f add <Name>&7!" 
+	set {msglists::21} to "&8[&e♦&8] &7You can invite others to a &9party &7by using &a/p invite <Name>&7!" 
+	set {msglists::22} to "&8[&e♦&8] &7Use &a/home &7to quickly travel home!" 
+	set {msglists::23} to "&8[&e♦&8] &5Legendary Engrams &7have a very rare chance of dropping from any enemy!" 
+	set {msglists::24} to "&8[&e♦&8] &5You can easily view vendor shops by using &a/Shop <Name>&7!" 
 
-every 90 seconds in "Spawn":
+every 90 seconds:
 	send formatted "%random element of {msglists::*}%" to all players where [input has permission "Tips"]
 
 on join:

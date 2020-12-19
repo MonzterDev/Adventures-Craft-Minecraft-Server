@@ -1,0 +1,491 @@
+menu_title: '&f&l»&7&l» &8Prestige Tags &7&l«&f&l«'
+update_interval: 1    
+size: 45
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 52
+    - 53
+    - 54
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 36
+    priority: 1
+    display_name: '&aPrevious Page'
+    click_commands:
+    - "[openguimenu] ProfessionPrestiges"
+
+
+#ENCHANTING
+  'ENCHANTING_LOCKED':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: ENCHANTING.PRESTIGE.1.CLAIMED              
+    display_name: "&fWizard✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fWizard✦'
+    - ''
+    - '&7Reach &aEnchanting Prestige 1 &7to unlock!'
+  'ENCHANTING_UNLOCKED':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 11
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: ENCHANTING.PRESTIGE.1.CLAIMED              
+    display_name: "&fWizard✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fWizard✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&fWizard✦ "'
+    - "[message] &aYour Battle Tag has been changed to &fWizard✦&a!"
+
+  'ENCHANTING_LOCKED2':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: ENCHANTING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Wizard✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Wizard✦'
+    - ''
+    - '&7Reach &aEnchanting Prestige 2 &7to unlock!'
+  'ENCHANTING_UNLOCKED2':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 12
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: ENCHANTING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Wizard✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Wizard✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Wizard✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Wizard✦&a!"
+
+  'ENCHANTING_LOCKED3':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: ENCHANTING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Wizard✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Wizard✦✦'
+    - ''
+    - '&7Reach &aEnchanting Prestige 3 &7to unlock!'
+  'ENCHANTING_UNLOCKED3':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 13
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: ENCHANTING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Wizard✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Wizard✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Wizard✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Wizard✦✦&a!"
+
+  'ENCHANTING_LOCKED4':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 14
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: ENCHANTING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Wizard✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Wizard✦✦'
+    - ''
+    - '&7Reach &aEnchanting Prestige 4 &7to unlock!'
+  'ENCHANTING_UNLOCKED4':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 14
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: ENCHANTING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Wizard✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Wizard✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Wizard✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Wizard✦✦&a!"
+
+  'ENCHANTING_LOCKED5':
+    material: BOOK
+    hide_attributes: true
+    priority: 1
+    slot: 15
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: ENCHANTING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Wizard✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Wizard✦✦'
+    - ''
+    - '&7Reach &aEnchanting Prestige 5 &7to unlock!'
+  'ENCHANTING_UNLOCKED5':
+    material: ENCHANTED_BOOK
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 15
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: ENCHANTING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Wizard✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Wizard✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Wizard✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Wizard✦✦&a!"
+
+#SPELLFORGING
+  'SPELLFORGING_LOCKED':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SPELLFORGING.PRESTIGE.1.CLAIMED              
+    display_name: "&fMagical✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fMagical✦'
+    - ''
+    - '&7Reach &aSpellforging Prestige 1 &7to unlock!'
+  'SPELLFORGING_UNLOCKED':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 20
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SPELLFORGING.PRESTIGE.1.CLAIMED              
+    display_name: "&fMagical✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &fMagical✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&fMagical✦ "'
+    - "[message] &aYour Battle Tag has been changed to &fMagical✦&a!"
+
+  'SPELLFORGING_LOCKED2':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SPELLFORGING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Magical✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Magical✦'
+    - ''
+    - '&7Reach &aSpellforging Prestige 2 &7to unlock!'
+  'SPELLFORGING_UNLOCKED2':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 21
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SPELLFORGING.PRESTIGE.2.CLAIMED              
+    display_name: "&2✦Magical✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &2✦Magical✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Magical✦ "'
+    - "[message] &aYour Battle Tag has been changed to &2✦Magical✦&a!"
+
+  'SPELLFORGING_LOCKED3':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SPELLFORGING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Magical✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Magical✦✦'
+    - ''
+    - '&7Reach &aSpellforging Prestige 3 &7to unlock!'
+  'SPELLFORGING_UNLOCKED3':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 22
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SPELLFORGING.PRESTIGE.3.CLAIMED              
+    display_name: "&9✦Magical✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &9✦Magical✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Magical✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &9✦Magical✦✦&a!"
+
+  'SPELLFORGING_LOCKED4':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SPELLFORGING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Magical✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Magical✦✦'
+    - ''
+    - '&7Reach &aSpellforging Prestige 4 &7to unlock!'
+  'SPELLFORGING_UNLOCKED4':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 23
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SPELLFORGING.PRESTIGE.4.CLAIMED              
+    display_name: "&5✦✦Magical✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &5✦✦Magical✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Magical✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &5✦✦Magical✦✦&a!"
+
+  'SPELLFORGING_LOCKED5':
+    material: PAPER
+    hide_attributes: true
+    priority: 1
+    slot: 24
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: SPELLFORGING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Magical✦✦ &c&lLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Magical✦✦'
+    - ''
+    - '&7Reach &aSpellforging Prestige 5 &7to unlock!'
+  'SPELLFORGING_UNLOCKED5':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 2
+    slot: 24
+    enchantments:
+    - THORNS;1
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: SPELLFORGING.PRESTIGE.5.CLAIMED              
+    display_name: "&e✦✦✦Magical✦✦ &a&lUNLOCKED"
+    lore:
+    - ''
+    - '&aBattle Tag: &e✦✦✦Magical✦✦'
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Magical✦✦ "'
+    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Magical✦✦&a!"
+
+
+  'TAG_RESET':
+    material: NAME_TAG
+    hide_attributes: true
+    priority: 1
+    slot: 40
+    display_name: "&aReset Tag"
+    lore:
+    - ''
+    - '&8&l» &eClick to Use'
+    click_commands:
+    - "[console] lp user %player_name% meta removesuffix 1"
+    - "[message] &aYour Battle Tag has been reset!"
+
+

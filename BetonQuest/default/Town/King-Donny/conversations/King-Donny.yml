@@ -1,0 +1,42 @@
+quester: King-Donny
+first: greeting
+NPC_options:
+
+  greeting:
+    text: Hey &a%player%&7, what shall I do for you today?
+    pointers: prestige, prestigeMenu, bye
+
+#booster
+  prestige:
+    text: "&7While you work your way through a Profession, you can reach mastery rank once you hit level 10! Once you're level 10, you can chose to prestige, wiping your current Profession level and receiving some nice rewards! You can work your way back through the rankings and prestige numerous times."
+    pointers: goBack, bye
+
+#Selected from quest1 dialogue, which will start his first quest
+  prestigeMenu:
+    text: "&aRanks &7can be purchased from our &eStore&7! Ranks give you some conveniences and other special rewards!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Have a great day &a%player%&7, I'm always here to help you!"
+
+#This is how a player responds and what options they have
+player_options:
+#booster
+  prestige:
+    text: What are &aProfession Prestiges&f?
+    pointers: prestige
+#Bugs
+  prestigeMenu:
+    text: Can I see the &ePrestige Menu&f?
+    events: prestigeMenu
+
+
+#Greeting > Bye    
+  bye:
+    text: That's all I needed, thanks!
+    pointers: bye
+#Town_Info > wow 
+  goBack:
+    text: Thanks, could I ask something else?
+    pointers: greeting
+
