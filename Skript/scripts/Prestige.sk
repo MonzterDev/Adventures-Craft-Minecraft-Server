@@ -1,0 +1,696 @@
+#FARMING
+command /FarmingPrestige1:
+    trigger:
+        set {_farming} to placeholder "mmocore_profession_Farming" from player
+        if player doesn't have permission "FARMING.PRESTIGE.1.CLAIMED":
+            if {_farming} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set FARMING.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set FARMING.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY FARMER_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% farming 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fFarmer Tote"
+                send "&8&l» &fFarmer✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /FarmingPrestige2:
+    trigger:
+        set {_farming} to placeholder "mmocore_profession_Farming" from player
+        if player has permission "FARMING.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "FARMING.PRESTIGE.2.CLAIMED":
+                if {_farming} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY FARMER_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% farming 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Farmer Tote"
+                    send "&8&l» &2✦Farmer✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /FarmingPrestige3:
+    trigger:
+        set {_farming} to placeholder "mmocore_profession_Farming" from player
+        if player has permission "FARMING.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "FARMING.PRESTIGE.3.CLAIMED":
+                if {_farming} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY FARMER_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% farming 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Farmer Tote"
+                    send "&8&l» &9✦Farmer✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /FarmingPrestige4:
+    trigger:
+        set {_farming} to placeholder "mmocore_profession_Farming" from player
+        if player has permission "FARMING.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "FARMING.PRESTIGE.4.CLAIMED":
+                if {_farming} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY FARMER_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% farming 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Farmer Tote"
+                    send "&8&l» &5✦✦Farmer✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /FarmingPrestige5:
+    trigger:
+        set {_farming} to placeholder "mmocore_profession_Farming" from player
+        if player has permission "FARMING.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "FARMING.PRESTIGE.5.CLAIMED":
+                if {_farming} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FARMING.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY FARMER_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% farming 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eFarmer Tote"
+                    send "&8&l» &e✦✦✦Farmer✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+
+
+
+
+
+
+#FORAGING
+command /ForagingPrestige1:
+    trigger:
+        set {_foraging} to placeholder "mmocore_profession_Foraging" from player
+        if player doesn't have permission "FORAGING.PRESTIGE.1.CLAIMED":
+            if {_foraging} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set FORAGING.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set FORAGING.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY FORAGER_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% foraging 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fForager Tote"
+                send "&8&l» &fForager✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /ForagingPrestige2:
+    trigger:
+        set {_foraging} to placeholder "mmocore_profession_Foraging" from player
+        if player has permission "FORAGING.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "FORAGING.PRESTIGE.2.CLAIMED":
+                if {_foraging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY FORAGER_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% foraging 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Forager Tote"
+                    send "&8&l» &2✦Forager✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /ForagingPrestige3:
+    trigger:
+        set {_foraging} to placeholder "mmocore_profession_Foraging" from player
+        if player has permission "FORAGING.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "FORAGING.PRESTIGE.3.CLAIMED":
+                if {_foraging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY FORAGER_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% foraging 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Forager Tote"
+                    send "&8&l» &9✦Forager✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /ForagingPrestige4:
+    trigger:
+        set {_foraging} to placeholder "mmocore_profession_Foraging" from player
+        if player has permission "FORAGING.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "FORAGING.PRESTIGE.4.CLAIMED":
+                if {_foraging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY FORAGER_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% foraging 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Forager Tote"
+                    send "&8&l» &5✦✦Forager✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /ForagingPrestige5:
+    trigger:
+        set {_foraging} to placeholder "mmocore_profession_Foraging" from player
+        if player has permission "FORAGING.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "FORAGING.PRESTIGE.5.CLAIMED":
+                if {_foraging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set FORAGING.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY FORAGER_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% foraging 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eForager Tote"
+                    send "&8&l» &e✦✦✦Forager✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+
+
+
+
+
+
+#MINING
+command /MiningPrestige1:
+    trigger:
+        set {_mining} to placeholder "mmocore_profession_Mining" from player
+        if player doesn't have permission "MINING.PRESTIGE.1.CLAIMED":
+            if {_mining} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set MINING.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set MINING.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY MINER_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% mining 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fMiner Tote"
+                send "&8&l» &fMiner✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /MiningPrestige2:
+    trigger:
+        set {_mining} to placeholder "mmocore_profession_Mining" from player
+        if player has permission "MINING.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "MINING.PRESTIGE.2.CLAIMED":
+                if {_mining} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY MINER_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% mining 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Miner Tote"
+                    send "&8&l» &2✦Miner✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /MiningPrestige3:
+    trigger:
+        set {_mining} to placeholder "mmocore_profession_Mining" from player
+        if player has permission "MINING.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "MINING.PRESTIGE.3.CLAIMED":
+                if {_mining} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY MINER_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% mining 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Miner Tote"
+                    send "&8&l» &9✦Miner✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /MiningPrestige4:
+    trigger:
+        set {_mining} to placeholder "mmocore_profession_Mining" from player
+        if player has permission "MINING.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "MINING.PRESTIGE.4.CLAIMED":
+                if {_mining} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY MINER_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% mining 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Miner Tote"
+                    send "&8&l» &5✦✦Miner✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /MiningPrestige5:
+    trigger:
+        set {_mining} to placeholder "mmocore_profession_Mining" from player
+        if player has permission "MINING.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "MINING.PRESTIGE.5.CLAIMED":
+                if {_mining} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set MINING.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY MINER_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% mining 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eMiner Tote"
+                    send "&8&l» &e✦✦✦Miner✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+
+
+
+
+
+
+#SLAYER
+command /SlayerPrestige1:
+    trigger:
+        set {_slayer} to placeholder "mmocore_profession_Slayer" from player
+        if player doesn't have permission "SLAYER.PRESTIGE.1.CLAIMED":
+            if {_slayer} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set SLAYER.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set SLAYER.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY SLAYER_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% slayer 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fSlayer Tote"
+                send "&8&l» &fSlayer✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /SlayerPrestige2:
+    trigger:
+        set {_slayer} to placeholder "mmocore_profession_Slayer" from player
+        if player has permission "SLAYER.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "SLAYER.PRESTIGE.2.CLAIMED":
+                if {_slayer} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY SLAYER_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% slayer 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Slayer Tote"
+                    send "&8&l» &2✦Slayer✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SlayerPrestige3:
+    trigger:
+        set {_slayer} to placeholder "mmocore_profession_Slayer" from player
+        if player has permission "SLAYER.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "SLAYER.PRESTIGE.3.CLAIMED":
+                if {_slayer} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY SLAYER_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% slayer 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Slayer Tote"
+                    send "&8&l» &9✦Slayer✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SlayerPrestige4:
+    trigger:
+        set {_slayer} to placeholder "mmocore_profession_Slayer" from player
+        if player has permission "SLAYER.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "SLAYER.PRESTIGE.4.CLAIMED":
+                if {_slayer} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY SLAYER_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% slayer 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Slayer Tote"
+                    send "&8&l» &5✦✦Slayer✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SlayerPrestige5:
+    trigger:
+        set {_slayer} to placeholder "mmocore_profession_Slayer" from player
+        if player has permission "SLAYER.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "SLAYER.PRESTIGE.5.CLAIMED":
+                if {_slayer} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SLAYER.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY SLAYER_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% slayer 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eSlayer Tote"
+                    send "&8&l» &e✦✦✦Slayer✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+
+
+
+
+
+
+#ENCHANTING
+command /EnchantingPrestige1:
+    trigger:
+        set {_enchanting} to placeholder "mmocore_profession_Enchanting" from player
+        if player doesn't have permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+            if {_enchanting} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY WIZARDLY_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% enchanting 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fWizardly Tote"
+                send "&8&l» &fWizard✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /EnchantingPrestige2:
+    trigger:
+        set {_enchanting} to placeholder "mmocore_profession_Enchanting" from player
+        if player has permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+                if {_enchanting} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY WIZARDLY_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% enchanting 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Wizardly Tote"
+                    send "&8&l» &2✦Wizard✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /EnchantingPrestige3:
+    trigger:
+        set {_enchanting} to placeholder "mmocore_profession_Enchanting" from player
+        if player has permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+                if {_enchanting} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY WIZARDLY_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% enchanting 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Wizardly Tote"
+                    send "&8&l» &9✦Wizard✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /EnchantingPrestige4:
+    trigger:
+        set {_enchanting} to placeholder "mmocore_profession_Enchanting" from player
+        if player has permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+                if {_enchanting} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY WIZARDLY_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% enchanting 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Wizardly Tote"
+                    send "&8&l» &5✦✦Wizard✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /EnchantingPrestige5:
+    trigger:
+        set {_enchanting} to placeholder "mmocore_profession_Enchanting" from player
+        if player has permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "ENCHANTING.PRESTIGE.5.CLAIMED":
+                if {_enchanting} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY WIZARDLY_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% enchanting 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eWizardly Tote"
+                    send "&8&l» &e✦✦✦Wizard✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+
+
+
+
+
+
+#SPELLFORGING
+command /SpellforgingPrestige1:
+    trigger:
+        set {_spellforging} to placeholder "mmocore_profession_Spellforging" from player
+        if player doesn't have permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+            if {_spellforging} = "10":
+                #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.1.CLAIMED true"        
+                execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE1 true"        
+                #Gives player the rewards and message 
+                execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                execute console command "/mi give ACCESSORY MAGICAL_TOTE %player% 1"
+                execute console command "/money give %player% 100000"
+                execute console command "/mmocore admin level set %player% spellforging 1"
+                send "&8&l» &5Engram"
+                send "&8&l» &fMagical Tote"
+                send "&8&l» &fMagical✦ &l- Battle Tag"
+                send "&8&l» &e100,000 Coins"
+            else:
+                send "&cYou're not a high enough level yet!" to player
+        else:
+            send "&cYou already claimed this reward!" to player
+
+command /SpellforgingPrestige2:
+    trigger:
+        set {_spellforging} to placeholder "mmocore_profession_Spellforging" from player
+        if player has permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+            if player doesn't have permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+                if {_spellforging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.2.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE2 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY MAGICAL_TOTE2 %player% 1"
+                    execute console command "/money give %player% 250000"
+                    execute console command "/mmocore admin level set %player% spellforging 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &2Magical Tote"
+                    send "&8&l» &2✦Magical✦ &l- Battle Tag"
+                    send "&8&l» &e250,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SpellforgingPrestige3:
+    trigger:
+        set {_spellforging} to placeholder "mmocore_profession_Spellforging" from player
+        if player has permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+            if player doesn't have permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+                if {_spellforging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.3.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE3 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
+                    execute console command "/mi give ACCESSORY MAGICAL_TOTE3 %player% 1"
+                    execute console command "/money give %player% 500000"
+                    execute console command "/mmocore admin level set %player% spellforging 1"
+                    send "&8&l» &5Engram"
+                    send "&8&l» &9Magical Tote"
+                    send "&8&l» &9✦Magical✦✦ &l- Battle Tag"
+                    send "&8&l» &e500,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SpellforgingPrestige4:
+    trigger:
+        set {_spellforging} to placeholder "mmocore_profession_Spellforging" from player
+        if player has permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+            if player doesn't have permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+                if {_spellforging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.4.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE4 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
+                    execute console command "/mi give ACCESSORY MAGICAL_TOTE4 %player% 1"
+                    execute console command "/money give %player% 750000"
+                    execute console command "/mmocore admin level set %player% spellforging 1"
+                    send "&8&l» &eProfession Booster Box"
+                    send "&8&l» &5Magical Tote"
+                    send "&8&l» &5✦✦Magical✦✦ &l- Battle Tag"
+                    send "&8&l» &e750,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player
+command /SpellforgingPrestige5:
+    trigger:
+        set {_spellforging} to placeholder "mmocore_profession_Spellforging" from player
+        if player has permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+            if player doesn't have permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
+                if {_spellforging} = "10":
+                    #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.5.CLAIMED true"        
+                    execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE5 true"        
+                    #Gives player the rewards and message 
+                    execute console command "/mi give CONSUMABLE BANK_TOKEN4 %player% 1"
+                    execute console command "/mi give ACCESSORY MAGICAL_TOTE5 %player% 1"
+                    execute console command "/money give %player% 1000000"
+                    execute console command "/mmocore admin level set %player% spellforging 1"
+                    send "&8&l» &eBank Token"
+                    send "&8&l» &eMagical Tote"
+                    send "&8&l» &e✦✦✦Magical✦✦ &l- Battle Tag"
+                    send "&8&l» &e1,000,000 Coins"
+                else:
+                    send "&cYou're not a high enough level yet!" to player
+            else:
+                send "&cYou already claimed this reward!" to player

@@ -206,3 +206,90 @@ on placeholderapi placeholder request for the prefix "custom":
 			set the result to "&aEarth, &5Void Maze"
 		if "%region at player%" is "<none>":
 			set the result to "&8Unknown?!"
+
+
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "farming_prestige":
+		if player has permission "FARMING.PRESTIGE1":
+			set the result to "1"
+			if player has permission "FARMING.PRESTIGE2":
+				set the result to "2"
+				if player has permission "FARMING.PRESTIGE3":
+					set the result to "3"
+					if player has permission "FARMING.PRESTIGE4":
+						set the result to "4"
+						if player has permission "FARMING.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+
+	if the identifier is "foraging_prestige":
+		if player has permission "FORAGING.PRESTIGE1":
+			set the result to "1"
+			if player has permission "FORAGING.PRESTIGE2":
+				set the result to "2"
+				if player has permission "FORAGING.PRESTIGE3":
+					set the result to "3"
+					if player has permission "FORAGING.PRESTIGE4":
+						set the result to "4"
+						if player has permission "FORAGING.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+
+	if the identifier is "mining_prestige":
+		if player has permission "MINING.PRESTIGE1":
+			set the result to "1"
+			if player has permission "MINING.PRESTIGE2":
+				set the result to "2"
+				if player has permission "MINING.PRESTIGE3":
+					set the result to "3"
+					if player has permission "MINING.PRESTIGE4":
+						set the result to "4"
+						if player has permission "MINING.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+
+	if the identifier is "slayer_prestige":
+		if player has permission "SLAYER.PRESTIGE1":
+			set the result to "1"
+			if player has permission "SLAYER.PRESTIGE2":
+				set the result to "2"
+				if player has permission "SLAYER.PRESTIGE3":
+					set the result to "3"
+					if player has permission "SLAYER.PRESTIGE4":
+						set the result to "4"
+						if player has permission "SLAYER.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+
+	if the identifier is "spellforging_prestige":
+		if player has permission "SPELLFORGING.PRESTIGE1":
+			set the result to "1"
+			if player has permission "SPELLFORGING.PRESTIGE2":
+				set the result to "2"
+				if player has permission "SPELLFORGING.PRESTIGE3":
+					set the result to "3"
+					if player has permission "SPELLFORGING.PRESTIGE4":
+						set the result to "4"
+						if player has permission "SPELLFORGING.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+
+	if the identifier is "enchanting_prestige":
+		if player has permission "ENCHANTING.PRESTIGE1":
+			set the result to "1"
+			if player has permission "ENCHANTING.PRESTIGE2":
+				set the result to "2"
+				if player has permission "ENCHANTING.PRESTIGE3":
+					set the result to "3"
+					if player has permission "ENCHANTING.PRESTIGE4":
+						set the result to "4"
+						if player has permission "ENCHANTING.PRESTIGE5":
+							set the result to "5"
+		else:
+			set the result to "0"
+

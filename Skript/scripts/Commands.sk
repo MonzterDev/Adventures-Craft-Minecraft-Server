@@ -364,6 +364,15 @@ command /rp <string>:
 			if the player doesn't have a resource pack loaded:
 				send message "&cIf you're not seeing the Resource Pack, you must enable the setting before joining the server!" to player
 
+command /ActiveQuests:
+    aliases: /ActiveQuest, /CurrentQuests, /CurrentQuests
+    executable by: players
+    trigger:
+        make console execute command "/rpgmenu open default-Menus-menu.active %player%"
+command /UnclaimedQuests:
+    executable by: players
+    trigger:
+        make console execute command "/rpgmenu open default-Menus-menu.unclaimed %player%"
 command /Quest:
     executable by: players
     trigger:
