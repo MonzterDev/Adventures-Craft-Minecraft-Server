@@ -1,5 +1,5 @@
 menu_title: '&f&l»&7&l» &8Resource Collector &7&l«&f&l«'
-open_command: ResourcesMining
+open_command: ResourcesFarming
 size: 44
 items:
   'Decoration':
@@ -62,9 +62,9 @@ items:
     left_click_commands:
     - "[openguimenu] ResourceCollector"
 
-###Cobblestone
-  'CobblestoneEnabled':
-    material: Cobblestone
+###Wheat
+  'WheatEnabled':
+    material: Wheat
     hide_attributes: true
     priority: 1
     slot: 10
@@ -73,13 +73,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        CobblestoneDisabled:
+        WheatDisabled:
           type: has permission
-          permission: Cobblestone.COLLECT
-    display_name: '&aCobblestone &a&lENABLED'
+          permission: Wheat.COLLECT
+    display_name: '&aWheat &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Cobblestone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Wheat.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -87,56 +87,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Cobblestone 1 %player_name%"
+    - "[console] Collector Wheat 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 1'
+          expression: '%betonquest_items:point.Wheat.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Cobblestone 64 %player_name%"
+    - "[console] Collector Wheat 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 64'
+          expression: '%betonquest_items:point.Wheat.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Cobblestone 512 %player_name%"
+    - "[console] Collector Wheat 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 512'
+          expression: '%betonquest_items:point.Wheat.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Cobblestone.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aCobblestone&e!"
+    - "[console] lp user %player_name% permission set Wheat.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aWheat&e!"
     - "[refresh]"
-  'CobblestoneDisabled':
-    material: Cobblestone
+  'WheatDisabled':
+    material: Wheat
     hide_attributes: true
     priority: 2
     slot: 10
     view_requirement:
       requirements:
-        CobblestoneDisabled:
+        WheatDisabled:
           type: "!has permission"
-          permission: Cobblestone.COLLECT
-    display_name: '&aCobblestone &c&lDISABLED'
+          permission: Wheat.COLLECT
+    display_name: '&aWheat &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Cobblestone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Wheat.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -144,47 +144,47 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Cobblestone 1 %player_name%"
+    - "[console] Collector Wheat 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 1'
+          expression: '%betonquest_items:point.Wheat.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Cobblestone 64 %player_name%"
+    - "[console] Collector Wheat 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 64'
+          expression: '%betonquest_items:point.Wheat.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Cobblestone 512 %player_name%"
+    - "[console] Collector Wheat 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Cobblestone.amount% >= 512'
+          expression: '%betonquest_items:point.Wheat.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Cobblestone.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aCobblestone&e!"
+    - "[console] lp user %player_name% permission set Wheat.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aWheat&e!"
     - "[refresh]"
 
 
-###Stone
-  'StoneEnabled':
-    material: Stone
+###Seeds
+  'SeedsEnabled':
+    material: Wheat_Seeds
     hide_attributes: true
     priority: 1
     slot: 11
@@ -193,13 +193,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        StoneDisabled:
+        SeedsDisabled:
           type: has permission
-          permission: Stone.COLLECT
-    display_name: '&aStone &a&lENABLED'
+          permission: Seeds.COLLECT
+    display_name: '&aSeeds &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Stone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Seeds.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -207,56 +207,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Stone 1 %player_name%"
+    - "[console] Collector Seeds 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 1'
+          expression: '%betonquest_items:point.Seeds.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Stone 64 %player_name%"
+    - "[console] Collector Seeds 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 64'
+          expression: '%betonquest_items:point.Seeds.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Stone 512 %player_name%"
+    - "[console] Collector Seeds 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 512'
+          expression: '%betonquest_items:point.Seeds.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Stone.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aStone&e!"
+    - "[console] lp user %player_name% permission set Seeds.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aSeeds&e!"
     - "[refresh]"
-  'StoneDisabled':
-    material: Stone
+  'SeedsDisabled':
+    material: Wheat_Seeds
     hide_attributes: true
     priority: 2
     slot: 11
     view_requirement:
       requirements:
-        StoneDisabled:
+        SeedsDisabled:
           type: "!has permission"
-          permission: Stone.COLLECT
-    display_name: '&aStone &c&lDISABLED'
+          permission: Seeds.COLLECT
+    display_name: '&aSeeds &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Stone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Seeds.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -264,47 +264,47 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Stone 1 %player_name%"
+    - "[console] Collector Seeds 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 1'
+          expression: '%betonquest_items:point.Seeds.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Stone 64 %player_name%"
+    - "[console] Collector Seeds 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 64'
+          expression: '%betonquest_items:point.Seeds.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Stone 512 %player_name%"
+    - "[console] Collector Seeds 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Stone.amount% >= 512'
+          expression: '%betonquest_items:point.Seeds.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Stone.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aStone&e!"
+    - "[console] lp user %player_name% permission set Seeds.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aSeeds&e!"
     - "[refresh]"
 
 
-###Coal
-  'CoalEnabled':
-    material: Coal
+###Carrot
+  'CarrotEnabled':
+    material: Carrot
     hide_attributes: true
     priority: 1
     slot: 12
@@ -313,13 +313,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        CoalDisabled:
+        CarrotDisabled:
           type: has permission
-          permission: Coal.COLLECT
-    display_name: '&aCoal &a&lENABLED'
+          permission: Carrot.COLLECT
+    display_name: '&aCarrot &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Coal.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Carrot.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -327,56 +327,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Coal 1 %player_name%"
+    - "[console] Collector Carrot 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 1'
+          expression: '%betonquest_items:point.Carrot.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Coal 64 %player_name%"
+    - "[console] Collector Carrot 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 64'
+          expression: '%betonquest_items:point.Carrot.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Coal 512 %player_name%"
+    - "[console] Collector Carrot 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 512'
+          expression: '%betonquest_items:point.Carrot.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Coal.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aCoal&e!"
+    - "[console] lp user %player_name% permission set Carrot.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aCarrot&e!"
     - "[refresh]"
-  'CoalDisabled':
-    material: Coal
+  'CarrotDisabled':
+    material: Carrot
     hide_attributes: true
     priority: 2
     slot: 12
     view_requirement:
       requirements:
-        CoalDisabled:
+        CarrotDisabled:
           type: "!has permission"
-          permission: Coal.COLLECT
-    display_name: '&aCoal &c&lDISABLED'
+          permission: Carrot.COLLECT
+    display_name: '&aCarrot &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Coal.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Carrot.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -384,47 +384,47 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Coal 1 %player_name%"
+    - "[console] Collector Carrot 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 1'
+          expression: '%betonquest_items:point.Carrot.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Coal 64 %player_name%"
+    - "[console] Collector Carrot 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 64'
+          expression: '%betonquest_items:point.Carrot.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Coal 512 %player_name%"
+    - "[console] Collector Carrot 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Coal.amount% >= 512'
+          expression: '%betonquest_items:point.Carrot.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Coal.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aCoal&e!"
+    - "[console] lp user %player_name% permission set Carrot.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aCarrot&e!"
     - "[refresh]"
 
 
-###Iron
-  'IronIngotEnabled':
-    material: Iron_Ingot
+###Potato
+  'PotatoEnabled':
+    material: Potato
     hide_attributes: true
     priority: 1
     slot: 13
@@ -433,13 +433,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        IronIngotDisabled:
+        PotatoDisabled:
           type: has permission
-          permission: IronIngot.COLLECT
-    display_name: '&aIron &a&lENABLED'
+          permission: Potato.COLLECT
+    display_name: '&aPotato &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.IronIngot.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Potato.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -447,56 +447,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector IronIngot 1 %player_name%"
+    - "[console] Collector Potato 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 1'
+          expression: '%betonquest_items:point.Potato.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector IronIngot 64 %player_name%"
+    - "[console] Collector Potato 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 64'
+          expression: '%betonquest_items:point.Potato.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector IronIngot 512 %player_name%"
+    - "[console] Collector Potato 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 512'
+          expression: '%betonquest_items:point.Potato.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set IronIngot.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aIron&e!"
+    - "[console] lp user %player_name% permission set Potato.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aPotato&e!"
     - "[refresh]"
-  'IronIngotDisabled':
-    material: Iron_Ingot
+  'PotatoDisabled':
+    material: Potato
     hide_attributes: true
     priority: 2
     slot: 13
     view_requirement:
       requirements:
-        IronIngotDisabled:
+        PotatoDisabled:
           type: "!has permission"
-          permission: IronIngot.COLLECT
-    display_name: '&aIron &c&lDISABLED'
+          permission: Potato.COLLECT
+    display_name: '&aPotato &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.IronIngot.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Potato.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -504,46 +504,46 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector IronIngot 1 %player_name%"
+    - "[console] Collector Potato 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 1'
+          expression: '%betonquest_items:point.Potato.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector IronIngot 64 %player_name%"
+    - "[console] Collector Potato 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 64'
+          expression: '%betonquest_items:point.Potato.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector IronIngot 512 %player_name%"
+    - "[console] Collector Potato 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.IronIngot.amount% >= 512'
+          expression: '%betonquest_items:point.Potato.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set IronIngot.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aIron&e!"
+    - "[console] lp user %player_name% permission set Potato.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aPotato&e!"
     - "[refresh]"
 
-###Gold
-  'GoldIngotEnabled':
-    material: Gold_Ingot
+###SugarCane
+  'SugarCaneEnabled':
+    material: Sugar_Cane
     hide_attributes: true
     priority: 1
     slot: 14
@@ -552,13 +552,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        GoldIngotDisabled:
+        SugarCaneDisabled:
           type: has permission
-          permission: GoldIngot.COLLECT
-    display_name: '&aGold &a&lENABLED'
+          permission: SugarCane.COLLECT
+    display_name: '&aSugar Cane &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.GoldIngot.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.SugarCane.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -566,56 +566,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector GoldIngot 1 %player_name%"
+    - "[console] Collector SugarCane 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 1'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector GoldIngot 64 %player_name%"
+    - "[console] Collector SugarCane 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 64'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector GoldIngot 512 %player_name%"
+    - "[console] Collector SugarCane 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 512'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set GoldIngot.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aGold&e!"
+    - "[console] lp user %player_name% permission set SugarCane.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aSugarCane&e!"
     - "[refresh]"
-  'GoldIngotDisabled':
-    material: Gold_Ingot
+  'SugarCaneDisabled':
+    material: Sugar_Cane
     hide_attributes: true
     priority: 2
     slot: 14
     view_requirement:
       requirements:
-        GoldIngotDisabled:
+        SugarCaneDisabled:
           type: "!has permission"
-          permission: GoldIngot.COLLECT
-    display_name: '&aGold &c&lDISABLED'
+          permission: SugarCane.COLLECT
+    display_name: '&aSugar Cane &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.GoldIngot.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.SugarCane.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -623,48 +623,48 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector GoldIngot 1 %player_name%"
+    - "[console] Collector SugarCane 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 1'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector GoldIngot 64 %player_name%"
+    - "[console] Collector SugarCane 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 64'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector GoldIngot 512 %player_name%"
+    - "[console] Collector SugarCane 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.GoldIngot.amount% >= 512'
+          expression: '%betonquest_items:point.SugarCane.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set GoldIngot.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aGold&e!"
+    - "[console] lp user %player_name% permission set SugarCane.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aSugarCane&e!"
     - "[refresh]"
 
 
 
-###Redstone
-  'RedstoneEnabled':
-    material: Redstone
+###Beetroot
+  'BeetrootEnabled':
+    material: Beetroot
     hide_attributes: true
     priority: 1
     slot: 15
@@ -673,13 +673,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        RedstoneDisabled:
+        BeetrootDisabled:
           type: has permission
-          permission: Redstone.COLLECT
-    display_name: '&aRedstone &a&lENABLED'
+          permission: Beetroot.COLLECT
+    display_name: '&aBeetroot &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Redstone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Beetroot.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -687,56 +687,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Redstone 1 %player_name%"
+    - "[console] Collector Beetroot 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 1'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Redstone 64 %player_name%"
+    - "[console] Collector Beetroot 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 64'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Redstone 512 %player_name%"
+    - "[console] Collector Beetroot 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 512'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Redstone.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aRedstone&e!"
+    - "[console] lp user %player_name% permission set Beetroot.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aBeetroot&e!"
     - "[refresh]"
-  'RedstoneDisabled':
-    material: Redstone
+  'BeetrootDisabled':
+    material: Beetroot
     hide_attributes: true
     priority: 2
     slot: 15
     view_requirement:
       requirements:
-        RedstoneDisabled:
+        BeetrootDisabled:
           type: "!has permission"
-          permission: Redstone.COLLECT
-    display_name: '&aRedstone &c&lDISABLED'
+          permission: Beetroot.COLLECT
+    display_name: '&aBeetroot &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Redstone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Beetroot.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -744,48 +744,48 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Redstone 1 %player_name%"
+    - "[console] Collector Beetroot 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 1'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Redstone 64 %player_name%"
+    - "[console] Collector Beetroot 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 64'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Redstone 512 %player_name%"
+    - "[console] Collector Beetroot 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Redstone.amount% >= 512'
+          expression: '%betonquest_items:point.Beetroot.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Redstone.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aRedstone&e!"
+    - "[console] lp user %player_name% permission set Beetroot.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aBeetroot&e!"
     - "[refresh]"
 
 
 
-###LapisLazuli
-  'LapisLazuliEnabled':
-    material: Lapis_Lazuli
+###MelonSlice
+  'MelonSliceEnabled':
+    material: Melon_Slice
     hide_attributes: true
     priority: 1
     slot: 16
@@ -794,13 +794,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        LapisLazuliDisabled:
+        MelonSliceDisabled:
           type: has permission
-          permission: LapisLazuli.COLLECT
-    display_name: '&aLapis &a&lENABLED'
+          permission: MelonSlice.COLLECT
+    display_name: '&aMelon Slice &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.LapisLazuli.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.MelonSlice.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -808,56 +808,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector LapisLazuli 1 %player_name%"
+    - "[console] Collector MelonSlice 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 1'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector LapisLazuli 64 %player_name%"
+    - "[console] Collector MelonSlice 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 64'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector LapisLazuli 512 %player_name%"
+    - "[console] Collector MelonSlice 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 512'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set LapisLazuli.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aLapis&e!"
+    - "[console] lp user %player_name% permission set MelonSlice.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aMelon Slice&e!"
     - "[refresh]"
-  'LapisLazuliDisabled':
-    material: Lapis_Lazuli
+  'MelonSliceDisabled':
+    material: Melon_Slice
     hide_attributes: true
     priority: 2
     slot: 16
     view_requirement:
       requirements:
-        LapisLazuliDisabled:
+        MelonSliceDisabled:
           type: "!has permission"
-          permission: LapisLazuli.COLLECT
-    display_name: '&aLapis &c&lDISABLED'
+          permission: MelonSlice.COLLECT
+    display_name: '&aMelon Slice &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.LapisLazuli.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.MelonSlice.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -865,49 +865,49 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector LapisLazuli 1 %player_name%"
+    - "[console] Collector MelonSlice 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 1'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector LapisLazuli 64 %player_name%"
+    - "[console] Collector MelonSlice 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 64'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector LapisLazuli 512 %player_name%"
+    - "[console] Collector MelonSlice 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.LapisLazuli.amount% >= 512'
+          expression: '%betonquest_items:point.MelonSlice.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set LapisLazuli.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aLapis&e!"
+    - "[console] lp user %player_name% permission set MelonSlice.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aMelon Slice&e!"
     - "[refresh]"
 
 
 
 ##### SECOND ROW
-###Diamond
-  'DiamondEnabled':
-    material: Diamond
+###Pumpkin
+  'PumpkinEnabled':
+    material: Pumpkin
     hide_attributes: true
     priority: 1
     slot: 19
@@ -916,13 +916,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        DiamondDisabled:
+        PumpkinDisabled:
           type: has permission
-          permission: Diamond.COLLECT
-    display_name: '&aDiamond &a&lENABLED'
+          permission: Pumpkin.COLLECT
+    display_name: '&aPumpkin &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Diamond.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Pumpkin.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -930,56 +930,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Diamond 1 %player_name%"
+    - "[console] Collector Pumpkin 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 1'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Diamond 64 %player_name%"
+    - "[console] Collector Pumpkin 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 64'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Diamond 512 %player_name%"
+    - "[console] Collector Pumpkin 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 512'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Diamond.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aDiamond&e!"
+    - "[console] lp user %player_name% permission set Pumpkin.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aPumpkin&e!"
     - "[refresh]"
-  'DiamondDisabled':
-    material: Diamond
+  'PumpkinDisabled':
+    material: Pumpkin
     hide_attributes: true
     priority: 2
     slot: 19
     view_requirement:
       requirements:
-        DiamondDisabled:
+        PumpkinDisabled:
           type: "!has permission"
-          permission: Diamond.COLLECT
-    display_name: '&aDiamond &c&lDISABLED'
+          permission: Pumpkin.COLLECT
+    display_name: '&aPumpkin &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Diamond.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.Pumpkin.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -987,46 +987,46 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Diamond 1 %player_name%"
+    - "[console] Collector Pumpkin 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 1'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Diamond 64 %player_name%"
+    - "[console] Collector Pumpkin 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 64'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Diamond 512 %player_name%"
+    - "[console] Collector Pumpkin 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Diamond.amount% >= 512'
+          expression: '%betonquest_items:point.Pumpkin.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Diamond.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aDiamond&e!"
+    - "[console] lp user %player_name% permission set Pumpkin.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aPumpkin&e!"
     - "[refresh]"
 
-###Emerald
-  'EmeraldEnabled':
-    material: Emerald
+###RedMushroom
+  'RedMushroomEnabled':
+    material: Red_Mushroom
     hide_attributes: true
     priority: 1
     slot: 20
@@ -1035,13 +1035,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        EmeraldDisabled:
+        RedMushroomDisabled:
           type: has permission
-          permission: Emerald.COLLECT
-    display_name: '&aEmerald &a&lENABLED'
+          permission: RedMushroom.COLLECT
+    display_name: '&aRed Mushroom &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Emerald.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.RedMushroom.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -1049,56 +1049,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Emerald 1 %player_name%"
+    - "[console] Collector RedMushroom 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 1'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Emerald 64 %player_name%"
+    - "[console] Collector RedMushroom 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 64'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Emerald 512 %player_name%"
+    - "[console] Collector RedMushroom 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 512'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Emerald.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aEmerald&e!"
+    - "[console] lp user %player_name% permission set RedMushroom.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aRedMushroom&e!"
     - "[refresh]"
-  'EmeraldDisabled':
-    material: Emerald
+  'RedMushroomDisabled':
+    material: Red_Mushroom
     hide_attributes: true
     priority: 2
     slot: 20
     view_requirement:
       requirements:
-        EmeraldDisabled:
+        RedMushroomDisabled:
           type: "!has permission"
-          permission: Emerald.COLLECT
-    display_name: '&aEmerald &c&lDISABLED'
+          permission: RedMushroom.COLLECT
+    display_name: '&aRed Mushroom &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.Emerald.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.RedMushroom.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -1106,46 +1106,46 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector Emerald 1 %player_name%"
+    - "[console] Collector RedMushroom 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 1'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector Emerald 64 %player_name%"
+    - "[console] Collector RedMushroom 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 64'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector Emerald 512 %player_name%"
+    - "[console] Collector RedMushroom 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.Emerald.amount% >= 512'
+          expression: '%betonquest_items:point.RedMushroom.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Emerald.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aEmerald&e!"
+    - "[console] lp user %player_name% permission set RedMushroom.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aRedMushroom&e!"
     - "[refresh]"
 
-###EndStone
-  'EndStoneEnabled':
-    material: End_Stone
+###BrownMushroom
+  'BrownMushroomEnabled':
+    material: Brown_Mushroom
     hide_attributes: true
     priority: 1
     slot: 21
@@ -1154,13 +1154,13 @@ items:
     - THORNS;1
     view_requirement:
       requirements:
-        EndStoneDisabled:
+        BrownMushroomDisabled:
           type: has permission
-          permission: EndStone.COLLECT
-    display_name: '&aEnd Stone &a&lENABLED'
+          permission: BrownMushroom.COLLECT
+    display_name: '&aBrown Mushroom &a&lENABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.EndStone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.BrownMushroom.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -1168,56 +1168,56 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector EndStone 1 %player_name%"
+    - "[console] Collector BrownMushroom 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 1'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector EndStone 64 %player_name%"
+    - "[console] Collector BrownMushroom 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 64'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector EndStone 512 %player_name%"
+    - "[console] Collector BrownMushroom 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 512'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set EndStone.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aEndStone&e!"
+    - "[console] lp user %player_name% permission set BrownMushroom.COLLECT false"
+    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aBrownMushroom&e!"
     - "[refresh]"
-  'EndStoneDisabled':
-    material: End_Stone
+  'BrownMushroomDisabled':
+    material: Brown_Mushroom
     hide_attributes: true
     priority: 2
     slot: 21
     view_requirement:
       requirements:
-        EndStoneDisabled:
+        BrownMushroomDisabled:
           type: "!has permission"
-          permission: EndStone.COLLECT
-    display_name: '&aEnd Stone &c&lDISABLED'
+          permission: BrownMushroom.COLLECT
+    display_name: '&aBrown Mushroom &c&lDISABLED'
     lore:
     - ''
-    - '&7You have &e%betonquest_items:point.EndStone.amount% &7stored!'
+    - '&7You have &e%betonquest_items:point.BrownMushroom.amount% &7stored!'
     - ''
     - '&8&l» &eLeft-Click to Withdraw 1'
     - '&8&l» &eRight-Click to Withdraw 64'
@@ -1225,158 +1225,39 @@ items:
     - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
 #L
     left_click_commands:
-    - "[console] Collector EndStone 1 %player_name%"
+    - "[console] Collector BrownMushroom 1 %player_name%"
     - "[refresh]"
     left_click_requirement:
       requirements:
         LC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 1'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 1'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #R
     right_click_commands:
-    - "[console] Collector EndStone 64 %player_name%"
+    - "[console] Collector BrownMushroom 64 %player_name%"
     - "[refresh]"
     right_click_requirement:
       requirements:
         RC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 64'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 64'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SR
     shift_right_click_commands:
-    - "[console] Collector EndStone 512 %player_name%"
+    - "[console] Collector BrownMushroom 512 %player_name%"
     - "[refresh]"
     shift_right_click_requirement:
       requirements:
         SRC:
           type: javascript
-          expression: '%betonquest_items:point.EndStone.amount% >= 512'
+          expression: '%betonquest_items:point.BrownMushroom.amount% >= 512'
       deny_commands:
       - "[message] &cYou don't have enough of this resource stored!"
 #SL
     shift_left_click_commands:
-    - "[console] lp user %player_name% permission set EndStone.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aEndStone&e!"
-    - "[refresh]"
-
-###Obsidian
-  'ObsidianEnabled':
-    material: Obsidian
-    hide_attributes: true
-    priority: 1
-    slot: 22
-    hide_enchantments: true
-    enchantments:
-    - THORNS;1
-    view_requirement:
-      requirements:
-        ObsidianDisabled:
-          type: has permission
-          permission: Obsidian.COLLECT
-    display_name: '&aObsidian &a&lENABLED'
-    lore:
-    - ''
-    - '&7You have &e%betonquest_items:point.Obsidian.amount% &7stored!'
-    - ''
-    - '&8&l» &eLeft-Click to Withdraw 1'
-    - '&8&l» &eRight-Click to Withdraw 64'
-    - '&8&l» &e&oShift&e-Right-Click to Withdraw 512'
-    - '&8&l» &e&oShift&e-Left-Click to &cDisable Auto-Pickup'
-#L
-    left_click_commands:
-    - "[console] Collector Obsidian 1 %player_name%"
-    - "[refresh]"
-    left_click_requirement:
-      requirements:
-        LC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 1'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#R
-    right_click_commands:
-    - "[console] Collector Obsidian 64 %player_name%"
-    - "[refresh]"
-    right_click_requirement:
-      requirements:
-        RC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 64'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#SR
-    shift_right_click_commands:
-    - "[console] Collector Obsidian 512 %player_name%"
-    - "[refresh]"
-    shift_right_click_requirement:
-      requirements:
-        SRC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 512'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#SL
-    shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Obsidian.COLLECT false"
-    - "[message] &aAuto-Pickup &ehas been &cdisabled&e for &aObsidian&e!"
-    - "[refresh]"
-  'ObsidianDisabled':
-    material: Obsidian
-    hide_attributes: true
-    priority: 2
-    slot: 22
-    view_requirement:
-      requirements:
-        ObsidianDisabled:
-          type: "!has permission"
-          permission: Obsidian.COLLECT
-    display_name: '&aObsidian &c&lDISABLED'
-    lore:
-    - ''
-    - '&7You have &e%betonquest_items:point.Obsidian.amount% &7stored!'
-    - ''
-    - '&8&l» &eLeft-Click to Withdraw 1'
-    - '&8&l» &eRight-Click to Withdraw 64'
-    - '&8&l» &e&oShift&e-Right-Click to Withdraw 512'
-    - '&8&l» &e&oShift&e-Left-Click to &aEnable Auto-Pickup'
-#L
-    left_click_commands:
-    - "[console] Collector Obsidian 1 %player_name%"
-    - "[refresh]"
-    left_click_requirement:
-      requirements:
-        LC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 1'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#R
-    right_click_commands:
-    - "[console] Collector Obsidian 64 %player_name%"
-    - "[refresh]"
-    right_click_requirement:
-      requirements:
-        RC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 64'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#SR
-    shift_right_click_commands:
-    - "[console] Collector Obsidian 512 %player_name%"
-    - "[refresh]"
-    shift_right_click_requirement:
-      requirements:
-        SRC:
-          type: javascript
-          expression: '%betonquest_items:point.Obsidian.amount% >= 512'
-      deny_commands:
-      - "[message] &cYou don't have enough of this resource stored!"
-#SL
-    shift_left_click_commands:
-    - "[console] lp user %player_name% permission set Obsidian.COLLECT true"
-    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aObsidian&e!"
+    - "[console] lp user %player_name% permission set BrownMushroom.COLLECT true"
+    - "[message] &aAuto-Pickup &ehas been &aenabled&e for &aBrownMushroom&e!"
     - "[refresh]"

@@ -41,6 +41,13 @@ number-format:
 # #defense# - Player Defense
 defense-application: '#damage# * (1 - (#defense# / (#defense# + 100)))'
 
+# Allows to scale health up/down to a specific
+# amount so extra health does not fill up the screen.
+# Requires a SERVER reload when changed.
+health-scale:
+    enabled: true
+    scale: 20
+
 # Default and max. values of armor stats. These systems
 # all have a cooldown which can be reduced using the
 # '*** Cooldown Reduction' item stat.

@@ -8,7 +8,7 @@
 # a Spigot Plugin by Team Requiem
 
 # DO NOT TOUCH
-config-version: 3
+config-version: 4
 
 # Auto-Save feature automatically saves playerdata
 # (class, level, etc.) and guild data
@@ -107,7 +107,7 @@ vanilla-exp-redirection:
 # Enable this open to override vanilla EXP and display
 # level progress on the vanilla experience bar.
 # Requires a SERVER reload when changed.
-override-vanilla-exp: true
+override-vanilla-exp: false
 
 # Requires a SERVER reload when changed.
 death-exp-loss:
@@ -119,10 +119,24 @@ death-exp-loss:
 # Allows to toggle exp hologram from gaining experience
 display-exp-holograms: true
 
+# Put the "value" of the action you want.
+# If the value is invalid or empty it will
+# default to the vanilla minecraft action.
+# spell_cast
+# Enters the default spell casting mode
+# hotbar_swap
 # Players can swap their hotbar with the 9 inventory slots
 # right above it by pressing [swap items] while crouching.
 # THis allows players to have two combat item sets.
-hotbar-swap: true
+# - vanilla
+# The default F action, swapping main hand and offhand.
+swap-keybind:
+    normal: spell_cast
+    sneaking: hotbar_swap
+
+# Set this to true to allow players
+# in creative mode to enter casting mode
+can-creative-cast: false
 
 # Use this option if you're having issue with Anvil GUIs.
 # This replaces anvil inputs by chat inputs.

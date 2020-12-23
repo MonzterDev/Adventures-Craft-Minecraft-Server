@@ -41,9 +41,12 @@ Jungle_Journal: 'journal add Jungle'
 #FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
 #IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'folder reward_message,QuestRewards'
-reward_message: "run ^message \n&6&lQuest Complete:&f \nSearching for the &cDryad&f&f! \n \n \n &6&lRewards: \n&8&l » &d 100 EXP \n&8&l » &d 100 Foraging EXP \n&8&l » &e 50 Coins \n \n \n&aThis quest can be repeated from /questmenu!"
+QuestReward1: 'folder reward_message,QuestRewards,RepeatEnabled,RepeatDisabled,Repeat'
+reward_message: "run ^message \n&6&lQuest Complete:&f \nSearching for the &cDryad&f&f! \n \n \n &6&lRewards: \n&8&l » &d 100 EXP \n&8&l » &d 100 Foraging EXP \n&8&l » &e 50 Coins"
 QuestRewards: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% foraging 100 ^command money give %player% 50"
+RepeatEnabled: "notify \n&a&lSearching for Dryad &ehas been automatically restarted! You can disable this by using &a/DryadRepeat&e! conditions:RepeatEnabled"
+RepeatDisabled: "notify \n&a&lSearching for Dryad &ecan be automatically restarted by using &a/DryadRepeat&e! conditions:!RepeatEnabled"
+Repeat: 'pickrandom 20%Oak,20%Spruce,20%DarkOak,20%Birch,20%Acacia,20%Jungle amount:1 conditions:RepeatEnabled'
 
 #Adds the Completed Journal Entry, Completed Tag, removes Started Tag, and Journal Entry
 entry_q1_complete: 'folder Completed_Journal,Completed_Tag,Oak_Journal_Remove,Spruce_Journal_Remove,DarkOak_Journal_Remove,Birch_Journal_Remove,Acacia_Journal_Remove,Jungle_Journal_Remove,Oak_Start_Tag_Remove,Spruce_Start_Tag_Remove,DarkOak_Start_Tag_Remove,Birch_Start_Tag_Remove,Acacia_Start_Tag_Remove,Jungle_Start_Tag_Remove'

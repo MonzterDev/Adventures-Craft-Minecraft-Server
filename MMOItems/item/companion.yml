@@ -26,6 +26,8 @@ PET_SKELETON1:
         mana: 100.0
     unstackable: true
     disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_SKELETONARCHER:
   base:
     material: PLAYER_HEAD
@@ -53,6 +55,9 @@ PET_SKELETONARCHER:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_LOSTSOUL:
   base:
     material: PLAYER_HEAD
@@ -80,6 +85,9 @@ PET_LOSTSOUL:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_REAPER:
   base:
     material: PLAYER_HEAD
@@ -107,6 +115,9 @@ PET_REAPER:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_ALPHASOUL:
   base:
     material: PLAYER_HEAD
@@ -134,6 +145,9 @@ PET_ALPHASOUL:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_UNDEADCASTER:
   base:
     material: PLAYER_HEAD
@@ -161,6 +175,9 @@ PET_UNDEADCASTER:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_UNDEADSPIDER:
   base:
     material: PLAYER_HEAD
@@ -188,6 +205,9 @@ PET_UNDEADSPIDER:
         cooldown: 60.0
         mana: 100.0
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2
 PET_BOSS:
   base:
     material: PLAYER_HEAD
@@ -198,14 +218,14 @@ PET_BOSS:
     unbreakable: true
     hide-enchants: false
     displayed-type: Companion
-    tier: RARE
+    tier: EXOTIC
     lore:
     - '§cDamage§f: 325'
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will give
     - §7you §aStrength 20 §7for 10secs!
-    name: §5Morden The Companion
+    name: §eMorden The Companion
     ability:
       ability1:
         type: PETSUMMONMORDEN
@@ -216,3 +236,6 @@ PET_BOSS:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q0Njc5M2JkYmNlNWNhZDVmMzdiMTI0ZWFmMWUzNjg5YmJhMThkNTlhODA2ODU2N2M3NGY0ZmYxYTE4In19fQ==
       uuid: 738865a7-e9ff-40fe-8519-ea592fc26650
     unstackable: true
+    disable-interaction: true
+    item-cooldown: 60.0
+    revision-id: 2

@@ -63,7 +63,7 @@ items:
     - "[openguimenu] settings"
 
 ###Cobblestone
-  'TheMine':
+  'Mining':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQyMDcwYWNjODE0YmM5NDZlNTk4NzllYzdkYTQ1ZGU5ODRkM2VlOWExNTkzOTNkZWZiNTk4NTNhYmUzYjYifX19
     hide_attributes: true
     priority: 1
@@ -77,3 +77,45 @@ items:
     - '&8&l» &eClick to View'
     click_commands:
     - "[openguimenu] MiningCollector"
+  'Farming':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFmMzI4Yzg3YjA2ODUwOWFjYTk4MzRlZmFjZTE5NzcwNWZlNWQ0ZjA4NzE3MzFiN2IyMWNkOTliOWZkZGMifX19
+    hide_attributes: true
+    priority: 1
+    slot: 11
+    display_name: '&aFarming Resources'
+    lore:
+    - ''
+    - '&7View your currently stored Farming Resources!'
+    - '&7Use &a/ResourcesFarming &7for quick access!'
+    - ''
+    - '&8&l» &eClick to View'
+    click_commands:
+    - "[openguimenu] FarmingCollector"
+  'Foraging':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjZDEzMjIzYThkOWMxNzNjZWRjZTZjNGJlYmViYTA2YTI0YTFiYTI3NWRkM2ViNWM3OTMzZjlhNzRiYTAxMSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 12
+    display_name: '&aForaging Resources'
+    lore:
+    - ''
+    - '&7View your currently stored Foraging Resources!'
+    - '&7Use &a/ResourcesForaging &7for quick access!'
+    - ''
+    - '&8&l» &eClick to View'
+    click_commands:
+    - "[openguimenu] ForagingCollector"
+  'Slayer':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&aSlayer Resources'
+    lore:
+    - ''
+    - '&7View your currently stored Slayer Resources!'
+    - '&7Use &a/ResourcesSlayer &7for quick access!'
+    - ''
+    - '&8&l» &eClick to View'
+    click_commands:
+    - "[openguimenu] SlayerCollector"

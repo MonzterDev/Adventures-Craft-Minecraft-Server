@@ -6,7 +6,7 @@ default:
         base: 4
         per-level: 0
     MAX_HEALTH:
-        base: 110
+        base: 100
         per-level: 0
     MOVEMENT_SPEED:
         base: .1
@@ -29,7 +29,7 @@ default:
         
     # Max Resource
     MAX_MANA:
-        base: 110
+        base: 100
         per-level: 0
     MAX_STAMINA:
         base: 20
@@ -41,7 +41,7 @@ default:
     # Resource Regeneration
     MANA_REGENERATION:
         base: 1.5
-        per-level: 
+        per-level: 0
     STAMINA_REGENERATION:
         base: .166
         per-level: 0
@@ -71,7 +71,7 @@ default:
     
     # Magic skill damage
     MAGIC_DAMAGE:
-        base: 0
+        base: 10
         per-level: 0
     
     # Dealt by any weapon

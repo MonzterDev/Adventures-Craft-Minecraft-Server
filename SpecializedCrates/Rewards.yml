@@ -24,21 +24,6 @@ Heavy_Helm:
     - '&7Gain &aStrength 10 &7while wearing!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "ARMOR"
-    - MMOITEMS_ITEM_ID "HEAVY_HELMET"
-    - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
-    - Unbreakable 1
-    - Damage 0
-    - MMOITEMS_MAX_HEALTH 25.0d
-    - MMOITEMS_ITEM_SET "HEAVY"
-    - MMOITEMS_DEFENSE 10.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE "[]"
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Heavy_Chestplate:
   commands:
   - mi give ARMOR HEAVY_CHESTPLATE %player%
@@ -65,21 +50,6 @@ Heavy_Chestplate:
     - '&7Gain &aStrength 10 &7while wearing!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "ARMOR"
-    - MMOITEMS_ITEM_ID "HEAVY_CHESTPLATE"
-    - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
-    - Unbreakable 1
-    - Damage 0
-    - MMOITEMS_MAX_HEALTH 30.0d
-    - MMOITEMS_ITEM_SET "HEAVY"
-    - MMOITEMS_DEFENSE 15.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE "[]"
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Heavy_Leggings:
   commands:
   - mi give ARMOR HEAVY_LEGGINGS %player%
@@ -106,21 +76,6 @@ Heavy_Leggings:
     - '&7Gain &aStrength 10 &7while wearing!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "ARMOR"
-    - MMOITEMS_ITEM_ID "HEAVY_LEGGINGS"
-    - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
-    - Unbreakable 1
-    - Damage 0
-    - MMOITEMS_MAX_HEALTH 30.0d
-    - MMOITEMS_ITEM_SET "HEAVY"
-    - MMOITEMS_DEFENSE 15.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE "[]"
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Heavy_Boots:
   commands:
   - mi give ARMOR HEAVY_BOOTS %player%
@@ -147,21 +102,6 @@ Heavy_Boots:
     - '&7Gain &aStrength 10 &7while wearing!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "ARMOR"
-    - MMOITEMS_ITEM_ID "HEAVY_BOOTS"
-    - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
-    - Unbreakable 1
-    - Damage 0
-    - MMOITEMS_MAX_HEALTH 25.0d
-    - MMOITEMS_ITEM_SET "HEAVY"
-    - MMOITEMS_DEFENSE 10.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE "[]"
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Heavy_Axe:
   commands:
   - mi give AXE HEAVY_AXE %player%
@@ -188,22 +128,6 @@ Heavy_Axe:
     - '&7Gain &aStrength 3 &7while holding!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ATTACK_DAMAGE 45.0d
-    - MMOITEMS_ITEM_ID "HEAVY_AXE"
-    - Damage 0
-    - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
-    - MMOITEMS_KNOCKBACK_RESISTANCE 0.5d
-    - MMOITEMS_CRITICAL_STRIKE_POWER 15.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_PERM_EFFECTS '{"INCREASE_DAMAGE":3}'
-    - MMOITEMS_ITEM_TYPE "AXE"
-    - Unbreakable 1
-    - MMOITEMS_LORE '["§7Gain §aStrength 3 §7while holding!"]'
-    - MMOITEMS_TIER "RARE"
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Heavy_Bow:
   commands:
   - mi give BOW HEAVY_BOW %player%
@@ -232,19 +156,15 @@ Heavy_Bow:
     - '&9&lRARE ITEM'
     nbt-tags:
     - MMOITEMS_ATTACK_DAMAGE 50.0d
-    - MMOITEMS_ITEM_ID "HEAVY_BOW"
+    - "HEAVY_BOW"
     - Damage 0
     - MMOITEMS_GEM_STONES '{"EmptySlots":["Uncolored"],"Gemstones":[]}'
     - MMOITEMS_KNOCKBACK_RESISTANCE 0.5d
     - MMOITEMS_CRITICAL_STRIKE_POWER 10.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
     - MMOITEMS_PERM_EFFECTS '{"INCREASE_DAMAGE":3}'
-    - MMOITEMS_ITEM_TYPE "BOW"
+    - "BOW"
     - Unbreakable 1
-    - MMOITEMS_LORE '["§7Gain §aStrength 3 §7while holding!"]'
-    - MMOITEMS_TIER "RARE"
-    item-flags:
-    - HIDE_ATTRIBUTES
+    - '["§7Gain §aStrength 3 §7while holding!"]'
     - HIDE_UNBREAKABLE
 Miners_Snack:
   commands:
@@ -271,16 +191,9 @@ Miners_Snack:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "MINERS_SNACK4"
-    - MMOITEMS_ABILITIES '[{"Id":"MINERSNACKD","CastMode":"RIGHT_CLICK","Modifiers":{}}]'
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fGain §aHaste 4 §ffor §a45 minutes§f!"]'
-    - MMOITEMS_ITEM_TYPE "STEW"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "MINERS_SNACK4"
+    - '[{"Id":"MINERSNACKD","CastMode":"RIGHT_CLICK","Modifiers":{}}]'
+    - 1.0d
 Swiftness_3:
   commands:
   - mi give STEW SWIFT_STEW3 %player%
@@ -306,17 +219,11 @@ Swiftness_3:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "SWIFT_STEW3"
-    - MMOITEMS_ABILITIES '[{"Id":"SWIFTSTEWC","CastMode":"RIGHT_CLICK","Modifiers":{}}]'
-    - MMOITEMS_MAX_CONSUME 1.0d
+    - "SWIFT_STEW3"
+    - '[{"Id":"SWIFTSTEWC","CastMode":"RIGHT_CLICK","Modifiers":{}}]'
+    - 1.0d
     - MMOITEMS_ITEM_UUID "3fb9d440-577f-4e40-b4af-4d28f02f9109"
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fGain §aSwiftness 7 §ffor §a45 minutes§f!"]'
-    - MMOITEMS_ITEM_TYPE "STEW"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - '["§fGain §aSwiftness 7 §ffor §a45 minutes§f!"]'
 Health_Gem:
   commands:
   - mi give GEM_STONE HEALTH_GEM2 %player%
@@ -342,22 +249,13 @@ Health_Gem:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "HEALTH_GEM2"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
+    - "HEALTH_GEM2"
     - MMOITEMS_GEM_COLOR "Uncolored"
     - MMOITEMS_MAX_HEALTH 24.740598935229784d
     - UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "GEM_STONE"
-    - MMOITEMS_DISABLE_SMELTING "1b"
+    - "GEM_STONE"
     - UNSTACKABLE_UUID "c0942541-81b5-42ac-9bdb-e24a225ce5ee"
-    - MMOITEMS_LORE '["§fAdds §aHP§f to any equipment!"]'
-    - MMOITEMS_TIER "LEGENDARY"
-    item-flags:
-    - HIDE_ATTRIBUTES
+    - '["§fAdds §aHP§f to any equipment!"]'
 Bank_Token:
   commands:
   - mi give CONSUMABLE BANK_TOKEN %player%
@@ -379,15 +277,11 @@ Bank_Token:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_ITEM_ID "BANK_TOKEN"
+    - "BANK_TOKEN"
     - UNSTACKABLE_UUID "85503764-e9f6-4c64-90f3-75b4ad31a5d9"
     - UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Trade for an extra Bank Page!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
+    - "EXOTIC"
+    - '["§7Trade for an extra Bank Page!"]'
 Enchanted_Oak_Log:
   commands:
   - mi give MATERIAL ENCHANTED_OAK_LOG %player% 16
@@ -409,18 +303,6 @@ Enchanted_Oak_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_OAK_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Enchanted_Birch_Log:
   commands:
   - mi give MATERIAL ENCHANTED_BIRCH_LOG %player% 16
@@ -442,18 +324,6 @@ Enchanted_Birch_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_BIRCH_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Enchanted_Dark_Oak_Log:
   commands:
   - mi give MATERIAL ENCHANTED_DARK_OAK_LOG %player% 16
@@ -475,18 +345,6 @@ Enchanted_Dark_Oak_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_DARK_OAK_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Enchanted_Jungle_Log:
   commands:
   - mi give MATERIAL ENCHANTED_JUNGLE_LOG %player% 16
@@ -508,18 +366,6 @@ Enchanted_Jungle_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_JUNGLE_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Enchanted_Acacia_Log:
   commands:
   - mi give MATERIAL ENCHANTED_ACACIA_LOG %player% 16
@@ -541,18 +387,6 @@ Enchanted_Acacia_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_ACACIA_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Enchanted_Spruce_Log:
   commands:
   - mi give MATERIAL ENCHANTED_SPRUCE_LOG %player% 16
@@ -574,18 +408,6 @@ Enchanted_Spruce_Log:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_ID "ENCHANTED_SPRUCE_LOG"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "MATERIAL"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Contamination:
   commands:
   - mi give WAND CONTAMINATION %player%
@@ -614,26 +436,16 @@ Contamination:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_ITEM_ID "CONTAMINATION"
-    - MMOITEMS_ABILITIES '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":10.0,"damage":250.0,"cooldown":15.0}}]'
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
+    - '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":10.0,"damage":250.0,"cooldown":15.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_DISPLAYED_TYPE "Wand"
     - UNSTACKABLE "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "WAND"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 15.0d
+    - 1.0d
+    - "WAND"
+    - 15.0d
     - UNSTACKABLE_UUID "bf3a3a55-3179-45a9-b27c-38a25b2f8e09"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_LORE '["§fContaminate the enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§fContaminate the enemies!"]'
 Corrupted_Fangs:
   commands:
   - mi give WAND CORRUPTED_FANGS %player%
@@ -661,27 +473,6 @@ Corrupted_Fangs:
     - '&fbeneath the enemies!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_ITEM_ID "CORRUPTED_FANGS"
-    - MMOITEMS_ABILITIES '[{"Id":"CORRUPTED_FANGS","CastMode":"RIGHT_CLICK","Modifiers":{"damage":600.0,"cooldown":15.0}}]'
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_DISPLAYED_TYPE "Wand"
-    - UNSTACKABLE "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "WAND"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 15.0d
-    - UNSTACKABLE_UUID "0d2c23f6-a012-4284-936e-5d12fa70e6c2"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_LORE '["§fCorrupt the ground","§fbeneath the enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Mining_Skill_EXP_Booster:
   commands:
   - mi give CONSUMABLE MINING_BOOSTEROP %player%
@@ -703,20 +494,6 @@ Mining_Skill_EXP_Booster:
     - '&fby &9100% &ffor &910 mins&f.'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "CONSUMABLE"
-    - MMOITEMS_ITEM_ID "SKILL_BOOSTER"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§fBoosts §9Mining Skill §fEXP","§fby §9100% §ffor §910 mins§f."]'
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining 1 600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
 Borg's_Steed:
   commands:
   - mi give MOUNT BORG %player%
@@ -744,27 +521,6 @@ Borg's_Steed:
     - '&7within 5 blocks every 12.5 seconds!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_ID "BORG"
-    - MMOITEMS_ABILITIES '[{"Id":"MOUNTBORG","CastMode":"RIGHT_CLICK","Modifiers":{"cooldown":1.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_DISPLAYED_TYPE "Mount"
-    - UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "MOUNT"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - Unbreakable 1
-    - UNSTACKABLE_UUID "ccf34303-e983-4cbe-83d3-b142c21ab967"
-    - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJmOTRlMzZmNjk4NjQ5YmMzZDU4ZGZkZTFiMmI2NTUyZDA2ODIwMGJmZDhiMTM3MmUzM2Q0NTY2ZTZhNzhkOCJ9fX0="}]},Id:"a1f247f0-fb4f-484f-b548-ac3da31ebccd"}
-    - MMOITEMS_TIER "COMMON"
-    - 'MMOITEMS_LORE ''["§2Speed: 25%","§7","§7Peirces through the ground giving","§cSlowness
-      2 §7for 2.5 seconds to enemies","§7within 5 blocks every 12.5 seconds!"]'''
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_UNBREAKABLE
 Foraging_Profession_Booster:
   commands:
   - mi give BOOSTER FORAGING_BOOSTER1 %player%
@@ -787,19 +543,6 @@ Foraging_Profession_Booster:
     - '&ffor the entire serever!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FORAGING_BOOSTER1"
-    - CustomPotionColor 65280
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aForaging Profession EXP","§fby §a10% §ffor §a60
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Foraging .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Foraging_Profession_Booster1:
   commands:
   - mi give BOOSTER FORAGING_BOOSTER2 %player%
@@ -822,19 +565,6 @@ Foraging_Profession_Booster1:
     - '&ffor the entire serever!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FORAGING_BOOSTER2"
-    - CustomPotionColor 65280
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aForaging Profession EXP","§fby §a20% §ffor §a90
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Foraging .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Foraging_Profession_Booster2:
   commands:
   - mi give BOOSTER FORAGING_BOOSTER3 %player%
@@ -857,19 +587,6 @@ Foraging_Profession_Booster2:
     - '&ffor the entire serever!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FORAGING_BOOSTER3"
-    - CustomPotionColor 65280
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aForaging Profession EXP","§fby §a30% §ffor §a120
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Foraging .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Foraging_Profession_Booster3:
   commands:
   - mi give BOOSTER FORAGING_BOOSTER4 %player%
@@ -892,19 +609,6 @@ Foraging_Profession_Booster3:
     - '&ffor the entire serever!'
     - ''
     - '&5&lLEGENDARY ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FORAGING_BOOSTER4"
-    - CustomPotionColor 65280
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aForaging Profession EXP","§fby §a40% §ffor §a150
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Foraging .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Foraging_Profession_Booster4:
   commands:
   - mi give BOOSTER FORAGING_BOOSTER5 %player%
@@ -927,19 +631,6 @@ Foraging_Profession_Booster4:
     - '&ffor the entire serever!'
     - ''
     - '&e&lEXOTIC ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FORAGING_BOOSTER5"
-    - CustomPotionColor 65280
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aForaging Profession EXP","§fby §a50% §ffor §a180
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Foraging .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Farming_Profession_Booster:
   commands:
   - mi give BOOSTER FARMING_BOOSTER1 %player%
@@ -962,19 +653,6 @@ Farming_Profession_Booster:
     - '&ffor the entire serever!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FARMING_BOOSTER1"
-    - CustomPotionColor 16776960
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aFarming Profession EXP","§fby §a10% §ffor §a60 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Farming .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Farming_Profession_Booster1:
   commands:
   - mi give BOOSTER FARMING_BOOSTER2 %player%
@@ -997,19 +675,6 @@ Farming_Profession_Booster1:
     - '&ffor the entire serever!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FARMING_BOOSTER2"
-    - CustomPotionColor 16776960
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aFarming Profession EXP","§fby §a20% §ffor §a90 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Farming .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Farming_Profession_Booster2:
   commands:
   - mi give BOOSTER FARMING_BOOSTER3 %player%
@@ -1032,19 +697,6 @@ Farming_Profession_Booster2:
     - '&ffor the entire serever!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FARMING_BOOSTER3"
-    - CustomPotionColor 16776960
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aFarming Profession EXP","§fby §a30% §ffor §a120
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Farming .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Farming_Profession_Booster3:
   commands:
   - mi give BOOSTER FARMING_BOOSTER4 %player%
@@ -1067,19 +719,6 @@ Farming_Profession_Booster3:
     - '&ffor the entire serever!'
     - ''
     - '&5&lLEGENDARY ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FARMING_BOOSTER4"
-    - CustomPotionColor 16776960
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aFarming Profession EXP","§fby §a40% §ffor §a150
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Farming .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Farming_Profession_Booster4:
   commands:
   - mi give BOOSTER FARMING_BOOSTER5 %player%
@@ -1102,19 +741,6 @@ Farming_Profession_Booster4:
     - '&ffor the entire serever!'
     - ''
     - '&e&lEXOTIC ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "FARMING_BOOSTER5"
-    - CustomPotionColor 16776960
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aFarming Profession EXP","§fby §a50% §ffor §a180
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Farming .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Slayer_Profession_Booster:
   commands:
   - mi give BOOSTER SLAYER_BOOSTER1 %player%
@@ -1137,19 +763,6 @@ Slayer_Profession_Booster:
     - '&ffor the entire serever!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SLAYER_BOOSTER1"
-    - CustomPotionColor 16711680
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSlayer Profession EXP","§fby §a10% §ffor §a60 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Slayer .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Slayer_Profession_Booster1:
   commands:
   - mi give BOOSTER SLAYER_BOOSTER2 %player%
@@ -1172,19 +785,6 @@ Slayer_Profession_Booster1:
     - '&ffor the entire serever!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SLAYER_BOOSTER2"
-    - CustomPotionColor 16711680
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSlayer Profession EXP","§fby §a20% §ffor §a90 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Slayer .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Slayer_Profession_Booster2:
   commands:
   - mi give BOOSTER SLAYER_BOOSTER3 %player%
@@ -1207,19 +807,6 @@ Slayer_Profession_Booster2:
     - '&ffor the entire serever!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SLAYER_BOOSTER3"
-    - CustomPotionColor 16711680
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSlayer Profession EXP","§fby §a30% §ffor §a120 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Slayer .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Slayer_Profession_Booster3:
   commands:
   - mi give BOOSTER SLAYER_BOOSTER4 %player%
@@ -1242,19 +829,6 @@ Slayer_Profession_Booster3:
     - '&ffor the entire serever!'
     - ''
     - '&5&lLEGENDARY ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SLAYER_BOOSTER4"
-    - CustomPotionColor 16711680
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSlayer Profession EXP","§fby §a40% §ffor §a150 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Slayer .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Slayer_Profession_Booster4:
   commands:
   - mi give BOOSTER SLAYER_BOOSTER5 %player%
@@ -1277,19 +851,6 @@ Slayer_Profession_Booster4:
     - '&ffor the entire serever!'
     - ''
     - '&e&lEXOTIC ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SLAYER_BOOSTER5"
-    - CustomPotionColor 16711680
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSlayer Profession EXP","§fby §a50% §ffor §a180 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Slayer .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Enchanting_Profession_Booster:
   commands:
   - mi give BOOSTER ENCHANTING_BOOSTER1 %player%
@@ -1312,19 +873,6 @@ Enchanting_Profession_Booster:
     - '&ffor the entire serever!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "ENCHANTING_BOOSTER1"
-    - CustomPotionColor 16722107
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aEnchanting Profession EXP","§fby §a10% §ffor §a60
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Enchanting .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Enchanting_Profession_Booster1:
   commands:
   - mi give BOOSTER ENCHANTING_BOOSTER2 %player%
@@ -1347,19 +895,6 @@ Enchanting_Profession_Booster1:
     - '&ffor the entire serever!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "ENCHANTING_BOOSTER2"
-    - CustomPotionColor 16722107
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aEnchanting Profession EXP","§fby §a20% §ffor §a90
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Enchanting .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Enchanting_Profession_Booster2:
   commands:
   - mi give BOOSTER ENCHANTING_BOOSTER3 %player%
@@ -1382,19 +917,6 @@ Enchanting_Profession_Booster2:
     - '&ffor the entire serever!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "ENCHANTING_BOOSTER3"
-    - CustomPotionColor 16722107
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aEnchanting Profession EXP","§fby §a30% §ffor §a120
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Enchanting .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Enchanting_Profession_Booster3:
   commands:
   - mi give BOOSTER ENCHANTING_BOOSTER4 %player%
@@ -1417,19 +939,6 @@ Enchanting_Profession_Booster3:
     - '&ffor the entire serever!'
     - ''
     - '&5&lLEGENDARY ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "ENCHANTING_BOOSTER4"
-    - CustomPotionColor 16722107
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aEnchanting Profession EXP","§fby §a40% §ffor §a150
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Enchanting .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Enchanting_Profession_Booster4:
   commands:
   - mi give BOOSTER ENCHANTING_BOOSTER5 %player%
@@ -1452,19 +961,6 @@ Enchanting_Profession_Booster4:
     - '&ffor the entire serever!'
     - ''
     - '&e&lEXOTIC ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "ENCHANTING_BOOSTER5"
-    - CustomPotionColor 16722107
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aEnchanting Profession EXP","§fby §a50% §ffor §a180
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Enchanting .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Cooking_Profession_Booster:
   commands:
   - mi give BOOSTER COOKING_BOOSTER1 %player%
@@ -1487,19 +983,6 @@ Cooking_Profession_Booster:
     - '&ffor the entire serever!'
     - ''
     - '&f&lCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "COOKING_BOOSTER1"
-    - CustomPotionColor 16753920
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aCooking Profession EXP","§fby §a10% §ffor §a60 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Cooking .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Cooking_Profession_Booster1:
   commands:
   - mi give BOOSTER COOKING_BOOSTER2 %player%
@@ -1522,19 +1005,6 @@ Cooking_Profession_Booster1:
     - '&ffor the entire serever!'
     - ''
     - '&2&lUNCOMMON ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "COOKING_BOOSTER2"
-    - CustomPotionColor 16753920
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aCooking Profession EXP","§fby §a20% §ffor §a90 minutes","§ffor
-      the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Cooking .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Cooking_Profession_Booster2:
   commands:
   - mi give BOOSTER COOKING_BOOSTER3 %player%
@@ -1557,19 +1027,6 @@ Cooking_Profession_Booster2:
     - '&ffor the entire serever!'
     - ''
     - '&9&lRARE ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "COOKING_BOOSTER3"
-    - CustomPotionColor 16753920
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aCooking Profession EXP","§fby §a30% §ffor §a120
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Cooking .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Cooking_Profession_Booster3:
   commands:
   - mi give BOOSTER COOKING_BOOSTER4 %player%
@@ -1592,19 +1049,6 @@ Cooking_Profession_Booster3:
     - '&ffor the entire serever!'
     - ''
     - '&5&lLEGENDARY ITEM'
-    nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "COOKING_BOOSTER4"
-    - CustomPotionColor 16753920
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aCooking Profession EXP","§fby §a40% §ffor §a150
-      minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Cooking .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Cooking_Profession_Booster4:
   commands:
   - mi give BOOSTER COOKING_BOOSTER5 %player%
@@ -1628,18 +1072,14 @@ Cooking_Profession_Booster4:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "COOKING_BOOSTER5"
+    - "BOOSTER"
+    - "COOKING_BOOSTER5"
     - CustomPotionColor 16753920
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aCooking Profession EXP","§fby §a50% §ffor §a180
+    - 1.0d
+    - "EXOTIC"
+    - '["§fBoosts §aCooking Profession EXP","§fby §a50% §ffor §a180
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Cooking .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create Cooking .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Spellforging_Profession_Booster:
   commands:
   - mi give BOOSTER SPELLFORGING_BOOSTER1 %player%
@@ -1663,19 +1103,15 @@ Spellforging_Profession_Booster:
     - ''
     - '&f&lCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SPELLFORGING_BOOSTER1"
+    - "BOOSTER"
+    - "SPELLFORGING_BOOSTER1"
     - CustomPotionColor 65535
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSpellforging Profession EXP","§fby §a10% §ffor §a60
+    - 1.0d
+    - "COMMON"
+    - '["§fBoosts §aSpellforging Profession EXP","§fby §a10% §ffor §a60
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Spellforging .1 3600
+    - '[{"Command":"mmocore booster create Spellforging .1 3600
       %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Spellforging_Profession_Booster1:
   commands:
   - mi give BOOSTER SPELLFORGING_BOOSTER2 %player%
@@ -1699,19 +1135,15 @@ Spellforging_Profession_Booster1:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SPELLFORGING_BOOSTER2"
+    - "BOOSTER"
+    - "SPELLFORGING_BOOSTER2"
     - CustomPotionColor 65535
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSpellforging Profession EXP","§fby §a20% §ffor §a90
+    - 1.0d
+    - "UNCOMMON"
+    - '["§fBoosts §aSpellforging Profession EXP","§fby §a20% §ffor §a90
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Spellforging .2 5400
+    - '[{"Command":"mmocore booster create Spellforging .2 5400
       %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Spellforging_Profession_Booster2:
   commands:
   - mi give BOOSTER SPELLFORGING_BOOSTER3 %player%
@@ -1735,19 +1167,14 @@ Spellforging_Profession_Booster2:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SPELLFORGING_BOOSTER3"
+    - "BOOSTER"
+    - "SPELLFORGING_BOOSTER3"
     - CustomPotionColor 65535
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSpellforging Profession EXP","§fby §a30% §ffor §a120
+    - 1.0d
+    - '["§fBoosts §aSpellforging Profession EXP","§fby §a30% §ffor §a120
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Spellforging .3 7200
+    - '[{"Command":"mmocore booster create Spellforging .3 7200
       %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Spellforging_Profession_Booster3:
   commands:
   - mi give BOOSTER SPELLFORGING_BOOSTER4 %player%
@@ -1771,19 +1198,14 @@ Spellforging_Profession_Booster3:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SPELLFORGING_BOOSTER4"
+    - "BOOSTER"
+    - "SPELLFORGING_BOOSTER4"
     - CustomPotionColor 65535
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSpellforging Profession EXP","§fby §a40% §ffor §a150
+    - 1.0d
+    - '["§fBoosts §aSpellforging Profession EXP","§fby §a40% §ffor §a150
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Spellforging .4 9000
+    - '[{"Command":"mmocore booster create Spellforging .4 9000
       %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Spellforging_Profession_Booster4:
   commands:
   - mi give BOOSTER SPELLFORGING_BOOSTER5 %player%
@@ -1807,19 +1229,15 @@ Spellforging_Profession_Booster4:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "SPELLFORGING_BOOSTER5"
+    - "BOOSTER"
+    - "SPELLFORGING_BOOSTER5"
     - CustomPotionColor 65535
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aSpellforging Profession EXP","§fby §a50% §ffor §a180
+    - 1.0d
+    - "EXOTIC"
+    - '["§fBoosts §aSpellforging Profession EXP","§fby §a50% §ffor §a180
       minutes","§ffor the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create Spellforging .5 10800
+    - '[{"Command":"mmocore booster create Spellforging .5 10800
       %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
 Mining_Profession_Booster:
   commands:
   - mi give BOOSTER MINING_BOOSTER1 %player%
@@ -1843,18 +1261,14 @@ Mining_Profession_Booster:
     - ''
     - '&f&lCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "MINING_BOOSTER1"
+    - "BOOSTER"
+    - "MINING_BOOSTER1"
     - CustomPotionColor 255
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "COMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aMining Profession EXP","§fby §a10% §ffor §a60 minutes","§ffor
+    - 1.0d
+    - "COMMON"
+    - '["§fBoosts §aMining Profession EXP","§fby §a10% §ffor §a60 minutes","§ffor
       the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create mining .1 3600 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Mining_Profession_Booster1:
   commands:
   - mi give BOOSTER MINING_BOOSTER2 %player%
@@ -1878,18 +1292,14 @@ Mining_Profession_Booster1:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "MINING_BOOSTER2"
+    - "BOOSTER"
+    - "MINING_BOOSTER2"
     - CustomPotionColor 255
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aMining Profession EXP","§fby §a20% §ffor §a90 minutes","§ffor
+    - 1.0d
+    - "UNCOMMON"
+    - '["§fBoosts §aMining Profession EXP","§fby §a20% §ffor §a90 minutes","§ffor
       the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create mining .2 5400 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Mining_Profession_Booster2:
   commands:
   - mi give BOOSTER MINING_BOOSTER3 %player%
@@ -1913,18 +1323,13 @@ Mining_Profession_Booster2:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "MINING_BOOSTER3"
+    - "BOOSTER"
+    - "MINING_BOOSTER3"
     - CustomPotionColor 255
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "RARE"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aMining Profession EXP","§fby §a30% §ffor §a120 minutes","§ffor
+    - 1.0d
+    - '["§fBoosts §aMining Profession EXP","§fby §a30% §ffor §a120 minutes","§ffor
       the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create mining .3 7200 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Mining_Profession_Booster3:
   commands:
   - mi give BOOSTER MINING_BOOSTER4 %player%
@@ -1948,18 +1353,13 @@ Mining_Profession_Booster3:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "MINING_BOOSTER4"
+    - "BOOSTER"
+    - "MINING_BOOSTER4"
     - CustomPotionColor 255
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "LEGENDARY"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aMining Profession EXP","§fby §a40% §ffor §a150 minutes","§ffor
+    - 1.0d
+    - '["§fBoosts §aMining Profession EXP","§fby §a40% §ffor §a150 minutes","§ffor
       the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create mining .4 9000 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Mining_Profession_Booster4:
   commands:
   - mi give BOOSTER MINING_BOOSTER5 %player%
@@ -1983,18 +1383,14 @@ Mining_Profession_Booster4:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "BOOSTER"
-    - MMOITEMS_ITEM_ID "MINING_BOOSTER5"
+    - "BOOSTER"
+    - "MINING_BOOSTER5"
     - CustomPotionColor 255
-    - MMOITEMS_MAX_CONSUME 1.0d
-    - MMOITEMS_TIER "EXOTIC"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_LORE '["§fBoosts §aMining Profession EXP","§fby §a50% §ffor §a180 minutes","§ffor
+    - 1.0d
+    - "EXOTIC"
+    - '["§fBoosts §aMining Profession EXP","§fby §a50% §ffor §a180 minutes","§ffor
       the entire serever!"]'
-    - MMOITEMS_COMMANDS '[{"Command":"mmocore booster create mining .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
-    item-flags:
-    - HIDE_ATTRIBUTES
-    - HIDE_POTION_EFFECTS
+    - '[{"Command":"mmocore booster create mining .5 10800 %player%","Delay":0.0,"Console":false,"Op":true}]'
 Green_Undead_Sword:
   commands:
   - mi give SKIN GREEN_UNDEAD_SWORD %player%
@@ -2019,18 +1415,14 @@ Green_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "GREEN_UNDEAD_SWORD"
+    - "SKIN"
+    - "GREEN_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 1
     - MMOITEMS_UNSTACKABLE_UUID "8877601b-f2a8-4b4e-bfa6-719d4d8131c9"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Blue_Undead_Sword:
   commands:
@@ -2056,18 +1448,14 @@ Blue_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "BLUE_UNDEAD_SWORD"
+    - "SKIN"
+    - "BLUE_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 2
     - MMOITEMS_UNSTACKABLE_UUID "6f5ee41f-ea7e-4eab-a98d-f29458890718"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Brown_Undead_Sword:
   commands:
@@ -2093,18 +1481,14 @@ Brown_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "BROWN_UNDEAD_SWORD"
+    - "SKIN"
+    - "BROWN_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 3
     - MMOITEMS_UNSTACKABLE_UUID "056487f9-2835-406b-b5eb-bc8fb54e4ebf"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Yellow_Undead_Sword:
   commands:
@@ -2130,18 +1514,14 @@ Yellow_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "YELLOW_UNDEAD_SWORD"
+    - "SKIN"
+    - "YELLOW_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 4
     - MMOITEMS_UNSTACKABLE_UUID "8121170c-fa21-4a3c-afec-6773e15fe095"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Purple_Undead_Sword:
   commands:
@@ -2167,18 +1547,14 @@ Purple_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "PURPLE_UNDEAD_SWORD"
+    - "SKIN"
+    - "PURPLE_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 5
     - MMOITEMS_UNSTACKABLE_UUID "b3f4f040-17eb-46c6-9140-f5f26e8dbdda"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Red_Undead_Sword:
   commands:
@@ -2204,18 +1580,14 @@ Red_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "RED_UNDEAD_SWORD"
+    - "SKIN"
+    - "RED_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 6
     - MMOITEMS_UNSTACKABLE_UUID "18d56af9-255e-47e2-aab6-c69aeeac2384"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Green_Undead_Sword:
   commands:
@@ -2241,18 +1613,14 @@ Short_Green_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_GREEN_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_GREEN_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 7
     - MMOITEMS_UNSTACKABLE_UUID "21e7b085-d4ad-4b43-af36-2eb5128f8fea"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Blue_Undead_Sword:
   commands:
@@ -2278,18 +1646,14 @@ Short_Blue_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_BLUE_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_BLUE_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 8
     - MMOITEMS_UNSTACKABLE_UUID "4e23480c-9c0f-40ce-9211-d2695ef8f739"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Brown_Undead_Sword:
   commands:
@@ -2315,18 +1679,14 @@ Short_Brown_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_BROWN_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_BROWN_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 9
     - MMOITEMS_UNSTACKABLE_UUID "14da5e77-3c00-414a-bfc7-1a6d3cf8447c"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Yellow_Undead_Sword:
   commands:
@@ -2352,18 +1712,14 @@ Short_Yellow_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_YELLOW_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_YELLOW_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 10
     - MMOITEMS_UNSTACKABLE_UUID "ffc670a4-20a9-4b0c-9021-c5a6d345305f"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Purple_Undead_Sword:
   commands:
@@ -2389,18 +1745,14 @@ Short_Purple_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_PURPLE_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_PURPLE_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 11
     - MMOITEMS_UNSTACKABLE_UUID "bc32e02a-9aac-4da8-a428-26fa6a4a8110"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Short_Red_Undead_Sword:
   commands:
@@ -2426,18 +1778,14 @@ Short_Red_Undead_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SHORT_RED_UNDEAD_SWORD"
+    - "SKIN"
+    - "SHORT_RED_UNDEAD_SWORD"
     - Unbreakable 1
     - Damage 12
     - MMOITEMS_UNSTACKABLE_UUID "406b37b6-5af4-4fc7-b6f5-539e0357ac5e"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Soul_Splitter_Sword:
   commands:
@@ -2463,18 +1811,14 @@ Undead_Soul_Splitter_Sword:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_SOUL_SPLITTER_SWORD"
+    - "SKIN"
+    - "UNDEAD_SOUL_SPLITTER_SWORD"
     - Unbreakable 1
     - Damage 13
     - MMOITEMS_UNSTACKABLE_UUID "5d9b7b16-6908-4251-991b-a5594398ce45"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Sword_of_Darkness:
   commands:
@@ -2500,18 +1844,14 @@ Undead_Sword_of_Darkness:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_SWORD_OF_DARKNESS"
+    - "SKIN"
+    - "UNDEAD_SWORD_OF_DARKNESS"
     - Unbreakable 1
     - Damage 15
     - MMOITEMS_UNSTACKABLE_UUID "cdb8a0af-5ef1-4ddc-aedc-c70108604616"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Serpent_Staff:
   commands:
@@ -2537,18 +1877,14 @@ Undead_Serpent_Staff:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_SERPENT_STAFF"
+    - "SKIN"
+    - "UNDEAD_SERPENT_STAFF"
     - Unbreakable 1
     - Damage 17
     - MMOITEMS_UNSTACKABLE_UUID "029b7bdc-46c1-47e4-ba35-6f4c7ee353a3"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Bringer_Staff:
   commands:
@@ -2574,18 +1910,14 @@ Undead_Bringer_Staff:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_BRINGER_STAFF"
+    - "SKIN"
+    - "UNDEAD_BRINGER_STAFF"
     - Unbreakable 1
     - Damage 18
     - MMOITEMS_UNSTACKABLE_UUID "084a03ed-98e1-40be-b318-6501faa82eb9"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Sprinkler_Staff:
   commands:
@@ -2611,18 +1943,14 @@ Undead_Sprinkler_Staff:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_SPRINKLER_STAFF"
+    - "SKIN"
+    - "UNDEAD_SPRINKLER_STAFF"
     - Unbreakable 1
     - Damage 19
     - MMOITEMS_UNSTACKABLE_UUID "7c4dacf6-f61c-46fa-8768-8d32596102f6"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Watcher_Staff:
   commands:
@@ -2648,18 +1976,15 @@ Undead_Watcher_Staff:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_WATCHER_STAFF"
+    - "SKIN"
+    - "UNDEAD_WATCHER_STAFF"
     - Unbreakable 1
     - Damage 20
     - MMOITEMS_UNSTACKABLE_UUID "efb5adf6-1781-41b5-a9f6-1ac4d7369709"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Scythe:
   commands:
@@ -2685,18 +2010,15 @@ Undead_Scythe:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_SCYTHE"
+    - "SKIN"
+    - "UNDEAD_SCYTHE"
     - Unbreakable 1
     - Damage 21
     - MMOITEMS_UNSTACKABLE_UUID "11380185-a3b0-4690-ac73-8f8c18eaaebf"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Undead_Battle_Axe:
   commands:
@@ -2722,18 +2044,14 @@ Undead_Battle_Axe:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "UNDEAD_BATTLE_AXE"
+    - "SKIN"
+    - "UNDEAD_BATTLE_AXE"
     - Unbreakable 1
     - Damage 22
     - MMOITEMS_UNSTACKABLE_UUID "d2887b1c-1164-47db-b122-cb047099d7af"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Grave_Digger_Battle_Axe:
   commands:
@@ -2759,18 +2077,14 @@ Grave_Digger_Battle_Axe:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "GRAVE_DIGGER_BATTLE_AXE"
+    - "SKIN"
+    - "GRAVE_DIGGER_BATTLE_AXE"
     - Unbreakable 1
     - Damage 24
     - MMOITEMS_UNSTACKABLE_UUID "c5c84ee0-49f7-4805-a2bd-294f54a6a1e6"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Deathly_Battle_Axe:
   commands:
@@ -2796,18 +2110,14 @@ Deathly_Battle_Axe:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "DEATHLY_BATTLE_AXE"
+    - "SKIN"
+    - "DEATHLY_BATTLE_AXE"
     - Unbreakable 1
     - Damage 25
     - MMOITEMS_UNSTACKABLE_UUID "353ea01f-e3e7-4f1d-a3bc-f026cb174027"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Holy_Riser_Blade:
   commands:
@@ -2833,18 +2143,15 @@ Holy_Riser_Blade:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HOLY_RISER_BLADE"
+    - "SKIN"
+    - "HOLY_RISER_BLADE"
     - Unbreakable 1
     - Damage 16
     - MMOITEMS_UNSTACKABLE_UUID "036701b3-1256-4edc-b8c9-f3117f7085b9"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons!"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Heavens_Gates_Battle_Axe:
   commands:
@@ -2870,18 +2177,15 @@ Heavens_Gates_Battle_Axe:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HEAVENS_GATES_BATTLE_AXE"
+    - "SKIN"
+    - "HEAVENS_GATES_BATTLE_AXE"
     - Unbreakable 1
     - Damage 26
     - MMOITEMS_UNSTACKABLE_UUID "748099f8-1d4e-4093-be6a-f720f9f41d25"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Bringer_Sword:
   commands:
@@ -2907,18 +2211,14 @@ Hell_Bringer_Sword:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_BRINGER_SWORD"
+    - "SKIN"
+    - "HELL_BRINGER_SWORD"
     - Unbreakable 1
     - Damage 27
     - MMOITEMS_UNSTACKABLE_UUID "fc7868fe-8a93-4666-a36b-03ea6aa4fbfe"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Rusted_Sword:
   commands:
@@ -2944,18 +2244,14 @@ Rusted_Sword:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "RUSTED_SWORD"
+    - "SKIN"
+    - "RUSTED_SWORD"
     - Unbreakable 1
     - Damage 28
     - MMOITEMS_UNSTACKABLE_UUID "a878bb77-d8e8-490c-b29e-4b3c9f6e8793"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Magma_Blade:
   commands:
@@ -2981,18 +2277,14 @@ Magma_Blade:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "MAGMA_BLADE"
+    - "SKIN"
+    - "MAGMA_BLADE"
     - Unbreakable 1
     - Damage 29
     - MMOITEMS_UNSTACKABLE_UUID "153969cf-b7db-46f4-873a-105857e4e0e6"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 World_Splitter_Sword:
   commands:
@@ -3018,18 +2310,15 @@ World_Splitter_Sword:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "WORLD_SPLITTER_SWORD"
+    - "SKIN"
+    - "WORLD_SPLITTER_SWORD"
     - Unbreakable 1
     - Damage 30
     - MMOITEMS_UNSTACKABLE_UUID "8132796a-4f38-4e78-983f-a36f5a615bb0"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 World_Splitter_Sword1:
   commands:
@@ -3055,18 +2344,15 @@ World_Splitter_Sword1:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "WORLD_SPLITTER_SWORD2"
+    - "SKIN"
+    - "WORLD_SPLITTER_SWORD2"
     - Unbreakable 1
     - Damage 32
     - MMOITEMS_UNSTACKABLE_UUID "ace4af9b-17fd-4366-b79e-5e34b57c4838"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Bringer_Battle_Axe:
   commands:
@@ -3092,18 +2378,14 @@ Hell_Bringer_Battle_Axe:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_BRINGER_BATTLE_AXE"
+    - "SKIN"
+    - "HELL_BRINGER_BATTLE_AXE"
     - Unbreakable 1
     - Damage 33
     - MMOITEMS_UNSTACKABLE_UUID "b3d7535f-cd4e-4331-af25-1b94e605e4db"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Bringer_Battle_Axe1:
   commands:
@@ -3129,18 +2411,14 @@ Hell_Bringer_Battle_Axe1:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_BRINGER_BATTLE_AXE2"
+    - "SKIN"
+    - "HELL_BRINGER_BATTLE_AXE2"
     - Unbreakable 1
     - Damage 34
     - MMOITEMS_UNSTACKABLE_UUID "bc383d0d-a076-427a-9847-8b187986c519"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Rusted_Battle_Axe:
   commands:
@@ -3166,18 +2444,14 @@ Rusted_Battle_Axe:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "RUSTED_BATTLE_AXE"
+    - "SKIN"
+    - "RUSTED_BATTLE_AXE"
     - Unbreakable 1
     - Damage 35
     - MMOITEMS_UNSTACKABLE_UUID "a82f40ca-c4d6-4c5a-805d-874fce011eac"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Magma_Battle_Axe:
   commands:
@@ -3203,18 +2477,14 @@ Magma_Battle_Axe:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "MAGMA_BATTLE_AXE"
+    - "SKIN"
+    - "MAGMA_BATTLE_AXE"
     - Unbreakable 1
     - Damage 36
     - MMOITEMS_UNSTACKABLE_UUID "e18183a2-5056-46a6-85e0-fe1981b847c7"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Soul_Consuming_Battle_Axe:
   commands:
@@ -3240,18 +2510,14 @@ Soul_Consuming_Battle_Axe:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "SOUL_CONSUMING_BATTLE_AXE"
+    - "SKIN"
+    - "SOUL_CONSUMING_BATTLE_AXE"
     - Unbreakable 1
     - Damage 37
     - MMOITEMS_UNSTACKABLE_UUID "1de72a7b-50ad-4468-a446-494335ca14c0"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Magma_Staff:
   commands:
@@ -3277,18 +2543,14 @@ Magma_Staff:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "MAGMA_STAFF"
+    - "SKIN"
+    - "MAGMA_STAFF"
     - Unbreakable 1
     - Damage 40
     - MMOITEMS_UNSTACKABLE_UUID "54f18b3f-9b50-421c-be97-91b46e639803"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Rusted_Staff:
   commands:
@@ -3314,18 +2576,14 @@ Rusted_Staff:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "RUSTED_STAFF"
+    - "SKIN"
+    - "RUSTED_STAFF"
     - Unbreakable 1
     - Damage 41
     - MMOITEMS_UNSTACKABLE_UUID "fa784394-28e5-49ce-a9a5-c2dbbd926ec9"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Rusted_Staff1:
   commands:
@@ -3351,18 +2609,14 @@ Rusted_Staff1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "RUSTED_STAFF2"
+    - "SKIN"
+    - "RUSTED_STAFF2"
     - Unbreakable 1
     - Damage 42
     - MMOITEMS_UNSTACKABLE_UUID "2650ddb9-734f-484b-8c49-bbd7f5ccaa2c"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Flame_Staff:
   commands:
@@ -3388,18 +2642,14 @@ Hell_Flame_Staff:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_FLAME_STAFF"
+    - "SKIN"
+    - "HELL_FLAME_STAFF"
     - Unbreakable 1
     - Damage 43
     - MMOITEMS_UNSTACKABLE_UUID "6ed57e95-d2da-42c5-b4ab-0bfbfc5cd435"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Flame_Staff1:
   commands:
@@ -3425,18 +2675,14 @@ Hell_Flame_Staff1:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_FLAME_STAFF2"
+    - "SKIN"
+    - "HELL_FLAME_STAFF2"
     - Unbreakable 1
     - Damage 44
     - MMOITEMS_UNSTACKABLE_UUID "b0247f43-4e4d-42a5-a49b-b838d3d0981b"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Telekinesis_Staff:
   commands:
@@ -3462,18 +2708,15 @@ Hell_Telekinesis_Staff:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_TELEKINESIS_STAFF"
+    - "SKIN"
+    - "HELL_TELEKINESIS_STAFF"
     - Unbreakable 1
     - Damage 45
     - MMOITEMS_UNSTACKABLE_UUID "ae8d8469-7168-4606-b0ee-d8d6fae42511"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Hell_Telekinesis_Staff1:
   commands:
@@ -3499,18 +2742,15 @@ Hell_Telekinesis_Staff1:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_ITEM_TYPE "SKIN"
-    - MMOITEMS_ITEM_ID "HELL_TELEKINESIS_STAFF2"
+    - "SKIN"
+    - "HELL_TELEKINESIS_STAFF2"
     - Unbreakable 1
     - Damage 46
     - MMOITEMS_UNSTACKABLE_UUID "73b64d9d-ad01-4be7-8b26-1f4e22f02b90"
     - MMOITEMS_UNSTACKABLE "1b"
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
+    - "EXOTIC"
+    - '["§7Skin can be applied to any","§7any tool or weapon once!","§7","§eDrag
       onto Tools or Weapons"]'
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Enchanting_Stone:
   commands:
@@ -3534,19 +2774,15 @@ Enchanting_Stone:
     - ''
     - '&f&lCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_DYNAMIC_LORE '["§fEnchantment","","§7Used when enchanting gear","§7with
+    - '["§fEnchantment","","§7Used when enchanting gear","§7with
       common enchantments!","","§f§lCOMMON ITEM"]'
-    - MMOITEMS_ITEM_ID "ENCHANTING_STONE1"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
+    - "ENCHANTING_STONE1"
     - Unbreakable 1
     - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODJkZDUyYTFiZDA3MzNhZTMzMjFmNDE2MmI3OTcyZDk0MzA0YzE1ODVjM2E2MmE0MGViZDZmMDZmMGYyYzRjIn19fQ=="}]},Id:"481ffb06-7f40-4bc3-b8f5-02d9c60285f1"}
-    - MMOITEMS_TIER "COMMON"
-    - MMOITEMS_LORE '["§7Used when enchanting gear","§7with common enchantments!"]'
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "ENCHANTMENT"
+    - "COMMON"
+    - '["§7Used when enchanting gear","§7with common enchantments!"]'
+    - "ENCHANTMENT"
     - MMOITEMS_DISABLE_RIGHT_CLICK_CONSUME "1b"
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Enchanting_Stone1:
   commands:
@@ -3570,19 +2806,15 @@ Enchanting_Stone1:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - MMOITEMS_DYNAMIC_LORE '["§fEnchantment","","§7Used when enchanting gear","§7with
+    - '["§fEnchantment","","§7Used when enchanting gear","§7with
       uncommon enchantments!","","§2§lUNCOMMON ITEM"]'
-    - MMOITEMS_ITEM_ID "ENCHANTING_STONE2"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
+    - "ENCHANTING_STONE2"
     - Unbreakable 1
     - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YmQ0MmY5YTM2NWJjNzgzMGJmZDFhNzM5ZWE3YmU3OWRiNDMxY2E5NTgxNzViMjI2ZGU0ZjMzYWRhYzhkMSJ9fX0="}]},Id:"481ffb06-7f40-4bc3-b8f5-02d9c60285f1"}
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_LORE '["§7Used when enchanting gear","§7with uncommon enchantments!"]'
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "ENCHANTMENT"
+    - "UNCOMMON"
+    - '["§7Used when enchanting gear","§7with uncommon enchantments!"]'
+    - "ENCHANTMENT"
     - MMOITEMS_DISABLE_RIGHT_CLICK_CONSUME "1b"
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Enchanting_Stone2:
   commands:
@@ -3606,19 +2838,14 @@ Enchanting_Stone2:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - MMOITEMS_DYNAMIC_LORE '["§fEnchantment","","§7Used when enchanting gear","§7with
+    - '["§fEnchantment","","§7Used when enchanting gear","§7with
       rare enchantments!","","§9§lRARE ITEM"]'
-    - MMOITEMS_ITEM_ID "ENCHANTING_STONE3"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
+    - "ENCHANTING_STONE3"
     - Unbreakable 1
     - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ4OTAxMTc1ZTIyZTMwZjEzZDQ4MGEwMzJlOGFhNWM1ZmJhZTRkN2JiZDg2YjliZDRmNDMxZDE2MWZlOWIzOCJ9fX0="}]},Id:"481ffb06-7f40-4bc3-b8f5-02d9c60285f1"}
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_LORE '["§7Used when enchanting gear","§7with rare enchantments!"]'
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "ENCHANTMENT"
+    - '["§7Used when enchanting gear","§7with rare enchantments!"]'
+    - "ENCHANTMENT"
     - MMOITEMS_DISABLE_RIGHT_CLICK_CONSUME "1b"
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Enchanting_Stone3:
   commands:
@@ -3642,19 +2869,14 @@ Enchanting_Stone3:
     - ''
     - '&5&lLEGENDARY ITEM'
     nbt-tags:
-    - MMOITEMS_DYNAMIC_LORE '["§fEnchantment","","§7Used when enchanting gear","§7with
+    - '["§fEnchantment","","§7Used when enchanting gear","§7with
       legendary enchantments!","","§5§lLEGENDARY ITEM"]'
-    - MMOITEMS_ITEM_ID "ENCHANTING_STONE4"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
+    - "ENCHANTING_STONE4"
     - Unbreakable 1
     - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UwNTczNDgxOGJiMDI4NjdlNzNjZjhmYjAwM2QzZDY4ZWFhZjJhMmI0YTFkYzJjZTEwZmRlYTk3MmM3YTE3OSJ9fX0="}]},Id:"481ffb06-7f40-4bc3-b8f5-02d9c60285f1"}
-    - MMOITEMS_TIER "LEGENDARY"
-    - MMOITEMS_LORE '["§7Used when enchanting gear","§7with legendary enchantments!"]'
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "ENCHANTMENT"
+    - '["§7Used when enchanting gear","§7with legendary enchantments!"]'
+    - "ENCHANTMENT"
     - MMOITEMS_DISABLE_RIGHT_CLICK_CONSUME "1b"
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Enchanting_Stone4:
   commands:
@@ -3678,19 +2900,15 @@ Enchanting_Stone4:
     - ''
     - '&e&lEXOTIC ITEM'
     nbt-tags:
-    - MMOITEMS_DYNAMIC_LORE '["§fEnchantment","","§7Used when enchanting gear","§7with
+    - '["§fEnchantment","","§7Used when enchanting gear","§7with
       exotic enchantments!","","§e§lEXOTIC ITEM"]'
-    - MMOITEMS_ITEM_ID "ENCHANTING_STONE5"
-    - MMOITEMS_DISABLE_INTERACTION "1b"
+    - "ENCHANTING_STONE5"
     - Unbreakable 1
     - SkullOwner {Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNiZDA5NmY5MjQ4YjJhMjllZTk3NjFmZjA3MWE2NmU4YmU1ODFjMGZjYTE3NTI0ZDNlNDg1YzUwZjBkODVkMSJ9fX0="}]},Id:"481ffb06-7f40-4bc3-b8f5-02d9c60285f1"}
-    - MMOITEMS_TIER "EXOTIC"
-    - MMOITEMS_LORE '["§7Used when enchanting gear","§7with exotic enchantments!"]'
-    - AttributeModifiers [{Name:"mmoitemsDecoy",UUIDMost:-8681499546602028042L,UUIDLeast:-8534666352103010068L,Amount:0.0d,Operation:0,AttributeName:"generic.attackSpeed"}]
-    - MMOITEMS_ITEM_TYPE "ENCHANTMENT"
+    - "EXOTIC"
+    - '["§7Used when enchanting gear","§7with exotic enchantments!"]'
+    - "ENCHANTMENT"
     - MMOITEMS_DISABLE_RIGHT_CLICK_CONSUME "1b"
-    item-flags:
-    - HIDE_ATTRIBUTES
     - HIDE_UNBREAKABLE
 Resolve:
   commands:
@@ -3722,29 +2940,20 @@ Resolve:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§a§lHeal§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§a§lHeal§f: §fRight Click","§7§f–
       §bMana§7: §c30","§7§f– §cCooldown§7: §c5","§7§f– §aHeal§7: §c25","","§aHeal
       §7yourself for §a25HP ❤§7!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "RESOLVE"
-    - MMOITEMS_ABILITIES '[{"Id":"HEAL","CastMode":"RIGHT_CLICK","Modifiers":{"mana":30.0,"cooldown":5.0,"heal":25.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "RESOLVE"
+    - '[{"Id":"HEAL","CastMode":"RIGHT_CLICK","Modifiers":{"mana":30.0,"cooldown":5.0,"heal":25.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "7832e217-e544-4938-bc19-ae305c77d646"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§aHeal §7yourself for §a25HP ❤§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 5.0d
+    - "UNCOMMON"
+    - '["§aHeal §7yourself for §a25HP ❤§7!"]'
 Resolve1:
   commands:
   - mi give SPELL RESOLVE2 %player% 8
@@ -3775,29 +2984,19 @@ Resolve1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§a§lHeal§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§a§lHeal§f: §fRight Click","§7§f–
       §bMana§7: §c50","§7§f– §cCooldown§7: §c7.5","§7§f– §aHeal§7: §c75","","§aHeal
       §7yourself for §a75HP ❤§7!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "RESOLVE2"
-    - MMOITEMS_ABILITIES '[{"Id":"HEAL","CastMode":"RIGHT_CLICK","Modifiers":{"mana":50.0,"cooldown":7.5,"heal":75.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "RESOLVE2"
+    - '[{"Id":"HEAL","CastMode":"RIGHT_CLICK","Modifiers":{"mana":50.0,"cooldown":7.5,"heal":75.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "e563e95c-ca36-4e90-bad4-8c64c3cd2b48"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§aHeal §7yourself for §a75HP ❤§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 7.5d
+    - '["§aHeal §7yourself for §a75HP ❤§7!"]'
 Fireball:
   commands:
   - mi give SPELL FIREBALL %player% 8
@@ -3830,31 +3029,22 @@ Fireball:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§4§lTargeted Fireball§f: §fRight
+    - '''["§fSpell","","§e§l§4§lTargeted Fireball§f: §fRight
       Click","§7§f– §4Ignite§7: §c15","§7§f– §cDamage§7: §c250","§7§f– §bMana§7: §c40","§7§f–
       §cCooldown§7: §c2.5","","§7Casts a §4fireball §7damaging","§7and §cigniting
       enemies!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "TARGETED_FIREBALL"
-    - MMOITEMS_ABILITIES '[{"Id":"TARGETED_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":15.0,"damage":250.0,"mana":40.0,"cooldown":2.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "TARGETED_FIREBALL"
+    - '[{"Id":"TARGETED_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":15.0,"damage":250.0,"mana":40.0,"cooldown":2.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "f3bb65d0-20e9-455b-a10b-b5cd0c005382"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 2.5d
+    - "SPELL"
+    - 2.5d
     - MMOITEMS_ITEM_UUID "2815144a-13e4-41a0-a0c0-5e7b6fb4a05e"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Casts a §4fireball §7damaging","§7and §cigniting enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Casts a §4fireball §7damaging","§7and §cigniting enemies!"]'
 Fireball1:
   commands:
   - mi give SPELL FIREBALL2 %player% 8
@@ -3887,30 +3077,20 @@ Fireball1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§4§lTargeted Fireball§f: §fRight
+    - '''["§fSpell","","§e§l§4§lTargeted Fireball§f: §fRight
       Click","§7§f– §4Ignite§7: §c20","§7§f– §cDamage§7: §c750","§7§f– §bMana§7: §c60","§7§f–
       §cCooldown§7: §c5","","§7Casts a §4fireball §7damaging","§7and §cigniting enemies!","","§9§lRARE
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "TARGETED_FIREBALL2"
-    - MMOITEMS_ABILITIES '[{"Id":"TARGETED_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":20.0,"damage":750.0,"mana":60.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "TARGETED_FIREBALL2"
+    - '[{"Id":"TARGETED_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":20.0,"damage":750.0,"mana":60.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "9439e687-25d8-42b1-83fe-7e9f616c9e83"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Casts a §4fireball §7damaging","§7and §cigniting enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 5.0d
+    - '["§7Casts a §4fireball §7damaging","§7and §cigniting enemies!"]'
 Sparkle:
   commands:
   - mi give SPELL Sparkle %player% 8
@@ -3943,32 +3123,23 @@ Sparkle:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§e§lSparkle§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§e§lSparkle§f: §fRight Click","§7§f–
       §cDamage§7: §c325","§7§f– §bMana§7: §c45","§7§f– §cCooldown§7: §c5","§7§f– §2Radius§7:
       §c7.5","","§7Shoots a §estar §7exploding on","§cenemies §7within a medium radius!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "SPARKLE"
-    - MMOITEMS_ABILITIES '[{"Id":"SPARKLE","CastMode":"RIGHT_CLICK","Modifiers":{"damage":325.0,"mana":45.0,"cooldown":5.0,"radius":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "SPARKLE"
+    - '[{"Id":"SPARKLE","CastMode":"RIGHT_CLICK","Modifiers":{"damage":325.0,"mana":45.0,"cooldown":5.0,"radius":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "18446eae-5f10-4f58-8aa1-2a76186a67ce"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "49024d5d-57f9-47b1-b339-8aa6fe96d1af"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoots a §estar §7exploding on","§cenemies §7within a medium
+    - "UNCOMMON"
+    - '["§7Shoots a §estar §7exploding on","§cenemies §7within a medium
       radius!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Sparkle1:
   commands:
   - mi give SPELL Sparkle2 %player% 8
@@ -4001,31 +3172,21 @@ Sparkle1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§e§lSparkle§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§e§lSparkle§f: §fRight Click","§7§f–
       §cDamage§7: §c600","§7§f– §bMana§7: §c90","§7§f– §cCooldown§7: §c7.5","§7§f–
       §2Radius§7: §c10","","§7Shoots a §estar §7exploding on","§cenemies §7within
       a medium radius!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "SPARKLE2"
-    - MMOITEMS_ABILITIES '[{"Id":"SPARKLE","CastMode":"RIGHT_CLICK","Modifiers":{"damage":600.0,"mana":90.0,"cooldown":7.5,"radius":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "SPARKLE2"
+    - '[{"Id":"SPARKLE","CastMode":"RIGHT_CLICK","Modifiers":{"damage":600.0,"mana":90.0,"cooldown":7.5,"radius":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "2bea122e-ea80-4a14-a7ae-a2a90b6f5c23"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoots a §estar §7exploding on","§cenemies §7within a medium
+    - "SPELL"
+    - 7.5d
+    - '["§7Shoots a §estar §7exploding on","§cenemies §7within a medium
       radius!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Bunny_Mode:
   commands:
   - mi give SPELL Bunny_Mode %player% 8
@@ -4057,30 +3218,21 @@ Bunny_Mode:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§a§lBunny Mode§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§a§lBunny Mode§f: §fRight Click","§7§f–
       §6Duration§7: §c7.5","§7§f– §bMana§7: §c30","§7§f– §cCooldown§7: §c2.5","§7§f–
       §2Speed§7: §c3","","§7Hop and skip like a Bunny!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "BUNNY_MODE"
-    - MMOITEMS_ABILITIES '[{"Id":"BUNNY_MODE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"mana":30.0,"cooldown":2.5,"speed":3.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BUNNY_MODE"
+    - '[{"Id":"BUNNY_MODE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"mana":30.0,"cooldown":2.5,"speed":3.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "05dbf0f9-777b-4f87-848b-6052a64dc149"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "f070e682-81c6-489a-a95b-bedf3b1c2880"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Hop and skip like a Bunny!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Hop and skip like a Bunny!"]'
 Bunny_Mode1:
   commands:
   - mi give SPELL Bunny_Mode2 %player% 8
@@ -4112,29 +3264,19 @@ Bunny_Mode1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§a§lBunny Mode§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§a§lBunny Mode§f: §fRight Click","§7§f–
       §6Duration§7: §c12.5","§7§f– §bMana§7: §c60","§7§f– §cCooldown§7: §c7.5","§7§f–
       §2Speed§7: §c4","","§7Hop and skip like a §aspeedy §7Bunny!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "BUNNY_MODE2"
-    - MMOITEMS_ABILITIES '[{"Id":"BUNNY_MODE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":12.5,"mana":60.0,"cooldown":7.5,"speed":4.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BUNNY_MODE2"
+    - '[{"Id":"BUNNY_MODE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":12.5,"mana":60.0,"cooldown":7.5,"speed":4.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "f09e6830-4633-474a-b8f6-0720b8cc896f"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Hop and skip like a §aspeedy §7Bunny!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 7.5d
+    - '["§7Hop and skip like a §aspeedy §7Bunny!"]'
 Burning_Hands:
   commands:
   - mi give SPELL Burning_Hands %player% 8
@@ -4167,32 +3309,23 @@ Burning_Hands:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lBurning Hands§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lBurning Hands§f: §fRight Click","§7§f–
       §6Duration§7: §c4","§7§f– §cDamage§7: §c100","§7§f– §bMana§7: §c35","§7§f– §cCooldown§7:
       §c5","","§7Shoot §cflames §7from your hands","§cigniting §7and damaging enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "BURNING_HANDS"
-    - MMOITEMS_ABILITIES '[{"Id":"BURNING_HANDS","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":100.0,"mana":35.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BURNING_HANDS"
+    - '[{"Id":"BURNING_HANDS","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":100.0,"mana":35.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "47100e5e-dbe2-4aaf-938d-03c6f01645da"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "2bdbd968-2700-451e-b8a9-71d5841d5d3a"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot §cflames §7from your hands","§cigniting §7and damaging
+    - "UNCOMMON"
+    - '["§7Shoot §cflames §7from your hands","§cigniting §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Burning_Hands1:
   commands:
   - mi give SPELL Burning_Hands2 %player% 8
@@ -4225,31 +3358,21 @@ Burning_Hands1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lBurning Hands§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lBurning Hands§f: §fRight Click","§7§f–
       §6Duration§7: §c7.5","§7§f– §cDamage§7: §c250","§7§f– §bMana§7: §c90","§7§f–
       §cCooldown§7: §c7.5","","§7Shoot §cflames §7from your hands","§cigniting §7and
       damaging enemies!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "BURNING_HANDS2"
-    - MMOITEMS_ABILITIES '[{"Id":"BURNING_HANDS","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"damage":250.0,"mana":90.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BURNING_HANDS2"
+    - '[{"Id":"BURNING_HANDS","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"damage":250.0,"mana":90.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "4b572357-b5a0-4e28-83ed-e55ceb9a9a5b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot §cflames §7from your hands","§cigniting §7and damaging
+    - "SPELL"
+    - 7.5d
+    - '["§7Shoot §cflames §7from your hands","§cigniting §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Freezing_Curse:
   commands:
   - mi give SPELL Freezing_Curse %player% 8
@@ -4283,32 +3406,23 @@ Freezing_Curse:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lFreezing Curse§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lFreezing Curse§f: §fRight Click","§7§f–
       §6Duration§7: §c4","§7§f– §cDamage§7: §c400","§7§f– §bMana§7: §c50","§7§f– §cCooldown§7:
       §c7.5","§7§f– §2Radius§7: §c5","","§bFreeze §7enemies with a §5curse§7,","§6slowing
       §7and damaging them!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "FREEZING_CURSE"
-    - MMOITEMS_ABILITIES '[{"Id":"FREEZING_CURSE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":400.0,"mana":50.0,"cooldown":7.5,"radius":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "FREEZING_CURSE"
+    - '[{"Id":"FREEZING_CURSE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":400.0,"mana":50.0,"cooldown":7.5,"radius":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "beb59048-3f2a-4b01-b26a-238338b43cc4"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "1046664a-635f-4e65-b228-d30413bcbaca"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§bFreeze §7enemies with a §5curse§7,","§6slowing §7and damaging
+    - "UNCOMMON"
+    - '["§bFreeze §7enemies with a §5curse§7,","§6slowing §7and damaging
       them!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Freezing_Curse1:
   commands:
   - mi give SPELL Freezing_Curse2 %player% 8
@@ -4342,31 +3456,21 @@ Freezing_Curse1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lFreezing Curse§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lFreezing Curse§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §cDamage§7: §c1300","§7§f– §bMana§7: §c125","§7§f–
       §cCooldown§7: §c10","§7§f– §2Radius§7: §c10","","§bFreeze §7enemies with a §5curse§7,","§6slowing
       §7and damaging them!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "FREEZING_CURSE2"
-    - MMOITEMS_ABILITIES '[{"Id":"FREEZING_CURSE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1300.0,"mana":125.0,"cooldown":10.0,"radius":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "FREEZING_CURSE2"
+    - '[{"Id":"FREEZING_CURSE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1300.0,"mana":125.0,"cooldown":10.0,"radius":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "e409627c-d9ac-4f00-bc27-ab462405c09c"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§bFreeze §7enemies with a §5curse§7,","§6slowing §7and damaging
+    - "SPELL"
+    - 10.0d
+    - '["§bFreeze §7enemies with a §5curse§7,","§6slowing §7and damaging
       them!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Shulker_Missile:
   commands:
   - mi give SPELL Shulker_Missile %player% 8
@@ -4399,32 +3503,23 @@ Shulker_Missile:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lShulker Missile§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lShulker Missile§f: §fRight Click","§7§f–
       §6Duration§7: §c3","§7§f– §cDamage§7: §c500","§7§f– §bMana§7: §c50","§7§f– §cCooldown§7:
       §c5","","§7Launch a §5speedy shulker missile§7,","§6levitating §7and damaging
       the enemy!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "SHULKER_MISSILE"
-    - MMOITEMS_ABILITIES '[{"Id":"SHULKER_MISSILE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"damage":500.0,"mana":50.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "SHULKER_MISSILE"
+    - '[{"Id":"SHULKER_MISSILE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"damage":500.0,"mana":50.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "5558eae2-d6a6-49ef-996b-a1f32e55143d"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "684a8342-64fb-4de4-ba3b-3ec5743be10f"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Launch a §5speedy shulker missile§7,","§6levitating §7and
+    - "UNCOMMON"
+    - '["§7Launch a §5speedy shulker missile§7,","§6levitating §7and
       damaging the enemy!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Shulker_Missile1:
   commands:
   - mi give SPELL Shulker_Missile2 %player% 8
@@ -4457,31 +3552,21 @@ Shulker_Missile1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lShulker Missile§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lShulker Missile§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §cDamage§7: §c1200","§7§f– §bMana§7: §c75","§7§f–
       §cCooldown§7: §c7.5","","§7Launch a §5speedy shulker missile§7,","§6levitating
       §7and damaging the enemy!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "SHULKER_MISSILE2"
-    - MMOITEMS_ABILITIES '[{"Id":"SHULKER_MISSILE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1200.0,"mana":75.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "SHULKER_MISSILE2"
+    - '[{"Id":"SHULKER_MISSILE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1200.0,"mana":75.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "435901d2-2ed3-4d0c-b8fa-02fe4d8c22b5"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Launch a §5speedy shulker missile§7,","§6levitating §7and
+    - "SPELL"
+    - 7.5d
+    - '["§7Launch a §5speedy shulker missile§7,","§6levitating §7and
       damaging the enemy!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Arcane_Hail:
   commands:
   - mi give SPELL Arcane_Hail %player% 8
@@ -4514,31 +3599,22 @@ Arcane_Hail:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§1§lArcane Hail§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§1§lArcane Hail§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §cDamage§7: §c150","§7§f– §bMana§7: §c50","§7§f– §cCooldown§7:
       §c7.5","§7§f– §2Radius§7: §c5","","§7Rain §darcane hail §7on enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "ARCANE_HAIL"
-    - MMOITEMS_ABILITIES '[{"Id":"ARCANE_HAIL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":150.0,"mana":50.0,"cooldown":7.5,"radius":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ARCANE_HAIL"
+    - '[{"Id":"ARCANE_HAIL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":150.0,"mana":50.0,"cooldown":7.5,"radius":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "ab0c53da-ff83-405d-9931-f4ac72183f17"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "ba85a9e5-58e3-4263-9b43-adbbb220398e"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Rain §darcane hail §7on enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Rain §darcane hail §7on enemies!"]'
 Arcane_Hail1:
   commands:
   - mi give SPELL Arcane_Hail2 %player% 8
@@ -4571,30 +3647,20 @@ Arcane_Hail1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§1§lArcane Hail§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§1§lArcane Hail§f: §fRight Click","§7§f–
       §6Duration§7: §c7.5","§7§f– §cDamage§7: §c250","§7§f– §bMana§7: §c75","§7§f–
       §cCooldown§7: §c10","§7§f– §2Radius§7: §c7.5","","§7Rain §darcane hail §7on
       enemies!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "ARCANE_HAIL2"
-    - MMOITEMS_ABILITIES '[{"Id":"ARCANE_HAIL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"damage":250.0,"mana":75.0,"cooldown":10.0,"radius":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ARCANE_HAIL2"
+    - '[{"Id":"ARCANE_HAIL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":7.5,"damage":250.0,"mana":75.0,"cooldown":10.0,"radius":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "7eeabe9f-1114-4455-8d04-b700af683ea7"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Rain §darcane hail §7on enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 10.0d
+    - '["§7Rain §darcane hail §7on enemies!"]'
 Frozen_Aura:
   commands:
   - mi give SPELL Frozen_Aura %player% 8
@@ -4626,31 +3692,22 @@ Frozen_Aura:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lFrozen Aura§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lFrozen Aura§f: §fRight Click","§7§f–
       §6Duration§7: §c3","§7§f– §bMana§7: §c30","§7§f– §cCooldown§7: §c7.5","§7§f–
       §2Radius§7: §c4","","§6Slow §7the enemies with a §bfrozen aura§7!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "FROZEN_AURA"
-    - MMOITEMS_ABILITIES '[{"Id":"FROZEN_AURA","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"mana":30.0,"cooldown":7.5,"radius":4.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "FROZEN_AURA"
+    - '[{"Id":"FROZEN_AURA","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"mana":30.0,"cooldown":7.5,"radius":4.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "4aa96c5e-cf23-4701-a2cf-e8452179d409"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "e14876bb-b059-4bff-9d9d-c68e24d8778b"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§6Slow §7the enemies with a §bfrozen aura§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§6Slow §7the enemies with a §bfrozen aura§7!"]'
 Frozen_Aura1:
   commands:
   - mi give SPELL Frozen_Aura2 %player% 8
@@ -4682,30 +3739,20 @@ Frozen_Aura1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lFrozen Aura§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lFrozen Aura§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §bMana§7: §c70","§7§f– §cCooldown§7: §c10","§7§f–
       §2Radius§7: §c6","","§6Slow §7the enemies with a §bfrozen aura§7!","","§9§lRARE
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "FROZEN_AURA2"
-    - MMOITEMS_ABILITIES '[{"Id":"FROZEN_AURA","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"mana":70.0,"cooldown":10.0,"radius":6.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "FROZEN_AURA2"
+    - '[{"Id":"FROZEN_AURA","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"mana":70.0,"cooldown":10.0,"radius":6.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "677cc141-727e-4222-8ceb-2c2d7eb07393"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§6Slow §7the enemies with a §bfrozen aura§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 10.0d
+    - '["§6Slow §7the enemies with a §bfrozen aura§7!"]'
 Magma_Fissure:
   commands:
   - mi give SPELL Magma_Fissure %player% 8
@@ -4738,32 +3785,23 @@ Magma_Fissure:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lMagma Fissure§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lMagma Fissure§f: §fRight Click","§7§f–
       §4Ignite§7: §c7.5","§7§f– §cDamage§7: §c400","§7§f– §bMana§7: §c40","§7§f– §cCooldown§7:
       §c2.5","","§7Create a §4fissure §7in the earth","§7damaging and §cigniting §7enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "MAGMA_FISSURE"
-    - MMOITEMS_ABILITIES '[{"Id":"MAGMA_FISSURE","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":7.5,"damage":400.0,"mana":40.0,"cooldown":2.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "MAGMA_FISSURE"
+    - '[{"Id":"MAGMA_FISSURE","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":7.5,"damage":400.0,"mana":40.0,"cooldown":2.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "28ee3181-27da-4c7a-b2db-27729d6c5cc1"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 2.5d
+    - "SPELL"
+    - 2.5d
     - MMOITEMS_ITEM_UUID "75862cea-a4ad-42f3-af33-0c5bea671afd"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Create a §4fissure §7in the earth","§7damaging and §cigniting
+    - "UNCOMMON"
+    - '["§7Create a §4fissure §7in the earth","§7damaging and §cigniting
       §7enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Magma_Fissure1:
   commands:
   - mi give SPELL Magma_Fissure2 %player% 8
@@ -4796,31 +3834,21 @@ Magma_Fissure1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lMagma Fissure§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lMagma Fissure§f: §fRight Click","§7§f–
       §4Ignite§7: §c15","§7§f– §cDamage§7: §c1300","§7§f– §bMana§7: §c80","§7§f– §cCooldown§7:
       §c7.5","","§7Create a §4fissure §7in the earth","§7damaging and §cigniting §7enemies!","","§9§lRARE
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "MAGMA_FISSURE2"
-    - MMOITEMS_ABILITIES '[{"Id":"MAGMA_FISSURE","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":15.0,"damage":1300.0,"mana":80.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "MAGMA_FISSURE2"
+    - '[{"Id":"MAGMA_FISSURE","CastMode":"RIGHT_CLICK","Modifiers":{"ignite":15.0,"damage":1300.0,"mana":80.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "1f008f7b-fe23-407c-8212-9ed49e595013"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Create a §4fissure §7in the earth","§7damaging and §cigniting
+    - "SPELL"
+    - 7.5d
+    - '["§7Create a §4fissure §7in the earth","§7damaging and §cigniting
       §7enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Ice_Crystal:
   commands:
   - mi give SPELL Ice_Crystal %player% 8
@@ -4853,32 +3881,23 @@ Ice_Crystal:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lIce Crystal§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lIce Crystal§f: §fRight Click","§7§f–
       §6Duration§7: §c3","§7§f– §cDamage§7: §c500","§7§f– §bMana§7: §c45","§7§f– §cCooldown§7:
       §c7.5","","§7Shoot an §bice crystal missile","§6slowing §7and damaging enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "ICE_CRYSTAL"
-    - MMOITEMS_ABILITIES '[{"Id":"ICE_CRYSTAL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"damage":500.0,"mana":45.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ICE_CRYSTAL"
+    - '[{"Id":"ICE_CRYSTAL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":3.0,"damage":500.0,"mana":45.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "82c23124-3b60-4a8f-8b1c-495f0021da15"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "60d55947-0d6f-4850-a17b-b4522378d2f9"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot an §bice crystal missile","§6slowing §7and damaging
+    - "UNCOMMON"
+    - '["§7Shoot an §bice crystal missile","§6slowing §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Ice_Crystal1:
   commands:
   - mi give SPELL Ice_Crystal2 %player% 8
@@ -4911,31 +3930,21 @@ Ice_Crystal1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§b§lIce Crystal§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§b§lIce Crystal§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §cDamage§7: §c1235","§7§f– §bMana§7: §c75","§7§f–
       §cCooldown§7: §c10","","§7Shoot an §bice crystal missile","§6slowing §7and damaging
       enemies!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "ICE_CRYSTAL2"
-    - MMOITEMS_ABILITIES '[{"Id":"ICE_CRYSTAL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1235.0,"mana":75.0,"cooldown":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ICE_CRYSTAL2"
+    - '[{"Id":"ICE_CRYSTAL","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":1235.0,"mana":75.0,"cooldown":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "df7d2d5f-aefe-41c8-b23a-824a55fab23e"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot an §bice crystal missile","§6slowing §7and damaging
+    - "SPELL"
+    - 10.0d
+    - '["§7Shoot an §bice crystal missile","§6slowing §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Corrupted_Fangs1:
   commands:
   - mi give SPELL Corrupted_Fangs %player% 8
@@ -4967,32 +3976,23 @@ Corrupted_Fangs1:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lCorrupted Fangs§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lCorrupted Fangs§f: §fRight Click","§7§f–
       §cDamage§7: §c600","§7§f– §bMana§7: §c65","§7§f– §cCooldown§7: §c7.5","","§7Summon
       §5corrupted fangs §7from","§7the earth to §4chomp §7the enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "CORRUPTED_FANGS"
-    - MMOITEMS_ABILITIES '[{"Id":"CORRUPTED_FANGS","CastMode":"RIGHT_CLICK","Modifiers":{"damage":600.0,"mana":65.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CORRUPTED_FANGS"
+    - '[{"Id":"CORRUPTED_FANGS","CastMode":"RIGHT_CLICK","Modifiers":{"damage":600.0,"mana":65.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "76791c53-0720-49bb-b244-484817f95748"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "4fcfe07b-c99e-4e2b-984d-032053f6d07e"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Summon §5corrupted fangs §7from","§7the earth to §4chomp
+    - "UNCOMMON"
+    - '["§7Summon §5corrupted fangs §7from","§7the earth to §4chomp
       §7the enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Corrupted_Fangs2:
   commands:
   - mi give SPELL Corrupted_Fangs2 %player% 8
@@ -5024,31 +4024,21 @@ Corrupted_Fangs2:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lCorrupted Fangs§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lCorrupted Fangs§f: §fRight Click","§7§f–
       §cDamage§7: §c1450","§7§f– §bMana§7: §c100","§7§f– §cCooldown§7: §c10","","§7Summon
       §5corrupted fangs §7from","§7the earth to §4chomp §7the enemies!","","§9§lRARE
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "CORRUPTED_FANGS2"
-    - MMOITEMS_ABILITIES '[{"Id":"CORRUPTED_FANGS","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1450.0,"mana":100.0,"cooldown":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CORRUPTED_FANGS2"
+    - '[{"Id":"CORRUPTED_FANGS","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1450.0,"mana":100.0,"cooldown":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "08f3aaeb-a157-4897-8b40-da22ba37d2b1"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Summon §5corrupted fangs §7from","§7the earth to §4chomp
+    - "SPELL"
+    - 10.0d
+    - '["§7Summon §5corrupted fangs §7from","§7the earth to §4chomp
       §7the enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Black_Hole:
   commands:
   - mi give SPELL Black_Hole %player% 8
@@ -5080,30 +4070,21 @@ Black_Hole:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lBlack Hole§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lBlack Hole§f: §fRight Click","§7§f–
       §6Duration§7: §c4","§7§f– §bMana§7: §c50","§7§f– §cCooldown§7: §c5","§7§f– §2Radius§7:
       §c7.5","","§7Suck enemies into a §5black hole§7!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "BLACK_HOLE"
-    - MMOITEMS_ABILITIES '[{"Id":"BLACK_HOLE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"mana":50.0,"cooldown":5.0,"radius":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BLACK_HOLE"
+    - '[{"Id":"BLACK_HOLE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"mana":50.0,"cooldown":5.0,"radius":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "85a010ad-420b-4185-82ff-3a1dd838f2e0"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "df6a52e2-f40f-42a0-a1bc-3feca0341220"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Suck enemies into a §5black hole§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Suck enemies into a §5black hole§7!"]'
 Black_Hole1:
   commands:
   - mi give SPELL Black_Hole2 %player% 8
@@ -5135,29 +4116,19 @@ Black_Hole1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lBlack Hole§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lBlack Hole§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §bMana§7: §c80","§7§f– §cCooldown§7: §c7.5","§7§f–
       §2Radius§7: §c10","","§7Suck enemies into a §5black hole§7!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "BLACK_HOLE2"
-    - MMOITEMS_ABILITIES '[{"Id":"BLACK_HOLE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"mana":80.0,"cooldown":7.5,"radius":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BLACK_HOLE2"
+    - '[{"Id":"BLACK_HOLE","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"mana":80.0,"cooldown":7.5,"radius":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "e21e9d18-4c98-41e1-b181-58dca128054a"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Suck enemies into a §5black hole§7!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 7.5d
+    - '["§7Suck enemies into a §5black hole§7!"]'
 Bouncy_Fireball:
   commands:
   - mi give SPELL Bouncy_Fireball %player% 8
@@ -5191,32 +4162,23 @@ Bouncy_Fireball:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lBouncy Fireball§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lBouncy Fireball§f: §fRight Click","§7§f–
       §cDamage§7: §c750","§7§f– §4Ignite§7: §c15","§7§f– §bMana§7: §c60","§7§f– §cCooldown§7:
       §c5","§7§f– §2Radius§7: §c7.5","","§7Shoot a §cfireball§7, §4exploding","§7on
       enemies after a few bounces!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "BOUNCY_FIREBALL"
-    - MMOITEMS_ABILITIES '[{"Id":"BOUNCY_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"damage":750.0,"ignite":15.0,"mana":60.0,"cooldown":5.0,"radius":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BOUNCY_FIREBALL"
+    - '[{"Id":"BOUNCY_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"damage":750.0,"ignite":15.0,"mana":60.0,"cooldown":5.0,"radius":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "b6e16239-5f12-4007-a76f-c25262bba875"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "526577b6-da12-4573-bd26-548df947a092"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot a §cfireball§7, §4exploding","§7on enemies after a
+    - "UNCOMMON"
+    - '["§7Shoot a §cfireball§7, §4exploding","§7on enemies after a
       few bounces!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Bouncy_Fireball1:
   commands:
   - mi give SPELL Bouncy_Fireball2 %player% 8
@@ -5250,31 +4212,21 @@ Bouncy_Fireball1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§c§lBouncy Fireball§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§c§lBouncy Fireball§f: §fRight Click","§7§f–
       §cDamage§7: §c1650","§7§f– §4Ignite§7: §c25","§7§f– §bMana§7: §c130","§7§f–
       §cCooldown§7: §c7.5","§7§f– §2Radius§7: §c10","","§7Shoot a §cfireball§7, §4exploding","§7on
       enemies after a few bounces!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "BOUNCY_FIREBALL2"
-    - MMOITEMS_ABILITIES '[{"Id":"BOUNCY_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1650.0,"ignite":25.0,"mana":130.0,"cooldown":7.5,"radius":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "BOUNCY_FIREBALL2"
+    - '[{"Id":"BOUNCY_FIREBALL","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1650.0,"ignite":25.0,"mana":130.0,"cooldown":7.5,"radius":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "7b27e97a-3f30-4389-a625-2f5e8fbe8d46"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Shoot a §cfireball§7, §4exploding","§7on enemies after a
+    - "SPELL"
+    - 7.5d
+    - '["§7Shoot a §cfireball§7, §4exploding","§7on enemies after a
       few bounces!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Cursed_Beam:
   commands:
   - mi give SPELL Cursed_Beam %player% 8
@@ -5306,30 +4258,21 @@ Cursed_Beam:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§d§lCursed Beam§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§d§lCursed Beam§f: §fRight Click","§7§f–
       §cDamage§7: §c500","§7§f– §bMana§7: §c50","§7§f– §cCooldown§7: §c5","","§7Blast
       a §5cursed beam","§4exploding §7on nearby enemies!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "CURSED_BEAM"
-    - MMOITEMS_ABILITIES '[{"Id":"CURSED_BEAM","CastMode":"RIGHT_CLICK","Modifiers":{"damage":500.0,"mana":50.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CURSED_BEAM"
+    - '[{"Id":"CURSED_BEAM","CastMode":"RIGHT_CLICK","Modifiers":{"damage":500.0,"mana":50.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "78a323f2-9aab-421d-b10a-fcef76ad5f69"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "e3c1c158-9052-4c07-8639-2c6e9784886a"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Blast a §5cursed beam","§4exploding §7on nearby enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Blast a §5cursed beam","§4exploding §7on nearby enemies!"]'
 Cursed_Beam1:
   commands:
   - mi give SPELL Cursed_Beam2 %player% 8
@@ -5361,29 +4304,20 @@ Cursed_Beam1:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§d§lCursed Beam§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§d§lCursed Beam§f: §fRight Click","§7§f–
       §cDamage§7: §c1650","§7§f– §bMana§7: §c150","§7§f– §cCooldown§7: §c7.5","","§7Blast
       a §5cursed beam","§4exploding §7on nearby enemies!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "CURSED_BEAM2"
-    - MMOITEMS_ABILITIES '[{"Id":"CURSED_BEAM","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1650.0,"mana":150.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CURSED_BEAM2"
+    - '[{"Id":"CURSED_BEAM","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1650.0,"mana":150.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "70ec8efa-595e-49d7-9101-c246e2c62fc3"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Blast a §5cursed beam","§4exploding §7on nearby enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 7.5d
+    - "UNCOMMON"
+    - '["§7Blast a §5cursed beam","§4exploding §7on nearby enemies!"]'
 Ender_Meteor:
   commands:
   - mi give SPELL Ender_Meteor %player% 8
@@ -5417,31 +4351,22 @@ Ender_Meteor:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lEnder Meteor§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lEnder Meteor§f: §fRight Click","§7§f–
       §cDamage§7: §c750","§7§f– §bMana§7: §c75","§7§f– §cCooldown§7: §c7.5","§7§f–
       §6Knockback§7: §c2","§7§f– §2Radius§7: §c5","","§7Summon a §dcomet§7, crushing","§7and
       §6knocking back §7enemies!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "LIFE_ENDER"
-    - MMOITEMS_ABILITIES '[{"Id":"LIFE_ENDER","CastMode":"RIGHT_CLICK","Modifiers":{"damage":750.0,"mana":75.0,"cooldown":7.5,"knockback":2.0,"radius":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "LIFE_ENDER"
+    - '[{"Id":"LIFE_ENDER","CastMode":"RIGHT_CLICK","Modifiers":{"damage":750.0,"mana":75.0,"cooldown":7.5,"knockback":2.0,"radius":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "c65115a9-20e0-4f27-a801-b2b1502b6e26"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
+    - "SPELL"
+    - 7.5d
     - MMOITEMS_ITEM_UUID "ff00ca6d-e746-4b90-980c-ef8d81be0b0a"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Summon a §dcomet§7, crushing","§7and §6knocking back §7enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§7Summon a §dcomet§7, crushing","§7and §6knocking back §7enemies!"]'
 Ender_Meteor1:
   commands:
   - mi give SPELL Ender_Meteor2 %player% 8
@@ -5475,30 +4400,20 @@ Ender_Meteor1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§5§lEnder Meteor§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§5§lEnder Meteor§f: §fRight Click","§7§f–
       §cDamage§7: §c1750","§7§f– §bMana§7: §c150","§7§f– §cCooldown§7: §c10","§7§f–
       §6Knockback§7: §c3","§7§f– §2Radius§7: §c10","","§7Summon a §dcomet§7, crushing","§7and
       §6knocking back §7enemies!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "LIFE_ENDER2"
-    - MMOITEMS_ABILITIES '[{"Id":"LIFE_ENDER","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1750.0,"mana":150.0,"cooldown":10.0,"knockback":3.0,"radius":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "LIFE_ENDER2"
+    - '[{"Id":"LIFE_ENDER","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1750.0,"mana":150.0,"cooldown":10.0,"knockback":3.0,"radius":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "72e27475-55e5-46dd-a234-bb04f975d85e"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Summon a §dcomet§7, crushing","§7and §6knocking back §7enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 10.0d
+    - '["§7Summon a §dcomet§7, crushing","§7and §6knocking back §7enemies!"]'
 Corrupt:
   commands:
   - mi give SPELL Corrupt %player% 8
@@ -5529,30 +4444,21 @@ Corrupt:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§2§lCorrupt§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§2§lCorrupt§f: §fRight Click","§7§f–
       §cDamage§7: §c800","§7§f– §bMana§7: §c60","§7§f– §cCooldown§7: §c5","","§5Corrupt
       §7enemies in front of you!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "CORRUPT"
-    - MMOITEMS_ABILITIES '[{"Id":"CORRUPT","CastMode":"RIGHT_CLICK","Modifiers":{"damage":800.0,"mana":60.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CORRUPT"
+    - '[{"Id":"CORRUPT","CastMode":"RIGHT_CLICK","Modifiers":{"damage":800.0,"mana":60.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "a91d10d4-58c5-45b4-983b-601184d47d21"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
+    - "SPELL"
+    - 5.0d
     - MMOITEMS_ITEM_UUID "0d99ed09-f68a-4986-9c42-a93bc951f816"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§5Corrupt §7enemies in front of you!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "UNCOMMON"
+    - '["§5Corrupt §7enemies in front of you!"]'
 Corrupt1:
   commands:
   - mi give SPELL Corrupt2 %player% 8
@@ -5583,29 +4489,19 @@ Corrupt1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§2§lCorrupt§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§2§lCorrupt§f: §fRight Click","§7§f–
       §cDamage§7: §c1750","§7§f– §bMana§7: §c125","§7§f– §cCooldown§7: §c7.5","","§5Corrupt
       §7enemies in front of you!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "CORRUPT2"
-    - MMOITEMS_ABILITIES '[{"Id":"CORRUPT","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1750.0,"mana":125.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CORRUPT2"
+    - '[{"Id":"CORRUPT","CastMode":"RIGHT_CLICK","Modifiers":{"damage":1750.0,"mana":125.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "e95225a6-9855-46ed-9add-0063d6a54b28"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§5Corrupt §7enemies in front of you!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
+    - "SPELL"
+    - 7.5d
+    - '["§5Corrupt §7enemies in front of you!"]'
 Arcane_Rift:
   commands:
   - mi give SPELL Arcane_Rift %player% 8
@@ -5638,32 +4534,23 @@ Arcane_Rift:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§1§lArcane Rift§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§1§lArcane Rift§f: §fRight Click","§7§f–
       §6Duration§7: §c4","§7§f– §cDamage§7: §c250","§7§f– §bMana§7: §c60","§7§f– §cCooldown§7:
       §c7","","§7Create a §drift §7in the ground","§6slowing §7and damaging enemies!","","§2§lUNCOMMON
       ITEM"]'''
-    - MMOITEMS_ITEM_ID "ARCANE_RIFT"
-    - MMOITEMS_ABILITIES '[{"Id":"ARCANE_RIFT","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":250.0,"mana":60.0,"cooldown":7.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ARCANE_RIFT"
+    - '[{"Id":"ARCANE_RIFT","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":250.0,"mana":60.0,"cooldown":7.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "5126113d-25b6-4895-bb4b-e8f72c0126af"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.0d
+    - "SPELL"
+    - 7.0d
     - MMOITEMS_ITEM_UUID "ca1fa435-1463-4e10-b5df-54f58a02b531"
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Create a §drift §7in the ground","§6slowing §7and damaging
+    - "UNCOMMON"
+    - '["§7Create a §drift §7in the ground","§6slowing §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Arcane_Rift1:
   commands:
   - mi give SPELL Arcane_Rift2 %player% 8
@@ -5696,31 +4583,21 @@ Arcane_Rift1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§1§lArcane Rift§f: §fRight Click","§7§f–
+    - '''["§fSpell","","§e§l§1§lArcane Rift§f: §fRight Click","§7§f–
       §6Duration§7: §c5","§7§f– §cDamage§7: §c950","§7§f– §bMana§7: §c120","§7§f–
       §cCooldown§7: §c10","","§7Create a §drift §7in the ground","§6slowing §7and
       damaging enemies!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "ARCANE_RIFT2"
-    - MMOITEMS_ABILITIES '[{"Id":"ARCANE_RIFT","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":950.0,"mana":120.0,"cooldown":10.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "ARCANE_RIFT2"
+    - '[{"Id":"ARCANE_RIFT","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":950.0,"mana":120.0,"cooldown":10.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "6be6b718-c88e-4ff6-8df9-21507c238c1b"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 10.0d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Create a §drift §7in the ground","§6slowing §7and damaging
+    - "SPELL"
+    - 10.0d
+    - '["§7Create a §drift §7in the ground","§6slowing §7and damaging
       enemies!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Contamination_Ritual:
   commands:
   - mi give SPELL Contamination_Ritual %player% 8
@@ -5754,31 +4631,22 @@ Contamination_Ritual:
     - ''
     - '&2&lUNCOMMON ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§2§lContamination Ritual§f: §fRight
+    - '''["§fSpell","","§e§l§2§lContamination Ritual§f: §fRight
       Click","§7§f– §6Duration§7: §c4","§7§f– §cDamage§7: §c300","§7§f– §bMana§7:
       §c50","§7§f– §cCooldown§7: §c5","","§7Perform the §2contamination ritual§7,","§7constantly
       §2contaminating §7enemies","§7within the ritual circle!","","§2§lUNCOMMON ITEM"]'''
-    - MMOITEMS_ITEM_ID "CONTAMINATION_RITUAL"
-    - MMOITEMS_ABILITIES '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":300.0,"mana":50.0,"cooldown":5.0}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CONTAMINATION_RITUAL"
+    - '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":4.0,"damage":300.0,"mana":50.0,"cooldown":5.0}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "f2531888-e6ac-44ea-bcd2-b570a4932092"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 5.0d
-    - MMOITEMS_TIER "UNCOMMON"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Perform the §2contamination ritual§7,","§7constantly §2contaminating
+    - "SPELL"
+    - 5.0d
+    - "UNCOMMON"
+    - '["§7Perform the §2contamination ritual§7,","§7constantly §2contaminating
       §7enemies","§7within the ritual circle!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES
 Contamination_Ritual1:
   commands:
   - mi give SPELL Contamination_Ritual2 %player% 8
@@ -5812,28 +4680,18 @@ Contamination_Ritual1:
     - ''
     - '&9&lRARE ITEM'
     nbt-tags:
-    - 'MMOITEMS_DYNAMIC_LORE ''["§fSpell","","§e§l§2§lContamination Ritual§f: §fRight
+    - '''["§fSpell","","§e§l§2§lContamination Ritual§f: §fRight
       Click","§7§f– §6Duration§7: §c5","§7§f– §cDamage§7: §c500","§7§f– §bMana§7:
       §c150","§7§f– §cCooldown§7: §c7.5","","§7Perform the §2contamination ritual§7,","§7constantly
       §2contaminating §7enemies","§7within the ritual circle!","","§9§lRARE ITEM"]'''
-    - MMOITEMS_ITEM_ID "CONTAMINATION_RITUAL2"
-    - MMOITEMS_ABILITIES '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":500.0,"mana":150.0,"cooldown":7.5}}]'
-    - MMOITEMS_DISABLE_INTERACTION "1b"
-    - MMOITEMS_SOUND_ON_CONSUME "entity.illusioner.cast_spell"
+    - "CONTAMINATION_RITUAL2"
+    - '[{"Id":"CONTAMINATION","CastMode":"RIGHT_CLICK","Modifiers":{"duration":5.0,"damage":500.0,"mana":150.0,"cooldown":7.5}}]'
+    - "entity.illusioner.cast_spell"
     - MMOITEMS_UNSTACKABLE_UUID "2574b26e-4924-484e-be21-cac4251af685"
-    - MMOITEMS_DISABLE_ENCHANTING "1b"
-    - MMOITEMS_SOUND_ON_CONSUME_VOL 1.0d
-    - AttributeModifiers [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
-    - MMOITEMS_DISABLE_CRAFTING "1b"
+    - 1.0d
+    - [{Name:"mmoitemsDecoy",Amount:0.0d,Operation:0,UUID:[I;-2021319128,-1357757450,-1987131861,-563359508],AttributeName:"minecraft:generic.attack_speed"}]
     - MMOITEMS_UNSTACKABLE "1b"
-    - MMOITEMS_DISABLE_REPAIRING "1b"
-    - MMOITEMS_ITEM_TYPE "SPELL"
-    - MMOITEMS_DISABLE_SMELTING "1b"
-    - MMOITEMS_ITEM_COOLDOWN 7.5d
-    - MMOITEMS_TIER "RARE"
-    - MMOITEMS_SOUND_ON_CONSUME_PIT 1.0d
-    - MMOITEMS_LORE '["§7Perform the §2contamination ritual§7,","§7constantly §2contaminating
+    - "SPELL"
+    - 7.5d
+    - '["§7Perform the §2contamination ritual§7,","§7constantly §2contaminating
       §7enemies","§7within the ritual circle!"]'
-    item-flags:
-    - HIDE_ENCHANTS
-    - HIDE_ATTRIBUTES

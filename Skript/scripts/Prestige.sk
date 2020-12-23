@@ -5,6 +5,15 @@ command /FarmingPrestige1:
         if player doesn't have permission "FARMING.PRESTIGE.1.CLAIMED":
             if {_farming} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Farming2 false"        
+                execute console command "/lp user %player% permission set Farming3 false"        
+                execute console command "/lp user %player% permission set Farming4 false"        
+                execute console command "/lp user %player% permission set Farming5 false"        
+                execute console command "/lp user %player% permission set Farming6 false"        
+                execute console command "/lp user %player% permission set Farming7 false"        
+                execute console command "/lp user %player% permission set Farming8 false"        
+                execute console command "/lp user %player% permission set Farming9 false"        
+                execute console command "/lp user %player% permission set Farming10 false"        
                 execute console command "/lp user %player% permission set FARMING.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set FARMING.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -28,6 +37,15 @@ command /FarmingPrestige2:
             if player doesn't have permission "FARMING.PRESTIGE.2.CLAIMED":
                 if {_farming} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Farming2 false"        
+                    execute console command "/lp user %player% permission set Farming3 false"        
+                    execute console command "/lp user %player% permission set Farming4 false"        
+                    execute console command "/lp user %player% permission set Farming5 false"        
+                    execute console command "/lp user %player% permission set Farming6 false"        
+                    execute console command "/lp user %player% permission set Farming7 false"        
+                    execute console command "/lp user %player% permission set Farming8 false"        
+                    execute console command "/lp user %player% permission set Farming9 false"        
+                    execute console command "/lp user %player% permission set Farming10 false"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -50,6 +68,15 @@ command /FarmingPrestige3:
             if player doesn't have permission "FARMING.PRESTIGE.3.CLAIMED":
                 if {_farming} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Farming2 false"        
+                    execute console command "/lp user %player% permission set Farming3 false"        
+                    execute console command "/lp user %player% permission set Farming4 false"        
+                    execute console command "/lp user %player% permission set Farming5 false"        
+                    execute console command "/lp user %player% permission set Farming6 false"        
+                    execute console command "/lp user %player% permission set Farming7 false"        
+                    execute console command "/lp user %player% permission set Farming8 false"        
+                    execute console command "/lp user %player% permission set Farming9 false"        
+                    execute console command "/lp user %player% permission set Farming10 false"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -72,6 +99,15 @@ command /FarmingPrestige4:
             if player doesn't have permission "FARMING.PRESTIGE.4.CLAIMED":
                 if {_farming} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Farming2 false"        
+                    execute console command "/lp user %player% permission set Farming3 false"        
+                    execute console command "/lp user %player% permission set Farming4 false"        
+                    execute console command "/lp user %player% permission set Farming5 false"        
+                    execute console command "/lp user %player% permission set Farming6 false"        
+                    execute console command "/lp user %player% permission set Farming7 false"        
+                    execute console command "/lp user %player% permission set Farming8 false"        
+                    execute console command "/lp user %player% permission set Farming9 false"        
+                    execute console command "/lp user %player% permission set Farming10 false"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -94,6 +130,15 @@ command /FarmingPrestige5:
             if player doesn't have permission "FARMING.PRESTIGE.5.CLAIMED":
                 if {_farming} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Farming2 false"        
+                    execute console command "/lp user %player% permission set Farming3 false"        
+                    execute console command "/lp user %player% permission set Farming4 false"        
+                    execute console command "/lp user %player% permission set Farming5 false"        
+                    execute console command "/lp user %player% permission set Farming6 false"        
+                    execute console command "/lp user %player% permission set Farming7 false"        
+                    execute console command "/lp user %player% permission set Farming8 false"        
+                    execute console command "/lp user %player% permission set Farming9 false"        
+                    execute console command "/lp user %player% permission set Farming10 false"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set FARMING.PRESTIGE5 true"        
                     #Gives player the rewards and message 
@@ -122,6 +167,15 @@ command /ForagingPrestige1:
         if player doesn't have permission "FORAGING.PRESTIGE.1.CLAIMED":
             if {_foraging} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Foraging2 false"        
+                execute console command "/lp user %player% permission set Foraging3 false"        
+                execute console command "/lp user %player% permission set Foraging4 false"        
+                execute console command "/lp user %player% permission set Foraging5 false"        
+                execute console command "/lp user %player% permission set Foraging6 false"        
+                execute console command "/lp user %player% permission set Foraging7 false"        
+                execute console command "/lp user %player% permission set Foraging8 false"        
+                execute console command "/lp user %player% permission set Foraging9 false"        
+                execute console command "/lp user %player% permission set Foraging10 false"        
                 execute console command "/lp user %player% permission set FORAGING.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set FORAGING.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -145,6 +199,15 @@ command /ForagingPrestige2:
             if player doesn't have permission "FORAGING.PRESTIGE.2.CLAIMED":
                 if {_foraging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Foraging2 false"        
+                    execute console command "/lp user %player% permission set Foraging3 false"        
+                    execute console command "/lp user %player% permission set Foraging4 false"        
+                    execute console command "/lp user %player% permission set Foraging5 false"        
+                    execute console command "/lp user %player% permission set Foraging6 false"        
+                    execute console command "/lp user %player% permission set Foraging7 false"        
+                    execute console command "/lp user %player% permission set Foraging8 false"        
+                    execute console command "/lp user %player% permission set Foraging9 false"        
+                    execute console command "/lp user %player% permission set Foraging10 false"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -167,6 +230,15 @@ command /ForagingPrestige3:
             if player doesn't have permission "FORAGING.PRESTIGE.3.CLAIMED":
                 if {_foraging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Foraging2 false"        
+                    execute console command "/lp user %player% permission set Foraging3 false"        
+                    execute console command "/lp user %player% permission set Foraging4 false"        
+                    execute console command "/lp user %player% permission set Foraging5 false"        
+                    execute console command "/lp user %player% permission set Foraging6 false"        
+                    execute console command "/lp user %player% permission set Foraging7 false"        
+                    execute console command "/lp user %player% permission set Foraging8 false"        
+                    execute console command "/lp user %player% permission set Foraging9 false"        
+                    execute console command "/lp user %player% permission set Foraging10 false"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -189,6 +261,15 @@ command /ForagingPrestige4:
             if player doesn't have permission "FORAGING.PRESTIGE.4.CLAIMED":
                 if {_foraging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Foraging2 false"        
+                    execute console command "/lp user %player% permission set Foraging3 false"        
+                    execute console command "/lp user %player% permission set Foraging4 false"        
+                    execute console command "/lp user %player% permission set Foraging5 false"        
+                    execute console command "/lp user %player% permission set Foraging6 false"        
+                    execute console command "/lp user %player% permission set Foraging7 false"        
+                    execute console command "/lp user %player% permission set Foraging8 false"        
+                    execute console command "/lp user %player% permission set Foraging9 false"        
+                    execute console command "/lp user %player% permission set Foraging10 false"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -211,6 +292,15 @@ command /ForagingPrestige5:
             if player doesn't have permission "FORAGING.PRESTIGE.5.CLAIMED":
                 if {_foraging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Foraging2 false"        
+                    execute console command "/lp user %player% permission set Foraging3 false"        
+                    execute console command "/lp user %player% permission set Foraging4 false"        
+                    execute console command "/lp user %player% permission set Foraging5 false"        
+                    execute console command "/lp user %player% permission set Foraging6 false"        
+                    execute console command "/lp user %player% permission set Foraging7 false"        
+                    execute console command "/lp user %player% permission set Foraging8 false"        
+                    execute console command "/lp user %player% permission set Foraging9 false"        
+                    execute console command "/lp user %player% permission set Foraging10 false"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set FORAGING.PRESTIGE5 true"        
                     #Gives player the rewards and message 
@@ -239,6 +329,15 @@ command /MiningPrestige1:
         if player doesn't have permission "MINING.PRESTIGE.1.CLAIMED":
             if {_mining} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Mining2 false"        
+                execute console command "/lp user %player% permission set Mining3 false"        
+                execute console command "/lp user %player% permission set Mining4 false"        
+                execute console command "/lp user %player% permission set Mining5 false"        
+                execute console command "/lp user %player% permission set Mining6 false"        
+                execute console command "/lp user %player% permission set Mining7 false"        
+                execute console command "/lp user %player% permission set Mining8 false"        
+                execute console command "/lp user %player% permission set Mining9 false"        
+                execute console command "/lp user %player% permission set Mining10 false"        
                 execute console command "/lp user %player% permission set MINING.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set MINING.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -262,6 +361,15 @@ command /MiningPrestige2:
             if player doesn't have permission "MINING.PRESTIGE.2.CLAIMED":
                 if {_mining} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Mining2 false"        
+                    execute console command "/lp user %player% permission set Mining3 false"        
+                    execute console command "/lp user %player% permission set Mining4 false"        
+                    execute console command "/lp user %player% permission set Mining5 false"        
+                    execute console command "/lp user %player% permission set Mining6 false"        
+                    execute console command "/lp user %player% permission set Mining7 false"        
+                    execute console command "/lp user %player% permission set Mining8 false"        
+                    execute console command "/lp user %player% permission set Mining9 false"        
+                    execute console command "/lp user %player% permission set Mining10 false"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -284,6 +392,15 @@ command /MiningPrestige3:
             if player doesn't have permission "MINING.PRESTIGE.3.CLAIMED":
                 if {_mining} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Mining2 false"        
+                    execute console command "/lp user %player% permission set Mining3 false"        
+                    execute console command "/lp user %player% permission set Mining4 false"        
+                    execute console command "/lp user %player% permission set Mining5 false"        
+                    execute console command "/lp user %player% permission set Mining6 false"        
+                    execute console command "/lp user %player% permission set Mining7 false"        
+                    execute console command "/lp user %player% permission set Mining8 false"        
+                    execute console command "/lp user %player% permission set Mining9 false"        
+                    execute console command "/lp user %player% permission set Mining10 false"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -306,6 +423,15 @@ command /MiningPrestige4:
             if player doesn't have permission "MINING.PRESTIGE.4.CLAIMED":
                 if {_mining} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Mining2 false"        
+                    execute console command "/lp user %player% permission set Mining3 false"        
+                    execute console command "/lp user %player% permission set Mining4 false"        
+                    execute console command "/lp user %player% permission set Mining5 false"        
+                    execute console command "/lp user %player% permission set Mining6 false"        
+                    execute console command "/lp user %player% permission set Mining7 false"        
+                    execute console command "/lp user %player% permission set Mining8 false"        
+                    execute console command "/lp user %player% permission set Mining9 false"        
+                    execute console command "/lp user %player% permission set Mining10 false"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -328,6 +454,15 @@ command /MiningPrestige5:
             if player doesn't have permission "MINING.PRESTIGE.5.CLAIMED":
                 if {_mining} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Mining2 false"        
+                    execute console command "/lp user %player% permission set Mining3 false"        
+                    execute console command "/lp user %player% permission set Mining4 false"        
+                    execute console command "/lp user %player% permission set Mining5 false"        
+                    execute console command "/lp user %player% permission set Mining6 false"        
+                    execute console command "/lp user %player% permission set Mining7 false"        
+                    execute console command "/lp user %player% permission set Mining8 false"        
+                    execute console command "/lp user %player% permission set Mining9 false"        
+                    execute console command "/lp user %player% permission set Mining10 false"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set MINING.PRESTIGE5 true"        
                     #Gives player the rewards and message 
@@ -356,6 +491,15 @@ command /SlayerPrestige1:
         if player doesn't have permission "SLAYER.PRESTIGE.1.CLAIMED":
             if {_slayer} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Slayer2 false"        
+                execute console command "/lp user %player% permission set Slayer3 false"        
+                execute console command "/lp user %player% permission set Slayer4 false"        
+                execute console command "/lp user %player% permission set Slayer5 false"        
+                execute console command "/lp user %player% permission set Slayer6 false"        
+                execute console command "/lp user %player% permission set Slayer7 false"        
+                execute console command "/lp user %player% permission set Slayer8 false"        
+                execute console command "/lp user %player% permission set Slayer9 false"        
+                execute console command "/lp user %player% permission set Slayer10 false"        
                 execute console command "/lp user %player% permission set SLAYER.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set SLAYER.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -379,6 +523,15 @@ command /SlayerPrestige2:
             if player doesn't have permission "SLAYER.PRESTIGE.2.CLAIMED":
                 if {_slayer} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Slayer2 false"        
+                    execute console command "/lp user %player% permission set Slayer3 false"        
+                    execute console command "/lp user %player% permission set Slayer4 false"        
+                    execute console command "/lp user %player% permission set Slayer5 false"        
+                    execute console command "/lp user %player% permission set Slayer6 false"        
+                    execute console command "/lp user %player% permission set Slayer7 false"        
+                    execute console command "/lp user %player% permission set Slayer8 false"        
+                    execute console command "/lp user %player% permission set Slayer9 false"        
+                    execute console command "/lp user %player% permission set Slayer10 false"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -401,6 +554,15 @@ command /SlayerPrestige3:
             if player doesn't have permission "SLAYER.PRESTIGE.3.CLAIMED":
                 if {_slayer} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Slayer2 false"        
+                    execute console command "/lp user %player% permission set Slayer3 false"        
+                    execute console command "/lp user %player% permission set Slayer4 false"        
+                    execute console command "/lp user %player% permission set Slayer5 false"        
+                    execute console command "/lp user %player% permission set Slayer6 false"        
+                    execute console command "/lp user %player% permission set Slayer7 false"        
+                    execute console command "/lp user %player% permission set Slayer8 false"        
+                    execute console command "/lp user %player% permission set Slayer9 false"        
+                    execute console command "/lp user %player% permission set Slayer10 false"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -423,6 +585,15 @@ command /SlayerPrestige4:
             if player doesn't have permission "SLAYER.PRESTIGE.4.CLAIMED":
                 if {_slayer} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Slayer2 false"        
+                    execute console command "/lp user %player% permission set Slayer3 false"        
+                    execute console command "/lp user %player% permission set Slayer4 false"        
+                    execute console command "/lp user %player% permission set Slayer5 false"        
+                    execute console command "/lp user %player% permission set Slayer6 false"        
+                    execute console command "/lp user %player% permission set Slayer7 false"        
+                    execute console command "/lp user %player% permission set Slayer8 false"        
+                    execute console command "/lp user %player% permission set Slayer9 false"        
+                    execute console command "/lp user %player% permission set Slayer10 false"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -445,6 +616,15 @@ command /SlayerPrestige5:
             if player doesn't have permission "SLAYER.PRESTIGE.5.CLAIMED":
                 if {_slayer} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Slayer2 false"        
+                    execute console command "/lp user %player% permission set Slayer3 false"        
+                    execute console command "/lp user %player% permission set Slayer4 false"        
+                    execute console command "/lp user %player% permission set Slayer5 false"        
+                    execute console command "/lp user %player% permission set Slayer6 false"        
+                    execute console command "/lp user %player% permission set Slayer7 false"        
+                    execute console command "/lp user %player% permission set Slayer8 false"        
+                    execute console command "/lp user %player% permission set Slayer9 false"        
+                    execute console command "/lp user %player% permission set Slayer10 false"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set SLAYER.PRESTIGE5 true"        
                     #Gives player the rewards and message 
@@ -473,6 +653,15 @@ command /EnchantingPrestige1:
         if player doesn't have permission "ENCHANTING.PRESTIGE.1.CLAIMED":
             if {_enchanting} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Enchanting2 false"        
+                execute console command "/lp user %player% permission set Enchanting3 false"        
+                execute console command "/lp user %player% permission set Enchanting4 false"        
+                execute console command "/lp user %player% permission set Enchanting5 false"        
+                execute console command "/lp user %player% permission set Enchanting6 false"        
+                execute console command "/lp user %player% permission set Enchanting7 false"        
+                execute console command "/lp user %player% permission set Enchanting8 false"        
+                execute console command "/lp user %player% permission set Enchanting9 false"        
+                execute console command "/lp user %player% permission set Enchanting10 false"        
                 execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -496,6 +685,15 @@ command /EnchantingPrestige2:
             if player doesn't have permission "ENCHANTING.PRESTIGE.2.CLAIMED":
                 if {_enchanting} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Enchanting2 false"        
+                    execute console command "/lp user %player% permission set Enchanting3 false"        
+                    execute console command "/lp user %player% permission set Enchanting4 false"        
+                    execute console command "/lp user %player% permission set Enchanting5 false"        
+                    execute console command "/lp user %player% permission set Enchanting6 false"        
+                    execute console command "/lp user %player% permission set Enchanting7 false"        
+                    execute console command "/lp user %player% permission set Enchanting8 false"        
+                    execute console command "/lp user %player% permission set Enchanting9 false"        
+                    execute console command "/lp user %player% permission set Enchanting10 false"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -518,6 +716,15 @@ command /EnchantingPrestige3:
             if player doesn't have permission "ENCHANTING.PRESTIGE.3.CLAIMED":
                 if {_enchanting} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Enchanting2 false"        
+                    execute console command "/lp user %player% permission set Enchanting3 false"        
+                    execute console command "/lp user %player% permission set Enchanting4 false"        
+                    execute console command "/lp user %player% permission set Enchanting5 false"        
+                    execute console command "/lp user %player% permission set Enchanting6 false"        
+                    execute console command "/lp user %player% permission set Enchanting7 false"        
+                    execute console command "/lp user %player% permission set Enchanting8 false"        
+                    execute console command "/lp user %player% permission set Enchanting9 false"        
+                    execute console command "/lp user %player% permission set Enchanting10 false"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -540,6 +747,15 @@ command /EnchantingPrestige4:
             if player doesn't have permission "ENCHANTING.PRESTIGE.4.CLAIMED":
                 if {_enchanting} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Enchanting2 false"        
+                    execute console command "/lp user %player% permission set Enchanting3 false"        
+                    execute console command "/lp user %player% permission set Enchanting4 false"        
+                    execute console command "/lp user %player% permission set Enchanting5 false"        
+                    execute console command "/lp user %player% permission set Enchanting6 false"        
+                    execute console command "/lp user %player% permission set Enchanting7 false"        
+                    execute console command "/lp user %player% permission set Enchanting8 false"        
+                    execute console command "/lp user %player% permission set Enchanting9 false"        
+                    execute console command "/lp user %player% permission set Enchanting10 false"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -562,6 +778,15 @@ command /EnchantingPrestige5:
             if player doesn't have permission "ENCHANTING.PRESTIGE.5.CLAIMED":
                 if {_enchanting} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Enchanting2 false"        
+                    execute console command "/lp user %player% permission set Enchanting3 false"        
+                    execute console command "/lp user %player% permission set Enchanting4 false"        
+                    execute console command "/lp user %player% permission set Enchanting5 false"        
+                    execute console command "/lp user %player% permission set Enchanting6 false"        
+                    execute console command "/lp user %player% permission set Enchanting7 false"        
+                    execute console command "/lp user %player% permission set Enchanting8 false"        
+                    execute console command "/lp user %player% permission set Enchanting9 false"        
+                    execute console command "/lp user %player% permission set Enchanting10 false"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set ENCHANTING.PRESTIGE5 true"        
                     #Gives player the rewards and message 
@@ -590,6 +815,15 @@ command /SpellforgingPrestige1:
         if player doesn't have permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
             if {_spellforging} = "10":
                 #Gives player the Claimed permission, prevents claiming multiple times 
+                execute console command "/lp user %player% permission set Spellforging2 false"        
+                execute console command "/lp user %player% permission set Spellforging3 false"        
+                execute console command "/lp user %player% permission set Spellforging4 false"        
+                execute console command "/lp user %player% permission set Spellforging5 false"        
+                execute console command "/lp user %player% permission set Spellforging6 false"        
+                execute console command "/lp user %player% permission set Spellforging7 false"        
+                execute console command "/lp user %player% permission set Spellforging8 false"        
+                execute console command "/lp user %player% permission set Spellforging9 false"        
+                execute console command "/lp user %player% permission set Spellforging10 false"        
                 execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.1.CLAIMED true"        
                 execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE1 true"        
                 #Gives player the rewards and message 
@@ -613,6 +847,15 @@ command /SpellforgingPrestige2:
             if player doesn't have permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
                 if {_spellforging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Spellforging2 false"        
+                    execute console command "/lp user %player% permission set Spellforging3 false"        
+                    execute console command "/lp user %player% permission set Spellforging4 false"        
+                    execute console command "/lp user %player% permission set Spellforging5 false"        
+                    execute console command "/lp user %player% permission set Spellforging6 false"        
+                    execute console command "/lp user %player% permission set Spellforging7 false"        
+                    execute console command "/lp user %player% permission set Spellforging8 false"        
+                    execute console command "/lp user %player% permission set Spellforging9 false"        
+                    execute console command "/lp user %player% permission set Spellforging10 false"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.2.CLAIMED true"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE2 true"        
                     #Gives player the rewards and message 
@@ -635,6 +878,15 @@ command /SpellforgingPrestige3:
             if player doesn't have permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
                 if {_spellforging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Spellforging2 false"        
+                    execute console command "/lp user %player% permission set Spellforging3 false"        
+                    execute console command "/lp user %player% permission set Spellforging4 false"        
+                    execute console command "/lp user %player% permission set Spellforging5 false"        
+                    execute console command "/lp user %player% permission set Spellforging6 false"        
+                    execute console command "/lp user %player% permission set Spellforging7 false"        
+                    execute console command "/lp user %player% permission set Spellforging8 false"        
+                    execute console command "/lp user %player% permission set Spellforging9 false"        
+                    execute console command "/lp user %player% permission set Spellforging10 false"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.3.CLAIMED true"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE3 true"        
                     #Gives player the rewards and message 
@@ -657,6 +909,15 @@ command /SpellforgingPrestige4:
             if player doesn't have permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
                 if {_spellforging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Spellforging2 false"        
+                    execute console command "/lp user %player% permission set Spellforging3 false"        
+                    execute console command "/lp user %player% permission set Spellforging4 false"        
+                    execute console command "/lp user %player% permission set Spellforging5 false"        
+                    execute console command "/lp user %player% permission set Spellforging6 false"        
+                    execute console command "/lp user %player% permission set Spellforging7 false"        
+                    execute console command "/lp user %player% permission set Spellforging8 false"        
+                    execute console command "/lp user %player% permission set Spellforging9 false"        
+                    execute console command "/lp user %player% permission set Spellforging10 false"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.4.CLAIMED true"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE4 true"        
                     #Gives player the rewards and message 
@@ -679,6 +940,15 @@ command /SpellforgingPrestige5:
             if player doesn't have permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
                 if {_spellforging} = "10":
                     #Gives player the Claimed permission, prevents claiming multiple times 
+                    execute console command "/lp user %player% permission set Spellforging2 false"        
+                    execute console command "/lp user %player% permission set Spellforging3 false"        
+                    execute console command "/lp user %player% permission set Spellforging4 false"        
+                    execute console command "/lp user %player% permission set Spellforging5 false"        
+                    execute console command "/lp user %player% permission set Spellforging6 false"        
+                    execute console command "/lp user %player% permission set Spellforging7 false"        
+                    execute console command "/lp user %player% permission set Spellforging8 false"        
+                    execute console command "/lp user %player% permission set Spellforging9 false"        
+                    execute console command "/lp user %player% permission set Spellforging10 false"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE.5.CLAIMED true"        
                     execute console command "/lp user %player% permission set SPELLFORGING.PRESTIGE5 true"        
                     #Gives player the rewards and message 

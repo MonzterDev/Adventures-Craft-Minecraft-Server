@@ -4,9 +4,9 @@ Wizardly:
     buff:
         max_health: 10
         max_mana: 25
-        weapon_damage: 5     
-        health_regeneration: .015     
-        mana_regeneration: .025
+        magic_damage: 15
+        health_regeneration: .03    
+        mana_regeneration: .045
         defense: 10        
         cooldown_reduction: 2.5
 Guardian:
@@ -15,22 +15,22 @@ Guardian:
     buff:
         max_health: 25
         max_mana: 10        
-        weapon_damage: 5        
-        health_regeneration: .025
-        mana_regeneration: .020
+        attack_damage: 5        
+        health_regeneration: .045
+        mana_regeneration: .03
         defense: 20
 Slasher:
     name: Slasher
     max-points: 10
     buff:
-        max_health: 20
-        max_mana: 20  
-        weapon_damage: 15
-        health_regeneration: .020
-        mana_regeneration: .020
+        max_health: 15
+        max_mana: 15
+        attack_damage: 10
+        health_regeneration: .03
+        mana_regeneration: .03
         defense: 10
-        critical_strike_chance: 2.5
-        critical_strike_power: 5
+        critical_strike_chance: 1.5
+        critical_strike_power: 2.5
 
 #Void:
 #    name: Void
