@@ -209,6 +209,10 @@ command /DryadClaim [<number>]:
                             send "&8&l» &5Dryad Weak Vine &f3%%" 
                             execute console command "/mi give WAND DRYAD_WEAK_VINE %player% 1"
 
+                        if chance of 3%:
+                            send "&8&l» &9Wood Catalyst &f3%%" 
+                            execute console command "/mi give CATALYST WOOD_CATALYST %player% 1"
+
                         if chance of 2%:
                             send "&8&l» &5Carving Axe &f2%%" 
                             execute console command "/mi give AXE CARVING_AXE %player% 1"

@@ -61,12 +61,6 @@ DYRAD_ROOT3:
   Skills:
   - message{m="&c<mob.name>&f<&co> &fYou dodged my &croot&f!"} @PlayersInRadius{r=15}
 
-DRYAD_DEFEAT:
-  Skills:
-  - message{m="&eYou have defeated the powerful &cDryad &eand have been rewarded accordingly!"} @ThreatTablePlayers
-  - command{c="mythicmobs i give <target.name> DryadWood 1"} @ThreatTablePlayers
-  - command{c="mythicmobs i give <target.name> Dryad 1"} @ThreatTablePlayers 
-
 DRYAD_UNDEFEATED:
   Skills:
   - delay 12000      

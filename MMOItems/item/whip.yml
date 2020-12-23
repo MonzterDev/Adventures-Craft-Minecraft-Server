@@ -26,7 +26,7 @@ BONEWHIP2:
     unbreakable: true
     tier: EXOTIC
     name: '&eBonewhip'
-    attack-speed: 4
+    attack-speed: 3
     ability:
       ability1:
         type: CORRUPT
@@ -40,6 +40,7 @@ BONEWHIP2:
     range: 4.0
     unstackable: true
     faction-damage-undead: 20.0
+    revision-id: 2
 HELLS_FURRY:
   base:
     material: LEAD
@@ -126,7 +127,7 @@ THUNDRA_WHIP2:
       spread: 0.1
       max-spread: 0.3
     attack-speed:
-      base: 5
+      base: 4
       spread: 0.1
       max-spread: 0.3
     range: 4.0
@@ -143,6 +144,7 @@ THUNDRA_WHIP2:
         cooldown: 2.5
     gem-sockets:
     - Uncolored      
+    revision-id: 2
 STEEL_WHIP:
   base:
     material: LEAD
@@ -157,7 +159,7 @@ STEEL_WHIP:
       spread: 0.1
       max-spread: 0.3
     attack-speed:
-      base: 10
+      base: 3
       spread: 0.1
       max-spread: 0.3
     projectile-damage:
@@ -169,6 +171,7 @@ STEEL_WHIP:
     name: '&9Steel Whip'
     faction-damage-void: 30.0
     unstackable: true
+    revision-id: 2
 STEEL_WHIP2:
   base:
     material: LEAD
@@ -183,7 +186,7 @@ STEEL_WHIP2:
       spread: 0.1
       max-spread: 0.3
     attack-speed:
-      base: 15
+      base: 5
       spread: 0.1
       max-spread: 0.3
     projectile-damage:
@@ -197,3 +200,4 @@ STEEL_WHIP2:
     unstackable: true
     gem-sockets:
     - Uncolored      
+    revision-id: 2

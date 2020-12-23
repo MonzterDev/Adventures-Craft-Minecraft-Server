@@ -16,6 +16,9 @@ ACCESSORY1:
     name: '&aAccessory Slot'
     durability: 2    
     slot: 1
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
     lore:
     - Drag & drop an accessory!
 ACCESSORY2:
@@ -134,6 +137,9 @@ ACCESSORY12:
     name: '&aAccessory Slot'
     durability: 2    
     slot: 12
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
     lore:
     - Drag & drop an accessory!
 ACCESSORY13:

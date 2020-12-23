@@ -434,3 +434,24 @@ command /ResourceCollector:
     executable by: players
     trigger:
         make player execute "resources"
+
+command /DryadRepeat:
+    description: Return to the Lobby
+    executable by: players
+    trigger:
+        if player has permission "Dryad.Repeat":
+            execute console command "/lp user %player% permission set Dryad.Repeat false"
+            send "&cUpon completing your Dryad summoning, the quest will not automatically be accepted!" to player
+        if player doesn't have permission "Dryad.Repeat":
+            execute console command "/lp user %player% permission set Dryad.Repeat true"
+            send "&aUpon completing your Dryad summoning, the quest will automatically be accepted!" to player
+command /MordenRepeat:
+    description: Return to the Lobby
+    executable by: players
+    trigger:
+        if player has permission "Morden.Repeat":
+            execute console command "/lp user %player% permission set Morden.Repeat false"
+            send "&cUpon completing your Morden summoning, the quest will not automatically be accepted!" to player
+        if player doesn't have permission "Morden.Repeat":
+            execute console command "/lp user %player% permission set Morden.Repeat true"
+            send "&aUpon completing your Morden summoning, the quest will automatically be accepted!" to player

@@ -410,6 +410,14 @@ recipes:
     ingredients:
     - vanilla{type=SUGAR,amount=288}
     conditions: []
+  ENCHANTED_SUGAR2:
+    output:
+      type: MATERIAL
+      id: ENCHANTED_SUGAR
+      amount: 1
+    ingredients:
+    - vanilla{type=SUGAR_CANE,amount=288}
+    conditions: []
   ENCHANTED_PAPER:
     output:
       type: MATERIAL
@@ -417,6 +425,14 @@ recipes:
       amount: 1
     ingredients:
     - vanilla{type=PAPER,amount=288}
+    conditions: []
+  ENCHANTED_PAPER2:
+    output:
+      type: MATERIAL
+      id: ENCHANTED_PAPER
+      amount: 1
+    ingredients:
+    - vanilla{type=SUGAR_CANE,amount=288}
     conditions: []
   ENCHANTED_RED_MUSHROOM:
     output:
@@ -449,14 +465,6 @@ recipes:
       amount: 1
     ingredients:
     - vanilla{type=BEETROOT,amount=288}
-    conditions: []
-  ENCHANTED_SUGAR2:
-    output:
-      type: MATERIAL
-      id: ENCHANTED_SUGAR
-      amount: 1
-    ingredients:
-    - vanilla{type=SUGAR_CANE,amount=288}
     conditions: []
   ENCHANTED_OAK_LOG:
     output:
