@@ -338,7 +338,7 @@ items:
     lore:
     - ''
     - '&e&lRewards:'
-    - '&8&l» &91-2 Enchanted Logs &f100%'
+    - '&8&l» &91-6 Enchanted Logs &f100%'
     - '&8&l» &9Dryad Head &f5%'    
     - '&8&l» &5Dryad Weak Vine &f3%'
     - '&8&l» &9Wood Catalyst &f3%'
@@ -654,4 +654,222 @@ items:
     - "[close]"
     right_click_commands:
     - "[player] GhastlyClaim 5"
+    - "[close]"
+
+  'Bulblin':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU5NzUxMzg1MzAwNiwKICAicHJvZmlsZUlkIiA6ICIwNmE4NjAyZDAwODk0YWQxOTcyMGQ3NGE1OGU1MDZjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfMW5kcmFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ZjBhZjRkZmZiMWZhYzQxNjQ3YjcxMDMwMGUwN2EyNGFiNWY3MDM1NmU0ZmU3OTUxYjBmMzY5NmQxZTJlZTgiCiAgICB9CiAgfQp9
+    slot: 32
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: Bulblin.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cBulblin'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Enderpearl &f50%'
+    - '&8&l» &9Bulblin Head &f5%'
+    - '&8&l» &9Bulblin Arrow &f4%'
+    - '&8&l» &9Bulblin Sword Shaving &f3%'
+    - '&8&l» &5Bulblin Bow &f3%'
+    - '&8&l» &5Bulblin Sword &f2%'
+    - '&8&l» &eBulblin Leggings &f1%'
+    - '&8&l» &eBulblin Chestplate &f.95%%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'Bulblin2':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU5NzUxMzg1MzAwNiwKICAicHJvZmlsZUlkIiA6ICIwNmE4NjAyZDAwODk0YWQxOTcyMGQ3NGE1OGU1MDZjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfMW5kcmFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ZjBhZjRkZmZiMWZhYzQxNjQ3YjcxMDMwMGUwN2EyNGFiNWY3MDM1NmU0ZmU3OTUxYjBmMzY5NmQxZTJlZTgiCiAgICB9CiAgfQp9
+    slot: 32
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Bulblin.Timer          
+    hide_attributes: true
+    priority: 2
+    display_name: '&cBulblin'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Enderpearl &f50%'
+    - '&8&l» &9Bulblin Head &f5%'
+    - '&8&l» &9Bulblin Arrow &f4%'
+    - '&8&l» &9Bulblin Sword Shaving &f3%'
+    - '&8&l» &5Bulblin Bow &f3%'
+    - '&8&l» &5Bulblin Sword &f2%'
+    - '&8&l» &eBulblin Leggings &f1%'
+    - '&8&l» &eBulblin Chestplate &f.95%%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_VOID_BULBLIN%'
+  'BulblinRewards':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU5NzUxMzg1MzAwNiwKICAicHJvZmlsZUlkIiA6ICIwNmE4NjAyZDAwODk0YWQxOTcyMGQ3NGE1OGU1MDZjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfMW5kcmFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ZjBhZjRkZmZiMWZhYzQxNjQ3YjcxMDMwMGUwN2EyNGFiNWY3MDM1NmU0ZmU3OTUxYjBmMzY5NmQxZTJlZTgiCiAgICB9CiAgfQp9
+    slot: 32
+    view_requirement:
+      requirements:
+        Pex:
+          type: javascript
+          expression: '%betonquest_bosses:point.BulblinReward.amount% >= 1'
+    hide_attributes: true
+    priority: 0
+    display_name: '&cBulblin - &6&l%betonquest_bosses:point.BulblinReward.amount% REWARDS AVAILABLE!'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Enderpearl &f50%'
+    - '&8&l» &9Bulblin Head &f5%'
+    - '&8&l» &9Bulblin Arrow &f4%'
+    - '&8&l» &9Bulblin Sword Shaving &f3%'
+    - '&8&l» &5Bulblin Bow &f3%'
+    - '&8&l» &5Bulblin Sword &f2%'
+    - '&8&l» &eBulblin Leggings &f1%'
+    - '&8&l» &eBulblin Chestplate &f.95%%'
+    - ''
+    - '&8&l» &eLeft-Click to Claim 1 Reward'
+    - '&8&l» &eRight-Click to Claim 5 Rewards'
+    left_click_commands:
+    - "[player] BulblinClaim 1"
+    - "[close]"
+    right_click_commands:
+    - "[player] BulblinClaim 5"
+    - "[close]"
+
+  'Bullbo':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: '!has permission'
+          permission: Bulblin.Timer          
+    hide_attributes: true
+    priority: 1
+    display_name: '&cBullbo'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Endstone &f50%'
+    - '&8&l» &5Bullbo Leg &f50%'
+    - '&8&l» &9Bullbo Head &f5%'
+    - '&8&l» &eBullbo Feet &f4%'
+    - '&8&l» &eBullbo Head &f3%'
+    - '&8&l» &9Bullbo Arm &f2%'
+    - '&8&l» &9Bullbo Mount &f1%'
+    - ''
+    - '&fTime until spawn: &c&lLOCKED'
+  'Bullbo2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Bulblin.Timer          
+    hide_attributes: true
+    priority: 2
+    display_name: '&cBullbo'
+    update: true
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Endstone &f50%'
+    - '&8&l» &5Bullbo Leg &f50%'
+    - '&8&l» &9Bullbo Head &f5%'
+    - '&8&l» &eBullbo Feet &f4%'
+    - '&8&l» &eBullbo Head &f3%'
+    - '&8&l» &9Bullbo Arm &f2%'
+    - '&8&l» &9Bullbo Mount &f1%'
+    - ''
+    - '&fTime until spawn: &a%sp_timer_VOID_BULBLIN%'
+  'BullboRewards':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
+    slot: 33
+    view_requirement:
+      requirements:
+        Pex:
+          type: javascript
+          expression: '%betonquest_bosses:point.BullboReward.amount% >= 1'
+    hide_attributes: true
+    priority: 0
+    display_name: '&cBullbo - &6&l%betonquest_bosses:point.BullboReward.amount% REWARDS AVAILABLE!'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &9Enchanted Endstone &f50%'
+    - '&8&l» &5Bullbo Leg &f50%'
+    - '&8&l» &9Bullbo Head &f5%'
+    - '&8&l» &eBullbo Feet &f4%'
+    - '&8&l» &eBullbo Head &f3%'
+    - '&8&l» &9Bullbo Arm &f2%'
+    - '&8&l» &9Bullbo Mount &f1%'
+    - ''
+    - '&8&l» &eLeft-Click to Claim 1 Reward'
+    - '&8&l» &eRight-Click to Claim 5 Rewards'
+    left_click_commands:
+    - "[player] BullboClaim 1"
+    - "[close]"
+    right_click_commands:
+    - "[player] BullboClaim 5"
+    - "[close]"
+
+  'Enchantress':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
+    slot: 38
+    hide_attributes: true
+    priority: 1
+    display_name: '&cEnchantress'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &91-2 Enchanted Obsidian &f100%'
+    - '&8&l» &9Enchantress Jewel &f25%' #Used for upgrading Armor
+    - '&8&l» &9Enchantress Head &f5%'    
+    - '&8&l» &5Enchantress Staff &f1%'
+    - '&8&l» &eEnchantress Gem &f1%'
+    - '&8&l» &eEnderman Missile Gem &f1%'
+    - '&8&l» &eZombie Missile Gem &f1%'
+    - '&8&l» &eSlime Missile Gem &f1%'
+    - '&8&l» &eCreeper Missile Gem &f1%'
+    - '&8&l» &5Enchantress Head &f1%'
+    - '&8&l» &5Enchantress Chestplate &f1%'
+    - '&8&l» &5Enchantress Leggings &f1%'
+    - '&8&l» &5Enchantress Boots &f1%'
+  'EnchantressReward':
+    material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
+    slot: 38
+    view_requirement:
+      requirements:
+        Pex:
+          type: javascript
+          expression: '%betonquest_bosses:point.EnchantressReward.amount% >= 1'
+    hide_attributes: true
+    priority: 0
+    display_name: '&cEnchantress - &6&l%betonquest_bosses:point.EnchantressReward.amount% REWARDS AVAILABLE!'
+    lore:
+    - ''
+    - '&e&lRewards:'
+    - '&8&l» &91-2 Enchanted Obsidian &f100%'
+    - '&8&l» &9Enchantress Jewel &f25%' #Used for upgrading Armor
+    - '&8&l» &9Enchantress Head &f5%'    
+    - '&8&l» &5Enchantress Staff &f1%'
+    - '&8&l» &eEnchantress Gem &f1%'
+    - '&8&l» &eEnderman Missile Gem &f1%'
+    - '&8&l» &eZombie Missile Gem &f1%'
+    - '&8&l» &eSlime Missile Gem &f1%'
+    - '&8&l» &eCreeper Missile Gem &f1%'
+    - '&8&l» &5Enchantress Head &f1%'
+    - '&8&l» &5Enchantress Chestplate &f1%'
+    - '&8&l» &5Enchantress Leggings &f1%'
+    - '&8&l» &5Enchantress Boots &f1%'
+    - ''
+    - '&8&l» &eLeft-Click to Claim 1 Reward'
+    - '&8&l» &eRight-Click to Claim 5 Rewards'
+    left_click_commands:
+    - "[player] EnchantressClaim 1"
+    - "[close]"
+    right_click_commands:
+    - "[player] EnchantressClaim 5"
     - "[close]"

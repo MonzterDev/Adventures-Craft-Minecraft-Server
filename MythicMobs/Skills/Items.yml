@@ -568,8 +568,8 @@ DRAIN1:
   Conditions:
   - mobsinradius_ext{mobtypes=ALL;a=1;r=10;action=TRUE}
   Skills:
-  - message{m="&7You &ahealed &7yourself for &a10% &7of your max HP and dealt &c250 Damage &7to all nearby enemies!"} @self
-  - damage{amount=250;ignoreArmor=false} @EIR{r=10;ignore=players}
+  - message{m="&7You &ahealed &7yourself for &a10% &7of your max HP and dealt &c1,250 Damage &7to all nearby enemies!"} @self
+  - damage{amount=1250;ignoreArmor=false} @EIR{r=10;ignore=players}
   - healpercent{m=0.1} @self
   - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
 DRAIN2:
@@ -577,8 +577,8 @@ DRAIN2:
   Conditions:
   - mobsinradius_ext{mobtypes=ALL;a=2;r=10;action=TRUE}
   Skills:
-  - message{m="&7You &ahealed &7yourself for &a20% &7of your max HP and dealt &c500 Damage &7to all nearby enemies!"} @self
-  - damage{amount=500;ignoreArmor=false} @EIR{r=10;ignore=players}
+  - message{m="&7You &ahealed &7yourself for &a20% &7of your max HP and dealt &c2,500 Damage &7to all nearby enemies!"} @self
+  - damage{amount=2500;ignoreArmor=false} @EIR{r=10;ignore=players}
   - healpercent{m=0.2} @self
   - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
 DRAIN3:
@@ -586,8 +586,8 @@ DRAIN3:
   Conditions:
   - mobsinradius_ext{mobtypes=ALL;a=3;r=10;action=TRUE}
   Skills:
-  - message{m="&7You &ahealed &7yourself for &a30% &7of your max HP and dealt &c750 Damage &7to all nearby enemies!"} @self
-  - damage{amount=750;ignoreArmor=false} @EIR{r=10;ignore=players}
+  - message{m="&7You &ahealed &7yourself for &a30% &7of your max HP and dealt &c5,000 Damage &7to all nearby enemies!"} @self
+  - damage{amount=5000;ignoreArmor=false} @EIR{r=10;ignore=players}
   - healpercent{m=0.3} @self
   - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
 DRAIN4:
@@ -595,8 +595,8 @@ DRAIN4:
   Conditions:
   - mobsinradius_ext{mobtypes=ALL;a=4;r=10;action=TRUE}
   Skills:
-  - message{m="&7You &ahealed &7yourself for &a40% &7of your max HP and dealt &c1,000 Damage &7to all nearby enemies!"} @self
-  - damage{amount=1000;ignoreArmor=false} @EIR{r=10;ignore=players}
+  - message{m="&7You &ahealed &7yourself for &a40% &7of your max HP and dealt &c7,500 Damage &7to all nearby enemies!"} @self
+  - damage{amount=7500;ignoreArmor=false} @EIR{r=10;ignore=players}
   - healpercent{m=0.4} @self
   - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
 DRAIN5:
@@ -604,8 +604,8 @@ DRAIN5:
   Conditions:
   - mobsinradius_ext{mobtypes=ALL;a=5to100;r=10;action=TRUE}
   Skills:
-  - message{m="&7You &ahealed &7yourself for &a50% &7of your max HP and dealt &c1,250 Damage &7to all nearby enemies!"} @self
-  - damage{amount=1250;ignoreArmor=false} @EIR{r=10;ignore=players}
+  - message{m="&7You &ahealed &7yourself for &a50% &7of your max HP and dealt &c10,000 Damage &7to all nearby enemies!"} @self
+  - damage{amount=10000;ignoreArmor=false} @EIR{r=10;ignore=players}
   - healpercent{m=0.5} @self
   - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
 
@@ -618,3 +618,226 @@ VEIN_DRAIN1:
 VEIN_DRAIN2:
   Skills:
   - heal{amount=3} @self ~onAttack
+
+
+
+
+
+#VOID MAZE REWARDS
+MEGA_BOOM:
+  Skills:
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.75} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.95} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - message{m="&cYou combusted!"} @self
+  - throw{velocity=5;velocityY=5} @EIR{r=7;ignore=players}
+  - damage{a=2500;ignoreArmor=false} @EIR{r=7;ignore=players}
+  - damage{a=100;ignoreArmor=false} @self
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
+
+MONITOR_MUTE:
+  Skills:
+  - projectile{bulletType=ITEM;material=CHORUS_PLANT;i=1;onHit=MONITOR_MUTE_HIT;onTick=MONITOR_MUTE_TICK;hnp=true;MaxRange=10;sE=true;hp=false} @eyedirection{length=7.5}
+MONITOR_MUTE_TICK:
+  Skills:
+  - effect:particles{p=dragon_breath;amount=5;speed=0;hS=0.1;vS=0} @origin
+MONITOR_MUTE_HIT:
+  Skills:
+  - damage{a=250;ignoreArmor=false} @EntitiesNearOrigin{r=3;ignore=players}
+  - effect:spin{duration=40;velocity=20} @EntitiesNearOrigin{r=3;ignore=players}  
+  - stun{d=40;f=false} @EntitiesNearOrigin{r=3;ignore=players}
+  - effect:sound{s=entity.endermite.hurt;v=1.25;p=2} @self
+  - effect:sound{s=entity.endermite.hurt;v=1.25;p=2} @self
+  - effect:particlesphere{particle=dragon_breath;amount=1;radius=0;y=1} @EntitiesNearOrigin{r=3;ignore=players}
+  - delay 20
+  - effect:particlesphere{particle=dragon_breath;amount=1;radius=0;y=1} @EntitiesNearOrigin{r=3;ignore=players}  
+
+MONITOR_MUTEB:
+  Skills:
+  - projectile{bulletType=ITEM;material=CHORUS_PLANT;i=1;onHit=MONITOR_MUTE_HIT2;onTick=MONITOR_MUTE_TICK2;hnp=true;MaxRange=10;sE=true;hp=false} @eyedirection{length=7.5}
+MONITOR_MUTE_TICK2:
+  Skills:
+  - effect:particles{p=dragon_breath;amount=5;speed=0;hS=0.1;vS=0} @origin
+MONITOR_MUTE_HIT2:
+  Skills:
+  - effect:spin{duration=60;velocity=20} @EntitiesNearOrigin{r=5;ignore=players}  
+  - stun{d=60;f=false} @EntitiesNearOrigin{r=5;ignore=players}
+  - effect:sound{s=entity.endermite.hurt;v=1.25;p=2} @self
+  - effect:sound{s=entity.endermite.hurt;v=1.25;p=2} @self
+  - damage{a=500;ignoreArmor=false} @EntitiesNearOrigin{r=5;ignore=players}
+  - effect:particlesphere{particle=dragon_breath;amount=1;radius=0;y=1} @EntitiesNearOrigin{r=5;ignore=players}
+  - delay 20
+  - effect:particlesphere{particle=dragon_breath;amount=1;radius=0;y=1} @EntitiesNearOrigin{r=5;ignore=players}  
+  - delay 20
+  - effect:particlesphere{particle=dragon_breath;amount=1;radius=0;y=1} @EntitiesNearOrigin{r=5;ignore=players}  
+
+
+ZOMBIE_MISSILE:
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=ZOMBIE_MISSILE;i=1;onHit=ZOMBIE_MISSILE_HIT;onTick=ZOMBIE_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;Duration=200;Velocity=10;bulletSpin=0} @LivingInCone{a=120.0;r=16.0;rot=0.0}
+ZOMBIE_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} @origin
+ZOMBIE_MISSILE_HIT:
+  Skills:
+  - potion{type=POSION;duration=100;level=5} 
+  - damage{a=2000;ignoreArmor=false} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} 
+  - delay 20
+  - damage{a=2000;ignoreArmor=false} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} 
+  - delay 20
+  - damage{a=2000;ignoreArmor=false} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} 
+  - delay 20
+  - damage{a=2000;ignoreArmor=false} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} 
+  - delay 20
+  - damage{a=2000;ignoreArmor=false} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} 
+
+CREEPER_MISSILE:
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=CREEPER_MISSILE;i=20;onTick=CREEPER_MISSILE_TICK;hnp=false;MaxRange=10;sE=true;hp=false;Duration=200;Velocity=1} @eyedirection{length=10}
+CREEPER_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} @origin
+  - damage{a=1000;ignoreArmor=false} @EntitiesNearOrigin{r=5;ignore=players}
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @origin
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @origin
+
+SLIME_MISSILE:
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=SLIME_MISSILE;i=1;onHit=SLIME_MISSILE_HIT;onTick=SLIME_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;Duration=200;Velocity=10;bulletSpin=0} @target
+SLIME_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} @origin
+SLIME_MISSILE_HIT:
+  Skills:
+  - stun{d=100;f=false}
+  - damage{a=5000;ignoreArmor=false} 
+  - effect:sound{s=entity.SLIME.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} 
+
+ENDERMAN_MISSILE:
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=ENDERMAN_MISSILE;i=1;onEnd=ENDERMAN_MISSILE_HIT;onTick=ENDERMAN_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;Duration=200;Velocity=20} @eyedirection{length=15}
+ENDERMAN_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} @origin
+  - healpercent{m=0.0005} @self
+ENDERMAN_MISSILE_HIT:
+  Skills:
+  - summon{type=ENDERMAN_MISSILE_MOB;amount=1;radius=2} @origin
+  - teleport{spreadh=1;spreadv=1} @MIR{r=100;t=ENDERMAN_MISSILE_MOB}
+
+AMATERASU:
+  Skills:
+  - raytrace{
+      entitySkill=[
+        - ignite{ticks=20} @target
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1} @target
+        - damage{a=500;ignoreArmor=false} @target
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+        - delay 20
+        - ignite{ticks=20}
+        - effect:particlesphere{particle=spell_witch;amount=100;radius=1}
+        - damage{a=500;ignoreArmor=false}
+      ];
+      locationSkill=[
+        - particles{p=flame;a=20;s=0.2;hS=0.1;vS=0.1}
+      ]} @target

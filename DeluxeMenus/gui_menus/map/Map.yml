@@ -361,7 +361,7 @@ items:
     - '&7and eventually defeat &cGhastly&7!'
     - ''
     - '&c&lLocked'
-    - '&aSlayer Level&f: 5'
+    - '&aLevel&f: 5'
     
   'HellUnLocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgzNTcxZmY1ODlmMWE1OWJiMDJiODA4MDBmYzczNjExNmUyN2MzZGNmOWVmZWJlZGU4Y2YxZmRkZSJ9fX0=
@@ -402,3 +402,41 @@ items:
     - "[player] warp HellBottom"
     left_click_commands:
     - "[player] warp Hell"
+
+  'Void':
+    material: RED_STAINED_GLASS_PANE
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: cmi.command.portal.void         
+    display_name: '&5Void &c&lLocked'
+    lore:
+    - ''
+    - '&7Battle both &cVoid Bulblin &7& &cBullbo'
+    - '&7Adventure through the endless Maze'
+    - '&7Defeat the evil &cVoid Enchantress'
+    - ''
+    - '&c&lLocked'
+    - '&aLevel&f: 10'
+    
+  'VoidUnLocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIwMWFlMWE4YTA0ZGY1MjY1NmY1ZTQ4MTNlMWZiY2Y5Nzg3N2RiYmZiYzQyNjhkMDQzMTZkNmY5Zjc1MyJ9fX0=
+    hide_attributes: true
+    priority: 2
+    slot: 22
+    display_name: '&5Void'
+    lore:
+    - ''
+    - '&7Battle both &cVoid Bullbo &7& &cBulblin&7!'
+    - '&7Adventure through the endless Maze&7.'
+    - '&7Defeat the &8corrupt &cVoid Enchantress&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp Void"
+    left_click_commands:
+    - "[player] warp Void"

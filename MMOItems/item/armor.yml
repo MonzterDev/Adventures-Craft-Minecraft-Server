@@ -795,19 +795,6 @@ CURSED_BOOTS:
     lore: []
     set: CURSED
     magic-damage: 15.0
-BULB_CHEST:
-  base:
-    material: LEATHER_CHESTPLATE
-    tier: EXOTIC
-    unbreakable: true
-    dye-color: 35 0 43
-    gem-sockets:
-    - Uncolored
-    - Uncolored
-    name: §eBulb Chest
-    defense: 25.0
-    max-health: 80.0
-    attack-damage: 50.0
 LOG_HELMET:
   base:
     material: LEATHER_HELMET
@@ -1521,7 +1508,7 @@ SAI_BOOTS:
       spread: 0.1
       max-spread: 0.3
     attack-speed:
-      base: .5
+      base: 0.5
       spread: 0.1
       max-spread: 0.3
     attack-damage:
@@ -1987,7 +1974,7 @@ BULBLIN_CHEST:
     attack-damage: 50.0
     projectile-damage: 25.0
     set: BULL
-    faction-damage-hell: 30.0
+    faction-damage-void: 30.0
 BULBLIN_LEGS:
   base:
     material: LEATHER_LEGGINGS
@@ -2003,7 +1990,7 @@ BULBLIN_LEGS:
     attack-damage: 40.0
     projectile-damage: 15.0
     set: BULL
-    faction-damage-hell: 25.0
+    faction-damage-void: 25.0
 BULLBO_FEET:
   base:
     material: LEATHER_BOOTS
@@ -2020,3 +2007,229 @@ BULLBO_FEET:
     max-mana: 75.0
     knockback-resistance: 0.5
     movement-speed: -0.03
+BOOMER_CHEST:
+  base:
+    material: LEATHER_CHESTPLATE
+    tier: RARE
+    unbreakable: true
+    dye-color: 75 245 66
+    name: §9Boomer Chestplate
+    defense: 5.0
+    max-health: 15.0
+    faction-damage-void: 5.0
+    knockback-resistance: 0.3
+    critical-strike-power: 25
+BOOMER_CHEST2:
+  base:
+    material: LEATHER_CHESTPLATE
+    tier: LEGENDARY
+    unbreakable: true
+    dye-color: 75 245 66
+    name: §5Boomer Chestplate
+    defense: 10.0
+    max-health: 25.0
+    faction-damage-void: 15.0
+    knockback-resistance: 0.6
+    critical-strike-power: 50
+    gem-sockets:
+    - Uncolored
+BOOMER_CHEST3:
+  base:
+    material: LEATHER_CHESTPLATE
+    tier: EXOTIC
+    unbreakable: true
+    dye-color: 75 245 66
+    name: §eBoomer Chestplate
+    defense: 20.0
+    max-health: 35.0
+    faction-damage-void: 25.0
+    knockback-resistance: 0.9
+    critical-strike-power: 75
+    gem-sockets:
+    - Uncolored
+    - Uncolored
+    ability:
+      ability1:
+        type: MEGA_BOOM
+        mode: SHIFT_RIGHT_CLICK
+        cooldown: 5.0
+ENCHANTRESS_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
+      uuid: dbae6d47-f480-4393-a874-ce6d9db0bda2
+    tier: LEGENDARY
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+    name: §5Enchantress Head
+    defense: 25.0
+    max-health: 35.0
+    magic-damage: 20.0
+    max-mana: 50.0
+    faction-damage-void: 10.0
+    set: ENCHANTRESS1
+    mana-regeneration: 0.5
+    lore:
+    - '&5Magically &7enhanced armor piece'
+    - '&7found only on the &5Enchantress&7,'
+    - '&7and powerful warriors and warlocks!'
+ENCHANTRESS_CHEST:
+  base:
+    material: LEATHER_CHESTPLATE
+    tier: LEGENDARY
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    name: §5Enchantress Chestplate
+    defense: 40.0
+    max-health: 50.0
+    magic-damage: 30.0
+    max-mana: 100.0
+    faction-damage-void: 25.0
+    set: ENCHANTRESS1
+    mana-regeneration: 1
+    lore:
+    - '&5Magically &7enhanced armor piece'
+    - '&7found only on the &5Enchantress&7,'
+    - '&7and powerful warriors and warlocks!'
+ENCHANTRESS_LEGS:
+  base:
+    material: LEATHER_LEGGINGS
+    tier: LEGENDARY
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    name: §5Enchantress Leggings
+    defense: 30.0
+    max-health: 40.0
+    magic-damage: 25.0
+    max-mana: 75.0
+    faction-damage-void: 15.0
+    set: ENCHANTRESS1
+    mana-regeneration: 1
+    lore:
+    - '&5Magically &7enhanced armor piece'
+    - '&7found only on the &5Enchantress&7,'
+    - '&7and powerful warriors and warlocks!'
+ENCHANTRESS_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    tier: LEGENDARY
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    name: §5Enchantress Boots
+    defense: 20.0
+    max-health: 30.0
+    magic-damage: 15.0
+    max-mana: 25.0
+    faction-damage-void: 5.0
+    set: ENCHANTRESS1
+    mana-regeneration: .5
+    lore:
+    - '&5Magically &7enhanced armor piece'
+    - '&7found only on the &5Enchantress&7,'
+    - '&7and powerful warriors and warlocks!'
+ENCHANTRESS_HEAD2:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
+      uuid: dbae6d47-f480-4393-a874-ce6d9db0bda2
+    tier: EXOTIC
+    unbreakable: true
+    gem-sockets:
+    - Uncolored
+    - Mystical
+    name: §eEnchantress Head
+    defense: 30.0
+    max-health: 40.0
+    magic-damage: 30.0
+    max-mana: 75.0
+    faction-damage-void: 20.0
+    set: ENCHANTRESS2
+    mana-regeneration: 1
+    lore:
+    - '&7One &eGem Slot &7can only'
+    - '&7accept &dMystical Gems&7!'
+    - ''
+    - '&eAscended &7piece of armor from'
+    - '&7the &5Enchantress&7, only found'
+    - '&7on true warriors and warlocks!'
+ENCHANTRESS_CHEST2:
+  base:
+    material: LEATHER_CHESTPLATE
+    tier: EXOTIC
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    - Mystical
+    name: §eEnchantress Chestplate
+    defense: 45.0
+    max-health: 55.0
+    magic-damage: 40.0
+    max-mana: 125.0
+    faction-damage-void: 30.0
+    set: ENCHANTRESS2
+    mana-regeneration: 5
+    lore:
+    - '&7One &eGem Slot &7can only'
+    - '&7accept &dMystical Gems&7!'
+    - ''
+    - '&eAscended &7piece of armor from'
+    - '&7the &5Enchantress&7, only found'
+    - '&7on true warriors and warlocks!'
+ENCHANTRESS_LEGS2:
+  base:
+    material: LEATHER_LEGGINGS
+    tier: EXOTIC
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    - Mystical
+    name: §eEnchantress Leggings
+    defense: 35.0
+    max-health: 45.0
+    magic-damage: 35.0
+    max-mana: 100.0
+    faction-damage-void: 25.0
+    set: ENCHANTRESS2
+    mana-regeneration: 2.5
+    lore:
+    - '&7One &eGem Slot &7can only'
+    - '&7accept &dMystical Gems&7!'
+    - ''
+    - '&eAscended &7piece of armor from'
+    - '&7the &5Enchantress&7, only found'
+    - '&7on true warriors and warlocks!'
+ENCHANTRESS_BOOTS2:
+  base:
+    material: LEATHER_BOOTS
+    tier: EXOTIC
+    unbreakable: true
+    dye-color: 242 66 255
+    gem-sockets:
+    - Uncolored
+    - Mystical
+    name: §eEnchantress Boots
+    defense: 25.0
+    max-health: 35.0
+    magic-damage: 25.0
+    max-mana: 50.0
+    faction-damage-void: 10.0
+    set: ENCHANTRESS2
+    mana-regeneration: 1
+    lore:
+    - '&7One &eGem Slot &7can only'
+    - '&7accept &dMystical Gems&7!'
+    - ''
+    - '&eAscended &7piece of armor from'
+    - '&7the &5Enchantress&7, only found'
+    - '&7on true warriors and warlocks!'

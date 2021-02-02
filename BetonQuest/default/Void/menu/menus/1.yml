@@ -1,4 +1,4 @@
-height: 5
+height: 6
 title: '&fQuests'
 items:
 #FIRST QUEST
@@ -839,6 +839,404 @@ items:
       right: default-Void-Kassadin.QuestReward5_Claim
       left: default-Void-Kassadin.QuestReward5_Claim
 
+
+#THIRD ROW
+  quest12_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lAnkle Biters'
+        - '&f&o'
+        - '&fEliminate &c25 Void Monitors'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Kogmaw in the Void Maze'        
+    close: false
+  quest12_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q1_part1,!default-Void-Kogmaw.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAnkle Biters'
+        - '&f&o'
+        - '&fEliminate &c25 Void Monitors'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Kogmaw in the Void Maze'        
+    close: false
+  quest12_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lAnkle Biters'
+        - '&f&o'
+        - '&fEliminate &c25 Void Monitors'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+    close: false
+#THIRD ROW
+  quest13_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lButton Pusher'
+        - '&f&o'
+        - '&fPush the &a4 unique Booster Buttons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &5250 Void Reputation'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ankle Biters'        
+    close: false
+  quest13_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q2_part1,!default-Void-Kogmaw.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lButton Pusher'
+        - '&f&o'
+        - '&fPush the &a4 unique Booster Buttons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &5250 Void Reputation'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ankle Biters'        
+    close: false
+  quest13_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lButton Pusher'
+        - '&f&o'
+        - '&fPush the &a4 unique Booster Buttons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &5250 Void Reputation'
+        - '&8&l» &e150 Coins'
+    close: false
+#THIRD ROW
+  quest14_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lChampion Brawls'
+        - '&f&o'
+        - '&fVanquish &c50 Void Champions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Button Pusher'        
+    close: false
+  quest14_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q3_part1,!default-Void-Kogmaw.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lChampion Brawls'
+        - '&f&o'
+        - '&fVanquish &c50 Void Champions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Button Pusher'        
+    close: false
+  quest14_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lChampion Brawls'
+        - '&f&o'
+        - '&fVanquish &c50 Void Champions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+#THIRD ROW
+  quest15_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Champion Brawls'        
+    close: false
+  quest15_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_part1,!default-Void-Kogmaw.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Champion Brawls'        
+    close: false
+  quest15_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_completed,default-Void-Kogmaw.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+    close: false
+  quest15_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_rewards_unclaimed,!default-Void-Kogmaw.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward4_Claim
+      left: default-Void-Kogmaw.QuestReward4_Claim
+#THIRD ROW
+  quest16_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mega Boom'        
+    close: false
+  quest16_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_part1,!default-Void-Kogmaw.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mega Boom'        
+    close: false
+  quest16_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_completed,default-Void-Kogmaw.q5_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+    close: false
+  quest16_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_rewards_unclaimed,!default-Void-Kogmaw.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward5_Claim
+      left: default-Void-Kogmaw.QuestReward5_Claim
+#THIRD ROW
+  quest17_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Void-Kogmaw.q6_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ascending'        
+    close: false
+  quest17_active:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_part1,!default-Void-Kogmaw.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ascending'        
+    close: false
+  quest17_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_completed,default-Void-Kogmaw.q6_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+    close: false
+  quest17_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_rewards_unclaimed,!default-Void-Kogmaw.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward6_Claim
+      left: default-Void-Kogmaw.QuestReward6_Claim
+
 #FILLER
   glass:
     item: glass
@@ -854,9 +1252,11 @@ items:
 slots:
   0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   17-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  25-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  31-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   11-16: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest3_inactive,quest3_active,quest3_completed,quest4_inactive,quest4_active,quest4_completed,quest5_inactive,quest5_active,quest5_completed,quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed
   20-24: quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed,quest9_inactive,quest9_active,quest9_completed,quest9_unclaimed,quest10_inactive,quest10_active,quest10_completed,quest10_unclaimed,quest11_inactive,quest11_active,quest11_completed,quest11_unclaimed
-  40: back
+  25-28: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  29-34: quest12_inactive,quest12_active,quest12_completed,quest13_inactive,quest13_active,quest13_completed,quest14_inactive,quest14_active,quest14_completed,quest15_inactive,quest15_active,quest15_completed,quest15_unclaimed,quest16_inactive,quest16_active,quest16_completed,quest16_unclaimed,quest17_inactive,quest17_active,quest17_completed,quest17_unclaimed
+  35-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  40-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  49: back

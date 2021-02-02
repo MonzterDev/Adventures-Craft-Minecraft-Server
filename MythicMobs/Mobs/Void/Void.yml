@@ -1,0 +1,450 @@
+VOID_WORSHIPER:
+  Type: ENDERMAN 
+  Display: '&7[&fLVL 25&7] &cVoid Worshiper'
+  Health: 12500
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.25
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 5%
+  - ender_pearl 3-5 100%
+  - VOID_WORSHIPER 1 100%
+  - EXP 10-15 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=150;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ENDERMANTP} @self ~onTimer:140
+  - effect:ender @self ~onTimer:140
+  - command{c="q point <target.name> add mobs.VOID_WORSHIPER 1"} @ThreatTablePlayers ~onDeath
+
+VOID_SOURCE:
+  Type: SHULKER 
+  Display: '&7[&fLVL 25&7] &cVoid Source'
+  Health: 2500
+  Damage: 0
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.2
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 5%
+  - VOID_SOURCE 1 100%
+  - SHULKER_SHELL 3-5 100%
+  - EXP 5-7 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 arrowattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=VOID_MOB_BUFF} @MIR{r=15;t=VOID_WORSHIPER,VOID_THRALL,VOID_ASSASSIN,VOID_VEIN,VOID_SOURCE} ~onTimer:350
+  - command{c="q point <target.name> add mobs.VOID_SOURCE 1"} @PIR{r=5} ~onDeath
+  - summon{type=VOID_ASSASSIN;amount=1;radius=5} @RandomThreatTarget ~onDeath
+  - skriptskill{skill=blinder} @PIR{r=15} ~onTimer:350
+
+VOID_THRALL:
+  Type: ENDERMITE 
+  Display: '&7[&fLVL 25&7] &cVoid Thrall'
+  Health: 5000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.33
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+  - obsidian 1 100%
+  - VOID_THRALL 1 100%
+  - EXP 7-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=100;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - potion{type=SLOWNESS;duration=60;level=5} @PIR{r=5} ~onDeath
+  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
+  - effect:blockmask{m=BEDROCK;r=1;d=30} @self ~onTimer:10
+  - command{c="q point <target.name> add mobs.VOID_THRALL 1"} @ThreatTablePlayers ~onDeath
+
+VOID_ASSASSIN:
+  Type: WITHER_SKELETON 
+  Display: '&7[&fLVL 25&7] &cVoid Assassin'
+  Health: 10000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.4
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - ASSASSIN:HEAD
+  - ASSASSIN_CHEST:CHEST
+  - ASSASSIN_LEGS:LEGS
+  - ASSASSIN_BOOTS:FEET
+  - ASSASSIN_SWORD:HAND
+  - ASSASSIN_SWORD:OFFHAND
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+  - mmoitems{type=MATERIAL;id=CHORUS_SEED} 1-4 100%
+  - obsidian 1-2 100%
+  - VOID_ASSASSIN 1 100%
+  - EXP 15-20 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=250;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=ASSASSINSTUN} @PlayersInRadius{r=7} ~onDamaged <50% .15
+  - effect:bloodyScreen{d=60} @PIR{r=10} ~onTimer:20
+  - skill{s=ASSASSINUNDRESS} @self ~onTimer:300
+  - command{c="q point <target.name> add mobs.VOID_ASSASSIN 1"} @ThreatTablePlayers ~onDeath
+
+VOID_VEIN:
+  Type: GIANT 
+  Display: '&7[&fLVL 25&7] &cVoid Vein'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &cVoid Vein <caster.hp>&f/&c<caster.mhp>'
+    Range: 5
+    Color: PURPLE
+    Style: SEGMENTED_6
+  DamageModifiers:
+  - SUFFOCATION -1
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.0001
+    FollowRange: 0
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+    NoGravity: true
+    ApplyInvisibility: true
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 2-5 20%
+  - WITHER_ROSE 4-8 100%
+  - EXP 10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  Skills:
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - effect:blockmask{m=BEDROCK;r=3;d=100} @self ~onTimer:200
+  - effect:particles{particle=damage_indicator;amount=100;hS=.65;vS=10;speed=0} @self ~onTimer:200
+  - command{c="q point <target.name> add mobs.VOID_VEIN 1"} @PIR{r=5} ~onDeath
+
+
+
+
+
+
+
+
+
+
+
+
+# BULL
+
+VOID_BULLBO:
+  Type: IRON_GOLEM
+  Disguise:
+    Type: RAVAGER
+  Display: '&7[&fLVL 50&7] &cVoid Bullbo'
+  Health: 50000
+  Damage: 0
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 50&7] &cVoid Bullbo <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: PURPLE
+    Style: SEGMENTED_12
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 20
+    MovementSpeed: 0.32
+    FollowRange: 60
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 10 100%
+  - EXP 50-75 100%
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=BULLBO_UNDEFEATED} ~onSpawn
+  - damage{amount=250;ignoreArmor=false} @target ~onAttack
+#This is to maintain agro
+  - skill{s=VOID_BULLBO_AGROA} @self ~onTimer:40
+  - skill{s=VOID_BULLBO_AGROB} @self ~onTimer:40
+  - command{c="q point <target.name> add bosses.VOID_BULLBO 1"} @ThreatTablePlayers ~onDeath
+  - command{c="q point <target.name> add bosses.BullboReward 1"} @ThreatTablePlayers ~onDeath
+  - message{m="&eYou have defeated the &cVoid Bullbo&e! Claim your rewards in &l/Bossdex&e!"} @ThreatTablePlayers ~onDeath
+#Sounds for getting hurt / attacking
+  - sound{s=entity.ravager.hurt;p=0.5} @self ~onDamaged
+  - sound{s=entity.ravager.attack;p=0.5} @self ~onAttack
+
+#Periodic dash, does damage and slows
+  - skill{s=BULLBO_DASH} ~onTimer:200 <85%
+#More powerful dash which happens when below 50%
+  - skill{s=BULLBO_MEGA_DASH} ~onTimer:500 <75%
+#Summons pig minions which will attack, then come back after 10 seconds and be eaten to heal the boss
+  - skill{s=BULB_SUMMON} ~onTimer:100 <50%
+
+#Passively heals mobs every X (1) Second for 10 HP
+  - skill{s=VOID_BOSS_PASSIVE_HEAL} ~onTimer:20
+#Lifesteal which gives the Mob HP each attack
+  - skill{s=VOID_BULLBO_LIFESTEAL} ~onAttack
+
+#RIDER
+VOID_BULBLIN:
+  Type: SKELETON 
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 50&7] &cVoid Bulblin'
+    Skin: bulblin
+  Display: ''
+  Health: 30000
+  Damage: 0
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 50&7] &cVoid Bulblin <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: PURPLE
+    Style: SEGMENTED_12
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true    
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: false
+    KnockbackResistance: .7
+    MaxCombatDistance: 10
+    MovementSpeed: 0.36
+    FollowRange: 60
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 10 100%
+  - EXP 50-75 100%
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=BULBLIN_BEGIN} @PIR{r=10000} ~onSpawn
+  - skill{s=BULBLIN_UNDEFEATED} ~onSpawn
+  - skill{s=BULBLIN_ARMOR} @self ~onSpawn
+  - skill{s=BULBLIN_REMOVE_FEET} @self <75%
+  - skill{s=BULBLIN_REMOVE_LEGS} @self <50%
+  - skill{s=BULBLIN_REMOVE_CHEST} @self <25%
+  - command{c="q point <target.name> add bosses.VOID_BULBLIN 1"} @ThreatTablePlayers ~onDeath
+  - command{c="q point <target.name> add bosses.BulblinReward 1"} @ThreatTablePlayers ~onDeath
+  - message{m="&eYou have defeated the &cVoid Bulblin&e! Claim your rewards in &l/Bossdex&e!"} @ThreatTablePlayers ~onDeath
+
+  - sound{s=entity.enderman.hurt;p=2} @self ~onDamaged
+  - sound{s=entity.enderman.scream;p=2} @self ~onDeath
+#Mounted Agro
+  #- skill{s=BULBLIN_ARCHER_AGRO} ~onTimer:20
+#Damage when holding Bow
+  - skill{s=BULBLIN_ARCHER_ATTACK} @target ~onAttack
+#Special Attack pulls player closer when in archer stance
+  - skill{s=BULBLIN_ARCHER_PULL} @target ~onAttack .5
+  - skill{s=BULBLIN_ARCHER_BLIND} @target ~onAttack .25
+
+#Dismounted Agro
+  - skill{s=BULBLIN_MELEE_AGRO} ~onTimer:20
+#Damage when holding Sword
+  #- skill{s=BULBLIN_MELEE_ATTACK} @target ~onAttack
+#Special attack which pushes players up high
+  - skill{s=BULBLIN_SHOCK_SLAM} ~onAttack .25 <50%
+#Dismount from the Bull
+  - skill{s=BULBLIN_DISMOUNT} ~onSignal:DISMOUNT
+
+#Mounts upon spawning
+  - mount{type=VOID_BULLBO} ~onSpawn
+
+#Passively heals mobs every X (1) Second for 10 HP
+  - skill{s=VOID_BOSS_PASSIVE_HEAL} ~onTimer:20
+#Lifesteal which gives the Mob HP each attack
+  - skill{s=VOID_BULBLIN_LIFESTEAL} ~onAttack
+
+#PIG
+VOID_BULB:
+  Type: WOLF 
+  Disguise:
+    Type: PIG
+  Display: '&7[&fLVL 40&7] &cAngry Bulb'
+  Health: 5000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: false
+    KnockbackResistance: 0
+    MaxCombatDistance: 50
+    MovementSpeed: 0.52
+    FollowRange: 60
+    Collidable: true
+    Despawn: true
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+  - mmoitems{type=MATERIAL;id=BULB_LEG} 1 5%
+  - porkchop 3-5 100%
+  - EXP 7-10 100%
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - sound{s=entity.pig.ambient;v=2;p=.5} @PIR{r=15} ~onSpawn
+  - sound{s=entity.pig.death;v=2;p=.5} @PIR{r=15} ~onDeath
+
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=VOID_BOSS_AGRO} ~onTimer:20
+
+#Skill which will make Bulb be consumed when near boss
+  - skill{s=BULLBO_HEAL} ~onTimer:20
+#Delayed skill which will make Bulbs agro boss
+  - skill{s=BULLBO_CONSUME} ~onSpawn
+#Delayed skill which will wipe the Bulbs after 30 secs incase of them wandering off 
+  - skill{s=BULLBO_PURGE} ~Spawn
+  - damage{amount=100;ignoreArmor=false} @target ~onAttack
+  - command{c="q point <target.name> add mobs.VOID_BULB 1"} @ThreatTablePlayers ~onDeath

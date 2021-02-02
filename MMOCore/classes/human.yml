@@ -165,6 +165,7 @@ triggers:
     - 'command{format="lp user %player% permission set level10 true"}'
     - 'command{format="mmocore admin attribute-points give %player% 1"}'
     - 'command{format="mmocore admin attr-realloc-points give %player% 1"}'
+    - 'command{format="lp user %player% permission set cmi.command.portal.void true"}'
 
 #SLAYER TRIGGER
     level-up-slayer-2:
@@ -501,23 +502,20 @@ triggers:
     #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
     - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
     - 'command{format="lp user %player% permission set Void2 true"}'
-    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
-    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    - 'command{format="mmocore admin attribute give %player% void 1"}'
     level-up-void-3:
     #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
     - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
     - 'command{format="lp user %player% permission set Void3 true"}'
     - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
-    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    - 'command{format="mmocore admin attribute give %player% void 1"}'
     level-up-void-4:
     #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
     - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
     - 'command{format="lp user %player% permission set Void4 true"}'
-    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 5 %player%"}'
-    - 'command{format="permanentstats stat add MAX_HEALTH 5 %player%"}'
+    - 'command{format="mmocore admin attribute give %player% void 1"}'
     level-up-void-5:
     #- 'message{format="&a--------------------------------------------------\n&f                     You are now &a§iSlayer §fLevel: &e%mmocore_profession_slayer%&f!&9\n\n&e&l      LEARNED&f:\n       %textph_Slayer_L2_R1%\n       %textph_Slayer_L2_R2%\n       %textph_Slayer_L2_R3%\n       %textph_Slayer_L2_R4%\n       %textph_Slayer_L2_R5%\n \n&e--------------------------------------------------"}'    
     - 'message{format="&eYou leveled up &5&lVoid &eto: &aLevel %mmocore_profession_void%&e! Check your new perks by using &a/Void&e!"}' 
     - 'command{format="lp user %player% permission set Void5 true"}'
-    - 'command{format="permanentstats stat add FACTION_DAMAGE_VOID 10 %player%"}'
-    - 'command{format="permanentstats stat add MAX_HEALTH 10 %player%"}'
+    - 'command{format="mmocore admin attribute give %player% void 2"}'

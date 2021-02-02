@@ -371,7 +371,47 @@ KHAZIX_STAFF2:
     - Uncolored
     ability:
       ability1:
-        type: VOID_SPIKE
+        type: VOID_SPIKEB
         mode: SHIFT_RIGHT_CLICK
-        cooldown: 5.0
-        mana: 35.0
+        mana: 100.0
+        cooldown: 10.0
+ENCHANTRESS_STAFF:
+  base:
+    material: DIAMOND_HOE
+    name: §5Enchantress Staff
+    unbreakable: true
+    tier: LEGENDARY
+    attack-damage: 150.0
+    range: 4.0
+    magic-damage: 50
+    faction-damage-void: 50.0
+    critical-strike-power: 25.0
+    max-mana: 50.0
+    lore:
+    - '&5Magically &7enhanced Staff'
+    - '&7found only on the &5Enchantress&7,'
+    - '&7and powerful warriors and warlocks!'
+    gem-sockets:
+    - Uncolored
+ENCHANTRESS_STAFF2:
+  base:
+    material: NETHERITE_HOE
+    name: §eEnchantress Staff
+    unbreakable: true
+    tier: EXOTIC
+    attack-damage: 200.0
+    range: 5.0
+    magic-damage: 75
+    faction-damage-void: 75.0
+    critical-strike-power: 50.0
+    max-mana: 100.0
+    lore:
+    - '&7One &eGem Slot &7can only'
+    - '&7accept &eEnchantress Gems&7!'
+    - ''
+    - '&eAscended &7enhanced Staff of'
+    - '&7the &5Enchantress&7, only found'
+    - '&7on true warriors and warlocks!'
+    gem-sockets:
+    - Uncolored
+    - Enchantress

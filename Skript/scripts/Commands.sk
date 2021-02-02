@@ -394,6 +394,7 @@ on load: # Doesn't have to be in a load event
     add "shop cooking" to tab completions
     add "shop wand" to tab completions
     add "shop hell" to tab completions
+    add "shop void" to tab completions
     add "shop enchanted" to tab completions
 
 
@@ -414,6 +415,8 @@ command /Shop [<text>]:
             make console execute command "/mmoitems stations open wand %player%"
         if arg 1 is "hell":    
             make console execute command "/mmoitems stations open hell %player%"
+        if arg 1 is "void":    
+            make console execute command "/mmoitems stations open void %player%"
         if arg 1 is "enchanted" or "material" or "materials" or "enchanted material":    
             make console execute command "/mmoitems stations open enchanted-materials %player%"
 
@@ -435,6 +438,7 @@ command /ResourceCollector:
     trigger:
         make player execute "resources"
 
+
 command /DryadRepeat:
     description: Return to the Lobby
     executable by: players
@@ -455,3 +459,42 @@ command /MordenRepeat:
         if player doesn't have permission "Morden.Repeat":
             execute console command "/lp user %player% permission set Morden.Repeat true"
             send "&aUpon completing your Morden summoning, the quest will automatically be accepted!" to player
+
+
+command /Diceroll [<integer>] [<integer>]:
+    executable by: players
+    trigger:
+        if arg 1 is 1 or 2 or 3 or 4 or 5:    
+            if arg 2 <= player's balance:
+                set {Dice::Roll} to random integer between 1 and 5
+                remove arg-2 from player's balance
+                if arg-1 = {Dice::Roll}:
+                    set {Dice::Reward} to (arg-2*2)
+                    send "&aYou rolled a &e%{Dice::Roll}% &aand won &e⛂ %{Dice::Reward}%&a!"
+                    add {Dice::Reward} to player's balance
+                else:
+                    message "&cUh oh, you rolled a &e%{Dice::Roll}%&c, but bet on &e%arg-1%&c and lost &e⛂ %arg-2%&c!"
+            else:
+                message "&cYou tried rolling with &e⛂ %arg-2%&c, but only have &e%player's money%&c!"
+        else:    
+            message "&cYou must chose a number between &e1 &c& &e5&c, like this &a/CoinFlip 3 1000&c!"
+
+# command /CurrentTime:
+#     executable by: players
+#     trigger:
+#         set {1st::Day} to 10 seconds from now
+#         message "Set %{1st::Day}%"
+#         message "Unix %unix timestamp of now%"
+#         message "Current server time: %now%"
+#         message "Current server time: %now formatted human-readable%"
+# command /TimeUntil:
+#     executable by: players
+#     trigger:
+#         message "%difference between {1st::Day} and now%"
+
+
+# every 5 seconds:
+#     if now < {1st::Day}:
+#         broadcast "Xur has spawned"
+#         broadcast "Timer has been reset!"
+#         set {1st::Day} to 10 seconds from now

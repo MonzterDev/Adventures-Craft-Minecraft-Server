@@ -22,6 +22,32 @@ HOG:
     unstackable: true
     disable-interaction: true
     name: '&fBoar'
+EPONA1:
+  base:
+    material: PLAYER_HEAD
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    unbreakable: true
+    hide-enchants: false
+    displayed-type: Mount
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY0YmRkNTlkNGY4ZjFkNTc4MmUwZmVlNGJkNjRhZWQxMDA2MjdmMTg4YTkxNDg5YmEzN2VlYWRlZGVkZDgyNyJ9fX0=
+      uuid: a1f247f0-fb4f-484f-b548-ac3da31ebccd
+    tier: COMMON
+    lore:
+    - '&2Speed: 32%'
+    - '&7'
+    - '&7Your basic horse!'
+    ability:
+      ability1:
+        type: MOUNTHORSEA
+        mode: RIGHT_CLICK
+        cooldown: 1.0
+    unstackable: true
+    disable-interaction: true
+    name: '&fHorse'
 HORSE1:
   base:
     material: PLAYER_HEAD

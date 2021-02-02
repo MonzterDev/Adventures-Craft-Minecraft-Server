@@ -1,0 +1,194 @@
+### MAZE
+
+#Detects enemies from anywhere, will give slowness
+VOID_MONITOR:
+  Type: ENDERMITE
+  Display: '&7[&fLVL 25&7] &cVoid Monitor'
+  Health: 10000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .5
+    MaxCombatDistance: 8
+    MovementSpeed: 0.48
+    FollowRange: 15
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 2-3 5%
+  - obsidian 2-4 100%
+  - VOID_MONITOR 1 100%
+  - VoidMazeMobs 1 100%
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=200;ignoreArmor=false} @target ~onAttack
+  - skill{s=anticheat;sync=true} ~onDamaged
+  - skill{s=anticheat;sync=true} ~onInteract
+  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=MONITOR_ALERT} ~onTimer:200
+  - command{c="q point <target.name> add mobs.VOID_MONITOR 1"} @ThreatTablePlayers ~onDeath
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.001
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
+
+#Unmovable, constantly deals AOE damage, and does a massive explosion, possibly killself
+VOID_MEGA_BOOMER:
+  Type: SKELETON
+  Disguise:
+    Type: CREEPER
+  Display: '&7[&fLVL 25&7] &cVoid Mega Boomer'
+  Health: 30000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    SuperCharged: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.0002
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 3-5 5%
+  - gunpowder 3-5 100%
+  - VOID_MEGA_BOOMER 1 100%
+  - VoidMazeMobs 1 100%
+  - EXP 25-35 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=BOOMER_DAMAGE} ~onTimer:20
+  - skill{s=BOOMER_MEGA} ~onTimer:200
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_MEGA_BOOMER 1"} @ThreatTablePlayers ~onDeath
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0015
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0035
+
+#Detects enemies from anywhere, will give slowness
+VOID_CHAMPION:
+  Type: STRAY
+  Display: '&7[&fLVL 25&7] &cVoid Champion'
+  Health: 30000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    SuperCharged: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 7
+    MovementSpeed: 0.25
+    FollowRange: 15
+    Collidable: true
+    Despawn: true
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - VOID_CHAMPION:HEAD
+  - NETHERITE_SWORD:HAND
+  - NETHERITE_SWORD:OFFHAND
+  - NETHERITE_BOOTS:FEET
+  Drops:
+  - mmoitems{type=MATERIAL;id=VOID_SHARD} 5-7 5%
+  - netherite_ingot 1-2 100%
+  - VOID_CHAMPION_DROP 1 100%
+  - VoidMazeMobs 1 100%
+  - EXP 30-40 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=250;ignoreArmor=false} @target ~onAttack
+  - heal{amount=1000} @self ~onAttack .5
+  - potion{type=SLOW;duration=100;level=10} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=CHAMPION_CHOSE} @self ~onSpawn
+  - command{c="q point <target.name> add mobs.VOID_CHAMPION 1"} @ThreatTablePlayers ~onDeath
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.004
+
+
+
+VOID_PORTAL:
+  Type: ENDERMITE
+  Display: ''
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: true
+    NoGravity: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    ApplyInvisibility: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 1
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - skill{s=PORTAL_ABILITY} ~onSpawn
+  - effect:sound{s=block.beacon.ambient;v=10} @PIR{r=7} ~onTimer:40
+  - skill{s=PORTAL_TELEPORT_ACCEPT} @PIR{r=1} ~onTimer:20
+  - skill{s=PORTAL_TELEPORT_DENY} @PIR{r=1} ~onTimer:20
+  - teleportto{location=-197.5,12,-810.5} @self ~onSpawn
+  - command{c="q point <target.name> add mobs.VOID_PORTAL 1"} @ThreatTablePlayers ~onDeath

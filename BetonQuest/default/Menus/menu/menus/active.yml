@@ -191,6 +191,44 @@ items:
         - '&f&o'
         - '&aGiven by Billy in the Farm'        
     close: false
+  FM4:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_part1,!default-Farm-Ingo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  FM5:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_part1,!default-Farm-Ingo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
 
 #Forest
   FT1:
@@ -1390,6 +1428,334 @@ items:
         - '&f&o'
         - '&aGiven after completing Resource Mutation'        
     close: false
+
+#Void
+  VD1:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_part1,!default-Void-Khazix.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD2:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q2_part1,!default-Void-Khazix.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWorshiper Wonder'
+        - '&f&o'
+        - '&fVanquish 50 &cVoid Worshipers'
+        - '&fBring &l50x Void DNA &fback to &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Thrall Thrashing'        
+    close: false
+  VD3:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_part1,!default-Void-Khazix.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD4:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_part1,!default-Void-Khazix.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD5:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q5_part1,!default-Void-Khazix.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpiral Crystals'
+        - '&f&o'
+        - '&fDestroy 12 Ender Crystals atop the Bedrock & Obsidian spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD6:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_part1,!default-Void-Khazix.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spiral Crystals'        
+    close: false
+  VD7:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_part1,!default-Void-Kassadin.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Kassadin in the Void'        
+    close: false
+  VD8:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_part1,!default-Void-Kassadin.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Corrupt Land'        
+    close: false
+  VD9:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_part1,!default-Void-Kassadin.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Hardencity'        
+    close: false
+  VD10:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_part1,!default-Void-Kassadin.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ring Around the Wither Roses'        
+    close: false
+  VD11:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_part1,!default-Void-Kassadin.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pop a Vein'        
+    close: false
+  VD12:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q1_part1,!default-Void-Kogmaw.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAnkle Biters'
+        - '&f&o'
+        - '&fEliminate &c25 Void Monitors'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &d300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Kogmaw in the Void Maze'        
+    close: false
+  VD13:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q2_part1,!default-Void-Kogmaw.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lButton Pusher'
+        - '&f&o'
+        - '&fPush the &a4 unique Booster Buttons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &d250 Void Reputation'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ankle Biters'        
+    close: false
+  VD14:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q3_part1,!default-Void-Kogmaw.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lChampion Brawls'
+        - '&f&o'
+        - '&fVanquish &c50 Void Champions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &d500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Button Pusher'        
+    close: false
+  VD15:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_part1,!default-Void-Kogmaw.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Champion Brawls'        
+    close: false
+  VD16:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_part1,!default-Void-Kogmaw.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mega Boom'        
+    close: false
+  VD17:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_part1,!default-Void-Kogmaw.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ascending'        
+    close: false
+
 #FILLER
   glass:
     item: glass
@@ -1406,5 +1772,5 @@ slots:
   0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7,FM1,FM2,FM3,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,FT9,FT10,FT11,FT12,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,ME12,ME13,ME14,ME15,ME16,ME17,ME18,ME19,ME20,ME21,ME22,ME23,ME24,ME25,ME26,GD1,GD2,GD3,GD4,GD5,CD1,CD2,CD3,CD4,CD5,VY1,EE1,EE2,EE3,GN1,GN2,GN3,SS1,SS2,SS3,HL1,HL2,HL3,HL4,HL5,HL6,HL7
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7,FM1,FM2,FM3,FM4,FM5,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,FT9,FT10,FT11,FT12,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,ME12,ME13,ME14,ME15,ME16,ME17,ME18,ME19,ME20,ME21,ME22,ME23,ME24,ME25,ME26,GD1,GD2,GD3,GD4,GD5,CD1,CD2,CD3,CD4,CD5,VY1,EE1,EE2,EE3,GN1,GN2,GN3,SS1,SS2,SS3,HL1,HL2,HL3,HL4,HL5,HL6,HL7,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12,VD13,VD14,VD15,VD16,VD17
   49: back

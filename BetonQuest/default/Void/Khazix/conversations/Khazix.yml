@@ -15,7 +15,7 @@ NPC_options:
     conditions: '!q1_part1'        
 #Selected from quest1 dialogue, which will start his first quest
   quest1accept:
-    text: I need you to take our some &cVoid Thralls &fand steal their &2eggs&f!
+    text: I need you to take our some &cVoid Thralls &7and steal their &2eggs&7!
 
 #This is how a player responds and what options they have
 player_options:
@@ -38,7 +38,7 @@ player_options:
     
 #Town_Info > wow 
   wow:
-    text: Wow, you must be busy!
+    text: You're scaring me!
     pointers: greeting
 
 #quests > quest decline, when a reject taking a quest

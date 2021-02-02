@@ -258,3 +258,15 @@ recipes:
     - profession{profession=Spellforging,level=9}
     triggers:
     - exp{profession=Spellforging,amount=300}
+  MONITOR_MUTE:
+    output:
+      type: SPELL
+      id: MONITOR_MUTE
+      amount: 1
+    ingredients:
+    - vanilla{type=OBSIDIAN,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}

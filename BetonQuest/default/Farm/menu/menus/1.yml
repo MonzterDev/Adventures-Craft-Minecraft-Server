@@ -1,4 +1,4 @@
-height: 5
+height: 6
 title: '&fQuests'
 items:
 #FIRST QUEST
@@ -141,7 +141,7 @@ items:
   quest3_completed:
     item: enchantedbook
     amount: 1
-    conditions: 'default-Farm-Billy.q1_completed'
+    conditions: 'default-Farm-Billy.q1_completed,default-Farm-Billy.q1_rewards_claimed'
     text:
       en:
         - '&e&l[Complete] &f&lDelicate Crops'
@@ -176,6 +176,164 @@ items:
       right: default-Farm-Billy.QuestReward1_Claim
       left: default-Farm-Billy.QuestReward1_Claim    
 
+
+#THIRD QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Ingo.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_part1,!default-Farm-Ingo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_completed,default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_rewards_unclaimed,!default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward1_Claim
+      left: default-Farm-Ingo.QuestReward1_Claim    
+#THIRD QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Ingo.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_part1,!default-Farm-Ingo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_completed,default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest5_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_rewards_unclaimed,!default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward2_Claim
+      left: default-Farm-Ingo.QuestReward2_Claim    
+
 #FILLER
   glass:
     item: glass
@@ -190,10 +348,11 @@ items:
       left: default-Castle-Klaus.questmenu    
 slots:
   0-11: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  14-21: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  23-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  36-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   12-13: quest1_inactive,quest1_active,quest1_completed,quest2_inactive,quest2_active,quest2_completed
+  14-21: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   22: quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed
-  40: back
+  23-29: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  30-31: quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed,quest5_unclaimed
+  32-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  49: back

@@ -1946,3 +1946,24 @@ WIZARDLY_TOTE5:
     cooldown-reduction: 12.5
     max-mana: 100
     revision-id: 1
+DARKNESS_EXTINGUISHER:
+  base:
+    material: TORCH
+    unbreakable: true
+    name: §9Darkness Extinguisher
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    unstackable: true
+    tier: RARE
+    lore:
+    - §fGrants §aNight Vision 1
+    - §7
+    - §7Place inside your &aAccessory Bag
+    - §7to receive the stat boost!
+    perm-effects:
+      NIGHT_VISION: 1
+    accessory-set: DARKNESS_EXTINGUISHER
+    revision-id: 1

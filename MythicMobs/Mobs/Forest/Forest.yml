@@ -288,7 +288,6 @@ DRYAD:
   - skill{s=DRYAD_MINION_SPAWN2} ~onDamaged <50%
   - skill{s=DRYAD_MISSLE_SIGNAL} ~onDamaged <60%
   - remove @Children ~onDeath
-  - skill{s=DRYAD_DEFEAT} ~onDeath
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=DRYAD_AREA} @self ~onTimer:20 
   - command{c="q point <target.name> add bosses.DRYAD 1"} @ThreatTablePlayers ~onDeath

@@ -155,6 +155,50 @@ items:
     click:
       right: default-Farm-Billy.QuestReward1_Claim
       left: default-Farm-Billy.QuestReward1_Claim    
+  FM2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_rewards_unclaimed,!default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward1_Claim
+      left: default-Farm-Ingo.QuestReward1_Claim    
+  FM3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_rewards_unclaimed,!default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward2_Claim
+      left: default-Farm-Ingo.QuestReward2_Claim    
 
 #Forest
   FT1:
@@ -795,7 +839,6 @@ items:
       left: default-SpiritGrounds-Hazel.QuestReward2_Claim        
 
 #Hell
-
   HL1:
     item: enchantedbook
     amount: 1
@@ -844,6 +887,278 @@ items:
       right: default-Hell-Diablo.QuestReward2_Claim
       left: default-Hell-Diablo.QuestReward2_Claim
 
+#Void
+  VD1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_rewards_unclaimed,!default-Void-Khazix.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward1_Claim
+      left: default-Void-Khazix.QuestReward1_Claim
+  VD2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_rewards_unclaimed,!default-Void-Khazix.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward3_Claim
+      left: default-Void-Khazix.QuestReward3_Claim
+  VD3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_rewards_unclaimed,!default-Void-Khazix.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward4_Claim
+      left: default-Void-Khazix.QuestReward4_Claim
+  VD4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_rewards_unclaimed,!default-Void-Khazix.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward6_Claim
+      left: default-Void-Khazix.QuestReward6_Claim
+  VD5:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_rewards_unclaimed,!default-Void-Kassadin.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward1_Claim
+      left: default-Void-Kassadin.QuestReward1_Claim
+  VD6:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_rewards_unclaimed,!default-Void-Kassadin.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward2_Claim
+      left: default-Void-Kassadin.QuestReward2_Claim
+  VD7:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_rewards_unclaimed,!default-Void-Kassadin.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward3_Claim
+      left: default-Void-Kassadin.QuestReward3_Claim
+  VD8:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_rewards_unclaimed,!default-Void-Kassadin.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward4_Claim
+      left: default-Void-Kassadin.QuestReward4_Claim
+  VD9:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_rewards_unclaimed,!default-Void-Kassadin.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward5_Claim
+      left: default-Void-Kassadin.QuestReward5_Claim
+  VD10:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_rewards_unclaimed,!default-Void-Kogmaw.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward4_Claim
+      left: default-Void-Kogmaw.QuestReward4_Claim
+  VD11:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_rewards_unclaimed,!default-Void-Kogmaw.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward5_Claim
+      left: default-Void-Kogmaw.QuestReward5_Claim
+  VD12:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_rewards_unclaimed,!default-Void-Kogmaw.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward6_Claim
+      left: default-Void-Kogmaw.QuestReward6_Claim
+
 #FILLER
   glass:
     item: glass
@@ -860,5 +1175,5 @@ slots:
   0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  9-44: TN1,TN2,TN3,TN4,TN5,TN6,FM1,FT1,FT2,FT3,FT4,FT5,FT6,FT7,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,GD1,GD2,GD3,GD4,CD1,CD2,CD3,CD4,EE1,GN1,SS1,HL1,HL2
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,FM1,FM2,FM3,FT1,FT2,FT3,FT4,FT5,FT6,FT7,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,GD1,GD2,GD3,GD4,CD1,CD2,CD3,CD4,EE1,GN1,SS1,HL1,HL2,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12
   49: back

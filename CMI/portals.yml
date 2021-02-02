@@ -4,9 +4,11 @@ Spawn:
   Hell:
     Loc: -33.0:33.0:62.0:-29.0:37.0:62.0
     enabled: true
-    effect: END_ROD
+    effect: EndRod
     showParticles: false
-    Tp: Spawn;-145.66;49.16;-1152.32;168.6;-2.52
+    Tp: Spawn;-145.66;49.26;-1152.32;168.6;-2.52
+    kickBack: true
+    particlesByPermission: false
     requiresPerm: true
     informOnMissingPerm: false
     particleAmount: 100
@@ -17,9 +19,11 @@ Spawn:
   LowerHell:
     Loc: -233.0:13.0:-1265.0:-229.0:17.0:-1265.0
     enabled: true
-    effect: END_ROD
+    effect: EndRod
     showParticles: false
-    Tp: Spawn;-146.91;49.64;-1153.42;178.71;1.54
+    Tp: Spawn;-146.91;49.84;-1153.42;178.71;1.54
+    kickBack: true
+    particlesByPermission: false
     requiresPerm: true
     informOnMissingPerm: false
     particleAmount: 100
@@ -30,9 +34,11 @@ Spawn:
   UpperHell:
     Loc: -149.0:49.0:-1155.0:-146.0:53.0:-1150.0
     enabled: true
-    effect: END_ROD
+    effect: EndRod
     showParticles: false
-    Tp: Spawn;-230.0;13.68;-1261.32;359.56;2.69
+    Tp: Spawn;-230.0;13.88;-1261.32;359.56;2.69
+    kickBack: true
+    particlesByPermission: false
     requiresPerm: true
     informOnMissingPerm: true
     particleAmount: 100
@@ -43,10 +49,29 @@ Spawn:
   Void:
     Loc: -141.0:20.0:-168.0:-136.0:20.0:-163.0
     enabled: true
-    effect: END_ROD
+    effect: Reddust
     showParticles: false
-    Tp: Spawn;-217.67;31.0;-1101.08;-5.63;4.35
+    safeLoc: Spawn;-217.96;34.0;-1105.24;1.0;7.43
+    Tp: Spawn;-217.0;36.28;-1107.32;-1.2;6.0
+    kickBack: true
+    particlesByPermission: false
     requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 15
+    commandsWithoutTp: false
+    commands: []
+  VoidReturn:
+    Loc: -221.0:34.0:-1113.0:-215.0:34.0:-1110.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    safeLoc: Spawn;-217.96;34.0;-1105.24;1.0;7.43
+    Tp: Spawn;-139.64;21.0;-161.36;39.17;-5.73
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
     informOnMissingPerm: false
     particleAmount: 100
     particleHide: 0

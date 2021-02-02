@@ -157,9 +157,14 @@ command /Warp [<text>]:
                 warp_lowerVoid(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Void2" or "UpperVoid":
+        if arg 1 is "Void2" or "UpperVoid" or "VoidMaze":
             if player has permission "warp.Void2":
                 warp_upperVoid(player)
+            else:
+                warp_locked(player)
+        if arg 1 is "Void3" or "VoidAbyss":
+            if player has permission "warp.VoidAbyss":
+                warp_VoidAbyss(player)
             else:
                 warp_locked(player)
 
@@ -202,6 +207,11 @@ command /Warp [<text>]:
         if arg 1 is "Ghastly" or "Ghast" or "FastGhastly":
             if player has permission "Rank3":
                 warp_Ghastly(player)
+            else:
+                warp_Fastlocked(player)
+        if arg 1 is "Bullbo" or "Bulblin" or "FastBullbo" or "FastBulblin":
+            if player has permission "Rank3":
+                warp_Bullbo(player)
             else:
                 warp_Fastlocked(player)
 
@@ -319,11 +329,15 @@ function warp_HellBottom(p: player):
 function warp_lowerVoid(p: player):
     play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
     message "&aYou've been brought to the &eVoid&a!" to {_p}
-    teleport {_p} to location(-217.6, 32, -1099.9, world "Spawn", .6, 6.1) 
+    teleport {_p} to location(-217.6, 36, -1107.9, world "Spawn", .6, 6.1) 
 function warp_upperVoid(p: player):
     play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
     message "&aYou've been brought to &eVoid Maze&a!" to {_p}
-    teleport {_p} to location(-191.5, 13, -821.5, world "Spawn", -0, 8.5) 
+    teleport {_p} to location(-193.5, 13, -826.5, world "Spawn", -0, 8.5) 
+function warp_VoidAbyss(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eVoid Abyss&a!" to {_p}
+    teleport {_p} to location(-71.5, 25, -762.5, world "Spawn", -90, 0) 
 
 function warp_locked(p: player):
     send "&cYou haven't unlocked this area yet!" to {_p}
@@ -361,6 +375,10 @@ function warp_Ghastly(p: player):
     play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
     message "&aYou've been brought to &eGhastly&a!" to {_p}
     teleport {_p} to location(-152.91, 12, -1171.05, world "Spawn", 303, -1.69) 
+function warp_Bullbo(p: player):
+    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+    message "&aYou've been brought to &eBullbo&a!" to {_p}
+    teleport {_p} to location(-176.91, 31, -1018.05, world "Spawn", -2, 19.9) 
 
 function warp_Fastlocked(p: player):
     send "&cYou must be &9Conquerer &crank to use this!" to {_p}

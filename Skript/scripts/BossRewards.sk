@@ -378,14 +378,14 @@ command /GhastlyClaim [<number>]:
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:
-                            send "&8&l» &9Void Magma Coins &f100%%" 
+                            send "&8&l» &9Ghastly Tear &f100%%" 
                             execute console command "/mi give QUEST GHASTLY_TEAR %player% 1"
 
                         if chance of 5%:
-                            send "&8&l» &9Void Magma Head &f5%%" 
+                            send "&8&l» &9Ghastly Head &f5%%" 
                             execute console command "/mi give CONSUMABLE GHASTLY_HEAD %player% 1"
                         if chance of 5%:
-                            send "&8&l» &9Void Magma Head &f5%%" 
+                            send "&8&l» &9Ghastly Head &f5%%" 
                             execute console command "/mi give QUEST GHASTLY_HEAD %player% 1"
 
                         if chance of .75%:
@@ -401,6 +401,172 @@ command /GhastlyClaim [<number>]:
                         if chance of .5%:
                             send "&8&l» &eDevil's Legs &f.5%%" 
                             execute console command "/mi give ARMOR DEVIL_LEGS %player% 1"
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+
+command /BulblinClaim [<number>]:
+    trigger:
+        set {BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
+        if {BulblinPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {BulblinPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.BulblinReward -1"
+                        wait 10 ticks       
+                        set {BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
+                        send "%nl%&aYou have %{BulblinPoints::%player%}% &cBulblin &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 50%:
+                            send "&8&l» &9Enchanted Enderpearl &f50%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_ENDERPEARL %player% 1-2"
+
+                        if chance of 5%:
+                            send "&8&l» &9Bulblin Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE BULBLIN_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Bulblin Head &f5%%" 
+                            execute console command "/mi give QUEST BULBLIN_HEAD %player% 1"
+
+                        if chance of 4%:
+                            send "&8&l» &9Bulblin Arrow &f4%%" 
+                            execute console command "/mi give MATERIAL BULBLIN_ARROW %player% 1"
+
+                        if chance of 3%:
+                            send "&8&l» &9Bulblin Sword Shaving &f3%%" 
+                            execute console command "/mi give MATERIAL BULBLIN_SWORD_SHAVING %player% 1"
+                        if chance of 3%:
+                            send "&8&l» &5Bulblin Bow &f3%%" 
+                            execute console command "/mi give BOW BULBLIN_BOW %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &5Bulblin Sword &f2%%" 
+                            execute console command "/mi give SWORD BULBLIN_SWORD %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &eBulblin Leggings &f1%%" 
+                            execute console command "/mi give ARMOR BULBLIN_LEGS %player% 1"
+
+                        if chance of .95%:
+                            send "&8&l» &eBulblin Chestplate &f.95%%" 
+                            execute console command "/mi give ARMOR BULBLIN_CHEST %player% 1"
+
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /BullboClaim [<number>]:
+    trigger:
+        set {BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
+        if {BullboPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {BullboPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.BullboReward -1"
+                        wait 10 ticks       
+                        set {BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
+                        send "%nl%&aYou have %{BullboPoints::%player%}% &cBullbo &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 50%:
+                            send "&8&l» &9Enchanted Endstone &f50%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_ENDSTONE %player% 1-2"
+                        if chance of 50%:
+                            send "&8&l» &5Bullbo Leg &f50%%" 
+                            execute console command "/mi give MATERIAL BULLBO_LEG %player% 1"
+
+                        if chance of 5%:
+                            send "&8&l» &9Bullbo Head &f5%%" 
+                            execute console command "/mi give CONSUMABLE BULLBO_HEAD %player% 1"
+                        if chance of 5%:
+                            send "&8&l» &9Bullbo Head &f5%%" 
+                            execute console command "/mi give QUEST BULLBO_HEAD %player% 1"
+
+                        if chance of 4%:
+                            send "&8&l» &eBullbo Feet &f4%%" 
+                            execute console command "/mi give ARMOR BULLBO_FEET %player% 1"
+
+                        if chance of 3%:
+                            send "&8&l» &eBullbo Head &f3%%" 
+                            execute console command "/mi give ARMOR BULLBO_HEAD %player% 1"
+
+                        if chance of 2%:
+                            send "&8&l» &9Bullbo Arm &f2%%" 
+                            execute console command "/mi give HAMMER BULLBO_ARM %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &9Bullbo Mount &f1%%" 
+                            execute console command "/mi give MOUNT BULLBO %player% 1"
+
+
+                    else:
+                        send "&cYou have no rewards ready to claim!" to player
+        else:
+            send "&cYou have no rewards ready to claim!" to player
+
+command /EnchantressClaim [<number>]:
+    trigger:
+        set {EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
+        if {EnchantressPoints::%player%} parsed as a number > 0:
+            if arg-1 is set:
+                loop arg-1 times:
+                    if {EnchantressPoints::%player%} parsed as a number > 0:
+                        execute console command "/q point %player% add bosses.EnchantressReward -1"
+                        wait 10 ticks       
+                        set {EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
+                        send "%nl%&aYou have %{EnchantressPoints::%player%}% &cEnchantress &6Rewards &aavailable!"
+                        send "%nl%&e&lRewards:" 
+                        
+                        if chance of 100%:
+                            send "&8&l» &9Enchanted Obsidian &f100%%" 
+                            execute console command "/mi give MATERIAL ENCHANTED_OBSIDIAN %player% 1-2"
+
+                        if chance of 25%:
+                            send "&8&l» &9Enchantress Jewel &f25%%" 
+                            execute console command "/mi give MATERIAL ENCHANTRESS_JEWEL %player% 1"
+
+                        if chance of 5%:
+                            send "&8&l» &9Enchantress Head &f5%%" 
+                            execute console command "/mi give QUEST ENCHANTRESS_HEAD %player% 1"
+
+                        if chance of 1%:
+                            send "&8&l» &5Enchantress Staff &f1%%" 
+                            execute console command "/mi give STAFF ENCHANTRESS_STAFF %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eEnchantress Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE ENCHANTRESS_GEM %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eEnderman Missile Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE ENDERMAN_MISSILE %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eZombie Missile Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE ZOMBIE_MISSILE %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eSlime Missile Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE SLIME_MISSILE %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &eCreeper Missile Gem &f1%%" 
+                            execute console command "/mi give GEM_STONE CREEPER_MISSILE %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &5Enchantress Head &f1%%" 
+                            execute console command "/mi give ARMOR ENCHANTRESS_HEAD %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &5Enchantress Chestplate &f1%%" 
+                            execute console command "/mi give ARMOR ENCHANTRESS_CHEST %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &5Enchantress Leggings &f1%%" 
+                            execute console command "/mi give ARMOR ENCHANTRESS_LEGS %player% 1"
+                        if chance of 1%:
+                            send "&8&l» &5Enchantress Boots &f1%%" 
+                            execute console command "/mi give ARMOR ENCHANTRESS_BOOTS %player% 1"
+
+
 
                     else:
                         send "&cYou have no rewards ready to claim!" to player

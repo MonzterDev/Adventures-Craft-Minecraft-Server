@@ -1,0 +1,18 @@
+quester: Khazix
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "You're finally ready to dive into the &5corruption&7, &a%player%&7!"
+    pointers: Player_Response1
+
+  NPC_Text1:
+    text: "&7Follow the gravel path up the hill behind the Town Hall (-141, 21, -161). Don't be afraid, just dive into the first portal you see. Hopefully I'll see you on the other side!"
+    events: tag_khazix_met
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fWhere can I dive in?"
+    pointers: NPC_Text1

@@ -13,25 +13,25 @@
 # You can configure the ability cast mode, type & modifiers as usual.
     
 FARMER:
-    name: '&aFarmer Set'
+    name: '&a&lFarmer Set'
     bonuses:
         '4':
             potion-SPEED: 1
     lore-tag:
-    - '&eFarmer Set Bonus:'
+    - '&e&lFarmer Set Bonus:'
     - '&aSpeed I'
 
 STEEL:
-    name: '&8Steel Set'
+    name: '&f&lSteel Set'
     bonuses:
-        '1':
-            damage-reduction: 5
+        '4':
+            damage-reduction: 10
     lore-tag:
-    - '&eSteel Set Bonus:'
+    - '&f&lSteel Set Bonus:'
     - '§fDamage Reduction §c+10%'
     
 HELL:
-    name: '&eHell Set Bonus'
+    name: '&4&lHell Set Bonus'
     bonuses:
         '4':
             ability-1:
@@ -41,7 +41,7 @@ HELL:
                 mode: SHIFT_LEFT_CLICK
                     
     lore-tag:
-    - '&eHell Set Bonus:'
+    - '&4&lHell Set Bonus:'
     - '&e&lHellsploshion&f: Shift Left Click'
     - '&7Cooldown: &c30'
     - '&7Mana: &c50'
@@ -51,7 +51,7 @@ HELL:
     - '&7dealing &cmore damage &7the more Mobs!'
 
 HATRED:
-    name: '&cUndead Set'
+    name: '&2&lUndead Set'
     bonuses:
         '1':
             ability1:
@@ -60,21 +60,21 @@ HATRED:
                 mode: WHEN_HIT
                 radius: 10.0
     lore-tag:
-    - '&eUndead Set Bonus:'
+    - '&2&lUndead Set Bonus:'
     - '§cHealed §7upon being hit for,'
     - '§c50 HP §7with a §c15sec cooldown§7.'
 
 CURSED:
-    name: '&eCursed Set Bonus'
+    name: '&5&lCursed Set Bonus'
     bonuses:
         '4':
             cooldown-reduction: 20.0
     lore-tag:
-    - '&eCursed Set Bonus:'
-    - '&fCooldown Reduction: &c20%'
+    - '&5&lCursed Set Bonus:'
+    - '&9Ψ Skill Cooldown Reduction: &c+20%'
 
 LOG:
-    name: '&eLog Set Bonus'
+    name: '&6&lLog Set Bonus'
     bonuses:
         '4':
             ability-1:
@@ -83,7 +83,7 @@ LOG:
                 mana: 10
                 mode: WHEN_HIT
     lore-tag:
-    - '&eLog Set Bonus:'
+    - '&6&lLog Set Bonus:'
     - '&e&lMegaroot&f: When Hit'
     - '&7Cooldown: &c15'
     - '&7Mana: &c510'
@@ -92,19 +92,41 @@ LOG:
     - '&7radius for 5 seconds when hit!'
 
 HEAVY:
-    name: '&aHeavy Set'
+    name: '&8&lHeavy Set'
     bonuses:
         '4':
             potion-INCREASE_DAMAGE: 10
     lore-tag:
-    - '&eHeavy Set Bonus:'
+    - '&8&lHeavy Set Bonus:'
     - '&7Gain &aStrength 10 &7while wearing!'
 
 MORDEN:
-    name: '&eMorden Set Bonus'
+    name: '&2&lMorden Set Bonus'
     bonuses:
         '4':
             potion-REGENERATION: 3
     lore-tag:
-    - '&eHell Set Bonus:'
+    - '&2&lMorden Set Bonus:'
     - '&7Gain &aRegeneration 3 &7while wearing!'
+
+ENCHANTRESS1:
+    name: '&d&lEnchantress Set Bonus'
+    bonuses:
+        '4':
+            cooldown-reduction: 15.0
+            mana-regeneration: 5
+    lore-tag:
+    - '&d&lEnchantress Set Bonus:'
+    - '&9Ψ Skill Cooldown Reduction: &c+15%'
+    - '&bMana Regeneration: &e+5%'
+
+ENCHANTRESS2:
+    name: '&5&lEnchantress Set Bonus'
+    bonuses:
+        '4':
+            cooldown-reduction: 25.0
+            mana-regeneration: 10
+    lore-tag:
+    - '&5&lEnchantress Set Bonus:'
+    - '&9Ψ Skill Cooldown Reduction: &c+25%'
+    - '&bMana Regeneration: &e+10%'
