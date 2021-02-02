@@ -1,3 +1,44 @@
+# MountHog:
+#   Type: MPET
+#   MPet:
+#     Type: Bees
+#     Anchor: IRON_GOLEM
+#     ShowName: true
+#   Display: '&7[&fLVL 1&7] &aHog'
+#   Health: 1000
+#   Faction: Guard
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     Saddled: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.32
+#     FollowRange: 6
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     Interactable: true
+#     AttackSpeed: 1
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 2 meleeattack
+#   AITargetSelectors:
+#   - 0 clear
+#   - 1 otherfactionmonsters  
+#   Skills:
+#   - remove{delay=0} @self ~onDamaged
+#   - remove{delay=0} @self ~onEnterCombat
+#   - remove{delay=0} @self ~onCombat
+#   - potion{type=INVISIBILITY;duration=99999;level=4} @self ~onSpawn
+
+
+
 MountHog:
   Type: PIG
   Display: '&7[&fLVL 1&7] &aHog'

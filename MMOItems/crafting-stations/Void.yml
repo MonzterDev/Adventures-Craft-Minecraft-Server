@@ -11,15 +11,6 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  KHAZIX_STAFF2:
-    output:
-      type: STAFF
-      id: KHAZIX_STAFF2
-    ingredients:
-    - mmoitem{type=STAFF,id=KHAZIX_STAFF,amount=1}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
-    - mmoitem{type=QUEST,id=VOID_DNA,amount=128}
   THRALL_BALL:
     output:
       type: CONSUMABLE
@@ -57,6 +48,22 @@ recipes:
     ingredients:
     - mmoitem{type=QUEST,id=VOID_DNA,amount=576}
     - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=8}
+    conditions: []
+  CORRUPTION_REVOLTER:
+    output:
+      type: CATALYST
+      id: CORRUPTION_REVOLTER
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=4}
+    conditions: []
+  CORRUPTION_REVOLTER2:
+    output:
+      type: CATALYST
+      id: CORRUPTION_REVOLTER2
+    ingredients:
+    - mmoitem{type=CATALYST,id=CORRUPTION_REVOLTER,amount=1}
+    - mmoitem{type=CATALYST,id=UNBLINDER,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=8}
     conditions: []
   VOID_GEM:
     output:
@@ -103,6 +110,7 @@ recipes:
       type: ACCESSORY
       id: CORRUPT_RELIC2
     ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC,amount=1}
     - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=512}
     - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=4}
     conditions: []
@@ -111,6 +119,7 @@ recipes:
       type: ACCESSORY
       id: CORRUPT_RELIC3
     ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC2,amount=1}
     - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=640}
     - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=8}
     conditions: []
@@ -127,6 +136,7 @@ recipes:
       type: ACCESSORY
       id: CORRUPT_DART2
     ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_DART,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
     conditions: []
@@ -135,10 +145,29 @@ recipes:
       type: ACCESSORY
       id: CORRUPT_DART3
     ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_DART2,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
     - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=1}
     conditions: []
+  KHAZIX_STAFF2:
+    output:
+      type: STAFF
+      id: KHAZIX_STAFF2
+    ingredients:
+    - mmoitem{type=STAFF,id=KHAZIX_STAFF,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=128}
+  BULLBO_ARM2:
+    output:
+      type: HAMMER
+      id: BULLBO_ARM2
+    ingredients:
+    - mmoitem{type=HAMMER,id=BULLBO_ARM,amount=1}
+    - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
   BULB2:
     output:
       type: MOUNT
@@ -184,6 +213,7 @@ recipes:
       type: BOW
       id: DECEITFUL_BOW2
     ingredients:
+    - mmoitem{type=BOW,id=DECEITFUL_BOW,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
     conditions: []
@@ -200,15 +230,16 @@ recipes:
       type: DAGGER
       id: SHADOW_DAGGER2
     ingredients:
+    - mmoitem{type=DAGGER,id=SHADOW_DAGGER,amount=1}
     - mmoitem{type=MATERIAL,id=SHADOW_ESSENCE,amount=128}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
     conditions: []
   BULBLIN_BOW2:
     output:
-      type: SWORD
+      type: BOW
       id: BULBLIN_BOW2
     ingredients:
-    - mmoitem{type=SWORD,id=BULBLIN_BOW,amount=1}
+    - mmoitem{type=BOW,id=BULBLIN_BOW,amount=1}
     - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=8}
     conditions: []
   BULBLIN_SWORD2:
@@ -219,3 +250,118 @@ recipes:
     - mmoitem{type=SWORD,id=BULBLIN_SWORD,amount=1}
     - mmoitem{type=MATERIAL,id=BULBLIN_SWORD_SHAVING,amount=8}
     conditions: []
+  STABLE_WARP:
+    output:
+      type: CONSUMABLE
+      id: STABLE_WARP
+    ingredients:
+    - mmoitem{type=CONSUMABLE,id=UNSTABLE_WARP,amount=1}
+    - mmoitem{type=MATERIAL,id=STABILIZER,amount=9}
+    conditions: []
+  STABILIZER:
+    output:
+      type: MATERIAL
+      id: STABILIZER
+    ingredients:
+    - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=160}
+    conditions: []
+  BOOMER_CHEST:
+    output:
+      type: ARMOR
+      id: BOOMER_CHEST
+    ingredients:
+    - 'vanilla{type=gunpowder,amount=1152}'
+    conditions: []
+  BOOMER_CHEST2:
+    output:
+      type: ARMOR
+      id: BOOMER_CHEST2
+    ingredients:
+    - mmoitem{type=ARMOR,id=BOOMER_CHEST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=8}
+    conditions: []
+  BOOMER_CHEST3:
+    output:
+      type: ARMOR
+      id: BOOMER_CHEST3
+    ingredients:
+    - mmoitem{type=ARMOR,id=BOOMER_CHEST2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=16}
+    conditions: []
+  MONITOR_MUTE_SPELL:
+    output:
+      type: SPELL
+      id: MONITOR_MUTE
+      amount: 1
+    ingredients:
+    - vanilla{type=OBSIDIAN,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
+    conditions:
+    - profession{profession=Spellforging,level=4}
+    triggers:
+    - exp{profession=Spellforging,amount=400}
+  MONITOR_MUTE:
+    output:
+      type: WAND
+      id: MONITOR_MUTE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  MONITOR_MUTE2:
+    output:
+      type: WAND
+      id: MONITOR_MUTE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=MONITOR_MUTE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=700}
+  MYSTICAL_GEM:
+    output:
+      type: GEM_STONE
+      id: MYSTICAL_GEM
+    ingredients:
+    - mmoitem{type=MATERIAL,id=DEFENDER_FLESH,amount=8}
+  ENCHANTRESS_HEAD2:
+    output:
+      type: ARMOR
+      id: ENCHANTRESS_HEAD2
+    ingredients:
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_HEAD,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
+  ENCHANTRESS_CHEST2:
+    output:
+      type: ARMOR
+      id: ENCHANTRESS_CHEST2
+    ingredients:
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_CHEST,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
+  ENCHANTRESS_LEGS2:
+    output:
+      type: ARMOR
+      id: ENCHANTRESS_LEGS2
+    ingredients:
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_LEGS,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
+  ENCHANTRESS_BOOTS2:
+    output:
+      type: ARMOR
+      id: ENCHANTRESS_BOOTS2
+    ingredients:
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_BOOTS,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
+  ENCHANTRESS_STAFF2:
+    output:
+      type: STAFF
+      id: ENCHANTRESS_STAFF2
+    ingredients:
+    - mmoitem{type=STAFF,id=ENCHANTRESS_STAFF,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}

@@ -19,7 +19,7 @@ NPC_options:
     conditions: '!q1_part1'        
 #Selected from quest1 dialogue, which will start his first quest
   quest1accept:
-    text: Great, I have just given you a &fQuest Journal&7! You can use this to track and help progress through your Quests! Now, what I need you to do, is visit our &aFarm &7located at &f183, 31, -173&7! You can follow the path to the &lright &7of where you entered our Town at!
+    text: Great, I have just given you a &fQuest Journal &7in your &a8th slot&7! You can use this to track and help progress through your Quests! Follow the path in front of you and visit our &aFarm &7located at &f183, 31, -173&7! You can also see a compass at the top of your screen, which will also direct you towards where you must go.
 
 #This is how a player responds and what options they have
 player_options:
@@ -32,6 +32,7 @@ player_options:
   quest:
     text: Do you have any Quests?
     pointers: quests    
+    conditions: '!q1_part1'        
 #Greeting > Bye    
   bye:
     text: I need to go, sorry.

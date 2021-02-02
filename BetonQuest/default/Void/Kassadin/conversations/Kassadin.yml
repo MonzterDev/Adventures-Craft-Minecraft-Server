@@ -2,20 +2,20 @@ quester: Kassadin
 first: greeting
 NPC_options:
   greeting:
-    text: Hello &aAdventurer&7! Enjoy your stay in the land of the &8corrupt&7! 
+    text: Greetings &a%player%&7, would you like to help me with some tasks? 
     pointers: hey, shop, quest, bye
 #Selected from quest1 dialogue, which will start his first quest
   town_info:
-    text: This corrupted land has caused everything to deform! You may become permanently cursed from the plague in this horrid area. Only if you help me will I cleanse you! 
+    text: We're deep within the corruption, most everything down here is full of it. You have the ability to harvest the unique resources which are limited to this area and forge them into useful tools!
     pointers: wow, bye
 #This is the Quest offering menu basically
   quests:
-    text: If you fail a task of mine, do not come back!
+    text: You'll need to gather many materials down here for me.
     pointers: quest1, quest_decline
     conditions: '!q1_part1'        
 #Selected from quest1 dialogue, which will start his first quest
   quest1accept:
-    text: I need you to help by gather a few Hell specific resources!
+    text: Go, gather the &aEnd Stone&7!
 
 #This is how a player responds and what options they have
 player_options:
@@ -38,7 +38,7 @@ player_options:
     
 #Town_Info > wow 
   wow:
-    text: Wow, you must be busy!
+    text: Sounds creepy...
     pointers: greeting
 
 #quests > quest decline, when a reject taking a quest

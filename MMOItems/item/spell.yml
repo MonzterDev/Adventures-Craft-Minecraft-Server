@@ -1090,7 +1090,68 @@ CONTAMINATION_RITUAL2:
     - §7constantly §2contaminating §7enemies
     - §7within the ritual circle!
     item-cooldown: 7.5
-
+MONITOR_MUTE:
+  base:
+    material: CHORUS_PLANT
+    name: §2Monitor Mute
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: UNCOMMON
+    ability:
+      ability1:
+        type: MONITOR_MUTE
+        mode: RIGHT_CLICK
+        radius: 3
+        duration: 2
+        cooldown: 5
+        mana: 50.0
+        damage: 250.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Launch a §5Chorus Flower§7,
+    - §8stunning §7enemies for 2secs
+    - §7and dealing §c250 damage§7!
+    item-cooldown: 5
+MONITOR_MUTE2:
+  base:
+    material: CHORUS_PLANT
+    name: §9Monitor Mute
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    ability:
+      ability1:
+        type: MONITOR_MUTEB
+        mode: RIGHT_CLICK
+        radius: 3
+        duration: 2
+        cooldown: 5
+        mana: 80.0
+        damage: 250.0
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Launch a §5Chorus Flower§7,
+    - §8stunning §7enemies for 3secs
+    - §7and dealing §c500 damage§7!
+    item-cooldown: 7.5
 BLINK:
   base:
     material: PAPER

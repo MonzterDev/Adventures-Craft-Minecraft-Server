@@ -1,0 +1,610 @@
+#VOID ABYSS 
+#This sets the Boss to an Archer
+VOID_STANCE1:
+  Cooldown: 1
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=arrowattack}
+  - setspeed{speed=.3;type=walking}
+  - equip{item=ENCHANTRESS_STAFF:HAND}
+
+VOID_ENCHANTRESS_MISSILE:
+  Cooldown: 2
+  Conditions:
+  - holding{m=NETHERITE_HOE} true
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=VOID_ENCHANTRESS_MISSILE_TICK;onHit=VOID_ENCHANTRESS_MISSILE_HIT;onEnd=VOID_ENCHANTRESS_MISSILE_END;hnp=false;MaxRange=30;sE=true;hp=true;sB=true;Duration=200;Velocity=8}
+  - sound{s=entity.evoker.cast_spell;p=.5} @PIR{r=50}
+VOID_ENCHANTRESS_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#EE22CC;amount=10;speed=1;hS=0.15;vS=.15} @origin
+VOID_ENCHANTRESS_MISSILE_HIT:
+  Skills:
+  - potion{type=SLOW;duration=20;level=1} @target
+  - damage{a=75;ignoreArmor=false} @target
+VOID_ENCHANTRESS_MISSILE_END:
+  Skills:
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @origin
+  - effect:particlering{p=largeexplode;a=40;vs=0.15;hs=0.15;s=0;y=0.1;points=4;radius=0} @origin
+
+#This sets the Boss to Melee and moving at specific point
+VOID_STANCE2:
+  Cooldown: 1
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE4} true
+  Skills:
+  - runaigoalselector{goal=clear} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - runaigoalselector{goal=meleeattack} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - setspeed{speed=.36;type=walking} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - equip{item=ENCHANTRESS_SWORD:HAND} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+
+VOID_PARTICLES:
+  Skills:
+  - onAttack{auraName=SA1;charges=5;duration=99999999;i=10;onTick=VOID_PARTICLES_TICK;onHit=VOID_PARTICLES_HIT} @self
+  - effect:particles{p=smoke;a=20;y=0.2;hs=0.3;vs=0.2} @self
+  - sound{s=entity.wither.shoot;p=0.7} @self
+VOID_PARTICLES_TICK:
+  Skills:
+  - effect:particleorbital{p=smoke;a=1;points=18;r=1;in=1;ticks=20;y=2.4} @self
+  - effect:particlesphere{p=reddust;color=#000000;a=20;y=1.2;r=0.3;repeat=5;repeatInterval=2} @self
+VOID_PARTICLES_HIT:
+  Skills:
+  - damage{a=25}                                                      #Damage of additional attacks
+  - effect:particleline{p=reddust;color=#000000;y=0.8;syo=0.8;a=1;}
+  - effect:particles{p=sweepAttack;a=1;y=0.85;hs=0.1;vs=0.1}
+  - sound{s=entity.player.attack.sweep;p=0.7}
+
+
+
+
+#Passively heals mobs every X (1) Second for 10 HP
+VOID_BOSS_PASSIVE_HEAL:
+  Cooldown: 1
+  Skills:
+  - heal{amount=10} @self
+
+
+#####################
+# Spawn (Add sounds)
+VOID_ENCHANTRESS_TIMER:
+  Skills:
+  - delay 6000 #5 minutes
+  - message{m="&c<mob.name> &7will soon return back to the &5Void&7!"} @PlayersInRadius{r=100}
+  - delay 4800 #4 minutes
+  - message{m="&cHurry! &c<mob.name> &cis very close to escaping&c!"} @PlayersInRadius{r=100}
+  - delay 1200 #1 minute
+  - message{m="&c<mob.name> &chas escaped, meaning you have failed!"} @PlayersInRadius{r=100}
+  - remove{delay=1} @MIR{r=100;t=VOID_ENCHANTRESS,VOID_BOSS_MINION,VOID_PILLAR1,VOID_PILLAR2,VOID_PILLAR3,VOID_PILLAR4,VOID_PILLAR1_M,VOID_PILLAR2_M,VOID_PILLAR3_M,VOID_PILLAR4_M,VOID_BOSS_DEFENDER,VOID_BOSS_DEFENDER2,VOID_BOSS_DEFENDER3}
+  - sound{s=block.note_block.bass;p=1.5} @PlayersInRadius{r=100}
+  - sound{s=block.note_block.bass;p=1.5} @PlayersInRadius{r=100}
+  - delay 10
+  - sound{s=block.note_block.bass;p=1.25} @PlayersInRadius{r=100}
+  - sound{s=block.note_block.bass;p=1.25} @PlayersInRadius{r=100}
+  - delay 10
+  - sound{s=block.note_block.bass;p=1} @PlayersInRadius{r=100}
+  - sound{s=block.note_block.bass;p=1} @PlayersInRadius{r=100}
+  - delay 10
+  - sound{s=block.note_block.bass;p=.75} @PlayersInRadius{r=100}
+  - sound{s=block.note_block.bass;p=.75} @PlayersInRadius{r=100}
+  - delay 10
+  - sound{s=block.note_block.bass;p=.5} @PlayersInRadius{r=100}
+  - sound{s=block.note_block.bass;p=.5} @PlayersInRadius{r=100}
+  - teleportto{location=-193.5,13,-826.5;y=-1;p=1.6} @PlayersInRadius{r=100}
+
+VOID_ENCHANTRESS_SPAWN:
+  Skills:
+  - teleportto{location=11,51,-762} @self
+  - delay 20
+  - message{m="&c<mob.name> &7is awakening!"} @PlayersInRadius{r=100}
+  - sound{s=entity.evoker.prepare_summon;p=.75} @PIR{r=50}
+  - delay 180
+  - summon{type=VOID_PILLAR1;amount=1;radius=1} @self
+  - summon{type=VOID_PILLAR2;amount=1;radius=1} @self
+  - summon{type=VOID_PILLAR3;amount=1;radius=1} @self
+  - summon{type=VOID_PILLAR4;amount=1;radius=1} @self
+  - delay 20
+  - message{m="&c<mob.name> &7is awake!!!"} @PlayersInRadius{r=100}
+  - skill{s=VOID_ENCHANTRESS_HEAL}
+  - teleportto{location=7,29,-762} @self
+  - sound{s=entity.evoker.prepare_summon;p=.5} @PIR{r=50}
+
+VOID_ENCHANTRESS_DEATH:
+  Skills:
+  - sound{s=entity.evoker.death;p=.5} @PIR{r=50}
+  - command{c="q point <target.name> add bosses.VOID_ENCHANTRESS 1"} @ThreatTablePlayers
+  - command{c="q point <target.name> add bosses.VoidEnchantressReward 1"} @ThreatTablePlayers
+  - message{m="&eYou have defeated the &cVoid Enchantress&e! Claim your rewards in &l/Bossdex&e!"} @ThreatTablePlayers 
+  - remove{delay=1} @MIR{r=100;t=VOID_ENCHANTRESS,VOID_BOSS_MINION,VOID_PILLAR1,VOID_PILLAR2,VOID_PILLAR3,VOID_PILLAR4,VOID_PILLAR1_M,VOID_PILLAR2_M,VOID_PILLAR3_M,VOID_PILLAR4_M,VOID_BOSS_DEFENDER,VOID_BOSS_DEFENDER2,VOID_BOSS_DEFENDER3}
+  - sound{s=block.note_block.chime;p=.5} @ThreatTablePlayers
+  - sound{s=block.note_block.chime;p=.5} @ThreatTablePlayers
+  - delay 10
+  - sound{s=block.note_block.chime;p=.5} @ThreatTablePlayers
+  - sound{s=block.note_block.chime;p=.5} @ThreatTablePlayers
+  - delay 10
+  - sound{s=block.note_block.chime;p=.75} @ThreatTablePlayers
+  - sound{s=block.note_block.chime;p=.75} @ThreatTablePlayers
+  - delay 10
+  - sound{s=block.note_block.chime;p=1} @ThreatTablePlayers
+  - sound{s=block.note_block.chime;p=1} @ThreatTablePlayers
+  - delay 10
+  - sound{s=block.note_block.chime;p=2} @ThreatTablePlayers
+  - sound{s=block.note_block.chime;p=2} @ThreatTablePlayers
+  - teleportto{location=-193.5,13,-826.5;y=-1;p=1.6} @PlayersInRadius{r=100}
+#Sets Boss's HP upon spawning, based on amount of Players who are near the boss
+VOID_ENCHANTRESS_HEAL:
+  Skills:
+  - skill{skill=VOID_ENCHANTRESS_HEAL1}
+  - skill{skill=VOID_ENCHANTRESS_HEAL2}
+  - skill{skill=VOID_ENCHANTRESS_HEAL3}
+  - skill{skill=VOID_ENCHANTRESS_HEAL4}
+  - skill{skill=VOID_ENCHANTRESS_HEAL5}
+VOID_ENCHANTRESS_HEAL1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - sethealth{a=50000} @self
+VOID_ENCHANTRESS_HEAL2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - sethealth{a=75000} @self
+VOID_ENCHANTRESS_HEAL3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - sethealth{a=100000} @self
+VOID_ENCHANTRESS_HEAL4:
+  Conditions:
+  - pir{amount=4;radius=100;action=true}
+  Skills:
+  - sethealth{a=125000} @self
+VOID_ENCHANTRESS_HEAL5:
+  Conditions:
+  - pir{amount=5;radius=100;action=true}
+  Skills:
+  - sethealth{a=150000} @self
+
+
+#Causes minions to constantly appear around the Boss, acting like a shield. 
+#As Boss HP decreases, the shield mobs rise higher from the ground
+MINIONS_PHASE1:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE1} false
+  - lastsignal{s=SHIELD_REMOVE2} false
+  - lastsignal{s=SHIELD_REMOVE3} false
+  - lastsignal{s=SHIELD_REMOVE4} false
+  Skills:
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;hO=0}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=-1}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=0;sso=1}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=0;sso=-1}
+MINIONS_PHASE2:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE1} true
+  - lastsignal{s=SHIELD_REMOVE2} false
+  - lastsignal{s=SHIELD_REMOVE3} false
+  - lastsignal{s=SHIELD_REMOVE4} false
+  Skills:
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;hO=0}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=-1}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=0;sso=1}
+MINIONS_PHASE1_SOUND:
+  Skills:
+  - message{m="&cVoid Enchantress &8&l» &7It took you that long to take out one of my shields? Pathetic!"} @PIR{r=50}
+  - delay 20
+  - sound{s=entity.enderman.scream;p=1.5} @PIR{r=50}
+MINIONS_PHASE3:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE2} true
+  Skills:
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;hO=0}
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;sfo=-1}
+MINIONS_PHASE2_SOUND:
+  Skills:
+  - message{m="&cVoid Enchantress &8&l» &7Oh another one? Do you think you're good?"} @PIR{r=50}
+  - delay 20
+  - sound{s=entity.enderman.scream;p=1.5} @PIR{r=50}
+MINIONS_PHASE4:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE3} true
+  Skills:
+  - projectile{bulletType=MOB;mob=VOID_BOSS_MINION;mr=0;i=40;sE=false;hp=false;sB=false;d=9999999;syo=0;hO=0}
+MINIONS_PHASE3_SOUND:
+  Skills:
+  - message{m="&cVoid Enchantress &8&l» &7You're getting closer, but how much more must I vanquish you before you accept defeat?"} @PIR{r=50}
+  - delay 20
+  - sound{s=entity.enderman.scream;p=1.5} @PIR{r=50}
+MINIONS_PHASE4_SOUND:
+  Skills:
+  - message{m="&cVoid Enchantress &8&l» &7Let the true battle begin!"} @PlayersInRadius{r=50}
+  - delay 20
+  - sound{s=entity.enderman.scream;p=1.5} @PIR{r=50}
+
+
+VOID_MINION_SPAWN1:
+  Cooldown: 1000
+  Skills:
+  - skill{skill=VOID_ENCHANTRESS_SUMMON}
+  - delay 20
+  - teleportto{location=11,51,-762} @self
+  - sound{s=entity.evoker.prepare_summon;p=.5} @PIR{r=50}
+  - summon{type=VOID_BOSS_CLONE;amount=1;radius=0} @self
+  - message{m="&cVoid Enchantress &8&l» &7Entertain me while I revitalize!"} @PlayersInRadius{r=50}
+VOID_MINION_SPAWN2:
+  Cooldown: 1000
+  Skills:
+  - skill{skill=VOID_ENCHANTRESS_SUMMON}
+  - delay 20
+  - teleportto{location=11,51,-762} @self
+  - sound{s=entity.evoker.prepare_summon;p=.5} @PIR{r=50}
+  - summon{type=VOID_BOSS_CLONE;amount=1;radius=0} @self
+  - message{m="&cVoid Enchantress &8&l» &7This is your last chance to surrender!"} @PlayersInRadius{r=50}
+VOID_ENCHANTRESS_SUMMON:
+  Cooldown: 1
+  Skills:
+  - skill{skill=VOID_ENCHANTRESS_SUMMON1}
+  - skill{skill=VOID_ENCHANTRESS_SUMMON2}
+  - skill{skill=VOID_ENCHANTRESS_SUMMON3}
+VOID_ENCHANTRESS_SUMMON1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=2;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER4;amount=2;radius=5} @self
+VOID_ENCHANTRESS_SUMMON2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=6;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=3;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER4;amount=3;radius=5} @self
+VOID_ENCHANTRESS_SUMMON3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=7;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=6;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER4;amount=4;radius=5} @self
+
+VOID_ENCHANTRESS_RE_ENTER:
+  Conditions:
+  - mobsInRadius{types=VOID_BOSS_DEFENDER3,VOID_BOSS_DEFENDER2,VOID_BOSS_DEFENDER;amount=0;radius=1000}
+  Skills:
+  - teleportto{location=7,29,-762} @MIR{r=100;t=VOID_ENCHANTRESS}
+  - sound{s=entity.evoker.prepare_summon;p=.5} @PIR{r=50}
+  - remove @self
+  - randommessage{
+      m=
+      "&cVoid Enchantress &8&l» &7You're begining to impress me!",
+      "&cVoid Enchantress &8&l» &7Come get me!";
+      } @PIR{r=50}
+
+VOID_ENCHANTRESS_AOE:
+  Skills:
+  - sound{s=entity.evoker.prepare_summon;p=2} @PIR{r=50}
+  - delay 20
+  - sound{s=entity.evoker.prepare_summon;p=2} @PIR{r=50}
+  - delay 20
+  - sound{s=entity.evoker.prepare_summon;p=2} @PIR{r=50}
+  - delay 20
+  - effect:enderbeam{d=30;y=2} @PIR{r=5}
+  - damage{a=100} @PIR{r=5}
+
+#Pillars summon defense mobs when they reach a certain HP
+#Each Pillar summons more mobs
+#More mobs will be summoned with more players
+VOID_PILLAR1_SUMMON:
+  Cooldown: 120
+  Skills:
+  - skill{skill=VOID_PILLAR1_SUMMON1}
+  - skill{skill=VOID_PILLAR1_SUMMON2}
+  - skill{skill=VOID_PILLAR1_SUMMON3}
+VOID_PILLAR1_SUMMON1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=2;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=1;radius=5} @self
+VOID_PILLAR1_SUMMON2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=3;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=2;radius=5} @self
+VOID_PILLAR1_SUMMON3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=3;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=1;radius=5} @self
+VOID_PILLAR2_SUMMON:
+  Cooldown: 30
+  Skills:
+  - skill{skill=VOID_PILLAR2_SUMMON1}
+  - skill{skill=VOID_PILLAR2_SUMMON2}
+  - skill{skill=VOID_PILLAR2_SUMMON3}
+VOID_PILLAR2_SUMMON1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=3;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=2;radius=5} @self
+VOID_PILLAR2_SUMMON2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=3;radius=5} @self
+VOID_PILLAR2_SUMMON3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=2;radius=5} @self
+VOID_PILLAR3_SUMMON:
+  Cooldown: 30
+  Skills:
+  - skill{skill=VOID_PILLAR3_SUMMON1}
+  - skill{skill=VOID_PILLAR3_SUMMON2}
+  - skill{skill=VOID_PILLAR3_SUMMON3}
+VOID_PILLAR3_SUMMON1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=3;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=1;radius=5} @self
+VOID_PILLAR3_SUMMON2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=2;radius=5} @self
+VOID_PILLAR3_SUMMON3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=6;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=3;radius=5} @self
+VOID_PILLAR4_SUMMON:
+  Cooldown: 30
+  Skills:
+  - skill{skill=VOID_PILLAR4_SUMMON1}
+  - skill{skill=VOID_PILLAR4_SUMMON2}
+  - skill{skill=VOID_PILLAR4_SUMMON3}
+VOID_PILLAR4_SUMMON1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=4;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=2;radius=5} @self
+VOID_PILLAR4_SUMMON2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=6;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=5;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=3;radius=5} @self
+VOID_PILLAR4_SUMMON3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - summon{type=VOID_BOSS_DEFENDER;amount=7;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER2;amount=6;radius=5} @self
+  - summon{type=VOID_BOSS_DEFENDER3;amount=4;radius=5} @self
+
+
+
+#Once a Pillar dies, it'll shoot a particle at the Boss & the next pillar
+VOID_PILLAR1_DEATH_SUMMON:
+  Skills:
+  - summon{type=VOID_PILLAR1_M;amount=1;radius=0} @self
+VOID_PILLAR1_DEATH_MISSILE:
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=VOID_PILLAR1_MISSILE_TICK;hnp=false;MaxRange=30;sE=true;hp=false;sB=false;Duration=100;Velocity=5} @MIR{r=100;t=VOID_ENCHANTRESS,VOID_PILLAR2}
+VOID_PILLAR1_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#252525;amount=10;speed=1;hS=0.15;vS=.15} @origin
+  - potion{type=BLINDNESS;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - damage{a=25;ignoreArmor=false} @PlayersNearOrigin{r=2}
+VOID_PILLAR2_DEATH_SUMMON:
+  Skills:
+  - summon{type=VOID_PILLAR2_M;amount=1;radius=0} @self
+VOID_PILLAR2_DEATH_MISSILE:
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=VOID_PILLAR2_MISSILE_TICK;hnp=false;MaxRange=30;sE=true;hp=false;sB=false;Duration=100;Velocity=5} @MIR{r=100;t=VOID_ENCHANTRESS,VOID_PILLAR3}
+VOID_PILLAR2_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#252525;amount=10;speed=1;hS=0.15;vS=.15} @origin
+  - potion{type=BLINDNESS;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - damage{a=25;ignoreArmor=false} @PlayersNearOrigin{r=2}
+VOID_PILLAR3_DEATH_SUMMON:
+  Skills:
+  - summon{type=VOID_PILLAR3_M;amount=1;radius=0} @self
+VOID_PILLAR3_DEATH_MISSILE:
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=VOID_PILLAR3_MISSILE_TICK;hnp=false;MaxRange=30;sE=true;hp=false;sB=false;Duration=100;Velocity=5} @MIR{r=100;t=VOID_ENCHANTRESS,VOID_PILLAR4}
+VOID_PILLAR3_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#252525;amount=10;speed=1;hS=0.15;vS=.15} @origin
+  - potion{type=BLINDNESS;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - damage{a=25;ignoreArmor=false} @PlayersNearOrigin{r=2}
+VOID_PILLAR4_DEATH_SUMMON:
+  Skills:
+  - summon{type=VOID_PILLAR4_M;amount=1;radius=0} @self
+VOID_PILLAR4_DEATH_MISSILE:
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=VOID_PILLAR4_MISSILE_TICK;hnp=false;MaxRange=30;sE=true;hp=false;sB=false;Duration=100;Velocity=5} @MIR{r=100;t=VOID_ENCHANTRESS}
+VOID_PILLAR4_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#252525;amount=10;speed=1;hS=0.15;vS=.15} @origin
+  - potion{type=BLINDNESS;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=20;level=5} @PlayersNearOrigin{r=2}
+  - damage{a=25;ignoreArmor=false} @PlayersNearOrigin{r=2}
+
+#Once a Pillar dies, it'll send a signal to the Boss & the next pillar, 
+#allowing them to take damage
+VOID_ENCHANTRESS_SHIELD_REMOVE1:
+  Skills:
+  - signal{s=SHIELD_REMOVE1} @MobsInRadius{r=100;t=VOID_ENCHANTRESS,VOID_PILLAR2}
+  - skill{skill=MINIONS_PHASE1_SOUND}
+VOID_ENCHANTRESS_SHIELD_REMOVE2:
+  Skills:
+  - signal{s=SHIELD_REMOVE2} @MobsInRadius{r=200;t=VOID_ENCHANTRESS,VOID_PILLAR3}
+  - skill{skill=MINIONS_PHASE2_SOUND}
+VOID_ENCHANTRESS_SHIELD_REMOVE3:
+  Skills:
+  - signal{s=SHIELD_REMOVE3} @MobsInRadius{r=300;t=VOID_ENCHANTRESS,VOID_PILLAR4}
+  - skill{skill=MINIONS_PHASE3_SOUND}
+VOID_ENCHANTRESS_SHIELD_REMOVE4:
+  Skills:
+  - signal{s=SHIELD_REMOVE4} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - skill{skill=VOID_STANCE2} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - teleportto{location=7,29,-762} @MobsInRadius{r=400;t=VOID_ENCHANTRESS}
+  - skill{skill=MINIONS_PHASE4_SOUND}
+
+#Pillars and Boss will heal themselves each time hit, until all pillars are killed
+VOID_PILLAR2_HEAL:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE1} false
+  Skills:
+  - heal{amount=100000} @self
+  - sound{s=block.ender_chest.close} @self
+VOID_PILLAR3_HEAL:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE2} false
+  Skills:
+  - heal{amount=100000} @self
+  - sound{s=block.ender_chest.close} @self
+VOID_PILLAR4_HEAL:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE3} false
+  Skills:
+  - heal{amount=100000} @self
+  - sound{s=block.ender_chest.close} @self
+VOID_ENCHANTRESS_HEAL_SHIELD:
+  Conditions:
+  - lastsignal{s=SHIELD_REMOVE4} false
+  Skills:
+  - heal{amount=100000} @self
+  - sound{s=entity.evoker.hurt;p=1.5} @self
+
+
+
+
+#Sets Defenders HP upon spawning, based on amount of Players who are near the boss
+VOID_BOSS_DEFENDER_HEAL:
+  Skills:
+  - skill{skill=VOID_BOSS_DEFENDER_HEAL1}
+  - skill{skill=VOID_BOSS_DEFENDER_HEAL2}
+  - skill{skill=VOID_BOSS_DEFENDER_HEAL3}
+  - skill{skill=VOID_BOSS_DEFENDER_HEAL4}
+  - skill{skill=VOID_BOSS_DEFENDER_HEAL5}
+VOID_BOSS_DEFENDER_HEAL1:
+  Conditions:
+  - pir{amount=1;radius=100;action=true}
+  Skills:
+  - sethealth{a=25000} @self
+VOID_BOSS_DEFENDER_HEAL2:
+  Conditions:
+  - pir{amount=2;radius=100;action=true}
+  Skills:
+  - sethealth{a=35000} @self
+VOID_BOSS_DEFENDER_HEAL3:
+  Conditions:
+  - pir{amount=3;radius=100;action=true}
+  Skills:
+  - sethealth{a=45000} @self
+VOID_BOSS_DEFENDER_HEAL4:
+  Conditions:
+  - pir{amount=4;radius=100;action=true}
+  Skills:
+  - sethealth{a=55000} @self
+VOID_BOSS_DEFENDER_HEAL5:
+  Conditions:
+  - pir{amount=5;radius=100;action=true}
+  Skills:
+  - sethealth{a=65000} @self
+
+########################################BOSS MINIONS, WHICH FIGHT BACK
+#Defender explodes upon death
+VOID_BOSS_DEFENDER_DEATH_EXPLOSION:
+  Skills:
+  - effect:particles{particle=spell_mob_ambient;amount=50;speed=.5;hS=0.35;vS=.35;y=1} @self
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - throw{velocity=2;velocityY=5} @PIR{r=3}
+  - damage{a=200;ignoreArmor=false} @PIR{r=3}
+  - potion{type=POISON;duration=60;level=5} @PIR{r=3}
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
+
+#Defender Spawns in either Stray or Husk for variety
+VOID_BOSS_DEFENDER2_CHOSE:
+  Skills:
+  - randomskill{skills=VOID_BOSS_DEFENDER2_DISGUISE1,VOID_BOSS_DEFENDER2_DISGUISE2}
+VOID_BOSS_DEFENDER2_DISGUISE1:
+  Skills:
+  - disguise{type=stray}
+VOID_BOSS_DEFENDER2_DISGUISE2:
+  Skills:
+  - disguise{type=husk}
+#Defender loses armor as it loses HP
+VOID_BOSS_DEFENDER2_REMOVE_CHEST:
+  Cooldown: 600
+  Skills:
+  - equip{item=AIR:CHEST}
+  - sound{s=item.armor.equip_leather} @self
+VOID_BOSS_DEFENDER2_REMOVE_LEGS:
+  Cooldown: 600
+  Skills:
+  - equip{item=AIR:LEGS}
+  - sound{s=item.armor.equip_leather} @self
+VOID_BOSS_DEFENDER2_REMOVE_FEET:
+  Cooldown: 600
+  Skills:
+  - equip{item=AIR:FEET}
+  - sound{s=item.armor.equip_leather} @self
+
+#Defender randomly smashes the ground
+VOID_BOSS_DEFENDER3_GROUND_POUND:
+  Cooldown: 15
+  Skills:
+  - blockwave{duration=35;material=end_stone;radius=3;radiusY=.75;velocity=.75;shape=sphere} @selflocation
+  - throw{velocity=2;velocityY=5} @PIR{r=5}
+  - damage{a=500;ignoreArmor=false} @PIR{r=5}
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=2} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=4} @Self
+  - effect:blockunmask{r=30}
+
+#Defender hits a player, and basically grabs them and tps with them, abduction! 
+VOID_BOSS_DEFENDER4_ABDUCTION:
+  Cooldown: 3
+  Skills:
+  - sudoskill{s=VOID_BOSS_DEFENDER4_ABDUCTION_PLAYER;cat=true} @target
+  - teleport{spreadh=3;spreadv=3} @target
+  - damage{a=100;ignoreArmor=false} @PIR{r=5}
+  - effect:sound{s=entity.enderman.scream;v=3;p=1} @self
+  - delay 10
+  - teleport{spreadh=0;spreadv=0} @target
+
+
+VOID_BOSS_DEFENDER4_ABDUCTION_PLAYER:
+  Skills:
+  - teleport{spreadh=3;spreadv=3} @self

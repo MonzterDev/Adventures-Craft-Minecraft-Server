@@ -9,19 +9,8 @@ REAPER_HEAD:
     lore:
     - §7Ripped right from
     - §7the §cReaper's §7body!
-    commands:
-      cmd0:
-        format: lp user %player% permission set Reaper.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set Reaper.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - Reaper.Timer.Locked
     unstackable: true
-    disable-interaction: false
+    disable-interaction: true
 MORDEN_HEAD:
   base:
     material: PLAYER_HEAD
@@ -34,6 +23,7 @@ MORDEN_HEAD:
     - §7Ripped right from the
     - §cMorden the Undead's §7body!
     unstackable: true
+    disable-interaction: true
 DRYAD_HEAD:
   base:
     material: PLAYER_HEAD
@@ -45,6 +35,7 @@ DRYAD_HEAD:
     lore:
     - §7Ripped right from §cDryad's §7body!
     unstackable: true
+    disable-interaction: true
 DRACULA_HEAD:
   base:
     material: PLAYER_HEAD
@@ -56,18 +47,8 @@ DRACULA_HEAD:
     lore:
     - §7Ripped right from the
     - §cVoid Dracula's §7body!
-    commands:
-      cmd0:
-        format: lp user %player% permission set Dracula.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set Dracula.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - Dracula.Timer.Locked
     unstackable: true
+    disable-interaction: true
 CHIEF_HEAD:
   base:
     material: PLAYER_HEAD
@@ -79,18 +60,8 @@ CHIEF_HEAD:
     lore:
     - §7Ripped right from the
     - §cGoblin Chief's §7body!
-    commands:
-      cmd0:
-        format: lp user %player% permission set GoblinChief.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set GoblinChief.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - GoblinChief.Timer.Locked
     unstackable: true
+    disable-interaction: true
 WITHER_HEAD:
   base:
     material: PLAYER_HEAD
@@ -101,18 +72,8 @@ WITHER_HEAD:
     name: §9Wither Head
     lore:
     - §7Ripped right from the §cVoid Wither§7!
-    commands:
-      cmd0:
-        format: lp user %player% permission set VoidWither.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set VoidWither.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - VoidWither.Timer.Locked
     unstackable: true
+    disable-interaction: true
 VOIDMAGMA_HEAD:
   base:
     material: PLAYER_HEAD
@@ -123,20 +84,8 @@ VOIDMAGMA_HEAD:
     name: §9Void Magma Head
     lore:
     - §7Ripped right from §cVoid Magma§7!
-    commands:
-      cmd0:
-        format: lp user %player% permission set VoidMagma.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set VoidMagma.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - VoidMagma.Timer.Locked
-    max-consume: 1.0
-    displayed-type: Quest
     unstackable: true
+    disable-interaction: true
 GHASTLY_HEAD:
   base:
     material: PLAYER_HEAD
@@ -147,18 +96,44 @@ GHASTLY_HEAD:
     name: §9Ghastly Head
     lore:
     - §7Ripped right from §cGhastly§7!
-    commands:
-      cmd0:
-        format: lp user %player% permission set Ghastly.Timer
-        delay: 0.0
-        console: true
-      cmd1:
-        format: lp user %player% permission set Ghastly.Timer.Locked false
-        delay: 0.0
-        console: true
-    permission:
-    - Ghastly.Timer.Locked
     unstackable: true
+    disable-interaction: true
+BULBLIN_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: ewogICJ0aW1lc3RhbXAiIDogMTU5NzUxMzg1MzAwNiwKICAicHJvZmlsZUlkIiA6ICIwNmE4NjAyZDAwODk0YWQxOTcyMGQ3NGE1OGU1MDZjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfMW5kcmFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ZjBhZjRkZmZiMWZhYzQxNjQ3YjcxMDMwMGUwN2EyNGFiNWY3MDM1NmU0ZmU3OTUxYjBmMzY5NmQxZTJlZTgiCiAgICB9CiAgfQp9
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Bulblin Head
+    lore:
+    - §7Ripped right from §cBulblin§7!
+    unstackable: true
+    disable-interaction: true
+BULLBO_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Bullbo Head
+    lore:
+    - §7Ripped right from §cBullbo§7!
+    unstackable: true
+    disable-interaction: true
+ENCHANTRESS_HEAD:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
+      uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
+    tier: RARE
+    name: §9Enchantress Head
+    lore:
+    - §7Ripped right from §cEnchantress' §7body!
+    unstackable: true
+    disable-interaction: true
 BABY:
   base:
     material: PLAYER_HEAD

@@ -467,3 +467,27 @@ recipes:
     - profession{profession=Spellforging,level=7}
     triggers:
     - exp{profession=Spellforging,amount=700}
+  MONITOR_MUTE:
+    output:
+      type: WAND
+      id: MONITOR_MUTE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=8}
+    conditions:
+    - profession{profession=Spellforging,level=5}
+    triggers:
+    - exp{profession=Spellforging,amount=500}
+  MONITOR_MUTE2:
+    output:
+      type: WAND
+      id: MONITOR_MUTE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=WAND,id=MONITOR_MUTE,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=16}
+    conditions:
+    - profession{profession=Spellforging,level=7}
+    triggers:
+    - exp{profession=Spellforging,amount=700}

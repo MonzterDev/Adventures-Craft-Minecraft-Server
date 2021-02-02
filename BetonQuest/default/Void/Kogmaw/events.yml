@@ -1,0 +1,149 @@
+#Q2
+quest1_starter: 'folder quest1_start,tag_q1_part1,entry_q1_part1,q1_start_message'
+quest1_start: 'objective start q1Monitors'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "run ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+
+
+
+#Q2
+quest2_starter: 'folder tag_q2_part1,entry_q2_part1,q2_start_message,q2DarkOakButton,q2AcaciaButton,q2WarpedButton,q2CrimsonButton,q2AllButtonsPressed'
+
+q2DarkOakButton: 'objective start q2DarkOakButton'
+q2AcaciaButton: 'objective start q2AcaciaButton'
+q2WarpedButton: 'objective start q2WarpedButton'
+q2CrimsonButton: 'objective start q2CrimsonButton'
+q2AllButtonsPressed: 'objective start q2AllButtonsPressed'
+
+ButtonsPressedPoint: point ButtonsPressed 1
+ButtonPressed: "run ^message &aYou must press &e%point.ButtonsPressed.left:4% &amore unique Booster Buttons!"
+
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n&8&l »  $quest_reward1-4$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward2: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Slayer 250 ^command mmocore admin exp give %player% Void 250 ^command money give %player% 150"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal remove q2_part1'
+QuestReward2_Claim: 'folder Claim_QuestReward5,QuestReward5_Claim_message,QuestReward5_Claimed_Tag,QuestReward5_del_Claimed_Tag'
+
+
+
+quest3_starter: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
+quest3_start: 'objective start q3Champions'
+tag_q3_part1: 'tag add q3_part1'
+entry_q3_part1: 'journal add q3_part1'
+q3_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$ \n&8&l »  $quest_reward2-4$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective3$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward3: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q3_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
+entry_q3_completed: 'journal add q3_completed'
+tag_q3_completed: 'tag add q3_completed'
+entry_q3_part1_remove: 'journal remove q3_part1'
+
+quest4_starter: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message'
+quest4_start: 'objective start q4Boomers'
+tag_q4_part1: 'tag add q4_part1'
+entry_q4_part1: 'journal add q4_part1'
+q4_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$ \n&8&l »  $quest_reward3-4$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective4$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
+QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
+QuestReward4_If_Not_Full: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
+QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
+QuestReward4_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name4$ &cto redeem your rewards!"
+QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
+Claim_QuestReward4: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
+QuestReward4_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
+QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q4_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed'
+entry_q4_completed: 'journal add q4_completed'
+tag_q4_completed: 'tag add q4_completed'
+entry_q4_part1_remove: 'journal remove q4_part1'
+
+#5
+quest5_starter: 'folder quest5_start,tag_q5_part1,entry_q5_part1,q5_start_message'
+quest5_start: 'objective start q5UnstableWarp'
+tag_q5_part1: 'tag add q5_part1'
+entry_q5_part1: 'journal add q5_part1'
+q5_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name4$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward4-5$ \n&8&l »  $quest_reward4-1$ \n&8&l »  $quest_reward4-2$ \n&8&l »  $quest_reward4-3$ \n&8&l »  $quest_reward4-4$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective5$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward5: "if empty0 QuestReward5_Full else QuestReward5_Folder"
+QuestReward5_Folder: 'folder QuestReward5_If_Not_Full,QuestReward5_Claimed_Tag'
+QuestReward5_If_Not_Full: "run ^command mmoitems give MATERIAL STABILIZER %player% 9 ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Slayer 750 ^command mmocore admin exp give %player% Void 750 ^command money give %player% 700"
+QuestReward5_Full: 'folder QuestReward5_Full_message,QuestReward5_Full_Tag'
+QuestReward5_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name5$ &cto redeem your rewards!"
+QuestReward5_Full_Tag: "tag add q5_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward5_Claim: 'folder Claim_QuestReward5,QuestReward5_Claim_message,QuestReward5_Claimed_Tag,QuestReward5_del_Claimed_Tag'
+Claim_QuestReward5: "run ^command mmoitems give MATERIAL STABILIZER %player% 9 ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Slayer 750 ^command mmocore admin exp give %player% Void 750 ^command money give %player% 700"
+QuestReward5_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward5_Claimed_Tag: "tag add q5_rewards_claimed"
+QuestReward5_del_Claimed_Tag: "tag del q5_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q5_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q5_completed,entry_q5_part1_remove,tag_q5_completed'
+entry_q5_completed: 'journal add q5_completed'
+tag_q5_completed: 'tag add q5_completed'
+entry_q5_part1_remove: 'journal remove q5_part1'
+
+
+
+
+#6
+quest6_starter: 'folder quest6_start,tag_q6_part1,entry_q6_part1,q6_start_message'
+quest6_start: 'objective start q6Enchantress'
+tag_q6_part1: 'tag add q6_part1'
+entry_q6_part1: 'journal add q6_part1'
+q6_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name5$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward5-5$ \n&8&l »  $quest_reward5-1$ \n&8&l »  $quest_reward5-2$ \n&8&l »  $quest_reward5-3$ \n&8&l »  $quest_reward5-4$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective6$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward6: "if empty0 QuestReward6_Full else QuestReward6_Folder"
+QuestReward6_Folder: 'folder QuestReward6_If_Not_Full,QuestReward6_Claimed_Tag'
+QuestReward6_If_Not_Full: "run ^command mmoitems give MATERIAL VOID_STAR %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command mmocore admin exp give %player% Void 1000 ^command money give %player% 750"
+QuestReward6_Full: 'folder QuestReward6_Full_message,QuestReward6_Full_Tag'
+QuestReward6_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name6$ &cto redeem your rewards!"
+QuestReward6_Full_Tag: "tag add q6_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward6_Claim: 'folder Claim_QuestReward6,QuestReward6_Claim_message,QuestReward6_Claimed_Tag,QuestReward6_del_Claimed_Tag'
+Claim_QuestReward6: "run ^command mmoitems give MATERIAL VOID_STAR %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command mmocore admin exp give %player% Void 1000 ^command money give %player% 750"
+QuestReward6_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward6_Claimed_Tag: "tag add q6_rewards_claimed"
+QuestReward6_del_Claimed_Tag: "tag del q6_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q6_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,q6_completed_message,entry_q6_completed,entry_q6_part1_remove,tag_q6_completed'
+entry_q6_completed: 'journal add q6_completed'
+tag_q6_completed: 'tag add q6_completed'
+entry_q6_part1_remove: 'journal remove q6_part1'
+q6_completed_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name6$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward6-5$ \n&8&l »  $quest_reward6-1$ \n&8&l »  $quest_reward6-2$ \n&8&l »  $quest_reward6-3$ \n&8&l »  $quest_reward6-4$"
+
+
+
+
+ShopOpen: "run ^command mmoitems stations open void %player%"

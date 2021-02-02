@@ -1,0 +1,630 @@
+  #VOID ABYSS BOSS
+
+VOID_ENCHANTRESS:
+  Type: SKELETON 
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 50&7] &cVoid Enchantress'
+    Skin: enchantress
+  Display: '&7[&fLVL 50&7] &cVoid Enchantress'
+  Health: 50000
+  Damage: 0
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 50&7] &cVoid Enchantress <caster.hp>&f/&c<caster.mhp>'
+    Range: 100
+    Color: PURPLE
+    Style: SEGMENTED_20
+  Faction: Void
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    FollowRange: 50
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 5
+  Equipment:
+  - ENCHANTRESS_STAFF:HAND
+  - ENCHANTRESS_CHEST:CHEST
+  - ENCHANTRESS_LEGS:LEGS
+  - ENCHANTRESS_BOOTS:FEET
+  Drops:
+  - EXP 75-125 100%
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=VOID_ENCHANTRESS_TIMER} ~onSpawn
+  - skill{s=VOID_ENCHANTRESS_SPAWN} ~onSpawn
+  - skill{s=VOID_STANCE1} @self ~onSpawn
+  - skill{s=VOID_STANCE2} @self ~onDamaged
+  - skill{s=VOID_ENCHANTRESS_MISSILE} @target ~onShoot
+#Constantly heals the Boss until the last Pillar has been destroyed
+  - skill{s=VOID_ENCHANTRESS_HEAL_SHIELD} @self ~onDamaged
+#Causes minions to constantly appear around the Boss, acting like a shield. 
+#As pillars are killed, an enderman is removed each time
+  - skill{s=MINIONS_PHASE1} @self ~onTimer:1 
+  - skill{s=MINIONS_PHASE2} @self ~onTimer:1 
+  - skill{s=MINIONS_PHASE3} @self ~onTimer:1
+  - skill{s=MINIONS_PHASE4} @self ~onTimer:1
+#Once all pillars have been slayed, the boss resorts to melee combat
+#Once the boss has been brought down to <75% HP, they will TP away and summon a decoy as well as the first wave of enemies
+  - skill{s=VOID_MINION_SPAWN1} @self ~onDamaged =51-75%
+  - damage{a=100} @target ~onAttack =51-75%
+  - skill{s=VOID_MINION_SPAWN2} @self ~onDamaged =25-50%
+  - damage{a=250} @target ~onAttack =25-50%
+
+  - skill{s=VOID_ENCHANTRESS_AOE} ~onTimer:100 =0-25%
+#Cool particles around bosses head on Spawn, also shoots some
+  - skill{s=VOID_PARTICLES} ~onSpawn
+  - skill{s=V3} @target ~onShoot
+#Rewards for defeating boss  
+  - skill{s=VOID_ENCHANTRESS_DEATH} ~onDeath
+
+VOID_BOSS_CLONE:
+  Type: SKELETON 
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 50&7] &cVoid Enchantress'
+    Skin: enchantress
+  Display: '&7[&fLVL 50&7] &cVoid Enchantress'
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - ENCHANTRESS_STAFF:HAND
+  - ENCHANTRESS_CHEST:CHEST
+  - ENCHANTRESS_LEGS:LEGS
+  - ENCHANTRESS_BOOTS:FEET
+  Skills:
+  #Makes mob invincible
+  - skill{s=VOID_ENCHANTRESS_HEAL_SHIELD} ~onDamaged
+  #Teleports mob to specific position
+  - teleportto{location=11.5,36,-762.5} @self ~onSpawn
+  - teleportto{location=11.5,36,-762.5} @self ~onTick:20
+  #Constantly checks arena for minions left. Once all minions are killed, this mob will suicide and tp boss back
+  - skill{s=VOID_ENCHANTRESS_RE_ENTER} ~onTimer:20
+  #Mob launches missiles every 10 seconds  
+  - skill{s=VOID_ENCHANTRESS_MISSILE} @PIR{r=20} ~onTimer:200
+  - skill{s=VOID_PARTICLES} ~onSpawn
+
+
+
+VOID_BOSS_MINION:
+  Type: ENDERMAN 
+  Display: '&7'
+  Health: 1000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.2
+    FollowRange: 7
+    Collidable: true
+    Despawn: true
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - remove{delay=1} @self ~onSpawn
+
+
+VOID_PILLAR1:
+  Type: SKELETON 
+  Disguise:
+    Type: ender_crystal
+    ShowName: true
+  Display: '&7'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - EXP 50-75 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=VOID_PILLAR1_SUMMON} ~onDamaged =0%-50%  
+  - skill{s=HPBAR} @self ~onDamaged  
+  - command{c="q point <target.name> add mobs.VOID_PILLAR1 1"} @ThreatTablePlayers ~onDeath
+  - skill{s=VOID_ENCHANTRESS_SHIELD_REMOVE1} ~onDeath
+  - skill{s=VOID_PILLAR1_DEATH_SUMMON} ~onDeath
+  - teleportto{location=-12.5,30.5,-764.5} @self ~onTimer:20  
+  - sound{s=block.end_gateway.spawn} @self ~onDeath
+#This invisible mob needs to spawn due to projectiles despawning whenever the caster dies
+VOID_PILLAR1_M:
+  Type: ARMOR_STAND
+  Display: '&7'
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Invisible: true
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Skills:
+  - skill{s=VOID_PILLAR1_DEATH_MISSILE} ~onSpawn
+  - teleportto{location=-12.5,29.5,-764.5} ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+
+VOID_PILLAR2:
+  Type: SKELETON 
+  Disguise:
+    Type: ender_crystal
+    ShowName: true
+  Display: '&7'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - EXP 55-80 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=VOID_PILLAR1_SUMMON} ~onDamaged =50%-80% 
+  - skill{s=VOID_PILLAR2_SUMMON} ~onDamaged =0%-49%    
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_PILLAR2 1"} @ThreatTablePlayers ~onDeath
+  - skill{s=VOID_ENCHANTRESS_SHIELD_REMOVE2} ~onDeath
+  - skill{s=VOID_PILLAR2_DEATH_SUMMON} ~onDeath
+  - skill{s=VOID_PILLAR2_HEAL} ~onDamaged @self
+  - teleportto{location=-12.5,31,-759.5} @self ~onTimer:20  
+  - sound{s=block.end_gateway.spawn} @self ~onDeath
+VOID_PILLAR2_M:
+  Type: ARMOR_STAND
+  Display: '&7'
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Invisible: true
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 5
+  Skills:
+  - skill{s=VOID_PILLAR2_DEATH_MISSILE} ~onSpawn
+  - teleportto{location=-12.5,31,-759.5} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+
+VOID_PILLAR3:
+  Type: SKELETON 
+  Disguise:
+    Type: ender_crystal
+    ShowName: true
+  Display: '&7'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - EXP 60-85 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=VOID_PILLAR1_SUMMON} ~onDamaged =70%-80% 
+  - skill{s=VOID_PILLAR2_SUMMON} ~onDamaged =39%-69%    
+  - skill{s=VOID_PILLAR3_SUMMON} ~onDamaged =0%-38%    
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_PILLAR3 1"} @ThreatTablePlayers ~onDeath
+  - skill{s=VOID_ENCHANTRESS_SHIELD_REMOVE3} ~onDeath
+  - skill{s=VOID_PILLAR3_DEATH_SUMMON} ~onDeath
+  - skill{s=VOID_PILLAR3_HEAL} ~onDamaged @self
+  - teleportto{location=-6.5,31.5,-759.5} @self ~onTimer:20  
+  - sound{s=block.end_gateway.spawn} @self ~onDeath
+VOID_PILLAR3_M:
+  Type: ARMOR_STAND
+  Display: '&7'
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Invisible: true
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Skills:
+  - skill{s=VOID_PILLAR3_DEATH_MISSILE} ~onSpawn
+  - teleportto{location=-6.5,31,-759.5} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+
+VOID_PILLAR4:
+  Type: SKELETON 
+  Disguise:
+    Type: ender_crystal
+    ShowName: true
+  Display: '&7'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: true
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - EXP 65-90 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - skill{s=VOID_PILLAR1_SUMMON} ~onDamaged =70%-80% 
+  - skill{s=VOID_PILLAR2_SUMMON} ~onDamaged =50%-69%    
+  - skill{s=VOID_PILLAR3_SUMMON} ~onDamaged =26%-49%    
+  - skill{s=VOID_PILLAR4_SUMMON} ~onDamaged =0%-25%    
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_PILLAR4 1"} @ThreatTablePlayers ~onDeath
+  - skill{s=VOID_ENCHANTRESS_SHIELD_REMOVE4} ~onDeath
+  - skill{s=VOID_PILLAR4_DEATH_SUMMON} ~onDeath
+  - skill{s=VOID_PILLAR4_HEAL} ~onDamaged @self
+  - teleportto{location=-6.5,32,-764.5} @self ~onTimer:20  
+  - sound{s=block.end_gateway.spawn} @self ~onDeath
+VOID_PILLAR4_M:
+  Type: ARMOR_STAND
+  Display: '&7'
+  Health: 999999
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true  
+    Invisible: true
+    Persistent: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.00001
+    FollowRange: 0
+    Collidable: false
+    Despawn: false
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Skills:
+  - skill{s=VOID_PILLAR4_DEATH_MISSILE} ~onSpawn
+  - teleportto{location=-6.5,31,-764.5} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+
+
+VOID_BOSS_DEFENDER:
+  Type: ENDERMITE 
+  Display: '&7[&fLVL 50&7] &cVoid Defender'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .25
+    MaxCombatDistance: 15
+    MovementSpeed: 0.36
+    FollowRange: 50
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 1%
+  - obsidian 2-4 100%
+  - EXP 50-75 100%
+  AIGoalSelectors:
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
+  - skill{s=VOID_BOSS_DEFENDER_DEATH_EXPLOSION} ~onDeath
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_BOSS_DEFENDER 1"} @ThreatTablePlayers ~onDeath
+VOID_BOSS_DEFENDER2:
+  Type: STRAY 
+  Display: '&7[&fLVL 50&7] &cVoid Defender'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Equipment:
+  - VOID_CHAMPION:HEAD
+  - NETHERITE_SWORD:HAND
+  - NETHERITE_SWORD:OFFHAND
+  - NETHERITE_CHESTPLATE:CHEST
+  - NETHERITE_LEGGINGS:LEGS
+  - NETHERITE_BOOTS:FEET
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .5
+    MaxCombatDistance: 15
+    MovementSpeed: 0.3
+    FollowRange: 50
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 2%
+  - netherite_ingot 2-4 100%
+  - EXP 65-85 100%
+  AIGoalSelectors:
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
+  - skill{s=VOID_BOSS_DEFENDER2_CHOSE} @self ~onSpawn
+  - skill{s=VOID_BOSS_DEFENDER2_REMOVE_FEET} @self <75%
+  - skill{s=VOID_BOSS_DEFENDER2_REMOVE_LEGS} @self <50%
+  - skill{s=VOID_BOSS_DEFENDER2_REMOVE_CHEST} @self <25%
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_BOSS_DEFENDER2 1"} @ThreatTablePlayers ~onDeath
+VOID_BOSS_DEFENDER3:
+  Type: ZOMBIE 
+  Disguise:
+    Type: IRON_GOLEM
+  Display: '&7[&fLVL 75&7] &cVoid Defender'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .75
+    MaxCombatDistance: 15
+    MovementSpeed: 0.2
+    FollowRange: 50
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 3%
+  - netherite_ingot 2-4 100%
+  - obsidian 2-4 100%
+  - EXP 85-100 100%
+  AIGoalSelectors:
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=75;ignoreArmor=false} @target ~onAttack
+  - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
+  - skill{s=VOID_BOSS_DEFENDER3_GROUND_POUND} ~onTimer:200  <50%
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_BOSS_DEFENDER3 1"} @ThreatTablePlayers ~onDeath
+VOID_BOSS_DEFENDER4:
+  Type: ZOMBIE
+  Disguise:
+    Type: ENDERMAN
+  Display: '&7[&fLVL 75&7] &cVoid Defender'
+  Health: 25000
+  Damage: 0
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .75
+    MaxCombatDistance: 15
+    MovementSpeed: 0.26
+    FollowRange: 50
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Drops:
+  - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 4%
+  - ender_pearl 2-4 100%
+  - EXP 85-100 100%
+  AIGoalSelectors:
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
+  - skill{s=VOID_BOSS_DEFENDER4_ABDUCTION} ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="q point <target.name> add mobs.VOID_BOSS_DEFENDER4 1"} @ThreatTablePlayers ~onDeath

@@ -1,0 +1,78 @@
+on mythicmob spawnevent:
+    if displayname of activemob event-activemob is "&7[&fLVL 50&7] &cVoid Enchantress":
+        set {VOID_TIMER} to 10 minutes later
+        wait 10 minutes 1 second
+        kill event-entity
+on mythicmob deathevent:
+    if displayname of activemob event-activemob is "&7[&fLVL 50&7] &cVoid Enchantress":
+        set {VOID_TIMER} to 0
+
+on click on terracotta or acacia button:
+    if player is in region "void_maze":
+        if player does not have potion effect strength:
+            apply strength 5 to the player for 8 seconds
+            play sound "entity.splash_potion.throw" with pitch 2 to the player
+on click on light blue terracotta or warped button:
+    if player is in region "void_maze":
+        if player does not have potion effect swiftness:
+            apply swiftness 5 to the player for 8 seconds
+            play sound "entity.splash_potion.throw" with pitch 2 to the player
+on click on purple terracotta or crimson button:
+    if player is in region "void_maze":
+        if player does not have potion effect regeneration:
+            apply regeneration 2 to the player for 8 seconds
+            play sound "entity.splash_potion.throw" with pitch 2 to the player
+on click on gray terracotta or dark oak button:
+    if player is in region "void_maze":
+        if player does not have potion effect damage resistance:
+            apply damage resistance 2 to the player for 8 seconds
+            play sound "entity.splash_potion.throw" with pitch 2 to the player
+
+on walking on bedrock:
+    if player is in region "void_maze" or "void" or "void_abyss":
+        if player.getInventory().getItemInOffHand().getItemMeta().getDisplayName().contains("Corruption Revolter"):
+            if player does not have potion effect regeneration or swiftness:
+                apply regeneration 1 to the player for 2 seconds
+                apply swiftness 2 to the player for 2 seconds
+        else:
+            damage player by (player's health * .15)  
+            if player does not have potion effect poison:
+                apply poison 2 to the player for 1 seconds
+
+
+# on walking over end portal:
+#     if player is in region "town":
+#         if player has permission "warp.Void":
+#             teleport player to location(-217.6, 36, -1107.9, world "Spawn", 0.6, 6.1) 
+#             play sound "entity.enderman.teleport" with pitch 1.25 to player
+#             message "&aYou've been brought to the &eVoid&a! %region at player%" to player
+#         else:
+#             message "&cYou have not unlocked the &5Void &cyet!" to player
+
+# on walking over end portal:
+#     if player is in region "void":
+#         teleport player to location(-139.5, 23, -162.5, world "Spawn", 35, -3.2) 
+#         play sound "entity.enderman.teleport" with pitch 1.25 to player
+#         message "&aYou've been brought to the &eTown&a! %region at player%" to player
+
+on step on end portal:
+    if player is in region "void_abyss":    
+        make player player cast skill "VOID_BOSS_DEFENDER4_ABDUCTION_PLAYER" with trigger player at self with delay 0 and repeat 0
+
+on join:
+    set {Level10::%player%} to placeholder "mmocore_level"
+    if {Level10::%player%} is "10":
+        if player doesn't have permission "cmi.command.portal.void":
+            execute console command "/lp user %player% permission set cmi.command.portal.void true"
+
+on click on oak sign:
+    if player is in region "void_abyss":
+        message "&7Did you really think that would work???"
+
+on mythicmobs skriptskillevent:
+    if skill-name is "blinder":
+        if skill-target.getInventory().getItemInOffHand().getItemMeta().getDisplayName().contains("&5Corruption Revolter"):
+        else if skill-target.getInventory().getItemInOffHand().getItemMeta().getDisplayName().contains("Unblinder"):
+        else:
+            apply blindness 2 to skill-target for 5 seconds
+

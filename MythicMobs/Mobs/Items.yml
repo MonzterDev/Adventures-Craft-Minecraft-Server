@@ -27,3 +27,29 @@ TOTEM:
   - sound{s=block.enchantment_table.use} @PIR{r=20} ~onSpawn
   - remove{delay=200} @self ~onSpawn
   - effect:spin{duration=20;velocity=5} @self ~onTimer:20
+
+
+ENDERMAN_MISSILE_MOB:
+  Type: ARMOR_STAND
+  Display: ''
+  Health: 10000
+  Damage: 0
+  Options:
+    Persistent: false
+    ItemHead: HealingTotem
+    Invisible: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    Invincible: true
+    HasGravity: False
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    MovementSpeed: 0
+    FollowRange: 0
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 0
+  Skills:
+  - remove{delay=1} @self ~onSpawn

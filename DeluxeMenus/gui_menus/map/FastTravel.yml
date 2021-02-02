@@ -71,10 +71,10 @@ items:
     slot: 10
     display_name: '&aThe Enchanter'
     lore:
-    - '&f/TravelEnchant &7can be used too'
+    - '&e/warp Enchant'
     - ''
-    - '&7Improve your Gear & Tools'
-    - '&7easily at the &aEnchanter&7!'
+    - '&7Improve your Armor, Tools,'
+    - '&7and Weapons at the &aEnchanter&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -95,17 +95,17 @@ items:
     display_name: '&aThe Enchanter &c&lLOCKED'
     lore:
     - ''
-    - '&7Improve your Gear & Tools'
-    - '&7easily at the &aEnchanter&7!'
+    - '&7Improve your Gear, Tools,'
+    - '&7and Weapons at the &aEnchanter&7!'
     
   'AuctionUnlocked':
-    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM3Y2FlNWM1MWViMTU1OGVhODI4ZjU4ZTBkZmY4ZTZiN2IwYjFhMTgzZDczN2VlY2Y3MTQ2NjE3NjEifX19
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19
     hide_attributes: true
     priority: 1
     slot: 11
     display_name: '&aAuction House'
     lore:
-    - '&f/TravelAuction &7can be used too'
+    - '&e/warp Auction'
     - ''
     - '&7Purchase Gear and other Items'
     - '&7easily from the &aAuction House&7!'
@@ -139,10 +139,10 @@ items:
     slot: 12
     display_name: '&aDracula Spawn'
     lore:
-    - '&f/TravelDracula &7can be used too'
+    - '&e/warp Dracula'
     - ''
     - '&7Travel directly to where &cDracula'
-    - '&7spawns inside the &aDiamond Mine&7!'
+    - '&7spawns inside the &bDiamond Mine&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -164,7 +164,7 @@ items:
     lore:
     - ''
     - '&7Travel directly to where &cDracula'
-    - '&7spawns inside the &aDiamond Mine&7!'
+    - '&7spawns inside the &bDiamond Mine&7!'
 
   'ReaperUnlocked':
     material: basehead-ewogICJ0aW1lc3RhbXAiIDogMTU4Nzc0NjcyMTg3MiwKICAicHJvZmlsZUlkIiA6ICI4MmM2MDZjNWM2NTI0Yjc5OGI5MWExMmQzYTYxNjk3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb3ROb3RvcmlvdXNOZW1vIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzNjNjlhOWVhYjJiZDUwMDA5YTBkNTdhZDRjM2RmNGRmYTE2NWFiYTM0MDQxNGYxYzgzMjdmYzRlYTcyNDQ2NDEiCiAgICB9CiAgfQp9
@@ -173,10 +173,10 @@ items:
     slot: 13
     display_name: '&aReaper Spawn'
     lore:
-    - '&f/TravelReaper &7can be used too'
+    - '&e/warp Reaper'
     - ''
     - '&7Travel directly to where &cReaper'
-    - '&7spawns inside the &aGraveyard&7!'
+    - '&7spawns inside the &cGraveyard&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -198,7 +198,7 @@ items:
     lore:
     - ''
     - '&7Travel directly to where &cReaper'
-    - '&7spawns inside the &aGraveyard&7!'
+    - '&7spawns inside the &cGraveyard&7!'
 
   'MordenUnlocked':
     material: basehead-ewogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJpZCIgOiAiNjgxNmRmYzIyZWU3NDY1MGE0ODNhNDljMzRmNjJmM2QiLAogICAgICAidHlwZSIgOiAiU0tJTiIsCiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I4ZDVlMTgwZmJiZDc5ZGY1NWZkYjYzODIyMTU4YThmOTliMWU4YjI1Y2I0Y2JiYjUzZWQzNzMyNTExMGQ0NyIsCiAgICAgICJwcm9maWxlSWQiIDogIjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwKICAgICAgInRleHR1cmVJZCIgOiAiM2I4ZDVlMTgwZmJiZDc5ZGY1NWZkYjYzODIyMTU4YThmOTliMWU4YjI1Y2I0Y2JiYjUzZWQzNzMyNTExMGQ0NyIKICAgIH0KICB9LAogICJza2luIiA6IHsKICAgICJpZCIgOiAiNjgxNmRmYzIyZWU3NDY1MGE0ODNhNDljMzRmNjJmM2QiLAogICAgInR5cGUiIDogIlNLSU4iLAogICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYjhkNWUxODBmYmJkNzlkZjU1ZmRiNjM4MjIxNThhOGY5OWIxZThiMjVjYjRjYmJiNTNlZDM3MzI1MTEwZDQ3IiwKICAgICJwcm9maWxlSWQiIDogIjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwKICAgICJ0ZXh0dXJlSWQiIDogIjNiOGQ1ZTE4MGZiYmQ3OWRmNTVmZGI2MzgyMjE1OGE4Zjk5YjFlOGIyNWNiNGNiYmI1M2VkMzczMjUxMTBkNDciCiAgfSwKICAiY2FwZSIgOiBudWxsCn0=
@@ -207,10 +207,10 @@ items:
     slot: 14
     display_name: '&aMorden Spawn'
     lore:
-    - '&f/TravelMorden &7can be used too'
+    - '&e/warp Morden'
     - ''
     - '&7Travel directly to where &cMorden'
-    - '&7spawns inside the &aCastle&7!'
+    - '&7spawns inside the &cCastle&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -232,7 +232,7 @@ items:
     lore:
     - ''
     - '&7Travel directly to where &cMorden'
-    - '&7spawns inside the &aCastle&7!'
+    - '&7spawns inside the &cCastle&7!'
 
   'VoidWitherUnlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
@@ -241,10 +241,10 @@ items:
     slot: 15
     display_name: '&aVoid Wither Spawn'
     lore:
-    - '&f/TravelVoidWither &7can be used too'
+    - '&e/warp Wither'
     - ''
     - '&7Travel directly to where the'
-    - '&cVoid Wither &7spawns within &aHell&7!'
+    - '&cVoid Wither &7spawns within &cHell&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -266,7 +266,7 @@ items:
     lore:
     - ''
     - '&7Travel directly to where the'
-    - '&cVoid Wither &7spawns within &aHell&7!'
+    - '&cVoid Wither &7spawns within &cHell&7!'
 
   'VoidMagmaUnlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBkNTQ5ZjM2N2FiY2JlYTM5MjUyYmEyNzVmNWMzYzFjYjE2OTQ1ZmNmNDcyMTIzZWUyNmQ5YzlkZDQwZSJ9fX0=
@@ -275,10 +275,10 @@ items:
     slot: 16
     display_name: '&aVoid Magma Spawn'
     lore:
-    - '&f/TravelVoidMagma &7can be used too'
+    - '&e/warp Magma'
     - ''
     - '&7Travel directly to where the'
-    - '&cVoid Magma &7spawns within &aHell&7!'
+    - '&cVoid Magma &7spawns within &cHell&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -300,7 +300,7 @@ items:
     lore:
     - ''
     - '&7Travel directly to where the'
-    - '&cVoid Magma &7spawns within &aHell&7!'
+    - '&cVoid Magma &7spawns within &cHell&7!'
 
   'GhastlyUnlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
@@ -309,10 +309,10 @@ items:
     slot: 19
     display_name: '&aVoid Magma Spawn'
     lore:
-    - '&f/TravelGhastly &7can be used too'
+    - '&e/warp Ghastly'
     - ''
     - '&7Travel directly to where'
-    - '&cGhastly &7spawns within &aHell&7!'
+    - '&cGhastly &7spawns within &cHell&7!'
     - ''
     - '&8&l» &eClick to Go'
     right_click_commands:
@@ -334,4 +334,38 @@ items:
     lore:
     - ''
     - '&7Travel directly to where'
-    - '&cGhastly &7spawns within &aHell&7!'
+    - '&cGhastly &7spawns within &cHell&7!'
+
+  'BullboUnlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    display_name: '&aVoid Bullbo & Bulblin Spawn'
+    lore:
+    - '&e/warp Bullbo &7or &eBulblin'
+    - ''
+    - '&7Travel directly to where'
+    - '&cBullbo &7spawns within &aVoid&7!'
+    - ''
+    - '&8&l» &eClick to Go'
+    right_click_commands:
+    - "[player] warp FastBullbo"
+    left_click_commands:
+    - "[player] warp FastBullbo"
+
+  'BullboLocked':
+    material: RED_STAINED_GLASS_PANE	
+    hide_attributes: true
+    priority: 0
+    slot: 20
+    view_requirement:
+      requirements:
+        Pex:
+          type: "!has permission"
+          permission: Rank3
+    display_name: '&aVoid Bullbo & Bulblin Spawn &c&lLOCKED'
+    lore:
+    - ''
+    - '&7Travel directly to where'
+    - '&cVoid Bullbo &7spawns within &aVoid&7!'

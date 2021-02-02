@@ -1,0 +1,21 @@
+#1
+q1Monitors: mmobkill VOID_MONITOR amount:25 events:QuestReward1,entry_q1_complete,quest2_starter notify
+
+#2
+q2DarkOakButton: action right DARK_OAK_BUTTON events:ButtonsPressedPoint,ButtonPressed notify
+q2AcaciaButton: action right ACACIA_BUTTON events:ButtonsPressedPoint,ButtonPressed notify
+q2WarpedButton: action right WARPED_BUTTON events:ButtonsPressedPoint,ButtonPressed notify
+q2CrimsonButton: action right CRIMSON_BUTTON events:ButtonsPressedPoint,ButtonPressed notify
+q2AllButtonsPressed: location -192;12;-817;Spawn 500 conditions:ButtonsPressed events:QuestReward2,entry_q2_complete,quest3_starter
+
+#3
+q3Champions: mmobkill VOID_CHAMPION amount:50 events:entry_q3_complete,quest4_starter,QuestReward3 notify
+
+#4
+q4Boomers: mmobkill VOID_MEGA_BOOMER amount:25 events:entry_q4_complete,quest5_starter,QuestReward4 notify
+
+#5
+q5UnstableWarp: location -192;12;-817;Spawn 500 conditions:UnstableWarp events:entry_q5_complete,quest6_starter,QuestReward5
+
+#6
+q6Enchantress: location -192;12;-817;Spawn 500 conditions:EnchantressKill events:QuestReward6,entry_q6_complete

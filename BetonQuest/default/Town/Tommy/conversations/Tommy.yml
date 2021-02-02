@@ -3,12 +3,25 @@ first: greeting
 NPC_options:
   greeting:
     text: Would you like a tour around the world &a%player%&7?
-    pointers: yess,bye
-
+    pointers: yess,whatnext,bye
+  whatnext_before_flint:
+    text: Well &a%player%&7, the first thing all new adventurers should do is speak with my buddy &aFlint&7!
+    pointers: question,bye
+    conditions: '!default-Town-Flint.q1_part1'
+  whatnext_after_flint:
+    text: Commonly adventurers chose to explorer either the &aFarm &7or the &cGraveyard&7! Our &aFarm &7is an excellent place to load up on some crops, but the &cGraveyard &7is perfect for those who would like to slay some Undead! Chose your path adventurer!
+    pointers: question,bye
+    conditions: 'default-Town-Flint.q1_part1'
 #This is how a player responds and what options they have
 player_options:
   yess:
-    text: 'Take me on a &eTour&f?'
+    text: 'Take me on a &eTour&f!'
     events: 'StartTour,TourStarted'      
+  question:
+    text: 'I have another question!'
+    pointers: 'greeting'      
+  whatnext:
+    text: 'What should I do?'
+    pointers: 'whatnext_before_flint,whatnext_after_flint'      
   bye:
     text: I need to go, sorry.

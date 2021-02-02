@@ -1,4 +1,13 @@
-every 6 hours:
+on skript stop:
+	execute console command "/mm mobs killall"
+	execute console command "/killall -named"
+	set {SERVER_RESTART} to 0
+	set {RESTARTING_10} to "false"
+	set {VOID_TIMER} to 0
+
+on skript start:
+	set {SERVER_RESTART} to 6 hours later
+	wait 5 hours and 30 minutes
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&a30 minutes&e!" to all players
 	send formatted "&c---------------------------------" to all players
@@ -10,16 +19,19 @@ every 6 hours:
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&a10 minutes&e!" to all players
 	send formatted "&c---------------------------------" to all players
+	set {RESTARTING_10} to "true"
 	wait 5 minutes
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&a5 minutes&e!" to all players
 	send formatted "&c---------------------------------" to all players
-	execute console command "serverrestorer save"
+	execute console command "/serverrestorer save"
 	wait 4 minutes
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&a1 minute&e!" to all players
 	send formatted "&c---------------------------------" to all players
 	wait 30 seconds
+	execute console command "/mm mobs killall"
+	execute console command "/killall -named"
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&c30 seconds&e!" to all players
 	send formatted "&c---------------------------------" to all players
@@ -39,8 +51,8 @@ every 6 hours:
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&c2 seconds&e!" to all players
 	send formatted "&c---------------------------------" to all players
-	execute console command "mm mobs killall"
-	execute console command "killall -named"
+	execute console command "/mm mobs killall"
+	execute console command "/killall -named"
 	wait 1 seconds
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&c1 seconds&e!" to all players
@@ -50,3 +62,14 @@ every 6 hours:
 	send formatted "&eServer is restarting!" to all players
 	send formatted "&c---------------------------------" to all players
 	stop the server
+	
+on skript start:
+	wait 5 seconds 
+	execute console command "/mm mobs killall"
+	execute console command "/killall -named"
+	execute console command "/citizens reload"
+	
+command /RestartTime:
+    executable by: players
+    trigger:
+        message "&7The server will restart in &e%difference between {SERVER_RESTART} and now%&7!"
