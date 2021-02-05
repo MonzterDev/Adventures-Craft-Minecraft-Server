@@ -1,0 +1,6 @@
+on mythicmobs skriptskillevent:
+    if skill-name is "dismount":
+        if owner of activemob event-activemob is not riding:
+            kill skill-target
+        if owner of activemob event-activemob is not online:
+            kill skill-target

@@ -1,0 +1,8 @@
+on region exit:
+    if player doesn't have permission "*":
+        wait 1 tick
+        set {Cords::OutofMap} to location of player
+        if "%region at player%" is "<none>":
+            execute player command "/spawn"
+            play sound "entity.villager.no" to the player
+            send "&cYou cannot escape the map! If you believe this is an error, please report these cordinates: &e%{Cords::OutofMap}% &cto an Admin on Discord!"

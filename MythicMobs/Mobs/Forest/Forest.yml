@@ -55,7 +55,6 @@ Bees:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Bees 1"} @ThreatTablePlayers ~onDeath
 
 Hare:
   Type: ZOMBIE
@@ -115,7 +114,6 @@ Hare:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Hare 1"} @ThreatTablePlayers ~onDeath
 
 Wasp:
   Type: MPET
@@ -174,7 +172,6 @@ Wasp:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Wasp 1"} @ThreatTablePlayers ~onDeath
 
 Queen_Bee:
   Type: MPET
@@ -231,7 +228,6 @@ Queen_Bee:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Queen_Bee 1"} @ThreatTablePlayers ~onDeath
 
 DRYAD:
   Type: ZOMBIE

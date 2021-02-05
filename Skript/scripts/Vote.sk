@@ -8,42 +8,85 @@ on vote:
             send "&fVote again in &e%difference between {vote_mineStatustest::%player%} and now% for more rewards!" to player
         else:
             set {vote_mineStatustest::%player%} to 24 hours later
-            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
+            execute console command "/q point %player% add items.Vote 1"
 
     if website of event-vote = "minestatus.net":
         if now < {vote_mineStatus::%player%}:
             send "&fVote again in &e%difference between {vote_mineStatus::%player%} and now% for more rewards!" to player
         else:
             set {vote_mineStatus::%player%} to 24 hours later
-            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
+            execute console command "/q point %player% add items.Vote 1"
 
     if website of event-vote = "MinecraftServers.org":
         if now < {vote_MinecraftServers::%player%}:
             send "&fVote again in &e%difference between {vote_MinecraftServers::%player%} and now% for more rewards!" to player
         else:
             set {vote_MinecraftServers::%player%} to 24 hours later
-            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
+            execute console command "/q point %player% add items.Vote 1"
         
-    if website of event-vote = "minestatus.net":
-        if now < {vote_minestatus::%player%}:
-            send "&fVote again in &e%difference between {vote_minestatus::%player%} and now% for more rewards!" to player
+    if website of event-vote = "minecraft-server-list.com":
+        if now < {vote_MCSL::%player%}:
+            send "&fVote again in &e%difference between {vote_MCSL::%player%} and now% for more rewards!" to player
         else:
-            set {vote_minestatus::%player%} to 24 hours later
-            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            set {vote_MCSL::%player%} to 24 hours later
+            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
+            execute console command "/q point %player% add items.Vote 1"
         
     if website of event-vote = "minecraft-mp.com":
         if now < {vote_minecraftmp::%player%}:
             send "&fVote again in &e%difference between {vote_minecraftmp::%player%} and now% for more rewards!" to player
         else:
             set {vote_minecraftmp::%player%} to 24 hours later
-            message "&aThanks for voting, enjoy your reward! You can vote again in 24 hours."
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
+            execute console command "/q point %player% add items.Vote 1"
         
 command /Vote:
     executable by: player
     trigger:
         send formatted "&eVote to received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to player
+        execute console command "/dm open Vote %player%"
+command /VoteClaim:
+    executable by: player
+    trigger:
+        set {Votes::%player%} to placeholder "betonquest_items:point.Vote.amount"
+        if {Votes::%player%} parsed as a number is greater than 0:
+            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
+            execute console command "/q point %player% add items.Vote -1"
+            message "&aYour Vote Reward has been claimed!"
+        else:
+            message "&cYou don't have any Vote Rewards to be claimed!"
+
+
+#PLACEHOLDERS
+on placeholderapi placeholder request for the prefix "custom":
+	if the identifier is "vote1":
+		if difference between {vote_mineStatus::%player%} and now is more than 1 second:
+			set the result to "%difference between {vote_mineStatus::%player%} and now%"
+			if difference between {vote_mineStatus::%player%} and now is more than 24 hours:
+				set {vote_mineStatus::%player%} to 0
+		else:
+			set the result to "&aReady!"
+	if the identifier is "vote2":
+		if difference between {vote_minecraftmp::%player%} and now is more than 1 second:
+			set the result to "%difference between {vote_minecraftmp::%player%} and now%"
+			if difference between {vote_minecraftmp::%player%} and now is more than 24 hours:
+				set {vote_minecraftmp::%player%} to 0 #5 seconds later
+		else:
+			set the result to "&aReady!"
+	if the identifier is "vote3":
+		if difference between {vote_MinecraftServers::%player%} and now is more than 1 second:
+			set the result to "%difference between {vote_MinecraftServers::%player%} and now%"
+			if difference between {vote_MinecraftServers::%player%} and now is more than 24 hours:
+				set {vote_MinecraftServers::%player%} to 0 #5 seconds later
+		else:
+			set the result to "&aReady!"
+	if the identifier is "vote4":
+		if difference between {vote_MCSL::%player%} and now is more than 1 second:
+			set the result to "%difference between {vote_MCSL::%player%} and now%"
+			if difference between {vote_MCSL::%player%} and now is more than 24 hours:
+				set {vote_MCSL::%player%} to 0 #5 seconds later
+		else:
+			set the result to "&aReady!"

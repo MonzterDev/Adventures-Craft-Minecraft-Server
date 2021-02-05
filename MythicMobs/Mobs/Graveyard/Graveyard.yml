@@ -54,7 +54,7 @@ Skeleton1:
   - skill{s=Agro8A} @self ~onTimer:20
   - skill{s=Agro8B} @self ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
-  - command{c="q point <target.name> add mobs.Skeleton1 1"} @ThreatTablePlayers ~onDeath
+
 SkeletonArcher:
   Type: SKELETON
   Display: '&7[&fLVL 5&7] &cUndead Archer'
@@ -109,7 +109,7 @@ SkeletonArcher:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.SkeletonArcher 1"} @ThreatTablePlayers ~onDeath
+
 LostSoul:
   Type: ZOMBIE
   Display: '&cLost Soul'
@@ -158,9 +158,6 @@ LostSoul:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.LostSoul 1"} @ThreatTablePlayers ~onDeath
-
-
 
 Reaper:
   Type: ZOMBIE
@@ -304,4 +301,4 @@ ReaperMinion:
   - forcepull{spread=1} @EntitiesInRadius{r=5} .15
   - remove{delay=100} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged  
-  - command{c="q point <target.name> add mobs.ReaperMinion 1"} @ThreatTablePlayers ~onDeath
+

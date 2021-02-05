@@ -22,8 +22,8 @@ on player join:
 	set player's hotbar slot to slot 8 of player
 	execute player command "/itemjoin get book-item"
 	open book player's tool to player
-	wait 1 seconds
-	open book player's tool to player
+#	wait 1 seconds
+#	open book player's tool to player
 	#execute console command "/itemjoin get skull-item %player%"
 	#wait 5 seconds
 	#open book player's tool to player
@@ -32,3 +32,7 @@ on player join:
 on join:
 	wait 3 seconds 
 	set the player's game mode to survival
+
+on join:
+    if the current bungee cord server of player is "Live2" or "Test" or "Live":
+        make console execute command "/team join CMICol %player%"

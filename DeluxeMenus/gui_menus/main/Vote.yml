@@ -1,0 +1,117 @@
+menu_title: '&f&l»&7&l» &8Vote &7&l«&f&l«'
+update_interval: 1    
+size: 26
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+
+
+###2nd ROW
+  'VoteReward':
+    material: REDSTONE
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - THORNS;1
+    amount: 8
+    priority: 0
+    slot: 13
+    view_requirement:
+      requirements:
+        Pex:
+          type: javascript
+          expression: '%betonquest_items:point.Vote.amount% >= 1'
+    display_name: '&aVoting Reward'
+    update: true
+    lore:
+    - ''
+    - '&f8x &9Enchanted Materials'
+    - ''
+    - '&6Voting Site #1: %custom_vote1%'
+    - '&6Voting Site #2: %custom_vote2%'
+    - '&6Voting Site #3: %custom_vote3%'
+    - '&6Voting Site #4: %custom_vote4%'
+    - ''
+    - '&8&l» &eClick to Claim (&6%betonquest_items:point.Vote.amount% Available&e)'
+    click_commands:
+    - "[player] VoteClaim"
+    - "[refresh]"
+
+  'VoteRewardLocked':
+    material: REDSTONE
+    hide_attributes: true
+    hide_enchantments: true
+    enchantments:
+    - THORNS;1
+    amount: 8
+    priority: 1
+    slot: 13
+    view_requirement:
+      requirements:
+        Pex:
+          type: javascript
+          expression: '%betonquest_items:point.Vote.amount% < 1'
+    display_name: '&aVoting Reward'
+    update: true
+    lore:
+    - ''
+    - '&f8x &9Enchanted Materials'
+    - ''
+    - '&6Voting Site #1: %custom_vote1%'
+    - '&6Voting Site #2: %custom_vote2%'
+    - '&6Voting Site #3: %custom_vote3%'
+    - '&6Voting Site #4: %custom_vote4%'
+    - ''
+    - '&cUnfortunately you have no rewards'
+    - '&cavalible. You can earn these rewards'
+    - '&cmultiple timers per day by &7&lVOTING&c!'
+    click_commands:
+    - "[player] vote"
+

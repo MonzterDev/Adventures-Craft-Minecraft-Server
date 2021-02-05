@@ -47,7 +47,7 @@ WITCH1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.WITCH1 1"} @ThreatTablePlayers ~onDeath
+
 
 MOOSHROOM_COW:
   Type: ZOMBIE
@@ -97,7 +97,7 @@ MOOSHROOM_COW:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.MOOSHROOM_COW 1"} @ThreatTablePlayers ~onDeath
+
 
 CROP_SPIDER:
   Type: SPIDER
@@ -146,4 +146,4 @@ CROP_SPIDER:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.CROP_SPIDER 1"} @ThreatTablePlayers ~onDeath
+

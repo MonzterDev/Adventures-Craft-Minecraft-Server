@@ -586,8 +586,8 @@ Alias:
   /removeuser: true
   #  
   # /cmi removewarp $1-
-  /removewarp: true
-  /delwarp: true
+  /removewarp: false
+  /delwarp: false
   #  
   # /cmi repair $1-
   /repair: true
@@ -684,7 +684,7 @@ Alias:
   /setspawn: true
   #  
   # /cmi setwarp $1-
-  /setwarp: true
+  /setwarp: false
   #  
   # /cmi setworth $1-
   /setworth: true

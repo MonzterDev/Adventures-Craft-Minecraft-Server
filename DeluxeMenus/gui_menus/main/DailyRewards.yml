@@ -1,5 +1,6 @@
 menu_title: '&f&l»&7&l» &8Daily Rewards &7&l«&f&l«'
 open_command: Daily
+update_interval: 1    
 size: 35
 items:
   'Decoration':
@@ -66,6 +67,7 @@ items:
   'Reward1_Unlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJkYWQ4NjhmOGQ4NjViYWEzMmQ2MTU4NjcyZDFiMTM0ZGI2MWVhNTZkMzNlZmEwYzA5ZjZiYTZmMjc2ZmYyIn19fQ==
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 1
@@ -74,7 +76,7 @@ items:
       requirements:
         Pex:
           type: javascript
-          expression: '%custom_login% >= 1'
+          expression: '%betonquest_items:point.Login.amount% >= 1'
     display_name: '&9Engram'
     lore:
     - '&fEngram'
@@ -84,7 +86,7 @@ items:
     - ''
     - '&9&lRARE ITEM'
     - ''
-    - '&7Price: &a%custom_login%/1 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/1 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -94,6 +96,7 @@ items:
   'Reward1_Locked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJkYWQ4NjhmOGQ4NjViYWEzMmQ2MTU4NjcyZDFiMTM0ZGI2MWVhNTZkMzNlZmEwYzA5ZjZiYTZmMjc2ZmYyIn19fQ==
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 1
@@ -102,7 +105,7 @@ items:
       requirements:
         Pex:
           type: javascript
-          expression: '%custom_login% < 1'
+          expression: '%betonquest_items:point.Login.amount% < 1'
     enchantments:
     - THORNS;1
     display_name: '&9Engram &c&lLOCKED'
@@ -114,13 +117,14 @@ items:
     - ''
     - '&9&lRARE ITEM'
     - ''
-    - '&7Price: &c%custom_login%/1 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/1 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
   
   'Reward2_Unlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ1ZTljNDY5ZDUzY2ZiYjE2ZjlmNmVmY2FhYzY5ZmI3YWZjYjdiODcxMzU5MzdhODIwOThkMzRhZDEwNjliYSJ9fX0=
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 4
@@ -129,7 +133,7 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% >= 2'
+          expression: '%betonquest_items:point.Login.amount% >= 2'
     display_name: '&eMagical Box'
     lore:
     - '&fLootbox'
@@ -139,7 +143,7 @@ items:
     - ''
     - '&e&lEXOTIC ITEM'
     - ''
-    - '&7Price: &a%custom_login%/2 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/2 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -149,6 +153,7 @@ items:
   'Reward2_Locked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ1ZTljNDY5ZDUzY2ZiYjE2ZjlmNmVmY2FhYzY5ZmI3YWZjYjdiODcxMzU5MzdhODIwOThkMzRhZDEwNjliYSJ9fX0=
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 4
@@ -157,7 +162,7 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% < 2'
+          expression: '%betonquest_items:point.Login.amount% < 2'
     enchantments:
     - THORNS;1
     display_name: '&eMagical Box &c&lLOCKED'
@@ -169,7 +174,7 @@ items:
     - ''
     - '&e&lEXOTIC ITEM'
     - ''
-    - '&7Price: &c%custom_login%/2 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/2 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
   
@@ -177,24 +182,25 @@ items:
   'Reward3_Unlocked':
     material: PUFFERFISH
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 16
     slot: 12
     enchantments:
-      - UNBREAKING;5
+      - THORNS;5
     view_requirement:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% >= 3'
+          expression: '%betonquest_items:point.Login.amount% >= 3'
     display_name: '&916x Enchanted Materials'
     lore:
     - '&fMaterial'
     - ''
     - '&9&lRARE ITEM'
     - ''
-    - '&7Price: &a%custom_login%/3 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/3 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -203,6 +209,7 @@ items:
   'Reward3_Locked':
     material: PUFFERFISH
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 16
@@ -211,7 +218,7 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% < 3'
+          expression: '%betonquest_items:point.Login.amount% < 3'
     enchantments:
     - THORNS;1
     display_name: '&916x Enchanted Materials &c&lLOCKED'
@@ -220,7 +227,7 @@ items:
     - ''
     - '&9&lRARE ITEM'
     - ''
-    - '&7Price: &c%custom_login%/3 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/3 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
   
@@ -228,6 +235,7 @@ items:
   'Reward4_Unlocked':
     material: SUNFLOWER
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 25
@@ -236,11 +244,11 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% >= 4'
+          expression: '%betonquest_items:point.Login.amount% >= 4'
     display_name: '&f25,000 &eCoins'
     lore:
     - ''
-    - '&7Price: &a%custom_login%/4 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/4 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -249,27 +257,29 @@ items:
   'Reward4_Locked':
     material: SUNFLOWER
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 25
     slot: 13
     enchantments:
-      - UNBREAKING;5
+      - THORNS;5
     view_requirement:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% < 4'
+          expression: '%betonquest_items:point.Login.amount% < 4'
     display_name: '&f25,000 &eCoins &c&lLOCKED'
     lore:
     - ''
-    - '&7Price: &c%custom_login%/4 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/4 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
 
   'Reward5_Unlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 1
@@ -278,14 +288,14 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% >= 5'
+          expression: '%betonquest_items:point.Login.amount% >= 5'
     display_name: '&eProfession Booster Box'
     lore:
     - '&fLootbox'
     - ''
     - '&e&lEXOTIC ITEM'
     - ''
-    - '&7Price: &a%custom_login%/5 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/5 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -294,6 +304,7 @@ items:
   'Reward5_Locked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 1
@@ -302,14 +313,14 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% < 5'
+          expression: '%betonquest_items:point.Login.amount% < 5'
     display_name: '&eProfession Booster Box &c&lLOCKED'
     lore:
     - '&fLootbox'
     - ''
     - '&e&lEXOTIC ITEM'
     - ''
-    - '&7Price: &c%custom_login%/5 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/5 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
   
@@ -317,6 +328,7 @@ items:
   'Reward6_Unlocked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWFkMzFmZDVhMThhODIwZjdkZmZkY2JkMmJjNTI5MmQyMjFhODk2NTE4ZTFjZmE4MDMxNDZlYjlhYmE3MjBiOCJ9fX0=
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 0
     amount: 1
@@ -325,7 +337,7 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% >= 6'
+          expression: '%betonquest_items:point.Login.amount% >= 6'
     display_name: '&5Engram'
     lore:
     - '&fEngram'
@@ -335,7 +347,7 @@ items:
     - ''
     - '&5&lLEGENDARY ITEM'
     - ''
-    - '&7Price: &a%custom_login%/6 &eDaily Tokens'
+    - '&7Price: &a%betonquest_items:point.Login.amount%/6 &eDaily Tokens'
     - ''
     - '&8&l» &eClick to Buy'
     click_commands:
@@ -344,6 +356,7 @@ items:
   'Reward6_Locked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWFkMzFmZDVhMThhODIwZjdkZmZkY2JkMmJjNTI5MmQyMjFhODk2NTE4ZTFjZmE4MDMxNDZlYjlhYmE3MjBiOCJ9fX0=
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 1
@@ -352,7 +365,7 @@ items:
       requirements:
         Time:
           type: javascript
-          expression: '%custom_login% < 6'
+          expression: '%betonquest_items:point.Login.amount% < 6'
     display_name: '&5Engram &c&lLOCKED'
     lore:
     - '&fEngram'
@@ -362,13 +375,14 @@ items:
     - ''
     - '&5&lLEGENDARY ITEM'
     - ''
-    - '&7Price: &c%custom_login%/6 &eDaily Tokens'
+    - '&7Price: &c%betonquest_items:point.Login.amount%/6 &eDaily Tokens'
     - ''
     - '&7You receive &e+1 Daily Token in &a%custom_time%&7!'
   
   'Reward7_Locked':
     material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFkYzA0OGE3Y2U3OGY3ZGFkNzJhMDdkYTI3ZDg1YzA5MTY4ODFlNTUyMmVlZWQxZTNkYWYyMTdhMzhjMWEifX19
     hide_attributes: true
+    update: true
     hide_enchantments: true
     priority: 1
     amount: 1

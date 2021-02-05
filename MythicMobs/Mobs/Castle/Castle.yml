@@ -58,7 +58,6 @@ cSkeleton1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.cSkeleton1 1"} @ThreatTablePlayers ~onDeath
 
 cSkeletonArcher:
   Type: SKELETON
@@ -117,7 +116,6 @@ cSkeletonArcher:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.cSkeletonArcher 1"} @ThreatTablePlayers ~onDeath
 
 AlphaSoul:
   Type: ZOMBIE
@@ -173,7 +171,6 @@ AlphaSoul:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.AlphaSoul 1"} @ThreatTablePlayers ~onDeath
 
 UndeadSummoner:
   Type: BABY_ZOMBIE_VILLAGER
@@ -228,7 +225,6 @@ UndeadSummoner:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.UndeadSummoner 1"} @ThreatTablePlayers ~onDeath
 
 UndeadGuard:
   Type: ZOMBIE
@@ -282,7 +278,6 @@ UndeadGuard:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.UndeadGuard 1"} @ThreatTablePlayers ~onDeath
 
 UndeadCaster:
   Type: SKELETON
@@ -342,7 +337,6 @@ UndeadCaster:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.UndeadCaster 1"} @ThreatTablePlayers ~onDeath
 
 UndeadWarrior:
   Type: ZOMBIE
@@ -400,7 +394,6 @@ UndeadWarrior:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.UndeadWarrior 1"} @ThreatTablePlayers ~onDeath
 
 UndeadSpider:
   Type: ZOMBIE
@@ -456,8 +449,6 @@ UndeadSpider:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.UndeadSpider 1"} @ThreatTablePlayers ~onDeath
-
 GammaBoss:
   Type: ZOMBIE
   Display: '&7[&fLVL 10&7] &cMorden The Revived'

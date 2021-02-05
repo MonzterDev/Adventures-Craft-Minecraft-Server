@@ -1,51 +1,7 @@
-on right click on anvil or trapped chest or chest or smithing table or barrel or brewing stand or command block or furnace or fence or trapdoor or gate:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        cancel event
-        if player doesn't have permission "*":
-            cancel event
-on right click on anvil or smithing table or barrel or brewing stand or command block or cartography table or shulker box or grindstone:
-    if the current bungee cord server of player is "Homes":
-        cancel event
-        if player doesn't have permission "*":
-            cancel event
-on right click on ender chest:
-    if the current bungee cord server of player is "Homes":
-        make player execute command "/bank open %player%"
-        cancel event
-
-on right click on anvil or smithing table or barrel or brewing stand or command block:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        cancel event
-
-on right click on gray shulker box:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        cancel event
-        make console execute command "/dm open SpellforgerShop %player%"
-        play sound "block.ender_chest.open" with pitch 2 to the player
-on right click on enchanting table or end portal frame:
-    if the current bungee cord server of player is "Test" or "Live2" or "Live" or "Homes":
-        if "%region at player%" is not "void in world Spawn" or "void_abyss in world Spawn" or "void_maze in world Spawn":
-            cancel event
-            make player execute command "/enchant"
-            play sound "block.enchantment_table.use" with pitch .5 to the player
-
-
-on right click on lectern:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        make console execute command "/mi stations open graveyard %player%"
-        play sound "block.composter.empty" with pitch 2 to the player
-
+#Castle death barrier
 on enter region "lava_barrier":
     if the current bungee cord server of player is "Live2" or "Test" or "Live":
         kill the player
-
-on join:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        make console execute command "/team join CMICol %player%"
-
-#on enter region "castle":
-    #if entity is a zombie or skeleton:
-     #   broadcast "test"  
 
 on death of player:
     force event-player to respawn
@@ -54,14 +10,3 @@ on damage:
     if victim is a player:
         if damage cause is lava, fire or burning:
             damage victim by (victim's health * .1)
-
-
-on region exit:
-    if player doesn't have permission "*":
-        wait 1 tick
-        set {Cords::OutofMap} to location of player
-        if "%region at player%" is "<none>":
-            execute player command "/spawn"
-            play sound "entity.villager.no" to the player
-            send "&cYou cannot escape the map! If you believe this is an error, please report these cordinates: &e%{Cords::OutofMap}% &cto an Admin on Discord!"
- 

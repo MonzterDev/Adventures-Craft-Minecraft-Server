@@ -48,7 +48,6 @@ VOID_MONITOR:
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=MONITOR_ALERT} ~onTimer:200
-  - command{c="q point <target.name> add mobs.VOID_MONITOR 1"} @ThreatTablePlayers ~onDeath
   - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.001
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
 
@@ -96,7 +95,6 @@ VOID_MEGA_BOOMER:
   - skill{s=BOOMER_DAMAGE} ~onTimer:20
   - skill{s=BOOMER_MEGA} ~onTimer:200
   - skill{s=HPBAR} @self ~onDamaged
-  - command{c="q point <target.name> add mobs.VOID_MEGA_BOOMER 1"} @ThreatTablePlayers ~onDeath
   - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0015
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0035
 
@@ -151,7 +149,6 @@ VOID_CHAMPION:
   - potion{type=SLOW;duration=100;level=10} @target ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=CHAMPION_CHOSE} @self ~onSpawn
-  - command{c="q point <target.name> add mobs.VOID_CHAMPION 1"} @ThreatTablePlayers ~onDeath
   - command{c="mi give CONSUMABLE UNSTABLE_WARP <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.004
 
@@ -191,4 +188,3 @@ VOID_PORTAL:
   - skill{s=PORTAL_TELEPORT_ACCEPT} @PIR{r=1} ~onTimer:20
   - skill{s=PORTAL_TELEPORT_DENY} @PIR{r=1} ~onTimer:20
   - teleportto{location=-197.5,12,-810.5} @self ~onSpawn
-  - command{c="q point <target.name> add mobs.VOID_PORTAL 1"} @ThreatTablePlayers ~onDeath

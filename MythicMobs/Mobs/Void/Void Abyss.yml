@@ -67,7 +67,6 @@ VOID_ENCHANTRESS:
   - skill{s=VOID_ENCHANTRESS_AOE} ~onTimer:100 =0-25%
 #Cool particles around bosses head on Spawn, also shoots some
   - skill{s=VOID_PARTICLES} ~onSpawn
-  - skill{s=V3} @target ~onShoot
 #Rewards for defeating boss  
   - skill{s=VOID_ENCHANTRESS_DEATH} ~onDeath
 
