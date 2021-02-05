@@ -57,30 +57,26 @@ AIR:
     - vanilla{type=OXEYE_DAISY}    
     - vanilla{type=POPPY}    
     - vanilla{type=DANDELION}    
-NETHER_WART:
+#SHOVEL
+WOODEN_SHOVEL:
     parent: AIR
     can-mine:
-WHEAT_SEEDS:
-    parent: AIR
+STONE_SHOVEL:
+    parent: WOODEN_SHOVEL
     can-mine:
-WHEAT:
-    parent: AIR
+IRON_SHOVEL:
+    parent: STONE_SHOVEL
     can-mine:
-POTATOES:
-    parent: AIR
+GOLDEN_SHOVEL:
+    parent: IRON_SHOVEL
     can-mine:
-SUGAR_CANE:
-    parent: AIR
-    can-mine:
-CARROTS:
-    parent: AIR
-    can-mine:
-CACTUS:
-    parent: AIR
-    can-mine:
-BEETROOTS:
-    parent: AIR
-    can-mine:
+DIAMOND_SHOVEL:
+    parent: GOLDEN_SHOVEL
+    can-mine:    
+NETHERITE_SHOVEL:
+    parent: DIAMOND_SHOVEL
+    can-mine:    
+#HOES
 WOODEN_HOE:
     parent: AIR
     can-mine:
@@ -95,6 +91,9 @@ GOLDEN_HOE:
     can-mine:
 DIAMOND_HOE:
     parent: GOLDEN_HOE
+    can-mine:    
+NETHERITE_HOE:
+    parent: DIAMOND_HOE
     can-mine:    
 #AXES    
 WOODEN_AXE:
@@ -112,7 +111,9 @@ GOLDEN_AXE:
 DIAMOND_AXE:
     parent: GOLDEN_AXE
     can-mine:    
-
+NETHERITE_AXE:
+    parent: DIAMOND_AXE
+    can-mine:    
 #PICKAXES
 WOODEN_PICKAXE:
     parent: AIR
@@ -153,5 +154,3805 @@ DIAMOND_PICKAXE:
     - vanilla{type=OBSIDIAN}
 NETHERITE_PICKAXE:
     parent: DIAMOND_PICKAXE
+    can-mine:
+#SWORDS    
+WOODEN_SWORD:
+    parent: AIR
+    can-mine:
+STONE_SWORD:
+    parent: WOODEN_SWORD
+    can-mine:
+IRON_SWORD:
+    parent: STONE_SWORD
+    can-mine:
+GOLDEN_SWORD:
+    parent: IRON_SWORD
+    can-mine:
+DIAMOND_SWORD:
+    parent: GOLDEN_SWORD
+    can-mine:    
+NETHERITE_SWORD:
+    parent: DIAMOND_SWORD
+    can-mine:    
+
+#MATERIAL
+STONE:
+    parent: AIR
+    can-mine:
+
+GRANITE:
+    parent: AIR
+    can-mine:
+
+POLISHED_GRANITE:
+    parent: AIR
+    can-mine:
+
+DIORITE:
+    parent: AIR
+    can-mine:
+
+POLISHED_DIORITE:
+    parent: AIR
+    can-mine:
+
+ANDESITE:
+    parent: AIR
+    can-mine:
+
+POLISHED_ANDESITE:
+    parent: AIR
+    can-mine:
+
+GRASS_BLOCK:
+    parent: AIR
+    can-mine:
+
+DIRT:
+    parent: AIR
+    can-mine:
+
+COARSE_DIRT:
+    parent: AIR
+    can-mine:
+
+PODZOL:
+    parent: AIR
+    can-mine:
+
+CRIMSON_NYLIUM:
+    parent: AIR
+    can-mine:
+
+WARPED_NYLIUM:
+    parent: AIR
+    can-mine:
+
+COBBLESTONE:
+    parent: AIR
+    can-mine:
+
+OAK_PLANKS:
+    parent: AIR
+    can-mine:
+
+SPRUCE_PLANKS:
+    parent: AIR
+    can-mine:
+
+BIRCH_PLANKS:
+    parent: AIR
+    can-mine:
+
+JUNGLE_PLANKS:
+    parent: AIR
+    can-mine:
+
+ACACIA_PLANKS:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_PLANKS:
+    parent: AIR
+    can-mine:
+
+CRIMSON_PLANKS:
+    parent: AIR
+    can-mine:
+
+WARPED_PLANKS:
+    parent: AIR
+    can-mine:
+
+OAK_SAPLING:
+    parent: AIR
+    can-mine:
+
+SPRUCE_SAPLING:
+    parent: AIR
+    can-mine:
+
+BIRCH_SAPLING:
+    parent: AIR
+    can-mine:
+
+JUNGLE_SAPLING:
+    parent: AIR
+    can-mine:
+
+ACACIA_SAPLING:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_SAPLING:
+    parent: AIR
+    can-mine:
+
+BEDROCK:
+    parent: AIR
+    can-mine:
+
+SAND:
+    parent: AIR
+    can-mine:
+
+RED_SAND:
+    parent: AIR
+    can-mine:
+
+GRAVEL:
+    parent: AIR
+    can-mine:
+
+GOLD_ORE:
+    parent: AIR
+    can-mine:
+
+IRON_ORE:
+    parent: AIR
+    can-mine:
+
+COAL_ORE:
+    parent: AIR
+    can-mine:
+
+NETHER_GOLD_ORE:
+    parent: AIR
+    can-mine:
+
+OAK_LOG:
+    parent: AIR
+    can-mine:
+
+SPRUCE_LOG:
+    parent: AIR
+    can-mine:
+
+BIRCH_LOG:
+    parent: AIR
+    can-mine:
+
+JUNGLE_LOG:
+    parent: AIR
+    can-mine:
+
+ACACIA_LOG:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_LOG:
+    parent: AIR
+    can-mine:
+
+CRIMSON_STEM:
+    parent: AIR
+    can-mine:
+
+WARPED_STEM:
+    parent: AIR
+    can-mine:
+
+STRIPPED_OAK_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_SPRUCE_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_BIRCH_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_JUNGLE_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_ACACIA_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_DARK_OAK_LOG:
+    parent: AIR
+    can-mine:
+
+STRIPPED_CRIMSON_STEM:
+    parent: AIR
+    can-mine:
+
+STRIPPED_WARPED_STEM:
+    parent: AIR
+    can-mine:
+
+STRIPPED_OAK_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_SPRUCE_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_BIRCH_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_JUNGLE_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_ACACIA_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_DARK_OAK_WOOD:
+    parent: AIR
+    can-mine:
+
+STRIPPED_CRIMSON_HYPHAE:
+    parent: AIR
+    can-mine:
+
+STRIPPED_WARPED_HYPHAE:
+    parent: AIR
+    can-mine:
+
+OAK_WOOD:
+    parent: AIR
+    can-mine:
+
+SPRUCE_WOOD:
+    parent: AIR
+    can-mine:
+
+BIRCH_WOOD:
+    parent: AIR
+    can-mine:
+
+JUNGLE_WOOD:
+    parent: AIR
+    can-mine:
+
+ACACIA_WOOD:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_WOOD:
+    parent: AIR
+    can-mine:
+
+CRIMSON_HYPHAE:
+    parent: AIR
+    can-mine:
+
+WARPED_HYPHAE:
+    parent: AIR
+    can-mine:
+
+OAK_LEAVES:
+    parent: AIR
+    can-mine:
+
+SPRUCE_LEAVES:
+    parent: AIR
+    can-mine:
+
+BIRCH_LEAVES:
+    parent: AIR
+    can-mine:
+
+JUNGLE_LEAVES:
+    parent: AIR
+    can-mine:
+
+ACACIA_LEAVES:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_LEAVES:
+    parent: AIR
+    can-mine:
+
+SPONGE:
+    parent: AIR
+    can-mine:
+
+WET_SPONGE:
+    parent: AIR
+    can-mine:
+
+GLASS:
+    parent: AIR
+    can-mine:
+
+LAPIS_ORE:
+    parent: AIR
+    can-mine:
+
+LAPIS_BLOCK:
+    parent: AIR
+    can-mine:
+
+DISPENSER:
+    parent: AIR
+    can-mine:
+
+SANDSTONE:
+    parent: AIR
+    can-mine:
+
+CHISELED_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+CUT_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+NOTE_BLOCK:
+    parent: AIR
+    can-mine:
+
+POWERED_RAIL:
+    parent: AIR
+    can-mine:
+
+DETECTOR_RAIL:
+    parent: AIR
+    can-mine:
+
+STICKY_PISTON:
+    parent: AIR
+    can-mine:
+
+COBWEB:
+    parent: AIR
+    can-mine:
+
+GRASS:
+    parent: AIR
+    can-mine:
+
+FERN:
+    parent: AIR
+    can-mine:
+
+DEAD_BUSH:
+    parent: AIR
+    can-mine:
+
+SEAGRASS:
+    parent: AIR
+    can-mine:
+
+SEA_PICKLE:
+    parent: AIR
+    can-mine:
+
+PISTON:
+    parent: AIR
+    can-mine:
+
+WHITE_WOOL:
+    parent: AIR
+    can-mine:
+
+ORANGE_WOOL:
+    parent: AIR
+    can-mine:
+
+MAGENTA_WOOL:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_WOOL:
+    parent: AIR
+    can-mine:
+
+YELLOW_WOOL:
+    parent: AIR
+    can-mine:
+
+LIME_WOOL:
+    parent: AIR
+    can-mine:
+
+PINK_WOOL:
+    parent: AIR
+    can-mine:
+
+GRAY_WOOL:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_WOOL:
+    parent: AIR
+    can-mine:
+
+CYAN_WOOL:
+    parent: AIR
+    can-mine:
+
+PURPLE_WOOL:
+    parent: AIR
+    can-mine:
+
+BLUE_WOOL:
+    parent: AIR
+    can-mine:
+
+BROWN_WOOL:
+    parent: AIR
+    can-mine:
+
+GREEN_WOOL:
+    parent: AIR
+    can-mine:
+
+RED_WOOL:
+    parent: AIR
+    can-mine:
+
+BLACK_WOOL:
+    parent: AIR
+    can-mine:
+
+DANDELION:
+    parent: AIR
+    can-mine:
+
+POPPY:
+    parent: AIR
+    can-mine:
+
+BLUE_ORCHID:
+    parent: AIR
+    can-mine:
+
+ALLIUM:
+    parent: AIR
+    can-mine:
+
+AZURE_BLUET:
+    parent: AIR
+    can-mine:
+
+RED_TULIP:
+    parent: AIR
+    can-mine:
+
+ORANGE_TULIP:
+    parent: AIR
+    can-mine:
+
+WHITE_TULIP:
+    parent: AIR
+    can-mine:
+
+PINK_TULIP:
+    parent: AIR
+    can-mine:
+
+OXEYE_DAISY:
+    parent: AIR
+    can-mine:
+
+CORNFLOWER:
+    parent: AIR
+    can-mine:
+
+LILY_OF_THE_VALLEY:
+    parent: AIR
+    can-mine:
+
+WITHER_ROSE:
+    parent: AIR
+    can-mine:
+
+BROWN_MUSHROOM:
+    parent: AIR
+    can-mine:
+
+RED_MUSHROOM:
+    parent: AIR
+    can-mine:
+
+CRIMSON_FUNGUS:
+    parent: AIR
+    can-mine:
+
+WARPED_FUNGUS:
+    parent: AIR
+    can-mine:
+
+CRIMSON_ROOTS:
+    parent: AIR
+    can-mine:
+
+WARPED_ROOTS:
+    parent: AIR
+    can-mine:
+
+NETHER_SPROUTS:
+    parent: AIR
+    can-mine:
+
+WEEPING_VINES:
+    parent: AIR
+    can-mine:
+
+TWISTING_VINES:
+    parent: AIR
+    can-mine:
+
+SUGAR_CANE:
+    parent: AIR
+    can-mine:
+
+KELP:
+    parent: AIR
+    can-mine:
+
+BAMBOO:
+    parent: AIR
+    can-mine:
+
+GOLD_BLOCK:
+    parent: AIR
+    can-mine:
+
+IRON_BLOCK:
+    parent: AIR
+    can-mine:
+
+OAK_SLAB:
+    parent: AIR
+    can-mine:
+
+SPRUCE_SLAB:
+    parent: AIR
+    can-mine:
+
+BIRCH_SLAB:
+    parent: AIR
+    can-mine:
+
+JUNGLE_SLAB:
+    parent: AIR
+    can-mine:
+
+ACACIA_SLAB:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_SLAB:
+    parent: AIR
+    can-mine:
+
+CRIMSON_SLAB:
+    parent: AIR
+    can-mine:
+
+WARPED_SLAB:
+    parent: AIR
+    can-mine:
+
+STONE_SLAB:
+    parent: AIR
+    can-mine:
+
+SMOOTH_STONE_SLAB:
+    parent: AIR
+    can-mine:
+
+SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+CUT_SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+PETRIFIED_OAK_SLAB:
+    parent: AIR
+    can-mine:
+
+COBBLESTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+STONE_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+QUARTZ_SLAB:
+    parent: AIR
+    can-mine:
+
+RED_SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+CUT_RED_SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+PURPUR_SLAB:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_SLAB:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+DARK_PRISMARINE_SLAB:
+    parent: AIR
+    can-mine:
+
+SMOOTH_QUARTZ:
+    parent: AIR
+    can-mine:
+
+SMOOTH_RED_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+SMOOTH_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+SMOOTH_STONE:
+    parent: AIR
+    can-mine:
+
+BRICKS:
+    parent: AIR
+    can-mine:
+
+TNT:
+    parent: AIR
+    can-mine:
+
+BOOKSHELF:
+    parent: AIR
+    can-mine:
+
+MOSSY_COBBLESTONE:
+    parent: AIR
+    can-mine:
+
+OBSIDIAN:
+    parent: AIR
+    can-mine:
+
+TORCH:
+    parent: AIR
+    can-mine:
+
+END_ROD:
+    parent: AIR
+    can-mine:
+
+CHORUS_PLANT:
+    parent: AIR
+    can-mine:
+
+CHORUS_FLOWER:
+    parent: AIR
+    can-mine:
+
+PURPUR_BLOCK:
+    parent: AIR
+    can-mine:
+
+PURPUR_PILLAR:
+    parent: AIR
+    can-mine:
+
+PURPUR_STAIRS:
+    parent: AIR
+    can-mine:
+
+SPAWNER:
+    parent: AIR
+    can-mine:
+
+OAK_STAIRS:
+    parent: AIR
+    can-mine:
+
+CHEST:
+    parent: AIR
+    can-mine:
+
+DIAMOND_ORE:
+    parent: AIR
+    can-mine:
+
+DIAMOND_BLOCK:
+    parent: AIR
+    can-mine:
+
+CRAFTING_TABLE:
+    parent: AIR
+    can-mine:
+
+FARMLAND:
+    parent: AIR
+    can-mine:
+
+FURNACE:
+    parent: AIR
+    can-mine:
+
+LADDER:
+    parent: AIR
+    can-mine:
+
+RAIL:
+    parent: AIR
+    can-mine:
+
+COBBLESTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+LEVER:
+    parent: AIR
+    can-mine:
+
+STONE_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+OAK_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+SPRUCE_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+BIRCH_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+JUNGLE_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+ACACIA_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+CRIMSON_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+WARPED_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+REDSTONE_ORE:
+    parent: AIR
+    can-mine:
+
+REDSTONE_TORCH:
+    parent: AIR
+    can-mine:
+
+SNOW:
+    parent: AIR
+    can-mine:
+
+ICE:
+    parent: AIR
+    can-mine:
+
+SNOW_BLOCK:
+    parent: AIR
+    can-mine:
+
+CACTUS:
+    parent: AIR
+    can-mine:
+
+CLAY:
+    parent: AIR
+    can-mine:
+
+JUKEBOX:
+    parent: AIR
+    can-mine:
+
+OAK_FENCE:
+    parent: AIR
+    can-mine:
+
+SPRUCE_FENCE:
+    parent: AIR
+    can-mine:
+
+BIRCH_FENCE:
+    parent: AIR
+    can-mine:
+
+JUNGLE_FENCE:
+    parent: AIR
+    can-mine:
+
+ACACIA_FENCE:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_FENCE:
+    parent: AIR
+    can-mine:
+
+CRIMSON_FENCE:
+    parent: AIR
+    can-mine:
+
+WARPED_FENCE:
+    parent: AIR
+    can-mine:
+
+PUMPKIN:
+    parent: AIR
+    can-mine:
+
+CARVED_PUMPKIN:
+    parent: AIR
+    can-mine:
+
+NETHERRACK:
+    parent: AIR
+    can-mine:
+
+SOUL_SAND:
+    parent: AIR
+    can-mine:
+
+SOUL_SOIL:
+    parent: AIR
+    can-mine:
+
+BASALT:
+    parent: AIR
+    can-mine:
+
+POLISHED_BASALT:
+    parent: AIR
+    can-mine:
+
+SOUL_TORCH:
+    parent: AIR
+    can-mine:
+
+GLOWSTONE:
+    parent: AIR
+    can-mine:
+
+JACK_O_LANTERN:
+    parent: AIR
+    can-mine:
+
+OAK_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+SPRUCE_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+BIRCH_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+JUNGLE_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+ACACIA_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+CRIMSON_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+WARPED_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+INFESTED_STONE:
+    parent: AIR
+    can-mine:
+
+INFESTED_COBBLESTONE:
+    parent: AIR
+    can-mine:
+
+INFESTED_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+INFESTED_MOSSY_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+INFESTED_CRACKED_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+INFESTED_CHISELED_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+MOSSY_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+CRACKED_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+CHISELED_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+BROWN_MUSHROOM_BLOCK:
+    parent: AIR
+    can-mine:
+
+RED_MUSHROOM_BLOCK:
+    parent: AIR
+    can-mine:
+
+MUSHROOM_STEM:
+    parent: AIR
+    can-mine:
+
+IRON_BARS:
+    parent: AIR
+    can-mine:
+
+CHAIN:
+    parent: AIR
+    can-mine:
+
+GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+MELON:
+    parent: AIR
+    can-mine:
+
+VINE:
+    parent: AIR
+    can-mine:
+
+OAK_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+SPRUCE_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+BIRCH_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+JUNGLE_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+ACACIA_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+CRIMSON_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+WARPED_FENCE_GATE:
+    parent: AIR
+    can-mine:
+
+BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+STONE_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+MYCELIUM:
+    parent: AIR
+    can-mine:
+
+LILY_PAD:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICKS:
+    parent: AIR
+    can-mine:
+
+CRACKED_NETHER_BRICKS:
+    parent: AIR
+    can-mine:
+
+CHISELED_NETHER_BRICKS:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICK_FENCE:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+ENCHANTING_TABLE:
+    parent: AIR
+    can-mine:
+
+END_PORTAL_FRAME:
+    parent: AIR
+    can-mine:
+
+END_STONE:
+    parent: AIR
+    can-mine:
+
+END_STONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+DRAGON_EGG:
+    parent: AIR
+    can-mine:
+
+REDSTONE_LAMP:
+    parent: AIR
+    can-mine:
+
+SANDSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+EMERALD_ORE:
+    parent: AIR
+    can-mine:
+
+ENDER_CHEST:
+    parent: AIR
+    can-mine:
+
+TRIPWIRE_HOOK:
+    parent: AIR
+    can-mine:
+
+EMERALD_BLOCK:
+    parent: AIR
+    can-mine:
+
+SPRUCE_STAIRS:
+    parent: AIR
+    can-mine:
+
+BIRCH_STAIRS:
+    parent: AIR
+    can-mine:
+
+JUNGLE_STAIRS:
+    parent: AIR
+    can-mine:
+
+CRIMSON_STAIRS:
+    parent: AIR
+    can-mine:
+
+WARPED_STAIRS:
+    parent: AIR
+    can-mine:
+
+COMMAND_BLOCK:
+    parent: AIR
+    can-mine:
+
+BEACON:
+    parent: AIR
+    can-mine:
+
+COBBLESTONE_WALL:
+    parent: AIR
+    can-mine:
+
+MOSSY_COBBLESTONE_WALL:
+    parent: AIR
+    can-mine:
+
+BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_WALL:
+    parent: AIR
+    can-mine:
+
+RED_SANDSTONE_WALL:
+    parent: AIR
+    can-mine:
+
+MOSSY_STONE_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+GRANITE_WALL:
+    parent: AIR
+    can-mine:
+
+STONE_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+ANDESITE_WALL:
+    parent: AIR
+    can-mine:
+
+RED_NETHER_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+SANDSTONE_WALL:
+    parent: AIR
+    can-mine:
+
+END_STONE_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+DIORITE_WALL:
+    parent: AIR
+    can-mine:
+
+BLACKSTONE_WALL:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_WALL:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_BRICK_WALL:
+    parent: AIR
+    can-mine:
+
+STONE_BUTTON:
+    parent: AIR
+    can-mine:
+
+OAK_BUTTON:
+    parent: AIR
+    can-mine:
+
+SPRUCE_BUTTON:
+    parent: AIR
+    can-mine:
+
+BIRCH_BUTTON:
+    parent: AIR
+    can-mine:
+
+JUNGLE_BUTTON:
+    parent: AIR
+    can-mine:
+
+ACACIA_BUTTON:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_BUTTON:
+    parent: AIR
+    can-mine:
+
+CRIMSON_BUTTON:
+    parent: AIR
+    can-mine:
+
+WARPED_BUTTON:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_BUTTON:
+    parent: AIR
+    can-mine:
+
+ANVIL:
+    parent: AIR
+    can-mine:
+
+CHIPPED_ANVIL:
+    parent: AIR
+    can-mine:
+
+DAMAGED_ANVIL:
+    parent: AIR
+    can-mine:
+
+TRAPPED_CHEST:
+    parent: AIR
+    can-mine:
+
+LIGHT_WEIGHTED_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+HEAVY_WEIGHTED_PRESSURE_PLATE:
+    parent: AIR
+    can-mine:
+
+DAYLIGHT_DETECTOR:
+    parent: AIR
+    can-mine:
+
+REDSTONE_BLOCK:
+    parent: AIR
+    can-mine:
+
+NETHER_QUARTZ_ORE:
+    parent: AIR
+    can-mine:
+
+HOPPER:
+    parent: AIR
+    can-mine:
+
+CHISELED_QUARTZ_BLOCK:
+    parent: AIR
+    can-mine:
+
+QUARTZ_BLOCK:
+    parent: AIR
+    can-mine:
+
+QUARTZ_BRICKS:
+    parent: AIR
+    can-mine:
+
+QUARTZ_PILLAR:
+    parent: AIR
+    can-mine:
+
+QUARTZ_STAIRS:
+    parent: AIR
+    can-mine:
+
+ACTIVATOR_RAIL:
+    parent: AIR
+    can-mine:
+
+DROPPER:
+    parent: AIR
+    can-mine:
+
+WHITE_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+ORANGE_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+MAGENTA_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+YELLOW_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIME_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+PINK_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+GRAY_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+CYAN_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+PURPLE_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BLUE_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BROWN_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+GREEN_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+RED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BLACK_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BARRIER:
+    parent: AIR
+    can-mine:
+
+IRON_TRAPDOOR:
+    parent: AIR
+    can-mine:
+
+HAY_BLOCK:
+    parent: AIR
+    can-mine:
+
+WHITE_CARPET:
+    parent: AIR
+    can-mine:
+
+ORANGE_CARPET:
+    parent: AIR
+    can-mine:
+
+MAGENTA_CARPET:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_CARPET:
+    parent: AIR
+    can-mine:
+
+YELLOW_CARPET:
+    parent: AIR
+    can-mine:
+
+LIME_CARPET:
+    parent: AIR
+    can-mine:
+
+PINK_CARPET:
+    parent: AIR
+    can-mine:
+
+GRAY_CARPET:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_CARPET:
+    parent: AIR
+    can-mine:
+
+CYAN_CARPET:
+    parent: AIR
+    can-mine:
+
+PURPLE_CARPET:
+    parent: AIR
+    can-mine:
+
+BLUE_CARPET:
+    parent: AIR
+    can-mine:
+
+BROWN_CARPET:
+    parent: AIR
+    can-mine:
+
+GREEN_CARPET:
+    parent: AIR
+    can-mine:
+
+RED_CARPET:
+    parent: AIR
+    can-mine:
+
+BLACK_CARPET:
+    parent: AIR
+    can-mine:
+
+TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+COAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+PACKED_ICE:
+    parent: AIR
+    can-mine:
+
+ACACIA_STAIRS:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_STAIRS:
+    parent: AIR
+    can-mine:
+
+SLIME_BLOCK:
+    parent: AIR
+    can-mine:
+
+GRASS_PATH:
+    parent: AIR
+    can-mine:
+
+SUNFLOWER:
+    parent: AIR
+    can-mine:
+
+LILAC:
+    parent: AIR
+    can-mine:
+
+ROSE_BUSH:
+    parent: AIR
+    can-mine:
+
+PEONY:
+    parent: AIR
+    can-mine:
+
+TALL_GRASS:
+    parent: AIR
+    can-mine:
+
+LARGE_FERN:
+    parent: AIR
+    can-mine:
+
+WHITE_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+ORANGE_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+MAGENTA_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+YELLOW_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+LIME_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+PINK_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+GRAY_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+CYAN_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+PURPLE_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+BLUE_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+BROWN_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+GREEN_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+RED_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+BLACK_STAINED_GLASS:
+    parent: AIR
+    can-mine:
+
+WHITE_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+ORANGE_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+MAGENTA_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+YELLOW_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+LIME_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+PINK_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+GRAY_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+CYAN_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+PURPLE_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+BLUE_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+BROWN_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+GREEN_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+RED_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+BLACK_STAINED_GLASS_PANE:
+    parent: AIR
+    can-mine:
+
+PRISMARINE:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_BRICKS:
+    parent: AIR
+    can-mine:
+
+DARK_PRISMARINE:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_STAIRS:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+DARK_PRISMARINE_STAIRS:
+    parent: AIR
+    can-mine:
+
+SEA_LANTERN:
+    parent: AIR
+    can-mine:
+
+RED_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+CHISELED_RED_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+CUT_RED_SANDSTONE:
+    parent: AIR
+    can-mine:
+
+RED_SANDSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+REPEATING_COMMAND_BLOCK:
+    parent: AIR
+    can-mine:
+
+CHAIN_COMMAND_BLOCK:
+    parent: AIR
+    can-mine:
+
+MAGMA_BLOCK:
+    parent: AIR
+    can-mine:
+
+NETHER_WART_BLOCK:
+    parent: AIR
+    can-mine:
+
+WARPED_WART_BLOCK:
+    parent: AIR
+    can-mine:
+
+RED_NETHER_BRICKS:
+    parent: AIR
+    can-mine:
+
+BONE_BLOCK:
+    parent: AIR
+    can-mine:
+
+STRUCTURE_VOID:
+    parent: AIR
+    can-mine:
+
+OBSERVER:
+    parent: AIR
+    can-mine:
+
+SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+WHITE_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+ORANGE_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+MAGENTA_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+YELLOW_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+LIME_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+PINK_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+GRAY_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+CYAN_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+PURPLE_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+BLUE_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+BROWN_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+GREEN_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+RED_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+BLACK_SHULKER_BOX:
+    parent: AIR
+    can-mine:
+
+WHITE_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+ORANGE_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+MAGENTA_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+YELLOW_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIME_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+PINK_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+GRAY_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+CYAN_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+PURPLE_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BLUE_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BROWN_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+GREEN_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+RED_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+BLACK_GLAZED_TERRACOTTA:
+    parent: AIR
+    can-mine:
+
+WHITE_CONCRETE:
+    parent: AIR
+    can-mine:
+
+ORANGE_CONCRETE:
+    parent: AIR
+    can-mine:
+
+MAGENTA_CONCRETE:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_CONCRETE:
+    parent: AIR
+    can-mine:
+
+YELLOW_CONCRETE:
+    parent: AIR
+    can-mine:
+
+LIME_CONCRETE:
+    parent: AIR
+    can-mine:
+
+PINK_CONCRETE:
+    parent: AIR
+    can-mine:
+
+GRAY_CONCRETE:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_CONCRETE:
+    parent: AIR
+    can-mine:
+
+CYAN_CONCRETE:
+    parent: AIR
+    can-mine:
+
+PURPLE_CONCRETE:
+    parent: AIR
+    can-mine:
+
+BLUE_CONCRETE:
+    parent: AIR
+    can-mine:
+
+BROWN_CONCRETE:
+    parent: AIR
+    can-mine:
+
+GREEN_CONCRETE:
+    parent: AIR
+    can-mine:
+
+RED_CONCRETE:
+    parent: AIR
+    can-mine:
+
+BLACK_CONCRETE:
+    parent: AIR
+    can-mine:
+
+WHITE_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+ORANGE_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+MAGENTA_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+YELLOW_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+LIME_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+PINK_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+GRAY_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+CYAN_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+PURPLE_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+BLUE_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+BROWN_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+GREEN_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+RED_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+BLACK_CONCRETE_POWDER:
+    parent: AIR
+    can-mine:
+
+TURTLE_EGG:
+    parent: AIR
+    can-mine:
+
+DEAD_TUBE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+DEAD_BRAIN_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+DEAD_BUBBLE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+DEAD_FIRE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+DEAD_HORN_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+TUBE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+BRAIN_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+BUBBLE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+FIRE_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+HORN_CORAL_BLOCK:
+    parent: AIR
+    can-mine:
+
+TUBE_CORAL:
+    parent: AIR
+    can-mine:
+
+BRAIN_CORAL:
+    parent: AIR
+    can-mine:
+
+BUBBLE_CORAL:
+    parent: AIR
+    can-mine:
+
+FIRE_CORAL:
+    parent: AIR
+    can-mine:
+
+HORN_CORAL:
+    parent: AIR
+    can-mine:
+
+DEAD_BRAIN_CORAL:
+    parent: AIR
+    can-mine:
+
+DEAD_BUBBLE_CORAL:
+    parent: AIR
+    can-mine:
+
+DEAD_FIRE_CORAL:
+    parent: AIR
+    can-mine:
+
+DEAD_HORN_CORAL:
+    parent: AIR
+    can-mine:
+
+DEAD_TUBE_CORAL:
+    parent: AIR
+    can-mine:
+
+TUBE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+BRAIN_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+BUBBLE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+FIRE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+HORN_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+DEAD_TUBE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+DEAD_BRAIN_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+DEAD_BUBBLE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+DEAD_FIRE_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+DEAD_HORN_CORAL_FAN:
+    parent: AIR
+    can-mine:
+
+BLUE_ICE:
+    parent: AIR
+    can-mine:
+
+CONDUIT:
+    parent: AIR
+    can-mine:
+
+POLISHED_GRANITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+SMOOTH_RED_SANDSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+MOSSY_STONE_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+POLISHED_DIORITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+MOSSY_COBBLESTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+END_STONE_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+STONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+SMOOTH_SANDSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+SMOOTH_QUARTZ_STAIRS:
+    parent: AIR
+    can-mine:
+
+GRANITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+ANDESITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+RED_NETHER_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+POLISHED_ANDESITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+DIORITE_STAIRS:
+    parent: AIR
+    can-mine:
+
+POLISHED_GRANITE_SLAB:
+    parent: AIR
+    can-mine:
+
+SMOOTH_RED_SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+MOSSY_STONE_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+POLISHED_DIORITE_SLAB:
+    parent: AIR
+    can-mine:
+
+MOSSY_COBBLESTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+END_STONE_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+SMOOTH_SANDSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+SMOOTH_QUARTZ_SLAB:
+    parent: AIR
+    can-mine:
+
+GRANITE_SLAB:
+    parent: AIR
+    can-mine:
+
+ANDESITE_SLAB:
+    parent: AIR
+    can-mine:
+
+RED_NETHER_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+POLISHED_ANDESITE_SLAB:
+    parent: AIR
+    can-mine:
+
+DIORITE_SLAB:
+    parent: AIR
+    can-mine:
+
+SCAFFOLDING:
+    parent: AIR
+    can-mine:
+
+IRON_DOOR:
+    parent: AIR
+    can-mine:
+
+OAK_DOOR:
+    parent: AIR
+    can-mine:
+
+SPRUCE_DOOR:
+    parent: AIR
+    can-mine:
+
+BIRCH_DOOR:
+    parent: AIR
+    can-mine:
+
+JUNGLE_DOOR:
+    parent: AIR
+    can-mine:
+
+ACACIA_DOOR:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_DOOR:
+    parent: AIR
+    can-mine:
+
+CRIMSON_DOOR:
+    parent: AIR
+    can-mine:
+
+WARPED_DOOR:
+    parent: AIR
+    can-mine:
+
+REPEATER:
+    parent: AIR
+    can-mine:
+
+COMPARATOR:
+    parent: AIR
+    can-mine:
+
+STRUCTURE_BLOCK:
+    parent: AIR
+    can-mine:
+
+JIGSAW:
+    parent: AIR
+    can-mine:
+
+TURTLE_HELMET:
+    parent: AIR
+    can-mine:
+
+SCUTE:
+    parent: AIR
+    can-mine:
+
+FLINT_AND_STEEL:
+    parent: AIR
+    can-mine:
+
+APPLE:
+    parent: AIR
+    can-mine:
+
+BOW:
+    parent: AIR
+    can-mine:
+
+ARROW:
+    parent: AIR
+    can-mine:
+
+COAL:
+    parent: AIR
+    can-mine:
+
+CHARCOAL:
+    parent: AIR
+    can-mine:
+
+DIAMOND:
+    parent: AIR
+    can-mine:
+
+IRON_INGOT:
+    parent: AIR
+    can-mine:
+
+GOLD_INGOT:
+    parent: AIR
+    can-mine:
+
+NETHERITE_INGOT:
+    parent: AIR
+    can-mine:
+
+NETHERITE_SCRAP:
+    parent: AIR
+    can-mine:
+
+STICK:
+    parent: AIR
+    can-mine:
+
+BOWL:
+    parent: AIR
+    can-mine:
+
+MUSHROOM_STEW:
+    parent: AIR
+    can-mine:
+
+STRING:
+    parent: AIR
+    can-mine:
+
+FEATHER:
+    parent: AIR
+    can-mine:
+
+GUNPOWDER:
+    parent: AIR
+    can-mine:
+
+WHEAT_SEEDS:
+    parent: AIR
+    can-mine:
+
+WHEAT:
+    parent: AIR
+    can-mine:
+
+BREAD:
+    parent: AIR
+    can-mine:
+
+LEATHER_HELMET:
+    parent: AIR
+    can-mine:
+
+LEATHER_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+LEATHER_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+LEATHER_BOOTS:
+    parent: AIR
+    can-mine:
+
+CHAINMAIL_HELMET:
+    parent: AIR
+    can-mine:
+
+CHAINMAIL_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+CHAINMAIL_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+CHAINMAIL_BOOTS:
+    parent: AIR
+    can-mine:
+
+IRON_HELMET:
+    parent: AIR
+    can-mine:
+
+IRON_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+IRON_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+IRON_BOOTS:
+    parent: AIR
+    can-mine:
+
+DIAMOND_HELMET:
+    parent: AIR
+    can-mine:
+
+DIAMOND_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+DIAMOND_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+DIAMOND_BOOTS:
+    parent: AIR
+    can-mine:
+
+GOLDEN_HELMET:
+    parent: AIR
+    can-mine:
+
+GOLDEN_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+GOLDEN_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+GOLDEN_BOOTS:
+    parent: AIR
+    can-mine:
+
+NETHERITE_HELMET:
+    parent: AIR
+    can-mine:
+
+NETHERITE_CHESTPLATE:
+    parent: AIR
+    can-mine:
+
+NETHERITE_LEGGINGS:
+    parent: AIR
+    can-mine:
+
+NETHERITE_BOOTS:
+    parent: AIR
+    can-mine:
+
+FLINT:
+    parent: AIR
+    can-mine:
+
+PORKCHOP:
+    parent: AIR
+    can-mine:
+
+COOKED_PORKCHOP:
+    parent: AIR
+    can-mine:
+
+PAINTING:
+    parent: AIR
+    can-mine:
+
+GOLDEN_APPLE:
+    parent: AIR
+    can-mine:
+
+ENCHANTED_GOLDEN_APPLE:
+    parent: AIR
+    can-mine:
+
+OAK_SIGN:
+    parent: AIR
+    can-mine:
+
+SPRUCE_SIGN:
+    parent: AIR
+    can-mine:
+
+BIRCH_SIGN:
+    parent: AIR
+    can-mine:
+
+JUNGLE_SIGN:
+    parent: AIR
+    can-mine:
+
+ACACIA_SIGN:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_SIGN:
+    parent: AIR
+    can-mine:
+
+CRIMSON_SIGN:
+    parent: AIR
+    can-mine:
+
+WARPED_SIGN:
+    parent: AIR
+    can-mine:
+
+BUCKET:
+    parent: AIR
+    can-mine:
+
+WATER_BUCKET:
+    parent: AIR
+    can-mine:
+
+LAVA_BUCKET:
+    parent: AIR
+    can-mine:
+
+MINECART:
+    parent: AIR
+    can-mine:
+
+SADDLE:
+    parent: AIR
+    can-mine:
+
+REDSTONE:
+    parent: AIR
+    can-mine:
+
+SNOWBALL:
+    parent: AIR
+    can-mine:
+
+OAK_BOAT:
+    parent: AIR
+    can-mine:
+
+LEATHER:
+    parent: AIR
+    can-mine:
+
+MILK_BUCKET:
+    parent: AIR
+    can-mine:
+
+PUFFERFISH_BUCKET:
+    parent: AIR
+    can-mine:
+
+SALMON_BUCKET:
+    parent: AIR
+    can-mine:
+
+COD_BUCKET:
+    parent: AIR
+    can-mine:
+
+TROPICAL_FISH_BUCKET:
+    parent: AIR
+    can-mine:
+
+BRICK:
+    parent: AIR
+    can-mine:
+
+CLAY_BALL:
+    parent: AIR
+    can-mine:
+
+DRIED_KELP_BLOCK:
+    parent: AIR
+    can-mine:
+
+PAPER:
+    parent: AIR
+    can-mine:
+
+BOOK:
+    parent: AIR
+    can-mine:
+
+SLIME_BALL:
+    parent: AIR
+    can-mine:
+
+CHEST_MINECART:
+    parent: AIR
+    can-mine:
+
+FURNACE_MINECART:
+    parent: AIR
+    can-mine:
+
+EGG:
+    parent: AIR
+    can-mine:
+
+COMPASS:
+    parent: AIR
+    can-mine:
+
+FISHING_ROD:
+    parent: AIR
+    can-mine:
+
+CLOCK:
+    parent: AIR
+    can-mine:
+
+GLOWSTONE_DUST:
+    parent: AIR
+    can-mine:
+
+COD:
+    parent: AIR
+    can-mine:
+
+SALMON:
+    parent: AIR
+    can-mine:
+
+TROPICAL_FISH:
+    parent: AIR
+    can-mine:
+
+PUFFERFISH:
+    parent: AIR
+    can-mine:
+
+COOKED_COD:
+    parent: AIR
+    can-mine:
+
+COOKED_SALMON:
+    parent: AIR
+    can-mine:
+
+INK_SAC:
+    parent: AIR
+    can-mine:
+
+COCOA_BEANS:
+    parent: AIR
+    can-mine:
+
+LAPIS_LAZULI:
+    parent: AIR
+    can-mine:
+
+WHITE_DYE:
+    parent: AIR
+    can-mine:
+
+ORANGE_DYE:
+    parent: AIR
+    can-mine:
+
+MAGENTA_DYE:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_DYE:
+    parent: AIR
+    can-mine:
+
+YELLOW_DYE:
+    parent: AIR
+    can-mine:
+
+LIME_DYE:
+    parent: AIR
+    can-mine:
+
+PINK_DYE:
+    parent: AIR
+    can-mine:
+
+GRAY_DYE:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_DYE:
+    parent: AIR
+    can-mine:
+
+CYAN_DYE:
+    parent: AIR
+    can-mine:
+
+PURPLE_DYE:
+    parent: AIR
+    can-mine:
+
+BLUE_DYE:
+    parent: AIR
+    can-mine:
+
+BROWN_DYE:
+    parent: AIR
+    can-mine:
+
+GREEN_DYE:
+    parent: AIR
+    can-mine:
+
+RED_DYE:
+    parent: AIR
+    can-mine:
+
+BLACK_DYE:
+    parent: AIR
+    can-mine:
+
+BONE_MEAL:
+    parent: AIR
+    can-mine:
+
+BONE:
+    parent: AIR
+    can-mine:
+
+SUGAR:
+    parent: AIR
+    can-mine:
+
+CAKE:
+    parent: AIR
+    can-mine:
+
+WHITE_BED:
+    parent: AIR
+    can-mine:
+
+ORANGE_BED:
+    parent: AIR
+    can-mine:
+
+MAGENTA_BED:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_BED:
+    parent: AIR
+    can-mine:
+
+YELLOW_BED:
+    parent: AIR
+    can-mine:
+
+LIME_BED:
+    parent: AIR
+    can-mine:
+
+PINK_BED:
+    parent: AIR
+    can-mine:
+
+GRAY_BED:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_BED:
+    parent: AIR
+    can-mine:
+
+CYAN_BED:
+    parent: AIR
+    can-mine:
+
+PURPLE_BED:
+    parent: AIR
+    can-mine:
+
+BLUE_BED:
+    parent: AIR
+    can-mine:
+
+BROWN_BED:
+    parent: AIR
+    can-mine:
+
+GREEN_BED:
+    parent: AIR
+    can-mine:
+
+RED_BED:
+    parent: AIR
+    can-mine:
+
+BLACK_BED:
+    parent: AIR
+    can-mine:
+
+COOKIE:
+    parent: AIR
+    can-mine:
+
+FILLED_MAP:
+    parent: AIR
+    can-mine:
+
+SHEARS:
+    parent: AIR
+    can-mine:
+
+MELON_SLICE:
+    parent: AIR
+    can-mine:
+
+DRIED_KELP:
+    parent: AIR
+    can-mine:
+
+PUMPKIN_SEEDS:
+    parent: AIR
+    can-mine:
+
+MELON_SEEDS:
+    parent: AIR
+    can-mine:
+
+BEEF:
+    parent: AIR
+    can-mine:
+
+COOKED_BEEF:
+    parent: AIR
+    can-mine:
+
+CHICKEN:
+    parent: AIR
+    can-mine:
+
+COOKED_CHICKEN:
+    parent: AIR
+    can-mine:
+
+ROTTEN_FLESH:
+    parent: AIR
+    can-mine:
+
+ENDER_PEARL:
+    parent: AIR
+    can-mine:
+
+BLAZE_ROD:
+    parent: AIR
+    can-mine:
+
+GHAST_TEAR:
+    parent: AIR
+    can-mine:
+
+GOLD_NUGGET:
+    parent: AIR
+    can-mine:
+
+NETHER_WART:
+    parent: AIR
+    can-mine:
+
+POTION:
+    parent: AIR
+    can-mine:
+
+GLASS_BOTTLE:
+    parent: AIR
+    can-mine:
+
+SPIDER_EYE:
+    parent: AIR
+    can-mine:
+
+FERMENTED_SPIDER_EYE:
+    parent: AIR
+    can-mine:
+
+BLAZE_POWDER:
+    parent: AIR
+    can-mine:
+
+MAGMA_CREAM:
+    parent: AIR
+    can-mine:
+
+BREWING_STAND:
+    parent: AIR
+    can-mine:
+
+CAULDRON:
+    parent: AIR
+    can-mine:
+
+ENDER_EYE:
+    parent: AIR
+    can-mine:
+
+GLISTERING_MELON_SLICE:
+    parent: AIR
+    can-mine:
+
+BAT_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+BEE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+BLAZE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+CAT_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+CAVE_SPIDER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+CHICKEN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+COD_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+COW_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+CREEPER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+DOLPHIN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+DONKEY_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+DROWNED_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ELDER_GUARDIAN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ENDERMAN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ENDERMITE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+EVOKER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+FOX_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+GHAST_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+GUARDIAN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+HOGLIN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+HORSE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+HUSK_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+LLAMA_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+MAGMA_CUBE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+MOOSHROOM_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+MULE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+OCELOT_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PANDA_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PARROT_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PHANTOM_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PIG_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PIGLIN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PIGLIN_BRUTE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PILLAGER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+POLAR_BEAR_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+PUFFERFISH_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+RABBIT_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+RAVAGER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SALMON_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SHEEP_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SHULKER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SILVERFISH_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SKELETON_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SKELETON_HORSE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SLIME_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SPIDER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+SQUID_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+STRAY_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+STRIDER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+TRADER_LLAMA_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+TROPICAL_FISH_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+TURTLE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+VEX_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+VILLAGER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+VINDICATOR_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+WANDERING_TRADER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+WITCH_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+WITHER_SKELETON_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+WOLF_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ZOGLIN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ZOMBIE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ZOMBIE_HORSE_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ZOMBIE_VILLAGER_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+ZOMBIFIED_PIGLIN_SPAWN_EGG:
+    parent: AIR
+    can-mine:
+
+EXPERIENCE_BOTTLE:
+    parent: AIR
+    can-mine:
+
+FIRE_CHARGE:
+    parent: AIR
+    can-mine:
+
+WRITABLE_BOOK:
+    parent: AIR
+    can-mine:
+
+WRITTEN_BOOK:
+    parent: AIR
+    can-mine:
+
+EMERALD:
+    parent: AIR
+    can-mine:
+
+ITEM_FRAME:
+    parent: AIR
+    can-mine:
+
+FLOWER_POT:
+    parent: AIR
+    can-mine:
+
+CARROT:
+    parent: AIR
+    can-mine:
+
+POTATO:
+    parent: AIR
+    can-mine:
+
+BAKED_POTATO:
+    parent: AIR
+    can-mine:
+
+POISONOUS_POTATO:
+    parent: AIR
+    can-mine:
+
+MAP:
+    parent: AIR
+    can-mine:
+
+GOLDEN_CARROT:
+    parent: AIR
+    can-mine:
+
+SKELETON_SKULL:
+    parent: AIR
+    can-mine:
+
+WITHER_SKELETON_SKULL:
+    parent: AIR
+    can-mine:
+
+PLAYER_HEAD:
+    parent: AIR
+    can-mine:
+
+ZOMBIE_HEAD:
+    parent: AIR
+    can-mine:
+
+CREEPER_HEAD:
+    parent: AIR
+    can-mine:
+
+DRAGON_HEAD:
+    parent: AIR
+    can-mine:
+
+CARROT_ON_A_STICK:
+    parent: AIR
+    can-mine:
+
+WARPED_FUNGUS_ON_A_STICK:
+    parent: AIR
+    can-mine:
+
+NETHER_STAR:
+    parent: AIR
+    can-mine:
+
+PUMPKIN_PIE:
+    parent: AIR
+    can-mine:
+
+FIREWORK_ROCKET:
+    parent: AIR
+    can-mine:
+
+FIREWORK_STAR:
+    parent: AIR
+    can-mine:
+
+ENCHANTED_BOOK:
+    parent: AIR
+    can-mine:
+
+NETHER_BRICK:
+    parent: AIR
+    can-mine:
+
+QUARTZ:
+    parent: AIR
+    can-mine:
+
+TNT_MINECART:
+    parent: AIR
+    can-mine:
+
+HOPPER_MINECART:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_SHARD:
+    parent: AIR
+    can-mine:
+
+PRISMARINE_CRYSTALS:
+    parent: AIR
+    can-mine:
+
+RABBIT:
+    parent: AIR
+    can-mine:
+
+COOKED_RABBIT:
+    parent: AIR
+    can-mine:
+
+RABBIT_STEW:
+    parent: AIR
+    can-mine:
+
+RABBIT_FOOT:
+    parent: AIR
+    can-mine:
+
+RABBIT_HIDE:
+    parent: AIR
+    can-mine:
+
+ARMOR_STAND:
+    parent: AIR
+    can-mine:
+
+IRON_HORSE_ARMOR:
+    parent: AIR
+    can-mine:
+
+GOLDEN_HORSE_ARMOR:
+    parent: AIR
+    can-mine:
+
+DIAMOND_HORSE_ARMOR:
+    parent: AIR
+    can-mine:
+
+LEATHER_HORSE_ARMOR:
+    parent: AIR
+    can-mine:
+
+LEAD:
+    parent: AIR
+    can-mine:
+
+NAME_TAG:
+    parent: AIR
+    can-mine:
+
+COMMAND_BLOCK_MINECART:
+    parent: AIR
+    can-mine:
+
+MUTTON:
+    parent: AIR
+    can-mine:
+
+COOKED_MUTTON:
+    parent: AIR
+    can-mine:
+
+WHITE_BANNER:
+    parent: AIR
+    can-mine:
+
+ORANGE_BANNER:
+    parent: AIR
+    can-mine:
+
+MAGENTA_BANNER:
+    parent: AIR
+    can-mine:
+
+LIGHT_BLUE_BANNER:
+    parent: AIR
+    can-mine:
+
+YELLOW_BANNER:
+    parent: AIR
+    can-mine:
+
+LIME_BANNER:
+    parent: AIR
+    can-mine:
+
+PINK_BANNER:
+    parent: AIR
+    can-mine:
+
+GRAY_BANNER:
+    parent: AIR
+    can-mine:
+
+LIGHT_GRAY_BANNER:
+    parent: AIR
+    can-mine:
+
+CYAN_BANNER:
+    parent: AIR
+    can-mine:
+
+PURPLE_BANNER:
+    parent: AIR
+    can-mine:
+
+BLUE_BANNER:
+    parent: AIR
+    can-mine:
+
+BROWN_BANNER:
+    parent: AIR
+    can-mine:
+
+GREEN_BANNER:
+    parent: AIR
+    can-mine:
+
+RED_BANNER:
+    parent: AIR
+    can-mine:
+
+BLACK_BANNER:
+    parent: AIR
+    can-mine:
+
+END_CRYSTAL:
+    parent: AIR
+    can-mine:
+
+CHORUS_FRUIT:
+    parent: AIR
+    can-mine:
+
+POPPED_CHORUS_FRUIT:
+    parent: AIR
+    can-mine:
+
+BEETROOT:
+    parent: AIR
+    can-mine:
+
+BEETROOT_SEEDS:
+    parent: AIR
+    can-mine:
+
+BEETROOT_SOUP:
+    parent: AIR
+    can-mine:
+
+DRAGON_BREATH:
+    parent: AIR
+    can-mine:
+
+SPLASH_POTION:
+    parent: AIR
+    can-mine:
+
+SPECTRAL_ARROW:
+    parent: AIR
+    can-mine:
+
+TIPPED_ARROW:
+    parent: AIR
+    can-mine:
+
+LINGERING_POTION:
+    parent: AIR
+    can-mine:
+
+SHIELD:
+    parent: AIR
+    can-mine:
+
+ELYTRA:
+    parent: AIR
+    can-mine:
+
+SPRUCE_BOAT:
+    parent: AIR
+    can-mine:
+
+BIRCH_BOAT:
+    parent: AIR
+    can-mine:
+
+JUNGLE_BOAT:
+    parent: AIR
+    can-mine:
+
+ACACIA_BOAT:
+    parent: AIR
+    can-mine:
+
+DARK_OAK_BOAT:
+    parent: AIR
+    can-mine:
+
+TOTEM_OF_UNDYING:
+    parent: AIR
+    can-mine:
+
+SHULKER_SHELL:
+    parent: AIR
+    can-mine:
+
+IRON_NUGGET:
+    parent: AIR
+    can-mine:
+
+KNOWLEDGE_BOOK:
+    parent: AIR
+    can-mine:
+
+DEBUG_STICK:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_13:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_CAT:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_BLOCKS:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_CHIRP:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_FAR:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_MALL:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_MELLOHI:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_STAL:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_STRAD:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_WARD:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_11:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_WAIT:
+    parent: AIR
+    can-mine:
+
+MUSIC_DISC_PIGSTEP:
+    parent: AIR
+    can-mine:
+
+TRIDENT:
+    parent: AIR
+    can-mine:
+
+PHANTOM_MEMBRANE:
+    parent: AIR
+    can-mine:
+
+NAUTILUS_SHELL:
+    parent: AIR
+    can-mine:
+
+HEART_OF_THE_SEA:
+    parent: AIR
+    can-mine:
+
+CROSSBOW:
+    parent: AIR
+    can-mine:
+
+SUSPICIOUS_STEW:
+    parent: AIR
+    can-mine:
+
+LOOM:
+    parent: AIR
+    can-mine:
+
+FLOWER_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+CREEPER_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+SKULL_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+MOJANG_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+GLOBE_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+PIGLIN_BANNER_PATTERN:
+    parent: AIR
+    can-mine:
+
+COMPOSTER:
+    parent: AIR
+    can-mine:
+
+BARREL:
+    parent: AIR
+    can-mine:
+
+SMOKER:
+    parent: AIR
+    can-mine:
+
+BLAST_FURNACE:
+    parent: AIR
+    can-mine:
+
+CARTOGRAPHY_TABLE:
+    parent: AIR
+    can-mine:
+
+FLETCHING_TABLE:
+    parent: AIR
+    can-mine:
+
+GRINDSTONE:
+    parent: AIR
+    can-mine:
+
+LECTERN:
+    parent: AIR
+    can-mine:
+
+SMITHING_TABLE:
+    parent: AIR
+    can-mine:
+
+STONECUTTER:
+    parent: AIR
+    can-mine:
+
+BELL:
+    parent: AIR
+    can-mine:
+
+LANTERN:
+    parent: AIR
+    can-mine:
+
+SOUL_LANTERN:
+    parent: AIR
+    can-mine:
+
+SWEET_BERRIES:
+    parent: AIR
+    can-mine:
+
+CAMPFIRE:
+    parent: AIR
+    can-mine:
+
+SOUL_CAMPFIRE:
+    parent: AIR
+    can-mine:
+
+SHROOMLIGHT:
+    parent: AIR
+    can-mine:
+
+HONEYCOMB:
+    parent: AIR
+    can-mine:
+
+BEE_NEST:
+    parent: AIR
+    can-mine:
+
+BEEHIVE:
+    parent: AIR
+    can-mine:
+
+HONEY_BOTTLE:
+    parent: AIR
+    can-mine:
+
+HONEY_BLOCK:
+    parent: AIR
+    can-mine:
+
+HONEYCOMB_BLOCK:
+    parent: AIR
+    can-mine:
+
+LODESTONE:
+    parent: AIR
+    can-mine:
+
+NETHERITE_BLOCK:
+    parent: AIR
+    can-mine:
+
+ANCIENT_DEBRIS:
+    parent: AIR
+    can-mine:
+
+TARGET:
+    parent: AIR
+    can-mine:
+
+CRYING_OBSIDIAN:
+    parent: AIR
+    can-mine:
+
+BLACKSTONE:
+    parent: AIR
+    can-mine:
+
+BLACKSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+BLACKSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+GILDED_BLACKSTONE:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_SLAB:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_STAIRS:
+    parent: AIR
+    can-mine:
+
+CHISELED_POLISHED_BLACKSTONE:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_BRICK_SLAB:
+    parent: AIR
+    can-mine:
+
+POLISHED_BLACKSTONE_BRICK_STAIRS:
+    parent: AIR
+    can-mine:
+
+CRACKED_POLISHED_BLACKSTONE_BRICKS:
+    parent: AIR
+    can-mine:
+
+RESPAWN_ANCHOR:
+    parent: AIR
     can-mine:
 

@@ -49,7 +49,7 @@ ANGRY_BATS:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.ANGRY_BATS 1"} @ThreatTablePlayers ~onDeath
+
   
 MINE_SPIDER:
   Type: CAVE_SPIDER
@@ -102,7 +102,7 @@ MINE_SPIDER:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.MINE_SPIDER 1"} @ThreatTablePlayers ~onDeath
+
 
 #################################################################################REDSTONE / lapis_lazuli MINE#################################################################################
   
@@ -155,7 +155,7 @@ VOID_BATS:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_BATS 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_BOOMER:
   Type: CREEPER
@@ -206,7 +206,7 @@ VOID_BOOMER:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_BOOMER 1"} @ThreatTablePlayers ~onDeath
+
   
 VOID_SPIDER:
   Type: CAVE_SPIDER
@@ -258,7 +258,7 @@ VOID_SPIDER:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_SPIDER 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_VAMPIRE:
   Type: ZOMBIE
@@ -317,7 +317,7 @@ VOID_VAMPIRE:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_VAMPIRE 1"} @ThreatTablePlayers ~onDeath
+
 
 #################################################################################DIAMOND / EMERALD MINE#################################################################################
 
@@ -357,7 +357,7 @@ VOID_HIVE:
   - effect:particlesphere{particle=block_crack;amount=5;radius=0;y=2} @self ~onTimer:400
   - effect:particlesphere{particle=block_crack;amount=5;radius=0;y=1} @self ~onTimer:400
   - sound{s=ambient.cave} @PIR{r=15} ~onTimer:400
-  - command{c="q point <target.name> add mobs.VOID_HIVE 1"} @ThreatTablePlayers ~onDeath
+
 VOID_ANT:
   Type: SILVERFISH
   Display: '&7[&fLVL 5&7] &cVoid Ant'
@@ -404,7 +404,7 @@ VOID_ANT:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_ANT 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_VAMPIRE2:
   Type: ZOMBIE
@@ -463,7 +463,7 @@ VOID_VAMPIRE2:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_VAMPIRE2 1"} @ThreatTablePlayers ~onDeath
+
 
 # VOID_BLAZE:
   # Type: BLAZE

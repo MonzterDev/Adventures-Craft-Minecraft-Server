@@ -1,7 +1,9 @@
-options:
-	prefix: &7[&eResource Collector&7] &8&l» &r
-
-	itemAdded: &a%arg-2% &fwill now be automatically put into your collector! Use &a/Collector &fto view your current resources!
+command /ResourceCollector:
+    aliases: /Resource, /Collector
+    description: Return to the Lobby
+    executable by: players
+    trigger:
+        make player execute "resources"
 
 #Mining
 on pick up of Cobblestone:

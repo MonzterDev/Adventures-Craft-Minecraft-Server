@@ -46,7 +46,6 @@ VOID_WORSHIPER:
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ENDERMANTP} @self ~onTimer:140
   - effect:ender @self ~onTimer:140
-  - command{c="q point <target.name> add mobs.VOID_WORSHIPER 1"} @ThreatTablePlayers ~onDeath
 
 VOID_SOURCE:
   Type: SHULKER 
@@ -90,7 +89,6 @@ VOID_SOURCE:
   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=VOID_MOB_BUFF} @MIR{r=15;t=VOID_WORSHIPER,VOID_THRALL,VOID_ASSASSIN,VOID_VEIN,VOID_SOURCE} ~onTimer:350
-  - command{c="q point <target.name> add mobs.VOID_SOURCE 1"} @PIR{r=5} ~onDeath
   - summon{type=VOID_ASSASSIN;amount=1;radius=5} @RandomThreatTarget ~onDeath
   - skriptskill{skill=blinder} @PIR{r=15} ~onTimer:350
 
@@ -139,7 +137,6 @@ VOID_THRALL:
   - potion{type=SLOWNESS;duration=60;level=5} @PIR{r=5} ~onDeath
   - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
   - effect:blockmask{m=BEDROCK;r=1;d=30} @self ~onTimer:10
-  - command{c="q point <target.name> add mobs.VOID_THRALL 1"} @ThreatTablePlayers ~onDeath
 
 VOID_ASSASSIN:
   Type: WITHER_SKELETON 
@@ -194,7 +191,6 @@ VOID_ASSASSIN:
   - skill{s=ASSASSINSTUN} @PlayersInRadius{r=7} ~onDamaged <50% .15
   - effect:bloodyScreen{d=60} @PIR{r=10} ~onTimer:20
   - skill{s=ASSASSINUNDRESS} @self ~onTimer:300
-  - command{c="q point <target.name> add mobs.VOID_ASSASSIN 1"} @ThreatTablePlayers ~onDeath
 
 VOID_VEIN:
   Type: GIANT 

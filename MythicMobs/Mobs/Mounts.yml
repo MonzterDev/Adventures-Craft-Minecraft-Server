@@ -16,7 +16,7 @@
 #     Saddled: true
 #     PreventRandomEquipment: true
 #     KnockbackResistance: 1
-#     MaxCombatDistance: 50
+#     MaxCombatDistance: 2
 #     MovementSpeed: 0.32
 #     FollowRange: 6
 #     Collidable: true
@@ -27,11 +27,9 @@
 #     AttackSpeed: 1
 #   AIGoalSelectors:
 #   - 0 clear
-#   - 2 meleeattack
-#   AITargetSelectors:
+# #   AITargetSelectors:
 #   - 0 clear
-#   - 1 otherfactionmonsters  
-#   Skills:
+# #   Skills:
 #   - remove{delay=0} @self ~onDamaged
 #   - remove{delay=0} @self ~onEnterCombat
 #   - remove{delay=0} @self ~onCombat
@@ -53,7 +51,7 @@ MountHog:
     Saddled: true
     PreventRandomEquipment: true
     KnockbackResistance: 1
-    MaxCombatDistance: 50
+    MaxCombatDistance: 2
     MovementSpeed: 0.32
     FollowRange: 6
     Collidable: true
@@ -64,12 +62,11 @@ MountHog:
     AttackSpeed: 1
   AIGoalSelectors:
   - 0 clear
-  - 2 meleeattack
   AITargetSelectors:
   - 0 clear
-  - 1 otherfactionmonsters  
   Skills:
-  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -90,7 +87,7 @@ MountHorse1:
     HorseStyle: WHITEFIELD
     PreventRandomEquipment: true
     KnockbackResistance: 1
-    MaxCombatDistance: 50
+    MaxCombatDistance: 2
     MovementSpeed: 0.32
     FollowRange: 6
     Collidable: true
@@ -101,12 +98,11 @@ MountHorse1:
     AttackSpeed: 1
   AIGoalSelectors:
   - 0 clear
-  - 2 meleeattack
   AITargetSelectors:
   - 0 clear
-  - 1 otherfactionmonsters  
   Skills:
-  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -125,7 +121,7 @@ MountHorseRank2:
     Saddled: true
     PreventRandomEquipment: true
     KnockbackResistance: 1
-    MaxCombatDistance: 50
+    MaxCombatDistance: 2
     MovementSpeed: 0.40
     FollowRange: 6
     Collidable: true
@@ -136,12 +132,11 @@ MountHorseRank2:
     AttackSpeed: 1
   AIGoalSelectors:
   - 0 clear
-  - 2 meleeattack
   AITargetSelectors:
   - 0 clear
-  - 1 otherfactionmonsters  
   Skills:
-  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
@@ -160,7 +155,7 @@ MountHorseRank3:
     Saddled: true
     PreventRandomEquipment: true
     KnockbackResistance: 1
-    MaxCombatDistance: 50
+    MaxCombatDistance: 2
     MovementSpeed: 0.50
     FollowRange: 6
     Collidable: true
@@ -171,12 +166,11 @@ MountHorseRank3:
     AttackSpeed: 1
   AIGoalSelectors:
   - 0 clear
-  - 2 meleeattack
   AITargetSelectors:
   - 0 clear
-  - 1 otherfactionmonsters  
   Skills:
-  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
@@ -196,7 +190,7 @@ BORG_STEED:
     Saddled: true
     PreventRandomEquipment: true
     KnockbackResistance: 1
-    MaxCombatDistance: 50
+    MaxCombatDistance: 2
     MovementSpeed: 0.50
     FollowRange: 6
     Collidable: true
@@ -207,13 +201,207 @@ BORG_STEED:
     AttackSpeed: 1
   AIGoalSelectors:
   - 0 clear
-  - 2 meleeattack
   AITargetSelectors:
   - 0 clear
-  - 1 otherfactionmonsters  
   Skills:
-  - skill{s=MDISMOUNT} @self ~onTimer:1
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
   - skill{s=BORGABILITY} ~onTimer:250
+
+
+MountBulb:
+  Type: PIG
+  Display: '&7[&fLVL 5&7] &aBulb'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 0.5
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+MountBulb2:
+  Type: PIG
+  Display: '&7[&fLVL 10&7] &aBulb'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 0.75
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+MountBulb3:
+  Type: PIG
+  Display: '&7[&fLVL 15&7] &aBulb'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 1
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+
+MountBullbo:
+  Type: RAVAGER
+  Display: '&7[&fLVL 5&7] &aBullbo'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 0.75
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+MountBullbo2:
+  Type: RAVAGER
+  Display: '&7[&fLVL 10&7] &aBullbo'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 1
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat
+MountBullbo3:
+  Type: RAVAGER
+  Display: '&7[&fLVL 15&7] &aBullbo'
+  Health: 1000
+  Faction: Guard
+  Modules:
+    ImmunityTable: true
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    Saddled: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    MovementSpeed: 1.25
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=MDISMOUNT} @self ~onTimer:1  
+  - skriptskill{skill=dismount} @self ~onTimer:1
+  - remove{delay=0} @self ~onDamaged
+  - remove{delay=0} @self ~onEnterCombat
+  - remove{delay=0} @self ~onCombat

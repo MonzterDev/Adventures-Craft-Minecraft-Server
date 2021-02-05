@@ -47,7 +47,7 @@ VOID_PIGMAN:
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_PIGMAN 1"} @ThreatTablePlayers ~onDeath
+
 VOID_DEMON:
   Type: BABY_PIG_ZOMBIE
   Display: '&7[&fLVL 20&7] &cVoid Demon'
@@ -97,7 +97,7 @@ VOID_DEMON:
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_DEMON 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_BLAZE2:
   Type: BLAZE
@@ -147,7 +147,7 @@ VOID_BLAZE2:
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_BLAZE2 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_NECROMANCER:
   Type: WITHER_SKELETON
@@ -203,7 +203,7 @@ VOID_NECROMANCER:
   - skill{s=ANTILAVA} ~onTimer:20
   - skill{s=NECROSUMMON1} ~onTimer:120
   - skill{s=NECROSHOOT} @target ~onTimer:80
-  - command{c="q point <target.name> add mobs.VOID_NECROMANCER 1"} @ThreatTablePlayers ~onDeath
+
 
 WITHER_MINI_BOSS:
   Type: GIANT
@@ -569,7 +569,7 @@ VOID_SKELETON2:
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
-  - command{c="q point <target.name> add mobs.VOID_SKELETON2 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_PIGMAN2:
   Type: PIG_ZOMBIE
@@ -620,7 +620,7 @@ VOID_PIGMAN2:
   - skill{s=ANTILAVA} ~onTimer:20
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidPigmen 1"} @ThreatTablePlayers ~onDeath
-  - command{c="q point <target.name> add mobs.VOID_PIGMAN2 1"} @ThreatTablePlayers ~onDeath
+
 
 VOID_NECROMANCER2:
   Type: WITHER_SKELETON
@@ -676,4 +676,4 @@ VOID_NECROMANCER2:
   - skill{s=NECROSHOOT2} @target ~onTimer:80
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidNecromancers 1"} @ThreatTablePlayers ~onDeath
-  - command{c="q point <target.name> add mobs.VOID_NECROMANCER2 1"} @ThreatTablePlayers ~onDeath
+

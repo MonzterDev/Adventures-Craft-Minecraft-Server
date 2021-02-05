@@ -3,10 +3,15 @@ on join:
         send "&fCome back in &e%difference between {rewardcd::%player%} and now% for your next &aDaily Token&f!" to player
     else:
         set {rewardcd::%player%} to 24 hours later
-        add 1 to {claimed::%player%}
+        execute console command "/q point %player% add items.Login 1"
         send "&aYou just received &e1x Daily Token&a, which can be used in &e/Daily&a! You can come back in &e%difference between {rewardcd::%player%} and now% &afor your next one!" to player
 
-            
+
+command /Daily:
+    aliases: /DailyRewards
+    trigger:
+        execute console command "/dm open DailyRewards %player%"
+
 command /claimrewarddailyreset:
     trigger:
         if player has permission "*":    
@@ -18,49 +23,55 @@ command /claimrewarddailyreset:
 
 command /DRClaim:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 1:
             execute console command "/mi give MATERIAL ENGRAM1 %player% 1"
-            remove 1 from {claimed::%player%} # Change to Beton Points
+            execute console command "/q point %player% add items.Login -1"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 1x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
 command /DRClaim2:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 2:
             execute console command "/mi give CONSUMABLE MAGICAL_BOX %player% 4"
-            remove 2 from {claimed::%player%}
+            execute console command "/q point %player% add items.Login -2"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 2x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
 command /DRClaim3:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 3:
             execute console command "/mm items give %player% ENCHANTED_MATERIALS"
-            remove 3 from {claimed::%player%}
+            execute console command "/q point %player% add items.Login -3"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 3x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
 command /DRClaim4:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 4:
             execute console command "/cmi money give %player% 25,000"
-            remove 4 from {claimed::%player%}
+            execute console command "/q point %player% add items.Login -4"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 4x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
 command /DRClaim5:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 5:
             execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
-            remove 5 from {claimed::%player%}
+            execute console command "/q point %player% add items.Login -5"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 5x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
 command /DRClaim6:
     trigger:
+        set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
         if {claimed::%player%} >= 6:
             execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
-            remove 6 from {claimed::%player%}
+            execute console command "/q point %player% add items.Login -6"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
         else:
             send "&cThis costs 6x &eDaily Token&c and you have &a%{claimed::%player%}%&c." to player
@@ -76,7 +87,7 @@ command /DRClaim6:
 
 on placeholderapi placeholder request for the prefix "custom":
 	if the identifier is "login":
-		set the result to "%{claimed::%player%}%"
+		set the result to placeholder "betonquest_items:point.Login.amount"
 	if the identifier is "time":
 		set the result to "%difference between {rewardcd::%player%} and now%"
 

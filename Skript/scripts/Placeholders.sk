@@ -302,11 +302,3 @@ on placeholderapi placeholder request for the prefix "custom":
 
 # 		set {spawner::reaper} to number of activemobs from mythicspawner "GHAST_BOSS"
 # 		set {_am} to activemob of event-entity
-
-on placeholderapi placeholder request for the prefix "custom":
-	if the identifier is "void_timer":
-		set the result to "%difference between {VOID_TIMER} and now%"
-	if the identifier is "restart_timer":
-		set the result to "%difference between {SERVER_RESTART} and now%"
-	if the identifier is "restarting":
-		set the result to "%{RESTARTING_10}%"

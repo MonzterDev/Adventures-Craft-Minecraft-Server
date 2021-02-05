@@ -299,94 +299,94 @@ Rank3Reward4:
     - narrate "<red>You must have at least 1 inventory slot to claim this reward!"
 
 #Rank3Reward5
-TravelEnchant:
-  type: command
-  name: TravelEnchant
-  description: My command.
-  usage: /TravelEnchant
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastEnchant"
-TravelAuction:
-  type: command
-  name: TravelAuction
-  description: My command.
-  usage: /TravelAuction
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastAuction"
-TravelDracula:
-  type: command
-  name: TravelDracula
-  description: My command.
-  usage: /TravelDracula
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastDracula"
-TravelReaper:
-  type: command
-  name: TravelReaper
-  description: My command.
-  usage: /TravelReaper
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastReaper"
-TravelMorden:
-  type: command
-  name: TravelMorden
-  description: My command.
-  usage: /TravelMorden
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastMorden"
-TravelVoidWither:
-  type: command
-  name: TravelVoidWither
-  description: My command.
-  usage: /TravelVoidWither
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastVoidWither"
-TravelVoidMagma:
-  type: command
-  name: TravelVoidMagma
-  description: My command.
-  usage: /TravelVoidMagma
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastVoidMagma"
-TravelGhastly:
-  type: command
-  name: TravelGhastly
-  description: My command.
-  usage: /TravelGhastly
-  aliases:
-  - myalias
-  - mycommand
-  permission: Rank3
-  script:
-    - execute as_op "warp FastGhastly"
+# TravelEnchant:
+#   type: command
+#   name: TravelEnchant
+#   description: My command.
+#   usage: /TravelEnchant
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastEnchant"
+# TravelAuction:
+#   type: command
+#   name: TravelAuction
+#   description: My command.
+#   usage: /TravelAuction
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastAuction"
+# TravelDracula:
+#   type: command
+#   name: TravelDracula
+#   description: My command.
+#   usage: /TravelDracula
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastDracula"
+# TravelReaper:
+#   type: command
+#   name: TravelReaper
+#   description: My command.
+#   usage: /TravelReaper
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastReaper"
+# TravelMorden:
+#   type: command
+#   name: TravelMorden
+#   description: My command.
+#   usage: /TravelMorden
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastMorden"
+# TravelVoidWither:
+#   type: command
+#   name: TravelVoidWither
+#   description: My command.
+#   usage: /TravelVoidWither
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastVoidWither"
+# TravelVoidMagma:
+#   type: command
+#   name: TravelVoidMagma
+#   description: My command.
+#   usage: /TravelVoidMagma
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastVoidMagma"
+# TravelGhastly:
+#   type: command
+#   name: TravelGhastly
+#   description: My command.
+#   usage: /TravelGhastly
+#   aliases:
+#   - myalias
+#   - mycommand
+#   permission: Rank3
+#   script:
+#     - execute as_op "warp FastGhastly"
 
 #Opens Booster Shop
 Boosters:

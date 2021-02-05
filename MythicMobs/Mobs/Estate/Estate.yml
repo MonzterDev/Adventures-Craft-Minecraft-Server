@@ -48,7 +48,6 @@ GOBLIN:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.GOBLIN 1"} @ThreatTablePlayers ~onDeath
 
 GROWN_GOBLIN:
   Type: ZOMBIE
@@ -101,7 +100,6 @@ GROWN_GOBLIN:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.GROWN_GOBLIN 1"} @ThreatTablePlayers ~onDeath
 
 Hound:
   Type: WOLF
@@ -148,7 +146,6 @@ Hound:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Hound 1"} @ThreatTablePlayers ~onDeath
 
 Warg:
   Type: WOLF
@@ -194,7 +191,6 @@ Warg:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.Warg 1"} @ThreatTablePlayers ~onDeath
 
 #####ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT#######################################ORC HIDEOUT##################################
 
@@ -248,7 +244,6 @@ BABY_GOBLIN1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.BABY_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
 
 GROWN_GOBLIN1:
   Type: ZOMBIE
@@ -301,7 +296,6 @@ GROWN_GOBLIN1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.GROWN_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
 
 ARCHER_GOBLIN1:
   Type: SKELETON
@@ -353,7 +347,6 @@ ARCHER_GOBLIN1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.ARCHER_GOBLIN1 1"} @ThreatTablePlayers ~onDeath
 
 WARG1:
   Type: WOLF
@@ -399,7 +392,6 @@ WARG1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - command{c="q point <target.name> add mobs.WARG1 1"} @ThreatTablePlayers ~onDeath
 
 HOUND1:
   Type: WOLF
@@ -446,7 +438,6 @@ HOUND1:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20  
-  - command{c="q point <target.name> add mobs.HOUND1 1"} @ThreatTablePlayers ~onDeath
 
 GOBLIN_CHIEF:
   Type: ZOMBIE

@@ -1,35 +1,40 @@
 
 #HOME
-on load: # Doesn't have to be in a load event
-    add "Warp Spawn" to tab completions
-    add "Warp Town" to tab completions
-    add "Warp TownHall" to tab completions
-    add "Warp Forest" to tab completions
-    add "Warp SpruceForest" to tab completions
-    add "Warp DarkOakForest" to tab completions
-    add "Warp BirchForest" to tab completions
-    add "Warp AcaciaForest" to tab completions
-    add "Warp JungleForest" to tab completions
-    add "Warp HiveForest" to tab completions
-    add "Warp MineEntrance" to tab completions
-    add "Warp MineCoal" to tab completions
-    add "Warp MineGold" to tab completions
-    add "Warp MineRedstone" to tab completions
-    add "Warp MineLapis" to tab completions
-    add "Warp MineDiamond" to tab completions
-    add "Warp MineEmerald" to tab completions
-    add "Warp Graveyard" to tab completions
-    add "Warp Courtyard" to tab completions
-    add "Warp Castle" to tab completions
-    add "Warp Morden" to tab completions
-    add "Warp Hell" to tab completions
-    add "Warp Hell2" to tab completions
-    add "Warp Estate" to tab completions
-    add "Warp Farm" to tab completions
-    add "Warp GoblinTown" to tab completions
-    add "Warp SpiritGrounds" to tab completions
+# on load: # Doesn't have to be in a load event
+#     add "Warps Spawn" to tab completions
+#     add "Warps Town" to tab completions
+#     add "Warps TownHall" to tab completions
+#     add "Warps Forest" to tab completions
+#     add "Warps SpruceForest" to tab completions
+#     add "Warps DarkOakForest" to tab completions
+#     add "Warps BirchForest" to tab completions
+#     add "Warps AcaciaForest" to tab completions
+#     add "Warps JungleForest" to tab completions
+#     add "Warps HiveForest" to tab completions
+#     add "Warps MineEntrance" to tab completions
+#     add "Warps MineCoal" to tab completions
+#     add "Warps MineGold" to tab completions
+#     add "Warps MineRedstone" to tab completions
+#     add "Warps MineLapis" to tab completions
+#     add "Warps MineDiamond" to tab completions
+#     add "Warps MineEmerald" to tab completions
+#     add "Warps Graveyard" to tab completions
+#     add "Warps Courtyard" to tab completions
+#     add "Warps Castle" to tab completions
+#     add "Warps Morden" to tab completions
+#     add "Warps Hell" to tab completions
+#     add "Warps Hell2" to tab completions
+#     add "Warps Void" to tab completions
+#     add "Warps Estate" to tab completions
+#     add "Warps Farm" to tab completions
+#     add "Warps GoblinTown" to tab completions
+#     add "Warps SpiritGrounds" to tab completions
 
-command /Warp [<text>]:
+on tab complete of "/warp" and "/travel":
+	set tab completions for position 1 to "Courtyard", "Castle", "Morden", "Hell", "Hell2", "Void", "Estate", "Farm", "GoblinTown", "SpiritGrounds", "Coal", "Gold", "Redstone", "Lapis", "Diamond", "Emerald", "Graveyard", "HiveForest", "MineEntrance", "MineCoal", "MineGold", "MineRedstone", "MineLapis", "MineDiamond", "MineEmerald", "Graveyard", "Spawn", "Town", "TownHall", "Forest", "SpruceForest", "DarkOakForest", "BirchForest", "AcaciaForest", and "JungleForest"
+
+command /warp [<text>]:
+    aliases: /travel
     executable by: players
     trigger:
         if arg 1 is not set:    
@@ -153,7 +158,7 @@ command /Warp [<text>]:
                 warp_locked(player)
 
         if arg 1 is "Void" or "LowerVoid":
-            if player has permission "warp.Void":
+            if player has permission "warp.Void" or "cmi.command.portal.void":
                 warp_lowerVoid(player)
             else:
                 warp_locked(player)

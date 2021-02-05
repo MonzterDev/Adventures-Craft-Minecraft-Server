@@ -1,22 +1,22 @@
-Death_Messages:
-    type: world
-    debug: false
-    events:
-        on player death by:entity:
-        - random:
-            - narrate "§c§lӾ §a<player.name> §7died like a noob to §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7got their hopes and dreams crushed by §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7forgot to focus and got oblitirated by §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7was AFK and got destroyed by §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7ERROR no deathmessage found, pls die again §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7just lost to a §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7thought it was a hugging party and died to §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7thought this game was easy and died to §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7thought this was 1.8 and died to §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7got rekt by §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7has died so many times the death-messages are running out §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7was bad and died to §c<context.damager.name>§7!"
-            - narrate "§c§lӾ §a<player.name> §7died again huh?"
+# Death_Messages:
+#     type: world
+#     debug: false
+#     events:
+#         on player death by:entity:
+#         - random:
+#             - narrate "§c§lӾ §a<player.name> §7died like a noob to §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7got their hopes and dreams crushed by §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7forgot to focus and got oblitirated by §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7was AFK and got destroyed by §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7ERROR no deathmessage found, pls die again §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7just lost to a §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7thought it was a hugging party and died to §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7thought this game was easy and died to §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7thought this was 1.8 and died to §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7got rekt by §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7has died so many times the death-messages are running out §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7was bad and died to §c<context.damager.name>§7!"
+#             - narrate "§c§lӾ §a<player.name> §7died again huh?"
 
 Quest_Book:
     type: world
