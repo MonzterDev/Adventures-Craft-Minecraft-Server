@@ -1,0 +1,62 @@
+#FIRST QUEST The Great Harvest
+GiveLeads: 'give Lead:10'
+quest1_start: 'objective start Cat1'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+
+CompletedCats1: 'tag add CompletedCats1'
+
+CatFound: "run ^message &aPlease go rescue &e%point.Cat.left:10% &amore of my cats!"
+
+quest_start2: 'objective start Cat2'
+CompletedCats2: 'tag add CompletedCats2'
+
+quest_start3: 'objective start Cat3'
+CompletedCats3: 'tag add CompletedCats3'
+
+quest_start4: 'objective start Cat4'
+CompletedCats4: 'tag add CompletedCats4'
+
+quest_start5: 'objective start Cat5'
+CompletedCats5: 'tag add CompletedCats5'
+
+quest_start6: 'objective start Cat6'
+CompletedCats6: 'tag add CompletedCats6'
+
+quest_start7: 'objective start Cat7'
+CompletedCats7: 'tag add CompletedCats7'
+
+quest_start8: 'objective start Cat8'
+CompletedCats8: 'tag add CompletedCats8'
+
+quest_start9: 'objective start Cat9'
+CompletedCats9: 'tag add CompletedCats9'
+
+quest_start10: 'objective start Cat10'
+CompletedCats10: 'tag add CompletedCats10'
+
+
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "if empty0 QuestReward1_Full else QuestReward1_Folder"
+QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
+QuestReward1_If_Not_Full: "run ^command mmoitems give ACCESSORY CAT_CLAW %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 100"
+QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
+QuestReward1_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
+#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
+Claim_QuestReward1: "run ^command mmoitems give ACCESSORY CAT_CLAW %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 100"
+QuestReward1_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
+QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+AllCatFound: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n&aYou rescued all my cats, thank you so much! I know this small reward won't pay back the debt I owe you, but enjoy!"
+
+ShopOpen: opsudo bossshop CatLady

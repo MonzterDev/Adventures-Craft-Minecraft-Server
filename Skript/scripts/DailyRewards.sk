@@ -24,7 +24,7 @@ command /claimrewarddailyreset:
 command /DRClaim:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 1:
+        if {claimed::%player%} parsed as a number is greater than 0:
             execute console command "/mi give MATERIAL ENGRAM1 %player% 1"
             execute console command "/q point %player% add items.Login -1"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
@@ -33,7 +33,7 @@ command /DRClaim:
 command /DRClaim2:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 2:
+        if {claimed::%player%} parsed as a number is greater than 1:
             execute console command "/mi give CONSUMABLE MAGICAL_BOX %player% 4"
             execute console command "/q point %player% add items.Login -2"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
@@ -42,7 +42,7 @@ command /DRClaim2:
 command /DRClaim3:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 3:
+        if {claimed::%player%} parsed as a number is greater than 2:
             execute console command "/mm items give %player% ENCHANTED_MATERIALS"
             execute console command "/q point %player% add items.Login -3"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
@@ -51,7 +51,7 @@ command /DRClaim3:
 command /DRClaim4:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 4:
+        if {claimed::%player%} parsed as a number is greater than 3:
             execute console command "/cmi money give %player% 25,000"
             execute console command "/q point %player% add items.Login -4"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
@@ -60,7 +60,7 @@ command /DRClaim4:
 command /DRClaim5:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 5:
+        if {claimed::%player%} parsed as a number is greater than 4:
             execute console command "/mi give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 1"
             execute console command "/q point %player% add items.Login -5"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"
@@ -69,7 +69,7 @@ command /DRClaim5:
 command /DRClaim6:
     trigger:
         set {claimed::%player%} to placeholder "betonquest_items:point.Login.amount"
-        if {claimed::%player%} >= 6:
+        if {claimed::%player%} parsed as a number is greater than 5:
             execute console command "/mi give MATERIAL ENGRAM2 %player% 1"
             execute console command "/q point %player% add items.Login -6"
             send "&aYou sucesfully claimed your reward and now have %{claimed::%player%}%x &eDaily Tokens &aleft!"

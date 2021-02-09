@@ -1,9 +1,5 @@
 Bees:
-  Type: MPET
-  MPet:
-    Type: Bees
-    Anchor: BEE
-    ShowName: true
+  Type: Bee
   Display: '&7[&fLVL 1&7] &cBee'
   Health: 100
   Damage: 0
@@ -28,13 +24,8 @@ Bees:
     AttackSpeed: 1
   Drops:
   - BorgBox 1 100%
+  - ForestWood 1 100%
   - HONEYCOMB 1-2 100%
-  - JUNGLE_LOG 0-2 100%
-  - OAK_LOG 0-2 100%
-  - DARK_OAK_LOG 0-2 100%
-  - SPRUCE_LOG 0-2 100%
-  - BIRCH_LOG 0-2 100%
-  - ACACIA_LOG 0-2 100%
   - EXP 2 100%
   AIGoalSelectors:
   - 0 randomlookaround
@@ -44,14 +35,9 @@ Bees:
   AITargetSelectors:
   - 0 players
   - 1 attacker
-  KillMessages:
-  - '&c&lӾ &a<target.name> &7had their SOUL completely devoured by a &c<mob.name>&7!'
   Skills:
   - damage{amount=5;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+  - skill{s=BEE_STING} @target ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -85,15 +71,10 @@ Hare:
     AttackSpeed: 1
   Drops:
   - BorgBox 1 100%
-  - RABBIT_HIDE 1-2 100%
-  - RABBIT 1-2 100%
-  - RABBIT_FOOT 1-2 100%
-  - JUNGLE_LOG 0-2 100%
-  - OAK_LOG 0-2 100%
-  - DARK_OAK_LOG 0-2 100%
-  - SPRUCE_LOG 0-2 100%
-  - BIRCH_LOG 0-2 100%
-  - ACACIA_LOG 0-2 100%
+  - RABBIT_HIDE 1-2 50%
+  - RABBIT 1-2 50%
+  - RABBIT_FOOT 1-2 50%
+  - ForestWood 1 100%
   - EXP 5 100%
   AIGoalSelectors:
   - 0 randomlookaround
@@ -103,17 +84,79 @@ Hare:
   AITargetSelectors:
   - 0 players
   - 1 attacker
-  KillMessages:
-  - '&c&lӾ &a<target.name> &7had their SOUL completely devoured by a &c<mob.name>&7!'
   Skills:
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
+  - effect:sound{s=entity.rabbit.attack;p=.8} @self ~onAttack
+
+WILD_CAT:
+  Type: Ocelot
+  Display: '&7[&fLVL 5&7] &aCat'
+  Health: 1000
+  Damage: 0
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.4
+    FollowRange: 6
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: false
+    AttackSpeed: 1
+    PreventLeashing: false
+  Drops:
+  - ForestWood 1 100%
+  - EXP 5 100%
+  AIGoalSelectors:
+  - 0 fleeplayers
+  - 3 randomstroll
+  Skills:
+  - skriptskill{s=WILD_CAT_LEASHED} ~onDamaged
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=WILD_CAT_CAPTURED} ~onSignal:CAPTURED
+
+CAT_LADY:
+  Type: Ocelot
+  Display: ''
+  Health: 99999
+  Damage: 0
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    ApplyInvisibility: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 2
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 6
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: false
+    AttackSpeed: 1
+    PreventLeashing: false
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - signal{s=CAPTURED} @MobsInRadius{r=5;t=WILD_CAT} ~onTimer:40
 
 Wasp:
   Type: MPET
@@ -146,12 +189,7 @@ Wasp:
   Drops:
   - BorgBox 1 100%
   - HONEYCOMB 2-4 100%
-  - JUNGLE_LOG 0-3 100%
-  - OAK_LOG 0-3 100%
-  - DARK_OAK_LOG 0-3 100%
-  - SPRUCE_LOG 0-3 100%
-  - BIRCH_LOG 0-3 100%
-  - ACACIA_LOG 0-3 100%
+  - ForestWood 1 100%
   - EXP 5 100%
   AIGoalSelectors:
   - 0 randomlookaround
@@ -161,17 +199,12 @@ Wasp:
   AITargetSelectors:
   - 0 players
   - 1 attacker
-  KillMessages:
-  - '&c&lӾ &a<target.name> &7had their SOUL completely devoured by a &c<mob.name>&7!'
   Skills:
   - damage{amount=15;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
+  - skill{s=BEE_STING2} @target ~onAttack
 
 Queen_Bee:
   Type: MPET
@@ -204,12 +237,7 @@ Queen_Bee:
   Drops:
   - BorgBox 1 100%
   - HONEYCOMB 3-5 100%
-  - JUNGLE_LOG 2-5 100%
-  - OAK_LOG 2-5 100%
-  - DARK_OAK_LOG 2-5 100%
-  - SPRUCE_LOG 2-5 100%
-  - BIRCH_LOG 2-5 100%
-  - ACACIA_LOG 2-5 100%
+  - ForestWood 1 100%
   - EXP 7-10 100%
   AIGoalSelectors:
   - 0 randomlookaround
@@ -221,13 +249,10 @@ Queen_Bee:
   - 1 attacker
   Skills:
   - damage{amount=20;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
+  - skill{s=BEE_STING3} @target ~onAttack
 
 DRYAD:
   Type: ZOMBIE
@@ -366,10 +391,6 @@ DRYAD_HARE:
   Skills:
   - damage{amount=40;ignoreArmor=false} @target ~onAttack
   - skill{s=DRYAD_HARE_BITE} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=HareAgroA} ~onTimer:20
   - effect:particles{p=reddust;color=#78D663;amount=10;hS=0;vS=.25;speed=1} @self ~onTimer:3

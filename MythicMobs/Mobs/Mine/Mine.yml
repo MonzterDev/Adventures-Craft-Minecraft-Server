@@ -42,10 +42,6 @@ ANGRY_BATS:
   Skills:
   - command{c="mythicmobs i give <target.name> MineMobs 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -95,10 +91,6 @@ MINE_SPIDER:
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
   - potion{type=SLOW;duration=200;level=2} @target ~onAttack
   - potion{type=POISON;duration=100;level=20} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -148,10 +140,6 @@ VOID_BATS:
   Skills:
   - command{c="mythicmobs i give <target.name> MineMobs 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -199,10 +187,6 @@ VOID_BOOMER:
   - command{c="mythicmobs i give <target.name> VOID_BOOMER 1"} @ThreatTablePlayers ~onDeath
   - skill{s=Boomer} ~onTimer:200
   - sound{s=entity.cat.hiss} @PIR{r=5} ~onTimer:50  
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -251,10 +235,6 @@ VOID_SPIDER:
   - damage{amount=15;ignoreArmor=false} @target ~onAttack
   - potion{type=SLOW;duration=200;level=2} @target ~onAttack
   - potion{type=POISON;duration=100;level=20} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -310,10 +290,6 @@ VOID_VAMPIRE:
   - skill{s=VampHeal} 100%
   - damage{amount=25;ignoreArmor=false} @target ~onAttack
   - sound{s=entity.evoker.hurt} @PIR{r=5} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -397,10 +373,6 @@ VOID_ANT:
   Skills:
   - damage{amount=20;ignoreArmor=false} @target ~onAttack
   - remove{delay=600} @self ~onSpawn
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -456,10 +428,6 @@ VOID_VAMPIRE2:
   - skill{s=VampHeal2} 25%
   - damage{amount=30;ignoreArmor=false} @target ~onAttack
   - sound{s=entity.evoker.hurt} @PIR{r=5} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -614,10 +582,6 @@ VOID_DRACULA:
   - damage{amount=50;ignoreArmor=false} @target ~onAttack
   - sound{s=entity.evoker.hurt} @PIR{r=5} ~onDamaged
   - sound{s=entity.evoker.death} @PIR{r=5} ~onDeath
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

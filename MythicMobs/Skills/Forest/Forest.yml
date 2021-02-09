@@ -1,3 +1,48 @@
+BEE_STING:
+  Cooldown: 5
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>!"}
+  - potion{type=POISON;duration=40;level=1}
+  - damage{amount=2.5}
+  - delay 20    
+  - damage{amount=2.5}
+BEE_STING2:
+  Cooldown: 5
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>!"}
+  - potion{type=POISON;duration=60;level=1}
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+BEE_STING3:
+  Cooldown: 7.5
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>!"}
+  - potion{type=POISON;duration=100;level=1}
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+  - delay 20    
+  - damage{amount=5}
+
+
+
+
+WILD_CAT_CAPTURED:
+  Skills:
+  - sudoskill{s=WILD_CAT_CAPTURED_P;cat=true} @Owner
+  - remove @self
+WILD_CAT_CAPTURED_P:
+  Skills:
+  - command{c="q point <caster.name> add default-Forest-CatLady.Cat 1"} @self 
+
+
 #DRYAD AREA
 DRYAD_AREA:
   Conditions:

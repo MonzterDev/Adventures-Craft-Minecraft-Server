@@ -51,10 +51,6 @@ cSkeleton1:
   - skill{s=AlphaSummon} ~onDeath .005
   - command{c="mythicmobs i give <target.name> SkeletonSet 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -109,10 +105,6 @@ cSkeletonArcher:
   - damage{amount=50;ignoreArmor=false} @target ~onAttack
   - skill{s=AlphaSummon} ~onDeath .005
   - command{c="mythicmobs i give <target.name> SkeletonSet 1"} @ThreatTablePlayers ~onDeath
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
@@ -164,10 +156,6 @@ AlphaSoul:
   - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
   - damage{a=5;ignoreArmor=false} @PIR{r=2} ~onTimer:20
   - ignite{ticks=20} @PIR{r=2} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -218,10 +206,6 @@ UndeadSummoner:
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
   - remove{delay=200} @self ~onSpawn
   - skill{s=AlphaSummon} ~onDeath .005
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -271,10 +255,6 @@ UndeadGuard:
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
   - remove{delay=1000} @self ~onSpawn
   - skill{s=AlphaSummon} ~onDeath .005
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -305,9 +285,9 @@ UndeadCaster:
     Despawn: true
     PreventItemPickup: true
     PreventOtherDrops: true
-    AttackSpeed: 10
+    AttackSpeed: 2
   Equipment:
-  - CASTER_WEAPON:0
+  - UndeadCaster_WEAPON:HAND
   - CASTER_HEAD:head
   Drops:
   - BorgBox 1 100%
@@ -324,16 +304,13 @@ UndeadCaster:
   - 0 players
   - 1 attacker
   Skills:
+  - equip{item=UndeadCaster_WEAPON:HAND} @self ~onSpawn
   - skill{s=SpawnSummoner} ~onAttack @target .3
+  - skill{s=UndeadCaster_Missile} ~onShoot @target
   - skill{s=Lightning1} ~onAttack @target .3
   - skill{s=Prison1} ~onAttack @target .1
   - skill{s=Stun1} ~onAttack @target .1
-  - effect:particleline{particle=dragon_breath;amount=1;fromOrigin=true} @target
   - skill{s=AlphaSummon} ~onDeath .005
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
@@ -387,10 +364,6 @@ UndeadWarrior:
   - skill{s=CrushingLeap} ~onTimer:100
   - damage{amount=30;ignoreArmor=false} @target ~onAttack
   - skill{s=AlphaSummon} ~onDeath .005
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -442,10 +415,6 @@ UndeadSpider:
   - potion{type=SLOW;duration=60;level=5} @target ~onAttack
   - potion{type=POISON;duration=60;level=20} @target ~onAttack
   - skill{s=AlphaSummon} ~onDeath .005
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -677,7 +646,6 @@ BOSS_BLOCK:
   - heal{amount=40;overheal=false} @MIR{r=20;t=GammaBoss3} ~onTimer:20
   - remove{delay=500} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged
-  - command{c="q point <target.name> add mobs.BOSS_BLOCK 1"} @ThreatTablePlayers ~onDeath
 # BETABoss:
   # Type: ZOMBIE
   # Display: '&7[&fLVL 25&7] &cMorden The Revived'

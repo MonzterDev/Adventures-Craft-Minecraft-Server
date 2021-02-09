@@ -47,10 +47,6 @@ Skeleton1:
   Skills:
   - skill{s=SummonSoul} ~onDeath .01
   - damage{amount=10;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=Agro8A} @self ~onTimer:20
   - skill{s=Agro8B} @self ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
@@ -102,10 +98,6 @@ SkeletonArcher:
   Skills:
   - damage{amount=15;ignoreArmor=false} @target ~onAttack
   - skill{s=SummonSoul} ~onDeath .01
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
@@ -151,10 +143,6 @@ LostSoul:
   Skills:
   - skill{s=Disguise}
   - damage{amount=5;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -255,10 +243,6 @@ ReaperBoss:
   - skill{s=SummonSkeletons} =40%-50%
   - skill{s=Slow} .05
   - skill{s=Heal} .10
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

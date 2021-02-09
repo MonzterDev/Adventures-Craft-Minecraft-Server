@@ -41,10 +41,6 @@ GOBLIN:
   Skills:
   - damage{amount=25;ignoreArmor=false} @target ~onAttack
   - mount{type=Hound} @self ~onFirstSpawn
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -93,10 +89,6 @@ GROWN_GOBLIN:
   Skills:
   - damage{amount=25;ignoreArmor=false} @target ~onAttack
   - mount{type=Warg} @self ~onFirstSpawn
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -139,10 +131,6 @@ Hound:
   Skills:
   - damage{amount=25;ignoreArmor=false} @target ~onAttack
   - skill{s=VALLEYREMOVE} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -184,10 +172,6 @@ Warg:
   Skills:
   - damage{amount=25;ignoreArmor=false} @target ~onAttack
   - skill{s=VALLEYREMOVE} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -237,10 +221,6 @@ BABY_GOBLIN1:
   Skills:
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
   - skill{s=HOUNDMOUNT} @self ~onSpawn
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -289,10 +269,6 @@ GROWN_GOBLIN1:
   Skills:
   - damage{amount=45;ignoreArmor=false} @target ~onAttack
   - skill{s=WARGMOUNT} @self ~onSpawn
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -340,10 +316,6 @@ ARCHER_GOBLIN1:
   - 1 attacker
   Skills:
   - damage{amount=45;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
@@ -385,10 +357,6 @@ WARG1:
   Skills:
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
   - skill{s=VALLEYREMOVE} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -431,10 +399,6 @@ HOUND1:
   Skills:
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
   - skill{s=VALLEYREMOVE} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20  
@@ -492,10 +456,6 @@ GOBLIN_CHIEF:
   - skill{s=WASUMMON} @self ~onDamaged .25
   - skill{s=GGSUMMON} @self ~onDamaged .15
   - skill{s=BABYGSUMMON} @self ~onDamaged .15
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

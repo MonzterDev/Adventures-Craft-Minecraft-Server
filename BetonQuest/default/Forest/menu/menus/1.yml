@@ -1053,6 +1053,81 @@ items:
       left: default-Forest-Jack.quest1_start
     close: true
 
+  quest13_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-CatLady.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
+    close: false
+  quest13_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_part1,!default-Forest-CatLady.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
+    close: false
+  quest13_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_completed,!default-Forest-CatLady.q1_rewards_unclaimed,default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest13_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_rewards_unclaimed,!default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-CatLady.QuestReward1_Claim
+      left: default-Forest-CatLady.QuestReward1_Claim
+
+
 #FILLER
   glass:
     item: glass
@@ -1070,7 +1145,7 @@ slots:
   17-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   25-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   32-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  40-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   10: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed
   11: quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed
@@ -1081,4 +1156,5 @@ slots:
   16: questJack1_inactive,questJack1_active,questJack1_completed
   20-24: quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed,quest9_inactive,quest9_active,quest9_completed,quest10_inactive,quest10_active,quest10_completed,quest11_inactive,quest11_active,quest11_completed
   31: quest12_inactive,quest12_oak,quest12_birch,quest12_spruce,quest12_darkoak,quest12_jungle,quest12_acacia,quest12_repeat  
+  40: quest13_inactive,quest13_active,quest13_completed,quest13_unclaimed
   49: back

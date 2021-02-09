@@ -27,7 +27,7 @@ on vote:
             message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
             execute console command "/q point %player% add items.Vote 1"
         
-    if website of event-vote = "minecraft-server-list.com":
+    if website of event-vote = "MCSL":
         if now < {vote_MCSL::%player%}:
             send "&fVote again in &e%difference between {vote_MCSL::%player%} and now% for more rewards!" to player
         else:
