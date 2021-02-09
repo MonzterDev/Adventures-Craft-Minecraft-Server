@@ -1,574 +1,574 @@
-MAIN_EGG:
-  Type: PIG
-  Disguise:
-    Type: BLOCK
-    Block: DRAGON_EGG
-    BlockData: 0
-    ShowName: true
-  Display: '&cDangerous Egg'
-  Health: 10000
-  Damage: 0
-  Faction: Guard
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: 1
-    MaxCombatDistance: 100
-    MovementSpeed: 0.0001
-    FollowRange: 0
-    Collidable: false
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
+# MAIN_EGG:
+#   Type: PIG
+#   Disguise:
+#     Type: BLOCK
+#     Block: DRAGON_EGG
+#     BlockData: 0
+#     ShowName: true
+#   Display: '&cDangerous Egg'
+#   Health: 10000
+#   Damage: 0
+#   Faction: Guard
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 100
+#     MovementSpeed: 0.0001
+#     FollowRange: 0
+#     Collidable: false
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Skills:
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
 
-#ZONE 1
-BREAKABLE_EGG1:
-  Type: PIG
-  Disguise:
-    Type: BLOCK
-    Block: DRAGON_EGG
-    BlockData: 0
-    ShowName: true
-  Display: '&cDrogon''s Egg'
-  Health: 10000
-  Damage: 0
-  Faction: ATTACKER
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: 1
-    MaxCombatDistance: 100
-    MovementSpeed: 0.0001
-    FollowRange: 0
-    Collidable: false
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - skill{s=EGGDEATH1} ~onDeath
-  - skill{s=EGGSUMMON1} ~onDeath
-  - skill{s=EGGSUMMONBASE1} ~onDeath
-HIDDEN_EGG1:
-  Type: ARMOR_STAND
-  Display: '&a'
-  Health: 1000000000
-  Damage: 0
-  Faction: ATTACKER
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: 1
-    MaxCombatDistance: 100
-    MovementSpeed: 0.0001
-    FollowRange: 0
-    Invisible: true
-    Collidable: false
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Skills:
-  - skill{s=EGGSUMMON1} ~onDeath
-  - skill{s=EGGSUMMON1W2} ~onSignal:W1DEATH
+# #ZONE 1
+# BREAKABLE_EGG1:
+#   Type: PIG
+#   Disguise:
+#     Type: BLOCK
+#     Block: DRAGON_EGG
+#     BlockData: 0
+#     ShowName: true
+#   Display: '&cDrogon''s Egg'
+#   Health: 10000
+#   Damage: 0
+#   Faction: ATTACKER
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 100
+#     MovementSpeed: 0.0001
+#     FollowRange: 0
+#     Collidable: false
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Skills:
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=EGGDEATH1} ~onDeath
+#   - skill{s=EGGSUMMON1} ~onDeath
+#   - skill{s=EGGSUMMONBASE1} ~onDeath
+# HIDDEN_EGG1:
+#   Type: ARMOR_STAND
+#   Display: '&a'
+#   Health: 1000000000
+#   Damage: 0
+#   Faction: ATTACKER
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 100
+#     MovementSpeed: 0.0001
+#     FollowRange: 0
+#     Invisible: true
+#     Collidable: false
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Skills:
+#   - skill{s=EGGSUMMON1} ~onDeath
+#   - skill{s=EGGSUMMON1W2} ~onSignal:W1DEATH
 
-SkeletonH1:
-  Type: ZOMBIE
-  Display: '&7[&fLVL 20&7] &cUndead Skeleton'
-  Health: 2500
-  Damage: 0
-  Faction: ATTACKER
-  Disguise:
-    Type: Player
-    Player: '&7[&fLVL 20&7] &cUndead Skeleton'
-    Skin: skeleton
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.42
-    FollowRange: 10
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Equipment:
-  - iron_sword:0
-  - shield:5
-  Drops:
-  - BorgBox 1 100%
-  - mmoitems{type=material;id=BONE_FRAGMENT} 1-2 50%
-  - mmoitems{type=companion;id=PET_SKELETON1} 1 .005%  
-  - Bone 1-2 50%
-  - EXP 1-2 50%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 2 meleeattack
-  - 3 randomstroll
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  - 2 SpecificFaction Guard
-  Skills:
-  - damage{amount=20;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
+# SkeletonH1:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 20&7] &cUndead Skeleton'
+#   Health: 2500
+#   Damage: 0
+#   Faction: ATTACKER
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 20&7] &cUndead Skeleton'
+#     Skin: skeleton
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.42
+#     FollowRange: 10
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - iron_sword:0
+#   - shield:5
+#   Drops:
+#   - BorgBox 1 100%
+#   - mmoitems{type=material;id=BONE_FRAGMENT} 1-2 50%
+#   - mmoitems{type=companion;id=PET_SKELETON1} 1 .005%  
+#   - Bone 1-2 50%
+#   - EXP 1-2 50%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 2 meleeattack
+#   - 3 randomstroll
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   - 2 SpecificFaction Guard
+#   Skills:
+#   - damage{amount=20;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
 
-SkeletonArcherH1:
-  Type: SKELETON
-  Display: '[&fLVL 20&7] &cUndead Archer' 
-  Health: 1500
-  Damage: 0
-  Faction: ATTACKER
-  Disguise:
-    Type: Player
-    Player: '[&fLVL 20&7] &cUndead Archer'
-    Skin: ranger
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.38
-    FollowRange: 10
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Equipment:
-  - crossbow:0
-  Drops:
-  - BorgBox 1 100%
-  - mmoitems{type=companion;id=PET_SKELETONARCHER} 1 .005%    
-  - mmoitems{type=material;id=BONE_FRAGMENT} 1-2 50%
-  - Bone 1-2 50%
-  - EXP 1-2 50%
-  - Arrow 1-2 50%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 3 arrowattack
-  - 4 randomstroll
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  - 2 SpecificFaction Guard
-  Skills:
-  - damage{amount=30;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
+# SkeletonArcherH1:
+#   Type: SKELETON
+#   Display: '[&fLVL 20&7] &cUndead Archer' 
+#   Health: 1500
+#   Damage: 0
+#   Faction: ATTACKER
+#   Disguise:
+#     Type: Player
+#     Player: '[&fLVL 20&7] &cUndead Archer'
+#     Skin: ranger
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.38
+#     FollowRange: 10
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - crossbow:0
+#   Drops:
+#   - BorgBox 1 100%
+#   - mmoitems{type=companion;id=PET_SKELETONARCHER} 1 .005%    
+#   - mmoitems{type=material;id=BONE_FRAGMENT} 1-2 50%
+#   - Bone 1-2 50%
+#   - EXP 1-2 50%
+#   - Arrow 1-2 50%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 3 arrowattack
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   - 2 SpecificFaction Guard
+#   Skills:
+#   - damage{amount=30;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
 
-AlphaSoulH1:
-  Type: ZOMBIE
-  Display: '[&fLVL 20&7] &cAlpha Soul'
-  Health: 3000
-  Damage: 0
-  Faction: ATTACKER
-  Disguise:
-    Type: Player
-    Player: '[&fLVL 20&7] &cAlpha Soul'
-    Skin: alphasoul
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.42
-    FollowRange: 10
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Drops:
-  - BorgBox 1 100%
-  - mmoitems{type=companion;id=PET_ALPHASOUL} 1 .005%      
-  - mmoitems{type=material;id=ALPHA_SOUL} 1 100%
-  - mmoitems{type=consumable;id=soul} 1 100%
-  - mmoitems{type=material;id=lost_soul} 1 50%  
-  - EXP 15 100%
-  AIGoalSelectors:
-  - 0 clear
-  - 1 meleeattack
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  - 2 SpecificFaction Guard
-  Skills:
-  - damage{amount=30;ignoreArmor=false} @target ~onAttack
-  - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
-  - damage{a=10;ignoreArmor=false} @PIR{r=2} ~onTimer:20
-  - ignite{ticks=20} @PIR{r=2} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
+# AlphaSoulH1:
+#   Type: ZOMBIE
+#   Display: '[&fLVL 20&7] &cAlpha Soul'
+#   Health: 3000
+#   Damage: 0
+#   Faction: ATTACKER
+#   Disguise:
+#     Type: Player
+#     Player: '[&fLVL 20&7] &cAlpha Soul'
+#     Skin: alphasoul
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.42
+#     FollowRange: 10
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Drops:
+#   - BorgBox 1 100%
+#   - mmoitems{type=companion;id=PET_ALPHASOUL} 1 .005%      
+#   - mmoitems{type=material;id=ALPHA_SOUL} 1 100%
+#   - mmoitems{type=consumable;id=soul} 1 100%
+#   - mmoitems{type=material;id=lost_soul} 1 50%  
+#   - EXP 15 100%
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   - 2 SpecificFaction Guard
+#   Skills:
+#   - damage{amount=30;ignoreArmor=false} @target ~onAttack
+#   - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
+#   - damage{a=10;ignoreArmor=false} @PIR{r=2} ~onTimer:20
+#   - ignite{ticks=20} @PIR{r=2} ~onTimer:20
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
 
 
 
-ATTACKER:
-  Type: ENDERMAN 
-  Display: '&7[&fLVL 25&7] &cVoid Worshiper'
-  Health: 1000
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.2
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventTeleport: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 3-5 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 2 meleeattack
-  - 3 randomstroll
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  - 2 SpecificFaction Guard
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - skill{s=Agro8A} ~onTimer:20
-  - skill{s=Agro8B} ~onTimer:20
-  - skill{s=ENDERMANTP} @self ~onTimer:140
-  - effect:ender @self ~onTimer:140
+# ATTACKER:
+#   Type: ENDERMAN 
+#   Display: '&7[&fLVL 25&7] &cVoid Worshiper'
+#   Health: 1000
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.2
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventTeleport: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 3-5 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 2 meleeattack
+#   - 3 randomstroll
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   - 2 SpecificFaction Guard
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=Agro8A} ~onTimer:20
+#   - skill{s=Agro8B} ~onTimer:20
+#   - skill{s=ENDERMANTP} @self ~onTimer:140
+#   - effect:ender @self ~onTimer:140
 
-VOID_SOURCE:
-  Type: SHULKER 
-  Display: '&7[&fLVL 25&7] &cVoid Source'
-  Health: 1500
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.2
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 3-5 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 2 arrowattack
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - potion{type=BLINDNESS;duration=100;level=5} @PIR{r=25} ~onTimer:350
+# VOID_SOURCE:
+#   Type: SHULKER 
+#   Display: '&7[&fLVL 25&7] &cVoid Source'
+#   Health: 1500
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.2
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 3-5 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 2 arrowattack
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - potion{type=BLINDNESS;duration=100;level=5} @PIR{r=25} ~onTimer:350
 
-VOID_THRALL:
-  Type: ENDERMITE 
-  Display: '&7[&fLVL 25&7] &cVoid Thrall'
-  Health: 1250
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.17
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 1-2 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 2 meleeattack
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - potion{type=SLOWNESS;duration=60;level=5} @PIR{r=5} ~onDeath
-  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
-  - effect:blockmask{m=BEDROCK;r=1;d=30} @self ~onTimer:10
+# VOID_THRALL:
+#   Type: ENDERMITE 
+#   Display: '&7[&fLVL 25&7] &cVoid Thrall'
+#   Health: 1250
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.17
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 1-2 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 2 meleeattack
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - potion{type=SLOWNESS;duration=60;level=5} @PIR{r=5} ~onDeath
+#   - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
+#   - effect:blockmask{m=BEDROCK;r=1;d=30} @self ~onTimer:10
 
-VOID_ASSASSIN:
-  Type: WITHER_SKELETON 
-  Display: '&7[&fLVL 25&7] &cVoid Assassin'
-  Health: 1250
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.32
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Equipment:
-  - ASSASSIN:HEAD
-  - ASSASSIN_CHEST:CHEST
-  - ASSASSIN_LEGS:LEGS
-  - ASSASSIN_BOOTS:FEET
-  - ASSASSIN_SWORD:HAND
-  - ASSASSIN_SWORD:OFFHAND
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 1-2 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  - 2 meleeattack
-  AITargetSelectors:
-  - 0 players
-  - 1 attacker
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - skill{s=ASSASSINSTUN} @PlayersInRadius{r=7} ~onDamaged <50% .15
-  - effect:bloodyScreen{d=60} @PIR{r=10} ~onTimer:20
-  - skill{s=ASSASSINUNDRESS} @self ~onTimer:300
+# VOID_ASSASSIN:
+#   Type: WITHER_SKELETON 
+#   Display: '&7[&fLVL 25&7] &cVoid Assassin'
+#   Health: 1250
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.32
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - ASSASSIN:HEAD
+#   - ASSASSIN_CHEST:CHEST
+#   - ASSASSIN_LEGS:LEGS
+#   - ASSASSIN_BOOTS:FEET
+#   - ASSASSIN_SWORD:HAND
+#   - ASSASSIN_SWORD:OFFHAND
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 1-2 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   - 2 meleeattack
+#   AITargetSelectors:
+#   - 0 players
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=ASSASSINSTUN} @PlayersInRadius{r=7} ~onDamaged <50% .15
+#   - effect:bloodyScreen{d=60} @PIR{r=10} ~onTimer:20
+#   - skill{s=ASSASSINUNDRESS} @self ~onTimer:300
 
-VOID_HEART:
-  Type: WITHER_SKELETON 
-  Display: '&7[&fLVL 25&7] &cVoid Assassin'
-  Health: 100000
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.001
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Equipment:
-  - ASSASSIN:HEAD
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 1-2 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 1 clear
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=HPBAR} @self ~onDamaged
-  - skill{s=TESTP} @self ~onTimer:1
+# VOID_HEART:
+#   Type: WITHER_SKELETON 
+#   Display: '&7[&fLVL 25&7] &cVoid Assassin'
+#   Health: 100000
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.001
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - ASSASSIN:HEAD
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 1-2 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=TESTP} @self ~onTimer:1
 
-VOID_HEART_HEALER:
-  Type: WITHER_SKELETON 
-  Display: '&7[&fLVL 25&7] &cVoid Assassin'
-  Health: 1250
-  Damage: 0
-  Faction: Void
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
-    MovementSpeed: 0.48
-    FollowRange: 7
-    Collidable: true
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-  Equipment:
-  - ASSASSIN:HEAD
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 1-2 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 1 fleeplayers
-#  - 1 gotolocation  x-136,y30,z-984
-  Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=HPBAR} @self ~onDamaged
-  - effect:enderbeam{d=10;y=5;} @MIR{r=200;t=VOID_HEART} ~onTimer:10
+# VOID_HEART_HEALER:
+#   Type: WITHER_SKELETON 
+#   Display: '&7[&fLVL 25&7] &cVoid Assassin'
+#   Health: 1250
+#   Damage: 0
+#   Faction: Void
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .7
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.48
+#     FollowRange: 7
+#     Collidable: true
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - ASSASSIN:HEAD
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 1-2 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 1 fleeplayers
+# #  - 1 gotolocation  x-136,y30,z-984
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - effect:enderbeam{d=10;y=5;} @MIR{r=200;t=VOID_HEART} ~onTimer:10
 
-VOID_VEIN:
-  Type: GIANT 
-  Display: '&7[&fLVL 25&7] &cVoid Vein'
-  Health: 1250
-  Damage: 0
-  Faction: Void
-  BossBar:
-    Enabled: true
-    Title: '&7[&fLVL 25&7] &cVoid Vein <caster.hp>&f/&c<caster.mhp>'
-    Range: 5
-    Color: GREEN
-    Style: SOLID
-  DamageModifiers:
-  - SUFFOCATION 0
-  Modules:
-    ImmunityTable: true
-  Options:
-    Persistent: false
-    PreventSunburn: true
-    AlwaysShowName: true
-    PreventRandomEquipment: true
-    KnockbackResistance: 1
-    MaxCombatDistance: 50
-    MovementSpeed: 0.0001
-    FollowRange: 0
-    Collidable: false
-    Despawn: true
-    PreventItemPickup: true
-    PreventOtherDrops: true
-    AttackSpeed: 10
-    NoGravity: true
-    ApplyInvisibility: true
-  Drops:
-  - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
-  - ender_pearl 1-2 100%
-  - EXP 7-10 100%
-  AIGoalSelectors:
-  - 0 randomlookaround
-  - 1 clear
-  Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
-  - skill{s=HPBAR} @self ~onDamaged
-  - effect:blockmask{m=BEDROCK;r=3;d=100} @self ~onTimer:200
-  - effect:particles{particle=damage_indicator;amount=100;hS=.65;vS=10;speed=0} @self ~onTimer:200
+# VOID_VEIN:
+#   Type: GIANT 
+#   Display: '&7[&fLVL 25&7] &cVoid Vein'
+#   Health: 1250
+#   Damage: 0
+#   Faction: Void
+#   BossBar:
+#     Enabled: true
+#     Title: '&7[&fLVL 25&7] &cVoid Vein <caster.hp>&f/&c<caster.mhp>'
+#     Range: 5
+#     Color: GREEN
+#     Style: SOLID
+#   DamageModifiers:
+#   - SUFFOCATION 0
+#   Modules:
+#     ImmunityTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.0001
+#     FollowRange: 0
+#     Collidable: false
+#     Despawn: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#     NoGravity: true
+#     ApplyInvisibility: true
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=VOID_SHARD} 1 1%
+#   - ender_pearl 1-2 100%
+#   - EXP 7-10 100%
+#   AIGoalSelectors:
+#   - 0 randomlookaround
+#   - 1 clear
+#   Skills:
+#   - skill{s=anticheat;sync=true} ~onDamaged
+#   - skill{s=anticheat;sync=true} ~onInteract
+#   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
+#   - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - effect:blockmask{m=BEDROCK;r=3;d=100} @self ~onTimer:200
+#   - effect:particles{particle=damage_indicator;amount=100;hS=.65;vS=10;speed=0} @self ~onTimer:200
 
-KindletronJR:
-  Type: SILVERFISH
-  Health: 20
-  Damage: 0
-  Skills:
-  - model{mid=kindletronjr} @self ~onSpawn
-  - skill{s=KindletronJRInit;sync=true} @self ~onAttack
-  Options:
-    Silent: true
-    MovementSpeed: 0.1
-    MaxCombatDistance: 25
-    PreventOtherDrops: true
-    PreventBlockInfection: true
+# KindletronJR:
+#   Type: SILVERFISH
+#   Health: 20
+#   Damage: 0
+#   Skills:
+#   - model{mid=kindletronjr} @self ~onSpawn
+#   - skill{s=KindletronJRInit;sync=true} @self ~onAttack
+#   Options:
+#     Silent: true
+#     MovementSpeed: 0.1
+#     MaxCombatDistance: 25
+#     PreventOtherDrops: true
+#     PreventBlockInfection: true

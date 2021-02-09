@@ -37,10 +37,6 @@ VOID_WORSHIPER:
   - 1 attacker
   Skills:
   - damage{amount=150;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -83,10 +79,6 @@ VOID_SOURCE:
   - 0 players
   - 1 attacker
   Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=VOID_MOB_BUFF} @MIR{r=15;t=VOID_WORSHIPER,VOID_THRALL,VOID_ASSASSIN,VOID_VEIN,VOID_SOURCE} ~onTimer:350
   - summon{type=VOID_ASSASSIN;amount=1;radius=5} @RandomThreatTarget ~onDeath
@@ -129,10 +121,6 @@ VOID_THRALL:
   - 1 attacker
   Skills:
   - damage{amount=100;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - potion{type=SLOWNESS;duration=60;level=5} @PIR{r=5} ~onDeath
   - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
@@ -183,10 +171,6 @@ VOID_ASSASSIN:
   - 1 attacker
   Skills:
   - damage{amount=250;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=ASSASSINSTUN} @PlayersInRadius{r=7} ~onDamaged <50% .15
   - effect:bloodyScreen{d=60} @PIR{r=10} ~onTimer:20
@@ -233,10 +217,6 @@ VOID_VEIN:
   - 0 randomlookaround
   - 1 clear
   Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - effect:blockmask{m=BEDROCK;r=3;d=100} @self ~onTimer:200
   - effect:particles{particle=damage_indicator;amount=100;hS=.65;vS=10;speed=0} @self ~onTimer:200

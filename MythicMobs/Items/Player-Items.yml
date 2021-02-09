@@ -20,20 +20,6 @@ TESTING:
   - ATTRIBUTES
   - UNBREAKABLE
 
-BLINDER_KILL:
-  Id: GRAY_DYE
-  Display: "&5Slowness Ring"  
-  Lore:
-  - '&fCatalyst'
-  - ''
-  - '&7Hold this in your off-hand to'  
-  - '&7remove any &cSlowness&7 effects!'  
-  - ''  
-  - '&5&lLEGENDARY ITEM'  
-  Skills:
-  - remove @MIR{r=1000;t=VOID_BLINDER} ~onTimer:5
-
-
 BLINDER:
   Id: GRAY_DYE
   Display: "&5Slowness Ring"  

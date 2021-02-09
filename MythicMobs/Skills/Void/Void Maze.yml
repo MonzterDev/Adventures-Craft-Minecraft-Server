@@ -35,9 +35,9 @@ BOOMER_DAMAGE:
   - throw{velocity=7;velocityY=15} @PIR{r=4}
   - damage{a=50;ignoreArmor=false} @PIR{r=4}
   - effect:sound{s=entity.generic.explode;v=1.25;p=0.5} @self
-  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - effect:particlering{p=largeexplode;a=3;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
   - delay 2
-  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
+  - effect:particlering{p=largeexplode;a=1;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self
 
 
 BOOMER_MEGA:

@@ -15,19 +15,10 @@ SmashAttack:
   - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
   - effect:explosion @Self
   
-ReaperTP:
-  Skills:
-  - teleportto{location=-96,15,176}
-
-ReaperSpawnText:
-  Cooldown: 15
-  Skills:
-  - message{m="&7[&fLVL 10&7] &cReaper &7is being summoned near the &fCastle&7!"} @PIR{r=150}
-
 SummonSoul:
   Cooldown: 100
   Skills:
-  #- prison{material=IRON_BLOCK;duration=200;breakable=true} @Target
+  - prison{material=IRON_BLOCK;duration=200;breakable=true} @Target
   - summon{type=LostSoul;amount=1;radius=4;onSurface=true} @PIR{r=5}
   - message{m="<mob.name> &fSummoned a &cLost Soul&f!"} @PIR{r=5} 
   
@@ -61,6 +52,15 @@ IceShield-Tick:
 
 
 #Reaper
+ReaperTP:
+  Skills:
+  - teleportto{location=-96,15,176}
+
+ReaperSpawnText:
+  Cooldown: 15
+  Skills:
+  - message{m="&7[&fLVL 10&7] &cReaper &7is being summoned near the &fCastle&7!"} @PIR{r=150}
+
 SummonReaper:
   Cooldown: 2.5
   Skills:
@@ -92,49 +92,3 @@ AngrySludgePoison:
   - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
   - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
 
-##Castle Undead Caster
-SpawnSummoner:
-  Cooldown: 1000
-  Skills:
-  - summon{type=UndeadSummoner;amount=2;radius=5;onSurface=true} @PIR{r=5} 
-
-Lightning1:
-  Cooldown: 5
-  Skills:
-  - lightning{damage=25} @target ~onAttack
-  - ignite{ticks=100} @target ~onAttack @target
-  - message{m="<mob.name> &fstruck you with &clightning&f!"} @target
-Prison1:
-  Cooldown: 20
-  Skills:
-  - prison{material=ICE;duration=100;breakable=true}
-  - message{m="<mob.name> &cfroze &fyou inside &cice&f!"} @target
-Stun1:
-  Cooldown: 20
-  Skills:
-  - stun{d=60;f=true} @target ~onAttack
-  - message{m="<mob.name> &cstunned &fyou for &c3 seconds&f!"} @target
-  
-##Castle Undead Summoner
-SpawnGolem:
-  Cooldown: 1000
-  Skills:
-  - summon{type=UndeadGuard;amount=1;radius=4;onSurface=true} @PIR{r=5} 
-  - message{m="<mob.name> &fsummoned an &cUndead Guard &fupon death!"} @PIR{r=5}
-  
-##Castle Undead Warrior
-CrushingLeap:
-  Skills:
-  - leap{velocity=300} @target
-  - delay 10
-  - jump{velocity=-100}
-  - effect:explosion @self
-  - damage{amount=30} @EntitiesInRadius{r=5}
-
-Dash:
-  Skills:
-  - leap{velocity=300} @target
-  - delay 10
-  - jump{velocity=-100}
-  - effect:explosion @self
-  - damage{amount=30} @EntitiesInRadius{r=5}

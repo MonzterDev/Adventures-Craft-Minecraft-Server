@@ -1,0 +1,455 @@
+# #Skill 1
+# UNDEAD_RIDER:
+#   Skills:
+#   - potion{t=SLOW;level=10;d=20;hasParticles=false} @self
+#   - effect:particles{particle=redstone;amount=50;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#808080} @self
+#   - delay 15
+#   - effect:particles{particle=redstone;amount=50;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#303030} @self
+#   - delay 15
+#   - effect:particles{particle=redstone;amount=50;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#FFFFFF} @self
+#   - delay 15
+#   - projectile{onTick=soulless_caravan-TICK;onHit=soulless_caravan-HIT;v=16;i=2;hR=3;vR=1;StopAtBlock=true;hs=true;mr=60;hp=false;hnp=true;bulletType=MOB;mob=SKELETON_HORSE1;hfs=1.5;sE=false} @forward{f=5}
+# soulless_caravan-TICK:
+#   Skills:
+#   - effect:particles{particle=redstone;amount=30;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#FFFFFF} @origin
+#   - effect:particles{particle=redstone;amount=30;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#404040} @origin
+#   - effect:blockmask{m=GREEN_CONCRETE_POWDER;data=8;r=1;d=20} @origin
+# soulless_caravan-HIT:
+#   Skills:
+#   - damage{a=1250;i=true} @EntitiesNearOrigin{r=3}
+#   - potion{type=POISON;level=2;duration=80} @EntitiesNearOrigin{r=3;ignore=players}
+#   - potion{type=WEAKNESS;level=2;duration=80} @EntitiesNearOrigin{r=3;ignore=players}
+#   - potion{type=SLOW;level=2;duration=80} @EntitiesNearOrigin{r=3;ignore=players}
+
+# #Skill 2
+# HOMING_COBWEB:
+#   Skills:
+#   - delay 10
+#   - velocity{m=set;x=0;y=0;z=0;repeat=50;repeatInterval=1} @self
+#   - sound{s=item.armor.equip_iron;v=4;p=1} @self
+#   - particlering{particle=spell_witch;radius=0.4;points=12;amount=1;hS=0;vS=0;y=1} @self
+#   - effect:itemspray{item=SPIDER_EYE;amount=10;velocity=1;duration=20;r=0.5} @self
+#   - delay 10
+#   - sound{s=entity.shulker_bullet.hurt;v=4;p=2} @self
+#   - missile{onTick=homing_cobweb-TICK;onEnd=homing_cobweb-HIT;v=4;i=1;hR=0.1;vR=2;ht=true;hs=true;tyo=1;eyedir=true;hp=false;hnp=true} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - delay 20
+#   - sound{s=item.armor.equip_iron;v=4;p=1} @self
+# homing_cobweb-TICK:
+#   Skills:
+#   - particles{p=end_rod;amount=20;speed=0;hR=1;vR=0.2} @origin
+#   - effect:particles{particle=reddust;amount=100;vSpread=0;hSpread=0.01;Speed=0;color=#FFFFFF} @origin
+# homing_cobweb-HIT:
+#   Skills:
+#   - prison{material=COBWEB;duration=200;breakable=true} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - potion{type=POISON;level=2;d=150} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - sound{s=entity.shulker_bullet.hit;v=0.25;p=2} @PlayersNearOrigin{r=1.5}
+#   - particles{p=campfire_cosy_smoke;amount=1;speed=0;hR=0;vR=0} @origin
+
+# #Skill 3
+# GREED:
+#   Skills:
+#   - sound{s=item.armor.equip_iron;v=4;p=1} @self
+#   - particlering{particle=redstone;radius=1;points=12;amount=1;hS=0;vS=0;y=0;c=#FFFF00} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - effect:itemspray{item=GOLD_INGOT;amount=10;velocity=1;duration=20;r=0.5} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - delay 20
+#   - particlering{particle=redstone;radius=1;points=12;amount=1;hS=0;vS=0;y=0;c=#FFFF00} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - effect:itemspray{item=GOLD_INGOT;amount=10;velocity=1;duration=20;r=0.5} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - delay 20
+#   - particlering{particle=redstone;radius=1;points=12;amount=1;hS=0;vS=0;y=0;c=#FFFF00} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - effect:itemspray{item=GOLD_INGOT;amount=10;velocity=1;duration=20;r=0.5} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - delay 20
+#   - effect:itemspray{item=GOLD_BLOCK;amount=30;velocity=2;duration=40;r=0.5} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - effect:blockmask{m=GOLD_BLOCK;r=4;d=80} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+#   - damage{a=14} @EIR{r=15;limit=1;sort=NEAREST;ignore=players}
+
+# #Skill 4
+# blazing_air:
+#     Skills:
+#     - itemprojectile{pobject=BLAZE_SPAWN_EGG;targetable=false;eyedir=true;bounce=false;bred=false;onbounce=false;onTick=blazing_air-Tick;onEnd=blazing_air-End;v=12;i=1;hR=1;vR=1;gravity=1;hnp=false;hp=false;StopAtBlock=true}
+# blazing_air-Tick:
+#     Skills:
+#     - effect:particles{p=flame;amount=8;speed=0;hS=0.1;vS=0} @origin
+# blazing_air-End:
+#     Skills:
+#     - summon{type=blaze_totem;amount=1;radius=0.1} @origin
+# ##############################
+# blaze_air:
+#   Skills:
+#   - effect:sound{s=entity.firework.blast_far;v=1;p=0.7} @PIR{r=60}
+#   - effect:sound{s=block.enderchest.open;v=1;p=0.7} @PIR{r=60}
+#   - delay 10
+#   - projectile{onTick=blaze_air-TICK;onEnd=blaze_air-END;v=10;i=1;hR=1;vR=1;StopAtBlock=true;HitNonPlayers=false;hp=false;g=0.5;vO=1.8} @Ring{radius=2;points=4}
+# blaze_air-TICK:
+#   Skills:
+#   - effect:particles{p=redstone;amount=1;speed=0;hR=0.2;vR=0.2} @origin
+#   - effect:particles{p=flame;amount=1;speed=0;hR=0.2;vR=0.2} @origin
+# blaze_air-END:
+#   Skills:
+#   - effect:sound{s=block.enderchest.close;v=1;p=2}
+#   - summon{type=blaze_air_stand;amount=1;radius=0.1} @origin
+# RemoveMe_blaze:
+#   Skills:
+#   - delay 200
+#   - remove @self
+
+# RemoveMe_blaze2:
+#   Skills:
+#   - delay 220
+#   - remove @self
+
+# #Skill 5
+# flaming_breath_proj:
+#     Skills:
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+#     - delay 2
+#     - itemprojectile{pobject=CHORUS_PLANT;targetable=false;eyedir=true;mr=10;d=15;bounce=false;bred=false;onbounce=false;onTick=flaming_breath-Tick;onEnd=flaming_breath-End;v=12;i=1;hR=1;vR=1;hnp=true;hp=false;StopAtBlock=true}
+# flaming_breath-Tick:
+#     Skills:
+#     - effect:particles{p=dragon_breath;amount=8;speed=0;hS=0.1;vS=0} @origin
+# flaming_breath-End:
+#     Skills:
+#     - ignite{d=120} @EntitiesNearOrigin{r=3}
+
+
+# #SKILL 1
+# HellFire:
+#   Skills:
+#   - sound{s=item.firecharge.use;p=0.1} @target
+#   - effect:particlering{p=flame;a=3;hs=0.1;vs=0.05;y=0.05;r=0.8;points=15} @target
+#   - effect:particlering{p=flame;a=2;hs=0.05;vs=0.05;y=0.15;r=0.6;points=12} @target
+#   - effect:particlering{p=flame;a=1;vs=0.05;y=0.25;r=0.55;points=10} @target
+#   - skill{s=HellFire1} @target
+#   - skill{s=HellFire2} @target
+  
+# HellFire1:
+#   TargetConditions:
+#   - isburning{action=true}
+#   Skills:
+#   - effect:particles{p=crit;a=20;y=0.6;hs=0.3;vs=0.3;speed=0.2}
+#   - sound{s=entity.player.attack.crit;p=0.1}
+#   - damage{a=1500}    
+  
+# #Instant damage if the target is burning
+# HellFire2:
+#   Skills:
+#   - skill{s=HFdamage;repeat=5;repeatInterval=20}
+#   - ignite{d=100}
+# HFdamage:
+#   TargetConditions:
+#   - isburning{action=true}
+#   Skills:
+#   - damage{a=100} #Damage per second for Hell Fire
+
+
+
+
+# #SKILL 2
+# SlashNKill:
+#   Skills:
+#   - skill{s=SNKeff1} @Ring{r=3.5;points=100}
+#   - skill{s=SNKdamage1} @EIR{r=3.5}
+#   - skill{s=SNKdamage1_1} @EIR{r=3.5}
+#   - sound{s=entity.player.attack.sweep;p=0.1} @self
+#   - delay 20
+#   - sound{s=entity.player.attack.sweep;p=0.1} @self
+#   - effect:particles{p=reddust;a=20;color=#666666;hs=0.6;vs=0.05;y=0.75} @Ring{r=4;points=100}
+#   - skill{s=SNKdamage} @EIR{r=4}
+#   - sound{s=entity.player.attack.crit;p=0.7} @EIR{r=4}
+#   - effect:particles{p=crit;a=20;y=0.75;hs=0.2;vs=0.2;speed=0.2} @EIR{r=4}
+#   - skill{s=SNKdamage2} @EIR{r=4}
+# SNKeff1:
+#   TargetConditions:
+#   - fieldofview{a=100} false
+#   Skills:
+#   - effect:particles{p=reddust;a=20;color=#666666;hs=0.6;vs=0.05;y=0.75}
+# SNKdamage1:
+#   TargetConditions:
+#   - fieldofview{a=100}
+#   Skills:
+#   - sound{s=entity.player.attack.crit;p=0.7}
+#   - effect:particles{p=crit;a=20;y=0.75;hs=0.2;vs=0.2;speed=0.2}
+#   - skill{s=SNKdamage}                                               #Damage of the 1st attack
+# SNKdamage1_1:
+#   TargetConditions:
+#   - fieldofview{a=100}
+#   - health{a=<10}
+#   Skills:
+#   - sound{s=entity.player.attack.crit;p=0.1}
+#   - effect:particles{p=reddust;color=#d10011;a=25;y=0.6;hs=0.3;vs=0.6}
+#   - damage{a=12}                                                     #Doubled damage of the 1st attack
+# SNKdamage2:
+#   TargetConditions:
+#   - health{a=<10}
+#   Skills:
+#   - sound{s=entity.player.attack.crit;p=0.1}
+#   - effect:particles{p=crit;a=20;y=0.75;hs=0.2;vs=0.2;speed=0.2}
+#   - effect:particles{p=reddust;color=#d10011;a=25;y=0.6;hs=0.3;vs=0.6}
+#   - damage{a=12}                                                     #Doubled damage of the 2nd attack
+# SNKdamage:
+#   TargetConditions:
+#   - health{a=>10}
+#   Skills:
+#   - damage{a=6}                                                      #Standart damage
+
+
+
+
+
+# #SKILL 3
+# ShadowAttack:
+#   Skills:
+#   - onAttack{auraName=SA1;charges=5;duration=120;i=10;onTick=SA1eff;onHit=SA1hit} @self
+#   - effect:particles{p=smoke;a=20;y=0.2;hs=0.3;vs=0.2} @self
+#   - sound{s=entity.wither.shoot;p=0.7} @self
+# SA1eff:
+#   Skills:
+#   - effect:particleorbital{p=smoke;a=1;points=18;r=1;in=1;ticks=20;y=2.4} @self
+#   - effect:particlesphere{p=reddust;color=#000000;a=20;y=1.2;r=0.3;repeat=5;repeatInterval=2} @self
+# SA1hit:
+#   Skills:
+#   - damage{a=100}                                                      #Damage of additional attacks
+#   - effect:particleline{p=reddust;color=#000000;y=0.8;syo=0.8;a=1;}
+#   - effect:particles{p=sweepAttack;a=1;y=0.85;hs=0.1;vs=0.1}
+#   - sound{s=entity.player.attack.sweep;p=0.7}
+
+
+
+
+# #SKILL 4
+# Dashing:
+#   Skills:
+#   - leap{v=200} @Forward{f=10}
+#   - effect:particles{p=explode;a=2;y=0.6;hs=0.3;vs=0.5;repeatInterval=1;repeat=6} @self
+#   - delay 7
+#   - skill{s=DashAttack} @EIR{r=3.5;limit=1;sort=NEAREST}
+# DashAttack:
+#   Skills:
+#   - damage{a=6}                                                      #Damage of the Dash
+#   - sound{s=entity.player.attack.sweep;p=2}
+#   - effect:particleline{p=reddust;color=#666666;y=0.6;a=1}
+
+
+
+
+# #SKILL 5
+# NinjaJump:
+#   Skills:
+#   - sound{s=entity.wither.shoot;p=1.2} @self
+#   - effect:particles{p=cloud;a=10;hs=0.3;vs=0.1;y=0.1} @self
+#   - jump{v=0.75} @self
+
+
+
+# #SKILL 6
+# Mining:
+#   Skills:
+#   - skill{s=MiningStrike;repeat=4;repeatInterval=10} @crosshair
+# MiningStrike:
+#   TargetConditions:
+#   - distance{d=0to3.5}
+#   Skills:
+#   - damage{a=3}                                                      #Damage of the Mining
+#   - effect:particleline{p=reddust;color=#666666;a=2;hs=0.1;vs=0.1;y=0.5}
+#   - effect:particles{p=sweepAttack;a=1;y=0.5;hs=0.1;vs=0.1}
+#   - sound{s=entity.player.attack.strong;p=0.7}
+#   - effect:particles{p=crit;a=10;y=0.8;hs=0.2;vs=0.2;speed=0.2}
+#   - effect:particles{p=reddust;color=#c40000;y=0.8;a=3;hs=0.2;vs=0.2}
+
+
+
+# #Skill 7
+# SoulAbsoption:
+#   Skills:
+#   - potion{t=INCREASE_DAMAGE;l=0;d=200} @self
+#   - onAttack{auraName=SoulAbsorption;i=2;onTick=SAeff;onHit=SAhit;d=200} @self
+# SAeff:
+#   Skills:
+#   - effect:particles{p=flame;a=3;y=0.05;hs=0.3;vs=0.05} @self
+# SAhit:
+#   Skills:
+#   - delay 1
+#   - skill{s=SAhit1}
+# SAhit1:
+#   TargetConditions:
+#   - health{a=0} true
+#   Skills:
+#   - removeaura{aura=SoulAbsorption} @self
+#   - effect:particleline{p=explode;a=3;hs=0.1;vs=0.1;y=0.5}
+#   - effect:particleline{p=smoke;a=1;hs=0.1;vs=0.1;y=0.5}
+#   - sound{s=entity.player.breath;p=0.8} @self
+#   - effect:particles{p=heart;a=1;hs=0.3;vs=0.1;y=0.2;repeatInterval=10;repeat=8} @self
+#   - heal{a="1 + <target.mhp> * 0.05";repeat=4;repeatInterval=20} @self                                                      #Heal of Soul Absorption
+
+
+
+# #Skill 8
+# RopeThrow:
+#   Skills:
+#   - sound{s=entity.experience_bottle.throw;p=0.1} @self
+#   - projectile{i=1;onTick=RTeff;onHit=RThit;v=15;gravity=0.2;hp=false;hnp=true;mr=20;d=200} @Forward{f=15;y=0.6}
+# RTeff:
+#   Skills:
+#   - effect:particlering{p=reddust;color=#de9a63;r=0.8;points=10}
+#   - skill{s=RTeff1}
+# RTeff1:
+#   Cooldown: 0.5
+#   Skills:
+#   - effect:particleline{p=reddust;color=#de9a63;syo=0.6;cooldown=0.5}
+# RThit:
+#   Skills:
+#   - potion{t=SLOW;l=255;d=40;p=false;force=true}
+#   - effect:particleorbital{p=reddust;color=#de9a63;r=0.8;y=1;ticks=40;points=16;in=1;}
+#   - effect:particleline{p=reddust;color=#de9a63;y=0.5;repeat=2;repeatInterval=20}
+#   - pull{v=6;vy=1}
+#   - damage{a=100}                                                       
+#   - delay 20
+#   - pull{v=6;vy=1}
+#   - damage{a=100}                                                       
+#   - delay 20
+#   - pull{v=6;vy=1}
+#   - damage{a=100}                                                       
+
+
+
+
+# #Skill 9
+# UnknownAspect:
+#   Skills:
+#   - onDamaged{auraName=UA;i=10;onTick=UAeff;duration=200;multiplier=1.5} @crosshair
+#   - onAttack{d=200;onHit=UAhit} @self
+#   - sound{s=entity.elder_guardian.curse;p=0.7} @crosshair
+#   - effect:particleline{p=magicCrit;a=3;hs=0.1;vs=0.1;y=0.6} @crosshair
+#   - effect:particles{p=magicCrit;a=30;y=0.6;hs=0.3;vs=0.5} @crosshair
+# UAeff:
+#   Skills:
+#   - effect:particleorbital{p=magicCrit;r=0.8;y=1;ticks=50;points=32;in=1}
+#   - effect:particles{p=magicCrit;a=7;y=0.1;hs=0.3;vs=0.05}
+# UAhit:
+#   Skills:
+#   - skill{s=UAhit1}
+# UAhit1:
+#   TargetConditions:
+#   - hasaura UA true
+#   Skills:
+#   - effect:particles{p=heart;a=3;y=0.7;hs=0.3;vs=0.1} @self
+#   - heal{a="<target.mhp> * 0.05"} @self                                                      #Heal of Unknown aspect
+
+
+
+
+# #Skill 10
+# FastClimb:
+#   Skills:
+#   - skill{s=FCclimb;repeat=6;repeatInterval=5} @Forward{f=1;y=1.7}
+#   - effect:particles{p=reddust;color=#d80200;a=5;hs=0.2;vs=0.2;repeat=6;repeatInterval=5} @Forward{f=1;y=1.7}
+# FCclimb:
+#   TargetConditions:
+#   - blocktype AIR false
+#   - blocktype AIR castinstead FCjump
+#   Skills:
+#   - jump{v=0.451} @self
+#   - sound{s=item.trident.hit_ground;p=1.4} @self
+#   - effect:particles{p=blockcrack;m=STONE;a=20;hs=0.4;vs=0.4}
+#   - aura{auraName=FC;d=11} @self
+# FCjump:
+#   Conditions:
+#   - hasaura FC true
+#   Skills:
+#   - removeaura{auraName=FC} @self
+#   - leap{v=100} @Forward{f=1;y=1.7}

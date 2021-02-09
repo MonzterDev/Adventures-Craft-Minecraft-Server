@@ -1,3 +1,74 @@
+
+##Castle Undead Caster
+SpawnSummoner:
+  Cooldown: 1000
+  Skills:
+  - summon{type=UndeadSummoner;amount=2;radius=5;onSurface=true} @PIR{r=5} 
+
+Lightning1:
+  Cooldown: 5
+  Skills:
+  - lightning{damage=25} @target ~onAttack
+  - ignite{ticks=100} @target ~onAttack @target
+  - message{m="<mob.name> &fstruck you with &clightning&f!"} @target
+Prison1:
+  Cooldown: 20
+  Skills:
+  - prison{material=ICE;duration=100;breakable=true}
+  - message{m="<mob.name> &cfroze &fyou inside &cice&f!"} @target
+Stun1:
+  Cooldown: 20
+  Skills:
+  - stun{d=60;f=true} @target ~onAttack
+  - message{m="<mob.name> &cstunned &fyou for &c3 seconds&f!"} @target
+
+UndeadCaster_Missile:
+  Cooldown: 2
+  Skills:
+  - missile{bulletType=ITEM;material=AIR;i=1;onTick=UndeadCaster_Missile_TICK;onHit=UndeadCaster_Missile_HIT;onEnd=UndeadCaster_Missile_END;hnp=false;MaxRange=30;sE=true;hp=true;sB=true;Duration=200;Velocity=6}
+  - sound{s=entity.evoker.cast_spell;p=.5} @self
+UndeadCaster_Missile_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#EE22CC;amount=5;speed=1;hS=0.15;vS=.15} @origin
+UndeadCaster_Missile_HIT:
+  Skills:
+  - damage{a=25;ignoreArmor=false} @target
+UndeadCaster_Missile_END:
+  Skills:
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @origin
+  - effect:particlering{p=largeexplode;a=5;vs=0.1;hs=0.1;s=0;y=0.1;points=4;radius=0} @origin
+
+##Castle Undead Summoner
+SpawnGolem:
+  Cooldown: 1000
+  Skills:
+  - summon{type=UndeadGuard;amount=1;radius=4;onSurface=true} @PIR{r=5} 
+  - message{m="<mob.name> &fsummoned an &cUndead Guard &fupon death!"} @PIR{r=5}
+  
+##Castle Undead Warrior
+CrushingLeap:
+  Skills:
+  - leap{velocity=300} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}
+
+Dash:
+  Skills:
+  - leap{velocity=300} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}
+
+
+
+
+
+
+
+
 #Castle Mobs which spawn AlphaSouls
 AlphaSummon:
   Cooldown: 100

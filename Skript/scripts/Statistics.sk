@@ -1,4 +1,9 @@
 import:
+    net.Indyuce.mmocore.MMOCore
+    net.Indyuce.mmocore.api.experience.EXPSource
+    net.Indyuce.mmocore.api.experience.Profession
+    net.Indyuce.mmocore.api.player.PlayerData
+
     org.bukkit.Bukkit
     org.bukkit.event.EventHandler
     org.bukkit.Statistic
@@ -7,9 +12,18 @@ import:
     net.Indyuce.mmocore.api.block.VanillaBlockType
     net.Indyuce.mmocore.api.block.BlockType
 
-on CustomBlockMineEvent: #This event does work properly 
+on CustomBlockMineEvent:
     if event.getPlayer() is a player:
         execute console command "/q point %event.getPlayer()% add blocks.%event.getBlock().getType()% 1"
+
+on CustomBlockMineEvent:
+    set {block} to event.getBlock().getType()
+    if event.getPlayer() is a player:
+#        broadcast "%{block}%"
+        if "%{block}%" is "STONE":
+            if chance of 50%:
+                execute console command "/mi give CONSUMABLE BORGS_BOX %event.getPlayer()% 1"
+
 #        broadcast "%event.getPlayer()% %event.getBlock().getType()%" #This is a test to return the block which was broken
 
 # command /tttt [<text>]:
@@ -19,15 +33,35 @@ on CustomBlockMineEvent: #This event does work properly
 #                                                                                   #Spigot's api to return a value
 
 on mythicmob deathevent:
-    if event-killer is a player:
-        execute console command "/q point %event-killer% add mobs.%event-activemob% 1"
-        execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
-        loop get threattable of activemob event-activemob:
-            broadcast loop-value parsed as player
-    else:
-        broadcast "%event-killer% & %event-activemob% %faction of activemob event-activemob% & %get threattable of activemob event-activemob%"
-        execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
+    loop get threattable of activemob event-activemob:
+        if loop-value is a player:
+            execute console command "/q point %event-killer% add mobs.%event-activemob% 1"
+            execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
+#        else:
+#        broadcast "%event-killer% & %event-activemob% %faction of activemob event-activemob% & %get threattable of activemob event-activemob%"
+#        execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
 # Loop through threattable list and run command for each?
+
+# on mythicmob deathevent:
+#     if event-killer is a player:
+#         loop all items of mobdrop event-mobdrop:
+#             broadcast "%event-mobdrop% & %loop-mobitem%"
+#             give loop-item to event-killer's inventory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # on join:
 #     if world of player is "Spawn" or "Homes":

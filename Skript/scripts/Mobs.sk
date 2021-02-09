@@ -1,0 +1,46 @@
+# on mythicmobs skriptconditionevent:
+#     broadcast "Skill"
+#     if condition-name is "WILD_CAT_LEASHEDS":
+#         broadcast "Skill"
+#         if condition-entity is leashed:
+#             set condition meet to true
+#             broadcast "True"
+#         else:
+#             set condition meet to false
+#             broadcast "False"
+
+on mythicmobs skriptskillevent:
+    if skill-name is "WILD_CAT_LEASHED":
+        if event-entity is leashed:
+            set health of event-entity to 1000
+            send message "&cThe &aCat &ccannot be damaged while Leashed!" to skill-trigger
+
+on rightclick holding a lead on a ocelot:
+    if event-entity is leashed:
+        message "&cThe &aCat &cis already leashed by someone else!"
+        cancel event
+    else:
+        if event-entity instanceof activemob:
+#debug            broadcast "%activemob of event-entity% & %event-player% & %owner of event-entity%"
+            set {_am} to activemob of event-entity
+            set owner of activemob {_am} to player
+            
+            set {unleadCD} to a random integer between 3 and 10
+            set {unleadCD} to "%{unleadCD}% seconds" parsed as a time span
+            
+            leash the player to the target entity
+            wait {unleadCD}
+            if event-entity is alive:
+                if event-entity is leashed:
+                    unleash the event-entity
+                    
+                    send message "&cThe &aCat &cbroke the leash!" to player
+                    play sound "entity.leash_knot.break" to the player
+
+# on mythicmobs skriptskillevent:
+#     broadcast "skill"
+#     if skill-name is "WILD_CAT_CAPTURED":
+#         broadcast "%owner of activemob {_am}%"
+#         send message "&aYou rescued one of my Wild Cats, thanks %owner of activemob {_am}%&a!" to owner of activemob {_am}
+#         execute console command "/q point %owner of activemob {_am}% add mobs.Ocelot 1"
+#         remove activemob {_am}

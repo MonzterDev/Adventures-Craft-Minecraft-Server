@@ -224,3 +224,8 @@ command /Quest:
 #         broadcast "Xur has spawned"
 #         broadcast "Timer has been reset!"
 #         set {1st::Day} to 10 seconds from now
+
+# on join:
+#     if world of player is "Spawn" or "Homes"
+#         set {Health::%player%} to placeholder "mmocore_health"
+#         broadcast {Health::%player%}

@@ -39,10 +39,6 @@ VOID_PIGMAN:
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidPigmen 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -89,10 +85,6 @@ VOID_DEMON:
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidDemon 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -139,10 +131,6 @@ VOID_BLAZE2:
   - command{c="mythicmobs i give <target.name> VoidBlazes 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=35;ignoreArmor=false} @target ~onAttack  
   - skill{s=VOIDBLAZE} ~onTimer:80
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -193,10 +181,6 @@ VOID_NECROMANCER:
   Skills:
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidNecromancers 1"} @ThreatTablePlayers ~onDeath
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -311,10 +295,6 @@ VOID_PROTECTOR:
   Skills:
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=65;ignoreArmor=false} @target ~onAttack  
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -373,10 +353,6 @@ VOID_HEALER:
   - command{c="mythicmobs i give <target.name> VoidHealer 1"} @ThreatTablePlayers ~onDeath
   - damage{amount=45} @target ~onAttack  
   - heal{amount=500} @MIR{r=500;t=WITHER_MINI_BOSS} ~onAttack  
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -466,10 +442,6 @@ VOID_MAGMA2:
   - EXP 10-15 100%    
   Skills:
   - damage{amount=50;ignoreArmor=false} @PIR{r=5} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidMagma 1"} @ThreatTablePlayers ~onDeath  
@@ -505,10 +477,6 @@ VOID_MAGMA3:
   - EXP 5-10 100%    
   Skills:
   - damage{amount=40;ignoreArmor=false} @PIR{r=4} ~onTimer:20
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - command{c="mythicmobs i give <target.name> HellMobs 1"} @ThreatTablePlayers ~onDeath
   - command{c="mythicmobs i give <target.name> VoidMagma 1"} @ThreatTablePlayers ~onDeath  
@@ -560,10 +528,6 @@ VOID_SKELETON2:
   - 1 attacker
   Skills:
   - damage{amount=75} @target ~onAttack  
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -610,10 +574,6 @@ VOID_PIGMAN2:
   - 1 attacker
   Skills:
   - damage{amount=65;ignoreArmor=false} @target ~onAttack
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -664,10 +624,6 @@ VOID_NECROMANCER2:
   - 0 players
   - 1 attacker
   Skills:
-  - skill{s=anticheat;sync=true} ~onDamaged
-  - skill{s=anticheat;sync=true} ~onInteract
-  - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
-  - skill{s=anticheatscoreminus;sync=true} @self ~onTimer:10
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

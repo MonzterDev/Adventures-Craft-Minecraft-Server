@@ -1,0 +1,58 @@
+quester: Cat Lady
+first: greeting,completed
+NPC_options:
+  greeting:
+    text: Ohh, hey &a%player%&7 I'm waiting here for my runaway cats to return! 
+    pointers: hey, quest, leads, bye
+    conditions: '!q1_completed'        
+  completed:
+    text: Thank you so much &a%player%&7 for rescuing all my cats! 
+    conditions: 'q1_completed'        
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: Ohh, I have so many cats I lost count. I've been having a problem recently, because many of my cats keep running away. It seems like they never come back, making me very sad... 
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Please &a%player%&7, help rescue my cats!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: My cats have ran all accross the &aSpruce Forest&7, please use this lead to drag them back to me!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: How many cats do you have?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: I'll rescue your cats!
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Quest    
+  leads:
+    text: I want to buy &eLeads&f!
+    events: 'ShopOpen'    
+    conditions: 'q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Aww, sorry about your cats.
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message,GiveLeads'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+
