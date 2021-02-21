@@ -8,11 +8,10 @@
 #--------------------------------------------------------------------#
 #          All possible mob names: https://goo.gl/cch8YK             #
 #--------------------------------------------------------------------#
-config-version: 20
+config-version: 17
 
 # -- 'use-internal-tps' Should clearlag just use the calculated internal TPS? (Improves accuracy)
-# -- 'language' Clearlag supports multiple languages (https://github.com/bob7l/Clearlag-Languages) translated by the community
-# -- 'use-internal-tps' Should Clearlag use Spigot's /tps? (Updated by minutes, much slower, but more accurate!)
+# -- 'language' Clearlag supports multiple languages (English, Spanish, Japanese) translated by the community
 settings:
   language: English
   auto-update: true
@@ -21,12 +20,10 @@ settings:
 
 #Controls ALL of Clearlag's broadcasting. Disabling this will disable ALL broadcasting on Clearlag
 # -- 'enabled' Should clearlag broadcast messages at all? (Example: Auto-removal, warnings, ect)
-# -- 'async' Should messages be broadcasted on another thread
 # -- 'use-permission-for-broadcasts' Should clearlag use permissions?
 # -- 'permission' What is the permission? (By default, it's bukkit's default)
 global-broadcasts:
   enabled: false
-  async: false
   use-permission-for-broadcasts: false
   permission: bukkit.broadcast
 
@@ -145,12 +142,12 @@ log-purger:
 
 #What type of entities SHOULD NOT be removed while doing /lagg area?
 area-filter:
-  - Itemframe
-  - Minecart
-  - Wolf
-  - Villager
-  - Horse
-  - ARMOR_STAND
+    - Itemframe
+    - Minecart
+    - Wolf
+    - Villager
+    - Horse
+    - ARMOR_STAND
 
 #Should clearlag reset the config, or attempt to update your config on updates
 # -- 'force-update' is whether or not clearlag will reset your config with a newer version
@@ -241,41 +238,6 @@ chunk-entity-limiter:
     - Horse
   # - Pig liveTime=100 <- This mob will be REMOVED if it's been alive for 100 ticks (5 seconds)
 
-#A per-entity chunk limiter. Very useful to limiting useless mobs like squid, but not zombies
-# -- 'entity-limits' lists all the entities, their filters, and 'limit' to specify their limit
-#    to be removed/culled
-# -- 'passive-purger' Enables random checking of chunks to see whether they're exceeding limits.
-# -- Useful for when you want to prevent lag exploiting
-# -- 'passive-cleaning-enabled' Enables the passive-purger
-# -- 'check-interval' How often (in ticks, 50MS) should chunks be checked
-# -- 'chunk-batch-size' How many chunks at once should be checked
-per-entity-chunk-entity-limiter:
-  enabled: false
-  entity-limits:
-    - Squid limit:1
-    - Zombie limit:2
-    - Skeleton limit:2
-    - Creeper limit:2
-    - Chicken limit:3
-    - Pig limit:5
-    - Sheep limit:5
-    - Cow limit:5
-    - Horse limit:3 !hasName
-    - Villager limit:4
-    - Arrow limit:4 inGround
-    - Rabbit limit:2
-    - PufferFish limit:2
-    - Silverfish limit:2
-    - TROPICAL_FISH limit:2
-    - COD limit:2
-    - DOLPHIN limit:2
-    - Bat limit:1
-    - Armorstand limit:10
-  passive-cleaner:
-    passive-cleaning-enabled: true
-    check-interval: 1
-    chunk-batch-size: 2
-
 #How many mobs should be allowed to spawn globally
 # -- 'interval' is the check interval check the current spawn amounts
 spawn-limiter:
@@ -312,14 +274,14 @@ tps-meter:
 # -- 'remove-named', when FALSE entities with custom names will NOT be removed
 # -- 'mob-filter' lists which mobs will be IGNORED during /lagg killmobs
 kill-mobs:
-  remove-named: false
-  mob-filter:
-    - Villager
-    - Wolf
-    - ARMOR_STAND
-    - Horse
+   remove-named: false
+   mob-filter:
+   - Villager
+   - Wolf
 #  - Pig !name="Test" <- This entity will filtered if the name does NOT equal "Test"
 #  - Zombie hasName <- This entity will be filtered if it HAS a name
+   - ARMOR_STAND
+   - Horse
 
 #This nerfs mob-spawners (Natural and player-made)
 #-------------------------------------------------
@@ -372,15 +334,15 @@ auto-removal:
   item-filter:
   # - Stone <-This item-id will be ignored during removal!
   # - Grass
-  remove-entities: []
+  remove-entities:
   # - cow <- This mob-type will be REMOVED during removal!
   # - MINECART_MOB_SPAWNER
   # - Pig liveTime=100 <- This mob will be REMOVED if it's been alive for 100 ticks (5 seconds)
   # - Minecart !isMounted <- This entity will be REMOVED if it's NOT mounted
   # - Wolf !hasName <- This entity will be REMOVED if it doesn't have a name
   warnings:
-    - 'time:400 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
-    - 'time:440 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
+        - 'time:400 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
+        - 'time:440 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
 
 #What should be removed during /lagg clear, nearly the same thing as auto-removal
 command-remove:

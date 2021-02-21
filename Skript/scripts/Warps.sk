@@ -221,169 +221,321 @@ command /warp [<text>]:
                 warp_Fastlocked(player)
 
 function warp_town(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eTown&a!" to {_p}
-    teleport {_p} to location(30, 17, -2.5, world "Spawn", 89, 0) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eTown&a!" to {_p}
+        teleport {_p} to location(30, 17, -2.5, world "Spawn", 89, 0) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.TOWN true"
+        execute {_p} command "/live2"        
 function warp_townHall(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eTown Hall&a!" to {_p}
-    teleport {_p} to location(-80, 17, -51, world "Spawn", 89, 6.4) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eTown Hall&a!" to {_p}
+        teleport {_p} to location(-80, 17, -51, world "Spawn", 89, 6.4) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.TOWNHALL true"
+        execute {_p} command "/live2"        
 
 function warp_farm(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eFarm&a!" to {_p}
-    teleport {_p} to location(-70, 16, -382, world "Spawn", -250, 0.65) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eFarm&a!" to {_p}
+        teleport {_p} to location(-70, 16, -382, world "Spawn", -250, 0.65) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FARM true"
+        execute {_p} command "/live2"        
 
 function warp_forest(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eForest&a!" to {_p}
-    teleport {_p} to location(282.39, 16, -33.7, world "Spawn", 278.22, 4.21) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eForest&a!" to {_p}
+        teleport {_p} to location(282.39, 16, -33.7, world "Spawn", 278.22, 4.21) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FOREST true"
+        execute {_p} command "/live2"        
 function warp_forestSpruce(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eSpruce Forest&a!" to {_p}
-    teleport {_p} to location(320.38, 22.38, -38.5, world "Spawn", 263.47, 2.85) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eSpruce Forest&a!" to {_p}
+        teleport {_p} to location(320.38, 22.38, -38.5, world "Spawn", 263.47, 2.85) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTSPRUCE true"
+        execute {_p} command "/live2"        
 function warp_forestDarkOak(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eDark Oak Forest&a!" to {_p}
-    teleport {_p} to location(375.48, 26.38, -48.5, world "Spawn", -91.1, 1.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eDark Oak Forest&a!" to {_p}
+        teleport {_p} to location(375.48, 26.38, -48.5, world "Spawn", -91.1, 1.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTDARKOAK true"
+        execute {_p} command "/live2"        
 function warp_forestBirch(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eBirch Forest&a!" to {_p}
-    teleport {_p} to location(419.14, 36.38, -30.2, world "Spawn", -90.1, 6.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eBirch Forest&a!" to {_p}
+        teleport {_p} to location(419.14, 36.38, -30.2, world "Spawn", -90.1, 6.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTBIRCH true"
+        execute {_p} command "/live2"        
 function warp_forestAcacia(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eAcacia Forest&a!" to {_p}
-    teleport {_p} to location(473.39, 44.38, -50.2, world "Spawn", -90.8, 3.3) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eAcacia Forest&a!" to {_p}
+        teleport {_p} to location(473.39, 44.38, -50.2, world "Spawn", -90.8, 3.3) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTACACIA true"
+        execute {_p} command "/live2"        
 function warp_forestJungle(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eJungle Forest&a!" to {_p}
-    teleport {_p} to location(520.43, 54.36, -50.4, world "Spawn", -126.2, 3.3) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eJungle Forest&a!" to {_p}
+        teleport {_p} to location(520.43, 54.36, -50.4, world "Spawn", -126.2, 3.3) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTJUNGLE true"
+        execute {_p} command "/live2"        
 function warp_forestHive(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eHive Forest&a!" to {_p}
-    teleport {_p} to location(569, 63.36, -47.8, world "Spawn", -83.3, 4) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eHive Forest&a!" to {_p}
+        teleport {_p} to location(569, 63.36, -47.8, world "Spawn", -83.3, 4) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.FORESTHIVE true"
+        execute {_p} command "/live2"        
 
 function warp_mineEntrance(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eMine Entrance&a!" to {_p}
-    teleport {_p} to location(-75.48, 35.38, -160.7, world "Spawn", 179.9, 1.7) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eMine Entrance&a!" to {_p}
+        teleport {_p} to location(-75.48, 35.38, -160.7, world "Spawn", 179.9, 1.7) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINEENTRANCE true"
+        execute {_p} command "/live2"        
 function warp_mineCoal(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eCoal Mine&a!" to {_p}
-    teleport {_p} to location(-41.48, 33.38, -891.8, world "Spawn", 179.5, 9) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eCoal Mine&a!" to {_p}
+        teleport {_p} to location(-41.48, 33.38, -891.8, world "Spawn", 179.5, 9) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINECOAL true"
+        execute {_p} command "/live2"        
 function warp_mineGold(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eGold Mine&a!" to {_p}
-    teleport {_p} to location(-98.36, 4.05, -958.5, world "Spawn", -.83, -3.25) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eGold Mine&a!" to {_p}
+        teleport {_p} to location(-98.36, 4.05, -958.5, world "Spawn", -.83, -3.25) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINEGOLD true"
+        execute {_p} command "/live2"        
 function warp_mineRedstone(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eRedstone Mine&a!" to {_p}
-    teleport {_p} to location(-69.63, 44.0, -1011.69, world "Spawn", 179.79, 3.04) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eRedstone Mine&a!" to {_p}
+        teleport {_p} to location(-69.63, 44.0, -1011.69, world "Spawn", 179.79, 3.04) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINEREDSTONE true"
+        execute {_p} command "/live2"        
 function warp_mineLapis(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eLapis Mine&a!" to {_p}
-    teleport {_p} to location(-69.5, 16.0, -1012.8, world "Spawn", 179.73, -2.5) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eLapis Mine&a!" to {_p}
+        teleport {_p} to location(-69.5, 16.0, -1012.8, world "Spawn", 179.73, -2.5) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINELAPIS true"
+        execute {_p} command "/live2"        
 function warp_mineDiamond(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eDiamond Mine&a!" to {_p}
-    teleport {_p} to location(-41.46, 7.0, -1169.73, world "Spawn", 175.3, -8.35) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eDiamond Mine&a!" to {_p}
+        teleport {_p} to location(-41.46, 7.0, -1169.73, world "Spawn", 175.3, -8.35) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINEDIAMOND true"
+        execute {_p} command "/live2"        
 function warp_mineEmerald(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eEmerald Mine&a!" to {_p}
-    teleport {_p} to location(-97.43, 7.06, -1164.65, world "Spawn", 180.41, -2.71) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eEmerald Mine&a!" to {_p}
+        teleport {_p} to location(-97.43, 7.06, -1164.65, world "Spawn", 180.41, -2.71) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MINEEMERALD true"
+        execute {_p} command "/live2"        
 
 function warp_Graveyard(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eGraveyard&a!" to {_p}
-    teleport {_p} to location(-140.9, 17, 48.34, world "Spawn", 41.8, 4.6) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eGraveyard&a!" to {_p}
+        teleport {_p} to location(-140.9, 17, 48.34, world "Spawn", 41.8, 4.6) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.GRAVEYARD true"
+        execute {_p} command "/live2"        
 function warp_Courtyard(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eCourtyard&a!" to {_p}
-    teleport {_p} to location(-111.5, 16, 248.82, world "Spawn", -.1, 3.4) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eCourtyard&a!" to {_p}
+        teleport {_p} to location(-111.5, 16, 248.82, world "Spawn", -.1, 3.4) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.COURTYARD true"
+        execute {_p} command "/live2"        
 function warp_Castle(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eCastle&a!" to {_p}
-    teleport {_p} to location(-85.2, 17, 434.51, world "Spawn", -90.3, 3.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eCastle&a!" to {_p}
+        teleport {_p} to location(-85.2, 17, 434.51, world "Spawn", -90.3, 3.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.CASTLE true"
+        execute {_p} command "/live2"        
 function warp_Morden(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &cMorden&a!" to {_p}
-    teleport {_p} to location(-66.2, 18, 434.51, world "Spawn", -90.3, 3.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &cMorden&a!" to {_p}
+        teleport {_p} to location(-66.2, 18, 434.51, world "Spawn", -90.3, 3.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MORDEN true"
+        execute {_p} command "/live2"        
 
 function warp_Estate(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eEstate&a!" to {_p}
-    teleport {_p} to location(-673.38, 26, -491.57, world "Spawn", .5, 4.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eEstate&a!" to {_p}
+        teleport {_p} to location(-673.38, 26, -491.57, world "Spawn", .5, 4.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.ESTATE true"
+        execute {_p} command "/live2"        
 function warp_GoblinTown(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eGoblin Town&a!" to {_p}
-    teleport {_p} to location(-894.63, 32, -396.59, world "Spawn", -14.9, 2.5) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eGoblin Town&a!" to {_p}
+        teleport {_p} to location(-894.63, 32, -396.59, world "Spawn", -14.9, 2.5) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.GOBLINTOWN true"
+        execute {_p} command "/live2"        
 function warp_SpiritGrounds(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eSpirit Grounds&a!" to {_p}
-    teleport {_p} to location(-892.26, 32, -509.90, world "Spawn", -178.5, 2.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eSpirit Grounds&a!" to {_p}
+        teleport {_p} to location(-892.26, 32, -509.90, world "Spawn", -178.5, 2.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.SPIRITGROUNDS true"
+        execute {_p} command "/live2"        
 
 function warp_Hell(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eHell&a!" to {_p}
-    teleport {_p} to location(-146.96, 48, -1153.16, world "Spawn", 180, .3) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eHell&a!" to {_p}
+        teleport {_p} to location(-146.96, 48, -1153.16, world "Spawn", 180, .3) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.HELL true"
+        execute {_p} command "/live2"        
 function warp_HellBottom(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eLower Hell&a!" to {_p}
-    teleport {_p} to location(-230, 12, -1260.16, world "Spawn", -.1, 1.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eLower Hell&a!" to {_p}
+        teleport {_p} to location(-230, 12, -1260.16, world "Spawn", -.1, 1.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.HELLBOTTOM true"
+        execute {_p} command "/live2"        
 
 function warp_lowerVoid(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eVoid&a!" to {_p}
-    teleport {_p} to location(-217.6, 36, -1107.9, world "Spawn", .6, 6.1) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eVoid&a!" to {_p}
+        teleport {_p} to location(-217.6, 36, -1107.9, world "Spawn", .6, 6.1) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.LOWERVOID true"
+        execute {_p} command "/live2"        
 function warp_upperVoid(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eVoid Maze&a!" to {_p}
-    teleport {_p} to location(-193.5, 13, -826.5, world "Spawn", -0, 8.5) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eVoid Maze&a!" to {_p}
+        teleport {_p} to location(-193.5, 13, -826.5, world "Spawn", -0, 8.5) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.UPPERVOID true"
+        execute {_p} command "/live2"        
 function warp_VoidAbyss(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eVoid Abyss&a!" to {_p}
-    teleport {_p} to location(-71.5, 25, -762.5, world "Spawn", -90, 0) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eVoid Abyss&a!" to {_p}
+        teleport {_p} to location(-71.5, 25, -762.5, world "Spawn", -90, 0) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.VOIDABYSS true"
+        execute {_p} command "/live2"        
 
 function warp_locked(p: player):
     send "&cYou haven't unlocked this area yet!" to {_p}
 
 #FAST TRAVELS
 function warp_Enchant(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eEnchanter&a!" to {_p}
-    teleport {_p} to location(-45.54, 15, -13.03, world "Spawn", -.63, 7.34) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eEnchanter&a!" to {_p}
+        teleport {_p} to location(-45.54, 15, -13.03, world "Spawn", -.63, 7.34) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.ENCHANT true"
+        execute {_p} command "/live2"        
 function warp_Auction(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eAuction&a!" to {_p}
-    teleport {_p} to location(-38.5, 16, -48.12, world "Spawn", -179.05, 6.5) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eAuction&a!" to {_p}
+        teleport {_p} to location(-38.5, 16, -48.12, world "Spawn", -179.05, 6.5) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.AUCTION true"
+        execute {_p} command "/live2"        
 function warp_Dracula(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eDracula&a!" to {_p}
-    teleport {_p} to location(-91.5, 24, -1247.41, world "Spawn", 359.27, -0.52) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eDracula&a!" to {_p}
+        teleport {_p} to location(-91.5, 24, -1247.41, world "Spawn", 359.27, -0.52) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.DRACULA true"
+        execute {_p} command "/live2"        
 function warp_Reaper(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eReaper&a!" to {_p}
-    teleport {_p} to location(-99.27, 15, 176.49, world "Spawn", -89.91, 1.81) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eReaper&a!" to {_p}
+        teleport {_p} to location(-99.27, 15, 176.49, world "Spawn", -89.91, 1.81) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.REAPER true"
+        execute {_p} command "/live2"        
 function warp_MordenFast(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eMorden&a!" to {_p}
-    teleport {_p} to location(-41.35, 17, 434.56, world "Spawn", 90.44, 0.62) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eMorden&a!" to {_p}
+        teleport {_p} to location(-41.35, 17, 434.56, world "Spawn", 90.44, 0.62) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.MORDENFAST true"
+        execute {_p} command "/live2"        
 function warp_VoidWither(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eVoid Wither&a!" to {_p}
-    teleport {_p} to location(-237.37, 50, -1239.88, world "Spawn", -.05, -11.28) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eVoid Wither&a!" to {_p}
+        teleport {_p} to location(-237.37, 50, -1239.88, world "Spawn", -.05, -11.28) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.VOIDWITHER true"
+        execute {_p} command "/live2"        
 function warp_VoidMagma(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to the &eVoid Magma&a!" to {_p}
-    teleport {_p} to location(-161.74, 29, -1224.26, world "Spawn", 207.88, 1.54) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to the &eVoid Magma&a!" to {_p}
+        teleport {_p} to location(-161.74, 29, -1224.26, world "Spawn", 207.88, 1.54) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.VOIDMAGMA true"
+        execute {_p} command "/live2"        
 function warp_Ghastly(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eGhastly&a!" to {_p}
-    teleport {_p} to location(-152.91, 12, -1171.05, world "Spawn", 303, -1.69) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eGhastly&a!" to {_p}
+        teleport {_p} to location(-152.91, 12, -1171.05, world "Spawn", 303, -1.69) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.GHASTLY true"
+        execute {_p} command "/live2"        
 function warp_Bullbo(p: player):
-    play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
-    message "&aYou've been brought to &eBullbo&a!" to {_p}
-    teleport {_p} to location(-176.91, 31, -1018.05, world "Spawn", -2, 19.9) 
+    if {_p} is in world "Spawn":
+        play sound "entity.enderman.teleport" with pitch 1.25 to {_p}
+        message "&aYou've been brought to &eBullbo&a!" to {_p}
+        teleport {_p} to location(-176.91, 31, -1018.05, world "Spawn", -2, 19.9) 
+    if {_p} is in world "Homes":
+        execute console command "/lp user %{_p}% permission set SEND.BULLBO true"
+        execute {_p} command "/live2"        
 
 function warp_Fastlocked(p: player):
     send "&cYou must be &9Conquerer &crank to use this!" to {_p}
