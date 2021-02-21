@@ -16,7 +16,7 @@ command /DryadRepeat:
         if player has permission "Dryad.Repeat":
             execute console command "/lp user %player% permission set Dryad.Repeat false"
             send "&cUpon completing your Dryad summoning, the quest will not automatically be accepted!" to player
-        if player doesn't have permission "Dryad.Repeat":
+        else if player doesn't have permission "Dryad.Repeat":
             execute console command "/lp user %player% permission set Dryad.Repeat true"
             send "&aUpon completing your Dryad summoning, the quest will automatically be accepted!" to player
 command /MordenRepeat:
@@ -26,6 +26,6 @@ command /MordenRepeat:
         if player has permission "Morden.Repeat":
             execute console command "/lp user %player% permission set Morden.Repeat false"
             send "&cUpon completing your Morden summoning, the quest will not automatically be accepted!" to player
-        if player doesn't have permission "Morden.Repeat":
+        else if player doesn't have permission "Morden.Repeat":
             execute console command "/lp user %player% permission set Morden.Repeat true"
             send "&aUpon completing your Morden summoning, the quest will automatically be accepted!" to player

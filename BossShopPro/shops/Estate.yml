@@ -9,7 +9,7 @@ shop:
     MenuItem:
     - type:PUMPKIN
     - amount:32
-    - name:&rPumpkin
+    - name:&fPumpkin
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -19,7 +19,7 @@ shop:
       - type:PUMPKIN
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -39,7 +39,7 @@ shop:
     MenuItem:
     - type:MELON
     - amount:32
-    - name:&rMelon
+    - name:&fMelon
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -49,7 +49,7 @@ shop:
       - type:MELON
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -69,7 +69,7 @@ shop:
     MenuItem:
     - type:MELON_SLICE
     - amount:32
-    - name:&rMelon Slice
+    - name:&fMelon Slice
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -79,7 +79,7 @@ shop:
       - type:MELON_SLICE
     PriceType: MONEY
     Price: 64.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -99,7 +99,7 @@ shop:
     MenuItem:
     - type:SUGAR_CANE
     - amount:32
-    - name:&rSugar Cane
+    - name:&fSugar Cane
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -109,7 +109,7 @@ shop:
       - type:SUGAR_CANE
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -129,7 +129,7 @@ shop:
     MenuItem:
     - type:CACTUS
     - amount:32
-    - name:&rCactus
+    - name:&fCactus
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -139,7 +139,7 @@ shop:
       - type:CACTUS
     PriceType: MONEY
     Price: 768.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -159,7 +159,7 @@ shop:
     MenuItem:
     - type:BEETROOT
     - amount:32
-    - name:&rBeetroot
+    - name:&fBeetroot
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -169,7 +169,7 @@ shop:
       - type:BEETROOT
     PriceType: MONEY
     Price: 448.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -189,7 +189,7 @@ shop:
     MenuItem:
     - type:RED_MUSHROOM
     - amount:32
-    - name:&rRed Mushroom
+    - name:&fRed Mushroom
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -199,7 +199,7 @@ shop:
       - type:RED_MUSHROOM
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -219,7 +219,7 @@ shop:
     MenuItem:
     - type:BROWN_MUSHROOM
     - amount:32
-    - name:&rBrown Mushroom
+    - name:&fBrown Mushroom
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -229,7 +229,7 @@ shop:
       - type:BROWN_MUSHROOM
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400

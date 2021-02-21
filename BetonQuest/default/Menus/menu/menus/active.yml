@@ -137,6 +137,120 @@ items:
         - '&f&o'
         - '&aGiven by Warlock in the Town'
     close: false
+  TN8:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_part1,!default-Town-Gemsmith.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+  TN9_Coal:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Coal_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Iron:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Iron_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Gold:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Gold_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Diamond:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Diamond_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Emerald:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Emerald_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
 
 #Farm
   FM1:
@@ -228,6 +342,41 @@ items:
         - '&8&l» &e150 Coins'
         - '&f&o'
         - '&aGiven after completing Curing the Hunger'        
+    close: false
+  FM6:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_part1,!default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  FM7:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_part1,!default-Farm-Anju.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
     close: false
 
 #Forest
@@ -449,6 +598,24 @@ items:
         - '&8&l» &e250 Coins'
         - '&f&o'
         - '&aGiven after completing Wasp Nest'        
+    close: false
+  FT13:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_part1,!default-Forest-CatLady.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
     close: false
 
 #Mine
@@ -905,11 +1072,10 @@ items:
       en:
         - '&a&l[Active] &f&lRarest Green Rocks'      
         - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
         - '&f&o'
         - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
         - '&8&l» &d500 EXP'
         - '&8&l» &d500 Mining EXP'
         - '&8&l» &e400 Coins'
@@ -1772,5 +1938,5 @@ slots:
   0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7,FM1,FM2,FM3,FM4,FM5,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,FT9,FT10,FT11,FT12,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,ME12,ME13,ME14,ME15,ME16,ME17,ME18,ME19,ME20,ME21,ME22,ME23,ME24,ME25,ME26,GD1,GD2,GD3,GD4,GD5,CD1,CD2,CD3,CD4,CD5,VY1,EE1,EE2,EE3,GN1,GN2,GN3,SS1,SS2,SS3,HL1,HL2,HL3,HL4,HL5,HL6,HL7,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12,VD13,VD14,VD15,VD16,VD17
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7,TN8,TN9_Coal,TN9_Iron,TN9_Gold,TN9_Diamond,TN9_Emerald,FM1,FM2,FM3,FM4,FM5,FM6,FM7,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,FT9,FT10,FT11,FT12,FT13,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,ME12,ME13,ME14,ME15,ME16,ME17,ME18,ME19,ME20,ME21,ME22,ME23,ME24,ME25,ME26,GD1,GD2,GD3,GD4,GD5,CD1,CD2,CD3,CD4,CD5,VY1,EE1,EE2,EE3,GN1,GN2,GN3,SS1,SS2,SS3,HL1,HL2,HL3,HL4,HL5,HL6,HL7,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12,VD13,VD14,VD15,VD16,VD17
   49: back

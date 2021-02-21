@@ -841,3 +841,61 @@ AMATERASU:
       locationSkill=[
         - particles{p=flame;a=20;s=0.2;hS=0.1;vS=0.1}
       ]} @target
+
+#MAGMA_BLADE
+HellFire:
+  Skills:
+  - sound{s=item.firecharge.use;p=0.1} @target
+  - effect:particlering{p=flame;a=3;hs=0.1;vs=0.05;y=0.05;r=0.8;points=15} @target
+  - effect:particlering{p=flame;a=2;hs=0.05;vs=0.05;y=0.15;r=0.6;points=12} @target
+  - effect:particlering{p=flame;a=1;vs=0.05;y=0.25;r=0.55;points=10} @target
+  - skill{s=HellFire1} @target
+  - skill{s=HellFire2} @target
+  
+HellFire1:
+  TargetConditions:
+  - isburning{action=true}
+  Skills:
+  - effect:particles{p=crit;a=20;y=0.6;hs=0.3;vs=0.3;speed=0.2}
+  - sound{s=entity.player.attack.crit;p=0.1}
+  - damage{a=1500}    
+  
+#Instant damage if the target is burning
+HellFire2:
+  Skills:
+  - skill{s=HFdamage;repeat=5;repeatInterval=20}
+  - ignite{d=100}
+HFdamage:
+  TargetConditions:
+  - isburning{action=true}
+  Skills:
+  - damage{a=100} #Damage per second for Hell Fire
+
+#CURSED_STAFF
+UNDEAD_RIDER:
+  Skills:
+  - potion{t=SLOW;level=10;d=20;hasParticles=false} @self
+  - effect:particles{particle=redstone;amount=25;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#808080} @self
+  - delay 15
+  - effect:particles{particle=redstone;amount=25;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#303030} @self
+  - delay 15
+  - effect:particles{particle=redstone;amount=25;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#FFFFFF} @self
+  - delay 15
+  - projectile{onTick=soulless_caravan-TICK;onHit=soulless_caravan-HIT;v=16;i=2;hR=3;vR=1;StopAtBlock=true;hs=true;mr=60;hp=false;hnp=true;bulletType=MOB;mob=SKELETON_HORSE1;hfs=1.5;sE=false} @forward{f=5}
+soulless_caravan-TICK:
+  Skills:
+  - effect:particles{particle=redstone;amount=15;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#FFFFFF} @origin
+  - effect:particles{particle=redstone;amount=15;vSpread=0.5;hSpread=0.5;Speed=0;yoffset=0;c=#404040} @origin
+  - effect:blockmask{m=GREEN_CONCRETE_POWDER;data=8;r=1;d=20} @origin
+  - damage{a=500;i=true} @EntitiesNearOrigin{r=3;ignore=players}
+soulless_caravan-HIT:
+  Skills:
+  - damage{a=1250;i=true} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=POISON;level=2;duration=80} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=WEAKNESS;level=2;duration=80} @EntitiesNearOrigin{r=5;ignore=players}
+  - potion{type=SLOW;level=2;duration=80} @EntitiesNearOrigin{r=5;ignore=players}
+
+#ENEMY SCANNER
+ENEMY_SCANNER:
+  Skills:
+  - skriptskill{skill=scan} @target

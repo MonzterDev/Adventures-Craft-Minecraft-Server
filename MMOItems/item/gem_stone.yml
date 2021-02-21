@@ -1,99 +1,54 @@
-UNDEAD_GEM:
+HEALTH_GEM:
   base:
-    material: GRAY_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&2Undead Gem'
-    tier: UNCOMMON
-    faction-damage-undead: 15.0
-    hide-enchants: true
-    unstackable: true
-UNDEAD_GEM2:
-  base:
-    material: GRAY_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&9Undead Gem'
-    tier: RARE
-    faction-damage-undead: 25.0
-    hide-enchants: true
-    unstackable: true
-UNDEAD_GEM3:
-  base:
-    material: GRAY_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&5Undead Gem'
-    tier: LEGENDARY
-    faction-damage-undead: 35.0
-    hide-enchants: true
-    unstackable: true
-UNDEAD_GEM4:
-  base:
-    material: GRAY_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&eUndead Gem'
-    tier: EXOTIC
-    faction-damage-undead: 50.0
-    hide-enchants: true
-    unstackable: true
-    success-rate: 100.0
-HEATED_GEM:
-  base:
-    material: ORANGE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&2Heated Gem'
-    tier: UNCOMMON
-    faction-damage-Hell: 15.0
-    hide-enchants: true
-    unstackable: true
-HEATED_GEM2:
-  base:
-    material: ORANGE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&9Heated Gem'
-    tier: RARE
-    faction-damage-hell: 25.0
-    hide-enchants: true
-    unstackable: true
-HEATED_GEM3:
-  base:
-    material: ORANGE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&5Heated Gem'
-    tier: LEGENDARY
-    faction-damage-hell: 35.0
-    hide-enchants: true
-    unstackable: true
-MINERS_GEM:
-  base:
-    material: EMERALD
-    gem-color: Uncolored
-    enchants:
-      efficiency: 6
-    hide-enchants: true
-    unstackable: true
+    material: LIME_DYE
+    max-health:
+      base: 5
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §fHealth Gem
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
-    unbreakable: true
-    tier: LEGENDARY
-    name: §5Miner's Gem
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: COMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
     lore:
-    - §fApply §aEfficiency 6§f on any tool!
-    permission:
-    - miners.gem
-HEALTH_GEM:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+HEALTH_GEM2:
   base:
     material: LIME_DYE
     max-health:
-      base: 7.5
+      base: 10
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §2Health Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: UNCOMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+HEALTH_GEM3:
+  base:
+    material: LIME_DYE
+    max-health:
+      base: 15
       spread: 0.08333333333333333
       max-spread: 0.25
     name: §9Health Gem
@@ -104,18 +59,21 @@ HEALTH_GEM:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aHP§f to any equipment!
     unbreakable: false
     tier: RARE
-    gem-color: Uncolored
-HEALTH_GEM2:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+HEALTH_GEM4:
   base:
     material: LIME_DYE
     max-health:
-      base: 22.5
-      spread: 0.03333333333333333
-      max-spread: 0.1
+      base: 20
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §5Health Gem
     disable-interaction: true
     disable-crafting: true
@@ -124,14 +82,90 @@ HEALTH_GEM2:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aHP§f to any equipment!
     unbreakable: false
     tier: LEGENDARY
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+HEALTH_GEM5:
+  base:
+    material: LIME_DYE
+    max-health:
+      base: 25
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §eHealth Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: EXOTIC
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
 DEFENSE_GEM:
   base:
-    material: GREEN_DYE
+    material: YELLOW_DYE
+    defense:
+      base: 5
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §fDefense Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: COMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+DEFENSE_GEM2:
+  base:
+    material: YELLOW_DYE
+    defense:
+      base: 10
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §2Defense Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: UNCOMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+DEFENSE_GEM3:
+  base:
+    material: YELLOW_DYE
+    defense:
+      base: 15
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §9Defense Gem
     disable-interaction: true
     disable-crafting: true
@@ -140,18 +174,21 @@ DEFENSE_GEM:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdd §aDefense §fon any equipment!
     unbreakable: false
-    gem-color: Uncolored
     tier: RARE
-    defense:
-      base: 27.5
-      spread: 0.027777777777777776
-      max-spread: 0.08333333333333333
-DEFENSE_GEM2:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+DEFENSE_GEM4:
   base:
-    material: GREEN_DYE
+    material: YELLOW_DYE
+    defense:
+      base: 20
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §5Defense Gem
     disable-interaction: true
     disable-crafting: true
@@ -160,18 +197,121 @@ DEFENSE_GEM2:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdd §aDefense §fon any equipment!
     unbreakable: false
     tier: LEGENDARY
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+DEFENSE_GEM5:
+  base:
+    material: YELLOW_DYE
     defense:
-      base: 42.5
-      spread: 0.049999999999999996
-      max-spread: 0.15
+      base: 25
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §eDefense Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: EXOTIC
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
 MANA_GEM:
   base:
-    material: CYAN_DYE
+    material: LIGHT_BLUE_DYE
+    max-mana:
+      base: 5
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §fMana Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: COMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+
+MANA_GEM2:
+  base:
+    material: LIGHT_BLUE_DYE
+    max-mana:
+      base: 10
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §2Mana Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: UNCOMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+MANA_GEM3:
+  base:
+    material: LIGHT_BLUE_DYE
+    max-mana:
+      base: 15
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §9Mana Gem
     disable-interaction: true
     disable-crafting: true
@@ -180,18 +320,36 @@ MANA_GEM:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §bMana§f to any equipment!
     unbreakable: false
-    gem-color: Uncolored
-    max-mana:
-      base: 17.5
-      spread: 0.09999999999999999
-      max-spread: 0.3
     tier: RARE
-MANA_GEM2:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+MANA_GEM4:
   base:
-    material: CYAN_DYE
+    material: LIGHT_BLUE_DYE
+    max-mana:
+      base: 20
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §5Mana Gem
     disable-interaction: true
     disable-crafting: true
@@ -200,18 +358,36 @@ MANA_GEM2:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §bMana§f to any equipment!
     unbreakable: false
-    gem-color: Uncolored
-    max-mana:
-      base: 32.5
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
     tier: LEGENDARY
-MANA_GEM3:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+MANA_GEM5:
   base:
-    material: CYAN_DYE
+    material: LIGHT_BLUE_DYE
+    max-mana:
+      base: 25
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §eMana Gem
     disable-interaction: true
     disable-crafting: true
@@ -220,18 +396,112 @@ MANA_GEM3:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §bMana§f to any equipment!
     unbreakable: false
-    gem-color: Uncolored
     tier: EXOTIC
-    max-mana:
-      base: 45.0
-      spread: 0.03333333333333333
-      max-spread: 0.1
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
 DAMAGE_GEM:
   base:
     material: RED_DYE
+    attack-damage:
+      base: 5
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §fDamage Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: COMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+DAMAGE_GEM2:
+  base:
+    material: RED_DYE
+    attack-damage:
+      base: 10
+      spread: 0.08333333333333333
+      max-spread: 0.25
+    name: §2Damage Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: UNCOMMON
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+DAMAGE_GEM3:
+  base:
+    material: RED_DYE
+    attack-damage:
+      base: 15
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §9Damage Gem
     disable-interaction: true
     disable-crafting: true
@@ -240,18 +510,36 @@ DAMAGE_GEM:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aDamage§f to any weapon!
     unbreakable: false
-    gem-color: Uncolored
     tier: RARE
-    attack-damage:
-      base: 12.5
-      spread: 0.05555555555555555
-      max-spread: 0.16666666666666666
-DAMAGE_GEM2:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+DAMAGE_GEM4:
   base:
     material: RED_DYE
+    attack-damage:
+      base: 20
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §5Damage Gem
     disable-interaction: true
     disable-crafting: true
@@ -260,18 +548,36 @@ DAMAGE_GEM2:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aDamage§f to any weapon!
     unbreakable: false
-    gem-color: Uncolored
-    attack-damage:
-      base: 20.0
-      spread: 0.06666666666666667
-      max-spread: 0.2
     tier: LEGENDARY
-DAMAGE_GEM3:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+DAMAGE_GEM5:
   base:
     material: RED_DYE
+    attack-damage:
+      base: 25
+      spread: 0.08333333333333333
+      max-spread: 0.25
     name: §eDamage Gem
     disable-interaction: true
     disable-crafting: true
@@ -280,19 +586,37 @@ DAMAGE_GEM3:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aDamage§f to any weapon!
     unbreakable: false
-    attack-damage:
-      base: 32.5
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
     tier: EXOTIC
-    gem-color: Uncolored
-ARCHER_GEM:
+    gem-color: Unused
+    item-type-restriction:
+    - ARMOR
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eArmor'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+PROJECTILE_GEM:
   base:
-    material: EMERALD
-    name: §9Archer Gem
+    material: WHITE_DYE
+    projectile-damage:
+      base: 5
+      spread: 0.08333333333333333
+      max-spread: 0.15
+    name: §fProjectile Gem
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -300,24 +624,543 @@ ARCHER_GEM:
     disable-repairing: true
     hide-enchants: true
     unstackable: true
-    lore:
-    - §fAdds §aDamage§f to any weapon!
     unbreakable: false
-    gem-color: Uncolored
-    tier: RARE
-    attack-damage:
-      base: 12.5
-      spread: 0.05555555555555555
-      max-spread: 0.16666666666666666
-PARTICLE:
+    tier: COMMON
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+PROJECTILE_GEM2:
   base:
-    material: EMERALD
-    ability:
-      ability1:
-        type: BLINK
-        mode: RIGHT_CLICK
-        range: 5.0
-        cooldown: 2.0
+    material: WHITE_DYE
+    projectile-damage:
+      base: 10
+      spread: 0.08333333333333333
+      max-spread: 0.15
+    name: §2Projectile Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: UNCOMMON
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+PROJECTILE_GEM3:
+  base:
+    material: WHITE_DYE
+    projectile-damage:
+      base: 15
+      spread: 0.08333333333333333
+      max-spread: 0.15
+    name: §9Projectile Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: RARE
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+PROJECTILE_GEM4:
+  base:
+    material: WHITE_DYE
+    projectile-damage:
+      base: 20
+      spread: 0.08333333333333333
+      max-spread: 0.15
+    name: §5Projectile Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: LEGENDARY
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+PROJECTILE_GEM5:
+  base:
+    material: WHITE_DYE
+    projectile-damage:
+      base: 25
+      spread: 0.08333333333333333
+      max-spread: 0.15
+    name: §eProjectile Gem
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    hide-enchants: true
+    unstackable: true
+    unbreakable: false
+    tier: EXOTIC
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+
+UNDEAD_GEM:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&fUndead Gem'
+    tier: COMMON
+    faction-damage-undead: 10.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM2:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&2Undead Gem'
+    tier: UNCOMMON
+    faction-damage-undead: 15.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM3:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&9Undead Gem'
+    tier: RARE
+    faction-damage-undead: 20.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM4:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&5Undead Gem'
+    tier: LEGENDARY
+    faction-damage-undead: 25.0
+    hide-enchants: true
+    unstackable: true
+UNDEAD_GEM5:
+  base:
+    material: GRAY_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&eUndead Gem'
+    tier: EXOTIC
+    faction-damage-undead: 30.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM:
+  base:
+    material: RED_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&fHeated Gem'
+    tier: COMMON
+    faction-damage-hell: 10.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM2:
+  base:
+    material: RED_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&2Heated Gem'
+    tier: UNCOMMON
+    faction-damage-hell: 15.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM3:
+  base:
+    material: RED_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&9Heated Gem'
+    tier: RARE
+    faction-damage-hell: 20.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM4:
+  base:
+    material: RED_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&5Heated Gem'
+    tier: LEGENDARY
+    faction-damage-hell: 25.0
+    hide-enchants: true
+    unstackable: true
+HEATED_GEM5:
+  base:
+    material: RED_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&eHeated Gem'
+    tier: EXOTIC
+    faction-damage-hell: 30.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&fVoid Gem'
+    tier: COMMON
+    faction-damage-void: 10.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM2:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&2Void Gem'
+    tier: UNCOMMON
+    faction-damage-void: 15.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM3:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&9Void Gem'
+    tier: RARE
+    faction-damage-void: 20.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM4:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&5Void Gem'
+    tier: LEGENDARY
+    faction-damage-void: 25.0
+    hide-enchants: true
+    unstackable: true
+VOID_GEM5:
+  base:
+    material: PURPLE_DYE
+    unbreakable: true
+    gem-color: Unused
+    item-type-restriction:
+    - ACCESSORY
+    - CATALYST
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - STAFF
+    - BOW
+    - MUSKET
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAccessory, Catalyst'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eBow, Musket, Staff, Whip'
+    - '§8§l» §eTool'
+    name: '&eVoid Gem'
+    tier: EXOTIC
+    faction-damage-void: 30.0
+    hide-enchants: true
+    unstackable: true
+
 FIREBALL_GEM3:
   base:
     material: BLAZE_POWDER
@@ -330,7 +1173,18 @@ FIREBALL_GEM3:
     hide-enchants: true
     unstackable: true
     tier: LEGENDARY
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eTool, Whip'
     ability:
       ability1:
         type: TARGETED_FIREBALL
@@ -351,7 +1205,18 @@ FIREBALL_GEM4:
     hide-enchants: true
     unstackable: true
     tier: EXOTIC
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - WHIP
+    lore:
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eTool, Whip'
     ability:
       ability1:
         type: TARGETED_FIREBALL
@@ -360,62 +1225,6 @@ FIREBALL_GEM4:
         cooldown: 7.5
         ignite: 5.0
         mana: 50.0
-VOID_GEM:
-  base:
-    material: PURPLE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&fVoid Gem'
-    tier: COMMON
-    faction-damage-void: 10.0
-    attack-damage:
-      base: 5.0
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
-    hide-enchants: true
-    unstackable: true
-VOID_GEM2:
-  base:
-    material: PURPLE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&2Void Gem'
-    tier: UNCOMMON
-    faction-damage-void: 20.0
-    attack-damage:
-      base: 10.0
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
-    hide-enchants: true
-    unstackable: true
-VOID_GEM3:
-  base:
-    material: PURPLE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&9Void Gem'
-    attack-damage:
-      base: 20.0
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
-    tier: RARE
-    faction-damage-void: 30.0
-    hide-enchants: true
-    unstackable: true
-VOID_GEM4:
-  base:
-    material: PURPLE_DYE
-    unbreakable: true
-    gem-color: Uncolored
-    name: '&5Void Gem'
-    attack-damage:
-      base: 30.0
-      spread: 0.023809523809523808
-      max-spread: 0.07142857142857142
-    tier: LEGENDARY
-    faction-damage-void: 50.0
-    hide-enchants: true
-    unstackable: true
 VEIN_DRAIN:
   base:
     material: RED_DYE
@@ -428,14 +1237,24 @@ VEIN_DRAIN:
     hide-enchants: true
     unstackable: true
     tier: RARE
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - WHIP
     ability:
       ability1:
-        type: VEIN_DRAIN
+        type: VEIN_DRAINA
         mode: LEFT_CLICK
     lore:
     - §7Drain the enemy for §a2.5 HP §7on each attack!
-    attack-damage: 15.0
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eTool, Whip'
 VEIN_DRAIN2:
   base:
     material: RED_DYE
@@ -448,13 +1267,25 @@ VEIN_DRAIN2:
     hide-enchants: true
     unstackable: true
     tier: LEGENDARY
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - SWORD
+    - DAGGER
+    - HAMMER
+    - AXE
+    - TOOL
+    - WHIP
     ability:
       ability1:
-        type: VEIN_DRAIN
+        type: VEIN_DRAINB
         mode: LEFT_CLICK
     lore:
     - §7Drain the enemy for §a3 HP §7on each attack!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eAxe, Dagger, Hammer, Sword'
+    - '§8§l» §eTool, Whip'
+
 ZOMBIE_MISSILE:
   base:
     material: PLAYER_HEAD
@@ -467,7 +1298,9 @@ ZOMBIE_MISSILE:
     hide-enchants: true
     unstackable: true
     tier: EXOTIC
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
     ability:
       ability1:
         type: ZOMBIE_MISSILE
@@ -478,6 +1311,9 @@ ZOMBIE_MISSILE:
     - §7Launch target tracking §2zombie missiles
     - §7at enemies in front of you. Enemies hit will
     - §7be §2poisoned §7receiving §c2,000 damage §7for 5secs!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eStaff'
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==
       uuid: 16d25cca-0440-445f-8a05-5464a082fbac
@@ -493,7 +1329,9 @@ CREEPER_MISSILE:
     hide-enchants: true
     unstackable: true
     tier: EXOTIC
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
     ability:
       ability1:
         type: CREEPER_MISSILE
@@ -504,6 +1342,9 @@ CREEPER_MISSILE:
     - §7Launch a §acreeper missile §7which rapidly
     - §cexplodes §7while traveling, dealing §c1,000 damage
     - §7to all enemies within 5 blocks of the missile!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eStaff'
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0=
       uuid: 16d25cca-0440-445f-8a05-5464a082fbac
@@ -519,7 +1360,9 @@ SLIME_MISSILE:
     hide-enchants: true
     unstackable: true
     tier: EXOTIC
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
     ability:
       ability1:
         type: SLIME_MISSILE
@@ -530,6 +1373,9 @@ SLIME_MISSILE:
     - §7Launch a §aslime missile §7at an enemy,
     - §7which deals §c5,000 damage §7and
     - §8stuns §7the enemy §7for 5secs!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eStaff'
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIwZTg0ZDMyZDFlOWM5MTlkM2ZkYmI1M2YyYjM3YmEyNzRjMTIxYzU3YjI4MTBlNWE0NzJmNDBkYWNmMDA0ZiJ9fX0=
       uuid: 16d25cca-0440-445f-8a05-5464a082fbac
@@ -545,7 +1391,9 @@ ENDERMAN_MISSILE:
     hide-enchants: true
     unstackable: true
     tier: EXOTIC
-    gem-color: Uncolored
+    gem-color: Unused
+    item-type-restriction:
+    - STAFF
     ability:
       ability1:
         type: ENDERMAN_MISSILE
@@ -557,6 +1405,10 @@ ENDERMAN_MISSILE:
     - §ahealing §7yourself for §a1% of your max HP §7per second 
     - §7while traveling. Once the missile hits a block or
     - §7explodes for any reason, you'll be teleport to there!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eStaff'
+
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjMGIzNmQ1M2ZmZjY5YTQ5YzdkNmYzOTMyZjJiMGZlOTQ4ZTAzMjIyNmQ1ZTgwNDVlYzU4NDA4YTM2ZTk1MSJ9fX0=
       uuid: 16d25cca-0440-445f-8a05-5464a082fbac
@@ -573,6 +1425,8 @@ ENCHANTRESS_GEM:
     unstackable: true
     tier: EXOTIC
     gem-color: Enchantress
+    item-type-restriction:
+    - STAFF
     ability:
       ability1:
         type: AMATERASU
@@ -580,16 +1434,20 @@ ENCHANTRESS_GEM:
         mana: 100.0
         cooldown: 20
     lore:
-    - §cOnly applicable on the §eEnchantress Staff
-    - §7
     - §4Ignite §7an enemy with §5magical flames
     - §7constantly burning them for §c500 damage/sec
     - §7for up to 20 seconds, or until they die!
+    - §7
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eEnchantress Staff'
+
 MYSTICAL_GEM:
   base:
     material: PURPLE_DYE
     unbreakable: true
     gem-color: Mystical
+    item-type-restriction:
+    - ARMOR
     name: '&5Mystical Gem'
     max-health: 5.0
     magic-damage: 10.0
@@ -600,4 +1458,5 @@ MYSTICAL_GEM:
     hide-enchants: true
     unstackable: true
     lore:
-    - §cOnly applicable on §eEnchantress Armor
+    - '§f§lAPPLICABLE TO:'
+    - '§8§l» §eEnchantress Armor'

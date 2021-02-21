@@ -132,6 +132,216 @@ items:
     click:
       right: default-Town-Warlock.QuestReward3_Claim
       left: default-Town-Warlock.QuestReward3_Claim
+  TN7_Coal:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedCoal,!default-Town-Gemsmith.q1_rewards_claimedCoal'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimCoal
+      left: default-Town-Gemsmith.QuestReward1_ClaimCoal
+  TN7_Iron:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedIron,!default-Town-Gemsmith.q1_rewards_claimedIron'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimIron
+      left: default-Town-Gemsmith.QuestReward1_ClaimIron
+  TN7_Gold:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedGold,!default-Town-Gemsmith.q1_rewards_claimedGold'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimGold
+      left: default-Town-Gemsmith.QuestReward1_ClaimGold
+  TN7_Diamond:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedDiamond,!default-Town-Gemsmith.q1_rewards_claimedDiamond'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+      left: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+  TN7_Emerald:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedEmerald,!default-Town-Gemsmith.q1_rewards_claimedEmerald'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+      left: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+  TN8_Coal:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Coal_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Iron:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Iron_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Gold:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Gold_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Diamond:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Diamond_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Emerald:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Emerald_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
 
 #Farm
   FM1:
@@ -199,6 +409,27 @@ items:
     click:
       right: default-Farm-Ingo.QuestReward2_Claim
       left: default-Farm-Ingo.QuestReward2_Claim    
+  FM4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_rewards_unclaimed,!default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Anju.QuestReward2_Claim
+      left: default-Farm-Anju.QuestReward2_Claim    
 
 #Forest
   FT1:
@@ -355,6 +586,27 @@ items:
     click:
       right: default-Forest-Bear.QuestReward2_Claim
       left: default-Forest-Bear.QuestReward2_Claim    
+  FT8:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_rewards_unclaimed,!default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-CatLady.QuestReward1_Claim
+      left: default-Forest-CatLady.QuestReward1_Claim
 
 #Mine
 
@@ -568,27 +820,6 @@ items:
     click:
       right: default-Mine-Merit.QuestReward2_Claim
       left: default-Mine-Merit.QuestReward2_Claim    
-  ME11:
-    item: enchantedbook
-    amount: 1
-    conditions: 'default-Mine-Smith.q3_rewards_unclaimed,!default-Mine-Smith.q3_rewards_claimed'
-    text:
-      en:
-        - '&6&l[Unclaimed] &f&lRarest Green Rocks'
-        - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
-        - '&f&o'
-        - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
-        - '&8&l» &d500 EXP'
-        - '&8&l» &d500 Mining EXP'
-        - '&8&l» &e400 Coins'
-    close: true
-    click:
-      right: default-Mine-Smith.QuestReward3_Claim
-      left: default-Mine-Smith.QuestReward3_Claim    
-
 
 #Graveyard
 
@@ -1175,5 +1406,5 @@ slots:
   0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  9-44: TN1,TN2,TN3,TN4,TN5,TN6,FM1,FM2,FM3,FT1,FT2,FT3,FT4,FT5,FT6,FT7,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,GD1,GD2,GD3,GD4,CD1,CD2,CD3,CD4,EE1,GN1,SS1,HL1,HL2,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7_Coal,TN7_Iron,TN7_Gold,TN7_Diamond,TN7_Emerald,TN8_Coal,TN8_Iron,TN8_Gold,TN8_Diamond,TN8_Emerald,FM1,FM2,FM3,FM4,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,GD1,GD2,GD3,GD4,CD1,CD2,CD3,CD4,EE1,GN1,SS1,HL1,HL2,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12
   49: back

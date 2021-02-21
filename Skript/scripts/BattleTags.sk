@@ -1,0 +1,1723 @@
+on tab complete of "/Tag":
+	set tab completions for position 2 to "Default", "Explorer", "Adventurer", "Conquerer"
+	set tab completions for position 1 to "Default", "Explorer", "Adventurer", "Conquerer", "FarmingP1", "FarmingP2", "FarmingP3", "FarmingP4", "FarmingP5", "ForagingP1", "ForagingP2", "ForagingP3", "ForagingP4", "ForagingP5", "MiningP1", "MiningP2", "MiningP3", "MiningP4", "MiningP5", "SlayerP1", "SlayerP2", "SlayerP3", "SlayerP4", "SlayerP5", "EnchantingP1", "EnchantingP2", "EnchantingP3", "EnchantingP4", "EnchantingP5", "SpellforgingP1", "SpellforgingP2", "SpellforgingP3", "SpellforgingP4", "SpellforgingP5"
+
+command /Tag [<text>] [<text>]:
+	description: Battle Tags
+	usage: Used for toggling Battle Tags!
+	executable by: players
+	trigger:
+		if arg 1 is not set:    
+			execute console command "/dm open BattleTags %player%"
+		if arg 1 is set:    
+			if arg 2 is not "Default" or "Explorer" or "Adventurer" or "Conquerer":    
+				message "&cYou must choose either &7Default&c, &aExplorer&c, &9Adventurer&c, or Conquerer!"
+
+		if arg 1 is "Default":
+			if arg 2 is "Default":
+				tag_DefaultD(player)
+			else if arg 2 is "Explorer":
+				tag_DefaultE(player)
+			else if arg 2 is "Adventurer":
+				tag_DefaultA(player)
+			else if arg 2 is "Conquerer":
+				tag_DefaultC(player)
+		else if arg 1 is "Explorer":
+			if arg 2 is "Default":
+				tag_ExplorerD(player)
+			else if arg 2 is "Explorer":
+				tag_ExplorerE(player)
+			else if arg 2 is "Adventurer":
+				tag_ExplorerA(player)
+			else if arg 2 is "Conquerer":
+				tag_ExplorerC(player)
+		else if arg 1 is "Adventurer":
+			if arg 2 is "Default":
+				tag_AdventurerD(player)
+			else if arg 2 is "Explorer":
+				tag_AdventurerE(player)
+			else if arg 2 is "Adventurer":
+				tag_AdventurerA(player)
+			else if arg 2 is "Conquerer":
+				tag_AdventurerC(player)
+		else if arg 1 is "Conquerer":
+			if arg 2 is "Default":
+				tag_ConquererD(player)
+			else if arg 2 is "Explorer":
+				tag_ConquererE(player)
+			else if arg 2 is "Adventurer":
+				tag_ConquererA(player)
+			else if arg 2 is "Conquerer":
+				tag_ConquererC(player)
+
+		else if arg 1 is "FarmingP1":
+			if arg 2 is "Default":
+				tag_FarmingPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_FarmingPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_FarmingPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_FarmingPrestige1C(player)
+		else if arg 1 is "FarmingP2":
+			if arg 2 is "Default":
+				tag_FarmingPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_FarmingPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_FarmingPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_FarmingPrestige2C(player)
+		else if arg 1 is "FarmingP3":
+			if arg 2 is "Default":
+				tag_FarmingPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_FarmingPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_FarmingPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_FarmingPrestige3C(player)
+		else if arg 1 is "FarmingP4":
+			if arg 2 is "Default":
+				tag_FarmingPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_FarmingPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_FarmingPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_FarmingPrestige4C(player)
+		else if arg 1 is "FarmingP5":
+			if arg 2 is "Default":
+				tag_FarmingPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_FarmingPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_FarmingPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_FarmingPrestige5C(player)
+			
+		else if arg 1 is "ForagingP1":
+			if arg 2 is "Default":
+				tag_ForagingPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_ForagingPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_ForagingPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_ForagingPrestige1C(player)
+		else if arg 1 is "ForagingP2":
+			if arg 2 is "Default":
+				tag_ForagingPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_ForagingPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_ForagingPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_ForagingPrestige2C(player)
+		else if arg 1 is "ForagingP3":
+			if arg 2 is "Default":
+				tag_ForagingPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_ForagingPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_ForagingPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_ForagingPrestige3C(player)
+		else if arg 1 is "ForagingP4":
+			if arg 2 is "Default":
+				tag_ForagingPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_ForagingPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_ForagingPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_ForagingPrestige4C(player)
+		else if arg 1 is "ForagingP5":
+			if arg 2 is "Default":
+				tag_ForagingPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_ForagingPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_ForagingPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_ForagingPrestige5C(player)
+		else if arg 1 is "MiningP1":
+			if arg 2 is "Default":
+				tag_MiningPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_MiningPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_MiningPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_MiningPrestige1C(player)
+		else if arg 1 is "MiningP2":
+			if arg 2 is "Default":
+				tag_MiningPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_MiningPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_MiningPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_MiningPrestige2C(player)
+		else if arg 1 is "MiningP3":
+			if arg 2 is "Default":
+				tag_MiningPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_MiningPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_MiningPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_MiningPrestige3C(player)
+		else if arg 1 is "MiningP4":
+			if arg 2 is "Default":
+				tag_MiningPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_MiningPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_MiningPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_MiningPrestige4C(player)
+		else if arg 1 is "MiningP5":
+			if arg 2 is "Default":
+				tag_MiningPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_MiningPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_MiningPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_MiningPrestige5C(player)
+		else if arg 1 is "SlayerP1":
+			if arg 2 is "Default":
+				tag_SlayerPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_SlayerPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_SlayerPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_SlayerPrestige1C(player)
+		else if arg 1 is "SlayerP2":
+			if arg 2 is "Default":
+				tag_SlayerPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_SlayerPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_SlayerPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_SlayerPrestige2C(player)
+		else if arg 1 is "SlayerP3":
+			if arg 2 is "Default":
+				tag_SlayerPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_SlayerPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_SlayerPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_SlayerPrestige3C(player)
+		else if arg 1 is "SlayerP4":
+			if arg 2 is "Default":
+				tag_SlayerPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_SlayerPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_SlayerPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_SlayerPrestige4C(player)
+		else if arg 1 is "SlayerP5":
+			if arg 2 is "Default":
+				tag_SlayerPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_SlayerPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_SlayerPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_SlayerPrestige5C(player)
+		else if arg 1 is "EnchantingP1":
+			if arg 2 is "Default":
+				tag_EnchantingPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_EnchantingPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_EnchantingPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_EnchantingPrestige1C(player)
+		else if arg 1 is "EnchantingP2":
+			if arg 2 is "Default":
+				tag_EnchantingPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_EnchantingPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_EnchantingPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_EnchantingPrestige2C(player)
+		else if arg 1 is "EnchantingP3":
+			if arg 2 is "Default":
+				tag_EnchantingPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_EnchantingPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_EnchantingPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_EnchantingPrestige3C(player)
+		else if arg 1 is "EnchantingP4":
+			if arg 2 is "Default":
+				tag_EnchantingPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_EnchantingPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_EnchantingPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_EnchantingPrestige4C(player)
+		else if arg 1 is "EnchantingP5":
+			if arg 2 is "Default":
+				tag_EnchantingPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_EnchantingPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_EnchantingPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_EnchantingPrestige5C(player)
+		else if arg 1 is "SpellforgingP1":
+			if arg 2 is "Default":
+				tag_SpellforgingPrestige1D(player)
+			else if arg 2 is "Explorer":
+				tag_SpellforgingPrestige1E(player)
+			else if arg 2 is "Adventurer":
+				tag_SpellforgingPrestige1A(player)
+			else if arg 2 is "Conquerer":
+				tag_SpellforgingPrestige1C(player)
+		else if arg 1 is "SpellforgingP2":
+			if arg 2 is "Default":
+				tag_SpellforgingPrestige2D(player)
+			else if arg 2 is "Explorer":
+				tag_SpellforgingPrestige2E(player)
+			else if arg 2 is "Adventurer":
+				tag_SpellforgingPrestige2A(player)
+			else if arg 2 is "Conquerer":
+				tag_SpellforgingPrestige2C(player)
+		else if arg 1 is "SpellforgingP3":
+			if arg 2 is "Default":
+				tag_SpellforgingPrestige3D(player)
+			else if arg 2 is "Explorer":
+				tag_SpellforgingPrestige3E(player)
+			else if arg 2 is "Adventurer":
+				tag_SpellforgingPrestige3A(player)
+			else if arg 2 is "Conquerer":
+				tag_SpellforgingPrestige3C(player)
+		else if arg 1 is "SpellforgingP4":
+			if arg 2 is "Default":
+				tag_SpellforgingPrestige4D(player)
+			else if arg 2 is "Explorer":
+				tag_SpellforgingPrestige4E(player)
+			else if arg 2 is "Adventurer":
+				tag_SpellforgingPrestige4A(player)
+			else if arg 2 is "Conquerer":
+				tag_SpellforgingPrestige4C(player)
+		else if arg 1 is "SpellforgingP5":
+			if arg 2 is "Default":
+				tag_SpellforgingPrestige5D(player)
+			else if arg 2 is "Explorer":
+				tag_SpellforgingPrestige5E(player)
+			else if arg 2 is "Adventurer":
+				tag_SpellforgingPrestige5A(player)
+			else if arg 2 is "Conquerer":
+				tag_SpellforgingPrestige5C(player)
+#Ranks	
+function tag_DefaultD(p: player):
+	play sound "ui.loom.take_result" with pitch 2 to {_p}
+	execute console command "/lp user %{_p}% meta removeprefix 100"
+	execute console command "lp user %{_p}% meta setprefix 100 ""&7"""
+	message "&aYour Battle Tag has been updated!" to {_p}
+function tag_DefaultE(p: player):
+	if {_p} has permission "Rank1":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&a"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &aExplorer &cRank!" to {_p}
+function tag_DefaultA(p: player):
+	if {_p} has permission "Rank2":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&9"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+function tag_DefaultC(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&c"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConquerer &cRank!" to {_p}
+
+function tag_ExplorerD(p: player):
+	if {_p} has permission "Rank1":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&aExplorer&f] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &aExplorer &cRank!" to {_p}
+function tag_ExplorerE(p: player):
+	if {_p} has permission "Rank1":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&aExplorer&f] &a"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &aExplorer &cRank!" to {_p}
+function tag_ExplorerA(p: player):
+	if {_p} has permission "Rank2":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&aExplorer&f] &9"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+function tag_ExplorerC(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&aExplorer&f] &c"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConquerer &cRank!" to {_p}
+
+function tag_AdventurerD(p: player):
+	if {_p} has permission "Rank2":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&9Adventurer&f] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+function tag_AdventurerE(p: player):
+	if {_p} has permission "Rank2":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&9Adventurer&f] &a"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+function tag_AdventurerA(p: player):
+	if {_p} has permission "Rank2":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&9Adventurer&f] &9"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+function tag_AdventurerC(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&9Adventurer&f] &c"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConquerer &cRank!" to {_p}
+
+function tag_ConquererD(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&cConqueror&f] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConqueror &cRank!" to {_p}
+function tag_ConquererE(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&cConqueror&f] &a"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConqueror &cRank!" to {_p}
+function tag_ConquererA(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&cConqueror&f] &9"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConqueror &cRank!" to {_p}
+function tag_ConquererC(p: player):
+	if {_p} has permission "Rank3":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&f[&cConqueror&f] &c"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou don't have the &cConquerer &cRank!" to {_p}
+
+#Prestiges
+function tag_FarmingPrestige1D(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fFarmer✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige1E(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fFarmer✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige1A(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fFarmer✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige1C(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fFarmer✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_FarmingPrestige2D(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Farmer✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige2E(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Farmer✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige2A(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Farmer✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige2C(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Farmer✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_FarmingPrestige3D(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Farmer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige3E(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Farmer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige3A(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Farmer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige3C(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Farmer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_FarmingPrestige4D(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Farmer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige4E(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Farmer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige4A(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Farmer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige4C(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Farmer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_FarmingPrestige5D(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Farmer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige5E(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Farmer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige5A(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Farmer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_FarmingPrestige5C(p: player):
+	if {_p} has permission "FARMING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Farmer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#==
+#==
+#==
+function tag_ForagingPrestige1D(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fForager✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige1E(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fForager✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige1A(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fForager✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige1C(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fForager✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_ForagingPrestige2D(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Forager✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige2E(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Forager✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige2A(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Forager✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige2C(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Forager✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_ForagingPrestige3D(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Forager✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige3E(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Forager✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige3A(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Forager✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige3C(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Forager✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_ForagingPrestige4D(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Forager✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige4E(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Forager✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige4A(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Forager✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige4C(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Forager✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_ForagingPrestige5D(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Forager✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige5E(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Forager✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige5A(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Forager✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_ForagingPrestige5C(p: player):
+	if {_p} has permission "FORAGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Forager✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#==
+#==
+#==
+function tag_MiningPrestige1D(p: player):
+	if {_p} has permission "MINING.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMiner✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige1E(p: player):
+	if {_p} has permission "MINING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMiner✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige1A(p: player):
+	if {_p} has permission "MINING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMiner✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige1C(p: player):
+	if {_p} has permission "MINING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMiner✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_MiningPrestige2D(p: player):
+	if {_p} has permission "MINING.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Miner✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige2E(p: player):
+	if {_p} has permission "MINING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Miner✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige2A(p: player):
+	if {_p} has permission "MINING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Miner✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige2C(p: player):
+	if {_p} has permission "MINING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Miner✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_MiningPrestige3D(p: player):
+	if {_p} has permission "MINING.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Miner✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige3E(p: player):
+	if {_p} has permission "MINING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Miner✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige3A(p: player):
+	if {_p} has permission "MINING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Miner✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige3C(p: player):
+	if {_p} has permission "MINING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Miner✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_MiningPrestige4D(p: player):
+	if {_p} has permission "MINING.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Miner✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige4E(p: player):
+	if {_p} has permission "MINING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Miner✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige4A(p: player):
+	if {_p} has permission "MINING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Miner✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige4C(p: player):
+	if {_p} has permission "MINING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Miner✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_MiningPrestige5D(p: player):
+	if {_p} has permission "MINING.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Miner✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige5E(p: player):
+	if {_p} has permission "MINING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Miner✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige5A(p: player):
+	if {_p} has permission "MINING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Miner✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_MiningPrestige5C(p: player):
+	if {_p} has permission "MINING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Miner✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#==
+#==
+#==
+function tag_SlayerPrestige1D(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fSlayer✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige1E(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fSlayer✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige1A(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fSlayer✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige1C(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fSlayer✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SlayerPrestige2D(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Slayer✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige2E(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Slayer✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige2A(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Slayer✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige2C(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Slayer✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SlayerPrestige3D(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Slayer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige3E(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Slayer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige3A(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Slayer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige3C(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Slayer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SlayerPrestige4D(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Slayer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige4E(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Slayer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige4A(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Slayer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige4C(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Slayer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SlayerPrestige5D(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Slayer✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige5E(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Slayer✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige5A(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Slayer✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SlayerPrestige5C(p: player):
+	if {_p} has permission "SLAYER.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Slayer✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#==
+#==
+#==
+function tag_EnchantingPrestige1D(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fWizard✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige1E(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fWizard✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige1A(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fWizard✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige1C(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fWizard✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_EnchantingPrestige2D(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Wizard✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige2E(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Wizard✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige2A(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Wizard✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige2C(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Wizard✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_EnchantingPrestige3D(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Wizard✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige3E(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Wizard✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige3A(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Wizard✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige3C(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Wizard✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_EnchantingPrestige4D(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Wizard✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige4E(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Wizard✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige4A(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Wizard✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige4C(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Wizard✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_EnchantingPrestige5D(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Wizard✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige5E(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Wizard✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige5A(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Wizard✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_EnchantingPrestige5C(p: player):
+	if {_p} has permission "ENCHANTING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Wizard✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#==
+#==
+#==
+function tag_SpellforgingPrestige1D(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMagical✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige1E(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMagical✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige1A(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMagical✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige1C(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.1.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&fMagical✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SpellforgingPrestige2D(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Magical✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige2E(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Magical✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige2A(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Magical✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige2C(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.2.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&2✦Magical✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SpellforgingPrestige3D(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Magical✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige3E(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Magical✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige3A(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Magical✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige3C(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.3.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&9✦Magical✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SpellforgingPrestige4D(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Magical✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige4E(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Magical✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige4A(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Magical✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige4C(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.4.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&5✦✦Magical✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+#
+function tag_SpellforgingPrestige5D(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
+		play sound "ui.loom.take_result" with pitch 2 to {_p}
+		execute console command "/lp user %{_p}% meta removeprefix 100"
+		execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Magical✦✦&8] &7"""
+		message "&aYour Battle Tag has been updated!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige5E(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank1":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Magical✦✦&8] &a"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &aExplorer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige5A(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank2":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Magical✦✦&8] &9"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &9Adventurer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}
+function tag_SpellforgingPrestige5C(p: player):
+	if {_p} has permission "SPELLFORGING.PRESTIGE.5.CLAIMED":
+		if {_p} has permission "Rank3":
+			play sound "ui.loom.take_result" with pitch 2 to {_p}
+			execute console command "/lp user %{_p}% meta removeprefix 100"
+			execute console command "lp user %{_p}% meta setprefix 100 ""&8[&e✦✦✦Magical✦✦&8] &c"""
+			message "&aYour Battle Tag has been updated!" to {_p}
+		else:
+			message "&cYou don't have the &cConquerer &cRank!" to {_p}
+	else:
+		message "&cYou haven't unlocked this Battle Tag yet!" to {_p}

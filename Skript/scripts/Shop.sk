@@ -2,6 +2,7 @@ on load: # Doesn't have to be in a load event
     add "shop farming" to tab completions
     add "shop foraging" to tab completions
     add "shop mining" to tab completions
+    add "shop gems" to tab completions
     add "shop slayer" to tab completions
     add "shop cooking" to tab completions
     add "shop wand" to tab completions
@@ -15,19 +16,21 @@ command /Shop [<text>]:
     trigger:
         if arg 1 is "farming":    
             make console execute command "/mmoitems stations open farming %player%"
-        if arg 1 is "foraging":    
+        else if arg 1 is "foraging":    
             make console execute command "/mmoitems stations open foraging %player%"
-        if arg 1 is "mining":    
+        else if arg 1 is "mining":    
             make console execute command "/mmoitems stations open miner-shop %player%"
-        if arg 1 is "slayer":    
+        else if arg 1 is "gems":    
+            make console execute command "/mmoitems stations open gems %player%"
+        else if arg 1 is "slayer":    
             make console execute command "/mmoitems stations open slayer %player%"
-        if arg 1 is "cooking":    
+        else if arg 1 is "cooking":    
             make console execute command "/mmoitems stations open stews %player%"
-        if arg 1 is "wand" or "wands":    
+        else if arg 1 is "wand" or "wands":    
             make console execute command "/mmoitems stations open wand %player%"
-        if arg 1 is "hell":    
+        else if arg 1 is "hell":    
             make console execute command "/mmoitems stations open hell %player%"
-        if arg 1 is "void":    
+        else if arg 1 is "void":    
             make console execute command "/mmoitems stations open void %player%"
-        if arg 1 is "enchanted" or "material" or "materials" or "enchanted material":    
+        else if arg 1 is "enchanted" or "material" or "materials" or "enchanted material":    
             make console execute command "/mmoitems stations open enchanted-materials %player%"

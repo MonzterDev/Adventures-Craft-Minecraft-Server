@@ -9,7 +9,7 @@ shop:
     MenuItem:
     - type:DIRT
     - amount:32
-    - name:&rDIRT
+    - name:&fDIRT
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -19,7 +19,7 @@ shop:
       - type:DIRT
     PriceType: MONEY
     Price: 128.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -39,7 +39,7 @@ shop:
     MenuItem:
     - type:PODZOL
     - amount:32
-    - name:&rPodzol
+    - name:&fPodzol
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -49,7 +49,7 @@ shop:
       - type:PODZOL
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -69,7 +69,7 @@ shop:
     MenuItem:
     - type:MYCELIUM
     - amount:32
-    - name:&rMycelium
+    - name:&fMycelium
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -79,7 +79,7 @@ shop:
       - type:MYCELIUM
     PriceType: MONEY
     Price: 592.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -99,7 +99,7 @@ shop:
     MenuItem:
     - type:SAND
     - amount:32
-    - name:&rSand
+    - name:&fSand
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -109,7 +109,7 @@ shop:
       - type:SAND
     PriceType: MONEY
     Price: 480.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -129,7 +129,7 @@ shop:
     MenuItem:
     - type:RED_SAND
     - amount:32
-    - name:&rRed Sand
+    - name:&fRed Sand
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -139,7 +139,7 @@ shop:
       - type:RED_SAND
     PriceType: MONEY
     Price: 575.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -159,7 +159,7 @@ shop:
     MenuItem:
     - type:SANDSTONE
     - amount:32
-    - name:&rSandstone
+    - name:&fSandstone
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -169,7 +169,7 @@ shop:
       - type:SANDSTONE
     PriceType: MONEY
     Price: 582.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -189,7 +189,7 @@ shop:
     MenuItem:
     - type:RED_SANDSTONE
     - amount:32
-    - name:&rRed Sandstone
+    - name:&fRed Sandstone
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -199,7 +199,7 @@ shop:
       - type:RED_SANDSTONE
     PriceType: MONEY
     Price: 612.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -219,7 +219,7 @@ shop:
     MenuItem:
     - type:GLASS
     - amount:32
-    - name:&rGlass
+    - name:&fGlass
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -229,7 +229,7 @@ shop:
       - type:GLASS
     PriceType: MONEY
     Price: 1600.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -249,7 +249,7 @@ shop:
     MenuItem:
     - type:GRAVEL
     - amount:32
-    - name:&rGravel
+    - name:&fGravel
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -259,7 +259,7 @@ shop:
       - type:GRAVEL
     PriceType: MONEY
     Price: 1848.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -279,7 +279,7 @@ shop:
     MenuItem:
     - type:DIORITE
     - amount:32
-    - name:&rDiorite
+    - name:&fDiorite
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -289,7 +289,7 @@ shop:
       - type:DIORITE
     PriceType: MONEY
     Price: 687.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -309,7 +309,7 @@ shop:
     MenuItem:
     - type:TERRACOTTA
     - amount:32
-    - name:&rTerracotta
+    - name:&fTerracotta
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -319,7 +319,7 @@ shop:
       - type:TERRACOTTA
     PriceType: MONEY
     Price: 586.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -339,7 +339,7 @@ shop:
     MenuItem:
     - type:SEA_LANTERN
     - amount:32
-    - name:&rSea Lantern
+    - name:&fSea Lantern
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -349,7 +349,7 @@ shop:
       - type:SEA_LANTERN
     PriceType: MONEY
     Price: 659.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -369,7 +369,7 @@ shop:
     MenuItem:
     - type:PRISMARINE
     - amount:32
-    - name:&rPrismarine
+    - name:&fPrismarine
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -379,7 +379,7 @@ shop:
       - type:PRISMARINE
     PriceType: MONEY
     Price: 754.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -399,7 +399,7 @@ shop:
     MenuItem:
     - type:PRISMARINE_BRICKS
     - amount:32
-    - name:&rPrismarine Bricks
+    - name:&fPrismarine Bricks
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -409,7 +409,7 @@ shop:
       - type:PRISMARINE_BRICKS
     PriceType: MONEY
     Price: 857.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -429,7 +429,7 @@ shop:
     MenuItem:
     - type:DARK_PRISMARINE
     - amount:32
-    - name:&rDark Prismarine
+    - name:&fDark Prismarine
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -439,7 +439,7 @@ shop:
       - type:DARK_PRISMARINE
     PriceType: MONEY
     Price: 645.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -459,7 +459,7 @@ shop:
     MenuItem:
     - type:WOOL
     - amount:32
-    - name:&rWool
+    - name:&fWool
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -469,7 +469,7 @@ shop:
       - type:WOOL
     PriceType: MONEY
     Price: 350.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400

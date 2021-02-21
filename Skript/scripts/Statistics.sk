@@ -3,9 +3,10 @@ import:
     net.Indyuce.mmocore.api.experience.EXPSource
     net.Indyuce.mmocore.api.experience.Profession
     net.Indyuce.mmocore.api.player.PlayerData
-
     org.bukkit.Bukkit
     org.bukkit.event.EventHandler
+    org.bukkit.event.HandlerList
+    org.bukkit.event.Listener
     org.bukkit.Statistic
     org.bukkit.Material
     net.Indyuce.mmocore.api.event.CustomBlockMineEvent
@@ -14,15 +15,17 @@ import:
 
 on CustomBlockMineEvent:
     if event.getPlayer() is a player:
-        execute console command "/q point %event.getPlayer()% add blocks.%event.getBlock().getType()% 1"
+        if event.canBreak():        
+            execute console command "/q point %event.getPlayer()% add blocks.%event.getBlock().getType()% 1"
 
-on CustomBlockMineEvent:
-    set {block} to event.getBlock().getType()
-    if event.getPlayer() is a player:
-#        broadcast "%{block}%"
-        if "%{block}%" is "STONE":
-            if chance of 50%:
-                execute console command "/mi give CONSUMABLE BORGS_BOX %event.getPlayer()% 1"
+# on CustomBlockMineEvent:
+#     set {_block} to event.getBlock().getType()
+#     if event.getPlayer() is a player:
+#         if event.canBreak():        
+# #        broadcast "%{block}%"
+#             if "%{block}%" is "STONE":
+#                 if chance of 50%:
+#                     execute console command "/mi give CONSUMABLE BORGS_BOX %event.getPlayer()% 1"
 
 #        broadcast "%event.getPlayer()% %event.getBlock().getType()%" #This is a test to return the block which was broken
 
@@ -45,8 +48,9 @@ on mythicmob deathevent:
 # on mythicmob deathevent:
 #     if event-killer is a player:
 #         loop all items of mobdrop event-mobdrop:
-#             broadcast "%event-mobdrop% & %loop-mobitem%"
-#             give loop-item to event-killer's inventory
+#             set {_am} to loop-mobitem
+#             send "%loop-mobitem% " to console
+#             give loop-mobitem to event-killer 
 
 
 

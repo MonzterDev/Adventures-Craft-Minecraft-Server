@@ -107,11 +107,18 @@ items:
     - ''
     - '&aBattle Tag: &fWizard✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fWizard✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fWizard✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag EnchantingP1 Default"
+    right_click_commands:
+    - "[player] Tag EnchantingP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag EnchantingP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag EnchantingP1 Conquerer"
 
   'ENCHANTING_LOCKED2':
     material: BOOK
@@ -147,11 +154,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Wizard✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Wizard✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Wizard✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag EnchantingP2 Default"
+    right_click_commands:
+    - "[player] Tag EnchantingP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag EnchantingP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag EnchantingP2 Conquerer"
 
   'ENCHANTING_LOCKED3':
     material: BOOK
@@ -187,11 +201,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Wizard✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Wizard✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Wizard✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag EnchantingP3 Default"
+    right_click_commands:
+    - "[player] Tag EnchantingP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag EnchantingP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag EnchantingP3 Conquerer"
 
   'ENCHANTING_LOCKED4':
     material: BOOK
@@ -227,11 +248,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Wizard✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Wizard✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Wizard✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag EnchantingP4 Default"
+    right_click_commands:
+    - "[player] Tag EnchantingP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag EnchantingP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag EnchantingP4 Conquerer"
 
   'ENCHANTING_LOCKED5':
     material: BOOK
@@ -267,11 +295,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Wizard✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Wizard✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Wizard✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag EnchantingP5 Default"
+    right_click_commands:
+    - "[player] Tag EnchantingP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag EnchantingP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag EnchantingP5 Conquerer"
 
 #SPELLFORGING
   'SPELLFORGING_LOCKED':
@@ -308,11 +343,18 @@ items:
     - ''
     - '&aBattle Tag: &fMagical✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fMagical✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fMagical✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SpellforgingP1 Default"
+    right_click_commands:
+    - "[player] Tag SpellforgingP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SpellforgingP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SpellforgingP1 Conquerer"
 
   'SPELLFORGING_LOCKED2':
     material: PAPER
@@ -348,11 +390,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Magical✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Magical✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Magical✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SpellforgingP2 Default"
+    right_click_commands:
+    - "[player] Tag SpellforgingP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SpellforgingP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SpellforgingP2 Conquerer"
 
   'SPELLFORGING_LOCKED3':
     material: PAPER
@@ -388,11 +437,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Magical✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Magical✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Magical✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SpellforgingP3 Default"
+    right_click_commands:
+    - "[player] Tag SpellforgingP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SpellforgingP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SpellforgingP3 Conquerer"
 
   'SPELLFORGING_LOCKED4':
     material: PAPER
@@ -428,11 +484,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Magical✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Magical✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Magical✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SpellforgingP4 Default"
+    right_click_commands:
+    - "[player] Tag SpellforgingP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SpellforgingP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SpellforgingP4 Conquerer"
 
   'SPELLFORGING_LOCKED5':
     material: PAPER
@@ -468,11 +531,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Magical✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Magical✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Magical✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SpellforgingP5 Default"
+    right_click_commands:
+    - "[player] Tag SpellforgingP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SpellforgingP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SpellforgingP5 Conquerer"
 
 
   'TAG_RESET':
@@ -485,7 +555,7 @@ items:
     - ''
     - '&8&l» &eClick to Use'
     click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
+    - "[console] lp user %player_name% meta removesuffix 100"
     - "[message] &aYour Battle Tag has been reset!"
 
 

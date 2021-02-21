@@ -40,181 +40,181 @@ command /warp [<text>]:
         if arg 1 is not set:    
             make player execute command "/Map"
 
-        if arg 1 is "Spawn" or "Town":
+        else if arg 1 is "Spawn" or "Town":
             warp_town(player)
-        if arg 1 is "Townhall":
+        else if arg 1 is "Townhall":
             warp_townHall(player)
 
-        if arg 1 is "Farm":
+        else if arg 1 is "Farm":
             warp_farm(player)
 
-        if arg 1 is "Forest" or "OakForest":
+        else if arg 1 is "Forest" or "OakForest":
             warp_forest(player)
 
-        if arg 1 is "ForestSpruce" or "SpruceForest" or "Spruce":
+        else if arg 1 is "ForestSpruce" or "SpruceForest" or "Spruce":
             if player has permission "warp.SpruceForest":
                 warp_forestSpruce(player)
             else:
                 warp_locked(player)
-        if arg 1 is "ForestDarkOak" or "DarkOakForest" or "DarkOak":
+        else if arg 1 is "ForestDarkOak" or "DarkOakForest" or "DarkOak":
             if player has permission "warp.DarkOakForest":
                 warp_forestDarkOak(player)
             else:
                 warp_locked(player)
-        if arg 1 is "ForestBirch" or "BirchForest" or "Birch":
+        else if arg 1 is "ForestBirch" or "BirchForest" or "Birch":
             if player has permission "warp.BirchForest":
                 warp_forestBirch(player)
             else:
                 warp_locked(player)
-        if arg 1 is "ForestAcacia" or "AcaciaForest" or "Acacia":
+        else if arg 1 is "ForestAcacia" or "AcaciaForest" or "Acacia":
             if player has permission "warp.AcaciaForest":
                 warp_forestAcacia(player)
             else:
                 warp_locked(player)
-        if arg 1 is "ForestJungle" or "JungleForest" or "Jungle":
+        else if arg 1 is "ForestJungle" or "JungleForest" or "Jungle":
             if player has permission "warp.JungleForest":
                 warp_forestJungle(player)
             else:
                 warp_locked(player)
-        if arg 1 is "ForestHive" or "HiveForest" or "Hive":
+        else if arg 1 is "ForestHive" or "HiveForest" or "Hive":
             if player has permission "warp.HiveForest":
                 warp_forestHive(player)
             else:
                 warp_locked(player)
 
-        if arg 1 is "MineEntrance" or "EntranceMine" or "Entrance":
+        else if arg 1 is "MineEntrance" or "EntranceMine" or "Entrance":
             warp_mineEntrance(player)
-        if arg 1 is "MineCoal" or "CoalMine" or "Coal":
+        else if arg 1 is "MineCoal" or "CoalMine" or "Coal":
             warp_mineCoal(player)
-        if arg 1 is "MineGold" or "GoldMine" or "Gold":
+        else if arg 1 is "MineGold" or "GoldMine" or "Gold":
             if player has permission "warp.goldmine":
                 warp_mineGold(player)
             else:
                 warp_locked(player)
-        if arg 1 is "MineRedstone" or "RedstoneMine" or "Redstone":
+        else if arg 1 is "MineRedstone" or "RedstoneMine" or "Redstone":
             if player has permission "warp.redstonemine":
                 warp_mineRedstone(player)
             else:
                 warp_locked(player)
-        if arg 1 is "MineLapis" or "LapisMine" or "Lapis":
+        else if arg 1 is "MineLapis" or "LapisMine" or "Lapis":
             if player has permission "warp.lapismine":
                 warp_mineLapis(player)
             else:
                 warp_locked(player)
-        if arg 1 is "MineDiamond" or "DiamondMine" or "Diamond":
+        else if arg 1 is "MineDiamond" or "DiamondMine" or "Diamond":
             if player has permission "warp.diamondmine":
                 warp_mineDiamond(player)
             else:
                 warp_locked(player)
-        if arg 1 is "MineEmerald" or "EmeraldMine" or "Emerald":
+        else if arg 1 is "MineEmerald" or "EmeraldMine" or "Emerald":
             if player has permission "warp.emeraldmine":
                 warp_mineEmerald(player)
             else:
                 warp_locked(player)
 
-        if arg 1 is "Graveyard" or "Grave":
+        else if arg 1 is "Graveyard" or "Grave":
             warp_Graveyard(player)
-        if arg 1 is "Courtyard":
+        else if arg 1 is "Courtyard":
             if player has permission "warp.courtyard":
                 warp_Courtyard(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Castle":
+        else if arg 1 is "Castle":
             if player has permission "warp.castle":
                 warp_Castle(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Morden":
+        else if arg 1 is "Morden":
             if player has permission "warp.castle":
                 warp_Morden(player)
             else:
                 warp_locked(player)
 
-        if arg 1 is "Estate":
+        else if arg 1 is "Estate":
             if player has permission "warp.Estate":
                 warp_Estate(player)
             else:
                 warp_locked(player)
-        if arg 1 is "GoblinTown" or "Goblin":
+        else if arg 1 is "GoblinTown" or "Goblin":
             if player has permission "warp.goblintown":
                 warp_GoblinTown(player)
             else:
                 warp_locked(player)
-        if arg 1 is "SpiritGrounds" or "SpiritGround" or "Spirit":
+        else if arg 1 is "SpiritGrounds" or "SpiritGround" or "Spirit":
             if player has permission "warp.spiritgrounds":
                 warp_SpiritGrounds(player)
             else:
                 warp_locked(player)
 
-        if arg 1 is "Hell" or "UpperHell":
+        else if arg 1 is "Hell" or "UpperHell":
             if player has permission "cmi.command.portal.hell":
                 warp_Hell(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Hell2" or "LowerHell" or "BottomHell" or "HellBottom":
+        else if arg 1 is "Hell2" or "LowerHell" or "BottomHell" or "HellBottom":
             if player has permission "warp.hellbottom":
                 warp_HellBottom(player)
             else:
                 warp_locked(player)
 
-        if arg 1 is "Void" or "LowerVoid":
+        else if arg 1 is "Void" or "LowerVoid":
             if player has permission "warp.Void" or "cmi.command.portal.void":
                 warp_lowerVoid(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Void2" or "UpperVoid" or "VoidMaze":
+        else if arg 1 is "Void2" or "UpperVoid" or "VoidMaze":
             if player has permission "warp.Void2":
                 warp_upperVoid(player)
             else:
                 warp_locked(player)
-        if arg 1 is "Void3" or "VoidAbyss":
+        else if arg 1 is "Void3" or "VoidAbyss":
             if player has permission "warp.VoidAbyss":
                 warp_VoidAbyss(player)
             else:
                 warp_locked(player)
 
 #FAST TRAVELS
-        if arg 1 is "Enchant" or "Enchanting" or "Enchanter" or "Wizard" or "FastEnchant":
+        else if arg 1 is "Enchant" or "Enchanting" or "Enchanter" or "Wizard" or "FastEnchant":
             if player has permission "Rank3":
                 warp_Enchant(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "Auction" or "Auc" or "FastAuction":
+        else if arg 1 is "Auction" or "Auc" or "FastAuction":
             if player has permission "Rank3":
                 warp_Auction(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "Dracula" or "VoidDracula" or "FastDracula":
+        else if arg 1 is "Dracula" or "VoidDracula" or "FastDracula":
             if player has permission "Rank3":
                 warp_Dracula(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "Reaper" or "FastReaper":
+        else if arg 1 is "Reaper" or "FastReaper":
             if player has permission "Rank3":
                 warp_Reaper(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "FastMorden":
+        else if arg 1 is "FastMorden":
             if player has permission "Rank3":
                 warp_MordenFast(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "VoidWither" or "Wither" or "FastVoidWither":
+        else if arg 1 is "VoidWither" or "Wither" or "FastVoidWither":
             if player has permission "Rank3":
                 warp_VoidWither(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "VoidMagma" or "Magma" or "FastVoidMagma":
+        else if arg 1 is "VoidMagma" or "Magma" or "FastVoidMagma":
             if player has permission "Rank3":
                 warp_VoidMagma(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "Ghastly" or "Ghast" or "FastGhastly":
+        else if arg 1 is "Ghastly" or "Ghast" or "FastGhastly":
             if player has permission "Rank3":
                 warp_Ghastly(player)
             else:
                 warp_Fastlocked(player)
-        if arg 1 is "Bullbo" or "Bulblin" or "FastBullbo" or "FastBulblin":
+        else if arg 1 is "Bullbo" or "Bulblin" or "FastBullbo" or "FastBulblin":
             if player has permission "Rank3":
                 warp_Bullbo(player)
             else:

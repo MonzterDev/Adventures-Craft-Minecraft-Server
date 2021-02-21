@@ -415,11 +415,10 @@ items:
       en:
         - '&c&l[Inactive] &f&lRarest Green Rocks'
         - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
         - '&f&o'
         - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
         - '&8&l» &d500 EXP'
         - '&8&l» &d500 Mining EXP'
         - '&8&l» &e400 Coins'
@@ -434,11 +433,10 @@ items:
       en:
         - '&a&l[Active] &f&lRarest Green Rocks'      
         - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
         - '&f&o'
         - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
         - '&8&l» &d500 EXP'
         - '&8&l» &d500 Mining EXP'
         - '&8&l» &e400 Coins'
@@ -448,40 +446,19 @@ items:
   quest8_completed:
     item: enchantedbook
     amount: 1
-    conditions: 'default-Mine-Smith.q3_completed,!default-Mine-Smith.q3_rewards_unclaimed,default-Mine-Smith.q3_rewards_claimed'
+    conditions: 'default-Mine-Smith.q3_completed,'
     text:
       en:
         - '&e&l[Complete] &f&lRarest Green Rocks'
         - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
         - '&f&o'
         - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
         - '&8&l» &d500 EXP'
         - '&8&l» &d500 Mining EXP'
         - '&8&l» &e400 Coins'
     close: false
-  quest8_unclaimed:
-    item: enchantedbook
-    amount: 1
-    conditions: 'default-Mine-Smith.q3_rewards_unclaimed,!default-Mine-Smith.q3_rewards_claimed'
-    text:
-      en:
-        - '&6&l[Unclaimed] &f&lRarest Green Rocks'
-        - '&f&o'
-        - '&fMine &2Emerald Ores &funtil you receive 3 &9Enchanted Emeralds'
-        - '&fthen deliver them to &aSmith'
-        - '&f&o'
-        - '&e&lRewards:'
-        - '&8&l» &9Damage Gem'
-        - '&8&l» &d500 EXP'
-        - '&8&l» &d500 Mining EXP'
-        - '&8&l» &e400 Coins'
-    close: true
-    click:
-      right: default-Mine-Smith.QuestReward3_Claim
-      left: default-Mine-Smith.QuestReward3_Claim    
 
 #FILLER
   glass:
@@ -501,5 +478,5 @@ slots:
   24-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   11-15: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest4_inactive,quest4_active,quest4_completed,quest5_inactive,quest5_active,quest5_completed
-  21-23: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed
+  21-23: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed
   40: back

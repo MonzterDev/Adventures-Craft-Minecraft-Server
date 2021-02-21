@@ -1,0 +1,821 @@
+menu_title: '&f&l»&7&l» &8Adventurer Rank &7&l«&f&l«'
+size: 54
+items:
+  'Decoration':
+    material: BLUE_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 49
+    priority: 1
+    display_name: '&aGo Back'
+    right_click_commands:
+    - "[openguimenu] DonationShop"
+    left_click_commands:
+    - "[openguimenu] DonationShop"
+
+  'PreviousPage':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE2ZWEzNGE2YTZlYzVjMDUxZTY5MzJmMWM0NzFiNzAxMmIyOThkMzhkMTc5ZjFiNDg3YzQxM2Y1MTk1OWNkNCJ9fX0=
+    slot: 45
+    priority: 1
+    display_name: '&aPrevious Page (&aExplorer &aRank)'
+    right_click_commands:
+    - "[openguimenu] ExplorerRank"
+    left_click_commands:
+    - "[openguimenu] ExplorerRank"
+
+  'NextPage':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM5ZWM3MWMxMDY4ZWM2ZTAzZDJjOTI4N2Y5ZGE5MTkzNjM5ZjNhNjM1ZTJmYmQ1ZDg3YzJmYWJlNjQ5OSJ9fX0=
+    slot: 53
+    priority: 1
+    display_name: '&aNext Page (&cConquerer &aRank)'
+    click_commands:
+    - "[openguimenu] ConquererRank"
+
+
+
+
+
+
+
+
+
+###TOP ROW EXPLORER
+  'Rank1':
+    material: STONE_SWORD
+    hide_attributes: true
+    priority: 2
+    slot: 12
+    display_name: '&aExplorer Rank &8&l» &e&l$4.99'
+    lore:
+    - ''
+    - '&8&l» &fAccess to occasional Server Maintenance'
+    - ''
+    - '&8&l» &eClick to View Store'
+    click_commands:
+    - "[message] &eClick here: &fhttp://store.adventurescraft.net/category/Rank &eto view our Ranks!"
+
+  'Rank1Purchased':
+    material: STONE_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    slot: 12
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1              
+    display_name: '&aExplorer Rank &8&l» &e&lPURCHASED'
+    lore:
+    - ''
+    - '&8&l» &fAccess to occasional Server Maintenance'
+    click_commands:
+    - "[openguimenu] ExplorerRank"
+
+#REWARD #1
+  'Rank1Reward0':
+    material: NAME_TAG
+    hide_attributes: true
+    priority: 2
+    amount: 1
+    slot: 20
+    display_name: '&f[&aExplorer&f] Battle Tag'
+    lore:
+    - ''
+    - '&aBattle Tag: &f[&aExplorer&f]'
+    - ''
+    - '&cRequires &aExplorer &crank to Unlock!'
+    click_commands:
+    - "[update]"
+
+  'Rank1Reward0Unlocked':
+    material: NAME_TAG
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 1
+    slot: 20
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1              
+    display_name: '&f[&aExplorer&f] Battle Tag &e&lUNLOCKED'
+    lore:
+    - ''
+    - '&aBattle Tag: &f[&aExplorer&f]'
+    - ''
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag Explorer Default"
+    right_click_commands:
+    - "[player] Tag Explorer Explorer"
+    shift_left_click_commands:
+    - "[player] Tag Explorer Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag Explorer Conquerer"
+
+
+#REWARD #1
+  'Rank1Reward1':
+    material: PAPER
+    hide_attributes: true
+    priority: 2
+    amount: 1
+    slot: 21
+    display_name: '&e+54 Bank Slots'
+    lore:
+    - ''
+    - '&cRequires &aExplorer &crank to Unlock!'
+    click_commands:
+    - "[update]"
+
+  'Rank1Reward1Unlocked':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 1
+    slot: 21
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.1              
+    display_name: '&e+54 Bank Slots &e&lUNLOCKED'
+    lore:
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank1Reward1"
+    - "[update]"
+
+  'Rank1Reward1Claimed':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 1
+    slot: 21
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.1.Claimed              
+    display_name: '&e+54 Bank Slots &e&lCLAIMED'
+    lore:
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #3
+  'Rank1Reward2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    priority: 2
+    amount: 2
+    slot: 22
+    display_name: '&eProfession Booster Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &aExplorer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank1Reward2Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 2
+    slot: 22
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.2              
+    display_name: '&eProfession Booster Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank1Reward2"
+    - "[update]"
+
+  'Rank1Reward2Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 2
+    slot: 22
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.2.Claimed              
+    display_name: '&eProfession Booster Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #3
+  'Rank1Reward3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    priority: 2
+    amount: 2
+    slot: 23
+    display_name: '&eUndead Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &aExplorer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank1Reward3Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 2
+    slot: 23
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.3              
+    display_name: '&eUndead Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank1Reward3"
+    - "[update]"
+
+  'Rank1Reward3Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 2
+    slot: 23
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.3.Claimed              
+    display_name: '&eUndead Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #4
+  'Rank1Reward4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    priority: 2
+    amount: 2
+    slot: 24
+    display_name: '&eHell Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &aExplorer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank1Reward4Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 2
+    slot: 24
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.4              
+    display_name: '&eHell Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank1Reward4"
+    - "[update]"
+
+  'Rank1Reward4Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 2
+    slot: 24
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank1.Reward.4.Claimed              
+    display_name: '&eHell Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+###TOP ROW ADVENTURER
+  'Rank2':
+    material: IRON_SWORD
+    hide_attributes: true
+    priority: 2
+    slot: 13
+    display_name: '&9Adventurer &aRank &8&l» &e&l$9.99'
+    lore:
+    - ''
+    - '&8&l» &fAccess to occasional Server Maintenance'
+    - '&8&l» &fAbility to &esell &ffrom anywhere using &e/Sell'
+    - '&8&l» &fChange music in your Home using &e/p Music'
+    - ''
+    - '&8&l» &eClick to View Store'
+    click_commands:
+    - "[message] &eClick here: &fhttp://store.adventurescraft.net/category/Rank &eto view our Ranks!"
+  'Rank2Purchased':
+    material: IRON_SWORD
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    slot: 13
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2              
+    display_name: '&9Adventurer &aRank &8&l» &e&lPURCHASED'
+    lore:
+    - ''
+    - '&8&l» &fAccess to occasional Server Maintenance'
+    - '&8&l» &fAbility to &esell &ffrom anywhere using &e/Sell'
+    - '&8&l» &fChange music in your Home using &e/p Music'
+    click_commands:
+    - "[openguimenu] AdventurerRank"
+
+#REWARD #1
+  'Rank2Reward0':
+    material: NAME_TAG
+    hide_attributes: true
+    priority: 2
+    amount: 1
+    slot: 29
+    display_name: '&f[&9Adventurer&f] Battle Tag'
+    lore:
+    - ''
+    - '&aBattle Tag: &f[&9Adventurer&f]'
+    - ''
+    - '&cRequires &9Adventurer &crank to Unlock!'
+    click_commands:
+    - "[update]"
+
+  'Rank2Reward0Unlocked':
+    material: NAME_TAG
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 1
+    slot: 29
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2              
+    display_name: '&f[&9Adventurer&f] Battle Tag &e&lUNLOCKED'
+    lore:
+    - ''
+    - '&aBattle Tag: &f[&9Adventurer&f]'
+    - ''
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag Adventurer Default"
+    right_click_commands:
+    - "[player] Tag Adventurer Explorer"
+    shift_left_click_commands:
+    - "[player] Tag Adventurer Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag Adventurer Conquerer"
+
+
+#REWARD #1
+  'Rank2Reward1':
+    material: PAPER
+    hide_attributes: true
+    priority: 2
+    amount: 1
+    slot: 30
+    display_name: '&e+108 Bank Slots'
+    lore:
+    - ''
+    - '&cRequires &9Adventurer &crank to Unlock!'
+    click_commands:
+    - "[update]"
+
+  'Rank2Reward1Unlocked':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 1
+    slot: 30
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.1              
+    display_name: '&e+108 Bank Slots &e&lUNLOCKED'
+    lore:
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank2Reward1"
+    - "[update]"
+
+  'Rank2Reward1Claimed':
+    material: PAPER
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 1
+    slot: 30
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.1.Claimed              
+    display_name: '&e+108 Bank Slots &e&lCLAIMED'
+    lore:
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #3
+  'Rank2Reward2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    priority: 2
+    amount: 5
+    slot: 31
+    display_name: '&eProfession Booster Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &9Adventurer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank2Reward2Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 5
+    slot: 31
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.2              
+    display_name: '&eProfession Booster Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank2Reward2"
+    - "[update]"
+
+  'Rank2Reward2Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjg2YTk3YzkwMDZmMDY3NTgyOGJjZjYwMTI5YmU2NjFiYzY2YjdiOTBhZjJjOWVlMDkyOWQ1YmNlODkyIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 5
+    slot: 31
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.2.Claimed              
+    display_name: '&eProfession Booster Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #3
+  'Rank2Reward3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    priority: 2
+    amount: 5
+    slot: 32
+    display_name: '&eUndead Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &9Adventurer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank2Reward3Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 5
+    slot: 32
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.3              
+    display_name: '&eUndead Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank2Reward3"
+    - "[update]"
+
+  'Rank2Reward3Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQxNDY2MTk5YjcyY2JjODg4OWJiOGE1MmUwZjRiYTEzYmNkZDVmYWI5N2VlYjk0ODIxNDE4N2I2MmYwNjQwZCJ9fX0=
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 5
+    slot: 32
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.3.Claimed              
+    display_name: '&eUndead Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"
+
+#REWARD #4
+  'Rank2Reward4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    priority: 2
+    amount: 5
+    slot: 33
+    display_name: '&eHell Box'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&cRequires &9Adventurer &crank to Unlock!'
+    click_commands:
+    - "[player] lootboxes"
+    - "[update]"
+
+  'Rank2Reward4Unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 1
+    amount: 5
+    slot: 33
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.4              
+    display_name: '&eHell Box &e&lUNLOCKED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&8&l» &eClick to Unlock'
+    click_commands:
+    - "[player] Rank2Reward4"
+    - "[update]"
+
+  'Rank2Reward4Claimed':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlMDk1MzMyNzIwMjE1Y2E5Yjg1ZTdlYWNkMWQwOTJiMTY5N2ZhZDM0ZDY5NmFkZDk0ZDNiNzA5NzY3MDJjIn19fQ==
+    hide_attributes: true
+    hide_enchantments: true
+    priority: 0
+    amount: 5
+    slot: 33
+    enchantments: 
+       - DURABILITY;5
+    view_requirement:
+      requirements:
+        Pex:
+          type: has permission
+          permission: Rank2.Reward.4.Claimed              
+    display_name: '&eHell Box &e&lCLAIMED'
+    lore:
+    - '&fLootbox'
+    - ''
+    - '&8&l» &eClick to Open Box'
+    - ''
+    - '&e&lEXOTIC ITEM'
+    - ''
+    - '&aYou claimed this reward already!'
+    click_commands:
+    - "[message] &cYou claimed this reward already!"

@@ -1,0 +1,262 @@
+command /Donate:
+    trigger:
+        execute console command "/dm open DonationShop %player%"
+        send formatted "&7You can donate to get epic rewards from our <tooltip:&aClick to visit the Store!><url:https://store.adventurescraft.net>&6&lSTORE<reset>&7!" to player
+command /ExplorerRank:
+    trigger:
+        execute console command "/dm open ExplorerRank %player%"
+command /AdventurerRank:
+    trigger:
+        execute console command "/dm open AdventurerRank %player%"
+command /ConquererRank:
+    trigger:
+        execute console command "/dm open ConquererRank %player%"
+command /Boosters:
+    trigger:
+        execute console command "/mmoitems stations open boosters %player%"
+command /Skins:
+    trigger:
+        execute console command "/mmoitems stations open skins %player%"
+command /Lootboxes:
+    trigger:
+        execute player command "/crates virtualcrates"
+
+command /Sell:
+    trigger:
+        if player has permission "Rank2":
+            execute console command "/ushop open %player%"
+        else:
+            message "&cYou must at least have the &9Adventurer &crank!"
+#Rank 1 (Adventurer)
+command /Rank1Reward1:
+    trigger:
+        if player has permission "Rank1":
+            if player has permission "Rank1.Reward.1":
+                execute console command "/lp user %player% permission set Rank1.Reward.1.Claimed true"
+                execute console command "/lp user %player% permission set Rank1.Reward.1 false"
+                execute console command "/bank admin slots add %player% 54"
+                send "&aYour &eBank &ahas been increased by &e54 slots&a!" to player
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &aExplorer &crank!"
+command /Rank1Reward2:
+    trigger:
+        if player has permission "Rank1":
+            if player has permission "Rank1.Reward.2":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank1.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Rank1.Reward.2 false"
+                    execute console command "/mmoitems give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 2"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &aExplorer &crank!"
+command /Rank1Reward3:
+    trigger:
+        if player has permission "Rank1":
+            if player has permission "Rank1.Reward.3":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank1.Reward.3.Claimed true"
+                    execute console command "/lp user %player% permission set Rank1.Reward.3 false"
+                    execute console command "/mmoitems give CONSUMABLE UNDEAD_BOX %player% 2"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &aExplorer &crank!"
+command /Rank1Reward4:
+    trigger:
+        if player has permission "Rank1":
+            if player has permission "Rank1.Reward.4":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank1.Reward.4.Claimed true"
+                    execute console command "/lp user %player% permission set Rank1.Reward.4 false"
+                    execute console command "/mmoitems give CONSUMABLE HELL_BOX %player% 2"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &aExplorer &crank!"
+
+#Rank2 (Explorer)
+command /Rank2Reward1:
+    trigger:
+        if player has permission "Rank2":
+            if player has permission "Rank2.Reward.1":
+                execute console command "/lp user %player% permission set Rank2.Reward.1.Claimed true"
+                execute console command "/lp user %player% permission set Rank2.Reward.1 false"
+                execute console command "/bank admin slots add %player% 108"
+                send "&aYour &eBank &ahas been increased by &e108 slots&a!" to player
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &9Adventurer &crank!"
+command /Rank2Reward2:
+    trigger:
+        if player has permission "Rank2":
+            if player has permission "Rank2.Reward.2":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank2.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Rank2.Reward.2 false"
+                    execute console command "/mmoitems give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 5"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &9Adventurer &crank!"
+command /Rank2Reward3:
+    trigger:
+        if player has permission "Rank2":
+            if player has permission "Rank2.Reward.3":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank2.Reward.3.Claimed true"
+                    execute console command "/lp user %player% permission set Rank2.Reward.3 false"
+                    execute console command "/mmoitems give CONSUMABLE UNDEAD_BOX %player% 5"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &9Adventurer &crank!"
+command /Rank2Reward4:
+    trigger:
+        if player has permission "Rank2":
+            if player has permission "Rank2.Reward.4":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank2.Reward.4.Claimed true"
+                    execute console command "/lp user %player% permission set Rank2.Reward.4 false"
+                    execute console command "/mmoitems give CONSUMABLE HELL_BOX %player% 5"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &9Adventurer &crank!"
+
+#Rank3 (Conquerer)
+command /Rank3Reward1:
+    trigger:
+        if player has permission "Rank3":
+            if player has permission "Rank3.Reward.1":
+                execute console command "/lp user %player% permission set Rank3.Reward.1.Claimed true"
+                execute console command "/lp user %player% permission set Rank3.Reward.1 false"
+                execute console command "/bank admin slots add %player% 162"
+                send "&aYour &eBank &ahas been increased by &e162 slots&a!" to player
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &cConquerer &crank!"
+command /Rank3Reward2:
+    trigger:
+        if player has permission "Rank3":
+            if player has permission "Rank3.Reward.2":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank3.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Rank3.Reward.2 false"
+                    execute console command "/mmoitems give CONSUMABLE PROFESSION_BOOSTER_BOX %player% 15"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &cConquerer &crank!"
+command /Rank3Reward3:
+    trigger:
+        if player has permission "Rank3":
+            if player has permission "Rank3.Reward.3":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank3.Reward.3.Claimed true"
+                    execute console command "/lp user %player% permission set Rank3.Reward.3 false"
+                    execute console command "/mmoitems give CONSUMABLE UNDEAD_BOX %player% 15"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &cConquerer &crank!"
+command /Rank3Reward4:
+    trigger:
+        if player has permission "Rank3":
+            if player has permission "Rank3.Reward.4":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Rank3.Reward.4.Claimed true"
+                    execute console command "/lp user %player% permission set Rank3.Reward.4 false"
+                    execute console command "/mmoitems give CONSUMABLE HELL_BOX %player% 15"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &cConquerer &crank!"
+
+
+
+
+
+
+
+
+
+#Alpha Rank
+command /AlphaReward1:
+    trigger:
+        if player has permission "Alpha":
+            if player has permission "Alpha.Reward.1":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Alpha.Reward.1.Claimed true"
+                    execute console command "/lp user %player% permission set Alpha.Reward.1 false"
+                    execute console command "/mmoitems give MOUNT BORG %player% 1"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &6Alpha &crank!"
+command /AlphaReward2:
+    trigger:
+        if player has permission "Alpha":
+            if player has permission "Alpha.Reward.2":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Alpha.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Alpha.Reward.2 false"
+                    execute console command "/mmoitems give CONSUMABLE BANK_TOKEN4 %player% 5"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &6Alpha &crank!"
+command /AlphaReward3:
+    trigger:
+        if player has permission "Alpha":
+            if player has permission "Alpha.Reward.3":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Alpha.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Alpha.Reward.2 false"
+                    execute console command "/mmoitems give MISCELLANEOUS ALPHA %player% 1"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &6Alpha &crank!"
+command /AlphaReward4:
+    trigger:
+        if player has permission "Alpha":
+            if player has permission "Alpha.Reward.4":
+                if player has enough space for 1 diamond chestplate:
+                    execute console command "/lp user %player% permission set Alpha.Reward.2.Claimed true"
+                    execute console command "/lp user %player% permission set Alpha.Reward.2 false"
+                    execute console command "/mmoitems give BLOCK BEDROCK %player% 1"
+                else:
+                    message "&cYou must have at least 1 inventory slot available to claim this reward!"
+            else:
+                message "&cYou have already claimed this reward!"
+        else: 
+            message "&cYou must be at least the &6Alpha &crank!"

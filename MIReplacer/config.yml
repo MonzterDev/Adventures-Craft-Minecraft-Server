@@ -1,50 +1,99 @@
-#Whenever a vanilla Iron Axe is converted, a random MI
-#from the list will be selected to replace it.
-#The number after the MMOItems name is the weighted chance.
-#The chances of getting a Butcher Axe or Bone Cracker are
-#higher than the chances of getting a Skull Breaker
-  
-#Format is "MATERIAL_TO_REPLACE: MMOITEMSTYPE.MMOITEM?WEIGHT"
-#(However, weight only matters when using multiple conversion options)
+#  __  __ _____ _____            _                       ___
+# |  \/  |_   _|  __ \          | |                     |__ \
+# | \  / | | | | |__) |___ _ __ | | __ _  ___ ___ _ __     ) |
+# | |\/| | | | |  _  // _ \ '_ \| |/ _` |/ __/ _ \ '__|   / /
+# | |  | |_| |_| | \ \  __/ |_) | | (_| | (_|  __/ |     / /_
+# |_|  |_|_____|_|  \_\___| .__/|_|\__,_|\___\___|_|    |____|
+#                         | |  by ASangarin
+#                         |_|
+# Config Version: 2.1
+# Spigot: https://www.spigotmc.org/resources/mireplacer-requires-mmoitems.70961/
+Options:
+  # When enabled, stores the whole config into memory for performance.
+  # Is highly recommended, but may take up some RAM if using a VERY large config.
+  # NOTE: Some features will not work as intended and may be entirely disabled if
+  # this is set to false. ONLY do this as a last resort if MIReplacer is lagging!
+  cacheConfig: true
+  # List of worlds that uses MIReplacer. Leave empty to use it server-wide.
+  # worldList: ["world", "world_nether", "world_the_end"]
+  worldList: []
+  # Whether converted items should keep old enchantments once converted.
+  keepEnchantments: true
+  # Whether custom names carry over from old items once converted.
+  keepCustomNames: true
+  # The item name of the random item displayed when using weights in crafting.
+  previewItemName: "{itemname}"
+  # {itemname} will be replaced by the name of the possible item.
+  previewItemIndex: "{itemname}"
+  # The lore to display when previewing items to be crafted.
+  # set to 'craftingLorePreview: []' to disable this feature.
+  craftingLorePreview: []
+  # MIReplacer will only convert items that contains a
+  # line in their lore which DOES NOT match the given regex
+  # Setting this to empty will convert ALL items with lore.
+  # MIReplacer will ALWAYS convert vanilla items without lore.
+  loreMatcher: ""
+  # MIReplacer will only convert items with display
+  # names that DOES NOT match the given regex
+  # Setting this to empty will convert ALL items with display names.
+  # MIReplacer will ALWAYS convert vanilla items without a display name.
+  nameMatcher: ""
+  # If an item contains any of these NBTTags it will not be converted
+  # 'MMOITEMS_ITEM_TYPE' is pretty important as it will
+  # prevent existing MMOItems from being converted.
+  # 'RpgWorth' is for MMOCore currency items.
+  # 'DoNotConvert' is a custom NBTTag which could be applied.
+  exemptNBTTags: ["MMOITEMS_ITEM_TYPE", "RpgWorth", "DoNotConvert"]
+  # Only turn to false if you'd like Slimefun items to convert.
+  # This does nothing regardless of value if Slimefun isn't installed.
+  exemptSlimefun: true
 
-#BRICK: MATERIAL.STEEL_INGOT, will make every brick (crafted, smelted or picked up)
-#turn into the MMOItems Steel Ingot.
-convert-on:
+Convert-On:
+  # Convert items when picked up from the ground
   pickup: true
+  # Convert items when crafted in the crafting table
   craft: true
-  smelt: true
+  # Convert items when smelted in a furnace. (Blast & Smokers on 1.14+)
+  # !!! IMPORTANT: Servers must be restarted when changing the config
+  # !!! for smelted recipes to work correctly when replacing!
+  smelt: false
+  # Convert items when smithed in a smithing table
+  smithing: false
+  # Convert when chests are being opened. This only applied once per
+  # individual chest/minecart (resets on server restarts)
+  chest: false
+  # Convert when item is moved around in the inventory.
+  # This one will call A LOT of events and therefore may not
+  # be suited for larger servers. Most of the time there won't
+  # even be the need for it, so best to leave it off.
+  inventory-change: false
 
-#Keep vanilla enchantments when converting?
-keepEnchants: true
-#Keep custom item name when converting?
-keepDisplayName: true
-
-Items:
-  WOODEN_SWORD: SWORD.WOODEN_SWORD
-  STONE_SWORD: SWORD.STONE_SWORD
-  GOLDEN_SWORD: SWORD.GOLDEN_SWORD
-  IRON_SWORD: SWORD.IRON_SWORD
-  DIAMOND_SWORD: SWORD.DIAMOND_SWORD
-  DIAMOND_HELMET: ARMOR.DIAMOND_HELMET
-  DIAMOND_CHESTPLATE: ARMOR.DIAMOND_CHESTPLATE
-  DIAMOND_LEGGINGS: ARMOR.DIAMOND_LEGGINGS
-  DIAMOND_BOOTS: ARMOR.DIAMOND_BOOTS
-  IRON_HELMET: ARMOR.IRON_HELMET
-  IRON_CHESTPLATE: ARMOR.IRON_CHESTPLATE
-  IRON_LEGGINGS: ARMOR.IRON_LEGGINGS
-  IRON_BOOTS: ARMOR.IRON_BOOTS
-  CHAINMAIL_HELMET: ARMOR.CHAINMAIL_HELMET
-  CHAINMAIL_CHESTPLATE: ARMOR.CHAINMAIL_CHESTPLATE
-  CHAINMAIL_LEGGINGS: ARMOR.CHAINMAIL_LEGGINGS
-  CHAINMAIL_BOOTS: ARMOR.CHAINMAIL_BOOTS
-  LEATHER_HELMET: ARMOR.LEATHER_HELMET
-  LEATHER_CHESTPLATE: ARMOR.LEATHER_CHESTPLATE
-  LEATHER_LEGGINGS: ARMOR.LEATHER_LEGGINGS
-  LEATHER_BOOTS: ARMOR.LEATHER_BOOTS
-  GOLDEN_HELMET: ARMOR.GOLDEN_HELMET
-  GOLDEN_CHESTPLATE: ARMOR.GOLDEN_CHESTPLATE
-  GOLDEN_LEGGINGS: ARMOR.GOLDEN_LEGGINGS
-  GOLDEN_BOOTS: ARMOR.GOLDEN_BOOTS
+ConversionItems:
+  WOODEN_SWORD: SWORD.WOODENSWORD
+  STONE_SWORD: SWORD.STONESWORD
+  GOLDEN_SWORD: SWORD.DIAMONDSWORD
+  IRON_SWORD: SWORD.IRONSWORD
+  DIAMOND_SWORD: SWORD.DIAMONDSWORD
+  DIAMOND_HELMET: ARMOR.DIAMONDHELMET
+  DIAMOND_CHESTPLATE: ARMOR.DIAMONDCHESTPLATE
+  DIAMOND_LEGGINGS: ARMOR.DIAMONDLEGGINGS
+  DIAMOND_BOOTS: ARMOR.DIAMONDBOOTS
+  IRON_HELMET: ARMOR.IRONHELMET
+  IRON_CHESTPLATE: ARMOR.IRONCHESTPLATE
+  IRON_LEGGINGS: ARMOR.IRONLEGGINGS
+  IRON_BOOTS: ARMOR.IRONBOOTS
+  CHAINMAIL_HELMET: ARMOR.CHAINMAILHELMET
+  CHAINMAIL_CHESTPLATE: ARMOR.CHAINMAILCHESTPLATE
+  CHAINMAIL_LEGGINGS: ARMOR.CHAINMAILLEGGINGS
+  CHAINMAIL_BOOTS: ARMOR.CHAINMAILBOOTS
+  LEATHER_HELMET: ARMOR.LEATHERHELMET
+  LEATHER_CHESTPLATE: ARMOR.LEATHERCHESTPLATE
+  LEATHER_LEGGINGS: ARMOR.LEATHERLEGGINGS
+  LEATHER_BOOTS: ARMOR.LEATHERBOOTS
+  GOLDEN_HELMET: ARMOR.GOLDENHELMET
+  GOLDEN_CHESTPLATE: ARMOR.GOLDENCHESTPLATE
+  GOLDEN_LEGGINGS: ARMOR.GOLDENLEGGINGS
+  GOLDEN_BOOTS: ARMOR.GOLDENBOOTS
   DIAMOND_PICKAXE: TOOL.DIAMOND_PICKAXE
   DIAMOND_SHOVEL: TOOL.DIAMOND_SHOVEL
   DIAMOND_AXE: TOOL.DIAMOND_AXE

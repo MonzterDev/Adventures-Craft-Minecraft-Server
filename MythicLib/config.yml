@@ -1,0 +1,85 @@
+#
+# ███    ███ ███    ███  ██████  ██      ██ ██████
+# ████  ████ ████  ████ ██    ██ ██      ██ ██   ██
+# ██ ████ ██ ██ ████ ██ ██    ██ ██      ██ ██████
+# ██  ██  ██ ██  ██  ██ ██    ██ ██      ██ ██   ██
+# ██      ██ ██      ██  ██████  ███████ ██ ██████
+#
+# a Spigot Plugin by Team Requiem
+
+# DO NOT TOUCH
+config-version: 2
+
+# Default: 2.0; crits deal twice as much damage. This value
+# stacks up with the current weapon's crit power.
+#
+# Example:
+# - 10 atk damage sword
+# - +50% crit power
+# - crit coefficient set to 2.0
+# result: 25 damage (10 + 10 + 5)
+crit-coefficient: 2.0
+
+# Same but for skill damage.
+spell-crit-coefficient: 1.5
+
+# Put that option to true if you are updating to MMOLib 1.1+
+# Don't use it if you are using MMOLib for the first time.
+# Requires a reload when changed.
+#
+# That option makes sure players all have their base
+# attribute value set to the default attribute base value.
+fix-player-attributes: false
+
+# Edit general plugin number formatting here.
+number-format:
+  decimal-separator: .
+
+# This is the formula for how defense works. It does
+# NOT apply operators precedence. Placeholders:
+# #damage# - Damage Dealt
+# #defense# - Player Defense
+defense-application: '#damage# * (1 - (#defense# / (#defense# + 100)))'
+
+# Allows to scale health up/down to a specific
+# amount so extra health does not fill up the screen.
+# Requires a SERVER reload when changed.
+health-scale:
+  enabled: true
+  scale: 20
+
+# Default and max. values of armor stats. These systems
+# all have a cooldown which can be reduced using the
+# '*** Cooldown Reduction' item stat.
+mitigation:
+  # Edit mitigation messages here. Leave to blank for no message.
+  message:
+    action-bar: false
+    parry: '&cYou just parried #damage# damage.'
+    block: '&cYou just blocked #damage# damage.' # Use #power# to display block power.
+    dodge: '&cYou just dodged #damage# damage.'
+
+  block:
+    power:
+      default: 25.0
+      max: 75.0
+    rating-max: 80.0
+    cooldown:
+      base: 5.0
+      min: 10.0
+  dodge:
+    knockback:
+      enabled: true
+      force: 1.0
+    rating-max: 80.0
+    cooldown:
+      base: 5.0
+      min: 1.0
+  parry:
+    knockback:
+      enabled: true
+      force: 1.0
+    rating-max: 80.0
+    cooldown:
+      base: 8.0
+      min: 2.0

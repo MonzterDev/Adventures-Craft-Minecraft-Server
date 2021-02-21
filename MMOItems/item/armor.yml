@@ -8,6 +8,7 @@ DIAMONDCHESTPLATE:
     material: DIAMOND_CHESTPLATE
     tier: COMMON
     unbreakable: true
+    equip-priority: 4.0
 DIAMONDLEGGINGS:
   base:
     material: DIAMOND_LEGGINGS
@@ -28,6 +29,7 @@ IRONCHESTPLATE:
     material: IRON_CHESTPLATE
     tier: COMMON
     unbreakable: true
+    equip-priority: 4.0
 IRONLEGGINGS:
   base:
     material: IRON_LEGGINGS
@@ -53,6 +55,7 @@ GOLDENLEGGINGS:
     material: GOLDEN_LEGGINGS
     tier: COMMON
     unbreakable: true
+    equip-priority: 2.0
 GOLDENBOOTS:
   base:
     material: GOLDEN_BOOTS
@@ -133,7 +136,6 @@ STEEL_HELMET:
     name: '&fSteel Helm'
     lore: []
     tier: COMMON
-    gem-sockets: []
     set: STEEL
     unbreakable: true
     max-health: 10.0
@@ -145,7 +147,6 @@ STEEL_CHESTPLATE:
     name: '&fSteel Chestplate'
     lore: []
     tier: COMMON
-    gem-sockets: []
     set: STEEL
     max-health: 20.0
     unbreakable: true
@@ -156,7 +157,6 @@ STEEL_LEGGINGS:
     name: '&fSteel Leggings'
     lore: []
     tier: COMMON
-    gem-sockets: []
     set: STEEL
     max-health: 20.0
     unbreakable: true
@@ -167,7 +167,6 @@ STEEL_BOOTS:
     name: '&fSteel Boots'
     lore: []
     tier: COMMON
-    gem-sockets: []
     set: STEEL
     unbreakable: true
     max-health: 10.0
@@ -326,7 +325,6 @@ UNDEAD_HEAD:
       workbench: true
     name: §9Undead Skull
     unstackable: true
-    goop-hat: true
 UNDEAD_CHEST:
   base:
     material: LEATHER_CHESTPLATE
@@ -394,10 +392,9 @@ MORDEN_HEAD:
     set: MORDEN
     name: §5Morden Skull
     unstackable: true
-    goop-hat: true
     faction-damage-undead: 15.0
     gem-sockets:
-    - Uncolored
+    - Unused
 MORDEN_CHEST:
   base:
     material: GOLDEN_CHESTPLATE
@@ -412,7 +409,7 @@ MORDEN_CHEST:
     set: MORDEN
     faction-damage-undead: 25.0
     gem-sockets:
-    - Uncolored
+    - Unused
 MORDEN_LEGS:
   base:
     material: GOLDEN_LEGGINGS
@@ -427,7 +424,7 @@ MORDEN_LEGS:
     set: MORDEN
     faction-damage-undead: 25.0
     gem-sockets:
-    - Uncolored
+    - Unused
 MORDEN_FEET:
   base:
     material: GOLDEN_BOOTS
@@ -442,7 +439,7 @@ MORDEN_FEET:
     set: MORDEN
     faction-damage-undead: 15.0
     gem-sockets:
-    - Uncolored
+    - Unused
 FARMER_HAT:
   base:
     material: PLAYER_HEAD
@@ -621,7 +618,7 @@ DEMON_HEAD:
     defense: 20.0
     max-health: 35.0
     gem-sockets:
-    - UNCOLORED
+    - Unused
     name: §9Demon Head
     unstackable: true
     faction-damage-hell: 25.0
@@ -636,7 +633,7 @@ HEALER_HEAD:
     defense: 15.0
     max-health: 50.0
     gem-sockets:
-    - UNCOLORED
+    - Unused
     name: §5Void Healer Head
     ability:
       ability1:
@@ -654,7 +651,7 @@ PIGMAN_HEAD:
     tier: RARE
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §9Pigman Head
     defense: 15.0
     max-health: 30.0
@@ -667,7 +664,7 @@ BLAZE_CHEST:
     tier: LEGENDARY
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §5Blaze Chest
     defense: 30.0
     max-health: 50.0
@@ -693,7 +690,7 @@ DEVIL_HEAD:
     tier: EXOTIC
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eDevil's Head
     defense: 30.0
     max-health: 50.0
@@ -708,7 +705,7 @@ DEVIL_CHEST:
     unbreakable: true
     dye-color: 253 0 0
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eDevil's Chest
     defense: 45.0
     max-health: 60.0
@@ -722,7 +719,7 @@ DEVIL_LEGS:
     unbreakable: true
     dye-color: 253 0 0
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eDevil's Legs
     defense: 40.0
     max-health: 60.0
@@ -736,7 +733,7 @@ DEVIL_BOOTS:
     unbreakable: true
     dye-color: 253 0 0
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eDevil's Boots
     defense: 35.0
     max-health: 50.0
@@ -806,7 +803,7 @@ LOG_HELMET:
     lore: []
     set: LOG
     gem-sockets:
-    - Uncolored
+    - Unused
     defense: 25.0
     upgrade:
       max: 10
@@ -823,7 +820,7 @@ LOG_CHESTPLATE:
     lore: []
     set: LOG
     gem-sockets:
-    - Uncolored
+    - Unused
     defense: 25.0
     upgrade:
       max: 10
@@ -840,7 +837,7 @@ LOG_LEGGINGS:
     lore: []
     set: LOG
     gem-sockets:
-    - Uncolored
+    - Unused
     defense: 25.0
     upgrade:
       max: 10
@@ -857,7 +854,7 @@ LOG_BOOTS:
     lore: []
     set: LOG
     gem-sockets:
-    - Uncolored
+    - Unused
     defense: 25.0
     upgrade:
       max: 10
@@ -899,7 +896,7 @@ MELON_HAT3:
     - '&710 block radius. &aHeals &7are improved'
     - '&7with more people around you!'
     gem-sockets:
-    - Uncolored
+    - Unused
     ability:
       ability1:
         type: MELONHEAL
@@ -932,7 +929,7 @@ HEAVY_HELMET:
     lore: []
     tier: RARE
     gem-sockets:
-    - Uncolored
+    - Unused
     set: HEAVY
     unbreakable: true
     max-health: 25.0
@@ -944,7 +941,7 @@ HEAVY_CHESTPLATE:
     lore: []
     tier: RARE
     gem-sockets:
-    - Uncolored
+    - Unused
     set: HEAVY
     max-health: 30.0
     unbreakable: true
@@ -956,7 +953,7 @@ HEAVY_LEGGINGS:
     lore: []
     tier: RARE
     gem-sockets:
-    - Uncolored
+    - Unused
     set: HEAVY
     max-health: 30.0
     unbreakable: true
@@ -968,7 +965,7 @@ HEAVY_BOOTS:
     lore: []
     tier: RARE
     gem-sockets:
-    - Uncolored
+    - Unused
     set: HEAVY
     unbreakable: true
     max-health: 25.0
@@ -982,8 +979,8 @@ GEM_HELMET:
     - '&7and has lots of gem slots!'
     tier: RARE
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
     unbreakable: true
     disable-interaction: false
     skull-texture:
@@ -998,8 +995,8 @@ GEM_CHESTPLATE:
     - '&7and has lots of gem slots!'
     tier: RARE
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 248 248 248
 GEM_LEGGINGS:
@@ -1011,8 +1008,8 @@ GEM_LEGGINGS:
     - '&7and has lots of gem slots!'
     tier: RARE
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 248 248 248
 GEM_BOOTS:
@@ -1024,8 +1021,8 @@ GEM_BOOTS:
     - '&7and has lots of gem slots!'
     tier: RARE
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 248 248 248
 GEM_HELMET2:
@@ -1037,9 +1034,9 @@ GEM_HELMET2:
     - '&7and has lots of gem slots!'
     tier: LEGENDARY
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     disable-interaction: false
     skull-texture:
@@ -1054,9 +1051,9 @@ GEM_CHESTPLATE2:
     - '&7and has lots of gem slots!'
     tier: LEGENDARY
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 204 204
 GEM_LEGGINGS2:
@@ -1068,9 +1065,9 @@ GEM_LEGGINGS2:
     - '&7and has lots of gem slots!'
     tier: LEGENDARY
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 204 204
 GEM_BOOTS2:
@@ -1082,9 +1079,9 @@ GEM_BOOTS2:
     - '&7and has lots of gem slots!'
     tier: LEGENDARY
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 204 204
 GEM_HELMET3:
@@ -1096,11 +1093,10 @@ GEM_HELMET3:
     - '&7and has lots of gem slots!'
     tier: EXOTIC
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     disable-interaction: false
     skull-texture:
@@ -1115,11 +1111,10 @@ GEM_CHESTPLATE3:
     - '&7and has lots of gem slots!'
     tier: EXOTIC
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 255 0
 GEM_LEGGINGS3:
@@ -1131,11 +1126,10 @@ GEM_LEGGINGS3:
     - '&7and has lots of gem slots!'
     tier: EXOTIC
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 255 0
 GEM_BOOTS3:
@@ -1147,11 +1141,10 @@ GEM_BOOTS3:
     - '&7and has lots of gem slots!'
     tier: EXOTIC
     gem-sockets:
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
-    - Uncolored
+    - Universal
+    - Universal
+    - Universal
+    - Universal
     unbreakable: true
     dye-color: 0 255 0
     item-particles:
@@ -1185,7 +1178,6 @@ ILLUSIONER_HEAD:
     perm-effects:
       INCREASE_DAMAGE: 2.0
     unstackable: true
-    goop-hat: true
     lore:
     - '&7Gain &cStrength 2 &7while wearing!'
 ILLUSIONER_HEAD2:
@@ -1211,9 +1203,8 @@ ILLUSIONER_HEAD2:
     perm-effects:
       INCREASE_DAMAGE: 4.0
     unstackable: true
-    goop-hat: true
     gem-sockets:
-    - Uncolored
+    - Unused
     lore:
     - '&7Gain &cStrength 4 &7while wearing!'
 CASTER_HEAD:
@@ -1341,7 +1332,7 @@ CASTER_HEAD2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 CASTER_CHESTPLATE2:
   base:
     material: LEATHER_CHESTPLATE
@@ -1367,7 +1358,7 @@ CASTER_CHESTPLATE2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 CASTER_LEGGINGS2:
   base:
     material: LEATHER_LEGGINGS
@@ -1393,7 +1384,7 @@ CASTER_LEGGINGS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 CASTER_BOOTS2:
   base:
     material: LEATHER_BOOTS
@@ -1419,7 +1410,7 @@ CASTER_BOOTS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 SAI_HELMET:
   base:
     material: CHAINMAIL_HELMET
@@ -1540,7 +1531,7 @@ SAI_HELMET2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
     revision-id: 3
 SAI_CHESTPLATE2:
   base:
@@ -1566,7 +1557,7 @@ SAI_CHESTPLATE2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
     revision-id: 3
 SAI_LEGGINGS2:
   base:
@@ -1592,7 +1583,7 @@ SAI_LEGGINGS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
     revision-id: 3
 SAI_BOOTS2:
   base:
@@ -1618,7 +1609,7 @@ SAI_BOOTS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
     revision-id: 3
 LEGOLAS_HELMET:
   base:
@@ -1736,7 +1727,7 @@ LEGOLAS_HELMET2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 LEGOLAS_CHESTPLATE2:
   base:
     material: LEATHER_CHESTPLATE
@@ -1761,7 +1752,7 @@ LEGOLAS_CHESTPLATE2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 LEGOLAS_LEGGINGS2:
   base:
     material: LEATHER_LEGGINGS
@@ -1786,7 +1777,7 @@ LEGOLAS_LEGGINGS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 LEGOLAS_BOOTS2:
   base:
     material: LEATHER_BOOTS
@@ -1811,7 +1802,7 @@ LEGOLAS_BOOTS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 DARUK_HELMET:
   base:
     material: GOLDEN_HELMET
@@ -1888,7 +1879,7 @@ DARUK_HELMET2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 DARUK_CHESTPLATE2:
   base:
     material: GOLDEN_CHESTPLATE
@@ -1905,7 +1896,7 @@ DARUK_CHESTPLATE2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 DARUK_LEGGINGS2:
   base:
     material: GOLDEN_LEGGINGS
@@ -1922,7 +1913,7 @@ DARUK_LEGGINGS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 DARUK_BOOTS2:
   base:
     material: GOLDEN_BOOTS
@@ -1939,7 +1930,7 @@ DARUK_BOOTS2:
       spread: 0.1
       max-spread: 0.3
     gem-sockets:
-    - Uncolored
+    - Unused
 BULLBO_HEAD:
   base:
     material: PLAYER_HEAD
@@ -1949,7 +1940,7 @@ BULLBO_HEAD:
     tier: EXOTIC
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eBullbo Head
     defense: 65.0
     max-health: 85.0
@@ -1966,8 +1957,8 @@ BULBLIN_CHEST:
     unbreakable: true
     dye-color: 0 0 0
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Unused
+    - Unused
     name: §eBulblin Chestplate
     defense: 10.0
     max-health: 25.0
@@ -1982,8 +1973,8 @@ BULBLIN_LEGS:
     unbreakable: true
     dye-color: 0 0 0
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Unused
+    - Unused
     name: §eBulblin Leggings
     defense: 5.0
     max-health: 15.0
@@ -1998,7 +1989,7 @@ BULLBO_FEET:
     unbreakable: true
     dye-color: 0 0 0
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §eBullbo Feet
     defense: 45.0
     max-health: 75.0
@@ -2032,7 +2023,7 @@ BOOMER_CHEST2:
     knockback-resistance: 0.6
     critical-strike-power: 50
     gem-sockets:
-    - Uncolored
+    - Unused
 BOOMER_CHEST3:
   base:
     material: LEATHER_CHESTPLATE
@@ -2046,8 +2037,8 @@ BOOMER_CHEST3:
     knockback-resistance: 0.9
     critical-strike-power: 75
     gem-sockets:
-    - Uncolored
-    - Uncolored
+    - Unused
+    - Unused
     ability:
       ability1:
         type: MEGA_BOOM
@@ -2062,7 +2053,7 @@ ENCHANTRESS_HEAD:
     tier: LEGENDARY
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §5Enchantress Head
     defense: 25.0
     max-health: 35.0
@@ -2082,7 +2073,7 @@ ENCHANTRESS_CHEST:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §5Enchantress Chestplate
     defense: 40.0
     max-health: 50.0
@@ -2102,7 +2093,7 @@ ENCHANTRESS_LEGS:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §5Enchantress Leggings
     defense: 30.0
     max-health: 40.0
@@ -2122,7 +2113,7 @@ ENCHANTRESS_BOOTS:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     name: §5Enchantress Boots
     defense: 20.0
     max-health: 30.0
@@ -2130,7 +2121,7 @@ ENCHANTRESS_BOOTS:
     max-mana: 25.0
     faction-damage-void: 5.0
     set: ENCHANTRESS1
-    mana-regeneration: .5
+    mana-regeneration: 0.5
     lore:
     - '&5Magically &7enhanced armor piece'
     - '&7found only on the &5Enchantress&7,'
@@ -2144,7 +2135,7 @@ ENCHANTRESS_HEAD2:
     tier: EXOTIC
     unbreakable: true
     gem-sockets:
-    - Uncolored
+    - Unused
     - Mystical
     name: §eEnchantress Head
     defense: 30.0
@@ -2168,7 +2159,7 @@ ENCHANTRESS_CHEST2:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     - Mystical
     name: §eEnchantress Chestplate
     defense: 45.0
@@ -2192,7 +2183,7 @@ ENCHANTRESS_LEGS2:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     - Mystical
     name: §eEnchantress Leggings
     defense: 35.0
@@ -2216,7 +2207,7 @@ ENCHANTRESS_BOOTS2:
     unbreakable: true
     dye-color: 242 66 255
     gem-sockets:
-    - Uncolored
+    - Unused
     - Mystical
     name: §eEnchantress Boots
     defense: 25.0

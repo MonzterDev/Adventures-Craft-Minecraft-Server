@@ -596,24 +596,6 @@ BANK_TOKEN4:
         delay: 0.0
         op: true
     max-consume: 1.0
-UNLIMITED_WATER:
-  base:
-    material: WATER_BUCKET
-    name: '&9Unlimited Water Bucket'
-    unstackable: true
-    enchants:
-      unbreaking: 5
-    tier: RARE
-    lore:
-    - '&7The bucket which never runs out!'
-    commands:
-      cmd0:
-        format: GiveUnlimitedWaterBucket
-        delay: 0.0
-        op: true
-    max-consume: 1.0
-    hide-enchants: true
-    displayed-type: Miscellaneous
 XP_BOTTLE1:
   base:
     material: EXPERIENCE_BOTTLE
@@ -902,3 +884,31 @@ STABLE_WARP:
         type: PORTAL_SUMMON
         mode: RIGHT_CLICK
         cooldown: 2.0
+ENEMY_SCANNER:
+  base:
+    material: CLOCK
+    name: §eEnemy Scanner
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Scan an enemy with this to gain 
+    - §7more detailed information about them!
+    item-cooldown: 3.0
+    ability:
+      ability1:
+        type: ENEMY_SCANNER
+        mode: RIGHT_CLICK
+        cooldown: 3.0

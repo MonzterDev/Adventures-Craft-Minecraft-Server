@@ -3,14 +3,14 @@ command /Diceroll [<integer>] [<integer>]:
     trigger:
         if arg 1 is 1 or 2 or 3 or 4 or 5:    
             if arg 2 <= player's balance:
-                set {Dice::Roll} to random integer between 1 and 5
+                set {_Dice::Roll} to random integer between 1 and 5
                 remove arg-2 from player's balance
-                if arg-1 = {Dice::Roll}:
-                    set {Dice::Reward} to (arg-2*2)
-                    send "&aYou rolled a &e%{Dice::Roll}% &aand won &e⛂ %{Dice::Reward}%&a!"
-                    add {Dice::Reward} to player's balance
+                if arg-1 = {_Dice::Roll}:
+                    set {_Dice::Reward} to (arg-2*2)
+                    send "&aYou rolled a &e%{_Dice::Roll}% &aand won &e⛂ %{_Dice::Reward}%&a!"
+                    add {_Dice::Reward} to player's balance
                 else:
-                    message "&cUh oh, you rolled a &e%{Dice::Roll}%&c, but bet on &e%arg-1%&c and lost &e⛂ %arg-2%&c!"
+                    message "&cUh oh, you rolled a &e%{_Dice::Roll}%&c, but bet on &e%arg-1%&c and lost &e⛂ %arg-2%&c!"
             else:
                 message "&cYou tried rolling with &e⛂ %arg-2%&c, but only have &e%player's money%&c!"
         else:    

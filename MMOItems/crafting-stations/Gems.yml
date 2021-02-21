@@ -1,0 +1,509 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fGem Shop §7§l«§f§l«
+max-queue-size: 10
+items:
+  fill:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  GEM_BASE:
+    output:
+      type: MATERIAL
+      id: GEM_BASE
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=9}
+    conditions:
+    - profession{profession=Mining,level=1}
+  GEM_BASE2:
+    output:
+      type: MATERIAL
+      id: GEM_BASE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=9}
+    conditions:
+    - profession{profession=Mining,level=3}
+  GEM_BASE3:
+    output:
+      type: MATERIAL
+      id: GEM_BASE3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=9}
+    conditions:
+    - profession{profession=Mining,level=5}
+  GEM_BASE4:
+    output:
+      type: MATERIAL
+      id: GEM_BASE4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=9}
+    conditions:
+    - profession{profession=Mining,level=7}
+  GEM_BASE5:
+    output:
+      type: MATERIAL
+      id: GEM_BASE5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=9}
+    conditions:
+    - profession{profession=Mining,level=9}
+
+
+  HEALTH_GEM:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=2}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=1}
+  HEALTH_GEM2:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
+  HEALTH_GEM3:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  HEALTH_GEM4:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=32}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+  HEALTH_GEM5:
+    output:
+      type: GEM_STONE
+      id: HEALTH_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=64}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=7}
+
+  MANA_GEM:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=2}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=2}
+  MANA_GEM2:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
+  MANA_GEM3:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+  MANA_GEM4:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=32}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  MANA_GEM5:
+    output:
+      type: GEM_STONE
+      id: MANA_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=64}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+
+  DEFENSE_GEM:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=1}
+  DEFENSE_GEM2:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
+  DEFENSE_GEM3:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  DEFENSE_GEM4:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+  DEFENSE_GEM5:
+    output:
+      type: GEM_STONE
+      id: DEFENSE_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=32}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=9}
+
+  DAMAGE_GEM:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
+  DAMAGE_GEM2:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  DAMAGE_GEM3:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  DAMAGE_GEM4:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+  DAMAGE_GEM5:
+    output:
+      type: GEM_STONE
+      id: DAMAGE_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=32}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=10}
+
+  PROJECTILE_GEM:
+    output:
+      type: GEM_STONE
+      id: PROJECTILE_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  PROJECTILE_GEM2:
+    output:
+      type: GEM_STONE
+      id: PROJECTILE_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+  PROJECTILE_GEM3:
+    output:
+      type: GEM_STONE
+      id: PROJECTILE_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=7}
+  PROJECTILE_GEM4:
+    output:
+      type: GEM_STONE
+      id: PROJECTILE_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+  PROJECTILE_GEM5:
+    output:
+      type: GEM_STONE
+      id: PROJECTILE_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=32}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=10}
+
+  UNDEAD_GEM:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=256}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=1}
+  UNDEAD_GEM2:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=2}
+  UNDEAD_GEM3:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
+  UNDEAD_GEM4:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=320}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  UNDEAD_GEM5:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=540}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+
+  HEATED_GEM:
+    output:
+      type: GEM_STONE
+      id: HEATED_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  HEATED_GEM2:
+    output:
+      type: GEM_STONE
+      id: HEATED_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+  HEATED_GEM3:
+    output:
+      type: GEM_STONE
+      id: HEATED_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  HEATED_GEM4:
+    output:
+      type: GEM_STONE
+      id: HEATED_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=12}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=7}
+  HEATED_GEM5:
+    output:
+      type: GEM_STONE
+      id: HEATED_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+
+  VOID_GEM:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+    - profession{profession=Void,level=1}
+  VOID_GEM2:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+    - profession{profession=Void,level=2}
+  VOID_GEM3:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=7}
+    - profession{profession=Void,level=3}
+  VOID_GEM4:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM4
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=12}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+    - profession{profession=Void,level=4}
+  VOID_GEM5:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=9}
+    - profession{profession=Void,level=5}
+
+  FIREBALL_GEM3:
+    output:
+      type: GEM_STONE
+      id: FIREBALL_GEM3
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=4}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=8}
+    conditions:
+    - profession{profession=Mining,level=6}
+  FIREBALL_GEM4:
+    output:
+      type: GEM_STONE
+      id: FIREBALL_GEM4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=128}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=16}
+    conditions:
+    - profession{profession=Mining,level=8}
+
+
+
+  MYSTICAL_GEM:
+    output:
+      type: GEM_STONE
+      id: MYSTICAL_GEM
+    ingredients:
+    - mmoitem{type=MATERIAL,id=DEFENDER_FLESH,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=10}
+    - profession{profession=Void,level=5}

@@ -536,6 +536,431 @@ items:
       right: default-Town-Warlock.QuestReward3_Claim
       left: default-Town-Warlock.QuestReward3_Claim
 
+#
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Town-Gemsmith.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_part1,!default-Town-Gemsmith.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_completed, !default-Town-Gemsmith.q1_rewards_unclaimedCoal,!default-Town-Gemsmith.q1_rewards_unclaimedIron,!default-Town-Gemsmith.q1_rewards_unclaimedGold,!default-Town-Gemsmith.q1_rewards_unclaimedDiamond,!default-Town-Gemsmith.q1_rewards_unclaimedEmerald'
+    text:
+      en:
+        - '&e&l[Complete] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+
+  quest8_unclaimed_Coal:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedCoal,!default-Town-Gemsmith.q1_rewards_claimedCoal'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimCoal
+      left: default-Town-Gemsmith.QuestReward1_ClaimCoal
+  quest8_unclaimed_Iron:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedIron,!default-Town-Gemsmith.q1_rewards_claimedIron'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimIron
+      left: default-Town-Gemsmith.QuestReward1_ClaimIron
+  quest8_unclaimed_Gold:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedGold,!default-Town-Gemsmith.q1_rewards_claimedGold'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimGold
+      left: default-Town-Gemsmith.QuestReward1_ClaimGold
+  quest8_unclaimed_Diamond:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedDiamond,!default-Town-Gemsmith.q1_rewards_claimedDiamond'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+      left: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+  quest8_unclaimed_Emerald:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedEmerald,!default-Town-Gemsmith.q1_rewards_claimedEmerald'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+      left: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+#
+#
+  quest9_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Town-Gemsmith.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &feither'
+        - '&91 Enchanted Coal&f, &94 Enchanted Coal&f,'
+        - '&98 Enchanted Coal&f, &916 Enchanted Coal&f,'
+        - '&for &932 Enchanted Coal&f, and a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith after completing Gemstone Base'        
+    close: false
+    ##
+  quest9_active_Coal:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Coal_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  quest9_active_Iron:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Iron_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  quest9_active_Gold:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Gold_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  quest9_active_Diamond:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Diamond_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  quest9_active_Emerald:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Emerald_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+    ##
+  quest9_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_completed, !default-Town-Gemsmith.q2_rewards_unclaimedCoal,!default-Town-Gemsmith.q2_rewards_unclaimedIron,!default-Town-Gemsmith.q2_rewards_unclaimedGold,!default-Town-Gemsmith.q2_rewards_unclaimedDiamond,!default-Town-Gemsmith.q2_rewards_unclaimedEmerald'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &feither'
+        - '&91 Enchanted Coal&f, &94 Enchanted Coal&f,'
+        - '&98 Enchanted Coal&f, &916 Enchanted Coal&f,'
+        - '&for &932 Enchanted Coal&f, and a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+    close: false
+    ##
+  quest9_unclaimed_Coal:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_rewards_unclaimedCoal,!default-Town-Gemsmith.q2_rewards_claimedCoal'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward2_ClaimCoal
+      left: default-Town-Gemsmith.QuestReward2_ClaimCoal
+  quest9_unclaimed_Iron:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_rewards_unclaimedIron,!default-Town-Gemsmith.q2_rewards_claimedIron'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward2_ClaimIron
+      left: default-Town-Gemsmith.QuestReward2_ClaimIron
+  quest9_unclaimed_Gold:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_rewards_unclaimedGold,!default-Town-Gemsmith.q2_rewards_claimedGold'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward2_ClaimGold
+      left: default-Town-Gemsmith.QuestReward2_ClaimGold
+  quest9_unclaimed_Diamond:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_rewards_unclaimedDiamond,!default-Town-Gemsmith.q2_rewards_claimedDiamond'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward2_ClaimDiamond
+      left: default-Town-Gemsmith.QuestReward2_ClaimDiamond
+  quest9_unclaimed_Emerald:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_rewards_unclaimedEmerald,!default-Town-Gemsmith.q2_rewards_claimedEmerald'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward2_ClaimEmerald
+      left: default-Town-Gemsmith.QuestReward2_ClaimEmerald
 
 
 #FILLER
@@ -555,9 +980,11 @@ slots:
   0-12: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   14-20: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   24-29: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
-  33-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  33-38: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   13: quest1_inactive,quest1_active,quest1_completed
   21-23: quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed,quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed
   30-32: quest5_inactive,quest5_active,quest5_completed,quest5_unclaimed,quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed,quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed
+  39-40: quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed_Coal,quest8_unclaimed_Iron,quest8_unclaimed_Gold,quest8_unclaimed_Diamond,quest8_unclaimed_Emerald,quest9_inactive,quest9_active_Coal,quest9_active_Iron,quest9_active_Gold,quest9_active_Diamond,quest9_active_Emerald,quest9_completed,quest9_unclaimed_Coal,quest9_unclaimed_Iron,quest9_unclaimed_Gold,quest9_unclaimed_Diamond,quest9_unclaimed_Emerald
   49: back

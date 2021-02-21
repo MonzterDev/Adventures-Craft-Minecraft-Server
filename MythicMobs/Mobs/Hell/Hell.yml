@@ -301,7 +301,6 @@ VOID_PROTECTOR:
   - skill{s=ANTILAVA} ~onTimer:20
   - skill{s=VWMINIONDMGBOSS} ~onDeath
   - skill{s=VHEALER} @self <50%
-  - command{c="q point <target.name> add mobs.VOID_PROTECTOR 1"} @ThreatTablePlayers ~onDeath
 
 VOID_HEALER:
   Type: WITHER_SKELETON
@@ -357,16 +356,18 @@ VOID_HEALER:
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20
-  - command{c="q point <target.name> add mobs.VOID_HEALER 1"} @ThreatTablePlayers ~onDeath
 
 ###### BOTTOM HELL FLOOR
 
 VOID_MAGMA:
-  Type: MAGMA_CUBE
+  Type: ZOMBIE
   Display: '&7[&fLVL 25&7] &cVoid Magma'  
   Health: 20000
   Damage: 0
   Faction: Void
+  Disguise:
+    Type: MAGMA_CUBE
+    Size: 10  
   BossBar:
     Enabled: true
     Title: '&7[&fLVL 25&7] &cVoid Magma <caster.hp>&f/&c<caster.mhp>'
@@ -377,7 +378,7 @@ VOID_MAGMA:
   - PROJECTILE .5
   - ENTITY_ATTACK .5  
   - LAVA 0  
-  - SUFFOCATION 0          
+  - SUFFOCATION 10
   Modules:
     ImmunityTable: false
     ThreatTable: true

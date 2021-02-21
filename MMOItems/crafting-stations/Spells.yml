@@ -141,18 +141,6 @@ recipes:
     - profession{profession=Spellforging,level=5}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  MAGICAL_PATH:
-    output:
-      type: SPELL
-      id: MAGICAL_PATH
-      amount: 1
-    ingredients:
-    - vanilla{type=PUMPKIN,amount=64}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
-    conditions:
-    - profession{profession=Spellforging,level=5}
-    triggers:
-    - exp{profession=Spellforging,amount=200}
   ICE_CRYSTAL:
     output:
       type: SPELL
@@ -244,10 +232,10 @@ recipes:
     - profession{profession=Spellforging,level=7}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  CONTAMINATION:
+  CONTAMINATION_RITUAL:
     output:
       type: SPELL
-      id: CONTAMINATION
+      id: CONTAMINATION_RITUAL
       amount: 1
     ingredients:
     - vanilla{type=CACTUS,amount=64}

@@ -1,0 +1,110 @@
+quest1_start: 'objective start Cucco1'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+
+CompletedCuccos1: 'tag add CompletedCuccos1'
+hideCucco: 'tag add hideCucco'
+hideCucco1: 'tag add hideCucco1'
+hideCucco2: 'tag add hideCucco2'
+hideCucco3: 'tag add hideCucco3'
+hideCucco4: 'tag add hideCucco4'
+
+CuccoFound: "run ^message &aOnly &e%point.Cucco.left:20% &amore Cuccos to capture!"
+
+quest_start2: 'objective start Cucco2'
+CompletedCuccos2: 'tag add CompletedCuccos2'
+quest_start3: 'objective start Cucco3'
+CompletedCuccos3: 'tag add CompletedCuccos3'
+quest_start4: 'objective start Cucco4'
+CompletedCuccos4: 'tag add CompletedCuccos4'
+quest_start5: 'objective start Cucco5'
+CompletedCuccos5: 'tag add CompletedCuccos5'
+quest_start6: 'objective start Cucco6'
+CompletedCuccos6: 'tag add CompletedCuccos6'
+quest_start7: 'objective start Cucco7'
+CompletedCuccos7: 'tag add CompletedCuccos7'
+quest_start8: 'objective start Cucco8'
+CompletedCuccos8: 'tag add CompletedCuccos8'
+quest_start9: 'objective start Cucco9'
+CompletedCuccos9: 'tag add CompletedCuccos9'
+quest_start10: 'objective start Cucco10'
+CompletedCuccos10: 'tag add CompletedCuccos10'
+quest_start11: 'objective start Cucco11'
+CompletedCuccos11: 'tag add CompletedCuccos11'
+quest_start12: 'objective start Cucco12'
+CompletedCuccos12: 'tag add CompletedCuccos12'
+quest_start13: 'objective start Cucco13'
+CompletedCuccos13: 'tag add CompletedCuccos13'
+quest_start14: 'objective start Cucco14'
+CompletedCuccos14: 'tag add CompletedCuccos14'
+quest_start15: 'objective start Cucco15'
+CompletedCuccos15: 'tag add CompletedCuccos15'
+quest_start16: 'objective start Cucco16'
+CompletedCuccos16: 'tag add CompletedCuccos16'
+quest_start17: 'objective start Cucco17'
+CompletedCuccos17: 'tag add CompletedCuccos17'
+quest_start18: 'objective start Cucco18'
+CompletedCuccos18: 'tag add CompletedCuccos18'
+quest_start19: 'objective start Cucco19'
+CompletedCuccos19: 'tag add CompletedCuccos19'
+quest_start20: 'objective start Cucco20'
+CompletedCuccos20: 'tag add CompletedCuccos20'
+
+
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "run ^command mmoitems give ACCESSORY CAT_CLAW %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Farming 250 ^command money give %player% 100"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal remove q1_part1'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#FIRST QUEST The Great Harvest
+QuestReward2_Starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
+quest2_start: 'objective start EggDeliver'
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2$"
+#FINISHING THE FIRST QUEST WILL RUN QuestReward2 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward2_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward2_If_Not_Full and give rewards
+QuestReward2: 'if empty0 QuestReward2_Full else QuestReward2_Folder'
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give ACCESSORY SCRAMBLED_EGG %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 100"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give ACCESSORY SCRAMBLED_EGG %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 100"
+QuestReward2_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,removeEggs,q2_completed_message'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal remove q2_part1'
+removeEggs: take EGG:25
+q2_completed_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4$ \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$ \n&aI turned those eggs into something delicious for you! Make sure you don't hold it near the Cuccos or you'll frighten them!"
+
+
+

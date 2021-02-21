@@ -34,22 +34,34 @@ recipes:
       id: VOID_FRAGMENT
     conditions:
     - 'level{level=0}'
-  COMMON_GEM_BASE:
+  GEM_BASE:
     output:
       type: MATERIAL
-      id: COMMON_GEM_BASE
+      id: GEM_BASE
     conditions:
     - 'level{level=0}'
-  RARE_GEM_BASE:
+  GEM_BASE2:
     output:
       type: MATERIAL
-      id: RARE_GEM_BASE
+      id: GEM_BASE2
     conditions:
     - 'level{level=0}'
-  EXOTIC_GEM_BASE:
+  GEM_BASE3:
     output:
       type: MATERIAL
-      id: EXOTIC_GEM_BASE
+      id: GEM_BASE3
+    conditions:
+    - 'level{level=0}'
+  GEM_BASE4:
+    output:
+      type: MATERIAL
+      id: GEM_BASE4
+    conditions:
+    - 'level{level=0}'
+  GEM_BASE5:
+    output:
+      type: MATERIAL
+      id: GEM_BASE5
     conditions:
     - 'level{level=0}'
   MORDEN_FLESH:
