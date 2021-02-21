@@ -1,11 +1,171 @@
 on player join:
-	wait 1 seconds
-	make player execute command "/spawn"
-	heal the player
-#Disables music if music is turned off for user
+	if player is in world "Spawn":
+		if player does not have permission "SEND.TOWN", "SEND.TOWNHALL", "SEND.FOREST", "SEND.FORESTSPRUCE", "SEND.FORESTDARKOAK", "SEND.FORESTBIRCH", "SEND.FORESTACACIA", "SEND.FORESTJUNGLE", "SEND.FORESTHIVE", "SEND.MINEENTRANCE", "SEND.MINECOAL", "SEND.MINEGOLD", "SEND.MINEREDSTONE", "SEND.MINELAPIS", "SEND.MINEDIAMOND", "SEND.MINEEMERALD", "SEND.GRAVEYARD", "SEND.COURTYARD", "SEND.CASTLE", "SEND.MORDEN", "SEND.ESTATE", "SEND.GOBLINTOWN", "SEND.SPIRITGROUNDS", "SEND.HELL", "SEND.HELLBOTTOM", "SEND.LOWERVOID", "SEND.UPPERVOID", "SEND.VOIDABYSS", "SEND.ENCHANT", "SEND.AUCTION", "SEND.DRACULA", "SEND.REAPER", "SEND.MORDENFAST", "SEND.VOIDWITHER", "SEND.VOIDMAGMA", "SEND.GHASTLY", "SEND.BULLBO":
+			wait 1 seconds
+			make player execute command "/spawn"
+			heal the player
+		if player has permission "SEND.TOWN":
+			wait 1 seconds
+			warp_town(player)
+			execute console command "/lp user %player% permission set SEND.TOWN false"
+		if player has permission "SEND.TOWNHALL":
+			wait 1 seconds
+			warp_townHall(player)
+			execute console command "/lp user %player% permission set SEND.TOWNHALL false"
+		if player has permission "SEND.FARM":
+			wait 1 seconds
+			warp_farm(player)
+			execute console command "/lp user %player% permission set SEND.FARM false"
+		if player has permission "SEND.FOREST":
+			wait 1 seconds
+			warp_forest(player)
+			execute console command "/lp user %player% permission set SEND.FOREST false"
+		if player has permission "SEND.FORESTSPRUCE":
+			wait 1 seconds
+			warp_forestSpruce(player)
+			execute console command "/lp user %player% permission set SEND.FORESTSPRUCE false"
+		if player has permission "SEND.FORESTDARKOAK":
+			wait 1 seconds
+			warp_forestDarkOak(player)
+			execute console command "/lp user %player% permission set SEND.FORESTDARKOAK false"
+		if player has permission "SEND.FORESTBIRCH":
+			wait 1 seconds
+			warp_forestBirch(player)
+			execute console command "/lp user %player% permission set SEND.FORESTBIRCH false"
+		if player has permission "SEND.FORESTACACIA":
+			wait 1 seconds
+			warp_forestAcacia(player)
+			execute console command "/lp user %player% permission set SEND.FORESTACACIA false"
+		if player has permission "SEND.FORESTJUNGLE":
+			wait 1 seconds
+			warp_forestJungle(player)
+			execute console command "/lp user %player% permission set SEND.FORESTJUNGLE false"
+		if player has permission "SEND.FORESTHIVE":
+			wait 1 seconds
+			warp_forestHive(player)
+			execute console command "/lp user %player% permission set SEND.FORESTHIVE false"
+		if player has permission "SEND.MINEENTRANCE":
+			wait 1 seconds
+			warp_mineEntrance(player)
+			execute console command "/lp user %player% permission set SEND.MINEENTRANCE false"
+		if player has permission "SEND.MINECOAL":
+			wait 1 seconds
+			warp_mineCoal(player)
+			execute console command "/lp user %player% permission set SEND.MINECOAL false"
+		if player has permission "SEND.MINEGOLD":
+			wait 1 seconds
+			warp_mineGold(player)
+			execute console command "/lp user %player% permission set SEND.MINEGOLD false"
+		if player has permission "SEND.MINEREDSTONE":
+			wait 1 seconds
+			warp_mineRedstone(player)
+			execute console command "/lp user %player% permission set SEND.MINEREDSTONE false"
+		if player has permission "SEND.MINELAPIS":
+			wait 1 seconds
+			warp_mineLapis(player)
+			execute console command "/lp user %player% permission set SEND.MINELAPIS false"
+		if player has permission "SEND.MINEDIAMOND":
+			wait 1 seconds
+			warp_mineDiamond(player)
+			execute console command "/lp user %player% permission set SEND.MINEDIAMOND false"
+		if player has permission "SEND.MINEEMERALD":
+			wait 1 seconds
+			warp_mineEmerald(player)
+			execute console command "/lp user %player% permission set SEND.MINEEMERALD false"
+		if player has permission "SEND.GRAVEYARD":
+			wait 1 seconds
+			warp_Graveyard(player)
+			execute console command "/lp user %player% permission set SEND.GRAVEYARD false"
+		if player has permission "SEND.COURTYARD":
+			wait 1 seconds
+			warp_Courtyard(player)
+			execute console command "/lp user %player% permission set SEND.COURTYARD false"
+		if player has permission "SEND.CASTLE":
+			wait 1 seconds
+			warp_Castle(player)
+			execute console command "/lp user %player% permission set SEND.CASTLE false"
+		if player has permission "SEND.MORDEN":
+			wait 1 seconds
+			warp_Morden(player)
+			execute console command "/lp user %player% permission set SEND.MORDEN false"
+		if player has permission "SEND.ESTATE":
+			wait 1 seconds
+			warp_Estate(player)
+			execute console command "/lp user %player% permission set SEND.ESTATE false"
+		if player has permission "SEND.GOBLINTOWN":
+			wait 1 seconds
+			warp_GoblinTown(player)
+			execute console command "/lp user %player% permission set SEND.GOBLINTOWN false"
+		if player has permission "SEND.SPIRITGROUNDS":
+			wait 1 seconds
+			warp_SpiritGrounds(player)
+			execute console command "/lp user %player% permission set SEND.SPIRITGROUNDS false"
+		if player has permission "SEND.HELL":
+			wait 1 seconds
+			warp_Hell(player)
+			execute console command "/lp user %player% permission set SEND.HELL false"
+		if player has permission "SEND.HELLBOTTOM":
+			wait 1 seconds
+			warp_HellBottom(player)
+			execute console command "/lp user %player% permission set SEND.HELLBOTTOM false"
+		if player has permission "SEND.LOWERVOID":
+			wait 1 seconds
+			warp_lowerVoid(player)
+			execute console command "/lp user %player% permission set SEND.LOWERVOID false"
+		if player has permission "SEND.UPPERVOID":
+			wait 1 seconds
+			warp_upperVoid(player)
+			execute console command "/lp user %player% permission set SEND.UPPERVOID false"
+		if player has permission "SEND.VOIDABYSS":
+			wait 1 seconds
+			warp_VoidAbyss(player)
+			execute console command "/lp user %player% permission set SEND.VOIDABYSS false"
+		if player has permission "SEND.ENCHANT":
+			wait 1 seconds
+			warp_Enchant(player)
+			execute console command "/lp user %player% permission set SEND.ENCHANT false"
+		if player has permission "SEND.AUCTION":
+			wait 1 seconds
+			warp_Auction(player)
+			execute console command "/lp user %player% permission set SEND.AUCTION false"
+		if player has permission "SEND.DRACULA":
+			wait 1 seconds
+			warp_Dracula(player)
+			execute console command "/lp user %player% permission set SEND.DRACULA false"
+		if player has permission "SEND.REAPER":
+			wait 1 seconds
+			warp_Reaper(player)
+			execute console command "/lp user %player% permission set SEND.REAPER false"
+		if player has permission "SEND.MORDENFAST":
+			wait 1 seconds
+			warp_MordenFast(player)
+			execute console command "/lp user %player% permission set SEND.MORDENFAST false"
+		if player has permission "SEND.VOIDWITHER":
+			wait 1 seconds
+			warp_VoidWither(player)
+			execute console command "/lp user %player% permission set SEND.VOIDWITHER false"
+		if player has permission "SEND.VOIDMAGMA":
+			wait 1 seconds
+			warp_VoidMagma(player)
+			execute console command "/lp user %player% permission set SEND.VOIDMAGMA false"
+		if player has permission "SEND.GHASTLY":
+			wait 1 seconds
+			warp_Ghastly(player)
+			execute console command "/lp user %player% permission set SEND.GHASTLY false"
+		if player has permission "SEND.BULLBO":
+			wait 1 seconds
+			warp_Bullbo(player)
+			execute console command "/lp user %player% permission set SEND.BULLBO false"
+
+	#Disables music if music is turned off for user
 	if player doesn't have permission "Music.ON":
 		wait 5 seconds
 		make player execute command "/music off"
+
+	if player is in world "Homes":
+		wait 1 seconds	
+		make player execute command "/home"
+		heal the player
 
 on join:
 	if player doesn't have permission "RP.DOWNLOAD":
@@ -15,6 +175,14 @@ on join:
 		wait 10 seconds
 		if the player doesn't have a resource pack loaded:
 			send message "&cIf you're not seeing the Resource Pack, you must enable the setting before joining the server!" to player
+
+on player join:
+	if player is in world "Homes":
+		if player doesn't have permission "Home.Claimed":
+			if player has permission "Has.Home":
+				wait 3 seconds
+				make player execute command "/p auto"
+				execute console command "/lp user %player% permission set Has.Claimed true"
 
 
 on player join:
@@ -34,5 +202,9 @@ on join:
 	set the player's game mode to survival
 
 on join:
-    if the current bungee cord server of player is "Live2" or "Test" or "Live":
-        make console execute command "/team join CMICol %player%"
+	if player is in world "Spawn":
+		make console execute command "/team join CMICol %player%"
+on join:
+	if player doesn't have permission "Flint.Talked":
+		if player is in world "Spawn":
+			send "&7Welcome, speak with &aFlint &7infront of you!" to player 
