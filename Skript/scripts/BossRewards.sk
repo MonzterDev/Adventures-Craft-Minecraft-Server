@@ -27,15 +27,15 @@
 
 command /ReaperClaim [<number>]:
     trigger:
-        set {ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
-        if {ReaperPoints::%player%} parsed as a number > 0:
+        set {_ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
+        if {_ReaperPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {ReaperPoints::%player%} parsed as a number > 0:
+                    if {_ReaperPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.ReaperReward -1"
                         wait 10 ticks       
-                        set {ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
-                        send "%nl%&aYou have %{ReaperPoints::%player%}% &cReaper &6Rewards &aavailable!"
+                        set {_ReaperPoints::%player%} to placeholder "betonquest_bosses:point.ReaperReward.amount" from player
+                        send "%nl%&aYou have %{_ReaperPoints::%player%}% &cReaper &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 98%:
@@ -60,15 +60,15 @@ command /ReaperClaim [<number>]:
 
 command /MordenClaim [<number>]:
     trigger:
-        set {MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
-        if {MordenPoints::%player%} parsed as a number > 0:
+        set {_MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
+        if {_MordenPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {MordenPoints::%player%} parsed as a number > 0:
+                    if {_MordenPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.MordenReward -1"
                         wait 10 ticks       
-                        set {MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
-                        send "%nl%&aYou have %{MordenPoints::%player%}% &cMorden &6Rewards &aavailable!"
+                        set {_MordenPoints::%player%} to placeholder "betonquest_bosses:point.MordenReward.amount" from player
+                        send "%nl%&aYou have %{_MordenPoints::%player%}% &cMorden &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:
@@ -128,15 +128,15 @@ command /MordenClaim [<number>]:
 
 command /DraculaClaim [<number>]:
     trigger:
-        set {DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
-        if {DraculaPoints::%player%} parsed as a number > 0:
+        set {_DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
+        if {_DraculaPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {DraculaPoints::%player%} parsed as a number > 0:
+                    if {_DraculaPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.DraculaReward -1"
                         wait 10 ticks       
-                        set {DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
-                        send "%nl%&aYou have %{DraculaPoints::%player%}% &cDracula &6Rewards &aavailable!"
+                        set {_DraculaPoints::%player%} to placeholder "betonquest_bosses:point.DraculaReward.amount" from player
+                        send "%nl%&aYou have %{_DraculaPoints::%player%}% &cDracula &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 25%:
@@ -181,15 +181,15 @@ command /DraculaClaim [<number>]:
 
 command /DryadClaim [<number>]:
     trigger:
-        set {DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
-        if {DryadPoints::%player%} parsed as a number > 0:
+        set {_DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
+        if {_DryadPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {DryadPoints::%player%} parsed as a number > 0:
+                    if {_DryadPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.DryadReward -1"
                         wait 10 ticks       
-                        set {DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
-                        send "%nl%&aYou have %{DryadPoints::%player%}% &cDryad &6Rewards &aavailable!"
+                        set {_DryadPoints::%player%} to placeholder "betonquest_bosses:point.DryadReward.amount" from player
+                        send "%nl%&aYou have %{_DryadPoints::%player%}% &cDryad &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:
@@ -232,15 +232,15 @@ command /DryadClaim [<number>]:
 
 command /GoblinChiefClaim [<number>]:
     trigger:
-        set {GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
-        if {GoblinChiefPoints::%player%} parsed as a number > 0:
+        set {_GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
+        if {_GoblinChiefPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {GoblinChiefPoints::%player%} parsed as a number > 0:
+                    if {_GoblinChiefPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.GoblinChiefReward -1"
                         wait 10 ticks       
-                        set {GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
-                        send "%nl%&aYou have %{GoblinChiefPoints::%player%}% &cGoblin Chief &6Rewards &aavailable!"
+                        set {_GoblinChiefPoints::%player%} to placeholder "betonquest_bosses:point.GoblinChiefReward.amount" from player
+                        send "%nl%&aYou have %{_GoblinChiefPoints::%player%}% &cGoblin Chief &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 5%:
@@ -269,15 +269,15 @@ command /GoblinChiefClaim [<number>]:
 
 command /VoidWitherClaim [<number>]:
     trigger:
-        set {VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
-        if {VoidWitherPoints::%player%} parsed as a number > 0:
+        set {_VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
+        if {_VoidWitherPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {VoidWitherPoints::%player%} parsed as a number > 0:
+                    if {_VoidWitherPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.VoidWitherReward -1"
                         wait 10 ticks       
-                        set {VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
-                        send "%nl%&aYou have %{VoidWitherPoints::%player%}% &cVoid Wither &6Rewards &aavailable!"
+                        set {_VoidWitherPoints::%player%} to placeholder "betonquest_bosses:point.VoidWitherReward.amount" from player
+                        send "%nl%&aYou have %{_VoidWitherPoints::%player%}% &cVoid Wither &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 5%:
@@ -324,15 +324,15 @@ command /VoidWitherClaim [<number>]:
 
 command /VoidMagmaClaim [<number>]:
     trigger:
-        set {VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
-        if {VoidMagmaPoints::%player%} parsed as a number > 0:
+        set {_VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
+        if {_VoidMagmaPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {VoidMagmaPoints::%player%} parsed as a number > 0:
+                    if {_VoidMagmaPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.VoidMagmaReward -1"
                         wait 10 ticks       
-                        set {VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
-                        send "%nl%&aYou have %{VoidMagmaPoints::%player%}% &cVoid Magma &6Rewards &aavailable!"
+                        set {_VoidMagmaPoints::%player%} to placeholder "betonquest_bosses:point.VoidMagmaReward.amount" from player
+                        send "%nl%&aYou have %{_VoidMagmaPoints::%player%}% &cVoid Magma &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:
@@ -366,15 +366,15 @@ command /VoidMagmaClaim [<number>]:
 
 command /GhastlyClaim [<number>]:
     trigger:
-        set {GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
-        if {GhastlyPoints::%player%} parsed as a number > 0:
+        set {_GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
+        if {_GhastlyPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {GhastlyPoints::%player%} parsed as a number > 0:
+                    if {_GhastlyPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.GhastlyReward -1"
                         wait 10 ticks       
-                        set {GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
-                        send "%nl%&aYou have %{GhastlyPoints::%player%}% &cGhastly &6Rewards &aavailable!"
+                        set {_GhastlyPoints::%player%} to placeholder "betonquest_bosses:point.GhastlyReward.amount" from player
+                        send "%nl%&aYou have %{_GhastlyPoints::%player%}% &cGhastly &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:
@@ -410,15 +410,15 @@ command /GhastlyClaim [<number>]:
 
 command /BulblinClaim [<number>]:
     trigger:
-        set {BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
-        if {BulblinPoints::%player%} parsed as a number > 0:
+        set {_BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
+        if {_BulblinPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {BulblinPoints::%player%} parsed as a number > 0:
+                    if {_BulblinPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.BulblinReward -1"
                         wait 10 ticks       
-                        set {BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
-                        send "%nl%&aYou have %{BulblinPoints::%player%}% &cBulblin &6Rewards &aavailable!"
+                        set {_BulblinPoints::%player%} to placeholder "betonquest_bosses:point.BulblinReward.amount" from player
+                        send "%nl%&aYou have %{_BulblinPoints::%player%}% &cBulblin &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 50%:
@@ -463,15 +463,15 @@ command /BulblinClaim [<number>]:
 
 command /BullboClaim [<number>]:
     trigger:
-        set {BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
-        if {BullboPoints::%player%} parsed as a number > 0:
+        set {_BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
+        if {_BullboPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {BullboPoints::%player%} parsed as a number > 0:
+                    if {_BullboPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.BullboReward -1"
                         wait 10 ticks       
-                        set {BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
-                        send "%nl%&aYou have %{BullboPoints::%player%}% &cBullbo &6Rewards &aavailable!"
+                        set {_BullboPoints::%player%} to placeholder "betonquest_bosses:point.BullboReward.amount" from player
+                        send "%nl%&aYou have %{_BullboPoints::%player%}% &cBullbo &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 50%:
@@ -512,15 +512,15 @@ command /BullboClaim [<number>]:
 
 command /EnchantressClaim [<number>]:
     trigger:
-        set {EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
-        if {EnchantressPoints::%player%} parsed as a number > 0:
+        set {_EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
+        if {_EnchantressPoints::%player%} parsed as a number > 0:
             if arg-1 is set:
                 loop arg-1 times:
-                    if {EnchantressPoints::%player%} parsed as a number > 0:
+                    if {_EnchantressPoints::%player%} parsed as a number > 0:
                         execute console command "/q point %player% add bosses.EnchantressReward -1"
                         wait 10 ticks       
-                        set {EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
-                        send "%nl%&aYou have %{EnchantressPoints::%player%}% &cEnchantress &6Rewards &aavailable!"
+                        set {_EnchantressPoints::%player%} to placeholder "betonquest_bosses:point.EnchantressReward.amount" from player
+                        send "%nl%&aYou have %{_EnchantressPoints::%player%}% &cEnchantress &6Rewards &aavailable!"
                         send "%nl%&e&lRewards:" 
                         
                         if chance of 100%:

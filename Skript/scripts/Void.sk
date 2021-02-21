@@ -60,8 +60,8 @@ on step on end portal:
         make player player cast skill "VOID_BOSS_DEFENDER4_ABDUCTION_PLAYER" with trigger player at self with delay 0 and repeat 0
 
 on join:
-    set {Level10::%player%} to placeholder "mmocore_level"
-    if {Level10::%player%} is "10":
+    set {_Level10::%player%} to placeholder "mmocore_level"
+    if {_Level10::%player%} is "10":
         if player doesn't have permission "cmi.command.portal.void":
             execute console command "/lp user %player% permission set cmi.command.portal.void true"
 

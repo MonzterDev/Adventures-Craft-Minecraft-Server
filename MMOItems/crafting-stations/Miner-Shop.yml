@@ -199,7 +199,7 @@ recipes:
       type: ARMOR
       id: GEM_HELMET
     ingredients:
-    - mmoitem{type=MATERIAL,id=COMMON_GEM_BASE,amount=15}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
     - profession{profession=Mining,level=2}
   GEM_CHESTPLATE:
@@ -207,7 +207,7 @@ recipes:
       type: ARMOR
       id: GEM_CHESTPLATE
     ingredients:
-    - mmoitem{type=MATERIAL,id=COMMON_GEM_BASE,amount=24}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
     - profession{profession=Mining,level=2}
   GEM_LEGGINGS:
@@ -215,7 +215,7 @@ recipes:
       type: ARMOR
       id: GEM_LEGGINGS
     ingredients:
-    - mmoitem{type=MATERIAL,id=COMMON_GEM_BASE,amount=21}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
     - profession{profession=Mining,level=2}
   GEM_BOOTS:
@@ -223,7 +223,7 @@ recipes:
       type: ARMOR
       id: GEM_BOOTS
     ingredients:
-    - mmoitem{type=MATERIAL,id=COMMON_GEM_BASE,amount=12}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
     - profession{profession=Mining,level=2}
   GEM_HELMET2:
@@ -231,7 +231,8 @@ recipes:
       type: ARMOR
       id: GEM_HELMET2
     ingredients:
-    - mmoitem{type=MATERIAL,id=RARE_GEM_BASE,amount=10}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_HELMET,amount=1}
     conditions:
     - profession{profession=Mining,level=4}
   GEM_CHESTPLATE2:
@@ -239,7 +240,8 @@ recipes:
       type: ARMOR
       id: GEM_CHESTPLATE2
     ingredients:
-    - mmoitem{type=MATERIAL,id=RARE_GEM_BASE,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE,amount=1}
     conditions:
     - profession{profession=Mining,level=4}
   GEM_LEGGINGS2:
@@ -247,7 +249,8 @@ recipes:
       type: ARMOR
       id: GEM_LEGGINGS2
     ingredients:
-    - mmoitem{type=MATERIAL,id=RARE_GEM_BASE,amount=14}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_LEGGINGS,amount=1}
     conditions:
     - profession{profession=Mining,level=4}
   GEM_BOOTS2:
@@ -255,7 +258,8 @@ recipes:
       type: ARMOR
       id: GEM_BOOTS2
     ingredients:
-    - mmoitem{type=MATERIAL,id=RARE_GEM_BASE,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_BOOTS,amount=1}
     conditions:
     - profession{profession=Mining,level=4}
   GEM_HELMET3:
@@ -263,7 +267,8 @@ recipes:
       type: ARMOR
       id: GEM_HELMET3
     ingredients:
-    - mmoitem{type=MATERIAL,id=EXOTIC_GEM_BASE,amount=5}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_HELMET2,amount=1}
     conditions:
     - profession{profession=Mining,level=6}
   GEM_CHESTPLATE3:
@@ -271,7 +276,8 @@ recipes:
       type: ARMOR
       id: GEM_CHESTPLATE3
     ingredients:
-    - mmoitem{type=MATERIAL,id=EXOTIC_GEM_BASE,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE2,amount=1}
     conditions:
     - profession{profession=Mining,level=6}
   GEM_LEGGINGS3:
@@ -279,7 +285,8 @@ recipes:
       type: ARMOR
       id: GEM_LEGGINGS3
     ingredients:
-    - mmoitem{type=MATERIAL,id=EXOTIC_GEM_BASE,amount=7}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_LEGGINGS2,amount=1}
     conditions:
     - profession{profession=Mining,level=6}
   GEM_BOOTS3:
@@ -287,7 +294,8 @@ recipes:
       type: ARMOR
       id: GEM_BOOTS3
     ingredients:
-    - mmoitem{type=MATERIAL,id=EXOTIC_GEM_BASE,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_BOOTS2,amount=1}    
     conditions:
     - profession{profession=Mining,level=6}
   MINING1:

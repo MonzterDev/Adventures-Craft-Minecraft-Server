@@ -1,28 +1,80 @@
-VillageGuard:
+Guard3:
   Type: IRON_GOLEM
-  Display: '&7[&fLVL 100&7] &aGuard'
-  Damage: 10000
-  Health: 10000
+  Display: ''
+  Damage: 99999
+  Health: 0
   Faction: VillageGuards
-  Disguise:
-    Type: PLAYER
-    Player: '&7[&fLVL 100&7] &aGuard'
-    Skin: 0cel0t
-  AIGoalSelectors:
-  - 0 clear
-  - 1 randomstroll
-  - 2 meleeattack
-  - 3 float
-  - 4 opendoors
-  AITargetSelectors:
-  - 0 clear
-  - 1 otherfactionmonsters
-  Modules:
-    ThreatTable: false
   Options:
-    AlwaysShowName: true
+    ApplyInvisibility: true
+    AlwaysShowName: false
+    Collidable: false
+    Invincible: true
     Despawn: true
+    NoAI: true    
+    KnockbackResistance: 1
     PreventOtherDrops: true
     PreventMobKillDrops: true
-    MovementSpeed: 0.36
+    MovementSpeed: 0.00001
     Silent: true
+  Skills:
+  - remove @EIR{r=3;ignore=players} ~onTimer:40
+Guard5:
+  Type: IRON_GOLEM
+  Display: ''
+  Damage: 99999
+  Health: 0
+  Faction: VillageGuards
+  Options:
+    ApplyInvisibility: true
+    AlwaysShowName: false
+    Collidable: false
+    Invincible: true
+    Despawn: true
+    NoAI: true    
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MovementSpeed: 0.00001
+    Silent: true
+  Skills:
+  - remove @EIR{r=5;ignore=players} ~onTimer:40
+Guard7:
+  Type: IRON_GOLEM
+  Display: ''
+  Damage: 99999
+  Health: 0
+  Faction: VillageGuards
+  Options:
+    ApplyInvisibility: true
+    AlwaysShowName: false
+    Collidable: false
+    Invincible: true
+    Despawn: true
+    NoAI: true    
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MovementSpeed: 0.00001
+    Silent: true
+  Skills:
+  - remove @EIR{r=7;ignore=players} ~onTimer:40
+Guard10:
+  Type: IRON_GOLEM
+  Display: ''
+  Damage: 99999
+  Health: 0
+  Faction: VillageGuards
+  Options:
+    ApplyInvisibility: true
+    AlwaysShowName: false
+    Collidable: false
+    Invincible: true
+    Despawn: true
+    NoAI: true    
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    MovementSpeed: 0.00001
+    Silent: true
+  Skills:
+  - remove @EIR{r=10;ignore=players} ~onTimer:40

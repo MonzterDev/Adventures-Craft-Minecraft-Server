@@ -71,24 +71,27 @@ on TabCompleteEvent:
 	event.setCompletions({_a})
 
 command /Spawn:
-    aliases: /town
-    description: Teleport to the Town
-    executable by: players
-    trigger:
-        teleport player to location(30, 17, -2.5, world "Spawn", 89, 0) 
+	aliases: /town
+	description: Teleport to the Town
+	executable by: players
+	trigger:
+		if player is in world "Spawn":
+			teleport player to location(30, 17, -2.5, world "Spawn", 89, 0) 
+		if player is in world "Homes":
+			connect player to "Live2"	
 
 command /Testmenu:
-    description: Join the Test Server
-    executable by: players
-    trigger:
-        if the current bungee cord server of player is "Test" or "Test2":
-            if player has permission "test.menu":
-                make player execute command "/dm open Testmenu"
+	description: Join the Test Server
+	executable by: players
+	trigger:
+		if the current bungee cord server of player is "Test" or "Test2":
+			if player has permission "test.menu":
+				make player execute command "/dm open Testmenu"
 
 command /Discord:
-    executable by: players
-    trigger:
-        send formatted "&7Join our &9Discord &a<tooltip:&aClick to join the Discord!><url:https://discord.com/invite/bw4DztR>https://discord.com/invite/bw4DztR<reset>&7!" to player
+	executable by: players
+	trigger:
+		send formatted "&7Join our &9Discord &a<tooltip:&aClick to join the Discord!><url:https://discord.com/invite/bw4DztR>https://discord.com/invite/bw4DztR<reset>&7!" to player
 
 #Referal
 # command /Referal [<string>]:
@@ -107,66 +110,67 @@ command /Discord:
 #                 send "&cYou have already chosen who refered you!" to player
 
 on load: # Doesn't have to be in a load event
-    add "ProfileViewer [<player>]" to tab completions
-    add "Pv" to tab completions
+	add "ProfileViewer [<player>]" to tab completions
+	add "Pv" to tab completions
 
 command /ProfileViewer [<player>]:
-    description: View other user's profile
-    executable by: players
-    trigger:
-        if arg-1 is not set:
-            make player execute command "/playerprofiles:playerinformation view %player%"
-        if arg-1 is set:
-            make player execute command "/playerprofiles:playerinformation view %arg-1%"
+	description: View other user's profile
+	executable by: players
+	trigger:
+		if arg-1 is not set:
+			make player execute command "/playerprofiles:playerinformation view %player%"
+		if arg-1 is set:
+			make player execute command "/playerprofiles:playerinformation view %arg-1%"
 command /Pv [<player>]:
-    description: View other user's profile
-    executable by: players
-    trigger:
-        if arg-1 is not set:
-            make player execute command "/playerprofiles:playerinformation view %player%"
-        if arg-1 is set:
-            make player execute command "/playerprofiles:playerinformation view %arg-1%"
+	description: View other user's profile
+	executable by: players
+	trigger:
+		if arg-1 is not set:
+			make player execute command "/playerprofiles:playerinformation view %player%"
+		if arg-1 is set:
+			make player execute command "/playerprofiles:playerinformation view %arg-1%"
 
 
 
 #MUSIC
 on load:
-    add "music stop" to tab completions
-    add "music off" to tab completions
-    add "music play" to tab completions
-    add "music start" to tab completions
-    add "music on" to tab completions
-    add "music volume <1-100>" to tab completions
+	add "music stop" to tab completions
+	add "music off" to tab completions
+	add "music play" to tab completions
+	add "music start" to tab completions
+	add "music on" to tab completions
+	add "music volume <1-100>" to tab completions
 
 command /Music [<text>] [<string>]:
-    executable by: players
-    trigger:
-        if arg 1 is "stop":    
-            make player execute command "/anbs song stop"
-            execute console command "/lp user %player% permission set Music.ON false"
-        if arg 1 is "off":    
-            make player execute command "/anbs song stop"
-            execute console command "/lp user %player% permission set Music.ON false"
-        if arg 1 is "play":    
-            make player execute command "/anbs song play"
-            execute console command "/lp user %player% permission set Music.ON true"
-        if arg 1 is "start":    
-            make player execute command "/anbs song play"
-            execute console command "/lp user %player% permission set Music.ON true"
-        if arg 1 is "on":    
-            make player execute command "/anbs song play"
-            execute console command "/lp user %player% permission set Music.ON true"
-        if arg 1 is "volume":    
-            if arg 2 is set:    
-                make player execute command "/anbs song volume %arg-2%"
-            else:
-                send "&6/Music Volume <1-100> &e- &fAdjust the volume of the music!" to player
+	executable by: players
+	trigger:
+		if player is in world "Spawn":
+			if arg 1 is "stop":    
+				make player execute command "/anbs song stop"
+				execute console command "/lp user %player% permission set Music.ON false"
+			else if arg 1 is "off":    
+				make player execute command "/anbs song stop"
+				execute console command "/lp user %player% permission set Music.ON false"
+			else if arg 1 is "play":    
+				make player execute command "/anbs song play"
+				execute console command "/lp user %player% permission set Music.ON true"
+			else if arg 1 is "start":    
+				make player execute command "/anbs song play"
+				execute console command "/lp user %player% permission set Music.ON true"
+			else if arg 1 is "on":    
+				make player execute command "/anbs song play"
+				execute console command "/lp user %player% permission set Music.ON true"
+			else if arg 1 is "volume":    
+				if arg 2 is set:    
+					make player execute command "/anbs song volume %arg-2%"
+				else:
+					send "&6/Music Volume <1-100> &e- &fAdjust the volume of the music!" to player
 
 
 on load:
-    add "rp enable" to tab completions
-    add "rp disable" to tab completions
-    add "rp download" to tab completions
+	add "rp enable" to tab completions
+	add "rp disable" to tab completions
+	add "rp download" to tab completions
 
 command /rp <string>:
 	executable by: players
@@ -177,13 +181,13 @@ command /rp <string>:
 				execute console command "/lp user %player% permission set RP.DOWNLOAD true"
 			if player has permission "RP.DOWNLOAD":
 				send message "&aResource Pack already enabled! Use /RP Download or relog to get it!" to player
-		if arg 1 is "disable":    
+		else if arg 1 is "disable":    
 			if player has permission "RP.DOWNLOAD":
 				send message "&cResource Pack have been disabled!" to player
 				execute console command "/lp user %player% permission set RP.DOWNLOAD false"
 			if player doesn't have permission "RP.DOWNLOAD":
 				send message "&cResource Pack already disabled!" to player
-		if arg 1 is "download":    
+		else if arg 1 is "download":    
 			send message "&aResource Pack is now loading!" to player
 			send the resource pack from "https://www.dropbox.com/s/9ame51dgtjdmadq/AdventuresCraft3.zip?dl=1" with hash "f2e3f6cbda5745e5a08fbb43e3ea881de9f8c30b" to the player
 			wait 10 seconds
@@ -191,19 +195,19 @@ command /rp <string>:
 				send message "&cIf you're not seeing the Resource Pack, you must enable the setting before joining the server!" to player
 
 command /ActiveQuests:
-    aliases: /ActiveQuest, /CurrentQuests, /CurrentQuests
-    executable by: players
-    trigger:
-        make console execute command "/rpgmenu open default-Menus-menu.active %player%"
+	aliases: /ActiveQuest, /CurrentQuests, /CurrentQuests
+	executable by: players
+	trigger:
+		make console execute command "/rpgmenu open default-Menus-menu.active %player%"
 command /UnclaimedQuests:
-    executable by: players
-    trigger:
-        make console execute command "/rpgmenu open default-Menus-menu.unclaimed %player%"
+	executable by: players
+	trigger:
+		make console execute command "/rpgmenu open default-Menus-menu.unclaimed %player%"
 command /Quest:
-    aliases: /Quests, /QuestsMenu
-    executable by: players
-    trigger:
-        make console execute command "/dm open Quests %player%"
+	aliases: /Quests, /QuestsMenu
+	executable by: players
+	trigger:
+		make console execute command "/dm open Quests %player%"
 
 # command /CurrentTime:
 #     executable by: players
@@ -229,3 +233,30 @@ command /Quest:
 #     if world of player is "Spawn" or "Homes"
 #         set {Health::%player%} to placeholder "mmocore_health"
 #         broadcast {Health::%player%}
+
+on tab complete of "/repeat":
+	set tab completions for position 1 to "mm", "mi", "mo"
+
+command /repeat <string> <integer> <integer>:
+	executable by: players
+	trigger:
+		if player has permission "*":    
+			set {_run} to 0
+			set {_cooldown} to arg-3
+			if arg-1 is not set:
+				message "<Plugin>, <RunAmount>, <RunDelay>"
+			else if arg-1 is "mm":
+				while ({_run} < arg-2):
+					make player execute command "/mm reload"
+					add 1 to {_run}
+					wait "%{_cooldown}% seconds" parsed as timespan 
+			else if arg-1 is "mi":
+				while ({_run} < arg-2):
+					make player execute command "/mi reload all"
+					add 1 to {_run}
+					wait "%{_cooldown}% seconds" parsed as timespan 
+			else if arg-1 is "mo":
+				while ({_run} < arg-2):
+					make player execute command "/mmocore reload"
+					add 1 to {_run}
+					wait "%{_cooldown}% seconds" parsed as timespan 

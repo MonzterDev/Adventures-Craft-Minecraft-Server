@@ -38,22 +38,10 @@ q3_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n
 #FINISHING THE THIRD QUEST WILL check if the players inventory is full
 #IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
-QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmoitems give GEM_STONE DAMAGE_GEM %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 400"
-QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
-QuestReward3_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name3$ &cto redeem your rewards!"
-QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
-#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmoitems give GEM_STONE DAMAGE_GEM %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 400"
-QuestReward3_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
-QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
-QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
+QuestReward3: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 400"
 #THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q3_complete: 'folder SmithMineCompass,SmithMineCompassHide,default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed,q3_finish_message,removeemerald'
+entry_q3_complete: 'folder SmithMineCompass,SmithMineCompassHide,default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed,q3_finish_message'
 entry_q3_completed: 'journal add q3_completed'
 tag_q3_completed: 'tag add q3_completed'
 entry_q3_part1_remove: 'journal remove q3_part1'
-q3_finish_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name3$! \n \n \n &6&lRewards: \n&8&l » $quest_reward3-4$ \n&8&l » $quest_reward3-1$ \n&8&l » $quest_reward3-2$ \n&8&l » $quest_reward3-3$"
-removeemerald: 'take EnchantedEmerald:3'
+q3_finish_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name3$! \n \n \n &6&lRewards: \n&8&l » $quest_reward3-1$ \n&8&l » $quest_reward3-2$ \n&8&l » $quest_reward3-3$ \n \n$quest_complete3_message$"

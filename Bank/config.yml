@@ -44,6 +44,11 @@ Bank:
         Enabled: false
         # Cost for each new tabs
         Cost: 50
+      Size:
+        # Maximum amount of items able to be stored in a tab
+        Max: 2147483647
+      # Used by the scroll buttons to determine max scroll down
+      Rows: 4
     Slots:
       # Default amount of item slots
       Default: 45
@@ -298,3 +303,18 @@ Bank:
         Next: 0
         # Set to override the timer next
         Override: 0
+  Log:
+    # Set the log levels. Values: LOWEST, LOW, MEDIUM, HIGH, HIGHEST
+    Level: LOWEST
+    Plugin:
+      Level: HIGH
+    Player:
+      Level: HIGH
+    Expire:
+      Level: LOW
+    Hiscore:
+      Level: LOW
+    Interest:
+      Level: LOW
+    Loan:
+      Level: LOW

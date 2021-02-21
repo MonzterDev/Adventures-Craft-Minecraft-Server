@@ -1,3 +1,24 @@
+SCRAMBLED_EGG:
+  base:
+    material: PHANTOM_MEMBRANE
+    unbreakable: true
+    name: §fScrambled Egg
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    enchants:
+      unbreaking: 1
+    tier: COMMON
+    lore:
+    - §7Place inside your &aAccessory Bag
+    - §7to receive the stat boost!
+    accessory-set: SCRAMBLED_EGG
+    hide-enchants: true
+    unstackable: true
+    revision-id: 1
+    fall-damage-reduction: 20.0
 CAT_CLAW:
   base:
     material: PLAYER_HEAD
@@ -1254,7 +1275,7 @@ FARMER_TOTE3:
     perm-effects:
       REGENERATION: 2
     gem-sockets:
-    - Uncolored
+    - Universal
     revision-id: 2
 FARMER_TOTE4:
   base:
@@ -1284,7 +1305,7 @@ FARMER_TOTE4:
     perm-effects:
       REGENERATION: 2
     gem-sockets:
-    - Uncolored
+    - Universal
     revision-id: 2
 FARMER_TOTE5:
   base:
@@ -1315,7 +1336,7 @@ FARMER_TOTE5:
       REGENERATION: 3
     revision-id: 2
     gem-sockets:
-    - Uncolored
+    - Universal
 MINER_TOTE:
   base:
     material: PLAYER_HEAD
@@ -1436,7 +1457,7 @@ MINER_TOTE5:
     unstackable: true
     skill-damage: 50
     gem-sockets:
-    - Uncolored
+    - Universal
     revision-id: 1
 FORAGER_TOTE:
   base:

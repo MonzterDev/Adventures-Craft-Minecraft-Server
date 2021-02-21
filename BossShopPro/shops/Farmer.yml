@@ -9,7 +9,7 @@ shop:
     MenuItem:
     - type:WHEAT_SEEDS
     - amount:32
-    - name:&rSeed
+    - name:&fSeed
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -19,7 +19,7 @@ shop:
       - type:WHEAT_SEEDS
     PriceType: MONEY
     Price: 64.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -39,7 +39,7 @@ shop:
     MenuItem:
     - type:WHEAT
     - amount:32
-    - name:&rWheat
+    - name:&fWheat
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -49,7 +49,7 @@ shop:
       - type:WHEAT
     PriceType: MONEY
     Price: 64.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -69,7 +69,7 @@ shop:
     MenuItem:
     - type:CARROT
     - amount:32
-    - name:&rCarrot
+    - name:&fCarrot
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -79,7 +79,7 @@ shop:
       - type:CARROT
     PriceType: MONEY
     Price: 128.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -99,7 +99,7 @@ shop:
     MenuItem:
     - type:POTATO
     - amount:32
-    - name:&rPotato
+    - name:&fPotato
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -109,7 +109,7 @@ shop:
       - type:POTATO
     PriceType: MONEY
     Price: 128.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -129,7 +129,7 @@ shop:
     MenuItem:
     - type:BEEF
     - amount:32
-    - name:&rBeef
+    - name:&fBeef
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -139,7 +139,7 @@ shop:
       - type:BEEF
     PriceType: MONEY
     Price: 160.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -159,7 +159,7 @@ shop:
     MenuItem:
     - type:LEATHER
     - amount:32
-    - name:&rLeather
+    - name:&fLeather
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -169,7 +169,7 @@ shop:
       - type:LEATHER
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -189,7 +189,7 @@ shop:
     MenuItem:
     - type:PORKCHOP
     - amount:32
-    - name:&rPorkchop
+    - name:&fPorkchop
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -199,7 +199,7 @@ shop:
       - type:PORKCHOP
     PriceType: MONEY
     Price: 160.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -219,7 +219,7 @@ shop:
     MenuItem:
     - type:MUTTON
     - amount:32
-    - name:&rMutton
+    - name:&fMutton
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -229,7 +229,7 @@ shop:
       - type:MUTTON
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -249,7 +249,7 @@ shop:
     MenuItem:
     - type:WHITE_WOOL
     - amount:32
-    - name:&rWhite Wool
+    - name:&fWhite Wool
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -259,7 +259,7 @@ shop:
       - type:WHITE_WOOL
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -279,7 +279,7 @@ shop:
     MenuItem:
     - type:CHICKEN
     - amount:32
-    - name:&rChicken
+    - name:&fChicken
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -289,7 +289,7 @@ shop:
       - type:CHICKEN
     PriceType: MONEY
     Price: 256.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -309,7 +309,7 @@ shop:
     MenuItem:
     - type:FEATHER
     - amount:32
-    - name:&rFeather
+    - name:&fFeather
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -319,7 +319,7 @@ shop:
       - type:FEATHER
     PriceType: MONEY
     Price: 160.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -339,7 +339,7 @@ shop:
     MenuItem:
     - type:RABBIT
     - amount:32
-    - name:&rRabbit
+    - name:&fRabbit
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -349,7 +349,7 @@ shop:
       - type:RABBIT
     PriceType: MONEY
     Price: 192.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -369,7 +369,7 @@ shop:
     MenuItem:
     - type:RABBIT_HIDE
     - amount:32
-    - name:&rRabbit Hide
+    - name:&fRabbit Hide
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -379,7 +379,7 @@ shop:
       - type:RABBIT_HIDE
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -399,7 +399,7 @@ shop:
     MenuItem:
     - type:RABBIT_FOOT
     - amount:32
-    - name:&rRabbit Foot
+    - name:&fRabbit Foot
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&fBought &c%uses%&7/&a40'    
     - 'lore5:&8&l» &eClick to Purchase'    
@@ -409,7 +409,7 @@ shop:
       - type:RABBIT_FOOT
     PriceType: MONEY
     Price: 320.0
-    Message: '&7You &asuccessfully &7purchsed &a%reward%s &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%reward%s &7for &e⛂ %price%&7!'
     Condition:
     - type:usescooldown
     - match:uses:40:cooldown:86400
@@ -430,7 +430,7 @@ shop:
     - type:WOODEN_HOE
     - hideflags:all
     - amount:1
-    - name:&rWooden Hoe
+    - name:&fWooden Hoe
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&8&l» &eClick to Purchase'    
     RewardType: opcommand
@@ -438,7 +438,7 @@ shop:
     - 'mmoitems give TOOL WOODEN_HOE %player% 1' 
     PriceType: MONEY
     Price: 100.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 29
 
   STONE_HOE:
@@ -446,7 +446,7 @@ shop:
     - type:STONE_HOE
     - hideflags:all
     - amount:1
-    - name:&rStone Hoe
+    - name:&fStone Hoe
     - 'lore1:&fPrice: &e⛂ %price%'
     - 'lore3:&8&l» &eClick to Purchase'    
     RewardType: opcommand
@@ -454,7 +454,7 @@ shop:
     - 'mmoitems give TOOL STONE_HOE %player% 1'
     PriceType: MONEY
     Price: 250.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 30
 
   SELL:

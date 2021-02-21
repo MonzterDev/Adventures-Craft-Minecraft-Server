@@ -136,21 +136,23 @@ recipes:
       type: GEM_STONE
       id: FIREBALL_GEM3
     ingredients:
-    - mmoitem{type=MATERIAL,id=RARE_GEM_BASE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
     - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=64}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=32}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=4}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=8}
+    conditions:
+    - profession{profession=Mining,level=6}
   FIREBALL_GEM4:
     output:
       type: GEM_STONE
       id: FIREBALL_GEM4
     ingredients:
-    - mmoitem{type=MATERIAL,id=EXOTIC_GEM_BASE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
     - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=128}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=16}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=64}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=16}
+    conditions:
+    - profession{profession=Mining,level=8}
   ENCHANTED_GLOWSTONEDUST:
     output:
       type: MATERIAL

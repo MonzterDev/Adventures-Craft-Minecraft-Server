@@ -24,16 +24,13 @@ on rightclick holding a lead on a ocelot:
 #debug            broadcast "%activemob of event-entity% & %event-player% & %owner of event-entity%"
             set {_am} to activemob of event-entity
             set owner of activemob {_am} to player
-            
-            set {unleadCD} to a random integer between 3 and 10
-            set {unleadCD} to "%{unleadCD}% seconds" parsed as a time span
-            
+            set {_unleadCD} to a random integer between 3 and 10
+            set {_unleadCD} to "%{_unleadCD}% seconds" parsed as a time span
             leash the player to the target entity
-            wait {unleadCD}
+            wait {_unleadCD}
             if event-entity is alive:
                 if event-entity is leashed:
                     unleash the event-entity
-                    
                     send message "&cThe &aCat &cbroke the leash!" to player
                     play sound "entity.leash_knot.break" to the player
 
@@ -44,3 +41,55 @@ on rightclick holding a lead on a ocelot:
 #         send message "&aYou rescued one of my Wild Cats, thanks %owner of activemob {_am}%&a!" to owner of activemob {_am}
 #         execute console command "/q point %owner of activemob {_am}% add mobs.Ocelot 1"
 #         remove activemob {_am}
+on rightclick on a chicken:
+    if event-entity instanceof activemob:
+        set {_am} to activemob of event-entity
+        set owner of activemob {_am} to player
+        make the event-entity mount event-player
+        set {_unleadCD} to a random integer between 3 and 10
+        set {_unleadCD} to "%{_unleadCD}% seconds" parsed as a time span
+        wait {_unleadCD}
+        if event-entity is alive:
+            if event-entity is riding event-player:
+                make the event-entity dismount
+                send message "&cThe &aCucco &cjumped out of your hands!" to player
+                play sound "entity.chicken.hurt" to the player
+
+on mythicmobs skriptskillevent:
+    if skill-name is "scan":
+        set {_rng} to a random integer between 1 and 10
+        set {_am} to activemob of skill-target
+        if skill-target instanceof activemob:
+            message "&eScanning enemy..." to player
+            play sound "block.beacon.deactivate" with pitch .25 to the player
+            wait 1 seconds
+            if skill-target is alive:
+                message "&eScanning enemy....." to player
+                play sound "block.beacon.deactivate" with pitch .25 to the player
+                wait 1 seconds
+                if skill-target is alive:
+                    message "&eScanning enemy......." to player
+                    play sound "block.beacon.deactivate" with pitch .25 to the player
+                    wait 1 seconds
+                    if skill-target is alive:
+                        if {_rng} >= 2:
+                            play sound "block.beacon.activate" with pitch .25 to the player
+                            set {_name} to displayname of skill-target
+                            message "&aScan successful!" to player
+                            message "&6Name: %displayname of skill-target%" to player
+                            message "&6Faction: &c%faction of activemob {_am}%" to player
+                            message "&6Location: &e%location of activemob {_am}%" to player
+                            message "&6Targets: &c%get threattable of activemob {_am}%" to player
+                            message "&6Players Killed: &c%playerkills of activemob {_am}%" to player
+                        else:
+                            play sound "block.chain.break" with pitch .25 to the player
+                            message "&cScan unsuccessful!" to player
+                    else:
+                        play sound "block.chain.break" with pitch .25 to the player
+                        message "&cEnemy died?!?" to player
+                else:
+                    play sound "block.chain.break" with pitch .25 to the player
+                    message "&cEnemy died?!?" to player
+            else:
+                play sound "block.chain.break" with pitch .25 to the player
+                message "&cEnemy died?!?" to player

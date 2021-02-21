@@ -69,34 +69,57 @@ recipes:
     output:
       type: GEM_STONE
       id: VOID_GEM
+      amount: 1
     ingredients:
-    - 'vanilla{type=END_STONE,amount=64}'
-    - 'vanilla{type=ENDER_PEARL,amount=128}'
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
+    - profession{profession=Void,level=1}
   VOID_GEM2:
     output:
       type: GEM_STONE
       id: VOID_GEM2
+      amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=1}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+    - profession{profession=Void,level=2}
   VOID_GEM3:
     output:
       type: GEM_STONE
       id: VOID_GEM3
+      amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=4}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=4}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=7}
+    - profession{profession=Void,level=3}
   VOID_GEM4:
     output:
       type: GEM_STONE
       id: VOID_GEM4
+      amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=12}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=8}
+    - profession{profession=Void,level=4}
+  VOID_GEM5:
+    output:
+      type: GEM_STONE
+      id: VOID_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=9}
+    - profession{profession=Void,level=5}
   CORRUPT_RELIC:
     output:
       type: ACCESSORY
@@ -330,6 +353,7 @@ recipes:
       id: MYSTICAL_GEM
     ingredients:
     - mmoitem{type=MATERIAL,id=DEFENDER_FLESH,amount=8}
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
   ENCHANTRESS_HEAD2:
     output:
       type: ARMOR

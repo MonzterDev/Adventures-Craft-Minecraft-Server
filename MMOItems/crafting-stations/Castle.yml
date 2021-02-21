@@ -55,22 +55,26 @@ recipes:
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=640}
     conditions: []
-  UNDEAD_GEM2:
+  UNDEAD_GEM4:
     output:
       type: GEM_STONE
-      id: UNDEAD_GEM2
-      amount: 1
-    ingredients:
-    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=64}
-    conditions: []
-  UNDEAD_GEM3:
-    output:
-      type: GEM_STONE
-      id: UNDEAD_GEM3
+      id: UNDEAD_GEM4
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=320}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  UNDEAD_GEM5:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM5
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=540}
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    conditions:
+    - profession{profession=Mining,level=5}
   UNDEAD_CATALYST:
     output:
       type: Catalyst

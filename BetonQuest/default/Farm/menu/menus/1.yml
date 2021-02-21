@@ -334,6 +334,133 @@ items:
       right: default-Farm-Ingo.QuestReward2_Claim
       left: default-Farm-Ingo.QuestReward2_Claim    
 
+
+#THIRD QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Anju.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_part1,!default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+#THIRD QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Anju.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_part1,!default-Farm-Anju.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_completed,default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest7_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_rewards_unclaimed,!default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Anju.QuestReward2_Claim
+      left: default-Farm-Anju.QuestReward2_Claim    
+
+
 #FILLER
   glass:
     item: glass
@@ -353,6 +480,8 @@ slots:
   22: quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed
   23-29: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   30-31: quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed,quest5_unclaimed
-  32-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  39-40: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed
+  32-38: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
   49: back

@@ -30,8 +30,3 @@ on load:
 
 every 90 seconds:
 	send formatted "%random element of {msglists::*}%" to all players where [input has permission "Tips"]
-
-on join:
-	if player doesn't have permission "Flint.Talked":
-		if the current bungee cord server of player is "Live2" or "Live":
-			send "&7Welcome, speak with &aFlint &7infront of you!" to player 

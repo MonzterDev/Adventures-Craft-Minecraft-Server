@@ -60,7 +60,29 @@ recipes:
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=256}
-    conditions: []
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=1}
+    conditions:
+    - profession{profession=Mining,level=1}
+  UNDEAD_GEM2:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM2
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE2,amount=1}
+    conditions:
+    - profession{profession=Mining,level=2}
+  UNDEAD_GEM3:
+    output:
+      type: GEM_STONE
+      id: UNDEAD_GEM3
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=4}
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=3}
   BONE_FRAGMENT:
     output:
       type: MATERIAL

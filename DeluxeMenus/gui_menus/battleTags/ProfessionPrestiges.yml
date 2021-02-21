@@ -114,11 +114,18 @@ items:
     - ''
     - '&aBattle Tag: &fFarmer✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fFarmer✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fFarmer✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag FarmingP1 Default"
+    right_click_commands:
+    - "[player] Tag FarmingP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag FarmingP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag FarmingP1 Conquerer"
 
   'FARMING_LOCKED2':
     material: DIAMOND_HOE
@@ -154,11 +161,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Farmer✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Farmer✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Farmer✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag FarmingP2 Default"
+    right_click_commands:
+    - "[player] Tag FarmingP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag FarmingP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag FarmingP2 Conquerer"
 
   'FARMING_LOCKED3':
     material: DIAMOND_HOE
@@ -194,11 +208,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Farmer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Farmer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Farmer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag FarmingP3 Default"
+    right_click_commands:
+    - "[player] Tag FarmingP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag FarmingP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag FarmingP3 Conquerer"
 
   'FARMING_LOCKED4':
     material: DIAMOND_HOE
@@ -234,11 +255,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Farmer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Farmer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Farmer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag FarmingP4 Default"
+    right_click_commands:
+    - "[player] Tag FarmingP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag FarmingP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag FarmingP4 Conquerer"
 
   'FARMING_LOCKED5':
     material: DIAMOND_HOE
@@ -274,11 +302,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Farmer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Farmer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Farmer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag FarmingP5 Default"
+    right_click_commands:
+    - "[player] Tag FarmingP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag FarmingP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag FarmingP5 Conquerer"
 
 #FORAGING
   'FORAGING_LOCKED':
@@ -315,11 +350,18 @@ items:
     - ''
     - '&aBattle Tag: &fForager✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fForager✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fForager✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag ForagingP1 Default"
+    right_click_commands:
+    - "[player] Tag ForagingP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag ForagingP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag ForagingP1 Conquerer"
 
   'FORAGING_LOCKED2':
     material: DIAMOND_AXE
@@ -355,11 +397,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Forager✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Forager✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Forager✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag ForagingP2 Default"
+    right_click_commands:
+    - "[player] Tag ForagingP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag ForagingP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag ForagingP2 Conquerer"
 
   'FORAGING_LOCKED3':
     material: DIAMOND_AXE
@@ -395,11 +444,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Forager✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Forager✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Forager✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag ForagingP3 Default"
+    right_click_commands:
+    - "[player] Tag ForagingP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag ForagingP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag ForagingP3 Conquerer"
 
   'FORAGING_LOCKED4':
     material: DIAMOND_AXE
@@ -435,11 +491,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Forager✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Forager✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Forager✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag ForagingP4 Default"
+    right_click_commands:
+    - "[player] Tag ForagingP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag ForagingP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag ForagingP4 Conquerer"
 
   'FORAGING_LOCKED5':
     material: DIAMOND_AXE
@@ -475,11 +538,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Forager✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Forager✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Forager✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag ForagingP5 Default"
+    right_click_commands:
+    - "[player] Tag ForagingP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag ForagingP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag ForagingP5 Conquerer"
 
 
 #MINING
@@ -517,11 +587,18 @@ items:
     - ''
     - '&aBattle Tag: &fMiner✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fMiner✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fMiner✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag MiningP1 Default"
+    right_click_commands:
+    - "[player] Tag MiningP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag MiningP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag MiningP1 Conquerer"
 
   'MINING_LOCKED2':
     material: DIAMOND_PICKAXE
@@ -557,11 +634,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Miner✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Miner✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Miner✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag MiningP2 Default"
+    right_click_commands:
+    - "[player] Tag MiningP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag MiningP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag MiningP2 Conquerer"
 
   'MINING_LOCKED3':
     material: DIAMOND_PICKAXE
@@ -597,11 +681,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Miner✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Miner✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Miner✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag MiningP3 Default"
+    right_click_commands:
+    - "[player] Tag MiningP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag MiningP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag MiningP3 Conquerer"
 
   'MINING_LOCKED4':
     material: DIAMOND_PICKAXE
@@ -637,11 +728,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Miner✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Miner✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Miner✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag MiningP4 Default"
+    right_click_commands:
+    - "[player] Tag MiningP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag MiningP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag MiningP4 Conquerer"
 
   'MINING_LOCKED5':
     material: DIAMOND_PICKAXE
@@ -677,11 +775,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Miner✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Miner✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Miner✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag MiningP5 Default"
+    right_click_commands:
+    - "[player] Tag MiningP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag MiningP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag MiningP5 Conquerer"
 
 
 #SLAYER
@@ -719,11 +824,18 @@ items:
     - ''
     - '&aBattle Tag: &fSlayer✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&fSlayer✦ "'
-    - "[message] &aYour Battle Tag has been changed to &fSlayer✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SlayerP1 Default"
+    right_click_commands:
+    - "[player] Tag SlayerP1 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SlayerP1 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SlayerP1 Conquerer"
 
   'SLAYER_LOCKED2':
     material: DIAMOND_SWORD
@@ -759,11 +871,18 @@ items:
     - ''
     - '&aBattle Tag: &2✦Slayer✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&2✦Slayer✦ "'
-    - "[message] &aYour Battle Tag has been changed to &2✦Slayer✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SlayerP2 Default"
+    right_click_commands:
+    - "[player] Tag SlayerP2 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SlayerP2 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SlayerP2 Conquerer"
 
   'SLAYER_LOCKED3':
     material: DIAMOND_SWORD
@@ -799,11 +918,18 @@ items:
     - ''
     - '&aBattle Tag: &9✦Slayer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&9✦Slayer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &9✦Slayer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SlayerP3 Default"
+    right_click_commands:
+    - "[player] Tag SlayerP3 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SlayerP3 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SlayerP3 Conquerer"
 
   'SLAYER_LOCKED4':
     material: DIAMOND_SWORD
@@ -839,11 +965,18 @@ items:
     - ''
     - '&aBattle Tag: &5✦✦Slayer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&5✦✦Slayer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &5✦✦Slayer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SlayerP4 Default"
+    right_click_commands:
+    - "[player] Tag SlayerP4 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SlayerP4 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SlayerP4 Conquerer"
 
   'SLAYER_LOCKED5':
     material: DIAMOND_SWORD
@@ -879,11 +1012,18 @@ items:
     - ''
     - '&aBattle Tag: &e✦✦✦Slayer✦✦'
     - ''
-    - '&8&l» &eClick to Use'
-    click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
-    - '[console] lp user %player_name% meta setsuffix 1 "&e✦✦✦Slayer✦✦ "'
-    - "[message] &aYour Battle Tag has been changed to &e✦✦✦Slayer✦✦&a!"
+    - '&8&l» &eLeft-Click to Use as &7Default'
+    - '&8&l» &eRight-Click to Use as &aExplorer'
+    - '&8&l» &eShift-Left-Click to Use as &9Adventurer'
+    - '&8&l» &eShift-Right-Click to Use as &cConqueror'
+    left_click_commands:
+    - "[player] Tag SlayerP5 Default"
+    right_click_commands:
+    - "[player] Tag SlayerP5 Explorer"
+    shift_left_click_commands:
+    - "[player] Tag SlayerP5 Adventurer"
+    shift_right_click_commands:
+    - "[player] Tag SlayerP5 Conquerer"
 
 
   'TAG_RESET':
@@ -894,9 +1034,9 @@ items:
     display_name: "&aReset Tag"
     lore:
     - ''
-    - '&8&l» &eClick to Use'
+    - '&8&l» &eClick to Reset'
     click_commands:
-    - "[console] lp user %player_name% meta removesuffix 1"
+    - "[console] lp user %player_name% meta removeprefix 100"
     - "[message] &aYour Battle Tag has been reset!"
 
 

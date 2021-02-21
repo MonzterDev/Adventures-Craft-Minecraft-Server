@@ -13,7 +13,7 @@ shop:
     - name:&a&f&fJoy Soup
     - lore1:&fConsumable
     - 'lore2:'
-    - lore3:&rRestores &a20 &rHealth
+    - lore3:&fRestores &a20 &fHealth
     - 'lore4:'
     - lore5:&f&lCOMMON ITEM
     - 'lore7:&fPrice: &e⛂ %price%'
@@ -26,7 +26,7 @@ shop:
     - 'mmocore admin exp give %player% cooking 5'
     PriceType: MONEY
     Price: 100.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 11
   JOY_STEW2:
     MenuItem:
@@ -36,7 +36,7 @@ shop:
     - name:&a&f&9Joy Soup
     - lore1:&fConsumable
     - 'lore2:'
-    - lore3:&rRestores &a50 &rHealth
+    - lore3:&fRestores &a50 &fHealth
     - 'lore4:'
     - lore5:&9&lRARE ITEM
     - 'lore7:&fPrice: &e⛂ %price%'
@@ -49,7 +49,7 @@ shop:
     - 'mmocore admin exp give %player% cooking 15'
     PriceType: MONEY
     Price: 250.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 12
   JOY_STEW3:
     MenuItem:
@@ -59,7 +59,7 @@ shop:
     - name:&a&f&5Joy Soup
     - lore1:&fConsumable
     - 'lore2:'
-    - lore3:&rRestores &a75 &rHealth
+    - lore3:&fRestores &a75 &fHealth
     - 'lore4:'
     - lore5:&5&lLEGENDARY ITEM
     - 'lore7:&fPrice: &e⛂ %price%'
@@ -72,7 +72,7 @@ shop:
     - 'mmocore admin exp give %player% cooking 25'
     PriceType: MONEY
     Price: 500.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 13
   JOY_BOW:
     MenuItem:
@@ -99,7 +99,7 @@ shop:
     - 'mmoitems give BOW JOYS_BOW %player% 1'
     PriceType: MONEY
     Price: 5000.0
-    Message: '&7You &asuccessfully &7purchsed &a%itemname% &7for &e⛂ %price%&7!'
+    Message: '&7You &asuccessfully &7purchased &a%itemname% &7for &e⛂ %price%&7!'
     InventoryLocation: 14
 
   SELL:

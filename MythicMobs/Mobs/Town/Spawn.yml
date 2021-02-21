@@ -246,13 +246,13 @@ Cows:
   - leather 1-3 100%
   - beef 1-3 100%
   - EXP 1-3 100%
+
 Chickens:
   Type: Chicken
-  Display: '&7[&fLVL 1&7] &aChicken'
-  Health: 25
+  Display: '&7[&fLVL 1&7] &aCucco'
+  Health: 500
   Damage: 0
   Faction: Animal
-  Modules:
   Modules:
     ImmunityTable: false
   Options:
@@ -260,8 +260,8 @@ Chickens:
     PreventSunburn: true
     AlwaysShowName: true
     PreventRandomEquipment: true
-    KnockbackResistance: .7
-    MaxCombatDistance: 50
+    KnockbackResistance: 1
+    MaxCombatDistance: 5
     MovementSpeed: 0.36
     FollowRange: 6
     Collidable: true
@@ -274,6 +274,48 @@ Chickens:
   - feather 1-3 100%
   - chicken 1-3 100%
   - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 fleeplayers
+  - 3 randomstroll
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - mounttarget @trigger ~onInteract
+  - skill{s=ChickenRemove} ~onTimer:100
+  - skill{s=CHICKEN_CAPTURED} ~onSignal:CAPTURED
+  - dropitem{i=egg} @self ~onTimer:600
+
+CHICKEN_COLLECTOR:
+  Type: Ocelot
+  Display: ''
+  Health: 99999
+  Damage: 0
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Silent: true
+    Persistent: false
+    ApplyInvisibility: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 2
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 6
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: false
+    AttackSpeed: 1
+    PreventLeashing: false
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - signal{s=CAPTURED} @MobsInRadius{r=5;t=Chickens} ~onTimer:40
+
 Sheeps:
   Type: Sheep
   Display: '&7[&fLVL 1&7] &aSheep'

@@ -11,7 +11,7 @@ on vote:
             message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
             execute console command "/q point %player% add items.Vote 1"
 
-    if website of event-vote = "minestatus.net":
+    else if website of event-vote = "minestatus.net":
         if now < {vote_mineStatus::%player%}:
             send "&fVote again in &e%difference between {vote_mineStatus::%player%} and now% for more rewards!" to player
         else:
@@ -19,7 +19,7 @@ on vote:
             message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
             execute console command "/q point %player% add items.Vote 1"
 
-    if website of event-vote = "MinecraftServers.org":
+    else if website of event-vote = "MinecraftServers.org":
         if now < {vote_MinecraftServers::%player%}:
             send "&fVote again in &e%difference between {vote_MinecraftServers::%player%} and now% for more rewards!" to player
         else:
@@ -27,7 +27,7 @@ on vote:
             message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
             execute console command "/q point %player% add items.Vote 1"
         
-    if website of event-vote = "MCSL":
+    else if website of event-vote = "MCSL":
         if now < {vote_MCSL::%player%}:
             send "&fVote again in &e%difference between {vote_MCSL::%player%} and now% for more rewards!" to player
         else:
@@ -35,7 +35,7 @@ on vote:
             message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
             execute console command "/q point %player% add items.Vote 1"
         
-    if website of event-vote = "minecraft-mp.com":
+    else if website of event-vote = "minecraft-mp.com":
         if now < {vote_minecraftmp::%player%}:
             send "&fVote again in &e%difference between {vote_minecraftmp::%player%} and now% for more rewards!" to player
         else:

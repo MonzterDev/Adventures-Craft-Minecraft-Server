@@ -1,27 +1,23 @@
-# --------------------------------------------------------------
 #
-# Thanks for using MMOItems!
+# ███    ███ ███    ███  ██████  ██ ████████ ███████ ███    ███ ███████
+# ████  ████ ████  ████ ██.  .██ ██    ██    ██      ████  ████ ██
+# ██ ████ ██ ██ ████ ██ ██    ██ ██    ██    █████   ██ ████ ██ ███████
+# ██  ██  ██ ██  ██  ██ ██\__/██ ██    ██    ██      ██  ██  ██      ██
+# ██      ██ ██      ██  ██████  ██    ██    ███████ ██      ██ ███████
 #
-# --------------------------------------------------------------
+# a Spigot Plugin by Team Requiem
+
+# DO NOT TOUCH
+config-version: 8
 
 # Notifies players with the 'mmoitems.update-notify' perm node when
 # they join the server if a new update is available for download.
 # Requires /reload when changed.
 update-notify: true
 
-# The plugin takes a few milliseconds to read the item data from the item
-# config and a few hundred MICROseconds to actually generate it. Caching the
-# item allows to skip the first step which reduces ~6 times the delay needed
-# to generate any mmoitem.
-#
-# However, it does take up much more RAM space. Toggle it on if you have
-# too many items which makes item generation time consuming. Toggle it off
-# to get some spare memory.
-use-item-caching: true
-
 # Enable/disable the plugin iterating over the whole player inventory
 # instead of just the players armor and held items.
-# This option is required for the Ornamnet item type, however
+# This option is required for the Ornament item type, however
 # it CAN cause lag and/or take a lot of memory.
 iterate-whole-inventory: false
 
@@ -34,9 +30,35 @@ locked-skins: true
 # off-hand like tomes!
 disable-abilities-in-offhand: true
 
+# enable/disable the automatic equip feature
+# By right clicking with a piece of armor, the plugin will
+# check if your currently equipped armor's "Equip Priority" stat
+# is lower/higher than the one you're currently right clicking with, if
+# the one in your hand is higher it will auto equip that and put the
+# old piece back into your hand. Used to hot swap armor.
+#
+# Warning: Could be resource intensive if abused?
+auto-equip-feature: false
+
 # By default, all player inventories will be updated every
 # 10 ticks which corresponds to 2 inventory updates a second.
 inventory-update-delay: 1
+
+# When generating an item, the item level
+# must match approximately the player level
+# otherwise the player cannot use items/get useless items.
+#
+# The item level is always somewhere in the
+# interval [playerLevel - spread, playerLevel + spread]
+item-level-spread: 2
+
+# When an item is generated with no tier,
+# this is the capacity formula it will use.
+default-item-capacity:
+    base: 3
+    scale: 0
+    spread: 0
+    max-spread: 0
 
 # Changes the default value for some stats.
 default:
@@ -55,7 +77,7 @@ item-upgrading:
 
     # Display name suffix for upgraded items.
     name-suffix: '&f &e(+#lvl#)'
-    
+
     # Whether to display in Item Name or Lore
     # Disable if item renaming is available to players.
     # If set to 'false', remember to include
@@ -64,21 +86,47 @@ item-upgrading:
 
     # How stat changes are formatted
     # in the stat suffix.
-    stat-change-suffix: '&f &e(+#stat#)'
+    stat-change-suffix: ' &8(&p#stat#&8)'
+    stat-change-positive: '&a'
+    stat-change-negative: '&c'
 
     # Whether or not to display which
     # stats are changed in the lore.
     # EXPERIMENTAL FEATURE
-    display-stat-changes: true
+    display-stat-changes: false
 
 soulbound:
+
     # Edit soulbound damage when players try to use
     # items which are not bound to themselves.
     damage:
-        base: 2
-        per-lvl: 2
+        base: 1
+        per-lvl: 1
         
-# Enable, disable and customize the weapon effects here.
+    # Whether or not soulbound items should be
+    # kept when a player dies.
+    keep-on-death: true
+    
+    # Whether or not soulbound item can be
+    # dropped by the player
+    can-drop: true
+    
+    auto-bind:
+    
+        # The default Soulbind level to apply
+        # when automatically soulbinding
+        level: 1
+        
+        # Here you can disable individual events for when
+        # Items should automatically soulbind to the player
+        # (Requires the 'Auto-Bind' stat to be true)
+        disable-on:
+            pickup: false
+            craft: false
+            click: false
+            join: true # 'true' recommended
+
+# Enable, disable, and customize the weapon effects here.
 # Weapon effects depend on the item type & type set.
 item-ability:
     staff:
@@ -92,7 +140,7 @@ item-ability:
     blunt:
         aoe:
             enabled: true
-            cooldown: 4
+            cooldown: 2
         stun:
             enabled: true
             chance: 5
@@ -100,22 +148,25 @@ item-ability:
             power: 1
     slashing:
         enabled: true
-        cooldown: 5
+        cooldown: 2
     piercing:
         enabled: true
         cooldown: 4
 
 gem-sockets:
+
     # Define the text you need to enter in the
     # item gem sockets if you want to create an
     # uncolored gem socket i.e a socket for any type of gem.
-    uncolored: 'Uncolored'
+    uncolored: 'Universal'
 
 custom-blocks:
+
     # Whether or not custom blocks should
     # generate in the world according to
     # their generation template.
     enable-world-gen: false
+
     # Whether or not to remove mushroom block drops
     # from the droplist when mining a mushroom block
     # with silk-touch.
@@ -129,6 +180,11 @@ custom-blocks:
 # of using the chat.
 anvil-text-input: false
 
+# When set to true, players CANNOT upgrade an item if the
+# specs (level, profession requirements) the item WOULD
+# have if it were upgraded are too high for the player.
+item-upgrade-requirements-check: true
+
 # Players can't use their weapon/abilities when holding
 # two-handed item and one other item simultaneously.
 # When toggled off, players still receive slow 4.
@@ -140,10 +196,6 @@ cooldown-progress-bar-char: █
 
 # When toggled off, players can't damage each other using item abilities.
 ability-player-damage: false
-
-# When enabled, all custom recipes will be in the recipe book on join.
-# If toggled off they will have to use to recipe once to add it to their book.
-auto-recipe-book: false
 
 # Displays a message on the action bar instead of on the chat.
 # Can be used to reduce chat spam.
@@ -170,10 +222,19 @@ game-indicators:
         enabled: true
         decimal-format: '0.#'
         format: '&c&l❤ &a&l#'
+        #format: '&a&l❤ #'
 
-# Unregisters all crafting recipes. Requires /reload.
-# Also disables the advanced workbench when disabling advanced craftings.
-disable-craftings: false
+recipes:
+
+    # Allows you to use stack amounts for recipe ingredients.
+    # This will enable a custom crafting system which
+    # can cause lots of trouble. If you don't need specific
+    # ingredient amounts then DO NOT enable this!
+    recipe-amounts: false
+    
+    # Enables the vanilla recipe book for MMOItem recipes!
+    # THIS IS NOT COMPATIBLE WITH RECIPE AMOUNTS!
+    use-recipe-book: true
 
 # "repair" prevents players from repairing MMOItems.
 # "smelt" prevents players from smelting MMOItems.
@@ -185,13 +246,14 @@ disable-interactions:
     repair: false
     enchant: false
     smelt: false
+    smith: false
     craft: false
     arrow-shooting: false
 
 # Block types that can't be broken by an ability/item effect
 block-blacklist:
-- OBSIDIAN
-- BEDROCK
+    - OBSIDIAN
+    - BEDROCK
 
 # Allows/disables the permissions needed in order to use items/abilities.
 # General permission node for abilities: mmoitems.ability.ability-id
@@ -208,3 +270,59 @@ permissions:
 disable-vanilla-recipes: []
 # - DIAMOND_PICKAXE
 # - IRON_BLOCK
+
+# Options for the Item Revision System
+item-revision:
+
+    # This is the value to set the Item Level to when
+    # items are updated by the revision system.
+    # This can be set to -1 to use the items previous level.
+    # Please note, that this value has no effect if
+    # ´reroll-when-updated´ is set to true.
+    default-item-level: -1
+    
+    # Whether or not the current tier of the item should
+    # be carried over.
+    # Please note, that this value has no effect if
+    # ´reroll-when-updated´ is set to true.
+    keep-tiers: true
+    
+    # Whether the updated items should reroll stats
+    # according to the players current level or if
+    # they should keep the level and tier from when
+    # the item was first generated.
+    reroll-when-updated: false
+    
+    # Whether or not specific stats should be kept
+    # when an item is updated to latest revision.
+    keep-data:
+        display-name: true
+        lore: false # Warning, this prevents stats in the lore from updating visually!
+        enchantments: true
+        soulbound: true
+        
+        # Modifications are Gemstones and Upgrades
+        # Please note that some stats will be unable to update
+        # to the latest changes if you enable these.
+        modifications: false
+        
+    # Here you can disable individual events for when
+    # Items should update when a higher revision ID is found
+    disable-on:
+        pickup: false
+        craft: true # 'true' recommended
+        click: false
+        join: false
+
+# Offset is the distance traveled on X and Y coordinates
+# Height is the Y velocity coordinate. Lootsplosions
+# only trigger with MythicMobs monsters.
+# Requires a SERVER reload when changed.
+lootsplosion:
+    enabled: true
+    color: true
+    offset: .2
+    height: .6
+
+# When I was a kid, I saw the Mona Lisa in my school art book...
+# The fist time I saw her, with her hands on her knee... how do I say this...

@@ -27,7 +27,7 @@ ALPHA_SOUL:
   base:
     material: BLAZE_POWDER
     name: §5Alpha Soul
-    disable-interaction: false
+    disable-interaction: true
     unbreakable: true
     lore:
     - §fUsed for reviving the Undead!
@@ -39,6 +39,7 @@ ALPHA_SOUL:
     lore:
     - §fYou most likely crafted
     - §fsomething which is disabled!
+    disable-interaction: true
 VOID_FRAGMENT:
   base:
     material: BROWN_MUSHROOM
@@ -48,18 +49,22 @@ VOID_FRAGMENT:
     displayed-type: Quest Item
     name: §fVoid Fragment
     tier: COMMON
+    disable-interaction: true
 SMITHINGTABLE:
   base:
     material: SMITHING_TABLE
     tier: COMMON
+    disable-interaction: true
 SMOKER:
   base:
     material: SMOKER
     tier: COMMON
-COMMON_GEM_BASE:
+    disable-interaction: true
+GEM_BASE:
   base:
-    material: IRON_BLOCK
+    material: COAL_BLOCK
     name: §fGem Base
+    disable-interaction: true
     hide-enchants: true
     enchants:
       unbreaking: 1
@@ -68,10 +73,24 @@ COMMON_GEM_BASE:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: COMMON
-RARE_GEM_BASE:
+GEM_BASE2:
   base:
-    material: DIAMOND_BLOCK
+    material: IRON_BLOCK
+    name: §2Gem Base
+    disable-interaction: true
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    disable-crafting: true
+    disable-smelting: true
+    lore:
+    - §7Used for §dGem Crafting§7!
+    tier: UNCOMMON
+GEM_BASE3:
+  base:
+    material: GOLD_BLOCK
     name: §9Gem Base
+    disable-interaction: true
     hide-enchants: true
     enchants:
       unbreaking: 1
@@ -80,10 +99,24 @@ RARE_GEM_BASE:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: RARE
-EXOTIC_GEM_BASE:
+GEM_BASE4:
+  base:
+    material: DIAMOND_BLOCK
+    name: §5Gem Base
+    disable-interaction: true
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    disable-crafting: true
+    disable-smelting: true
+    lore:
+    - §7Used for §dGem Crafting§7!
+    tier: LEGENDARY
+GEM_BASE5:
   base:
     material: EMERALD_BLOCK
     name: §eGem Base
+    disable-interaction: true
     hide-enchants: true
     enchants:
       unbreaking: 1

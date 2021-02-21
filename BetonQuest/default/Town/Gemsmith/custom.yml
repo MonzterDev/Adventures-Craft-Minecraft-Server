@@ -1,0 +1,23 @@
+npc_effects:
+  check_interval: 100
+  disabled: false
+  default:
+    class: VortexEffect
+    iterations: 20
+    particle: crit_magic
+    helixes: 3
+    circles: 1
+    grow: 0.1
+    radius: 0.5
+    interval: 100
+npc_holograms:
+  check_interval: 100
+  follow: false
+  disabled: false
+  default:
+    lines:
+    - '&e&lTALK TO ME!'
+    vector: 0;2.55;0
+    conditions: "default-Mine-Smith.q3_completed,!q1_part1"
+    npcs:
+      - 195
