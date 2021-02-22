@@ -1,0 +1,25 @@
+default-format: "default"
+
+chat-formats:
+  default:
+    condition: 'true'
+    components:
+      prefix:
+        text: "%tab_chatprefix% "
+        hover:
+          - "Prefix hover"
+      name:
+        text: "%tab_customchatname%"
+        hover:
+          - "&cHP: %player_health%"
+          - "&aMode: #00FF00%player_gamemode%"
+        suggest: "/msg %player_name% "
+      suffix:
+        text: " %tab_chatsuffix%"
+        hover:
+          - "Suffix hover"
+      msg:
+        text: ">> %msg%"
+        hover:
+          - "%time%"
+        suggest: "Hey %player_name%"
