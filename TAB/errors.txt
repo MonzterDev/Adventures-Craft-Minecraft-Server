@@ -3105,3 +3105,32 @@
 07.12.2020 - 02:32:05 - [TAB v2.8.7] Player MonzterYT does not have any group permission while assign-groups-by-permissions is enabled! Did you forget to add his group to primary-group-finding-list?
 07.12.2020 - 22:02:56 - [TAB v2.8.7] Group "supporter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "supporter" into group-sorting-priority-list in config.yml.
 07.12.2020 - 22:28:09 - [TAB v2.8.7] Group "supporter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "supporter" into group-sorting-priority-list in config.yml.
+19.12.2020 - 20:28:15 - [TAB v2.8.7] An error occurred when processing EntityMove
+19.12.2020 - 20:28:15 - java.lang.NullPointerException: null
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.BukkitArmorStand.getY(BukkitArmorStand.java:218)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.BukkitArmorStand.getLocation(BukkitArmorStand.java:193)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.BukkitArmorStand.getArmorStandLocationFor(BukkitArmorStand.java:114)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.BukkitArmorStand.getTeleportPacket(BukkitArmorStand.java:110)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.BukkitArmorStand.teleport(BukkitArmorStand.java:129)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.api.ArmorStandManager.lambda$teleport$3(ArmorStandManager.java:33)
+19.12.2020 - 20:28:15 -        at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.api.ArmorStandManager.teleport(ArmorStandManager.java:33)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.PacketListener$2.run(PacketListener.java:141)
+19.12.2020 - 20:28:15 -        at me.neznamy.tab.shared.cpu.CPUManager$2.run(CPUManager.java:82)
+19.12.2020 - 20:28:15 -        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+19.12.2020 - 20:28:15 -        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+19.12.2020 - 20:28:15 -        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+19.12.2020 - 20:28:15 -        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+19.12.2020 - 20:28:15 -        at java.base/java.lang.Thread.run(Thread.java:834)
+06.02.2021 - 21:14:20 - [TAB v2.8.10] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.9
+06.02.2021 - 21:14:20 - org.bukkit.plugin.IllegalPluginAccessException: Plugin attempted to register task while disabled
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.validate(CraftScheduler.java:537)
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:212)
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:197)
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncRepeatingTask(CraftScheduler.java:192)
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncDelayedTask(CraftScheduler.java:156)
+06.02.2021 - 21:14:20 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncDelayedTask(CraftScheduler.java:125)
+06.02.2021 - 21:14:20 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.runSyncCommand(ExpansionDownloader.java:84)
+06.02.2021 - 21:14:20 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.access$000(ExpansionDownloader.java:20)
+06.02.2021 - 21:14:20 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:60)
+06.02.2021 - 21:14:20 -        at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,243 @@
+# the default layout is staff
+default-layout: "default"
+###Add Profession Tab & Active Quests
+layouts:
+  # this layout is called default
+  default:
+    # shape of the layout "default"
+    shape:
+      - 'PlayerTitle StatsTitle ProfessionTitle -'
+      - 'Players StatHealth ProfessionFarming -'
+      - 'Players StatMana ProfessionForaging -'
+      - 'Players StatArmor ProfessionMining -'
+      - 'Players StatSpeed ProfessionSlayer -'
+      - 'Players StatDamage ProfessionEnchanting -'
+      - 'Players StatAttackSpeed ProfessionCooking -'
+      - 'Players StatCritChance ProfessionSpellforging -'
+      - 'Players StatCritPower - -'
+      - 'Players StatCoin - -'
+      - 'Players StatLevel - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - 'Players Players - -'
+      - '- - - -'
+    # slots of the layout "default"
+    slots:
+      PlayerTitle:
+        type: TEXT
+        icon: mineskin:745109047
+        text: '&8   ------&6&lPLAYERS&8------'
+      StatsTitle:
+        type: TEXT
+        icon: mineskin:1074335506
+        text: '&8     ------&2&lSTATS&8------'
+      ProfessionTitle:
+        type: TEXT
+        icon: mineskin:1074335506
+        text: '&8    ------&9&lPROFESSIONS&8------'
+####################
+      StatHealth:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &a❤ HP: &a%mmocore_health%/%mmocore_max_health%'
+      StatMana:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &b⭐ Mana: &b%mmocore_mana%/%mmocore_stat_max_mana%'
+      StatArmor:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &e⛨ Armor: &e%mmoitems_stat_defense%'
+      StatSpeed:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &2✤ Speed: &2%mmocore_stat_movement_speed%'
+      StatDamage:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &c✜ Damage: &c%mmocore_stat_attack_damage%'
+      StatAttackSpeed:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &3⌭ Attack Speed: &3%mmocore_stat_attack_speed%'
+      StatCritChance:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &6✧ Crit Chance: &6%mmocore_stat_critical_strike_chance%'
+      StatCritPower:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '        &4✦ Crit Damage: &4%mmocore_stat_critical_strike_power%'
+      StatLevel:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '    &rLevel: &7%mmocore_level% &8[&e%mmocore_experience%/%mmocore_next_level% EXP&8]'
+      StatCoin:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '         &eCoins&f: &e⛂ &f%vault_eco_balance_commas%'
+##############
+      ProfessionFarming:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &aFarming Level &l%mmocore_profession_Farming% &e%mmocore_profession_percent_Farming%&f/&e100%'
+      ProfessionForaging:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &2Foraging Level &l%mmocore_profession_Foraging% &e%mmocore_profession_percent_Foraging%&f/&e100%'
+      ProfessionMining:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &3Mining Level &l%mmocore_profession_Mining% &e%mmocore_profession_percent_Mining%&f/&e100%'
+      ProfessionSlayer:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &4Slayer Level &l%mmocore_profession_Slayer% &e%mmocore_profession_percent_Slayer%&f/&e100%'
+      ProfessionEnchanting:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &5Enchanting Level &l%mmocore_profession_Enchanting% &e%mmocore_profession_percent_Enchanting%&f/&e100%'
+      ProfessionCooking:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &6Cooking Level &l%mmocore_profession_Cooking% &e%mmocore_profession_percent_Cooking%&f/&e100%'
+      ProfessionSpellforging:
+        type: TEXT
+        icon: mineskin:224445819
+        text: '      &dSpellforging Level &l%mmocore_profession_Spellforging% &e%mmocore_profession_percent_Spellforging%&f/&e100%'
+
+
+      # slot "-" 
+      '-':
+        # type of the slot, can either be TEXT or PLAYERS
+        type: TEXT
+        # icon of the slot, can be "mineskin:<id>" or "player-head:<playerName>", the id and playerName both support placeholders
+        icon: mineskin:1753261242
+        # text of the icon, supports placeholders and animations
+        text: ''
+      '&m':
+        type: TEXT
+        icon: mineskin:1753261242
+        text: '&8&m                  '
+      Welcome:
+        type: TEXT
+        icon: player-head:OlaOg
+        text: '%animation:Welcome%'
+      PlayerName:
+        type: TEXT
+        icon: player-head:%player%
+        text: '&a%player%'
+      PlayersText:
+        type: TEXT
+        text: '&6Players:'
+        icon: mineskin:1753261242
+      StaffText:
+        type: TEXT
+        icon: mineskin:1753261242
+        text: '&6Staff:'
+      Players:
+        # type PLAYERS, will list players based on current sorting
+        type: PLAYERS
+        # text also supports aligned-tabsuffix feature, you just have to put the "suffix" after ||
+        # when a player set' text contains placeholders, they will be parsed for the displayed player instead of viewer
+        text: "%prop-tabprefix%%%prop-customtabname%"
+        # the condition for players to be shown in this player set. if prefixed by a !, will list players who don't meet the condition.
+        # set to "" or remove the line for no condition
+        condition: ""
+        # if a player set' icon contains placeholders, they will be parsed for the displayed player instead of viewer
+        # here, player-head:%player% will display the head of the player %player%, which will be parsed into the name of the displayed player
+        icon: player-head:%player%
+        # do you want to list players vertically or horizontally?
+        vertical: true
+        # per-player-set-sorting, if not specified, will default to the sorting type in the premiumconfig
+        sorting:
+          # all sorting types are supported. for the placeholders types, use <TYPE>_<%PLACEHOLDER%> like in the example below
+          types:
+            - GROUPS
+          # should the sorting be case-sensitive?
+          case-sensitive: true
+        empty:
+          icon: mineskin:1753261242
+      Staff:
+        type: PLAYERS
+        text: "%prop-tabprefix%%%prop-customtabname%||%prop-tabsuffix%"
+        condition: "permission:tab.staff"
+        # if you want that "staff" condition, check 3 lines below
+        icon: player-head:%player%
+        vertical: true
+        empty:
+          icon: mineskin:1753261242
+  # this layout is called staff
+  staff:
+    condition: "permission:tab.staff"
+    # if condition not met, fallback on the specified layout
+    if-condition-not-met: "default"
+    shape:
+      - '- Welcome PlayerName -'
+      - '&m &m &m &m'
+      - '- PlayersText StaffText -'
+      - '- Players Staff TPS'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '- Players Staff -'
+      - '&m &m &m &m'
+    slots:
+      '-':
+        type: TEXT
+        icon: mineskin:1753261242
+        text: ''
+      '&m':
+        type: TEXT
+        icon: mineskin:1753261242
+        text: '&8&m                  '
+      Welcome:
+        type: TEXT
+        icon: player-head:OlaOg
+        text: '%animation:Welcome%'
+      PlayerName:
+        type: TEXT
+        icon: player-head:%player%
+        text: '&a%player%'
+      PlayersText:
+        type: TEXT
+        text: '&6Players:'
+        icon: mineskin:1753261242
+      StaffText:
+        type: TEXT
+        icon: mineskin:1753261242
+        text: '&6Staff:'
+      TPS:
+        type: TEXT
+        icon: mineskin:447044
+        text: '&8TPS: %tps%'
+      Players:
+        type: PLAYERS
+        text: '%prop-tabprefix%%%prop-customtabname%||%prop-tabsuffix%'
+        condition: '!staff'
+        icon: player-head:%player%
+        vertical: true
+        # show vanished players?
+        vanished: true
+      Staff:
+        type: PLAYERS
+        text: '%prop-tabprefix%%%prop-customtabname%||%prop-tabsuffix%'
+        condition: staff
+        vertical: true
+        icon: player-head:%player%

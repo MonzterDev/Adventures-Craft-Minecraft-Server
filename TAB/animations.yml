@@ -1,108 +1,105 @@
-#usage: %animation:NAME%
-animations:
-  MyAnimation1:
-    #in MILLISECONDS
-    change-interval: 100
-    texts:
-      - "&d-&3--------------"
-      - "&3-&d-&3-------------"
-      - "&3--&d-&3------------"
-      - "&3---&d-&3-----------"
-      - "&3----&d-&3----------"
-      - "&3-----&d-&3---------"
-      - "&3------&d-&3--------"
-      - "&3-------&d-&3-------"
-      - "&3--------&d-&3------"
-      - "&3---------&d-&3-----"
-      - "&3----------&d-&3----"
-      - "&3-----------&d-&3---"
-      - "&3------------&d-&3--"
-      - "&3-------------&d-&3-"
-      - "&3--------------&d-"
-      - "&3-------------&d-&3-"
-      - "&3------------&d-&3--"
-      - "&3-----------&d-&3---"
-      - "&3----------&d-&3----"
-      - "&3---------&d-&3-----"
-      - "&3--------&d-&3------"
-      - "&3-------&d-&3-------"
-      - "&3------&d-&3--------"
-      - "&3-----&d-&3---------"
-      - "&3----&d-&3----------"
-      - "&3---&d-&3-----------"
-      - "&3--&d-&3------------"
-      - "&3-&d-&3-------------"
-      - "&d-&3--------------"
-  ServerName:
-    change-interval: 300
-    texts:
-      - "&a&l--- AdventuresCraft ---"
-  web:
-    change-interval: 200
-    texts:
-      - "&6www.AdventuresCraft.net"
-      - "&ewww.AdventuresCraft.net"
-      - "&6www.AdventuresCraft.net"
-      - "&ew&6w&ew.AdventuresCraft.net"
-      - "&ew&6w&ew.AdventuresCraft.net"
-      - "&eww&6w&e.AdventuresCraft.net"
-      - "&ewww&6.&eAdventuresCraft.net"
-      - "&ewww.&6A&edventuresCraft.net"
-      - "&ewww.A&6d&eventuresCraft.net"
-      - "&ewww.Ad&6v&eenturesCraft.net"
-      - "&ewww.Adv&6e&enturesCraft.net"
-      - "&ewww.Adve&6n&eturesCraft.net"
-      - "&ewww.Adven&6t&euresCraft.net"
-      - "&ewww.Advent&6u&eresCraft.net"
-      - "&ewww.Adventu&6r&eesCraft.net"
-      - "&ewww.Adventur&6e&esCraft.net"
-      - "&ewww.Adventure&6s&eCraft.net"
-      - "&ewww.Adventures&6C&eraft.net"
-      - "&ewww.AdventuresC&6r&eaft.net"
-      - "&ewww.AdventuresCr&6a&eft.net"
-      - "&ewww.AdventuresCra&6f&et.net"
-      - "&ewww.AdventuresCraf&6t&e.net"
-      - "&ewww.AdventuresCraft&6.&enet"
-      - "&ewww.AdventuresCraft.&6n&eet"
-      - "&ewww.AdventuresCraft.n&6e&et"
-      - "&ewww.AdventuresCraft.ne&6t"
-  vote:
-    change-interval: 1000
-    texts:
-      - "&avote.domain.com"
-      - "&a&nvote.domain.com"
-      - "&5vote.domain.com"
-      - "&5&nvote.domain.com"
-  tips:
-    change-interval: 5000
-    texts:
-      - "&7> &7Tip: &fUpon leveling up, you receive an Attribute Point &7<"
-      - "&7> &7Tip: &fAttribute Points can be used by doing /attributes &7<"
-      - "&7> &7Tip: &fCrouch + Swap Item button will swap your Hotbar &7<"
-      - "&7> &7Tip: &f10 is the current max level &7<"
-  ping-tps:
-    change-interval: 5000
-    texts:
-      - "&aPing: &2&n%ping%&r &ams"
-      - "&bServer TPS: &8%tps%"
-  versions:
-    change-interval: 1000
-    texts:
-      - "Online players with MC 1.15.x : %version-group:1-15-x%"
-      - "Online players with MC 1.14.x : %version-group:1-14-x%"
-      - "Online players with MC 1.13.x : %version-group:1-13-x%"
-      - "Online players with MC 1.12.x : %version-group:1-12-x%"
-      - "Online players with MC 1.11.x : %version-group:1-11-x%"
-      - "Online players with MC 1.10.x : %version-group:1-10-x%"
-      - "Online players with MC 1.9.x : %version-group:1-9-x%"
-      - "Online players with MC 1.8.x : %version-group:1-8-x%"
-      - "Online players with MC 1.7.x : %version-group:1-7-x%"
-      - "Online players with MC 1.6.x : %version-group:1-6-x%"
-      - "Online players with MC 1.5.x : %version-group:1-5-x%"
-  barcolors:
-    change-interval: 1000
-    texts:
-      - "RED"
-      - "BLUE"
-      - "GREEN"
-      - "YELLOW"
+MyAnimation1:
+  change-interval: 100
+  texts:
+  - '&d-&3--------------'
+  - '&3-&d-&3-------------'
+  - '&3--&d-&3------------'
+  - '&3---&d-&3-----------'
+  - '&3----&d-&3----------'
+  - '&3-----&d-&3---------'
+  - '&3------&d-&3--------'
+  - '&3-------&d-&3-------'
+  - '&3--------&d-&3------'
+  - '&3---------&d-&3-----'
+  - '&3----------&d-&3----'
+  - '&3-----------&d-&3---'
+  - '&3------------&d-&3--'
+  - '&3-------------&d-&3-'
+  - '&3--------------&d-'
+  - '&3-------------&d-&3-'
+  - '&3------------&d-&3--'
+  - '&3-----------&d-&3---'
+  - '&3----------&d-&3----'
+  - '&3---------&d-&3-----'
+  - '&3--------&d-&3------'
+  - '&3-------&d-&3-------'
+  - '&3------&d-&3--------'
+  - '&3-----&d-&3---------'
+  - '&3----&d-&3----------'
+  - '&3---&d-&3-----------'
+  - '&3--&d-&3------------'
+  - '&3-&d-&3-------------'
+  - '&d-&3--------------'
+ServerName:
+  change-interval: 300
+  texts:
+  - '&a&l--- AdventuresCraft ---'
+web:
+  change-interval: 200
+  texts:
+  - '&6www.AdventuresCraft.net'
+  - '&ewww.AdventuresCraft.net'
+  - '&6www.AdventuresCraft.net'
+  - '&ew&6w&ew.AdventuresCraft.net'
+  - '&ew&6w&ew.AdventuresCraft.net'
+  - '&eww&6w&e.AdventuresCraft.net'
+  - '&ewww&6.&eAdventuresCraft.net'
+  - '&ewww.&6A&edventuresCraft.net'
+  - '&ewww.A&6d&eventuresCraft.net'
+  - '&ewww.Ad&6v&eenturesCraft.net'
+  - '&ewww.Adv&6e&enturesCraft.net'
+  - '&ewww.Adve&6n&eturesCraft.net'
+  - '&ewww.Adven&6t&euresCraft.net'
+  - '&ewww.Advent&6u&eresCraft.net'
+  - '&ewww.Adventu&6r&eesCraft.net'
+  - '&ewww.Adventur&6e&esCraft.net'
+  - '&ewww.Adventure&6s&eCraft.net'
+  - '&ewww.Adventures&6C&eraft.net'
+  - '&ewww.AdventuresC&6r&eaft.net'
+  - '&ewww.AdventuresCr&6a&eft.net'
+  - '&ewww.AdventuresCra&6f&et.net'
+  - '&ewww.AdventuresCraf&6t&e.net'
+  - '&ewww.AdventuresCraft&6.&enet'
+  - '&ewww.AdventuresCraft.&6n&eet'
+  - '&ewww.AdventuresCraft.n&6e&et'
+  - '&ewww.AdventuresCraft.ne&6t'
+vote:
+  change-interval: 1000
+  texts:
+  - '&avote.domain.com'
+  - '&a&nvote.domain.com'
+  - '&5vote.domain.com'
+  - '&5&nvote.domain.com'
+tips:
+  change-interval: 5000
+  texts:
+  - '&7> &7Tip: &fUpon leveling up, you receive an Attribute Point &7<'
+  - '&7> &7Tip: &fAttribute Points can be used by doing /attributes &7<'
+  - '&7> &7Tip: &fCrouch + Swap Item button will swap your Hotbar &7<'
+  - '&7> &7Tip: &f10 is the current max level &7<'
+ping-tps:
+  change-interval: 5000
+  texts:
+  - '&aPing: &2&n%ping%&r &ams'
+  - '&bServer TPS: &8%tps%'
+versions:
+  change-interval: 1000
+  texts:
+  - 'Online players with MC 1.15.x : %version-group:1-15-x%'
+  - 'Online players with MC 1.14.x : %version-group:1-14-x%'
+  - 'Online players with MC 1.13.x : %version-group:1-13-x%'
+  - 'Online players with MC 1.12.x : %version-group:1-12-x%'
+  - 'Online players with MC 1.11.x : %version-group:1-11-x%'
+  - 'Online players with MC 1.10.x : %version-group:1-10-x%'
+  - 'Online players with MC 1.9.x : %version-group:1-9-x%'
+  - 'Online players with MC 1.8.x : %version-group:1-8-x%'
+  - 'Online players with MC 1.7.x : %version-group:1-7-x%'
+  - 'Online players with MC 1.6.x : %version-group:1-6-x%'
+  - 'Online players with MC 1.5.x : %version-group:1-5-x%'
+barcolors:
+  change-interval: 1000
+  texts:
+  - RED
+  - BLUE
+  - GREEN
+  - YELLOW
