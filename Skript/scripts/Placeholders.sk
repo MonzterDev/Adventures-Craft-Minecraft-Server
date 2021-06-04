@@ -146,68 +146,68 @@ on placeholderapi placeholder request for the prefix "custom":
 
 
 #Locations
-on placeholderapi placeholder request for the prefix "custom":
-	if the identifier is "location":
-		if player is in region "Town":
-			set the result to "&aEarth, &aTown"
+# on placeholderapi placeholder request for the prefix "custom":
+# 	if the identifier is "location":
+# 		if player is in region "Town":
+# 			set the result to "&aEarth, &aTown"
 
-		else if player is in region "Farm":
-			set the result to "&aEarth, &aFarm"
-		else if player is in region "Valley":
-			set the result to "&aEarth, &cValley"
-		else if player is in region "Estate":
-			set the result to "&aEarth, &aEstate"
-		else if player is in region "goblin_town":
-			set the result to "&aEarth, &cGoblin Town"
-		else if player is in region "spirit_grounds":
-			set the result to "&aEarth, &dSpirit Grounds"
+# 		else if player is in region "Farm":
+# 			set the result to "&aEarth, &aFarm"
+# 		else if player is in region "Valley":
+# 			set the result to "&aEarth, &cValley"
+# 		else if player is in region "Estate":
+# 			set the result to "&aEarth, &aEstate"
+# 		else if player is in region "goblin_town":
+# 			set the result to "&aEarth, &cGoblin Town"
+# 		else if player is in region "spirit_grounds":
+# 			set the result to "&aEarth, &dSpirit Grounds"
 
-		else if player is in region "Forest":
-			set the result to "&aEarth, &aForest"
-		else if player is in region "Oak_Forest":
-			set the result to "&aEarth, &aOak Forest"
-		else if player is in region "Birch_Forest":
-			set the result to "&aEarth, &aBirch Forest"
-		else if player is in region "DarkOak_Forest":
-			set the result to "&aEarth, &aDark Oak Forest"
-		else if player is in region "Spruce_Forest":
-			set the result to "&aEarth, &aSpruce Forest"
-		else if player is in region "Jungle_Forest":
-			set the result to "&aEarth, &aJungle Forest"
-		else if player is in region "Acacia_Forest":
-			set the result to "&aEarth, &aAcacia Forest"
-		else if player is in region "Hive":
-			set the result to "&aEarth, &eHive"
+# 		else if player is in region "Forest":
+# 			set the result to "&aEarth, &aForest"
+# 		else if player is in region "Oak_Forest":
+# 			set the result to "&aEarth, &aOak Forest"
+# 		else if player is in region "Birch_Forest":
+# 			set the result to "&aEarth, &aBirch Forest"
+# 		else if player is in region "DarkOak_Forest":
+# 			set the result to "&aEarth, &aDark Oak Forest"
+# 		else if player is in region "Spruce_Forest":
+# 			set the result to "&aEarth, &aSpruce Forest"
+# 		else if player is in region "Jungle_Forest":
+# 			set the result to "&aEarth, &aJungle Forest"
+# 		else if player is in region "Acacia_Forest":
+# 			set the result to "&aEarth, &aAcacia Forest"
+# 		else if player is in region "Hive":
+# 			set the result to "&aEarth, &eHive"
 
-		else if player is in region "Mine":
-			set the result to "&aEarth, &aCoal Mine"
-		else if player is in region "Gold":
-			set the result to "&aEarth, &aGold Mine"
-		else if player is in region "Redstone":
-			set the result to "&aEarth, &aRedstone Mine"
-		else if player is in region "Lapis":
-			set the result to "&aEarth, &aLapis Mine"
-		else if player is in region "Diamond":
-			set the result to "&aEarth, &aDiamond Mine"
-		else if player is in region "Emerald":
-			set the result to "&aEarth, &aEmerald Mine"
+# 		else if player is in region "Mine":
+# 			set the result to "&aEarth, &aCoal Mine"
+# 		else if player is in region "Gold":
+# 			set the result to "&aEarth, &aGold Mine"
+# 		else if player is in region "Redstone":
+# 			set the result to "&aEarth, &aRedstone Mine"
+# 		else if player is in region "Lapis":
+# 			set the result to "&aEarth, &aLapis Mine"
+# 		else if player is in region "Diamond":
+# 			set the result to "&aEarth, &aDiamond Mine"
+# 		else if player is in region "Emerald":
+# 			set the result to "&aEarth, &aEmerald Mine"
 			
-		else if player is in region "Graveyard":
-			set the result to "&aEarth, &2Graveyard"
-		else if player is in region "Courtyard":
-			set the result to "&aEarth, &cCourtyard"
-		else if player is in region "Castle":
-			set the result to "&aEarth, &cCastle"
-		else if player is in region "Hell":
-			set the result to "&aEarth, &4Hell"
-		else if player is in region "Void":
-			set the result to "&aEarth, &5Void"
-		else if player is in region "Void_Maze":
-			set the result to "&aEarth, &5Void Maze"
-		else if player is in region "Void_Abyss":
-			set the result to "&aEarth, &5Void Abyss"
-		else if "%region at player%" is "<none>":
-			set the result to "&8Unknown?!"
+# 		else if player is in region "Graveyard":
+# 			set the result to "&aEarth, &2Graveyard"
+# 		else if player is in region "Courtyard":
+# 			set the result to "&aEarth, &cCourtyard"
+# 		else if player is in region "Castle":
+# 			set the result to "&aEarth, &cCastle"
+# 		else if player is in region "Hell":
+# 			set the result to "&aEarth, &4Hell"
+# 		else if player is in region "Void":
+# 			set the result to "&aEarth, &5Void"
+# 		else if player is in region "Void_Maze":
+# 			set the result to "&aEarth, &5Void Maze"
+# 		else if player is in region "Void_Abyss":
+# 			set the result to "&aEarth, &5Void Abyss"
+# 		else if "%region at player%" is "<none>":
+# 			set the result to "&8Unknown?!"
 
 
 on placeholderapi placeholder request for the prefix "custom":

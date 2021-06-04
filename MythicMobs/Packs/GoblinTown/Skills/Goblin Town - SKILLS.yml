@@ -1,0 +1,61 @@
+GOBLIN_MOUNT_HOUND2:
+  Conditions:
+  - mounted{} false
+  Skills:
+  - mounttarget @MIR{r=5;t=HOUND2}
+HOUND_BLEED2:
+  Cooldown: 10
+  Skills:
+  - damage{amount=3;repeat=5;repeatInterval=20} @target
+  - effect:bloodyScreen{d=100} @target
+  - message{m="&cThe <mob.name> &cbit you, making you &4bleed&c!"} @target
+
+#CHIEF
+GOBLIN_CHIEF_SUMMON_BABY_GOBLIN2:
+  Cooldown: 20
+  Skills:
+  - effect:sound{s=block.note_block.bass;v=2;p=1;repeat=4;repeatInterval=20} @self
+  - delay 80
+  - summon{type=BABY_GOBLIN2;amount=3;radius=4} @target
+GOBLIN_CHIEF_SUMMON_GOBLIN2:
+  Cooldown: 15
+  Skills:
+  - effect:sound{s=block.note_block.bell;v=2;p=1;repeat=4;repeatInterval=20} @self
+  - delay 80
+  - summon{type=GOBLIN2;amount=2;radius=4} @target
+GOBLIN_CHIEF_SUMMON_HOUND2:
+  Cooldown: 20
+  Skills:
+  - effect:sound{s=block.note_block.cow_bell;v=2;p=1;repeat=4;repeatInterval=20} @self  
+  - delay 80
+  - summon{type=HOUND2;amount=3;radius=4} @target
+GOBLIN_CHIEF_SUMMON_GOBLIN_ARCHER:
+  Cooldown: 25
+  Skills:
+  - effect:sound{s=block.note_block.flute;v=2;p=1;repeat=4;repeatInterval=20} @self   
+  - delay 80
+  - summon{type=GOBLIN_ARCHER;amount=2;radius=4} @target
+
+GOBLIN_CHIEF_JUKEBOX_RANDOM:
+  Cooldown: 15
+  Skills:
+  - randomskill{skills=GOBLIN_CHIEF_SPEEDY,GOBLIN_CHIEF_SMITE,GOBLIN_CHIEF_SLOW}
+GOBLIN_CHIEF_SPEEDY:
+  Skills:
+  - effect:sound{s=block.note_block.cow_bell;v=1;p=1;repeat=4;repeatInterval=20} @self
+  - delay 80
+  - potion{type=SPEED;duration=200;level=5} @MIR{r=10;t=BABY_GOBLIN2,GOBLIN2,HOUND2,GOBLIN_ARCHER}
+  - message{m="&cThe <caster.name> &cused &aSpeedy &cfrom his &e&lJukebox&c! All &lGoblin &callies have increased &lspeed&c!"} @PIR{r=10}
+GOBLIN_CHIEF_SMITE:
+  Skills:
+  - effect:sound{s=block.note_block.bell;v=1;p=1;repeat=4;repeatInterval=20} @self  
+  - delay 80
+  - damage{amount=150} @PIR{r=10}
+  - lightning @PIR{r=10}
+  - message{m="&cThe <caster.name> &cused &6Smite &cfrom his &e&lJukebox&c! You have been struck by &6lightning&c!"} @PIR{r=10}
+GOBLIN_CHIEF_SLOW:
+  Skills:
+  - effect:sound{s=block.note_block.bass;v=1;p=1;repeat=4;repeatInterval=20} @self
+  - delay 80
+  - potion{type=SLOW;duration=100;level=1} @PIR{r=10}
+  - message{m="&cThe <caster.name> &cused &8Slow &cfrom his &e&lJukebox&c! You have been &8slowed &cfor a few seconds!"} @PIR{r=10}

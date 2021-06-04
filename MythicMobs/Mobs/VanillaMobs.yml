@@ -1,15 +1,110 @@
-# For more information, check out the plugin manual or join us on Discord:
-# http://www.mythicmobs.net
-#  
+PIG1: &Dummy
+  Type: PIG
+  Display: '&7[&fLVL 1&7] &aPig'
+  Health: 25
+  Faction: Animal
+  Modules:
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    Collidable: true
+COW1: 
+  <<: *Dummy
+  Type: COW
+  Display: '&7[&fLVL 1&7] &aCow'
+  Health: 25
+CHICKEN1: 
+  <<: *Dummy
+  Type: CHICKEN
+  Display: '&7[&fLVL 1&7] &aChicken'
+  Health: 25
+SHEEP1: 
+  <<: *Dummy
+  Type: SHEEP
+  Display: '&7[&fLVL 1&7] &aSheep'
+  Health: 25
+PANDA1: 
+  <<: *Dummy
+  Type: PANDA
+  Display: '&7[&fLVL 1&7] &aPanda'
+  Health: 25
+FOX1: 
+  <<: *Dummy
+  Type: FOX
+  Display: '&7[&fLVL 1&7] &aFox'
+  Health: 25
+RABBIT1: 
+  <<: *Dummy
+  Type: RABBIT
+  Display: '&7[&fLVL 1&7] &aRabbit'
+  Health: 25
+PARROT1: 
+  <<: *Dummy
+  Type: PARROT
+  Display: '&7[&fLVL 1&7] &aParrot'
+  Health: 25
+WOLF1: 
+  <<: *Dummy
+  Type: WOLF
+  Display: '&7[&fLVL 1&7] &aWolf'
+  Health: 25
 
-CAVE_SPIDER:
-  Health: 30
-  Damage: 7
-WITHER_SKELETON:
-  Health: 50
-  Damage: 10
-GIANT:
-  Health: 1000
-  Damage: 20
-  Skills:
-  - potion{type=POISON;duration=100;lvl=1} @target ~onAttack
+
+# PIG: &Dummy
+#   Type: PIG
+#   Display: '&7[&fLVL 1&7] &aPig'
+#   Health: 25
+#   Faction: Animal
+#   Modules:
+#     ImmunityTable: false
+#   Options:
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.36
+#     Collidable: true
+# COW: 
+#   <<: *Dummy
+#   Type: COW
+#   Display: '&7[&fLVL 1&7] &aCow'
+#   Health: 25
+# CHICKEN: 
+#   <<: *Dummy
+#   Type: CHICKEN
+#   Display: '&7[&fLVL 1&7] &aChicken'
+#   Health: 25
+# SHEEP: 
+#   <<: *Dummy
+#   Type: SHEEP
+#   Display: '&7[&fLVL 1&7] &aSheep'
+#   Health: 25
+# PANDA: 
+#   <<: *Dummy
+#   Type: PANDA
+#   Display: '&7[&fLVL 1&7] &aPanda'
+#   Health: 25
+# FOX: 
+#   <<: *Dummy
+#   Type: FOX
+#   Display: '&7[&fLVL 1&7] &aFox'
+#   Health: 25
+# RABBIT: 
+#   <<: *Dummy
+#   Type: RABBIT
+#   Display: '&7[&fLVL 1&7] &aRabbit'
+#   Health: 25
+# PARROT: 
+#   <<: *Dummy
+#   Type: PARROT
+#   Display: '&7[&fLVL 1&7] &aParrot'
+#   Health: 25
+# WOLF: 
+#   <<: *Dummy
+#   Type: WOLF
+#   Display: '&7[&fLVL 1&7] &aWolf'
+#   Health: 25

@@ -620,3 +620,16 @@ LOOTING:
   EnchantableItems:
   Skills:
   - skill{skill=LOOTING1} ?enchantlevel{level=1} @trigger ~onKill
+
+BURGLE_CASTLE:
+  Display: 'Burgle'
+  MinLevel: 1
+  MaxLevel: 5
+  ItemType: WEAPON
+  Options:
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  EnchantableItems:
+  Skills:

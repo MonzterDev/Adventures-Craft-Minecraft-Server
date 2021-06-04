@@ -11,36 +11,36 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  WOOD_CATALYST2:
+  WOOD_CATALYST4:
     output:
       type: CATALYST
-      id: WOOD_CATALYST2
+      id: WOOD_CATALYST4
       amount: 1
     ingredients:
-    - mmoitem{type=QUEST,id=DRYAD_BARK,amount=1}
-    - mmoitem{type=CATALYST,id=WOOD_CATALYST,amount=1}
+    - mmoitem{type=QUEST,id=DRYAD_BARK5,amount=1}
+    - mmoitem{type=CATALYST,id=WOOD_CATALYST3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=16}
-  DRYAD_STRONG_VINE:
+  DRYAD_STRONG_VINE5:
     output:
       type: WAND
-      id: DRYAD_STRONG_VINE
+      id: DRYAD_STRONG_VINE5
       amount: 1
     ingredients:
-    - mmoitem{type=QUEST,id=DRYAD_BARK,amount=1}
-    - mmoitem{type=WAND,id=DRYAD_WEAK_VINE,amount=1}
-  CARVING_AXE2:
+    - mmoitem{type=QUEST,id=DRYAD_BARK5,amount=1}
+    - mmoitem{type=WAND,id=DRYAD_WEAK_VINE4,amount=1}
+  CARVING_AXE5:
     output:
       type: AXE
-      id: CARVING_AXE2
+      id: CARVING_AXE5
       amount: 1
     ingredients:
-    - mmoitem{type=QUEST,id=DRYAD_BARK,amount=3}
-    - mmoitem{type=AXE,id=CARVING_AXE,amount=1}
+    - mmoitem{type=QUEST,id=DRYAD_BARK5,amount=3}
+    - mmoitem{type=AXE,id=CARVING_AXE4,amount=1}
   OAK_BARK:
     output:
       type: ACCESSORY
@@ -50,37 +50,37 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=8}
     conditions:
     - profession{profession=Foraging,level=3}
-  RUNNING_SPRITE:
+  RUNNING_SPRITE3:
     output:
       type: ACCESSORY
-      id: RUNNING_SPRITE
+      id: RUNNING_SPRITE3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=16}
     conditions:
     - profession{profession=Foraging,level=3}
-  SPEEDY_JUNGLE_WORKER:
+  SPEEDY_JUNGLE_WORKER2:
     output:
       type: ACCESSORY
-      id: SPEEDY_JUNGLE_WORKER
+      id: SPEEDY_JUNGLE_WORKER2
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=16}
     conditions:
     - profession{profession=Foraging,level=4}
-  FAST_HITTER:
+  FAST_HITTER3:
     output:
       type: ACCESSORY
-      id: FAST_HITTER
+      id: FAST_HITTER3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=16}
     conditions:
     - profession{profession=Foraging,level=4}
-  ROOTING:
+  ROOTING3:
     output:
       type: WAND
-      id: ROOTING
+      id: ROOTING3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=320}
@@ -91,19 +91,19 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=320}
     conditions:
     - profession{profession=Foraging,level=4}
-  MACHETE:
+  MACHETE3:
     output:
       type: DAGGER
-      id: MACHETE
+      id: MACHETE3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=320}
     conditions:
     - profession{profession=Foraging,level=4}
-  LOG_HELMET:
+  LOG_HELMET4:
     output:
       type: ARMOR
-      id: LOG_HELMET
+      id: LOG_HELMET4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=48}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=48}
@@ -113,10 +113,10 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=48}
     conditions:
     - profession{profession=Foraging,level=5}
-  LOG_CHESTPLATE:
+  LOG_CHESTPLATE4:
     output:
       type: ARMOR
-      id: LOG_CHESTPLATE
+      id: LOG_CHESTPLATE4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=64}
@@ -126,10 +126,10 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=5}
-  LOG_LEGGINGS:
+  LOG_LEGGINGS4:
     output:
       type: ARMOR
-      id: LOG_LEGGINGS
+      id: LOG_LEGGINGS4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=64}
@@ -139,10 +139,10 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=5}
-  LOG_BOOTS:
+  LOG_BOOTS4:
     output:
       type: ARMOR
-      id: LOG_BOOTS
+      id: LOG_BOOTS4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=48}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=48}
@@ -162,42 +162,42 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=16}
     conditions:
     - profession{profession=Foraging,level=5}
-  ACACIA_HEART:
+  ACACIA_HEART3:
     output:
       type: ACCESSORY
-      id: ACACIA_HEART
+      id: ACACIA_HEART3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=16}
     conditions:
     - profession{profession=Foraging,level=5}
-  SPEEDY_JUNGLE_WORKER2:
+  SPEEDY_JUNGLE_WORKER3:
     output:
       type: ACCESSORY
-      id: SPEEDY_JUNGLE_WORKER2
+      id: SPEEDY_JUNGLE_WORKER3
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=SPEEDY_JUNGLE_WORKER,amount=1}
+    - mmoitem{type=ACCESSORY,id=SPEEDY_JUNGLE_WORKER2,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=6}
-  FAST_HITTER2:
+  FAST_HITTER4:
     output:
       type: ACCESSORY
-      id: FAST_HITTER2
+      id: FAST_HITTER4
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=FAST_HITTER,amount=1}
+    - mmoitem{type=ACCESSORY,id=FAST_HITTER3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=6}
-  RUNNING_SPRITE2:
+  RUNNING_SPRITE4:
     output:
       type: ACCESSORY
-      id: RUNNING_SPRITE2
+      id: RUNNING_SPRITE4
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=RUNNING_SPRITE,amount=1}
+    - mmoitem{type=ACCESSORY,id=RUNNING_SPRITE3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=6}
@@ -211,13 +211,13 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=32}
     conditions:
     - profession{profession=Foraging,level=7}
-  ACACIA_HEART2:
+  ACACIA_HEART4:
     output:
       type: ACCESSORY
-      id: ACACIA_HEART2
+      id: ACACIA_HEART4
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=ACACIA_HEART,amount=1}
+    - mmoitem{type=ACCESSORY,id=ACACIA_HEART3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=7}
@@ -231,33 +231,33 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=64}
     conditions:
     - profession{profession=Foraging,level=8}
-  FAST_HITTER3:
+  FAST_HITTER5:
     output:
       type: ACCESSORY
-      id: FAST_HITTER3
+      id: FAST_HITTER5
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=FAST_HITTER2,amount=1}
+    - mmoitem{type=ACCESSORY,id=FAST_HITTER4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=128}
     conditions:
     - profession{profession=Foraging,level=8}
-  RUNNING_SPRITE3:
+  RUNNING_SPRITE5:
     output:
       type: ACCESSORY
-      id: RUNNING_SPRITE3
+      id: RUNNING_SPRITE5
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=RUNNING_SPRITE2,amount=1}
+    - mmoitem{type=ACCESSORY,id=RUNNING_SPRITE4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=128}
     conditions:
     - profession{profession=Foraging,level=8}
-  ACACIA_HEART3:
+  ACACIA_HEART5:
     output:
       type: ACCESSORY
-      id: ACACIA_HEART3
+      id: ACACIA_HEART5
       amount: 1
     ingredients:
-    - mmoitem{type=ACCESSORY,id=ACACIA_HEART2,amount=1}
+    - mmoitem{type=ACCESSORY,id=ACACIA_HEART4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=128}
     conditions:
     - profession{profession=Foraging,level=9}
@@ -271,10 +271,10 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=128}
     conditions:
     - profession{profession=Foraging,level=10}
-  JACKS_BESTEST_AXE:
+  JACKS_BESTEST_AXE5:
     output:
       type: TOOL
-      id: JACKS_BESTEST_AXE
+      id: JACKS_BESTEST_AXE5
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=320}
@@ -285,10 +285,10 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=320}
     conditions:
     - profession{profession=Foraging,level=10}
-  RICH_AXE:
+  RICH_AXE5:
     output:
       type: AXE
-      id: RICH_AXE
+      id: RICH_AXE5
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=320}

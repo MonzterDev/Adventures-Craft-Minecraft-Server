@@ -1,9 +1,9 @@
-Slayer: mmobkill MOOSHROOM_COW,CROP_SPIDER amount:10 events:entry_q1_complete,QuestReward1,quest2_starter ^notify
+Slayer: mmobkill SPIRIT_BULL,SPIRIT_SPIDER amount:10 events:entry_q1_complete,QuestReward1,quest2_starter notify:1
 
 DeliveryBrown: npcinteract 128 conditions:HoldingBrown,Brown32 events:quest2_part2_starter
 DeliveryRed: npcinteract 128 conditions:HoldingRed,Red32 events:quest2_part3_starter
 DeliveryMelon: npcinteract 128 conditions:HoldingMelon,Melon64 events:quest2_part4_starter
 DeliveryPumpkin: npcinteract 128 conditions:HoldingPumpkin,Pumpkin64 events:entry_q2_complete,QuestReward2,quest3_starter
 
-Witch: mmobkill WITCH1 amount:1 events:entry_q3_complete,QuestReward3  ^notify
+Witch: mmobkill SPIRIT_WITCH amount:1 events:entry_q3_complete,QuestReward3  notify:1
 

@@ -4,37 +4,43 @@ Reward: 0.0
 Worth: 0.0
 Slots: 9
 Rent:
-  Start: 1612886409792
-  Paid: 20000.0
+  Start: 1599817200185
+  Paid: 25000.0
 Priority: 4
 Icon:
   ==: org.bukkit.inventory.ItemStack
-  v: 2580
+  v: 2586
   type: DIRT
   meta:
     ==: ItemMeta
     meta-type: UNSPECIFIC
     lore:
-    - §8§l» §eClick to Access
+    - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+      "},{"bold":false,"italic":false,"color":"yellow","text":"Click to Access"}],"text":""}'
 item:
   '0':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: PLAYER_HEAD
       meta:
         ==: ItemMeta
         meta-type: SKULL
-        display-name: §eDeep Impactor
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Deep
+          Impactor"}],"text":""}'
         lore:
-        - §fAccessory
-        - ''
-        - '§4✦ Crit Damage: §c+50%'
-        - ''
-        - §7Place inside your §aAccessory Bag
-        - §7to receive the stat boost!
-        - ''
-        - §e§lEXOTIC ITEM
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Accessory"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"✦
+          Crit Damage: "},{"italic":false,"color":"red","text":"+50%"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Place
+          inside your "},{"italic":false,"color":"green","text":"Accessory Bag"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"to
+          receive the stat boost!"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"EXOTIC
+          ITEM"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier

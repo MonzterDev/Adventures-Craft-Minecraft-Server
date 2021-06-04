@@ -1,0 +1,272 @@
+# # Remove Targeter from Mob Damage to prevent it from damaging both the Villager and Player
+
+# # This is an Invisible Mob who will spawn in the waves
+# D_BOOSTER_STUNNING:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: SLIME_BALL
+#     ItemData: 0
+#   Display: '&8&lSTUNNING &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_STUNNING_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_STUNNING} ~onTimer:20
+
+# D_BOOSTER_ZAPPING:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: FIRE_CHARGE
+#     ItemData: 0
+#   Display: '&e&lZAPPING &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_ZAPPING_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_ZAPPING} ~onTimer:20
+
+# D_BOOSTER_HEALING:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: ENCHANTED_GOLDEN_APPLE
+#     ItemData: 0
+#   Display: '&a&lHEALING &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_HEALING_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_HEALING} ~onTimer:20
+
+# D_BOOSTER_SPEEDY:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: SUGAR
+#     ItemData: 0
+#   Display: '&2&lSPEEDY &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_SPEEDY_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_SPEEDY} ~onTimer:20
+
+# D_BOOSTER_DECOY:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: VILLAGER_SPAWN_EGG
+#     ItemData: 0
+#   Display: '&d&lDECOY &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_DECOY_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_DECOY} ~onTimer:20
+
+# D_BOOSTER_CURATIVE:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: POTION
+#     ItemData: 0
+#   Display: '&5&lCURATIVE &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_CURATIVE_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_CURATIVE} ~onTimer:20
+
+# #
+# #
+# # Single-Player BUFFS
+# #
+# #
+
+# D_BOOSTER_COIN:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: SUNFLOWER
+#     ItemData: 0
+#   Display: '&e&lCOIN &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_COIN_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_COIN} ~onTimer:20
+
+# D_BOOSTER_SEAL:
+#   Type: VILLAGER
+#   Disguise: 
+#     Type: ITEM
+#     Item: EMERALD
+#     ItemData: 0
+#   Display: '&3&lSEAL &6&lBOOSTER'
+#   Health: 9999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     Invincible: true
+#     NoGravity: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_BOOSTER_SEAL_NAME} ~onSpawn
+#   - skill{s=D_BOOSTER_SEAL} ~onTimer:20

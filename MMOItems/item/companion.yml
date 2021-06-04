@@ -1,4 +1,4 @@
-PET_SKELETON1:
+PET_SKELETON3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -17,18 +17,19 @@ PET_SKELETON1:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §7attack nearby §cfoes§7!
-    name: §9Undead Skeleton
+    name: <tier-color-cleaned>Undead Skeleton
     ability:
       ability1:
         type: PETSUMMONUSKELETON
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_SKELETONARCHER:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_SKELETON3
+PET_SKELETONARCHER3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -47,18 +48,19 @@ PET_SKELETONARCHER:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §7attack nearby §cfoes§7!
-    name: §9Undead Archer
+    name: <tier-color-cleaned>Undead Archer
     ability:
       ability1:
         type: PETSUMMONUARCHER
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_LOSTSOUL:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_SKELETON_ARCHER3
+PET_LOST_SOUL3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -77,18 +79,19 @@ PET_LOSTSOUL:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §7attack nearby §cfoes§7!
-    name: §9Lost Soul
+    name: <tier-color-cleaned>Lost Soul
     ability:
       ability1:
         type: PETSUMMONLOSTSOUL
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_REAPER:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_LOST_SOUL3
+PET_REAPER3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -107,18 +110,19 @@ PET_REAPER:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §7attack nearby §cfoes§7!
-    name: §9Reaper
+    name: <tier-color-cleaned>Reaper
     ability:
       ability1:
         type: PETSUMMONREAPER
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_ALPHASOUL:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_REAPER3
+PET_ALPHA_SOUL3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -137,18 +141,19 @@ PET_ALPHASOUL:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7has a §cfire aura §7around him!
-    name: §9Alpha Soul
+    name: <tier-color-cleaned>Alpha Soul
     ability:
       ability1:
         type: PETSUMMONALPHASOUL
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_UNDEADCASTER:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_ALPHA_SOUL3
+PET_UNDEAD_CASTER3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -167,18 +172,19 @@ PET_UNDEADCASTER:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §7attack nearby §cfoes§7!
-    name: §9Undead Caster
+    name: <tier-color-cleaned>Undead Caster
     ability:
       ability1:
         type: PETSUMMONUCASTER
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_UNDEADSPIDER:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_UNDEAD_CASTER3
+PET_UNDEAD_SPIDER3:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -197,18 +203,19 @@ PET_UNDEADSPIDER:
     - '§aLifespan§f: §f30s'
     - §a
     - §7Your §acompanion §7will §cslow §7its target for 5secs!
-    name: §9Undead Spider
+    name: <tier-color-cleaned>Undead Spider
     ability:
       ability1:
         type: PETSUMMONUSPIDER
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
-PET_BOSS:
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_UNDEAD_SPIDER3
+PET_MORDEN_THE_UNDEAD5:
   base:
     material: PLAYER_HEAD
     disable-repairing: true
@@ -225,17 +232,18 @@ PET_BOSS:
     - §a
     - §7Your §acompanion §7will give
     - §7you §aStrength 20 §7for 10secs!
-    name: §eMorden The Companion
+    name: <tier-color-cleaned>Morden The Companion
     ability:
       ability1:
         type: PETSUMMONMORDEN
         mode: RIGHT_CLICK
         cooldown: 60.0
-        mana: 100.0
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q0Njc5M2JkYmNlNWNhZDVmMzdiMTI0ZWFmMWUzNjg5YmJhMThkNTlhODA2ODU2N2M3NGY0ZmYxYTE4In19fQ==
       uuid: 738865a7-e9ff-40fe-8519-ea592fc26650
     unstackable: true
     disable-interaction: true
     item-cooldown: 60.0
-    revision-id: 2
+    revision-id: 3
+    custom-nbt:
+    - MYTHIC_TYPE PET_MORDEN_THE_UNDEAD5

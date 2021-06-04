@@ -3,7 +3,7 @@ ALPHA:
     material: BEDROCK
     disable-repairing: false
     disable-enchanting: false
-    name: '&eAlpharock'
+    name: <tier-color-cleaned>Alpharock
     disable-crafting: true
     lore:
     - '&7This item was exclusively'
@@ -23,6 +23,7 @@ ALPHA:
     enchants:
       unbreaking: 5.0
     hide-enchants: true
+    revision-id: 2
 BUG_FINDER:
   base:
     material: PLAYER_HEAD
@@ -39,30 +40,33 @@ BUG_FINDER:
     - '&7abusing it for personal gains!'
     - '&f'
     - '&fYou''re a true &aHERO&f!'
+    revision-id: 2
 UNAVAILABLE:
   base:
     material: RED_STAINED_GLASS_PANE
     name: '&c&lUNAVAILABLE'
+    revision-id: 2
 TEST:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFhOGU2ZDI3Yjk2YzBhYTRkZjViODM0NzI2MGViMDUxYzU2OTQ0Yzk3ZDgzN2YyMjY1NWQ4ZWNiYzQ0OTEzNyJ9fX0=
       uuid: 21e7f2f6-730c-4c7b-bac9-578518de42a0
+    revision-id: 2
 C:
   base:
     material: PLAYER_HEAD
-    revision-id: 2
+    revision-id: 3
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlNzIzMjY2Y2Q2ZGU2YWNmODYzOTA4M2NmZGZkNzEyNDUzNGZhN2E2M2E5MmY3ZTIxOGVkOTNmY2YzOGIzIn19fQ==
       uuid: e3018100-97a4-4209-a109-27bdf94a79c9
-    name: '&f'
+    name: <tier-color-cleaned>
     lore:
     - '&f'
 UNLIMITED_WATER:
   base:
     material: WATER_BUCKET
-    name: '&9Unlimited Water Bucket'
+    name: <tier-color-cleaned>Unlimited Water Bucket
     unstackable: true
     enchants:
       unbreaking: 5
@@ -71,3 +75,4 @@ UNLIMITED_WATER:
     - '&7The bucket which never runs out!'
     hide-enchants: true
     displayed-type: Miscellaneous
+    revision-id: 2

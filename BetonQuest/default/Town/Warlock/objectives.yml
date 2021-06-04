@@ -1,10 +1,10 @@
 
-HarvestWood: mmocorebreakblock 576 block:OAK_LOG events:quest1_starter_2 ^notify
-HarvestAzure: mmocorebreakblock 288 block:AZURE_BLUET events:quest1_starter_3 ^notify
+HarvestWood: mmocorebreakblock 576 block:OAK_LOG events:quest1_starter_2 notify:8
+HarvestAzure: mmocorebreakblock 288 block:AZURE_BLUET events:quest1_starter_3 notify:8
 Forge: location 63;24;-9;Spawn 5 events:QuestReward1,entry_q1_complete,quest2_starter
 
-HarvestWood2: mmocorebreakblock 576 block:OAK_LOG events:quest2_starter_2 ^notify
-HarvestMushroom: pickup RED_MUSHROOM amount:288 events:quest2_starter_3 ^notify
+HarvestWood2: mmocorebreakblock 576 block:OAK_LOG events:quest2_starter_2 notify:8
+HarvestMushroom: pickup RED_MUSHROOM amount:288 events:quest2_starter_3 notify:8
 Forge2: location 63;24;-9;Spawn 5 events:QuestReward2,entry_q2_complete,quest3_starter
 
 

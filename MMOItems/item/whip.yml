@@ -1,4 +1,4 @@
-BONEWHIP:
+BONEWHIP4:
   base:
     material: LEAD
     will-break: true
@@ -9,12 +9,13 @@ BONEWHIP:
     attack-damage: 40.0
     unbreakable: true
     tier: LEGENDARY
-    name: '&5Bonewhip'
+    name: <tier-color-cleaned>Bonewhip
     range: 3.0
     attack-speed: 2.0
     unstackable: true
     faction-damage-undead: 15.0
-BONEWHIP2:
+    revision-id: 2
+BONEWHIP5:
   base:
     material: LEAD
     will-break: true
@@ -25,7 +26,7 @@ BONEWHIP2:
     attack-damage: 95.0
     unbreakable: true
     tier: EXOTIC
-    name: '&eBonewhip'
+    name: <tier-color-cleaned>Bonewhip
     attack-speed: 3
     ability:
       ability1:
@@ -40,11 +41,11 @@ BONEWHIP2:
     range: 4.0
     unstackable: true
     faction-damage-undead: 20.0
-    revision-id: 2
-HELLS_FURRY:
+    revision-id: 3
+HELLS_FURRY4:
   base:
     material: LEAD
-    name: §5Hell's Fury
+    name: <tier-color-cleaned>Hell's Fury
     tier: LEGENDARY
     unbreakable: true
     gem-sockets:
@@ -61,10 +62,11 @@ HELLS_FURRY:
     attack-damage: 75.0
     range: 3.0
     faction-damage-hell: 20.0
-VOID_WHIP:
+    revision-id: 2
+VOID_WHIP3:
   base:
     material: LEAD
-    name: §9Void Whip
+    name: <tier-color-cleaned>Void Whip
     tier: RARE
     unbreakable: true
     gem-sockets:
@@ -76,7 +78,8 @@ VOID_WHIP:
     attack-damage: 100.0
     range: 3.0
     faction-damage-hell: 10.0
-THUNDRA_WHIP:
+    revision-id: 2
+THUNDRA_WHIP3:
   base:
     material: LEAD
     will-break: true
@@ -99,7 +102,7 @@ THUNDRA_WHIP:
       max-spread: 0.3
     range: 3.0
     tier: RARE
-    name: '&9Thundra Whip'
+    name: <tier-color-cleaned>Thundra Whip
     faction-damage-hell: 30.0
     unstackable: true
     ability:
@@ -109,7 +112,8 @@ THUNDRA_WHIP:
         damage: 25.0
         radius: 1.0
         cooldown: 2.5
-THUNDRA_WHIP2:
+    revision-id: 2
+THUNDRA_WHIP4:
   base:
     material: LEAD
     will-break: true
@@ -132,7 +136,7 @@ THUNDRA_WHIP2:
       max-spread: 0.3
     range: 4.0
     tier: LEGENDARY
-    name: '&5Thundra Whip'
+    name: <tier-color-cleaned>Thundra Whip
     faction-damage-hell: 50.0
     unstackable: true
     ability:
@@ -143,9 +147,9 @@ THUNDRA_WHIP2:
         radius: 2.0
         cooldown: 2.5
     gem-sockets:
-    - Unused      
-    revision-id: 2
-STEEL_WHIP:
+    - Unused
+    revision-id: 3
+STEEL_WHIP3:
   base:
     material: LEAD
     will-break: true
@@ -168,11 +172,11 @@ STEEL_WHIP:
       max-spread: 0.3
     range: 4.0
     tier: RARE
-    name: '&9Steel Whip'
+    name: <tier-color-cleaned>Steel Whip
     faction-damage-void: 30.0
     unstackable: true
-    revision-id: 2
-STEEL_WHIP2:
+    revision-id: 3
+STEEL_WHIP4:
   base:
     material: LEAD
     will-break: true
@@ -195,9 +199,9 @@ STEEL_WHIP2:
       max-spread: 0.3
     range: 4.0
     tier: LEGENDARY
-    name: '&5Steel Whip'
+    name: <tier-color-cleaned>Steel Whip
     faction-damage-void: 50.0
     unstackable: true
     gem-sockets:
-    - Unused      
-    revision-id: 2
+    - Unused
+    revision-id: 3

@@ -9,13 +9,13 @@ q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Slay 20 Unde
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
 QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give ARMOR BONE_SKULL %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward1_If_Not_Full: "run ^command mmoitems give ARMOR BONE_SKULL2 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
 QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
 QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aSlaying the Undead &cto redeem your rewards!'
 QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
 #FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give ARMOR BONE_SKULL %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+Claim_QuestReward1: "run ^command mmoitems give ARMOR BONE_SKULL2 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
 QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
 QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
@@ -39,13 +39,13 @@ GraveyardShopCompassHide: 'run ^opsudo calcomp toggle GraveyardShop disable'
 #IF the inventory is NOT FULL, it'll give rewards instantly
 QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
 QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
-QuestReward2_If_Not_Full: "run ^command mmoitems give ARMOR BONE_CHESTPLATE %player% 1 ^command mmoitems give ARMOR BONE_LEGS %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
+QuestReward2_If_Not_Full: "run ^command mmoitems give ARMOR BONE_CHESTPLATE2 %player% 1 ^command mmoitems give ARMOR BONE_LEGS2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
 QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
 QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aThe Silver Stool &cto redeem your rewards!'
 QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
-Claim_QuestReward2: "run ^command mmoitems give ARMOR BONE_CHESTPLATE %player% 1 ^command mmoitems give ARMOR BONE_LEGS %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
+Claim_QuestReward2: "run ^command mmoitems give ARMOR BONE_CHESTPLATE2 %player% 1 ^command mmoitems give ARMOR BONE_LEGS2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% slayer 50 ^command money give %player% 25"
 QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
 QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
@@ -67,13 +67,13 @@ q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nSpeak to the &cSilver 
 #IF the inventory is NOT FULL, it'll give rewards instantly
 QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
 QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmoitems give ARMOR BONE_FEET %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+QuestReward3_If_Not_Full: "run ^command mmoitems give ARMOR BONE_FEET2 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
 QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
 QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aHunting the Archers &cto redeem your rewards!'
 QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
 #THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmoitems give ARMOR BONE_FEET %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
+Claim_QuestReward3: "run ^command mmoitems give ARMOR BONE_FEET2 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 75"
 QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
 QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
@@ -96,13 +96,13 @@ ReaperCompassHide: 'run ^opsudo calcomp toggle Reaper disable'
 #IF the inventory is NOT FULL, it'll give rewards instantly
 QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
 QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command mmoitems give WHIP BONEWHIP %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
+QuestReward4_If_Not_Full: "run ^command mmoitems give WHIP BONEWHIP4 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
 QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
 QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aThe Undead Ruler &cto redeem your rewards!'
 QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
 #FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command mmoitems give WHIP BONEWHIP %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
+Claim_QuestReward4: "run ^command mmoitems give WHIP BONEWHIP4 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
 QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
 QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"

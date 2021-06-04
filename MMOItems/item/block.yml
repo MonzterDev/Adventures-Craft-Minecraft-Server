@@ -7,16 +7,19 @@
     material: STONE
     block-id: 1
     name: '&aMy First Custom Block'
+    revision-id: 2
 '2':
   base:
     material: STONE
     block-id: 2
     name: '&bMy Second Custom Block'
+    revision-id: 2
 '3':
   base:
     lore: []
     material: END_STONE
     block-id: 3
+    revision-id: 2
 BEDROCK:
   base:
     material: BEDROCK
@@ -26,7 +29,8 @@ BEDROCK:
     - '&cThis is placeable, and unable'
     - '&cto be broken or unplaced!'
     - '&cPlace with CAUTION!'
-    name: '&eBedrock'
+    name: <tier-color-cleaned>Bedrock
+    revision-id: 2
 TEST:
   base:
     material: DIRT
@@ -36,3 +40,4 @@ TEST:
     - NBT TEst
     name: '&ATest'
     tier: RARE
+    revision-id: 2

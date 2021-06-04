@@ -144,6 +144,31 @@ EXOTIC:
         # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Color.html
         color: 'YELLOW'
 
+ARTIFACT:
+    name: '&6&lARTIFACT'
+    unidentification:
+        name: 'Artifact'
+        prefix: '&e'
+        range: 6
+    deconstruct-item:
+        sucess:
+            coef: 1
+            items:
+                MATERIAL:
+                    EPIC_WEAPON_ESSENCE: 100,1-1,0
+        lose:
+            coef: 6
+            items:
+                MATERIAL:
+                    WEAPON_POWDER: 100,1-1,0
+    item-glow:
+        # When enabled, dropped items display
+        # an item hint (looks like a hologram).
+        hint: true
+        # Item glow color. List (line 400+):
+        # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Color.html
+        color: 'ORANGE'
+
 MAGICAL:
     name: '&d&lMAGICAL'
     unidentification:

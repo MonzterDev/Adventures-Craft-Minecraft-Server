@@ -1,7 +1,3 @@
-# For more information, check out the plugin manual or join us on Discord:
-# http://www.mythicmobs.net
-#  
-
 ##Seed Staff###
 SEEDSHOT:
   Skills:
@@ -14,7 +10,7 @@ SUPERSEED:
   - shoot{type=EGG;velocity=5;damage=1000} @target
   - effect:explosion @target
 
-##MACHETE###
+##MACHETE3###
 ROOT:
   Skills:
   - stun{d=60;f=true} @target
@@ -842,7 +838,7 @@ AMATERASU:
         - particles{p=flame;a=20;s=0.2;hS=0.1;vS=0.1}
       ]} @target
 
-#MAGMA_BLADE
+#MAGMA_BLADE4
 HellFire:
   Skills:
   - sound{s=item.firecharge.use;p=0.1} @target
@@ -871,7 +867,7 @@ HFdamage:
   Skills:
   - damage{a=100} #Damage per second for Hell Fire
 
-#CURSED_STAFF
+#CURSED_STAFF5
 UNDEAD_RIDER:
   Skills:
   - potion{t=SLOW;level=10;d=20;hasParticles=false} @self

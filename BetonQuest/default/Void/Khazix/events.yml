@@ -16,13 +16,13 @@ q1_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objec
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward1: "if empty0 QuestReward1_Full else QuestReward1_Folder"
 QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give CONSUMABLE THRALL_BALL %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
+QuestReward1_If_Not_Full: "run ^command mmoitems give CONSUMABLE THRALL_BALL3 %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
 QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
 QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give CONSUMABLE THRALL_BALL %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
+Claim_QuestReward1: "run ^command mmoitems give CONSUMABLE THRALL_BALL3 %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
 QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
 QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
@@ -71,13 +71,13 @@ q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
 QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmoitems give CATALYST UNBLINDER %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
+QuestReward3_If_Not_Full: "run ^command mmoitems give CATALYST UNBLINDER3 %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
 QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
 QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name3$ &cto redeem your rewards!'
 QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmoitems give CATALYST UNBLINDER %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
+Claim_QuestReward3: "run ^command mmoitems give CATALYST UNBLINDER3 %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
 QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
 QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
@@ -88,7 +88,7 @@ tag_q3_completed: 'tag add q3_completed'
 entry_q3_part1_remove: 'journal delete q3_part1'
 
 quest4_starter: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message'
-quest4_start: 'objective start BULB'
+quest4_start: 'objective start BULB3'
 tag_q4_part1: 'tag add q4_part1'
 entry_q4_part1: 'journal add q4_part1'
 q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-4$ \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$ \n&8&l »  $quest_reward3-5$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective4$'

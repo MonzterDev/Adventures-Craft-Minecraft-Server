@@ -1,0 +1,744 @@
+# # This is an Invisible Mob who will spawn in the waves
+# D_SPAWNER:
+#   Type: VILLAGER
+#   Display: ''
+#   Health: 999
+#   Damage: 0
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: false
+#     PreventRandomEquipment: true
+#     ApplyInvisibility: false
+#     Invincible: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 0
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_W1_START} ~onSignal:D_W1_START
+#   - skill{s=D_W2_START} ~onSignal:D_W2_START
+#   - skill{s=D_W3_START} ~onSignal:D_W3_START
+#   - skill{s=D_W4_START} ~onSignal:D_W4_START
+#   - skill{s=D_W5_START} ~onSignal:D_W5_START
+#   - skill{s=D_W6_START} ~onSignal:D_W6_START
+#   - skill{s=SCORE_ANNOUNCE} ~onSignal:SCORE
+#   - skill{s=D_AGRO_DECOY} ~onTimer:20
+
+# # This is the Villager who gives insight before Waves begin
+# D_INTRO:
+#   Type: VILLAGER
+#   Display: '&aSir Cyrus'
+#   Health: 999999
+#   Damage: 0
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cUndead Skeleton'
+#     Skin: INTRO
+#   Faction: Protect
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventTeleport: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=D_INTRO} ~onSpawn
+
+# # This is the Village who spawns in middle for Defense
+# D_VILLAGER:
+#   Type: VILLAGER
+#   Display: '&aVillager'
+#   BossBar:
+#     Enabled: true
+#     Title: '&aVillager <caster.hp>&f/&a<caster.mhp>'
+#     Range: 200
+#     Color: GREEN
+#     Style: SOLID
+#   Health: 100000
+#   Damage: 0
+#   Faction: Protect
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     AlwaysShowName: true
+#     Silent: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.0001
+#     FollowRange: 1
+#     Collidable: false
+#     Despawn: false
+#     PreventTeleport: true
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 1 clear
+#   Skills:
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_REMOVE_MOBS} @self ~onDeath # Removes all enemies if dies
+#   - teleportto{location=-101.5,4,-79.5} @self ~onTimer:200
+
+#   - skill{s=D_VILLAGER_EQUIP_POTION} ~onSignal:POTION_EQUIP # Defense Item
+#   - skill{s=D_VILLAGER_EQUIP_POTION2} ~onSignal:POTION_EQUIP2 # Defense Item
+#   - skill{s=D_VILLAGER_EQUIP_POTION3} ~onSignal:POTION_EQUIP3 # Defense Item
+# # First Skeleton Enemy
+# D_AGRO:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cUndead Captain'
+#   Health: 2500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cUndead Captain'
+#     Skin: undead_captain
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.15
+#     FollowRange: 20
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - D_UNDEAD_CHESTPLATE:CHEST
+#   - D_UNDEAD_LEGS:LEGS
+#   - D_UNDEAD_BOOTS:FEET
+#   - shield:HAND
+#   - shield:OFFHAND
+#   AIGoalSelectors:
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 clear
+#   - 1 SpecificFaction Protect
+#   Skills:
+#   - damage{amount=15;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_AGRO} ~onSpawn
+#   - skill{s=D_RALLY} ~onTimer:300
+
+# # First Skeleton Enemy
+# D_SKELETON:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cUndead Skeleton'
+#   Health: 1000
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cUndead Skeleton'
+#     Skin: skeleton
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.3
+#     FollowRange: 20
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - iron_axe:0
+#   - D_UNDEAD_CHESTPLATE:CHEST
+#   - D_UNDEAD_BOOTS:FEET
+#   - shield:5
+#   AIGoalSelectors:
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 attacker
+#   - 1 SpecificFaction Protect
+#   Skills:
+#   - damage{amount=35;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_AGRO} ~onSpawn
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .01
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=1} @self ~onDeath .05
+# # Skeleton Enemy, but increased Stats and Gear
+# D_ALPHA_SKELETON:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 15&7] &4Alpha Undead Skeleton'
+#   Health: 2500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 15&7] &4Alpha Undead Skeleton'
+#     Skin: skeleton
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .5
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.35
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - D_ALPHA_SKELETON_WEAPON:0
+#   - D_ALPHA_SKELETON_CHEST:CHEST
+#   - D_ALPHA_SKELETON_BOOTS:FEET
+#   - D_ALPHA_SKELETON_SHIELD:5
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 SpecificFaction Protect
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=45;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .05
+
+# # Second Enemy, an Archer
+# D_SKELETON_ARCHER:
+#   Type: SKELETON
+#   Display: '[&fLVL 10&7] &cUndead Archer'
+#   Health: 500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '[&fLVL 10&7] &cUndead Archer'
+#     Skin: ranger
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.24
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - crossbow:0
+#   - D_UNDEAD_LEGS:LEGS
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 arrowattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 player
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO_ARCHER} @self ~onSpawn
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .01
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - equip{item=crossbow:0} @self ~onSpawn
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=1} @self ~onDeath .05
+# # Second Enemy, an Archer
+# D_ALPHA_SKELETON_ARCHER:
+#   Type: SKELETON
+#   Display: '[&fLVL 10&7] &4Alpha Undead Archer'
+#   Health: 1000
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '[&fLVL 10&7] &4Alpha Undead Archer'
+#     Skin: ranger
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.24
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - D_ALPHA_SKELETON_ARCHER_CROSSBOW:0
+#   - D_ALPHA_SKELETON_ARCHER:LEGS
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 arrowattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 player
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=75;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO_ARCHER} @self ~onSpawn
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .05
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - equip{item=D_ALPHA_SKELETON_ARCHER_CROSSBOW:0} @self ~onSpawn
+
+# # Third Soul Enemy
+# D_ALPHA_SOUL:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cAlpha Soul'
+#   Health: 1000
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cAlpha Soul'
+#     Skin: alphasoul
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .25
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.27
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstrolls
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=25;ignoreArmor=false} ~onAttack
+#   - skill{s=D_ALPHA_SOUL_FIRE_AOE} ~onTimer:20
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .02
+
+# # Fourth Iron Golem Guard Enemy
+# D_UNDEAD_GUARD:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cUndead Guard'
+#   Health: 2500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: IRON_GOLEM
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .75
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.2
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
+#   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .025
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=1} @self ~onDeath .05
+# D_ALPHA_UNDEAD_GUARD:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &4Alpha Undead Guard'
+#   Health: 3500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: IRON_GOLEM
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 1
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.23
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=75;ignoreArmor=false} ~onAttack
+#   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .05
+
+# # Fourth Baby Zombie Summoner Guard Enemy
+# D_UNDEAD_SUMMONER:
+#   Type: BABY_ZOMBIE_VILLAGER
+#   Display: '&7[&fLVL 10&7] &cUndead Summoner'
+#   Health: 250
+#   Damage: 0
+#   Faction: Undead
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.4
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   Skills:
+#   - damage{amount=10;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .01
+
+# # Fifth Zombie Warrior Enemy
+# D_UNDEAD_WARRIOR:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cUndead Warrior'
+#   Health: 1000
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cUndead Warrior'
+#     Skin: UNDEAD_WARRIOR
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .25
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.28
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - diamond_axe:HAND
+#   - diamond_axe:OFFHAND
+#   - iron_chestplate:CHEST
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=45;ignoreArmor=false} ~onAttack
+#   - skill{s=D_UNDEAD_WARRIOR_LEAP} ~onTimer:100
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .01
+#   - summon{type=D_ALPHA_UNDEAD_WARRIOR;amount=1;radius=1} @self ~onDeath .05
+# D_ALPHA_UNDEAD_WARRIOR:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &4Alpha Undead Warrior'
+#   Health: 1500
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &4Alpha Undead Warrior'
+#     Skin: UNDEAD_WARRIOR
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .5
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.3
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - D_ALPHA_UNDEAD_WARRIOR_AXE:HAND
+#   - D_ALPHA_UNDEAD_WARRIOR_AXE:OFFHAND
+#   - D_ALPHA_UNDEAD_WARRIOR_CHEST:CHEST
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=65;ignoreArmor=false} ~onAttack
+#   - skill{s=D_UNDEAD_WARRIOR_LEAP} ~onTimer:100
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .05
+
+# # Fifth Spider Enemy
+# D_UNDEAD_SPIDER:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cUndead Spider'
+#   Health: 300
+#   Damage: 0
+#   Faction: Undead
+#   Disguise:
+#     Type: CAVE_SPIDER
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: 0
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.4
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=25;ignoreArmor=false} ~onAttack
+#   - potion{type=SLOW;duration=60;level=5} @target ~onAttack
+#   - potion{type=POISON;duration=60;level=20} @target ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .01
+
+# # Sixth Morden Enemy
+# D_GAMMA_BOSS:
+#   Type: ZOMBIE
+#   Display: '&7[&fLVL 10&7] &cMorden The Revived'
+#   Health: 10000
+#   Damage: 0
+#   BossBar:
+#     Enabled: true
+#     Title: '&7[&fLVL 10&7] &cMorden The Revived <caster.hp>&f/&c<caster.mhp>'
+#     Range: 50
+#     Color: RED
+#     Style: SOLID
+#   Disguise:
+#     Type: Player
+#     Player: '&7[&fLVL 10&7] &cMorden The Revived'
+#     Skin: undeadknight  
+#   Faction: Undead
+#   Modules:
+#     ImmunityTable: false
+#     ThreatTable: true
+#   Options:
+#     Persistent: false
+#     PreventSunburn: true
+#     AlwaysShowName: true
+#     PreventRandomEquipment: true
+#     KnockbackResistance: .75
+#     MaxCombatDistance: 50
+#     MovementSpeed: 0.22
+#     FollowRange: 1000
+#     Collidable: true
+#     Despawn: false
+#     PreventItemPickup: true
+#     PreventOtherDrops: true
+#     PreventJockeyMounts: true
+#     PreventTransformation: true
+#     AttackSpeed: 10
+#   Equipment:
+#   - iron_sword hand
+#   - golden_boots boots  
+#   AIGoalSelectors:
+#   - 0 clear
+#   - 1 meleeattack
+#   - 2 movetowardstarget
+#   - 3 randomlookaround
+#   - 4 randomstroll
+#   AITargetSelectors:
+#   - 0 OtherFactionVillagers
+#   - 1 attacker
+#   Skills:
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
+#   - skill{s=HPBAR} @self ~onDamaged
+#   - skill{s=D_AGRO} @self ~onSpawn
+#   - skill{s=D_WAVES} @MIR{r=250;t=D_SPAWNER} ~onDeath
+#   - skill{s=D_BOOSTER_CHOOSE} ~onDeath .05
+#   - effect:sound{s=ambient.cave;v=1;p=1} @self ~onSpawn
+#   - effect:sound{s=entity.wither_skeleton.death;v=1;p=1} @self ~onDeath
+#   - teleport{spreadh=5;spreadv=0} @target ~onTimer:400
+#   - skill{s=D_BOSS_PRISON} @target ~onAttack

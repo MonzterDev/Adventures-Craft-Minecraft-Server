@@ -9,13 +9,13 @@ q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Mine 32 Cobb
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
 QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE1 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Mining 50 ^command money give %player% 25"
+QuestReward1_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Mining 50 ^command money give %player% 25"
 QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
 QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aWood Meets Stone &cto redeem your rewards!'
 QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
 #FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give TOOL MINER_PICKAXE1 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Mining 50 ^command money give %player% 25"
+Claim_QuestReward1: "run ^command mmoitems give TOOL MINER_PICKAXE2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Mining 50 ^command money give %player% 25"
 QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
 QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
@@ -91,13 +91,13 @@ q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nBat Hunter&f! \n \n \n
 #IF the inventory is NOT FULL, it'll give rewards instantly
 QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
 QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE2 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+QuestReward4_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE3 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
 QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aHeavy Miner &cto redeem your rewards!'
 QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
 #FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command mmoitems give TOOL MINER_PICKAXE2 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+Claim_QuestReward4: "run ^command mmoitems give TOOL MINER_PICKAXE3 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
 QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"

@@ -14,18 +14,18 @@ items:
     material: RED_STAINED_GLASS_PANE
     name: '&c&lLOCKED'
 recipes:
-  Sharpness1:
+  Sharpness:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: SHARPNESS1
+      id: SHARPNESS
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=128}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant SHARPNESS 1",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   Sharpness2:
@@ -39,7 +39,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant SHARPNESS 2",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   Sharpness3:
@@ -53,7 +53,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant SHARPNESS 3",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   Sharpness4:
@@ -67,7 +67,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=16}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant SHARPNESS 4",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   Sharpness5:
@@ -81,22 +81,22 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=24}
     triggers:
     - exp{profession=ENCHANTING;amount=500}
-    - command{format="artifacts enchant SHARPNESS 5",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 5",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
 
-  LIFE_STEAL1:
+  LIFE_STEAL:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: LIFE_STEAL1
+      id: LIFE_STEAL
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPIDER_EYE,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant LIFE_STEAL 1",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   LIFE_STEAL2:
@@ -110,7 +110,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPIDER_EYE,amount=4}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant LIFE_STEAL 2",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=2}
   LIFE_STEAL3:
@@ -124,7 +124,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPIDER_EYE,amount=12}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant LIFE_STEAL 3",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   LIFE_STEAL4:
@@ -138,7 +138,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SPIDER_EYE,amount=16}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant LIFE_STEAL 4",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE1:
@@ -151,18 +151,18 @@ recipes:
     - vanilla{type=AIR,amount=0}
 
 
-  RELIEVE1:
+  RELIEVE:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: RELIEVE1
+      id: RELIEVE
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant RELIEVE 1",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   RELIEVE2:
@@ -176,7 +176,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant RELIEVE 2",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   RELIEVE3:
@@ -190,7 +190,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=16}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant RELIEVE 3",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   RELIEVE4:
@@ -204,7 +204,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=24}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant RELIEVE 4",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   UNAVAILABLE2:
@@ -216,18 +216,18 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  CULING1:
+  CULING:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: CULING1
+      id: CULING
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant CULING 1",sender=OP}
+    - command{format="mythicenchants enchant CULING 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   CULING2:
@@ -241,7 +241,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=16}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant CULING 2",sender=OP}
+    - command{format="mythicenchants enchant CULING 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   CULING3:
@@ -255,7 +255,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=24}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant CULING 3",sender=OP}
+    - command{format="mythicenchants enchant CULING 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=9}
     #Create a filler item, which will be put into all slots which aren't currently used, this works for multiple pages
@@ -282,18 +282,18 @@ recipes:
 
 
 
-  IMPAIRMENT1:
+  IMPAIRMENT:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: IMPAIRMENT1
+      id: IMPAIRMENT
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_MUTTON,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant IMPAIRMENT 1",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=2}
   IMPAIRMENT2:
@@ -307,7 +307,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_MUTTON,amount=4}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant IMPAIRMENT 2",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=4}
   IMPAIRMENT3:
@@ -321,7 +321,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_MUTTON,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant IMPAIRMENT 3",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE5:
@@ -341,18 +341,18 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  GNASH1:
+  GNASH:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: GNASH1
+      id: GNASH
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM,amount=4}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant GNASH 1",sender=OP}
+    - command{format="mythicenchants enchant GNASH 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   GNASH2:
@@ -366,7 +366,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant GNASH 2",sender=OP}
+    - command{format="mythicenchants enchant GNASH 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   GNASH3:
@@ -380,7 +380,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BROWN_MUSHROOM,amount=16}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant GNASH 3",sender=OP}
+    - command{format="mythicenchants enchant GNASH 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE7:
@@ -400,18 +400,18 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  IGNITE1:
+  IGNITE:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: IGNITE1
+      id: IGNITE
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant IGNITE 1",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   IGNITE2:
@@ -425,7 +425,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=4}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant IGNITE 2",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=4}
   IGNITE3:
@@ -439,7 +439,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant IGNITE 3",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE9:
@@ -459,18 +459,18 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  COMBUST1:
+  COMBUST:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: COMBUST1
+      id: COMBUST
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=2}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant COMBUST 1",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   COMBUST2:
@@ -484,7 +484,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant COMBUST 2",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   COMBUST3:
@@ -498,7 +498,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=12}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant COMBUST 3",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE11:
@@ -521,18 +521,18 @@ recipes:
 
 #PAGE 3
 
-  POSTHUMOUS1:
+  POSTHUMOUS:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: POSTHUMOUS1
+      id: POSTHUMOUS
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=2}    
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant POSTHUMOUS 1",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   POSTHUMOUS2:
@@ -546,7 +546,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}    
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant POSTHUMOUS 2",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   POSTHUMOUS3:
@@ -560,7 +560,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}    
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant POSTHUMOUS 3",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=9}
   UNAVAILABLE14:
@@ -580,18 +580,18 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  STAGGER1:
+  STAGGER:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: STAGGER1
+      id: STAGGER
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ICE,amount=1}        
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant STAGGER 1",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   STAGGER2:
@@ -605,7 +605,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_ICE,amount=8}        
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant STAGGER 2",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE18:
@@ -724,13 +724,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: SHARPNESS1
+      id: SHARPNESS
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant SHARPNESS 1",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   Sharpness2T:
@@ -744,7 +744,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant SHARPNESS 2",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   Sharpness3T:
@@ -758,7 +758,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant SHARPNESS 3",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   Sharpness4T:
@@ -772,7 +772,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK4,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant SHARPNESS 4",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   Sharpness5T:
@@ -786,7 +786,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK5,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=500}
-    - command{format="artifacts enchant SHARPNESS 5",sender=OP}
+    - command{format="mythicenchants enchant SHARPNESS 5",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
 
@@ -795,13 +795,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: LIFE_STEAL1
+      id: LIFE_STEAL
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant LIFE_STEAL 1",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   LIFE_STEAL2T:
@@ -815,7 +815,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant LIFE_STEAL 2",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=2}
   LIFE_STEAL3T:
@@ -829,7 +829,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant LIFE_STEAL 3",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   LIFE_STEAL4T:
@@ -843,7 +843,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK4,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant LIFE_STEAL 4",sender=OP}
+    - command{format="mythicenchants enchant LIFE_STEAL 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE1T:
@@ -861,13 +861,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: RELIEVE1
+      id: RELIEVE
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant RELIEVE 1",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=1}
   RELIEVE2T:
@@ -881,7 +881,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant RELIEVE 2",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   RELIEVE3T:
@@ -895,7 +895,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant RELIEVE 3",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   RELIEVE4T:
@@ -909,7 +909,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK4,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant RELIEVE 4",sender=OP}
+    - command{format="mythicenchants enchant RELIEVE 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   UNAVAILABLE2T:
@@ -926,13 +926,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: CULING1
+      id: CULING
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant CULING 1",sender=OP}
+    - command{format="mythicenchants enchant CULING 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   CULING2T:
@@ -946,7 +946,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant CULING 2",sender=OP}
+    - command{format="mythicenchants enchant CULING 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   CULING3T:
@@ -960,7 +960,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant CULING 3",sender=OP}
+    - command{format="mythicenchants enchant CULING 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=9}
     #Create a filler item, which will be put into all slots which aren't currently used, this works for multiple pages
@@ -992,13 +992,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: IMPAIRMENT1
+      id: IMPAIRMENT
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant IMPAIRMENT 1",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=2}
   IMPAIRMENT2T:
@@ -1012,7 +1012,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant IMPAIRMENT 2",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=4}
   IMPAIRMENT3T:
@@ -1026,7 +1026,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant IMPAIRMENT 3",sender=OP}
+    - command{format="mythicenchants enchant IMPAIRMENT 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE5T:
@@ -1051,13 +1051,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: GNASH1
+      id: GNASH
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant GNASH 1",sender=OP}
+    - command{format="mythicenchants enchant GNASH 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   GNASH2T:
@@ -1071,7 +1071,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant GNASH 2",sender=OP}
+    - command{format="mythicenchants enchant GNASH 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   GNASH3T:
@@ -1085,7 +1085,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant GNASH 3",sender=OP}
+    - command{format="mythicenchants enchant GNASH 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE7T:
@@ -1110,13 +1110,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: IGNITE1
+      id: IGNITE
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant IGNITE 1",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   IGNITE2T:
@@ -1130,7 +1130,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant IGNITE 2",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=4}
   IGNITE3T:
@@ -1144,7 +1144,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant IGNITE 3",sender=OP}
+    - command{format="mythicenchants enchant IGNITE 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   UNAVAILABLE9T:
@@ -1169,13 +1169,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: COMBUST1
+      id: COMBUST
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant COMBUST 1",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   COMBUST2T:
@@ -1189,7 +1189,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant COMBUST 2",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   COMBUST3T:
@@ -1203,7 +1203,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant COMBUST 3",sender=OP}
+    - command{format="mythicenchants enchant COMBUST 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE11TT:
@@ -1231,13 +1231,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: POSTHUMOUS1
+      id: POSTHUMOUS
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant POSTHUMOUS 1",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   POSTHUMOUS2T:
@@ -1251,7 +1251,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant POSTHUMOUS 2",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   POSTHUMOUS3T:
@@ -1265,7 +1265,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant POSTHUMOUS 3",sender=OP}
+    - command{format="mythicenchants enchant POSTHUMOUS 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=9}
   UNAVAILABLE14T:
@@ -1291,13 +1291,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: STAGGER1
+      id: STAGGER
     ingredients:
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant STAGGER 1",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=5}
   STAGGER2T:
@@ -1311,7 +1311,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant STAGGER 2",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE18T:

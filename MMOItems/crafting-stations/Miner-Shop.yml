@@ -1,7 +1,7 @@
 # 
 # Name which will be displayed
 # when opening the station
-name: §f§l»§7§l» §fMiner Shop §7§l«§f§l«
+name: <tier-color-cleaned>§l»§7§l» §fMiner Shop §7§l«§f§l«
 max-queue-size: 10
 items:
   fill:
@@ -11,323 +11,323 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  DRACS_FANG2:
+  DRACS_FANG4:
     output:
       type: ACCESSORY
-      id: DRACS_FANG2
+      id: DRACS_FANG4
     ingredients:
-    - mmoitem{type=ACCESSORY,id=DRACS_FANG,amount=1}
-    - mmoitem{type=QUEST,id=VAMPIRE_FANG,amount=512}
-  MANA_ORB:
-    output:
-      type: ACCESSORY
-      id: MANA_ORB
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=8}
-    conditions:
-    - profession{profession=Mining,level=1}
-  MANA_ORB2:
-    output:
-      type: ACCESSORY
-      id: MANA_ORB2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=16}
-    conditions:
-    - profession{profession=Mining,level=2}
+    - mmoitem{type=ACCESSORY,id=DRACS_FANG3,amount=1}
+    - mmoitem{type=QUEST,id=VAMPIRE_FANG2,amount=512}
   MANA_ORB3:
     output:
       type: ACCESSORY
       id: MANA_ORB3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=8}
+    conditions:
+    - profession{profession=Mining,level=1}
+  MANA_ORB4:
+    output:
+      type: ACCESSORY
+      id: MANA_ORB4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=16}
+    conditions:
+    - profession{profession=Mining,level=2}
+  MANA_ORB5:
+    output:
+      type: ACCESSORY
+      id: MANA_ORB5
+    ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=32}
     conditions:
     - profession{profession=Mining,level=4}
-  WARLOCK_NECKLACE:
-    output:
-      type: ACCESSORY
-      id: WARLOCK_NECKLACE
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=8}
-    conditions:
-    - profession{profession=Mining,level=1}
-  WARLOCK_NECKLACE2:
-    output:
-      type: ACCESSORY
-      id: WARLOCK_NECKLACE2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=16}
-    conditions:
-    - profession{profession=Mining,level=2}
   WARLOCK_NECKLACE3:
     output:
       type: ACCESSORY
       id: WARLOCK_NECKLACE3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=8}
+    conditions:
+    - profession{profession=Mining,level=1}
+  WARLOCK_NECKLACE4:
+    output:
+      type: ACCESSORY
+      id: WARLOCK_NECKLACE4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=16}
+    conditions:
+    - profession{profession=Mining,level=2}
+  WARLOCK_NECKLACE5:
+    output:
+      type: ACCESSORY
+      id: WARLOCK_NECKLACE5
+    ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=32}
     conditions:
     - profession{profession=Mining,level=4}
-  MAGE_ORB:
-    output:
-      type: ACCESSORY
-      id: MAGE_ORB
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=8}
-    conditions:
-    - profession{profession=Mining,level=1}
-  MAGE_ORB2:
-    output:
-      type: ACCESSORY
-      id: MAGE_ORB2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=16}
-    conditions:
-    - profession{profession=Mining,level=2}
   MAGE_ORB3:
     output:
       type: ACCESSORY
       id: MAGE_ORB3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=8}
+    conditions:
+    - profession{profession=Mining,level=1}
+  MAGE_ORB4:
+    output:
+      type: ACCESSORY
+      id: MAGE_ORB4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=16}
+    conditions:
+    - profession{profession=Mining,level=2}
+  MAGE_ORB5:
+    output:
+      type: ACCESSORY
+      id: MAGE_ORB5
+    ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=32}
     conditions:
     - profession{profession=Mining,level=4}
-  HEALTHY_MINERAL:
-    output:
-      type: ACCESSORY
-      id: HEALTHY_MINERAL
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=8}
-    conditions:
-    - profession{profession=Mining,level=1}
-  HEALTHY_MINERAL2:
-    output:
-      type: ACCESSORY
-      id: HEALTHY_MINERAL2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=16}
-    conditions:
-    - profession{profession=Mining,level=2}
   HEALTHY_MINERAL3:
     output:
       type: ACCESSORY
       id: HEALTHY_MINERAL3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=8}
+    conditions:
+    - profession{profession=Mining,level=1}
+  HEALTHY_MINERAL4:
+    output:
+      type: ACCESSORY
+      id: HEALTHY_MINERAL4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=16}
+    conditions:
+    - profession{profession=Mining,level=2}
+  HEALTHY_MINERAL5:
+    output:
+      type: ACCESSORY
+      id: HEALTHY_MINERAL5
+    ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=32}
     conditions:
     - profession{profession=Mining,level=4}
-  GREEN_LIMESTONE:
-    output:
-      type: ACCESSORY
-      id: GREEN_LIMESTONE
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=8}
-    conditions:
-    - profession{profession=Mining,level=1}
-  GREEN_LIMESTONE2:
-    output:
-      type: ACCESSORY
-      id: GREEN_LIMESTONE2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=16}
-    conditions:
-    - profession{profession=Mining,level=2}
   GREEN_LIMESTONE3:
     output:
       type: ACCESSORY
       id: GREEN_LIMESTONE3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=8}
+    conditions:
+    - profession{profession=Mining,level=1}
+  GREEN_LIMESTONE4:
+    output:
+      type: ACCESSORY
+      id: GREEN_LIMESTONE4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=16}
+    conditions:
+    - profession{profession=Mining,level=2}
+  GREEN_LIMESTONE5:
+    output:
+      type: ACCESSORY
+      id: GREEN_LIMESTONE5
+    ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=32}
     conditions:
     - profession{profession=Mining,level=4}
-  COAL_CATALYST:
+  COAL_CATALYST3:
     output:
       type: CATALYST
-      id: COAL_CATALYST
+      id: COAL_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_COAL,amount=64}
     conditions:
     - profession{profession=Mining,level=3}
-  IRON_CATALYST:
+  IRON_CATALYST3:
     output:
       type: CATALYST
-      id: IRON_CATALYST
+      id: IRON_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=64}
     conditions:
     - profession{profession=Mining,level=4}
-  GOLD_CATALYST:
+  GOLD_CATALYST3:
     output:
       type: CATALYST
-      id: GOLD_CATALYST
+      id: GOLD_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=64}
     conditions:
     - profession{profession=Mining,level=5}
-  REDSTONE_CATALYST:
+  REDSTONE_CATALYST3:
     output:
       type: CATALYST
-      id: REDSTONE_CATALYST
+      id: REDSTONE_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=64}
     conditions:
     - profession{profession=Mining,level=7}
-  LAPIS_CATALYST:
+  LAPIS_CATALYST3:
     output:
       type: CATALYST
-      id: LAPIS_CATALYST
+      id: LAPIS_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=64}
     conditions:
     - profession{profession=Mining,level=8}
-  DIAMOND_CATALYST:
+  DIAMOND_CATALYST3:
     output:
       type: CATALYST
-      id: DIAMOND_CATALYST
+      id: DIAMOND_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=64}
     conditions:
     - profession{profession=Mining,level=9}
-  EMERALD_CATALYST:
+  EMERALD_CATALYST3:
     output:
       type: CATALYST
-      id: EMERALD_CATALYST
+      id: EMERALD_CATALYST3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=64}
     conditions:
     - profession{profession=Mining,level=10}
-  GEM_HELMET:
-    output:
-      type: ARMOR
-      id: GEM_HELMET
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
-    conditions:
-    - profession{profession=Mining,level=2}
-  GEM_CHESTPLATE:
-    output:
-      type: ARMOR
-      id: GEM_CHESTPLATE
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
-    conditions:
-    - profession{profession=Mining,level=2}
-  GEM_LEGGINGS:
-    output:
-      type: ARMOR
-      id: GEM_LEGGINGS
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
-    conditions:
-    - profession{profession=Mining,level=2}
-  GEM_BOOTS:
-    output:
-      type: ARMOR
-      id: GEM_BOOTS
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
-    conditions:
-    - profession{profession=Mining,level=2}
-  GEM_HELMET2:
-    output:
-      type: ARMOR
-      id: GEM_HELMET2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
-    - mmoitem{type=ARMOR,id=GEM_HELMET,amount=1}
-    conditions:
-    - profession{profession=Mining,level=4}
-  GEM_CHESTPLATE2:
-    output:
-      type: ARMOR
-      id: GEM_CHESTPLATE2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
-    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE,amount=1}
-    conditions:
-    - profession{profession=Mining,level=4}
-  GEM_LEGGINGS2:
-    output:
-      type: ARMOR
-      id: GEM_LEGGINGS2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
-    - mmoitem{type=ARMOR,id=GEM_LEGGINGS,amount=1}
-    conditions:
-    - profession{profession=Mining,level=4}
-  GEM_BOOTS2:
-    output:
-      type: ARMOR
-      id: GEM_BOOTS2
-    ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
-    - mmoitem{type=ARMOR,id=GEM_BOOTS,amount=1}
-    conditions:
-    - profession{profession=Mining,level=4}
   GEM_HELMET3:
     output:
       type: ARMOR
       id: GEM_HELMET3
     ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
-    - mmoitem{type=ARMOR,id=GEM_HELMET2,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
-    - profession{profession=Mining,level=6}
+    - profession{profession=Mining,level=2}
   GEM_CHESTPLATE3:
     output:
       type: ARMOR
       id: GEM_CHESTPLATE3
     ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
-    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE2,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
-    - profession{profession=Mining,level=6}
+    - profession{profession=Mining,level=2}
   GEM_LEGGINGS3:
     output:
       type: ARMOR
       id: GEM_LEGGINGS3
     ingredients:
-    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
-    - mmoitem{type=ARMOR,id=GEM_LEGGINGS2,amount=1}
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
     conditions:
-    - profession{profession=Mining,level=6}
+    - profession{profession=Mining,level=2}
   GEM_BOOTS3:
     output:
       type: ARMOR
       id: GEM_BOOTS3
     ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE,amount=8}
+    conditions:
+    - profession{profession=Mining,level=2}
+  GEM_HELMET4:
+    output:
+      type: ARMOR
+      id: GEM_HELMET4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_HELMET3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  GEM_CHESTPLATE4:
+    output:
+      type: ARMOR
+      id: GEM_CHESTPLATE4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  GEM_LEGGINGS4:
+    output:
+      type: ARMOR
+      id: GEM_LEGGINGS4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_LEGGINGS3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  GEM_BOOTS4:
+    output:
+      type: ARMOR
+      id: GEM_BOOTS4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE3,amount=16}
+    - mmoitem{type=ARMOR,id=GEM_BOOTS3,amount=1}
+    conditions:
+    - profession{profession=Mining,level=4}
+  GEM_HELMET5:
+    output:
+      type: ARMOR
+      id: GEM_HELMET5
+    ingredients:
     - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
-    - mmoitem{type=ARMOR,id=GEM_BOOTS2,amount=1}    
+    - mmoitem{type=ARMOR,id=GEM_HELMET4,amount=1}
     conditions:
     - profession{profession=Mining,level=6}
-  MINING1:
+  GEM_CHESTPLATE5:
+    output:
+      type: ARMOR
+      id: GEM_CHESTPLATE5
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_CHESTPLATE4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  GEM_LEGGINGS5:
+    output:
+      type: ARMOR
+      id: GEM_LEGGINGS5
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_LEGGINGS4,amount=1}
+    conditions:
+    - profession{profession=Mining,level=6}
+  GEM_BOOTS5:
+    output:
+      type: ARMOR
+      id: GEM_BOOTS5
+    ingredients:
+    - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=24}
+    - mmoitem{type=ARMOR,id=GEM_BOOTS4,amount=1}    
+    conditions:
+    - profession{profession=Mining,level=6}
+  MINING_CATALYST3:
     output:
       type: CATALYST
-      id: MINING1
+      id: MINING_CATALYST3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_GOLD,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_IRON,amount=2}
     conditions:
     - profession{profession=Mining,level=2}
-  MINING2:
+  MINING_CATALYST4:
     output:
       type: CATALYST
-      id: MINING2
+      id: MINING_CATALYST4
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE,amount=8}
     - mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS,amount=8}
-    - mmoitem{type=CATALYST,id=MINING1,amount=1}
+    - mmoitem{type=CATALYST,id=MINING_CATALYST3,amount=1}
     conditions:
     - profession{profession=Mining,level=4}
-  MINING3:
+  MINING_CATALYST5:
     output:
       type: CATALYST
-      id: MINING3
+      id: MINING_CATALYST5
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD,amount=16}
-    - mmoitem{type=CATALYST,id=MINING2,amount=1}
+    - mmoitem{type=CATALYST,id=MINING_CATALYST4,amount=1}
     conditions:
     - profession{profession=Mining,level=8}
   MinerSnack1:

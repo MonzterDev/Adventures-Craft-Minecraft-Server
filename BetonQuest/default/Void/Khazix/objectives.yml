@@ -1,16 +1,16 @@
 #1
-q1Thrall: mmobkill VOID_THRALL amount:30 events:quest1_part2_starter ^notify
-q1Thrall_Delivery: npcinteract 157 conditions:Eggs events:entry_q1_complete,quest2_starter,QuestReward1 ^notify
+q1Thrall: mmobkill VOID_THRALL amount:30 events:quest1_part2_starter notify:5
+q1Thrall_Delivery: npcinteract 157 conditions:Eggs events:entry_q1_complete,quest2_starter,QuestReward1 notify:1
 
 #2
-VoidWorshipers: mmobkill VOID_WORSHIPER amount:50 events:quest2_part2_starter ^notify
-DNA_Deliver: npcinteract 157 conditions:DNA events:entry_q2_complete,quest3_starter,QuestReward2 ^notify
+VoidWorshipers: mmobkill VOID_WORSHIPER amount:50 events:quest2_part2_starter notify:5
+DNA_Deliver: npcinteract 157 conditions:DNA events:entry_q2_complete,quest3_starter,QuestReward2 notify:1
 
 #3
-Blinders: mmobkill VOID_SOURCE amount:20 events:entry_q3_complete,quest4_starter,QuestReward3 ^notify
+Blinders: mmobkill VOID_SOURCE amount:20 events:entry_q3_complete,quest4_starter,QuestReward3 notify:5
 
 #4
-BULB: location -159;44;-1001;Spawn 500 conditions:BULBLIN,BULLBO events:entry_q4_complete,quest5_starter,QuestReward4
+BULB3: location -159;44;-1001;Spawn 500 conditions:BULBLIN,BULLBO events:entry_q4_complete,quest5_starter,QuestReward4
 
 #5
 SpiralCrystal1: npcinteract 158 events:CrystalPoint,Hide_Crystal_Start1,CrystalFound
@@ -28,5 +28,5 @@ SpiralCrystal12: npcinteract 169 events:CrystalPoint,Hide_Crystal_Start12,Crysta
 SpiralCrystal_Complete: location -159;44;-1001;Spawn 500 conditions:Crystals events:entry_q5_complete,quest6_starter,QuestReward5
 
 #6
-ChorusBreak: mmocorebreakblock 128 block:CHORUS_FLOWER events:quest6_part2_starter ^notify
-ChorusDelivery: npcinteract 157 conditions:Chorus events:QuestReward6,entry_q6_complete ^notify
+ChorusBreak: mmocorebreakblock 128 block:CHORUS_FLOWER events:quest6_part2_starter notify:8
+ChorusDelivery: npcinteract 157 conditions:Chorus events:QuestReward6,entry_q6_complete notify:1

@@ -1,48 +1,53 @@
 WOODENSWORD:
   base:
-    material: wooden_sword
-    name: §fWooden Sword
+    material: WOODEN_SWORD
+    name: <tier-color-cleaned>Wooden Sword
     attack-damage: 4.0
     will-break: true
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 STONESWORD:
   base:
-    material: STONE_sword
-    name: '&fStone sword'
+    material: STONE_SWORD
+    name: <tier-color-cleaned>Stone Sword
     attack-damage: 5.0
     will-break: true
     unbreakable: true
     tier: COMMON
-GOLDSWORD:
-  base:
-    material: golden_sword
-    name: '&fGolden sword'
-    attack-damage: 5.0
-    will-break: true
-    unbreakable: true
-    tier: COMMON
+    revision-id: 2
 IRONSWORD:
   base:
-    material: iron_sword
-    name: '&fIron sword'
+    material: IRON_SWORD
+    name: <tier-color-cleaned>Iron Sword
     attack-damage: 6.0
     will-break: true
     unbreakable: true
     tier: COMMON
+    revision-id: 2
+GOLDSWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: <tier-color-cleaned>Golden Sword
+    attack-damage: 5.0
+    will-break: true
+    unbreakable: true
+    tier: COMMON
+    revision-id: 2
 DIAMONDSWORD:
   base:
-    material: diamond_sword
-    name: '&fDiamond sword'
+    material: DIAMOND_SWORD
+    name: <tier-color-cleaned>Diamond Sword
     attack-damage: 7.0
     will-break: true
     unbreakable: true
     tier: COMMON
     custom-model-data: 0.0
+    revision-id: 2
 SILVER_SWORD:
   base:
     material: IRON_SWORD
-    name: '&fSilver Sword'
+    name: <tier-color-cleaned>Silver Sword
     attack-damage: 30.0
     lore:
     - '&7May be upgraded.'
@@ -54,6 +59,7 @@ SILVER_SWORD:
       max: 10
     faction-damage-undead: 5.0
     durability: 1.0
+    revision-id: 2
 BASIC_SWORD:
   base:
     material: WOODEN_SWORD
@@ -67,29 +73,30 @@ BASIC_SWORD:
     - §rEnjoy your §lBasic Sword§r!
     disable-interaction: false
     tier: COMMON
-    ability: {}
-BONE_SWORD1:
+    revision-id: 2
+BONE_SWORD3:
   base:
     material: IRON_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
     tier: RARE
-    name: §9Bone Sword
+    name: <tier-color-cleaned>Bone Sword
     faction-damage-undead: 50.0
     attack-damage: 95.0
     critical-strike-power: 15.0
     gem-sockets:
-    - Melee
+    - Unused
     durability: 2.0
-BONE_SWORD2:
+    revision-id: 2
+BONE_SWORD5:
   base:
     material: GOLDEN_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
     tier: EXOTIC
-    name: §eBone Sword
+    name: <tier-color-cleaned>Bone Sword
     faction-damage-undead: 75.0
     attack-damage: 125.0
     critical-strike-power: 30.0
@@ -97,9 +104,10 @@ BONE_SWORD2:
     - §7This sword is a trophy for those
     - §7who defeated §cMorden the Revived§7!
     gem-sockets:
-    - Melee
-    - Melee
+    - Unused
+    - Unused
     durability: 1.0
+    revision-id: 2
 GOD:
   base:
     material: IRON_SWORD
@@ -111,10 +119,11 @@ GOD:
         damage: 1000.0
         cooldown: 0.0
         mode: RIGHT_CLICK
-MAGMA_BLADE:
+    revision-id: 2
+MAGMA_BLADE4:
   base:
     material: GOLDEN_SWORD
-    name: '&5Magma Blade'
+    name: <tier-color-cleaned>Magma Blade
     disable-crafting: true
     attack-damage: 125.0
     critical-strike-chance: 15.0
@@ -122,7 +131,7 @@ MAGMA_BLADE:
     tier: LEGENDARY
     fire-damage-reduction: 100.0
     gem-sockets:
-    - Melee
+    - Unused
     lore:
     - '&cIgnite &7enemy for &c5secs &7dealing &c100 damage'
     - '&7per second. If the enemy is already ignited,'
@@ -136,14 +145,15 @@ MAGMA_BLADE:
     critical-strike-power: 35.0
     faction-damage-void: 25.0
     durability: 2.0
-BULBLIN_SWORD:
+    revision-id: 2
+BULBLIN_SWORD4:
   base:
     material: DIAMOND_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
     tier: LEGENDARY
-    name: §5Bulblin Sword
+    name: <tier-color-cleaned>Bulblin Sword
     faction-damage-void: 25.0
     attack-damage: 175.0
     critical-strike-power: 45.0
@@ -151,15 +161,16 @@ BULBLIN_SWORD:
     - §7Forged deep in the §5Void §7from massive
     - §7amounts of darkness and §8corruption§7!
     gem-sockets:
-    - Melee
-BULBLIN_SWORD2:
+    - Unused
+    revision-id: 2
+BULBLIN_SWORD5:
   base:
     material: NETHERITE_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
     tier: EXOTIC
-    name: §eBulblin Sword
+    name: <tier-color-cleaned>Bulblin Sword
     faction-damage-void: 50.0
     attack-damage: 250.0
     critical-strike-power: 75.0
@@ -171,12 +182,13 @@ BULBLIN_SWORD2:
     - §7Forged deep in the §5Void §7from massive
     - §7amounts of darkness and §8corruption§7!
     gem-sockets:
-    - Melee
-    - Melee
-    - Melee
+    - Unused
+    - Unused
+    - Unused
     ability:
       ability1:
         type: DRAIN
         mode: RIGHT_CLICK
         mana: 100.0
         cooldown: 10.0
+    revision-id: 2
