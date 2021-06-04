@@ -1,8 +1,8 @@
-8c52f91e0b - Last occurred: 2021-02-21 Occurrences: 139
+5fb4db06fa - Last occurred: 2021-04-20 Occurrences: 244
 ---- Context 5 ----
 Plan v5.1 build 791
-Purpur git-Purpur-805 (MC: 1.16.3)
-Server v1.16.3-R0.1-SNAPSHOT
+Purpur git-Purpur-982 (MC: 1.16.5)
+Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
 ViaVersion
@@ -14,8 +14,8 @@ Incorrect character encoding in MySQL
 
 ---- Context 4 ----
 Plan v5.1 build 791
-Purpur git-Purpur-805 (MC: 1.16.3)
-Server v1.16.3-R0.1-SNAPSHOT
+Purpur git-Purpur-982 (MC: 1.16.5)
+Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
 ViaVersion
@@ -27,8 +27,8 @@ Incorrect character encoding in MySQL
 
 ---- Context 3 ----
 Plan v5.1 build 791
-Purpur git-Purpur-805 (MC: 1.16.3)
-Server v1.16.3-R0.1-SNAPSHOT
+Purpur git-Purpur-982 (MC: 1.16.5)
+Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
 ViaVersion
@@ -40,8 +40,8 @@ Incorrect character encoding in MySQL
 
 ---- Context 2 ----
 Plan v5.1 build 791
-Purpur git-Purpur-805 (MC: 1.16.3)
-Server v1.16.3-R0.1-SNAPSHOT
+Purpur git-Purpur-982 (MC: 1.16.5)
+Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
 ViaVersion
@@ -53,8 +53,8 @@ Incorrect character encoding in MySQL
 
 ---- Context 1 ----
 Plan v5.1 build 791
-Purpur git-Purpur-805 (MC: 1.16.3)
-Server v1.16.3-R0.1-SNAPSHOT
+Purpur git-Purpur-982 (MC: 1.16.5)
+Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
 ViaVersion
@@ -76,8 +76,8 @@ java.lang.IllegalArgumentException: class com.djrapitops.extension.ViaVersionExt
    com.djrapitops.plan.extension.ExtensionSvc.updateServerValues(ExtensionSvc.java:197)
    com.djrapitops.plan.extension.ExtensionServerMethodCallerTask.run(ExtensionServerMethodCallerTask.java:41)
    com.djrapitops.plugin.task.bukkit.BukkitRunnableFactory$1.run(BukkitRunnableFactory.java:55)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftTask.run(CraftTask.java:99)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:100)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
    com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
    java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
    java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
@@ -99,8 +99,8 @@ java.lang.reflect.InvocationTargetException
    com.djrapitops.plan.extension.ExtensionSvc.updateServerValues(ExtensionSvc.java:197)
    com.djrapitops.plan.extension.ExtensionServerMethodCallerTask.run(ExtensionServerMethodCallerTask.java:41)
    com.djrapitops.plugin.task.bukkit.BukkitRunnableFactory$1.run(BukkitRunnableFactory.java:55)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftTask.run(CraftTask.java:99)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:100)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
    com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
    java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
    java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
@@ -128,8 +128,8 @@ com.djrapitops.plan.exceptions.database.DBOpException: SQL Failure: Illegal mix 
    com.djrapitops.plan.extension.ExtensionSvc.updateServerValues(ExtensionSvc.java:197)
    com.djrapitops.plan.extension.ExtensionServerMethodCallerTask.run(ExtensionServerMethodCallerTask.java:41)
    com.djrapitops.plugin.task.bukkit.BukkitRunnableFactory$1.run(BukkitRunnableFactory.java:55)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftTask.run(CraftTask.java:99)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:100)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
    com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
    java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
    java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
@@ -164,8 +164,8 @@ java.sql.SQLException: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) a
    com.djrapitops.plan.extension.ExtensionSvc.updateServerValues(ExtensionSvc.java:197)
    com.djrapitops.plan.extension.ExtensionServerMethodCallerTask.run(ExtensionServerMethodCallerTask.java:41)
    com.djrapitops.plugin.task.bukkit.BukkitRunnableFactory$1.run(BukkitRunnableFactory.java:55)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftTask.run(CraftTask.java:99)
-   org.bukkit.craftbukkit.v1_16_R2.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:100)
+   org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:58)
    com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
    java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
    java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)

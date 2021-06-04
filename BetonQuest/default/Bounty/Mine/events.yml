@@ -21,7 +21,7 @@ RunOn500Points: 'objective start RunOn500Points'
 entry_q1_complete: 'folder default-Points.GiveBountyPoint,tag_q1_completed,q1_finish_message,QuestReward1,del_q1_part1,StopObjective'
 QuestReward1: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Mining 250 ^command money give %player% 200"
 tag_q1_completed: 'tag add q1_completed'
-q1_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$"
+q1_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$'
 
 
 #SECOND
@@ -95,7 +95,7 @@ BreakEmeraldBlockStop: 'objective delete BreakEmeraldBlock'
 entry_q2_complete: 'folder default-Points.GiveBountyPoint,BreakEmeraldBlockStop,BreakDiamondBlockStop,BreakLapisBlockStop,BreakRedstoneBlockStop,BreakGoldBlockStop,BreakIronBlockStop,BreakCoalBlockStop,BreakEmeraldStop,BreakDiamondStop,BreakCoalStop,BreakIronStop,BreakGoldStop,BreakRedstoneStop,BreakLapisStop,tag_q2_completed,q2_finish_message,QuestReward2,del_q2_part1'
 QuestReward2: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 250"
 tag_q2_completed: 'tag add q2_completed'
-q2_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$"
+q2_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$'
 Completing2nd: 'objective start Completing2nd'
 
 
@@ -143,11 +143,11 @@ eEmeraldTake: 'take eEmerald'
 entry_q3_complete: 'folder default-Points.GiveBountyPoint,eEmeraldStop,eDiamondStop,eCoalStop,eIronStop,eGoldStop,eRedstoneStop,eLapisStop,tag_q3_completed,q3_finish_message,QuestReward3,del_q3_part1'
 QuestReward3: "run ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Mining 750 ^command money give %player% 500"
 tag_q3_completed: 'tag add q3_completed'
-q3_finish_message: "run ^message \n&4&lBounty Completed:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$"
+q3_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$'
 Completing3rd: 'objective start Completing3rd'
 1Material: 'objective start 1Material'
 
 #First item delivery
-1Material_Message: "run ^message &8[&aGeorge&8] &7Bring me 1 more &9Enchanted Mineral&7!"
+1Material_Message: 'run ^notify &8[&aGeorge&8] &7Bring me 1 more &9Enchanted Mineral&7!'
 
 BountyMenu: "run ^command dm open Bounty %player%"

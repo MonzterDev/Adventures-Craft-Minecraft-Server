@@ -1,14 +1,14 @@
 KillUndead: mmobkill GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior
-  amount:50 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify
+  amount:50 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 ^notify
   
-KillCasters: mmobkill UndeadCaster amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify
+KillCasters: mmobkill UndeadCaster amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 ^notify
 
 KillUndead2: mmobkill UndeadSpider amount:20 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3
-  notify
-KillCaster: mmobkill UndeadCaster amount:1 events:quest4p2_starter notify
-KillSummoner: mmobkill UndeadSummoner amount:1 events:quest4p3_starter notify
+  ^notify
+KillCaster: mmobkill UndeadCaster amount:1 events:quest4p2_starter ^notify
+KillSummoner: mmobkill UndeadSummoner amount:1 events:quest4p3_starter ^notify
 KillGuard: mmobkill UndeadGuard amount:1 events:entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4
-  notify
+  ^notify
 NPC1: npcinteract 84 events:quest5p2_starter,FindRonCompassHide
 NPC2: npcinteract 86 events:quest5p3_starter,FindPeterCompassHide
 NPC3: npcinteract 88 events:quest5p4_starter,FindSallyCompassHide

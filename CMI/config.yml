@@ -92,7 +92,7 @@ Optimizations:
   # Set this to 0 to disable
   ImmortalityOnJoin: 3
   # Enables or disables maintenance mode
-  Maintenance: false
+  Maintenance: true
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
   MaintenanceAutoKick: true
   # When enabled will show bossbar message informing about current maintenance mode being enabled
@@ -210,6 +210,9 @@ Optimizations:
     # List of worlds to whichones player can't go back with /back command
     BackBlackList:
     - TeztWorldz
+  Hat:
+    # When enabled we will not allow to place items into head slot if item has custom lore
+    IgnoreLored: true
   helpop:
     # When set to true player will not see his sent message to helpop, but rather predefined message informing that his question have been sent to online staff
     feedbackMessage: true
@@ -287,6 +290,7 @@ Optimizations:
       # This will use separate locale line which includes direction to the player
       # So instead of having something like 123m you will have ~100m
       Approximate: true
+      DefaultDistance: 200
       # When enabled, players can click on each player name and simple /cmi point [location] will be performed which shows particles directing towards target player
       PointTo: true
       # How many lines you want to show when using /near command
@@ -387,6 +391,10 @@ Worth:
   # Color codes and capitalization are being ignored
   BadLore:
   - Creative item by Gasha
+  # If enabled any item with custom name will not be allowed to be sold with /cmi sell command
+  CustomNameBlocking: false
+  # If enabled any item with custom lore will not be allowed to be sold with /cmi sell command
+  LoreBlocking: false
 BossBar:
   # Enables or disbales bossbar hp bar on 1.9+ servers
   # Only players with cmi.bossbar.hpbar permission node can see it
@@ -449,7 +457,7 @@ ReSpawn:
     - homeLocation
     - worldSpawn
   # Defines respawn order for defines worlds
-  # Remove world if you want to leave respawn handling for server or 3rd party plugin
+  # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
     Spawn:
     - spawn
@@ -470,6 +478,7 @@ Afk:
   StopPlayTime: false
   # Defines how long to wait after player stops moving to set him as afk
   # Player needs to have cmi.command.afk.auto permission node
+  # Set to 0 if you want to disable it
   AutoAfkIn: 300
   # Defines commands to be performed when player enters afk mode automatically while addling
   # Supports specialized commands
@@ -483,11 +492,11 @@ Afk:
   AfkLeaveCmds:
   - cmi broadcast !&6[playerDisplayName] &eis no longer AFK
   # Defines how long to wait after player stops moving to kick player
-  # This is aditional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
+  # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
   # This can be used not only to kick but to perform repeating action every x seconds if needed
   # Keep it at -1 to disable auto kick
   # Can be bypassed with cmi.command.afk.kickbypass permission node
-  # Aditionally players kick time can be changed with cmi.command.afk.kickOutIn.[seconds] permission node where bigger value takes priority
+  # Additionally players kick time can be changed with cmi.command.afk.kickOutIn.[seconds] permission node where bigger value takes priority
   AutoKickIn: -1
   # This will define how long to wait before performing kick commands again
   RepeatingAutoKickInterval: 300
@@ -619,6 +628,10 @@ Signs:
   # Bigger numbers can help slightly lower server load
   # This is not essential to keep in low numbers
   CheckInterval: 5000
+  # Defines list sign top lines which cant be edited with shift right click
+  # Usually used for preventing shop sign modifications
+  editBlackList:
+  - '[Shop]'
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -1121,6 +1134,8 @@ Elytra:
     # Disables option to use rockets to boost yourself while flying with elytra
     PreventRocketUsage: false
 FlightCharge:
+  # By default boss bar message will be shown with remaining charges. If disabled then bossbar will only appear when flight charge was modified but not when its depleating while flying
+  ShowBossBar: true
   # When set to true, each time player gets flight charge or relogs, his fly mode will be toggled on
   # If set to false, then players will have to manually turn on flight with /cmi flyc
   EnabledByDefault: true
@@ -1305,6 +1320,10 @@ WorldLimits:
   # If player will have cmi.worldlimit.fly.bypass permission node, fly mode wont be changed
   Fly:
   - Spawn:False
+  # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
+  # Players joining worlds with disable elytra flight will get their elytra dismounted if posible
+  ElytraFlight:
+  - worldName:False
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoof: true
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
@@ -1313,7 +1332,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, fly mode wont be changed
   GodMode:
   - Spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     Spawn:
     - None
@@ -1463,6 +1482,8 @@ Combat:
     - msg
     - r
     - tell
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false
   Mob:
     # If set to true, then player who gets placed into combat mode will get its fly mode disabled
     # Can be bypassed with cmi.pvp.MFlyBypass permission node
@@ -1479,6 +1500,8 @@ Combat:
     - msg
     - r
     - tell
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false
   Heads:
     Player:
       Drop: false
@@ -1528,6 +1551,7 @@ Vanish:
     noMessages: false
     fakeJoinLeave: false
     mobSpawning: false
+    stopPlaytime: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1877,6 +1901,8 @@ Scavenge:
   BlackToWhiteList: false
   # When set to false while player have open scavange UI they will not be able to pickup item from ground
   AllowItemPickups: false
+  # When enabled items, likes swords, after being salvagted if they dint broke then their repair cost will be reset so players can enchant it as like its a new one instead of making it to dificult to be enchanted
+  ResetRepairCost: true
 BungeeCord:
   # You can disable bungeecord support entirely if you are exrperiencing issues with it
   # When setting this to false some features like public messages over bungee cord, private messages over bungeecord, portals over bungecoord and other features will stop working

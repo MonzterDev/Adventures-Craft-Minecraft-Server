@@ -167,14 +167,6 @@ on player join:
 			warp_Bullbo(player)
 			execute console command "/lp user %player% permission set SEND.BULLBO false"
 
-on join:
-	if player doesn't have permission "RP.DOWNLOAD":
-		send message "&cYou disabled our Resource Pack! Use &a/RP enable &cto enable it again." to player
-	if player has permission "RP.DOWNLOAD":
-		send the resource pack from "https://www.dropbox.com/s/9ame51dgtjdmadq/AdventuresCraft3.zip?dl=1" with hash "f2e3f6cbda5745e5a08fbb43e3ea881de9f8c30b" to the player
-		wait 10 seconds
-		if the player doesn't have a resource pack loaded:
-			send message "&cIf you're not seeing the Resource Pack, you must enable the setting before joining the server!" to player
 
 on player join:
 	if player is in world "Homes":

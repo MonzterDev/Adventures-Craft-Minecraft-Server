@@ -24,6 +24,9 @@ Alias:
   # /cmi alert $1-
   /alert: true
   #  
+  # /cmi alertlist $1-
+  /alertlist: false
+  #  
   # /cmi aliaseditor $1-
   /aliaseditor: true
   #  
@@ -221,6 +224,9 @@ Alias:
   # /cmi ext $1-
   /ext: true
   #  
+  # /cmi falldistance $1-
+  /falldistance: false
+  #  
   # /cmi feed $1-
   /feed: true
   #  
@@ -369,6 +375,9 @@ Alias:
   /item: true
   /i: true
   #  
+  # /cmi itemcmdata $1-
+  /itemcmdata: true
+  #  
   # /cmi itemframe $1-
   /itemframe: false
   #  
@@ -402,11 +411,15 @@ Alias:
   # /cmi kick $1-
   /kick: true
   #  
+  # /cmi kill $1-
+  /kill: false
+  #  
   # /cmi killall $1-
   /killall: true
   #  
   # /cmi kit $1-
   /kit: true
+  /kits: false
   # /cmi kit -preview $1-
   /kitpreview: true
   #  

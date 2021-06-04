@@ -1,0 +1,75 @@
+#
+# 1.0.8 GUIHelper by GabyTM
+#
+# Default values that will be used in the config creation process
+#
+
+ASkyBlock:
+  price: 100
+  sellprice: 10
+
+BossShopPro:
+  menu:
+    RewardType: playercommand
+    PriceType: free
+    Reward: # Must be a list
+      - 'say This is a reward'
+      - 'say This is another reward'
+    Message: '&aThis is a message!'
+  shop:
+    RewardType: ITEM
+    PriceType: MONEY
+    Price: 10
+    Message: '&aYou''ve purchased &e%reward%&a for &e$%price%'
+    lore: '#&eClick to buy for &e$%price%' # This line will be added after the item lore
+
+CratesPlus:
+  Type: ITEM
+  Percentage: 10
+
+CrazyCrates:
+  MaxRange: 100
+  Chance: 10
+  Firework: false
+
+CrazyEnvoy:
+  Chance: 10
+  Drop-Items: false
+
+LemonMobCoins:
+  permission: false
+  price: 100
+
+ShopGUIPlus:
+  type: item
+  buyPrice: 10
+  sellPrice: 10
+
+SuperLobbyDeluxe:
+  keep-open: true
+  commands:
+    - 'server: example'
+
+#
+# Generate your own configs using templates!
+#
+# Placeholders:
+#  • {amount}          - (number) the item amount
+#  • {args}            - (string) the arguments specified after the creation command, alternative use {args[index]} to
+#                                 target a certain argument (replace 'index' with the position, eg 1 for the first argument)
+#  • {data}            - (number) the item data / damage value
+#  • {enchanted}       - (boolean) check if the item is enchanted or not
+#  • {flag_(flag)}     - (boolean) check if the item have the specified flag (http://bit.ly/itemflag)
+#  • {material}        - (string) the item material
+#  • {name}            - (string) the item display name
+#  • {essentials_name} - (string) the item display name following the format used by Essentials
+#  • {essentials_lore} - (string) the item lore following the format used by Essentials
+#  • {slot}            - (number) the item position in the GUI
+#
+templates:
+  deluxemenus-example:
+    'item-{slot}':
+      material: '{material}'
+      slot: '{slot}'
+      hide_attributes: '{flag_hide_attributes}'
+      display_name: '&c{name}'

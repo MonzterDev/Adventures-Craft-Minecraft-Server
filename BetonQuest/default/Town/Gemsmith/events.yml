@@ -7,7 +7,7 @@ quest1_start_Diamond: 'objective start BringDiamond'
 quest1_start_Emerald: 'objective start BringEmerald'
 tag_q1_part1: 'tag add q1_part1'
 entry_q1_part1: 'journal add q1_part1'
-q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
 #FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
 #IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
@@ -15,12 +15,12 @@ QuestReward1Coal: "if empty0 QuestReward1_FullCoal else QuestReward1_FolderCoal"
 QuestReward1_FolderCoal: 'folder QuestReward1_If_Not_FullCoal,QuestReward1_Claimed_TagCoal'
 QuestReward1_If_Not_FullCoal: "run ^command mmoitems give MATERIAL GEM_BASE %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
 QuestReward1_FullCoal: 'folder QuestReward1_Full_messageCoal,QuestReward1_Full_TagCoal'
-QuestReward1_Full_messageCoal: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_messageCoal: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_TagCoal: "tag add q1_rewards_unclaimedCoal"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_ClaimCoal: 'folder Claim_QuestReward1Coal,QuestReward1_Claim_messageCoal,QuestReward1_Claimed_TagCoal,QuestReward1_del_Claimed_TagCoal'
 Claim_QuestReward1Coal: "run ^command mmoitems give MATERIAL GEM_BASE %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
-QuestReward1_Claim_messageCoal: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claim_messageCoal: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_TagCoal: "tag add q1_rewards_claimedCoal"
 QuestReward1_del_Claimed_TagCoal: "tag del q1_rewards_unclaimedCoal"
 #
@@ -28,12 +28,12 @@ QuestReward1Iron: "if empty0 QuestReward1_FullIron else QuestReward1_FolderIron"
 QuestReward1_FolderIron: 'folder QuestReward1_If_Not_FullIron,QuestReward1_Claimed_TagIron'
 QuestReward1_If_Not_FullIron: "run ^command mmoitems give MATERIAL GEM_BASE2 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
 QuestReward1_FullIron: 'folder QuestReward1_Full_messageIron,QuestReward1_Full_TagIron'
-QuestReward1_Full_messageIron: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_messageIron: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_TagIron: "tag add q1_rewards_unclaimedIron"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_ClaimIron: 'folder Claim_QuestReward1Iron,QuestReward1_Claim_messageIron,QuestReward1_Claimed_TagIron,QuestReward1_del_Claimed_TagIron'
 Claim_QuestReward1Iron: "run ^command mmoitems give MATERIAL GEM_BASE2 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
-QuestReward1_Claim_messageIron: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claim_messageIron: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_TagIron: "tag add q1_rewards_claimedIron"
 QuestReward1_del_Claimed_TagIron: "tag del q1_rewards_unclaimedIron"
 #
@@ -41,12 +41,12 @@ QuestReward1Gold: "if empty0 QuestReward1_FullGold else QuestReward1_FolderGold"
 QuestReward1_FolderGold: 'folder QuestReward1_If_Not_FullGold,QuestReward1_Claimed_TagGold'
 QuestReward1_If_Not_FullGold: "run ^command mmoitems give MATERIAL GEM_BASE3 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
 QuestReward1_FullGold: 'folder QuestReward1_Full_messageGold,QuestReward1_Full_TagGold'
-QuestReward1_Full_messageGold: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_messageGold: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_TagGold: "tag add q1_rewards_unclaimedGold"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_ClaimGold: 'folder Claim_QuestReward1Gold,QuestReward1_Claim_messageGold,QuestReward1_Claimed_TagGold,QuestReward1_del_Claimed_TagGold'
 Claim_QuestReward1Gold: "run ^command mmoitems give MATERIAL GEM_BASE3 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
-QuestReward1_Claim_messageGold: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claim_messageGold: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_TagGold: "tag add q1_rewards_claimedGold"
 QuestReward1_del_Claimed_TagGold: "tag del q1_rewards_unclaimedGold"
 #
@@ -54,12 +54,12 @@ QuestReward1Diamond: "if empty0 QuestReward1_FullDiamond else QuestReward1_Folde
 QuestReward1_FolderDiamond: 'folder QuestReward1_If_Not_FullDiamond,QuestReward1_Claimed_TagDiamond'
 QuestReward1_If_Not_FullDiamond: "run ^command mmoitems give MATERIAL GEM_BASE4 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
 QuestReward1_FullDiamond: 'folder QuestReward1_Full_messageDiamond,QuestReward1_Full_TagDiamond'
-QuestReward1_Full_messageDiamond: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_messageDiamond: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_TagDiamond: "tag add q1_rewards_unclaimedDiamond"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_ClaimDiamond: 'folder Claim_QuestReward1Diamond,QuestReward1_Claim_messageDiamond,QuestReward1_Claimed_TagDiamond,QuestReward1_del_Claimed_TagDiamond'
 Claim_QuestReward1Diamond: "run ^command mmoitems give MATERIAL GEM_BASE4 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
-QuestReward1_Claim_messageDiamond: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claim_messageDiamond: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_TagDiamond: "tag add q1_rewards_claimedDiamond"
 QuestReward1_del_Claimed_TagDiamond: "tag del q1_rewards_unclaimedDiamond"
 #
@@ -67,12 +67,12 @@ QuestReward1Emerald: "if empty0 QuestReward1_FullEmerald else QuestReward1_Folde
 QuestReward1_FolderEmerald: 'folder QuestReward1_If_Not_FullEmerald,QuestReward1_Claimed_TagEmerald'
 QuestReward1_If_Not_FullEmerald: "run ^command mmoitems give MATERIAL GEM_BASE5 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
 QuestReward1_FullEmerald: 'folder QuestReward1_Full_messageEmerald,QuestReward1_Full_TagEmerald'
-QuestReward1_Full_messageEmerald: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!"
+QuestReward1_Full_messageEmerald: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_TagEmerald: "tag add q1_rewards_unclaimedEmerald"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_ClaimEmerald: 'folder Claim_QuestReward1Emerald,QuestReward1_Claim_messageEmerald,QuestReward1_Claimed_TagEmerald,QuestReward1_del_Claimed_TagEmerald'
 Claim_QuestReward1Emerald: "run ^command mmoitems give MATERIAL GEM_BASE5 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 450"
-QuestReward1_Claim_messageEmerald: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward1_Claim_messageEmerald: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_TagEmerald: "tag add q1_rewards_claimedEmerald"
 QuestReward1_del_Claimed_TagEmerald: "tag del q1_rewards_unclaimedEmerald"
 
@@ -99,7 +99,7 @@ Emerald_Tag: "tag add Emerald_Tag"
 
 entry_q1_completed: 'journal add q1_completed'
 tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal remove q1_part1'
+entry_q1_part1_remove: 'journal delete q1_part1'
 
 
 
@@ -118,11 +118,11 @@ entry_q2_part1_base5: 'journal add q2_part1_base5'
 
 tag_q2_part1: 'tag add q2_part1'
 
-q2_start_message_coal: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4_coal$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2_coal$"
-q2_start_message_iron: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4_iron$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2_iron$"
-q2_start_message_gold: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4_gold$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2_gold$"
-q2_start_message_diamond: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4_diamond$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2_diamond$"
-q2_start_message_emerald: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-4_emerald$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2_emerald$"
+q2_start_message_coal: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4_coal$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2_coal$'
+q2_start_message_iron: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4_iron$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2_iron$'
+q2_start_message_gold: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4_gold$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2_gold$'
+q2_start_message_diamond: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4_diamond$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2_diamond$'
+q2_start_message_emerald: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4_emerald$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2_emerald$'
 
 #FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
 #IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
@@ -131,12 +131,12 @@ QuestReward2Coal: "if empty0 QuestReward2_FullCoal else QuestReward2_FolderCoal"
 QuestReward2_FolderCoal: 'folder QuestReward2_If_Not_FullCoal,QuestReward2_Claimed_TagCoal'
 QuestReward2_If_Not_FullCoal: "run ^command mmoitems give GEM_STONE DAMAGE_GEM %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Mining 250 ^command money give %player% 100"
 QuestReward2_FullCoal: 'folder QuestReward2_Full_messageCoal,QuestReward2_Full_TagCoal'
-QuestReward2_Full_messageCoal: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_messageCoal: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_TagCoal: "tag add q2_rewards_unclaimedCoal"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_ClaimCoal: 'folder Claim_QuestReward2Coal,QuestReward2_Claim_messageCoal,QuestReward2_Claimed_TagCoal,QuestReward2_del_Claimed_TagCoal'
 Claim_QuestReward2Coal: "run ^command mmoitems give GEM_STONE DAMAGE_GEM %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Mining 250 ^command money give %player% 100"
-QuestReward2_Claim_messageCoal: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claim_messageCoal: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_TagCoal: "tag add q2_rewards_claimedCoal"
 QuestReward2_del_Claimed_TagCoal: "tag del q2_rewards_unclaimedCoal"
 #
@@ -144,12 +144,12 @@ QuestReward2Iron: "if empty0 QuestReward2_FullIron else QuestReward2_FolderIron"
 QuestReward2_FolderIron: 'folder QuestReward2_If_Not_FullIron,QuestReward2_Claimed_TagIron'
 QuestReward2_If_Not_FullIron: "run ^command mmoitems give GEM_STONE DAMAGE_GEM2 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 250"
 QuestReward2_FullIron: 'folder QuestReward2_Full_messageIron,QuestReward2_Full_TagIron'
-QuestReward2_Full_messageIron: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_messageIron: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_TagIron: "tag add q2_rewards_unclaimedIron"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_ClaimIron: 'folder Claim_QuestReward2Iron,QuestReward2_Claim_messageIron,QuestReward2_Claimed_TagIron,QuestReward2_del_Claimed_TagIron'
 Claim_QuestReward2Iron: "run ^command mmoitems give GEM_STONE DAMAGE_GEM2 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command money give %player% 250"
-QuestReward2_Claim_messageIron: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claim_messageIron: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_TagIron: "tag add q2_rewards_claimedIron"
 QuestReward2_del_Claimed_TagIron: "tag del q2_rewards_unclaimedIron"
 #
@@ -157,12 +157,12 @@ QuestReward2Gold: "if empty0 QuestReward2_FullGold else QuestReward2_FolderGold"
 QuestReward2_FolderGold: 'folder QuestReward2_If_Not_FullGold,QuestReward2_Claimed_TagGold'
 QuestReward2_If_Not_FullGold: "run ^command mmoitems give GEM_STONE DAMAGE_GEM3 %player% 1 ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Mining 750 ^command money give %player% 500"
 QuestReward2_FullGold: 'folder QuestReward2_Full_messageGold,QuestReward2_Full_TagGold'
-QuestReward2_Full_messageGold: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_messageGold: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_TagGold: "tag add q2_rewards_unclaimedGold"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_ClaimGold: 'folder Claim_QuestReward2Gold,QuestReward2_Claim_messageGold,QuestReward2_Claimed_TagGold,QuestReward2_del_Claimed_TagGold'
 Claim_QuestReward2Gold: "run ^command mmoitems give GEM_STONE DAMAGE_GEM3 %player% 1 ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Mining 750 ^command money give %player% 500"
-QuestReward2_Claim_messageGold: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claim_messageGold: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_TagGold: "tag add q2_rewards_claimedGold"
 QuestReward2_del_Claimed_TagGold: "tag del q2_rewards_unclaimedGold"
 #
@@ -170,12 +170,12 @@ QuestReward2Diamond: "if empty0 QuestReward2_FullDiamond else QuestReward2_Folde
 QuestReward2_FolderDiamond: 'folder QuestReward2_If_Not_FullDiamond,QuestReward2_Claimed_TagDiamond'
 QuestReward2_If_Not_FullDiamond: "run ^command mmoitems give GEM_STONE DAMAGE_GEM4 %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Mining 1000 ^command money give %player% 750"
 QuestReward2_FullDiamond: 'folder QuestReward2_Full_messageDiamond,QuestReward2_Full_TagDiamond'
-QuestReward2_Full_messageDiamond: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_messageDiamond: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_TagDiamond: "tag add q2_rewards_unclaimedDiamond"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_ClaimDiamond: 'folder Claim_QuestReward2Diamond,QuestReward2_Claim_messageDiamond,QuestReward2_Claimed_TagDiamond,QuestReward2_del_Claimed_TagDiamond'
 Claim_QuestReward2Diamond: "run ^command mmoitems give GEM_STONE DAMAGE_GEM4 %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Mining 1000 ^command money give %player% 750"
-QuestReward2_Claim_messageDiamond: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claim_messageDiamond: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_TagDiamond: "tag add q2_rewards_claimedDiamond"
 QuestReward2_del_Claimed_TagDiamond: "tag del q2_rewards_unclaimedDiamond"
 #
@@ -183,12 +183,12 @@ QuestReward2Emerald: "if empty0 QuestReward2_FullEmerald else QuestReward2_Folde
 QuestReward2_FolderEmerald: 'folder QuestReward2_If_Not_FullEmerald,QuestReward2_Claimed_TagEmerald'
 QuestReward2_If_Not_FullEmerald: "run ^command mmoitems give GEM_STONE DAMAGE_GEM5 %player% 1 ^command mmocore admin exp give %player% main 1250 ^command mmocore admin exp give %player% Mining 1250 ^command money give %player% 1000"
 QuestReward2_FullEmerald: 'folder QuestReward2_Full_messageEmerald,QuestReward2_Full_TagEmerald'
-QuestReward2_Full_messageEmerald: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!"
+QuestReward2_Full_messageEmerald: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_TagEmerald: "tag add q2_rewards_unclaimedEmerald"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_ClaimEmerald: 'folder Claim_QuestReward2Emerald,QuestReward2_Claim_messageEmerald,QuestReward2_Claimed_TagEmerald,QuestReward2_del_Claimed_TagEmerald'
 Claim_QuestReward2Emerald: "run ^command mmoitems give GEM_STONE DAMAGE_GEM5 %player% 1 ^command mmocore admin exp give %player% main 1250 ^command mmocore admin exp give %player% Mining 1250 ^command money give %player% 1000"
-QuestReward2_Claim_messageEmerald: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward2_Claim_messageEmerald: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_TagEmerald: "tag add q2_rewards_claimedEmerald"
 QuestReward2_del_Claimed_TagEmerald: "tag del q2_rewards_unclaimedEmerald"
 
@@ -213,18 +213,18 @@ TakeBase4: 'take Base4:1'
 Take32Coal: 'take eCoal:32'
 TakeBase5: 'take Base5:1'
 
-entry_remove_q2_part1_base: 'journal del q2_part1_base'
-entry_remove_q2_part1_base2: 'journal del q2_part1_base2'
-entry_remove_q2_part1_base3: 'journal del q2_part1_base3'
-entry_remove_q2_part1_base4: 'journal del q2_part1_base4'
-entry_remove_q2_part1_base5: 'journal del q2_part1_base5'
+entry_remove_q2_part1_base: 'journal delete q2_part1_base'
+entry_remove_q2_part1_base2: 'journal delete q2_part1_base2'
+entry_remove_q2_part1_base3: 'journal delete q2_part1_base3'
+entry_remove_q2_part1_base4: 'journal delete q2_part1_base4'
+entry_remove_q2_part1_base5: 'journal delete q2_part1_base5'
 
 
-q2_end_message_coal: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4_coal$ \n&8&l »  $quest_reward2-1_coal$ \n&8&l »  $quest_reward2-2_coal$ \n&8&l »  $quest_reward2-3_coal$ \n \n \n $quest_complete2_base_message$"
-q2_end_message_iron: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4_iron$ \n&8&l »  $quest_reward2-1_iron$ \n&8&l »  $quest_reward2-2_iron$ \n&8&l »  $quest_reward2-3_iron$ \n \n \n $quest_complete2_base2_message$"
-q2_end_message_gold: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4_gold$ \n&8&l »  $quest_reward2-1_gold$ \n&8&l »  $quest_reward2-2_gold$ \n&8&l »  $quest_reward2-3_gold$ \n \n \n $quest_complete2_base3_message$"
-q2_end_message_diamond: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4_diamond$ \n&8&l »  $quest_reward2-1_diamond$ \n&8&l »  $quest_reward2-2_diamond$ \n&8&l »  $quest_reward2-3_diamond$ \n \n \n $quest_complete2_base4_message$"
-q2_end_message_emerald: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-4_emerald$ \n&8&l »  $quest_reward2-1_emerald$ \n&8&l »  $quest_reward2-2_emerald$ \n&8&l »  $quest_reward2-3_emerald$ \n \n \n $quest_complete2_base5_message$"
+q2_end_message_coal: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4_coal$ \n&8&l »  $quest_reward2-1_coal$ \n&8&l »  $quest_reward2-2_coal$ \n&8&l »  $quest_reward2-3_coal$ \n \n \n $quest_complete2_base_message$'
+q2_end_message_iron: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4_iron$ \n&8&l »  $quest_reward2-1_iron$ \n&8&l »  $quest_reward2-2_iron$ \n&8&l »  $quest_reward2-3_iron$ \n \n \n $quest_complete2_base2_message$'
+q2_end_message_gold: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4_gold$ \n&8&l »  $quest_reward2-1_gold$ \n&8&l »  $quest_reward2-2_gold$ \n&8&l »  $quest_reward2-3_gold$ \n \n \n $quest_complete2_base3_message$'
+q2_end_message_diamond: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4_diamond$ \n&8&l »  $quest_reward2-1_diamond$ \n&8&l »  $quest_reward2-2_diamond$ \n&8&l »  $quest_reward2-3_diamond$ \n \n \n $quest_complete2_base4_message$'
+q2_end_message_emerald: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4_emerald$ \n&8&l »  $quest_reward2-1_emerald$ \n&8&l »  $quest_reward2-2_emerald$ \n&8&l »  $quest_reward2-3_emerald$ \n \n \n $quest_complete2_base5_message$'
 
 
 ShopOpen: "run ^command mi stations open gems %player%"
