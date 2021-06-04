@@ -1,3 +1,3 @@
-Emerald: mmocorebreakblock 256 block:EMERALD_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify
-DeliverFang: npcinteract 41 conditions:HoldingFang,Fang15 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify
-DeliverEmerald: npcinteract 41 conditions:Emerald3 events:entry_q3_complete,QuestReward3 notify
+Emerald: mmocorebreakblock 256 block:EMERALD_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 ^notify
+DeliverFang: npcinteract 41 conditions:HoldingFang,Fang15 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 ^notify
+DeliverEmerald: npcinteract 41 conditions:Emerald3 events:entry_q3_complete,QuestReward3 ^notify

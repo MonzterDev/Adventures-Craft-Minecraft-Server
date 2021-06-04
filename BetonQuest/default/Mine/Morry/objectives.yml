@@ -1,4 +1,4 @@
-Coal: mmocorebreakblock 128 block:COAL_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify
-MineSpider: mmobkill MINE_SPIDER amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify
-GoldFinger: mmocorebreakblock 192 block:GOLD_ORE events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 notify
-Lift: npcinteract 17 events:entry_q4_complete,QuestReward4 notify
+Coal: mmocorebreakblock 128 block:COAL_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 ^notify
+MineSpider: mmobkill MINE_SPIDER amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 ^notify
+GoldFinger: mmocorebreakblock 192 block:GOLD_ORE events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 ^notify
+Lift: npcinteract 17 events:entry_q4_complete,QuestReward4 ^notify

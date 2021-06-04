@@ -20,5 +20,5 @@ Cucco18: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos18,ques
 Cucco19: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos19,quest_start20 condition:Cuccos19,!CompletedCuccos19
 Cucco20: location -22;15;-371;Spawn 100 events:QuestReward1,entry_q1_complete,CompletedCuccos20,QuestReward2_Starter condition:Cuccos20,!CompletedCuccos20
 
-EggDeliver: npcinteract 194 conditions:EGG events:entry_q2_complete,QuestReward2 notify
+EggDeliver: npcinteract 194 conditions:EGG events:entry_q2_complete,QuestReward2 ^notify
 

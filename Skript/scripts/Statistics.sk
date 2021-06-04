@@ -13,10 +13,10 @@ import:
     net.Indyuce.mmocore.api.block.VanillaBlockType
     net.Indyuce.mmocore.api.block.BlockType
 
-on CustomBlockMineEvent:
-    if event.getPlayer() is a player:
-        if event.canBreak():        
-            execute console command "/q point %event.getPlayer()% add blocks.%event.getBlock().getType()% 1"
+# on CustomBlockMineEvent:
+#     if event.getPlayer() is a player:
+#         if event.canBreak():        
+#             execute console command "/q point %event.getPlayer()% add blocks.%event.getBlock().getType()% 1"
 
 # on CustomBlockMineEvent:
 #     set {_block} to event.getBlock().getType()
@@ -35,11 +35,11 @@ on CustomBlockMineEvent:
 #         broadcast "%player.getStatistic(Statistic.MINE_BLOCK, Material.OAK_LOG)%" #This is an example of a working method using 
 #                                                                                   #Spigot's api to return a value
 
-on mythicmob deathevent:
-    loop get threattable of activemob event-activemob:
-        if loop-value is a player:
-            execute console command "/q point %event-killer% add mobs.%event-activemob% 1"
-            execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
+# on mythicmob deathevent:
+#     loop get threattable of activemob event-activemob:
+#         if loop-value is a player:
+#             execute console command "/q point %event-killer% add mobs.%event-activemob% 1"
+#             execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"
 #        else:
 #        broadcast "%event-killer% & %event-activemob% %faction of activemob event-activemob% & %get threattable of activemob event-activemob%"
 #        execute console command "/q point %event-killer% add faction.%faction of activemob event-activemob% 1"

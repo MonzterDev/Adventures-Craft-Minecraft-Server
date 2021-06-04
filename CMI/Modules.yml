@@ -17,6 +17,10 @@ versionCheck: true
 # Applies for servers from 1.7.x and up
 worldLimits: true
 #  
+# World limitations: elytra mode
+# Applies for servers from 1.9.x and up
+worldLimitsElytra: true
+#  
 # Login, logout and death messages
 # Applies for servers from 1.7.x and up
 customMessages: false
@@ -125,6 +129,14 @@ ranks: false
 # Applies for servers from 1.7.x and up
 votifier: false
 #  
+# Handles player combat system
+# Applies for servers from 1.7.x and up
+playerCombat: true
+#  
+# Handles head drops system
+# Applies for servers from 1.7.x and up
+headDrop: true
+#  
 # Handles kit listener, mainly to give out new player kit
 # Applies for servers from 1.7.x and up
 kits: false
@@ -205,6 +217,6 @@ totemBehavior: true
 # Applies for servers from 1.9.x and up
 anvilRenameColor: true
 #  
-# Handling of anvil unlimited repair
-# Applies for servers from 1.9.x and up
-anvilUnlimitedRepair: false
+# Handling of launch command falldamage
+# Applies for servers from 1.7.x and up
+launchPad: true

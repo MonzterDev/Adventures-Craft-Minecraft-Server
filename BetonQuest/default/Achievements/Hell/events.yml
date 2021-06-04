@@ -12,81 +12,82 @@ Restart_Hell_Mob: objective start SlayHell
 Hell_Mob_Complete1: 'folder REWARD_Hell_Mob_Complete1,TAG_Hell_Mob_Complete1,FINISH_MESSAGE_Hell_Mob_Complete1'
 REWARD_Hell_Mob_Complete1: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Slayer 250 ^command money give %player% 200"
 TAG_Hell_Mob_Complete1: 'tag add Hell_Mob_Complete1'
-FINISH_MESSAGE_Hell_Mob_Complete1: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$"
+FINISH_MESSAGE_Hell_Mob_Complete1: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$'
+
 ###2
 #This is ran upon each kill of a Hell Mob, and is rewarded once Player has the Point Condition, but not claimed condition
 Hell_Mob_Complete2: 'folder REWARD_Hell_Mob_Complete2,TAG_Hell_Mob_Complete2,FINISH_MESSAGE_Hell_Mob_Complete2'
 REWARD_Hell_Mob_Complete2: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 450"
 TAG_Hell_Mob_Complete2: 'tag add Hell_Mob_Complete2'
-FINISH_MESSAGE_Hell_Mob_Complete2: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$"
+FINISH_MESSAGE_Hell_Mob_Complete2: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$'
 ###3
 #This is ran upon each kill of a Hell Mob, and is rewarded once Player has the Point Condition, but not claimed condition
 Hell_Mob_Complete3: 'folder REWARD_Hell_Mob_Complete3,TAG_Hell_Mob_Complete3,FINISH_MESSAGE_Hell_Mob_Complete3'
 REWARD_Hell_Mob_Complete3: "run ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Slayer 750 ^command money give %player% 2500"
 TAG_Hell_Mob_Complete3: 'tag add Hell_Mob_Complete3'
-FINISH_MESSAGE_Hell_Mob_Complete3: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$"
+FINISH_MESSAGE_Hell_Mob_Complete3: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$'
 ###4
 #This is ran upon each kill of a Hell Mob, and is rewarded once Player has the Point Condition, but not claimed condition
 Hell_Mob_Complete4: 'folder REWARD_Hell_Mob_Complete4,TAG_Hell_Mob_Complete4,FINISH_MESSAGE_Hell_Mob_Complete4'
 REWARD_Hell_Mob_Complete4: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 5000"
 TAG_Hell_Mob_Complete4: 'tag add Hell_Mob_Complete4'
-FINISH_MESSAGE_Hell_Mob_Complete4: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name4$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward4-1$ \n&8&l »  $quest_reward4-2$ \n&8&l »  $quest_reward4-3$"
+FINISH_MESSAGE_Hell_Mob_Complete4: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name4$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward4-1$ \n&8&l »  $quest_reward4-2$ \n&8&l »  $quest_reward4-3$'
 ###5
 #This is ran upon each kill of a Hell Mob, and is rewarded once Player has the Point Condition, but not claimed condition
 Hell_Mob_Complete5: 'folder REWARD_Hell_Mob_Complete5,TAG_Hell_Mob_Complete5,FINISH_MESSAGE_Hell_Mob_Complete5'
 REWARD_Hell_Mob_Complete5: "run ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 10000"
 TAG_Hell_Mob_Complete5: 'tag add Hell_Mob_Complete5'
-FINISH_MESSAGE_Hell_Mob_Complete5: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name5$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward5-1$ \n&8&l »  $quest_reward5-2$ \n&8&l »  $quest_reward5-3$"
+FINISH_MESSAGE_Hell_Mob_Complete5: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name5$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward5-1$ \n&8&l »  $quest_reward5-2$ \n&8&l »  $quest_reward5-3$'
 
 
 ###1
 Hell_Wither_Complete1: 'folder REWARD_Hell_Wither_Complete1,TAG_Hell_Wither_Complete1,FINISH_MESSAGE_Hell_Wither_Complete1'
 REWARD_Hell_Wither_Complete1: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 250"
 TAG_Hell_Wither_Complete1: 'tag add Hell_Wither_Complete1'
-FINISH_MESSAGE_Hell_Wither_Complete1: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name6$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward6-1$ \n&8&l »  $quest_reward6-2$ \n&8&l »  $quest_reward6-3$"
+FINISH_MESSAGE_Hell_Wither_Complete1: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name6$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward6-1$ \n&8&l »  $quest_reward6-2$ \n&8&l »  $quest_reward6-3$'
 ###2
 Hell_Wither_Complete2: 'folder REWARD_Hell_Wither_Complete2,TAG_Hell_Wither_Complete2,FINISH_MESSAGE_Hell_Wither_Complete2'
 REWARD_Hell_Wither_Complete2: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 2500"
 TAG_Hell_Wither_Complete2: 'tag add Hell_Wither_Complete2'
-FINISH_MESSAGE_Hell_Wither_Complete2: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name7$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward7-1$ \n&8&l »  $quest_reward7-2$ \n&8&l »  $quest_reward7-3$"
+FINISH_MESSAGE_Hell_Wither_Complete2: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name7$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward7-1$ \n&8&l »  $quest_reward7-2$ \n&8&l »  $quest_reward7-3$'
 ###3
 Hell_Wither_Complete3: 'folder REWARD_Hell_Wither_Complete3,TAG_Hell_Wither_Complete3,FINISH_MESSAGE_Hell_Wither_Complete3'
 REWARD_Hell_Wither_Complete3: "run ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 5000"
 TAG_Hell_Wither_Complete3: 'tag add Hell_Wither_Complete3'
-FINISH_MESSAGE_Hell_Wither_Complete3: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name8$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward8-1$ \n&8&l »  $quest_reward8-2$ \n&8&l »  $quest_reward8-3$"
+FINISH_MESSAGE_Hell_Wither_Complete3: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name8$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward8-1$ \n&8&l »  $quest_reward8-2$ \n&8&l »  $quest_reward8-3$'
 ###4
 Hell_Wither_Complete4: 'folder Hell_Wither4,TAG_Hell_Wither_Complete4,FINISH_MESSAGE_Hell_Wither_Complete4'
 TAG_Hell_Wither_Complete4: 'tag add Hell_Wither_Complete4'
-FINISH_MESSAGE_Hell_Wither_Complete4: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name9$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward9-1$ \n&8&l »  $quest_reward9-2$ \n&8&l »  $quest_reward9-3$"
+FINISH_MESSAGE_Hell_Wither_Complete4: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name9$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward9-1$ \n&8&l »  $quest_reward9-2$ \n&8&l »  $quest_reward9-3$'
 #4 Rewards
 Hell_Wither4: "if empty0 Hell_Wither4_Full else Hell_Wither4_Folder"
 Hell_Wither4_Folder: 'folder Hell_Wither4_If_Not_Full,Hell_Wither4_Claimed_Tag'
 Hell_Wither4_If_Not_Full: "run ^command mmoitems give CONSUMABLE WITHER_HEAD %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Wither4_Full: 'folder Hell_Wither4_Full_message,Hell_Wither4_Full_Tag'
-Hell_Wither4_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name9$ &cto redeem your rewards!"
+Hell_Wither4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name9$ &cto redeem your rewards!'
 Hell_Wither4_Full_Tag: "tag add Hell_Wither4_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Wither4_Claim: 'folder Claim_Hell_Wither4,Hell_Wither4_Claim_message,Hell_Wither4_Claimed_Tag,Hell_Wither4_del_Claimed_Tag'
 Claim_Hell_Wither4: "run ^command mmoitems give CONSUMABLE WITHER_HEAD %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
-Hell_Wither4_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+Hell_Wither4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Wither4_Claimed_Tag: "tag add Hell_Wither4_rewards_claimed"
 Hell_Wither4_del_Claimed_Tag: "tag del Hell_Wither4_rewards_unclaimed"
 
 ###5
 Hell_Wither_Complete5: 'folder Hell_Wither5,TAG_Hell_Wither_Complete5,FINISH_MESSAGE_Hell_Wither_Complete5'
 TAG_Hell_Wither_Complete5: 'tag add Hell_Wither_Complete5'
-FINISH_MESSAGE_Hell_Wither_Complete5: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name10$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward10-1$ \n&8&l »  $quest_reward10-2$ \n&8&l »  $quest_reward10-3$"
+FINISH_MESSAGE_Hell_Wither_Complete5: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name10$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward10-1$ \n&8&l »  $quest_reward10-2$ \n&8&l »  $quest_reward10-3$'
 #5 Rewards
 Hell_Wither5: "if empty0 Hell_Wither5_Full else Hell_Wither5_Folder"
 Hell_Wither5_Folder: 'folder Hell_Wither5_If_Not_Full,Hell_Wither5_Claimed_Tag'
 Hell_Wither5_If_Not_Full: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Wither5_Full: 'folder Hell_Wither5_Full_message,Hell_Wither5_Full_Tag'
-Hell_Wither5_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name10$ &cto redeem your rewards!"
+Hell_Wither5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name10$ &cto redeem your rewards!'
 Hell_Wither5_Full_Tag: "tag add Hell_Wither5_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Wither5_Claim: 'folder Claim_Hell_Wither5,Hell_Wither5_Claim_message,Hell_Wither5_Claimed_Tag,Hell_Wither5_del_Claimed_Tag'
 Claim_Hell_Wither5: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
-Hell_Wither5_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+Hell_Wither5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Wither5_Claimed_Tag: "tag add Hell_Wither5_rewards_claimed"
 Hell_Wither5_del_Claimed_Tag: "tag del Hell_Wither5_rewards_unclaimed"
 
@@ -95,49 +96,49 @@ Hell_Wither5_del_Claimed_Tag: "tag del Hell_Wither5_rewards_unclaimed"
 Hell_Ghastly_Complete1: 'folder REWARD_Hell_Ghastly_Complete1,TAG_Hell_Ghastly_Complete1,FINISH_MESSAGE_Hell_Ghastly_Complete1'
 REWARD_Hell_Ghastly_Complete1: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command money give %player% 250"
 TAG_Hell_Ghastly_Complete1: 'tag add Hell_Ghastly_Complete1'
-FINISH_MESSAGE_Hell_Ghastly_Complete1: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward11-1$ \n&8&l »  $quest_reward11-2$ \n&8&l »  $quest_reward11-3$"
+FINISH_MESSAGE_Hell_Ghastly_Complete1: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward11-1$ \n&8&l »  $quest_reward11-2$ \n&8&l »  $quest_reward11-3$'
 ###2
 Hell_Ghastly_Complete2: 'folder REWARD_Hell_Ghastly_Complete2,TAG_Hell_Ghastly_Complete2,FINISH_MESSAGE_Hell_Ghastly_Complete2'
 REWARD_Hell_Ghastly_Complete2: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command money give %player% 2500"
 TAG_Hell_Ghastly_Complete2: 'tag add Hell_Ghastly_Complete2'
-FINISH_MESSAGE_Hell_Ghastly_Complete2: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward12-1$ \n&8&l »  $quest_reward12-2$ \n&8&l »  $quest_reward12-3$"
+FINISH_MESSAGE_Hell_Ghastly_Complete2: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward12-1$ \n&8&l »  $quest_reward12-2$ \n&8&l »  $quest_reward12-3$'
 ###3
 Hell_Ghastly_Complete3: 'folder REWARD_Hell_Ghastly_Complete3,TAG_Hell_Ghastly_Complete3,FINISH_MESSAGE_Hell_Ghastly_Complete3'
 REWARD_Hell_Ghastly_Complete3: "run ^command mmocore admin exp give %player% main 2500 ^command mmocore admin exp give %player% Slayer 2500 ^command money give %player% 5000"
 TAG_Hell_Ghastly_Complete3: 'tag add Hell_Ghastly_Complete3'
-FINISH_MESSAGE_Hell_Ghastly_Complete3: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name3$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward13-1$ \n&8&l »  $quest_reward13-2$ \n&8&l »  $quest_reward13-3$"
+FINISH_MESSAGE_Hell_Ghastly_Complete3: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward13-1$ \n&8&l »  $quest_reward13-2$ \n&8&l »  $quest_reward13-3$'
 ###4
 Hell_Ghastly_Complete4: 'folder Hell_Ghastly4,TAG_Hell_Ghastly_Complete4,FINISH_MESSAGE_Hell_Ghastly_Complete4'
 TAG_Hell_Ghastly_Complete4: 'tag add Hell_Ghastly_Complete4'
-FINISH_MESSAGE_Hell_Ghastly_Complete4: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name4$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward14-1$ \n&8&l »  $quest_reward14-2$ \n&8&l »  $quest_reward14-3$"
+FINISH_MESSAGE_Hell_Ghastly_Complete4: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name4$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward14-1$ \n&8&l »  $quest_reward14-2$ \n&8&l »  $quest_reward14-3$'
 #5 Rewards
 Hell_Ghastly4: "if empty0 Hell_Ghastly4_Full else Hell_Ghastly4_Folder"
 Hell_Ghastly4_Folder: 'folder Hell_Ghastly4_If_Not_Full,Hell_Ghastly4_Claimed_Tag'
 Hell_Ghastly4_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_LEGS %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
 Hell_Ghastly4_Full: 'folder Hell_Ghastly4_Full_message,Hell_Ghastly4_Full_Tag'
-Hell_Ghastly4_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name14$ &cto redeem your rewards!"
+Hell_Ghastly4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name14$ &cto redeem your rewards!'
 Hell_Ghastly4_Full_Tag: "tag add Hell_Ghastly4_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Ghastly4_Claim: 'folder Claim_Hell_Ghastly4,Hell_Ghastly4_Claim_message,Hell_Ghastly4_Claimed_Tag,Hell_Ghastly4_del_Claimed_Tag'
 Claim_Hell_Ghastly4: "run ^command mmoitems give ARMOR DEVIL_LEGS %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
-Hell_Ghastly4_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+Hell_Ghastly4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Ghastly4_Claimed_Tag: "tag add Hell_Ghastly4_rewards_claimed"
 Hell_Ghastly4_del_Claimed_Tag: "tag del Hell_Ghastly4_rewards_unclaimed"
 
 ###5
 Hell_Ghastly_Complete5: 'folder Hell_Ghastly5,TAG_Hell_Ghastly_Complete5,FINISH_MESSAGE_Hell_Ghastly_Complete5'
 TAG_Hell_Ghastly_Complete5: 'tag add Hell_Ghastly_Complete5'
-FINISH_MESSAGE_Hell_Ghastly_Complete5: "run ^message \n&6&lAchievement Unlocked:&f \n$quest_name5$ \n \n \n &6&lRewards: \n&8&l »  $quest_reward15-1$ \n&8&l »  $quest_reward15-2$ \n&8&l »  $quest_reward15-3$"
+FINISH_MESSAGE_Hell_Ghastly_Complete5: 'run ^notify \n&6&lAchievement Unlocked\:&f \n$quest_name5$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward15-1$ \n&8&l »  $quest_reward15-2$ \n&8&l »  $quest_reward15-3$'
 #5 Rewards
 Hell_Ghastly5: "if empty0 Hell_Ghastly5_Full else Hell_Ghastly5_Folder"
 Hell_Ghastly5_Folder: 'folder Hell_Ghastly5_If_Not_Full,Hell_Ghastly5_Claimed_Tag'
 Hell_Ghastly5_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_CHEST %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Ghastly5_Full: 'folder Hell_Ghastly5_Full_message,Hell_Ghastly5_Full_Tag'
-Hell_Ghastly5_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /achievementmenu and click on &a$quest_name15$ &cto redeem your rewards!"
+Hell_Ghastly5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name15$ &cto redeem your rewards!'
 Hell_Ghastly5_Full_Tag: "tag add Hell_Ghastly5_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Ghastly5_Claim: 'folder Claim_Hell_Ghastly5,Hell_Ghastly5_Claim_message,Hell_Ghastly5_Claimed_Tag,Hell_Ghastly5_del_Claimed_Tag'
 Claim_Hell_Ghastly5: "run ^command mmoitems give ARMOR DEVIL_CHEST %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
-Hell_Ghastly5_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+Hell_Ghastly5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Ghastly5_Claimed_Tag: "tag add Hell_Ghastly5_rewards_claimed"
 Hell_Ghastly5_del_Claimed_Tag: "tag del Hell_Ghastly5_rewards_unclaimed"

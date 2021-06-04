@@ -1,5 +1,5 @@
 KillUndead: mmobkill GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior
-  amount:100 events:entry_q1_complete,QuestReward1,spawnboss,warpplayer,default-Points.GiveMordenSummonPoint notify
+  amount:100 events:entry_q1_complete,QuestReward1,spawnboss,warpplayer,default-Points.GiveMordenSummonPoint ^notify
 
 KillUndeadFirst: mmobkill GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior
   amount:100 events:default-Points.GiveCastlePoint,default-Points.GiveQuestTotalPoint conditions:!Castle_Point

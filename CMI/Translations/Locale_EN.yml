@@ -131,10 +131,12 @@ info:
   CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
   CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
     over this line to see the maximum amount of items allowed.'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
   teleported: '&eYou have been teleported.'
   BlackList: '&e[material] [amount] &6Max: [max]'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
   Spliter: '&e--------------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
   ListSpliter: ', '
   ProgressBarFill: '&2▏'
   ProgressBarEmpty: '&e▏'
@@ -154,6 +156,7 @@ info:
   cantDoForYourSelf: '&eYou can''t do this to yourself'
   cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
   cantRename: '!actionbar!&eYou can''t use this name'
+  cantEdit: '&eYou can''t edit this'
   wrongName: '&cWrong name'
   unknown: unknown
   invalidName: '&cInvalid name'
@@ -279,6 +282,7 @@ info:
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   circle: '&3Circle'
   square: '&5Square'
+  clear: '&7Clear'
   protectedArea: '&cProtected area. Can''t do this here.'
   valueToLong: '&eValue is too high. Max: [max]'
   valueToShort: '&eValue is too low. Min: [min]'
@@ -336,6 +340,7 @@ info:
     BIRCH_FOREST_HILLS: Birch forest hills
     COLD_OCEAN: Cold ocean
     CRIMSON_FOREST: Crimson forest
+    CUSTOM: Custom
     DARK_FOREST: Dark forest
     DARK_FOREST_HILLS: Dark forest hills
     DEEP_COLD_OCEAN: Deep cold ocean
@@ -704,6 +709,8 @@ modify:
   listDownSymbolHover: '&eDown'
   listNumber: '&e[number].'
   ChangeHover: '&eClick to change'
+  enabledColor: '&6'
+  disabledColor: '&7'
   commandTitle: ' &e--- &6[name] &e---'
   commandList: ' &e[command]  '
   emptyLine: '&7[Empty line]'
@@ -769,6 +776,7 @@ Elytra:
   SpeedBoost: ' &a+ '
   SpeedSuperBoost: ' &2+ '
   CanUse: '&cCan''t equip elytra without permission!'
+  CantGlide: '&cCan''t use elytra here!'
   Charging: '&eCharging &f[percentage]&e%'
 Selection:
   SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
@@ -776,6 +784,7 @@ Selection:
   SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
   CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
 NetherPortal:
   ToHigh: '&cPortal is to big, max height is &6[max]&c!'
   ToWide: '&cPortal is to wide, max width is &6[max]&c!'
@@ -798,6 +807,7 @@ Ender:
 Chat:
   localPrefix: ''
   shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
   shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
   # Use \n to add new line
   publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
@@ -863,6 +873,12 @@ command:
       added: '&eAlert message will be sent to all administrators, if &6[playerDisplayName]
         &ejoin''s in next 24Hours'
       online: '&6[playerDisplayName] &ealready online'
+  alertlist:
+    help:
+      info: '&eLists all recorded alerts'
+      args: ''
+    info:
+      list: ' &e[place]. &6[playerDisplayName] &e[time] &7Reason: [reason]'
   aliaseditor:
     help:
       info: '&eAlias editor'
@@ -872,8 +888,12 @@ command:
       aliasName: ' &6[alias]   '
       commandList: ' &e/[command]  '
       commandListDelay: ' &6[command]  '
-      permReq: '&2Requires custom permission: &6[state]'
+      permRequirement: '&2Permission: &6[state]'
       permReqExplanation: '&7Will require &6cmi.customalias.[alias] &7to use it'
+      tabComplete: ' &2TabComplete: &6[state]'
+      tabCompleteExplanation: '&7When disabled tabcomplete will not work'
+      tabCompletes: '&2TabCompletes: '
+      customTab: ' &7CustomTab'
       newAliasInfo: '&eEnter new alias command name and press enter'
       addInfo: '&eEnter new command. Type &6cancel &eto cancel'
       addInformationHover: "&eGlobal variables supported as of sender category \n\
@@ -1141,6 +1161,7 @@ command:
       left: '&eLeft &7[chatRoomName] &echat room'
       leftInfo: '&e[playerDisplayName] &7left chat room'
       invite: '&6[playerDisplayName] &einvites you to join chat room: &7[chatRoomName]'
+      sentInvite: '&eInvited &6[playerDisplayName] &eto join chat room: &7[chatRoomName]'
       format: '&3|&7[chatRoomName]&3| &6[playerDisplayName]: &r[message]'
       nobody: '&4Nobody is in chat room'
       notOwner: '&4Only chat owner can do this'
@@ -1149,6 +1170,7 @@ command:
       notIn: '&4User is not in chat room'
       cantJoin: '&4Chat room is private and you don''t have invitation'
       kicked: '&6[playerDisplayName] &ekicked from chat room'
+      cantleave: '&6Can''t leave locked room'
       gotKicked: '&4You got kicked from &7[chatRoomName] &4chat room'
       list: '&e[chatRoomName]&e: &7[list]'
       globalList: '&7[number]. [joined]&e[chatRoomName][private]&e: &7[count][expires]'
@@ -1626,6 +1648,7 @@ command:
       grows: '&eGrows up in: &6[time]'
       horse: '&eHorse: &6[jump]&eblocks &6[speed]&eblocks/sec'
       villager: '&eProfession: &7[profession] &eLvl: &7[lvl] &eType: &7[type]'
+      subTypes: '&eSub Types: &6[list]'
   entitynbt:
     help:
       info: '&eCheck entity nbt information'
@@ -1654,6 +1677,13 @@ command:
     info:
       feedback: '&eYou have extinguished &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&eYou have been extinguished by &3[senderDisplayName]&e.'
+  falldistance:
+    help:
+      info: '&eSet players falldistance'
+      args: (playerName) (number) (-s)
+    info:
+      feedback: '&eYou have set fall distance to &3[amount]&e for &3[playerDisplayName]&e
+        (&3[offon]&e).'
   feed:
     help:
       info: '&eFeed player'
@@ -1729,11 +1759,12 @@ command:
       buttonExp: '&6Recharge with exp'
       buttonMoney: '&6Recharge with money'
       max: '&6Already fully charged'
-      lore:
+      amounts:
       - '&eLeft click +1. Cost: &7[amount1]'
-      - '&6Shift left click +10. Cost: &7[amount10]'
+      - '&6Shift left +10. Cost: &7[amount10]'
       - '&eRight click +100. Cost: &7[amount100]'
-      - '&6Shift right click +1000. Cost: &7[amount1000]'
+      - '&6Shift right +1000. Cost: &7[amount1000]'
+      - '&eMiddle Mouse +10000. Cost: &7[amount10000]'
       - ''
       changeAmount: '&e([amount]&e)'
       cost: '&eCharged &6[amount] &efor &6[charge] &eflight charges'
@@ -1831,6 +1862,8 @@ command:
       targetfeedback: '&eYour [color]glow &emode set to &3[boolean]&e by &3[senderDisplayName]&e.'
       title: Pick glow color
       incorrect: '&4Incorrect color name'
+      lore: '&2Click to select color'
+      noPerm: '&4No permission yet'
   gm:
     help:
       info: '&eSet players game mode'
@@ -1888,6 +1921,7 @@ command:
       fullinv: '&3[playerDisplayName] &6inventory is full, can''t change hat!'
       incorrect: '&3Incorrect item in head slot, cant replace with new one. Remove
         it manually'
+      cantUse: '&3Can''t use this item as a hat'
   head:
     help:
       info: '&eGet players head'
@@ -1997,6 +2031,7 @@ command:
       noHomes: '&cThere is no saved homes'
       private: '&cThis home location is private!'
       remove: '&cShift+Right click to remove home'
+      notAccessible: '&cHome location world (&7[worldName]&c) doesn''t exist!'
       guiTitle: '&0[playerDisplayName] &8homes [current]/[max]'
   homes:
     help:
@@ -2298,6 +2333,15 @@ command:
       - /give diamond_sword unbreakable
       - /give mob_spawner:creeper
       - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
+  itemcmdata:
+    help:
+      info: '&eCheck or modify items custom model data'
+      args: '[set/delete] (playerName) (id) (-s)'
+    info:
+      nothing: '&eDoesn''t contain any model data'
+      set: '&eSet new model data to: &6[value]'
+      current: '&eCurrent model data: &6[value]'
+      deleted: '&eRemoved model data: &6[value]'
   itemframe:
     help:
       info: '&eManage item frames'
@@ -2318,6 +2362,7 @@ command:
       loreLine: '   &5[loreLine]'
       enchants: ' &eEnchants: &7[enchants]'
       entityType: ' &eEntity Type: &6[type]'
+      customModel: ' &eCustom Model Data: &6[data]'
       durability: ' &eDurability: &6[current]&e/&6[max]'
   itemlore:
     help:
@@ -2417,6 +2462,15 @@ command:
       messageToAll: '&6[playerDisplayName] &egot kicked from server.'
       kickReason: ' &eReason: &6[reason]'
       all: '&eKicked &6[amount] &eplayers from server'
+  kill:
+    help:
+      info: '&eKill player'
+      args: '[playerName] (-force) (damageCause) (-s) (-lightning)'
+    info:
+      cantKill: '&6Can''t kill, protected by another plugin, game/god mode. Use -forced
+        variable'
+      lackOfAccess: '&6Can''t use force kill without permission.'
+      killed: '&6Killed [playerDisplayName]'
   killall:
     help:
       info: '&eKill mobs around you'
@@ -2551,6 +2605,7 @@ command:
       - '&eClick again to revert changes'
       timeDelay: '&eDelay: &6[time]'
       usages: '&eCan be used for &6[times] &etimes'
+      withoutUsage: '&eShow without usages left: &6[state]'
       usagesUnlimited: '&6Unlimited'
       ignoreWeight: '&eShow despite weight: &6[state]'
       timeDelaySeconds: '&eIn seconds: &6[time]'
@@ -2862,6 +2917,7 @@ command:
       mutedFor: '&e[playerDisplayName] muted for &6[time]'
       muted: '&eYou are muted for &6[time]'
       reason: '&eReason: &7[reason]'
+      badTimeRanges: '&cYou can''t mute for longer than [time] &6([seconds])'
   mutechat:
     help:
       info: '&ePrevent public messages'
@@ -2878,6 +2934,8 @@ command:
     help:
       info: '&eSet players name plate prefix, suffix or its color'
       args: (playerName) (-pref:[prefix]) (-suf:[suffix]) (-c:[colorCode])
+      explanation:
+      - Use _ to add space and __ to add underscore for placeholder and similar
     info:
       feedback: '&eYou have updated nameplate for &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&eYour nameplate got updated'
@@ -3024,7 +3082,7 @@ command:
       bungeeSetEmpty: '&eInitiated portal location set at &6[serverName] &eserver,
         but no one is online in this server. This action will not complete until some
         one joins it'
-      list: '&e[number]. &6[portalName]'
+      portalList: '&e[number]. [color][portalName]'
       redefine: '&eRedefine area from current selection'
       particles: '&eParticles: &6[state]'
       particleType: '&eParticle type: &6[type]'
@@ -3377,7 +3435,9 @@ command:
       give: '&eGive &6[name] &eitem'
       removed: '&eRemoved &6[name] &eitem'
       saved: '&eSaved &6[name] &eitem'
-      title: '&8[current]&7/&8[total]'
+      uiTitle: 'Category: [category] &8[current]&7/&8[total]'
+      name: '&7Name: &f[name]'
+      category: '&7Category: &f[category]'
   sc:
     help:
       info: '&eStarts sign copy process'
@@ -4234,6 +4294,7 @@ command:
       info: '&eAsks player to accept teleportation to your location'
       args: '[playerName] (playerName) (-c)'
     info:
+      requestSent: '&eRequest sent to &6[playerDisplayName]'
       gotRequest: '&6[senderDisplayName] &erequests teleportation to them!'
       accept: '&6Click to accept teleportation request!'
   tpall:
@@ -4322,8 +4383,8 @@ command:
       info: '&eToggle teleportation access to player'
       args: (playerName)
     info:
-      feedbackNoTp: '&ePrevented teleportation'
-      feedbackTp: '&eAllowed teleportation'
+      feedback: '&eTeleportation prevention: &6[state]'
+      feedbackOther: '&eTeleportation prevention of &6[playerDisplayName]&e: &6[state]'
   tree:
     help:
       info: '&eSpawn tree where you are looking'
@@ -4443,6 +4504,7 @@ command:
       noMessages: '&eNo public messages'
       fakeJoinLeave: '&eShow fake join/leave messages on vanish state change'
       mobSpawning: '&eMobs will spawn nearby'
+      stopPlaytime: '&ePlaytime will stop increasing'
       bossbarTitle: '&fVanished'
   version:
     help:
@@ -4459,6 +4521,8 @@ command:
       newVault: '&eVault: &6[version] '
       Modules: '&eModules -> &a[enabled] enabled &7[disabled] disabled&e: &c[list]'
       Bungee: ' &eBungeeCord '
+      CMILib: '&eCMILib: &6[version] '
+      cmilVersionNew: '&e-> [newVersion]'
   viewrange:
     help:
       info: '&eChange view range'
@@ -4620,3 +4684,4 @@ command:
     info:
       type: '&7[type]'
       worth: '&7Worth: &e[price]'
+      title: '&8Worth List'

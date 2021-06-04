@@ -2,13 +2,13 @@
 quest1_start: 'objective start Redstone'
 tag_q1_part1: 'tag add q1_part1'
 entry_q1_part1: 'journal add q1_part1'
-q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f $quest_objective1$"
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
 QuestReward1: "run ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 #FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
 entry_q1_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
 entry_q1_completed: 'journal add q1_completed'
 tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal remove q1_part1'
+entry_q1_part1_remove: 'journal delete q1_part1'
 
 
 #SECOND QUEST 
@@ -16,20 +16,20 @@ quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_messag
 quest2_start: 'objective start VoidBat'
 tag_q2_part1: 'tag add q2_part1'
 entry_q2_part1: 'journal add q2_part1'
-q2_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$ \n \n \n &6&lRewards: \n&8&l » $quest_reward1-1$ \n&8&l » $quest_reward1-2$ \n&8&l » $quest_reward1-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective2$"
+q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l » $quest_reward1-1$ \n&8&l » $quest_reward1-2$ \n&8&l » $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
 QuestReward2: "run ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Mining 200 ^command money give %player% 150"
 #SECOND QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
 entry_q2_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
 entry_q2_completed: 'journal add q2_completed'
 tag_q2_completed: 'tag add q2_completed'
-entry_q2_part1_remove: 'journal remove q2_part1'
+entry_q2_part1_remove: 'journal delete q2_part1'
 
 #THIRD QUEST
 quest3_starer: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
 quest3_start: 'objective start VoidBoomer'
 tag_q3_part1: 'tag add q3_part1'
 entry_q3_part1: 'journal add q3_part1'
-q3_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name2$ \n \n \n &6&lRewards: \n&8&l » $quest_reward2-1$ \n&8&l » $quest_reward2-2$ \n&8&l » $quest_reward2-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective3$"
+q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l » $quest_reward2-1$ \n&8&l » $quest_reward2-2$ \n&8&l » $quest_reward2-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective3$'
 #FINISHING THE THIRD QUEST WILL check if the players inventory is full
 #IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll give rewards instantly
@@ -37,26 +37,26 @@ QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
 QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
 QuestReward3_If_Not_Full: "run ^command mmoitems give ARMOR STEEL_LEGGINGS %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
-QuestReward3_Full_message: "run ^message &cYour inventory was full so we couldn't deliver your reward! Do /questmenu and click on &a$quest_name3$ &cto redeem your rewards!"
+QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name3$ &cto redeem your rewards!'
 QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
 #THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
 Claim_QuestReward3: "run ^command mmoitems give ARMOR STEEL_LEGGINGS %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
-QuestReward3_Claim_message: "run ^message \n&aYour Quest rewards have now been delivered!"
+QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
 QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
 #THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
 entry_q3_complete: 'folder default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
 entry_q3_completed: 'journal add q3_completed'
 tag_q3_completed: 'tag add q3_completed'
-entry_q3_part1_remove: 'journal remove q3_part1'
+entry_q3_part1_remove: 'journal delete q3_part1'
 
 #FORTH QUEST 
 quest4_starer: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message,DuncanMineCompass'
 quest4_start: 'objective start Duncan'
 tag_q4_part1: 'tag add q4_part1'
 entry_q4_part1: 'journal add q4_part1'
-q4_start_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name3$&f! \n \n \n &6&lRewards: \n&8&l » $quest_reward3-4$ \n&8&l » $quest_reward3-1$ \n&8&l » $quest_reward3-2$ \n&8&l » $quest_reward3-3$ \n \n \n &6&lNew Objectives: \n&8&l » &f $quest_objective4$"
+q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$&f! \n \n \n &6&lRewards\: \n&8&l » $quest_reward3-4$ \n&8&l » $quest_reward3-1$ \n&8&l » $quest_reward3-2$ \n&8&l » $quest_reward3-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective4$'
 DuncanMineCompass: 'run ^opsudo calcomp show ^opsudo calcomp toggle DuncanMine enable'
 DuncanMineCompassHide: 'run ^opsudo calcomp toggle DuncanMine disable'
 HideCompass: 'run ^opsudo calebcompass hide'
@@ -65,6 +65,6 @@ QuestReward4: "run ^command lp user %player% permission set warp.lapismine true 
 entry_q4_complete: 'folder DuncanMineCompassHide,HideCompass,default-Points.GiveMinePoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed,q4_finish_message'
 entry_q4_completed: 'journal add q4_completed'
 tag_q4_completed: 'tag add q4_completed'
-entry_q4_part1_remove: 'journal remove q4_part1'
+entry_q4_part1_remove: 'journal delete q4_part1'
 #FINISH MESSAGE WHICH WILL ACTIVATE BY FINISHING THE FOURTH QUEST
-q4_finish_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name4$! \n \n \n &6&lRewards: \n&8&l » $quest_reward4-4$ \n&8&l » $quest_reward4-1$ \n&8&l » $quest_reward4-2$ \n&8&l » $quest_reward4-3$"
+q4_finish_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name4$! \n \n \n &6&lRewards\: \n&8&l » $quest_reward4-4$ \n&8&l » $quest_reward4-1$ \n&8&l » $quest_reward4-2$ \n&8&l » $quest_reward4-3$'

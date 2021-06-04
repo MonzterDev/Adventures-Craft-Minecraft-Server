@@ -12,6 +12,7 @@ general:
   authlib:
     profile-url: https://sessionserver.mojang.com/session/minecraft/profile/
   debug-file: ''
+  debug-chunk-loads: false
 npc:
   chat:
     options:
@@ -61,6 +62,8 @@ npc:
     retry-delay: 120
     rotation-update-degrees: 90.0
     use-latest-by-default: false
+    player-join-update-delay-ticks: 60
+    placeholder-update-frequency-ticks: 6000
   pathfinding:
     new-finder-open-doors: false
     attack-range: 3.0625
@@ -76,6 +79,7 @@ npc:
       open-doors: false
     minecraft:
       max-fall-distance: 3
+    straight-line-targeting-distance: 5
   packets:
     update-delay: 30
   selection:
@@ -105,6 +109,9 @@ npc:
       no-permission: You don't have permission to do that.
       not-enough-money: You need at least ${0}.
       on-cooldown: Please wait {0} more seconds.
+      on-global-cooldown: Please wait {0} more seconds.
+  follow:
+    teleport-across-worlds: true
 advanced:
   check-minecraft-version: true
 economy:

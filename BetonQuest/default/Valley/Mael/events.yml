@@ -2,7 +2,7 @@
 quest1_start: 'objective start OrcCamp1'
 tag_q1_part1: 'tag add q1_part1'
 entry_q1_part1: 'journal add q1_part1'
-q1_start_message: "run ^message \n &6&lNew Objectives: \n&8&l » &f$quest_objective1$"
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f$quest_objective1$'
 OcrCamp1Compass: 'run ^opsudo calcomp show ^opsudo calcomp toggle OcrCamp1 enable'
 OcrCamp1CompassHide: 'run ^opsudo calcomp toggle OcrCamp1 disable'
 HideCompass: 'run ^opsudo calebcompass hide'
@@ -12,14 +12,14 @@ tag_q1_part1_completed: 'tag add q1_part1_completed'
 quest1_part2_start: 'objective start KillOrcs1'
 tag_q1_part2: 'tag add q1_part2'
 entry_q1_part2: 'journal add q1_part2'
-q1_part2_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective2$"
+q1_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective2$'
 #FIRST QUEST The Great Slaughter
 quest1_part3_starter: 'folder quest1_part3_start,tag_q1_part3,entry_q1_part3,q1_part3_start_message,tag_q1_part2_completed'
 tag_q1_part2_completed: 'tag add q1_part2_completed'
 quest1_part3_start: 'objective start NPC1'
 tag_q1_part3: 'tag add q1_part3'
 entry_q1_part3: 'journal add q1_part3'
-q1_part3_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective2$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective3$"
+q1_part3_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective2$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective3$'
 
 #FIRST QUEST The Great Slaughter
 quest1_part4_starter: 'folder quest1_part4_start,tag_q1_part4,entry_q1_part4,q1_part4_start_message,tag_q1_part3_completed,OcrCamp2Compass'
@@ -27,7 +27,7 @@ tag_q1_part3_completed: 'tag add q1_part3_completed'
 quest1_part4_start: 'objective start OrcCamp2'
 tag_q1_part4: 'tag add q1_part4'
 entry_q1_part4: 'journal add q1_part4'
-q1_part4_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective3$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective4$"
+q1_part4_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective4$'
 OcrCamp2Compass: 'run ^opsudo calcomp show ^opsudo calcomp toggle OcrCamp2 enable'
 OcrCamp2CompassHide: 'run ^opsudo calcomp toggle OcrCamp2 disable'
 #FIRST QUEST The Great Slaughter
@@ -36,14 +36,14 @@ tag_q1_part4_completed: 'tag add q1_part4_completed'
 quest1_part5_start: 'objective start KillOrcs2'
 tag_q1_part5: 'tag add q1_part5'
 entry_q1_part5: 'journal add q1_part5'
-q1_part5_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective4$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective5$"
+q1_part5_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective4$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective5$'
 #FIRST QUEST The Great Slaughter
 quest1_part6_starter: 'folder quest1_part6_start,tag_q1_part6,entry_q1_part6,q1_part6_start_message,tag_q1_part5_completed'
 tag_q1_part5_completed: 'tag add q1_part5_completed'
 quest1_part6_start: 'objective start NPC2'
 tag_q1_part6: 'tag add q1_part6'
 entry_q1_part6: 'journal add q1_part6'
-q1_part6_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective5$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective6$"
+q1_part6_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective5$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective6$'
 
 #FIRST QUEST The Great Slaughter
 quest1_part7_starter: 'folder quest1_part7_start,tag_q1_part7,entry_q1_part7,q1_part7_start_message,tag_q1_part6_completed,OcrCamp3Compass'
@@ -51,7 +51,7 @@ tag_q1_part6_completed: 'tag add q1_part6_completed'
 quest1_part7_start: 'objective start OrcCamp3'
 tag_q1_part7: 'tag add q1_part7'
 entry_q1_part7: 'journal add q1_part7'
-q1_part7_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective6$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective7$"
+q1_part7_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective6$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective7$'
 OcrCamp3Compass: 'run ^opsudo calcomp show ^opsudo calcomp toggle OcrCamp3 enable'
 OcrCamp3CompassHide: 'run ^opsudo calcomp toggle OcrCamp3 disable'
 #FIRST QUEST The Great Slaughter
@@ -60,14 +60,14 @@ tag_q1_part7_completed: 'tag add q1_part7_completed'
 quest1_part8_start: 'objective start KillOrcs3'
 tag_q1_part8: 'tag add q1_part8'
 entry_q1_part8: 'journal add q1_part8'
-q1_part8_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective7$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective8$"
+q1_part8_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective7$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective8$'
 #FIRST QUEST The Great Slaughter
 quest1_part9_starter: 'folder quest1_part9_start,tag_q1_part9,entry_q1_part9,q1_part9_start_message,tag_q1_part8_completed'
 tag_q1_part8_completed: 'tag add q1_part8_completed'
 quest1_part9_start: 'objective start NPC3'
 tag_q1_part9: 'tag add q1_part9'
 entry_q1_part9: 'journal add q1_part9'
-q1_part9_start_message: "run ^message \n&6&lObjective Complete:&f \n$quest_objective8$ \n \n \n &6&lNew Objectives: \n&8&l » &f$quest_objective9$"
+q1_part9_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective8$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective9$'
 #FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
 #IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
@@ -76,15 +76,15 @@ QuestReward1: "run ^command lp user %player% permission set warp.estate true ^co
 entry_q1_complete: 'folder default-Points.GiveValleyPoint,default-Points.GiveQuestTotalPoint,q1_end_message,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed,entry_q1_part2_remove,entry_q1_part9_remove,entry_q1_part8_remove,entry_q1_part7_remove,entry_q1_part6_remove,entry_q1_part3_remove,entry_q1_part4_remove,entry_q1_part5_remove,'
 entry_q1_completed: 'journal add q1_completed'
 tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal remove q1_part1'
-entry_q1_part2_remove: 'journal remove q1_part2'
-entry_q1_part3_remove: 'journal remove q1_part3'
-entry_q1_part4_remove: 'journal remove q1_part4'
-entry_q1_part5_remove: 'journal remove q1_part5'
-entry_q1_part6_remove: 'journal remove q1_part6'
-entry_q1_part7_remove: 'journal remove q1_part7'
-entry_q1_part8_remove: 'journal remove q1_part8'
-entry_q1_part9_remove: 'journal remove q1_part9'
-q1_end_message: "run ^message \n&6&lQuest Complete:&f \n$quest_name1$! \n \n \n &6&lRewards: \n&8&l » $quest_reward1-4$ \n&8&l » $quest_reward1-1$ \n&8&l » $quest_reward1-2$ \n&8&l » $quest_reward1-3$"
+entry_q1_part1_remove: 'journal delete q1_part1'
+entry_q1_part2_remove: 'journal delete q1_part2'
+entry_q1_part3_remove: 'journal delete q1_part3'
+entry_q1_part4_remove: 'journal delete q1_part4'
+entry_q1_part5_remove: 'journal delete q1_part5'
+entry_q1_part6_remove: 'journal delete q1_part6'
+entry_q1_part7_remove: 'journal delete q1_part7'
+entry_q1_part8_remove: 'journal delete q1_part8'
+entry_q1_part9_remove: 'journal delete q1_part9'
+q1_end_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$! \n \n \n &6&lRewards\: \n&8&l » $quest_reward1-4$ \n&8&l » $quest_reward1-1$ \n&8&l » $quest_reward1-2$ \n&8&l » $quest_reward1-3$'
 
 
