@@ -1,7 +1,7 @@
-GOBLIN_HAMMER:
+GOBLIN_HAMMER3:
   base:
     material: IRON_AXE
-    name: §9Goblin Hammer
+    name: <tier-color-cleaned>Goblin Hammer
     unbreakable: true
     tier: RARE
     attack-damage: 40.0
@@ -10,14 +10,15 @@ GOBLIN_HAMMER:
     lore:
     - §fIncreased damage against Goblins!
     gem-sockets:
-    - Melee
+    - Unused
     durability: 2.0
-GRAVE_DIGGER:
+    revision-id: 2
+GRAVE_DIGGER5:
   base:
     material: DIAMOND_SHOVEL
     unbreakable: true
     tier: EXOTIC
-    name: §eGrave Digger
+    name: <tier-color-cleaned>Grave Digger
     disable-smelting: true
     disable-crafting: true
     disable-repairing: false
@@ -25,17 +26,18 @@ GRAVE_DIGGER:
     attack-damage: 150.0
     critical-strike-power: 50.0
     gem-sockets:
-    - Melee
-    - Melee
+    - Unused
+    - Unused
     two-handed: true
     movement-speed: -0.1
     custom-model-data: 18.0
     durability: 1.0
     critical-strike-chance: 20.0
-CHIEF_HAMMER:
+    revision-id: 2
+CHIEF_HAMMER4:
   base:
     material: GOLDEN_AXE
-    name: §5Chief's Hammer
+    name: <tier-color-cleaned>Chief's Hammer
     attack-damage: 85.0
     critical-strike-chance: 35.0
     unbreakable: true
@@ -45,20 +47,21 @@ CHIEF_HAMMER:
         type: LIGHT_DASH
         mode: RIGHT_CLICK
         damage: 150.0
-        length: .1
+        length: 0.1
         mana: 25.0
     lore:
     - §7Dash forward dealing §c150 damage§7!
     - §7
     - §7Stolen from the §cGoblin Chief§7!
     gem-sockets:
-    - Melee
-    - Melee
+    - Unused
+    - Unused
     durability: 2.0
-BULLBO_ARM:
+    revision-id: 2
+BULLBO_ARM3:
   base:
     material: IRON_AXE
-    name: §9Bullbo Arm
+    name: <tier-color-cleaned>Bullbo Arm
     attack-speed: 1.0
     attack-damage: 150.0
     critical-strike-chance: 50.0
@@ -70,17 +73,18 @@ BULLBO_ARM:
         type: LIGHT_DASH
         mode: RIGHT_CLICK
         damage: 1000.0
-        length: .25
+        length: 0.25
         mana: 25.0
         cooldown: 5.0
     lore:
     - §7Torn off a §cBullbo§7!
     gem-sockets:
-    - Melee
-BULLBO_ARM2:
+    - Unused
+    revision-id: 2
+BULLBO_ARM4:
   base:
     material: GOLDEN_AXE
-    name: §5Bullbo Arm
+    name: <tier-color-cleaned>Bullbo Arm
     attack-damage: 215.0
     attack-speed: 1.5
     critical-strike-chance: 75.0
@@ -92,11 +96,12 @@ BULLBO_ARM2:
         type: LIGHT_DASH
         mode: RIGHT_CLICK
         damage: 2500.0
-        length: .5
+        length: 0.5
         mana: 50.0
         cooldown: 7.5
     lore:
     - §7Torn off a §cBullbo§7!
     gem-sockets:
-    - Melee
-    - Melee
+    - Unused
+    - Unused
+    revision-id: 2

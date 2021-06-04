@@ -1,112 +1,109 @@
-# For more information, check out the plugin manual or join us on Discord:
-# http://www.mythicmobs.net
-#  
-VoidMobs:
-  MaxItems: 1
-  Drops:
-  - mmoitems{type=GEM_STONE;id=VOID_GEM} 1 3%
-  - mmoitems{type=GEM_STONE;id=VOID_GEM2} 1 2%
-  - mmoitems{type=GEM_STONE;id=VOID_GEM3} 1 1%
+# VoidMobs:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM} 1 3%
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM2} 1 2%
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM3} 1 1%
 
 
-VOID_SOURCE:
-  MaxItems: 1
-  Drops:
-  - mmoitems{type=SPELL;id=SHULKER_MISSILE} 1 2%
-  - mmoitems{type=SPELL;id=SHULKER_MISSILE2} 1 1%
+# VOID_SOURCE:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitems{type=SPELL;id=SHULKER_MISSILE2} 1 2%
+#   - mmoitems{type=SPELL;id=SHULKER_MISSILE3} 1 1%
 
-VOID_THRALL:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=SPELL;id=LIFE_ENDER} 1 2%
-  - mmoitems{type=SPELL;id=LIFE_ENDER2} 1 1%
-  - mmoitems{type=MATERIAL;id=THRALL_EGG} 1 50%
+# VOID_THRALL:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=SPELL;id=LIFE_ENDER2} 1 2%
+#   - mmoitems{type=SPELL;id=LIFE_ENDER2} 1 1%
+#   - mmoitems{type=MATERIAL;id=THRALL_EGG} 1 50%
 
-VOID_WORSHIPER:
-  MaxItems: 1
-  Drops:
-  - mmoitems{type=QUEST;id=VOID_DNA} 1 50%
-  - mmoitems{type=SPELL;id=ENDER_METEOR} 1 2%
-  - mmoitems{type=SPELL;id=ENDER_METEOR2} 1 1%
+# VOID_WORSHIPER:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitems{type=QUEST;id=VOID_DNA} 1 50%
+#   - mmoitems{type=SPELL;id=ENDER_METEOR} 1 2%
+#   - mmoitems{type=SPELL;id=ENDER_METEOR2} 1 1%
 
-VOID_ASSASSIN:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=MATERIAL;id=SHADOW_ESSENCE} 1 50%
-  - mmoitems{type=DAGGER;id=SHADOW_DAGGER} 1 1%
+# VOID_ASSASSIN:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=SHADOW_ESSENCE} 1 50%
+#   - mmoitems{type=DAGGER;id=SHADOW_DAGGER3} 1 1%
 
 
-VOID_BULBLIN:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=MATERIAL;id=ENCHANTED_ENDERPEARL} 1-2 50%
-  - mmoitems{type=CONSUMABLE;id=BULBLIN_HEAD} 1 5%
-  - mmoitems{type=QUEST;id=BULBLIN_HEAD} 1 5%
-  - mmoitems{type=MATERIAL;id=BULBLIN_ARROW} 1 4%
-  - mmoitems{type=MATERIAL;id=BULBLIN_SWORD_SHAVING} 1 3%
-  - mmoitems{type=BOW;id=BULBLIN_BOW} 1 3%
-  - mmoitems{type=SWORD;id=BULBLIN_SWORD} 1 2%
-  - mmoitems{type=ARMOR;id=BULBLIN_LEGS} 1 1%
-  - mmoitems{type=ARMOR;id=BULBLIN_CHEST} 1 .95%
-VOID_BULLBO:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=MATERIAL;id=ENCHANTED_ENDSTONE} 1-2 50%
-  - mmoitems{type=MATERIAL;id=BULLBO_LEG} 1 50%
-  - mmoitems{type=CONSUMABLE;id=BULLBO_HEAD} 1 5%
-  - mmoitems{type=QUEST;id=BULLBO_HEAD} 1 5%
-  - mmoitems{type=ARMOR;id=BULLBO_FEET} 1 4%
-  - mmoitems{type=ARMOR;id=BULLBO_HEAD} 1 3%
-  - mmoitems{type=HAMMER;id=BULLBO_ARM} 1 2%
-  - mmoitems{type=MOUNT;id=BULLBO} 1 1%
+# VOID_BULBLIN:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=ENCHANTED_ENDERPEARL} 1-2 50%
+#   - mmoitems{type=CONSUMABLE;id=BULBLIN_HEAD} 1 5%
+#   - mmoitems{type=QUEST;id=BULBLIN_HEAD} 1 5%
+#   - mmoitems{type=MATERIAL;id=BULBLIN_ARROW} 1 4%
+#   - mmoitems{type=MATERIAL;id=BULBLIN_SWORD_SHAVING} 1 3%
+#   - mmoitems{type=BOW;id=BULBLIN_BOW4} 1 3%
+#   - mmoitems{type=SWORD;id=BULBLIN_SWORD4} 1 2%
+#   - mmoitems{type=ARMOR;id=BULBLIN_LEGS5} 1 1%
+#   - mmoitems{type=ARMOR;id=BULBLIN_CHEST5} 1 .95%
+# VOID_BULLBO:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=ENCHANTED_ENDSTONE} 1-2 50%
+#   - mmoitems{type=MATERIAL;id=BULLBO_LEG} 1 50%
+#   - mmoitems{type=CONSUMABLE;id=BULLBO_HEAD3} 1 5%
+#   - mmoitems{type=QUEST;id=BULLBO_HEAD5} 1 5%
+#   - mmoitems{type=ARMOR;id=BULLBO_FEET5} 1 4%
+#   - mmoitems{type=ARMOR;id=BULLBO_HEAD5} 1 3%
+#   - mmoitems{type=HAMMER;id=BULLBO_ARM3} 1 2%
+#   - mmoitems{type=MOUNT;id=BULLBO3} 1 1%
 
 
 
 #MAZE
-VoidMazeMobs:
-  MaxItems: 1
-  Drops:
-  - mmoitems{type=GEM_STONE;id=VOID_GEM} 1 3%
-  - mmoitems{type=GEM_STONE;id=VOID_GEM2} 1 2%
-  - mmoitems{type=GEM_STONE;id=VOID_GEM3} 1 1%
+# VoidMazeMobs:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM} 1 3%
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM2} 1 2%
+#   - mmoitems{type=GEM_STONE;id=VOID_GEM3} 1 1%
 
-VOID_MONITOR:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=SPELL;id=MONITOR_MUTE} 1-2 .5%
-  - mmoitems{type=SPELL;id=MONITOR_MUTE2} 1-2 .25%
+# VOID_MONITOR:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=SPELL;id=MONITOR_MUTE2} 1-2 .5%
+#   - mmoitems{type=SPELL;id=MONITOR_MUTE3} 1-2 .25%
 
-VOID_MEGA_BOOMER:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=SPELL;id=CURSED_BEAM} 1-2 2%
-  - mmoitems{type=SPELL;id=CURSED_BEAM2} 1-2 1%
+# VOID_MEGA_BOOMER:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=SPELL;id=CURSED_BEAM2} 1-2 2%
+#   - mmoitems{type=SPELL;id=CURSED_BEAM3} 1-2 1%
 
-VOID_CHAMPION_DROP:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=SPELL;id=ENDER_METEOR} 1-2 2%
-  - mmoitems{type=SPELL;id=ENDER_METEOR2} 1-2 1%
+# VOID_CHAMPION_DROP:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=SPELL;id=ENDER_METEOR} 1-2 2%
+#   - mmoitems{type=SPELL;id=ENDER_METEOR2} 1-2 1%
 
-#Abyss
-VOID_ENCHANTRESS:
-  MaxItems: 2
-  Drops:
-  - mmoitems{type=MATERIAL;id=ENCHANTED_OBSIDIAN} 1-2 100%
-  - mmoitems{type=MATERIAL;id=ENCHANTRESS_JEWEL} 1 25%
-  - mmoitems{type=QUEST;id=ENCHANTRESS_HEAD} 1 5%
-  - mmoitems{type=STAFF;id=ENCHANTRESS_STAFF} 1 1%
-  - mmoitems{type=GEM_STONE;id=ENCHANTRESS_GEM} 1 1%
-  - mmoitems{type=GEM_STONE;id=ENDERMAN_MISSILE} 1 1%
-  - mmoitems{type=GEM_STONE;id=ZOMBIE_MISSILE} 1 1%
-  - mmoitems{type=GEM_STONE;id=CREEPER_MISSILE} 1 1%
-  - mmoitems{type=GEM_STONE;id=SLIME_MISSILE} 1 1%
-  - mmoitems{type=ARMOR;id=ENCHANTRESS_HEAD} 1 1%
-  - mmoitems{type=HAMMER;id=ENCHANTRESS_CHEST} 1 1%
-  - mmoitems{type=HAMMER;id=ENCHANTRESS_LEGS} 1 1%
-  - mmoitems{type=ARMOR;id=ENCHANTRESS_FEET} 1 1%
+# #Abyss
+# VOID_ENCHANTRESS:
+#   MaxItems: 2
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=ENCHANTED_OBSIDIAN} 1-2 100%
+#   - mmoitems{type=MATERIAL;id=ENCHANTRESS_JEWEL} 1 25%
+#   - mmoitems{type=QUEST;id=ENCHANTRESS_HEAD5} 1 5%
+#   - mmoitems{type=STAFF;id=ENCHANTRESS_STAFF4} 1 1%
+#   - mmoitems{type=GEM_STONE;id=ENCHANTRESS_GEM} 1 1%
+#   - mmoitems{type=GEM_STONE;id=ENDERMAN_MISSILE} 1 1%
+#   - mmoitems{type=GEM_STONE;id=ZOMBIE_MISSILE} 1 1%
+#   - mmoitems{type=GEM_STONE;id=CREEPER_MISSILE} 1 1%
+#   - mmoitems{type=GEM_STONE;id=SLIME_MISSILE} 1 1%
+#   - mmoitems{type=ARMOR;id=ENCHANTRESS_HEAD4} 1 1%
+#   - mmoitems{type=ARMOR;id=ENCHANTRESS_CHEST4} 1 1%
+#   - mmoitems{type=ARMOR;id=ENCHANTRESS_LEGS4} 1 1%
+#   - mmoitems{type=ARMOR;id=ENCHANTRESS_FEET4} 1 1%
 
-VOID_DEFENDER:
-  MaxItems: 1
-  Drops:
-  - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 10%
+# VOID_DEFENDER:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitems{type=MATERIAL;id=DEFENDER_FLESH} 1 10%

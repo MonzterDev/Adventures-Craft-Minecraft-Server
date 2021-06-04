@@ -1,0 +1,122 @@
+DUMMY_SPIDER: &Dummy
+  Type: SPIDER
+  Display: '&aSpider Dummy'
+  Health: 10000
+  Damage: 0
+  Faction: Dummy
+  BossBar:
+    Enabled: true
+    Title: '&aSpider Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0
+    FollowRange: 0
+    Collidable: false
+    PreventOtherDrops: true
+    PreventTeleport: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -110,16,-34
+  Skills:
+  - teleportto{location=-110.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100
+
+DUMMY_SKELETON:
+  <<: *Dummy
+  Disguise:
+    Type: SKELETON
+  Type: ZOMBIE
+  Display: '&aSkeleton Dummy'
+  BossBar:
+    Enabled: true
+    Title: '&aSkeleton Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -95,16,-34
+  Skills:
+  - teleportto{location=-95.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100
+
+DUMMY_ZOMBIE:
+  <<: *Dummy
+  Type: ZOMBIE
+  Display: '&aZombie Dummy'
+  BossBar:
+    Enabled: true
+    Title: '&aZombie Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -98,16,-34
+  Skills:
+  - teleportto{location=-98.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100
+
+DUMMY_WOLF:
+  <<: *Dummy
+  Type: WOLF
+  Display: '&aWolf Dummy'
+  BossBar:
+    Enabled: true
+    Title: '&aWolf Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -101,16,-34
+  Skills:
+  - teleportto{location=-101.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100
+
+DUMMY_BABY_GOBLIN:
+  <<: *Dummy
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&aBaby Goblin Dummy'
+  BossBar:
+    Enabled: true
+    Title: '&aBaby Goblin Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -104,16,-34
+  Skills:
+  - teleportto{location=-104.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100
+
+DUMMY_ENDERMAN:
+  <<: *Dummy
+  Type: ENDERMAN
+  Display: '&aEnderman Dummy'
+  BossBar:
+    Enabled: true
+    Title: '&aEnderman Dummy <caster.hp>&f/&c<caster.mhp>'
+    Range: 3
+    Color: GREEN
+    Style: SOLID  
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotolocation -107,16,-34
+  Skills:
+  - teleportto{location=-107.5,16,-34.5;y=179.4;p=4.8} @self ~onSpawn
+  - message{m="&aYou did &c<skill.var.damage-amount> &adamage!"} @trigger ~onDamaged
+  - healpercent{m=1} @self ~onTimer:100

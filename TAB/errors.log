@@ -28,3 +28,74 @@
 03.06.2021 - 06:07:57 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
 03.06.2021 - 06:41:56 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
 03.06.2021 - 07:10:31 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
+19.07.2021 - 19:12:24 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
+20.07.2021 - 05:00:59 - [TAB v2.8.11-pre4 Premium] Failed to check disguise status using LibsDisguises
+20.07.2021 - 05:00:59 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:00:59 - [TAB v2.8.11-pre4 Premium] Feature Unlimited Nametags failed to read packet
+20.07.2021 - 05:00:59 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:00:59 -        at java.base/java.lang.String.split(String.java:2286)
+20.07.2021 - 05:00:59 -        at java.base/java.lang.String.split(String.java:2364)
+20.07.2021 - 05:00:59 -        at me.neznamy.tab.shared.ProtocolVersion.getMinorVersion(ProtocolVersion.java:91)
+20.07.2021 - 05:00:59 -        at me.neznamy.tab.platforms.bukkit.features.unlimitedtags.PacketListener.onPacketReceive(PacketListener.java:46)
+20.07.2021 - 05:00:59 -        at me.neznamy.tab.shared.FeatureManager.onPacketReceive(FeatureManager.java:243)
+20.07.2021 - 05:00:59 -        at me.neznamy.tab.platforms.bukkit.BukkitPipelineInjector$1.channelRead(BukkitPipelineInjector.java:41)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 -        at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+20.07.2021 - 05:00:59 -        at me.RockinChaos.itemjoin.utils.protocol.TinyProtocol$PacketInterceptor.channelRead(TinyProtocol.java:485)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 -        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 -        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+20.07.2021 - 05:00:59 -        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 -        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+20.07.2021 - 05:00:59 -        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 -        at com.comphenix.protocol.injector.netty.ChannelInjector$2.channelRead(ChannelInjector.java:289)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+20.07.2021 - 05:00:59 -        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+20.07.2021 - 05:00:59 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing permission groups
+20.07.2021 - 05:00:59 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:01:24 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing nametag visibility
+20.07.2021 - 05:01:24 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:01:49 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing nametag visibility
+20.07.2021 - 05:01:49 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:01:49 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing team names
+20.07.2021 - 05:01:49 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:01:49 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing
+20.07.2021 - 05:01:49 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:02:18 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing team names
+20.07.2021 - 05:02:18 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:02:31 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing nametag visibility
+20.07.2021 - 05:02:31 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:02:49 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing team names
+20.07.2021 - 05:02:49 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 05:13:15 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
+20.07.2021 - 07:39:04 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing permission groups
+20.07.2021 - 07:39:04 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 07:39:04 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing nametag visibility
+20.07.2021 - 07:39:04 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 07:39:04 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing placeholders
+20.07.2021 - 07:39:04 - java.lang.OutOfMemoryError: Java heap space
+20.07.2021 - 07:39:22 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing placeholders
+20.07.2021 - 07:39:22 - java.util.concurrent.CompletionException: java.sql.SQLException: HikariDataSource HikariDataSource (luckperms-hikari) has been closed.
+20.07.2021 - 07:39:22 -        at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$0(Storage.java:91)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+21.07.2021 - 08:39:13 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]

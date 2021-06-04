@@ -1,7 +1,7 @@
 LOST_SOUL:
   base:
     material: PLAYER_HEAD
-    name: '&9Lost Soul'
+    name: <tier-color-cleaned>Lost Soul
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -11,10 +11,11 @@ LOST_SOUL:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkNWFiMjFkNjdlZWFkMTYzMzE3YzlhNWRjNTFkNDA5ZDg1ZGYyNTI3NjY3YTQyNGEyYWZmNjczOGI2ZmM5NyJ9fX0=
       uuid: 55a3f9d0-7ded-418e-b64b-10505f36bd08
+    revision-id: 2
 BONE_FRAGMENT:
   base:
     material: STONE_BUTTON
-    name: '&fBone Fragment'
+    name: <tier-color-cleaned>Bone Fragment
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -23,47 +24,42 @@ BONE_FRAGMENT:
     tier: COMMON
     lore:
     - '&fFragments from the Undead!'
+    revision-id: 2
 ALPHA_SOUL:
   base:
     material: BLAZE_POWDER
-    name: §5Alpha Soul
+    name: <tier-color-cleaned>Alpha Soul
     disable-interaction: true
     unbreakable: true
     lore:
     - §fUsed for reviving the Undead!
     tier: LEGENDARY
+    revision-id: 2
 'NULL':
   base:
     material: PAPER
-    name: §fNull
+    name: <tier-color-cleaned>Null
     lore:
     - §fYou most likely crafted
     - §fsomething which is disabled!
     disable-interaction: true
-VOID_FRAGMENT:
-  base:
-    material: BROWN_MUSHROOM
-    enchants:
-      unbreaking: 5
-    hide-enchants: true
-    displayed-type: Quest Item
-    name: §fVoid Fragment
-    tier: COMMON
-    disable-interaction: true
+    revision-id: 2
 SMITHINGTABLE:
   base:
     material: SMITHING_TABLE
     tier: COMMON
     disable-interaction: true
+    revision-id: 2
 SMOKER:
   base:
     material: SMOKER
     tier: COMMON
     disable-interaction: true
+    revision-id: 2
 GEM_BASE:
   base:
     material: COAL_BLOCK
-    name: §fGem Base
+    name: <tier-color-cleaned>Gem Base
     disable-interaction: true
     hide-enchants: true
     enchants:
@@ -73,10 +69,11 @@ GEM_BASE:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: COMMON
+    revision-id: 2
 GEM_BASE2:
   base:
     material: IRON_BLOCK
-    name: §2Gem Base
+    name: <tier-color-cleaned>Gem Base
     disable-interaction: true
     hide-enchants: true
     enchants:
@@ -86,10 +83,11 @@ GEM_BASE2:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: UNCOMMON
+    revision-id: 2
 GEM_BASE3:
   base:
     material: GOLD_BLOCK
-    name: §9Gem Base
+    name: <tier-color-cleaned>Gem Base
     disable-interaction: true
     hide-enchants: true
     enchants:
@@ -99,10 +97,11 @@ GEM_BASE3:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: RARE
+    revision-id: 2
 GEM_BASE4:
   base:
     material: DIAMOND_BLOCK
-    name: §5Gem Base
+    name: <tier-color-cleaned>Gem Base
     disable-interaction: true
     hide-enchants: true
     enchants:
@@ -112,10 +111,11 @@ GEM_BASE4:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: LEGENDARY
+    revision-id: 2
 GEM_BASE5:
   base:
     material: EMERALD_BLOCK
-    name: §eGem Base
+    name: <tier-color-cleaned>Gem Base
     disable-interaction: true
     hide-enchants: true
     enchants:
@@ -125,6 +125,7 @@ GEM_BASE5:
     lore:
     - §7Used for §dGem Crafting§7!
     tier: EXOTIC
+    revision-id: 2
 MORDEN_FLESH:
   base:
     material: ROTTEN_FLESH
@@ -132,9 +133,10 @@ MORDEN_FLESH:
     enchants:
       unbreaking: 1
     tier: RARE
-    name: §9Morden Flesh
+    name: <tier-color-cleaned>Morden Flesh
     lore:
     - §7The last remains of §cMorden§7!
+    revision-id: 2
 VOID_SHARD:
   base:
     material: END_CRYSTAL
@@ -144,12 +146,13 @@ VOID_SHARD:
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
-    name: §9Void Shard
+    name: <tier-color-cleaned>Void Shard
     tier: RARE
+    revision-id: 2
 ENCHANTED_FISH:
   base:
     material: COD
-    name: §9Enchanted Fish
+    name: <tier-color-cleaned>Enchanted Fish
     hide-enchants: true
     disable-crafting: true
     disable-smelting: true
@@ -157,10 +160,11 @@ ENCHANTED_FISH:
     disable-interaction: true
     enchants:
       unbreaking: 4
+    revision-id: 2
 ENCHANTED_ICE:
   base:
     material: ICE
-    name: §9Enchanted Ice
+    name: <tier-color-cleaned>Enchanted Ice
     hide-enchants: true
     disable-crafting: true
     disable-smelting: true
@@ -168,10 +172,11 @@ ENCHANTED_ICE:
     disable-interaction: true
     enchants:
       unbreaking: 4
+    revision-id: 2
 ENCHANTED_SNOW_BLOCK:
   base:
     material: SNOW_BLOCK
-    name: §9Enchanted Snow Block
+    name: <tier-color-cleaned>Enchanted Snow Block
     hide-enchants: true
     disable-crafting: true
     disable-smelting: true
@@ -179,10 +184,11 @@ ENCHANTED_SNOW_BLOCK:
     disable-interaction: true
     enchants:
       unbreaking: 4
+    revision-id: 2
 ENCHANTED_COBBLESTONE:
   base:
     material: COBBLESTONE
-    name: §9Enchanted Cobblestone
+    name: <tier-color-cleaned>Enchanted Cobblestone
     hide-enchants: true
     enchants:
       unbreaking: 1
@@ -190,955 +196,1031 @@ ENCHANTED_COBBLESTONE:
     disable-smelting: true
     tier: RARE
     disable-interaction: true
+    revision-id: 2
 ENCHANTED_COAL:
   base:
     material: COAL
-    name: §9Enchanted Coal
+    name: <tier-color-cleaned>Enchanted Coal
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_IRON:
   base:
     material: IRON_INGOT
-    name: §9Enchanted Iron
+    name: <tier-color-cleaned>Enchanted Iron
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_GOLD:
   base:
     material: GOLD_INGOT
-    name: §9Enchanted Gold
+    name: <tier-color-cleaned>Enchanted Gold
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_REDSTONE:
   base:
     material: REDSTONE
-    name: §9Enchanted Redstone
+    name: <tier-color-cleaned>Enchanted Redstone
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_LAPIS:
   base:
     material: LAPIS_LAZULI
-    name: §9Enchanted Lapis
+    name: <tier-color-cleaned>Enchanted Lapis
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_DIAMOND:
   base:
     material: DIAMOND
-    name: §9Enchanted Diamond
+    name: <tier-color-cleaned>Enchanted Diamond
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_EMERALD:
   base:
     material: EMERALD
-    name: §9Enchanted Emerald
+    name: <tier-color-cleaned>Enchanted Emerald
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_QUARTZ:
   base:
     material: QUARTZ
-    name: §9Enchanted Quartz
+    name: <tier-color-cleaned>Enchanted Quartz
     hide-enchants: true
     enchants:
       unbreaking: 1
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_GLOWSTONEDUST:
   base:
     material: GLOWSTONE_DUST
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Glowstone Dust
+    name: <tier-color-cleaned>Enchanted Glowstone Dust
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_GLOWSTONE:
   base:
     material: GLOWSTONE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Glowstone
+    name: <tier-color-cleaned>Enchanted Glowstone
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_NETHERRACK:
   base:
     material: NETHERRACK
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Netherrack
+    name: <tier-color-cleaned>Enchanted Netherrack
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_NETHER_WART:
   base:
     material: NETHER_WART
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Netherwart
+    name: <tier-color-cleaned>Enchanted Netherwart
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_OBSIDIAN:
   base:
     material: OBSIDIAN
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Obsidian
+    name: <tier-color-cleaned>Enchanted Obsidian
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ENDSTONE:
   base:
     material: END_STONE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Endstone
+    name: <tier-color-cleaned>Enchanted Endstone
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BLAZE_ROD:
   base:
     material: BLAZE_ROD
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Blaze Rod
+    name: <tier-color-cleaned>Enchanted Blaze Rod
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_MAGMA_CREAM:
   base:
     material: MAGMA_CREAM
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Magma Cream
+    name: <tier-color-cleaned>Enchanted Magma Cream
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_GHAST_TEAR:
   base:
     material: GHAST_TEAR
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Ghast Tear
+    name: <tier-color-cleaned>Enchanted Ghast Tear
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ROTTEN_FLESH:
   base:
     material: ROTTEN_FLESH
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Rotten Flesh
+    name: <tier-color-cleaned>Enchanted Rotten Flesh
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BONE:
   base:
     material: BONE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Bone
+    name: <tier-color-cleaned>Enchanted Bone
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ARROW:
   base:
     material: ARROW
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Arrow
+    name: <tier-color-cleaned>Enchanted Arrow
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SPIDER_EYE:
   base:
     material: SPIDER_EYE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Spider Eye
+    name: <tier-color-cleaned>Enchanted Spider Eye
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_STRING:
   base:
     material: STRING
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted String
+    name: <tier-color-cleaned>Enchanted String
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_GUNPOWDER:
   base:
     material: GUNPOWDER
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Gunpowder
+    name: <tier-color-cleaned>Enchanted Gunpowder
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ENDERPEARL:
   base:
     material: ENDER_PEARL
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Enderpearl
+    name: <tier-color-cleaned>Enchanted Enderpearl
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SLIME_BALL:
   base:
     material: SLIME_BALL
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Slime Ball
+    name: <tier-color-cleaned>Enchanted Slime Ball
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_LEATHER:
   base:
     material: LEATHER
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Leather
+    name: <tier-color-cleaned>Enchanted Leather
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BEEF:
   base:
     material: BEEF
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Beef
+    name: <tier-color-cleaned>Enchanted Beef
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_STEAK:
   base:
     material: COOKED_BEEF
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Steak
+    name: <tier-color-cleaned>Enchanted Steak
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_RABBIT:
   base:
     material: RABBIT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Rabbit
+    name: <tier-color-cleaned>Enchanted Rabbit
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_COOKED_RABBIT:
   base:
     material: COOKED_RABBIT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cooked Rabbit
+    name: <tier-color-cleaned>Enchanted Cooked Rabbit
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_RABBIT_HIDE:
   base:
     material: RABBIT_HIDE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Rabbit Hide
+    name: <tier-color-cleaned>Enchanted Rabbit Hide
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_RABBIT_FOOT:
   base:
     material: RABBIT_FOOT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Rabbit Foot
+    name: <tier-color-cleaned>Enchanted Rabbit Foot
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_FEATHER:
   base:
     material: FEATHER
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Feather
+    name: <tier-color-cleaned>Enchanted Feather
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CHICKEN:
   base:
     material: CHICKEN
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Chicken
+    name: <tier-color-cleaned>Enchanted Chicken
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_COOKED_CHICKEN:
   base:
     material: COOKED_CHICKEN
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cooked Chicken
+    name: <tier-color-cleaned>Enchanted Cooked Chicken
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_EGG:
   base:
     material: EGG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Egg
+    name: <tier-color-cleaned>Enchanted Egg
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_PORKCHOP:
   base:
     material: PORKCHOP
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Porkchop
+    name: <tier-color-cleaned>Enchanted Porkchop
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_COOKED_PORKCHOP:
   base:
     material: COOKED_PORKCHOP
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cooked Porkchop
+    name: <tier-color-cleaned>Enchanted Cooked Porkchop
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_MUTTON:
   base:
     material: MUTTON
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Mutton
+    name: <tier-color-cleaned>Enchanted Mutton
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_COOKED_MUTTON:
   base:
     material: COOKED_MUTTON
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cooked Mutton
+    name: <tier-color-cleaned>Enchanted Cooked Mutton
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_WOOL:
   base:
     material: WHITE_WOOL
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Wool
+    name: <tier-color-cleaned>Enchanted Wool
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SEED:
   base:
     material: WHEAT_SEEDS
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Seed
+    name: <tier-color-cleaned>Enchanted Seed
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_WHEAT:
   base:
     material: WHEAT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Wheat
+    name: <tier-color-cleaned>Enchanted Wheat
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CARROT:
   base:
     material: CARROT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Carrot
+    name: <tier-color-cleaned>Enchanted Carrot
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_POTATO:
   base:
     material: POTATO
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Potato
+    name: <tier-color-cleaned>Enchanted Potato
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_MELON:
   base:
     material: MELON_SLICE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Melon
+    name: <tier-color-cleaned>Enchanted Melon
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_PUMPKIN:
   base:
     material: PUMPKIN
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Pumpkin
+    name: <tier-color-cleaned>Enchanted Pumpkin
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SUGAR_CANE:
   base:
     material: SUGAR_CANE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Sugar Cane
+    name: <tier-color-cleaned>Enchanted Sugar Cane
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SUGAR:
   base:
     material: SUGAR
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Sugar
+    name: <tier-color-cleaned>Enchanted Sugar
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_PAPER:
   base:
     material: PAPER
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Paper
+    name: <tier-color-cleaned>Enchanted Paper
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_RED_MUSHROOM:
   base:
     material: RED_MUSHROOM
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Red Mushroom
+    name: <tier-color-cleaned>Enchanted Red Mushroom
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BROWN_MUSHROOM:
   base:
     material: BROWN_MUSHROOM
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Brown Mushroom
+    name: <tier-color-cleaned>Enchanted Brown Mushroom
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CACTUS:
   base:
     material: CACTUS
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cactus
+    name: <tier-color-cleaned>Enchanted Cactus
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BEETROOT:
   base:
     material: BEETROOT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Beetroot
+    name: <tier-color-cleaned>Enchanted Beetroot
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_OAK_LOG:
   base:
     material: OAK_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Oak Log
+    name: <tier-color-cleaned>Enchanted Oak Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_BIRCH_LOG:
   base:
     material: BIRCH_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Birch Log
+    name: <tier-color-cleaned>Enchanted Birch Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_DARK_OAK_LOG:
   base:
     material: DARK_OAK_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Dark Oak Log
+    name: <tier-color-cleaned>Enchanted Dark Oak Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_JUNGLE_LOG:
   base:
     material: JUNGLE_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Jungle Log
+    name: <tier-color-cleaned>Enchanted Jungle Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ACACIA_LOG:
   base:
     material: ACACIA_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Acacia Log
+    name: <tier-color-cleaned>Enchanted Acacia Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SPRUCE_LOG:
   base:
     material: SPRUCE_LOG
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Spruce Log
+    name: <tier-color-cleaned>Enchanted Spruce Log
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_STICK:
   base:
     material: STICK
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Stick
+    name: <tier-color-cleaned>Enchanted Stick
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_AZURE_BLUET:
   base:
     material: AZURE_BLUET
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Azure Bluet
+    name: <tier-color-cleaned>Enchanted Azure Bluet
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 STAR_SHARD:
   base:
     material: QUARTZ
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Star Shard
+    name: <tier-color-cleaned>Star Shard
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_STAR_SHARD:
   base:
     material: NETHER_STAR
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Star Shard
+    name: <tier-color-cleaned>Enchanted Star Shard
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CORNFLOWER:
   base:
     material: CORNFLOWER
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Cornflower
+    name: <tier-color-cleaned>Enchanted Cornflower
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CRIMSON_FUNGUS:
   base:
     material: CRIMSON_FUNGUS
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Crimson Fungus
+    name: <tier-color-cleaned>Enchanted Crimson Fungus
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_TUBE_CORAL:
   base:
     material: TUBE_CORAL
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Tube Coral
+    name: <tier-color-cleaned>Enchanted Tube Coral
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_SHULKER_SHELL:
   base:
     material: SHULKER_SHELL
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Shulker Shell
+    name: <tier-color-cleaned>Enchanted Shulker Shell
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ALLIUM:
   base:
     material: ALLIUM
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Allium
+    name: <tier-color-cleaned>Enchanted Allium
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_ROSE_BUSH:
   base:
     material: ROSE_BUSH
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Rose Bush
+    name: <tier-color-cleaned>Enchanted Rose Bush
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_PUFFERFISH:
   base:
     material: PUFFERFISH
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Pufferfish
+    name: <tier-color-cleaned>Enchanted Pufferfish
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_WITHER_ROSE:
   base:
     material: WITHER_ROSE
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Wither Rose
+    name: <tier-color-cleaned>Enchanted Wither Rose
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 ENCHANTED_CHORUS_FRUIT:
   base:
     material: CHORUS_FRUIT
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: §9Enchanted Chorus Fruit
+    name: <tier-color-cleaned>Enchanted Chorus Fruit
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: RARE
+    revision-id: 2
 CHORUS_SEED:
   base:
     material: POPPED_CHORUS_FRUIT
-    name: §fChorus Seed
+    name: <tier-color-cleaned>Chorus Seed
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
     tier: COMMON
+    revision-id: 2
 MAGMA_COIN:
   base:
     material: MAGMA_CREAM
-    name: '&9Magma Coin'
+    name: <tier-color-cleaned>Magma Coin
     disable-crafting: true
     tier: RARE
     disable-interaction: true
     lore:
     - '&7Hot coin rarely found'
     - '&7inside of &cVoid Magmas&7!'
+    revision-id: 2
 ADVENTURE_COIN:
   base:
     material: PUFFERFISH
-    name: '&eAdventure Coin'
+    name: <tier-color-cleaned>Adventure Coin
     disable-crafting: true
     tier: EXOTIC
     disable-interaction: true
@@ -1146,10 +1228,11 @@ ADVENTURE_COIN:
     - '&7Can be used for &aCosmetic'
     - '&aItems &7and &aServer Boosters&7!'
     displayed-type: '&fCurrency'
+    revision-id: 2
 ENGRAM1:
   base:
     material: PLAYER_HEAD
-    name: '&9Engram'
+    name: <tier-color-cleaned>Engram
     disable-crafting: true
     tier: RARE
     disable-interaction: true
@@ -1160,10 +1243,11 @@ ENGRAM1:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJkYWQ4NjhmOGQ4NjViYWEzMmQ2MTU4NjcyZDFiMTM0ZGI2MWVhNTZkMzNlZmEwYzA5ZjZiYTZmMjc2ZmYyIn19fQ==
       uuid: efed5bb9-7054-4d37-9177-56b17bc6c047
+    revision-id: 2
 ENGRAM2:
   base:
     material: PLAYER_HEAD
-    name: '&5Engram'
+    name: <tier-color-cleaned>Engram
     disable-crafting: true
     tier: LEGENDARY
     disable-interaction: true
@@ -1174,10 +1258,11 @@ ENGRAM2:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWFkMzFmZDVhMThhODIwZjdkZmZkY2JkMmJjNTI5MmQyMjFhODk2NTE4ZTFjZmE4MDMxNDZlYjlhYmE3MjBiOCJ9fX0=
       uuid: efed5bb9-7054-4d37-9177-56b17bc6c047
+    revision-id: 2
 ENGRAM3:
   base:
     material: PLAYER_HEAD
-    name: '&eEngram'
+    name: <tier-color-cleaned>Engram
     disable-crafting: true
     tier: EXOTIC
     disable-interaction: true
@@ -1188,13 +1273,15 @@ ENGRAM3:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU4MzRjNDJjYmZkYTM0YjU5MmJkYzlmZGFhYWM4MTc0YzI0YzE1ZWQ3NzA3OGRmNTBjZGVlMzBjOTgzMTA1NyJ9fX0=
       uuid: efed5bb9-7054-4d37-9177-56b17bc6c047
+    revision-id: 2
 BONE:
   base:
     material: BONE
+    revision-id: 2
 THRALL_EGG:
   base:
     material: PLAYER_HEAD
-    name: '&2Thrall Egg'
+    name: <tier-color-cleaned>Thrall Egg
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1207,10 +1294,11 @@ THRALL_EGG:
     lore:
     - '&7Dispensed from female &cVoid'
     - '&cThralls &7upon death!'
+    revision-id: 2
 BULB_LEG:
   base:
     material: PORKCHOP
-    name: '&9Bulb Leg'
+    name: <tier-color-cleaned>Bulb Leg
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1219,10 +1307,11 @@ BULB_LEG:
     tier: RARE
     lore:
     - '&7Stolen from a baby &cBullb&7!'
+    revision-id: 2
 BULLBO_LEG:
   base:
     material: PORKCHOP
-    name: '&5Bullbo Leg'
+    name: <tier-color-cleaned>Bullbo Leg
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1235,10 +1324,11 @@ BULLBO_LEG:
     lore:
     - '&7Obtain by slaying the mighty &cBullbo'
     - '&7and tearing the limbs from its body!'
+    revision-id: 2
 SHADOW_ESSENCE:
   base:
     material: BLACK_DYE
-    name: '&9Shadow Essence'
+    name: <tier-color-cleaned>Shadow Essence
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1250,10 +1340,11 @@ SHADOW_ESSENCE:
     tier: RARE
     lore:
     - '&7Rarely beaten out of &cVoid Assassins'
+    revision-id: 2
 BULBLIN_ARROW:
   base:
     material: ARROW
-    name: '&9Bulblin Arrow'
+    name: <tier-color-cleaned>Bulblin Arrow
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1266,10 +1357,11 @@ BULBLIN_ARROW:
     lore:
     - '&7This must''ve dropped while'
     - '&7the &cBulblin &7was distracted!'
+    revision-id: 2
 BULBLIN_SWORD_SHAVING:
   base:
     material: CHAIN
-    name: '&9Bulblin Sword Shaving'
+    name: <tier-color-cleaned>Bulblin Sword Shaving
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1282,10 +1374,11 @@ BULBLIN_SWORD_SHAVING:
     lore:
     - '&7You chipped a piece off of'
     - '&cBulblin''s &7sword right from him!'
+    revision-id: 2
 GIANT_EGG:
   base:
     material: EGG
-    name: §fGiant Egg
+    name: <tier-color-cleaned>Giant Egg
     disable-enchanting: true
     disable-smelting: true
     disable-repairing: true
@@ -1297,10 +1390,11 @@ GIANT_EGG:
     lore:
     - §fWow, it's pretty big!
     tier: COMMON
+    revision-id: 2
 STABILIZER:
   base:
     material: CHORUS_FLOWER
-    name: '&9Stabilizer'
+    name: <tier-color-cleaned>Stabilizer
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1310,15 +1404,17 @@ STABILIZER:
     lore:
     - '&7Forge with §5Unstable Warp &7to'
     - '&7stabilize into a §eStable Warp&7!'
+    revision-id: 2
 VOID_STAR:
   base:
     material: NETHER_STAR
-    name: '&eVoid Star'
+    name: <tier-color-cleaned>Void Star
     tier: EXOTIC
+    revision-id: 2
 ENCHANTRESS_JEWEL:
   base:
     material: HEART_OF_THE_SEA
-    name: '&9Enchantress Jewel'
+    name: <tier-color-cleaned>Enchantress Jewel
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1330,10 +1426,11 @@ ENCHANTRESS_JEWEL:
     tier: RARE
     lore:
     - '&7Rarely dropped from the &cVoid Enchantress'
+    revision-id: 2
 DEFENDER_FLESH:
   base:
     material: DRIED_KELP
-    name: '&9Defender Flesh'
+    name: <tier-color-cleaned>Defender Flesh
     unbreakable: true
     disable-enchanting: true
     disable-smelting: true
@@ -1345,3 +1442,4 @@ DEFENDER_FLESH:
     tier: RARE
     lore:
     - '&7Rarely peeled from a &cVoid Defender'
+    revision-id: 2

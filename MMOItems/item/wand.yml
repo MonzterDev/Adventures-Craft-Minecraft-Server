@@ -1,7 +1,35 @@
-MONITOR_MUTE:
+CHIEF_JUKEBOX5:
+  base:
+    material: JUKEBOX
+    name: <tier-color-cleaned>Chiefs Jukebox
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    displayed-type: Magical
+    tier: EXOTIC
+    lore:
+    - '§e&lMagical Tune: &fRight Click'
+    - '§aSpeedy&f: &7Gain &aSpeed 5 &7for &a1 minute&7!'
+    - '§aPower&f: &7Gain &aStrength 10 &7for &a30 seconds&7!'
+    - '§cSmite&f: &7Deal &c500 Damage &7to enemies within &a10 blocks&7!'
+    - '§cSlow&f: &7Gain &cSlowness 1 &7for &a15 seconds&7!'
+    - ''
+    - §7Play a &5magical &7tune from the &cChief's Jukebox&7!
+    - '&cTunes &7may be played every &a90 seconds&7!'
+    item-cooldown: 91
+    custom-nbt:
+    - MYTHIC_TYPE CHIEF_JUKE_ITEM
+    revision-id: 2
+MONITOR_MUTE2:
   base:
     material: CHORUS_PLANT
-    name: §2Monitor Mute
+    name: <tier-color-cleaned>Monitor Mute
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -32,10 +60,11 @@ MONITOR_MUTE:
     - §8stunning §7enemies for 2secs
     - §7and dealing §c250 damage§7!
     item-cooldown: 5
-MONITOR_MUTE2:
+    revision-id: 2
+MONITOR_MUTE3:
   base:
     material: CHORUS_PLANT
-    name: §9Monitor Mute
+    name: <tier-color-cleaned>Monitor Mute
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -66,10 +95,11 @@ MONITOR_MUTE2:
     - §8stunning §7enemies for 3secs
     - §7and dealing §c500 damage§7!
     item-cooldown: 7.5
-FEMORAL_ARTERY:
+    revision-id: 2
+FEMORAL_ARTERY4:
   base:
     material: WEEPING_VINES
-    name: §5Femoral Artery
+    name: <tier-color-cleaned>Femoral Artery
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -94,13 +124,14 @@ FEMORAL_ARTERY:
         volume: 1.0
         pitch: 1.0
     lore:
-    - §aHeal §7yourself with the 
+    - §aHeal §7yourself with the
     - §cblood §7of the corrupt Veins!
     item-cooldown: 7.5
-DRYAD_WEAK_VINE:
+    revision-id: 2
+DRYAD_WEAK_VINE4:
   base:
     material: VINE
-    name: §5Dryad Weak Vine
+    name: <tier-color-cleaned>Dryad Weak Vine
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -132,10 +163,11 @@ DRYAD_WEAK_VINE:
     - §7Give yourself and allies within
     - §7the radius §aSpeed 5 &7for &a3 seconds.
     item-cooldown: 7.5
-DRYAD_STRONG_VINE:
+    revision-id: 2
+DRYAD_STRONG_VINE5:
   base:
     material: VINE
-    name: §eDryad Strong Vine
+    name: <tier-color-cleaned>Dryad Strong Vine
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -167,10 +199,11 @@ DRYAD_STRONG_VINE:
     - §7Give yourself and allies within
     - §7the radius §aSpeed 10 &7for &a5 seconds.
     item-cooldown: 10
-RESOLVE0:
+    revision-id: 2
+RESOLVE:
   base:
     material: AZURE_BLUET
-    name: §fResolve
+    name: <tier-color-cleaned>Resolve
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -197,10 +230,11 @@ RESOLVE0:
     lore:
     - §aHeal §7yourself for §a5HP ❤§7!
     item-cooldown: 7.5
-RESOLVE:
+    revision-id: 2
+RESOLVE2:
   base:
     material: AZURE_BLUET
-    name: §2Resolve
+    name: <tier-color-cleaned>Resolve
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -227,10 +261,11 @@ RESOLVE:
     lore:
     - §aHeal §7yourself for §a15HP ❤§7!
     item-cooldown: 7.5
-RESOLVE2:
+    revision-id: 2
+RESOLVE3:
   base:
     material: AZURE_BLUET
-    name: §9Resolve
+    name: <tier-color-cleaned>Resolve
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -257,10 +292,11 @@ RESOLVE2:
     lore:
     - §aHeal §7yourself for §a50HP ❤§7!
     item-cooldown: 10.0
-ROOTING:
+    revision-id: 2
+ROOTING3:
   base:
     material: TWISTING_VINES
-    name: §9Rooting Wand
+    name: <tier-color-cleaned>Rooting Wand
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -287,10 +323,11 @@ ROOTING:
     - §7Unleash §2roots §7upon enemies,
     - §6stunning §7and hurting them!
     item-cooldown: 10.0
-TARGETED_FIREBALL0:
+    revision-id: 2
+TARGETED_FIREBALL:
   base:
     material: RED_MUSHROOM
-    name: §fFireball
+    name: <tier-color-cleaned>Fireball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -319,10 +356,11 @@ TARGETED_FIREBALL0:
     - §7Casts a §4fireball §7damaging
     - §7and §cigniting enemies!
     item-cooldown: 3
-TARGETED_FIREBALL:
+    revision-id: 2
+TARGETED_FIREBALL2:
   base:
     material: RED_MUSHROOM
-    name: §2Fireball
+    name: <tier-color-cleaned>Fireball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -351,10 +389,11 @@ TARGETED_FIREBALL:
     - §7Casts a §4fireball §7damaging
     - §7and §cigniting enemies!
     item-cooldown: 5.0
-TARGETED_FIREBALL2:
+    revision-id: 2
+TARGETED_FIREBALL3:
   base:
     material: RED_MUSHROOM
-    name: §9Fireball
+    name: <tier-color-cleaned>Fireball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -383,10 +422,11 @@ TARGETED_FIREBALL2:
     - §7Casts a §4fireball §7damaging
     - §7and §cigniting enemies!
     item-cooldown: 7.5
-SPARKLE:
+    revision-id: 2
+SPARKLE2:
   base:
     material: NETHER_STAR
-    name: §2Sparkle
+    name: <tier-color-cleaned>Sparkle
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -415,10 +455,11 @@ SPARKLE:
     - §7Shoots a §estar §7exploding on
     - §cenemies §7within a medium radius!
     item-cooldown: 7.5
-SPARKLE2:
+    revision-id: 2
+SPARKLE3:
   base:
     material: NETHER_STAR
-    name: §9Sparkle
+    name: <tier-color-cleaned>Sparkle
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -447,10 +488,11 @@ SPARKLE2:
     - §7Shoots a §estar §7exploding on
     - §cenemies §7within a medium radius!
     item-cooldown: 10
-BUNNY_MODE:
+    revision-id: 2
+BUNNY_MODE2:
   base:
     material: RABBIT_FOOT
-    name: §2Bunny Mode
+    name: <tier-color-cleaned>Bunny Mode
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -478,10 +520,11 @@ BUNNY_MODE:
     lore:
     - §7Hop and skip like a Bunny!
     item-cooldown: 5
-BUNNY_MODE2:
+    revision-id: 2
+BUNNY_MODE3:
   base:
     material: RABBIT_FOOT
-    name: §9Bunny Mode
+    name: <tier-color-cleaned>Bunny Mode
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -509,10 +552,11 @@ BUNNY_MODE2:
     lore:
     - §7Hop and skip like a §aspeedy §7Bunny!
     item-cooldown: 12.5
-ARCANE_RIFT:
+    revision-id: 2
+ARCANE_RIFT2:
   base:
     material: CORNFLOWER
-    name: §2Arcane Rift
+    name: <tier-color-cleaned>Arcane Rift
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -541,10 +585,11 @@ ARCANE_RIFT:
     - §7Create a §drift §7in the ground
     - §6slowing §7and damaging enemies!
     item-cooldown: 7.5
-ARCANE_RIFT2:
+    revision-id: 2
+ARCANE_RIFT3:
   base:
     material: CORNFLOWER
-    name: §9Arcane Rift
+    name: <tier-color-cleaned>Arcane Rift
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -573,10 +618,11 @@ ARCANE_RIFT2:
     - §7Create a §drift §7in the ground
     - §6slowing §7and damaging enemies!
     item-cooldown: 12.5
-BURNING_HANDS:
+    revision-id: 2
+BURNING_HANDS2:
   base:
     material: CRIMSON_FUNGUS
-    name: §2Burning Hands
+    name: <tier-color-cleaned>Burning Hands
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -605,10 +651,11 @@ BURNING_HANDS:
     - §7Shoot §cflames §7from your hands
     - §cigniting §7and damaging enemies!
     item-cooldown: 5
-BURNING_HANDS2:
+    revision-id: 2
+BURNING_HANDS3:
   base:
     material: CRIMSON_FUNGUS
-    name: §9Burning Hands
+    name: <tier-color-cleaned>Burning Hands
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -637,10 +684,11 @@ BURNING_HANDS2:
     - §7Shoot §cflames §7from your hands
     - §cigniting §7and damaging enemies!
     item-cooldown: 12.5
-FREEZING_CURSE:
+    revision-id: 2
+FREEZING_CURSE2:
   base:
     material: TUBE_CORAL
-    name: §2Freezing Curse
+    name: <tier-color-cleaned>Freezing Curse
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -670,10 +718,11 @@ FREEZING_CURSE:
     - §bFreeze §7enemies with a §5curse§7,
     - §6slowing §7and damaging them!
     item-cooldown: 10
-FREEZING_CURSE2:
+    revision-id: 2
+FREEZING_CURSE3:
   base:
     material: TUBE_CORAL
-    name: §9Freezing Curse
+    name: <tier-color-cleaned>Freezing Curse
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -703,10 +752,11 @@ FREEZING_CURSE2:
     - §bFreeze §7enemies with a §5curse§7,
     - §6slowing §7and damaging them!
     item-cooldown: 15
-SHULKER_MISSILE:
+    revision-id: 2
+SHULKER_MISSILE2:
   base:
     material: SHULKER_SHELL
-    name: §2Shulker Missile
+    name: <tier-color-cleaned>Shulker Missile
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -735,10 +785,11 @@ SHULKER_MISSILE:
     - §7Launch a §5speedy shulker missile§7,
     - §6levitating §7and damaging the enemy!
     item-cooldown: 7.5
-SHULKER_MISSILE2:
+    revision-id: 2
+SHULKER_MISSILE3:
   base:
     material: SHULKER_SHELL
-    name: §9Shulker Missile
+    name: <tier-color-cleaned>Shulker Missile
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -767,10 +818,11 @@ SHULKER_MISSILE2:
     - §7Launch a §5speedy shulker missile§7,
     - §6levitating §7and damaging the enemy!
     item-cooldown: 10
-ARCANE_HAIL:
+    revision-id: 2
+ARCANE_HAIL2:
   base:
     material: ALLIUM
-    name: §2Arcane Hail
+    name: <tier-color-cleaned>Arcane Hail
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -799,10 +851,11 @@ ARCANE_HAIL:
     lore:
     - §7Rain §darcane hail §7on enemies!
     item-cooldown: 10
-ARCANE_HAIL2:
+    revision-id: 2
+ARCANE_HAIL3:
   base:
     material: ALLIUM
-    name: §9Arcane Hail
+    name: <tier-color-cleaned>Arcane Hail
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -831,10 +884,11 @@ ARCANE_HAIL2:
     lore:
     - §7Rain §darcane hail §7on enemies!
     item-cooldown: 15
-FROZEN_AURA:
+    revision-id: 2
+FROZEN_AURA2:
   base:
     material: CORNFLOWER
-    name: §2Frozen Aura
+    name: <tier-color-cleaned>Frozen Aura
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -862,10 +916,11 @@ FROZEN_AURA:
     lore:
     - §6Slow §7the enemies with a §bfrozen aura§7!
     item-cooldown: 10
-FROZEN_AURA2:
+    revision-id: 2
+FROZEN_AURA3:
   base:
     material: CORNFLOWER
-    name: §9Frozen Aura
+    name: <tier-color-cleaned>Frozen Aura
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -893,10 +948,11 @@ FROZEN_AURA2:
     lore:
     - §6Slow §7the enemies with a §bfrozen aura§7!
     item-cooldown: 15
-MAGMA_FISSURE:
+    revision-id: 2
+MAGMA_FISSURE2:
   base:
     material: MAGMA_CREAM
-    name: §2Magma Fissure
+    name: <tier-color-cleaned>Magma Fissure
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -925,10 +981,11 @@ MAGMA_FISSURE:
     - §7Create a §4fissure §7in the earth
     - §7damaging and §cigniting §7enemies!
     item-cooldown: 5
-MAGMA_FISSURE2:
+    revision-id: 2
+MAGMA_FISSURE3:
   base:
     material: MAGMA_CREAM
-    name: §9Magma Fissure
+    name: <tier-color-cleaned>Magma Fissure
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -957,10 +1014,11 @@ MAGMA_FISSURE2:
     - §7Create a §4fissure §7in the earth
     - §7damaging and §cigniting §7enemies!
     item-cooldown: 12.5
-ICE_CRYSTAL:
+    revision-id: 2
+ICE_CRYSTAL2:
   base:
     material: SOUL_TORCH
-    name: §2Ice Crystal
+    name: <tier-color-cleaned>Ice Crystal
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -989,10 +1047,11 @@ ICE_CRYSTAL:
     - §7Shoot an §bice crystal missile
     - §6slowing §7and damaging enemies!
     item-cooldown: 10.0
-ICE_CRYSTAL2:
+    revision-id: 2
+ICE_CRYSTAL3:
   base:
     material: SOUL_TORCH
-    name: §9Ice Crystal
+    name: <tier-color-cleaned>Ice Crystal
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1021,10 +1080,11 @@ ICE_CRYSTAL2:
     - §7Shoot an §bice crystal missile
     - §6slowing §7and damaging enemies!
     item-cooldown: 15.0
-CORRUPTED_FANGS:
+    revision-id: 2
+CORRUPTED_FANGS2:
   base:
     material: ROSE_BUSH
-    name: §2Corrupted Fangs
+    name: <tier-color-cleaned>Corrupted Fangs
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1052,10 +1112,11 @@ CORRUPTED_FANGS:
     - §7Summon §5corrupted fangs §7from
     - §7the earth to §4chomp §7the enemies!
     item-cooldown: 10
-CORRUPTED_FANGS2:
+    revision-id: 2
+CORRUPTED_FANGS3:
   base:
     material: ROSE_BUSH
-    name: §9Corrupted Fangs
+    name: <tier-color-cleaned>Corrupted Fangs
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1083,10 +1144,11 @@ CORRUPTED_FANGS2:
     - §7Summon §5corrupted fangs §7from
     - §7the earth to §4chomp §7the enemies!
     item-cooldown: 15
-BLACK_HOLE:
+    revision-id: 2
+BLACK_HOLE2:
   base:
     material: FIREWORK_STAR
-    name: §2Black Hole
+    name: <tier-color-cleaned>Black Hole
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1114,10 +1176,11 @@ BLACK_HOLE:
     lore:
     - §7Suck enemies into a §5black hole§7!
     item-cooldown: 7.5
-BLACK_HOLE2:
+    revision-id: 2
+BLACK_HOLE3:
   base:
     material: FIREWORK_STAR
-    name: §9Black Hole
+    name: <tier-color-cleaned>Black Hole
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1145,10 +1208,11 @@ BLACK_HOLE2:
     lore:
     - §7Suck enemies into a §5black hole§7!
     item-cooldown: 10
-BOUNCY_FIREBALL:
+    revision-id: 2
+BOUNCY_FIREBALL2:
   base:
     material: PUFFERFISH
-    name: §2Bouncy Fireball
+    name: <tier-color-cleaned>Bouncy Fireball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1178,10 +1242,11 @@ BOUNCY_FIREBALL:
     - §7Shoot a §cfireball§7, §4exploding
     - §7on enemies after a few bounces!
     item-cooldown: 7.5
-BOUNCY_FIREBALL2:
+    revision-id: 2
+BOUNCY_FIREBALL3:
   base:
     material: PUFFERFISH
-    name: §9Bouncy Fireball
+    name: <tier-color-cleaned>Bouncy Fireball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1211,10 +1276,11 @@ BOUNCY_FIREBALL2:
     - §7Shoot a §cfireball§7, §4exploding
     - §7on enemies after a few bounces!
     item-cooldown: 10
-CURSED_BEAM:
+    revision-id: 2
+CURSED_BEAM2:
   base:
     material: FIRE_CHARGE
-    name: §2Cursed Beam
+    name: <tier-color-cleaned>Cursed Beam
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1242,10 +1308,11 @@ CURSED_BEAM:
     - §7Blast a §5cursed beam
     - §4exploding §7on nearby enemies!
     item-cooldown: 7.5
-CURSED_BEAM2:
+    revision-id: 2
+CURSED_BEAM3:
   base:
     material: FIRE_CHARGE
-    name: §9Cursed Beam
+    name: <tier-color-cleaned>Cursed Beam
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1273,10 +1340,11 @@ CURSED_BEAM2:
     - §7Blast a §5cursed beam
     - §4exploding §7on nearby enemies!
     item-cooldown: 12.5
-LIFE_ENDER:
+    revision-id: 2
+LIFE_ENDER2:
   base:
     material: ENDER_PEARL
-    name: §2Ender Meteor
+    name: <tier-color-cleaned>Ender Meteor
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1306,10 +1374,11 @@ LIFE_ENDER:
     - §7Summon a §dcomet§7, crushing
     - §7and §6knocking back §7enemies!
     item-cooldown: 10
-LIFE_ENDER2:
+    revision-id: 2
+LIFE_ENDER3:
   base:
     material: ENDER_PEARL
-    name: §9Ender Meteor
+    name: <tier-color-cleaned>Ender Meteor
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1339,10 +1408,11 @@ LIFE_ENDER2:
     - §7Summon a §dcomet§7, crushing
     - §7and §6knocking back §7enemies!
     item-cooldown: 15
-CORRUPT:
+    revision-id: 2
+CORRUPT2:
   base:
     material: WITHER_ROSE
-    name: §2Corrupt
+    name: <tier-color-cleaned>Corrupt
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1369,10 +1439,11 @@ CORRUPT:
     lore:
     - §5Corrupt §7enemies in front of you!
     item-cooldown: 7.5
-CORRUPT2:
+    revision-id: 2
+CORRUPT3:
   base:
     material: WITHER_ROSE
-    name: §9Corrupt
+    name: <tier-color-cleaned>Corrupt
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1399,10 +1470,11 @@ CORRUPT2:
     lore:
     - §5Corrupt §7enemies in front of you!
     item-cooldown: 12.5
-CONTAMINATION_RITUAL:
+    revision-id: 2
+CONTAMINATION_RITUAL2:
   base:
     material: SLIME_BALL
-    name: §2Contamination Ritual
+    name: <tier-color-cleaned>Contamination Ritual
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1432,10 +1504,11 @@ CONTAMINATION_RITUAL:
     - §7constantly §2contaminating §7enemies
     - §7within the ritual circle!
     item-cooldown: 7.5
-CONTAMINATION_RITUAL2:
+    revision-id: 2
+CONTAMINATION_RITUAL3:
   base:
     material: SLIME_BALL
-    name: §9Contamination Ritual
+    name: <tier-color-cleaned>Contamination Ritual
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1465,10 +1538,11 @@ CONTAMINATION_RITUAL2:
     - §7constantly §2contaminating §7enemies
     - §7within the ritual circle!
     item-cooldown: 12.5
+    revision-id: 2
 BLINK:
   base:
     material: STICK
-    name: §2BLINK
+    name: <tier-color-cleaned>BLINK
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1491,10 +1565,11 @@ BLINK:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 BLIZZARD:
   base:
     material: STICK
-    name: §2Blizzard
+    name: <tier-color-cleaned>Blizzard
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1517,10 +1592,11 @@ BLIZZARD:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 CHICKEN_WRAITH:
   base:
     material: STICK
-    name: §2Chicken Wraith
+    name: <tier-color-cleaned>Chicken Wraith
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1543,10 +1619,11 @@ CHICKEN_WRAITH:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 CIRCULAR_SLASH:
   base:
     material: STICK
-    name: §2Circular Slash
+    name: <tier-color-cleaned>Circular Slash
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1569,10 +1646,11 @@ CIRCULAR_SLASH:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 EARTHQUAKE:
   base:
     material: STICK
-    name: §2Earthquake
+    name: <tier-color-cleaned>Earthquake
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1595,10 +1673,11 @@ EARTHQUAKE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 EXPLOSIVE_TURKEY:
   base:
     material: STICK
-    name: §2Explosive Turkey
+    name: <tier-color-cleaned>Explosive Turkey
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1621,10 +1700,11 @@ EXPLOSIVE_TURKEY:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 FIRE_METEOR:
   base:
     material: STICK
-    name: §2Fire Meteor
+    name: <tier-color-cleaned>Fire Meteor
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1647,10 +1727,11 @@ FIRE_METEOR:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 FIREBOLT:
   base:
     material: STICK
-    name: §2Firebolt
+    name: <tier-color-cleaned>Firebolt
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1673,10 +1754,11 @@ FIREBOLT:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 FIREFLY:
   base:
     material: STICK
-    name: §2Firefly
+    name: <tier-color-cleaned>Firefly
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1699,10 +1781,11 @@ FIREFLY:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 FROG_MODE:
   base:
     material: STICK
-    name: §2Frog Mode
+    name: <tier-color-cleaned>Frog Mode
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1725,10 +1808,11 @@ FROG_MODE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 GRAND_HEAL:
   base:
     material: STICK
-    name: §2Grand Heal
+    name: <tier-color-cleaned>Grand Heal
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1751,10 +1835,11 @@ GRAND_HEAL:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 HEAL:
   base:
     material: STICK
-    name: §2Heal
+    name: <tier-color-cleaned>Heal
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1777,10 +1862,11 @@ HEAL:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 HEAVY_CHARGE:
   base:
     material: STICK
-    name: §2Heavy Charge
+    name: <tier-color-cleaned>Heavy Charge
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1803,10 +1889,11 @@ HEAVY_CHARGE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 HOEARTHQUAKE:
   base:
     material: STICK
-    name: §2Hoearthquake
+    name: <tier-color-cleaned>Hoearthquake
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1829,10 +1916,11 @@ HOEARTHQUAKE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 HOLY_MISSILE:
   base:
     material: STICK
-    name: §2Holy Missile
+    name: <tier-color-cleaned>Holy Missile
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1855,10 +1943,11 @@ HOLY_MISSILE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 ITEM_BOMB:
   base:
     material: STICK
-    name: §2Item Bomb
+    name: <tier-color-cleaned>Item Bomb
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1881,10 +1970,11 @@ ITEM_BOMB:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 ITEM_THROW:
   base:
     material: STICK
-    name: §2Item Throw
+    name: <tier-color-cleaned>Item Throw
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1907,10 +1997,11 @@ ITEM_THROW:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 LEAP:
   base:
     material: STICK
-    name: §2Leap
+    name: <tier-color-cleaned>Leap
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1933,10 +2024,11 @@ LEAP:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 LIGHT_DASH:
   base:
     material: STICK
-    name: §2Light Dash
+    name: <tier-color-cleaned>Light Dash
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1959,10 +2051,11 @@ LIGHT_DASH:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 LIGHTNING_BEAM:
   base:
     material: STICK
-    name: §2Lightning Beam
+    name: <tier-color-cleaned>Lightning Beam
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -1985,10 +2078,11 @@ LIGHTNING_BEAM:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 MAGICAL_SHIELD:
   base:
     material: STICK
-    name: §2Magical Shield
+    name: <tier-color-cleaned>Magical Shield
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2011,10 +2105,11 @@ MAGICAL_SHIELD:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 OVERLOAD:
   base:
     material: STICK
-    name: §2Overload
+    name: <tier-color-cleaned>Overload
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2037,10 +2132,11 @@ OVERLOAD:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 PRESENT_THROW:
   base:
     material: STICK
-    name: §2Present Throw
+    name: <tier-color-cleaned>Present Throw
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2063,10 +2159,11 @@ PRESENT_THROW:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 REGEN_ALLY:
   base:
     material: STICK
-    name: §2Regen Ally
+    name: <tier-color-cleaned>Regen Ally
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2089,10 +2186,11 @@ REGEN_ALLY:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 SHOCKWAVE:
   base:
     material: STICK
-    name: §2Shockwave
+    name: <tier-color-cleaned>Shockwave
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2115,10 +2213,11 @@ SHOCKWAVE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 SKY_SMASH:
   base:
     material: STICK
-    name: §2Sky Smash
+    name: <tier-color-cleaned>Sky Smash
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2141,10 +2240,11 @@ SKY_SMASH:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 SMITE:
   base:
     material: STICK
-    name: §2Smite
+    name: <tier-color-cleaned>Smite
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2167,10 +2267,11 @@ SMITE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 SNOWMAN_TURRET:
   base:
     material: STICK
-    name: §2Snowman Turret
+    name: <tier-color-cleaned>Snowman Turret
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2193,10 +2294,11 @@ SNOWMAN_TURRET:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 SWIFTNESS:
   base:
     material: STICK
-    name: §2Swiftness
+    name: <tier-color-cleaned>Swiftness
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2219,10 +2321,11 @@ SWIFTNESS:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 TACTICAL_GRENADE:
   base:
     material: STICK
-    name: §2Tactical Grenade
+    name: <tier-color-cleaned>Tactical Grenade
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2245,10 +2348,11 @@ TACTICAL_GRENADE:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 THROW_UP:
   base:
     material: STICK
-    name: §2Throw Up
+    name: <tier-color-cleaned>Throw Up
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2271,10 +2375,11 @@ THROW_UP:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 THRUST:
   base:
     material: STICK
-    name: §2Thrust
+    name: <tier-color-cleaned>Thrust
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2297,10 +2402,11 @@ THRUST:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2
 TNT_THROW:
   base:
     material: STICK
-    name: §2TNT Throw
+    name: <tier-color-cleaned>TNT Throw
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -2325,3 +2431,4 @@ TNT_THROW:
         pitch: 1.0
     lore:
     - §7Test
+    revision-id: 2

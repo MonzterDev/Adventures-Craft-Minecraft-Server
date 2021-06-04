@@ -1,0 +1,316 @@
+ANGRY_BAT:
+  Type: SILVERFISH
+  Display: '&7[&fLVL 1&7] &cAngry Bat'
+  Health: 75
+  Disguise:
+    Type: BAT
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.40
+    FollowRange: 6
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Drops:
+  - EXP 0-5 100%
+  AIGoalSelectors:
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=5} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+ANGRY_SPIDER:
+  Type: CAVE_SPIDER
+  Display: '&7[&fLVL 2&7] &cAngry Spider'
+  Health: 100
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.36
+    <<: *Options
+  Drops:
+  - EXP 1-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=10} @target ~onAttack
+  - skill{s=ANGRY_SPIDER_POISON} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+
+VOID_BAT:
+  Type: SILVERFISH
+  Display: '&7[&fLVL 5&7] &cVoid Bat'
+  Health: 125
+  Faction: Void
+  Disguise:
+    Type: BAT
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.40
+    <<: *Options
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=10} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+VOID_BOOMER:
+  Type: ZOMBIE
+  Disguise:
+    Type: CREEPER
+  Display: '&7[&fLVL 5&7] &cVoid Boomer'
+  Health: 75
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.42
+    <<: *Options
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=10} @target ~onAttack
+  - skill{s=VOID_BOOMER_EXPLOSION} ~onTimer:200
+  - sound{s=entity.cat.hiss} @PIR{r=5} ~onTimer:50
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+VOID_SPIDER:
+  Type: CAVE_SPIDER
+  Display: '&7[&fLVL 5&7] &cVoid Spider'
+  Health: 150
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.38
+    <<: *Options
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15} @target ~onAttack
+  - skill{s=ANGRY_SPIDER_POISON} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+VOID_VAMPIRE:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cVoid Vampire'
+  Health: 200
+  Faction: Void
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &cVoid Vampire'
+    Skin: VoidVampire
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.36
+    <<: *Options
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25} @target ~onAttack
+  - skill{s=VOID_VAMPIRE_BLOODSUCK}
+  - sound{s=entity.evoker.hurt} @Self ~onDamaged
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+VOID_HIVE:
+  Type: SILVERFISH
+  Health: 250
+  Faction: Void
+  Disguise:
+    Type: BLOCK
+    Block: DIORITE
+    ShowName: true
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.0001
+    KnockbackResistance: 1
+    <<: *Options
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - skill{s=VOID_HIVE_SUMMON} ~onTimer:300
+  - summon{type=VOID_ANT;amount=3} @self ~onDeath
+
+VOID_ANT:
+  Type: SILVERFISH
+  Display: '&7[&fLVL 5&7] &cVoid Ant'
+  Health: 100
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.34
+    <<: *Options
+  Drops:
+  - EXP 1-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=20} @target ~onAttack
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+VOID_VAMPIRE2:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cVoid Vampire'
+  Health: 250
+  Faction: Void
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &cVoid Vampire'
+    Skin: VoidVampire
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.36
+    <<: *Options
+  Equipment:
+  - ghast_tear:0
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=VOID_VAMPIRE2_BLOODSUCK}
+  - damage{amount=30} @target ~onAttack
+  - sound{s=entity.evoker.hurt} @self ~onDamaged
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+VOID_DRACULA:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cVoid Dracula'
+  Health: 2500
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 10&7] &cVoid Dracula <caster.hp>&f/&c<caster.mhp>'
+    Range: 15
+    Color: RED
+    Style: SOLID
+  Faction: Void
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &cVoid Dracula <caster.hp>&f/&c<caster.mhp>'
+    Skin: voidvampire
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true    
+  Options:
+    MovementSpeed: 0.28
+    <<: *Options
+  Equipment:
+  - VOID_DRACULA_TORCH:0
+  - VOID_DRACULA_TORCH offhand
+  Drops:
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=VOID_DRACULA_BLOODSUCK} 25%
+  - damage{amount=50} @target ~onAttack
+  - sound{s=entity.evoker.hurt} @self ~onDamaged
+  - sound{s=entity.evoker.death} @self ~onDeath
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=VOID_DRACULA_FLY} ~onTimer:100
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20

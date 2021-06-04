@@ -1,4 +1,4 @@
-Redstone: mmocorebreakblock 128 block:REDSTONE_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 ^notify
-VoidBat: mmobkill VOID_BATS amount:15 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 ^notify
-VoidBoomer: mmobkill VOID_BOOMER amount:5 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 ^notify
-Duncan: npcinteract 39 events:entry_q4_complete,QuestReward4 ^notify
+Redstone: mmocorebreakblock 128 block:REDSTONE_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify:8
+VoidBat: mmobkill VOID_BAT amount:15 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify:1
+VoidBoomer: mmobkill VOID_BOOMER amount:5 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 notify:1
+Duncan: npcinteract 39 events:entry_q4_complete,QuestReward4 notify:1

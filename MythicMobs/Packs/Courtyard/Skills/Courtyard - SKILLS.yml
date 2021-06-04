@@ -1,0 +1,29 @@
+SUMMON_ALPHA_SOUL:
+  Skills:
+  - summon{type=ALPHA_SOUL;amount=1;radius=4;onSurface=true} @self
+  - effect:sound{s=entity.drowned.ambient;pitch=2} @self
+  - message{m="<mob.name> &cSummoned a &lAlpha Soul&c!"} @PIR{r=5} 
+ALPHA_SOUL_STEAL:
+  Skills:
+  - doppleganger @trigger
+  - message{m="&cThe &lAlpha Soul &chas taken over your soul!"} @trigger
+  - lightning @self
+
+UNDEAD_CASTER_MISSILE:
+  Conditions:
+  - playerwithin{d=8} true
+  Skills:
+  - effect:particleline{particle=reddust;color=#00000f;db=0.5;fromOrigin=true;syo=1;tyo=1}
+  - damage{a=5;ignoreArmor=false} @target
+  - signal{s=UNDEAD_CASTER_SIGNAL} @self
+UNDEAD_CASTER_LIGHTNING:
+  Cooldown: 10
+  Skills:
+  - lightning{damage=25} @target
+  - ignite{ticks=100} @target
+  - message{m="<mob.name> &cstruck you with &elightning&c!"} @target
+UNDEAD_CASTER_FREEZE:
+  Cooldown: 12.5
+  Skills:
+  - stun{d=60;f=true} @target
+  - message{m="<mob.name> &cjust &bfroze &cyou!"} @target

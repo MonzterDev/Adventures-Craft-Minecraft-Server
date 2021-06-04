@@ -1,0 +1,124 @@
+UNDEAD_WARRIOR_LEAP:
+  Cooldown: 10
+  Conditions:
+  - hastarget{action=true}
+  - playerwithin{d=10} true
+  Skills:
+  - leap{velocity=300} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}
+
+
+MORDEN_THE_UNDEAD_TELEPORT:
+  Cooldown: 10
+  Conditions:
+  - hastarget{action=true}
+  - playerwithin{d=10} true
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @target
+  - effect:sound{s=entity.enderman.teleport;v=1;p=0.25} @self
+
+MORDEN_THE_UNDEAD1_AOE:
+  Cooldown: 3
+  Skills: 
+  - effect:sound{s=block.fire.extinguish;v=1;p=0.25} @self	
+  - effect:particlesphere{particle=crit_magic;amount=50;radius=3} @self
+  - damage{a=15;ignoreArmor=false} @PIR{r=3}
+MORDEN_THE_UNDEAD1_TROOPS:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_SKELETON2;amount=3;radius=4} @self 
+  - summon{type=UNDEAD_ARCHER2;amount=2;radius=4} @self 
+  
+MORDEN_THE_UNDEAD2_DASH:
+  Cooldown: 10
+  Conditions:
+  - hastarget{action=true}
+  - playerwithin{d=10} true
+  Skills:
+  - leap{velocity=200} @target
+  - delay 10
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=30} @EntitiesInRadius{r=5}
+MORDEN_THE_UNDEAD2_TROOPS:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_SKELETON2;amount=3;radius=10} @Self   
+MORDEN_THE_UNDEAD2_TROOPS2:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_ARCHER2;amount=3;radius=10} @Self   
+MORDEN_THE_UNDEAD2_TROOPS3:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_WARRIOR;amount=3;radius=4} @Self   
+MORDEN_THE_UNDEAD2_DEATH:
+  Skills:
+  - summon{type=MORDEN_THE_UNDEAD;amount=1;radius=0} @Self
+
+MORDEN_THE_UNDEAD_HEALING:
+  Cooldown: 60
+  Skills: 
+  - stun{d=150;f=true} @self
+  - summon{type=UNDEAD_HARPY;amount=3;radius=5} @Self
+  - prison{material=CRACKED_STONE_BRICKS;duration=200;breakable=true} @self
+  - message{m="<mob.name> &cis being healed by the &lUndead Harpys&c!"} @PIR{r=20} 
+MORDEN_THE_UNDEAD_TROOPS:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_CASTER;amount=3;radius=4} @Self   
+MORDEN_THE_UNDEAD_TROOPS2:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_SPIDER;amount=3;radius=4} @Self   
+MORDEN_THE_UNDEAD_TROOPS3:
+  Cooldown: 60
+  Skills:
+  - summon{type=UNDEAD_ARCHER2;amount=3;radius=4} @Self   
+
+MORDEN_DEFEAT:
+  Skills:
+  - remove @Children
+
+MORDEN_UNDEFEATED:
+  Skills:
+  - delay 900
+  - message{m="&cMorden&4 will go back into his grave soon!"} @ThreatTablePlayers
+  - delay 900
+  - message{m="&4You have failed to defeat the mighty &cMorden&4!"} @ThreatTablePlayers
+  - effect:sound{s=entity.zombie.hurt;v=.1;p=0} @self
+  - effect:sound{s=entity.zombie.hurt;v=.1;p=0} @ThreatTablePlayers
+  - remove @Children
+  - remove @Self
+
+UNDEAD_HARPY_HEAL:
+  Skills:
+  - effect:particleline{particle=dragon_breath;amount=1;fromOrigin=true} @MIR{r=20;t=MORDEN_THE_UNDEAD}
+  - heal{amount=60} @MIR{r=20;t=MORDEN_THE_UNDEAD}
+  - effect:sound{s=entity.witch.throw;v=.1;p=0} @Self
+
+UNDEAD_HARPY_HEAD_SELECT:
+  Skills:
+  - randomskill{skills=UNDEAD_HARPY_HEAD1,UNDEAD_HARPY_HEAD2,UNDEAD_HARPY_HEAD3,UNDEAD_HARPY_HEAD4,UNDEAD_HARPY_HEAD5,UNDEAD_HARPY_HEAD6} @self
+
+UNDEAD_HARPY_HEAD1:
+  Skills:
+  - equip{item=HARPY_HEAD1:head}
+UNDEAD_HARPY_HEAD2:
+  Skills:
+  - equip{item=HARPY_HEAD2:head}
+UNDEAD_HARPY_HEAD3:
+  Skills:
+  - equip{item=HARPY_HEAD3:head}
+UNDEAD_HARPY_HEAD4:
+  Skills:
+  - equip{item=HARPY_HEAD4:head}
+UNDEAD_HARPY_HEAD5:
+  Skills:
+  - equip{item=HARPY_HEAD5:head}
+UNDEAD_HARPY_HEAD6:
+  Skills:
+  - equip{item=HARPY_HEAD6:head}

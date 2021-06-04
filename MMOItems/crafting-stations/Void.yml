@@ -11,58 +11,58 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  THRALL_BALL:
+  THRALL_BALL3:
     output:
       type: CONSUMABLE
-      id: THRALL_BALL
+      id: THRALL_BALL3
     ingredients:
     - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=4}
     conditions: []
-  CHORUS_LEAP:
+  CHORUS_LEAP3:
     output:
       type: CONSUMABLE
-      id: CHORUS_LEAP
+      id: CHORUS_LEAP3
     ingredients:
     - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=64}
-    conditions: []
-  VOID_STONE:
-    output:
-      type: CATALYST
-      id: VOID_STONE
-    ingredients:
-    - mmoitem{type=QUEST,id=VOID_DNA,amount=64}
-    - 'vanilla{type=END_STONE,amount=256}'
-    conditions: []
-  VOID_STONE2:
-    output:
-      type: CATALYST
-      id: VOID_STONE2
-    ingredients:
-    - mmoitem{type=QUEST,id=VOID_DNA,amount=320}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
     conditions: []
   VOID_STONE3:
     output:
       type: CATALYST
       id: VOID_STONE3
     ingredients:
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=64}
+    - 'vanilla{type=END_STONE,amount=256}'
+    conditions: []
+  VOID_STONE4:
+    output:
+      type: CATALYST
+      id: VOID_STONE4
+    ingredients:
+    - mmoitem{type=QUEST,id=VOID_DNA,amount=320}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    conditions: []
+  VOID_STONE5:
+    output:
+      type: CATALYST
+      id: VOID_STONE5
+    ingredients:
     - mmoitem{type=QUEST,id=VOID_DNA,amount=576}
     - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=8}
     conditions: []
-  CORRUPTION_REVOLTER:
+  CORRUPTION_REVOLTER3:
     output:
       type: CATALYST
-      id: CORRUPTION_REVOLTER
+      id: CORRUPTION_REVOLTER3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=4}
     conditions: []
-  CORRUPTION_REVOLTER2:
+  CORRUPTION_REVOLTER4:
     output:
       type: CATALYST
-      id: CORRUPTION_REVOLTER2
+      id: CORRUPTION_REVOLTER4
     ingredients:
-    - mmoitem{type=CATALYST,id=CORRUPTION_REVOLTER,amount=1}
-    - mmoitem{type=CATALYST,id=UNBLINDER,amount=1}
+    - mmoitem{type=CATALYST,id=CORRUPTION_REVOLTER3,amount=1}
+    - mmoitem{type=CATALYST,id=UNBLINDER3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_SHULKER_SHELL,amount=8}
     conditions: []
   VOID_GEM:
@@ -120,165 +120,165 @@ recipes:
     conditions:
     - profession{profession=Mining,level=9}
     - profession{profession=Void,level=5}
-  CORRUPT_RELIC:
-    output:
-      type: ACCESSORY
-      id: CORRUPT_RELIC
-    ingredients:
-    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=64}
-    - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=128}
-    conditions: []
-  CORRUPT_RELIC2:
-    output:
-      type: ACCESSORY
-      id: CORRUPT_RELIC2
-    ingredients:
-    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC,amount=1}
-    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=512}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=4}
-    conditions: []
   CORRUPT_RELIC3:
     output:
       type: ACCESSORY
       id: CORRUPT_RELIC3
     ingredients:
-    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC2,amount=1}
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=64}
+    - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=128}
+    conditions: []
+  CORRUPT_RELIC4:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_RELIC4
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC3,amount=1}
+    - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=512}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=4}
+    conditions: []
+  CORRUPT_RELIC5:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_RELIC5
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_RELIC4,amount=1}
     - mmoitem{type=MATERIAL,id=THRALL_EGG,amount=640}
     - mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT,amount=8}
-    conditions: []
-  CORRUPT_DART:
-    output:
-      type: ACCESSORY
-      id: CORRUPT_DART
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=1}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
-    conditions: []
-  CORRUPT_DART2:
-    output:
-      type: ACCESSORY
-      id: CORRUPT_DART2
-    ingredients:
-    - mmoitem{type=ACCESSORY,id=CORRUPT_DART,amount=1}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
     conditions: []
   CORRUPT_DART3:
     output:
       type: ACCESSORY
       id: CORRUPT_DART3
     ingredients:
-    - mmoitem{type=ACCESSORY,id=CORRUPT_DART2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=1}
+    conditions: []
+  CORRUPT_DART4:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_DART4
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_DART3,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
+    conditions: []
+  CORRUPT_DART5:
+    output:
+      type: ACCESSORY
+      id: CORRUPT_DART5
+    ingredients:
+    - mmoitem{type=ACCESSORY,id=CORRUPT_DART4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
     - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=1}
     conditions: []
-  KHAZIX_STAFF2:
+  KHAZIX_STAFF4:
     output:
       type: STAFF
-      id: KHAZIX_STAFF2
+      id: KHAZIX_STAFF4
     ingredients:
-    - mmoitem{type=STAFF,id=KHAZIX_STAFF,amount=1}
+    - mmoitem{type=STAFF,id=KHAZIX_STAFF3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
     - mmoitem{type=QUEST,id=VOID_DNA,amount=128}
-  BULLBO_ARM2:
+  BULLBO_ARM4:
     output:
       type: HAMMER
-      id: BULLBO_ARM2
+      id: BULLBO_ARM4
     ingredients:
-    - mmoitem{type=HAMMER,id=BULLBO_ARM,amount=1}
+    - mmoitem{type=HAMMER,id=BULLBO_ARM3,amount=1}
     - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=8}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=8}
-  BULB2:
+  BULB4:
     output:
       type: MOUNT
-      id: BULB2
+      id: BULB4
     ingredients:
     - mmoitem{type=MATERIAL,id=BULB_LEG,amount=16}
-    - mmoitem{type=MOUNT,id=BULB,amount=1}
+    - mmoitem{type=MOUNT,id=BULB5,amount=1}
     conditions: []
-  BULB3:
+  BULB5:
     output:
       type: MOUNT
-      id: BULB3
+      id: BULB5
     ingredients:
     - mmoitem{type=MATERIAL,id=BULB_LEG,amount=64}
-    - mmoitem{type=MOUNT,id=BULB2,amount=1}
+    - mmoitem{type=MOUNT,id=BULB4,amount=1}
     conditions: []
-  BULLBO2:
+  BULLBO4:
     output:
       type: MOUNT
-      id: BULLBO2
+      id: BULLBO4
     ingredients:
     - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=16}
-    - mmoitem{type=MOUNT,id=BULLBO,amount=1}
+    - mmoitem{type=MOUNT,id=BULLBO5,amount=1}
     conditions: []
-  BULLBO3:
+  BULLBO5:
     output:
       type: MOUNT
-      id: BULLBO3
+      id: BULLBO5
     ingredients:
     - mmoitem{type=MATERIAL,id=BULLBO_LEG,amount=64}
-    - mmoitem{type=MOUNT,id=BULLBO2,amount=1}
+    - mmoitem{type=MOUNT,id=BULLBO4,amount=1}
     conditions: []
-  DECEITFUL_BOW:
+  DECEITFUL_BOW3:
     output:
       type: BOW
-      id: DECEITFUL_BOW
+      id: DECEITFUL_BOW3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=6}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=6}
     conditions: []
-  DECEITFUL_BOW2:
+  DECEITFUL_BOW4:
     output:
       type: BOW
-      id: DECEITFUL_BOW2
+      id: DECEITFUL_BOW4
     ingredients:
-    - mmoitem{type=BOW,id=DECEITFUL_BOW,amount=1}
+    - mmoitem{type=BOW,id=DECEITFUL_BOW3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE,amount=16}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE,amount=16}
     conditions: []
-  SHADOW_DAGGER:
+  SHADOW_DAGGER3:
     output:
       type: DAGGER
-      id: SHADOW_DAGGER
+      id: SHADOW_DAGGER3
     ingredients:
     - mmoitem{type=MATERIAL,id=SHADOW_ESSENCE,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=8}
     conditions: []
-  SHADOW_DAGGER2:
+  SHADOW_DAGGER4:
     output:
       type: DAGGER
-      id: SHADOW_DAGGER2
+      id: SHADOW_DAGGER4
     ingredients:
-    - mmoitem{type=DAGGER,id=SHADOW_DAGGER,amount=1}
+    - mmoitem{type=DAGGER,id=SHADOW_DAGGER3,amount=1}
     - mmoitem{type=MATERIAL,id=SHADOW_ESSENCE,amount=128}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ENDERPEARL,amount=16}
     conditions: []
-  BULBLIN_BOW2:
+  BULBLIN_BOW5:
     output:
       type: BOW
-      id: BULBLIN_BOW2
+      id: BULBLIN_BOW5
     ingredients:
-    - mmoitem{type=BOW,id=BULBLIN_BOW,amount=1}
+    - mmoitem{type=BOW,id=BULBLIN_BOW4,amount=1}
     - mmoitem{type=MATERIAL,id=BULBLIN_ARROW,amount=8}
     conditions: []
-  BULBLIN_SWORD2:
+  BULBLIN_SWORD5:
     output:
       type: SWORD
-      id: BULBLIN_SWORD2
+      id: BULBLIN_SWORD5
     ingredients:
-    - mmoitem{type=SWORD,id=BULBLIN_SWORD,amount=1}
+    - mmoitem{type=SWORD,id=BULBLIN_SWORD4,amount=1}
     - mmoitem{type=MATERIAL,id=BULBLIN_SWORD_SHAVING,amount=8}
     conditions: []
-  STABLE_WARP:
+  STABLE_WARP5:
     output:
       type: CONSUMABLE
-      id: STABLE_WARP
+      id: STABLE_WARP5
     ingredients:
-    - mmoitem{type=CONSUMABLE,id=UNSTABLE_WARP,amount=1}
+    - mmoitem{type=CONSUMABLE,id=UNSTABLE_WARP4,amount=1}
     - mmoitem{type=MATERIAL,id=STABILIZER,amount=9}
     conditions: []
   STABILIZER:
@@ -288,33 +288,33 @@ recipes:
     ingredients:
     - mmoitem{type=MATERIAL,id=CHORUS_SEED,amount=160}
     conditions: []
-  BOOMER_CHEST:
+  BOOMER_CHEST5:
     output:
       type: ARMOR
-      id: BOOMER_CHEST
+      id: BOOMER_CHEST5
     ingredients:
     - 'vanilla{type=gunpowder,amount=1152}'
     conditions: []
-  BOOMER_CHEST2:
+  BOOMER_CHEST4:
     output:
       type: ARMOR
-      id: BOOMER_CHEST2
+      id: BOOMER_CHEST4
     ingredients:
-    - mmoitem{type=ARMOR,id=BOOMER_CHEST,amount=1}
+    - mmoitem{type=ARMOR,id=BOOMER_CHEST5,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=8}
     conditions: []
-  BOOMER_CHEST3:
+  BOOMER_CHEST5:
     output:
       type: ARMOR
-      id: BOOMER_CHEST3
+      id: BOOMER_CHEST5
     ingredients:
-    - mmoitem{type=ARMOR,id=BOOMER_CHEST2,amount=1}
+    - mmoitem{type=ARMOR,id=BOOMER_CHEST4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_GUNPOWDER,amount=16}
     conditions: []
   MONITOR_MUTE_SPELL:
     output:
       type: SPELL
-      id: MONITOR_MUTE
+      id: MONITOR_MUTE3
       amount: 1
     ingredients:
     - vanilla{type=OBSIDIAN,amount=64}
@@ -323,10 +323,10 @@ recipes:
     - profession{profession=Spellforging,level=4}
     triggers:
     - exp{profession=Spellforging,amount=400}
-  MONITOR_MUTE:
+  MONITOR_MUTE3:
     output:
       type: WAND
-      id: MONITOR_MUTE
+      id: MONITOR_MUTE3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_STICK,amount=2}
@@ -335,13 +335,13 @@ recipes:
     - profession{profession=Spellforging,level=5}
     triggers:
     - exp{profession=Spellforging,amount=500}
-  MONITOR_MUTE2:
+  MONITOR_MUTE3:
     output:
       type: WAND
-      id: MONITOR_MUTE2
+      id: MONITOR_MUTE3
       amount: 1
     ingredients:
-    - mmoitem{type=WAND,id=MONITOR_MUTE,amount=1}
+    - mmoitem{type=WAND,id=MONITOR_MUTE3,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=16}
     conditions:
     - profession{profession=Spellforging,level=7}
@@ -354,38 +354,38 @@ recipes:
     ingredients:
     - mmoitem{type=MATERIAL,id=DEFENDER_FLESH,amount=8}
     - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
-  ENCHANTRESS_HEAD2:
+  ENCHANTRESS_HEAD5:
     output:
       type: ARMOR
-      id: ENCHANTRESS_HEAD2
+      id: ENCHANTRESS_HEAD5
     ingredients:
-    - mmoitem{type=ARMOR,id=ENCHANTRESS_HEAD,amount=1}
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_HEAD4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
-  ENCHANTRESS_CHEST2:
+  ENCHANTRESS_CHEST5:
     output:
       type: ARMOR
-      id: ENCHANTRESS_CHEST2
+      id: ENCHANTRESS_CHEST5
     ingredients:
-    - mmoitem{type=ARMOR,id=ENCHANTRESS_CHEST,amount=1}
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_CHEST4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
-  ENCHANTRESS_LEGS2:
+  ENCHANTRESS_LEGS5:
     output:
       type: ARMOR
-      id: ENCHANTRESS_LEGS2
+      id: ENCHANTRESS_LEGS5
     ingredients:
-    - mmoitem{type=ARMOR,id=ENCHANTRESS_LEGS,amount=1}
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_LEGS4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
-  ENCHANTRESS_BOOTS2:
+  ENCHANTRESS_BOOTS5:
     output:
       type: ARMOR
-      id: ENCHANTRESS_BOOTS2
+      id: ENCHANTRESS_BOOTS5
     ingredients:
-    - mmoitem{type=ARMOR,id=ENCHANTRESS_BOOTS,amount=1}
+    - mmoitem{type=ARMOR,id=ENCHANTRESS_BOOTS4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}
-  ENCHANTRESS_STAFF2:
+  ENCHANTRESS_STAFF5:
     output:
       type: STAFF
-      id: ENCHANTRESS_STAFF2
+      id: ENCHANTRESS_STAFF5
     ingredients:
-    - mmoitem{type=STAFF,id=ENCHANTRESS_STAFF,amount=1}
+    - mmoitem{type=STAFF,id=ENCHANTRESS_STAFF4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTRESS_JEWEL,amount=8}

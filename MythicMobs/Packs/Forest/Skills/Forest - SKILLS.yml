@@ -1,0 +1,151 @@
+BEE_STING:
+  Cooldown: 5
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>&c!"}
+  - potion{type=POISON;duration=40;level=1}
+  - damage{amount=2.5;repeat=2;repeatInterval=20}
+BEE_STING2:
+  Cooldown: 10
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>&c!"}
+  - potion{type=POISON;duration=100;level=2}
+  - damage{amount=3;repeat=5;repeatInterval=20}
+BEE_STING3:
+  Cooldown: 20
+  Skills:
+  - message{m="&cYou were stung by the <mob.name>&c!"}
+  - potion{type=POISON;duration=200;level=2}
+  - damage{amount=4;repeat=10;repeatInterval=20}
+
+
+WILD_CAT_CAPTURED:
+  Skills:
+  - sudoskill{s=WILD_CAT_CAPTURED_P;cat=true} @Owner
+  - remove @self
+WILD_CAT_CAPTURED_P:
+  Skills:
+  - command{c="q point <caster.name> add default-Forest-CatLady.Cat 1"} @self 
+
+
+#DRYAD AREA
+DRYAD_AREA:
+  Conditions:
+  - notinregion{r=dryad} true
+  Skills:
+  - teleportto{location=591,64,-44} @self 
+  - message{m="&cThe <mob.name> &chas retreated to its roots!"} @PlayersInRadius{r=50}
+
+##DRYAD SIGNALS MISSLE
+DRYAD_MISSLE_SIGNAL:
+  Cooldown: 10
+  Skills:
+  - signal{s=MINION_MISSLE} @MIR{r=200;t=DRYAD_MINION}
+  - message{m="&cThe <mob.name> &ccalls upon the &2Trees &cto &4punish &cyou!"} @PlayersInRadius{r=50}
+##DRYAD MINION SPAWN
+DRYAD_MINION_SPAWN:
+  Cooldown: 9999
+  Skills:
+  - summon{type=DRYAD_MINION;amount=1;radius=0} @Location{c=601,73,-46} 
+  - delay 20    
+  - summon{type=DRYAD_MINION;amount=1;radius=0} @Location{c=599,73,-31} 
+  - delay 20    
+  - summon{type=DRYAD_MINION;amount=1;radius=0} @Location{c=584,73,-52} 
+  - delay 20    
+  - summon{type=DRYAD_MINION;amount=1;radius=0} @Location{c=581,73,-37} 
+##DRYAD MINION MISSLE
+MINION_MISSLE:
+  Skills:
+  - missile{ot=MINION_MISSLE_FLY;oh=MINION_MISSLE_EXLPODE;v=4;i=1;hR=1;vR=1;in=0.75}
+  - effect:sound{s=entity.shulker.shoot;v=1;p=0}
+
+MINION_MISSLE_FLY:
+  Skills:
+  - effect:particles{p=spell_mob;a=1} @origin
+
+MINION_MISSLE_EXLPODE:
+  Skills:
+  - effect:particles{p=lava;a=5;hS=1;vS=1}
+  - effect:sound{s=entity_shulker.bullet_hit;v=1;p=1}
+  - damage{a=50;i=false}
+
+DYRAD_ROOT:
+  Skills:
+  - message{m="&cThe <mob.name> &cis about to &2root &cyou..."} @PlayersInRadius{r=5}
+  - effect:sound{s=block.vine.step;p=1;repeat=3;repeatInterval=20} @self
+  - delay 60
+  - skill{s=DYRAD_ROOT2}
+  - skill{s=DYRAD_ROOT3}
+
+DYRAD_ROOT2:
+  Conditions:
+  - playerwithin{d=5} true
+  Skills:
+  - stun{d=60;f=true} @PlayersInRadius{r=5}
+  - damage{amount=50} @PlayersInRadius{r=5}
+  - effect:blockmask{m=vine;r=1;d=60;s=sphere} @PlayersInRadius{r=5}
+  - message{m="&c<mob.name>&f<&co> &cHaha, you've been &2rooted&c!"} @PlayersInRadius{r=5}
+  - effect:sound{s=entity.pillager.ambient;p=.75} @ThreatTablePlayers
+DYRAD_ROOT3:
+  Conditions:
+  - playerwithin{d=5} false
+  Skills:
+  - message{m="&c<mob.name>&f<&co> &cImpossible! You dodged my &2root&c!"} @PlayersInRadius{r=15}
+  - effect:sound{s=entity.pillager.hurt;p=.5} @ThreatTablePlayers
+
+DRYAD_UNDEFEATED:
+  Skills:
+  - delay 12000
+  - message{m="&4The &cDryad&4 will flee back into the tree soon!"} @ThreatTablePlayers
+  - delay 12000
+  - message{m="&4You have failed to defeat the powerful &cDryad&4!"} @ThreatTablePlayers
+  - effect:sound{s=entity.zombie.hurt;v=.1;p=0} @ThreatTablePlayers
+  - remove @Children
+  - remove @self
+
+#DRYAD HARE
+DRYAD_HARE_BITE:
+  Cooldown: 7.5
+  Skills:
+  - message{m="&cYou were bit by the <mob.name>&c!"} @target
+  - effect:sound{s=entity.rabbit.attack;v=.1;p=2} @self
+  - potion{type=POISON;duration=40;level=1}
+  - potion{type=SLOW;duration=40;level=1}
+  - damage{amount=25;repeat=2;repeatInterval=20}
+  - skill{s=DRYAD_MINION_HEAL} .5
+##DRYAD MINION MISSLE
+DRYAD_MINION_HEAL:
+  Skills:
+  - effect:sound{s=entity.wandering_trader.drink_potion;p=2} 
+  - healpercent{m=0.05} @MobsInRadius{r=50;types=DRYAD}
+  - message{m="&cThe <mob.name> &4syphoned &csome of you health back to the &4Dryad&c!"} @target
+
+##DRYAD MINION SPAWN
+DRYAD_MINION_SPAWN2:
+  Cooldown: 9999
+  Skills:
+  - skill{s=DRYAD_MINION_SPAWNING2} @self
+  - skill{s=DRYAD_MINION_SPAWNING_TEXT} @PlayersInRadius{r=15}
+  - teleportto{location=591,68,-44} @self 
+  - velocity{m=set;x=0;y=0;z=0;repeat=100;repeatInterval=1} @self
+DRYAD_MINION_SPAWNING_TEXT:
+  Cooldown: 9999
+  Skills:
+  - message{m="&cThe <mob.name> &cis calling upon the &2Forest &cfor assistance!"} @PlayersInRadius{r=50}
+  - effect:sound{s=entity.evoker.prepare_summon;v=1;p=1;repeat=2;repeatInterval=20} @self
+DRYAD_MINION_SPAWNING2:
+  Cooldown: 9999
+  Skills:
+  - summon{type=DRYAD_HARE;amount=1;radius=0} @Location{c=592,64,-48} 
+  - effect:sound{s=entity.rabbit.attack;v=1;p=0;repeat=4;repeatInterval=20}
+  - delay 20    
+  - summon{type=DRYAD_HARE;amount=1;radius=0} @Location{c=597,64,-47} 
+  - delay 20    
+  - summon{type=DRYAD_HARE;amount=1;radius=0} @Location{c=598,64,-39} 
+  - delay 20    
+  - summon{type=DRYAD_HARE;amount=1;radius=0} @Location{c=592,64,-40} 
+#HARE AREA
+HARE_AREA:
+  Conditions:
+  - notinregion{r=dryad} true
+  Skills:
+  - teleportto{location=591,64,-44} @self 

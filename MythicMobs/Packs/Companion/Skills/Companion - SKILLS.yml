@@ -1,0 +1,52 @@
+COMPANION_TELEPORT_TO_OWNER:
+  TargetConditions:
+  - distance{d=>10} true
+  Skills:
+  - teleport{sh=3;sv=0} @Owner
+  
+PET_LOST_SOUL_DISGUISE:
+  Cooldown: 100
+  Skills:
+  - doppleganger @Target ~onEnterCombat
+  - lightning @self
+
+PET_UNDEAD_CASTER3_MISSILE:
+  Skills:
+  - effect:particleline{particle=reddust;color=#00000f;db=0.5;fromOrigin=true;syo=1;tyo=1}
+  - damage{a=275} @target
+  - signal{s=PET_UNDEAD_CASTER3_SIGNAL} @self
+
+
+
+PET_UNDEAD_CASTER3_STUN:
+  Cooldown: 12.5
+  Skills:
+  - stun{d=60;f=true} @target
+  
+PETSUMMON:
+  Skills:
+  - summon{type=PET_DEMON;amount=1;radius=1} @self
+PETSUMMONUSKELETON:
+  Skills:
+  - summon{type=PetSkeleton1;amount=1;radius=1} @self
+PETSUMMONUARCHER:
+  Skills:
+  - summon{type=PetSkeletonArcher;amount=1;radius=1} @self
+PETSUMMONLOSTSOUL:
+  Skills:
+  - summon{type=PetLostSoul;amount=1;radius=1} @self
+PETSUMMONUSPIDER:
+  Skills:
+  - summon{type=PetUndeadSpider;amount=1;radius=1} @self
+PETSUMMONREAPER:
+  Skills:
+  - summon{type=PetReaper;amount=1;radius=1} @self
+PETSUMMONALPHASOUL:
+  Skills:
+  - summon{type=PetAlphaSoul;amount=1;radius=1} @self
+PETSUMMONUCASTER:
+  Skills:
+  - summon{type=PetUndeadCaster;amount=1;radius=1} @self
+PETSUMMONMORDEN:
+  Skills:
+  - summon{type=PetBoss;amount=1;radius=1} @self

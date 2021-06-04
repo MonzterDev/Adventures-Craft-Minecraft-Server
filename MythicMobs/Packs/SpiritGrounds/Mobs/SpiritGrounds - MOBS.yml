@@ -1,0 +1,89 @@
+SPIRIT_WITCH:
+  Type: WITCH
+  Display: '&7[&fLVL 10&7] &cWitch'
+  Health: 500
+  Faction: Spirit
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.22
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment: 
+  - SPIRIT_WITCH_POTION:0
+  Drops:
+  - EXP 5-10 100%
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=SPIRIT_WITCH_ATTACK} @target ~onAttack
+  - skill{s=SPIRIT_WITCH_SLOW} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+
+
+SPIRIT_BULL:
+  Type: ZOMBIE
+  Disguise:
+    Type: MUSHROOM_COW
+  Display: '&7[&fLVL 10&7] &cSpirit Bull'
+  Health: 600
+  Faction: Spirit
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: 
+    MovementSpeed: 0.28
+    <<: *Options
+  Drops:
+  - EXP 5-15 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25} @target ~onAttack
+  - skill{s=SPIRIT_BULL_DASH} >50% ~onTimer:200
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+
+SPIRIT_SPIDER:
+  Type: SPIDER
+  Display: '&7[&fLVL 10&7] &cSpirit Spider'
+  Health: 300
+  Faction: Spirit
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: 
+    MovementSpeed: 0.32
+    <<: *Options
+  Drops:
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 leapattarget
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=20;ignoreArmor=false} @Target ~onAttack
+  - skill{s=SPIRIT_SPIDER_POISON} @Target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20

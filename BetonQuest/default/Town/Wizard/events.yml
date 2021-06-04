@@ -83,4 +83,4 @@ entry_q3_part1_remove: 'journal delete q3_part1'
 q3_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-4$ \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$ \n \n \n $quest_completed3$'
 ResetXP: "run ^sudo exp set 0"
 
-ShopOpen: "run ^command bs open wizard %player%"
+ShopOpen: "run ^opsudo enchantingshop"

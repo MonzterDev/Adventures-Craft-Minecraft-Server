@@ -1,0 +1,464 @@
+# D_BOOSTER_CHOOSE:
+#   Skills:
+#   - randomskill{skills=D_BOOSTER_STUNNING_SUMMON,D_BOOSTER_ZAPPING_SUMMON,D_BOOSTER_HEALING_SUMMON,D_BOOSTER_SPEEDY_SUMMON,D_BOOSTER_DECOY_SUMMON,D_BOOSTER_CURATIVE_SUMMON,D_BOOSTER_COIN_SUMMON,D_BOOSTER_SEAL_SUMMON}
+
+# D_BOOSTER_STUNNING_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_STUNNING;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_STUNNING_NAME:
+#   Skills:
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&8&lSTUNNING &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_STUNNING:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - potion{type=SLOW;duration=100;level=1} @MIR{r=250;t=D_SKELETON,D_SKELETON_ARCHER,D_ALPHA_SKELETON,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS,D_AGRO}
+#   - effect:sound{s=entity.slime.attack;v=1} @PIR{r=250}
+#   - effect:sound{s=entity.slime.attack;v=1} @self
+#   - message{m="&a<target.name> &7found a &8&lSTUNNING &6&lBOOSTER&7! All enemies will be &8stunned &7for 5 seconds!"} @PIR{r=250}
+#   - remove @self
+
+# D_BOOSTER_ZAPPING_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_ZAPPING;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_ZAPPING_NAME:
+#   Skills:
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&e&lZAPPING &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_ZAPPING:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - sudoskill{s=D_BOOSTER_ZAPPING_DAMAGE} @MIR{r=250;t=D_SKELETON,D_SKELETON_ARCHER,D_ALPHA_SKELETON,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS,D_AGRO}
+#   - effect:sound{s=entity.lightning_bolt.impact;v=1} @PIR{r=250}
+#   - effect:sound{s=entity.lightning_bolt.impact;v=1} @self
+#   - message{m="&a<target.name> &7found a &e&lZAPPING &6&lBOOSTER&7! All enemies have been struck by &elightning &7for &c1,000 Damage&7!"} @PIR{r=250}
+#   - remove @self
+# D_BOOSTER_ZAPPING_DAMAGE:
+#   Skills:
+#   - effect:lightning @self
+#   - damage{amount=1000;ignoreArmor=false} @self
+
+# D_BOOSTER_HEALING_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_HEALING;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_HEALING_NAME:
+#   Skills:
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&a&lHEALING &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_HEALING:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - healpercent{m=0.5} @PIR{r=250}
+#   - effect:sound{s=entity.strider.happy;v=1} @PIR{r=250}
+#   - effect:sound{s=entity.strider.happy;v=1} @self
+#   - message{m="&a<target.name> &7found a &a&lHEALING &6&lBOOSTER&7! All players have been &ahealed &7for &a50% &7of their &aMaximum HP&7!"} @PIR{r=250}
+#   - remove @self
+
+# D_BOOSTER_SPEEDY_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_SPEEDY;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_SPEEDY_NAME:
+#   Skills:
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&2&lSPEEDY &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_SPEEDY:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - potion{type=SPEED;duration=200;level=5} @PIR{r=250}
+#   - effect:sound{s=entity.strider.happy;v=1} @PIR{r=250}
+#   - effect:sound{s=entity.strider.happy;v=1} @self
+#   - message{m="&a<target.name> &7found a &2&lSPEEDY &6&lBOOSTER&7! All players have gained increased &2movement speed &7for 10 seconds!"} @PIR{r=250}
+#   - remove @self
+
+# D_BOOSTER_DECOY_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_DECOY;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_DECOY_NAME:
+#   Skills:
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&d&lDECOY &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_DECOY:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - sudoskill{s=D_BOOSTER_DECOY_SPAWNER} @NearestPlayer{r=2}
+#   - effect:sound{s=entity.villager.trade;v=1;p=2} @PIR{r=250}
+#   - effect:sound{s=entity.villager.trade;v=1;p=2} @self
+#   - message{m="&a<target.name> &7found a &d&lDECOY &6&lBOOSTER&7! &cEnemies &7will target the &dDecoy&7!"} @PIR{r=250}
+#   - remove @self
+# D_BOOSTER_DECOY_SPAWNER:
+#   Skills:
+#   - summon{type=D_DECOY;amount=1} @self
+
+# D_BOOSTER_CURATIVE_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_CURATIVE;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_CURATIVE_NAME:
+#   Skills:
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&5&lCURATIVE &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_CURATIVE:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - healpercent{m=0.1} @MIR{r=250;t=D_VILLAGER}
+#   - effect:sound{s=entity.villager.trade;v=1;p=2} @PIR{r=250}
+#   - effect:sound{s=entity.villager.trade;v=1;p=2} @self
+#   - message{m="&a<target.name> &7found a &5&lCURATIVE &6&lBOOSTER&7! The &aVillager &7has been healed for &a10% &7of his &aMaximum HP&7!"} @PIR{r=250}
+#   - remove @self
+
+# #
+# #
+# # Single-Player BUFFS
+# #
+# #
+
+# D_BOOSTER_COIN_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_COIN;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_COIN_NAME:
+#   Skills:
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&e&lCOIN &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_COIN:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - command{c="money give <target.name> 5000";op=true} @NearestPlayer{r=2}
+#   - effect:sound{s=entity.player.levelup;v=1.8} @PIR{r=2}
+#   - effect:sound{s=entity.player.levelup;v=1} @self
+#   - message{m="&a<target.name> &7found a &e&lCOIN &6&lBOOSTER&7! You were given &e+5,000 Coins&7!"} @NearestPlayer{r=2}
+#   - remove @self
+
+# D_BOOSTER_SEAL_SUMMON:
+#   Skills:
+#   - summon{type=D_BOOSTER_SEAL;amount=1} @Forward{f=0;y=1.5}
+# D_BOOSTER_SEAL_NAME:
+#   Skills:
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &a&l10secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &a&l9secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &a&l8secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &a&l7secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &a&l6secs} @self
+#   - effect:particles{p=reddust;color=#008000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=2} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &e&l5secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &e&l4secs} @self
+#   - effect:particles{p=reddust;color=#FFFF00} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=1} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &4&l3secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &4&l2secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - setname{name=&3&lSEAL &6&lBOOSTER &7- &4&l1secs} @self
+#   - effect:particles{p=reddust;color=#FF0000} @self
+#   - effect:sound{s=entity.experience_orb.pickup;v=.05;p=.5} @self
+#   - delay 20
+#   - remove @self
+# D_BOOSTER_SEAL:
+#   Conditions:
+#   - playerwithin{d=2} true
+#   Skills:
+#   - command{c="q point <target.name> add items.CastleSeal 1";op=true} @NearestPlayer{r=2}
+#   - effect:sound{s=entity.player.levelup;v=1.8} @PIR{r=2}
+#   - effect:sound{s=entity.player.levelup;v=1} @self
+#   - message{m="&a<target.name> &7found a &3&lSEAL &6&lBOOSTER&7! You were given &9+1 Castle Seal&7!"} @NearestPlayer{r=2}
+#   - remove @self

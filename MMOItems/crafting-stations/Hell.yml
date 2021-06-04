@@ -14,7 +14,7 @@ recipes:
   hells-fury-upgrade:
     item:
       type: WHIP
-      id: HELLS_FURRY
+      id: HELLS_FURRY4
     ingredients:
     - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=10}
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=64}
@@ -54,78 +54,78 @@ recipes:
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=640}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=128}
     conditions: []
-  FIRE_CATALYST:
+  FIRE_CATALYST4:
     output:
       type: CATALYST
-      id: FIRE_CATALYST
+      id: FIRE_CATALYST4
     ingredients:
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=128}
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=8}
     conditions: []
-  EXTINGUISHER:
+  EXTINGUISHER5:
     output:
       type: ACCESSORY
-      id: EXTINGUISHER
+      id: EXTINGUISHER5
     ingredients:
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=256}
-    - mmoitem{type=CATALYST,id=FIRE_CATALYST,amount=1}
+    - mmoitem{type=CATALYST,id=FIRE_CATALYST4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ROTTEN_FLESH,amount=16}
     conditions: []
-  BLAZE_CHEST:
+  BLAZE_CHEST4:
     output:
       type: ARMOR
-      id: BLAZE_CHEST
+      id: BLAZE_CHEST4
     ingredients:
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=512}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BLAZE_ROD,amount=8}
     conditions: []
-  FLAME_BOW:
+  FLAME_BOW4:
     output:
       type: BOW
-      id: FLAME_BOW
+      id: FLAME_BOW4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK,amount=192}
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=320}
-    conditions: []
-  NECROMANCER_STAFF:
-    output:
-      type: STAFF
-      id: NECROMANCER_STAFF
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=16}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=16}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=16}
-    - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=192}
-    - mmoitem{type=STAFF,id=NECROMANCER_STAFF0,amount=1}
-    conditions: []
-  NECROMANCER_STAFF2:
-    output:
-      type: STAFF
-      id: NECROMANCER_STAFF2
-    ingredients:
-    - mmoitem{type=STAFF,id=NECROMANCER_STAFF,amount=1}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=32}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=32}
-    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=32}
-    - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=384}
     conditions: []
   NECROMANCER_STAFF3:
     output:
       type: STAFF
       id: NECROMANCER_STAFF3
     ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=16}
+    - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=192}
     - mmoitem{type=STAFF,id=NECROMANCER_STAFF2,amount=1}
+    conditions: []
+  NECROMANCER_STAFF4:
+    output:
+      type: STAFF
+      id: NECROMANCER_STAFF4
+    ingredients:
+    - mmoitem{type=STAFF,id=NECROMANCER_STAFF3,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=32}
+    - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=384}
+    conditions: []
+  NECROMANCER_STAFF5:
+    output:
+      type: STAFF
+      id: NECROMANCER_STAFF5
+    ingredients:
+    - mmoitem{type=STAFF,id=NECROMANCER_STAFF4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_GLOWSTONEDUST,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN,amount=64}
     - mmoitem{type=MATERIAL,id=VOID_SHARD,amount=576}
-    - mmoitem{type=QUEST,id=WITHER_HEAD,amount=1}
+    - mmoitem{type=QUEST,id=WITHER_HEAD3,amount=1}
     conditions: []
-  MAGMA_BLADE:
+  MAGMA_BLADE4:
     output:
       type: SWORD
-      id: MAGMA_BLADE
+      id: MAGMA_BLADE4
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_MAGMA_CREAM,amount=64}
     - mmoitem{type=MATERIAL,id=MAGMA_COIN,amount=32}

@@ -1,4 +1,4 @@
-MARKING_BOW:
+MARKING_BOW3:
   base:
     material: BOW
     hide-enchants: true
@@ -23,30 +23,33 @@ MARKING_BOW:
     - Unused
     tier: RARE
     unbreakable: true
-    name: §9Marking Bow
-BONE_BOW:
+    name: <tier-color-cleaned>Marking Bow
+    revision-id: 2
+BONE_BOW3:
   base:
     material: BOW
     tier: RARE
     unbreakable: true
     faction-damage-undead: 20.0
     attack-damage: 50.0
-    name: §9Bone Bow
-UNDEAD_BOW:
+    name: <tier-color-cleaned>Bone Bow
+    revision-id: 2
+UNDEAD_BOW3:
   base:
     material: BOW
     tier: RARE
     unbreakable: true
     faction-damage-undead: 50.0
     attack-damage: 75.0
-    name: §9Undead Bow
-LUNDEAD_BOW:
+    name: <tier-color-cleaned>Undead Bow
+    revision-id: 2
+UNDEAD_BOW4:
   base:
     material: BOW
     attack-damage: 120.0
     faction-damage-undead: 75.0
     tier: LEGENDARY
-    name: §5Undead Bow
+    name: <tier-color-cleaned>Undead Bow
     arrow-particles:
       particle: HEART
       amount: 5
@@ -64,12 +67,13 @@ LUNDEAD_BOW:
     - §7upon §chitting an enemy§7!
     unbreakable: true
     critical-strike-chance: 15.0
-FLAME_BOW:
+    revision-id: 2
+FLAME_BOW4:
   base:
     material: BOW
     attack-damage: 175.0
     tier: LEGENDARY
-    name: §5Flame Bow
+    name: <tier-color-cleaned>Flame Bow
     ability:
       ability1:
         type: FIREARROW
@@ -83,11 +87,13 @@ FLAME_BOW:
     unbreakable: true
     critical-strike-power: 50.0
     critical-strike-chance: 30.0
+    revision-id: 2
 ADMIN:
   base:
     material: BOW
     attack-damage: 100000.0
-JOYS_BOW:
+    revision-id: 2
+JOYS_BOW2:
   base:
     material: BOW
     hide-enchants: true
@@ -100,8 +106,9 @@ JOYS_BOW:
     - §7Upgradeable bow of love!
     tier: UNCOMMON
     unbreakable: true
-    name: §2Joys Bow
-HEAVY_BOW:
+    name: <tier-color-cleaned>Joys Bow
+    revision-id: 2
+HEAVY_BOW3:
   base:
     material: BOW
     hide-enchants: true
@@ -109,7 +116,7 @@ HEAVY_BOW:
     critical-strike-power: 10.0
     tier: RARE
     unbreakable: true
-    name: §9Heavy Bow
+    name: <tier-color-cleaned>Heavy Bow
     knockback-resistance: 0.5
     gem-sockets:
     - Unused
@@ -117,7 +124,8 @@ HEAVY_BOW:
       INCREASE_DAMAGE: 3
     lore:
     - '&7Gain &aStrength 3 &7while holding!'
-LEGOLAS_BOW:
+    revision-id: 2
+LEGOLAS_BOW3:
   base:
     material: BOW
     attack-damage:
@@ -139,8 +147,9 @@ LEGOLAS_BOW:
     faction-damage-hell: 25.0
     tier: RARE
     unbreakable: true
-    name: §9Legolas Bow
-LEGOLAS_BOW2:
+    name: <tier-color-cleaned>Legolas Bow
+    revision-id: 2
+LEGOLAS_BOW4:
   base:
     material: BOW
     attack-damage:
@@ -162,10 +171,11 @@ LEGOLAS_BOW2:
     faction-damage-hell: 50.0
     tier: LEGENDARY
     unbreakable: true
-    name: §5Legolas Bow
+    name: <tier-color-cleaned>Legolas Bow
     gem-sockets:
     - Unused
-ROBIN_BOW:
+    revision-id: 2
+ROBIN_BOW3:
   base:
     material: BOW
     attack-damage:
@@ -179,7 +189,7 @@ ROBIN_BOW:
     faction-damage-void: 50.0
     tier: RARE
     unbreakable: true
-    name: §9Robin Bow
+    name: <tier-color-cleaned>Robin Bow
     arrow-potion-effects:
       SLOW:
         duration: 1.5
@@ -192,7 +202,8 @@ ROBIN_BOW:
     lore:
     - '&cSlow &7enemies for &c1.5secs'
     - '&7when hit with an arrow!'
-ROBIN_BOW2:
+    revision-id: 2
+ROBIN_BOW4:
   base:
     material: BOW
     attack-damage:
@@ -206,7 +217,7 @@ ROBIN_BOW2:
     faction-damage-void: 75.0
     tier: LEGENDARY
     unbreakable: true
-    name: §5Robin Bow
+    name: <tier-color-cleaned>Robin Bow
     arrow-potion-effects:
       SLOW:
         duration: 2.5
@@ -221,12 +232,13 @@ ROBIN_BOW2:
     lore:
     - '&cSlow &7enemies for &c2.5secs'
     - '&7when hit with an arrow!'
-DECEITFUL_BOW:
+    revision-id: 2
+DECEITFUL_BOW3:
   base:
     material: BOW
     attack-damage: 175.0
     tier: RARE
-    name: §9Deceitful Bow
+    name: <tier-color-cleaned>Deceitful Bow
     faction-damage-void: 25.0
     lore:
     - §7This bow may fool you.
@@ -238,12 +250,13 @@ DECEITFUL_BOW:
     arrow-particles:
       particle: DRAGON_BREATH
       amount: 5
-DECEITFUL_BOW2:
+    revision-id: 2
+DECEITFUL_BOW4:
   base:
     material: BOW
     attack-damage: 200.0
     tier: LEGENDARY
-    name: §5Deceitful Bow
+    name: <tier-color-cleaned>Deceitful Bow
     faction-damage-void: 45.0
     lore:
     - §7This bow may fool you.
@@ -256,18 +269,19 @@ DECEITFUL_BOW2:
     arrow-particles:
       particle: DRAGON_BREATH
       amount: 10
-      speed: .05
-BULBLIN_BOW:
+      speed: 0.05
+    revision-id: 2
+BULBLIN_BOW4:
   base:
     material: BOW
     tier: LEGENDARY
-    name: §5Bulblin Bow
+    name: <tier-color-cleaned>Bulblin Bow
     faction-damage-void: 40.0
     attack-damage: 215.0
     critical-strike-chance: 50.0
     lore:
     - §7Applies a random §8corruption
-    - §7hex onto any enemy in-sight! 
+    - §7hex onto any enemy in-sight!
     unbreakable: true
     gem-sockets:
     - Unused
@@ -280,18 +294,19 @@ BULBLIN_BOW:
         mode: ON_HIT
         mana: 25.0
         cooldown: 10.0
-BULBLIN_BOW2:
+    revision-id: 2
+BULBLIN_BOW5:
   base:
     material: BOW
     tier: EXOTIC
-    name: §eBulblin Bow
+    name: <tier-color-cleaned>Bulblin Bow
     faction-damage-void: 50.0
     attack-damage: 250.0
     critical-strike-power: 25.0
     critical-strike-chance: 75.0
     lore:
     - §7Applies a powerful §8corruption
-    - §7hex onto any enemy in-sight! 
+    - §7hex onto any enemy in-sight!
     unbreakable: true
     gem-sockets:
     - Unused
@@ -305,3 +320,4 @@ BULBLIN_BOW2:
         mode: ON_HIT
         mana: 50.0
         cooldown: 12.5
+    revision-id: 2

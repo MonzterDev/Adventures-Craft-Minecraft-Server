@@ -1,0 +1,40 @@
+REAPER_EGG_TELEPORT:
+  Skills:
+  - teleportto{location=-96,15,176}
+
+REAPER_SPAWN_NOTIFICATION:
+  Cooldown: 15
+  Skills:
+  - message{m="&cThe &7[&fLVL 10&7] &c&lReaper &cis being summoned within the &lGraveyard&c!"} @PIR{r=100}
+  - effect:sound{s=block.bell.use;pitch=1.75} @PIR{r=100}
+
+REAPER_SUMMON:
+  Cooldown: 2.5
+  Skills:
+  - summon{type=REAPER;amount=1;radius=1;onSurface=true} @self
+  - message{m="&cThe &7[&fLVL 10&7] &c&lReaper &chas been summoned!"} @PIR{r=75}
+  - effect:sound{s=block.bell.use;pitch=2} @PIR{r=100}
+
+REAPER_SKELETON_SUMMONING:
+  Cooldown: 25
+  Skills:
+  - stun{d=200} @self
+  - summon{type=REAPER_MINION;amount=1;radius=5;onSurface=true;repeat=5;repeatInterval=20} @PIR{r=5}
+  - effect:sound{s=entity.drowned.ambient_water;pitch=1.25;repeat=5;repeatInterval=20} @self
+  - message{m="&cThe &7[&fLVL 10&7] &c&lReaper &cis awakening his fallen troops!"} @PIR{r=5}
+  - equip{item=AIR:0}
+  - delay 100
+  - equip{item=STONE_SWORD:0}
+  
+REAPER_CORRUPTION:
+  Cooldown: 20
+  Skills:
+  - heal{amount=100;repeat=5;repeatInterval=20} @self
+  - damage{amount=2;repeat=5;repeatInterval=20} @PIR{r=5}
+  - stun{d=15;repeat=5;repeatInterval=20} @PIR{r=5}
+  - effect:bloodyScreen{d=15;repeat=5;repeatInterval=20} @PIR{r=5}
+  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @PIR{r=5}
+  - potion{type=WITHER;duration=21;level=1;repeat=5;repeatInterval=20} @PIR{r=5}
+  - effect:sound{s=entity.drowned.ambient;pitch=1.5} @self
+  - effect:particlesphere{particle=portal;amount=1;radius=0;y=1;repeat=5;repeatInterval=20} @self
+  - message{m="&cThe &7[&fLVL 10&7] &c&lReaper &chit you with &5corruption&c!"} @PIR{r=5}

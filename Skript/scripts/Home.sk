@@ -1,140 +1,140 @@
-#HOME
-on load: # Doesn't have to be in a load event
-    add "home visit <player>" to tab completions
-    add "home help <1><2><3>" to tab completions
-    add "home chat" to tab completions
-    add "home delete" to tab completions
-    add "home kick <player>" to tab completions
-    add "home ban <player>" to tab completions
-    add "home unban <player>" to tab completions
-    add "home set" to tab completions
-    add "home setowner <player>" to tab completions
-    add "home add <player>" to tab completions
-    add "home unadd <player>" to tab completions
-    add "home trust <player>" to tab completions
-    add "home untrust <player>" to tab completions
+# #HOME
+# on load: # Doesn't have to be in a load event
+#     add "home visit <player>" to tab completions
+#     add "home help <1><2><3>" to tab completions
+#     add "home chat" to tab completions
+#     add "home delete" to tab completions
+#     add "home kick <player>" to tab completions
+#     add "home ban <player>" to tab completions
+#     add "home unban <player>" to tab completions
+#     add "home set" to tab completions
+#     add "home setowner <player>" to tab completions
+#     add "home add <player>" to tab completions
+#     add "home unadd <player>" to tab completions
+#     add "home trust <player>" to tab completions
+#     add "home untrust <player>" to tab completions
 
-command /Home [<text>] [<string>]:
-    executable by: players
-    trigger:
-        if player is in world "Spawn":
-            if arg 1 is not set:    
-                connect player to "Homes"
-            else if arg 1 is not "help":    
-                connect player to "Homes"
-            else if arg 1 is "help":
-                if arg 2 is not "2":
-                    if arg 2 is not "3":
-                        send "&6/Home &e- &fReturn to your home" to player
-                        send "&6/Home Visit <name> &e- &fVisit another player's home" to player
-                        send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
-                        send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
-                        send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
-                        send "&e----------Use /Home Help <1-3>----------" to player
-                else if arg 2 is "2":
-                    send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
-                    send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
-                    send "&6/Home Set &e- &fChange the position of /home" to player
-                    send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
-                    send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
-                    send "&e----------Use /Home Help <2-3>----------" to player
-                else if arg 2 is "3":
-                    send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
-                    send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
-                    send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
-                    send "&e----------Use /Home Help <3-3>----------" to player
+# command /Home [<text>] [<string>]:
+#     executable by: players
+#     trigger:
+#         if player is in world "Spawn":
+#             if arg 1 is not set:    
+#                 connect player to "Homes"
+#             else if arg 1 is not "help":    
+#                 connect player to "Homes"
+#             else if arg 1 is "help":
+#                 if arg 2 is not "2":
+#                     if arg 2 is not "3":
+#                         send "&6/Home &e- &fReturn to your home" to player
+#                         send "&6/Home Visit <name> &e- &fVisit another player's home" to player
+#                         send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
+#                         send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
+#                         send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
+#                         send "&e----------Use /Home Help <1-3>----------" to player
+#                 else if arg 2 is "2":
+#                     send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
+#                     send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
+#                     send "&6/Home Set &e- &fChange the position of /home" to player
+#                     send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
+#                     send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
+#                     send "&e----------Use /Home Help <2-3>----------" to player
+#                 else if arg 2 is "3":
+#                     send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
+#                     send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
+#                     send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
+#                     send "&e----------Use /Home Help <3-3>----------" to player
 
-        if player is in world "Homes":
-            if arg 1 is "help":
-                if arg 2 is not "2":
-                    if arg 2 is not "3":
-                        send "&6/Home &e- &fReturn to your home" to player
-                        send "&6/Home Visit <name> &e- &fVisit another player's home" to player
-                        send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
-                        send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
-                        send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
-                        send "&e----------Use /Home Help <1-3>----------" to player
-                else if arg 2 is "2":
-                    send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
-                    send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
-                    send "&6/Home Set &e- &fChange the position of /home" to player
-                    send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
-                    send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
-                    send "&e----------Use /Home Help <2-3>----------" to player
-                else if arg 2 is "3":
-                    send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
-                    send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
-                    send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
-                    send "&e----------Use /Home Help <3-3>----------" to player
+#         if player is in world "Homes":
+#             if arg 1 is "help":
+#                 if arg 2 is not "2":
+#                     if arg 2 is not "3":
+#                         send "&6/Home &e- &fReturn to your home" to player
+#                         send "&6/Home Visit <name> &e- &fVisit another player's home" to player
+#                         send "&6/Home Chat &e- &fChange your chat to only members of your home" to player
+#                         send "&6/Home Delete &e- &fDelete your entire home (USE WITH CAUTION)" to player
+#                         send "&6/Home Kick <name> &e- &fRemoves a User who is currently in your home" to player
+#                         send "&e----------Use /Home Help <1-3>----------" to player
+#                 else if arg 2 is "2":
+#                     send "&6/Home Ban <name> &e- &fPrevent a User from entering your home" to player
+#                     send "&6/Home Unban <name> &e- &fAllows a banned User back into your home" to player
+#                     send "&6/Home Set &e- &fChange the position of /home" to player
+#                     send "&6/Home SetOwner <name> &e- &fSets a new Owner of your home (USE WITH CAUTION)" to player
+#                     send "&6/Home Add <name> &e- &fAllow the User to build in the home while the Owner is online" to player
+#                     send "&e----------Use /Home Help <2-3>----------" to player
+#                 else if arg 2 is "3":
+#                     send "&6/Home Unadd <name> &e- &fRemoves a User who was given permission to build while the Owner is online" to player
+#                     send "&6/Home Trust <name> &e- &fAllow the User to build in the home at all times" to player
+#                     send "&6/Home Untrust <name> &e- &fRemoves User from building in the home at all times" to player
+#                     send "&e----------Use /Home Help <3-3>----------" to player
                                 
-            else if arg 1 is not set:    
-                make player execute command "/p h"
-    #Visit plot                
-            else if arg 1 is "visit":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p visit %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Plot Chat                
-            else if arg 1 is "chat":
-                make player execute command "/p toggle chat"
-    #Deletes plot                
-            else if arg 1 is "delete":
-                make player execute command "/p delete"
-    #Kick player                
-            else if arg 1 is "kick":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p kick %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Ban player                
-            else if arg 1 is "ban":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p ban %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Unban player                
-            else if arg 1 is "unban":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p unban %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Sethome                
-            else if arg 1 is "set":
-                make player execute command "/p sethome"
-    #Set owner               
-            else if arg 1 is "setowner":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p setowner %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Add user               
-            else if arg 1 is "add":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p add %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Unadd user               
-            else if arg 1 is "unadd":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p remove %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Trust user               
-            else if arg 1 is "trust":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p trust %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Untrust user               
-            else if arg 1 is "untrust":
-                if arg-2 parsed as offline player has played before:
-                    make player execute command "/p untrust %arg-2%"
-                else:
-                    send "&cPlease enter a valid Player!" to player
-    #Info               
-            else if arg 1 is "info":
-                make player execute command "/p info"
-    #Confirm               
-            else if arg 1 is "confirm":
-                make player execute command "/p confirm"
+#             else if arg 1 is not set:    
+#                 make player execute command "/p h"
+#     #Visit plot                
+#             else if arg 1 is "visit":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p visit %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Plot Chat                
+#             else if arg 1 is "chat":
+#                 make player execute command "/p toggle chat"
+#     #Deletes plot                
+#             else if arg 1 is "delete":
+#                 make player execute command "/p delete"
+#     #Kick player                
+#             else if arg 1 is "kick":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p kick %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Ban player                
+#             else if arg 1 is "ban":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p ban %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Unban player                
+#             else if arg 1 is "unban":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p unban %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Sethome                
+#             else if arg 1 is "set":
+#                 make player execute command "/p sethome"
+#     #Set owner               
+#             else if arg 1 is "setowner":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p setowner %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Add user               
+#             else if arg 1 is "add":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p add %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Unadd user               
+#             else if arg 1 is "unadd":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p remove %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Trust user               
+#             else if arg 1 is "trust":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p trust %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Untrust user               
+#             else if arg 1 is "untrust":
+#                 if arg-2 parsed as offline player has played before:
+#                     make player execute command "/p untrust %arg-2%"
+#                 else:
+#                     send "&cPlease enter a valid Player!" to player
+#     #Info               
+#             else if arg 1 is "info":
+#                 make player execute command "/p info"
+#     #Confirm               
+#             else if arg 1 is "confirm":
+#                 make player execute command "/p confirm"

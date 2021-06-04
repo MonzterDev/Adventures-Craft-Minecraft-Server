@@ -80,13 +80,13 @@ FINISH_MESSAGE_Hell_Wither_Complete5: 'run ^notify \n&6&lAchievement Unlocked\:&
 #5 Rewards
 Hell_Wither5: "if empty0 Hell_Wither5_Full else Hell_Wither5_Folder"
 Hell_Wither5_Folder: 'folder Hell_Wither5_If_Not_Full,Hell_Wither5_Claimed_Tag'
-Hell_Wither5_If_Not_Full: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+Hell_Wither5_If_Not_Full: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE4 %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Wither5_Full: 'folder Hell_Wither5_Full_message,Hell_Wither5_Full_Tag'
 Hell_Wither5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name10$ &cto redeem your rewards!'
 Hell_Wither5_Full_Tag: "tag add Hell_Wither5_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Wither5_Claim: 'folder Claim_Hell_Wither5,Hell_Wither5_Claim_message,Hell_Wither5_Claimed_Tag,Hell_Wither5_del_Claimed_Tag'
-Claim_Hell_Wither5: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+Claim_Hell_Wither5: "run ^command mmoitems give ARMOR CURSED_CHESTPLATE4 %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Wither5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Wither5_Claimed_Tag: "tag add Hell_Wither5_rewards_claimed"
 Hell_Wither5_del_Claimed_Tag: "tag del Hell_Wither5_rewards_unclaimed"
@@ -114,13 +114,13 @@ FINISH_MESSAGE_Hell_Ghastly_Complete4: 'run ^notify \n&6&lAchievement Unlocked\:
 #5 Rewards
 Hell_Ghastly4: "if empty0 Hell_Ghastly4_Full else Hell_Ghastly4_Folder"
 Hell_Ghastly4_Folder: 'folder Hell_Ghastly4_If_Not_Full,Hell_Ghastly4_Claimed_Tag'
-Hell_Ghastly4_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_LEGS %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
+Hell_Ghastly4_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_LEGS5 %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
 Hell_Ghastly4_Full: 'folder Hell_Ghastly4_Full_message,Hell_Ghastly4_Full_Tag'
 Hell_Ghastly4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name14$ &cto redeem your rewards!'
 Hell_Ghastly4_Full_Tag: "tag add Hell_Ghastly4_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Ghastly4_Claim: 'folder Claim_Hell_Ghastly4,Hell_Ghastly4_Claim_message,Hell_Ghastly4_Claimed_Tag,Hell_Ghastly4_del_Claimed_Tag'
-Claim_Hell_Ghastly4: "run ^command mmoitems give ARMOR DEVIL_LEGS %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
+Claim_Hell_Ghastly4: "run ^command mmoitems give ARMOR DEVIL_LEGS5 %player% 1 ^command mmocore admin exp give %player% main 10000 ^command mmocore admin exp give %player% Slayer 10000 ^command money give %player% 5000"
 Hell_Ghastly4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Ghastly4_Claimed_Tag: "tag add Hell_Ghastly4_rewards_claimed"
 Hell_Ghastly4_del_Claimed_Tag: "tag del Hell_Ghastly4_rewards_unclaimed"
@@ -132,13 +132,13 @@ FINISH_MESSAGE_Hell_Ghastly_Complete5: 'run ^notify \n&6&lAchievement Unlocked\:
 #5 Rewards
 Hell_Ghastly5: "if empty0 Hell_Ghastly5_Full else Hell_Ghastly5_Folder"
 Hell_Ghastly5_Folder: 'folder Hell_Ghastly5_If_Not_Full,Hell_Ghastly5_Claimed_Tag'
-Hell_Ghastly5_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_CHEST %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+Hell_Ghastly5_If_Not_Full: "run ^command mmoitems give ARMOR DEVIL_CHEST5 %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Ghastly5_Full: 'folder Hell_Ghastly5_Full_message,Hell_Ghastly5_Full_Tag'
 Hell_Ghastly5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /achievementmenu and click on &a$quest_name15$ &cto redeem your rewards!'
 Hell_Ghastly5_Full_Tag: "tag add Hell_Ghastly5_rewards_unclaimed"
 #This only applies to the achievementmenu, and ONLY if the rewards we not given because the inventory was full!
 Hell_Ghastly5_Claim: 'folder Claim_Hell_Ghastly5,Hell_Ghastly5_Claim_message,Hell_Ghastly5_Claimed_Tag,Hell_Ghastly5_del_Claimed_Tag'
-Claim_Hell_Ghastly5: "run ^command mmoitems give ARMOR DEVIL_CHEST %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
+Claim_Hell_Ghastly5: "run ^command mmoitems give ARMOR DEVIL_CHEST5 %player% 1 ^command mmocore admin exp give %player% main 20000 ^command mmocore admin exp give %player% Slayer 20000 ^command money give %player% 100000"
 Hell_Ghastly5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 Hell_Ghastly5_Claimed_Tag: "tag add Hell_Ghastly5_rewards_claimed"
 Hell_Ghastly5_del_Claimed_Tag: "tag del Hell_Ghastly5_rewards_unclaimed"

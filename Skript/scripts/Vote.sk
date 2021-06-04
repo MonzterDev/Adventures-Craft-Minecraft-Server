@@ -1,92 +1,78 @@
-on votifier vote:
-    send formatted "&eSomeone just voted and received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to all players
+# on votifier vote:
+#     send formatted "&eSomeone just voted and received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to all players
 
 
-on vote:
-    if website of event-vote = "minestatus.net test vote":
-        if now < {vote_mineStatustest::%player%}:
-            send "&fVote again in &e%difference between {vote_mineStatustest::%player%} and now% for more rewards!" to player
-        else:
-            set {vote_mineStatustest::%player%} to 24 hours later
-            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
-            execute console command "/q point %player% add items.Vote 1"
-
-    else if website of event-vote = "minestatus.net":
-        if now < {vote_mineStatus::%player%}:
-            send "&fVote again in &e%difference between {vote_mineStatus::%player%} and now% for more rewards!" to player
-        else:
-            set {vote_mineStatus::%player%} to 24 hours later
-            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
-            execute console command "/q point %player% add items.Vote 1"
-
-    else if website of event-vote = "MinecraftServers.org":
-        if now < {vote_MinecraftServers::%player%}:
-            send "&fVote again in &e%difference between {vote_MinecraftServers::%player%} and now% for more rewards!" to player
-        else:
-            set {vote_MinecraftServers::%player%} to 24 hours later
-            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
-            execute console command "/q point %player% add items.Vote 1"
-        
-    else if website of event-vote = "MCSL":
-        if now < {vote_MCSL::%player%}:
-            send "&fVote again in &e%difference between {vote_MCSL::%player%} and now% for more rewards!" to player
-        else:
-            set {vote_MCSL::%player%} to 24 hours later
-            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
-            execute console command "/q point %player% add items.Vote 1"
-        
-    else if website of event-vote = "minecraft-mp.com":
-        if now < {vote_minecraftmp::%player%}:
-            send "&fVote again in &e%difference between {vote_minecraftmp::%player%} and now% for more rewards!" to player
-        else:
-            set {vote_minecraftmp::%player%} to 24 hours later
-            message "&aThanks for voting, claim your reward by using &e/VoteClaim&a! You can vote again in 24 hours."
-            execute console command "/q point %player% add items.Vote 1"
-        
-command /Vote:
-    executable by: player
-    trigger:
-        send formatted "&eVote to received a &9random reward&e! <tooltip:&6&lCLICK TO VOTE><url:https://www.adventurescraft.net/wiki/site/vote/>&6&lCLICK TO VOTE<reset>&e!" to player
-        execute console command "/dm open Vote %player%"
-command /VoteClaim:
-    executable by: player
-    trigger:
-        set {Votes::%player%} to placeholder "betonquest_items:point.Vote.amount"
-        if {Votes::%player%} parsed as a number is greater than 0:
-            execute console command "/mm items give %player% ENCHANTED_MATERIALS"
-            execute console command "/q point %player% add items.Vote -1"
-            message "&aYour Vote Reward has been claimed!"
-        else:
-            message "&cYou don't have any Vote Rewards to be claimed!"
+command /VoteGive <Player> <String>:
+	executable by: console
+	trigger:
+		if string-arg = "minestatus.net test vote":
+			if now < {vote_mineStatustest::%player-arg%}:
+				send "&fVote again in &e%difference between {vote_mineStatustest::%player-arg%} and now% for more rewards!" to player
+			else:
+				set {vote_mineStatustest::%player-arg%} to 24 hours later
+				voteWard(arg-1)
+		else if string-arg = "minestatus.net":
+			if now < {vote_mineStatus::%player-arg%}:
+				send "&fVote again in &e%difference between {vote_mineStatus::%player-arg%} and now% for more rewards!" to player
+			else:
+				set {vote_mineStatus::%player-arg%} to 24 hours later
+				voteWard(arg-1)
+		else if string-arg = "MinecraftServers.org":
+			if now < {vote_MinecraftServers::%player-arg%}:
+				send "&fVote again in &e%difference between {vote_MinecraftServers::%player-arg%} and now% for more rewards!" to player
+			else:
+				set {vote_MinecraftServers::%player-arg%} to 24 hours later
+				voteWard(arg-1)			
+		else if string-arg = "MCSL":
+			if now < {vote_MCSL::%player-arg%}:
+				send "&fVote again in &e%difference between {vote_MCSL::%player-arg%} and now% for more rewards!" to player
+			else:
+				set {vote_MCSL::%player-arg%} to 24 hours later
+				voteWard(arg-1)
+			
+		else if string-arg = "Minecraft-MP.com":
+			if now < {vote_minecraftmp::%player-arg%}:
+				send "&fVote again in &e%difference between {vote_minecraftmp::%player-arg%} and now% for more rewards!" to player
+			else:
+				set {vote_minecraftmp::%player-arg%} to 24 hours later
+				voteWard(arg-1)
+		
 
 
-#PLACEHOLDERS
+# #PLACEHOLDERS
 on placeholderapi placeholder request for the prefix "custom":
+	set {_time} to 0 seconds later
+	set {_hours} to 24 hours later
 	if the identifier is "vote1":
-		if difference between {vote_mineStatus::%player%} and now is more than 1 second:
-			set the result to "%difference between {vote_mineStatus::%player%} and now%"
-			if difference between {vote_mineStatus::%player%} and now is more than 24 hours:
+		if difference between {vote_mineStatus::%player%} and now > {_time}:
+			set the result to "&c%difference between {vote_mineStatus::%player%} and now%"
+			if difference between {vote_mineStatus::%player%} and now > {_hours}:
 				set {vote_mineStatus::%player%} to 0
 		else:
 			set the result to "&aReady!"
 	if the identifier is "vote2":
-		if difference between {vote_minecraftmp::%player%} and now is more than 1 second:
-			set the result to "%difference between {vote_minecraftmp::%player%} and now%"
-			if difference between {vote_minecraftmp::%player%} and now is more than 24 hours:
+		if difference between {vote_minecraftmp::%player%} and now > {_time}:
+			set the result to "&c%difference between {vote_minecraftmp::%player%} and now%"
+			if difference between {vote_minecraftmp::%player%} and now > {_hours}:
 				set {vote_minecraftmp::%player%} to 0 #5 seconds later
 		else:
 			set the result to "&aReady!"
 	if the identifier is "vote3":
-		if difference between {vote_MinecraftServers::%player%} and now is more than 1 second:
-			set the result to "%difference between {vote_MinecraftServers::%player%} and now%"
-			if difference between {vote_MinecraftServers::%player%} and now is more than 24 hours:
+		if difference between {vote_MinecraftServers::%player%} and now > {_time}:
+			set the result to "&c%difference between {vote_MinecraftServers::%player%} and now%"
+			if difference between {vote_MinecraftServers::%player%} and now > {_hours}:
 				set {vote_MinecraftServers::%player%} to 0 #5 seconds later
 		else:
 			set the result to "&aReady!"
 	if the identifier is "vote4":
-		if difference between {vote_MCSL::%player%} and now is more than 1 second:
-			set the result to "%difference between {vote_MCSL::%player%} and now%"
-			if difference between {vote_MCSL::%player%} and now is more than 24 hours:
+		if difference between {vote_MCSL::%player%} and now > {_time}:
+			set the result to "&c%difference between {vote_MCSL::%player%} and now%"
+			if difference between {vote_MCSL::%player%} and now > {_hours}:
 				set {vote_MCSL::%player%} to 0 #5 seconds later
 		else:
 			set the result to "&aReady!"
+
+function voteWard(p: player):
+	execute console command "/q point %{_p}% add items.Vote 1"
+	message "&aThanks for voting, claim your reward by using <tooltip:&aClick to claim rewards!><command:/Vote>&e/Vote<reset>&a! You can vote again every 24 hours." to {_p}
+	play sound "entity.generic.explode" with pitch 1 to {_p}

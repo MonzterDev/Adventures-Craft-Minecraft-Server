@@ -1,0 +1,187 @@
+BABY_GOBLIN2:
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&7[&fLVL 5&7] &cBaby Goblin'
+  Health: 500
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.32
+    FollowRange: 6
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Equipment: 
+  - BABY_GOBLIN_HEAD Head
+  - BABY_GOBLIN_SWORD2:0
+  - BABY_GOBLIN_SWORD2 offhand
+  - BABY_GOBLIN_CHESTPLATE2 chest
+  - BABY_GOBLIN_BOOTS2 feet
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors: &AIGoalSelectors
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors: &AITargetSelectors
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+GOBLIN2:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cGoblin'
+  Health: 750
+  Damage: 0
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: 
+    MovementSpeed: 0.3
+    <<: *Options
+  Equipment:
+  - GOBLIN_HEAD2 Head
+  - GOBLIN_SWORD2:0
+  - GOBLIN_CHESTPLATE2 chest
+  - GOBLIN_LEGGINGS2 legs
+  Drops:
+  - EXP 10-15 100%
+  AIGoalSelectors:
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+    # <<: *AIGoalSelectors
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+    # <<: *AITargetSelectors
+  Skills:
+  - damage{amount=45} @target ~onAttack
+  - skill{s=GOBLIN_MOUNT_HOUND2} ~onTimer:300
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+HOUND2:
+  Type: WOLF
+  Display: '&7[&fLVL 10&7] &cHound'
+  Health: 300
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.36
+    Baby: false
+    <<: *Options
+  Drops:
+  - EXP 10-15 100%
+  AIGoalSelectors:
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+    # <<: *AIGoalSelectors
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+    # <<: *AITargetSelectors
+  Skills:
+  - damage{amount=25} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=HOUND_BLEED2} @target ~onAttack
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+GOBLIN_ARCHER:
+  Type: SKELETON
+  Display: '&7[&fLVL 10&7] &cGoblin Archer'
+  Health: 500
+  Faction: Goblin
+  Disguise:
+    Player: '&7[&fLVL 10&7] &cGoblin Archer'
+    Type: Player
+    Skin: goblin_archer
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.28
+    <<: *Options
+  Equipment:
+  - GOBLIN_ARCHER_HELMET Head
+  - GOBLIN_ARCHER_CROSSBOW:0
+  - GOBLIN_ARCHER_CHESTPLATE chest
+  Drops:
+  - EXP 5-15 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 arrowattack
+  - 4 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=45} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+
+
+GOBLIN_CHIEF:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 15&7] &cGoblin Chief'
+  Health: 5000
+  Faction: Goblin
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 15&7] &cGoblin Chief <caster.hp>&f/&c<caster.mhp>'
+    Range: 30
+    Color: RED
+    Style: SOLID  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.35
+    <<: *Options
+  Equipment:
+  - GOBLIN_CHIEF_HEAD Head
+  - GOBLIN_CHIEF_JUKEBOX:0
+  - GOBLIN_CHIEF_JUKEBOX offhand
+  - GOBLIN_CHIEF_CHESTPLATE chest
+  - GOBLIN_CHIEF_LEGGINGS LEGS
+  - GOBLIN_CHIEF_BOOTS FEET
+  Drops:
+  - EXP 25-30 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=45} @target ~onAttack
+  - skill{s=GOBLIN_CHIEF_SUMMON_BABY_GOBLIN2} @self ~onDamaged =75%-90%
+  - skill{s=GOBLIN_CHIEF_SUMMON_GOBLIN2} @self ~onDamaged =50%-74%
+  - skill{s=GOBLIN_CHIEF_SUMMON_HOUND2} @self ~onDamaged =25%-49%
+  - skill{s=GOBLIN_CHIEF_SUMMON_GOBLIN_ARCHER} @self ~onDamaged =1%-24%
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=GOBLIN_CHIEF_JUKEBOX_RANDOM} ~onTimer:200
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20

@@ -1,0 +1,252 @@
+# Boss Intro, activated Nether Music, announces his appearence, gives sound cues
+GHAST_SPAWN:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="<mob.name> &cis currently arriving in &4Hell&c!"} @PIR{r=200}
+  - effect:sound{s=entity.ghast.ambient;v=1;p=1} @PIR{r=200}
+  - effect:sound{s=entity.ghast.scream;v=1;p=1} @Self
+  - effect:sound{s=entity.ghast.warn;v=1;p=1} @Self
+  - effect:sound{s=entity.arrow.hit_player;v=1;p=1;repeat=5;repeatInterval=20} @PIR{r=100}
+
+GHASTLY_STRIDER_TELEPORT:
+  Conditions:
+  - playerwithin{d=10} false
+  Skills:
+  - teleportto{location=-157,12,-1172} @self
+
+GHAST_DAMAGE_NOTIFY:
+  TargetConditions:
+  - stance{stance=STARTED} false
+  Skills:
+  - message{m="<mob.name> &cis protected! You must find the &4Strider&c!"} @trigger
+  - effect:sound{s=entity.ghast.scream;v=1;p=1} @trigger
+
+# Ghast Boss gets signal from Minion Wipe Skill to suicide
+GHAST_WIPE:
+  Skills:
+  - skill{skill=GHAST_WIPE_TEXT} @PlayersInRadius{r=200}
+  - delay 20  
+  - remove @self
+  - remove @MIR{r=750;t=DEVOTED_PIGMAN,DEVOTED_SKELETON,DEVOTED_BLAZE,DEVOTED_MINION}  
+GHAST_WIPE_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="<mob.name> &cmanaged to eascape!"} 
+  - effect:sound{s=entity.ghast.scream;v=1;p=1;repeat=5;repeatInterval=20}
+  
+GHAST_DEATH:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - command{c="q point <target.name> add bossReward.GHASTLY 1"} 
+  - message{m="&eYou have defeated &cGhastly&e! Claim your rewards in &l/Bossdex&e!"} 
+  - skill{skill=GHAST_DEATH_TEXT}
+GHAST_DEATH_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &chas been &adefeated&c, great job!"} 
+  - effect:sound{s=entity.ghast.scream;v=1;p=1;repeat=3;repeatInterval=20} 
+  - effect:sound{s=entity.arrow.hit_player;v=1;p=1;repeat=5;repeatInterval=10} 
+  - effect:sound{s=entity.arrow.hit_player;v=1;p=1;repeat=5;repeatInterval=10} 
+  
+#This is trigged from the Ghast Boss upon Signal from 1st Minion
+GHAST_DAMAGE:
+  Skills:
+  - damage{amount=12500} @self 
+  - skill{skill=GHAST_DAMAGE_TEXT} @PlayersInRadius{r=200}
+GHAST_DAMAGE_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &chas been greatly hurt!"}
+  - effect:sound{s=entity.ghast.scream;v=1;p=1;repeat=2;repeatInterval=10}
+#This is trigged from the Ghast Boss upon Signal from Minion's Minion
+GHAST_DAMAGE2:
+  Skills:
+  - damage{amount=1250} @self 
+  - skill{skill=GHAST_DAMAGE2_TEXT} @PlayersInRadius{r=200}
+GHAST_DAMAGE2_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &chas been hurt!"}
+  - effect:sound{s=entity.ghast.scream;v=1;p=1;repeat=2;repeatInterval=10}
+#This is trigged from the Ghast Boss upon Signal from 2nd Minion
+GHAST_DAMAGE3:
+  Skills:
+  - damage{amount=2000} @self 
+  - skill{skill=GHAST_DAMAGE3_TEXT} @PlayersInRadius{r=200}
+GHAST_DAMAGE3_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &chas been hurt!"}
+  - effect:sound{s=entity.ghast.scream;v=1;p=1;repeat=2;repeatInterval=10}
+# Cycles through Ghast's Quests selecting one randomly. 
+# CD is to prevent is from being selected multiple times within designated time
+GHAST_TPING:
+  Cooldown: 9999
+  Skills:
+  - randomskill{skills=GHAST_TP,GHAST_TP2,GHAST_TP3}
+  - setstance{stance=STARTED} @self
+GHAST_TPING2:
+  Cooldown: 9999
+  Skills:
+  - randomskill{skills=GHAST_TP,GHAST_TP2,GHAST_TP3}
+GHAST_TPING3:
+  Cooldown: 9999
+  Skills:
+  - randomskill{skills=GHAST_TP,GHAST_TP2,GHAST_TP3}
+  
+  
+GHAST_SUMMON0:
+  Skills:
+  - delay 100  
+  - summon{type=GHASTLY_STRIDER;amount=1;radius=7.5} @self
+  - skill{skill=GHAST_SUMMON_TEXT0} @PlayersInRadius{r=200}
+GHAST_SUMMON_TEXT0:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &cis summoning his &4disciples&c!"}
+  - effect:sound{s=entity.wither_skeleton.step;v=1;p=1} 
+# 1 / 3 TP Spots, will give sound & text cues, then summon Pigmen Minion in  
+GHAST_TP:
+  Skills:
+  - remove @MIR{r=750;t=DEVOTED_PIGMAN,DEVOTED_SKELETON,DEVOTED_BLAZE,DEVOTED_MINION}
+  - delay 10
+  - teleportto{location=-180,19,-1248;yaw=-18.1;pitch=10.8} @self
+  - skill{s=GHAST_SUMMON} @self  
+  - skill{skill=GHAST_TP_TEXT} @PlayersInRadius{r=200}
+GHAST_TP_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - effect:sound{s=block.end_portal_frame.fill;v=5;p=1;repeat=3;repeatInterval=10}  
+  - delay 10
+  - message{m="&c<mob.name> &chas teleported to another &eZone&c!"} @PlayersInRadius{r=200}
+  - sendtitle{title="&f&lÀ";d=100} 
+GHAST_SUMMON:
+  Skills:
+  - delay 100  
+  - summon{type=DEVOTED_PIGMAN;amount=1;radius=5} @self
+  - summon{type=DEVOTED_SKELETON;amount=4;radius=7.5} @self
+  - summon{type=DEVOTED_BLAZE;amount=5;radius=10} @self
+  - skill{skill=GHAST_SUMMON_TEXT} @PlayersInRadius{r=200}
+GHAST_SUMMON_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - effect:sound{s=entity.wither_skeleton.step;v=1;p=1} 
+  - effect:sound{s=entity.blaze.ambient;v=1;p=1} 
+  - message{m="&c<mob.name> &cis summoning his &4disciples&c!"} 
+  - effect:sound{s=entity.zombie_pigman.angry;v=1;p=1} 
+# 2 / 3 TP Spots, will give sound & text cues, then summon Pigmen Minion in  
+GHAST_TP2:
+  Skills:
+  - remove @MIR{r=750;t=DEVOTED_PIGMAN,DEVOTED_SKELETON,DEVOTED_BLAZE,DEVOTED_MINION}  
+  - delay 10
+  - teleportto{location=-152,20,-1169;yaw=-18.1;pitch=10.8} @self
+  - skill{s=GHAST_SUMMON2} @self  
+  - skill{skill=GHAST_TP2_TEXT} @PlayersInRadius{r=200}
+GHAST_TP2_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - effect:sound{s=block.end_portal_frame.fill;v=5;p=1;repeat=3;repeatInterval=10}  
+  - delay 10
+  - message{m="&c<mob.name> &chas teleported to another &eZone&c!"} @PlayersInRadius{r=200}
+  - sendtitle{title="&f&lβ";d=100} @PlayersInRadius{r=200}  
+GHAST_SUMMON2:
+  Skills:
+  - delay 100  
+  - summon{type=DEVOTED_PIGMAN;amount=1;radius=5} @self
+  - summon{type=DEVOTED_SKELETON;amount=4;radius=7.5} @self
+  - summon{type=DEVOTED_BLAZE;amount=4;radius=10} @self
+  - skill{skill=GHAST_SUMMON3_TEXT} @PlayersInRadius{r=200}
+GHAST_SUMMON2_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - effect:sound{s=entity.wither_skeleton.step;v=1;p=1} 
+  - effect:sound{s=entity.blaze.ambient;v=1;p=1} 
+  - message{m="&c<mob.name> &cis summoning his &4disciples&c!"} 
+  - effect:sound{s=entity.zombie_pigman.angry;v=1;p=1} 
+# 3 / 3 TP Spots, will give sound & text cues, then summon Pigmen Minion in  
+GHAST_TP3:
+  Skills:
+  - remove @MIR{r=750;t=DEVOTED_PIGMAN,DEVOTED_SKELETON,DEVOTED_BLAZE,DEVOTED_MINION}  
+  - delay 10
+  - teleportto{location=-234,20,-1162;yaw=-18.1;pitch=10.8} @self
+  - skill{s=GHAST_SUMMON3} @self  
+  - skill{skill=GHAST_TP3_TEXT} @PlayersInRadius{r=200}
+GHAST_TP3_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - sendtitle{title="&f&lɔ:";d=100} @PlayersInRadius{r=200}  
+  - effect:sound{s=block.end_portal_frame.fill;v=5;p=1;repeat=3;repeatInterval=10}  
+  - delay 10
+  - message{m="&c<mob.name> &chas teleported to another &eZone&c!"} @PlayersInRadius{r=200}
+GHAST_SUMMON3:
+  Skills:
+  - delay 100  
+  - summon{type=DEVOTED_PIGMAN;amount=1;radius=5} @self
+  - summon{type=DEVOTED_SKELETON;amount=4;radius=7.5} @self
+  - summon{type=DEVOTED_BLAZE;amount=4;radius=10} @self
+  - skill{skill=GHAST_SUMMON3_TEXT} @PlayersInRadius{r=200}
+GHAST_SUMMON3_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - effect:sound{s=entity.wither_skeleton.step;v=1;p=1} 
+  - effect:sound{s=entity.blaze.ambient;v=1;p=1} 
+  - message{m="&c<mob.name> &cis summoning his &4disciples&c!"} 
+  - effect:sound{s=entity.zombie_pigman.angry;v=1;p=1} 
+
+
+
+
+# Ghast Minion 1 will remove himself after 120 seconds. If he isn't   
+DEVOTED_PIGMAN_WIPE:
+  Skills:
+  - delay 2400
+  - signal{s=WIPE} @MIR{r=200;t=GHASTLY} 
+  - remove @MIR{r=200;t=DEVOTED_MINION}
+  - remove @self
+  - skill{skill=DEVOTED_PIGMAN_WIPE_TEXT} @PlayersInRadius{r=200}
+DEVOTED_PIGMAN_WIPE_TEXT:
+  TargetConditions:
+  - region{r=hell} true
+  Skills:
+  - message{m="&c<mob.name> &cwasn't killed in time!"} 
+  - effect:sound{s=entity.zombie_pigman.angry;v=1;p=1}
+
+# On death of Minion, will send signal to GhastDamage Skill and hurt Boss  
+GHASTLY_STRIDER_DAMAGE_BOSS0:
+  Skills:
+  - signal{s=DAMAGE_BOSS0} @MIR{r=200;t=GHASTLY} 
+MINION_BOSS_DMG:
+  Skills:
+  - signal{s=DAMAGE_BOSS} @MIR{r=200;t=GHASTLY} 
+MINION_BOSS_DMG2:
+  Skills:
+  - signal{s=DAMAGE_BOSS2} @MIR{r=200;t=GHASTLY} 
+MINION_BOSS_DMG3:
+  Skills:
+  - signal{s=DAMAGE_BOSS3} @MIR{r=200;t=GHASTLY} 
+
+# Minion becomes Enraged, equipting new Armor, notifying player by messages & sound  
+DEVOTED_PIGMAN_RAGE:
+  Cooldown: 9999
+  Skills:
+  - equip{item=ENRAGED_DEVOTED_PIGMAN_SWORD:0}
+  - equip{item=ENRAGED_DEVOTED_PIGMAN_CHEST:CHEST}
+  - equip{item=ENRAGED_DEVOTED_PIGMAN_LEGS:LEGS}
+  - equip{item=ENRAGED_DEVOTED_PIGMAN_BOOTS:FEET}
+  - setname{name=&7[&fLVL 20&7] &4Enraged Pigman &f<mob.hp>&7/&c<mob.mhp> &c❤} @self
+  - message{m="&cThe &7[&fLVL 20&7] &cDevoted Pigman &chas &4raged&c, you must kill it quickly!"} @PlayersInRadius{r=50}
+  - effect:sound{s=entity.zombie_pigman.angry;v=1;p=1;repeat=2;repeatInterval=20} @PlayersInRadius{r=50}

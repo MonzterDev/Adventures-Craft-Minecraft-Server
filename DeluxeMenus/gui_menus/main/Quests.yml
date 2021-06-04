@@ -86,10 +86,8 @@ items:
     slot: 40
     priority: 1
     display_name: '&aGo Back'
-    right_click_commands:
-    - "[openguimenu] main"
-    left_click_commands:
-    - "[openguimenu] main"
+    click_commands:
+    - "[player] main"
 
   'UnclaimedQuests':
     material: ENCHANTED_BOOK

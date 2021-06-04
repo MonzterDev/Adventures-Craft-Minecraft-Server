@@ -1,0 +1,206 @@
+UNDEAD_SKELETON:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cUndead Skeleton'
+  Health: 100
+  Faction: Undead
+  Disguise:
+    Player: '&7[&fLVL 5&7] &cUndead Skeleton'
+    Type: Player
+    Skin: skeleton
+  Modules:
+    ThreatTable: true
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+  Equipment:
+  - IRON_SWORD:0
+  - SKELETON_CHESTPLATE1:CHEST
+  - SKELETON_BOOTS1:FEET
+  - SHIELD:5
+  Drops:
+  - EXP 0-5 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomlookaround
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=SUMMON_LOST_SOUL} ~onDeath .01
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - skill{s=Agro8A} @self ~onTimer:20
+  - skill{s=Agro8B} @self ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+
+UNDEAD_ARCHER:
+  Type: SKELETON
+  Display: '&7[&fLVL 5&7] &cUndead Archer'
+  Health: 75
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &cUndead Archer'
+    Skin: undead_archer
+  Modules:
+    ThreatTable: true
+  Options:
+    MaxCombatDistance: 50
+    MovementSpeed: 0.25
+    <<: *Options
+  Equipment:
+  - BOW:0
+  Drops:
+  - EXP 0-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 arrowattack
+  - 4 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - skill{s=SUMMON_LOST_SOUL} ~onDeath .01
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+
+LOST_SOUL:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 7&7] &cLost Soul'
+  Health: 100
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 7&7] &cLost Soul'
+    Skin: lostsoul
+  Modules:
+    ThreatTable: true
+  Options:
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    <<: *Options
+  Drops:
+  - EXP 0-7 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomlookaround
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=LOST_SOUL_STEAL} ~onEnterCombat
+  - damage{amount=5;ignoreArmor=false} @target ~onAttack
+  - damage{amount=1;ignoreArmor=false} @target ~onTimer:20
+  - potion{type=WITHER;duration=21;level=1} @target ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+REAPER_EGG:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cReaper Egg'
+  Health: 2500
+  Faction: Undead
+  Disguise:
+    Type: BLOCK
+    Block: WITHER_ROSE
+    ShowName: true
+  Modules:
+    ThreatTable: true
+  Options:
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.0001
+    Collidable: true
+    <<: *Options
+  AIGoalSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=REAPER_SPAWN_NOTIFICATION} ~onDamaged
+  - skill{s=REAPER_SUMMON} ~onDeath
+  - skill{s=REAPER_EGG_TELEPORT} @self ~onTimer:20
+  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @self ~onTimer:10
+  - effect:sound{s=entity.drowned.death;v=1;p=0} @self ~onDeath
+
+REAPER:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cReaper'
+  Health: 7500
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 10&7] &cReaper <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: RED
+    Style: SOLID
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &cReaper'
+    Skin: reaper
+  Modules:
+    ThreatTable: true
+  Options:
+    KnockbackResistance: .75
+    MaxCombatDistance: 50
+    MovementSpeed: 0.30
+    <<: *Options
+  Equipment:
+  - STONE_SWORD:0
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15} @target ~onAttack
+  - skill{s=REAPER_SKELETON_SUMMONING} =25%-50% .5
+  - skill{s=REAPER_CORRUPTION} =10%-75% .5
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+REAPER_MINION:
+  Type: BABY_ZOMBIE
+  Display: '&cUndead Minion'
+  Health: 250
+  Faction: Undead
+  Modules:
+    ThreatTable: true
+  Options:
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.42
+    <<: *Options
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  Skills:
+  - damage{amount=1;ignoreArmor=false} @target ~onAttack
+  - forcepull{spread=1} @EntitiesInRadius{r=5} .15
+  - remove{delay=400} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged  
+  - effect:particleline{particle=portal;amount=5;fromOrigin=true} @MIR{r=50;t=REAPER} ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_HEAD} @self ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_LEGGINGS} @self ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
+

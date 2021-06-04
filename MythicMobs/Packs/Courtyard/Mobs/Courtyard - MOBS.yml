@@ -1,0 +1,213 @@
+UNDEAD_SKELETON2:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cUndead Skeleton'
+  Health: 750
+  Faction: Undead
+  Disguise:
+    Player: '&7[&fLVL 10&7] &cUndead Skeleton'
+    Type: Player
+    Skin: skeleton
+  Modules:
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .25
+    MaxCombatDistance: 50
+    MovementSpeed: 0.34
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+  Equipment:
+  - iron_axe:0
+  - SKELETON_CHESTPLATE1:CHEST
+  - SKELETON_BOOTS1:FEET
+  - shield:5
+  Drops:
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomlookaround
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
+  - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=Agro8A} @self ~onTimer:20
+  - skill{s=Agro8B} @self ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="mythicmobs i give <target.name> SkeletonSet 1"} @ThreatTablePlayers ~onDeath
+
+UNDEAD_ARCHER2:
+  Type: SKELETON
+  Display: '&7[&fLVL 10&7] &cUndead Archer'
+  Health: 500
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &cUndead Archer'
+    Skin: undead_archer
+  Modules:
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.3
+    Collidable: true
+    PreventOtherDrops: true
+    AttackSpeed: .5
+  Equipment:
+  - SKELETON_LEGGINGS1:LEGS
+  - crossbow:0
+  Drops:
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 arrowattack
+  - 4 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+  - equip{item=crossbow:0} @self ~onSpawn
+
+ALPHA_SOUL:
+  Type: ZOMBIE
+  Display: '&cAlpha Soul'
+  Health: 1000
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&cAlpha Soul'
+    Skin: alphasoul
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.32
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Drops:
+  - EXP 15 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
+  - damage{a=5;ignoreArmor=false} @PIR{r=2} ~onTimer:20
+  - ignite{ticks=20} @PIR{r=2} ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=SUMMON_ALPHA_SOUL} ~onEnterCombat
+
+UNDEAD_SPIDER:
+  Type: CAVE_SPIDER
+  Display: '&7[&fLVL 10&7] &cUndead Spider'
+  Health: 250
+  Damage: 0
+  Faction: Undead
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    AlwaysShowName: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.4
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Drops:
+  - EXP 3-5 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=20;ignoreArmor=false} @target ~onAttack
+  - potion{type=SLOW;duration=60;level=5} @target ~onAttack
+  - potion{type=POISON;duration=60;level=20} @target ~onAttack
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+UNDEAD_CASTER:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 10&7] &cUndead Caster'
+  Health: 650
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &cUndead Caster'
+    Skin: UNDEADCASTER  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.2
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - UNDEAD_CASTER_WEAPON:HAND
+  - UNDEAD_CASTER_HELMET:HEAD
+  - UNDEAD_CASTER_CHESTPLATE:CHEST
+  - UNDEAD_CASTER_LEGGINGS:LEGS
+  - UNDEAD_CASTER_BOOTS:FEET
+  Drops:
+  - EXP 5-25 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - equip{item=UNDEAD_CASTER_WEAPON:HAND} @self ~onSpawn
+  - equip{item=UNDEAD_CASTER_HELMET:HEAD} @self ~onSpawn
+  - skill{s=UNDEAD_CASTER_MISSILE} @target ~onTimer:80
+  - skill{s=UNDEAD_CASTER_LIGHTNING} ~onSignal:UNDEAD_CASTER_SIGNAL @target .3
+  - skill{s=UNDEAD_CASTER_FREEZE} ~onSignal:UNDEAD_CASTER_SIGNAL @target .1
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20

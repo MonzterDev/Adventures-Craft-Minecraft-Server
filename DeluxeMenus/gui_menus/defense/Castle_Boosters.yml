@@ -1,0 +1,167 @@
+menu_title: '&f&l»&7&l» &8Boosters &7&l«&f&l«'
+open_command: CastleBooster
+size: 54
+items:
+  'Decoration':
+    material: BLACK_STAINED_GLASS_PANE		
+    display_name: '&a'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8    
+    - 9    
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32 
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+
+  'Back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY1MmUyYjkzNmNhODAyNmJkMjg2NTFkN2M5ZjI4MTlkMmU5MjM2OTc3MzRkMThkZmRiMTM1NTBmOGZkYWQ1ZiJ9fX0=
+    slot: 49
+    priority: 1
+    display_name: '&aGo Back'
+    click_commands:
+    - "[openguimenu] Castle_Defense"
+
+###TOP ROW
+  'BOOSTERS':
+    material: CAULDRON
+    hide_attributes: true
+    priority: 1
+    slot: 13
+    display_name: '&6&lBOOSTERS'
+    lore:
+    - ''
+    - '&7Boosters can be found randomly while'
+    - '&7slaying enemies during the &2Castle Defense&7!'
+    - ''
+    - '&7The Boosters make your time much easier'
+    - '&7and rewarding while taking on the horde!'
+
+  'BOOSTER_STUNNING':
+    material: SLIME_BALL
+    hide_attributes: true
+    priority: 1
+    slot: 20
+    display_name: '&8&lSTUNNING &6&lBOOSTER'
+    lore:
+    - ''
+    - '&8Stuns &7all enemies &7for 5 seconds!'
+  'BOOSTER_ZAPPING':
+    material: FIRE_CHARGE
+    hide_attributes: true
+    priority: 1
+    slot: 21
+    display_name: '&e&lZAPPING &6&lBOOSTER'
+    lore:
+    - ''
+    - '&eZaps &7all enemies for &c1,000 Damage&7!'
+  'BOOSTER_HEALING':
+    material: ENCHANTED_GOLDEN_APPLE
+    hide_attributes: true
+    priority: 1
+    slot: 22
+    display_name: '&a&lHEALING &6&lBOOSTER'
+    lore:
+    - ''
+    - '&aHeal &7all players for &a50%'
+    - '&7of their &aMaximum HP&7!'
+  'BOOSTER_SPEEDY':
+    material: SUGAR
+    hide_attributes: true
+    priority: 1
+    slot: 23
+    display_name: '&2&lSPEEDY &6&lBOOSTER'
+    lore:
+    - ''
+    - '&7All players have increased'
+    - '&2movement speed &7for 10 seconds!'
+  'BOOSTER_DECOY':
+    material: VILLAGER_SPAWN_EGG
+    hide_attributes: true
+    priority: 1
+    slot: 24
+    display_name: '&d&lDECOY &6&lBOOSTER'
+    lore:
+    - ''
+    - '&7Summon a &dDecoy &7which nearby'
+    - '&cenemies &7will agro towards!'
+
+  'BOOSTER_CURATIVE':
+    material: POTION
+    hide_attributes: true
+    hide_effects: true
+    priority: 1
+    slot: 30
+    display_name: '&5&lCURATIVE &6&lBOOSTER'
+    lore:
+    - ''
+    - '&aHeal &7the &aVillager &7for'
+    - '&a10% &7of its &aMaximum HP&7!'
+  'BOOSTER_COIN':
+    material: SUNFLOWER
+    hide_attributes: true
+    priority: 1
+    slot: 31
+    display_name: '&e&lCOIN &6&lBOOSTER'
+    lore:
+    - ''
+    - '&7Rewards &e+5,000 Coins'
+    - '&7to whoever picks it up!'
+  'BOOSTER_SEAL':
+    material: EMERALD
+    hide_attributes: true
+    priority: 1
+    slot: 32
+    display_name: '&3&lSEAL &6&lBOOSTER'
+    lore:
+    - ''
+    - '&7Rewards &9+1 Castle Seal'
+    - '&7to whoever picks it up!'
