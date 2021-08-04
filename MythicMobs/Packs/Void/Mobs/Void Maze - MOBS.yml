@@ -1,0 +1,142 @@
+### MAZE
+
+#Detects enemies from anywhere, will give slowness
+VOID_MONITOR:
+  Type: ENDERMITE
+  Display: '&7[&fLVL 25&7] &cVoid Monitor'
+  Health: 10000
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options: &Options
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .5
+    MaxCombatDistance: 8
+    MovementSpeed: 0.48
+    FollowRange: 15
+    Collidable: true
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Drops:
+  - EXP 40-50 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=200;ignoreArmor=false} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=MONITOR_ALERT} ~onTimer:200
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.001
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
+
+#Unmovable, constantly deals AOE damage, and does a massive explosion, possibly killself
+VOID_MEGA_BOOMER:
+  Type: SKELETON
+  Disguise:
+    Type: CREEPER
+  Display: '&7[&fLVL 25&7] &cVoid Mega Boomer'
+  Health: 30000
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    SuperCharged: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 4
+    MovementSpeed: 0.0002
+    <<: *Options
+  Drops:
+  - EXP 30-45 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=BOOMER_DAMAGE} ~onTimer:20
+  - skill{s=BOOMER_MEGA} ~onTimer:200
+  - skill{s=HPBAR} @self ~onDamaged
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0015
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0035
+
+VOID_CHAMPION:
+  Type: STRAY
+  Display: '&7[&fLVL 25&7] &cVoid Champion'
+  Health: 30000
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    KnockbackResistance: 1
+    MaxCombatDistance: 7
+    MovementSpeed: 0.25
+    FollowRange: 15
+    <<: *Options
+  Equipment:
+  - VOID_CHAMPION:HEAD
+  - NETHERITE_SWORD:HAND
+  - NETHERITE_SWORD:OFFHAND
+  - NETHERITE_BOOTS:FEET
+  Drops:
+  - EXP 35-60 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=250} @target ~onAttack
+  - heal{amount=500} @self ~onAttack .5
+  - potion{type=SLOW;duration=100;level=9} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=CHAMPION_CHOSE} @self ~onSpawn
+  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
+  - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.004
+
+
+
+VOID_PORTAL:
+  Type: ENDERMITE
+  Display: ''
+  Health: 999999
+  Faction: Void
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    NoGravity: true
+    AlwaysShowName: false
+    ApplyInvisibility: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 1
+    Despawn: false
+    <<: *Options
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - skill{s=PORTAL_ABILITY} ~onSpawn
+  - effect:sound{s=block.beacon.ambient;v=10} @self ~onTimer:40
+  - skill{s=PORTAL_TELEPORT_ACCEPT} @PIR{r=1} ~onTimer:20
+  - skill{s=PORTAL_TELEPORT_DENY} @PIR{r=1} ~onTimer:20
+  - teleportto{location=-197.5,12,-810.5} @self ~onSpawn

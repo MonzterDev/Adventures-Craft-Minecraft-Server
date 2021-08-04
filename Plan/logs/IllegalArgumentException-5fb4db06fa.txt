@@ -1,46 +1,7 @@
-5fb4db06fa - Last occurred: 2021-04-20 Occurrences: 244
----- Context 5 ----
-Plan v5.1 build 791
-Purpur git-Purpur-982 (MC: 1.16.5)
-Server v1.16.5-R0.1-SNAPSHOT
-
-Report and/or disable ViaVersion extension in the Plan config.
-ViaVersion
-Method:protocolTable
-Player: server
-Error code: 1267
-SELECT protocol_version, COUNT(1) as count FROM plan_version_protocol INNER JOIN plan_user_info on plan_version_protocol.uuid=plan_user_info.uuid WHERE plan_user_info.server_uuid=? GROUP BY protocol_version
-Incorrect character encoding in MySQL
-
----- Context 4 ----
-Plan v5.1 build 791
-Purpur git-Purpur-982 (MC: 1.16.5)
-Server v1.16.5-R0.1-SNAPSHOT
-
-Report and/or disable ViaVersion extension in the Plan config.
-ViaVersion
-Method:protocolTable
-Player: server
-Error code: 1267
-SELECT protocol_version, COUNT(1) as count FROM plan_version_protocol INNER JOIN plan_user_info on plan_version_protocol.uuid=plan_user_info.uuid WHERE plan_user_info.server_uuid=? GROUP BY protocol_version
-Incorrect character encoding in MySQL
-
----- Context 3 ----
-Plan v5.1 build 791
-Purpur git-Purpur-982 (MC: 1.16.5)
-Server v1.16.5-R0.1-SNAPSHOT
-
-Report and/or disable ViaVersion extension in the Plan config.
-ViaVersion
-Method:protocolTable
-Player: server
-Error code: 1267
-SELECT protocol_version, COUNT(1) as count FROM plan_version_protocol INNER JOIN plan_user_info on plan_version_protocol.uuid=plan_user_info.uuid WHERE plan_user_info.server_uuid=? GROUP BY protocol_version
-Incorrect character encoding in MySQL
-
+5fb4db06fa - Last occurred: 2021-08-03 Occurrences: 2
 ---- Context 2 ----
 Plan v5.1 build 791
-Purpur git-Purpur-982 (MC: 1.16.5)
+Purpur git-Purpur-1157 (MC: 1.16.5)
 Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.
@@ -53,7 +14,7 @@ Incorrect character encoding in MySQL
 
 ---- Context 1 ----
 Plan v5.1 build 791
-Purpur git-Purpur-982 (MC: 1.16.5)
+Purpur git-Purpur-1157 (MC: 1.16.5)
 Server v1.16.5-R0.1-SNAPSHOT
 
 Report and/or disable ViaVersion extension in the Plan config.

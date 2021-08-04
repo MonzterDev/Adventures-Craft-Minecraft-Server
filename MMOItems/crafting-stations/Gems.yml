@@ -262,6 +262,16 @@ recipes:
     - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
     conditions:
     - profession{profession=Mining,level=10}
+  # DAMAGE_GEM6:
+  #   output:
+  #     type: GEM_STONE
+  #     id: DAMAGE_GEM6
+  #     amount: 1
+  #   ingredients:
+  #   - mmoitem{type=MATERIAL,id=DAMAGE_SHARD,amount=1}
+  #   - mmoitem{type=GEM_STONE,id=DAMAGE_GEM5,amount=1}
+  #   conditions:
+  #   - profession{profession=Mining,level=10}
 
   PROJECTILE_GEM:
     output:

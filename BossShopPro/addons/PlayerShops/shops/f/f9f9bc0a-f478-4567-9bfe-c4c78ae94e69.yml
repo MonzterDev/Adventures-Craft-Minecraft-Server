@@ -9,42 +9,49 @@ Rent:
 Priority: 4
 Icon:
   ==: org.bukkit.inventory.ItemStack
-  v: 2580
+  v: 2586
   type: REDSTONE
   meta:
     ==: ItemMeta
     meta-type: UNSPECIFIC
-    display-name: §aMonzterSlayer's Redstone Shop
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"MonzterSlayer''s
+      Redstone Shop"}],"text":""}'
     lore:
-    - ''
-    - §7§l» §eClick to Access
+    - '{"text":""}'
+    - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"»
+      "},{"bold":false,"italic":false,"color":"yellow","text":"Click to Access"}],"text":""}'
     ItemFlags:
     - HIDE_ATTRIBUTES
 item:
   '0':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: ROTTEN_FLESH
     b: 0
     c: 1.0
   '1':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: IRON_SWORD
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
         lore:
-        - §fSword
-        - ''
-        - '§c✜ Damage: §c9999999'
-        - ''
-        - '§e§lBlizzard§f: §fRight Click'
-        - '§7Duration: §c5'
-        - '§7Damage: §c1000'
-        - '§7Cooldown: §c0'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Sword"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"✜
+          Damage: "},{"italic":false,"color":"red","text":"9999999"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Blizzard"},{"bold":false,"italic":false,"color":"white","text":":
+          "},{"italic":false,"color":"white","text":"Right Click"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Duration:
+          "},{"italic":false,"color":"red","text":"5"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Damage:
+          "},{"italic":false,"color":"red","text":"1000"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Cooldown:
+          "},{"italic":false,"color":"red","text":"0"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier

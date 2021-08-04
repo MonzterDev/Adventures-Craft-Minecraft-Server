@@ -1,0 +1,12 @@
+CUCCO_REMOVE:
+  Conditions:
+  - notinregion{r=farm} true
+  Skills:
+  - remove @self 
+CUCCO_CAPTURED:
+  Skills:
+  - sudoskill{s=CUCCO_CAPTURED_P;cat=true} @Owner
+  - remove @self
+CUCCO_CAPTURED_P:
+  Skills:
+  - command{c="q point <caster.name> add default-Farm-Anju.Cucco 1"} @self 

@@ -1,0 +1,110 @@
+ANTILAVA:
+  Conditions:
+  - inblock{b=Lava} true
+  Skills:
+  - teleport{spreadh=3;spreadv=2} @target
+
+
+VOID_BLAZE_SHOOT:
+  Conditions:
+  - playerwithin{d=8} true
+  Skills:
+  - shootfireball{y=1;v=1;ps=true;smallfireball=false;i=true;ft=60} @target
+  - damage{amount=35} @target
+
+VOID_NECROMANCER_SUMMON:
+  Conditions:
+  - mobsinradius_ext{mobtypes=VOID_DEMON;a=5to999;r=50;action=FALSE}
+  Skills:
+  - summon{type=VOID_DEMON;amount=1;radius=4} @target
+VOID_NECROMANCER2_SUMMON:
+  Conditions:
+  - mobsinradius_ext{mobtypes=VOID_DEMON;a=10to999;r=50;action=FALSE}
+  Skills:
+  - summon{type=VOID_DEMON;amount=2;radius=4} @target
+
+VOID_NECROMANCER_SHOOT:
+  Conditions:
+  - playerwithin{d=8} true
+  Skills:
+  - damage{amount=35} @target  
+  - effect:particleline{particle=flame;amount=1;fromOrigin=true;syo=2} @target  
+  - signal{s=VOID_NECROMANCER_SIGNAL} @self
+VOID_NECROMANCER2_SHOOT:
+  Conditions:
+  - playerwithin{d=9} true
+  Skills:
+  - damage{amount=45} @target  
+  - effect:particleline{particle=flame;amount=2;fromOrigin=true;syo=2} @target  
+  
+  
+VOID_WITHER_TELEPORT:
+  Skills:
+  - teleportto{location=-237,60,-1229;y=-167.6;p=9.2}
+
+VOID_WITHER_SHOOT:
+  Skills:
+  - damage{amount=35} @PIR{r=30}
+  - signal{s=VOID_WITHER_SIGNAL} @self
+  - shootskull{y=1;ps=true} 
+
+VOID_WITHER_SUMMON1:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VOID_WITHER_SUMMON2:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VOID_WITHER_SUMMON3:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+VOID_WITHER_SUMMON4:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_PROTECTOR;amount=1;radius=4} @self
+
+VOID_WITHER_DAMAGE_SELF:
+  Skills:
+  - message{m="&cThe <mob.name> &chas been hurt!"} @PIR{r=100}
+  - damage{amount=5000} @self 
+  - effect:sound{s=entity.wither.hurt;v=1;p=1;repeat=3;repeatInterval=20} @self
+
+VOID_WITHER_MINION_SIGNAL:
+  Skills:
+  - signal{s=VOID_WITHER_DAMAGE_SELF} @MIR{r=200;t=VOID_WITHER} 
+
+VOID_WITHER_SUMMON_HEALER:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_HEALER;amount=2;radius=4} @self
+   
+VOID_HEALER_HEAL:
+  Cooldown: 2.5
+  Skills:
+  - heal{amount=500} @MIR{r=500;t=VOID_WITHER}
+  - effect:sound{s=entity.witch.drink;p=1} @self
+  
+##### MAGMA
+VOID_MAGMA_SUMMON1:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+VOID_MAGMA_SUMMON2:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+VOID_MAGMA_SUMMON3:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+VOID_MAGMA_SUMMON4:
+  Cooldown: 9999
+  Skills:
+  - summon{type=VOID_MAGMA2;amount=1;radius=2} @self
+  - summon{type=VOID_MAGMA3;amount=2;radius=3} @self
+  

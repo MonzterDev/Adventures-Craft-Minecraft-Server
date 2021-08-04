@@ -1,11 +1,11 @@
-OrcCamp1: location -375;19;-375;Spawn 5 events:quest1_part2_starter ^notify
-KillOrcs1: mmobkill GOBLIN,GROWN_GOBLIN amount:3 events:quest1_part3_starter ^notify
+OrcCamp1: location -375;19;-375;Spawn 5 events:quest1_part2_starter notify:1
+KillOrcs1: mmobkill BABY_GOBLIN,GOBLIN,HOUND amount:3 events:quest1_part3_starter notify:1
 NPC1: npcinteract 114 events:quest1_part4_starter
 
-OrcCamp2: location -445;20;-249;Spawn 5 events:quest1_part5_starter ^notify
-KillOrcs2: mmobkill GOBLIN,GROWN_GOBLIN amount:3 events:quest1_part6_starter ^notify
+OrcCamp2: location -445;20;-249;Spawn 5 events:quest1_part5_starter notify:1
+KillOrcs2: mmobkill BABY_GOBLIN,GOBLIN,HOUND amount:3 events:quest1_part6_starter notify:1
 NPC2: npcinteract 115 events:quest1_part7_starter
 
-OrcCamp3: location -560;23;-259;Spawn 5 events:quest1_part8_starter ^notify
-KillOrcs3: mmobkill GOBLIN,GROWN_GOBLIN amount:3 events:quest1_part9_starter ^notify
+OrcCamp3: location -560;23;-259;Spawn 5 events:quest1_part8_starter notify:1
+KillOrcs3: mmobkill BABY_GOBLIN,GOBLIN,HOUND amount:3 events:quest1_part9_starter notify:1
 NPC3: npcinteract 116 events:entry_q1_complete,QuestReward1

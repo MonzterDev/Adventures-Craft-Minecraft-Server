@@ -1,38 +1,3 @@
-SLOWNESS_RING:
-  Id: GRAY_DYE
-  Display: "&5Slowness Ring"  
-  Lore:
-  - '&fCatalyst'
-  - ''
-  - '&7Hold this in your off-hand to'  
-  - '&7remove any &cSlowness&7 effects!'  
-  - ''  
-  - '&5&lLEGENDARY ITEM'  
-  Skills:
-  - command{c="effect clear <caster.name> minecraft:blindness"} @self ~onTimer:20
-
-TESTING:
-  Id: DIAMOND_SWORD
-  Data: 1  
-  Options:  
-    Unbreakable: true
-  Hide:
-  - ATTRIBUTES
-  - UNBREAKABLE
-
-BLINDER:
-  Id: GRAY_DYE
-  Display: "&5Slowness Ring"  
-  Lore:
-  - '&fCatalyst'
-  - ''
-  - '&7Hold this in your off-hand to'  
-  - '&7remove any &cSlowness&7 effects!'  
-  - ''  
-  - '&5&lLEGENDARY ITEM'  
-  Skills:
-  - command{c="effect clear <caster.name> minecraft:blindness"} @self ~onTimer:5
-  
 FAST_AS_HELL:
   Id: RED_DYE
   Display: "&eFast as Hell"  
@@ -46,7 +11,7 @@ FAST_AS_HELL:
   Skills:
   - skill{skill=FAH} @self ~onTimer:20
 
-BEE_WINGS:
+BEE_WINGS2:
   Id: GOLDEN_CHESTPLATE
   Display: "&fBee Wings"  
   Unbreakable: true
@@ -62,7 +27,7 @@ BEE_WINGS:
   - '&f&lCOMMON ITEM'  
   Skills:
   - skill{skill=BEEFLY} @self ~onTimer:20	
-BEE_WINGS2:
+BEE_WINGS3:
   Id: GOLDEN_CHESTPLATE
   Display: "&9Bee Wings"  
   Unbreakable: true
@@ -78,23 +43,6 @@ BEE_WINGS2:
   - '&9&lRARE ITEM'  
   Skills:
   - skill{skill=BEEFLY2} @self ~onTimer:20	
-
-ROOTER:
-  Id: VINE
-  Display: "&9Rooter"  
-  Unbreakable: true
-  Hide:
-  - ATTRIBUTES
-  - UNBREAKABLE  
-  Lore:
-  - '&fArmor'
-  - ''
-  - '&7While in the &aForest&7, you'  
-  - '&7can &afly &7for 10 seconds!'  
-  - ''  
-  - '&9&lRARE ITEM'  
-  Skills:
-  - skill{skill=MASSIVEROOT} @self ~onUse
 
 ##VALLEY CHIEF 
 CHIEF_JUKE_ITEM:
@@ -122,22 +70,7 @@ CHIEF_JUKE_ITEM:
   - ''  
   - '&e&lEXOTIC ITEM'
 
-
-#VOID
-BLINDNESSER:
-  Id: RED_DYE
-  Display: "&eFast as Hell"  
-  Lore:
-  - '&fCatalyst'
-  - ''
-  - '&7Hold this in your off-hand to'  
-  - '&7gain &aHaste 5&7 while in &cHell&7!'  
-  - ''  
-  - '&e&lEXOTIC ITEM'  
-  Skills:
-  - skill{skill=BLINDNESS_CLEAERER} @self ~onTimer:40
-
-
+# Void Staff Weapon
 ZOMBIE_MISSILE:
   Id: player_head
   Display: "&aTown"
@@ -170,3 +103,4 @@ ENDERMAN_MISSILE:
   Hide:
   - ATTRIBUTES
   - UNBREAKABLE
+

@@ -8,13 +8,13 @@ q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objec
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward1: "if empty0 QuestReward1_Full else QuestReward1_Folder"
 QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give DAGGER GOBLIN_CLUB %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 150"
+QuestReward1_If_Not_Full: "run ^command mmoitems give DAGGER GOBLIN_CLUB3 %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 150"
 QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
 QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
 QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
 #THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give DAGGER GOBLIN_CLUB %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 150"
+Claim_QuestReward1: "run ^command mmoitems give DAGGER GOBLIN_CLUB3 %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% farming 250 ^command money give %player% 150"
 QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
 QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"

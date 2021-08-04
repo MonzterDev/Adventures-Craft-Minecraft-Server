@@ -1,0 +1,248 @@
+UNDEAD_WARRIOR:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 15&7] &cUndead Warrior'
+  Health: 850
+  Damage: 0
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 15&7] &cUndead Warrior'
+    Skin: UNDEAD_WARRIOR  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 25
+    MovementSpeed: 0.28
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Equipment:
+  - UNDEAD_WARRIOR_AXE1:HAND
+  - UNDEAD_WARRIOR_AXE2:OFFHAND
+  - UNDEAD_WARRIOR_CHESTPLATE:CHEST
+  - UNDEAD_WARRIOR_LEGGINGS:LEGS
+  Drops:
+  - EXP 10-20 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=UNDEAD_WARRIOR_LEAP} ~onTimer:100
+  - damage{amount=30;ignoreArmor=false} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+MORDEN_THE_UNDEAD1:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 20&7] &cMorden The Revived'
+  Health: 10000
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cMorden The Revived <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID
+  Faction: Undead
+  DamageModifiers:
+  - FIRE 0  
+  - LAVA 0  
+  - SUFFOCATION 0  
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 20&7] &cMorden The Revived'
+    Skin: undeadknight  
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 5000
+    MovementSpeed: 0.28
+    FollowRange: 30
+    Collidable: true
+    Despawn: false
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+    AttackSpeed: 1
+  Equipment:
+  - MORDEN_THE_UNDEAD_SWORD hand
+  - MORDEN_THE_UNDEAD_BOOTS boots  
+  Drops:
+  - EXP 10-20 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack  
+  - skill{s=MORDEN_UNDEFEATED} ~onSpawn
+  - skill{s=MORDEN_DEFEAT} ~onDeath
+  - effect:sound{s=ambient.cave;v=1;p=1} @self ~onSpawn
+  - effect:sound{s=entity.wither_skeleton.death;v=1;p=1} @self ~onDeath
+  - summon{type=MORDEN_THE_UNDEAD2;amount=1;radius=0} @self ~OnDeath
+  - skill{s=MORDEN_THE_UNDEAD1_AOE} ~onTimer:60
+  - skill{s=MORDEN_THE_UNDEAD1_TROOPS} =10%-50%
+  - skill{s=MORDEN_THE_UNDEAD_TELEPORT} @target ~onTimer:400
+  - skill{s=HPBAR} @self ~onDamaged  
+MORDEN_THE_UNDEAD2:
+  Type: SKELETON
+  Display: '&7[&fLVL 20&7] &cMorden The Revived'
+  Health: 10000
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cMorden The Revived <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 20&7] &cMorden The Revived'
+    Skin: undeadknight  
+  DamageModifiers:
+  - FIRE 0  
+  - LAVA 0  
+  - SUFFOCATION 0      
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 5000
+    MovementSpeed: 0.28
+    FollowRange: 30
+    Collidable: true
+    Despawn: false
+    PreventOtherDrops: true
+    AttackSpeed: 1
+  Equipment:
+  - MORDEN_THE_UNDEAD_CROSSBOW hand
+  - MORDEN_THE_UNDEAD_BOOTS boots  
+  - MORDEN_THE_UNDEAD_LEGGINGS legs  
+  Drops:
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 arrowattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=70;ignoreArmor=false} @target ~onAttack
+  - potion{type=SLOW;duration=40;level=2} ~onAttack 
+  - skill{s=MORDEN_UNDEFEATED} ~onSpawn
+  - skill{s=MORDEN_DEFEAT} ~onDeath
+  - skill{s=MORDEN_THE_UNDEAD2_DEATH} @Self ~OnDeath
+  - skill{s=MORDEN_THE_UNDEAD2_TROOPS} =66%-99%  
+  - skill{s=MORDEN_THE_UNDEAD2_TROOPS2} =33%-66%  
+  - skill{s=MORDEN_THE_UNDEAD2_TROOPS3} =10%-33%     
+  - skill{s=MORDEN_THE_UNDEAD_TELEPORT} @target ~onTimer:400
+  - skill{s=HPBAR} @self ~onDamaged
+MORDEN_THE_UNDEAD:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 20&7] &cMorden The Revived'
+  Health: 10000
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cMorden The Revived <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID
+  Faction: Undead
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 20&7] &cMorden The Revived'
+    Skin: undeadknight  
+  DamageModifiers:
+  - FIRE 0  
+  - LAVA 0  
+  - SUFFOCATION 0      
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 5000
+    MovementSpeed: 0.28
+    FollowRange: 30
+    Collidable: true
+    Despawn: false
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Equipment:
+  - MORDEN_THE_UNDEAD_SWORD2 hand
+  - MORDEN_THE_UNDEAD_SWORD2 offhand
+  - MORDEN_THE_UNDEAD_CHESTPLATE chest
+  - MORDEN_THE_UNDEAD_LEGGINGS legs
+  - MORDEN_THE_UNDEAD_BOOTS boots
+  Drops:
+  - EXP 30-55 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - skill{s=MORDEN_UNDEFEATED} ~onSpawn
+  - skill{s=MORDEN_DEFEAT} ~onDeath
+  - skill{s=MORDEN_THE_UNDEAD_HEALING} <60%
+  - skill{s=MORDEN_THE_UNDEAD_TROOPS} =66%-99%
+  - skill{s=MORDEN_THE_UNDEAD_TROOPS2} =33%-66%
+  - skill{s=MORDEN_THE_UNDEAD_TROOPS3} =10%-33%
+  - skill{s=HPBAR} @self ~onDamaged
+
+UNDEAD_HARPY:
+  Type: BABY_ZOMBIE
+  Display: '&cUndead Harpy'
+  Health: 2500
+  Damage: 0
+  Faction: Undead
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Equipment:
+  Options:
+    ApplyInvisibility: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    MaxCombatDistance: 10
+    MovementSpeed: .18
+    FollowRange: 0
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 fleeplayers
+  Skills:
+  - skill{s=UNDEAD_HARPY_HEAD_SELECT} ~onSpawn
+  - skill{s=UNDEAD_HARPY_HEAL} ~onTimer:40
+  - remove{delay=500} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged

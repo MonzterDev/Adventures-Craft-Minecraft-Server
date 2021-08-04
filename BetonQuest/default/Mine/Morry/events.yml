@@ -52,13 +52,13 @@ q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nMine Spider Slayer&f! 
 #IF the inventory is NOT FULL, it'll give rewards instantly
 QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
 QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE4 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+QuestReward3_If_Not_Full: "run ^command mmoitems give TOOL MINER_PICKAXE5 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
 QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aBat Hunter &cto redeem your rewards!'
 QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
 #THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmoitems give TOOL MINER_PICKAXE4 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
+Claim_QuestReward3: "run ^command mmoitems give TOOL MINER_PICKAXE5 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Mining 150 ^command money give %player% 100"
 QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
 QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"

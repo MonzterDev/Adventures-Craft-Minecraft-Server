@@ -1,27 +1,20 @@
-LARGE_HEALTH_POTION:
+HEART:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQzNmMzMjkxZmUwMmQxNDJjNGFmMjhkZjJmNTViYjAzOTdlMTk4NTU0ZTgzNDU5OTBkYmJjZDRjMTQwMzE2YiJ9fX0=
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
-    name: '&cHeart'
-    lore: []
-    tier: RARE
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
+    name: <tier-color-cleaned>Heart
+    tier: COMMON
     restore-health: 100.0
-    restore-food: 0.0
-    restore-saturation: 0.0
+    revision-id: 2
 JOY_SOUP:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
-    name: '&fJoy Soup'
+    name: <tier-color-cleaned>Joy Soup
     item-cooldown: 2.5
     lore: []
     tier: COMMON
@@ -33,13 +26,14 @@ JOY_SOUP:
     restore-health: 20.0
     restore-food: 0.0
     restore-saturation: 0.0
-JOY_SOUP2:
+    revision-id: 2
+JOY_SOUP3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
-    name: '&9Joy Soup'
+    name: <tier-color-cleaned>Joy Soup
     item-cooldown: 2
     lore: []
     tier: RARE
@@ -51,13 +45,14 @@ JOY_SOUP2:
     restore-health: 50.0
     restore-food: 0.0
     restore-saturation: 0.0
-JOY_SOUP3:
+    revision-id: 2
+JOY_SOUP4:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTM4MWUxZWIzZGUxNDZjNzgxYWE4YjM3NGQ3NDc0YjRhYTYzZmI4ZDAzNGZiODFjMTM1NTgxNDQzZmQ1OTYyIn19fQ==
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
-    name: '&5Joy Soup'
+    name: <tier-color-cleaned>Joy Soup
     item-cooldown: 1.5
     lore: []
     tier: LEGENDARY
@@ -69,13 +64,14 @@ JOY_SOUP3:
     restore-health: 75.0
     restore-food: 0.0
     restore-saturation: 0.0
+    revision-id: 2
 LARGE_MANA_POTION:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg0NTlmM2I2NWIyM2NmYThjOWIxNDQzMjViOWJhODE0MDdiZTkzODJjZDg1OTkyZWY5NzljZjBlNzgzZjYifX19
       uuid: 9d127b24-85df-4eab-b9fd-f419da0f2e2b
-    name: '&fLarge Mana Potion'
+    name: <tier-color-cleaned>Large Mana Potion
     restore-mana:
       base: 35.0
       spread: 0.041666666666666664
@@ -86,10 +82,11 @@ LARGE_MANA_POTION:
         sound: ENTITY_GENERIC_DRINK
         volume: 1.0
         pitch: 1.0
-SOUL:
+    revision-id: 2
+SOUL4:
   base:
     material: PLAYER_HEAD
-    name: '&5Soul'
+    name: <tier-color-cleaned>Soul
     disable-smelting: true
     disable-enchanting: true
     disable-repairing: true
@@ -124,7 +121,8 @@ SOUL:
       REGENERATION:
         duration: 120.0
         amplifier: 3.0
-MAGICAL_ESSENSE:
+    revision-id: 2
+MAGICAL_ESSENSE2:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -134,8 +132,9 @@ MAGICAL_ESSENSE:
     restore-mana: 25.0
     tier: UNCOMMON
     lore: []
-    name: §2Magical Essense
-MAGICAL_ESSENSE2:
+    name: <tier-color-cleaned>Magical Essense
+    revision-id: 2
+MAGICAL_ESSENSE3:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -145,11 +144,12 @@ MAGICAL_ESSENSE2:
     restore-mana: 50.0
     tier: RARE
     lore: []
-    name: §9Magical Essense
-MINING_BOOSTEROP:
+    name: <tier-color-cleaned>Magical Essense
+    revision-id: 2
+MINING_BOOSTEROP3:
   base:
     material: GLASS_BOTTLE
-    name: §9Mining Skill EXP Booster
+    name: <tier-color-cleaned>Mining Skill EXP Booster
     lore:
     - §fBoosts §9Mining Skill §fEXP
     - §fby §9100% §ffor §910 mins§f.
@@ -161,10 +161,11 @@ MINING_BOOSTEROP:
         delay: 0.0
         op: true
     disable-interaction: false
-FORAGING_BOOSTER:
+    revision-id: 2
+FORAGING_BOOSTER2:
   base:
     material: GLASS_BOTTLE
-    name: §2Foraging Skill EXP Booster
+    name: <tier-color-cleaned>Foraging Skill EXP Booster
     lore:
     - §fBoosts §aForaging Skill §fEXP
     - §fby §a20% §ffor §a10 mins§f.
@@ -179,14 +180,15 @@ FORAGING_BOOSTER:
         format: mmocore booster create foraging .2 600 %player%
         delay: 0.0
         op: true
-UNDEAD_FLESH:
+    revision-id: 2
+UNDEAD_FLESH3:
   base:
     material: DRIED_KELP
     max-consume: 2.0
     unbreakable: false
     tier: RARE
     item-cooldown: 60.0
-    name: §9Undead Flesh
+    name: <tier-color-cleaned>Undead Flesh
     lore:
     - §cHeals §ffor 100 §cHP§f, §fand §cincreases
     - §cdamage 50x §ffor 5 seconds!
@@ -197,24 +199,27 @@ UNDEAD_FLESH:
     restore-health: 150.0
     restore-food: 0.0
     restore-saturation: 0.0
-DRAC_HEART:
+    revision-id: 2
+DRAC_HEART3:
   base:
     material: PLAYER_HEAD
-    name: §2Drac's Heart
+    name: <tier-color-cleaned>Drac's Heart
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ1ZjRkMTM5YzllODkyNjJlYzA2YjI3YWFhZDczZmE0ODhhYjQ5MjkwZDJjY2Q2ODVhMjU1NDcyNTM3M2M5YiJ9fX0=
       uuid: 87428893-6272-4025-b021-a8da0aa6b1a5
     restore-health: 150.0
     restore-food: 0.0
     restore-saturation: 0.0
-TASTY_HONEY:
+    tier: RARE
+    revision-id: 2
+TASTY_HONEY3:
   base:
     material: HONEYCOMB
     disable-crafting: true
     enchants:
       unbreaking: 54
     hide-enchants: true
-    name: '&9Tasty Honey'
+    name: <tier-color-cleaned>Tasty Honey
     tier: RARE
     max-consume: 3.0
     item-cooldown: 25.0
@@ -226,14 +231,15 @@ TASTY_HONEY:
     restore-health: 20.0
     restore-food: 0.0
     restore-saturation: 0.0
-REAPER_HEAD:
+    revision-id: 2
+REAPER_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Reaper Head
+    name: <tier-color-cleaned>Reaper Head
     lore:
     - §7Ripped right from
     - §7the §cReaper's §7body!
@@ -252,26 +258,28 @@ REAPER_HEAD:
     - Reaper.Timer.Locked
     max-consume: 1.0
     unstackable: true
-MORDEN_HEAD:
+    revision-id: 2
+MORDEN_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0aW1lc3RhbXAiOjE1ODYxMTkyMzk1MzAsInByb2ZpbGVJZCI6Ijc1MTQ0NDgxOTFlNjQ1NDY4Yzk3MzlhNmUzOTU3YmViIiwicHJvZmlsZU5hbWUiOiJUaGFua3NNb2phbmciLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVmYzExMTFmYzBlMGYyYzAwNDBjOTVlZDBhNjkwZWM5YWIwZDMyZTNjMDZhNTRiMTAxYzI0Mjc2MGYxMjY3ZWUifX19
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Morden Head
+    name: <tier-color-cleaned>Morden Head
     lore:
     - §7Ripped right from the
     - §cMorden the Undead's §7body!
     unstackable: true
-DRACULA_HEAD:
+    revision-id: 2
+DRACULA_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0aW1lc3RhbXAiOjE1NjM1NzMwMjMzMzQsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIyYzJlOGFiNDg5ODY0OGQyYjYwOGU2MzA0MDJlNzM0YzQ4ODc0ZTE3ZTBhODU0OGExOTAxMmQ4MDY2MzYzNiJ9fX0=
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Void Dracula Head
+    name: <tier-color-cleaned>Void Dracula Head
     lore:
     - §7Ripped right from the
     - §cVoid Dracula's §7body!
@@ -290,25 +298,27 @@ DRACULA_HEAD:
     - Dracula.Timer.Locked
     max-consume: 1.0
     unstackable: true
-DRYAD_HEAD:
+    revision-id: 2
+DRYAD_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0aW1lc3RhbXAiOjE1NzE3MDkwMDQwMjMsInByb2ZpbGVJZCI6ImRlNTcxYTEwMmNiODQ4ODA4ZmU3YzlmNDQ5NmVjZGFkIiwicHJvZmlsZU5hbWUiOiJNSEZfTWluZXNraW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5ZmU1OTdkNDg3MTYxMTRhYjk0ODVlOTA3OWFjNjE1M2UzZjA1ZTljNTFiN2RjMmIxNGYzNjlhNjU0NTk1OTUifX19
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Dryad Head
+    name: <tier-color-cleaned>Dryad Head
     lore:
     - §7Ripped right from §cDryad's §7body!
     unstackable: true
-CHIEF_HEAD:
+    revision-id: 2
+CHIEF_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZiOTcyZTMyZDc2MWIxOTI2MjZlNWQ2ZDAxZWRjMDk0OTQwOTEwMTAzY2VhNWUyZTJkMWYyMzFhZGI3NTVkNSJ9fX0=
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Chief Head
+    name: <tier-color-cleaned>Chief Head
     lore:
     - §7Ripped right from the
     - §cGoblin Chief's §7body!
@@ -327,14 +337,15 @@ CHIEF_HEAD:
     - GoblinChief.Timer.Locked
     max-consume: 1.0
     unstackable: true
-WITHER_HEAD:
+    revision-id: 2
+WITHER_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmNzRlMzIzZWQ0MTQzNjk2NWY1YzU3ZGRmMjgxNWQ1MzMyZmU5OTllNjhmYmI5ZDZjZjVjOGJkNDEzOWYifX19
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Wither Head
+    name: <tier-color-cleaned>Wither Head
     lore:
     - §7Ripped right from the §cVoid Wither§7!
     - §a
@@ -352,14 +363,15 @@ WITHER_HEAD:
     - VoidWither.Timer.Locked
     max-consume: 1.0
     unstackable: true
-VOIDMAGMA_HEAD:
+    revision-id: 2
+VOIDMAGMA_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Void Magma Head
+    name: <tier-color-cleaned>Void Magma Head
     lore:
     - §7Ripped right from §cVoid Magma§7!
     - §a
@@ -377,14 +389,15 @@ VOIDMAGMA_HEAD:
     - VoidMagma.Timer.Locked
     max-consume: 1.0
     unstackable: true
-GHASTLY_HEAD:
+    revision-id: 2
+GHASTLY_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI2YTcyMTM4ZDY5ZmJiZDJmZWEzZmEyNTFjYWJkODcxNTJlNGYxYzk3ZTVmOTg2YmY2ODU1NzFkYjNjYzAifX19
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Ghastly Head
+    name: <tier-color-cleaned>Ghastly Head
     lore:
     - §7Ripped right from §cGhastly§7!
     - §a
@@ -402,14 +415,15 @@ GHASTLY_HEAD:
     - Ghastly.Timer.Locked
     max-consume: 1.0
     unstackable: true
-BULBLIN_HEAD:
+    revision-id: 2
+BULBLIN_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: ewogICJ0aW1lc3RhbXAiIDogMTU5NzUxMzg1MzAwNiwKICAicHJvZmlsZUlkIiA6ICIwNmE4NjAyZDAwODk0YWQxOTcyMGQ3NGE1OGU1MDZjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJfMW5kcmFfIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ZjBhZjRkZmZiMWZhYzQxNjQ3YjcxMDMwMGUwN2EyNGFiNWY3MDM1NmU0ZmU3OTUxYjBmMzY5NmQxZTJlZTgiCiAgICB9CiAgfQp9
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Bulblin Head
+    name: <tier-color-cleaned>Bulblin Head
     lore:
     - §7Ripped right from §cBulblin§7!
     - §a
@@ -427,14 +441,15 @@ BULBLIN_HEAD:
     - Bulblin.Timer.Locked
     max-consume: 1.0
     unstackable: true
-BULLBO_HEAD:
+    revision-id: 2
+BULLBO_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0=
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Bullbo Head
+    name: <tier-color-cleaned>Bullbo Head
     lore:
     - §7Ripped right from §cBullbo§7!
     - §a
@@ -452,22 +467,24 @@ BULLBO_HEAD:
     - Bulblin.Timer.Locked
     max-consume: 1.0
     unstackable: true
-ENCHANTRESS_HEAD:
+    revision-id: 2
+ENCHANTRESS_HEAD3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: ewogICJ0aW1lc3RhbXAiIDogMTYwMTg2NzYyNjIzNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY5NjE0M2E1MDlkZmU2ZmM5YzMyMDA1ZGQ1N2Y2OGFjNWU0MmVjMGI3MTY4YTU4ZmUzMTc3YzJjY2Y3NWRlMCIKICAgIH0KICB9Cn0=
       uuid: 4e4c1d5f-a0d6-47e0-8571-6b1ab65fb1bf
     tier: RARE
-    name: §9Enchantress Head
+    name: <tier-color-cleaned>Enchantress Head
     lore:
     - §7Ripped right from §cEnchantress' §7body!
     unstackable: true
-BORGS_BOX:
+    revision-id: 2
+BORGS_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eBorgs Box'
+    name: <tier-color-cleaned>Borgs Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -480,16 +497,17 @@ BORGS_BOX:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen BorgsBox %player%
+        format: droptable %player% borgsCrate 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-MAGICAL_BOX:
+    revision-id: 2
+MAGICAL_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eMagical Box'
+    name: <tier-color-cleaned>Magical Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -502,16 +520,17 @@ MAGICAL_BOX:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen MagicalBox %player%
+        format: droptable %player% magicalCrate 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-PROFESSION_BOOSTER_BOX:
+    revision-id: 2
+PROFESSION_BOOSTER_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eProfession Booster Box'
+    name: <tier-color-cleaned>Profession Booster Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -521,16 +540,17 @@ PROFESSION_BOOSTER_BOX:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen BoosterBox %player%
+        format: droptable %player% professionCrate 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-UNDEAD_BOX:
+    revision-id: 2
+UNDEAD_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eUndead Box'
+    name: <tier-color-cleaned>Undead Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -540,16 +560,17 @@ UNDEAD_BOX:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen UndeadSkins %player%
+        format: droptable %player% undeadCrate 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-HELL_BOX:
+    revision-id: 2
+HELL_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eHell Box'
+    name: <tier-color-cleaned>Hell Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -559,15 +580,16 @@ HELL_BOX:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen HellSkins %player%
+        format: droptable %player% hellCrate 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-BANK_TOKEN:
+    revision-id: 2
+BANK_TOKEN3:
   base:
     material: SUNFLOWER
-    name: '&9Bank Token'
+    name: <tier-color-cleaned>Bank Token
     unstackable: true
     tier: RARE
     lore:
@@ -576,14 +598,15 @@ BANK_TOKEN:
     - '&8&l» &eClick to Use'
     commands:
       cmd0:
-        format: bank admin slots add %player% 18
+        format: reward bs 18 %player%
         delay: 0.0
         op: true
     max-consume: 1.0
-BANK_TOKEN4:
+    revision-id: 2
+BANK_TOKEN5:
   base:
     material: SUNFLOWER
-    name: '&eBank Token'
+    name: <tier-color-cleaned>Bank Token
     unstackable: true
     tier: EXOTIC
     lore:
@@ -592,15 +615,16 @@ BANK_TOKEN4:
     - '&8&l» &eClick to Use'
     commands:
       cmd0:
-        format: bank admin slots add %player% 54
+        format: reward bs 54 %player%
         delay: 0.0
         op: true
     max-consume: 1.0
-XP_BOTTLE1:
+    revision-id: 2
+XP_BOTTLE:
   base:
     material: EXPERIENCE_BOTTLE
     tier: COMMON
-    name: '&fExperience Bottle'
+    name: <tier-color-cleaned>Experience Bottle
     max-consume: 1.0
     lore:
     - '&7Consume to receive experience orbs!'
@@ -614,11 +638,12 @@ XP_BOTTLE1:
         sound: minecraft:entity.experience_orb.pickup
         volume: 1.0
         pitch: 2.0
+    revision-id: 2
 XP_BOTTLE2:
   base:
     material: EXPERIENCE_BOTTLE
     tier: UNCOMMON
-    name: '&2Experience Bottle'
+    name: <tier-color-cleaned>Experience Bottle
     max-consume: 1.0
     lore:
     - '&7Consume to receive experience orbs!'
@@ -632,11 +657,12 @@ XP_BOTTLE2:
         sound: minecraft:entity.experience_orb.pickup
         volume: 1.0
         pitch: 1.5
+    revision-id: 2
 XP_BOTTLE3:
   base:
     material: EXPERIENCE_BOTTLE
     tier: RARE
-    name: '&9Experience Bottle'
+    name: <tier-color-cleaned>Experience Bottle
     max-consume: 1.0
     lore:
     - '&7Consume to receive experience orbs!'
@@ -650,11 +676,12 @@ XP_BOTTLE3:
         sound: minecraft:entity.experience_orb.pickup
         volume: 1.0
         pitch: 1
-ENCHANTED_BOX1:
+    revision-id: 2
+ENCHANTED_BOX:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&fEnchanted Box'
+    name: <tier-color-cleaned>Enchanted Box
     tier: COMMON
     max-consume: 1.0
     skull-texture:
@@ -667,16 +694,17 @@ ENCHANTED_BOX1:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen Enchanting1 %player%
+        format: droptable %player% ENCHANTED_BOX 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
+    revision-id: 2
 ENCHANTED_BOX2:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&2Enchanted Box'
+    name: <tier-color-cleaned>Enchanted Box
     tier: UNCOMMON
     max-consume: 1.0
     skull-texture:
@@ -689,16 +717,17 @@ ENCHANTED_BOX2:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen Enchanting2 %player%
+        format: droptable %player% ENCHANTED_BOX2 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
+    revision-id: 2
 ENCHANTED_BOX3:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&9Enchanted Box'
+    name: <tier-color-cleaned>Enchanted Box
     tier: RARE
     max-consume: 1.0
     skull-texture:
@@ -711,16 +740,17 @@ ENCHANTED_BOX3:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen Enchanting3 %player%
+        format: droptable %player% ENCHANTED_BOX3 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
+    revision-id: 2
 ENCHANTED_BOX4:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&5Enchanted Box'
+    name: <tier-color-cleaned>Enchanted Box
     tier: LEGENDARY
     max-consume: 1.0
     skull-texture:
@@ -733,16 +763,17 @@ ENCHANTED_BOX4:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen Enchanting3 %player%
+        format: droptable %player% ENCHANTED_BOX4 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
+    revision-id: 2
 ENCHANTED_BOX5:
   base:
     material: PLAYER_HEAD
     disable-interaction: false
-    name: '&eEnchanted Box'
+    name: <tier-color-cleaned>Enchanted Box
     tier: EXOTIC
     max-consume: 1.0
     skull-texture:
@@ -755,18 +786,19 @@ ENCHANTED_BOX5:
     - '&8&l» &eClick to Open Box'
     commands:
       cmd0:
-        format: crates forceopen Enchanting3 %player%
+        format: droptable %player% ENCHANTED_BOX5 1
         delay: 0.0
         op: true
     displayed-type: Lootbox
     item-cooldown: 10.0
-THRALL_BALL:
+    revision-id: 2
+THRALL_BALL3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMDFiOTUzYzg4ODU5NGE1N2EzNzY1YjA4YjU5NzIxNTcyNmM2NTkwYTJmNzMwZjA0N2NiOTU1YTI5ZmRmYWI2In19fQ==
       uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
-    name: '&9Thrall Ball'
+    name: <tier-color-cleaned>Thrall Ball
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -793,13 +825,14 @@ THRALL_BALL:
     - §eeggs §7at &cenemies&7, corrupting them!
     item-cooldown: 2.0
     max-consume: 1.0
-CHORUS_LEAP:
+    revision-id: 2
+CHORUS_LEAP3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU5MzM1ZDkxYmIzOWJhNjg1YmE1NjEyY2NmY2FlOGFhZGEzNDYxYTlkMDc4NjZjZDRlMGIyNjZjODY0ZTEwNyJ9fX0=
       uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
-    name: §9Chorus Leap
+    name: <tier-color-cleaned>Chorus Leap
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -824,10 +857,11 @@ CHORUS_LEAP:
         format: warp Void2
         delay: 0.0
         op: true
-UNSTABLE_WARP:
+    revision-id: 2
+UNSTABLE_WARP4:
   base:
     material: ENDER_EYE
-    name: §5Unstable Warp
+    name: <tier-color-cleaned>Unstable Warp
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -853,10 +887,11 @@ UNSTABLE_WARP:
         type: PORTAL_SUMMONA
         mode: RIGHT_CLICK
         cooldown: 2.0
-STABLE_WARP:
+    revision-id: 2
+STABLE_WARP5:
   base:
     material: ENDER_EYE
-    name: §eStable Warp
+    name: <tier-color-cleaned>Stable Warp
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -884,10 +919,11 @@ STABLE_WARP:
         type: PORTAL_SUMMON
         mode: RIGHT_CLICK
         cooldown: 2.0
+    revision-id: 2
 ENEMY_SCANNER:
   base:
     material: CLOCK
-    name: §eEnemy Scanner
+    name: <tier-color-cleaned>Enemy Scanner
     disable-repairing: true
     unstackable: true
     disable-enchanting: true
@@ -904,7 +940,7 @@ ENEMY_SCANNER:
         volume: 1.0
         pitch: 1.0
     lore:
-    - §7Scan an enemy with this to gain 
+    - §7Scan an enemy with this to gain
     - §7more detailed information about them!
     item-cooldown: 3.0
     ability:
@@ -912,3 +948,4 @@ ENEMY_SCANNER:
         type: ENEMY_SCANNER
         mode: RIGHT_CLICK
         cooldown: 3.0
+    revision-id: 2

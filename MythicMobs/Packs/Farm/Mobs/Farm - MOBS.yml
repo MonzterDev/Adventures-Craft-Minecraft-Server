@@ -1,0 +1,89 @@
+BABY_HOUND:
+  Type: WOLF
+  Display: '&7[&fLVL 1&7] &cBaby Hound'
+  Health: 50
+  Faction: Farm
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Baby: true
+  Drops:
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 randomlookaround
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=3} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+CUCCO:
+  Type: CHICKEN
+  Display: '&7[&fLVL 1&7] &aCucco'
+  Health: 500
+  Faction: Animal
+  Modules:
+    ImmunityTable: false
+  Options:
+    AlwaysShowName: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 5
+    MovementSpeed: 0.36
+    Collidable: true
+    PreventOtherDrops: true
+  Drops:
+  - EXP 1-3 100%
+  AIGoalSelectors:
+  - 0 fleeplayers
+  - 3 randomstroll
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - mounttarget @trigger ~onInteract
+  - skill{s=CUCCO_REMOVE} ~onTimer:100
+  - skill{s=CUCCO_CAPTURED} ~onSignal:CAPTURED
+  - dropitem{i=egg} @self ~onTimer:600
+
+CHICKEN_COLLECTOR:
+  Type: OCELOT
+  Display: ''
+  Health: 99999
+  Damage: 0
+  Faction: Farm
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Silent: true
+    Persistent: false
+    ApplyInvisibility: true
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 0
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: false
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - signal{s=CAPTURED} @MobsInRadius{r=5;t=CUCCO} ~onTimer:40

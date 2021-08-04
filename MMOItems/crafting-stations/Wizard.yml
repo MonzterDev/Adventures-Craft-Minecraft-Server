@@ -1,7 +1,7 @@
 # 
 # Name which will be displayed
 # when opening the station
-name: §f§l»§7§l» §fWizard §7§l«§f§l«
+name: <tier-color-cleaned>§l»§7§l» §fWizard §7§l«§f§l«
 layout: Weapon_Enchantments
 items:
   fill:
@@ -29,47 +29,47 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=15}
-  ENCHANTING_BOOK2:
-    output:
-      type: ENCHANTMENT
-      id: ENCHANTING_BOOK2
-      amount: 1
-    ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=8}
-    triggers:
-    - exp{profession=ENCHANTING;amount=120}
   ENCHANTING_BOOK3:
     output:
       type: ENCHANTMENT
       id: ENCHANTING_BOOK3
       amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=8}
     triggers:
-    - exp{profession=ENCHANTING;amount=240}
+    - exp{profession=ENCHANTING;amount=120}
   ENCHANTING_BOOK4:
     output:
       type: ENCHANTMENT
       id: ENCHANTING_BOOK4
       amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=16}
     triggers:
-    - exp{profession=ENCHANTING;amount=480}
+    - exp{profession=ENCHANTING;amount=240}
   ENCHANTING_BOOK5:
     output:
       type: ENCHANTMENT
       id: ENCHANTING_BOOK5
       amount: 1
     ingredients:
-    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=64}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=32}
     triggers:
-    - exp{profession=ENCHANTING;amount=960}
+    - exp{profession=ENCHANTING;amount=480}
+  # ENCHANTING_BOOK5:
+  #   output:
+  #     type: ENCHANTMENT
+  #     id: ENCHANTING_BOOK5
+  #     amount: 1
+  #   ingredients:
+  #   - mmoitem{type=MATERIAL,id=ENCHANTED_PAPER,amount=64}
+  #   triggers:
+  #   - exp{profession=ENCHANTING;amount=960}
 
-  XP_BOTTLE1:
+  XP_BOTTLE:
     output:
       type: CONSUMABLE
-      id: XP_BOTTLE1
+      id: XP_BOTTLE
       amount: 1
     ingredients:
     - vanilla{type=LAPIS_LAZULI,amount=64}
@@ -110,10 +110,10 @@ recipes:
     ingredients:
     - vanilla{type=AIR,amount=0}
 
-  ENCHANTED_BOX1:
+  ENCHANTED_BOX:
     output:
       type: CONSUMABLE
-      id: ENCHANTED_BOX1
+      id: ENCHANTED_BOX
       amount: 1
     ingredients:
     - vanilla{type=LAPIS_LAZULI,amount=64}

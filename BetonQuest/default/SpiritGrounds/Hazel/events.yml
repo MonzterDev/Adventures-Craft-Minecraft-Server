@@ -48,13 +48,13 @@ q2_part4_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objec
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
 QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
-QuestReward2_If_Not_Full: "run ^command mmoitems give WAND RESOLVE %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward2_If_Not_Full: "run ^command mmoitems give WAND RESOLVE2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
 QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
 QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
 QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
 #THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
-Claim_QuestReward2: "run ^command mmoitems give WAND RESOLVE %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+Claim_QuestReward2: "run ^command mmoitems give WAND RESOLVE2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
 QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
 QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"

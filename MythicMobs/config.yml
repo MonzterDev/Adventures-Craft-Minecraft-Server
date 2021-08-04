@@ -19,7 +19,7 @@ Configuration:
     CleanupInterval: 600
   Components:
     CustomSpawners: true
-    RandomSpawning: true
+    RandomSpawning: false
   Mobs:
     DespawnByDefault: true
     EnableAIModifiers: true
@@ -29,7 +29,7 @@ Configuration:
     EnableLegacySkills: true
     KillMessagePrefix: ''
     PreventOtherDropsByDefault: true
-    ShowHealth: true
+    ShowHealth: false
     Radius: 25
     Format: <mob.name> - <mob.php> (<mob.hp> / <mob.mhp>)
     Scaling:
@@ -43,13 +43,13 @@ Configuration:
         Enabled: false
         PerBlocksFromSpawn: 100
     DefaultLevelModifiers:
-      Health: 0.1
+      Health: 0
       Armor: 0
       Damage: 0
       KnockbackResistance: 0
       Power: 0
   RandomSpawning:
-    DisableVanillaSpawns: true
+    DisableVanillaSpawns: false
     GenerateSpawnPoints: false
     MaxMobsPerChunk: 50
     SpawnRadiusPerPlayer: 64

@@ -1,0 +1,63 @@
+ANGRY_SPIDER_POISON:
+  Cooldown: 10
+  Skills:
+  - damage{amount=2.5;repeat=3;repeatInterval=20} @target
+  - potion{type=SLOW;duration=60;level=1}
+  - potion{type=POISON;duration=60;level=1}
+  - message{m="&cThe <mob.name> &cleft you with a nasty &4bite&c!"} @target
+
+VOID_BOOMER_EXPLOSION:
+  Conditions:
+  - playerwithin{d=5} true
+  Skills:
+  - damage{amount=20} @PIR{r=5} 
+  - potion{type=POISON;duration=60;level=4} @PIR{r=5} 
+  - effect:explosion @self
+  - remove @self 
+
+VOID_VAMPIRE_BLOODSUCK:
+  Cooldown: 10
+  Skills:
+  - heal{amount=25} @self
+  - damage{amount=12.5} @target
+  - message{m="&CThe <mob.name> &cdrained some of your &4blood&c!"} @target
+  - effect:particles{particle=heart;amount=10;hS=1;vS=1;speed=1} @self
+VOID_VAMPIRE2_BLOODSUCK:
+  Cooldown: 15
+  Skills:
+  - heal{amount=50} @self
+  - damage{amount=25} @target
+  - message{m="&CThe <mob.name> &cdrained some of your &4blood&c!"} @target
+  - effect:particles{particle=heart;amount=15;hS=1;vS=1;speed=1} @self
+
+VOID_HIVE_SUMMON:
+  Conditions:
+  - mobsInRadius{types=VOID_ANT;amount=<10;radius=50}
+  Skills:
+  - effect:particlesphere{particle=block_crack;amount=5;radius=0;y=1} @self
+  - delay 20
+  - effect:particlesphere{particle=block_crack;amount=5;radius=0;y=2} @self
+  - delay 20
+  - effect:particlesphere{particle=block_crack;amount=5;radius=0;y=3} @self
+  - summon{type=VOID_ANT;amount=1} @PIR{r=10}
+  - sound{s=ambient.cave} @self
+
+VOID_DRACULA_BLOODSUCK:
+  Cooldown: 15
+  Skills:
+  - heal{amount=250} @self
+  - damage{amount=50} @target
+  - message{m="&CThe <mob.name> &cdrained your entire &4vein&c!"} @target
+  - effect:particles{particle=heart;amount=15;hS=1;vS=1;speed=1} @self
+VOID_DRACULA_FLY:
+  Cooldown: 25
+  Skills:
+  - message{m="<mob.name>&f<&co> &cLets fly!"} @PIR{r=7}
+  - sound{s=entity.evoker.cast_spell} @self
+  - potion{type=LEVITATION;duration=71;level=0;hasIcon=true} @PIR{r=7}
+  - potion{type=LEVITATION;duration=50;level=0;hasIcon=FALSE} @self
+  - setgravity{g=false} @self
+  - delay 70
+  - stun{d=100;f=true;CancelOnTakeDamage=true} @PIR{r=7}
+  - delay 100
+  - setgravity{g=true} @self

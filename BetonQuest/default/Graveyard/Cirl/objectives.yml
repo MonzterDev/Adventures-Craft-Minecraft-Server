@@ -1,8 +1,8 @@
-KillUndead: mmobkill Skeleton1 amount:20 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1
-  ^notify
+KillUndead: mmobkill UNDEAD_SKELETON amount:20 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1
+  notify:1
 MeetGraveyard: location -157;16;144;Spawn 3 events:OpenStool,entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2,GraveyardShopCompassHide
-KillUndead2: mmobkill SkeletonArcher amount:15 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3
-  ^notify
-KillReaper: mmobkill ReaperBoss amount:1 events:q4_party,ReaperCompassHide
-  ^notify
+KillUndead2: mmobkill UNDEAD_ARCHER amount:15 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3
+  notify:2
+KillReaper: mmobkill REAPER amount:1 events:q4_party,ReaperCompassHide
+  notify:1
 EnterCourtyard: npcinteract 30 events:entry_q5_complete,QuestReward5,NavidCompassHide

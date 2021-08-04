@@ -226,9 +226,10 @@ items:
     conditions: '!default-Courtyard-Navid.q4_part1'
     text:
       en:
-        - '&c&l[Inactive] &f&lLuring out The Guards'
+        - '&c&l[Inactive] &f&lThe Alpha Souls'
         - '&f&o'
-        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby'
+        - '&fslaying &cUndead &fwithin the &cCourtyard'
         - '&f&o'
         - '&e&lRewards:'
         - '&8&l» &d250 EXP'
@@ -243,9 +244,10 @@ items:
     conditions: 'default-Courtyard-Navid.q4_part1,!default-Courtyard-Navid.q4_completed'
     text:
       en:
-        - '&a&l[Active] &f&lLuring out The Guards'
+        - '&a&l[Active] &f&lThe Alpha Souls'
         - '&f&o'
-        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby'
+        - '&fslaying &cUndead &fwithin the &cCourtyard'
         - '&f&o'
         - '&e&lRewards:'
         - '&8&l» &d250 EXP'
@@ -260,9 +262,10 @@ items:
     conditions: 'default-Courtyard-Navid.q4_completed,!default-Courtyard-Navid.q4_rewards_unclaimed,default-Courtyard-Navid.q4_rewards_claimed'
     text:
       en:
-        - '&e&l[Complete] &f&lLuring out The Guards'
+        - '&e&l[Complete] &f&lThe Alpha Souls'
         - '&f&o'
-        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby'
+        - '&fslaying &cUndead &fwithin the &cCourtyard'
         - '&f&o'
         - '&e&lRewards:'
         - '&8&l» &d250 EXP'
@@ -275,9 +278,10 @@ items:
     conditions: 'default-Courtyard-Navid.q4_rewards_unclaimed,!default-Courtyard-Navid.q4_rewards_claimed'
     text:
       en:
-        - '&6&l[Unclaimed] &f&lLuring out The Guards'
+        - '&6&l[Unclaimed] &f&lThe Alpha Souls'
         - '&f&o'
-        - '&fSlay the &cUndead Summoner &fand his &cMinions'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby'
+        - '&fslaying &cUndead &fwithin the &cCourtyard'
         - '&f&o'
         - '&e&lRewards:'
         - '&8&l» &d250 EXP'
@@ -306,7 +310,7 @@ items:
         - '&8&l» &d250 Slayer EXP'
         - '&8&l» &e200 Coins'
         - '&f&o'
-        - '&aGiven after completing Luring out The Guards'        
+        - '&aGiven after completing The Alpha Souls'        
     close: false
   quest5_active:
     item: book
@@ -324,7 +328,7 @@ items:
         - '&8&l» &d250 Slayer EXP'
         - '&8&l» &e200 Coins'
         - '&f&o'
-        - '&aGiven after completing Luring out The Guards'        
+        - '&aGiven after completing The Alpha Souls'        
     close: false
   quest5_completed:
     item: enchantedbook

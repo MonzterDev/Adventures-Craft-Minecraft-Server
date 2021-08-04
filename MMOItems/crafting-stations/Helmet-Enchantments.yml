@@ -14,18 +14,18 @@ items:
     material: RED_STAINED_GLASS_PANE
     name: '&c&lLOCKED'
 recipes:
-  REFLECT1:
+  REFLECT:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: REFLECT1
+      id: REFLECT
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant REFLECT 1",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   REFLECT2:
@@ -39,7 +39,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=4}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant REFLECT 2",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   REFLECT3:
@@ -53,7 +53,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=8}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant REFLECT 3",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   REFLECT4:
@@ -67,7 +67,7 @@ recipes:
     - mmoitem{type=MATERIAL,id=ENCHANTED_CACTUS,amount=12}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant REFLECT 4",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}
   UNAVAILABLE3:
@@ -84,13 +84,13 @@ recipes:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: REFLECT1
+      id: REFLECT
     ingredients:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_BOOK,amount=1}
-    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE1,amount=1}
+    - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant REFLECT 1",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   REFLECT2T:
@@ -104,7 +104,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE2,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant REFLECT 2",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=6}
   REFLECT3T:
@@ -118,7 +118,7 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE3,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=300}
-    - command{format="artifacts enchant REFLECT 3",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 3",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=7}
   REFLECT4T:
@@ -132,6 +132,6 @@ recipes:
     - mmoitem{type=ENCHANTMENT,id=ENCHANTING_STONE4,amount=1}
     triggers:
     - exp{profession=ENCHANTING;amount=400}
-    - command{format="artifacts enchant REFLECT 4",sender=OP}
+    - command{format="mythicenchants enchant REFLECT 4",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=10}

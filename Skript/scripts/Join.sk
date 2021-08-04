@@ -1,20 +1,20 @@
 on player join:
-	#Disables music if music is turned off for user
-	if player doesn't have permission "Music.ON":
-		wait 5 seconds
-		make player execute command "/music off"
+# 	#Disables music if music is turned off for user
+# 	if player doesn't have permission "Music.ON":
+# 		wait 5 seconds
+# 		make player execute command "/music off"
 
-	if player is in world "Homes":
-		wait 1 seconds	
-		make player execute command "/home"
-		heal the player
+	# if player is in world "Homes":
+	# 	wait 1 seconds	
+	# 	make player execute command "/home"
+	# 	heal the player
 
 	if player is in world "Spawn":
 		if player does not have permission "SEND.TOWN", "SEND.TOWNHALL", "SEND.FOREST", "SEND.FORESTSPRUCE", "SEND.FORESTDARKOAK", "SEND.FORESTBIRCH", "SEND.FORESTACACIA", "SEND.FORESTJUNGLE", "SEND.FORESTHIVE", "SEND.MINEENTRANCE", "SEND.MINECOAL", "SEND.MINEGOLD", "SEND.MINEREDSTONE", "SEND.MINELAPIS", "SEND.MINEDIAMOND", "SEND.MINEEMERALD", "SEND.GRAVEYARD", "SEND.COURTYARD", "SEND.CASTLE", "SEND.MORDEN", "SEND.ESTATE", "SEND.GOBLINTOWN", "SEND.SPIRITGROUNDS", "SEND.HELL", "SEND.HELLBOTTOM", "SEND.LOWERVOID", "SEND.UPPERVOID", "SEND.VOIDABYSS", "SEND.ENCHANT", "SEND.AUCTION", "SEND.DRACULA", "SEND.REAPER", "SEND.MORDENFAST", "SEND.VOIDWITHER", "SEND.VOIDMAGMA", "SEND.GHASTLY", "SEND.BULLBO":
 			wait 1 seconds
 			make player execute command "/spawn"
 			heal the player
-		else if player has permission "SEND.TOWN":
+		if player has permission "SEND.TOWN":
 			wait 1 seconds
 			warp_town(player)
 			execute console command "/lp user %player% permission set SEND.TOWN false"
@@ -167,16 +167,6 @@ on player join:
 			warp_Bullbo(player)
 			execute console command "/lp user %player% permission set SEND.BULLBO false"
 
-
-on player join:
-	if player is in world "Homes":
-		if player doesn't have permission "Home.Claimed":
-			if player has permission "Has.Home":
-				wait 3 seconds
-				make player execute command "/p auto"
-				execute console command "/lp user %player% permission set Has.Claimed true"
-
-
 on player join:
 	wait 3 seconds 
 	set player's hotbar slot to slot 8 of player
@@ -187,16 +177,4 @@ on player join:
 	#execute console command "/itemjoin get skull-item %player%"
 	#wait 5 seconds
 	#open book player's tool to player
-	#execute console command "/itemjoin get skull-item %player%"	
-
-on join:
-	wait 3 seconds 
-	set the player's game mode to survival
-
-on join:
-	if player is in world "Spawn":
-		make console execute command "/team join CMICol %player%"
-on join:
-	if player doesn't have permission "Flint.Talked":
-		if player is in world "Spawn":
-			send "&7Welcome, speak with &aFlint &7infront of you!" to player 
+	#execute console command "/itemjoin get skull-item %player%"
