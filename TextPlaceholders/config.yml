@@ -1,0 +1,25 @@
+#
+# TextPlaceholders by Sek
+#
+# Written for Monzter
+#
+#
+# EXAMPLE
+# indentifier: "Text"
+# Placeholder = %textph_identifier%
+# Returns "Text"
+
+# You can also use other placeholders in generated placeholders.
+
+# Do not do anything like this:
+# test: '%textph_test%'
+
+# This is the first section of text in the generated placeholder.
+#
+placeholder-prefix: 'textph'
+
+# You can add placeholders here.
+#
+placeholders:
+  hello_world: '&aHey' #The placeholder would be "%textph_hello_world%"
+  best_dev: 'Sek'

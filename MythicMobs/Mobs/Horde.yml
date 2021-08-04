@@ -149,7 +149,7 @@
 #   - skill{s=HPBAR} @self ~onDamaged
 #   - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
 
-# SkeletonArcherH1:
+# UNDEAD_ARCHERH1:
 #   Type: SKELETON
 #   Display: '[&fLVL 20&7] &cUndead Archer' 
 #   Health: 1500
@@ -179,7 +179,7 @@
 #   - crossbow:0
 #   Drops:
 #   - BorgBox 1 100%
-#   - mmoitems{type=companion;id=PET_SKELETONARCHER3} 1 .005%    
+#   - mmoitems{type=companion;id=PET_UNDEAD_ARCHER3} 1 .005%    
 #   - mmoitems{type=material;id=BONE_FRAGMENT} 1-2 50%
 #   - Bone 1-2 50%
 #   - EXP 1-2 50%
@@ -202,7 +202,7 @@
 #   - skill{s=HPBAR} @self ~onDamaged
 #   - signal{s=W1DEATH} @MobsInRadius{r=200;t=HIDDEN_EGG1} ~onDeath
 
-# AlphaSoulH1:
+# ALPHA_SOULH1:
 #   Type: ZOMBIE
 #   Display: '[&fLVL 20&7] &cAlpha Soul'
 #   Health: 3000
@@ -211,7 +211,7 @@
 #   Disguise:
 #     Type: Player
 #     Player: '[&fLVL 20&7] &cAlpha Soul'
-#     Skin: alphasoul
+#     Skin: ALPHA_SOUL
 #   Modules:
 #     ImmunityTable: true
 #   Options:

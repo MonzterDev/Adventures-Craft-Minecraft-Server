@@ -18,16 +18,16 @@
 #   Skills:
 #   - delay 20  
 #   - summon{type=SkeletonH1;amount=3;radius=5} @self
-#   - summon{type=SkeletonArcherH1;amount=2;radius=5} @self
+#   - summon{type=UNDEAD_ARCHERH1;amount=2;radius=5} @self
 # #Summons in Wave 2 when all of Wave 1 has been slayed
 # EGGSUMMON1W2:
 #   Conditions:
 #   - mobsInRadius{types=SkeletonH1;amount=0to1;radius=200}
-#   - mobsInRadius{types=SkeletonArcherH1;amount=0to1;radius=200}
+#   - mobsInRadius{types=UNDEAD_ARCHERH1;amount=0to1;radius=200}
 #   Skills:
 #   - delay 20  
-#   - summon{type=AlphaSoulH1;amount=3;radius=5} @self
-#   - summon{type=SkeletonArcherH1;amount=2;radius=5} @self
+#   - summon{type=ALPHA_SOULH1;amount=3;radius=5} @self
+#   - summon{type=UNDEAD_ARCHERH1;amount=2;radius=5} @self
 
 
 

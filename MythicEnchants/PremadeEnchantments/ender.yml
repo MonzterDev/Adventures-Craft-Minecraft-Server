@@ -1,0 +1,24 @@
+Display: 'Ender'
+Max-Level: 5
+Min-Level: 1
+ValidSlots:
+  - 'HELMET'
+  - 'CHESTPLATE'
+Cooldown:
+  #Regardless of if the chance rolls, you can set cooldowns to hard limit how often an enchant can pop.
+  #Typically you want this time to get shorter as it levels up.
+  BaseCooldown: 7
+  CooldownPerLevel: -1
+Message:
+  #This option supports "chat" or "actionbar"
+  Routing: CHAT
+  #Current valid placeholders are {name} and {remaining}
+  CooldownMessage: '<red>{name} is on cooldown for {remaining} seconds.'
+Chance:
+  #This is from 0 to 1.0, where 1.0 is 100% chance of happening.
+  BaseChance: 0.5
+  ChancePerLevel: 0.5
+EnchantmentEffects:
+  Radius: 10
+  RadiusY: 5
+  Sound: ENTITY_ENDERMAN_TELEPORT
