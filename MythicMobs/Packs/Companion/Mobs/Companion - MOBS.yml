@@ -91,7 +91,7 @@ PET_ALPHA_SOUL3:
   Disguise:
     Type: Player
     Player: '&aAlpha Soul'
-    Skin: alphasoul
+    Skin: ALPHA_SOUL
   Skills:
   - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
   - remove{delay=600} @self ~onSpawn
@@ -107,7 +107,7 @@ PET_UNDEAD_CASTER3:
   Disguise:
     Type: Player
     Player: '&7[&fLVL 5&7] &aUndead Caster'
-    Skin: UNDEADCASTER  
+    Skin: UNDEAD_CASTER  
   Equipment:
   - UNDEAD_CASTER_WEAPON:HAND
   - UNDEAD_CASTER_HELMET:HEAD

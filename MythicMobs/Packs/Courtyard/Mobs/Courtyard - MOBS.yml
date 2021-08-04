@@ -42,7 +42,6 @@ UNDEAD_SKELETON2:
   - skill{s=Agro8A} @self ~onTimer:20
   - skill{s=Agro8B} @self ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
-  - command{c="mythicmobs i give <target.name> SkeletonSet 1"} @ThreatTablePlayers ~onDeath
 
 UNDEAD_ARCHER2:
   Type: SKELETON
@@ -126,7 +125,7 @@ ALPHA_SOUL:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
-  - skill{s=SUMMON_ALPHA_SOUL} ~onEnterCombat
+  - skill{s=ALPHA_SOUL_STEAL} ~onEnterCombat
 
 UNDEAD_SPIDER:
   Type: CAVE_SPIDER

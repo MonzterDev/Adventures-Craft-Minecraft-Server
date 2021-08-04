@@ -2,7 +2,7 @@
 QuestCooldown24: delay 86400 seconds events:del_QuestCooldown24_tag,del_tag_q1_completed,del_q1_part1
 
 #Slay Undead 1
-SlayUndead: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:500 events:entry_q1_complete
+SlayUndead: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:500 events:entry_q1_complete
 
 
 #2
@@ -17,6 +17,6 @@ SlayHell: mmobkill GHAST_BOSS,GHAST_MINION1,FIRST_MINION,MINION_MINION,GHAST_MIN
 #ALLOW QUEST TO BE TAKEN AGAIN
 Quest3Cooldown24: delay 86400 seconds events:del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1
 
-SlayVoid: mmobkill VOID_BLINDER,VOID_WORSHIPER,VOID_SOURCE,VOID_THRALL,VOID_ASSASSIN,VOID_HEART,VOID_HEART_HEALER,VOID_VEIN,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:1500 events:entry_q3_complete
+SlayVoid: mmobkill VOID_BLINDER,VOID_WORSHIPER,VOID_SOURCE,VOID_THRALL,VOID_ASSASSIN,VOID_HEART,VOID_HEART_HEALER,VOID_VEIN,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:1500 events:entry_q3_complete
 
 
