@@ -69,13 +69,13 @@ q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$ \n \n \n
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
 QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
 QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
+QuestReward4_If_Not_Full: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER3 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
 QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
 QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name4$ &cto redeem your rewards!'
 QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
 #SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
+Claim_QuestReward4: "run ^command mmoitems give ACCESSORY DARKNESS_EXTINGUISHER3 %player% 1 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
 QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
 QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"

@@ -1,0 +1,157 @@
+PET_SKELETON3: &Companion
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &aPet Undead Skeleton'
+  Health: 50000
+  Faction: Guard
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &aUndead Skeleton'
+    Skin: skeleton
+  Modules:
+    ThreatTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 1
+    MovementSpeed: 0.42
+    FollowRange: 6
+    Collidable: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotoowner 10
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 otherfactionmonsters
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20
+  - damage{amount=75} @target ~onAttack
+
+PET_SKELETON_ARCHER3: 
+  Type: SKELETON
+  Display: '&7[&fLVL 5&7] &aUndead Archer'
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &aUndead Archer'
+    Skin: undead_archer
+  Options:
+    MovementSpeed: 0.32
+  AIGoalSelectors:
+  - 0 clear
+  - 1 gotoowner 10
+  - 2 arrowattack
+  - 3 randomstroll
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20
+  - damage{amount=125} @target ~onAttack
+  <<: *Companion
+  
+PET_LOST_SOUL3:
+  Display: '&aLost Soul'
+  Disguise:
+    Type: Player
+    Player: '&aLost Soul'
+    Skin: lostsoul
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20  
+  - skill{s=PET_LOST_SOUL_DISGUISE}
+  - damage{amount=150} @target ~onAttack
+  - lightning{d=50} @Target ~onTimer:100
+  - throw{velocity=2;velocityY=10} @Target ~onTimer:80
+  <<: *Companion
+
+PET_REAPER3:
+  Display: '&7[&fLVL 10&7] &aReaper'
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &aReaper'
+    Skin: reaper
+  Equipment:
+  - IRON_SWORD:0
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20
+  - damage{amount=300} @target ~onAttack
+  - heal{amount=.5} @PIR{r=3} ~onInteract
+  <<: *Companion
+  
+PET_ALPHA_SOUL3:
+  Display: '&aAlpha Soul'
+  Disguise:
+    Type: Player
+    Player: '&aAlpha Soul'
+    Skin: ALPHA_SOUL
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20
+  - damage{amount=250} @target ~onAttack
+  - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
+  - damage{a=25} @EIR{r=2;ignore=players} ~onTimer:20
+  - ignite{ticks=20} @EIR{r=2;ignore=players} ~onTimer:20
+  <<: *Companion
+
+PET_UNDEAD_CASTER3:
+  Display: '&7[&fLVL 10&7] &aUndead Caster'
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 5&7] &aUndead Caster'
+    Skin: UNDEAD_CASTER  
+  Equipment:
+  - UNDEAD_CASTER_WEAPON:HAND
+  - UNDEAD_CASTER_HELMET:HEAD
+  - UNDEAD_CASTER_CHESTPLATE:CHEST
+  - UNDEAD_CASTER_LEGGINGS:LEGS
+  - UNDEAD_CASTER_BOOTS:FEET
+  Skills:
+  - equip{item=UNDEAD_CASTER_WEAPON:HAND} @self ~onSpawn
+  - equip{item=UNDEAD_CASTER_HELMET:HEAD} @self ~onSpawn
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20
+  - skill{s=PET_UNDEAD_CASTER3_STUN} ~onSignal:PET_UNDEAD_CASTER3_SIGNAL
+  - skill{s=PET_UNDEAD_CASTER3_MISSILE} @target ~onTimer:80
+  <<: *Companion
+
+PET_UNDEAD_SPIDER3:
+  Display: '&7[&fLVL 10&7] &aUndead Spider'
+  Disguise:
+    Type: CAVE_SPIDER
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20  
+  - damage{amount=225} @target ~onAttack
+  - potion{type=SLOW;duration=100;level=1} @target ~onAttack
+  <<: *Companion
+
+PET_MORDEN_THE_UNDEAD5:
+  Display: '&7[&fLVL 10&7] &aMorden The Revived'
+  Disguise:
+    Type: Player
+    Player: '&7[&fLVL 10&7] &aMorden The Revived'
+    Skin: undeadknight  
+  Equipment:
+  - MORDEN_THE_UNDEAD_SWORD2 hand
+  - MORDEN_THE_UNDEAD_SWORD2 offhand
+  - MORDEN_THE_UNDEAD_CHESTPLATE chest
+  - MORDEN_THE_UNDEAD_LEGGINGS legs
+  - MORDEN_THE_UNDEAD_BOOTS boots
+  Skills:
+  - effect:particlesphere{particle=villager_happy;amount=1;radius=0;y=1} @self ~onTimer:10
+  - remove{delay=600} @self ~onSpawn
+  - skill{s=COMPANION_TELEPORT_TO_OWNER} ~onTimer:20  
+  - damage{amount=325} @target ~onAttack
+  - potion{type=INCREASE_DAMAGE;duration=200;level=20} @owner ~onSpawn
+  <<: *Companion

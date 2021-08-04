@@ -1,6 +1,6 @@
 #FIRST QUEST The Great Slaughter
 quest1_start: 'objective start OakLogs'
-GiveRifle: 'command mmoitems give TOOL JACKS_AXE1 %player% 1'
+GiveRifle: 'command mmoitems give TOOL JACKS_AXE %player% 1'
 tag_q1_part1: 'tag add q1_part1'
 entry_q1_part1: 'journal add q1_part1'
 q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 128 Oak Logs&f!'
@@ -116,13 +116,13 @@ q5_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nBirch Tumbles! \n \n \
 #FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward5: "if empty0 QuestReward5_Full else QuestReward5_Folder"
 QuestReward5_Folder: 'folder QuestReward5_If_Not_Full,QuestReward5_Claimed_Tag'
-QuestReward5_If_Not_Full: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
+QuestReward5_If_Not_Full: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
 QuestReward5_Full: 'folder QuestReward5_Full_message,QuestReward5_Full_Tag'
 QuestReward5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aAcacia Tumbles &cto redeem your rewards!'
 QuestReward5_Full_Tag: "tag add q5_rewards_unclaimed"
 #FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward5_Claim: 'folder Claim_QuestReward5,QuestReward5_Claim_message,QuestReward5_Claimed_Tag,QuestReward5_del_Claimed_Tag'
-Claim_QuestReward5: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
+Claim_QuestReward5: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
 QuestReward5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward5_Claimed_Tag: "tag add q5_rewards_claimed"
 QuestReward5_del_Claimed_Tag: "tag del q5_rewards_unclaimed"
@@ -141,13 +141,13 @@ q6_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nAcacia Tumbles! \n \n 
 #FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward6: "if empty0 QuestReward6_Full else QuestReward6_Folder"
 QuestReward6_Folder: 'folder QuestReward6_If_Not_Full,QuestReward6_Claimed_Tag'
-QuestReward6_If_Not_Full: "run ^command lp user %player% permission set warp.JungleForest ^command mm items give %player% BEE_WINGS ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
+QuestReward6_If_Not_Full: "run ^command lp user %player% permission set warp.JungleForest ^command mm items give %player% BEE_WINGS2 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
 QuestReward6_Full: 'folder QuestReward6_Full_message,QuestReward6_Full_Tag'
 QuestReward6_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aJungle Tumbles &cto redeem your rewards!'
 QuestReward6_Full_Tag: "tag add q6_rewards_unclaimed"
 #FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
 QuestReward6_Claim: 'folder Claim_QuestReward6,QuestReward6_Claim_message,QuestReward6_Claimed_Tag,QuestReward6_del_Claimed_Tag'
-Claim_QuestReward6: "run ^command lp user %player% permission set warp.JungleForest  ^command mm items give %player% BEE_WINGS ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
+Claim_QuestReward6: "run ^command lp user %player% permission set warp.JungleForest  ^command mm items give %player% BEE_WINGS2 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
 QuestReward6_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
 QuestReward6_Claimed_Tag: "tag add q6_rewards_claimed"
 QuestReward6_del_Claimed_Tag: "tag del q6_rewards_unclaimed"

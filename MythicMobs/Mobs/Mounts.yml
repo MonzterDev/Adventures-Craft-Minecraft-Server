@@ -66,7 +66,7 @@ MountHog:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -102,7 +102,7 @@ MountHorse1:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -136,7 +136,7 @@ MountHorseRank2:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
@@ -170,7 +170,7 @@ MountHorseRank3:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
@@ -205,7 +205,7 @@ BORG_STEED:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=1} @self ~onDamaged
   - remove{delay=1} @self ~onEnterCombat
   - remove{delay=1} @self ~onCombat
@@ -240,7 +240,7 @@ MountBulb:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -272,7 +272,7 @@ MountBulb2:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -304,7 +304,7 @@ MountBulb3:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -337,7 +337,7 @@ MountBullbo:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -369,7 +369,7 @@ MountBullbo2:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat
@@ -401,7 +401,7 @@ MountBullbo3:
   - 0 clear
   Skills:
   - skill{s=MDISMOUNT} @self ~onTimer:1  
-  - skriptskill{skill=dismount} @self ~onTimer:1
+  - customDismount @self ~onTimer:1
   - remove{delay=0} @self ~onDamaged
   - remove{delay=0} @self ~onEnterCombat
   - remove{delay=0} @self ~onCombat

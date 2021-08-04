@@ -1,0 +1,250 @@
+GHASTLY:
+  Type: GIANT
+  Disguise:
+    Type: GHAST
+  Display: '&7[&fLVL 20&7] &cGhastly'
+  Health: 50000
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cGhastly <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID
+  Faction: Hell
+  DamageModifiers:
+  - PROJECTILE -.1
+  - ENTITY_ATTACK 0  
+  - LAVA 0  
+  - SUFFOCATION 0  
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true    
+  Options:
+    NoDamageTicks: 0
+    PreventSunburn: true
+    AlwaysShowName: false
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 5000
+    MovementSpeed: 0.001
+    Collidable: false
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    NoGravity: true
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=GHAST_SPAWN} @PIR{r=200} ~onSpawn
+  - skill{s=GHAST_SUMMON0} ~onSpawn
+  - skill{s=GHAST_TPING} ~onSignal:DAMAGE_BOSS0
+  - skill{s=GHAST_TPING2} ~onTimer:20 <65%
+  - skill{s=GHAST_TPING3} ~onTimer:20 <30%
+  - skill{s=GHAST_WIPE} ~onSignal:WIPE
+  - skill{s=GHAST_DAMAGE} ~onSignal:DAMAGE_BOSS
+  - skill{s=GHAST_DAMAGE2} ~onSignal:DAMAGE_BOSS2
+  - skill{s=GHAST_DAMAGE3} ~onSignal:DAMAGE_BOSS3
+  - skill{s=GHAST_DEATH} @PlayersInRadius{r=200} ~onDeath
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=GHAST_DAMAGE_NOTIFY} ~onDamaged
+  - remove @MIR{r=750;t=DEVOTED_PIGMAN,DEVOTED_SKELETON,DEVOTED_BLAZE,DEVOTED_MINION} ~onDeath
+
+GHASTLY_STRIDER:
+  Type: ZOMBIE
+  Disguise:
+    Type: STRIDER
+  Display: '&4Strider'  
+  Health: 2500
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.32
+    FollowRange: 6
+    Collidable: true
+    Despawn: false
+    Glowing: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=55} @target ~onAttack
+  - skill{s=GHASTLY_STRIDER_DAMAGE_BOSS0} ~onDeath 
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=GHASTLY_STRIDER_TELEPORT} @self ~onTimer:100 
+
+#MAIN MINION
+DEVOTED_PIGMAN:
+  Type: PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cDevoted Pigman'  
+  Health: 15000
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.28
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Equipment:
+  - DEVOTED_PIGMAN_SWORD:0
+  - DEVOTED_PIGMAN_HEAD:HEAD
+  - DEVOTED_PIGMAN_CHEST:CHEST
+  - DEVOTED_PIGMAN_LEGS:LEGS
+  - DEVOTED_PIGMAN_BOOTS:FEET
+  - DEVOTED_PIGMAN_SHIELD:5
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=75;ignoreArmor=false} @target ~onAttack
+  - skill{s=DEVOTED_PIGMAN_WIPE} ~onDamaged
+  - skill{s=MINION_BOSS_DMG} ~onDeath
+  - skill{s=DEVOTED_PIGMAN_RAGE} <20%
+  - damage{amount=51;ignoreArmor=false} @PIR{r=3} ~onAttack <20%  
+  - summon{type=DEVOTED_MINION;amount=1;radius=7} @self ~onTimer:300 <30%    
+  - effect:blockmask{m=obsidian;r=2;d=200} @self ~onTimer:10  
+  - effect:blockmask{m=obsidian;r=5;d=200} @self ~onTimer:10 <30%
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:20  
+  - skill{s=HPBAR} @self ~onDamaged
+
+DEVOTED_MINION:
+  Type: BABY_PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cDevoted Minion'  
+  Health: 3000
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.324
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - GOLDEN_SWORD:0
+  - VOID_DEMON_HEAD:HEAD
+  - VOID_DEMON_CHEST:CHEST
+  - VOID_DEMON_BOOTS:FEET
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=55} @target ~onAttack
+  - skill{s=MINION_BOSS_DMG2} ~onDeath 
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:20  
+  - skill{s=HPBAR} @self ~onDamaged
+
+DEVOTED_SKELETON:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 20&7] &cDevoted Skeleton'  
+  Health: 5000
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - DEVOTED_PIGMAN_SWORD:0
+  - DEVOTED_PIGMAN_CHEST:CHEST
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=65;ignoreArmor=false} @target ~onAttack
+  - skill{s=MINION_BOSS_DMG3} ~onDeath
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:20  
+  - skill{s=HPBAR} @self ~onDamaged
+
+DEVOTED_BLAZE:
+  Type: BLAZE
+  Display: '&7[&fLVL 20&7] &cDevoted Blaze'  
+  Health: 3500
+  Faction: Hell
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .25
+    MaxCombatDistance: 50
+    MovementSpeed: 0.36
+    FollowRange: 20
+    Collidable: true
+    Despawn: false
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=VOID_BLAZE_SHOOT} ~onTimer:80
+  - skill{s=MINION_BOSS_DMG3} ~onDeath
+  - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:20  
+  - skill{s=HPBAR} @self ~onDamaged

@@ -1,23 +1,25 @@
 STEEL_DAGGER:
   base:
     material: IRON_SWORD
-    name: '&fSteel Dagger'
+    name: <tier-color-cleaned>Steel Dagger
     gem-sockets: []
     ability: {}
     tier: COMMON
     attack-damage: 30.0
     unbreakable: true
     durability: 7.0
-BONE_DAGGER:
+    revision-id: 2
+BONE_DAGGER3:
   base:
     material: STONE_SWORD
     attack-damage: 50.0
     undead-damage: 20
     tier: RARE
-    name: '&9Bone Dagger'
+    name: <tier-color-cleaned>Bone Dagger
     unbreakable: true
     durability: 1.0
-STEAK:
+    revision-id: 2
+STEAK2:
   base:
     material: WOODEN_SWORD
     lore:
@@ -25,10 +27,11 @@ STEAK:
     attack-damage: 45.0
     critical-strike-power: 15.0
     tier: UNCOMMON
-    name: '&2Stake'
+    name: <tier-color-cleaned>Stake
     unbreakable: true
     durability: 1.0
-STEAK2:
+    revision-id: 2
+STEAK3:
   base:
     material: WOODEN_SWORD
     lore:
@@ -37,13 +40,14 @@ STEAK2:
     critical-strike-power: 25.0
     tier: RARE
     unbreakable: true
-    name: '&9Stake'
+    name: <tier-color-cleaned>Stake
     durability: 2.0
-DRACULA_DAGGER:
+    revision-id: 2
+DRACULA_DAGGER2:
   base:
     material: IRON_SWORD
     tier: UNCOMMON
-    name: '&2Drac''s Dagger'
+    name: <tier-color-cleaned>Drac's Dagger
     gem-sockets: []
     ability:
       ability1:
@@ -63,11 +67,12 @@ DRACULA_DAGGER:
     critical-strike-chance: 10.0
     critical-strike-power: 5.0
     durability: 3.0
-DRACULA_DAGGER2:
+    revision-id: 2
+DRACULA_DAGGER3:
   base:
     material: IRON_SWORD
     tier: RARE
-    name: '&9Drac''s Dagger'
+    name: <tier-color-cleaned>Drac's Dagger
     gem-sockets: []
     ability:
       ability1:
@@ -87,30 +92,33 @@ DRACULA_DAGGER2:
     critical-strike-chance: 25.0
     critical-strike-power: 15.0
     durability: 4.0
-PANDA_CLAW:
+    revision-id: 2
+PANDA_CLAW2:
   base:
     material: END_ROD
-    name: §2Panda Claw
+    name: <tier-color-cleaned>Panda Claw
     unbreakable: true
     tier: UNCOMMON
     attack-damage: 55.0
     critical-strike-power: 15.0
     disable-crafting: true
     disable-interaction: true
-PANDA_CLAW2:
+    revision-id: 2
+PANDA_CLAW3:
   base:
     material: END_ROD
-    name: §9Panda Claw
+    name: <tier-color-cleaned>Panda Claw
     unbreakable: true
     tier: RARE
     attack-damage: 75.0
     critical-strike-power: 25.0
     disable-crafting: true
     disable-interaction: true
-EMERALD_DAGGER:
+    revision-id: 2
+EMERALD_DAGGER2:
   base:
     material: IRON_SWORD
-    name: §2Emerald Dagger
+    name: <tier-color-cleaned>Emerald Dagger
     attack-damage: 75.0
     unbreakable: true
     tier: UNCOMMON
@@ -118,10 +126,11 @@ EMERALD_DAGGER:
     - Unused
     will-break: false
     durability: 6.0
-MACHETE:
+    revision-id: 2
+MACHETE3:
   base:
     material: IRON_SWORD
-    name: §9Machete
+    name: <tier-color-cleaned>Machete
     attack-damage: 75.0
     unbreakable: true
     tier: RARE
@@ -134,10 +143,11 @@ MACHETE:
     lore:
     - §cRoot §7enemies for 3 seconds!
     durability: 5.0
-GOBLIN_CLUB:
+    revision-id: 2
+GOBLIN_CLUB3:
   base:
     material: WOODEN_SWORD
-    name: '&9Goblin Club'
+    name: <tier-color-cleaned>Goblin Club
     displayed-type: Club
     attack-damage: 35.0
     critical-strike-chance: 25.0
@@ -146,11 +156,12 @@ GOBLIN_CLUB:
     unbreakable: true
     knockback-resistance: 0.5
     durability: 3.0
-BLAZE_ARM:
+    revision-id: 2
+BLAZE_ARM3:
   base:
     material: BLAZE_ROD
     tier: RARE
-    name: '&9Blaze Arm'
+    name: <tier-color-cleaned>Blaze Arm
     gem-sockets:
     - Unused
     lore:
@@ -163,11 +174,12 @@ BLAZE_ARM:
     critical-strike-chance: 5.0
     critical-strike-power: 10.0
     faction-damage-void: 25.0
-SHADOW_DAGGER:
+    revision-id: 2
+SHADOW_DAGGER3:
   base:
     material: STONE_SWORD
     tier: RARE
-    name: '&9Shadow Dagger'
+    name: <tier-color-cleaned>Shadow Dagger
     gem-sockets:
     - Unused
     lore:
@@ -186,11 +198,12 @@ SHADOW_DAGGER:
         mode: RIGHT_CLICK
         mana: 25.0
         cooldown: 5.0
-SHADOW_DAGGER2:
+    revision-id: 2
+SHADOW_DAGGER4:
   base:
     material: NETHERITE_SWORD
     tier: LEGENDARY
-    name: '&5Shadow Dagger'
+    name: <tier-color-cleaned>Shadow Dagger
     gem-sockets:
     - Unused
     - Unused
@@ -212,3 +225,4 @@ SHADOW_DAGGER2:
         mana: 30.0
         cooldown: 2.0
         mode: RIGHT_CLICK
+    revision-id: 2

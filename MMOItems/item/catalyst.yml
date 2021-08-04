@@ -1,4 +1,4 @@
-UNDEAD_CATALYST:
+UNDEAD_CATALYST3:
   base:
     material: BONE
     unbreakable: true
@@ -12,12 +12,13 @@ UNDEAD_CATALYST:
       unbreaking: 5
     hide-enchants: true
     unstackable: true
-    name: §9Undead Catalyst
+    name: <tier-color-cleaned>Undead Catalyst
     faction-damage-undead: 20.0
     lore:
     - §8Must be held in §fOff-Hand§8,
     - §8to receive effects
-DEAD_CATALYST:
+    revision-id: 2
+DEAD_CATALYST4:
   base:
     material: BLACK_DYE
     unbreakable: true
@@ -31,22 +32,24 @@ DEAD_CATALYST:
     unstackable: true
     enchants:
       unbreaking: 5
-    name: §5Dead Catalyst
+    name: <tier-color-cleaned>Dead Catalyst
     lore:
     - §8Must be held in §fOff-Hand§8,
     - §8to receive effects
-FIRE_CATALYST:
+    revision-id: 2
+FIRE_CATALYST4:
   base:
     material: BLAZE_POWDER
     unbreakable: true
     tier: LEGENDARY
-    name: §5Fire Catalyst
+    name: <tier-color-cleaned>Fire Catalyst
     enchants:
       unbreaking: 5
     hide-enchants: true
     unstackable: true
     fire-damage-reduction: 50.0
-FEATHER_CATALYST:
+    revision-id: 2
+FEATHER_CATALYST2:
   base:
     material: FEATHER
     hide-enchants: true
@@ -55,11 +58,12 @@ FEATHER_CATALYST:
       unbreaking: 5
     unbreakable: true
     tier: UNCOMMON
-    name: §2Feather Talisman
+    name: <tier-color-cleaned>Feather Talisman
     disable-crafting: true
     disable-interaction: true
     fall-damage-reduction: 50.0
-MINING1:
+    revision-id: 2
+MINING_CATALYST3:
   base:
     material: STONE_BUTTON
     disable-crafting: true
@@ -75,10 +79,11 @@ MINING1:
     tier: RARE
     perm-effects:
       FAST_DIGGING: 1
-    name: §9Miner's Catalyst
+    name: <tier-color-cleaned>Miner's Catalyst
     lore:
     - §fGrants §aHaste 1 §fwhen held.
-MINING2:
+    revision-id: 2
+MINING_CATALYST4:
   base:
     material: STONE_BUTTON
     disable-crafting: true
@@ -94,10 +99,11 @@ MINING2:
     tier: LEGENDARY
     perm-effects:
       FAST_DIGGING: 2
-    name: §5Miner's Amulet
+    name: <tier-color-cleaned>Miner's Amulet
     lore:
     - §fGrants §aHaste 2 §fwhen held.
-MINING3:
+    revision-id: 2
+MINING_CATALYST5:
   base:
     material: STONE_BUTTON
     disable-crafting: true
@@ -113,10 +119,11 @@ MINING3:
     tier: EXOTIC
     perm-effects:
       FAST_DIGGING: 3
-    name: §eMiner's Crescent
+    name: <tier-color-cleaned>Miner's Crescent
     lore:
     - §fGrants §aHaste 3 §fwhen held.
-MANA_SPHERE:
+    revision-id: 2
+MANA_SPHERE2:
   base:
     material: BLUE_DYE
     unbreakable: true
@@ -126,7 +133,7 @@ MANA_SPHERE:
     disable-smelting: true
     disable-crafting: true
     disable-interaction: true
-    name: §2Mana Sphere
+    name: <tier-color-cleaned>Mana Sphere
     max-mana: 25.0
     lore:
     - §fIncrease your §bmana
@@ -136,7 +143,8 @@ MANA_SPHERE:
     enchants:
       unbreaking: 4
     projectile-damage-reduction: 100.0
-MANA_LOTUS:
+    revision-id: 2
+MANA_LOTUS3:
   base:
     material: POPPY
     hide-enchants: true
@@ -150,12 +158,13 @@ MANA_LOTUS:
     disable-enchanting: true
     disable-repairing: true
     disable-interaction: true
-    name: §9Mana Lotus
+    name: <tier-color-cleaned>Mana Lotus
     mana-regeneration: 2.0
+    revision-id: 2
 ARCHER_AMULET:
   base:
     material: GRAY_DYE
-    name: '&fArcher Amulet'
+    name: <tier-color-cleaned>Archer Amulet
     disable-crafting: true
     hide-enchants: true
     unstackable: true
@@ -163,11 +172,11 @@ ARCHER_AMULET:
       unbreaking: 1
     projectile-damage: 5.0
     tier: COMMON
-    revision-id: 2
+    revision-id: 3
 ARCHER_AMULET2:
   base:
     material: GRAY_DYE
-    name: '&2Archer Amulet'
+    name: <tier-color-cleaned>Archer Amulet
     disable-crafting: true
     hide-enchants: true
     unstackable: true
@@ -175,11 +184,11 @@ ARCHER_AMULET2:
       unbreaking: 1
     projectile-damage: 10.0
     tier: UNCOMMON
-    revision-id: 2
+    revision-id: 3
 ARCHER_AMULET3:
   base:
     material: GRAY_DYE
-    name: '&9Archer Amulet'
+    name: <tier-color-cleaned>Archer Amulet
     disable-crafting: true
     hide-enchants: true
     unstackable: true
@@ -187,11 +196,11 @@ ARCHER_AMULET3:
       unbreaking: 1
     projectile-damage: 15.0
     tier: RARE
-    revision-id: 2
+    revision-id: 3
 ARCHER_AMULET4:
   base:
     material: GRAY_DYE
-    name: '&5Archer Amulet'
+    name: <tier-color-cleaned>Archer Amulet
     disable-crafting: true
     hide-enchants: true
     unstackable: true
@@ -199,12 +208,12 @@ ARCHER_AMULET4:
       unbreaking: 1
     projectile-damage: 25.0
     tier: LEGENDARY
-    revision-id: 2
-BIRCH_BARK:
+    revision-id: 3
+BIRCH_BARK3:
   base:
     material: PLAYER_HEAD
     unbreakable: true
-    name: §9Birch Bark
+    name: <tier-color-cleaned>Birch Bark
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -218,11 +227,12 @@ BIRCH_BARK:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
       uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
-BIRCH_BARK2:
+    revision-id: 2
+BIRCH_BARK4:
   base:
     material: PLAYER_HEAD
     unbreakable: true
-    name: §5Birch Bark
+    name: <tier-color-cleaned>Birch Bark
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -236,11 +246,12 @@ BIRCH_BARK2:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
       uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
-BIRCH_BARK3:
+    revision-id: 2
+BIRCH_BARK5:
   base:
     material: PLAYER_HEAD
     unbreakable: true
-    name: §eBirch Bark
+    name: <tier-color-cleaned>Birch Bark
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -254,10 +265,11 @@ BIRCH_BARK3:
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzRkODkxOGU3ODk0NTRjYWNkNjYzOWE0ODA1OWE1Y2U3NzlmMmQ5ZWZhZGUzNjMzOThmNGRmZDUxMjg2MzQifX19
       uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
-COAL_CATALYST:
+    revision-id: 2
+COAL_CATALYST3:
   base:
     material: COAL
-    name: '&9Coal Catalyst'
+    name: <tier-color-cleaned>Coal Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -271,10 +283,11 @@ COAL_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-IRON_CATALYST:
+    revision-id: 2
+IRON_CATALYST3:
   base:
     material: IRON_INGOT
-    name: '&9Iron Catalyst'
+    name: <tier-color-cleaned>Iron Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -288,10 +301,11 @@ IRON_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-GOLD_CATALYST:
+    revision-id: 2
+GOLD_CATALYST3:
   base:
     material: GOLD_INGOT
-    name: '&9Gold Catalyst'
+    name: <tier-color-cleaned>Gold Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -305,10 +319,11 @@ GOLD_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-REDSTONE_CATALYST:
+    revision-id: 2
+REDSTONE_CATALYST3:
   base:
     material: REDSTONE
-    name: '&9Redstone Catalyst'
+    name: <tier-color-cleaned>Redstone Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -322,10 +337,11 @@ REDSTONE_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-LAPIS_CATALYST:
+    revision-id: 2
+LAPIS_CATALYST3:
   base:
     material: LAPIS_LAZULI
-    name: '&9Lapis Catalyst'
+    name: <tier-color-cleaned>Lapis Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -339,10 +355,11 @@ LAPIS_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-DIAMOND_CATALYST:
+    revision-id: 2
+DIAMOND_CATALYST3:
   base:
     material: DIAMOND
-    name: '&9Diamond Catalyst'
+    name: <tier-color-cleaned>Diamond Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -356,10 +373,11 @@ DIAMOND_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-EMERALD_CATALYST:
+    revision-id: 2
+EMERALD_CATALYST3:
   base:
     material: EMERALD
-    name: '&9Emerald Catalyst'
+    name: <tier-color-cleaned>Emerald Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -373,13 +391,14 @@ EMERALD_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-WOOD_CATALYST:
+    revision-id: 2
+WOOD_CATALYST3:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg4YzQ3MzllMjI4M2FhYTYyODE5NTk0ODZkMTQ5ZjMwNmI2ZTY3MjlhNmExYjNiZjljODUzYTIyYTkifX19
       uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
-    name: '&9Wood Catalyst'
+    name: <tier-color-cleaned>Wood Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -392,13 +411,14 @@ WOOD_CATALYST:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-WOOD_CATALYST2:
+    revision-id: 2
+WOOD_CATALYST4:
   base:
     material: PLAYER_HEAD
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FkNTdkMWY2MDQ3OGFmNmFlMWI2YjFjMjhjZWU1MzRkNWRiYjhjOGNhYjg3OTYzZTljMmVmMGM2YWM1OCJ9fX0=
       uuid: d11a2572-6bda-404b-bfaf-3f3bb0a58bd6
-    name: '&5Wood Catalyst'
+    name: <tier-color-cleaned>Wood Catalyst
     unstackable: true
     enchants:
       unbreaking: 5
@@ -411,10 +431,11 @@ WOOD_CATALYST2:
     - §7Hold in your Off-Hand,
     - §7to receive the stat boost!
     hide-enchants: true
-UNBLINDER:
+    revision-id: 2
+UNBLINDER3:
   base:
     material: SOUL_TORCH
-    name: '&9Unblinder'
+    name: <tier-color-cleaned>Unblinder
     tier: RARE
     enchants:
       unbreaking: 5.0
@@ -424,10 +445,11 @@ UNBLINDER:
     - '&7while deep in the corruption of the &5Void&7!'
     disable-interaction: true
     faction-damage-void: 15.0
-CORRUPTION_REVOLTER:
+    revision-id: 2
+CORRUPTION_REVOLTER3:
   base:
     material: BEDROCK
-    name: '&9Corruption Revolter'
+    name: <tier-color-cleaned>Corruption Revolter
     tier: RARE
     enchants:
       unbreaking: 5.0
@@ -438,10 +460,11 @@ CORRUPTION_REVOLTER:
     - '&7while walking over the &8corruption&7!'
     disable-interaction: true
     faction-damage-void: 10.0
-CORRUPTION_REVOLTER2:
+    revision-id: 2
+CORRUPTION_REVOLTER4:
   base:
     material: BEDROCK
-    name: '&5Corruption Revolter'
+    name: <tier-color-cleaned>Corruption Revolter
     tier: LEGENDARY
     enchants:
       unbreaking: 5.0
@@ -455,10 +478,11 @@ CORRUPTION_REVOLTER2:
     - '&7while deep in the corruption of the &5Void&7!'
     disable-interaction: true
     faction-damage-void: 20.0
-HASTY_VOID:
+    revision-id: 2
+HASTY_VOID4:
   base:
     material: END_STONE
-    name: '&5Hasty Void'
+    name: <tier-color-cleaned>Hasty Void
     tier: LEGENDARY
     enchants:
       unbreaking: 5.0
@@ -467,7 +491,8 @@ HASTY_VOID:
     - '&7Provides &aHaste 7 &7while in the &5Void&7!'
     disable-interaction: true
     faction-damage-void: 5.0
-VOID_STONE:
+    revision-id: 2
+VOID_STONE3:
   base:
     material: PURPLE_DYE
     unbreakable: true
@@ -481,11 +506,12 @@ VOID_STONE:
     unstackable: true
     enchants:
       unbreaking: 5
-    name: §9Void Stone
+    name: <tier-color-cleaned>Void Stone
     lore:
     - §8Must be held in §fOff-Hand§8,
     - §8to receive effects
-VOID_STONE2:
+    revision-id: 2
+VOID_STONE4:
   base:
     material: PURPLE_DYE
     unbreakable: true
@@ -499,11 +525,12 @@ VOID_STONE2:
     unstackable: true
     enchants:
       unbreaking: 5
-    name: §5Void Stone
+    name: <tier-color-cleaned>Void Stone
     lore:
     - §8Must be held in §fOff-Hand§8,
     - §8to receive effects
-VOID_STONE3:
+    revision-id: 2
+VOID_STONE5:
   base:
     material: PURPLE_DYE
     unbreakable: true
@@ -517,7 +544,8 @@ VOID_STONE3:
     unstackable: true
     enchants:
       unbreaking: 5
-    name: §eVoid Stone
+    name: <tier-color-cleaned>Void Stone
     lore:
     - §8Must be held in §fOff-Hand§8,
     - §8to receive effects
+    revision-id: 2

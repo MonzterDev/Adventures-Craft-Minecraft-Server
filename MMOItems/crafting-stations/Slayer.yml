@@ -1,7 +1,7 @@
 # 
 # Name which will be displayed
 # when opening the station
-name: §f§l»§7§l» §fCompanions §7§l«§f§l«
+name: <tier-color-cleaned>§l»§7§l» §fCompanions §7§l«§f§l«
 max-queue-size: 10
 items:
   fill:
@@ -11,69 +11,69 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  PET_SKELETON1:
+  PET_SKELETON3:
     output:
       type: COMPANION
-      id: PET_SKELETON1
+      id: PET_SKELETON3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=32}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=320}
     conditions:
     - profession{profession=Slayer,level=3}
-  PET_SKELETONARCHER:
+  PET_UNDEAD_ARCHER3:
     output:
       type: COMPANION
-      id: PET_SKELETONARCHER
+      id: PET_UNDEAD_ARCHER3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=32}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=32}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=320}
     conditions:
     - profession{profession=Slayer,level=4}
-  PET_LOSTSOUL:
+  PET_LOST_SOUL3:
     output:
       type: COMPANION
-      id: PET_LOSTSOUL
+      id: PET_LOST_SOUL3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=64}
     - mmoitem{type=MATERIAL,id=ALPHA_SOUL,amount=32}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=320}
     conditions:
     - profession{profession=Slayer,level=5}
-  PET_UNDEADSPIDER:
+  PET_UNDEAD_SPIDER3:
     output:
       type: COMPANION
-      id: PET_UNDEADSPIDER
+      id: PET_UNDEAD_SPIDER3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=32}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}
     conditions:
     - profession{profession=Slayer,level=6}
-  PET_REAPER:
+  PET_REAPER3:
     output:
       type: COMPANION
-      id: PET_REAPER
+      id: PET_REAPER3
     ingredients:
-    - mmoitem{type=ARMOR,id=GOLDEN_SKULL,amount=1}
+    - mmoitem{type=ARMOR,id=GOLDEN_SKULL4,amount=1}
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=64}
     - mmoitem{type=MATERIAL,id=ENCHANTED_ARROW,amount=64}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}
     conditions:
     - profession{profession=Slayer,level=7}
-  PET_ALPHASOUL:
+  PET_ALPHA_SOUL3:
     output:
       type: COMPANION
-      id: PET_ALPHASOUL
+      id: PET_ALPHA_SOUL3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=128}
     - mmoitem{type=MATERIAL,id=ALPHA_SOUL,amount=64}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}
     conditions:
     - profession{profession=Slayer,level=8}
-  PET_UNDEADCASTER:
+  PET_UNDEAD_CASTER3:
     output:
       type: COMPANION
-      id: PET_UNDEADCASTER
+      id: PET_UNDEAD_CASTER3
     ingredients:
     - mmoitem{type=MATERIAL,id=ENCHANTED_BONE,amount=128}
     - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}

@@ -22,7 +22,7 @@ RepeatDisabled: "notify \n&a&lSummoning Morden &ecan be automatically restarted 
 Repeat: 'folder tag_q1_part1,quest1_start,q1_start_message,entry_q1_part1 conditions:RepeatEnabled'
 
 
-spawnboss: 'run ^command mm mobs spawn GammaBoss 1 Spawn,-43,17,434,-27,12'
+spawnboss: 'run ^command mm mobs spawn MORDEN_THE_UNDEAD1 1 Spawn,-43,17,434,-27,12'
 warpplayer: 'run ^sudo warp Morden'
 mordenrewards: 'chat /mordenrewards'
 questmenu: 'run ^command dm open Quests %player%'

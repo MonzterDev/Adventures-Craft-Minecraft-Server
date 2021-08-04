@@ -1,7 +1,7 @@
 # 
 # Name which will be displayed
 # when opening the station
-name: §f§l»§7§l» §fSpells §7§l«§f§l«
+name: <tier-color-cleaned>§l»§7§l» §fSpells §7§l«§f§l«
 max-queue-size: 100
 layout: default
 items:
@@ -12,10 +12,10 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  TARGETED_FIREBALL:
+  TARGETED_FIREBALL3:
     output:
       type: SPELL
-      id: TARGETED_FIREBALL
+      id: TARGETED_FIREBALL3
       amount: 1
     ingredients:
     - vanilla{type=NETHERRACK,amount=64}
@@ -25,10 +25,10 @@ recipes:
     - profession{profession=Spellforging,level=1}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  SPARKLE:
+  SPARKLE3:
     output:
       type: SPELL
-      id: SPARKLE
+      id: SPARKLE3
       amount: 1
     ingredients:
     - vanilla{type=BONE,amount=64}
@@ -38,10 +38,10 @@ recipes:
     - profession{profession=Spellforging,level=2}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  BUNNY_MODE:
+  BUNNY_MODE3:
     output:
       type: SPELL
-      id: BUNNY_MODE
+      id: BUNNY_MODE3
       amount: 1
     ingredients:
     - vanilla{type=RABBIT_FOOT,amount=64}
@@ -51,10 +51,10 @@ recipes:
     - profession{profession=Spellforging,level=2}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  ARCANE_RIFT:
+  ARCANE_RIFT3:
     output:
       type: SPELL
-      id: ARCANE_RIFT
+      id: ARCANE_RIFT3
       amount: 1
     ingredients:
     - vanilla{type=END_STONE,amount=64}
@@ -64,10 +64,10 @@ recipes:
     - profession{profession=Spellforging,level=3}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  BURNING_HANDS:
+  BURNING_HANDS3:
     output:
       type: SPELL
-      id: BURNING_HANDS
+      id: BURNING_HANDS3
       amount: 1
     ingredients:
     - vanilla{type=MAGMA_CREAM,amount=64}
@@ -77,10 +77,10 @@ recipes:
     - profession{profession=Spellforging,level=3}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  FREEZING_CURSE:
+  FREEZING_CURSE3:
     output:
       type: SPELL
-      id: FREEZING_CURSE
+      id: FREEZING_CURSE3
       amount: 1
     ingredients:
     - vanilla{type=ICE,amount=64}
@@ -90,10 +90,10 @@ recipes:
     - profession{profession=Spellforging,level=3}
     triggers:
     - exp{profession=Spellforging,amount=100}
-  SHULKER_MISSILE:
+  SHULKER_MISSILE3:
     output:
       type: SPELL
-      id: SHULKER_MISSILE
+      id: SHULKER_MISSILE3
       amount: 1
     ingredients:
     - vanilla{type=FEATHER,amount=64}
@@ -103,10 +103,10 @@ recipes:
     - profession{profession=Spellforging,level=4}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  ARCANE_HAIL:
+  ARCANE_HAIL3:
     output:
       type: SPELL
-      id: ARCANE_HAIL
+      id: ARCANE_HAIL3
       amount: 1
     ingredients:
     - vanilla{type=ICE,amount=64}
@@ -116,10 +116,10 @@ recipes:
     - profession{profession=Spellforging,level=4}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  FROZEN_AURA:
+  FROZEN_AURA3:
     output:
       type: SPELL
-      id: FROZEN_AURA
+      id: FROZEN_AURA3
       amount: 1
     ingredients:
     - vanilla{type=ICE,amount=128}
@@ -128,10 +128,10 @@ recipes:
     - profession{profession=Spellforging,level=4}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  MAGMA_FISSURE:
+  MAGMA_FISSURE3:
     output:
       type: SPELL
-      id: MAGMA_FISSURE
+      id: MAGMA_FISSURE3
       amount: 1
     ingredients:
     - vanilla{type=MAGMA_CREAM,amount=64}
@@ -141,10 +141,10 @@ recipes:
     - profession{profession=Spellforging,level=5}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  ICE_CRYSTAL:
+  ICE_CRYSTAL3:
     output:
       type: SPELL
-      id: ICE_CRYSTAL
+      id: ICE_CRYSTAL3
       amount: 1
     ingredients:
     - vanilla{type=ICE,amount=64}
@@ -154,10 +154,10 @@ recipes:
     - profession{profession=Spellforging,level=5}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  CORRUPTED_FANGS:
+  CORRUPTED_FANGS3:
     output:
       type: SPELL
-      id: CORRUPTED_FANGS
+      id: CORRUPTED_FANGS3
       amount: 1
     ingredients:
     - vanilla{type=END_STONE,amount=64}
@@ -168,10 +168,10 @@ recipes:
     - profession{profession=Spellforging,level=5}
     triggers:
     - exp{profession=Spellforging,amount=200}
-  BLACK_HOLE:
+  BLACK_HOLE3:
     output:
       type: SPELL
-      id: BLACK_HOLE
+      id: BLACK_HOLE3
       amount: 1
     ingredients:
     - vanilla{type=END_STONE,amount=64}
@@ -181,10 +181,10 @@ recipes:
     - profession{profession=Spellforging,level=6}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  BOUNCY_FIREBALL:
+  BOUNCY_FIREBALL3:
     output:
       type: SPELL
-      id: BOUNCY_FIREBALL
+      id: BOUNCY_FIREBALL3
       amount: 1
     ingredients:
     - vanilla{type=MAGMA_CREAM,amount=64}
@@ -194,10 +194,10 @@ recipes:
     - profession{profession=Spellforging,level=6}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  CURSED_BEAM:
+  CURSED_BEAM3:
     output:
       type: SPELL
-      id: CURSED_BEAM
+      id: CURSED_BEAM3
       amount: 1
     ingredients:
     - vanilla{type=GUNPOWDER,amount=64}
@@ -206,10 +206,10 @@ recipes:
     - profession{profession=Spellforging,level=6}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  LIFE_ENDER:
+  LIFE_ENDER3:
     output:
       type: SPELL
-      id: LIFE_ENDER
+      id: LIFE_ENDER3
       amount: 1
     ingredients:
     - vanilla{type=ENDER_PEARL,amount=64}
@@ -219,10 +219,10 @@ recipes:
     - profession{profession=Spellforging,level=7}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  CORRUPT:
+  CORRUPT3:
     output:
       type: SPELL
-      id: CORRUPT
+      id: CORRUPT3
       amount: 1
     ingredients:
     - vanilla{type=MAGMA_CREAM,amount=64}
@@ -232,10 +232,10 @@ recipes:
     - profession{profession=Spellforging,level=7}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  CONTAMINATION_RITUAL:
+  CONTAMINATION_RITUAL3:
     output:
       type: SPELL
-      id: CONTAMINATION_RITUAL
+      id: CONTAMINATION_RITUAL3
       amount: 1
     ingredients:
     - vanilla{type=CACTUS,amount=64}
@@ -246,10 +246,10 @@ recipes:
     - profession{profession=Spellforging,level=9}
     triggers:
     - exp{profession=Spellforging,amount=300}
-  MONITOR_MUTE:
+  MONITOR_MUTE3:
     output:
       type: SPELL
-      id: MONITOR_MUTE
+      id: MONITOR_MUTE3
       amount: 1
     ingredients:
     - vanilla{type=OBSIDIAN,amount=64}

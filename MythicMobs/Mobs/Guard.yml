@@ -1,8 +1,7 @@
-Guard3:
+Guard3: &Guard
   Type: IRON_GOLEM
   Display: ''
   Damage: 99999
-  Health: 0
   Faction: VillageGuards
   Options:
     ApplyInvisibility: true
@@ -19,62 +18,14 @@ Guard3:
   Skills:
   - remove @EIR{r=3;ignore=players} ~onTimer:40
 Guard5:
-  Type: IRON_GOLEM
-  Display: ''
-  Damage: 99999
-  Health: 0
-  Faction: VillageGuards
-  Options:
-    ApplyInvisibility: true
-    AlwaysShowName: false
-    Collidable: false
-    Invincible: true
-    Despawn: true
-    NoAI: true    
-    KnockbackResistance: 1
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.00001
-    Silent: true
   Skills:
   - remove @EIR{r=5;ignore=players} ~onTimer:40
+  <<: *Guard
 Guard7:
-  Type: IRON_GOLEM
-  Display: ''
-  Damage: 99999
-  Health: 0
-  Faction: VillageGuards
-  Options:
-    ApplyInvisibility: true
-    AlwaysShowName: false
-    Collidable: false
-    Invincible: true
-    Despawn: true
-    NoAI: true    
-    KnockbackResistance: 1
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.00001
-    Silent: true
   Skills:
   - remove @EIR{r=7;ignore=players} ~onTimer:40
+  <<: *Guard
 Guard10:
-  Type: IRON_GOLEM
-  Display: ''
-  Damage: 99999
-  Health: 0
-  Faction: VillageGuards
-  Options:
-    ApplyInvisibility: true
-    AlwaysShowName: false
-    Collidable: false
-    Invincible: true
-    Despawn: true
-    NoAI: true    
-    KnockbackResistance: 1
-    PreventOtherDrops: true
-    PreventMobKillDrops: true
-    MovementSpeed: 0.00001
-    Silent: true
   Skills:
   - remove @EIR{r=10;ignore=players} ~onTimer:40
+  <<: *Guard

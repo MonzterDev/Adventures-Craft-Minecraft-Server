@@ -9,29 +9,33 @@ Rent:
 Priority: 0
 Icon:
   ==: org.bukkit.inventory.ItemStack
-  v: 2580
+  v: 2586
   type: DIRT
   meta:
     ==: ItemMeta
     meta-type: UNSPECIFIC
     lore:
-    - §8§l» §eClick to Access
+    - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+      "},{"bold":false,"italic":false,"color":"yellow","text":"Click to Access"}],"text":""}'
 item:
   '0':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: SUNFLOWER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §eBank Token
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Bank
+          Token"}],"text":""}'
         lore:
-        - §fMaterial
-        - ''
-        - §7Trade for an extra Bank Page!
-        - ''
-        - §e§lEXOTIC ITEM
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Material"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Trade
+          for an extra Bank Page!"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"EXOTIC
+          ITEM"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier
@@ -47,18 +51,21 @@ item:
   '1':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: SUNFLOWER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §eBank Token
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Bank
+          Token"}],"text":""}'
         lore:
-        - §fMaterial
-        - ''
-        - §7Trade for an extra Bank Page!
-        - ''
-        - §e§lEXOTIC ITEM
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Material"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Trade
+          for an extra Bank Page!"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"EXOTIC
+          ITEM"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier
@@ -74,18 +81,21 @@ item:
   '2':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
+      v: 2586
       type: SUNFLOWER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §eBank Token
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Bank
+          Token"}],"text":""}'
         lore:
-        - §fMaterial
-        - ''
-        - §7Trade for an extra Bank Page!
-        - ''
-        - §e§lEXOTIC ITEM
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Material"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Trade
+          for an extra Bank Page!"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"EXOTIC
+          ITEM"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier

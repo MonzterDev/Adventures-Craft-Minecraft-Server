@@ -1,32 +1,32 @@
 #Slay Undead 1
-SlayUndead1: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:500 events:entry_q1_complete global
+SlayUndead1: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:500 events:entry_q1_complete global
 #Slay Undead 2
-SlayUndead2: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:1000 events:entry_q2_complete global
+SlayUndead2: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:1000 events:entry_q2_complete global
 #Slay Undead 3
-SlayUndead3: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:5000 events:entry_q3_complete global
+SlayUndead3: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:5000 events:entry_q3_complete global
 #Slay Undead 4
-SlayUndead4: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:10000 events:entry_q4_complete global
+SlayUndead4: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:10000 events:entry_q4_complete global
 #Slay Undead 5
-SlayUndead5: mmobkill Skeleton1,SkeletonArcher,ReaperBoss,GammaBoss,GammaBoss2,GammaBoss3,BOSS_BLOCK,UndeadSpider,cSkeleton1,cSkeletonArcher,AlphaSoul,UndeadSummoner,UndeadGuard,UndeadCaster,UndeadWarrior amount:25000 events:entry_q5_complete global
+SlayUndead5: mmobkill UNDEAD_SKELETON,UNDEAD_ARCHER,REAPER,MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:25000 events:entry_q5_complete global
 
 #Slay Reaper 1
-SlayReaper1: mmobkill ReaperBoss amount:1 events:entry_q6_complete global
+SlayReaper1: mmobkill REAPER amount:1 events:entry_q6_complete global
 #Slay Reaper 2
-SlayReaper2: mmobkill ReaperBoss amount:25 events:entry_q7_complete global
+SlayReaper2: mmobkill REAPER amount:25 events:entry_q7_complete global
 #Slay Reaper 3
-SlayReaper3: mmobkill ReaperBoss amount:50 events:entry_q8_complete global
+SlayReaper3: mmobkill REAPER amount:50 events:entry_q8_complete global
 #Slay Reaper 4
-SlayReaper4: mmobkill ReaperBoss amount:100 events:entry_q9_complete global
+SlayReaper4: mmobkill REAPER amount:100 events:entry_q9_complete global
 #Slay Reaper 5
-SlayReaper5: mmobkill ReaperBoss amount:250 events:entry_q10_complete global
+SlayReaper5: mmobkill REAPER amount:250 events:entry_q10_complete global
 
 #Slay Morden 1
-SlayMorden1: mmobkill GammaBoss3 amount:1 events:entry_q11_complete global
+SlayMorden1: mmobkill MORDEN_THE_UNDEAD amount:1 events:entry_q11_complete global
 #Slay Morden 2
-SlayMorden2: mmobkill GammaBoss3 amount:25 events:entry_q12_complete global
+SlayMorden2: mmobkill MORDEN_THE_UNDEAD amount:25 events:entry_q12_complete global
 #Slay Morden 3
-SlayMorden3: mmobkill GammaBoss3 amount:50 events:entry_q13_complete global
+SlayMorden3: mmobkill MORDEN_THE_UNDEAD amount:50 events:entry_q13_complete global
 #Slay Morden 4
-SlayMorden4: mmobkill GammaBoss3 amount:100 events:entry_q14_complete global
+SlayMorden4: mmobkill MORDEN_THE_UNDEAD amount:100 events:entry_q14_complete global
 #Slay Morden 5
-SlayMorden5: mmobkill GammaBoss3 amount:250 events:entry_q15_complete global
+SlayMorden5: mmobkill MORDEN_THE_UNDEAD amount:250 events:entry_q15_complete global

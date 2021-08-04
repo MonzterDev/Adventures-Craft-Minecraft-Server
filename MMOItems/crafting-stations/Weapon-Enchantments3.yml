@@ -15,17 +15,17 @@ items:
     name: '&c&lLOCKED'
 
 recipes:
-  STAGGER1:
+  STAGGER:
     options:
         output-item: false
     output:
       type: ENCHANTMENT
-      id: STAGGER1
+      id: STAGGER
     ingredients:
     - vanilla{type=OAK_LOG,amount=0}
     triggers:
     - exp{profession=ENCHANTING;amount=100}
-    - command{format="artifacts enchant STAGGER 1",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 1",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}
   STAGGER2:
@@ -38,6 +38,6 @@ recipes:
     - vanilla{type=OAK_LOG,amount=0}
     triggers:
     - exp{profession=ENCHANTING;amount=200}
-    - command{format="artifacts enchant STAGGER 2",sender=OP}
+    - command{format="mythicenchants enchant STAGGER 2",sender=OP}
     conditions:
     - profession{profession=Enchanting,level=3}

@@ -1,4 +1,4 @@
-JACKS_AXE1:
+JACKS_AXE:
   base:
     material: WOODEN_AXE
     lore:
@@ -6,15 +6,16 @@ JACKS_AXE1:
     tier: COMMON
     perm-effects:
       FAST_DIGGING: 1
-    name: '&fJack''s Worst Axe'
+    name: <tier-color-cleaned>Jack's Worst Axe
     attack-damage: 15.0
     enchants:
       efficiency: 2.0
     unbreakable: true
+    revision-id: 2
 JACKS_AXE2:
   base:
     material: STONE_AXE
-    name: '&2Jack''s Poor Axe'
+    name: <tier-color-cleaned>Jack's Poor Axe
     tier: UNCOMMON
     perm-effects:
       FAST_DIGGING: 1
@@ -24,6 +25,7 @@ JACKS_AXE2:
     enchants:
       efficiency: 2.0
     unbreakable: true
+    revision-id: 2
 JACKS_AXE3:
   base:
     material: IRON_AXE
@@ -34,7 +36,7 @@ JACKS_AXE3:
     disable-smelting: true
     hide-enchants: false
     tier: RARE
-    name: '&9Jack''s Decent Axe'
+    name: <tier-color-cleaned>Jack's Decent Axe
     perm-effects:
       FAST_DIGGING: 1
     lore:
@@ -42,6 +44,7 @@ JACKS_AXE3:
     attack-damage: 35.0
     enchants:
       efficiency: 2.0
+    revision-id: 2
 JACKS_AXE4:
   base:
     material: DIAMOND_AXE
@@ -49,7 +52,7 @@ JACKS_AXE4:
     perm-effects:
       FAST_DIGGING: 1
     tier: LEGENDARY
-    name: '&5Jack''s Better Axe'
+    name: <tier-color-cleaned>Jack's Better Axe
     lore:
     - '&fJack''s more upgraded Axe!'
     attack-damage: 50.0
@@ -57,6 +60,7 @@ JACKS_AXE4:
       efficiency: 2.0
     gem-sockets:
     - Unused
+    revision-id: 2
 JACKS_AXE5:
   base:
     material: GOLDEN_AXE
@@ -66,15 +70,16 @@ JACKS_AXE5:
     unbreakable: true
     perm-effects:
       FAST_DIGGING: 1
-    name: '&eJack''s Best Axe!'
+    name: <tier-color-cleaned>Jack's Best Axe!
     attack-damage: 65.0
     critical-strike-power: 15.0
     enchants:
       efficiency: 2.0
+    revision-id: 2
 QUEST_COMPASS:
   base:
     material: COMPASS
-    name: §fQuest Compass
+    name: <tier-color-cleaned>Quest Compass
     lore:
     - §fUse this to guide you on Quests!
     disable-interaction: true
@@ -83,130 +88,152 @@ QUEST_COMPASS:
     disable-smelting: true
     disable-crafting: true
     unbreakable: true
+    tier: COMMON
+    revision-id: 2
 WOODEN_AXE:
   base:
     material: WOODEN_AXE
-    name: §fWooden Axe
+    name: <tier-color-cleaned>Wooden Axe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 STONE_AXE:
   base:
     material: STONE_AXE
-    name: §fStone Axe
+    name: <tier-color-cleaned>Stone Axe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 IRON_AXE:
   base:
     material: IRON_AXE
-    name: §fIron Axe
+    name: <tier-color-cleaned>Iron Axe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 GOLDEN_AXE:
   base:
     material: GOLDEN_AXE
-    name: §fGold Axe
+    name: <tier-color-cleaned>Gold Axe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 DIAMOND_AXE:
   base:
     material: DIAMOND_AXE
-    name: §fDiamond Axe
+    name: <tier-color-cleaned>Diamond Axe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 WOODEN_PICKAXE:
   base:
     material: WOODEN_PICKAXE
-    name: §fWooden Pickaxe
+    name: <tier-color-cleaned>Wooden Pickaxe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 STONE_PICKAXE:
   base:
     material: STONE_PICKAXE
-    name: §fStone Pickaxe
+    name: <tier-color-cleaned>Stone Pickaxe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 IRON_PICKAXE:
   base:
     material: IRON_PICKAXE
-    name: §fIron Pickaxe
+    name: <tier-color-cleaned>Iron Pickaxe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 GOLDEN_PICKAXE:
   base:
     material: GOLDEN_PICKAXE
-    name: §fGold Pickaxe
+    name: <tier-color-cleaned>Gold Pickaxe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 DIAMOND_PICKAXE:
   base:
     material: DIAMOND_PICKAXE
-    name: §fDiamond Pickaxe
+    name: <tier-color-cleaned>Diamond Pickaxe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 WOODEN_HOE:
   base:
     material: WOODEN_HOE
-    name: §fWooden Hoe
+    name: <tier-color-cleaned>Wooden Hoe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 STONE_HOE:
   base:
     material: STONE_HOE
-    name: §fStone Hoe
+    name: <tier-color-cleaned>Stone Hoe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 IRON_HOE:
   base:
     material: IRON_HOE
-    name: §fIron Hoe
+    name: <tier-color-cleaned>Iron Hoe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 GOLDEN_HOE:
   base:
     material: GOLDEN_HOE
-    name: §fGold Hoe
+    name: <tier-color-cleaned>Gold Hoe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 DIAMOND_HOE:
   base:
     material: DIAMOND_HOE
-    name: §fDiamond Hoe
+    name: <tier-color-cleaned>Diamond Hoe
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 WOODEN_SHOVEL:
   base:
     material: WOODEN_SHOVEL
-    name: §fWooden Shovel
+    name: <tier-color-cleaned>Wooden Shovel
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 STONE_SHOVEL:
   base:
     material: STONE_SHOVEL
-    name: §fStone Shovel
+    name: <tier-color-cleaned>Stone Shovel
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 IRON_SHOVEL:
   base:
     material: IRON_SHOVEL
-    name: §fIron Shovel
+    name: <tier-color-cleaned>Iron Shovel
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 GOLDEN_SHOVEL:
   base:
     material: GOLDEN_SHOVEL
-    name: §fGold Shovel
+    name: <tier-color-cleaned>Gold Shovel
     unbreakable: true
     tier: COMMON
+    revision-id: 2
 DIAMOND_SHOVEL:
   base:
     material: DIAMOND_SHOVEL
-    name: §fDiamond Shovel
+    name: <tier-color-cleaned>Diamond Shovel
     unbreakable: true
     tier: COMMON
-JACKS_BESTER_AXE:
+    revision-id: 2
+JACKS_BESTER_AXE5:
   base:
     material: GOLDEN_AXE
-    name: §eJack's Bester Axe
+    name: <tier-color-cleaned>Jack's Bester Axe
     lore:
     - §7Jack's Axe is even bester!
     perm-effects:
@@ -215,20 +242,22 @@ JACKS_BESTER_AXE:
       efficiency: 5
     unbreakable: true
     tier: EXOTIC
-JACKS_BESTEST_AXE:
+    revision-id: 2
+JACKS_BESTEST_AXE5:
   base:
     material: GOLDEN_AXE
-    name: §eJack's Bestest Axe
+    name: <tier-color-cleaned>Jack's Bestest Axe
     lore:
     - §7Jack's got §aHaste 3§7!
     unbreakable: true
     tier: EXOTIC
     perm-effects:
       FAST_DIGGING: 3
+    revision-id: 2
 MINER_PICKAXE:
   base:
     material: WOODEN_PICKAXE
-    name: §fMiners Pickaxe
+    name: <tier-color-cleaned>Miners Pickaxe
     unbreakable: true
     tier: COMMON
     lore:
@@ -237,10 +266,11 @@ MINER_PICKAXE:
       FAST_DIGGING: 1
     enchants:
       efficiency: 2.0
-MINER_PICKAXE1:
+    revision-id: 2
+MINER_PICKAXE2:
   base:
     material: STONE_PICKAXE
-    name: §2Miners Pickaxe
+    name: <tier-color-cleaned>Miners Pickaxe
     unbreakable: true
     tier: UNCOMMON
     lore:
@@ -249,10 +279,11 @@ MINER_PICKAXE1:
       FAST_DIGGING: 1
     enchants:
       efficiency: 2.0
-MINER_PICKAXE2:
+    revision-id: 2
+MINER_PICKAXE3:
   base:
     material: IRON_PICKAXE
-    name: §9Miners Pickaxe
+    name: <tier-color-cleaned>Miners Pickaxe
     unbreakable: true
     tier: RARE
     lore:
@@ -261,10 +292,11 @@ MINER_PICKAXE2:
       FAST_DIGGING: 1
     enchants:
       efficiency: 2.0
-MINER_PICKAXE3:
+    revision-id: 2
+MINER_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Miners Pickaxe
+    name: <tier-color-cleaned>Miners Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -275,10 +307,11 @@ MINER_PICKAXE3:
       efficiency: 2.0
     gem-sockets:
     - Unused
-MINER_PICKAXE4:
+    revision-id: 2
+MINER_PICKAXE5:
   base:
     material: GOLDEN_PICKAXE
-    name: §eMiners Pickaxe
+    name: <tier-color-cleaned>Miners Pickaxe
     unbreakable: true
     tier: EXOTIC
     lore:
@@ -287,20 +320,22 @@ MINER_PICKAXE4:
       FAST_DIGGING: 1
     enchants:
       efficiency: 2.0
-CEMENTED_STONE_PICKAXE:
+    revision-id: 2
+CEMENTED_STONE_PICKAXE3:
   base:
     material: IRON_PICKAXE
-    name: §9Cemented Stone Pickaxe
+    name: <tier-color-cleaned>Cemented Stone Pickaxe
     unbreakable: true
     tier: RARE
     lore:
     - §7This stone pickaxe is heavily reinforced with cement!
     enchants:
       efficiency: 3.0
-EMERALD_PICKAXE:
+    revision-id: 2
+EMERALD_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Emerald Pickaxe
+    name: <tier-color-cleaned>Emerald Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -310,10 +345,11 @@ EMERALD_PICKAXE:
       fortune: 2.0
     gem-sockets:
     - Unused
-GEORGES_PICKAXE:
+    revision-id: 2
+GEORGES_PICKAXE3:
   base:
     material: GOLDEN_PICKAXE
-    name: §9Georges Pickaxe
+    name: <tier-color-cleaned>Georges Pickaxe
     unbreakable: true
     tier: RARE
     lore:
@@ -322,10 +358,11 @@ GEORGES_PICKAXE:
       FAST_DIGGING: 3
     enchants:
       efficiency: 3.0
-GEORGES_PICKAXE2:
+    revision-id: 2
+GEORGES_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Georges Pickaxe
+    name: <tier-color-cleaned>Georges Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -336,10 +373,11 @@ GEORGES_PICKAXE2:
       efficiency: 5.0
     gem-sockets:
     - Unused
-LENNYS_PICKAXE:
+    revision-id: 2
+LENNYS_PICKAXE3:
   base:
     material: IRON_PICKAXE
-    name: §9Lennys Pickaxe
+    name: <tier-color-cleaned>Lennys Pickaxe
     unbreakable: true
     tier: RARE
     lore:
@@ -348,10 +386,11 @@ LENNYS_PICKAXE:
       FAST_DIGGING: 5
     enchants:
       efficiency: 2.0
-LENNYS_PICKAXE2:
+    revision-id: 2
+LENNYS_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Lennys Pickaxe
+    name: <tier-color-cleaned>Lennys Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -362,10 +401,11 @@ LENNYS_PICKAXE2:
       efficiency: 3.0
     gem-sockets:
     - Unused
-MORRYS_PICKAXE:
+    revision-id: 2
+MORRYS_PICKAXE3:
   base:
     material: IRON_PICKAXE
-    name: §9Lennys Pickaxe
+    name: <tier-color-cleaned>Lennys Pickaxe
     unbreakable: true
     hide-enchants: true
     tier: RARE
@@ -374,10 +414,11 @@ MORRYS_PICKAXE:
     - §7Fortune II
     enchants:
       efficiency: 3.0
-MORRYS_PICKAXE2:
+    revision-id: 2
+MORRYS_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Lennys Pickaxe
+    name: <tier-color-cleaned>Lennys Pickaxe
     unbreakable: true
     hide-enchants: true
     tier: LEGENDARY
@@ -388,10 +429,11 @@ MORRYS_PICKAXE2:
       efficiency: 5.0
     gem-sockets:
     - Unused
-LUKES_AXE:
+    revision-id: 2
+LUKES_AXE3:
   base:
     material: GOLDEN_AXE
-    name: §9Lukes Axe
+    name: <tier-color-cleaned>Lukes Axe
     unbreakable: true
     tier: RARE
     lore:
@@ -400,10 +442,11 @@ LUKES_AXE:
       FAST_DIGGING: 3
     enchants:
       efficiency: 3.0
-LUKES_AXE2:
+    revision-id: 2
+LUKES_AXE4:
   base:
     material: DIAMOND_AXE
-    name: §5Lukes Axe
+    name: <tier-color-cleaned>Lukes Axe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -414,10 +457,11 @@ LUKES_AXE2:
       efficiency: 5.0
     gem-sockets:
     - Unused
-JENNYS_AXE:
+    revision-id: 2
+JENNYS_AXE3:
   base:
     material: IRON_AXE
-    name: §9Jennys Axe
+    name: <tier-color-cleaned>Jennys Axe
     unbreakable: true
     tier: RARE
     lore:
@@ -426,10 +470,11 @@ JENNYS_AXE:
       FAST_DIGGING: 5
     enchants:
       efficiency: 2.0
-JENNYS_AXE2:
+    revision-id: 2
+JENNYS_AXE4:
   base:
     material: DIAMOND_AXE
-    name: §5Jennys Axe
+    name: <tier-color-cleaned>Jennys Axe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -440,20 +485,22 @@ JENNYS_AXE2:
       efficiency: 4.0
     gem-sockets:
     - Unused
-MAXES_AXE:
+    revision-id: 2
+MAXES_AXE3:
   base:
     material: DIAMOND_AXE
-    name: §9Maxes Axe
+    name: <tier-color-cleaned>Maxes Axe
     unbreakable: true
     hide-enchants: true
     tier: RARE
     enchants:
       efficiency: 6.0
     movement-speed: 0.025
-MAXES_AXE2:
+    revision-id: 2
+MAXES_AXE4:
   base:
     material: GOLDEN_AXE
-    name: §5Maxes Axe
+    name: <tier-color-cleaned>Maxes Axe
     unbreakable: true
     hide-enchants: true
     tier: LEGENDARY
@@ -462,10 +509,11 @@ MAXES_AXE2:
     movement-speed: 0.05
     gem-sockets:
     - Unused
-CORRUPT_PICKAXE:
+    revision-id: 2
+CORRUPT_PICKAXE4:
   base:
     material: NETHERITE_PICKAXE
-    name: §5Corrupt Pickaxe
+    name: <tier-color-cleaned>Corrupt Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -475,10 +523,11 @@ CORRUPT_PICKAXE:
       efficiency: 5.0
     gem-sockets:
     - Unused
-DRACS_PICKAXE:
+    revision-id: 2
+DRACS_PICKAXE4:
   base:
     material: DIAMOND_PICKAXE
-    name: §5Dracs Pickaxe
+    name: <tier-color-cleaned>Dracs Pickaxe
     unbreakable: true
     tier: LEGENDARY
     lore:
@@ -490,3 +539,4 @@ DRACS_PICKAXE:
     gem-sockets:
     - Unused
     defense: 10
+    revision-id: 2

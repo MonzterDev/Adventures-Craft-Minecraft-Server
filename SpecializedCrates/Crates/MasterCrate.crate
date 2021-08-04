@@ -1,0 +1,234 @@
+enabled: true
+obtain-method: STATIC
+inventory-name: '&5&l> &dMaster Crate &5&l<'
+reward-display:
+  type: CUSTOM
+  name: '&6&lCUSTOM &eReward Preview Menu'
+  custom-display:
+    nextpageitem: '1'
+    lastpageitem: '3'
+    pages:
+      '1':
+      - 0,0,0,0,0,0,0,0,0
+      - 0,DiamondSword,Diamond,Speed,Jump,SuperGoldenApple,GoldenApple,,0
+      - 0,,,,,,,,0
+      - 0,0,0,0,0,0,0,0,1
+      '2':
+      - 2,2,2,2,2,2,2,2,2
+      - 2,Grass,Dirt,SpecialDirt2,SpecialDirt,,,,2
+      - 2,,,,,,,,2
+      - 3,2,2,2,2,2,2,2,2
+    items:
+      '0':
+        material: GREEN_STAINED_GLASS_PANE
+        glow: false
+        amount: 1
+        name: '&6&lCUSTOM &eReward Preview Type'
+      '1':
+        material: ARROW
+        glow: false
+        amount: 1
+        name: '&b&lNext &bPage'
+      '2':
+        material: BLUE_STAINED_GLASS_PANE
+        glow: false
+        amount: 1
+        name: '&1&lCUSTOM &bReward Preview Menu'
+      '3':
+        material: ARROW
+        glow: false
+        amount: 1
+        name: '&b&lPrevious &bPage'
+display:
+  type: block
+
+crate:
+  material: Chest;0
+  name: '&5&l> &dMaster Crate &5&l<'
+  lore:
+  - ''
+  - '   &e%keys% &7keys'
+  - ''
+  - '&dHas the &5&lRAREST &dof rewards'
+  enchantments:
+  - DURABILITY;0
+
+key:
+  require: true
+  material: TRIPWIRE_HOOK
+  enchantments:
+  - DURABILITY;0
+  name: '&5&l> &dMaster Crate Key &5&l<'
+  lore:
+  - ''
+  - '&5&lKey&e&l:'
+  - ''
+  - '&7This key is only usable'
+  - '&7on the &eMaster Crate&7.'
+
+rewards:
+- Diamond
+- Dirt
+- DiamondSword
+- Speed
+- SuperGoldenApple
+- GoldenApple
+- Grass
+- SpecialDirt
+- Jump
+- SpecialDirt2
+
+hologram:
+  reward-hologram: '&a+ &c%reward% &a+'
+  reward-hologram-duration: 60
+  reward-hologram-yoffset: 0
+  lines:
+  - '&5&l> &dMaster Crate &5&l<'
+  - '&c--'
+  - '&e&oBuy me on store.website.com'
+
+play:
+  particles:
+    '1':
+      type: FLAME
+      range-x: 0.7
+      range-y: 0.7
+      range-z: 0.7
+      speed: 0.05
+      amount: 1
+      animation: NONE
+      center-x: 0
+      center-y: 0
+      center-z: 0
+    '2':
+      type: SMOKE_NORMAL
+      range-x: 1.0
+      range-y: 0.0
+      range-z: 0.0
+      speed: 0.0
+      amount: 1
+      animation: TILTED_RINGS
+      center-x: 0
+      center-y: 0
+      center-z: 0
+
+open:
+  crate-animation: INV_ROULETTE
+
+  tier-actions-override-defaults: true
+
+  particles:
+    '1':
+      type: SUSPENDED_DEPTH
+      range-x: 3.0
+      range-y: 2.0
+      range-z: 3.0
+      speed: 1.0
+      amount: 30
+      animation: NONE
+      center-x: 0
+      center-y: 0
+      center-z: 0
+    '2':
+      type: CRIT_MAGIC
+      range-x: 3.0
+      range-y: 2.0
+      range-z: 3.0
+      speed: 1.0
+      amount: 10
+      animation: NONE
+      center-x: 0
+      center-y: 0
+      center-z: 0
+    '3':
+      type: EXPLOSION_HUGE
+      range-x: 0.0
+      range-y: 0.0
+      range-z: 0.0
+      speed: 1.0
+      amount: 1
+      animation: NONE
+      center-x: 0
+      center-y: 0
+      center-z: 0
+
+  fireworks:
+  - BLUE;AQUA, WHITE;YELLOW;ORANGE, false, true, STAR, 1
+
+  sounds:
+  - ENTITY_PLAYER_LEVELUP, 10, 10
+
+  actions:
+  - MESSAGE, &7&lCrates &3&l> &eYou won %reward%
+  - BROADCAST, &7&lCrates &3&l> &e&l%player% just unboxed a case!
+  - ACTIONBAR, &eYou have won an award!
+  - TITLE, &6You just opened
+  - SUBTITLE, &c%reward%
+  - PRE_BROADCAST, &6&l%player% &7is unboxing a &cMaster Crate!
+
+
+  crate-tiers:
+    rare:
+      actions:
+      - MESSAGE, &7&lCrates &3&l> &eYou won %reward%
+      - BROADCAST, &aCrates &3&l> &e&l%player% just won a &eRARE &eitem.
+      particles:
+        '1':
+          type: SPELL_WITCH
+          range-x: 3.0
+          range-y: 3.0
+          range-z: 3.0
+          speed: 0.01
+          amount: 100
+          animation: NONE
+          center-x: 0
+          center-y: 0
+          center-z: 0
+        '2':
+          type: FLAME
+          range-x: 3.0
+          range-y: 3.0
+          range-z: 3.0
+          speed: 0.05
+          amount: 50
+          animation: NONE
+          center-x: 0
+          center-y: 0
+          center-z: 0
+      sounds:
+      - ENTITY_ENDER_DRAGON_GROWL, 1, 5
+      - AMBIENT_CAVE, 1, 5
+
+    legendary:
+      actions:
+      - MESSAGE, &7&lCrates &3&l> &eYou won %reward%
+      - BROADCAST, &aCrates &3&l> &e&l%player% just won a &eLEGENDARY &eitem.
+      particles:
+        '1':
+          type: SPELL_WITCH
+          range-x: 3.0
+          range-y: 3.0
+          range-z: 3.0
+          speed: 0.01
+          amount: 100
+          animation: NONE
+          center-x: 0
+          center-y: 0
+          center-z: 0
+        '2':
+          type: FLAME
+          range-x: 3.0
+          range-y: 3.0
+          range-z: 3.0
+          speed: 0.05
+          amount: 50
+          animation: NONE
+          center-x: 0
+          center-y: 0
+          center-z: 0
+      sounds:
+      - ENTITY_ENDER_DRAGON_GROWL, 1, 5
+      - AMBIENT_CAVE, 1, 5
+      fireworks:
+      - BLACK, WHITE, false, true, STAR, 1
+cooldown: 0

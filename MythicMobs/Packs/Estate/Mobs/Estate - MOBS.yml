@@ -1,0 +1,105 @@
+BABY_GOBLIN: # Original GOBLIN
+  Type: BABY_ZOMBIE_VILLAGER
+  Display: '&7[&fLVL 5&7] &cBaby Goblin'
+  Health: 200
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.32
+    FollowRange: 6
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Equipment: 
+  - BABY_GOBLIN_HEAD Head
+  - BABY_GOBLIN_SWORD:0
+  - BABY_GOBLIN_CHESTPLATE chest
+  Drops:
+  - EXP 1-3 100%
+  AIGoalSelectors: &AIGoalSelectors
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors: &AITargetSelectors
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=25} @target ~onAttack
+  - skill{s=GOBLIN_MOUNT_HOUND} ~onTimer:300
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+GOBLIN:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 5&7] &cGoblin'
+  Health: 300
+  Damage: 0
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: 
+    MovementSpeed: 0.28
+    <<: *Options
+  Equipment:
+  - GOBLIN_HEAD Head
+  - GOBLIN_SWORD:0
+  - GOBLIN_CHESTPLATE chest
+  - GOBLIN_BOOTS boots
+  Drops:
+  - EXP 5-10 100%
+  AIGoalSelectors:
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+    # <<: *AIGoalSelectors
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+    # <<: *AITargetSelectors
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=GOBLIN_MOUNT_HOUND} ~onTimer:300
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+HOUND:
+  Type: WOLF
+  Display: '&7[&fLVL 5&7] &cHound'
+  Health: 150
+  Faction: Goblin
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.34
+    Baby: false
+    <<: *Options
+  Drops:
+  - EXP 2-5 100%
+  AIGoalSelectors:
+  - 1 clear
+  - 0 randomlookaround
+  - 2 meleeattack
+  - 3 randomstroll
+    # <<: *AIGoalSelectors
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+    # <<: *AITargetSelectors
+  Skills:
+  - damage{amount=25} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=HOUND_BLEED} @target ~onAttack
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20

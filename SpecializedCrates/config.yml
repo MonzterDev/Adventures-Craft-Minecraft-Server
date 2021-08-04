@@ -27,8 +27,31 @@ store-data: FLATFILE
 #  NOTHING - Logs nothing at all to console.
 log-successes: FAILURES
 
-# Would you like the plugin to notify you of updates?
-notify-updates: true
+# When should player data be saved when using the FLATFILE data handler?
+#   Options: DISABLE, INTERVAL
+#   DISABLE: Player data is saved when the plugin is disabled (server stopped, reload, restart). This
+#     is the MOST efficient and least resource consuming but will result in data loss on crashes.
+#   INTERVAL: Player data is saved on an interval specified by 'data-save-interval' and ALSO when
+#     the plugin is disabled (server stopped, reload, restart). The player data is only saved on the
+#     interval if there has been a change. If nothing has been written to the file, it is not saved.
+#     This is the LEAST efficient method as a file is periodically saved to disk but is safest and is
+#     unlikely to lose data on crashes
+flatfile-save-method: INTERVAL
+
+# What should the interval, in SECONDS, be to save the player data?
+#   Note: If there is no new player data to save, it won't save - the interval is to check IF
+#   there is new information to be saved, and, if so, to save it.
+flatfile-save-interval: 300
+
+# What amount of history be kept for the player?
+#
+# Set to -1 to keep all player history and anything above that to keep that amount of most recent
+#   history data for a player. (i.e. if it was set to 20, the last 20 crates worth of data for a
+#   player would be kept - anything beyond that would be purged).
+#
+# Why purge old crate history data? The more data the player has to their name, the longer it takes
+#   to load their history, the more server resources that are consumed every time a player joins.
+player-history-limit: 500
 
 # Is the plugin in debug mode?
 debug: false
@@ -38,7 +61,7 @@ debug: false
 #------------------------------------#
 
 # Should the lore for a key be required to match the crate's key to work?
-require-key-lore: false
+require-key-lore: true
 
 # Should shift clicking allow the user to open a crate with every key the
 #   player is holding?
@@ -52,7 +75,7 @@ shift-click-confirm: true
 
 # When a player's inventory is full and they're given a key, should they get
 #   a virtual key (true) instead of dropping it on the floor (false)?
-virtual-key-instead-of-drop: true
+virtual-key-instead-of-drop: false
 
 # When a player left clicks with a key, it won't be cancelled - this is mainly to
 #   support compatibility with sell-shop plugins that need the key to be interactable.
@@ -60,7 +83,7 @@ key-allow-left-click-interaction: false
 
 # When a player left clicks with a key in hand, it opens up the reward preview menu
 #   for that specific crate.
-left-click-key-preview: true
+left-click-key-preview: false
 
 #------------------------------------#
 #           Crate Settings           #
@@ -70,10 +93,10 @@ left-click-key-preview: true
 required-slots: 1
 
 # Do you want explosions to destroy dynamic crates?
-explosions-destroy-dynamic-crates: false
+explosions-destroy-dynamic-crates: true
 
 # Should the player be pushed back when the wrong key is used?
-push-back: false
+push-back: true
 
 # Should people be allowed to place crates in creative mode?
 place-creative: true
@@ -89,26 +112,23 @@ hologram-offset: 0
 # Should the break effect be played when a crate is placed / created?
 place-effect: true
 
-# Should the crates automatically close when their animations is done playing?
-auto-close: true
-
 # Should the player have to confirm to open the crate or not?
 confirm-open: false
 
 # How long should the crate-opening confirmation take to cancel, in seconds?
 #   NOTE: Also works for the shift-click confirmation.
-confirm-timeout: 5
+confirm-timeout: 3
 
 # Every time the server or plugin is reloaded/restarted, should the crates always
 #   be replaced to make sure that they haven't been overridden by worldedit, etc.?
 keep-crate-block-consistent: true
 
 # How many blocks away should players be able to see particles?
-particle-view-distance: 20
+particle-view-distance: 25
 
 # Should any %crate% placeholders use the crate item's display name instead of
 #  of the crate name?
-use-crate-name-for-display: false
+use-crate-name-for-display: true
 
 #-------------------------------------------#
 #           Crate Action Settings           #
@@ -152,28 +172,20 @@ luckychest-allow-placed-blocks: false
 crates-command-multicrate: AllCrates
 
 # What is the name of the menu of the /crates inventory
-crates-command-name: '&f&l»&7&l» &8Lootboxes &7&l«&f&l«'
+crates-command-name: '&b&lVirtual &7&lCrates'
 
 # If a player has both a virtual key and a physical key, should it prioritize the physical or virtual key?
 prioritize-physical-key: true
 
 # To open a crate in a MultiCrate, should a virtual key AND a virtual crate be required? An example
 #   for something like: virtual crates are earned through minigames, virtual keys are bought on buycraft.
-require-virtual-crate-and-key: true
+require-virtual-crate-and-key: false
 
-# Should multicrates show the virtual key count?
-virtual-crate-keycount: true
+# What do you want the inventory name of the /crates claim menu to be?
+crates-claim-inventory-name: '&7&l> &6&lCrates Claim'
 
-# Should the multicrates show the virtual crate count?
-virtual-crate-cratecount: true
-
-# Format for how the player's virtual keys and crates are show
-#    note: This is added to the bottom of the displayed crate's lores.
-#
-# > %keys% - Amount of virtual keys
-# > %crates% - Amount of virtual crates
-virtual-crate-lore: ''
-virtual-key-lore: '&8&l» &eLeft-Click to View Rewards'
+# Should people be allowed to deposit keys into the /crates claim menu?
+crates-claim-allow-deposit: true
 
 #-------------------------------------------------------#
 #       Rewards Display Inventory + Display Items       #
@@ -184,10 +196,6 @@ enabled: true
 
 # Should the multicrate reward display inventory open on right or left click?
 mc-reward-display-leftclick: true
-
-# The format for the name of the inventory displaying the rewards.
-# > %crate% - Name of the crate.
-inv-reward-display-name: '&8Rewards'
 
 # The format for the name and lore of the item(s) being displayed in the inventory
 #   note: If a reward has a custom lore value set for it, this will be ignored.
@@ -201,3 +209,39 @@ inv-reward-item-name: '&c%displayname%'
 inv-reward-item-lore:
   - '&7-'
   - '&eChance: &6%writtenchance%%'
+
+#---------------------------------------------------------#
+#       Deprecated Values (Should no longer be used)      #
+#---------------------------------------------------------#
+# NOTE: These values still work, but their alternatives are suggested.
+
+# The format for the name of the inventory displaying the rewards.
+# > %crate% - Name of the crate.
+#
+# !! REPLACED BY THE 'reward-display.name' VALUE IN EACH .CRATE FILE
+inv-reward-display-name: '&4%crate% &cRewards'
+
+# Should multicrates show the 'virtual-key-lore' value on crate items?
+#
+# !! REPLACED BY USING %keys% IN THE 'crate.lore' VALUE IN EACH .CRATE FILE
+virtual-crate-keycount: false
+
+# Should multicrates show the 'virtual-crate-lore' value on crate items?
+#
+# !! REPLACED BY USING %crates% IN THE 'crate.lore' VALUE IN EACH .CRATE FILE
+virtual-crate-cratecount: false
+
+# Format for how the player's virtual keys and crates are show
+#    note: This is added to the bottom of the displayed crate's lores.
+#
+# > %keys% - Amount of virtual keys
+# > %crates% - Amount of virtual crates
+#
+# !! REPLACED BY USING %keys% AND %crate% IN THE 'crate.lore' VALUE IN EACH .CRATE FILE
+virtual-crate-lore: '&cCrates: &f(&7%crates%&f)'
+virtual-key-lore: '&cKeys: &f(&7%keys%&f)'
+
+# Should the crates automatically close when their animations is done playing?
+#
+# REPLACED BY
+auto-close: true

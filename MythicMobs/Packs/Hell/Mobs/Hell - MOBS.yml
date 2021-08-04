@@ -1,0 +1,458 @@
+VOID_PIGMAN:
+  Type: PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cVoid Pigman'
+  Health: 2500
+  Damage: 0
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.34
+    FollowRange: 7
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Equipment:
+  - iron_sword:0
+  - iron_sword offhand
+  Drops:
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+
+VOID_BLAZE:
+  Type: BLAZE
+  Display: '&7[&fLVL 20&7] &cVoid Blaze'  
+  Health: 2000
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MaxCombatDistance: 100
+    MovementSpeed: 0.32
+    <<: *Options
+  Drops:
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35} @target ~onAttack  
+  - skill{s=VOID_BLAZE_SHOOT} ~onTimer:80
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=ANTILAVA} ~onTimer:40
+
+
+VOID_NECROMANCER:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 20&7] &cVoid Necromancer'
+  Health: 1750
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MaxCombatDistance: 50
+    MovementSpeed: 0.15
+    <<: *Options
+  Equipment:
+  - VOID_NECROMANCER_HEAD:HEAD
+  - VOID_NECROMANCER_CHEST:CHEST
+  - VOID_NECROMANCER_LEGS:LEGS
+  - VOID_NECROMANCER_BOOTS:FEET
+  - VOID_NECROMANCER_STAFF:HAND
+  Drops:
+  - EXP 15-25 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+  - skill{s=VOID_NECROMANCER_SHOOT} @target ~onTimer:80
+  - skill{s=VOID_NECROMANCER_SUMMON} ~onTimer:200
+
+VOID_DEMON:
+  Type: BABY_PIG_ZOMBIE
+  Display: '&7[&fLVL 20&7] &cVoid Demon'
+  Health: 1500
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Despawn: true
+    MovementSpeed: 0.36
+    <<: *Options
+  Equipment:
+  - VOID_DEMON_HEAD:HEAD
+  Drops:
+  - EXP 10-20 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+
+VOID_WITHER:
+  Type: GIANT
+  Display: '&7[&fLVL 25&7] &cVoid Wither'
+  Health: 25000
+  Disguise:
+    Type: WITHER
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &cVoid Wither <caster.hp>&f/&c<caster.mhp>'
+    Range: 35
+    Color: YELLOW
+    Style: SOLID
+  Faction: Void
+  DamageModifiers:
+  - PROJECTILE .5
+  - ENTITY_ATTACK 0  
+  - LAVA 0  
+  - SUFFOCATION 0  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    KnockbackResistance: 1
+    MaxCombatDistance: 20
+    MovementSpeed: 0.0001
+    Despawn: false
+    NoGravity: true
+    <<: *Options
+  Drops:
+  - EXP 20-25 100%
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=VOID_WITHER_SHOOT} ~onTimer:80
+  - skill{s=VOID_WITHER_DAMAGE_SELF} ~onSignal:VOID_WITHER_DAMAGE_SELF
+  - skill{s=VOID_WITHER_SUMMON1} @self <80%
+  - skill{s=VOID_WITHER_SUMMON2} @self <60%
+  - skill{s=VOID_WITHER_SUMMON3} @self <40%
+  - skill{s=VOID_WITHER_SUMMON4} @self <20%
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=VOID_WITHER_TELEPORT} @self ~onTimer:20
+  - remove @MIR{r=500;t=VOID_PROTECTOR,VOID_HEALER} ~onDeath
+
+VOID_PROTECTOR:
+  Type: IRON_GOLEM
+  Display: '&7[&fLVL 20&7] &cVoid Protector'  
+  Health: 7500
+  Faction: Void
+  DamageModifiers:
+  - PROJECTILE -1
+  - ENTITY_ATTACK 1  
+  - LAVA 0  
+  - SUFFOCATION 0    
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    KnockbackResistance: 1
+    MaxCombatDistance: 7
+    MovementSpeed: 0.18
+    FollowRange: 35
+    <<: *Options
+  Drops:
+  - EXP 15-20 100%    
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 arrowattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Skills:
+  - damage{amount=65} @target ~onAttack  
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+  - skill{s=VOID_WITHER_MINION_SIGNAL} ~onDeath
+  - skill{s=VOID_WITHER_SUMMON_HEALER} @self <50%
+
+VOID_HEALER:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 20&7] &cVoid Healer'  
+  Health: 2500
+  Faction: Void
+  DamageModifiers:
+  - PROJECTILE -1
+  - ENTITY_ATTACK 1  
+  - LAVA 0  
+  - SUFFOCATION 0      
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MaxCombatDistance: 100
+    MovementSpeed: 0.26
+    FollowRange: 35
+    <<: *Options
+  Equipment:
+  - VOID_HEALER_HEAD:HEAD    
+  - VOID_HEALER_CHEST:CHEST
+  - VOID_HEALER_LEGS:LEGS
+  - VOID_HEALER_BOOTS:FEET
+  Drops:
+  - Bone 3-5 100%
+  - EXP 10-15 100%    
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 arrowattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Skills:
+  - damage{amount=45} @target ~onAttack  
+  - skill{s=VOID_HEALER_HEAL} ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+
+###### BOTTOM HELL FLOOR
+
+VOID_MAGMA:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 25&7] &cVoid Magma'  
+  Health: 20000
+  Faction: Void
+  Disguise:
+    Type: MAGMA_CUBE
+    Size: 10  
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 25&7] &cVoid Magma <caster.hp>&f/&c<caster.mhp>'
+    Range: 20
+    Color: GREEN
+    Style: SOLID  
+  DamageModifiers:
+  - PROJECTILE .5
+  - ENTITY_ATTACK .5  
+  - LAVA 0  
+  - SUFFOCATION 10
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    PreventSlimeSplit: true  
+    Size: 10  
+    KnockbackResistance: 1
+    MaxCombatDistance: 100
+    MovementSpeed: 0.0001
+    Despawn: false
+    silent: true
+    <<: *Options
+  Drops:
+  - EXP 35-50 100%    
+  Skills:
+  - damage{amount=65} @PIR{r=5} ~onTimer:20
+  - skill{s=VOID_MAGMA_SUMMON1} ~onTimer:20 <100%
+  - skill{s=VOID_MAGMA_SUMMON2} ~onTimer:20 <75%
+  - skill{s=VOID_MAGMA_SUMMON3} ~onTimer:20 <50%
+  - skill{s=VOID_MAGMA_SUMMON4} ~onTimer:20 <25%
+  - skill{s=HPBAR} @self ~onDamaged  
+VOID_MAGMA2:
+  Type: MAGMA_CUBE
+  Display: '&7[&fLVL 20&7] &cVoid Magma'  
+  Health: 7500
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSlimeSplit: true  
+    Size: 7  
+    KnockbackResistance: 1
+    MaxCombatDistance: 100
+    MovementSpeed: 0.25
+    FollowRange: 20
+    <<: *Options
+  Drops:
+  - EXP 20-30 100%    
+  Skills:
+  - damage{amount=50} @PIR{r=5} ~onTimer:40
+  - skill{s=HPBAR} @self ~onDamaged
+
+VOID_MAGMA3:
+  Type: MAGMA_CUBE
+  Display: '&7[&fLVL 15&7] &cVoid Magma'  
+  Health: 5000
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    PreventSlimeSplit: true  
+    Size: 5  
+    KnockbackResistance: .5
+    MaxCombatDistance: 100
+    MovementSpeed: 0.35
+    <<: *Options
+  Drops:
+  - EXP 15-25 100%    
+  Skills:
+  - damage{amount=40} @PIR{r=4} ~onTimer:40
+  - skill{s=HPBAR} @self ~onDamaged
+
+VOID_SKELETON:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 25&7] &cVoid Skeleton'  
+  Health: 4000
+  Faction: Void
+  DamageModifiers:
+  - PROJECTILE -1
+  - ENTITY_ATTACK 1  
+  - LAVA 0  
+  - SUFFOCATION 0      
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MaxCombatDistance: 100
+    MovementSpeed: 0.32
+    <<: *Options
+  Equipment:
+  - IRON_SWORD:0    
+  - IRON_CHESTPLATE:CHEST
+  - IRON_LEGGINGS:LEGS
+  Drops:
+  - EXP 20-35 100%    
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Skills:
+  - damage{amount=75} @target ~onAttack  
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+
+
+VOID_PIGMAN2:
+  Type: PIGLIN
+  Display: '&7[&fLVL 25&7] &cVoid Pigman'
+  Health: 3500
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.34
+    <<: *Options
+  Equipment:
+  - VOID_PIGMAN2_SWORD:0
+  - VOID_PIGMAN2_SWORD OFFHAND
+  - VOID_PIGMAN2_CHESTPLATE CHEST
+  Drops:
+  - EXP 25-45 100%    
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=65} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+
+
+VOID_NECROMANCER2:
+  Type: WITHER_SKELETON
+  Display: '&7[&fLVL 25&7] &cVoid Necromancer'
+  Health: 2500
+  Faction: Void
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .7
+    MaxCombatDistance: 50
+    MovementSpeed: 0.15
+    <<: *Options
+  Equipment:
+  - VOID_NECROMANCER_HEAD:HEAD
+  - VOID_NECROMANCER2_CHEST:CHEST
+  - VOID_NECROMANCER2_LEGS:LEGS
+  - VOID_NECROMANCER2_BOOTS:FEET
+  - VOID_NECROMANCER_STAFF:HAND
+  Drops:
+  - EXP 25-45 100%    
+  AIGoalSelectors:
+  - 1 clear
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Skills:
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=ANTILAVA} ~onTimer:40
+  - skill{s=VOID_NECROMANCER2_SHOOT} ~onTimer:90
+  - skill{s=VOID_NECROMANCER2_SUMMON} ~onTimer:200

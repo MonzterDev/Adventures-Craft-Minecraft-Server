@@ -1,0 +1,28 @@
+SPIRIT_WITCH_ATTACK:
+  Skills:
+  - shootpotion{type=HARM;level=1;velocity=5} @target
+  - damage{amount=20} @target
+SPIRIT_WITCH_SLOW:
+  Cooldown: 15
+  Skills:
+  - shootpotion{type=SLOW;duration=200;level=5;velocity=5} @target
+
+SPIRIT_BULL_DASH:
+  Cooldown: 10
+  Conditions:
+  - hastarget{action=true}
+  - playerwithin{d=15} true
+  Skills:
+  - lunge{velocity=2;velocityY=0} @Target
+  - delay 10
+  - effect:explosion @Self
+  - damage{amount=20;ignoreArmor=false} @PIR{r=5}
+  - message{m="&cThe <mob.name> &cjust dashed into you!"} @PIR{r=5} 
+
+SPIRIT_SPIDER_POISON:
+  Cooldown: 10
+  Skills:
+  - damage{amount=5;repeat=5;repeatInterval=20} @target
+  - potion{type=SLOW;duration=100;level=1}
+  - potion{type=WITHER;duration=100;level=1}
+  - message{m="&cThe <mob.name> &cinjected &2venom &cinto you!"} @target

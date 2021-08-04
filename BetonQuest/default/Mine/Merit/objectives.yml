@@ -1,6 +1,6 @@
-Diamond: mmocorebreakblock 256 block:DIAMOND_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 ^notify
-VoidVampire: mmobkill VOID_VAMPIRE2 amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 ^notify
-VoidHive: mmobkill VOID_HIVE amount:1 events:quest3_2_starer ^notify
-VoidAnt: mmobkill VOID_ANT amount:5 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 ^notify
-VoidDracula: mmobkill VOID_DRACULA amount:1 events:q4_party ^notify
-Smith: npcinteract 41 events:entry_q5_complete,QuestReward5 ^notify
+Diamond: mmocorebreakblock 256 block:DIAMOND_ORE events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify:8
+VoidVampire: mmobkill VOID_VAMPIRE2 amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify:1
+VoidHive: mmobkill VOID_HIVE amount:1 events:quest3_2_starer notify:1
+VoidAnt: mmobkill VOID_ANT amount:5 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 notify:1
+VoidDracula: mmobkill VOID_DRACULA amount:1 events:q4_party notify:1
+Smith: npcinteract 41 events:entry_q5_complete,QuestReward5 notify:1

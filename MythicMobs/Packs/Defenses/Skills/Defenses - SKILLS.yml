@@ -1,0 +1,815 @@
+# D_INTRO:
+#   Cooldown: 1
+#   Skills:
+#   - message{m="&aSir Cyrus &8&l» &fWelcome to the &cCastle&f!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &cEnemies &fwill be arriving very soon, which means you must be ready to defend by then!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - skriptskill{skill=D_START} @PIR{r=250}
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &fBefore they arrive, I'll give you some useful tips!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &fFirst thing, the &aVillager &fis your best friend. Protect him at all cost!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 80
+#   - message{m="&aSir Cyrus &8&l» &fNext, each person on your team can respawn 5 times."} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &fOnce you die 5 times, you no longer can respawn!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &fIf the &aVillager &fdies, well so do you..."} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - message{m="&aSir Cyrus &8&l» &fYou may think the &aVillager &fis useless, but he will help you sometimes."} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 80
+#   - message{m="&aSir Cyrus &8&l» &fIf you manage to survive all the waves, you'll be rewarded greatly!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 70
+#   - message{m="&aSir Cyrus &8&l» &fWell the battle starts now, best of luck!"} @PIR{r=250}
+#   - effect:sound{s=entity.villager.ambient;v=1;p=.85} @self
+#   - delay 60
+#   - modifytargetscore{objective=mobskilled;action=SET;value=50} @MIR{r=250;t=D_SPAWNER} # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=1} @MIR{r=250;t=D_SPAWNER} # Sets Wave to 1, used for Wave Conditions
+#   - delay 2
+#   - signal{s=D_W1_START} @MIR{r=250;t=D_SPAWNER}
+#   - delay 20
+#   - remove @self
+
+# # WAVE 1 INFO: 13/SIDE ======= 52/TOTAL ======= 50/TO COMPLETE
+# D_W1_START:
+#   Cooldown: 99999
+#   Skills:
+#   # NORTH LEFT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-110,4,-118}
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118}
+#   # NORTH RIGHT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-90,4,-118}
+#   #
+#   # SOUTH LEFT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-110,4,-40}
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40}
+#   # SOUTH RIGHT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-90,4,-40}
+#   #
+#   # WEST LEFT Side
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-141,4,-72}
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-74}
+#   # WEST RIGHT Side
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-141,4,-86}
+#   #
+#   # EAST LEFT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-61,4,-72}
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-76}
+#   # EAST RIGHT Room
+#   - summon{type=D_SKELETON;amount=6;radius=3} @Location{c=-61,4,-86}
+
+# # WAVE 2 INFO: 25/SIDE ======= 100/TOTAL ======= 75/TO COMPLETE
+# D_W2_START:
+#   Conditions:
+#   - score{o=mobskilled;v=0} true # This will verify all enemies have been killed and there is 0 more required
+#   - score{o=wave;v=1} true # Verifies previous wave was #1
+#   Cooldown: 99999
+#   Skills:
+#   - skill{s=D_REMOVE_ENEMIES}
+#   - delay 1 # Delay to prevent any mobs leftover from previous wave counting towards deaths of new wave 
+#   - modifytargetscore{objective=mobskilled;action=SET;value=75} @self # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=2} @self # Sets Wave to 1, used for Wave Conditions
+#   - skriptskill{skill=D_W2_START} @PIR{r=250}    
+#   - delay 600
+#   # These are separate room Skills, so we can easily modify amount/which/when mobs are spawned
+#   # Mostly made due to delays
+#   - skill{skill=D_W2_NORTH} 
+#   - delay 20
+#   - skill{skill=D_W2_SOUTH} 
+#   - delay 20
+#   - skill{skill=D_W2_WEST} 
+#   - delay 20
+#   - skill{skill=D_W2_EAST} 
+# D_W2_NORTH:
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+# D_W2_SOUTH:
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-40} # SOUTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-40} # SOUTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-110,4,-40} # SOUTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-90,4,-40} # SOUTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-40} # SOUTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-40} # SOUTH RIGHT Room
+# D_W2_WEST:
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-72} # WEST LEFT Side
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-80}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-86} # WEST RIGHT Side
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-141,4,-72} # WEST LEFT Side
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-141,4,-86} # WEST RIGHT Side
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-72} # WEST LEFT Side
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-86} # WEST RIGHT Side
+# D_W2_EAST:
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-72} # EAST LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-80}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-86} # EAST RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-61,4,-72} # EAST LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=3} @Location{c=-61,4,-86} # EAST RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-72} # EAST LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-86} # EAST RIGHT Room
+
+# # ============================================================
+# # WAVE 3 INFO: 29/SIDE ======= 116/TOTAL ======= 100/TO COMPLETE
+# D_W3_START:
+#   Conditions:
+#   - score{o=mobskilled;v=0} true # This will verify all enemies have been killed and there is 0 more required
+#   - score{o=wave;v=2} true # Verifies previous wave was #2
+#   Cooldown: 99999
+#   Skills:
+#   - skill{s=D_REMOVE_ENEMIES}
+#   - delay 1 # Delay to prevent any mobs leftover from previous wave counting towards deaths of new wave 
+#   - modifytargetscore{objective=mobskilled;action=SET;value=100} @self # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=3} @self # Sets Wave to 3, used for Wave Conditions
+#   - skriptskill{skill=D_W3_START} @PIR{r=250}    
+#   - delay 600
+#   # These are separate room Skills, so we can easily modify amount/which/when mobs are spawned
+#   # Mostly made due to delays
+#   - skill{skill=D_W3_NORTH} 
+#   - delay 20
+#   - skill{skill=D_W3_SOUTH} 
+#   - delay 20
+#   - skill{skill=D_W3_WEST} 
+#   - delay 20
+#   - skill{skill=D_W3_EAST} 
+# D_W3_NORTH: # 29 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+# D_W3_SOUTH: # 29 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+# D_W3_WEST: # 29 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-82}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+# D_W3_EAST: # 29 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-82}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+
+# # ============================================================
+# # WAVE 4 INFO: 35/SIDE ======= 140/TOTAL ======= 125/TO COMPLETE
+# D_W4_START:
+#   Conditions:
+#   - score{o=mobskilled;v=0} true # This will verify all enemies have been killed and there is 0 more required
+#   - score{o=wave;v=3} true # Verifies previous wave was #3
+#   Cooldown: 99999
+#   Skills:
+#   - skill{s=D_REMOVE_ENEMIES}
+#   - delay 1 # Delay to prevent any mobs leftover from previous wave counting towards deaths of new wave 
+#   - modifytargetscore{objective=mobskilled;action=SET;value=125} @self # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=4} @self # Sets Wave to 4, used for Wave Conditions
+#   - skriptskill{skill=D_W4_START} @PIR{r=250}    
+#   - delay 600
+#   # These are separate room Skills, so we can easily modify amount/which/when mobs are spawned
+#   # Mostly made due to delays
+#   - skill{skill=D_W4_NORTH} 
+#   - delay 20
+#   - skill{skill=D_W4_SOUTH} 
+#   - delay 20
+#   - skill{skill=D_W4_WEST} 
+#   - delay 20
+#   - skill{skill=D_W4_EAST} 
+# D_W4_NORTH: # 35 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH LEFT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-90,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-118} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-118} # NORTH RIGHT Room
+# D_W4_SOUTH: # 35 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-40} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-40} # NORTH RIGHT Room
+# D_W4_WEST: # 35 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-82}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH LEFT Room
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-86} # NORTH RIGHT Room
+# D_W4_EAST: # 35 Enemies
+#   Skills:
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-82}
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room  
+#   - delay 100 # 5 seconds
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - delay 200 # 10 seconds
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room  
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room  
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-72} # NORTH LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-86} # NORTH RIGHT Room
+
+# # ============================================================
+# # WAVE 5 INFO: 40/SIDE ======= 160/TOTAL ======= 150/TO COMPLETE
+# D_W5_START:
+#   Conditions:
+#   - score{o=mobskilled;v=0} true # This will verify all enemies have been killed and there is 0 more required
+#   - score{o=wave;v=4} true # Verifies previous wave was #4
+#   Cooldown: 99999
+#   Skills:
+#   - skill{s=D_REMOVE_ENEMIES}
+#   - delay 1 # Delay to prevent any mobs leftover from previous wave counting towards deaths of new wave 
+#   - modifytargetscore{objective=mobskilled;action=SET;value=150} @self # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=5} @self # Sets Wave to 4, used for Wave Conditions
+#   - skriptskill{skill=D_W5_START} @PIR{r=250}    
+#   - delay 600
+#   # These are separate room Skills, so we can easily modify amount/which/when mobs are spawned
+#   # Mostly made due to delays
+#   - skill{skill=D_W5_NORTH} 
+#   - delay 20
+#   - skill{skill=D_W5_SOUTH} 
+#   - delay 20
+#   - skill{skill=D_W5_WEST} 
+#   - delay 20
+#   - skill{skill=D_W5_EAST} 
+# D_W5_NORTH: # 40 Enemies
+#   Skills: # 15
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 23
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 7 | 30
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 36
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 40
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+# D_W5_SOUTH: # 40 Enemies
+#   Skills: # 15
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 23
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 7 | 30
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 36
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 40
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+
+# D_W5_WEST: # 40 Enemies
+#   Skills: # 15
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-82} # LEFT Room
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 23
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 7 | 30
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 36
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 40
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+
+# D_W5_EAST: # 40 Enemies
+#   Skills: # 15
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-82} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=3;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=3;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 23
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 7 | 30
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 36
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 40
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+
+# # ============================================================
+# # WAVE 6 INFO: 50/SIDE ======= 200/TOTAL ======= 175/TO COMPLETE
+# D_W6_START:
+#   Conditions:
+#   - score{o=mobskilled;v=0} true # This will verify all enemies have been killed and there is 0 more required
+#   - score{o=wave;v=5} true # Verifies previous wave was #4
+#   Cooldown: 99999
+#   Skills:
+#   - skill{s=D_REMOVE_ENEMIES}
+#   - delay 1 # Delay to prevent any mobs leftover from previous wave counting towards deaths of new wave 
+#   - modifytargetscore{objective=mobskilled;action=SET;value=175} @self # Sets Points needed to finish wave
+#   - modifytargetscore{objective=wave;action=SET;value=6} @self # Sets Wave to 4, used for Wave Conditions
+#   - skriptskill{skill=D_W5_REWARD} @PIR{r=250}
+#   - skriptskill{skill=D_W6_START} @PIR{r=250}
+#   - delay 600
+#   # These are separate room Skills, so we can easily modify amount/which/when mobs are spawned
+#   # Mostly made due to delays
+#   - skill{skill=D_W6_NORTH} 
+#   - delay 20
+#   - skill{skill=D_W6_SOUTH} 
+#   - delay 20
+#   - skill{skill=D_W6_WEST} 
+#   - delay 20
+#   - skill{skill=D_W6_EAST} 
+# D_W6_NORTH: # 50 Enemies
+#   Skills: # 23
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 31
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 9 | 40
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 46
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 50
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-110,4,-118} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-90,4,-118} # RIGHT Room
+# D_W6_SOUTH: # 50 Enemies
+#   Skills: # 23
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-100,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 31
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 9 | 40
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 46
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 50
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-110,4,-40} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-90,4,-40} # RIGHT Room
+
+# D_W6_WEST: # 35 Enemies
+#   Skills: # 23
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-141,4,-82} # LEFT Room
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 31
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 9 | 40
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 46
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 50
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-141,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-141,4,-86} # RIGHT Room
+
+# D_W6_EAST: # 35 Enemies
+#   Skills: # 23
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_AGRO;amount=1;radius=1} @Location{c=-61,4,-82} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=5;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON_ARCHER;amount=5;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 8 | 31
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SKELETON;amount=2;radius=2} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_ALPHA_SKELETON_ARCHER;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 9 | 40
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_SOUL;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_UNDEAD_GUARD;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_GAMMA_BOSS;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 6 | 46
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_ALPHA_UNDEAD_GUARD;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=2;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - delay 200 # 10 seconds: 4 | 50
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-61,4,-72} # LEFT Room
+#   - delay 5
+#   - summon{type=D_SKELETON_ARCHER;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+#   - summon{type=D_SKELETON;amount=1;radius=3} @Location{c=-61,4,-86} # RIGHT Room
+
+# # ====================================================
+
+
+# D_REMOVE_ENEMIES: # This will remove all enemies once a Wave is over and the next one is starting
+#   Skills:
+#   - remove @MIR{r=250;t=D_AGRO,D_SKELETON,D_ALPHA_SKELETON,D_SKELETON_ARCHER,D_ALPHA_SKELETON_ARCHER,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_ALPHA_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_ALPHA_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS}
+
+# D_REMOVE_MOBS: # This will remove all mobs, once the Villager dies
+#   Skills:
+#   - remove @MIR{r=250;t=D_AGRO,D_SKELETON,D_ALPHA_SKELETON,D_SKELETON_ARCHER,D_ALPHA_SKELETON_ARCHER,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_ALPHA_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_ALPHA_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS,D_INTRO,D_SPAWNER}
+
+# D_WAVES: # Triggers each time an Enemy dies, which adds a point to the Wave, and runs each Wave Starting for when a point is reached
+#   Skills:
+#   - modifytargetscore{objective=mobskilled;action=subtract;value=1}
+#   - signal{s=SCORE}
+#   - signal{s=D_W2_START}
+#   - signal{s=D_W3_START}
+#   - signal{s=D_W4_START}
+#   - signal{s=D_W5_START}
+#   - signal{s=D_W6_START}
+
+# SCORE_ANNOUNCE: # Triggers each time an Enemy dies, will broadcast how many enemies are left to be slayed in the wave.
+#   Skills:
+#   - message{m="&e<caster.score.mobskilled> &cEnemies Left!"} @PIR{r=250}  
+
+# D_RALLY: # Used by the Rally Mob which will make all others agro to Villager
+#   Cooldown: 1
+#   Skills:
+#   - rally{types=D_SKELETON,D_ALPHA_SKELETON,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_ALPHA_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_ALPHA_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS;radius=10;ot=false} @MIR{r=250;t=D_VILLAGER,D_DECOY,D_MONKEY_BOMB}
+#   - effect:sound{s=entity.zombie_villager.converted;v=1;p=1} @PIR{r=100}
+
+# D_AGRO: # Forces all Enemies to agro to the Villager Mob
+#   Cooldown: 1
+#   Skills:
+#   - rally{types=D_AGRO,D_SKELETON,D_ALPHA_SKELETON,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_ALPHA_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_ALPHA_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS;radius=10;ot=false} @MIR{r=250;t=D_VILLAGER,D_DECOY,D_MONKEY_BOMB}
+# D_AGRO_ARCHER: # Forces all Enemies to agro to the Villager Mob
+#   Cooldown: 1
+#   Skills:
+#   - rally{types=D_SKELETON_ARCHER,D_ALPHA_SKELETON_ARCHER;ot=false} @PIR{r=250}
+# D_AGRO_DECOY: # Forces all Enemies to agro to the Decoy Mob
+#   Cooldown: 1
+#   Skills:
+#   - rally{types=D_AGRO,D_SKELETON,D_ALPHA_SKELETON,D_ALPHA_SOUL,D_UNDEAD_GUARD,D_ALPHA_UNDEAD_GUARD,D_UNDEAD_SUMMONER,D_UNDEAD_WARRIOR,D_ALPHA_UNDEAD_WARRIOR,D_UNDEAD_SPIDER,D_GAMMA_BOSS;radius=10;ot=false} @MIR{r=250;t=D_DECOY,D_MONKEY_BOMB}
+# # D_KEEP_AGRO: # Forces all Enemies to constantly agro to the Villager Mob
+# #   Conditions:
+# #   - playerwithin{d=5} false
+# #   Cooldown: 2
+# #   Skills:
+# #   - runaitargetselector{target=clear} @self
+# #   - runaitargetselector{target=SpecificFaction Protect} @self
+# # D_AGRO2: # Forces all Enemies to constantly agro to the Villager Mob
+# #   Conditions:
+# #   - playerwithin{d=5} true
+# #   Cooldown: 2
+# #   Skills:
+# #   - runaitargetselector{target=clear} @self
+# #   - runaitargetselector{target=player} @self
+
+
+
+# # ====================================================
+# # Enemy Skills
+
+# #D_ALPHA_SOUL
+# D_ALPHA_SOUL_FIRE_AOE:
+#   Skills:
+#   - effect:particletornado{p=flame;cp=mediumexplode;mr=1;h=1;i=1;d=15;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0;amount=1} @self
+#   - damage{a=5;ignoreArmor=false} @PIR{r=2}
+#   - ignite{ticks=20} @PIR{r=2}
+# #D_UNDEAD_WARRIOR
+# D_UNDEAD_WARRIOR_LEAP:
+#   Conditions:
+#   - hastarget{action=true}
+#   Skills:
+#   - leap{velocity=300} @target
+#   - delay 10
+#   - jump{velocity=-100}
+#   - effect:explosion @self
+#   - damage{amount=30} @PIR{r=5}
+# #D_BOSS
+# D_BOSS_PRISON:
+#   Cooldown: 20
+#   Skills: 
+#   - prison{material=IRON_BLOCK;duration=140;breakable=true}
+#   - delay 10
+#   - stun{d=140;f=true}

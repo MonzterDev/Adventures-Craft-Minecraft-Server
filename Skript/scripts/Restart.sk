@@ -1,6 +1,6 @@
 on skript stop:
 	execute console command "/mm mobs killall"
-	execute console command "/killall -named"
+#	execute console command "/killall -named"
 	set {SERVER_RESTART} to 0
 	set {RESTARTING_10} to "false"
 	set {VOID_TIMER} to 0
@@ -31,7 +31,7 @@ on skript start:
 	send formatted "&c---------------------------------" to all players
 	wait 30 seconds
 	execute console command "/mm mobs killall"
-	execute console command "/killall -named"
+#	execute console command "/killall -named"
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&c30 seconds&e!" to all players
 	send formatted "&c---------------------------------" to all players
@@ -52,7 +52,7 @@ on skript start:
 	send formatted "&eServer will be restarting in &l&c2 seconds&e!" to all players
 	send formatted "&c---------------------------------" to all players
 	execute console command "/mm mobs killall"
-	execute console command "/killall -named"
+#	execute console command "/killall -named"
 	wait 1 seconds
 	send formatted "&c---------------------------------" to all players
 	send formatted "&eServer will be restarting in &l&c1 seconds&e!" to all players
@@ -66,8 +66,8 @@ on skript start:
 on skript start:
 	wait 5 seconds 
 	execute console command "/mm mobs killall"
-	execute console command "/killall -named"
-	execute console command "/citizens reload"
+#	execute console command "/killall -named"
+#	execute console command "/citizens reload"
 	
 command /RestartTime:
     executable by: players

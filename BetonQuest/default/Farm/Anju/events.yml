@@ -55,7 +55,7 @@ CompletedCuccos20: 'tag add CompletedCuccos20'
 #FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
 #IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
 #IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: "run ^command mmoitems give ACCESSORY CAT_CLAW %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Farming 250 ^command money give %player% 100"
+QuestReward1: "run ^command mmoitems give ACCESSORY CAT_CLAW2 %player% 1 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Farming 250 ^command money give %player% 100"
 #FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
 entry_q1_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
 entry_q1_completed: 'journal add q1_completed'

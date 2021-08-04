@@ -1,85 +1,106 @@
 Owner: d76f634d-fad1-429e-8a6b-7d1a7b9d65b0
 OwnerName: MonzterYT
-Reward: 72.20000000000006
-Worth: 0.0
+Reward: 3.8
+Worth: 115.0
 Slots: 9
 Rent:
   Start: 0
-  Paid: -1500.0
+  Paid: 0.0
 Priority: 0
 Icon:
   ==: org.bukkit.inventory.ItemStack
-  v: 2580
-  type: BOOK
+  v: 2586
+  type: DIRT
   meta:
     ==: ItemMeta
     meta-type: UNSPECIFIC
-    display-name: §a%player%'s Enchanting Shop
     lore:
-    - ''
-    - §7§l» §eClick to Access
-    ItemFlags:
-    - HIDE_ATTRIBUTES
+    - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+      "},{"bold":false,"italic":false,"color":"yellow","text":"Click to Access"}],"text":""}'
 item:
   '0':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: PORKCHOP
+      v: 2586
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Devil''s
+          Head"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Armor"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"✜
+          Damage: "},{"italic":false,"color":"red","text":"25"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"☠
+          Hell Damage: +25%"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"⛨
+          Armor: "},{"italic":false,"color":"red","text":"+30"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"❤
+          HP: "},{"italic":false,"color":"red","text":"+50"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Empty
+          Gem Slot"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Hell
+          Set Bonus:"}],"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Hellsploshion"},{"bold":false,"italic":false,"color":"white","text":":
+          Shift Left Click"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Cooldown:
+          "},{"italic":false,"color":"red","text":"30"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Mana:
+          "},{"italic":false,"color":"red","text":"50"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":""}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Give
+          yourself "},{"italic":false,"color":"green","text":"Strength 20 "},{"italic":false,"color":"gray","text":"for
+          15secs!"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Damage"},{"italic":false,"color":"gray","text":"
+          all enemies within 15 blocks,"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"dealing
+          "},{"italic":false,"color":"red","text":"more damage "},{"italic":false,"color":"gray","text":"the
+          more Mobs!"}],"text":""}'
+        - '{"text":""}'
+        - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"EXOTIC
+          ITEM"}],"text":""}'
+        attribute-modifiers:
+          GENERIC_ATTACK_SPEED:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: mmoitemsDecoy
+            uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
+            operation: 0
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAG1Ty27TQBSdIqhCAIm3hMRisGDVVnIebpouUN1kkrj40cbOw0FV5Njj2unYrmynbUBI/AObShQJIaSyQvwAm34AP8Cu38AHMLbb0EpY1njmnDtn7tx7nAdgHjyWJEXQkKQOeU3ja6+GdV7im2itCtInB+7PApJxqOmbCNzg25LSzoG7VzmhDvJ11BXEYQvx9Rx4MKOblFU1RUYqWHjLIG8vnqokiCNm9TXT8c2ABCG2mO1Fpom9KA58nDDb7/Lgtro7IWQzDGyX4DzI09keDmMXRzdBLsaH8STEUZ4mOpcDN7oGmWDwA0832EHfYa3+BjGnwjJdaypLFGG8VxH87nRUE5YFj/ItflmcVi/FcrHR44he2nAG/tZk5HVZsdQmuNUumF5nXy8Kb5SeUNB7jV251x0PPJ2T63pJKspjXWt7itbwBprJDnpbU13bmip1ZzwYJzwqyW/4Q6mpl2TNPBiMGw79FqQx79r9Aq30LXBNsOglrv/+7jX/vK99+Bb/8j79+PmF1v/JrIgdWU06xK+LaNjp0GI/t6q2tVKtGksrFltZKtssuzSq0hnLlavFETZxwS7kwL2rXVKRBq63kCjOX2qQxPeTpolaa03IOj9/qbt11ECyitZeXlBPZ1SDr2mCIp/bZpjo/vPOo38KusxLQm0oKm00d/SaOT2x+dALQmaRoe/piXl2fAzrhmfs4FVIl0UuhctnR59hCxMy4xaK3IuUwmcfv8FUI92wUGJT2Dj79BW2NjOMYy/0jdRzkNoLJsa7gMunJySVV3EM1wN/Eq1m4ud4tEeCyHEDn+a7ClXHtWMoYjrUiGvupqGVWhAQKzjw0yPPs6hIhm+kAJcBOIOb7j6G02ASRpjYlDbUOMT+TuzAIkuXFTsIYYGLsBk9y8qSXZsy0KBZYh971PrwwI0d16eRcEQCczdazNQtbBDX30mOpWXB0Eo3J7qxg2EKScEolZ7dEvUVTajBpEvM9hx4+D+30X/rzgzXBNQG89k28BcGBqqfQwQAAA==
     b: 0
-    c: 1.0
+    c: 4.0
   '1':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: WOODEN_HOE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §9Seed Staff
-        lore:
-        - §fStaff
-        - ''
-        - 'Damage: §c50'
-        - 'Range: §c5'
-        - ''
-        - '§e§lSeed Shot§f: §fShift Right Click'
-        - '§7Mana: §c15'
-        - '§7Cooldown: §c5'
-        - ''
-        - §9§lRARE ITEM
-        attribute-modifiers:
-          GENERIC_ATTACK_SPEED:
-          - ==: org.bukkit.attribute.AttributeModifier
-            amount: 0.0
-            name: mmoitemsDecoy
-            uuid: 87851e28-af12-43f6-898e-c62bde6bd0ec
-            operation: 0
-        ItemFlags:
-        - HIDE_ATTRIBUTES
-        internal: H4sIAAAAAAAAAE2PQWvCQBCFR7AiQqVIKXidsxQ9eMmp42aTDGZVdudSRJZgLAitgVroQfzvbrTEzmFg5nvDvNcD6MCLMUsWbZwnEVJzH5OhVL8xXKsLT42g7p5j6DmtY++EkqQLg/v9jHMW1g7W6xNyiRHWQpctBUeoiuOPqcpdvc04EW85zcSrnNU84ID2H/vd9xGjE34VhwKjyfR1PMJtVX2W1e8BozCez5sO9JuPlhbB6fPNaQuGDYjZ0SzXXllKhBdp67/Pawx5X2l4+Mvw2LBg30LbktVwAb/sOJoeAQAA
-    b: 0
-    c: 1.0
+      v: 2586
+      type: GRASS
+    b: 1
+    c: 5.0
   '2':
     a:
       ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: WOODEN_HOE
+      v: 2586
+      type: PLAYER_HEAD
       meta:
         ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §9Wheat Staff
+        meta-type: SKULL
+        display-name: '{"italic":false,"extra":[{"color":"yellow","text":"Profession
+          Booster Box"}],"text":""}'
         lore:
-        - §fStaff
-        - ''
-        - 'Damage: §c75'
-        - 'Range: §c5'
-        - ''
-        - '§e§lSuper Seed§f: §fShift Right Click'
-        - '§7Mana: §c20'
-        - '§7Cooldown: §c7.5'
-        - ''
-        - §9§lRARE ITEM
+        - '{"italic":false,"extra":[{"color":"white","text":"Lootbox"}],"text":""}'
+        - '{"italic":false,"text":""}'
+        - '{"italic":false,"extra":[{"extra":[{"bold":true,"color":"dark_gray","text":"»
+          "},{"color":"yellow","text":"Click to Open Box"}],"text":""}],"text":""}'
+        - '{"italic":false,"text":""}'
+        - '{"italic":false,"extra":[{"text":"§e§lEXOTIC ITEM"}],"text":""}'
         attribute-modifiers:
           GENERIC_ATTACK_SPEED:
           - ==: org.bukkit.attribute.AttributeModifier
@@ -89,68 +110,6 @@ item:
             operation: 0
         ItemFlags:
         - HIDE_ATTRIBUTES
-        internal: H4sIAAAAAAAAAE2PQUvDUAzHM9AxHA4REbzmPMYQROjJ7DVtw/rmeC8yROVR7ISBruAED2PfzY9mO0Y1hxzyC8nvfwLQhUtr70XZ+kCqZKYhJksp37kfaKoHZ+1C04PE0F9kTBq8UpL04PzvwERyUWEPz09blBIj9A9zdp45xiGaYvNlq3LZjDNJNDhJMw0mFzOtcY1Wb6vl5wajLX4U6wKj6/FoPMTXqnovq+81Rrejm93upQuD9qWjWe16sVeFDly1IBZPk5yDcZSozNLOf9F9EH2cMxwfQpy2rPZ3cOTIMfwC5b6+iSABAAA=
-    b: 0
-    c: 1.0
-  '3':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: WOODEN_AXE
-    b: 0
-    c: 1.0
-  '4':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: DARK_OAK_LOG
-    b: 0
-    c: 1.0
-  '5':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: WHITE_WOOL
-    b: 0
-    c: 1.0
-  '6':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: WRITTEN_BOOK
-      meta:
-        ==: ItemMeta
-        meta-type: BOOK_SIGNED
-        display-name: §6§lQuest Journal
-        lore:
-        - §7§oThis journal will follow you
-        - §7§othrough your adventures.
-        title: Quest Journal
-        author: MonzterYT
-        pages:
-        - |
-          §6QuestCreator >>§0
-          §7§oYour Quest§0
-          §7§oJournal is empty.§0
-    b: 0
-    c: 1.0
-  '7':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: MUSIC_DISC_WARD
-    b: 0
-    c: 1.0
-  '8':
-    a:
-      ==: org.bukkit.inventory.ItemStack
-      v: 2580
-      type: SPAWNER
-      meta:
-        ==: ItemMeta
-        meta-type: TILE_ENTITY
-        display-name: zombie_villager Spawner
-        internal: H4sIAAAAAAAAAIWPy07DMBBFb50SUUvlIWDBrt/BksKyqCpIXVaTdgijOjY4LiT9Qj4LO150yWxGGp3RPVcDGhePxm33zzZI6N+oVrheUPfC5Kt+OAq3KDUmr5/0Y58o0DmU7HDfiOWtp/fwcHRNJbz5FmOoZg+F6UJs5tlQj98CoyPixN2lnQjqTkQxU7hZ8ddBPO+W8cB+RbZmXCnoAZu7gw0Y5+y7U3bjqk2bAPYTXA7o0gWO4mRaHaNGGmUu9693gXLNUn+E9JZc++yaDbLQWOEsl7oF/gCYse/IQAEAAA==
-        blockMaterial: SPAWNER
-    b: 0
-    c: 1.0
+        internal: H4sIAAAAAAAAAH1Sy27TQBS9IAgmgAQIyg5ZFs0CRSgPJdBIFTi2Syd4PEnsPMZRFOUxeTjjOHIcWhexZc0fsOyWBTs2KBJLPoAlu+7gE3AbCO2G0WjmzNwzR5pzbhxAgPsYE2Rp2Oyo1JAxUjo6qWqgtqTEUPe8oOcdSkkpmolnCb76LCaYwif9qRh4IpmzmVj8W18ds9Ux15rEQop4qii1Bbi7UT9dOxYtaxBXiGHWsFzUNQFuXyQgFbbKVbKnmSYiRqdIiGlp1WhvxuGmOV1yXva94YSzOMQjNGd+MGGL6yAE7DBY+mwRB4BLAlytd/mSwScWllJ2c5waNEu8H6J8dLbMFCfImT9Fs3rYU1AeuVF9X87r4c45bi7oNnKcZktje1ZZ9tx6Ss9WOduvpvtu7bXtjELsjDLUmmbp0fQAq7aLVZo1rFFIXpYc26EH2EI56tYyhrM3oUc0Q53BhFjFse2UHNKoc6xOQ9KopKlrcBJhNEvvDCu7uwA34DIaRB+5Ujo5+fjj3Sv5/fcvP799+PoYYnBvYxiWm521ldrzX3A2YrB10U+FEF0lDePFozVBgAf/8kZmWZeppq5jufYnbQFubShnrfCw9b/s2+f5FtKqEFv3gAB3NvcKwVg2VBPs1htJ8Vy3OxtIBanvdwO2EIee32feWtBbBMyPdMXtOe+GzN+OOktlEZQKqSepZPR4tvA4kwrDLl+wpETmUiHwl+xtG34DiVzVfs8CAAA=
+    b: 22
+    c: 5.0

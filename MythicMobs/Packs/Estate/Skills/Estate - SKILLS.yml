@@ -1,0 +1,11 @@
+GOBLIN_MOUNT_HOUND:
+  Conditions:
+  - mounted{} false
+  Skills:
+  - mounttarget @MIR{r=5;t=HOUND}
+HOUND_BLEED:
+  Cooldown: 10
+  Skills:
+  - damage{amount=1;repeat=3;repeatInterval=20} @target
+  - effect:bloodyScreen{d=60} @target
+  - message{m="&cThe <mob.name> &cbit you, making you &4bleed&c!"} @target

@@ -92,7 +92,7 @@ Optimizations:
   # Set this to 0 to disable
   ImmortalityOnJoin: 3
   # Enables or disables maintenance mode
-  Maintenance: true
+  Maintenance: false
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
   MaintenanceAutoKick: true
   # When enabled will show bossbar message informing about current maintenance mode being enabled
@@ -1681,7 +1681,7 @@ Time:
   # Allows you to change vanilla time speed to your own liking and needs
   TimeSpeed:
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    Homes:
+    Spawn:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1692,7 +1692,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    Spawn:
+    Homes:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600

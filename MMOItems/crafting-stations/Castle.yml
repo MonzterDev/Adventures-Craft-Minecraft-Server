@@ -11,46 +11,46 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
-  MORDEN_HEAD:
+  MORDEN_HEAD4:
     output:
       type: ARMOR
-      id: MORDEN_HEAD
+      id: MORDEN_HEAD4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=480}
     conditions: []
-  MORDEN_CHEST:
+  MORDEN_CHEST4:
     output:
       type: ARMOR
-      id: MORDEN_CHEST
+      id: MORDEN_CHEST4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=768}
     conditions: []
-  MORDEN_LEGS:
+  MORDEN_LEGS4:
     output:
       type: ARMOR
-      id: MORDEN_LEGS
+      id: MORDEN_LEGS4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=480}
     conditions: []
-  MORDEN_FEET:
+  MORDEN_FEET4:
     output:
       type: ARMOR
-      id: MORDEN_FEET
+      id: MORDEN_FEET4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=672}
     conditions: []
-  GRAVE_DIGGER:
+  GRAVE_DIGGER5:
     output:
       type: HAMMER
-      id: GRAVE_DIGGER
+      id: GRAVE_DIGGER5
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=1280}
     conditions: []
-  BONE_SWORD2:
+  BONE_SWORD5:
     output:
       type: SWORD
-      id: BONE_SWORD2
+      id: BONE_SWORD5
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=640}
@@ -75,18 +75,18 @@ recipes:
     - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
     conditions:
     - profession{profession=Mining,level=5}
-  UNDEAD_CATALYST:
+  UNDEAD_CATALYST3:
     output:
       type: Catalyst
-      id: UNDEAD_CATALYST
+      id: UNDEAD_CATALYST3
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=320}
     conditions: []
-  DEAD_CATALYST:
+  DEAD_CATALYST4:
     output:
       type: Catalyst
-      id: DEAD_CATALYST
+      id: DEAD_CATALYST4
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=384}

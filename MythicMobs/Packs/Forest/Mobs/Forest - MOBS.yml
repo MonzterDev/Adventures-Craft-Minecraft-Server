@@ -1,0 +1,296 @@
+BEE1:
+  Type: BEE
+  Display: '&7[&fLVL 1&7] &cBee'
+  Health: 50
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options: &Options
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 25
+    MovementSpeed: 0.26
+    FollowRange: 6
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  Drops:
+  - EXP 2 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=5} @target ~onAttack
+  - skill{s=BEE_STING} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+HARE:
+  Type: ZOMBIE
+  Disguise:  
+    Type: RABBIT
+    Player: '&7[&fLVL 5&7] &cHare'
+  Display: '&7[&fLVL 5&7] &cHare'
+  Health: 200
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.34
+    <<: *Options
+  Drops:
+  - EXP 5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=10} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+
+WILD_CAT:
+  Type: OCELOT
+  Display: '&7[&fLVL 5&7] &aCat'
+  Health: 1000
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.4
+    Collidable: true
+    PreventOtherDrops: true
+    PreventLeashing: false
+    <<: *Options
+  Drops:
+  - EXP 5 100%
+  AIGoalSelectors:
+  - 0 fleeplayers
+  - 3 randomstroll
+  Skills:
+  - skriptskill{s=WILD_CAT_LEASHED} ~onDamaged
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=WILD_CAT_CAPTURED} ~onSignal:CAPTURED
+
+CAT_LADY:
+  Type: Ocelot
+  Display: ''
+  Health: 99999
+  Damage: 0
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Persistent: false
+    ApplyInvisibility: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 2
+    MaxCombatDistance: 0
+    MovementSpeed: 0.0001
+    FollowRange: 6
+    Collidable: false
+    Despawn: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Interactable: false
+    AttackSpeed: 1
+    PreventLeashing: false
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - signal{s=CAPTURED} @MobsInRadius{r=5;t=WILD_CAT} ~onTimer:40
+
+WASP:
+  Type: MPET
+  MPet:
+    Type: Bees
+    Anchor: BEE
+    ShowName: true
+  Display: '&7[&fLVL 5&7] &cWasp'
+  Health: 250
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    <<: *Options
+  Drops:
+  - EXP 5 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=BEE_STING2} @target ~onAttack
+
+QUEEN_BEE:
+  Type: MPET
+  MPet:
+    Type: Wasp
+    Anchor: BEE
+    ShowName: true
+  Display: '&7[&fLVL 10&7] &cQueen Bee'
+  Health: 500
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MovementSpeed: 0.26
+    <<: *Options
+  Drops:
+  - EXP 7-10 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=20} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=Agro8A} ~onTimer:20
+  - skill{s=Agro8B} ~onTimer:20
+  - skill{s=BEE_STING3} @target ~onAttack
+
+DRYAD:
+  Type: ZOMBIE
+  Display: '&7[&fLVL 20&7] &cDryad'  
+  Health: 45000
+  Faction: Forest  
+  Disguise:  
+    Type: player
+    Player: '&7[&fLVL 20&7] &cDryad'
+    Skin: dryad  
+  BossBar:
+    Enabled: true
+    Title: '&7[&fLVL 20&7] &cDryad <caster.hp>&f/&c<caster.mhp>'
+    Range: 50
+    Color: GREEN
+    Style: SOLID    
+  Modules:
+    ImmunityTable: false
+    ThreatTable: true
+  Options:
+    Despawn: false
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: .75
+    MaxCombatDistance: 5
+    MovementSpeed: 0.32
+    FollowRange: 30
+    Collidable: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    AttackSpeed: 10
+  Equipment:
+  - DRYAD_CHEST:CHEST
+  - DRYAD_LEGS:LEGS
+  - DRYAD_BOOTS:FEET
+  - DRYAD_AXE:0
+  - DRYAD_AXE:OFFHAND
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - skill{s=DRYAD_UNDEFEATED} ~onSpawn
+  - damage{amount=75} @target ~onAttack
+  - effect:particlesphere{particle=spell_mob;amount=5;radius=.5;y=0} @self ~onTimer:1
+  - effect:blockmask{m=oak_log;r=1;d=50} @self ~onTimer:1
+  - skill{s=DYRAD_ROOT} ~onTimer:300
+  - skill{s=DRYAD_MINION_SPAWN} ~onSpawn
+  - skill{s=DRYAD_MINION_SPAWN2} ~onDamaged <50%
+  - skill{s=DRYAD_MISSLE_SIGNAL} ~onDamaged <60%
+  - remove @Children ~onDeath
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=DRYAD_AREA} @self ~onTimer:40
+
+DRYAD_MINION:
+  Type: ARMOR_STAND
+  Display: '&a'  
+  Health: 25000
+  Faction: Forest  
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    Silent: true
+    Invisible: true
+    AlwaysShowName: false
+    KnockbackResistance: 1
+    MaxCombatDistance: 1
+    MovementSpeed: 0.001
+    FollowRange: 0
+    <<: *Options
+  AIGoalSelectors:
+  - 1 clear
+  Skills:
+  - skill{s=MINION_MISSLE} @PIR{r=50} ~onSignal:MINION_MISSLE
+  - potion{type=INVISIBILITY;duration=2000000;level=4} @self ~onSpawn
+
+DRYAD_HARE:
+  Type: SILVERFISH
+  Disguise:  
+    Type: RABBIT
+  Display: '&7[&fLVL 15&7] &cVenemous Hare'
+  Health: 25000
+  Faction: Forest
+  Modules:
+    ThreatTable: true
+    ImmunityTable: false
+  Options:
+    MaxCombatDistance: 50
+    FollowRange: 20
+    MovementSpeed: 0.42
+    <<: *Options
+  Drops:
+  - EXP 15 100%
+  AIGoalSelectors:
+  - 0 randomlookaround
+  - 1 clear
+  - 2 meleeattack
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=40} @target ~onAttack
+  - skill{s=DRYAD_HARE_BITE} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=HareAgroA} ~onTimer:20
+  - effect:particles{p=reddust;color=#78D663;amount=5;hS=0;vS=.25;speed=1} @self ~onTimer:3
+  - skill{s=HARE_AREA} @self ~onTimer:40

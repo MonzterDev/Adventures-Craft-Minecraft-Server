@@ -1,6 +1,6 @@
 enabled: true
 cooldown: 10
-inventory-name: '&8Lootboxes'
+inventory-name: '&b&lMULTI&7Crate'
 permission: multicrates.allcrates
 hologram-offset: 0.2
 
@@ -11,7 +11,7 @@ display:
 
 crate:
   material: Ender_chest;0
-  name: '&f&l»&7&l» &8Lootboxes &7&l«&f&l«'
+  name: '&5&lMulti Crate'
   lore:
   - ''
   - '&5&lCrates&e&l:'
@@ -24,17 +24,16 @@ crate:
 gui:
   rows:
   - '#########'
-  - '##1#2#3##'
+  - '#1##2##3#'
   - '#########'
   objects:
     '#':
-      name: '&5'
-      material: BLACK_STAINED_GLASS_PANE
+      material: AIR
       glow: false
       amount: 1
-    '1': BoosterBox
-    '2': UndeadSkins
-    '3': HellSkins
+    '1': BeginnerCrate
+    '2': MiddleCrate
+    '3': MasterCrate
 
 hologram:
   lines:
@@ -79,5 +78,10 @@ play:
       center-x: 0
       center-y: 0
       center-z: 0
+
+open:
+  sounds:
+  - BLOCK_ANVIL_PLACE, 1, 10
+  - ENTITY_PLAYER_LEVELUP, 1, 5
 cost: -1
 allow-skip-animation: false
