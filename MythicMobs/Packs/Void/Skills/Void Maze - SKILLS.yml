@@ -76,7 +76,7 @@ CHAMPION_DISGUISE7:
 #VOID PORTAL ITEM
 PORTAL_CHOSE:
   Conditions:
-  - stringequals{val1="%custom_restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART
+  - stringequals{val1="%ac_Restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART
   - mobsInRadius{types=VOID_ENCHANTRESS,VOID_PORTAL;amount=>0;radius=999999} castinstead PORTAL_BUSY
   Skills:
   - randomskill{skills=PORTAL_NOT_SUMMON,PORTAL_SUMMON}
@@ -90,27 +90,27 @@ PORTAL_SUMMON:
   - teleportto{location=-197.5,13,-812.5;y=-1;p=1.6} @self
 PORTAL_BUSY:
   Skills:
-  - message{m="&cThere is already a &5Void Enchantress &calive! (%custom_void_timer%&c)"} @self
+  - message{m="&cThere is already a &5Void Enchantress &calive! (%ac_Void_Timer%&c)"} @self
   - command{c="mi give CONSUMABLE UNSTABLE_WARP4";op=true;ac=true} @self
 PORTAL_BUSY_RESTART:
   Skills:
-  - message{m="&cThe server is too close to restarting! (%custom_restart_timer%&c)"} @self
+  - message{m="&cThe server is too close to restarting! (%ac_Restart_Timer%&c)"} @self
   - command{c="mi give CONSUMABLE UNSTABLE_WARP4";op=true;ac=true} @self
 
 PORTAL_SUMMON2:
   Conditions:
-  - stringequals{val1="%custom_restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART2
+  - stringequals{val1="%ac_Restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART2
   - mobsInRadius{types=VOID_ENCHANTRESS,VOID_PORTAL;amount=>0;radius=999999} castinstead PORTAL_BUSY2
   Skills:
   - summon{type=VOID_PORTAL;amount=1;radius=1} @Forward{f=0;y=20}
   - teleportto{location=-197.5,13,-812.5;y=-1;p=1.6} @self
 PORTAL_BUSY2:
   Skills:
-  - message{m="&cThere is already a &5Void Enchantress &calive! (%custom_void_timer%&c)"} @self
+  - message{m="&cThere is already a &5Void Enchantress &calive! (%ac_Void_Timer%&c)"} @self
   - command{c="mi give CONSUMABLE STABLE_WARP5";op=true;ac=true} @self
 PORTAL_BUSY_RESTART2:
   Skills:
-  - message{m="&cThe server is too close to restarting! (%custom_restart_timer%&c)"} @self
+  - message{m="&cThe server is too close to restarting! (%ac_Restart_Timer%&c)"} @self
   - command{c="mi give CONSUMABLE STABLE_WARP5";op=true;ac=true} @self
 
 PORTAL_ABILITY:
