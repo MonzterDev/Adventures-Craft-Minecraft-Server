@@ -83,7 +83,7 @@ WILD_CAT:
   - 0 fleeplayers
   - 3 randomstroll
   Skills:
-  - skriptskill{s=WILD_CAT_LEASHED} ~onDamaged
+  - skill{s=WILD_CAT_CANCEL_DAMAGE;sync=true} ~onDamaged
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=WILD_CAT_CAPTURED} ~onSignal:CAPTURED
 
