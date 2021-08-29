@@ -1,0 +1,4 @@
+RIGHT_CLICK_JOURNAL: action right any events:Q1_COMPLETE,Q2_START conditions:HOLDING_JOURNAL
+LEFT_CLICK_JOURNAL: action left ^(?!AIR).*$ events:Q2_COMPLETE,Q3_START conditions:HOLDING_JOURNAL
+CROUCH_LEFT_CLICK_JOURNAL: action left ^(?!AIR).*$ events:Q3_COMPLETE,Q4_START conditions:SNEAKING
+FOLLOW_THE_ARROW: location -167;16;3228;Spawn 3 events:Q4_COMPLETE
