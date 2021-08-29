@@ -1,0 +1,45 @@
+# This file stores all the GPS Points/Locations.
+# 
+# It is advised that you use the in-game configurator when editing your setup.
+# The in-game configurator lets you visually see what you are changing and avoids typing/input errors.
+
+
+Points:
+  Spawn, 12, 15, 0:
+    connections:
+    - Spawn, -4, 15, 0
+  Spawn, -4, 15, 0:
+    connections:
+    - Spawn, -28, 15, -11
+    - Spawn, 12, 15, 0
+  Spawn, -28, 15, -11:
+    connections:
+    - Spawn, -37, 15, -19
+    - Spawn, -4, 15, 0
+  Spawn, -37, 15, -19:
+    connections:
+    - Spawn, -43, 15, -28
+    - Spawn, -28, 15, -11
+  Spawn, -43, 15, -28:
+    connections:
+    - Spawn, -46, 15, -16
+    - Spawn, -37, 15, -19
+  Spawn, -46, 15, -16:
+    connections:
+    - Spawn, -43, 15, -28
+    name: WizardWorkshop
+  Spawn, -167, 16, 3227:
+    name: ArrowTutorial
+    connections:
+    - Spawn, -166, 16, 3214
+  Spawn, -166, 16, 3214:
+    connections:
+    - Spawn, -166, 16, 3200
+    - Spawn, -167, 16, 3227
+  Spawn, -166, 16, 3200:
+    connections:
+    - Spawn, -152, 16, 3198
+    - Spawn, -166, 16, 3214
+  Spawn, -152, 16, 3198:
+    connections:
+    - Spawn, -166, 16, 3200

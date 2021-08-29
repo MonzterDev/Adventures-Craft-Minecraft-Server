@@ -1,2 +1,27 @@
 npcs:
-  '1': flint
+  '1': Flint
+variables:
+    QUESTER_NAME: "Flint"
+    REWARD_MESSAGE: "$default-Functions.REWARD_MESSAGE$$QUESTER_NAME$&a!"
+
+    QUEST1_NAME: "Exploring the Town"
+    QUEST1_ID: "EXPLORING_THE_TOWN"
+    QUEST1_OBJ_MESSAGE: "Follow the gravel path forward until you reach the &aWizard's Workshop &e(-45, 15, -15)&f, which will be on your left."
+    QUEST1_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7Welcome to the &aTown&7, &6%player%&7! I've put a &6Compass &7towards the top of your screen, which will help guide you on certain quests. Look around until you see the &c&l!!! &7turn to &b&l!!! &7then walk in that direction!"
+    QUEST1_REWARDS: "$default-Functions.REWARDS$$QUEST1_REWARD1$ \n&8&l » $QUEST1_REWARD2$ $default-Functions.OBJ_START_SOUND$"
+    QUEST1_REWARD1: "&f100 $default-Functions.EXP_REWARD$"
+    QUEST1_REWARD2: "&f100 $default-Functions.MONEY_REWARD$"
+
+    QUEST2_NAME: "Hatching an Egg"
+    QUEST2_ID: "HATCHING_AN_EGG"
+    QUEST2_OBJ_MESSAGE: "Return to the &6Pet Shop &fand speak to &aSarah &fto hatch the Pet Egg, with your &b100 ❉ Pet Experience&f!"
+    QUEST2_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7Return to the &6Pet Shop &7and speak to &aSarah &7to hatch the &fPet Egg&7, with your &b100 ❉ Pet Experience&7!"
+    QUEST2_REWARDS: "$default-Functions.REWARDS$$QUEST2_REWARD1$ $default-Functions.OBJ_START_SOUND$"
+    QUEST2_REWARD1: "&5250 $default-Functions.ENCHANTING_PROEFESSION$"
+
+    QUEST3_NAME: "Evolution"
+    QUEST3_ID: "EVOLUTION"
+    QUEST3_OBJ_MESSAGE: "Interact with the &6Evolver &fbehind the desk, to learn more about &aEvolving Pets&f!"
+    QUEST3_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7Interact with the &6Evolver &7behind the desk, to learn more about &aEvolving Pets&7!"
+    QUEST3_REWARDS: "$default-Functions.REWARDS$$QUEST3_REWARD1$ $default-Functions.OBJ_START_SOUND$"
+    QUEST3_REWARD1: "&a100 $default-Functions.ENCHANTING_PROEFESSION$"

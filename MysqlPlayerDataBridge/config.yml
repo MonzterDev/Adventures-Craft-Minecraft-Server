@@ -5,7 +5,7 @@
 database:
     mysql:
         #MySQL server address
-        host: 127.0.0.1
+        host: localhost
         #MySQL server port (default 3306)
         port: 3306
         #Database name (NOTE! You need to create the database, then the plugin will create the tables.)
@@ -57,11 +57,11 @@ General:
         #Share potion effects | (true or false)
         sharePotionEffects: true
         #Share players health level | (true or false)
-        shareHealth: true
+        shareHealth: false
         #Share players food and saturation level | (true or false)
-        shareFood: true
+        shareFood: false
         #Share players air level | (true or false)
-        shareAir: true
+        shareAir: false
         #Share players location | (true or false)
         #NOTE! Sharing bed spawn location requires share location enabled!
         shareLocation: false

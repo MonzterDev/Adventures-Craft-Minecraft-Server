@@ -1,0 +1,314 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                  ____  ____   ____                   | #
+# |                 / ___||  _ \ / ___|                  | #
+# |                | |  _ | |_) |\___ \                  | #
+# |                | |_| ||  __/  ___) |                 | #
+# |                 \____||_|    |____/                  | #
+# |                                                      | #
+# | By: Benz56                                           | #
+# +------------------------------------------------------+ #
+############################################################
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |              Arrow appearance settings               | #
+# +------------------------------------------------------+ #
+############################################################
+
+# The block the arrow is made out of. Data values are supported.
+# Implementation: Block or 'Block:Data'.
+block: Quartz_Block
+
+# The Block density / the spacing between each block in the arrow.
+arrowDensity: 0.3
+
+# Set the length of the arrow shaft.
+arrowLength: 2.1
+
+# Set the length of the arrow head parts.
+headLength: 0.9
+
+# Set the offset of the arrow head parts.
+# Used for fine tuning the look of the arrow head at different sizes if necessary.
+headOffset: 0.3
+
+# Name of the arrow.
+# Use %distance% as a placeholder for the remaining distance to the target. (E.g 10.23)
+# Use %distanceTenth% does the same as the above placeholder yet rounded to a tenth. (E.g 10.2)
+# Use %distanceRounded% as a placeholder for the remaining rounded distance to the target. (E.g 10)
+arrowName: '&a%distance% blocks to destination'
+
+# Display the arrows name on the action bar instead of above the arrow.
+useActionbar: false
+
+# Choose to use a Particle arrow instead of the Entity arrow.
+# This is not recommended as the particle arrow looks rather busy
+# compared to the entity-constructed arrow.
+particleArrow: false
+
+# The 3D arrow is a little heavier on performance and
+# looks a bit messy compared to the non-3D arrow.
+particleArrow3D: false
+
+# Set the color of the particle arrow.
+particleArrowColor: 255, 1, 1
+
+# Choose to use a resource pack arrow.
+# This is an optimal choice as it only requires a single entity/armorstand.
+resourcePackArrow: false
+
+# Set the Material and Durability used for the custom item in your Resource Pack.
+resourcePackArrowMaterial: IRON_HOE
+resourcePackArrowDurability: 1
+
+# If the customModelData value doesn't equal 0 then the plugin will use customModelData instead of durability.
+resourcePackCustomModelData: 0
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |               Arrow position settings                | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Set the default horizontal and vertical offset distance from the player.
+defaultHorizontalOffset: 6.0
+defaultVerticalOffset: 2.5
+
+# Set the min and max offset values for the horizontal and vertical offsets.
+# These values are the min/max values for the /gps move command.
+minHorizontalOffset: 3.0
+maxHorizontalOffset: 10.0
+minVerticalOffset: -2.0
+maxVerticalOffset: 6.0
+
+# If false the arrow will follow the player's pitch. Looking up will move it up, looking down will move it down.
+# If true the arrow will stay at the defaultVerticalOffset or the offset the player has chosen regardless of pitch.
+fixedArrowHeight: false
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |             Particle appearance settings             | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Set the density of the particles / the spacing between each particle in the line.
+particleDensity: 1.0
+
+# Set the render distance of the particles.
+particleRenderDistance: 40.0
+
+# Set the particle update rate. (update every x ticks)
+particleUpdateRate: 5
+
+
+# Set different colors for particles below.
+# The particles use RGB color values. Use the link below:
+# - https://www.w3schools.com/colors/colors_rgb.asp
+#
+# You can also set the value to:
+# - rainbow (Creates a smooth dynamic transitioning rainbow particle color animation)
+
+# The base line color.
+lineColor: 1, 1, 255
+
+# The connected line color. If A is connected to B
+# the two last particles at point B will be in the color below.
+connectedColor: 1, 255, 255
+
+# Default point highlight color. If the location is not
+# the selected nor the closest this color is used.
+defaultPointColor: 255, 1, 1
+
+# Selected point highlight color. If the location is
+# the selected point this color is used.
+selectedPointColor: 1, 255, 1
+
+# Closest point highlight color. If the location is
+# the closest point this color is used.
+closestPointColor: 255, 255, 1
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                     GPS settings                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Max distance to entry point if a start/from parameter has not been specified.
+# If the distance is greater than the value below the GPS won't start.
+maxDistanceToEntry: 50.0
+
+# Point update distance. The distance is the radius of a spherical check around
+# the point, meaning it does not matter which direction the player is coming from.
+pointUpdateDistance: 5.0
+
+# GPS update interval. The interval in which the GPS updates to check if the player
+# reached a new point. Setting this to 1 allows the GPS to be very responsive but
+# takes up more system resources. Setting it too high will make the GPS unresponsive
+# and possibly miss new points if the player is moving fast e.g. on a horse or flying.
+# The sweetspot is between 2 and 5.
+gpsUpdateInterval: 3
+
+# Toggle whether or not the particle path visualizer should automatically enable
+# on GPS navigation startup. It will only auto-enable if the player being navigated
+# has the gps.commands.show permission which they would need to manually start it.
+autoShowPath: false
+
+# Set the y-offset of the particle path from the player.
+playerPathOffset: 0
+
+# Should the GPS remember the Players current path when they leave?
+# When the player joins again the navigation is resumed.
+saveOnQuit: true
+
+# Ignore this if the above is set to false.
+# How long should the Player GPS instance be kept alive? (in seconds)
+# If the player does not join before the time has passed the GPS is stopped.
+maxQuitTime: 3600
+
+# Decide how long a player can remain inactive with the GPS enabled.
+# Inactivity is based on movement. When the player moves the timer resets.
+InactivityTimer:
+  enabled: true
+  maxInactivitySeconds: 300
+
+# Set the distance between points that are connected via a teleportation connection.
+# E.g. if two points that are 1000 blocks apart or in different worlds are connected
+# with a teleportation connection, i.e. the player is expected to teleport from one
+# point to the other, the distance the GPS resolves the path with is the value below.
+teleportConnectionDistance: 0
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   BossBar settings                   | #
+# +------------------------------------------------------+ #
+############################################################
+
+# You can enable a BossBar to show how far the player is on his/her path.
+bossBarEnabled: true
+
+# Color: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+bossBarColor: RED
+
+# Style: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+bossBarStyle: SOLID
+
+# Set the message above the BossBar. Supported placeholders:
+# %remaining% - Shows the remaining distance with two decimals.
+# %remainingTenth% - Shows the remaining distance with a single decimal.
+# %remainingRounded% - Shows the remaining distance without any decimals.
+# You can replace 'remaining' in any of the above with 'total' to show the total distance.
+bossBarMessage: '&f%remainingRounded% blocks left of %totalRounded%'
+
+# Instead of a message you can use the BossBar as a compass.
+BossBarCompass:
+  enabled: false
+  # The symbol for North.
+  north: '&a&lN'
+  # The symbol for East.
+  east: '&a&lE'
+  # The symbol for South.
+  south: '&a&lS'
+  # The symbol for West.
+  west: '&a&lW'
+  # The symbol for the target destination if you're within 3 blocks of the targets y-level.
+  target: '&c&l⬤'
+  # The symbol for the target destination if it is above you.
+  targetAbove: '&c&l⬆'
+  # The symbol for the target destination if it is below you.
+  targetBelow: '&c&l⬇'
+  # Set at which y-offset the symbol changes.
+  # E.g. if you're 2 blocks above the target the target-symbol changes to targetBelow.
+  targetOffset: 2
+  # The separator symbol.
+  separator: '&f&m '
+  # The spacing between e.g. the symbols for north and east.
+  separatorLength: 15
+  # The total length of the BossBar text.
+  totalLength: 42
+
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                     Compass Item                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# If enabled players will be given a compass when they start the compass or GPS.
+# This will set the direction of the compass item to the next target location.
+CompassItem:
+  enabled: false
+
+  # Decide whether players will be given a custom compass or not.
+  # If you set this to false a compass will not be given,
+  # however, the direction towards the next target will
+  # still be set for all compasses the player has.
+  giveCompass: true
+
+  # The name of the compass item.
+  name: '&eGPS Compass'
+
+  # The lore of the compass item.
+  lore:
+    - ''
+    - '&7Points towards the next location.'
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                    Other Settings                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Set the max distance for point selection and closest point update.
+selectionDistance: 10.0
+
+# Only show the GPS arrow for the owner.
+# This setting requires you to have ProtocolLib installed on your server!
+# If set to true and ProtocolLib is not installed it will fail silently and show for all.
+showForOwnerOnly: true
+
+# Particle path mode.
+# This mode disables the arrow completely. If you want to rely on the particle
+# path please set autoShowPath to true or enable the CompassItem. Furthermore,
+# it will enable Actionbar mode regardless of the setting chosen earlier.
+# If you do not wish to show an Actionbar message set the arrowName to ''.
+disableArrow: false
+
+# Update Checker.
+# Enable or disable the update checker.
+updateCheckerEnabled: true
+# false: All OPs are notified of a new update when they join.
+# true: OPs are only notified if they have the gps.update permission as well.
+# N.B. any user with the gps.update permission is notified; OP or not.
+updateCheckerPermissionOnly: false
+
+# Disable hunger loss while the GPS or Compass is active.
+# Players may still replenish their hunger by eating.
+disableHungerWhenActive: false
+
+# When a player respawns after a death the compass is started
+# with the death location as the target. The compass won't start
+# if the death and respawn worlds aren't the same. A player is
+# required to have the 'gps.startonrespawn' permission.
+startOnRespawn: false
+
+# If the death and respawn world as mentioned above isn't the same
+# should the compass wait for the player to reenter the death world
+# and then start. Requires startOnRespawn to be set to true.
+startOnDeathWorldReentry: false
+
+# Choose between two decimal formats for displaying the distance placeholders.
+# GERMAN: 1.000,00
+# US:     1,000.00
+decimalFormat: GERMAN
