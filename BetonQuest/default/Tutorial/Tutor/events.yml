@@ -36,7 +36,7 @@ Q4_START: 'folder Q4_OBJ_START,Q4_TAG_START,Q4_JOU_START,Q4_GPS_START,Q4_MSG_STA
 Q4_OBJ_START: 'objective start FOLLOW_THE_ARROW'
 Q4_TAG_START: 'tag add $QUEST4_ID$_STARTED'
 Q4_JOU_START: 'journal add QUEST4_JOU_MESSAGE'
-Q4_GPS_START: 'command gps start ArrowTutorial %player%'
+Q4_GPS_START: 'command gps:compass start ArrowTutorial %player%'
 Q4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST4_OBJ_MESSAGE$ $QUEST4_NPC_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
 # 
 Q4_COMPLETE: 'folder Q4_TAG_COMPLETE,Q4_JOU_DELETE,Q4_MSG_COMPLETE'

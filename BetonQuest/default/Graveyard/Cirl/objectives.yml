@@ -1,8 +1,11 @@
-KillUndead: mmobkill UNDEAD_SKELETON amount:20 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1
-  notify:1
-MeetGraveyard: location -157;16;144;Spawn 3 events:OpenStool,entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2,GraveyardShopCompassHide
-KillUndead2: mmobkill UNDEAD_ARCHER amount:15 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3
-  notify:2
-KillReaper: mmobkill REAPER amount:1 events:q4_party,ReaperCompassHide
-  notify:1
-EnterCourtyard: npcinteract 30 events:entry_q5_complete,QuestReward5,NavidCompassHide
+HUNTING_THE_UNDEAD: mmobkill UNDEAD_SKELETON amount:1 events:Q1_OBJ_START,Q1_POINT_GIVE,Q1_MSG_REPEAT
+HUNTING_THE_UNDEAD_COMPLETE: mmobkill UNDEAD_SKELETON amount:1 events:Q1_COMPLETE,Q2_START condition:HUNTING_THE_UNDEAD
+
+THE_SILVER_STOOL: action right LECTERN events:Q2_COMPLETE,Q3_START
+
+ARCHER_ANNILATOR: mmobkill UNDEAD_ARCHER amount:1 events:Q3_OBJ_START,Q3_POINT_GIVE,Q3_MSG_REPEAT
+ARCHER_ANNILATOR_COMPLETE: mmobkill UNDEAD_ARCHER amount:1 events:Q3_COMPLETE,Q4_START condition:ARCHER_ANNILATOR
+
+THE_REAPER: mmobkill REAPER amount:1 events:Q4_COMPLETE,Q5_START
+
+COURTYARD_VENTURE: location -111;15;248;Spawn 3 events:Q5_COMPLETE
