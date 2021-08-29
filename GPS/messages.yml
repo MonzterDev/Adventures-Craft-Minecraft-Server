@@ -30,8 +30,8 @@ Messages:
     invalidArgs: '%prefix% &cInvalid arguments! ["&c&n&oHelp","/gps help","&aClick
       to get help!"]'
     unknownPoint: '%prefix% &cUnknown Point!'
-    started: '%prefix% &aGPS started!'
-    startedPlayer: '%prefix% &aGPS started for %player%!'
+    started: '%prefix% &agps:compass started!'
+    startedPlayer: '%prefix% &agps:compass started for %player%!'
     stopped: '%prefix% &aGPS stopped!'
     stoppedPlayer: '%prefix% &aGPS stopped for %player%!'
     notStarted: '%prefix% &cGPS is not active!'
@@ -104,7 +104,7 @@ Help:
 
     &7Click to run."]
   - |-
-    [" &7&l● &e/gps [start] <to> [from] [player]","/gps start ","&eStart the GPS.
+    [" &7&l● &e/gps [start] <to> [from] [player]","/gps:compass start ","&eStart the GPS.
 
     &7Click to suggest.","Suggest"]
   - |-
