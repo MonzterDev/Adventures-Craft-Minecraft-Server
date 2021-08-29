@@ -99,3 +99,30 @@
 20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 20.07.2021 - 07:39:22 -        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
 21.07.2021 - 08:39:13 - [TAB v2.8.11-pre4 Premium] Group "monzter" is not defined in sorting list! This will result in players in that group not being sorted correctly. To fix this, add group "monzter" into group-sorting-priority-list in config.yml. Your current list: [owner, admin, mod, helper, alpha, conqueror, adventurer, explorer, default]
+21.08.2021 - 20:59:38 - [TAB v2.8.11-pre4 Premium] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.9
+21.08.2021 - 20:59:38 - java.lang.IllegalStateException: zip file closed
+21.08.2021 - 20:59:38 -        at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:912)
+21.08.2021 - 20:59:38 -        at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:347)
+21.08.2021 - 20:59:38 -        at java.base/java.util.zip.ZipFile$1.getEntry(ZipFile.java:1118)
+21.08.2021 - 20:59:38 -        at java.base/java.util.jar.JarFile.getEntry0(JarFile.java:578)
+21.08.2021 - 20:59:38 -        at java.base/java.util.jar.JarFile.getEntry(JarFile.java:508)
+21.08.2021 - 20:59:38 -        at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:470)
+21.08.2021 - 20:59:38 -        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:165)
+21.08.2021 - 20:59:38 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+21.08.2021 - 20:59:38 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:119)
+21.08.2021 - 20:59:38 -        at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114)
+21.08.2021 - 20:59:38 -        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+21.08.2021 - 20:59:38 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.runSyncCommand(ExpansionDownloader.java:84)
+21.08.2021 - 20:59:38 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.access$000(ExpansionDownloader.java:20)
+21.08.2021 - 20:59:38 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:60)
+21.08.2021 - 20:59:38 -        at java.base/java.lang.Thread.run(Thread.java:834)
+23.08.2021 - 01:54:52 - [TAB v2.8.11-pre4 Premium] An error occurred when refreshing placeholders
+23.08.2021 - 01:54:52 - java.util.concurrent.CompletionException: java.sql.SQLException: HikariDataSource HikariDataSource (luckperms-hikari) has been closed.
+23.08.2021 - 01:54:52 -        at me.lucko.luckperms.common.storage.Storage.lambda$makeFuture$0(Storage.java:91)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+23.08.2021 - 01:54:52 -        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)

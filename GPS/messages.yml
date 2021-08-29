@@ -1,0 +1,164 @@
+# This is the Message file for all GPS messages.
+# 
+# All messages are fully customizable and support color codes, formatting and ASCII symbols.
+# HEX color codes are supported in 1.16+. The format is &#XXXXXX e.g. '&#XXXXXXYour message'
+# Set the Prefix/ConfPrefix and use %prefix%/%confPrefix% to add the corresponding prefix to a message.
+# Prepend any message with <ActionBar> to send it as an ActionBar message.
+# Leave a message blank ('') to disable it.
+# 
+# You can also create messages with Hover and Click events. Syntax options: (Space between comma and quote is NOT allowed)
+#  - ["Message","/Command"]
+#  - ["Message","Hover"]
+#  - ["Message","/Command","Hover"]
+#  - ["Message","/Command","Suggest"]
+#  - ["Message","/Command","Hover","Suggest"]
+# You can add as many events to a message as you want. Example:
+# '%prefix% &cInvalid arguments! ["&c&n&oHelp","/gps help","&aClick to get help!"]'
+# The "Suggest" tag is used if the click event should suggest the command. Default is Run.
+
+
+Prefix: '&7[&eGPS&7]'
+ConfPrefix: '&7[&6GPS Configurator&7]'
+AdminPrefix: '&7[&4GPS Admin&7]'
+Messages:
+  General:
+    invalidPermission: '%prefix% &cYou do not have permission to do this!'
+    noCommands: Unknown command. Type "/help" for help.
+    unknownPlayer: '%prefix% &cUnknown Player!'
+    playerOnly: '%prefix% &cCommand can only be used as a Player!'
+  GPS:
+    invalidArgs: '%prefix% &cInvalid arguments! ["&c&n&oHelp","/gps help","&aClick
+      to get help!"]'
+    unknownPoint: '%prefix% &cUnknown Point!'
+    started: '%prefix% &aGPS started!'
+    startedPlayer: '%prefix% &aGPS started for %player%!'
+    stopped: '%prefix% &aGPS stopped!'
+    stoppedPlayer: '%prefix% &aGPS stopped for %player%!'
+    notStarted: '%prefix% &cGPS is not active!'
+    moveModeEnabled: '%prefix% &aEnabled move mode. Use again to disable.'
+    moveModeDisabled: '%prefix% &aDisabled move mode.'
+    noPath: '%prefix% &cNo valid path.'
+    noEntry: '%prefix% &cNo entry point nearby!'
+    destinationReached: '%prefix% &aDestination reached!'
+    cantReachDestination: '%prefix% &cCannot reach destination from here!'
+    pluginReload: '%prefix% &cThe plugin has been reloaded! Exiting navigation.'
+    arrowDisabled: '%prefix% &cThe GPS arrow is disabled. Move mode unavailable.'
+    resuming: '%prefix% &aResuming navigation!'
+    ended: '%prefix% &cYou have been gone for too long. Navigation ended!'
+    maxInactivity: '%prefix% &cYou have been inactive for too long. Navigation ended!'
+    usageDisabled: '%prefix% &cThe GPS has been disabled!'
+    toggledOn: '%prefix% &aGPS usage has been enabled!'
+    toggledOff: '%prefix% &cGPS usage has been disabled!'
+    noRoomCompassItem: '%prefix% &cPlease make room for the Compass item!'
+  Compass:
+    started: '%prefix% &aCompass started!'
+    startedOnRespawn: '%prefix% &aFind your death location by following the compass!'
+    startedPlayer: '%prefix% &aCompass started for %player%!'
+    stopped: '%prefix% &aCompass stopped!'
+    stoppedPlayer: '%prefix% &aCompass stopped for %player%!'
+    usageDisabled: '%prefix% &cThe Compass has been disabled!'
+  Configurator:
+    toggleEditor: '%confPrefix% &aEditor %state%'
+    editorInactive: '%confPrefix% &cEditor not active!'
+    invalidArgsConf: '%confPrefix% &cInvalid arguments! ["&c&n&oHelp","/gpsc help","&aClick
+      to get help!"]'
+    pointExists: '%confPrefix% &cPoint already exists!'
+    pointCreated: '%confPrefix% &aPoint successfully created!'
+    pointDeleted: '%confPrefix% &aPoint successfully deleted!'
+    noPointsNearby: '%confPrefix% &cNo points nearby!'
+    noPointSelected: '%confPrefix% &cNo point selected!'
+    selectedPoint: '%confPrefix% &aSelected point: &e%selected%'
+    cantConnectSame: '%confPrefix% &cCan''t connect the same point!'
+    connectedPoint: '%confPrefix% &aSuccessfully connected &e%selected% &ato &e%closest%!'
+    alreadyConnected: '%confPrefix% &cPoints are already connected!'
+    cantDisconnectSame: '%confPrefix% &cCan''t disconnect the same point!'
+    disconnectedPoint: '%confPrefix% &aSuccessfully disconnected &e%selected% &afrom
+      &e%closest%'
+    notConnected: '%confPrefix% &cPoints are not connected!'
+    otherWorld: '%confPrefix% &cCan''t move point to another world!'
+    movedPoint: '%confPrefix% &aSuccessfully moved point!'
+    locationsHasPoint: '%confPrefix% &cThis location already contains a point!'
+    invalidPoint: '%confPrefix% &cInvalid Point: %point%!'
+    teleportedToPoint: '%confPrefix% &aSuccessfully teleported.'
+    noPointInEyeSight: '%confPrefix% &cNo point in eyesight.'
+    addedStick: '%confPrefix% &aA Configurator Stick has been added to your inventory.'
+    unknownAttribute: '%confPrefix% &cUnknown attribute!'
+    invalidAttributeValue: '%confPrefix% &cInvalid attribute value!'
+    attributeRemoved: '%confPrefix% &aThe attribute has been removed. Using default
+      if any.'
+    attributeAdded: '%confPrefix% &aThe attribute value has been set.'
+    toggleAutoConnect: '%confPrefix% &aToggled AutoConnect to: &e%state%'
+  Admin:
+    configurationsReloaded: '%adminPrefix% &aConfiguration files successfully reloaded!'
+    stoppedAll: '%adminPrefix% &aStopped all active GPSes!'
+    noActiveGPSes: '%adminPrefix% &cThere are no active GPSes!'
+    usageEnabled: '%adminPrefix% &aGPS usage has been enabled!'
+    usageDisabled: '%adminPrefix% &cGPS usage has been disabled!'
+    cleanUpSuccess: '%adminPrefix% &aCleanUp successful!'
+Help:
+  GPS:
+  - '&9&m&l----------------------------------'
+  - ' &7&oBelow is a list of all GPS commands:'
+  - |-
+    [" &7&l● &e/gps [help]","/gps","&eOpens this help page.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/gps [start] <to> [from] [player]","/gps start ","&eStart the GPS.
+
+    &7Click to suggest.","Suggest"]
+  - |-
+    [" &7&l● &e/gps stop [player]","/gps stop ","&eStop the GPS.
+
+    &7Click to suggest.","Suggest"]
+  - |-
+    [" &7&l● &e/gps toggle","/gps toggle","&eToggle the GPS.
+    &eIf toggled off nothing can start the GPS for you.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/gps move","/gps move","&eChange the Arrows position.
+    &a - Mouse scroll = forwards/backwards.
+    &a - Mouse scroll + shift = up/down.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/gps show","/gps show","&eShows your path with particles.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/gps list [page]","/gps list ","&eShows you a list of all points.
+
+    &7Click to suggest.","Suggest"]
+  - ' &7&oHover over any command to see usage!'
+  - '&9&m&l----------------------------------'
+  Compass:
+  - '&9&m&l----------------------------------'
+  - ' &7&oBelow is a list of all Compass commands:'
+  - |-
+    [" &7&l● &e/compass [help]","/compass","&eOpens this help page.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/compass [start] <to> [player]","/compass start ","&eStart the Compass with a point as target.
+
+    &7Click to suggest.","Suggest"]
+  - |-
+    [" &7&l● &e/compass [start] <x> <y> <z> [player]","/compass start ","&eStart the Compass with a location as target.
+
+    &7Click to suggest.","Suggest"]
+  - |-
+    [" &7&l● &e/compass stop [player]","/compass stop ","&eStop the Compass.
+
+    &7Click to suggest.","Suggest"]
+  - |-
+    [" &7&l● &e/compass toggle","/compass toggle","&eToggle the Compass.
+    &eIf toggled off nothing can start the Compass for you.
+
+    &7Click to run."]
+  - |-
+    [" &7&l● &e/compass show","/compass show","&eShows your path with particles.
+
+    &7Click to run."]
+  - ' &7&oHover over any command to see usage!'
+  - '&9&m&l----------------------------------'

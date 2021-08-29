@@ -17,7 +17,8 @@ recipes:
       id: MINING_BOOSTER1
     ingredients:
     - mmoitem{type=MATERIAL,id=ADVENTURE_COIN,amount=1}
-    conditions: []
+    # conditions:
+    # - 'placeholder{placeholder=%mmocore_profession_mining%~equals~20}'
   MINING_BOOSTER2:
     output:
       type: BOOSTER

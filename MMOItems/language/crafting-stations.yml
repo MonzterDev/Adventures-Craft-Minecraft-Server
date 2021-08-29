@@ -20,6 +20,12 @@ condition:
   money:
     positive: '&a✔ $#money#'
     negative: '&c✖ $#money#'
+  attribute:
+    positive: '&a✔ Requires #points# #attribute#'
+    negative: '&c✖ Requires #points# #attribute#'
+  stellium:
+    positive: '&a✔ Requires #stellium# Stellium'
+    negative: '&c✖ Requires #stellium# Stellium'
 ingredient:
   mmoitem:
     positive: '&8✔ &a#amount#&8x &f#level##item#'

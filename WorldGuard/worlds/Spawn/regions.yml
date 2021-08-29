@@ -17,6 +17,7 @@ regions:
         flags:
             spawn: {world: Spawn, x: 572.2122452882091, y: 62.0, z: -43.44077850160827,
                 pitch: -1.2389916, yaw: 273.0804}
+            region-display-name: §eHive
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -26,17 +27,18 @@ regions:
         max: {x: 693, y: 256, z: 106}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: 282.39, y: 16.0, z: -33.7, pitch: 4.21, yaw: 278.22}
             block-break: allow
+            region-display-name: §aForest
             greeting-title: §a《Forest》
         owners: {}
         type: cuboid
@@ -49,6 +51,7 @@ regions:
             spawn: {world: Spawn, x: -83.23407944357352, y: 17.0, z: 434.76769264305744,
                 pitch: 1.0685298, yaw: 270.0268}
             use: allow
+            region-display-name: §cCastle
             greeting-title: §c《Castle》
             spawn-group: ALL
         owners: {}
@@ -61,6 +64,7 @@ regions:
         flags:
             spawn: {world: Spawn, x: 417.371907152749, y: 37.361802293174605, z: -30.51207626797258,
                 pitch: 0.6226635, yaw: 269.98328}
+            region-display-name: §2Birch Forest
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -110,16 +114,17 @@ regions:
         max: {x: -129, y: 96, z: -1129}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             block-break: allow
+            region-display-name: §cHell
             lava-flow: deny
         owners: {}
         type: cuboid
@@ -137,18 +142,19 @@ regions:
         max: {x: -34, y: 16, z: -870}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: -96.01589887979593, y: 4.0, z: -942.1643650918152,
                 pitch: 1.0667322, yaw: -128.63084}
             block-break: allow
+            region-display-name: §6Gold Mine
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -161,6 +167,7 @@ regions:
             time-lock: '13000'
             spawn: {world: Spawn, x: -142.24076588945408, y: 16.0, z: 47.89830959545711,
                 pitch: 2.3070774, yaw: -323.26608}
+            region-display-name: §cGraveyard
             greeting-title: §c《Graveyard》
             spawn-group: ALL
         owners: {}
@@ -173,6 +180,7 @@ regions:
         flags:
             spawn: {world: Spawn, x: 375.20130067824795, y: 27.998978189762827, z: -48.112481857737066,
                 pitch: 1.9785453, yaw: 269.5705}
+            region-display-name: §2Dark Oak Forest
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -184,6 +192,8 @@ regions:
         flags:
             spawn: {world: Spawn, x: 511.5660330316131, y: 53.52684821588749, z: -49.10979352038278,
                 pitch: 1.0397699, yaw: -89.55644}
+            region-display-name: §2Jungle Forest
+            spawn-group: ALL
         owners: {}
         type: cuboid
         priority: 11
@@ -193,18 +203,19 @@ regions:
         members: {}
         flags:
             time-lock: '23961'
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE,
-                DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE, ALLIUM,
+                COCOA]
             spawn: {world: Spawn, x: -132.16532712735906, y: 15.0, z: -407.7824262285415,
                 pitch: 2.919027, yaw: 98.1739}
             block-break: allow
+            region-display-name: §aFarm
             greeting-title: §a《Farm》
             spawn-group: ALL
         owners: {}
@@ -215,18 +226,19 @@ regions:
         max: {x: -34, y: 35, z: -989}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: -70.57432360338179, y: 17.0, z: -1025.9717574532938,
                 pitch: 0.16543798, yaw: 179.12012}
             block-break: allow
+            region-display-name: §1Lapis Mine
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -236,50 +248,63 @@ regions:
         max: {x: -812, y: 256, z: -160}
         members: {}
         flags:
-            allow-block-break: [RED_MUSHROOM, CARROTS, ROSE_BUSH, BEEHIVE, BROWN_MUSHROOM_BLOCK,
-                NETHERRACK, RED_MUSHROOM_BLOCK, GLOWSTONE, ALLIUM, COAL_BLOCK, AZURE_BLUET,
-                IRON_BARS, BEE_NEST, GOLD_BLOCK, LAPIS_ORE, MUSHROOM_STEM, STONE,
-                IRON_BLOCK, QUARTZ_BLOCK, BROWN_MUSHROOM, NETHER_QUARTZ_ORE, NETHER_WART,
-                DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON,
-                SUGAR_CANE, JUNGLE_LEAVES, POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK,
-                END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES,
-                BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE,
-                JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE,
-                PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, BROWN_MUSHROOM, JUNGLE_LEAVES,
+                DARK_OAK_LOG, SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE,
+                GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE,
+                BIRCH_LEAVES, MUSHROOM_STEM, MELON, IRON_BARS, ROSE_BUSH, BROWN_MUSHROOM_BLOCK,
+                BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT,
+                RED_MUSHROOM_BLOCK, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL,
+                ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, RED_MUSHROOM, COCOA]
             spawn: {world: Spawn, x: -895.8393531982961, y: 30.0, z: -402.1240986655546,
                 pitch: 0.45153463, yaw: 343.4688}
             block-break: allow
+            region-display-name: §2Goblin Town
             greeting-title: §c《Goblin Town》
             spawn-group: ALL
         owners: {}
         type: cuboid
         priority: 2
+    tutorial:
+        min: {x: -294, y: 14, z: 3166}
+        max: {x: -106, y: 261, z: 3326}
+        members: {}
+        flags:
+            spawn: {world: Spawn, x: -147.71833695805938, y: 16.0, z: 3198.490524770894,
+                pitch: 5.1177444, yaw: 90.074646}
+            invincible: allow
+            region-display-name: §aTutorial Island
+        owners: {}
+        type: cuboid
+        priority: 0
     void_abyss:
         min: {x: -103, y: 0, z: -794}
         max: {x: 27, y: 256, z: -732}
         members: {}
         flags:
             other-explosion: deny
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, CHORUS_FLOWER, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE,
-                DIAMOND_BLOCK]
             wither-damage: deny
+            enderman-grief: deny
+            firework-damage: deny
+            enderdragon-block-damage: deny
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, CHORUS_FLOWER, NETHER_WART, DIAMOND_BLOCK,
+                GLOWSTONE, GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK,
+                END_STONE, BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE,
+                EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK,
+                ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE,
+                DARK_OAK_LEAVES, NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             creeper-explosion: deny
             spawn: {world: Spawn, x: -71.5, y: 26.5, z: -762.5, pitch: -90.0, yaw: -1.5}
             block-break: deny
-            enderman-grief: deny
+            region-display-name: §5Void Abyss
             greeting-title: §5《Void Abyss》
             ghast-fireball: deny
-            firework-damage: deny
             spawn-group: ALL
-            enderdragon-block-damage: deny
         owners: {}
         type: cuboid
         priority: 0
@@ -303,6 +328,7 @@ regions:
             spawn: {world: Spawn, x: 318.13133162199557, y: 22.392666424732496, z: -38.78535993241962,
                 pitch: 2.7086358, yaw: 269.9168}
             interact: allow
+            region-display-name: §2Spruce Forest
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -312,19 +338,19 @@ regions:
         max: {x: -124, y: 256, z: -938}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, CHORUS_FLOWER, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE,
-                DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, CHORUS_FLOWER, NETHER_WART, DIAMOND_BLOCK,
+                GLOWSTONE, GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK,
+                END_STONE, BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE,
+                EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK,
+                ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE,
+                DARK_OAK_LEAVES, NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             spawn: {world: Spawn, x: -217.59133162199558, y: 33.11, z: -1099.747,
                 pitch: -2.3, yaw: 0.7}
             block-break: allow
+            region-display-name: §5Void
             greeting-title: §5《Void》
             spawn-group: ALL
         owners: {}
@@ -336,18 +362,19 @@ regions:
         members: {}
         flags:
             time-lock: '23961'
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES, POTATOES,
-                BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS,
-                CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK,
-                GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK,
-                TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE,
+                GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE,
+                BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE, EMERALD_BLOCK,
+                SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK, ACACIA_LOG,
+                JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES,
+                NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             spawn: {world: Spawn, x: 30.0, y: 16.0, z: -2.5, pitch: 0.0, yaw: 89.0}
             block-break: allow
             interact: allow
+            region-display-name: §aTown
             chest-access: allow
             ride: allow
             spawn-group: ALL
@@ -359,19 +386,19 @@ regions:
         max: {x: -130, y: 21, z: -768}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, CHORUS_FLOWER, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE,
-                DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, CHORUS_FLOWER, NETHER_WART, DIAMOND_BLOCK,
+                GLOWSTONE, GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK,
+                END_STONE, BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE,
+                EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK,
+                ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE,
+                DARK_OAK_LEAVES, NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             spawn: {world: Spawn, x: -191.59133162199558, y: 13.11, z: -821.547, pitch: 0.4,
                 yaw: 1.7}
             block-break: allow
+            region-display-name: §5Void Maze
             greeting-title: §5《Void Maze》
             spawn-group: ALL
         owners: {}
@@ -382,17 +409,18 @@ regions:
         max: {x: -130, y: 31, z: -1146}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES, POTATOES,
-                BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS,
-                CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK,
-                GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK,
-                TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE,
+                GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE,
+                BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE, EMERALD_BLOCK,
+                SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK, ACACIA_LOG,
+                JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES,
+                NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             spawn: {world: Spawn, x: -230.261, y: 14.0, z: -1259.987, pitch: -2.585978,
                 yaw: 1.25748}
+            region-display-name: §cHell
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -402,20 +430,21 @@ regions:
         max: {x: -492, y: 256, z: -334}
         members: {}
         flags:
-            allow-block-break: [RED_MUSHROOM, CARROTS, ROSE_BUSH, BEEHIVE, BROWN_MUSHROOM_BLOCK,
-                NETHERRACK, RED_MUSHROOM_BLOCK, GLOWSTONE, ALLIUM, COAL_BLOCK, AZURE_BLUET,
-                IRON_BARS, BEE_NEST, GOLD_BLOCK, LAPIS_ORE, MUSHROOM_STEM, STONE,
-                IRON_BLOCK, QUARTZ_BLOCK, BROWN_MUSHROOM, NETHER_QUARTZ_ORE, NETHER_WART,
-                DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG, BEETROOTS, IRON_ORE, REDSTONE_ORE,
-                MELON, SUGAR_CANE, JUNGLE_LEAVES, POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK,
-                END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES,
-                BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE,
-                JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE,
-                PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, BEETROOTS, OAK_LOG, CRIMSON_FUNGUS,
+                PUMPKIN, STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, BROWN_MUSHROOM,
+                JUNGLE_LEAVES, DARK_OAK_LOG, SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET,
+                REDSTONE_BLOCK, CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK,
+                GLOWSTONE, GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK,
+                END_STONE, BIRCH_LEAVES, MUSHROOM_STEM, MELON, IRON_BARS, ROSE_BUSH,
+                BROWN_MUSHROOM_BLOCK, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE,
+                DIAMOND_ORE, WHEAT, RED_MUSHROOM_BLOCK, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG,
+                TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES,
+                NETHER_QUARTZ_ORE, ALLIUM, RED_MUSHROOM, COCOA]
             spawn: {world: Spawn, x: -659.2978307123523, y: 25.0, z: -490.82337709515764,
                 pitch: -0.26834783, yaw: 317.47406}
             use: deny
             block-break: allow
+            region-display-name: §aEstate
             greeting-title: §a《Estate》
             spawn-group: ALL
         owners: {}
@@ -426,24 +455,37 @@ regions:
         max: {x: -788, y: 256, z: -518}
         members: {}
         flags:
-            allow-block-break: [RED_MUSHROOM, CARROTS, ROSE_BUSH, BEEHIVE, BROWN_MUSHROOM_BLOCK,
-                NETHERRACK, RED_MUSHROOM_BLOCK, GLOWSTONE, ALLIUM, COAL_BLOCK, AZURE_BLUET,
-                BEE_NEST, GOLD_BLOCK, LAPIS_ORE, MUSHROOM_STEM, STONE, IRON_BLOCK,
-                QUARTZ_BLOCK, BROWN_MUSHROOM, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE,
-                DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, BROWN_MUSHROOM, JUNGLE_LEAVES,
+                DARK_OAK_LOG, SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE,
+                GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE,
+                BIRCH_LEAVES, MUSHROOM_STEM, MELON, ROSE_BUSH, BROWN_MUSHROOM_BLOCK,
+                BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT,
+                RED_MUSHROOM_BLOCK, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL,
+                ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, RED_MUSHROOM, COCOA]
             spawn: {world: Spawn, x: -892.0111134273217, y: 30.0, z: -522.5485195891039,
                 pitch: 0.55434555, yaw: 180.20135}
             block-break: allow
+            region-display-name: §dSpirit Grounds
             greeting-title: §d《Spirit Grounds》
             spawn-group: ALL
         owners: {}
         type: cuboid
         priority: 2
+    tutorial_water:
+        min: {x: -294, y: 1, z: 3166}
+        max: {x: -106, y: 14, z: 3326}
+        members: {}
+        flags:
+            spawn: {world: Spawn, x: -147.71833695805938, y: 16.0, z: 3198.490524770894,
+                pitch: 5.1177444, yaw: 90.074646}
+            teleport-on-entry: {world: Spawn, x: -145.01289535222452, y: 16.0, z: 3198.409163889643,
+                pitch: 2.0263257, yaw: 89.39783}
+        owners: {}
+        type: cuboid
+        priority: 0
     oak_forest:
         min: {x: 261, y: 0, z: -131}
         max: {x: 313, y: 256, z: 85}
@@ -454,8 +496,9 @@ regions:
             respawn-location: {world: Spawn, x: 139.19683649734236, y: 98.0, z: 143.85252795141812,
                 pitch: 1.8500583, yaw: 275.99503}
             vine-growth: deny
-            leaf-decay: deny
             block-trampling: deny
+            leaf-decay: deny
+            region-display-name: §2Oak Forest
             pvp: deny
             spawn-group: ALL
             crop-growth: deny
@@ -467,18 +510,19 @@ regions:
         max: {x: -17, y: 53, z: -1138}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: -56.12809412627262, y: 23.0, z: -1245.2022299795253,
                 pitch: -4.152658, yaw: 40.62708}
             block-break: allow
+            region-display-name: §bDiamond Mine
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -491,6 +535,7 @@ regions:
             time-lock: '18000'
             spawn: {world: Spawn, x: -111.5, y: 15.0, z: 255.10932555813173, pitch: -1.6046107,
                 yaw: 0.517334}
+            region-display-name: §cCourtyard
             greeting-title: §c《Courtyard》
             spawn-group: ALL
         owners: {}
@@ -501,18 +546,19 @@ regions:
         max: {x: -129, y: 96, z: -1129}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                NETHER_WART_BLOCK, RED_CONCRETE, STONE, IRON_BLOCK, QUARTZ_BLOCK,
-                NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG,
-                IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES, POTATOES,
-                BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS,
-                CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK,
-                GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK,
-                TUBE_CORAL, COAL_ORE, PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, RED_CONCRETE, REDSTONE_BLOCK,
+                CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE,
+                GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE,
+                BIRCH_LEAVES, MELON, ROSE_BUSH, NETHER_WART_BLOCK, BEEHIVE, EMERALD_BLOCK,
+                SUGAR_CANE, COAL_ORE, DIAMOND_ORE, WHEAT, LAPIS_BLOCK, ACACIA_LOG,
+                JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES,
+                NETHER_QUARTZ_ORE, ALLIUM, COCOA]
             spawn: {world: Spawn, x: -145.90075507276788, y: 48.0, z: -1150.247863122454,
                 pitch: -3.5578642, yaw: 160.5805}
             block-break: allow
+            region-display-name: §cHell
             lava-flow: deny
             spawn-group: ALL
         owners: {}
@@ -531,19 +577,20 @@ regions:
         max: {x: -265, y: 256, z: -28}
         members: {}
         flags:
-            allow-block-break: [RED_MUSHROOM, CARROTS, ROSE_BUSH, BEEHIVE, BROWN_MUSHROOM_BLOCK,
-                NETHERRACK, RED_MUSHROOM_BLOCK, GLOWSTONE, ALLIUM, COAL_BLOCK, AZURE_BLUET,
-                IRON_BARS, BEE_NEST, GOLD_BLOCK, LAPIS_ORE, MUSHROOM_STEM, STONE,
-                IRON_BLOCK, QUARTZ_BLOCK, BROWN_MUSHROOM, NETHER_QUARTZ_ORE, NETHER_WART,
-                DARK_OAK_LEAVES, WHEAT, DARK_OAK_LOG, BEETROOTS, IRON_ORE, REDSTONE_ORE,
-                MELON, SUGAR_CANE, JUNGLE_LEAVES, POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK,
-                END_STONE, SPRUCE_LOG, OBSIDIAN, CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES,
-                BIRCH_LEAVES, ACACIA_LEAVES, EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE,
-                JUNGLE_LOG, WITHER_ROSE, OAK_LOG, REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE,
-                PUMPKIN, ACACIA_LOG, DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, BEETROOTS, OAK_LOG, CRIMSON_FUNGUS,
+                PUMPKIN, STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, BROWN_MUSHROOM,
+                JUNGLE_LEAVES, DARK_OAK_LOG, SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET,
+                REDSTONE_BLOCK, CORNFLOWER, NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK,
+                GLOWSTONE, GOLD_BLOCK, QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK,
+                END_STONE, BIRCH_LEAVES, MUSHROOM_STEM, MELON, IRON_BARS, ROSE_BUSH,
+                BROWN_MUSHROOM_BLOCK, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE,
+                DIAMOND_ORE, WHEAT, RED_MUSHROOM_BLOCK, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG,
+                TUBE_CORAL, ACACIA_LEAVES, OBSIDIAN, WITHER_ROSE, DARK_OAK_LEAVES,
+                NETHER_QUARTZ_ORE, ALLIUM, RED_MUSHROOM, COCOA]
             spawn: {world: Spawn, x: -331.01304830776587, y: 16.0, z: -397.3613299482998,
                 pitch: -6.539723, yaw: 72.36945}
             block-break: allow
+            region-display-name: §2Valley
             greeting-title: §c《Valley》
             spawn-group: ALL
         owners: {}
@@ -556,6 +603,7 @@ regions:
         flags:
             spawn: {world: Spawn, x: 470.12709260356905, y: 45.76624010480602, z: -50.51043935308987,
                 pitch: -0.73324436, yaw: 269.63998}
+            region-display-name: §2Acacia Forest
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -565,18 +613,19 @@ regions:
         max: {x: -41, y: 60, z: -989}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: -65.2953607079321, y: 43.0, z: -1032.5922725130526,
                 pitch: 3.5581856, yaw: 187.4066}
             block-break: allow
+            region-display-name: §4Redstone Mine
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -586,18 +635,19 @@ regions:
         max: {x: -29, y: 18, z: -1147}
         members: {}
         flags:
-            allow-block-break: [CARROTS, ROSE_BUSH, BEEHIVE, NETHERRACK, GLOWSTONE,
-                ALLIUM, COAL_BLOCK, AZURE_BLUET, BEE_NEST, GOLD_BLOCK, LAPIS_ORE,
-                STONE, IRON_BLOCK, QUARTZ_BLOCK, NETHER_QUARTZ_ORE, NETHER_WART, DARK_OAK_LEAVES,
-                WHEAT, DARK_OAK_LOG, IRON_ORE, REDSTONE_ORE, MELON, SUGAR_CANE, JUNGLE_LEAVES,
-                POTATOES, BIRCH_LOG, COCOA, LAPIS_BLOCK, END_STONE, SPRUCE_LOG, OBSIDIAN,
-                CRIMSON_FUNGUS, CORNFLOWER, OAK_LEAVES, BIRCH_LEAVES, ACACIA_LEAVES,
-                EMERALD_BLOCK, GOLD_ORE, EMERALD_ORE, JUNGLE_LOG, WITHER_ROSE, OAK_LOG,
-                REDSTONE_BLOCK, TUBE_CORAL, COAL_ORE, COBBLESTONE, PUMPKIN, ACACIA_LOG,
-                DIAMOND_ORE, DIAMOND_BLOCK]
+            allow-block-break: [EMERALD_ORE, CARROTS, OAK_LOG, CRIMSON_FUNGUS, PUMPKIN,
+                STONE, LAPIS_ORE, BIRCH_LOG, BEE_NEST, IRON_ORE, JUNGLE_LEAVES, DARK_OAK_LOG,
+                SPRUCE_LOG, GOLD_ORE, REDSTONE_ORE, AZURE_BLUET, REDSTONE_BLOCK, CORNFLOWER,
+                NETHERRACK, IRON_BLOCK, NETHER_WART, DIAMOND_BLOCK, GLOWSTONE, GOLD_BLOCK,
+                QUARTZ_BLOCK, POTATOES, OAK_LEAVES, COAL_BLOCK, END_STONE, BIRCH_LEAVES,
+                MELON, ROSE_BUSH, BEEHIVE, EMERALD_BLOCK, SUGAR_CANE, COAL_ORE, DIAMOND_ORE,
+                WHEAT, LAPIS_BLOCK, ACACIA_LOG, JUNGLE_LOG, TUBE_CORAL, ACACIA_LEAVES,
+                OBSIDIAN, COBBLESTONE, WITHER_ROSE, DARK_OAK_LEAVES, NETHER_QUARTZ_ORE,
+                ALLIUM, COCOA]
             spawn: {world: Spawn, x: -91.98549404125224, y: 9.0, z: -1243.0053382922938,
                 pitch: 3.8665838, yaw: 266.98477}
             block-break: allow
+            region-display-name: §2Emerald Mine
             spawn-group: ALL
         owners: {}
         type: cuboid
@@ -605,13 +655,13 @@ regions:
     __global__:
         members: {}
         flags: {frosted-ice-form: deny, lava-fire: deny, mycelium-spread: deny, water-flow: allow,
-            block-trampling: deny, leaf-decay: deny, ice-melt: deny, snow-fall: deny,
+            block-trampling: deny, snow-fall: deny, ice-melt: deny, leaf-decay: deny,
             ride: allow, fire-spread: deny, enderdragon-block-damage: deny, keep-inventory: true,
             passthrough: deny, keep-exp: true, entity-painting-destroy: deny, mushroom-growth: deny,
             lightning: deny, ice-form: deny, enderman-grief: deny, pvp: deny, mob-spawning: deny,
             natural-hunger-drain: deny, soil-dry: deny, item-frame-rotation: deny,
-            damage-animals: allow, snow-melt: deny, frosted-ice-melt: deny, lava-flow: deny,
-            ghast-fireball: deny, entity-item-frame-destroy: deny, grass-growth: deny}
+            damage-animals: allow, frosted-ice-melt: deny, snow-melt: deny, lava-flow: deny,
+            entity-item-frame-destroy: deny, ghast-fireball: deny, grass-growth: deny}
         owners: {}
         type: global
         priority: 0
