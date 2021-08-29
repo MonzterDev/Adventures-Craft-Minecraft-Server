@@ -7,23 +7,30 @@ variables:
     QUEST1_ID: "HUNTING_THE_UNDEAD"
     QUEST1_OBJ_MESSAGE: "&aSlay &f20 &cUndead Skeletons &fwithin the &cGraveyard"
     QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &020 &cUndead Skeletons &0within the &cGraveyard"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:20% &cUndead Skeletons &fwithin the &cGraveyard'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:skeleton_skull ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
     QUEST2_NAME: "The Silver Stool"
     QUEST2_ID: "THE_SILVER_STOOL"
     QUEST2_OBJ_MESSAGE: "&aUse &fthe &c&lSilver Stool &f(-157, 15, 145) within the &cGraveyard &fto &aUpgrade &fyour &lSilver Sword"
     QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Use &0the &c&lSilver Stool &0(-157, 15, 145) within the &cGraveyard &0to &aUpgrade &0your &lSilver Sword"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:lectern ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
     QUEST3_NAME: "Archer Annihilator"
     QUEST3_ID: "ARCHER_ANNILATOR"
     QUEST3_OBJ_MESSAGE: "&aSlay &f15 &cUndead Archers &fwithin the &cGraveyard"
     QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Slay &015 &cUndead Archers &0within the &cGraveyard"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aSlay &f%point.$QUEST3_ID$.left\:15% &cUndead Archers &fwithin the &cGraveyard'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:crossbow ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
     QUEST4_NAME: "The Reaper"
     QUEST4_ID: "THE_REAPER"
     QUEST4_OBJ_MESSAGE: "&aSlay &fthe &cReaper &f(-96, 15, 176)"
     QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Slay &0the &cReaper &0(-96, 15, 176)"
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:wither_rose ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
     QUEST5_NAME: "Courtyard Venture"
     QUEST5_ID: "COURTYARD_VENTURE"
     QUEST5_OBJ_MESSAGE: "&aFollow &fthe &aGrass Path &fto enter the &cCourtyard &f(-111, 15, 248)"
     QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Follow &0the &2Grass Path &0to enter the &cCourtyard &0(-111, 15, 248)"
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:polished_andesite ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
