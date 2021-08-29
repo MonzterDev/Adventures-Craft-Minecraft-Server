@@ -1,0 +1,50 @@
+quester: Tutor
+first: greeting,greeting2
+NPC_options:
+  greeting:
+    text: "&7Welcome to the world of &cAdvneutres &a%player%&7! My name is &aTutor &7and I'll help you learn the basics of how our world works. You can &6respond &7to me by &6typing either 1 or 2 OR click on the Dialogue you want&7!"
+    pointers: hey, denyTutorial
+    conditions: '!QUEST1_STARTED'
+  greeting2:
+    text: "&7You've already taken my &6Quest&7! Enjoy the &cAdventure&7!"
+    conditions: 'QUEST1_STARTED'
+  denyTutorial:
+    text: "&7Are you sure? I'd really encourage you to complete this!"
+    pointers: chanedMind, noTutorial
+  exitTutorial:
+    text: "&7Ok, come back to me whenever you want to complete it!"
+
+  whatsNext:
+    text: "&7You should ask me if I have any &6Quests&7!"
+    pointers: quest, denyTutorial
+
+  questOffer:
+    text: "&7Yes, I do have a &6Quest &7for you!"
+    conditions: "FULL_INVENTORY"
+    pointers: quest1, denyTutorial
+  questOffer_FullInv:
+    text: "&7Yes, I do have a &6Quest &7for you, but you must have at least one inventory space available! Speak to me again once you do!"
+    conditions: "!FULL_INVENTORY"
+
+
+player_options:
+  hey:
+    text: OK, what's next?
+    pointers: whatsNext
+  denyTutorial:
+    text: I don't want to do the &eTutorial&f!
+    pointers: denyTutorial
+  chanedMind:
+    text: Actually...I'll give it a try!
+    pointers: whatsNext
+  noTutorial:
+    text: NO I don't want to do your Tutorial!
+    pointers: exitTutorial
+
+  quest:
+    text: Do you have any &6Quests&f?
+    pointers: questOffer,questOffer_FullInv
+        
+  quest1:
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
