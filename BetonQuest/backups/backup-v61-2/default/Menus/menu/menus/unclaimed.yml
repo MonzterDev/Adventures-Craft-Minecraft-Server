@@ -1,0 +1,1410 @@
+height: 6
+title: '&fUnclaimed Quests'
+items:
+#Town
+  TN1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Wizard.q1_rewards_unclaimed,!default-Town-Wizard.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lNovice Enchanter'
+        - '&f&o'
+        - '&fBring the &aWizard &f192 Paper'
+        - '&f&o'        
+        - '&e&lRewarded:'
+        - '&8&l» &2Enchanting Book'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Enchanting EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Wizard.QuestReward1_Claim
+      left: default-Town-Wizard.QuestReward1_Claim
+  TN2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Wizard.q2_rewards_unclaimed,!default-Town-Wizard.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBooster Exponent'
+        - '&f&o'
+        - '&fHarvest 128 Lapis Lazuli for the &aWizard&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Experience Bottle'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Enchanting EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Wizard.QuestReward2_Claim
+      left: default-Town-Wizard.QuestReward2_Claim
+  TN3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Wizard.q3_rewards_unclaimed,!default-Town-Wizard.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lStone Collector'
+        - '&f&o'
+        - '&fUse the &9Experience Bottle &fand speak to the &aWizard&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Enchanting Box'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Enchanting EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Wizard.QuestReward3_Claim
+      left: default-Town-Wizard.QuestReward3_Claim
+  TN4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Warlock.q1_rewards_unclaimed,!default-Town-Warlock.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lFundamental Wand'
+        - '&f&o'
+        - '&fHarvest §6576 Oak Wood'
+        - '&fHarvest §3288 Azure Bluets'
+        - '&fReturn to the §eForge &fat &a63, 24, -9'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fResolve Wand'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Spellforging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Warlock.QuestReward1_Claim
+      left: default-Town-Warlock.QuestReward1_Claim
+  TN5:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Warlock.q2_rewards_unclaimed,!default-Town-Warlock.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHostile Wand'
+        - '&f&o'
+        - '&fHarvest §6576 Oak Wood'
+        - '&fHarvest §3288 Red Mushrooms'
+        - '&fReturn to the §eForge &fat &a63, 24, -9'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFireball Wand'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e400 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Warlock.QuestReward2_Claim
+      left: default-Town-Warlock.QuestReward2_Claim
+  TN6:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Warlock.q3_rewards_unclaimed,!default-Town-Warlock.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMagical Spell Boxes'
+        - '&f&o'
+        - '&fSlay §c3 Witches &fin the &dSpirit Grounds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &58x Magical Boxes'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Spellforging EXP'
+        - '&8&l» &e600 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Warlock.QuestReward3_Claim
+      left: default-Town-Warlock.QuestReward3_Claim
+  TN7_Coal:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedCoal,!default-Town-Gemsmith.q1_rewards_claimedCoal'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimCoal
+      left: default-Town-Gemsmith.QuestReward1_ClaimCoal
+  TN7_Iron:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedIron,!default-Town-Gemsmith.q1_rewards_claimedIron'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimIron
+      left: default-Town-Gemsmith.QuestReward1_ClaimIron
+  TN7_Gold:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedGold,!default-Town-Gemsmith.q1_rewards_claimedGold'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimGold
+      left: default-Town-Gemsmith.QuestReward1_ClaimGold
+  TN7_Diamond:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedDiamond,!default-Town-Gemsmith.q1_rewards_claimedDiamond'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Gem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+      left: default-Town-Gemsmith.QuestReward1_ClaimDiamond
+  TN7_Emerald:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_rewards_unclaimedEmerald,!default-Town-Gemsmith.q1_rewards_claimedEmerald'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+      left: default-Town-Gemsmith.QuestReward1_ClaimEmerald
+  TN8_Coal:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Coal_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Iron:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Iron_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Gold:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Gold_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Diamond:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Diamond_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN8_Emerald:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Emerald_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+
+#Farm
+  FM1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Billy.q1_rewards_unclaimed,!default-Farm-Billy.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Billy.QuestReward1_Claim
+      left: default-Farm-Billy.QuestReward1_Claim    
+  FM2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_rewards_unclaimed,!default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward1_Claim
+      left: default-Farm-Ingo.QuestReward1_Claim    
+  FM3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_rewards_unclaimed,!default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward2_Claim
+      left: default-Farm-Ingo.QuestReward2_Claim    
+  FM4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_rewards_unclaimed,!default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Anju.QuestReward2_Claim
+      left: default-Farm-Anju.QuestReward2_Claim    
+
+#Forest
+  FT1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q1_rewards_unclaimed,!default-Forest-Jenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward1_Claim
+      left: default-Forest-Jenny.QuestReward1_Claim
+  FT2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q2_rewards_unclaimed,!default-Forest-Jenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward2_Claim
+      left: default-Forest-Jenny.QuestReward2_Claim
+  FT3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q3_rewards_unclaimed,!default-Forest-Jenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward3_Claim
+      left: default-Forest-Jenny.QuestReward3_Claim
+  FT4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q4_rewards_unclaimed,!default-Forest-Jenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward4_Claim
+      left: default-Forest-Jenny.QuestReward4_Claim
+  FT5:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q5_rewards_unclaimed,!default-Forest-Jenny.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward5_Claim
+      left: default-Forest-Jenny.QuestReward5_Claim
+  FT6:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q6_rewards_unclaimed,!default-Forest-Jenny.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward6_Claim
+      left: default-Forest-Jenny.QuestReward6_Claim
+  FT7:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q2_rewards_unclaimed,!default-Forest-Bear.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Bear.QuestReward2_Claim
+      left: default-Forest-Bear.QuestReward2_Claim    
+  FT8:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_rewards_unclaimed,!default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-CatLady.QuestReward1_Claim
+      left: default-Forest-CatLady.QuestReward1_Claim
+
+#Mine
+
+  ME1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q1_rewards_unclaimed,!default-Mine-Lenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward1_Claim
+      left: default-Mine-Lenny.QuestReward1_Claim
+  ME2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q2_rewards_unclaimed,!default-Mine-Lenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward2_Claim
+      left: default-Mine-Lenny.QuestReward2_Claim
+  ME3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q3_rewards_unclaimed,!default-Mine-Lenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward3_Claim
+      left: default-Mine-Lenny.QuestReward3_Claim
+  ME4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q4_rewards_unclaimed,!default-Mine-Lenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward4_Claim
+      left: default-Mine-Lenny.QuestReward4_Claim
+  ME5:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q2_rewards_unclaimed,!default-Mine-Morry.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMine Spider Slayer'
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Morry.QuestReward2_Claim
+      left: default-Mine-Morry.QuestReward2_Claim
+  ME6:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q3_rewards_unclaimed,!default-Mine-Morry.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGold Finger'
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Morry.QuestReward3_Claim
+      left: default-Mine-Morry.QuestReward3_Claim
+  ME7:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Cole.q3_rewards_unclaimed,!default-Mine-Cole.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Cole.QuestReward3_Claim
+      left: default-Mine-Cole.QuestReward3_Claim
+  ME8:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Duncan.q1_rewards_unclaimed,!default-Mine-Duncan.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Duncan.QuestReward1_Claim
+      left: default-Mine-Duncan.QuestReward1_Claim
+  ME9:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q1_rewards_unclaimed,!default-Mine-Merit.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Merit.QuestReward1_Claim
+      left: default-Mine-Merit.QuestReward1_Claim
+  ME10:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q2_rewards_unclaimed,!default-Mine-Merit.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Merit.QuestReward2_Claim
+      left: default-Mine-Merit.QuestReward2_Claim    
+
+#Graveyard
+
+  GD1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q1_rewards_unclaimed,!default-Graveyard-Cirl.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward1_Claim
+      left: default-Graveyard-Cirl.QuestReward1_Claim
+  GD2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q2_rewards_unclaimed,!default-Graveyard-Cirl.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward2_Claim
+      left: default-Graveyard-Cirl.QuestReward2_Claim
+  GD3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q3_rewards_unclaimed,!default-Graveyard-Cirl.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward3_Claim
+      left: default-Graveyard-Cirl.QuestReward3_Claim
+  GD4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q4_rewards_unclaimed,!default-Graveyard-Cirl.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Graveyard-Cirl.QuestReward4_Claim
+      left: default-Graveyard-Cirl.QuestReward4_Claim
+
+
+#Courtyard
+
+  CD1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q1_rewards_unclaimed,!default-Courtyard-Navid.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward1_Claim
+      left: default-Courtyard-Navid.QuestReward1_Claim
+  CD2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q2_rewards_unclaimed,!default-Courtyard-Navid.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward2_Claim
+      left: default-Courtyard-Navid.QuestReward2_Claim
+  CD3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q3_rewards_unclaimed,!default-Courtyard-Navid.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward3_Claim
+      left: default-Courtyard-Navid.QuestReward3_Claim
+  CD4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q4_rewards_unclaimed,!default-Courtyard-Navid.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Alpha Souls'
+        - '&f&o'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby slaying &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Courtyard-Navid.QuestReward4_Claim
+      left: default-Courtyard-Navid.QuestReward4_Claim
+
+#Valley
+
+#Estate
+
+  EE1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q3_rewards_unclaimed,!default-Estate-Bowyer.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Estate-Bowyer.QuestReward3_Claim
+      left: default-Estate-Bowyer.QuestReward3_Claim    
+
+#GoblinTown
+
+  GN1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-GoblinVillage-Zras.q1_rewards_unclaimed,!default-GoblinVillage-Zras.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lPillaging Goblin Town'
+        - '&f&o'
+        - '&fTake out 25 &cGoblins'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Goblin Club'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-GoblinVillage-Zras.QuestReward1_Claim
+      left: default-GoblinVillage-Zras.QuestReward1_Claim        
+
+#SpiritGrounds
+
+  SS1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-SpiritGrounds-Hazel.q2_rewards_unclaimed,!default-SpiritGrounds-Hazel.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lWitches Checklist'
+        - '&f&o'
+        - '&fGather Mushrooms, Pumpkins, and Melons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Resolve Wand'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-SpiritGrounds-Hazel.QuestReward2_Claim
+      left: default-SpiritGrounds-Hazel.QuestReward2_Claim        
+
+#Hell
+  HL1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Damon.q1_rewards_unclaimed,!default-Hell-Damon.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Hell-Damon.QuestReward1_Claim
+      left: default-Hell-Damon.QuestReward1_Claim
+  HL2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Hell-Diablo.q2_rewards_unclaimed,!default-Hell-Diablo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Hell-Diablo.QuestReward2_Claim
+      left: default-Hell-Diablo.QuestReward2_Claim
+
+#Void
+  VD1:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_rewards_unclaimed,!default-Void-Khazix.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward1_Claim
+      left: default-Void-Khazix.QuestReward1_Claim
+  VD2:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_rewards_unclaimed,!default-Void-Khazix.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward3_Claim
+      left: default-Void-Khazix.QuestReward3_Claim
+  VD3:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_rewards_unclaimed,!default-Void-Khazix.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward4_Claim
+      left: default-Void-Khazix.QuestReward4_Claim
+  VD4:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_rewards_unclaimed,!default-Void-Khazix.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Khazix.QuestReward6_Claim
+      left: default-Void-Khazix.QuestReward6_Claim
+  VD5:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_rewards_unclaimed,!default-Void-Kassadin.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward1_Claim
+      left: default-Void-Kassadin.QuestReward1_Claim
+  VD6:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_rewards_unclaimed,!default-Void-Kassadin.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward2_Claim
+      left: default-Void-Kassadin.QuestReward2_Claim
+  VD7:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_rewards_unclaimed,!default-Void-Kassadin.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward3_Claim
+      left: default-Void-Kassadin.QuestReward3_Claim
+  VD8:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_rewards_unclaimed,!default-Void-Kassadin.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward4_Claim
+      left: default-Void-Kassadin.QuestReward4_Claim
+  VD9:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_rewards_unclaimed,!default-Void-Kassadin.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kassadin.QuestReward5_Claim
+      left: default-Void-Kassadin.QuestReward5_Claim
+  VD10:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_rewards_unclaimed,!default-Void-Kogmaw.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward4_Claim
+      left: default-Void-Kogmaw.QuestReward4_Claim
+  VD11:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_rewards_unclaimed,!default-Void-Kogmaw.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward5_Claim
+      left: default-Void-Kogmaw.QuestReward5_Claim
+  VD12:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_rewards_unclaimed,!default-Void-Kogmaw.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Void-Kogmaw.QuestReward6_Claim
+      left: default-Void-Kogmaw.QuestReward6_Claim
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7_Coal,TN7_Iron,TN7_Gold,TN7_Diamond,TN7_Emerald,TN8_Coal,TN8_Iron,TN8_Gold,TN8_Diamond,TN8_Emerald,FM1,FM2,FM3,FM4,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,GD1,GD2,GD3,GD4,CD1,CD2,CD3,CD4,EE1,GN1,SS1,HL1,HL2,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12
+  49: back

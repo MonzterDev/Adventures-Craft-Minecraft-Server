@@ -1,0 +1,22 @@
+npc_effects:
+  check_interval: 100
+  disabled: true
+  default:
+    class: FlameEffect
+    iterations: 20
+    particle: hearts
+    helixes: 3
+    circles: 1
+    grow: 0.1
+    radius: 0.5
+    interval: 100
+npc_holograms:
+  check_interval: 100
+  follow: false
+  disabled: false
+  default:
+    lines:
+    - '&6±'
+    vector: 0;2.68;0
+    npcs:
+      - 144

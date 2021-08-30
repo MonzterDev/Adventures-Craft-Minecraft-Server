@@ -1,0 +1,49 @@
+quester: Mandy
+first: greeting
+NPC_options:
+  greeting:
+    text: Welcome to the Farm &a%player%&7, this is the primary source for the Town's Food! 
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: The Farm is ran by my brother &aBilly &7and I! We grow most of the crops and animals for the Town, but also have some help from the Resort just through the Valley!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Well, we actually could use some help on the &aFarm&7, thanks for offering!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: Since you're so kind to offer your help, we need all of the animals within our Farm cleared out! 
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Wow, you must be busy!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'GiveRifle,tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

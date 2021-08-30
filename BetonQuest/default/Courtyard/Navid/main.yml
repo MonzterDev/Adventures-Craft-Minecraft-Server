@@ -1,2 +1,51 @@
 npcs:
   '30': Navid
+variables:
+    QUESTER_NAME: "NAVID"
+
+    QUEST1_NAME: "The Undead Slayer"
+    QUEST1_ID: "THE_UNDEAD_SLAYER"
+    QUEST1_OBJ_MESSAGE: "&aSlay &f50 &cUndead &fwithin the &cCourtyard"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &050 &cUndead &0within the &cCourtyard"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:50% &cUndead &fwithin the &cCourtyard'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:skeleton_skull ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "The Magical Hunt"
+    QUEST2_ID: "THE_MAGICAL_HUNT"
+    QUEST2_OBJ_MESSAGE: "&aSlay &cUndead Casters &fand &adeliver &f8 &lMagical Fragments &fto &aNavid"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Slay &cUndead Casters &0and &2deliver &08 &lMagical Fragments &0to &2Navid"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:GRAY_DYE ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Spider Exterminator"
+    QUEST3_ID: "SPIDER_EXTERMINATOR"
+    QUEST3_OBJ_MESSAGE: "&aSlay &f20 &cUndead Spiders &fwithin the &cCourtyard"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Slay &020 &cUndead Spiders &0within the &cCourtyard"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aSlay &f%point.$QUEST3_ID$.left\:20% &cUndead Spiders &fwithin the &cCourtyard'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:SPIDER_EYE ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST4_NAME: "The Alphas"
+    QUEST4_ID: "THE_ALPHAS"
+    QUEST4_OBJ_MESSAGE: "&aSlay &f2 &cAlpha Souls"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Slay &02 &cAlpha Souls &0within the &cCourtyard"
+    QUEST4_MSG_REPEAT: '&a$QUEST4_NAME$&f: &aSlay &f%point.$QUEST4_ID$.left\:2% &cAlpha Souls'
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:BLAZE_POWDER ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST5_NAME: "The Village Hero"
+    QUEST5_ID: "THE_VILLAGE_HERO"
+    QUEST5_1_OBJ_MESSAGE: "&aRescue &aRon &ftrapped within the &cCourtyard &fat (-112, 30, 282)"
+    QUEST5_2_OBJ_MESSAGE: "&aRescue &aPeter &ftrapped within the &cCourtyard &fat (-18, 17, 317)"
+    QUEST5_3_OBJ_MESSAGE: "&aRescue &aSally &ftrapped within the &cCourtyard &fat (-209, 27, 449)"
+    QUEST5_4_OBJ_MESSAGE: "&aRescue &aMarkus &ftrapped within the &cCourtyard &fat (-107, 17, 497)"
+    QUEST5_5_OBJ_MESSAGE: "&aRescue &aSamantha &ftrapped within the &cCourtyard &fat (-1, 34, 370)"
+    QUEST5_1_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Rescue &2Ron &0trapped within the &cCourtyard &0at (-112, 30, 282)"
+    QUEST5_2_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Rescue &2Peter &0trapped within the &cCourtyard &0at (-18, 17, 317)"
+    QUEST5_3_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Rescue &2Sally &0trapped within the &cCourtyard &0at (-209, 27, 449)"
+    QUEST5_4_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Rescue &2Markus &0trapped within the &cCourtyard &0at (-107, 17, 497)"
+    QUEST5_5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Rescue &2Samantha &0trapped within the &cCourtyard &0at (-1, 34, 370)"
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:VILLAGER_SPAWN_EGG ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Castle Breach"
+    QUEST6_ID: "CASTLE_BREACH"
+    QUEST6_OBJ_MESSAGE: "&aBreach &fthe &cCastle &fby speaking with &aAnder &fat the &cCastle Gate &f(-95, 15, 434)"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Breach &0the &cCastle &0by speaking with &2Ander &0at the &cCastle Gate &0(-95, 15, 434)"
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:IRON_BARS ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

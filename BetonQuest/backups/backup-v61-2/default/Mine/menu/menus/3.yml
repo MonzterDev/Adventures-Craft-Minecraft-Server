@@ -1,0 +1,482 @@
+height: 5
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Merit.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Merit in the Mine'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q1_part1,!default-Mine-Merit.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Merit in the Mine'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q1_completed,!default-Mine-Merit.q1_rewards_unclaimed,default-Mine-Merit.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q1_rewards_unclaimed,!default-Mine-Merit.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Merit.QuestReward1_Claim
+      left: default-Mine-Merit.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Merit.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Hard Blues'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q2_part1,!default-Mine-Merit.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Hard Blues'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q2_completed,!default-Mine-Merit.q2_rewards_unclaimed,default-Mine-Merit.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest2_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q2_rewards_unclaimed,!default-Mine-Merit.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Merit.QuestReward2_Claim
+      left: default-Mine-Merit.QuestReward2_Claim    
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Merit.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDark Hive'
+        - '&f&o'
+        - '&fSlay Void Hives & Ants'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloodsuckers'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q3_part1,!default-Mine-Merit.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Hive'
+        - '&f&o'
+        - '&fSlay Void Hives & Ants'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloodsuckers'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDark Hive'
+        - '&f&o'
+        - '&fSlay Void Hives & Ants'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Merit.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBuffy the Vampire Slayer'
+        - '&f&o'
+        - '&fSlay &cVoid Dracula &fin the &bDiamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Hive'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q4_part1,!default-Mine-Merit.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBuffy the Vampire Slayer'
+        - '&f&o'
+        - '&fSlay &cVoid Dracula &fin the &bDiamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Hive'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBuffy the Vampire Slayer'
+        - '&f&o'
+        - '&fSlay &cVoid Dracula &fin the &bDiamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Mining EXP'
+        - '&8&l» &e200 Coins'
+    close: false
+#FIFTH QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Merit.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMeet Smith'
+        - '&f&o'
+        - '&fMeet with &aSmith &fin the &2Emerald Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &2Emerald Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Buffy the Vampire Slayer'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q5_part1,!default-Mine-Merit.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMeet Smith'
+        - '&f&o'
+        - '&fMeet with &aSmith &fin the &2Emerald Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &2Emerald Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Buffy the Vampire Slayer'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Merit.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMeet Smith'
+        - '&f&o'
+        - '&fMeet with &aSmith &fin the &2Emerald Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &2Emerald Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+    
+#DUNCAN
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Smith.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMajestic Green Rocks'
+        - '&f&o'
+        - '&fMine 256 Emerald Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven from Smith in the Mine'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q1_part1,!default-Mine-Smith.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMajestic Green Rocks'
+        - '&f&o'
+        - '&fMine 256 Emerald Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven from Smith in the Mine'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Smith.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMajestic Green Rocks'
+        - '&f&o'
+        - '&fMine 256 Emerald Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+    close: false
+#SIXTH QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Smith.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBloody Teeth'
+        - '&f&o'
+        - '&fSlay &cVoid Vampires &fto collect their Fangs'
+        - '&fthen deliver 15 Fangs to &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Majestic Green Rocks'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q2_part1,!default-Mine-Smith.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBloody Teeth'      
+        - '&f&o'
+        - '&fSlay &cVoid Vampires &fto collect their Fangs'
+        - '&fthen deliver 15 Fangs to &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Majestic Green Rocks'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Smith.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBloody Teeth'
+        - '&f&o'
+        - '&fSlay &cVoid Vampires &fto collect their Fangs'
+        - '&fthen deliver 15 Fangs to &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+    close: false
+#SIXTH QUEST
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Smith.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lRarest Green Rocks'
+        - '&f&o'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e400 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloody Teeth'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q3_part1,!default-Mine-Smith.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRarest Green Rocks'      
+        - '&f&o'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e400 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloody Teeth'        
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Smith.q3_completed,'
+    text:
+      en:
+        - '&e&l[Complete] &f&lRarest Green Rocks'
+        - '&f&o'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e400 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.minequestmenu
+      left: default-Castle-Klaus.minequestmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  16-20: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  24-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-15: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest4_inactive,quest4_active,quest4_completed,quest5_inactive,quest5_active,quest5_completed
+  21-23: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed
+  40: back

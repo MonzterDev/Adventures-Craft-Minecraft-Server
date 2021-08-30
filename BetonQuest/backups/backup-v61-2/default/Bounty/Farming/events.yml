@@ -1,0 +1,72 @@
+del_QuestCooldown24_tag: tag del QuestCooldown24
+del_tag_q1_completed: tag del q1_completed
+del_q1_part1: tag del q1_part1
+tag_QuestCooldown24: tag add QuestCooldown24
+tag_q1_part1: tag add q1_part1
+q1_part1: objective start QuestCooldown24
+
+StartBreakBlock: objective start BreakBlock
+GivePoint: point beetroots 1
+
+StopObjective: objective delete BreakBlock
+RunOn500Points: objective start RunOn500Points
+
+entry_q1_complete: folder default-Points.GiveBountyPoint,tag_q1_completed,q1_finish_message,QuestReward1,del_q1_part1,StopObjective
+QuestReward1: run ^command mmocore admin exp give %player% main 250 ^command mmocore
+  admin exp give %player% Farming 250 ^command money give %player% 200
+tag_q1_completed: tag add q1_completed
+q1_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name1$ \n \n \n\ 
+  \ &6&lRewards\: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »\
+  \  $quest_reward1-3$'
+
+
+del_Quest2Cooldown24_tag: tag del Quest2Cooldown24
+del_tag_q2_completed: tag del q2_completed
+del_q2_part1: tag del q2_part1
+tag_Quest2Cooldown24: tag add Quest2Cooldown24
+tag_q2_part1: tag add q2_part1
+q2_part1: objective start Quest2Cooldown24
+
+StartBreakBlock2: folder RestartObjectivePotato,RestartObjectiveCarrot
+GivePointCorato: point Corato 1
+RestartObjectivePotato: objective start BreakPotato
+RestartObjectiveCarrot: objective start BreakCarrot
+
+BreakPotatoStop: objective delete BreakPotato
+BreakCarrotStop: objective delete BreakCarrot
+
+entry_q2_complete: folder default-Points.GiveBountyPoint,BreakPotatoStop,BreakCarrotStop,tag_q2_completed,q2_finish_message,QuestReward2,del_q2_part1
+QuestReward2: run ^command mmocore admin exp give %player% main 500 ^command mmocore
+  admin exp give %player% Farming 500 ^command money give %player% 250
+tag_q2_completed: tag add q2_completed
+q2_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name2$ \n \n \n\ 
+  \ &6&lRewards\: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »\
+  \  $quest_reward2-3$'
+
+Completing2nd: objective start Completing2nd
+
+
+
+del_Quest3Cooldown24_tag: tag del Quest3Cooldown24
+del_tag_q3_completed: tag del q3_completed
+del_q3_part1: tag del q3_part1
+tag_Quest3Cooldown24: tag add Quest3Cooldown24
+tag_q3_part1: tag add q3_part1
+
+q3_part1: objective start Quest3Cooldown24
+
+Start3: folder RestartObjectiveeWheat
+GivePointWheat: point Wheat 1
+RestartObjectiveeWheat: objective start BreakWheat
+BreakWheatStop: objective delete BreakWheat
+
+entry_q3_complete: folder default-Points.GiveBountyPoint,BreakWheatStop,tag_q3_completed,q3_finish_message,QuestReward3,del_q3_part1
+QuestReward3: run ^command mmocore admin exp give %player% main 750 ^command mmocore
+  admin exp give %player% Farming 750 ^command money give %player% 500
+tag_q3_completed: tag add q3_completed
+q3_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name3$ \n \n \n\ 
+  \ &6&lRewards\: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »\
+  \  $quest_reward3-3$'
+Completing3rd: objective start Completing3rd
+
+BountyMenu: run ^command dm open Bounty %player%

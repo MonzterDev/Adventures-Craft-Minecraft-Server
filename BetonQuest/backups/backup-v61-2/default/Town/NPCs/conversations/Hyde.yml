@@ -1,0 +1,42 @@
+quester: Hyde
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "What can I do for you &a%player%&7?"
+    pointers: Player_Response1, Player_Response2, bye
+
+  NPC_Text1:
+    text: "&7I carry this weapon on me because we're right next to the &cGraveyard &7which is the home of the &cundead&7!"
+    pointers: goBack, bye
+
+  NPC_Text2:
+    text: "&7Take my extra &fBasic Sword&7! Hopefully it'll help you along your journey."
+    pointers: goBack, bye
+
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fWhy do you have a sword?"
+    pointers: NPC_Text1
+
+  Player_Response2:
+    text: "Can I have a sword?"
+    pointers: NPC_Text2
+    conditions: "!SwordGiven"
+    events: GiveSword, Tag_SwordGiven
+
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

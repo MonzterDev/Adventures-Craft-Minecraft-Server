@@ -4,8 +4,109 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12.5] - 2021-08-11
+### Added
+- Version checks for ProtocolLib and Shopkeepers support
+### Changed
+### Deprecated
+### Removed
+### Fixes
+- MMOCoreClassCondition used the class display name instead of the class ID to compare classes.
+- the take event called Paper's ItemStack.getI18NDisplayName() instead of Spigot's ItemStack.getItemMeta().getDisplayName
+- fixed hooking in ProtocolLib
+- max_npc_distance was set to 5.3 to prevent instant quiting of conversations
+- conversation IO menu sometimes leave an armorstand spawned
+- sometimes messages in a conversation are not send when packet interceptor is used
+### Security
 
-## [1.12.0-DEV-232] - 2020-10-21
+## [1.12.4] - 2021-07-05
+### Added
+- Vietnamese translation
+- added invOrder setting to (mmoitem)take event
+- the mmoitemtake event & mmoitem condition now also check the backpack
+  - this will not work until the item rework / until the backpack contains NBT data
+### Changed
+- `/q create package` command does now create an empty package
+### Deprecated
+### Removed
+### Fixes
+- `brew` objective triggers all the time and counts correctly
+- only generate default package if BetonQuest folder is empty
+- fix backpack passing references instead of clones
+- fixed combat event packet that changed with MC 1.17
+### Security
+- the take event is now threadsafe
+
+## [1.12.3] - 2021-05-05
+### Added
+- FastAsyncWorldEdit compatibility
+- craft objective variable `total`
+- curly braces in math.calc variables for using variables with math symbols
+- player attribute to QuestCompassTargetChangeEvent
+### Changed
+### Deprecated
+- math variable now allows rounding output with the ~ operator
+### Removed
+### Fixes
+- parsing of math variable
+- craft objective: multi-craft, drop-craft, hotbar/offhand-craft, shift-Q-craft and any illegal crafting is correctly detected,
+- craft objective variables `left` and `amount` were swapped
+- NPC hider for not spawned NPCs
+- Conversation IO Chest load NPC skull async from Citizens instead of sync
+- block selector didn't respect regex boundary
+- block selector regex errors are now properly handled
+- `default_journal_slot: -1` now uses the first free slot instead of the last hotbar slot
+- mmobkill objective notify argument not working correctly
+- `fish` objective didn't count the amount of fish caught in one go (if modified by e.g. mcMMO)
+- fixed smelt objective: only taking out normally did count, shift-extract got canceled
+- empty values in `variable` objective now don't break on player join
+- PacketInterceptor sync wait lag
+- notifications using the chatIO were catched by the conversation interceptor
+- case insensitive `password` objective did not work if the password contained upper case letters
+- global variables didn't work in quester names
+- quest items couldn't interact with any blocks, which also prevented them from mining blocks
+- the shear objective's sheep couldn't have underscores in their names
+- backpack passing references instead of clones
+- compass event now allows global variables
+### Security
+- it was possible to put a QuestItem into a chest
+
+## [1.12.2] - 2021-03-14
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixes
+- `npcrange` objective is triggered at wrong time
+- Citizens compatibility for not spawned NPCs
+- NotifyIOs are case-sensitive
+- all mmo objectives trigger for everyone
+- command event includes 'conditions:...' into the command
+- tags and points are now thread safe
+- compatibility for packet interceptor on papermc
+### Security
+
+## [1.12.1] - 2021-02-05
+### Added
+- Ingame update notification if the updater found an update
+### Changed
+### Deprecated
+### Removed
+### Fixes
+- The Autoupdater got a small fix, and the fail safety for broken downloads was improved
+- `npcrange` objective does not throw errors when the player is in a different world than the NPC
+- The block objectives notify could not be disabled
+- fixed ConcurrentModificationException in EntityHider
+- fixed notify enabled by default for some objectives
+- fixed some grammar mistakes in debug messages
+- fixed npc teleport and walk operations in unloaded chunks
+- fixed inaccurate location variable decimal rounding
+- fixed NullPointerException for NPCs with conversation
+- fixed resuming to path finding when conversation interrupt movement
+- fixes Die objective teleporting player during the tick
+### Security
+
+## [1.12.0] - 2021-01-10
 ### Added
 - Tags and Objectives can now be removed with a static event for all players, even if they are not online
   * deletepoint event can now also be called to delete all points for all players
@@ -43,7 +144,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added 'pickup' objective
 - Added stopnpc event, that will stop the movenpc event
 - Added teleportnpc event, that will stop the movenpc event and teleport the npc to a given location
-- Added option check_interval for holograms in custom.yml andd added GlobalVariable support
+- Added option check_interval for holograms in custom.yml and added GlobalVariable support
 - Added deletepoint event to delete player points
 - Added mythicmobdistance condition that will check if a specific MythicMobs entity is near the player
 - Added level argument to 'experience' objective and condition
@@ -60,7 +161,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added variable support to the Notify system
 - Added variable support to the PickRandomEvent
 - Added "acceptNPCLeftClick: true / false" config option
-- Added optional "minlevel" and "maxlevel" arguments to mmobkill objective 
+- Added optional "minlevel" and "maxlevel" arguments to mmobkill objective
+- Added new options 'inside/outside' for npcrange objective, support for multiple npcs and improved performance
+- Added new Event QuestCompassTargetChangeEvent that is triggered when a new CompassTarget is set. It is also possible to cancel it
+- added multi language support for Notify system
+- Added 'notifyall' event to broadcast a notification
+- Added new notification IO 'sound'
+- Added 'jump' objective
+- Added left, amount and total properties to player kill objective
+- Added 'neutralMobDeathAllPlayers' argument to the `mmobkill` objective
+- Added custom model data support for items
+- Added new config option 'npcInteractionLimit' default 500 that limits the click on an NPC to every x milliseconds
+- Added PlayerHider to hide specific players for specified players
 ### Changed
 - devbuilds always show notifications for new devbuilds, even when the user is not on a _DEV strategy
 - Items for HolographicDisplays are now defines in items.yml
@@ -79,7 +191,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - reworked location variable: %location.(xyz|x|y|z|yaw|pitch|world|ulfShort|ulfLong)(.NUMBER)%
 - multiple conditions and objectives now use the block selector. The same applies for the setblock event.
 - static events now allow comma separated event list
+- changed the `npc_effects` behavior to be package wide instead of global if no NPC is defined in the custom.yml
+- EventHandlers in general updated to ignore cancelled events
+- improved performance for condition checks (Bug where it took seconds to check for conditions)
+- improved performance for conversation checks (Bug where it took seconds to check for conversation options)
+- The plugin will no longer be loaded before the worlds are loaded
+- Citizens Holograms are now more robust on reload and reload faster
+- Added player death/respawn behavior to Region Objective and improved performance
+- changed smelting and fish objective from material to BlockSelector
 ### Deprecated
+- Marked message event for removal in BQ 2.0
+- Marked playsound event for removal in BQ 2.0
+- Marked title event for removal in BQ 2.0
 ### Removed
 - Removed Deprecated Exceptions
 - Removed RacesAndClasses support
@@ -100,23 +223,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - fixed line breaks
 - fixed events notify interval of 1
 - fixed potion/brew objective notify
-- fixed workaround when chest converationIO has no available start points
+- fixed the bug and removed its workaround when chest converationIO has no available start points
 - fixed journal line breaking
 - fixed movement of movenpc event
 - fixed npcmove event
-- fixed bug, where a player causes an exception when he spams right left clicks in menu conversationIO
+- fixed a bug, where a player causes an exception when he spams right left clicks in menu conversationIO
 - fixed outdated Brewery dependency
-- fixed message dublication when using the packet interceptor
+- fixed message duplication when using the packet interceptor
 - fixed Journal interaction with Lectern
-- fixed QuestItems ignoring durabilty
+- fixed QuestItems ignoring durability
 - fixed QuestItem interaction with Lectern, Campfire and Composter
-- fixed journal update after magic inventory is closed
+- update journal after closing magic inventory
 - fixed lever event not toggling the lever
 - fixed ConcurrentModificationException in PlayerData
 - fixed issue where the PacketInterceptor prints the message tag in the chat
 - fixed database backups breaking with some languages
 - fixed when PlaceholderAPI variables contains dots
 - fixed quester name not support & as color code
+- fixed Region Objective listen to player teleport event
+- packet Interceptor stops 1 second AFTER the end of the conversation to allow slow messages to still have its chat protection
+- fixed notify couldn't use variables that contain `:`
+- improved stability for brew objective when other plugins affect brewing
+- fixed region and npcregion condition
+- fixed debugging dose not start on server startup
+- fixed ghost holograms caused by reloading BQ
+- fixed deadlock(Server crash) in Conversations with a large amount of npc and player options with a large amount of conditions
+- fixed door event not working correctly
+- fixed `1 give` command exceptions
 ### Security
 - fixed issue, where objectives that count things are out of sync with the database. This has also affected BungeeCord support
 
@@ -137,11 +270,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New 'nujobs_dellevel' event - Remove a level from player in Jobs Reborn
 - New 'nujobs_joinjob' event - Joins a player to a job in Jobs Reborn
 - New 'nujobs_leavejob' event - Leaves a job in Jobs Reborn
-- New 'nujobs_setlevel' event - Set a players level in Jobs Reborn
+- New 'nujobs_setlevel' event - Set a player's level in Jobs Reborn
 - New 'nujobs_joinjob' objective - Triggers when player joins job in Jobs Reborn
 - New 'nujobs_leavejob' objective - Triggers when a player leaves job in Jobs Reborn
 - New 'nujobs_levelup' objective - Triggers when a player levels up in Jobs Reborn
-- New 'nujobs_payment' objective - Triggers when a player is paid in Jobs Reborn
+- New 'nujobs_payment' objective - Triggers when a player receives money from Jobs Reborn
 - New Notification System
 - New 'notify' event - Create custom notifications on the ActionBar, BossBar, Title, Subtitle and Achievement
 - New 'menu' conversation IO - Requires ProtocolLib. See: https://www.youtube.com/watch?v=Qtn7Dpdf4jw&lc

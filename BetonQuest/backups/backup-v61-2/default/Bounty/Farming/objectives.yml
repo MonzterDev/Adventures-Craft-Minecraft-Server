@@ -1,0 +1,17 @@
+QuestCooldown24: delay 86400 seconds events:del_QuestCooldown24_tag,del_tag_q1_completed,del_q1_part1
+BreakBlock: mmocorebreakblock 1 block:BEETROOTS events:GivePoint,StartBreakBlock,RunOn500Points conditions:inSpawn
+RunOn500Points: location 100;200;300;Spawn 100000000000 events:entry_q1_complete conditions:500beetroots
+
+
+Quest2Cooldown24: delay 86400 seconds events:del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1
+BreakPotato: mmocorebreakblock 1 block:POTATOES events:GivePointCorato,RestartObjectivePotato,Completing2nd
+  conditions:inSpawn
+BreakCarrot: mmocorebreakblock 1 block:CARROTS events:GivePointCorato,RestartObjectiveCarrot,Completing2nd
+  conditions:inSpawn
+Completing2nd: location 100;200;300;Spawn 100000000000 events:entry_q2_complete conditions:64Corato
+
+
+Quest3Cooldown24: delay 86400 seconds events:del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1
+BreakWheat: mmocorebreakblock 1 block:WHEAT events:GivePointWheat,RestartObjectiveeWheat,Completing3rd
+  conditions:inSpawn
+Completing3rd: location 100;200;300;Spawn 100000000000 events:entry_q3_complete conditions:1500Wheat

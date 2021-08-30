@@ -1,0 +1,41 @@
+npcs:
+  '204': Tutor
+variables:
+    QUESTER_NAME: "Tutor"
+    REWARD_MESSAGE: "$default-Functions.REWARD_MESSAGE$$QUESTER_NAME$&a!"
+
+    QUEST1_NAME: "Active Quests Journal"
+    QUEST1_ID: "ACTIVE_QUESTS_JOURNAL"
+    QUEST1_OBJ_MESSAGE: "&aRight-Click &fwhile holding the &lQuest Journal"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Right-Click &0while holding the &lQuest Journal"
+    QUEST1_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7I just put a &fQuest Journal &7in your &f8th Hotbar Slot&7! You can get this anytime by using &f/Journal&7. The &fQuest Journal &7is used to track your &aActive Quests&7. &aRight-Click &7while holding the &fQuest Journal &7to view it!"
+    QUEST1_REWARDS: "$default-Functions.REWARDS$$QUEST1_REWARD1$ \n&8&l » $QUEST1_REWARD2$ $default-Functions.OBJ_START_SOUND$"
+    QUEST1_REWARD1: "&f100 $default-Functions.EXP_REWARD$"
+    QUEST1_REWARD2: "&f100 $default-Functions.MONEY_REWARD$"
+
+    QUEST2_NAME: "Active Quests Menu"
+    QUEST2_ID: "ACTIVE_QUESTS_MENU"
+    QUEST2_OBJ_MESSAGE: "&aLeft-Click &fwhile holding the &lQuest Journal &fand looking at a &aBlock"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Left-Click &0while holding the &lQuest Journal &0and looking at a &2Block"
+    QUEST2_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7You can also view all your &aActive Quests &7by &aLeft-Clicking &7while holding the &fQuest Journal &7and looking at a &aBlock&7! You can also use &6/ActiveQuests &7after completing this quest!"
+    QUEST2_REWARDS: "$default-Functions.REWARDS$$QUEST2_REWARD1$ \n&8&l » $QUEST2_REWARD2$ $default-Functions.OBJ_START_SOUND$"
+    QUEST2_REWARD1: "&f100 $default-Functions.EXP_REWARD$"
+    QUEST2_REWARD2: "&f100 $default-Functions.MONEY_REWARD$"
+
+    QUEST3_NAME: "Unclaimed Quests Menu"
+    QUEST3_ID: "UNCLAIMED_QUESTS_MENU"
+    QUEST3_OBJ_MESSAGE: "&aCrouch and Left-Click &fwhile holding the &lQuest Journal &fand looking at a &aBlock"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Crouch and Left-Click &0while holding the &lQuest Journal &0and looking at a &2Block"
+    QUEST3_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7You can also view all your &aUnclaimed Quest Rewards &7by &aCrouching and Left-Click &7while holding the &fQuest Journal &7and looking at a &aBlock&7! You can also use &6/UnclaimedQuests &7after completing this quest!"
+    QUEST3_REWARDS: "$default-Functions.REWARDS$$QUEST3_REWARD1$ \n&8&l » $QUEST3_REWARD2$ $default-Functions.OBJ_START_SOUND$"
+    QUEST3_REWARD1: "&f100 $default-Functions.EXP_REWARD$"
+    QUEST3_REWARD2: "&f100 $default-Functions.MONEY_REWARD$"
+
+    QUEST4_NAME: "Follow the Arrow"
+    QUEST4_ID: "FOLLOW_THE_ARROW"
+    QUEST4_OBJ_MESSAGE: "&fFollow the &aArrow &fguiding you towards the next &6Quester"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&0Follow the &2Arrow &fguiding you towards the next &6Quester"
+    QUEST4_NPC_MESSAGE: "\n \n&a$QUESTER_NAME$&f: &7You should now see an &aArrow &7directing you towards the next &6Quester&7, follow it! You should also see a &5Bossbar &7indicating how close you are to the &6Quester&7. If you do not see the &aArrow &7or &6Bossbar &7adjust your &aClient's Settings&7!"
+    QUEST4_REWARDS: "$default-Functions.REWARDS$$QUEST4_REWARD1$ \n&8&l » $QUEST4_REWARD2$ $default-Functions.OBJ_START_SOUND$"
+    QUEST4_REWARD1: "&f100 $default-Functions.EXP_REWARD$"
+    QUEST4_REWARD2: "&f100 $default-Functions.MONEY_REWARD$"

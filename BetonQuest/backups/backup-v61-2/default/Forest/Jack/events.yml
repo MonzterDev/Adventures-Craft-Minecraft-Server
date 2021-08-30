@@ -1,0 +1,89 @@
+#This will be started from talking to NPC or Menu, it'll randomly pick one of the Trees
+quest1_start: 'pickrandom 20%Oak,20%Spruce,20%DarkOak,20%Birch,20%Acacia,20%Jungle amount:1'
+
+#Oak Tree section
+Oak: 'folder Oak_Start_Tag,Oak_Start_Message,Oak_Objective,Oak_Journal'
+Oak_Start_Tag: 'tag add Oak_Start'
+Oak_Objective: 'objective start OakLogs'
+Oak_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Oak Logs to summon the &cDryad&f!'
+Oak_Journal: 'journal add Oak'
+
+Spruce: 'folder Spruce_Start_Tag,Spruce_Start_Message,Spruce_Objective,Spruce_Journal'
+Spruce_Start_Tag: 'tag add Spruce_Start'
+Spruce_Objective: 'objective start SpruceLogs'
+Spruce_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Spruce Logs to summon the &cDryad&f!'
+Spruce_Journal: 'journal add Spruce'
+
+DarkOak: 'folder DarkOak_Start_Tag,DarkOak_Start_Message,DarkOak_Objective,DarkOak_Journal'
+DarkOak_Start_Tag: 'tag add DarkOak_Start'
+DarkOak_Objective: 'objective start DarkOakLogs'
+DarkOak_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Dark Oak Logs to summon the &cDryad&f!'
+DarkOak_Journal: 'journal add DarkOak'
+
+Birch: 'folder Birch_Start_Tag,Birch_Start_Message,Birch_Objective,Birch_Journal'
+Birch_Start_Tag: 'tag add Birch_Start'
+Birch_Objective: 'objective start BirchLogs'
+Birch_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Birch Logs to summon the &cDryad&f!'
+Birch_Journal: 'journal add Birch'
+
+Acacia: 'folder Acacia_Start_Tag,Acacia_Start_Message,Acacia_Objective,Acacia_Journal'
+Acacia_Start_Tag: 'tag add Acacia_Start'
+Acacia_Objective: 'objective start AcaciaLogs'
+Acacia_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Acacia Logs to summon the &cDryad&f!'
+Acacia_Journal: 'journal add Acacia'
+
+Jungle: 'folder Jungle_Start_Tag,Jungle_Start_Message,Jungle_Objective,Jungle_Journal'
+Jungle_Start_Tag: 'tag add Jungle_Start'
+Jungle_Objective: 'objective start JungleLogs'
+Jungle_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Jungle Logs to summon the &cDryad&f!'
+Jungle_Journal: 'journal add Jungle'
+
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: 'folder reward_message,QuestRewards,RepeatEnabled,RepeatDisabled,Repeat'
+reward_message: 'run ^notify \n&6&lQuest Complete\:&f \nSearching for the &cDryad&f&f! \n \n \n &6&lRewards\: \n&8&l » &d 100 EXP \n&8&l » &d 100 Foraging EXP \n&8&l » &e 50 Coins'
+QuestRewards: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% foraging 100 ^command money give %player% 50"
+RepeatEnabled: "notify \n&a&lSearching for Dryad &ehas been automatically restarted! You can disable this by using &a/DryadRepeat&e! conditions:RepeatEnabled"
+RepeatDisabled: "notify \n&a&lSearching for Dryad &ecan be automatically restarted by using &a/DryadRepeat&e! conditions:!RepeatEnabled"
+Repeat: 'pickrandom 20%Oak,20%Spruce,20%DarkOak,20%Birch,20%Acacia,20%Jungle amount:1 conditions:RepeatEnabled'
+
+#Adds the Completed Journal Entry, Completed Tag, removes Started Tag, and Journal Entry
+entry_q1_complete: 'folder Completed_Journal,Completed_Tag,Oak_Journal_Remove,Spruce_Journal_Remove,DarkOak_Journal_Remove,Birch_Journal_Remove,Acacia_Journal_Remove,Jungle_Journal_Remove,Oak_Start_Tag_Remove,Spruce_Start_Tag_Remove,DarkOak_Start_Tag_Remove,Birch_Start_Tag_Remove,Acacia_Start_Tag_Remove,Jungle_Start_Tag_Remove'
+
+Oak_Start_Tag_Remove: 'tag del Oak_Start'
+Spruce_Start_Tag_Remove: 'tag del Spruce_Start'
+DarkOak_Start_Tag_Remove: 'tag del DarkOak_Start'
+Birch_Start_Tag_Remove: 'tag del Birch_Start'
+Acacia_Start_Tag_Remove: 'tag del Acacia_Start'
+Jungle_Start_Tag_Remove: 'tag del Jungle_Start'
+
+Oak_Journal_Remove: 'journal delete Oak'
+Spruce_Journal_Remove: 'journal delete Spruce'
+DarkOak_Journal_Remove: 'journal delete DarkOak'
+Birch_Journal_Remove: 'journal delete Birch'
+Acacia_Journal_Remove: 'journal delete Acacia'
+Jungle_Journal_Remove: 'journal delete Jungle'
+
+#Adds the Completed Journal & Tag once Objective is completed 
+Completed_Journal: 'journal add Completed'
+Completed_Tag: 'tag add Completed'
+
+#Removes the Completed Tag & Journal at start of Quest
+Completed_Journal_Remove: 'journal delete Completed'
+Completed_Tag_Remove: 'tag remove Completed'
+
+#Spawns Boss & TPs player once the Objective is completed
+BossSpawn: 'folder warpplayer,spawnboss period:3'
+spawnboss: 'run ^command mm mobs spawn DRYAD 1 Spawn,588,62,-44,93,3'
+warpplayer: 'run ^sudo warp Hive'
+
+#Gives the Forst & Total Quest points, and Jack Point, but will only occoure the first time the Quest is done
+Points: 'folder GiveJackPoint,default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint conditions:!Jack_Point'
+GiveJackPoint: 'point Jack 1 conditions:!Jack_Point'
+
+
+#Commands
+DryadRewards: 'run ^command dm open Dryad %player%'
+questmenu: 'run ^command dm open Quests %player%'
+minequestmenu: 'run ^command dm open Minequests %player%'

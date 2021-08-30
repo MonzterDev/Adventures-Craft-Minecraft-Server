@@ -1,0 +1,49 @@
+quester: Anju
+first: greeting
+NPC_options:
+  greeting:
+    text: Hey &a%player%&7, what can I do for ya?
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: I used to work at the Stock Pot Inn, but since that has closed down I came here to watch over my sister's Cuccos!
+    pointers: like, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Since leaving the Stock Pot Inn, I've struggled keeping the Cuccos secured. Would you mind helping bring them back?
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: My Cuccos have escaped their pen! Can you pickup all 20 of them and bring them back to me?
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Where are you from?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  like:
+    text: You came a long way!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to help you!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+
