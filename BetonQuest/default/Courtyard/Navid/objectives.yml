@@ -1,14 +1,15 @@
-KillUndead: mmobkill MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR
-  amount:50 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify:1
-  
-KillCasters: mmobkill UNDEAD_CASTER amount:10 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify:1
+THE_UNDEAD_SLAYER: mmobkill MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UndeadGuard,UNDEAD_CASTER,UNDEAD_WARRIOR amount:1 persistent events:Q1_REPEAT,Q1_COMPLETE,Q2_START
 
-KillUndead2: mmobkill UNDEAD_SPIDER amount:20 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3
-  notify:1
-KillAlphaSoul: mmobkill ALPHA_SOUL amount:2 events:entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4 notify:1
-NPC1: npcinteract 84 events:quest5p2_starter,FindRonCompassHide
-NPC2: npcinteract 86 events:quest5p3_starter,FindPeterCompassHide
-NPC3: npcinteract 88 events:quest5p4_starter,FindSallyCompassHide
-NPC4: npcinteract 91 events:quest5p5_starter,FindMarkusCompassHide
-NPC5: npcinteract 93 events:quest5p6_starter,FindSamanthaCompassHide
-EnterCastle: npcinteract 53 events:entry_q5_complete,QuestReward5,FindAnderCompassHide
+THE_MAGICAL_HUNT: npcinteract 30 events:Q2_COMPLETE,Q3_START conditions:$QUEST2_ID$
+
+SPIDER_EXTERMINATOR: mmobkill UNDEAD_SPIDER amount:1 persistent events:Q3_REPEAT,Q3_COMPLETE,Q4_START
+
+THE_ALPHAS: mmobkill ALPHA_SOUL amount:1 persistent events:Q4_REPEAT,Q4_COMPLETE,Q5_START
+
+THE_VILLAGE_HERO_1: npcinteract 84 events:Q5_2_START
+THE_VILLAGE_HERO_2: npcinteract 86 events:Q5_3_START
+THE_VILLAGE_HERO_3: npcinteract 88 events:Q5_4_START
+THE_VILLAGE_HERO_4: npcinteract 91 events:Q5_5_START
+THE_VILLAGE_HERO_5: npcinteract 93 events:Q5_COMPLETE,Q6_START
+
+CASTLE_BREACH: npcinteract 53 events:Q6_COMPLETE

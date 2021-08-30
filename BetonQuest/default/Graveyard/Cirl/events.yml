@@ -7,7 +7,7 @@ Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$
 #
 Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
 Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
-Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
 # 
 Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE condition:$QUEST1_ID$'
 Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
@@ -36,7 +36,7 @@ Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$
 #
 Q3_REPEAT: 'folder Q3_POINT_GIVE,Q3_MSG_REPEAT,Q3_OBJ_START condition:!$QUEST3_ID$'
 Q3_POINT_GIVE: 'point $QUEST3_ID$ 1'
-Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$'
+Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
 # 
 Q3_COMPLETE: 'folder Q3_OBJ_STOP,Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE condition:$QUEST3_ID$'
 Q3_OBJ_STOP: 'objective delete $QUEST3_ID$'
@@ -63,7 +63,8 @@ Q5_JOU_START: 'journal add QUEST5_JOU_MESSAGE'
 Q5_GPS_START: 'command gps:compass start Courtyard %player%'
 Q5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
 # 
-Q5_COMPLETE: 'folder Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE'
+Q5_COMPLETE: 'folder Q5_COURTYARD_ACCESS,Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE'
+Q5_COURTYARD_ACCESS: 'command lp user %player% permission set warp.Courtyard true'
 Q5_TAG_COMPLETE: 'tag add $QUEST5_ID$_COMPLETED'
 Q5_JOU_DELETE: 'journal delete QUEST5_JOU_MESSAGE'
 Q5_MSG_COMPLETE: 'run $QUEST5_COMPLETE$'

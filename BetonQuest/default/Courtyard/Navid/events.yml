@@ -1,176 +1,124 @@
-#FIRST QUEST Hunting the Undead
-quest1_start: 'objective start KillUndead'
-tag_q1_part1: 'tag add q1_part1'
-entry_q1_part1: 'journal add q1_part1'
-q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Slay 50 Undead within the Courtyard&f!'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
-QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give BOW UNDEAD_BOW3 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
-QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aSlaying the Undead &cto redeem your rewards!'
-QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
-#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give BOW UNDEAD_BOW3 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
-QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q1_complete: 'folder default-Points.GiveCourtyardPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
-entry_q1_completed: 'journal add q1_completed'
-tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal delete q1_part1'
+Q1_START: 'folder Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START'
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE condition:$QUEST1_ID$'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
 
 
-#SECOND QUEST The Graveyard Shop
-quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
-quest2_start: 'objective start KillCasters'
-tag_q2_part1: 'tag add q2_part1'
-entry_q2_part1: 'journal add q2_part1'
-q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nThe Undead Slayer&f! \n \n \n &6&lRewards\: \n&8&l » &9 Undead Bow \n&8&l » &d 200 EXP \n&8&l » &d 200 Slayer EXP \n&8&l » &e 150 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Slay 10 Undead Casters!'
-#FINISHING THE SECOND QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
-QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
-QuestReward2_If_Not_Full: "run ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
-QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aThe Graveyard Shop &cto redeem your rewards!'
-QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
-Claim_QuestReward2: "run ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
-QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
-#SECOND QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q2_complete: 'folder default-Points.GiveCourtyardPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
-entry_q2_completed: 'journal add q2_completed'
-tag_q2_completed: 'tag add q2_completed'
-entry_q2_part1_remove: 'journal delete q2_part1'
+Q2_START: 'folder Q2_OBJ_START,Q2_TAG_START,Q2_JOU_START,Q2_MSG_START condition:$QUEST1_ID$'
+Q2_OBJ_START: 'objective start $QUEST2_ID$'
+Q2_TAG_START: 'tag add $QUEST2_ID$_STARTED'
+Q2_JOU_START: 'journal add QUEST2_JOU_MESSAGE'
+Q2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q2_COMPLETE: 'folder Q2_TAG_COMPLETE,Q2_JOU_DELETE,Q2_TAKE_ITEM,Q2_MSG_COMPLETE'
+Q2_TAG_COMPLETE: 'tag add $QUEST2_ID$_COMPLETED'
+Q2_JOU_DELETE: 'journal delete QUEST2_JOU_MESSAGE'
+Q2_TAKE_ITEM: 'take MAGICAL_FRAGMENT:8'
+Q2_MSG_COMPLETE: 'run $QUEST2_COMPLETE$'
 
-#THIRD QUEST Hunting the Archers
-quest3_starer: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
-quest3_start: 'objective start KillUndead2'
-tag_q3_part1: 'tag add q3_part1'
-entry_q3_part1: 'journal add q3_part1'
-q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nSlay 10 Undead Casters! \n \n \n &6&lRewards\: \n&8&l » &d 200 EXP \n&8&l » &d 200 Slayer EXP \n&8&l » &e 150 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Exterminate 20 Undead Spiders&f!'
-#FINISHING THE THIRD QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
-QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
-QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aHunting the Archers &cto redeem your rewards!'
-QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
-#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% slayer 200 ^command money give %player% 150"
-QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
-QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
-#THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q3_complete: 'folder default-Points.GiveCourtyardPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
-entry_q3_completed: 'journal add q3_completed'
-tag_q3_completed: 'tag add q3_completed'
-entry_q3_part1_remove: 'journal delete q3_part1'
 
-#FORTH QUEST The Alpha Souls
-quest4_starer: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message'
-quest4_start: 'objective start KillAlphaSoul'
-tag_q4_part1: 'tag add q4_part1'
-entry_q4_part1: 'journal add q4_part1'
-q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nSpider Exterminator&f! \n \n \n &6&lRewards\: \n&8&l » &d 200 EXP \n&8&l » &d 200 Slayer EXP \n&8&l » &e 150 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Defeat 2 Alpha Souls!'
-#FINISHING THE FOURTH QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
-QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% slayer 250 ^command money give %player% 175"
-QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
-QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aThe Alpha Souls &cto redeem your rewards!'
-QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
-#FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% slayer 250 ^command money give %player% 175"
-QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
-QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"
-#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q4_complete: 'folder default-Points.GiveCourtyardPoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed'
-entry_q4_completed: 'journal add q4_completed'
-tag_q4_completed: 'tag add q4_completed'
-entry_q4_part1_remove: 'journal delete q4_part1'
+Q3_START: 'folder Q3_OBJ_START,Q3_TAG_START,Q3_JOU_START,Q3_MSG_START'
+Q3_OBJ_START: 'objective start $QUEST3_ID$'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+Q3_JOU_START: 'journal add QUEST3_JOU_MESSAGE'
+Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q3_REPEAT: 'folder Q3_POINT_GIVE,Q3_MSG_REPEAT,Q3_OBJ_START condition:!$QUEST3_ID$'
+Q3_POINT_GIVE: 'point $QUEST3_ID$ 1'
+Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q3_COMPLETE: 'folder Q3_OBJ_STOP,Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE condition:$QUEST3_ID$'
+Q3_OBJ_STOP: 'objective delete $QUEST3_ID$'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED'
+Q3_JOU_DELETE: 'journal delete QUEST3_JOU_MESSAGE'
+Q3_MSG_COMPLETE: 'run $QUEST3_COMPLETE$'
 
-#FIFTH QUEST The Village Hero
-quest5_starer: 'folder quest5_start,tag_q5_part1,entry_q5_part1,q5_start_message,FindRonCompass'
-quest5_start: 'objective start NPC1'
-tag_q5_part1: 'tag add q5_part1'
-entry_q5_part1: 'journal add q5_part1'
-q5_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nThe Alpha Souls! \n \n \n &6&lRewards\: \n&8&l » &d 250 EXP \n&8&l » &d 250 Slayer EXP \n&8&l » &e 175 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Rescue &aRon &ffrom within the &cCourtyard &fat -112, 30, 282!'
-FindRonCompass: 'run ^opsudo calcomp show ^opsudo calcomp toggle FindRon enable'
-FindRonCompassHide: 'run ^opsudo calcomp toggle FindRon disable'
-#SECOND QUEST P2 The Graveyard Shop
-quest5p2_starter: 'folder quest5p2_start,tag_q5p2_part1,q5_part1_completed,entry_q5p2_part1,q5p2_start_message,FindPeterCompass'
-quest5p2_start: 'objective start NPC2'
-tag_q5p2_part1: 'tag add q5p2_part1'
-q5_part1_completed: 'tag add q5_part1_completed'
-entry_q5p2_part1: 'journal add q5p2_part1'
-q5p2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \nRescue &aRon &ffrom within the &cCourtyard &fat -112, 30, 282! \n \n \n &6&lNew Objectives\: \n&8&l » &f Rescue &aPeter &ffrom within the &cCourtyard &fat -18, 17, 317!'
-FindPeterCompass: 'run ^opsudo calcomp toggle FindPeter enable'
-FindPeterCompassHide: 'run ^opsudo calcomp toggle FindPeter disable'
-#SECOND QUEST P3 The Graveyard Shop
-quest5p3_starter: 'folder quest5p3_start,tag_q5p3_part1,q5_part2_completed,entry_q5p3_part1,q5p3_start_message,FindSallyCompass'
-quest5p3_start: 'objective start NPC3'
-tag_q5p3_part1: 'tag add q5p3_part1'
-q5_part2_completed: 'tag add q5_part2_completed'
-entry_q5p3_part1: 'journal add q5p3_part1'
-q5p3_start_message: 'run ^notify \n&6&lObjective Complete\:&f \nRescue &aPeter &ffrom within the &cCourtyard &fat -18, 17, 317! \n \n \n &6&lNew Objectives\: \n&8&l » &f Rescue &aSally &ffrom within the &cCourtyard &fat -209, 27, 449!'
-FindSallyCompass: 'run ^opsudo calcomp toggle FindSally enable'
-FindSallyCompassHide: 'run ^opsudo calcomp toggle FindSally disable'
-#SECOND QUEST P4 The Graveyard Shop
-quest5p4_starter: 'folder quest5p4_start,tag_q5p4_part1,q5_part3_completed,entry_q5p4_part1,q5p4_start_message,FindMarkusCompass'
-quest5p4_start: 'objective start NPC4'
-tag_q5p4_part1: 'tag add q5p4_part1'
-q5_part3_completed: 'tag add q5_part3_completed'
-entry_q5p4_part1: 'journal add q5p4_part1'
-q5p4_start_message: 'run ^notify \n&6&lObjective Complete\:&f \nRescue &aSally &ffrom within the &cCourtyard &fat -209, 27, 449! \n \n \n &6&lNew Objectives\: \n&8&l » &f Rescue &aMarkus &ffrom within the &cCourtyard &fat -107, 17, 497!'
-FindMarkusCompass: 'run ^opsudo calcomp toggle FindMarkus enable'
-FindMarkusCompassHide: 'run ^opsudo calcomp toggle FindMarkus disable'
-#SECOND QUEST P5 The Graveyard Shop
-quest5p5_starter: 'folder quest5p5_start,tag_q5p5_part1,q5_Ander,q5_part4_completed,entry_q5p5_part1,q5p5_start_message,FindSamanthaCompass'
-quest5p5_start: 'objective start NPC5'
-tag_q5p5_part1: 'tag add q5p5_part1'
-q5_Ander: 'tag add q5_Ander'
-q5_part4_completed: 'tag add q5_part4_completed'
-entry_q5p5_part1: 'journal add q5p5_part1'
-q5p5_start_message: 'run ^notify \n&6&lObjective Complete\:&f \nRescue &aMarkus &ffrom within the &cCourtyard &fat -107, 17, 497! \n \n \n &6&lNew Objectives\: \n&8&l » &f Rescue &aSamantha &ffrom within the &cCourtyard &fat -1, 34, 370!'
-FindSamanthaCompass: 'run ^opsudo calcomp toggle FindSamantha enable'
-FindSamanthaCompassHide: 'run ^opsudo calcomp toggle FindSamantha disable'
-#SECOND QUEST P5 The Graveyard Shop
-quest5p6_starter: 'folder quest5p6_start,tag_q5p6_part1,q5_part5_completed,entry_q5p6_part1,q5p6_start_message,FindAnderCompass'
-quest5p6_start: 'objective start EnterCastle'
-tag_q5p6_part1: 'tag add q5p6_part1'
-q5_part5_completed: 'tag add q5_part5_completed'
-entry_q5p6_part1: 'journal add q5p6_part1'
-q5p6_start_message: 'run ^notify \n&6&lObjective Complete\:&f \nRescue &aSamantha &ffrom within the &cCourtyard &fat -1, 34, 370! \n \n \n &6&lNew Objectives\: \n&8&l » &f Talk to &aAnder &fat the &cCastle Gate &f-97, 15, 433 so he can sneak you through!'
-FindAnderCompass: 'run ^opsudo calcomp toggle FindAnder enable'
-FindAnderCompassHide: 'run ^opsudo calcomp hide ^opsudo calcomp toggle FindAnder disable'
-#FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward5: 'run ^command lp user %player% permission set warp.castle true ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% slayer 250 ^command money give %player% 200'
-#FIFTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q5_complete: 'folder default-Points.GiveCourtyardPoint,default-Points.GiveQuestTotalPoint,entry_q5_completed,entry_q5_part1_remove,entry_q5_part2_remove,entry_q5_part3_remove,entry_q5_part4_remove,entry_q5_part5_remove,entry_q5_part6_remove,q5_Ander_Remove,q5_end_message,tag_q5_completed'
-entry_q5_completed: 'journal add q5_completed'
-tag_q5_completed: 'tag add q5_completed'
-entry_q5_part1_remove: 'journal delete q5_part1'
-entry_q5_part2_remove: 'journal delete q5p2_part1'
-entry_q5_part3_remove: 'journal delete q5p3_part1'
-entry_q5_part4_remove: 'journal delete q5p4_part1'
-entry_q5_part5_remove: 'journal delete q5p5_part1'
-entry_q5_part6_remove: 'journal delete q5p6_part1'
-q5_Ander_Remove: 'tag del q5_Ander'
-q5_end_message: 'run ^notify \n&6&lQuest Complete\:&f \nThe Village Hero! \n \n \n &6&lRewards\: \n&8&l » &a Access to the Castle \n&8&l » &d 250 EXP \n&8&l » &d 250 Slayer EXP \n&8&l » &e 200 Coins ^command warp Castle %player%'
+
+Q4_START: 'folder Q4_OBJ_START,Q4_TAG_START,Q4_JOU_START,Q4_MSG_START condition:$QUEST3_ID$'
+Q4_OBJ_START: 'objective start $QUEST4_ID$'
+Q4_TAG_START: 'tag add $QUEST4_ID$_STARTED'
+Q4_JOU_START: 'journal add QUEST4_JOU_MESSAGE'
+Q4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q4_REPEAT: 'folder Q4_POINT_GIVE,Q4_MSG_REPEAT,Q4_OBJ_START condition:!$QUEST4_ID$'
+Q4_POINT_GIVE: 'point $QUEST4_ID$ 1'
+Q4_MSG_REPEAT: 'run notify $QUEST4_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q4_COMPLETE: 'folder Q4_OBJ_STOP,Q4_TAG_COMPLETE,Q4_JOU_DELETE,Q4_MSG_COMPLETE condition:$QUEST4_ID$'
+Q4_OBJ_STOP: 'objective delete $QUEST4_ID$'
+Q4_TAG_COMPLETE: 'tag add $QUEST4_ID$_COMPLETED'
+Q4_JOU_DELETE: 'journal delete QUEST4_JOU_MESSAGE'
+Q4_MSG_COMPLETE: 'run $QUEST4_COMPLETE$'
+
+
+Q5_START: 'folder Q5_TAG_START,Q5_1_START condition:$QUEST4_ID$'
+Q5_TAG_START: 'tag add $QUEST5_ID$_STARTED'
+#
+Q5_1_START: 'folder Q5_1_OBJ_START,Q5_1_JOU_START,Q5_1_GPS_START,Q5_1_MSG_START'
+Q5_1_OBJ_START: 'objective start $QUEST5_ID$_1'
+Q5_1_JOU_START: 'journal add QUEST5_1_JOU_MESSAGE'
+Q5_1_GPS_START: 'command gps:compass start CourtyardNPC1 %player%'
+Q5_1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q5_2_START: 'folder Q5_2_OBJ_START,Q5_1_TAG_FOUND,Q5_1_JOU_DELETE,Q5_2_JOU_START,Q5_2_GPS_START,Q5_2_MSG_START'
+Q5_2_OBJ_START: 'objective start $QUEST5_ID$_2'
+Q5_1_TAG_FOUND: 'tag add QUEST5_NPC_1'
+Q5_1_JOU_DELETE: 'journal delete QUEST5_1_JOU_MESSAGE'
+Q5_2_JOU_START: 'journal add QUEST5_2_JOU_MESSAGE'
+Q5_2_GPS_START: 'command gps:compass start CourtyardNPC2 %player%'
+Q5_2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q5_3_START: 'folder Q5_3_OBJ_START,Q5_2_TAG_FOUND,Q5_2_JOU_DELETE,Q5_3_JOU_START,Q5_3_GPS_START,Q5_3_MSG_START'
+Q5_3_OBJ_START: 'objective start $QUEST5_ID$_3'
+Q5_2_TAG_FOUND: 'tag add QUEST5_NPC_2'
+Q5_2_JOU_DELETE: 'journal delete QUEST5_2_JOU_MESSAGE'
+Q5_3_JOU_START: 'journal add QUEST5_3_JOU_MESSAGE'
+Q5_3_GPS_START: 'command gps:compass start CourtyardNPC3 %player%'
+Q5_3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q5_4_START: 'folder Q5_4_OBJ_START,Q5_3_TAG_FOUND,Q5_3_JOU_DELETE,Q5_4_JOU_START,Q5_4_GPS_START,Q5_4_MSG_START'
+Q5_4_OBJ_START: 'objective start $QUEST5_ID$_4'
+Q5_3_TAG_FOUND: 'tag add QUEST5_NPC_3'
+Q5_3_JOU_DELETE: 'journal delete QUEST5_3_JOU_MESSAGE'
+Q5_4_JOU_START: 'journal add QUEST5_4_JOU_MESSAGE'
+Q5_4_GPS_START: 'command gps:compass start CourtyardNPC4 %player%'
+Q5_4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q5_5_START: 'folder Q5_5_OBJ_START,Q5_4_TAG_FOUND,Q5_4_JOU_DELETE,Q5_5_JOU_START,Q5_5_GPS_START,Q5_5_MSG_START'
+Q5_5_OBJ_START: 'objective start $QUEST5_ID$_5'
+Q5_4_TAG_FOUND: 'tag add QUEST5_NPC_4'
+Q5_4_JOU_DELETE: 'journal delete QUEST5_4_JOU_MESSAGE'
+Q5_5_JOU_START: 'journal add QUEST5_5_JOU_MESSAGE'
+Q5_5_GPS_START: 'command gps:compass start CourtyardNPC5 %player%'
+Q5_5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q5_COMPLETE: 'folder Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE'
+Q5_TAG_COMPLETE: 'tag add $QUEST5_ID$_COMPLETED'
+Q5_JOU_DELETE: 'journal delete QUEST5_5_JOU_MESSAGE'
+Q5_MSG_COMPLETE: 'run $QUEST5_COMPLETE$'
+
+
+Q6_START: 'folder Q6_OBJ_START,Q6_TAG_START,Q6_JOU_START,Q6_GPS_START,Q6_MSG_START'
+Q6_OBJ_START: 'objective start $QUEST6_ID$'
+Q6_TAG_START: 'tag add $QUEST6_ID$_STARTED'
+Q6_JOU_START: 'journal add QUEST6_JOU_MESSAGE'
+Q6_GPS_START: 'command gps:compass start CastleEntrance %player%'
+Q6_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST6_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q6_COMPLETE: 'folder Q6_CASTLE_ACCESS,Q6_CASTLE_TELEPORT,Q6_TAG_COMPLETE,Q6_JOU_DELETE,Q6_MSG_COMPLETE'
+Q6_CASTLE_ACCESS: 'command lp user %player% permission set warp.Castle true'
+Q6_CASTLE_TELEPORT: 'teleport -95;16;434;Spawn;-90;0'
+Q6_TAG_COMPLETE: 'tag add $QUEST6_ID$_COMPLETED'
+Q6_JOU_DELETE: 'journal delete QUEST6_JOU_MESSAGE'
+Q6_MSG_COMPLETE: 'run $QUEST6_COMPLETE$'

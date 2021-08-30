@@ -103,3 +103,11 @@ recipes:
     triggers:
     - vanilla{type=Bone,amount=1}
     conditions: []
+  MAGICAL_ESSENSE2:
+    output:
+      type: CONSUMABLE
+      id: MAGICAL_ESSENSE2
+      amount: 1
+    ingredients:
+    - mmoitem{type=QUEST,id=MAGICAL_FRAGMENT,amount=8}
+    conditions: []

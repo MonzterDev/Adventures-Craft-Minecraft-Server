@@ -1,0 +1,44 @@
+quester: Jack-O
+first: greeting
+NPC_options:
+
+  greeting:
+    text: Hey &a%player%&7, what can I help you with?
+    pointers: vote, rewards, bye
+
+#booster
+
+#booster
+  vote:
+    text: "You can visit 3rd party website to vote for our Server! This can help grow our Server and also reward whoever votes! Here's a link to all the voting sites: &ahttps://www.adventurescraft.net/wiki/site/vote/&7!"
+    pointers: goBack, bye
+
+#Selected from quest1 dialogue, which will start his first quest
+  rewards:
+    text: "Each time you vote, you receive random &98x Enchanted Materials&7! You're able to vote currently on 4 websites every 24 hours."
+    pointers: goBack, bye
+
+  bye:
+    text: "Have a great day &a%player%&7, I'm always here to help you!"
+
+#This is how a player responds and what options they have
+player_options:
+#booster
+  vote:
+    text: Where can I &aVote&f?
+    pointers: vote
+#Bugs
+  rewards:
+    text: What do I get for &avoting&f?
+    pointers: rewards
+
+
+#Greeting > Bye    
+  bye:
+    text: That's all I needed, thanks!
+    pointers: bye
+#Town_Info > wow 
+  goBack:
+    text: Thanks, could I ask something else?
+    pointers: greeting
+

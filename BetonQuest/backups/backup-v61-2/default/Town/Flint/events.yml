@@ -1,0 +1,25 @@
+# Global Event
+REWARD_MESSAGE: 'run notify $REWARD_MESSAGE$'
+
+Q1_START: 'folder Q1_OBJ_START,Q1_COMPASS_SHOW,Q1_TAG_START,Q1_MSG_START'
+Q1_OBJ_START: 'objective start WIZARD_WORKSHOP'
+Q1_COMPASS_SHOW: 'run ^opsudo calcomp show ^opsudo calcomp toggle Wizard enable ^opsudo calcomp focus Wizard'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $QUEST1_NPC_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q1_COMPLETE: 'folder Q1_TAG_COMPLETE,Q1_MSG_COMPLETE,Q1_MSG_REWARD,Q1_COMPASS_REMOVE,REWARD_MESSAGE,Q3_START'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED'
+Q1_MSG_COMPLETE: 'run notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$'
+Q1_MSG_REWARD: 'run notify $QUEST1_REWARDS$'
+Q1_COMPASS_REMOVE: 'run ^opsudo calcomp toggle Wizard disable ^opsudo calebcompass clear'
+
+
+Q3_START: 'folder Q3_OBJ_START,Q3_TAG_START,Q3_MSG_START'
+Q3_OBJ_START: 'objective start HATCHERY'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $QUEST3_NPC_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q3_COMPLETE: 'folder Q3_TAG_COMPLETE,Q3_MSG_COMPLETE,Q3_MSG_REWARD,REWARD_MESSAGE'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED'
+Q3_MSG_COMPLETE: 'run notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$'
+Q3_MSG_REWARD: 'run notify $QUEST3_REWARDS$'

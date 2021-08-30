@@ -1,0 +1,59 @@
+quester: Gemsmith
+first: greeting
+NPC_options:
+  greeting:
+    text: Have you heard of Gemstones &a%player%&7? I've studied these endlessly and can help you understand and create them!
+    pointers: hey, shop, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: Gemstones are items which can be added onto certain Gear, providing increased stats! Some Gemstones can be obtained from Quests and Bosses, but most are commonly crafted by me. Crafting a Gemstone requires a Gem Base, the base changes depending on the Gemstone rarity. Gemstone Bases are crafted with common minerals found inside the Mines!
+    pointers: teachMore, wow, bye
+  town_info2:
+    text: Each Gemstone displays which Gear it can be applied onto. Most Gemstones can be applied onto most Gear, but some maybe limitted to only Armor or Weapon Types, while few are even limitted to only specific Armor Pieces or Weapons. 
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: I have a few quests which should help you understand how Gemstones work.
+    pointers: quest1, quest_decline
+    conditions: 'default-Mine-Smith.q3_completed,!q1_part1'        
+  questsDeny:
+    text: Currently you should focus on exploring the Mine. Once you help &aSmith&7, return back to me and I'll have some quests for you!
+    conditions: '!default-Mine-Smith.q3_completed,!q1_part1'        
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: What are Gemstones?
+    pointers: town_info
+#Greeting > Shop
+  shop:
+    text: Can I access your &eshop&f?
+    events: 'ShopOpen'    
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests,questsDeny    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  teachMore:
+    text: Can you teach me more?
+    pointers: town_info2
+#Town_Info > wow 
+  wow:
+    text: I've learned enough, thanks!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "&a$quest_name1$&f" Quest
+    events: 'quest1_starter'    
+    conditions: '!q1_part1'
+

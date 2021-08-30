@@ -1,0 +1,86 @@
+#FIRST QUEST The Great Harvest
+quest1_start: 'objective start Slayer'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: "run ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% farming 150 ^command money give %player% 75"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveSpiritGroundsPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal delete q1_part1'
+
+#Q2
+quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
+quest2_start: 'objective start DeliveryBrown'
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
+#p2
+quest2_part2_starter: 'folder quest2_part2_start,tag_q2_part2,entry_q2_part2,q2_part2_start_message,tag_q2_part1_completed,RemoveBrown'
+RemoveBrown: 'take Brown_Mushroom:32'
+tag_q2_part1_completed: 'tag add q2_part1_completed'
+quest2_part2_start: 'objective start DeliveryRed'
+tag_q2_part2: 'tag add q2_part2'
+entry_q2_part2: 'journal add q2_part2'
+q2_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective2$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective2-2$'
+#p3
+quest2_part3_starter: 'folder quest2_part3_start,tag_q2_part3,entry_q2_part3,q2_part3_start_message,tag_q2_part2_completed,RemoveRed'
+RemoveRed: 'take Red_Mushroom:32'
+tag_q2_part2_completed: 'tag add q2_part2_completed'
+quest2_part3_start: 'objective start DeliveryMelon'
+tag_q2_part3: 'tag add q2_part3'
+entry_q2_part3: 'journal add q2_part3'
+q2_part3_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective2-2$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective2-3$'
+#p3
+quest2_part4_starter: 'folder quest2_part4_start,tag_q2_part4,entry_q2_part4,q2_part4_start_message,tag_q2_part3_completed,RemoveMelon'
+RemoveMelon: 'take Melon_Slice:64'
+tag_q2_part3_completed: 'tag add q2_part3_completed'
+quest2_part4_start: 'objective start DeliveryPumpkin'
+tag_q2_part4: 'tag add q2_part4'
+entry_q2_part4: 'journal add q2_part4'
+q2_part4_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective2-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective2-4$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give WAND RESOLVE2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give WAND RESOLVE2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveSpiritGroundsPoint,default-Points.GiveQuestTotalPoint,RemovePumpkin,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,entry_q2_part2_remove,entry_q2_part3_remove,entry_q2_part4_remove'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal delete q2_part1'
+entry_q2_part2_remove: 'journal delete q2_part2'
+entry_q2_part3_remove: 'journal delete q2_part3'
+entry_q2_part4_remove: 'journal delete q2_part4'
+RemovePumpkin: 'take Pumpkin:64'
+
+quest3_starter: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
+quest3_start: 'objective start Witch'
+tag_q3_part1: 'tag add q3_part1'
+entry_q3_part1: 'journal add q3_part1'
+q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4$ \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective3$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward3: "run ^command lp user %player% permission set warp.spiritgrounds true ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% farming 150 ^command money give %player% 75"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q3_complete: 'folder default-Points.GiveSpiritGroundsPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed,q3_completed_message'
+entry_q3_completed: 'journal add q3_completed'
+tag_q3_completed: 'tag add q3_completed'
+entry_q3_part1_remove: 'journal delete q3_part1'
+q3_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-4$ \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$'
+

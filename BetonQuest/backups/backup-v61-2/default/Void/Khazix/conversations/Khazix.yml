@@ -1,0 +1,53 @@
+quester: Khazix
+first: greeting
+NPC_options:
+  greeting:
+    text: Hello &aAdventurer&7! Enjoy your stay in the land of the &8corrupt&7! 
+    pointers: hey, shop, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: This corrupted land has caused everything to deform! You may become permanently cursed from the plague in this horrid area. Only if you help me will I cleanse you! 
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: If you fail a task of mine, do not come back!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: I need you to take our some &cVoid Thralls &7and steal their &2eggs&7!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  shop:
+    text: Let me see the &eVoid Shop&f!
+    events: 'ShopOpen'    
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: You're scaring me!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

@@ -1,0 +1,23 @@
+QuestCooldown24: delay 86400 seconds events:del_QuestCooldown24_tag,del_tag_q1_completed,del_q1_part1
+BreakBlock: mmocorebreakblock 64 block:COCOA events:entry_q1_complete
+
+
+Quest2Cooldown24: delay 86400 seconds events:del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1
+BreakOakLog: mmocorebreakblock 1 block:OAK_LOG events:GivePointOakLog,RestartObjectiveOakLog,Completing2nd
+  conditions:inSpawn
+BreakDarkOakLog: mmocorebreakblock 1 block:DARK_OAK_LOG events:GivePointDarkOakLog,RestartObjectiveDarkOakLog,Completing2nd
+  conditions:inSpawn
+BreakSpruceLog: mmocorebreakblock 1 block:SPRUCE_LOG events:GivePointSpruceLog,RestartObjectiveSpruceLog,Completing2nd
+  conditions:inSpawn
+BreakBirchLog: mmocorebreakblock 1 block:BIRCH_LOG events:GivePointBirchLog,RestartObjectiveBirchLog,Completing2nd
+  conditions:inSpawn
+BreakJungleLog: mmocorebreakblock 1 block:JUNGLE_LOG events:GivePointJungleLog,RestartObjectiveJungleLog,Completing2nd
+  conditions:inSpawn
+BreakAcaciaLog: mmocorebreakblock 1 block:ACACIA_LOG events:GivePointAcaciaLog,RestartObjectiveAcaciaLog,Completing2nd
+  conditions:inSpawn
+Completing2nd: location 100;200;300;Spawn 100000000000 events:entry_q2_complete conditions:128SpruceLog,128AcaciaLog,128JungleLog,128BirchLog,128DarkOakLog,128OakLog
+
+
+Quest3Cooldown24: delay 86400 seconds events:del_Quest3Cooldown24_tag,del_tag_q3_completed,del_q3_part1
+SlayDryad: mmobkill DRYAD amount:5 events:entry_q3_complete
+  conditions:inSpawn

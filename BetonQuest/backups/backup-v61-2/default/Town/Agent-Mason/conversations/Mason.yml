@@ -1,0 +1,42 @@
+quester: Mason
+first: greeting
+NPC_options:
+
+  greeting:
+    text: Hey &a%player%&7, what can I help you with?
+    pointers: booster, Shop, bye
+
+#booster
+  booster:
+    text: "&7Every 24 hours you can login to receive &e1x Daily Token&7! You can then use these tokens within the &eDaily Shop &7for some sweet rewards!"
+    pointers: goBack, bye
+
+#Selected from quest1 dialogue, which will start his first quest
+  ranks:
+    text: "&aRanks &7can be purchased from our &eStore&7! Ranks give you some conveniences and other special rewards!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Have a great day &a%player%&7, I'm always here to help you!"
+
+#This is how a player responds and what options they have
+player_options:
+#booster
+  booster:
+    text: What are &aDaily Rewards&f?
+    pointers: booster
+#Bugs
+  Shop:
+    text: Show my the &eDaily Shop&f!
+    events: Shop
+
+
+#Greeting > Bye    
+  bye:
+    text: That's all I needed, thanks!
+    pointers: bye
+#Town_Info > wow 
+  goBack:
+    text: Thanks, could I ask something else?
+    pointers: greeting
+

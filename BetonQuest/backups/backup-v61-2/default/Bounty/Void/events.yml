@@ -1,0 +1,77 @@
+Q1_CD_Rest: folder del_QuestCooldown24_tag,del_tag_q1_completed,del_q1_part1,Reset_Points1
+
+del_QuestCooldown24_tag: tag del QuestCooldown24
+del_tag_q1_completed: tag del q1_completed
+del_q1_part1: tag del q1_part1
+Reset_Points1: deletepoint EndStone
+
+tag_QuestCooldown24: tag add QuestCooldown24
+tag_q1_part1: tag add q1_part1
+q1_part1: objective start QuestCooldown24
+
+GivePointEndStone: point EndStone 1
+
+StartBreakEndStone: objective start EndIt
+StopBreakEndStone: objective delete EndIt
+
+entry_q1_complete: folder default-Points.GiveBountyPoint,tag_q1_completed,q1_finish_message,QuestReward1,del_q1_part1
+QuestReward1: run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Mining 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450
+tag_q1_completed: tag add q1_completed
+q1_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name1$ \n \n \n\
+  \ &6&lRewards\: \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »\
+  \  $quest_reward1-3$ \n&8&l »  $quest_reward1-4$'
+
+Completing1st: objective start Completing1st
+
+
+
+################ Q2 #########################
+Q2_CD_Rest: folder del_Quest2Cooldown24_tag,del_tag_q2_completed,del_q2_part1,Reset_Points2
+
+del_Quest2Cooldown24_tag: tag del Quest2Cooldown24
+del_tag_q2_completed: tag del q2_completed
+del_q2_part1: tag del q2_part1
+Reset_Points2: deletepoint WitherRose
+
+tag_Quest2Cooldown24: tag add Quest2Cooldown24
+tag_q2_part1: tag add q2_part1
+q2_part1: objective start Quest2Cooldown24
+
+GivePointWither: point WitherRose 1
+
+RestartObjectiveWither: objective start WitherPicking
+
+BreakWitherStop: objective delete WitherPicking
+
+entry_q2_complete: folder default-Points.GiveBountyPoint,BreakWitherStop,tag_q2_completed,q2_finish_message,QuestReward2,del_q2_part1
+QuestReward2: run ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Spellforging 750 ^command mmocore admin exp give %player% Void 750 ^command money give %player% 500
+tag_q2_completed: tag add q2_completed
+q2_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name2$ \n \n \n\
+  \ &6&lRewards\: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »\
+  \  $quest_reward2-3$ \n&8&l »  $quest_reward2-4$ '
+
+Completing2nd: objective start Completing2nd
+
+
+
+############################# Q3 ################################
+Q3_CD_Rest: folder del_Quest3Cooldown24_tag,del_tag_q3_completed,del_q3_part1
+del_Quest3Cooldown24_tag: tag del Quest3Cooldown24
+del_tag_q3_completed: tag del q3_completed
+del_q3_part1: tag del q3_part1
+
+tag_Quest3Cooldown24: tag add Quest3Cooldown24
+tag_q3_part1: tag add q3_part1
+
+q3_part1: objective start Quest3Cooldown24
+
+Start3: objective start MazeSlayer
+
+entry_q3_complete: folder default-Points.GiveBountyPoint,tag_q3_completed,q3_finish_message,QuestReward3,del_q3_part1
+QuestReward3: run ^command mmocore admin exp give %player% main 750 ^command mmocore admin exp give %player% Slayer 750 ^command mmocore admin exp give %player% Void 750 ^command money give %player% 500
+tag_q3_completed: tag add q3_completed
+q3_finish_message: 'run ^notify \n&4&lBounty Completed\:&f \n$quest_name3$ \n \n \n\
+  \ &6&lRewards\: \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »\
+  \  $quest_reward3-3$ \n&8&l »  $quest_reward3-4$ '
+
+BountyMenu: run ^command dm open Bounty %player%

@@ -1,0 +1,201 @@
+height: 4
+title: '&fGeorge''s Bounty'
+items:
+#FIRST QUEST
+  bounty1:
+    item: paper
+    amount: 1
+    conditions: '!q1_completed, !q1_part1'
+    text:
+      en:
+        - '&a&lStone Miner Bounty'
+        - '&f&o'
+        - '&fMine 500 &aStone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&8'
+        - '&eBounty given by &aGeorge &ein the &aTown'
+    close: false
+  bounty1_started:
+    item: paper
+    amount: 1
+    conditions: 'q1_part1'
+    text:
+      en:
+        - '&a&l[Active] &a&lStone Miner Bounty'
+        - '&f&o'
+        - '&fMine %point.stone.amount%/500 &aStone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.QuestCooldown24.left%'
+    close: false
+  bounty1_completed:
+    item: book
+    amount: 1
+    conditions: 'q1_completed'
+    text:
+      en:
+        - '&e&l[Completed] &a&lStone Miner Bounty'
+        - '&f&o'
+        - '&fMine 500 &aStone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.QuestCooldown24.left%'
+    close: false
+
+  bounty2:
+    item: paper
+    amount: 1
+    conditions: '!q2_completed, !q2_part1'
+    text:
+      en:
+        - '&a&lOre Search Bounty'
+        - '&f&o'
+        - '&fMine 128 &aCoal'
+        - '&fMine 128 &aIron'
+        - '&fMine 128 &aGold'
+        - '&fMine 128 &aRedstone'
+        - '&fMine 128 &aLapis'
+        - '&fMine 128 &aDiamonds'
+        - '&fMine 128 &aEmeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&8'
+        - '&eBounty given by &aGeorge &ein the &aTown'
+    close: false
+  bounty2_started:
+    item: paper
+    amount: 1
+    conditions: 'q2_part1'
+    text:
+      en:
+        - '&a&l[Active] &a&lOre Search Bounty'
+        - '&f&o'
+        - '&fMine %point.Coal.amount%/128 &aCoal'
+        - '&fMine %point.Iron.amount%/128 &aIron'
+        - '&fMine %point.Gold.amount%/128 &aGold'
+        - '&fMine %point.Redstone.amount%/128 &aRedstone'
+        - '&fMine %point.Lapis.amount%/128 &aLapis'
+        - '&fMine %point.Diamond.amount%/128 &aDiamonds'
+        - '&fMine %point.Emerald.amount%/128 &aEmeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.Quest2Cooldown24.left%'
+    close: false
+  bounty2_completed:
+    item: book
+    amount: 1
+    conditions: 'q2_completed'
+    text:
+      en:
+        - '&e&l[Completed] &a&lOre Search Bounty'
+        - '&f&o'
+        - '&fMine 128 &aCoal'
+        - '&fMine 128 &aIron'
+        - '&fMine 128 &aGold'
+        - '&fMine 128 &aRedstone'
+        - '&fMine 128 &aLapis'
+        - '&fMine 128 &aDiamonds'
+        - '&fMine 128 &aEmeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.Quest2Cooldown24.left%'
+    close: false
+
+
+  bounty3:
+    item: paper
+    amount: 1
+    conditions: '!q3_completed, !q3_part1'
+    text:
+      en:
+        - '&a&lShiny Treasures'
+        - '&f&o'
+        - '&fBring &aGeroge &92 Enchanted Minerals&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&8'
+        - '&eBounty given by &aGeorge &ein the &aTown'
+    close: false
+  bounty3_started:
+    item: paper
+    amount: 1
+    conditions: 'q3_part1'
+    text:
+      en:
+        - '&a&l[Active] &a&lShiny Treasures'
+        - '&f&o'
+        - '&fBring &aGeroge %point.Matieral.amount%/&92 Enchanted Minerals&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.Quest3Cooldown24.left%'
+    close: false
+  bounty3_completed:
+    item: book
+    amount: 1
+    conditions: 'q3_completed'
+    text:
+      en:
+        - '&e&l[Completed] &a&lShiny Treasures'
+        - '&f&o'
+        - '&fBring &aGeroge &92 Enchanted Minerals&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&8'
+        - '&eBounty will reset in %objective.Quest3Cooldown24.left%'
+    close: false
+
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Bounty-Mine.BountyMenu
+      left: default-Bounty-Mine.BountyMenu
+slots:
+  0-11: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  15-24: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  25-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  12: bounty1,bounty1_started,bounty1_completed
+  13: bounty2,bounty2_started,bounty2_completed
+  14: bounty3,bounty3_started,bounty3_completed
+  31: back

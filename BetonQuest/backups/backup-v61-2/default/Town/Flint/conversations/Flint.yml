@@ -1,0 +1,49 @@
+quester: Flint
+first: 1stGreeting,greeting
+NPC_options:
+  1stGreeting:
+    text: Hey there traveler, welcome to our Town! You can &ltype &7or &lclick &7on &e&l1&7,&e&l2&7,&e&l3&7 to converse with me!
+    pointers: hey, quest, bye
+    conditions: '!QUEST1_STARTED'        
+  greeting:
+    text: Hey there &a%player%&7, I hope you are enjoying the Town!
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: This Town is the heart of our world! Within the Town you can speak to many Vendors. The Town branches off to many different places within our World, which you can explore and conquer!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: I'm glad you asked! I actually have a quest for you!
+    pointers: quest1, quest_decline
+    conditions: '!QUEST1_STARTED'        
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!QUEST1_STARTED'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Wow, that sounds intriguing!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "Exploring the Town" Quest
+    events: 'Q1_START'    
+    conditions: '!QUEST1_STARTED'
+

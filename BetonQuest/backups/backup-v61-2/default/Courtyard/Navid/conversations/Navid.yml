@@ -1,0 +1,37 @@
+quester: Navid
+first: greeting
+NPC_options:
+  greeting:
+    text: Welcome to the &cCourtyard&7! The &cUndead &7have made there way from the &cGraveyard &7and taken over the &cCastle&7! You must get into there and take their source out!
+    pointers: hey, quest, bye
+  town_info:
+    text: This &aTown &7used to be home for many &aVillagers&7. This plague originated in the &cGraveyard &7and has overthrown the &cCastle &7and the entire &aVillage&7! It has been said, if the source of the &cUndead &7known as &cMorden&7, is defeated, the plague will end...
+    pointers: wow, bye
+  quests:
+    text: You can help me by returning our &aVillage &7back to what it once was!
+    pointers: quest1, quest_decline
+    
+  quest1accept:
+    text: The &cUndead &7here are gonna be much tougher than the &cGraveyard &7ones! I recommend you purchase some equipment from the &eCourtyard Shop &7next to me to help you on this adventure!
+
+player_options:
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+  quest:
+    text: Do you have any Quests?
+    pointers: quests
+    conditions: '!QUEST1_STARTED'        
+  bye:
+    text: I need to go, sorry.
+    
+  wow:
+    text: Wow, that sounds intriguing!
+    pointers: greeting
+
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+  quest1:
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
+    pointers: quest1accept

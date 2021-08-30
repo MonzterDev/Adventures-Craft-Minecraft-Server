@@ -1,0 +1,1942 @@
+height: 6
+title: '&fActive Quests'
+items:
+#Town
+  TN1:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Flint.q1_part1,!default-Town-Flint.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lExploring the Town'
+        - '&f&o'
+        - '&fVisit the &aFarm'
+        - '&fVisit the &aForest'
+        - '&fVisit the &aFarm'
+        - '&fVisit the &aMine'
+        - '&fVisit the &cGraveyard'
+        - '&fOpen a &aBank Account'
+        - '&fVisit the &aTown Hall'
+        - '&fClaim &aHome &ffrom &aJenny'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Flint in the Town'
+    close: false
+  TN2:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Wizard.q1_part1,!default-Town-Wizard.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lNovice Enchanter'
+        - '&f&o'
+        - '&fBring the &aWizard &f192 Paper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Enchanting Book'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Enchanting EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Wizard in the Town'
+    close: false
+  TN3:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Wizard.q2_part1,!default-Town-Wizard.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBooster Exponent'
+        - '&f&o'
+        - '&fHarvest 128 Lapis Lazuli for the &aWizard&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Experience Bottle'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Enchanting EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Wizard in the Town'
+    close: false
+  TN4:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Wizard.q3_part1,!default-Town-Wizard.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lStone Collector'
+        - '&f&o'
+        - '&fUse the &9Experience Bottle &fand speak to the &aWizard&f!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Enchanting Box'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Enchanting EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Wizard in the Town'
+    close: false
+  TN5:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Warlock.q1_part1,!default-Town-Warlock.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFundamental Wand'
+        - '&f&o'
+        - '&fHarvest §6576 Oak Wood'
+        - '&fHarvest §3288 Azure Bluets'
+        - '&fReturn to the §eForge &fat &a63, 24, -9'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fResolve Wand'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Spellforging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Warlock in the Town'
+    close: false
+  TN6:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Warlock.q2_part1,!default-Town-Warlock.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHostile Wand'
+        - '&f&o'
+        - '&fHarvest §6576 Oak Wood'
+        - '&fHarvest §3288 Red Mushrooms'
+        - '&fReturn to the §eForge &fat &a63, 24, -9'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFireball Wand'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e400 Coins'
+        - '&f&o'
+        - '&aGiven by Warlock in the Town'
+    close: false
+  TN7:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Warlock.q3_part1,!default-Town-Warlock.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMagical Spell Boxes'
+        - '&f&o'
+        - '&fSlay §c3 Witches &fin the &dSpirit Grounds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &58x Magical Boxes'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Spellforging EXP'
+        - '&8&l» &e600 Coins'
+        - '&f&o'
+        - '&aGiven by Warlock in the Town'
+    close: false
+  TN8:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q1_part1,!default-Town-Gemsmith.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGemstone Base'
+        - '&f&o'
+        - '&fBring the &aGemsmith &99 &fof either'
+        - '&9Enchanted Coal&f, &9Iron&f, &9Gold&f,'
+        - '&9Dimaonds&f, or &9Emeralds'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGem Base'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+  TN9_Coal:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Coal_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &91 Enchanted Coal'
+        - '&fand a &fGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fDamage Gem'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Iron:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Iron_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &94 Enchanted Coal'
+        - '&fand a &2Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Damage Gem'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Gold:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Gold_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &98 Enchanted Coal'
+        - '&fand a &9Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Damage Gem'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Mining EXP'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Diamond:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Diamond_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &916 Enchanted Coal'
+        - '&fand a &5Gem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Damage Gem'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Mining EXP'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+  TN9_Emerald:
+    item: book
+    amount: 1
+    conditions: 'default-Town-Gemsmith.q2_part1,!default-Town-Gemsmith.q2_completed,default-Town-Gemsmith.Emerald_Tag'
+    text:
+      en:
+        - '&a&l[Active] &f&lDamage Gemstone'
+        - '&f&o'
+        - '&fBring the &aGemsmith &932 Enchanted Coal'
+        - '&fand a &eGem Base'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eDamage Gem'
+        - '&8&l» &d1,250 EXP'
+        - '&8&l» &d1,250 Mining EXP'
+        - '&8&l» &e1,000 Coins'
+        - '&f&o'
+        - '&aGiven by Gemsmith in the Town'
+    close: false
+
+#Farm
+  FM1:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Mandy.q1_part1,!default-Farm-Mandy.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPesky Crop Stompers'
+        - '&f&o'
+        - '&fSlaughter 25 Pigs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Mandy in the Farm'        
+    close: false
+  FM2:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Mandy.q2_part1,!default-Farm-Mandy.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFirst Harvest'
+        - '&f&o'
+        - '&fHarvest 128 Wheat'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pesky Crop Stompers'        
+    close: false
+  FM3:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Billy.q1_part1,!default-Farm-Billy.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Billy in the Farm'        
+    close: false
+  FM4:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_part1,!default-Farm-Ingo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  FM5:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_part1,!default-Farm-Ingo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
+  FM6:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_part1,!default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  FM7:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_part1,!default-Farm-Anju.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
+    close: false
+
+#Forest
+  FT1:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q1_part1,!default-Forest-Jenny.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest'        
+    close: false
+  FT2:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q2_part1,!default-Forest-Jenny.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Oak Timber'        
+    close: false
+  FT3:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q3_part1,!default-Forest-Jenny.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spruce Timber'        
+    close: false
+  FT4:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q4_part1,!default-Forest-Jenny.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Oak Timber'        
+    close: false
+  FT5:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q5_part1,!default-Forest-Jenny.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Birch Timber'        
+    close: false
+  FT6:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q6_part1,!default-Forest-Jenny.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Acacia Timber'        
+    close: false
+  FT7:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q7_part1,!default-Forest-Jenny.q7_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRescue Jack'
+        - '&f&o'
+        - '&fRescue &aJack &fat the top of the Tree!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Hive'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest!'        
+    close: false
+  FT8:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q1_part1,!default-Forest-Bear.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDont Get Stung'
+        - '&f&o'
+        - '&fSlay 10 Bees'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Bear in the Forest'        
+    close: false
+  FT9:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q2_part1,!default-Forest-Bear.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dont Get Stung'        
+    close: false
+  FT10:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q3_part1,!default-Forest-Bear.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHoney Extraction'
+        - '&f&o'
+        - '&fDeliver 64 Honeycombs to &aBear'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Killer Hare'        
+    close: false
+  FT11:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q4_part1,!default-Forest-Bear.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWasp Nest'
+        - '&f&o'
+        - '&fDefeat 10 &cWasps'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Honey Extraction'        
+    close: false
+  FT12:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q5_part1,!default-Forest-Bear.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lQueen Bee'
+        - '&f&o'
+        - '&fDefeat 1 &cQueen Bee'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wasp Nest'        
+    close: false
+  FT13:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_part1,!default-Forest-CatLady.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
+    close: false
+
+#Mine
+  ME1:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q1_part1,!default-Mine-Lenny.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Lenny in the Mine'        
+    close: false
+  ME2:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q2_part1,!default-Mine-Lenny.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wood Meets Stone'        
+    close: false
+  ME3:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q3_part1,!default-Mine-Lenny.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+
+        - '&f&o'
+        - '&aGiven after completing Coal Miner'        
+    close: false
+  ME4:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q4_part1,!default-Mine-Lenny.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bat Hunter'        
+    close: false
+  ME5:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q5_part1,!default-Mine-Lenny.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMeet Morry'
+        - '&f&o'
+        - '&fSpeak with Morry'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &eGold Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Heavy Miner'        
+    close: false
+  ME6:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q1_part1,!default-Mine-Morry.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lUltimate Fuel'
+        - '&f&o'
+        - '&fMine 128 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven from Morry after completing Meet Morry'        
+    close: false
+  ME7:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q2_part1,!default-Mine-Morry.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMine Spider Slayer'      
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ultimate Fuel'        
+    close: false
+  ME8:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q3_part1,!default-Mine-Morry.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGold Finger'      
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mine Spider Slayer'        
+    close: false
+  ME9:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q4_part1,!default-Mine-Morry.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lTravel to Redstone'      
+        - '&f&o'
+        - '&fTalk to the Gold Mine Lift Operator'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &cRedstone Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Gold Finger'        
+    close: false
+  ME10:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q1_part1,!default-Mine-Cole.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMachine Expert'
+        - '&f&o'
+        - '&fMine 128 Redstone Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Cole in the Mine'        
+    close: false
+  ME11:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q2_part1,!default-Mine-Cole.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Encounter'
+        - '&f&o'
+        - '&fSlay 15 Void Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Machine Expert'        
+    close: false
+  ME12:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q3_part1,!default-Mine-Cole.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Big Boom'
+        - '&f&o'
+        - '&fSlay 5 Void Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Leggings'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Encounter'        
+    close: false
+  ME13:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Cole.q4_part1,!default-Mine-Cole.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDown The Blue Path'
+        - '&f&o'
+        - '&fMeet &aDuncan &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &9Lapis Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Big Boom'        
+    close: false
+  ME14:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q1_part1,!default-Mine-Duncan.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lVampire Slayer'
+        - '&f&o'
+        - '&fSlay 5 Void Vampires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Boots'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven from Duncan in the Mine'        
+    close: false
+  ME15:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q2_part1,!default-Mine-Duncan.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lVoid Research'      
+        - '&f&o'
+        - '&fSpecial Void Blocks within the Lapis Mine'
+        - '&fgive you &fVoid Shards'
+        - '&fDeliver 10 to &aDuncan'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Vampire Slayer'        
+    close: false
+  ME16:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q3_part1,!default-Mine-Duncan.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Void Hunter'      
+        - '&f&o'
+        - '&fSlay 15 Void Mobs within the Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &d150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Void Research'        
+    close: false
+  ME17:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q4_part1,!default-Mine-Duncan.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBlue Rocks'      
+        - '&f&o'
+        - '&fMine 192 Lapis Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Void Hunter'        
+    close: false
+  ME18:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Duncan.q5_part1,!default-Mine-Duncan.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lShiny Hard Blue Rocks'      
+        - '&f&o'
+        - '&fTalk to the &aLift Operator &fin the &9Lapis Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &bDiamond Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Blue Rocks'        
+    close: false
+  ME19:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q1_part1,!default-Mine-Merit.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Hard Blues'
+        - '&f&o'
+        - '&fMine 256 Diamond Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Miner Pickaxe'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Merit in the Mine'        
+    close: false
+  ME20:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q2_part1,!default-Mine-Merit.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBloodsuckers'
+        - '&f&o'
+        - '&fSlay 10 Void Vampires in the Diamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Steak'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Hard Blues'        
+    close: false
+  ME21:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q3_part1,!default-Mine-Merit.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Hive'
+        - '&f&o'
+        - '&fSlay Void Hives & Ants'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Mining EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloodsuckers'        
+    close: false
+  ME22:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q4_part1,!default-Mine-Merit.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBuffy the Vampire Slayer'
+        - '&f&o'
+        - '&fSlay &cVoid Dracula &fin the &bDiamond Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Mining EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Hive'        
+    close: false
+  ME23:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Merit.q5_part1,!default-Mine-Merit.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMeet Smith'
+        - '&f&o'
+        - '&fMeet with &aSmith &fin the &2Emerald Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &2Emerald Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Buffy the Vampire Slayer'        
+    close: false
+  ME24:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q1_part1,!default-Mine-Smith.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMajestic Green Rocks'
+        - '&f&o'
+        - '&fMine 256 Emerald Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven from Smith in the Mine'        
+    close: false
+  ME25:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q2_part1,!default-Mine-Smith.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBloody Teeth'      
+        - '&f&o'
+        - '&fSlay &cVoid Vampires &fto collect their Fangs'
+        - '&fthen deliver 15 Fangs to &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Mining EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Majestic Green Rocks'        
+    close: false
+  ME26:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Smith.q3_part1,!default-Mine-Smith.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRarest Green Rocks'      
+        - '&f&o'
+        - '&fMine &2Emerald Ores &funtil you have'
+        - '&99 Enchanted Emeralds &fthen show &aSmith'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &e400 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bloody Teeth'        
+    close: false
+
+
+#Graveyard
+
+  GD1:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q1_part1,!default-Graveyard-Cirl.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHunting the Undead'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Skeletons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Skull'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Cirl in the Graveyard'        
+    close: false
+  GD2:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q2_part1,!default-Graveyard-Cirl.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Silver Stool'
+        - '&f&o'
+        - '&fAccess the &cSilver Stool&f, in the &cGraveyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Chestplate'
+        - '&8&l» &2Bone Leggings'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Undead'        
+    close: false
+  GD3:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q3_part1,!default-Graveyard-Cirl.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHunting the Archers'
+        - '&f&o'
+        - '&fSlay 15 &cUndead Archers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Bone Feet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Silver Stool'        
+    close: false
+  GD4:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q4_part1,!default-Graveyard-Cirl.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Undead Ruler'
+        - '&f&o'
+        - '&fSlay the &cReaper'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Bonewhip'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hunting the Archers'        
+    close: false
+  GD5:
+    item: book
+    amount: 1
+    conditions: 'default-Graveyard-Cirl.q5_part1,!default-Graveyard-Cirl.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lApproaching the Castle'
+        - '&f&o'
+        - '&fEnter the &aCastle Courtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Castle Courtyard'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Slayer EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Ruler'        
+    close: false
+
+#Courtyard
+
+  CD1:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q1_part1,!default-Courtyard-Navid.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Undead Slayer'
+        - '&f&o'
+        - '&fSlay 50 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Undead Bow'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Navid in the Courtyard'        
+    close: false
+  CD2:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q2_part1,!default-Courtyard-Navid.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Magical Hunt'
+        - '&f&o'
+        - '&fSlay 10 &cUndead Casters &fand deliver'
+        - '&2Magical Essences &fto &aNavid&f '
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Undead Slayer'        
+    close: false
+  CD3:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q3_part1,!default-Courtyard-Navid.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpider Exterminator'
+        - '&f&o'
+        - '&fSlay 20 &cUndead Spiders'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Slayer EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Magical Hunt'        
+    close: false
+  CD4:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q4_part1,!default-Courtyard-Navid.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Alpha Souls'
+        - '&f&o'
+        - '&fSummon and defeat 2 &cAlpha Souls &fby slaying &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e175 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spider Exterminator'        
+    close: false
+  CD5:
+    item: book
+    amount: 1
+    conditions: 'default-Courtyard-Navid.q5_part1,!default-Courtyard-Navid.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Village Hero'
+        - '&f&o'
+        - '&fSave the trapped &aVillagers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Castle'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing The Alpha Souls'        
+    close: false
+
+#Valley
+
+  VY1:
+    item: book
+    amount: 1
+    conditions: 'default-Valley-Mael.q1_part1,!default-Valley-Mael.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lConquering the Valley'
+        - '&f&o'
+        - '&fBreach Orc Camps'
+        - '&fSlay Orcs'
+        - '&fRecure Prisoners'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Estate'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Farming EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Mael in the Valley'        
+    close: false
+
+#Estate
+
+  EE1:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q1_part1,!default-Estate-Bowyer.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBeet Those Roots'
+        - '&f&o'
+        - '&fHarvest 128 Beetroots'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+  EE2:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q2_part1,!default-Estate-Bowyer.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSacred Cane'
+        - '&f&o'
+        - '&fHarvest 64 Sugarcane'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Beet Those Roots'        
+    close: false
+  EE3:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q3_part1,!default-Estate-Bowyer.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+
+#GoblinTown
+
+  GN1:
+    item: book
+    amount: 1
+    conditions: 'default-GoblinVillage-Zras.q1_part1,!default-GoblinVillage-Zras.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPillaging Goblin Town'
+        - '&f&o'
+        - '&fTake out 25 &cGoblins'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Goblin Club'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Zras in the Goblin Village'        
+    close: false
+  GN2:
+    item: book
+    amount: 1
+    conditions: 'default-GoblinVillage-Zras.q2_part1,!default-GoblinVillage-Zras.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPrison Break'
+        - '&f&o'
+        - '&fSave the prisoned Villagers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pillaging Goblin Town'        
+    close: false
+  GN3:
+    item: book
+    amount: 1
+    conditions: 'default-GoblinVillage-Zras.q3_part1,!default-GoblinVillage-Zras.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThe Goblin Chief'
+        - '&f&o'
+        - '&fDefeat the &cGoblin Chief'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &cGoblin Town'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Farming EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Zras in the GoblinVillage'        
+    close: false
+
+#SpiritGrounds
+
+  SS1:
+    item: book
+    amount: 1
+    conditions: 'default-SpiritGrounds-Hazel.q1_part1,!default-SpiritGrounds-Hazel.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lProtect the Crops'
+        - '&f&o'
+        - '&fSlay 10 &cCrop Spiders &f& &cMooshroom Cows'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Hazel in the SpiritGrounds'        
+    close: false
+  SS2:
+    item: book
+    amount: 1
+    conditions: 'default-SpiritGrounds-Hazel.q2_part1,!default-SpiritGrounds-Hazel.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWitches Checklist'
+        - '&f&o'
+        - '&fGather Mushrooms, Pumpkins, and Melons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Resolve Wand'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Protect the Crops'        
+    close: false
+  SS3:
+    item: book
+    amount: 1
+    conditions: 'default-SpiritGrounds-Hazel.q3_part1,!default-SpiritGrounds-Hazel.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHunting a Witch'
+        - '&f&o'
+        - '&fDefeat the &cWitch'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &dSpirit Grounds'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Witches Checklist'        
+    close: false
+
+#Hell
+  HL1:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q1_part1,!default-Hell-Damon.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHell''s Resources'
+        - '&f&o'
+        - '&fHarvest &a256 Netherrack'
+        - '&fHarvest &a192 Nether Wart'
+        - '&fHarvest &a128 Quartz'
+        - '&fHarvest &a64 Glowstone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Hell''s Fury'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  HL2:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q2_part1,!default-Hell-Damon.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGive Them Hell'
+        - '&f&o'
+        - '&fSlay 15 &cVoid Pigmen'
+        - '&fSlay 10 &cVoid Demons'
+        - '&fSlay 5 &cVoid Necromancers'
+        - '&fSlay 5 &cVoid Blazes'
+        - '&fSlay the &cVoid Wither'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Hell''s Resources'        
+    close: false
+  HL3:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q3_part1,!default-Hell-Damon.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Rocks'
+        - '&f&o'
+        - '&fHarvest &a64 Obsidian'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Spellforging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  HL4:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Damon.q4_part1,!default-Hell-Damon.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIt''s Getting Hotter'
+        - '&f&o'
+        - '&fSpeak to &aDiablo &fdeeper in &cHell'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aFast Travel to &cLower Hell'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Spellforging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Damon in the Hell'        
+    close: false
+  HL5:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q1_part1,!default-Hell-Diablo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIncreased Heat'
+        - '&f&o'
+        - '&fSlay 3 &cVoid Pigmen'
+        - '&fSlay 5 &cVoid Magma'
+        - '&fSlay 25 &cVoid Mobs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Spellforging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Diablo in the Hell'        
+    close: false
+  HL6:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q2_part1,!default-Hell-Diablo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lResource Mutation'
+        - '&f&o'
+        - '&fHarvest &a32 Nether Wart Blocks'
+        - '&fHarvest &a32 Quartz Blocks'
+        - '&fSlay the &cVoid Magma &fin the &cHell Fortress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &f5x &9Magma Coins'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Heat'        
+    close: false
+  HL7:
+    item: book
+    amount: 1
+    conditions: 'default-Hell-Diablo.q3_part1,!default-Hell-Diablo.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGhosts Cry'
+        - '&f&o'
+        - '&fSlay &cGhastly'
+        - '&fDeliver &9Ghastly Tear &fto &aDiablo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Spellforging EXP'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Resource Mutation'        
+    close: false
+
+#Void
+  VD1:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q1_part1,!default-Void-Khazix.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lThrall Thrashing'
+        - '&f&o'
+        - '&fVanquish 30 &cVoid Thralls'
+        - '&fBring &216x Thrall Eggs &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &94x Thrall Balls'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &5300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD2:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q2_part1,!default-Void-Khazix.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWorshiper Wonder'
+        - '&f&o'
+        - '&fVanquish 50 &cVoid Worshipers'
+        - '&fBring &l50x Void DNA &fback to &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Thrall Thrashing'        
+    close: false
+  VD3:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q3_part1,!default-Void-Khazix.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lUnblighted'
+        - '&f&o'
+        - '&fDemolish 20 &cVoid Sources'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Unblinder'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Slayer EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD4:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q4_part1,!default-Void-Khazix.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBulblin & Bulbo'
+        - '&f&o'
+        - '&fDefeat both &cBulblin & Bulbo'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Bulb Mount'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD5:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q5_part1,!default-Void-Khazix.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpiral Crystals'
+        - '&f&o'
+        - '&fDestroy 12 Ender Crystals atop the Bedrock & Obsidian spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Khazix in the Void'        
+    close: false
+  VD6:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Khazix.q6_part1,!default-Void-Khazix.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lJoining the Chorus'
+        - '&f&o'
+        - '&fHarvest &a128 Chorus Flowers'
+        - '&fDeliver &a128 Chorus Seeds &fto &aKhazix'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &92x Chorus Leaps'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spiral Crystals'        
+    close: false
+  VD7:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q1_part1,!default-Void-Kassadin.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCorrupt Land'
+        - '&f&o'
+        - '&fMine &a512 End Stone'
+        - '&fDeliver &a512 End Stone &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Hasty Void'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven by Kassadin in the Void'        
+    close: false
+  VD8:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q2_part1,!default-Void-Kassadin.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lIncreased Hardencity'
+        - '&f&o'
+        - '&fExcavate &a256 Obsidian'
+        - '&fBring &a256 Obsidian &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Corrupt Pickaxe'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Mining EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Corrupt Land'        
+    close: false
+  VD9:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q3_part1,!default-Void-Kassadin.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRing Around the Wither Roses'
+        - '&f&o'
+        - '&fHarvest &a320 Wither Roses'
+        - '&fDeliver &a320 Wither Roses &fto &aKassadin'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Void Ring'
+        - '&8&l» &d400 EXP'
+        - '&8&l» &d400 Spellforging EXP'
+        - '&8&l» &5400 Void Reputation'
+        - '&8&l» &e350 Coins'
+        - '&f&o'
+        - '&aGiven after completing Increased Hardencity'        
+    close: false
+  VD10:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q4_part1,!default-Void-Kassadin.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPop a Vein'
+        - '&f&o'
+        - '&fSlay &c10 Void Veins &faround the spires'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Femoral Artery'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e500 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ring Around the Wither Roses'        
+    close: false
+  VD11:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kassadin.q5_part1,!default-Void-Kassadin.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFind the Lurker'
+        - '&f&o'
+        - '&fSpeak to the &8Lurker &fhiding in the darkness'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &5Lurkers Card'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pop a Vein'        
+    close: false
+  VD12:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q1_part1,!default-Void-Kogmaw.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAnkle Biters'
+        - '&f&o'
+        - '&fEliminate &c25 Void Monitors'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Slayer EXP'
+        - '&8&l» &d300 Void Reputation'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Kogmaw in the Void Maze'        
+    close: false
+  VD13:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q2_part1,!default-Void-Kogmaw.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lButton Pusher'
+        - '&f&o'
+        - '&fPush the &a4 unique Booster Buttons'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Slayer EXP'
+        - '&8&l» &d250 Void Reputation'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ankle Biters'        
+    close: false
+  VD14:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q3_part1,!default-Void-Kogmaw.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lChampion Brawls'
+        - '&f&o'
+        - '&fVanquish &c50 Void Champions'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &d500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Button Pusher'        
+    close: false
+  VD15:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q4_part1,!default-Void-Kogmaw.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMega Boom'
+        - '&f&o'
+        - '&fSlay &c25 Void Mega Boomers'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Darkness Extinguisher'
+        - '&8&l» &d500 EXP'
+        - '&8&l» &d500 Slayer EXP'
+        - '&8&l» &5500 Void Reputation'
+        - '&8&l» &e450 Coins'
+        - '&f&o'
+        - '&aGiven after completing Champion Brawls'        
+    close: false
+  VD16:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q5_part1,!default-Void-Kogmaw.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAscending'
+        - '&f&o'
+        - '&fCollect a &5Unstable Warp &ffrom'
+        - '&fenemies within the &5Void Maze'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &99x Stabilizer'
+        - '&8&l» &d750 EXP'
+        - '&8&l» &d750 Slayer EXP'
+        - '&8&l» &5750 Void Reputation'
+        - '&8&l» &e700 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mega Boom'        
+    close: false
+  VD17:
+    item: book
+    amount: 1
+    conditions: 'default-Void-Kogmaw.q6_part1,!default-Void-Kogmaw.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEvil Enchantress'
+        - '&f&o'
+        - '&fDefeat the &cVoid Enchantress'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eVoid Star'
+        - '&8&l» &d1,000 EXP'
+        - '&8&l» &d1,000 Slayer EXP'
+        - '&8&l» &51,000 Void Reputation'
+        - '&8&l» &e750 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ascending'        
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-8: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  45-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  9-44: TN1,TN2,TN3,TN4,TN5,TN6,TN7,TN8,TN9_Coal,TN9_Iron,TN9_Gold,TN9_Diamond,TN9_Emerald,FM1,FM2,FM3,FM4,FM5,FM6,FM7,FT1,FT2,FT3,FT4,FT5,FT6,FT7,FT8,FT9,FT10,FT11,FT12,FT13,ME1,ME2,ME3,ME4,ME5,ME6,ME7,ME8,ME9,ME10,ME11,ME12,ME13,ME14,ME15,ME16,ME17,ME18,ME19,ME20,ME21,ME22,ME23,ME24,ME25,ME26,GD1,GD2,GD3,GD4,GD5,CD1,CD2,CD3,CD4,CD5,VY1,EE1,EE2,EE3,GN1,GN2,GN3,SS1,SS2,SS3,HL1,HL2,HL3,HL4,HL5,HL6,HL7,VD1,VD2,VD3,VD4,VD5,VD6,VD7,VD8,VD9,VD10,VD11,VD12,VD13,VD14,VD15,VD16,VD17
+  49: back

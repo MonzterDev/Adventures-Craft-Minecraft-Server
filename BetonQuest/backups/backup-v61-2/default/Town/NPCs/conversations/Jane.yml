@@ -1,0 +1,30 @@
+quester: Jane
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "&7Hey &a%player%, &7you look like you wanna ride some animals!"
+    pointers: Player_Response1, bye
+
+  NPC_Text1:
+    text: "&7I'm new around Town and still setting up my shop, but soon I'll have some tasks for you!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fHow can I get a mount?"
+    pointers: NPC_Text1
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+
