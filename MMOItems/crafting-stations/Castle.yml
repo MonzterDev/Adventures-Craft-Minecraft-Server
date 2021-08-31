@@ -17,6 +17,7 @@ recipes:
       id: MORDEN_HEAD4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=480}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=960}
     conditions: []
   MORDEN_CHEST4:
     output:
@@ -24,20 +25,23 @@ recipes:
       id: MORDEN_CHEST4
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=768}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1536}
     conditions: []
   MORDEN_LEGS4:
     output:
       type: ARMOR
       id: MORDEN_LEGS4
     ingredients:
-    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=480}
+    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=672}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1536}
     conditions: []
   MORDEN_FEET4:
     output:
       type: ARMOR
       id: MORDEN_FEET4
     ingredients:
-    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=672}
+    - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=416}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=832}
     conditions: []
   GRAVE_DIGGER5:
     output:
@@ -46,6 +50,7 @@ recipes:
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=1280}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1280}
     conditions: []
   BONE_SWORD5:
     output:
@@ -54,6 +59,7 @@ recipes:
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=640}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1280}
     conditions: []
   UNDEAD_GEM4:
     output:
@@ -63,6 +69,7 @@ recipes:
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=320}
     - mmoitem{type=MATERIAL,id=GEM_BASE4,amount=1}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}
     conditions:
     - profession{profession=Mining,level=4}
   UNDEAD_GEM5:
@@ -73,6 +80,7 @@ recipes:
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=540}
     - mmoitem{type=MATERIAL,id=GEM_BASE5,amount=1}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=1080}
     conditions:
     - profession{profession=Mining,level=5}
   UNDEAD_CATALYST3:
@@ -82,6 +90,7 @@ recipes:
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=320}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=640}
     conditions: []
   DEAD_CATALYST4:
     output:
@@ -90,12 +99,21 @@ recipes:
       amount: 1
     ingredients:
     - mmoitem{type=MATERIAL,id=MORDEN_FLESH,amount=384}
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=768}
     conditions: []
   MORDEN_FLESH:
     output:
       type: MATERIAL
       id: MORDEN_FLESH
-      amount: 16
+      amount: 4
     ingredients:
     - mmoitem{type=MATERIAL,id=ALPHA_SOUL,amount=1}
+    conditions: []
+  MORDEN_SUMMONER:
+    output:
+      type: MATERIAL
+      id: MORDEN_SUMMONER
+      amount: 1
+    ingredients:
+    - mmoitem{type=MATERIAL,id=BONE_FRAGMENT,amount=128}
     conditions: []

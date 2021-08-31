@@ -122,6 +122,24 @@ SOUL4:
         duration: 120.0
         amplifier: 3.0
     revision-id: 2
+MORDEN_SUMMONER:
+  base:
+    material: BROWN_DYE
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    tier: UNCOMMON
+    lore:
+    - §7Allows you to repeat the §aSummoning
+    - §aMorden Quest §7from anywhere!
+    name: <tier-color-cleaned>Morden Summoner
+    revision-id: 2
+    commands:
+      cmd0:
+        format: MordenRepeat
+        delay: 0.0
+        op: true
+    max-consume: 1.0
 MAGICAL_ESSENSE2:
   base:
     material: PURPLE_DYE

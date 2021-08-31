@@ -1,2 +1,11 @@
 npcs:
   '54': Klaus
+variables:
+    QUESTER_NAME: "KLAUS"
+
+    QUEST1_NAME: "Summoning Morden"
+    QUEST1_ID: "SUMMONING_MORDEN"
+    QUEST1_OBJ_MESSAGE: "&aSlay &f100 &cUndead &fwithin the &cCourtyard"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &0100 &cUndead &0within the &cCourtyard"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:100% &cUndead &fwithin the &cCourtyard'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:skeleton_skull ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

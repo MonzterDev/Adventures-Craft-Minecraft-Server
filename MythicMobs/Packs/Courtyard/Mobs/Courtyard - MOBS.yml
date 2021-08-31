@@ -35,7 +35,7 @@ UNDEAD_SKELETON2:
   - 0 players
   - 1 attacker
   Skills:
-  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
   - damage{amount=35;ignoreArmor=false} @target ~onAttack
@@ -80,7 +80,7 @@ UNDEAD_ARCHER2:
   - 1 attacker
   Skills:
   - damage{amount=50;ignoreArmor=false} @target ~onAttack
-  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
   - skill{s=RangedAgro8B} ~onTimer:20
@@ -157,7 +157,7 @@ UNDEAD_SPIDER:
   - damage{amount=20;ignoreArmor=false} @target ~onAttack
   - potion{type=SLOW;duration=60;level=5} @target ~onAttack
   - potion{type=POISON;duration=60;level=20} @target ~onAttack
-  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -206,7 +206,7 @@ UNDEAD_CASTER:
   - skill{s=UNDEAD_CASTER_MISSILE} @target ~onTimer:80
   - skill{s=UNDEAD_CASTER_LIGHTNING} ~onSignal:UNDEAD_CASTER_SIGNAL @target .3
   - skill{s=UNDEAD_CASTER_FREEZE} ~onSignal:UNDEAD_CASTER_SIGNAL @target .1
-  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .005
+  - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
