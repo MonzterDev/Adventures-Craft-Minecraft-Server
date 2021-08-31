@@ -1,30 +1,20 @@
-#FIRST QUEST Hunting the Undead
-quest1_start: 'objective start KillUndead'
-quest1_KillUndeadFirst: 'objective start KillUndeadFirst'
-tag_q1_part1: 'tag add q1_part1'
-entry_q1_part1: 'journal add q1_part1'
-q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Slay 100 Undead within the Courtyard&f!'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'folder reward_message,QuestRewards'
-reward_message: 'run ^notify \n&6&lQuest Complete\:&f \nRevive Morden&f! \n \n \n &6&lRewards\: \n&8&l » &d 100 EXP \n&8&l » &d 100 Slayer EXP \n&8&l » &e 50 Coins'
-QuestRewards: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% slayer 100 ^command money give %player% 50"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q1_complete: 'folder GiveKlausPoint,entry_q1_part1_remove,tag_q1_part1_remove,tag_q1_completed,RepeatFolder'
-tag_q1_part1_remove: 'tag del q1_part1'
-entry_q1_part1_remove: 'journal delete q1_part1'
-tag_q1_completed: 'tag add q1_part1_completed'
-
-RepeatFolder: 'folder RepeatEnabled,RepeatDisabled,Repeat'
-RepeatEnabled: "notify \n&a&lSummoning Morden &ehas been automatically restarted! You can disable this by using &a/MordenRepeat&e! conditions:RepeatEnabled"
-RepeatDisabled: "notify \n&a&lSummoning Morden &ecan be automatically restarted by using &a/MordenRepeat&e! conditions:!RepeatEnabled"
-Repeat: 'folder tag_q1_part1,quest1_start,q1_start_message,entry_q1_part1 conditions:RepeatEnabled'
-
-
-spawnboss: 'run ^command mm mobs spawn MORDEN_THE_UNDEAD1 1 Spawn,-43,17,434,-27,12'
-warpplayer: 'run ^sudo warp Morden'
-mordenrewards: 'chat /mordenrewards'
-questmenu: 'run ^command dm open Quests %player%'
-minequestmenu: 'run ^command dm open Minequests %player%'
-GiveKlausPoint: 'point Klaus 1'
+Q1_START: 'folder Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START condition:!QUEST1_STARTED'
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_COMPLETE_POINT_GIVE,Q1_TAG_START_REMOVE,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE,Q1_MORDEN_SPAWN,Q1_TELEPORT_PLAYER,Q1_POINT_CLEAR condition:$QUEST1_ID$'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_COMPLETE_POINT_GIVE: 'point $QUEST1_ID$_SUMMONED 1'
+Q1_TAG_START_REMOVE: 'tag delete $QUEST1_ID$_STARTED'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED condition:!QUEST1_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
+Q1_MORDEN_SPAWN: 'run ^command mm mobs spawn MORDEN_THE_UNDEAD1 1 Spawn,-43,17,434,-27,12'
+Q1_TELEPORT_PLAYER: 'teleport -66;18;434;Spawn;-90;0'
+Q1_POINT_CLEAR: 'point $QUEST1_ID$ *0'
