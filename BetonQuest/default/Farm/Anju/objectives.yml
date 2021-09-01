@@ -1,24 +1,3 @@
-#Q1
-Cucco1: location -22;15;-371;Spawn 100 events:hideCucco,CuccoFound,CompletedCuccos1,quest_start2 condition:Cuccos1,!CompletedCuccos1
-Cucco2: location -22;15;-371;Spawn 100 events:hideCucco1,CuccoFound,CompletedCuccos2,quest_start3 condition:Cuccos2,!CompletedCuccos2
-Cucco3: location -22;15;-371;Spawn 100 events:hideCucco2,CuccoFound,CompletedCuccos3,quest_start4 condition:Cuccos3,!CompletedCuccos3
-Cucco4: location -22;15;-371;Spawn 100 events:hideCucco3,CuccoFound,CompletedCuccos4,quest_start5 condition:Cuccos4,!CompletedCuccos4
-Cucco5: location -22;15;-371;Spawn 100 events:hideCucco4,CuccoFound,CompletedCuccos5,quest_start6 condition:Cuccos5,!CompletedCuccos5
-Cucco6: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos6,quest_start7 condition:Cuccos6,!CompletedCuccos6
-Cucco7: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos7,quest_start8 condition:Cuccos7,!CompletedCuccos7
-Cucco8: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos8,quest_start9 condition:Cuccos8,!CompletedCuccos8
-Cucco9: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos9,quest_start10 condition:Cuccos9,!CompletedCuccos9
-Cucco10: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos10,quest_start11 condition:Cuccos10,!CompletedCuccos10
-Cucco11: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos11,quest_start12 condition:Cuccos11,!CompletedCuccos11
-Cucco12: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos12,quest_start13 condition:Cuccos12,!CompletedCuccos12
-Cucco13: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos13,quest_start14 condition:Cuccos13,!CompletedCuccos13
-Cucco14: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos14,quest_start15 condition:Cuccos14,!CompletedCuccos14
-Cucco15: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos15,quest_start16 condition:Cuccos15,!CompletedCuccos15
-Cucco16: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos16,quest_start17 condition:Cuccos16,!CompletedCuccos16
-Cucco17: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos17,quest_start18 condition:Cuccos17,!CompletedCuccos17
-Cucco18: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos18,quest_start19 condition:Cuccos18,!CompletedCuccos18
-Cucco19: location -22;15;-371;Spawn 100 events:CuccoFound,CompletedCuccos19,quest_start20 condition:Cuccos19,!CompletedCuccos19
-Cucco20: location -22;15;-371;Spawn 100 events:QuestReward1,entry_q1_complete,CompletedCuccos20,QuestReward2_Starter condition:Cuccos20,!CompletedCuccos20
+CUCCO_CATCH: location -22;15;-371;Spawn 100 events:Q1_REPEAT,Q1_COMPLETE,Q2_START conditions:!$QUEST1_ID$,!QUEST1_COMPLETED
 
-EggDeliver: npcinteract 194 conditions:EGG events:entry_q2_complete,QuestReward2 notify:1
-
+EGG_DELIVERY: npcinteract 194 events:Q2_COMPLETE conditions:$QUEST2_ID$

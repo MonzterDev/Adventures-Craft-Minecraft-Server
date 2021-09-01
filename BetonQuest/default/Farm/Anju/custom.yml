@@ -1,33 +1,17 @@
-npc_effects:
-  check_interval: 100
-  disabled: false
-  default:
-    class: VortexEffect
-    iterations: 20
-    particle: crit_magic
-    helixes: 3
-    circles: 1
-    grow: 0.1
-    radius: 0.5
-    interval: 100
-notifications:
-  info:
-    io: chat
-    sound: ENTITY_ARROW_HIT_PLAYER
 npc_holograms:
   check_interval: 100
   follow: false
   disabled: false
-  Ingo:
+  default:
     lines:
     - '&e&lTALK TO ME!'
-    vector: 0;2.68;0
-    conditions: "!q1_part1"
+    vector: 0;2.67;0
+    conditions: "!QUEST1_STARTED"
     npcs:
       - 194
 hide_npcs:
-  196: '!hideCucco'
-  197: '!hideCucco1'
-  198: '!hideCucco2'
-  199: '!hideCucco3'
-  200: '!hideCucco4'
+  196: '!CUCCO_CATCH_1'
+  197: '!CUCCO_CATCH_2'
+  198: '!CUCCO_CATCH_3'
+  199: '!CUCCO_CATCH_4'
+  200: '!CUCCO_CATCH'
