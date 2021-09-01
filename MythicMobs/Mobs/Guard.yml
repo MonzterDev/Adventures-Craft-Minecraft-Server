@@ -16,16 +16,16 @@ Guard3: &Guard
     MovementSpeed: 0.00001
     Silent: true
   Skills:
-  - remove @EIR{r=3;ignore=players} ~onTimer:40
+  - remove @EIR{r=3;ignore=players,animals} ~onTimer:40
 Guard5:
   Skills:
-  - remove @EIR{r=5;ignore=players} ~onTimer:40
+  - remove @EIR{r=5;ignore=players,animals} ~onTimer:40
   <<: *Guard
 Guard7:
   Skills:
-  - remove @EIR{r=7;ignore=players} ~onTimer:40
+  - remove @EIR{r=7;ignore=players,animals} ~onTimer:40
   <<: *Guard
 Guard10:
   Skills:
-  - remove @EIR{r=10;ignore=players} ~onTimer:40
+  - remove @EIR{r=10;ignore=players,animals} ~onTimer:40
   <<: *Guard

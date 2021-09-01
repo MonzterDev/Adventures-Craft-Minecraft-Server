@@ -4,10 +4,10 @@ NPC_options:
   greeting:
     text: I can help you summon the deadliest ruler this world has ever known, &cMorden, the Dead&7!
     pointers: hey, quest, bye
-    # conditions: 'default-Courtyard-Navid.QUEST6_COMPLETED'
+    conditions: 'default-Courtyard-Navid.QUEST6_COMPLETED'
   greeting2:
     text: You must help &aNavid &7within the &cCourtyard &7before you can help me!
-    # conditions: '!default-Courtyard-Navid.QUEST6_COMPLETED'
+    conditions: '!default-Courtyard-Navid.QUEST6_COMPLETED'
   town_info:
     text: 'You never heard of &cMorden&7? He is what started this plague known as the &cUndead&7! It has been rumored if you take him out, the &cUndead&7 will be no more!'
     pointers: wow, bye

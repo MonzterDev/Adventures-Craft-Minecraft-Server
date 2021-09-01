@@ -1,20 +1,17 @@
 npcs:
   '194': Anju
 variables:
-    quest_name1: "Cucco Catch"
-    quest_objective1: "My Cuccos have escaped their pen! Can you pickup all 20 of them and bring them back to me?"
-    quest_reward1-1: "&d250 EXP"
-    quest_reward1-2: "&d250 Farming EXP"
-    quest_reward1-3: "&e100 Coins"
-    quest_objective_journal1: "&0My Cuccos have escaped their pen! Can you pickup all 20 of them and bring them back to me?"
-    quest_complete1: "&0You rescued my Cuccos and I will be forever grateful!"
+    QUESTER_NAME: "ANJU"
 
-    quest_name2: "Egg Delivery"
-    quest_objective2: "You might've noticed the Cuccos lay eggs every so often. Could you bring me back 25 of them? I'll make you something special with them!"
-    quest_reward2-1: "&d250 EXP"
-    quest_reward2-2: "&d250 Farming EXP"
-    quest_reward2-3: "&e100 Coins"
-    quest_reward2-4: "&fScrambled Egg"
-    quest_objective_journal2: "&0You might've noticed the Cuccos lay eggs every so often. Could you bring me back 25 of them? I'll make you something special with them!"
-    quest_complete2: "&0I turned those eggs into something delicious for you! Make sure you don't hold it near the Cuccos or you'll frighten them!"
+    QUEST1_NAME: "Cucco Catch"
+    QUEST1_ID: "CUCCO_CATCH"
+    QUEST1_OBJ_MESSAGE: "&aGrab &fand &adeliver &f20 &aCuccos &fwithin the &aFarm &fto &aAnju"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&aGrab &0and &abring back &020 &aCuccos &0to &aAnju"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aReturn &f%point.$QUEST1_ID$.left\:19% &aCuccos &fto &aAnju'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:feather ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
+    QUEST2_NAME: "Egg Delivery"
+    QUEST2_ID: "EGG_DELIVERY"
+    QUEST2_OBJ_MESSAGE: "&aDeliver &f25 &aEggs &fto &aAnju"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Deliver &025 &2Eggs &0to &2Anju"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:egg ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
