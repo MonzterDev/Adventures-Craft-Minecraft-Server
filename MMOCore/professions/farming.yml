@@ -29,17 +29,15 @@ exp-sources:
 - 'killmythicmob{type=Parrots;amount=4}'
 on-mine:
     ACORN:
-        material: skull{value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlNzIzMjY2Y2Q2ZGU2YWNmODYzOTA4M2NmZGZkNzEyNDUzNGZhN2E2M2E5MmY3ZTIxOGVkOTNmY2YzOGIzIn19fQ=="}
+        material: skull{value="e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTk4OGVjNjVjNTFhODU3NzJjOGQ4NmQ3NGVhOGUwZTU3MjUyM2JmOGVkYzhjYmE1YWQxMTk1MmZiZWJlNjYwIn19fQ=="}
         drop-table:
             items:
-            - 'vanilla{type=WHEAT_SEEDS} 1 1-2'
-            - 'vanilla{type=WHEAT} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_WHEAT} 0.00347222222 1'                                    
+            - 'mmoitem{type=MATERIAL,id=ACORN} 1 1'
         options:
           vanilla-drops: false
         regen:
             time: 300
-            temp-block: vanilla{type=TRIPWIRE}
+            temp-block: vanilla{type=AIR}
         triggers:
         - 'exp{profession=farming;amount=1}'
     TALL_GRASS:
