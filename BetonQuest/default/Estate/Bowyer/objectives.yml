@@ -1,3 +1,3 @@
-HarvestBeetroots: mmocorebreakblock 128 block:BEETROOTS events:entry_q1_complete,QuestReward1,quest2_starter notify:8
-HarvestCane: mmocorebreakblock 64 block:SUGAR_CANE events:entry_q2_complete,QuestReward2,quest3_starter notify:8
-KillOrcs: mmobkill BABY_GOBLIN,GOBLIN,HOUND amount:10 events:entry_q3_complete,QuestReward3  notify:5
+BEET_THOSE_ROOTS: mmocorebreakblock 1 block:BEETROOTS events:Q1_REPEAT,Q1_COMPLETE,Q2_START conditions:WOODEN_HOE
+GOBLIN_PILLAGE: mmobkill BABY_GOBLIN,GOBLIN,HOUND amount:1 events:Q2_REPEAT,Q2_COMPLETE,Q3_START
+SACRED_CANE: mmocorebreakblock 1 block:SUGAR_CANE events:Q3_REPEAT,Q3_COMPLETE conditions:WOODEN_HOE

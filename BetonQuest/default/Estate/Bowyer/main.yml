@@ -1,28 +1,25 @@
 npcs:
   '51': Bowyer
 variables:
-    quest_name1: "Beet Those Roots"
-    quest_objective1: "Use a Hoe to harvest 128 Beetroots!"
-    quest_reward1-1: "&d150 EXP"
-    quest_reward1-2: "&d150 Farming EXP"
-    quest_reward1-3: "&e75 Coins"
-    quest_objective_journal1: "&0Use a Hoe to harvest 128 Beetroots!"
-    quest_complete1: "&0You really, beat those roots...haha!"
+    QUESTER_NAME: "BOWYER"
 
-    quest_name2: "Sacred Cane"
-    quest_objective2: "Use a Hoe to harvest 64 Sugarcane!"
-    quest_reward2-1: "&d150 EXP"
-    quest_reward2-2: "&d150 Farming EXP"
-    quest_reward2-3: "&e75 Coins"
-    quest_objective_journal2: "&0Use a Hoe to harvest 64 Sugarcane!"
-    quest_complete2: "&0Be responsible when using that Cane!"
+    QUEST1_NAME: "Beet Those Roots"
+    QUEST1_ID: "BEET_THOSE_ROOTS"
+    QUEST1_OBJ_MESSAGE: "&aHarvest &f128 &aBeatroots &fwith a &aWooden Hoe"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Harvest &0128 &2Beatroots &0with a &lWooden Hoe"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aHarvest &f%point.$QUEST1_ID$.left\:128% &aBeatroots &fwith a &aWooden Hoe'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:beetroot ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name3: "Goblin Pillage"
-    quest_objective3: "Pillage the Goblin Village and kill 10 &cGoblin Warriors&f!"
-    quest_reward3-1: "&d200 EXP"
-    quest_reward3-2: "&d200 Farming EXP"
-    quest_reward3-3: "&e150 Coins"
-    quest_reward3-4: "&2Harming Staff"
-    quest_objective_journal3: "&0Pillage the Goblin Village and kill 10 &cGoblin Warriors&0!"
-    quest_complete3: "&0That was only a Village...Imagine an entire Town of them!"
+    QUEST2_NAME: "Goblin Pillage"
+    QUEST2_ID: "GOBLIN_PILLAGE"
+    QUEST2_OBJ_MESSAGE: "&aSlay &f25 &cGoblins &fwithin the &aEstate"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Slay &025 &cGoblins &0within the &2Estate"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aSlay &f%point.$QUEST2_ID$.left\:25% &cGoblins &fwithin the &aEstate'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:zombie_head ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
+    QUEST3_NAME: "Sacred Cane"
+    QUEST3_ID: "SACRED_CANE"
+    QUEST3_OBJ_MESSAGE: "&aHarvest &f128 &aSugar Cane &fwithin the &aEstate"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Harvest &0128 &2Sugar Cane &0within the &2Estate"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aHarvest &f%point.$QUEST3_ID$.left\:128% &aSugar Cane &fwithin the &aEstate'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:sugar_cane ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
