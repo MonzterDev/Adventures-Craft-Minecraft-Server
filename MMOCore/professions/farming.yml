@@ -259,3 +259,26 @@ on-mine:
             temp-block: vanilla{type=AIR}
         triggers:
         - 'exp{profession=farming;amount=3}'
+
+    CHAIN:
+        material: vanilla{type=CHAIN}
+        options:
+            vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=WATER}
+    FIRE_CORAL:
+        material: vanilla{type=FIRE_CORAL}
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=WATER}
+    SEAGRASS:
+        material: vanilla{type=SEAGRASS}
+        drop-table:
+            items:
+            - 'vanilla{type=SEAGRASS} 1 1-2'
+        vanilla-drops: false
+        regen:
+            time: 300
+            temp-block: vanilla{type=WATER}

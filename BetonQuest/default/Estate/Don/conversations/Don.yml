@@ -1,19 +1,15 @@
-quester: Bowyer
+quester: Don
 first: greeting
 NPC_options:
   greeting:
-    text: I'm glad you made it through the &aValley&7, &a%player%&7!
+    text: Thanks for saving me from those &cGoblin&7, &a%player%&7!
     pointers: hey, quest, bye
   town_info:
-    text: The &aEstate &7is common grounds for farmers to come through and trade! I cannot forget to mention, but the &cGoblins &7have also sanctioned here!
+    text: Well, this is my &9pond&7. I watch over all the creatures which migrated here from the &9oceans&7!
     pointers: wow, bye
   quests:
-    text: I can use help with farming and pushing back those relentless &cGoblins&7!
+    text: I can use some help cleaning up the &9pond&7!
     pointers: quest1, quest_decline
-    conditions: "default-Valley-Mael.QUEST2_COMPLETED"
-  no_quests:
-    text: You must help &aMael &7before I can give you any quests! 
-    conditions: '!default-Valley-Mael.QUEST2_COMPLETED'
 
   quest1accept:
     text: Use your &fWooden Hoe &7and start off by harvesting those &aBeetroots&7!
@@ -24,7 +20,7 @@ player_options:
     pointers: town_info
   quest:
     text: Do you have any Quests?
-    pointers: quests,no_quests
+    pointers: quests
     conditions: '!QUEST1_STARTED'
   bye:
     text: I need to go, sorry.
