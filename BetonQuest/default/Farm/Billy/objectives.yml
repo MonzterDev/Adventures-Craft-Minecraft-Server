@@ -1,2 +1,2 @@
-HarvestCarrots: mmocorebreakblock 128 block:CARROTS events:quest1_part2_start,tag_q1_part2,entry_q1_part2,q1_part2_start_message notify:8
-HarvestPotatoes: mmocorebreakblock 256 block:POTATOES events:entry_q1_complete,QuestReward1 notify:8
+CARROT_HARVEST: mmocorebreakblock 1 block:CARROTS events:Q1_REPEAT,Q1_COMPLETE,Q2_START conditions:WOODEN_HOE
+POTATO_HARVEST: mmocorebreakblock 1 block:POTATOES events:Q2_REPEAT,Q2_COMPLETE conditions:WOODEN_HOE
