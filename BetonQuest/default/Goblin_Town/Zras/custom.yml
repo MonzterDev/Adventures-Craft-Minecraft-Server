@@ -1,0 +1,26 @@
+npc_holograms:
+  check_interval: 100
+  follow: false
+  disabled: false
+  default:
+    lines:
+    - '&e&lTALK TO ME!'
+    vector: 0;2.67;0
+    conditions: "!QUEST1_STARTED"
+    npcs:
+      - 62
+hide_npcs:
+  63: 'QUEST2_NPC_1'
+  123: '!QUEST2_NPC_1'
+
+  61: 'QUEST2_NPC_2'
+  124: '!QUEST2_NPC_2'
+
+  60: 'QUEST2_NPC_3'
+  125: '!QUEST2_NPC_3'
+
+  121: 'QUEST2_NPC_4'
+  126: '!QUEST2_NPC_4'
+
+  122: 'QUEST2_NPC_5'
+  127: '!QUEST2_NPC_5'
