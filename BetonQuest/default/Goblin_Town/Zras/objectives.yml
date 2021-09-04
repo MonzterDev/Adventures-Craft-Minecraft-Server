@@ -1,0 +1,9 @@
+PILLAGING_GOBLIN_TOWN: mmobkill BABY_GOBLIN2,GOBLIN2,GOBLIN_ARCHER,HOUND2 amount:1 persistent events:Q1_REPEAT,Q1_COMPLETE,Q2_START
+
+PRISON_BREAK_1: npcinteract 63 events:Q2_2_START
+PRISON_BREAK_2: npcinteract 61 events:Q2_3_START
+PRISON_BREAK_3: npcinteract 60 events:Q2_4_START
+PRISON_BREAK_4: npcinteract 121 events:Q2_5_START
+PRISON_BREAK_5: npcinteract 122 events:Q2_COMPLETE,Q3_START
+
+THE_GOBLIN_CHIEF: location -870;52;-308;Spawn 100 events:Q3_COMPLETE conditions:GOBLIN_CHIEF

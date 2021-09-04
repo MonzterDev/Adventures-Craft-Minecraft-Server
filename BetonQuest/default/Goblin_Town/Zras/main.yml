@@ -1,0 +1,31 @@
+npcs:
+  '62': Zras
+variables:
+    QUESTER_NAME: "ZRAS"
+
+    QUEST1_NAME: "Pillaging Goblin Town"
+    QUEST1_ID: "PILLAGING_GOBLIN_TOWN"
+    QUEST1_OBJ_MESSAGE: "&aSlay &f50 &cGoblins &fwithin the &cGoblin Town"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &050 &cGoblins &0within the &cGoblin Town"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:50% &cGoblins &fwithin the &cGoblin Town'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:zombie_head ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Prison Break"
+    QUEST2_ID: "PRISON_BREAK"
+    QUEST2_1_OBJ_MESSAGE: "&aRescue &fthe &aAuction Master &ffrom the hanging &cCage &fat (-861, 56, -315)"
+    QUEST2_2_OBJ_MESSAGE: "&aRescue &aDavina &ffrom the hanging &cCage &fat (-870, 52, -308)"
+    QUEST2_3_OBJ_MESSAGE: "&aRescue &aTim &ffrom the hanging &cCage &fat (-885, 46, -301)"
+    QUEST2_4_OBJ_MESSAGE: "&aRescue &aBlue &ffrom the hanging &cCage &fat (-899, 52, -296)"
+    QUEST2_5_OBJ_MESSAGE: "&aRescue &aCarle &ffrom the hanging &cCage &fat (-908, 54, -288)"
+    QUEST2_1_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Rescue the &2Auction Master &0from the hanging &cCage &0at (-861, 56, -315)"
+    QUEST2_2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Rescue &2Davina &0from the hanging &cCage &0at (-870, 52, -308)"
+    QUEST2_3_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Rescue &2Tim &0from the hanging &cCage &0at (-885, 46, -301)"
+    QUEST2_4_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Rescue &2Blue &0from the hanging &cCage &0at (-899, 52, -296)"
+    QUEST2_5_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Rescue &2Carle &0from the hanging &cCage &0at (-908, 54, -288)"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:IRON_BARS ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "The Gobline Chief"
+    QUEST3_ID: "THE_GOBLIN_CHIEF"
+    QUEST3_OBJ_MESSAGE: "&aSlay &fthe &cGoblin Chief &fwithin his &cHeadquarters"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Slay &0the &cGoblin Chief &0within his &cHeadquarters"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:JUKEBOX ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
