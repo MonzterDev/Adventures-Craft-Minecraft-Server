@@ -1,27 +1,48 @@
-q1_part1: tag q1_part1
-q1_completed: tag q1_completed
-q1_rewards_unclaimed: tag q1_rewards_unclaimed
-q1_rewards_claimed: tag q1_rewards_claimed
-q2_part1: tag q2_part1
-q2_completed: tag q2_completed
-q2_rewards_unclaimed: tag q2_rewards_unclaimed
-q2_rewards_claimed: tag q2_rewards_claimed
-q3_part1: tag q3_part1
-q3_completed: tag q3_completed
-q3_rewards_unclaimed: tag q3_rewards_unclaimed
-q3_rewards_claimed: tag q3_rewards_claimed
-q4_part1: tag q4_part1
-q4_completed: tag q4_completed
-q4_rewards_unclaimed: tag q4_rewards_unclaimed
-q4_rewards_claimed: tag q4_rewards_claimed
-q5_part1: tag q5_part1
-q5_completed: tag q5_completed
-q5_rewards_unclaimed: tag q5_rewards_unclaimed
-q5_rewards_claimed: tag q5_rewards_claimed
-q6_part1: tag q6_part1
-q6_completed: tag q6_completed
-q6_rewards_unclaimed: tag q6_rewards_unclaimed
-q6_rewards_claimed: tag q6_rewards_claimed
-q7_part1: tag q7_part1
-q7_completed: tag q7_completed
-empty0: empty 0 equal
+FULL_INVENTORY: empty 1
+WOODEN_AXE: hand WOODEN_AXE
+STONE_AXE: hand STONE_AXE
+IRON_AXE: hand IRON_AXE
+GOLDEN_AXE: hand GOLDEN_AXE
+DIAMOND_AXE: hand DIAMOND_AXE
+
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+OAK_TIMBER: point $QUEST1_ID$ 63
+
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
+
+QUEST3_STARTED: tag $QUEST3_ID$_STARTED
+QUEST3_COMPLETED: tag $QUEST3_ID$_COMPLETED
+SPRUCE_TIMBER: point $QUEST3_ID$ 127
+
+QUEST4_STARTED: tag $QUEST4_ID$_STARTED
+QUEST4_COMPLETED: tag $QUEST4_ID$_COMPLETED
+
+QUEST5_STARTED: tag $QUEST5_ID$_STARTED
+QUEST5_COMPLETED: tag $QUEST5_ID$_COMPLETED
+DARK_OAK_TIMBER: point $QUEST5_ID$ 191
+
+QUEST6_STARTED: tag $QUEST6_ID$_STARTED
+QUEST6_COMPLETED: tag $QUEST6_ID$_COMPLETED
+
+QUEST7_STARTED: tag $QUEST7_ID$_STARTED
+QUEST7_COMPLETED: tag $QUEST7_ID$_COMPLETED
+BIRCH_TIMBER: point $QUEST7_ID$ 255
+
+QUEST8_STARTED: tag $QUEST8_ID$_STARTED
+QUEST8_COMPLETED: tag $QUEST8_ID$_COMPLETED
+
+QUEST9_STARTED: tag $QUEST9_ID$_STARTED
+QUEST9_COMPLETED: tag $QUEST9_ID$_COMPLETED
+ACACIA_TIMBER: point $QUEST9_ID$ 319
+
+QUEST10_STARTED: tag $QUEST10_ID$_STARTED
+QUEST10_COMPLETED: tag $QUEST10_ID$_COMPLETED
+
+QUEST11_STARTED: tag $QUEST11_ID$_STARTED
+QUEST11_COMPLETED: tag $QUEST11_ID$_COMPLETED
+JUNGLE_TIMBER: point $QUEST11_ID$ 383
+
+QUEST12_STARTED: tag $QUEST12_ID$_STARTED
+QUEST12_COMPLETED: tag $QUEST12_ID$_COMPLETED

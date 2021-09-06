@@ -1,9 +1,17 @@
-OakLogs: mmocorebreakblock 128 block:OAK_LOG events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify:8
-SpruceLogs: mmocorebreakblock 192 block:SPRUCE_LOG events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify:8
-DarkOakLogs: mmocorebreakblock 256 block:DARK_OAK_LOG events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 notify:8
-BirchLogs: mmocorebreakblock 320 block:BIRCH_LOG events:entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4 notify:8
-AcaciaLogs: mmocorebreakblock 384 block:ACACIA_LOG events:entry_q5_complete,quest6_starer,tag_q6_part1,QuestReward5 notify:8
-JungleLogs: mmocorebreakblock 448 block:JUNGLE_LOG events:entry_q6_complete,QuestReward6 notify:8
+OAK_TIMBER: mmocorebreakblock 1 block:OAK_LOG events:Q1_REPEAT,Q1_COMPLETE,Q2_START conditions:WOODEN_AXE
+WORST_AXE: npcinteract 33 events:Q2_COMPLETE,Q3_START
 
-#Finding Jack
-Jack: npcinteract 138 events:entry_q7_complete,q7_finish_message,QuestReward7 notify:1
+SPRUCE_TIMBER: mmocorebreakblock 1 block:SPRUCE_LOG events:Q3_REPEAT,Q3_COMPLETE,Q4_START conditions:WOODEN_AXE
+POOR_AXE: npcinteract 33 events:Q4_COMPLETE,Q5_START
+
+DARK_OAK_TIMBER: mmocorebreakblock 1 block:DARK_OAK_LOG events:Q5_REPEAT,Q5_COMPLETE,Q6_START conditions:STONE_AXE
+DECENT_AXE: npcinteract 33 events:Q6_COMPLETE,Q7_START
+
+BIRCH_TIMBER: mmocorebreakblock 1 block:BIRCH_LOG events:Q7_REPEAT,Q7_COMPLETE,Q8_START conditions:IRON_AXE
+BETTER_AXE: npcinteract 33 events:Q8_COMPLETE,Q9_START
+
+ACACIA_TIMBER: mmocorebreakblock 1 block:ACACIA_LOG events:Q9_REPEAT,Q9_COMPLETE,Q10_START conditions:DIAMOND_AXE
+BEST_AXE: npcinteract 33 events:Q10_COMPLETE,Q11_START
+
+JUNGLE_TIMBER: mmocorebreakblock 1 block:JUNGLE_LOG events:Q11_REPEAT,Q11_COMPLETE,Q12_START conditions:GOLDEN_AXE
+JACKS_JOURNEY: npcinteract 138 events:Q12_COMPLETE
