@@ -1,0 +1,46 @@
+name: §f§l»§7§l» §fLumberjack's Shop §7§l«§f§l«
+layout: Forest-Axe-Upgrade
+items:
+  fill:
+    material: GREEN_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  JACKS_AXE:
+    output:
+      type: TOOL
+      id: JACKS_AXE
+    ingredients:
+    - mmoitem{type=TOOL,id=WOODEN_AXE,amount=1}
+    - vanilla{type=OAK_LOG,amount=64}
+  JACKS_AXE2:
+    output:
+      type: TOOL
+      id: JACKS_AXE2
+    ingredients:
+    - mmoitem{type=TOOL,id=JACKS_AXE,amount=1}
+    - vanilla{type=SPRUCE_LOG,amount=128}
+  JACKS_AXE3:
+    output:
+      type: TOOL
+      id: JACKS_AXE3
+    ingredients:
+    - mmoitem{type=TOOL,id=JACKS_AXE2,amount=1}
+    - vanilla{type=DARK_OAK_LOG,amount=192}
+  JACKS_AXE4:
+    output:
+      type: TOOL
+      id: JACKS_AXE4
+    ingredients:
+    - mmoitem{type=TOOL,id=JACKS_AXE3,amount=1}
+    - vanilla{type=BIRCH_LOG,amount=256}
+  JACKS_AXE5:
+    output:
+      type: TOOL
+      id: JACKS_AXE5
+    ingredients:
+    - mmoitem{type=TOOL,id=JACKS_AXE4,amount=1}
+    - vanilla{type=ACACIA_LOG,amount=320}

@@ -1,191 +1,182 @@
-#FIRST QUEST The Great Slaughter
-quest1_start: 'objective start OakLogs'
-GiveRifle: 'command mmoitems give TOOL JACKS_AXE %player% 1'
-tag_q1_part1: 'tag add q1_part1'
-entry_q1_part1: 'journal add q1_part1'
-q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 128 Oak Logs&f!'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
-QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give TOOL JACKS_AXE2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Foraging 50 ^command money give %player% 25"
-QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
-QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aOak Tumbles &cto redeem your rewards!'
-QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
-#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give TOOL JACKS_AXE2 %player% 1 ^command mmocore admin exp give %player% main 50 ^command mmocore admin exp give %player% Foraging 50 ^command money give %player% 25"
-QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
-QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q1_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed'
-entry_q1_completed: 'journal add q1_completed'
-tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal delete q1_part1'
+Q1_START: 'folder Q1_GIVE_AXE,Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START'
+Q1_GIVE_AXE: mmoitemgive TOOL WOODEN_AXE
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OAK_ACCESS,Q1_OBJ_STOP,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE condition:$QUEST1_ID$'
+Q1_OAK_ACCESS: 'command lp user %player% permission set warp.OakForest true'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
 
 
-#SECOND QUEST Spruce Tumbles
-quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
-quest2_start: 'objective start SpruceLogs'
-tag_q2_part1: 'tag add q2_part1'
-entry_q2_part1: 'journal add q2_part1'
-q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nOak Tumbles&f! \n \n \n &6&lRewards\: \n&8&l » &2 Jack''s Poor Axe \n&8&l » &d 50 EXP \n&8&l » &d 50 Foraging EXP \n&8&l » &e 25 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Chop down 192 Spruce Logs!'
-#FINISHING THE SECOND QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward2: "if empty0 QuestReward2_Full else QuestReward2_Folder"
-QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
-QuestReward2_If_Not_Full: "run ^command lp user %player% permission set warp.SpruceForest ^command mmoitems give TOOL JACKS_AXE3 %player% 1 ^command mmocore admin exp give %player% main 75 ^command mmocore admin exp give %player% Foraging 75 ^command money give %player% 50"
-QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
-QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aSpruce Tumbles &cto redeem your rewards!'
-QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
-Claim_QuestReward2: "run ^command lp user %player% permission set warp.SpruceForest ^command mmoitems give TOOL JACKS_AXE3 %player% 1 ^command mmocore admin exp give %player% main 75 ^command mmocore admin exp give %player% Foraging 75 ^command money give %player% 50"
-QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
-QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
-#SECOND QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q2_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed'
-entry_q2_completed: 'journal add q2_completed'
-tag_q2_completed: 'tag add q2_completed'
-entry_q2_part1_remove: 'journal delete q2_part1'
-
-#THIRD QUEST Dark Oak Tumbles
-quest3_starer: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
-quest3_start: 'objective start DarkOakLogs'
-tag_q3_part1: 'tag add q3_part1'
-entry_q3_part1: 'journal add q3_part1'
-q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nSpruce Tumbles&f! \n \n \n &6&lRewards\: \n&8&l » &a Access to Spruce Forest \n&8&l » &9 Jack''s Decent Axe \n&8&l » &d 75 EXP \n&8&l » &d 75 Foraging EXP \n&8&l » &e 50 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Chop down 256 Dark Oak Logs!'
-#FINISHING THE THIRD QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
-QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command lp user %player% permission set warp.DarkOakForest ^command mmoitems give TOOL JACKS_AXE4 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% Foraging 100 ^command money give %player% 75"
-QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
-QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aDark Oak Tumbles &cto redeem your rewards!'
-QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
-#THIRD QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command lp user %player% permission set warp.DarkOakForest ^command mmoitems give TOOL JACKS_AXE4 %player% 1 ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% Foraging 100 ^command money give %player% 75"
-QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
-QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
-#THIRD QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q3_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
-entry_q3_completed: 'journal add q3_completed'
-tag_q3_completed: 'tag add q3_completed'
-entry_q3_part1_remove: 'journal delete q3_part1'
-
-#FORTH QUEST Birch Tumbles
-quest4_starer: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message'
-quest4_start: 'objective start BirchLogs'
-tag_q4_part1: 'tag add q4_part1'
-entry_q4_part1: 'journal add q4_part1'
-q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nDark Oak Tumbles&f! \n \n \n &6&lRewards\: \n&8&l » &a Access to Dark Oak Forest \n&8&l » &5 Jack''s Better Axe \n&8&l » &d 100 EXP \n&8&l » &d 100 Foraging EXP \n&8&l » &e 75 Coins \n \n \n &6&lNew Objectives: \n&8&l » &f Chop down 320 Birch Logs!'
-#FINISHING THE FOURTH QUEST WILL check if the players inventory is full
-#IF the inventory IS FULL, it'll send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll give rewards instantly
-QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
-QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command lp user %player% permission set warp.BirchForest ^command mmoitems give TOOL JACKS_AXE5 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Foraging 150 ^command money give %player% 100"
-QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
-QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aBirch Tumbles &cto redeem your rewards!'
-QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
-#FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command lp user %player% permission set warp.BirchForest ^command mmoitems give TOOL JACKS_AXE5 %player% 1 ^command mmocore admin exp give %player% main 150 ^command mmocore admin exp give %player% Foraging 150 ^command money give %player% 100"
-QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
-QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"
-#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q4_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed'
-entry_q4_completed: 'journal add q4_completed'
-tag_q4_completed: 'tag add q4_completed'
-entry_q4_part1_remove: 'journal delete q4_part1'
-
-#FIFTH QUEST The Village Hero
-quest5_starer: 'folder quest5_start,tag_q5_part1,entry_q5_part1,q5_start_message'
-quest5_start: 'objective start AcaciaLogs'
-tag_q5_part1: 'tag add q5_part1'
-entry_q5_part1: 'journal add q5_part1'
-q5_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nBirch Tumbles! \n \n \n &6&lRewards\: \n&8&l » &a Access to Birch Forest \n&8&l » &e Jack''s Best Axe \n&8&l » &d 150 EXP \n&8&l » &d 150 Foraging EXP \n&8&l » &e 100 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Chop down 384 Acacia Logs!'
-#FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward5: "if empty0 QuestReward5_Full else QuestReward5_Folder"
-QuestReward5_Folder: 'folder QuestReward5_If_Not_Full,QuestReward5_Claimed_Tag'
-QuestReward5_If_Not_Full: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
-QuestReward5_Full: 'folder QuestReward5_Full_message,QuestReward5_Full_Tag'
-QuestReward5_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aAcacia Tumbles &cto redeem your rewards!'
-QuestReward5_Full_Tag: "tag add q5_rewards_unclaimed"
-#FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward5_Claim: 'folder Claim_QuestReward5,QuestReward5_Claim_message,QuestReward5_Claimed_Tag,QuestReward5_del_Claimed_Tag'
-Claim_QuestReward5: "run ^command lp user %player% permission set warp.AcaciaForest ^command mmoitems give CONSUMABLE FORAGING_BOOSTER2 %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% Foraging 200 ^command money give %player% 150"
-QuestReward5_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward5_Claimed_Tag: "tag add q5_rewards_claimed"
-QuestReward5_del_Claimed_Tag: "tag del q5_rewards_unclaimed"
-#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q5_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q5_completed,entry_q5_part1_remove,tag_q5_completed'
-entry_q5_completed: 'journal add q5_completed'
-tag_q5_completed: 'tag add q5_completed'
-entry_q5_part1_remove: 'journal delete q5_part1'
-
-#FIFTH QUEST The Village Hero
-quest6_starer: 'folder quest6_start,tag_q6_part1,entry_q6_part1,q6_start_message'
-quest6_start: 'objective start JungleLogs'
-tag_q6_part1: 'tag add q6_part1'
-entry_q6_part1: 'journal add q6_part1'
-q6_start_message: 'run ^notify \n&6&lQuest Complete\:&f \nAcacia Tumbles! \n \n \n &6&lRewards\: \n&8&l » &a Access to Acacia Forest \n&8&l » &2 Foraging Boost \n&8&l » &d 200 EXP \n&8&l » &d 200 Foraging EXP \n&8&l » &e 150 Coins \n \n \n &6&lNew Objectives\: \n&8&l » &f Chop down 448 Jungle Logs!'
-#FIFTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward6: "if empty0 QuestReward6_Full else QuestReward6_Folder"
-QuestReward6_Folder: 'folder QuestReward6_If_Not_Full,QuestReward6_Claimed_Tag'
-QuestReward6_If_Not_Full: "run ^command lp user %player% permission set warp.JungleForest ^command mm items give %player% BEE_WINGS2 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
-QuestReward6_Full: 'folder QuestReward6_Full_message,QuestReward6_Full_Tag'
-QuestReward6_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &aJungle Tumbles &cto redeem your rewards!'
-QuestReward6_Full_Tag: "tag add q6_rewards_unclaimed"
-#FOURTH QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward6_Claim: 'folder Claim_QuestReward6,QuestReward6_Claim_message,QuestReward6_Claimed_Tag,QuestReward6_del_Claimed_Tag'
-Claim_QuestReward6: "run ^command lp user %player% permission set warp.JungleForest  ^command mm items give %player% BEE_WINGS2 ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 200"
-QuestReward6_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward6_Claimed_Tag: "tag add q6_rewards_claimed"
-QuestReward6_del_Claimed_Tag: "tag del q6_rewards_unclaimed"
-#FOURTH QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q6_complete: 'folder default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q6_completed,entry_q6_part1_remove,tag_q6_completed,q6_finish_message'
-entry_q6_completed: 'journal add q6_completed'
-tag_q6_completed: 'tag add q6_completed'
-entry_q6_part1_remove: 'journal delete q6_part1'
-q6_finish_message: 'run ^notify \n&6&lQuest Complete\:&f \nJungle Tumbles! \n \n \n &6&lRewards\: \n&8&l » &a Access to Jungle Forest \n&8&l » &f Bee Wings \n&8&l » &d 250 EXP \n&8&l » &d 250 Foraging EXP \n&8&l » &e 200 Coins \n \n \n Come talk to me again for another task!'
+Q2_START: 'folder Q2_OBJ_START,Q2_TAG_START,Q2_JOU_START,Q2_MSG_START condition:$QUEST1_ID$'
+Q2_OBJ_START: 'objective start $QUEST2_ID$'
+Q2_TAG_START: 'tag add $QUEST2_ID$_STARTED'
+Q2_JOU_START: 'journal add QUEST2_JOU_MESSAGE'
+Q2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q2_COMPLETE: 'folder Q2_OBJ_STOP,Q2_TAG_COMPLETE,Q2_JOU_DELETE,Q2_MSG_COMPLETE'
+Q2_OBJ_STOP: 'objective delete $QUEST2_ID$'
+Q2_TAG_COMPLETE: 'tag add $QUEST2_ID$_COMPLETED'
+Q2_JOU_DELETE: 'journal delete QUEST2_JOU_MESSAGE'
+Q2_MSG_COMPLETE: 'run $QUEST2_COMPLETE$'
 
 
+Q3_START: 'folder Q3_OBJ_START,Q3_TAG_START,Q3_JOU_START,Q3_MSG_START'
+Q3_OBJ_START: 'objective start $QUEST3_ID$'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+Q3_JOU_START: 'journal add QUEST3_JOU_MESSAGE'
+Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q3_REPEAT: 'folder Q3_POINT_GIVE,Q3_MSG_REPEAT,Q3_OBJ_START condition:!$QUEST3_ID$'
+Q3_POINT_GIVE: 'point $QUEST3_ID$ 1'
+Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q3_COMPLETE: 'folder Q3_SPRUCE_ACCESS,Q3_OBJ_STOP,Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE condition:$QUEST3_ID$'
+Q3_SPRUCE_ACCESS: 'command lp user %player% permission set warp.SpruceForest true'
+Q3_OBJ_STOP: 'objective delete $QUEST3_ID$'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED'
+Q3_JOU_DELETE: 'journal delete QUEST3_JOU_MESSAGE'
+Q3_MSG_COMPLETE: 'run $QUEST3_COMPLETE$'
+
+Q4_START: 'folder Q4_OBJ_START,Q4_TAG_START,Q4_JOU_START,Q4_MSG_START condition:$QUEST3_ID$'
+Q4_OBJ_START: 'objective start $QUEST4_ID$'
+Q4_TAG_START: 'tag add $QUEST4_ID$_STARTED'
+Q4_JOU_START: 'journal add QUEST4_JOU_MESSAGE'
+Q4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q4_COMPLETE: 'folder Q4_OBJ_STOP,Q4_TAG_COMPLETE,Q4_JOU_DELETE,Q4_MSG_COMPLETE'
+Q4_OBJ_STOP: 'objective delete $QUEST4_ID$'
+Q4_TAG_COMPLETE: 'tag add $QUEST4_ID$_COMPLETED'
+Q4_JOU_DELETE: 'journal delete QUEST4_JOU_MESSAGE'
+Q4_MSG_COMPLETE: 'run $QUEST4_COMPLETE$'
 
 
-#7TH QUEST The Great Slaughter
-quest7_starer: 'folder quest7_start,tag_q7_part1,entry_q7_part1,q7_start_message,ShowJackCompass,JackCompass' 
-quest7_start: 'objective start Jack'
-tag_q7_part1: 'tag add q7_part1'
-entry_q7_part1: 'journal add q7_part1'
-q7_start_message: 'run ^notify \n&6&lNew Objectives\: \n&8&l » &f Climb the the Tree at the top of the Forest! Go to the highest Honey Comb where &aJack &fremains trapped at 620, 119, -42, and rescue him!'
-ShowJackCompass: 'run ^opsudo calcomp show'
-JackCompass: 'run ^opsudo calcomp toggle FindJack enable'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward7: "run ^command lp user %player% permission set warp.HiveForest true ^command mmocore admin exp give %player% main 250 ^command mmocore admin exp give %player% Foraging 250 ^command money give %player% 100"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q7_complete: 'folder ClearJackCompass,HideJackCompass,default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint,entry_q7_completed,entry_q7_part1_remove,tag_q7_completed'
-entry_q7_completed: 'journal add q7_completed'
-tag_q7_completed: 'tag add q7_completed'
-entry_q7_part1_remove: 'journal delete q7_part1'
-q7_finish_message: 'run ^notify \n&6&lQuest Complete\:&f \nRescue Jack! \n \n \n &6&lRewards\: \n&8&l » &a Access to the Hive \n&8&l » &d 250 EXP \n&8&l » &d 250 Foraging EXP \n&8&l » &e 100 Coins \n \n \n &fCome back and speak with &aJack&f!'
-HideJackCompass: 'run ^opsudo calcomp hide'
-ClearJackCompass: 'run ^opsudo calcomp toggle FindJack disable'
+Q5_START: 'folder Q5_OBJ_START,Q5_TAG_START,Q5_JOU_START,Q5_MSG_START'
+Q5_OBJ_START: 'objective start $QUEST5_ID$'
+Q5_TAG_START: 'tag add $QUEST5_ID$_STARTED'
+Q5_JOU_START: 'journal add QUEST5_JOU_MESSAGE'
+Q5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q5_REPEAT: 'folder Q5_POINT_GIVE,Q5_MSG_REPEAT,Q5_OBJ_START condition:!$QUEST5_ID$'
+Q5_POINT_GIVE: 'point $QUEST5_ID$ 1'
+Q5_MSG_REPEAT: 'run notify $QUEST5_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q5_COMPLETE: 'folder Q5_DARKOAK_ACCESS,Q5_OBJ_STOP,Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE condition:$QUEST5_ID$'
+Q5_DARKOAK_ACCESS: 'command lp user %player% permission set warp.DarkOakForest true'
+Q5_OBJ_STOP: 'objective delete $QUEST5_ID$'
+Q5_TAG_COMPLETE: 'tag add $QUEST5_ID$_COMPLETED'
+Q5_JOU_DELETE: 'journal delete QUEST5_JOU_MESSAGE'
+Q5_MSG_COMPLETE: 'run $QUEST5_COMPLETE$'
+
+Q6_START: 'folder Q6_OBJ_START,Q6_TAG_START,Q6_JOU_START,Q6_MSG_START condition:$QUEST5_ID$'
+Q6_OBJ_START: 'objective start $QUEST6_ID$'
+Q6_TAG_START: 'tag add $QUEST6_ID$_STARTED'
+Q6_JOU_START: 'journal add QUEST6_JOU_MESSAGE'
+Q6_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST6_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q6_COMPLETE: 'folder Q6_OBJ_STOP,Q6_TAG_COMPLETE,Q6_JOU_DELETE,Q6_MSG_COMPLETE'
+Q6_OBJ_STOP: 'objective delete $QUEST6_ID$'
+Q6_TAG_COMPLETE: 'tag add $QUEST6_ID$_COMPLETED'
+Q6_JOU_DELETE: 'journal delete QUEST6_JOU_MESSAGE'
+Q6_MSG_COMPLETE: 'run $QUEST6_COMPLETE$'
 
 
-SpruceUnlock: "run ^command lp user %player% permission set warp.SpruceForest true"
-DarkOakUnlock: "run ^command lp user %player% permission set warp.DarkOakForest true"
-BirchUnlock: "run ^command lp user %player% permission set warp.BirchForest true"
-AcaciaUnlock: "run ^command lp user %player% permission set warp.AcaciaForest true"
-JungleUnlock: "run ^command lp user %player% permission set warp.JungleForest true"
-HiveUnlock: "run ^command lp user %player% permission set warp.HiveForest true"
+Q7_START: 'folder Q7_OBJ_START,Q7_TAG_START,Q7_JOU_START,Q7_MSG_START'
+Q7_OBJ_START: 'objective start $QUEST7_ID$'
+Q7_TAG_START: 'tag add $QUEST7_ID$_STARTED'
+Q7_JOU_START: 'journal add QUEST7_JOU_MESSAGE'
+Q7_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q7_REPEAT: 'folder Q7_POINT_GIVE,Q7_MSG_REPEAT,Q7_OBJ_START condition:!$QUEST7_ID$'
+Q7_POINT_GIVE: 'point $QUEST7_ID$ 1'
+Q7_MSG_REPEAT: 'run notify $QUEST7_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q7_COMPLETE: 'folder Q7_BIRCH_ACCESS,Q7_OBJ_STOP,Q7_TAG_COMPLETE,Q7_JOU_DELETE,Q7_MSG_COMPLETE condition:$QUEST7_ID$'
+Q7_BIRCH_ACCESS: 'command lp user %player% permission set warp.BirchForest true'
+Q7_OBJ_STOP: 'objective delete $QUEST7_ID$'
+Q7_TAG_COMPLETE: 'tag add $QUEST7_ID$_COMPLETED'
+Q7_JOU_DELETE: 'journal delete QUEST7_JOU_MESSAGE'
+Q7_MSG_COMPLETE: 'run $QUEST7_COMPLETE$'
+
+Q8_START: 'folder Q8_OBJ_START,Q8_TAG_START,Q8_JOU_START,Q8_MSG_START condition:$QUEST7_ID$'
+Q8_OBJ_START: 'objective start $QUEST8_ID$'
+Q8_TAG_START: 'tag add $QUEST8_ID$_STARTED'
+Q8_JOU_START: 'journal add QUEST8_JOU_MESSAGE'
+Q8_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST8_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q8_COMPLETE: 'folder Q8_OBJ_STOP,Q8_TAG_COMPLETE,Q8_JOU_DELETE,Q8_MSG_COMPLETE'
+Q8_OBJ_STOP: 'objective delete $QUEST8_ID$'
+Q8_TAG_COMPLETE: 'tag add $QUEST8_ID$_COMPLETED'
+Q8_JOU_DELETE: 'journal delete QUEST8_JOU_MESSAGE'
+Q8_MSG_COMPLETE: 'run $QUEST8_COMPLETE$'
+
+
+Q9_START: 'folder Q9_OBJ_START,Q9_TAG_START,Q9_JOU_START,Q9_MSG_START'
+Q9_OBJ_START: 'objective start $QUEST9_ID$'
+Q9_TAG_START: 'tag add $QUEST9_ID$_STARTED'
+Q9_JOU_START: 'journal add QUEST9_JOU_MESSAGE'
+Q9_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST9_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q9_REPEAT: 'folder Q9_POINT_GIVE,Q9_MSG_REPEAT,Q9_OBJ_START condition:!$QUEST9_ID$'
+Q9_POINT_GIVE: 'point $QUEST9_ID$ 1'
+Q9_MSG_REPEAT: 'run notify $QUEST9_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q9_COMPLETE: 'folder Q9_ACACIA_ACCESS,Q9_OBJ_STOP,Q9_TAG_COMPLETE,Q9_JOU_DELETE,Q9_MSG_COMPLETE condition:$QUEST9_ID$'
+Q9_ACACIA_ACCESS: 'command lp user %player% permission set warp.AcaciaForest true'
+Q9_OBJ_STOP: 'objective delete $QUEST9_ID$'
+Q9_TAG_COMPLETE: 'tag add $QUEST9_ID$_COMPLETED'
+Q9_JOU_DELETE: 'journal delete QUEST9_JOU_MESSAGE'
+Q9_MSG_COMPLETE: 'run $QUEST9_COMPLETE$'
+
+Q10_START: 'folder Q10_OBJ_START,Q10_TAG_START,Q10_JOU_START,Q10_MSG_START condition:$QUEST9_ID$'
+Q10_OBJ_START: 'objective start $QUEST10_ID$'
+Q10_TAG_START: 'tag add $QUEST10_ID$_STARTED'
+Q10_JOU_START: 'journal add QUEST10_JOU_MESSAGE'
+Q10_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST10_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q10_COMPLETE: 'folder Q10_OBJ_STOP,Q10_TAG_COMPLETE,Q10_JOU_DELETE,Q10_MSG_COMPLETE'
+Q10_OBJ_STOP: 'objective delete $QUEST10_ID$'
+Q10_TAG_COMPLETE: 'tag add $QUEST10_ID$_COMPLETED'
+Q10_JOU_DELETE: 'journal delete QUEST10_JOU_MESSAGE'
+Q10_MSG_COMPLETE: 'run $QUEST10_COMPLETE$'
+
+
+Q11_START: 'folder Q11_OBJ_START,Q11_TAG_START,Q11_JOU_START,Q11_MSG_START'
+Q11_OBJ_START: 'objective start $QUEST11_ID$'
+Q11_TAG_START: 'tag add $QUEST11_ID$_STARTED'
+Q11_JOU_START: 'journal add QUEST11_JOU_MESSAGE'
+Q11_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST11_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q11_REPEAT: 'folder Q11_POINT_GIVE,Q11_MSG_REPEAT,Q11_OBJ_START condition:!$QUEST11_ID$'
+Q11_POINT_GIVE: 'point $QUEST11_ID$ 1'
+Q11_MSG_REPEAT: 'run notify $QUEST11_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q11_COMPLETE: 'folder Q11_JUNGLE_ACCESS,Q11_OBJ_STOP,Q11_TAG_COMPLETE,Q11_JOU_DELETE,Q11_MSG_COMPLETE condition:$QUEST11_ID$'
+Q11_JUNGLE_ACCESS: 'command lp user %player% permission set warp.JungleForest true'
+Q11_OBJ_STOP: 'objective delete $QUEST11_ID$'
+Q11_TAG_COMPLETE: 'tag add $QUEST11_ID$_COMPLETED'
+Q11_JOU_DELETE: 'journal delete QUEST11_JOU_MESSAGE'
+Q11_MSG_COMPLETE: 'run $QUEST11_COMPLETE$'
+
+Q12_START: 'folder Q12_OBJ_START,Q12_GPS_START,Q12_TAG_START,Q12_JOU_START,Q12_MSG_START condition:$QUEST11_ID$'
+Q12_OBJ_START: 'objective start $QUEST12_ID$'
+Q12_GPS_START: 'command gps:compass start JACKS_JOURNEY %player%'
+Q12_TAG_START: 'tag add $QUEST12_ID$_STARTED'
+Q12_JOU_START: 'journal add QUEST12_JOU_MESSAGE'
+Q12_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST12_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q12_COMPLETE: 'folder Q12_OBJ_STOP,Q12_TAG_COMPLETE,Q12_JOU_DELETE,Q12_MSG_COMPLETE'
+Q12_HIVE_ACCESS: 'command lp user %player% permission set warp.HiveForest true'
+Q12_OBJ_STOP: 'objective delete $QUEST12_ID$'
+Q12_TAG_COMPLETE: 'tag add $QUEST12_ID$_COMPLETED'
+Q12_JOU_DELETE: 'journal delete QUEST12_JOU_MESSAGE'
+Q12_MSG_COMPLETE: 'run $QUEST12_COMPLETE$'
