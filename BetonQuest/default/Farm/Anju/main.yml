@@ -6,8 +6,8 @@ variables:
     QUEST1_NAME: "Cucco Catch"
     QUEST1_ID: "CUCCO_CATCH"
     QUEST1_OBJ_MESSAGE: "&aGrab &fand &adeliver &f20 &aCuccos &fwithin the &aFarm &fto &aAnju"
-    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&aGrab &0and &abring back &020 &aCuccos &0to &aAnju"
-    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aReturn &f%point.$QUEST1_ID$.left\:19% &aCuccos &fto &aAnju'
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Grab &0and &2bring back &020 &aCuccos &0to &aAnju"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aReturn &f%point.$QUEST1_ID$.left\:20% &aCuccos &fto &aAnju'
     QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:feather ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
     QUEST2_NAME: "Egg Delivery"

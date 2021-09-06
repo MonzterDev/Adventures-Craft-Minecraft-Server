@@ -1,0 +1,11 @@
+npcs:
+  '182': Cat_Lady
+variables:
+    QUESTER_NAME: "CAT_LADY"
+
+    QUEST1_NAME: "Cat Captue"
+    QUEST1_ID: "CAT_CAPTURE"
+    QUEST1_OBJ_MESSAGE: "&aLead &f10 of my &aCats &fwhich have scattered all across the &2Spruce Forest &fback to me"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Lead &010 &2Cats &0back to the &2Cat Lady"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aLead &f%point.$QUEST1_ID$.left\:10% &aCats &fback to the &aCat Lady'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:LEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

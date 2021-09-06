@@ -25,12 +25,15 @@ WILD_CAT_CANCEL_DAMAGE:
   - CancelEvent
   - message{m="&cThe &aCat &ccannot be damaged while Leashed!"} @trigger
 WILD_CAT_CAPTURED:
+  Conditions:
+  - hasowner true
   Skills:
   - sudoskill{s=WILD_CAT_CAPTURED_P;cat=true} @Owner
   - remove @self
 WILD_CAT_CAPTURED_P:
   Skills:
-  - command{c="q point <caster.name> add default-Forest-CatLady.Cat 1"} @self 
+  - command{c="q point <caster.name> add default-Forest-Cat_Lady.CAT_CAPTURE 1"} @self 
+  - command{c="q objective <caster.name> complete default-Forest-Cat_Lady.CAT_CAPTURE"} @self 
 
 
 #DRYAD AREA
