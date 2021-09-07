@@ -1,6 +1,6 @@
-OakLogs: mmocorebreakblock 320 block:OAK_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
-SpruceLogs: mmocorebreakblock 320 block:SPRUCE_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
-DarkOakLogs: mmocorebreakblock 320 block:DARK_OAK_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
-BirchLogs: mmocorebreakblock 320 block:BIRCH_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
-AcaciaLogs: mmocorebreakblock 320 block:ACACIA_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
-JungleLogs: mmocorebreakblock 320 block:JUNGLE_LOG events:entry_q1_complete,QuestReward1,BossSpawn,Points,default-Points.GiveDryadSummonPoint notify:8
+OAK_DRYAD_DESTROYER: mmocorebreakblock 1 block:OAK_LOG persistent events:Q1_REPEAT,Q1_COMPLETE
+SPRUCE_DRYAD_DESTROYER: mmocorebreakblock 1 block:SPRUCE_LOG persistent events:Q2_REPEAT,Q2_COMPLETE
+DARK_OAK_DRYAD_DESTROYER: mmocorebreakblock 1 block:DARK_OAK_LOG persistent events:Q3_REPEAT,Q3_COMPLETE
+BIRCH_DRYAD_DESTROYER: mmocorebreakblock 1 block:BIRCH_LOG persistent events:Q4_REPEAT,Q4_COMPLETE
+ACACIA_DRYAD_DESTROYER: mmocorebreakblock 1 block:ACACIA_LOG persistent events:Q5_REPEAT,Q5_COMPLETE
+JUNGLE_DRYAD_DESTROYER: mmocorebreakblock 1 block:JUNGLE_LOG persistent events:Q6_REPEAT,Q6_COMPLETE

@@ -11,6 +11,18 @@ items:
   no-queue-item:
     material: GRAY_STAINED_GLASS_PANE
 recipes:
+  DRYAD_SUMMONER2:
+    output:
+      type: CONSUMABLE
+      id: DRYAD_SUMMONER2
+      amount: 1
+    ingredients:
+    - vanilla{type=OAK_LOG,amount=64}
+    - vanilla{type=SPRUCE_LOG,amount=64}
+    - vanilla{type=DARK_OAK_LOG,amount=64}
+    - vanilla{type=BIRCH_LOG,amount=64}
+    - vanilla{type=ACACIA_LOG,amount=64}
+    - vanilla{type=JUNGLE_LOG,amount=64}
   WOOD_CATALYST4:
     output:
       type: CATALYST
