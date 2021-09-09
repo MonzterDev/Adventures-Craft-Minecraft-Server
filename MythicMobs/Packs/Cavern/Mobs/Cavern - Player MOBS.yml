@@ -1,0 +1,37 @@
+BALLOON_SMALL: &Mob
+  Type: ZOMBIE
+  Display: ''
+  Health: 10000
+  DamageModifiers:
+  - ENTITY_ATTACK 0.01
+  - SUFFOCATION 0
+  Equipment:
+  - BALLOON_BLUE:HEAD
+  Options:
+    ApplyInvisibility: true
+    LockPitch: true
+    NoAI: true
+    AlwaysShowName: false
+    NoGravity: true
+    Silent: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 2
+    Collidable: false
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    PreventJockeyMounts: true
+    PreventTransformation: true
+  Skills:
+  - sudoskill{s=BALLOON_TP;cat=true} @Parent ~onTimer:1
+  - skill{s=BALLOON_POP;delay=200} @self ~onSpawn
+  - skill{s=BALLOON_FORCE_POP} ~onDamaged
+
+BALLOON_LARGE:
+  Equipment:
+  - BALLOON_RED:HEAD
+  Skills:
+  - sudoskill{s=BALLOON_TP;cat=true} @Parent ~onTimer:1
+  - skill{s=BALLOON_POP;delay=300} @self ~onSpawn
+  - skill{s=BALLOON_FORCE_POP} ~onDamaged
+  <<: *Mob

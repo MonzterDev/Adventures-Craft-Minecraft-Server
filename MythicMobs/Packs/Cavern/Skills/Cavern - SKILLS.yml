@@ -1,0 +1,8 @@
+#Balloon
+EVOKER_SUMMON_VEX:
+  Conditions:
+  - children{a=5} false
+  - playerwithin{d=20} true
+  Skills:
+  - summon{type=VEX1;amount=1;radius=5;yRadius=5} @self
+  - sound{s=entity.evoker.prepare_summon} @self

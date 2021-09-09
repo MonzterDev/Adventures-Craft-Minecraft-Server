@@ -116,6 +116,46 @@ SOUL4:
         duration: 20.0
         amplifier: 3.0
     revision-id: 2
+BALLOON:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2OGU2YTVjNGE0NDVkNjBhMzA1MGI1YmVjMWQzN2FmMWIyNTk0Mzc0NWQyZDQ3OTgwMGM4NDM2NDg4MDY1YSJ9fX0=
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: <tier-color-cleaned>Balloon
+    item-cooldown: 2.5
+    tier: COMMON
+    revision-id: 2
+    max-consume: 2.0
+    sounds:
+      on-consume:
+        sound: entity.generic.drink
+        volume: 0.0
+        pitch: 0.0
+    ability:
+      ability1:
+        type: BALLOON_SUMMON_SMALL
+        mode: RIGHT_CLICK
+BALLOON2:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJkZDExZGEwNDI1MmY3NmI2OTM0YmMyNjYxMmY1NGYyNjRmMzBlZWQ3NGRmODk5NDEyMDllMTkxYmViYzBhMiJ9fX0=
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: <tier-color-cleaned>Balloon
+    item-cooldown: 2.5
+    tier: UNCOMMON
+    revision-id: 2
+    max-consume: 4.0
+    sounds:
+      on-consume:
+        sound: entity.generic.drink
+        volume: 0.0
+        pitch: 0.0
+    ability:
+      ability1:
+        type: BALLOON_SUMMON_LARGE
+        mode: RIGHT_CLICK
 MORDEN_SUMMONER2:
   base:
     material: BROWN_DYE

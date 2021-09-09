@@ -43,6 +43,20 @@ NewRangedAgro8B:
   - runaigoalselector{goal=randomstroll}
   - runaigoalselector{goal=randomlookaround}
 
+PillagerAgro8A:
+  Cooldown: 1
+  Conditions:
+  - playerwithin{d=12} true
+  Skills:
+  - runaigoalselector{goal=crossbowAttack}
+PillagerAgro8B:
+  Cooldown: 3
+  Conditions:
+  - playerwithin{d=12} false
+  Skills:
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=randomstroll}
+  - runaigoalselector{goal=randomlookaround}
 
 
 HareAgroA:

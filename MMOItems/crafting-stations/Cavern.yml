@@ -1,0 +1,29 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: Cavern Shop
+max-queue-size: 10
+items:
+  fill:
+    material: BLACK_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  BALLOON:
+    output:
+      type: CONSUMABLE
+      id: BALLOON
+    ingredients:
+    - vanilla{type=SAND,amount=32}
+    - vanilla{type=COAL,amount=16}
+    conditions: []
+  BALLOON2:
+    output:
+      type: CONSUMABLE
+      id: BALLOON2
+    ingredients:
+    - vanilla{type=SAND,amount=64}
+    - vanilla{type=COAL,amount=32}
+    conditions: []
