@@ -1,0 +1,39 @@
+name: §f§l»§7§l» §fMiner's Shop §7§l«§f§l«
+layout: Forest-Axe-Upgrade
+items:
+  fill:
+    material: GREEN_STAINED_GLASS_PANE
+    name: '&c'
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  MINERS_PICKAXE:
+    output:
+      type: TOOL
+      id: MINERS_PICKAXE
+    ingredients:
+    - mmoitem{type=TOOL,id=WOODEN_PICKAXE,amount=1}
+    - vanilla{type=STONE,amount=64}
+  MINERS_PICKAXE2:
+    output:
+      type: TOOL
+      id: MINERS_PICKAXE2
+    ingredients:
+    - mmoitem{type=TOOL,id=MINERS_PICKAXE,amount=1}
+    - vanilla{type=IRON_INGOT,amount=128}
+  MINERS_PICKAXE3:
+    output:
+      type: TOOL
+      id: MINERS_PICKAXE3
+    ingredients:
+    - mmoitem{type=TOOL,id=MINERS_PICKAXE2,amount=1}
+    - vanilla{type=GOLD_INGOT,amount=192}
+  MINERS_PICKAXE4:
+    output:
+      type: TOOL
+      id: MINERS_PICKAXE4
+    ingredients:
+    - mmoitem{type=TOOL,id=MINERS_PICKAXE3,amount=1}
+    - vanilla{type=DIAMOND,amount=256}

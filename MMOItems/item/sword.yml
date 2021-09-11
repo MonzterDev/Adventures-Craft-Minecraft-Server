@@ -1,3 +1,16 @@
+GOD:
+  base:
+    material: IRON_SWORD
+    attack-damage: 9999.0
+    ability:
+      ability1:
+        type: BLIZZARD
+        duration: 5.0
+        damage: 1000.0
+        cooldown: 0.0
+        mode: RIGHT_CLICK
+    revision-id: 2
+    unbreakable: true
 WOODENSWORD:
   base:
     material: WOODEN_SWORD
@@ -110,18 +123,6 @@ BONE_SWORD5:
     durability: 1.0
     revision-id: 2
     custom-model-data: 1.0
-GOD:
-  base:
-    material: IRON_SWORD
-    attack-damage: 9999.0
-    ability:
-      ability1:
-        type: BLIZZARD
-        duration: 5.0
-        damage: 1000.0
-        cooldown: 0.0
-        mode: RIGHT_CLICK
-    revision-id: 2
 MAGMA_BLADE4:
   base:
     material: GOLDEN_SWORD

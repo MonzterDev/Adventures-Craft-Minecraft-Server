@@ -126,6 +126,73 @@ TURTLEHELMET:
     material: TURTLE_HELMET
     tier: COMMON
     revision-id: 2
+TURTLE_HELMET2:
+  base:
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: UNCOMMON
+    unbreakable: true
+    max-health: 15.0
+    defense: 10.0
+    revision-id: 2
+TURTLE_HELMET3:
+  base:
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: RARE
+    unbreakable: true
+    max-health: 25.0
+    defense: 15.0
+    revision-id: 2
+    enchants:
+      respiration: 1.0
+    hide-enchants: true
+    lore:
+    - '&7Allows you to hold your breath'
+    - '&7for longer while underwater!'
+TURTLE_HELMET4:
+  base:
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: LEGENDARY
+    unbreakable: true
+    max-health: 30.0
+    defense: 20.0
+    revision-id: 2
+    enchants:
+      respiration: 3.0
+    hide-enchants: true
+    lore:
+    - '&7Allows you to hold your breath'
+    - '&7even longer while underwater!'
+DOLPHIN_BOOTS2:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: <tier-color-cleaned>Dolphin Boots
+    tier: UNCOMMON
+    unbreakable: true
+    max-health: 5.0
+    defense: 5.0
+    revision-id: 2
+    enchants:
+      depth_strider: 1.0
+    hide-enchants: true
+    lore:
+    - '&7Move faster within water!'
+DOLPHIN_BOOTS3:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: <tier-color-cleaned>Dolphin Boots
+    tier: RARE
+    unbreakable: true
+    max-health: 5.0
+    defense: 10.0
+    revision-id: 2
+    enchants:
+      depth_strider: 2.0
+    hide-enchants: true
+    lore:
+    - '&7Move even faster within water!'
 GOLDEN_SKULL4:
   base:
     material: PLAYER_HEAD
