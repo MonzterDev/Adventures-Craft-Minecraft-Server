@@ -37,6 +37,16 @@ BONE_FRAGMENT:
     lore:
     - '&fFragments from the Undead!'
     revision-id: 2
+DIRTY_SAND:
+  base:
+    material: BROWN_DYE
+    name: <tier-color-cleaned>Dirty Sand
+    unbreakable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-repairing: true
+    tier: COMMON
+    revision-id: 2
 ALPHA_SOUL:
   base:
     material: BLAZE_POWDER
@@ -209,6 +219,14 @@ ENCHANTED_COBBLESTONE:
     tier: RARE
     disable-interaction: true
     revision-id: 2
+COAL_SHARD:
+  base:
+    material: BLACK_DYE
+    name: <tier-color-cleaned>Coal Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_COAL:
   base:
     material: COAL
@@ -220,6 +238,14 @@ ENCHANTED_COAL:
     disable-smelting: true
     tier: RARE
     revision-id: 2
+IRON_SHARD:
+  base:
+    material: WHITE_DYE
+    name: <tier-color-cleaned>Iron Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_IRON:
   base:
     material: IRON_INGOT
@@ -230,6 +256,14 @@ ENCHANTED_IRON:
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
+GOLD_SHARD:
+  base:
+    material: YELLOW_DYE
+    name: <tier-color-cleaned>Gold Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
     revision-id: 2
 ENCHANTED_GOLD:
   base:
@@ -264,6 +298,14 @@ ENCHANTED_LAPIS:
     disable-smelting: true
     tier: RARE
     revision-id: 2
+DIAMOND_SHARD:
+  base:
+    material: LIGHT_BLUE_DYE
+    name: <tier-color-cleaned>Diamond Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_DIAMOND:
   base:
     material: DIAMOND
@@ -274,6 +316,14 @@ ENCHANTED_DIAMOND:
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
+EMERALD_SHARD:
+  base:
+    material: LIME_DYE
+    name: <tier-color-cleaned>Emerald Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
     revision-id: 2
 ENCHANTED_EMERALD:
   base:
@@ -388,6 +438,20 @@ ENCHANTED_BLAZE_ROD:
       unbreaking: 5
     hide-enchants: true
     name: <tier-color-cleaned>Enchanted Blaze Rod
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    revision-id: 2
+ENCHANTED_SCUTE:
+  base:
+    material: SCUTE
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    name: <tier-color-cleaned>Enchanted Scute
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true

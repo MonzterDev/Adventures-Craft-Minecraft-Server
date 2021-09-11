@@ -17,15 +17,11 @@ PILLAGER1:
     PreventTransformation: true
   Equipment:
   - crossbow:0
-  AIGoalSelectors:
-  - 0 clear
-  - 1 randomlookaround
-  - 3 randomstroll
   AITargetSelectors:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=5;ignoreArmor=false} @target ~onAttack
+  - damage{amount=15;ignoreArmor=false} @target ~onAttack
   - skill{s=PillagerAgro8A} ~onTimer:20
   - skill{s=PillagerAgro8B} ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
@@ -56,7 +52,7 @@ VINDICATOR1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=20;ignoreArmor=false} @target ~onAttack
+  - damage{amount=10;ignoreArmor=false} @target ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -115,7 +111,7 @@ VEX1:
   # - skill{s=Agro8A} ~onTimer:20
   # - skill{s=Agro8B} ~onTimer:20
 
-# PASIVES
+# WATER AREA
 
 DOLPHIN1:
   Type: DOLPHIN
@@ -143,6 +139,52 @@ TURTLE2:
   Skills:
   - skill{s=HPBAR} @self ~onDamaged
 
+DROWNED1:
+  Type: DROWNED
+  Display: '&7[&fLVL 5&7] &cDrowned'
+  Health: 500
+  Faction: Cavern
+  Equipment:
+  - TRIDENT:0
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 50
+    MovementSpeed: 0.28
+    FollowRange: 7
+    Collidable: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  Drops:
+  - EXP 15 100%
+  AITargetSelectors:
+  - 0 players
+  - 1 attacker
+  Skills:
+  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=DROWNED_CURE} ~onInteract
+  - skill{s=RangedAgro8A} ~onTimer:20
+  - skill{s=RangedAgro8B} ~onTimer:20
+
+WANDERING_TRADER1:
+  Type: WANDERING_TRADER
+  Display: '&aWandering Trader'
+  Health: 99999
+  Faction: Cavern
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    MaxCombatDistance: 1
+    MovementSpeed: 0.28
+    Collidable: true
+  Skills:
+  - skill{s=WANDERING_TRADER_TRADE} ~onInteract
+  - skill{s=WANDERING_TRADER_LEAVE;delay=1000} ~onSpawn
+  - setvariable{var=caster.rng;value="<random.1-5>";type=INTEGER} @self ~onSpawn
+  - message{m="<caster.var.rng>"} @PIR{r=20} ~onTimer:20
 # VEX1:
 #   Type: ZOMBIE
 #   Display: '&cAlpha Soul'

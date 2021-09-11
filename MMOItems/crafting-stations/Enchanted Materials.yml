@@ -130,6 +130,14 @@ recipes:
     ingredients:
     - vanilla{type=END_STONE,amount=288}
     conditions: []
+  ENCHANTED_SCUTE:
+    output:
+      type: MATERIAL
+      id: ENCHANTED_SCUTE
+      amount: 1
+    ingredients:
+    - vanilla{type=SCUTE,amount=288}
+    conditions: []
   ENCHANTED_BLAZE_ROD:
     output:
       type: MATERIAL
@@ -585,6 +593,14 @@ recipes:
       amount: 1
     ingredients:
     - vanilla{type=ROSE_BUSH,amount=288}
+    conditions: []
+  ENCHANTED_FISH:
+    output:
+      type: MATERIAL
+      id: ENCHANTED_FISH
+      amount: 1
+    ingredients:
+    - vanilla{type=COD,amount=288}
     conditions: []
   ENCHANTED_PUFFERFISH:
     output:

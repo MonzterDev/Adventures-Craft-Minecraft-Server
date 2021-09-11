@@ -24,6 +24,45 @@ recipes:
       type: CONSUMABLE
       id: BALLOON2
     ingredients:
-    - vanilla{type=SAND,amount=64}
+    - mmoitem{type=CONSUMABLE,id=BALLOON,amount=1}
+    - vanilla{type=SAND,amount=32}
     - vanilla{type=COAL,amount=32}
+    conditions: []
+  TURTLE_HELMET2:
+    output:
+      type: ARMOR
+      id: TURTLE_HELMET2
+    ingredients:
+    - vanilla{type=SCUTE,amount=320}
+    conditions: []
+  TURTLE_HELMET3:
+    output:
+      type: ARMOR
+      id: TURTLE_HELMET3
+    ingredients:
+    - mmoitem{type=ARMOR,id=TURTLE_HELMET2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SCUTE,amount=5}
+    conditions: []
+  TURTLE_HELMET4:
+    output:
+      type: ARMOR
+      id: TURTLE_HELMET4
+    ingredients:
+    - mmoitem{type=ARMOR,id=TURTLE_HELMET3,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SCUTE,amount=15}
+    conditions: []
+  DOLPHIN_BOOTS2:
+    output:
+      type: ARMOR
+      id: DOLPHIN_BOOTS2
+    ingredients:
+    - vanilla{type=COD,amount=256}
+    conditions: []
+  DOLPHIN_BOOTS3:
+    output:
+      type: ARMOR
+      id: DOLPHIN_BOOTS3
+    ingredients:
+    - mmoitem{type=ARMOR,id=DOLPHIN_BOOTS2,amount=1}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_FISH,amount=8}
     conditions: []
