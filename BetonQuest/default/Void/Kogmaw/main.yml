@@ -1,59 +1,53 @@
 npcs:
   '172': Kogmaw
 variables:
-    quest_name1: "Ankle Biters"
-    quest_objective1: "Slithering through the entire Maze, you'll come across many of these pesky ankle biters known as &cVoid Monitors&f! You'll need to &eeliminate 25 of them &fbefore they cause you more trouble!"
-    quest_reward1-1: "&d300 EXP"
-    quest_reward1-2: "&d300 Slayer EXP"
-    quest_reward1-3: "§5300 Void Reputation"
-    quest_reward1-4: "&e250 Coins"
-    quest_objective_journal1: "&0Eliminate 25 &cVoid Monitors &0in the Maze!"
-    quest_complete1: "&0Your ankles should feel much better while strolling through the Maze!"
+    QUESTER_NAME: "KOGMAW"
 
-    quest_name2: "Button Pusher"
-    quest_objective2: "Spread throughout the Maze are an assortment of buttons. Pushing a button will give you a temporary buff, helping ease your journey through the Maze. Go search through the entire Maze and press each color, there is a total of 4 unique buttons!"
-    quest_reward2-1: "&d250 EXP"
-    quest_reward2-2: "&d250 Slayer EXP"
-    quest_reward2-3: "§5250 Void Reputation"
-    quest_reward2-4: "&e150 Coins"
-    quest_objective_journal2: "&0Spread throughout the Maze are an assortment of buttons. Pushing a button will give you a temporary buff, helping ease your journey through the Maze. Go search through the entire Maze and press each color, &0there is a total of 4 unique buttons!"
-    quest_complete2: "&0Having the knowledge of these boosting buttons can really make your Maze experience much easier!"
+    QUEST1_NAME: "Ankle Biters"
+    QUEST1_ID: "ANKLE_BITERS"
+    QUEST1_OBJ_MESSAGE: "Slithering through the entire Maze, you'll come across many of these pesky ankle biters known as &cVoid Monitors&f! You'll need to &aeliminate &f25 of them before they cause you more trouble!"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &025 &cVoid Monitors &0within the &5Void Maze"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:25% &cVoid Monitors &fwithin the &5Void Maze'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:ENDERMITE_SPAWN_EGG ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name3: "Champion Brawls"
-    quest_objective3: "&cVoid Champions &fare ready to brawl with anyone they come close to, and they are powerful! These powerful brawlers can appear different each time you see them, but they're always a champion. Lets see if you're powerful enough to &evanquish 50 of them&f!"
-    quest_reward3-1: "&d500 EXP"
-    quest_reward3-2: "&d500 Slayer EXP"
-    quest_reward3-3: "§5500 Void Reputation"
-    quest_reward3-4: "&e450 Coins"
-    quest_objective_journal3: "&cVoid Champions &0are ready to brawl with anyone they come close to, and they are powerful! These powerful brawlers can appear different each time you see them, but they're always a champion. Lets see if you're powerful &0enough to &evanquish 50 of them&0!"
-    quest_complete3: "&0Clearly you're a champion yourself! Those champions are no joke, but also hold something pretty powerful inside of them!"
+    QUEST2_NAME: "Magical Buttons"
+    QUEST2_ID: "MAGICAL_BUTTONS"
+    QUEST2_OBJ_MESSAGE: "Spread throughout the Maze are an assortment of buttons. Pushing a button will give you a temporary buff, helping ease your journey through the Maze. Go search through the entire Maze and &apush &feach color, there is a total of 4 unique buttons!"
+    QUEST2_NOTIFY_MESSAGE_1: "&aPush &fan &aDark Oak Button"
+    QUEST2_NOTIFY_MESSAGE_2: "&aPush &fan &aAcacia Button"
+    QUEST2_NOTIFY_MESSAGE_3: "&aPush &fan &aWarped Button"
+    QUEST2_NOTIFY_MESSAGE_4: "&aPush &fan &aCrimson Button"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Push &04 unique &2Buttons &0found througout the &5Void Maze"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:CRIMSON_BUTTON ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name4: "Mega Boom"
-    quest_objective4: "You've probably heard explosions constantly while running through the Maze...These are caused by the massively annoying &cVoid Mega Boomers&f! These guys are so pathetic, their own explosions can actually harm themselves! You'll need to &eslay 25 of them&f, but be quick or they'll do it themselves!"
-    quest_reward4-1: "&d500 EXP"
-    quest_reward4-2: "&d500 Slayer EXP"
-    quest_reward4-3: "§5500 Void Reputation"
-    quest_reward4-4: "&e450 Coins"
-    quest_reward4-5: "&9Darkness Extinguisher"
-    quest_objective_journal4: "&0You've probably heard explosions constantly while running through the Maze...These are caused by the massively annoying &cVoid Mega Boomers&0! These guys are so pathetic, their own explosions can actually harm &0themselves! You'll need to &eslay 25 of them&0, but be quick or they'll do it themselves!"
-    quest_complete4: "&0You got a pretty big brain for being able to eliminate those &cVoid Mega Boomers&0!"
+    QUEST3_NAME: "Champion Brawl"
+    QUEST3_ID: "CHAMPION_BRAWL"
+    QUEST3_OBJ_MESSAGE: "&cVoid Champions &fare ready to brawl with anyone they come close to, and they are powerful! These powerful brawlers can appear different each time you see them, but they're always a champion. Lets see if you're powerful enough to &aslay &f50 of them&f!"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Slay &050 &cVoid Champions &0within the &5Void Maze"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aSlay &f%point.$QUEST3_ID$.left\:50% &cVoid Champions &fwithin the &5Void Maze'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:NETHERITE_SWORD ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name5: "Ascending"
-    quest_objective5: "Each of the creatures within the Maze hold onto an incredibly valuable tool known as an &5Unstable Warp&f. The tougher the creature, the higher the chance of receiving one! Find one and I'll teach you how to improve its abilities."
-    quest_reward5-1: "&d750 EXP"
-    quest_reward5-2: "&d750 Slayer EXP"
-    quest_reward5-3: "§5750 Void Reputation"
-    quest_reward5-4: "&e700 Coins"
-    quest_reward5-5: "&99x Stabilizer"
-    quest_objective_journal5: "&0Each of the creatures within the Maze hold onto an incredibly valuable tool known as an &5Unstable Warp&0. The tougher the creature, the higher the chance of receiving one! Find one and I'll teach you how to &0improve its abilities."
-    quest_complete5: "&0That &5Unstable Warp &0you found is incredibly useful! You can now improve its ability by forging it with &99 Stabilizers &0within the &5Void Shop&0! Once forged into a &eStable Warp&0, you'll have a 100% chance of creating a &0portal to the &5Void Abyss&0!"
+    QUEST4_NAME: "Mega Boom"
+    QUEST4_ID: "MEGA_BOOM"
+    QUEST4_OBJ_MESSAGE: "You've probably heard explosions constantly while running through the Maze... These are caused by the massively annoying &cVoid Mega Boomers&f! These guys are so pathetic, their own explosions can actually harm themselves! You'll need to &aslay &f25 of them&f, but be quick or they'll do it themselves!"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Slay &025 &cVoid Mega Boomers &0within the &5Void Maze"
+    QUEST4_MSG_REPEAT: '&a$QUEST4_NAME$&f: &aSlay &f%point.$QUEST4_ID$.left\:25% &cVoid Mega Boomers &fwithin the &5Void Maze'
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:GUNPOWDER ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name6: "Evil Enchantress"
-    quest_objective6: "Create a portal to the &5Void Abyss &fusing your &5Unstable Warp &for &eStable Warp&f! You can then enter the portal and must defeat the evil &cVoid Enchantress&f!"
-    quest_reward6-1: "&d1,000 EXP"
-    quest_reward6-2: "&d1,000 Slayer EXP"
-    quest_reward6-3: "§51,000 Void Reputation"
-    quest_reward6-4: "&e750 Coins"
-    quest_reward6-5: "&eVoid Star"
-    quest_objective_journal6: "&0Create a portal to the &5Void Abyss &0using your &5Unstable Warp &0or &eStable Warp&0! You can then enter the portal and must defeat the evil &cVoid Enchantress&0!"
-    quest_complete6: "&0You defeated the &5Void Enchantress&0!?! You're more of an adventurer than I have ever seen! Continue your battle against here and you'll have a chance of receiving some magical rewards!"
+    QUEST5_NAME: "Portal Preparation"
+    QUEST5_ID: "PORTAL_PREPARATION"
+    QUEST5_OBJ_MESSAGE: "Each of the creatures within the Maze hold onto an incredibly valuable tool known as an &5Unstable Warp&f. The tougher the creature, the higher the chances of receiving one are! Find one and I'll teach you how to improve its abilities."
+    QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Slay &cenemies &0within the &5Void Maze &0until you find an &5Unstable Warp"
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:ENDER_EYE ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Warp Stabilizer"
+    QUEST6_ID: "WARP_STABILIZER"
+    QUEST6_OBJ_MESSAGE: "&fThat &5Unstable Warp &fyou found is incredibly useful! Claim your rewards from the &e$QUEST5_NAME$ &fquest to obtain 9 &9Stabalizers&f. You can now combine those &9Stabalizers &fwith your &5Unstable Warp &fwithin the &5Void Shop &fto guarentee we create a portal to the &5Void Abyss&f!"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Claim &0your rewards from the &5$QUEST5_NAME$ &0quest to obtain 9 &9Stabalizers&0. Combine the &9Stabalizers &0with the &5Unstable Warp &0within the &5Void Shop&0."
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:ENDER_EYE ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST7_NAME: "Portal Opener"
+    QUEST7_ID: "PORTAL_OPENER"
+    QUEST7_OBJ_MESSAGE: "Create a portal to the &5Void Abyss &fusing your &eStable Warp&f! You can then enter the portal and defeat the evil &cVoid Enchantress&f!"
+    QUEST7_JOU_MESSAGE: "&2$QUEST7_NAME$: \n&2Use &0the &eStable Warp &0to open a portal to the &5Void Abyss"
+    QUEST7_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ io:advancement frame:challenge icon:minecraft:ENDER_EYE ^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
