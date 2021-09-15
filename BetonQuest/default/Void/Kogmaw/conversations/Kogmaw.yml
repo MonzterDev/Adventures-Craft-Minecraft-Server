@@ -3,51 +3,35 @@ first: greeting
 NPC_options:
   greeting:
     text: Oh &a%player%&7, you've made it far into the &5Void&7! You're now in the trickest part of the &5Void&7, the &5Void Maze&7! 
-    pointers: hey, shop, quest, bye
-#Selected from quest1 dialogue, which will start his first quest
+    pointers: hey, quest, bye
   town_info:
     text: Endlessly you can search for the exit, but nobody has ever found it. During your journey towards the exit you'll need to fight through some very curious enemies. I wonder if you truly have what it takes to finally reach the exit..? 
     pointers: wow, bye
-#This is the Quest offering menu basically
   quests:
     text: Don't get too lost within the Maze!
     pointers: quest1, quest_decline
-    conditions: '!q1_part1'        
-#Selected from quest1 dialogue, which will start his first quest
+    
   quest1accept:
-    text: Get out there and start slaying some of those ankle biters!
+    text: Get out there and start slaying those ankle biters!
 
-#This is how a player responds and what options they have
 player_options:
-#Greeting > Hey
   hey:
     text: Hey, what can I do here?
     pointers: town_info
-#Greeting > Quest    
-  shop:
-    text: Let me see the &eVoid Shop&f!
-    events: 'ShopOpen'    
-#Greeting > Quest    
   quest:
     text: Do you have any Quests?
-    pointers: quests    
-    conditions: '!q1_part1'        
-#Greeting > Bye    
+    pointers: quests
+    conditions: '!QUEST1_STARTED'        
   bye:
     text: I need to go, sorry.
     
-#Town_Info > wow 
   wow:
-    text: I will find the exit!
+    text: Wow, that sounds intriguing!
     pointers: greeting
 
-#quests > quest decline, when a reject taking a quest
   quest_decline:
     text: Actually, I don't want to do your quests!
-#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
   quest1:
-    text: Take "$quest_name1$" Quest
-    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
     pointers: quest1accept
-    conditions: '!q1_part1'
-

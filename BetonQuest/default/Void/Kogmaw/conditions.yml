@@ -1,29 +1,29 @@
-q1_part1: tag q1_part1
-q1_completed: tag q1_completed
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+ANKLE_BITERS: point $QUEST1_ID$ 24
 
-q2_part1: tag q2_part1
-q2_completed: tag q2_completed
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_1_COMPLETED: tag $QUEST2_ID$_1_COMPLETED
+QUEST2_2_COMPLETED: tag $QUEST2_ID$_2_COMPLETED
+QUEST2_3_COMPLETED: tag $QUEST2_ID$_3_COMPLETED
+QUEST2_4_COMPLETED: tag $QUEST2_ID$_4_COMPLETED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
 
-q3_part1: tag q3_part1
-q3_completed: tag q3_completed
+QUEST3_STARTED: tag $QUEST3_ID$_STARTED
+QUEST3_COMPLETED: tag $QUEST3_ID$_COMPLETED
+CHAMPION_BRAWL: point $QUEST3_ID$ 49
 
-q4_part1: tag q4_part1
-q4_completed: tag q4_completed
-q4_rewards_unclaimed: tag q4_rewards_unclaimed
-q4_rewards_claimed: tag q4_rewards_claimed
+QUEST4_STARTED: tag $QUEST4_ID$_STARTED
+QUEST4_COMPLETED: tag $QUEST4_ID$_COMPLETED
+MEGA_BOOM: point $QUEST4_ID$ 24
 
-q5_part1: tag q5_part1
-q5_completed: tag q5_completed
-q5_rewards_unclaimed: tag q5_rewards_unclaimed
-q5_rewards_claimed: tag q5_rewards_claimed
+QUEST5_STARTED: tag $QUEST5_ID$_STARTED
+QUEST5_COMPLETED: tag $QUEST5_ID$_COMPLETED
+PORTAL_PREPARATION: mmoitem CONSUMABLE UNSTABLE_WARP4
 
-q6_part1: tag q6_part1
-q6_completed: tag q6_completed
-q6_rewards_unclaimed: tag q6_rewards_unclaimed
-q6_rewards_claimed: tag q6_rewards_claimed
+QUEST6_STARTED: tag $QUEST6_ID$_STARTED
+QUEST6_COMPLETED: tag $QUEST6_ID$_COMPLETED
+WARP_STABILIZER: mmoitem CONSUMABLE STABLE_WARP5
 
-empty0: empty 0 equal
-
-ButtonsPressed: point ButtonsPressed 4
-EnchantressKill: point bosses.VOID_ENCHANTRESS 1
-UnstableWarp: item UnstableWarp:1
+QUEST7_STARTED: tag $QUEST7_ID$_STARTED
+QUEST7_COMPLETED: tag $QUEST7_ID$_COMPLETED
