@@ -4,11 +4,9 @@ GOD:
     attack-damage: 999999.0
     ability:
       ability1:
-        type: BLIZZARD
-        duration: 5.0
-        damage: 1000.0
-        cooldown: 0.0
+        type: REAPER_CORRUPTION_PLAYER_
         mode: RIGHT_CLICK
+        damage: 20.0
     revision-id: 2
     unbreakable: true
 WOODENSWORD:
@@ -71,7 +69,6 @@ SILVER_SWORD:
       workbench: true
       max: 10
     faction-damage-undead: 5.0
-    durability: 1.0
     revision-id: 2
     custom-model-data: 101.0
 BASIC_SWORD:
@@ -103,13 +100,13 @@ BONE_SWORD3:
     - Unused
     revision-id: 2
     custom-model-data: 102.0
-BONE_SWORD5:
+BONE_SWORD4:
   base:
     material: GOLDEN_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
-    tier: EXOTIC
+    tier: LEGENDARY
     name: <tier-color-cleaned>Bone Sword
     faction-damage-undead: 75.0
     attack-damage: 125.0
@@ -120,7 +117,6 @@ BONE_SWORD5:
     gem-sockets:
     - Unused
     - Unused
-    durability: 1.0
     revision-id: 2
     custom-model-data: 1.0
 MAGMA_BLADE4:

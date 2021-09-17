@@ -193,77 +193,6 @@ DOLPHIN_BOOTS3:
     hide-enchants: true
     lore:
     - '&7Move even faster within water!'
-GOLDEN_SKULL4:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFkMDQ3NmU4NjcxNjk2YWYzYTg5NDlhZmEyYTgxNGI5YmRkZTY1ZWNjZDFhOGI1OTNhZWVmZjVhMDMxOGQifX19
-      uuid: c7a7e131-0b05-47c7-9cb1-dd6350916a6b
-    unbreakable: true
-    tier: LEGENDARY
-    faction-damage-undead: 10.0
-    disable-smelting: true
-    disable-interaction: false
-    max-health: 35.0
-    dodge-rating: 5.0
-    name: <tier-color-cleaned>Golden Skull
-    lore:
-    - '&fExtremely valuable Skull'
-    - '&fripped from a rich Skeleton!'
-    ability:
-      ability1:
-        type: WEAKEN_TARGET
-        mode: WHEN_HIT
-        cooldown: 25.0
-        duration: 5.0
-        extra-damage: 50.0
-    defense: 20.0
-    revision-id: 2
-STEEL_HELMET:
-  base:
-    material: IRON_HELMET
-    name: <tier-color-cleaned>Steel Helm
-    lore: []
-    tier: COMMON
-    set: STEEL
-    unbreakable: true
-    max-health: 10.0
-    disable-interaction: false
-    defense: 3.0
-    revision-id: 2
-STEEL_CHESTPLATE:
-  base:
-    material: IRON_CHESTPLATE
-    name: <tier-color-cleaned>Steel Chestplate
-    lore: []
-    tier: COMMON
-    set: STEEL
-    max-health: 20.0
-    unbreakable: true
-    defense: 9.0
-    revision-id: 2
-STEEL_LEGGINGS:
-  base:
-    material: IRON_LEGGINGS
-    name: <tier-color-cleaned>Steel Leggings
-    lore: []
-    tier: COMMON
-    set: STEEL
-    max-health: 20.0
-    unbreakable: true
-    defense: 7.5
-    revision-id: 2
-STEEL_BOOTS:
-  base:
-    material: IRON_BOOTS
-    name: <tier-color-cleaned>Steel Boots
-    lore: []
-    tier: COMMON
-    set: STEEL
-    unbreakable: true
-    max-health: 10.0
-    defense: 3.0
-    revision-id: 2
 BONE_SKULL2:
   base:
     material: PLAYER_HEAD
@@ -313,29 +242,6 @@ BONE_FEET2:
     undead-damage: 5.0
     max-health: 20.0
     defense: 5.0
-    revision-id: 2
-BONE_CHESTPLATE3:
-  base:
-    material: GOLDEN_CHESTPLATE
-    unbreakable: true
-    tier: RARE
-    undead-damage: 20.0
-    disable-repairing: false
-    disable-smelting: true
-    max-health: 40.0
-    name: <tier-color-cleaned>Bone Chestplate
-    defense: 20.0
-    revision-id: 2
-BONE_FEET3:
-  base:
-    material: GOLDEN_BOOTS
-    disable-smelting: true
-    name: <tier-color-cleaned>Bone Feet
-    unbreakable: true
-    tier: RARE
-    undead-damage: 10
-    max-health: 30.0
-    defense: 7.5
     revision-id: 2
 SKELETON_SKULL3:
   base:
