@@ -57,18 +57,18 @@ DAGGER:
         # - '{range}&8- &7Lvl Range: &e#range#'
         # - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-HAMMER:
-    display: IRON_AXE
-    name: 'Hammer'
-    unident-item:
-        name: '&f#prefix#Unidentified Hammer'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
+# HAMMER:
+#     display: IRON_AXE
+#     name: 'Hammer'
+#     unident-item:
+#         name: '&f#prefix#Unidentified Hammer'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
 # GAUNTLET:
     # display: IRON_HORSE_ARMOR
@@ -83,18 +83,18 @@ HAMMER:
         # - '{range}&8- &7Lvl Range: &e#range#'
         # - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-WHIP:
-    display: LEAD
-    name: 'Whip'
-    unident-item:
-        name: '&f#prefix#Unidentified Whip'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
+# WHIP:
+#     display: LEAD
+#     name: 'Whip'
+#     unident-item:
+#         name: '&f#prefix#Unidentified Whip'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
 BLOCK:
     display: STONE
@@ -264,32 +264,32 @@ CONSUMABLE:
         - '{tier}&8Item Info:'
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
-STEW:
-    display: MUSHROOM_STEW
-    name: 'Stew'
-    parent: 'CONSUMABLE'
-    unident-item:
-        name: '&f#prefix#Unidentified Totem'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-TOTEM:
-    display: APPLE
-    name: 'Totem'
-    parent: 'CONSUMABLE'
-    unident-item:
-        name: '&f#prefix#Unidentified Totem'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
+# STEW:
+#     display: MUSHROOM_STEW
+#     name: 'Stew'
+#     parent: 'CONSUMABLE'
+#     unident-item:
+#         name: '&f#prefix#Unidentified Totem'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
+# TOTEM:
+#     display: APPLE
+#     name: 'Totem'
+#     parent: 'CONSUMABLE'
+#     unident-item:
+#         name: '&f#prefix#Unidentified Totem'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
 MISCELLANEOUS:
     display: WATER_BUCKET
@@ -617,33 +617,33 @@ MATERIAL:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-ENCHANTMENT:
-    display: BOOK
-    name: 'Enchantment'
-    parent: CONSUMABLE   
-    unident-item:    
-        name: '&f#prefix#Unidentified Misc Item'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
+# ENCHANTMENT:
+#     display: BOOK
+#     name: 'Enchantment'
+#     parent: CONSUMABLE   
+#     unident-item:    
+#         name: '&f#prefix#Unidentified Misc Item'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-COMPANION:
-    display: ZOMBIE_HEAD
-    name: 'Companion'
-    parent: MISCELLANEOUS   
-    unident-item:    
-        name: '&f#prefix#Unidentified Misc Item'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
+# COMPANION:
+#     display: ZOMBIE_HEAD
+#     name: 'Companion'
+#     parent: MISCELLANEOUS   
+#     unident-item:    
+#         name: '&f#prefix#Unidentified Misc Item'
+#         lore:
+#         - '&7This item is unidentified. I must'
+#         - '&7find a way to identify it!'
+#         - '{tier}'
+#         - '{tier}&8Item Info:'
+#         - '{range}&8- &7Lvl Range: &e#range#'
+#         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
 MOUNT:
     display: PLAYER_HEAD

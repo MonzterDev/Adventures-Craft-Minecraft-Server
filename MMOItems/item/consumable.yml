@@ -65,24 +65,6 @@ JOY_SOUP4:
     restore-food: 0.0
     restore-saturation: 0.0
     revision-id: 2
-LARGE_MANA_POTION:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg0NTlmM2I2NWIyM2NmYThjOWIxNDQzMjViOWJhODE0MDdiZTkzODJjZDg1OTkyZWY5NzljZjBlNzgzZjYifX19
-      uuid: 9d127b24-85df-4eab-b9fd-f419da0f2e2b
-    name: <tier-color-cleaned>Large Mana Potion
-    restore-mana:
-      base: 35.0
-      spread: 0.041666666666666664
-      max-spread: 0.125
-    item-cooldown: 15.0
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
-    revision-id: 2
 SOUL4:
   base:
     material: PLAYER_HEAD
@@ -192,7 +174,7 @@ DRYAD_SUMMONER2:
         delay: 0.0
         op: true
     max-consume: 1.0
-MAGICAL_ESSENSE2:
+MAGICAL_ESSENCE2:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -202,9 +184,9 @@ MAGICAL_ESSENSE2:
     restore-mana: 25.0
     tier: UNCOMMON
     lore: []
-    name: <tier-color-cleaned>Magical Essense
+    name: <tier-color-cleaned>Magical Essence
     revision-id: 2
-MAGICAL_ESSENSE3:
+MAGICAL_ESSENCE3:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -214,42 +196,7 @@ MAGICAL_ESSENSE3:
     restore-mana: 50.0
     tier: RARE
     lore: []
-    name: <tier-color-cleaned>Magical Essense
-    revision-id: 2
-MINING_BOOSTEROP3:
-  base:
-    material: GLASS_BOTTLE
-    name: <tier-color-cleaned>Mining Skill EXP Booster
-    lore:
-    - §fBoosts §9Mining Skill §fEXP
-    - §fby §9100% §ffor §910 mins§f.
-    max-consume: 1.0
-    tier: RARE
-    commands:
-      cmd0:
-        format: mmocore booster create mining 1 600 %player%
-        delay: 0.0
-        op: true
-    disable-interaction: false
-    revision-id: 2
-FORAGING_BOOSTER2:
-  base:
-    material: GLASS_BOTTLE
-    name: <tier-color-cleaned>Foraging Skill EXP Booster
-    lore:
-    - §fBoosts §aForaging Skill §fEXP
-    - §fby §a20% §ffor §a10 mins§f.
-    max-consume: 1.0
-    tier: UNCOMMON
-    disable-crafting: true
-    disable-smelting: true
-    disable-enchanting: true
-    disable-repairing: true
-    commands:
-      cmd0:
-        format: mmocore booster create foraging .2 600 %player%
-        delay: 0.0
-        op: true
+    name: <tier-color-cleaned>Magical Essence
     revision-id: 2
 UNDEAD_FLESH3:
   base:
@@ -260,7 +207,7 @@ UNDEAD_FLESH3:
     item-cooldown: 60.0
     name: <tier-color-cleaned>Undead Flesh
     lore:
-    - §cHeals §ffor 100 §cHP§f, §fand §cincreases
+    - §cHeals §ffor 150 §cHP§f, §fand §cincreases
     - §cdamage 50x §ffor 5 seconds!
     effects:
       INCREASE_DAMAGE:
@@ -989,33 +936,4 @@ STABLE_WARP5:
         type: PORTAL_SUMMON
         mode: RIGHT_CLICK
         cooldown: 2.0
-    revision-id: 2
-ENEMY_SCANNER:
-  base:
-    material: CLOCK
-    name: <tier-color-cleaned>Enemy Scanner
-    disable-repairing: true
-    unstackable: true
-    disable-enchanting: true
-    disable-smelting: true
-    disable-crafting: true
-    disable-interaction: true
-    hide-enchants: true
-    enchants:
-      unbreaking: 5
-    tier: COMMON
-    sounds:
-      on-consume:
-        sound: entity.illusioner.cast_spell
-        volume: 1.0
-        pitch: 1.0
-    lore:
-    - §7Scan an enemy with this to gain
-    - §7more detailed information about them!
-    item-cooldown: 3.0
-    ability:
-      ability1:
-        type: ENEMY_SCANNER
-        mode: RIGHT_CLICK
-        cooldown: 3.0
     revision-id: 2

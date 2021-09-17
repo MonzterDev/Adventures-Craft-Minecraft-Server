@@ -10,16 +10,6 @@ STEEL_DAGGER:
     durability: 7.0
     revision-id: 2
     custom-model-data: 5.0
-BONE_DAGGER3:
-  base:
-    material: STONE_SWORD
-    attack-damage: 50.0
-    undead-damage: 20
-    tier: RARE
-    name: <tier-color-cleaned>Bone Dagger
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
 STEAK2:
   base:
     material: WOODEN_SWORD
@@ -98,28 +88,58 @@ DRACULA_DAGGER3:
     durability: 4.0
     revision-id: 2
     custom-model-data: 2.0
-PANDA_CLAW2:
+REAPER_BLADE4:
   base:
-    material: END_ROD
-    name: <tier-color-cleaned>Panda Claw
-    unbreakable: true
-    tier: UNCOMMON
-    attack-damage: 55.0
-    critical-strike-power: 15.0
+    material: STONE_SWORD
     disable-crafting: true
-    disable-interaction: true
+    unbreakable: true
+    tier: LEGENDARY
+    name: <tier-color-cleaned>Reaper Blade
+    faction-damage-undead: 50.0
+    attack-damage: 120.0
+    gem-sockets:
+    - Unused
+    - Unused
     revision-id: 2
-PANDA_CLAW3:
+    custom-model-data: 102.0
+    ability:
+      ability1:
+        type: REAPER_CORRUPTION_PLAYER
+        mode: RIGHT_CLICK
+        damage: 25.0
+        cooldown: 7.5
+        mana: 50.0
+    lore:
+    - '&aHeal &7yourself for &a1% &7of your &amax HP'
+    - '&7and &cdamage &7nearby &cenemies &7within'
+    - '&a3 blocks &7every &asecond &7for &a3 seconds&7!'
+REAPER_BLADE5:
   base:
-    material: END_ROD
-    name: <tier-color-cleaned>Panda Claw
-    unbreakable: true
-    tier: RARE
-    attack-damage: 75.0
-    critical-strike-power: 25.0
+    material: STONE_SWORD
     disable-crafting: true
-    disable-interaction: true
+    unbreakable: true
+    tier: EXOTIC
+    name: <tier-color-cleaned>Reaper Blade
+    faction-damage-undead: 70.0
+    attack-damage: 150.0
+    critical-strike-power: 10.0
+    gem-sockets:
+    - Unused
+    - Unused
+    - Unused
     revision-id: 2
+    custom-model-data: 103.0
+    ability:
+      ability1:
+        type: REAPER_CORRUPTION_PLAYER_B
+        mode: RIGHT_CLICK
+        damage: 50.0
+        cooldown: 10
+        mana: 75.0
+    lore:
+    - '&aHeal &7yourself for &a2% &7of your &amax HP'
+    - '&7and &cdamage &7nearby &cenemies &7within'
+    - '&a5 blocks &7every &asecond &7for &a5 seconds&7!'
 EMERALD_DAGGER2:
   base:
     material: IRON_SWORD
