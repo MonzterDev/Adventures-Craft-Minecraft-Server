@@ -1,17 +1,58 @@
-UNDEAD_STAFF2:
+SEED_STAFF3:
   base:
-    material: STONE_HOE
-    name: <tier-color-cleaned>Undead Staff
-    attack-damage: 45.0
+    material: WOODEN_HOE
+    disable-crafting: true
+    attack-damage: 50.0
+    range: 5.0
+    tier: RARE
+    name: <tier-color-cleaned>Seed Staff
+    ability:
+      ability1:
+        type: SEED_SHOT_PLAYER
+        mode: RIGHT_CLICK
+        mana: 15.0
+        cooldown: 5.0
+        damage: 15
     unbreakable: true
-    faction-damage-undead: 25.0
-    tier: UNCOMMON
-    lore:
-    - §cStuns §7enemy for §c4 seconds§7,
-    - §7with a cooldown of §c10 seconds§7.
-    durability: 2.0
+    gem-sockets:
+    - Unused
+    durability: 1.0
     revision-id: 2
     custom-model-data: 301.0
+WHEAT_STAFF3:
+  base:
+    material: STONE_HOE
+    disable-crafting: true
+    attack-damage: 75.0
+    range: 5.0
+    tier: RARE
+    name: <tier-color-cleaned>Wheat Staff
+    ability:
+      ability1:
+        type: SUPER_SEED_SHOT_PLAYER
+        mode: RIGHT_CLICK
+        mana: 20.0
+        cooldown: 7.5
+        damage: 25
+    unbreakable: true
+    gem-sockets:
+    - Unused
+    revision-id: 2
+    custom-model-data: 303.0
+HARMING_STAFF2:
+  base:
+    material: IRON_HOE
+    name: <tier-color-cleaned>Harming Staff
+    tier: UNCOMMON
+    unbreakable: true
+    max-mana: 15.0
+    range: 5.0
+    attack-damage: 25.0
+    critical-strike-power: 50.0
+    durability: 2.0
+    gem-sockets:
+    - Unused
+    revision-id: 2
 NECROMANCER_STAFF2:
   base:
     material: STONE_HOE
@@ -70,7 +111,7 @@ NECROMANCER_STAFF5:
     ability:
       ability1:
         type: PETSUMMON
-        mode: SHIFT_RIGHT_CLICK
+        mode: RIGHT_CLICK
         mana: 50.0
         cooldown: 5.0
     gem-sockets:
@@ -79,293 +120,6 @@ NECROMANCER_STAFF5:
     durability: 1.0
     revision-id: 2
     custom-model-data: 301.0
-SEED_STAFF3:
-  base:
-    material: WOODEN_HOE
-    disable-crafting: true
-    attack-damage: 50.0
-    range: 5.0
-    tier: RARE
-    name: <tier-color-cleaned>Seed Staff
-    ability:
-      ability1:
-        type: SEEDSHOT
-        mode: SHIFT_RIGHT_CLICK
-        mana: 15.0
-        cooldown: 5.0
-    unbreakable: true
-    lore:
-    - '&7Shoot an explosive seed at'
-    - '&7your foe dealing &c500 damage&7!'
-    gem-sockets:
-    - Unused
-    durability: 1.0
-    revision-id: 2
-    custom-model-data: 301.0
-FARMER_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage: 40.0
-    range: 3.5
-    tier: RARE
-    name: <tier-color-cleaned>Farmer's Staff
-    durability: 1.0
-    unbreakable: true
-    gem-sockets:
-    - Unused
-    revision-id: 2
-SHROOM_STAFF3:
-  base:
-    material: WOODEN_HOE
-    disable-crafting: true
-    attack-damage: 65.0
-    range: 4
-    tier: RARE
-    name: <tier-color-cleaned>Shroom Staff
-    durability: 1.0
-    unbreakable: true
-    gem-sockets:
-    - Unused
-    magic-damage: 15.0
-    ability:
-      ability1:
-        type: CORRUPT
-        mode: SHIFT_RIGHT_CLICK
-        damage: 200.0
-        duration: 3.0
-        mana: 30.0
-    revision-id: 2
-CANE_STAFF3:
-  base:
-    material: IRON_HOE
-    disable-crafting: true
-    attack-damage: 50.0
-    range: 3
-    tier: RARE
-    name: <tier-color-cleaned>Cane Staff
-    durability: 1.0
-    unbreakable: true
-    gem-sockets:
-    - Unused
-    revision-id: 2
-WHEAT_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage: 75.0
-    range: 5.0
-    tier: RARE
-    name: <tier-color-cleaned>Wheat Staff
-    ability:
-      ability1:
-        type: SUPERSEED
-        mode: SHIFT_RIGHT_CLICK
-        mana: 20.0
-        cooldown: 7.5
-    unbreakable: true
-    lore:
-    - '&7Shoot an explosive seed at'
-    - '&7your foe dealing &c1000 damage&7!'
-    gem-sockets:
-    - Unused
-    revision-id: 2
-    custom-model-data: 303.0
-HARMING_STAFF2:
-  base:
-    material: IRON_HOE
-    name: <tier-color-cleaned>Harming Staff
-    tier: UNCOMMON
-    unbreakable: true
-    max-mana: 15.0
-    range: 5.0
-    attack-damage: 25.0
-    critical-strike-power: 50.0
-    durability: 2.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
-CURSED_STAFF5:
-  base:
-    material: GOLDEN_HOE
-    name: <tier-color-cleaned>Cursed Staff
-    unbreakable: true
-    tier: EXOTIC
-    attack-damage: 250.0
-    range: 8.0
-    max-mana: 150.0
-    lore:
-    - §7Call upon the &aUndead Rider
-    - §7to stomp through the enemies
-    - §7dealing &c1,2500 damage &7to each!
-    ability:
-      ability1:
-        type: UNDEAD_RIDER
-        mode: SHIFT_RIGHT_CLICK
-        mana: 50.0
-        cooldown: 5.0
-    gem-sockets:
-    - Unused
-    - Unused
-    revision-id: 2
-LOCKHART_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    range: 3
-    tier: RARE
-    name: <tier-color-cleaned>Lockhart Staff
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
-LOCKHART_STAFF4:
-  base:
-    material: IRON_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    range: 4
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Lockhart Staff
-    unbreakable: true
-    durability: 1.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
-INFECTED_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-undead: 25.0
-    range: 4
-    tier: RARE
-    name: <tier-color-cleaned>Infected Staff
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
-INFECTED_STAFF4:
-  base:
-    material: IRON_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 65
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-undead: 40.0
-    range: 6
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Infected Staff
-    unbreakable: true
-    durability: 1.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
-HEATED_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-hell: 10.0
-    range: 4
-    tier: RARE
-    name: <tier-color-cleaned>Heated Staff
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
-HEATED_STAFF4:
-  base:
-    material: IRON_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 75
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-hell: 15.0
-    range: 5
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Heated Staff
-    unbreakable: true
-    durability: 1.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
-DISTILLED_STAFF3:
-  base:
-    material: STONE_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-void: 20.0
-    range: 4
-    tier: RARE
-    name: <tier-color-cleaned>Distilled Staff
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
-DISTILLED_STAFF4:
-  base:
-    material: IRON_HOE
-    disable-crafting: true
-    attack-damage:
-      base: 80
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-void: 40.0
-    range: 5
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Distilled Staff
-    unbreakable: true
-    durability: 1.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
 KHAZIX_STAFF3:
   base:
     material: GOLDEN_HOE
@@ -398,7 +152,7 @@ KHAZIX_STAFF4:
     ability:
       ability1:
         type: VOID_SPIKEB
-        mode: SHIFT_RIGHT_CLICK
+        mode: RIGHT_CLICK
         mana: 100.0
         cooldown: 10.0
     revision-id: 2

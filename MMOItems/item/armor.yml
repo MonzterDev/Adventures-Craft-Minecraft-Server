@@ -471,10 +471,6 @@ FARMER_HAT:
     movement-speed: 0.02
     disable-interaction: true
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     unstackable: true
     revision-id: 2
 FARMER_SHIRT:
@@ -488,10 +484,6 @@ FARMER_SHIRT:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 FARMER_PANTS:
   base:
@@ -504,10 +496,6 @@ FARMER_PANTS:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 FARMER_SHOES:
   base:
@@ -520,10 +508,6 @@ FARMER_SHOES:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 BEE_WINGS2:
   base:
@@ -541,12 +525,10 @@ BEE_WINGS2:
     defense: 10.0
     ability:
       ability1:
-        type: FLYA
-        mode: SHIFT_RIGHT_CLICK
-        mana: 5.0
-        cooldown: 10.0
-    custom-nbt:
-    - MYTHIC_TYPE BEE_WINGS2
+        type: BEE_FLY_PLAYER
+        mode: SNEAK
+        mana: 15.0
+        cooldown: 15.0
     revision-id: 2
 BEE_WINGS3:
   base:
@@ -564,12 +546,10 @@ BEE_WINGS3:
     defense: 20.0
     ability:
       ability1:
-        type: FLYB
+        type: BEE_FLY_PLAYER_B
         mode: SHIFT_RIGHT_CLICK
-        mana: 15.0
-        cooldown: 10.0
-    custom-nbt:
-    - MYTHIC_TYPE BEE_WINGS3
+        mana: 25.0
+        cooldown: 20.0
     revision-id: 2
 PARROT_CHEST2:
   base:
