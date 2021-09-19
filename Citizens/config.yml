@@ -13,6 +13,7 @@ general:
     profile-url: https://sessionserver.mojang.com/session/minecraft/profile/
   debug-file: ''
   debug-chunk-loads: false
+  reload-warning-enabled: true
 npc:
   chat:
     options:
@@ -21,6 +22,7 @@ npc:
       multiple-targets-format: <target>|, <target>| & <target>| & others
       range: 5
       max-text-range: 500
+      talk-to-npcs: true
     format:
       no-targets: '[<npc>]: <text>'
       with-target-to-bystanders: '[<npc>] -> [<target>]: <text>'
@@ -45,6 +47,7 @@ npc:
       '0': Hi, I'm <npc>!
     waypoints:
       cache-paths: false
+    bossbar-view-range: 64
   limits:
     default-limit: 10
     max-permission-checks: 100
@@ -93,6 +96,7 @@ npc:
     max-talk-cooldown: 5
     min-talk-cooldown: 10
     talk-item: '340'
+    speech-bubble-ticks: 50
   controllable:
     use-boat-controls: true
     max-ground-speed: 0.5
@@ -110,6 +114,7 @@ npc:
       not-enough-money: You need at least ${0}.
       on-cooldown: Please wait {0} more seconds.
       on-global-cooldown: Please wait {0} more seconds.
+      missing-item: Missing {1} {0}
   follow:
     teleport-across-worlds: true
 advanced:
