@@ -1,0 +1,18 @@
+npcs:
+  '213': Combat_Instructor
+variables:
+    QUESTER_NAME: "COMBAT_INSTRUCTOR"
+
+    FULL_INVENTORY_MESSAGE: "^notify &cYou must have at least one inventory slot available! sound:entity.experience_orb.pickup soundpitch:2"
+
+    QUEST1_NAME: "Daggers"
+    QUEST1_ID: "DAGGERS"
+    QUEST1_OBJ_MESSAGE: "&aGrab &fthe &aTutorial Dagger &foff the wall behind the &aCombat Instructor"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Grab &0the &2Tutorial Dagger &0off the wall behind the &2Combat Instructor"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_SWORD ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Dagger Combat"
+    QUEST2_ID: "DAGGER_COMBAT"
+    QUEST2_OBJ_MESSAGE: "&aSlay &fone of the &cDummies &finfront of the &aCombat Instructor &fwith the &aTutorial Dagger"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Slay &0one of the &2Dummies &0infront of the &2Combat Instructor &0with the &2Tutorial Dagger"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

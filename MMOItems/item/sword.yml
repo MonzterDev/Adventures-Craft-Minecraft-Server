@@ -1,10 +1,22 @@
+TUTORIAL_SWORD:
+  base:
+    material: WOODEN_SWORD
+    disable-crafting: true
+    attack-damage: 5.0
+    tier: COMMON
+    name: <tier-color-cleaned>Tutorial Sword
+    unbreakable: true
+    gem-sockets:
+    - Unused
+    revision-id: 2
+    custom-model-data: 300.0
 GOD:
   base:
     material: IRON_SWORD
     attack-damage: 999999.0
     ability:
       ability1:
-        type: REAPER_CORRUPTION_PLAYER_
+        type: REAPER_CORRUPTION_PLAYER_B
         mode: RIGHT_CLICK
         damage: 20.0
     revision-id: 2
