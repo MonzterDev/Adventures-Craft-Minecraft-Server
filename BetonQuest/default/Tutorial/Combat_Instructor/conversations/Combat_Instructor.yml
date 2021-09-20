@@ -2,10 +2,10 @@ quester: Combat Instructor
 first: greeting
 NPC_options:
   greeting:
-    text: Hey &a%player%&7, do you see that cool thing in my hand? 
+    text: Hey &a%player%&7, want to learn about &cCombat&7? 
     pointers: hey, quest, bye
   town_info:
-    text: It's our &amenu item&7! Each &aAdventurer &7including yourself holds one within their &a9th inventory slot&7! You can use it to help navigate some core features of our wold.
+    text: Currently we have &a4 unqiue weapon types &aSwords&7, &aAxes&7, &aDaggers&7, & &aStaffs&7. Each type is a bit different than the other in terms of the bonus damage they deal! We also have the basic &aBows &7& &aTridents&7, but you're likely already familiar with them. 
     pointers: wow, bye
   quests:
     text: I sure do!
@@ -13,7 +13,7 @@ NPC_options:
     
 player_options:
   hey:
-    text: Ya, what is it?
+    text: Sure!
     pointers: town_info
   quest:
     text: Do you have any Quests?
@@ -23,7 +23,7 @@ player_options:
     text: I need to go, sorry.
     
   wow:
-    text: Wow, that sounds useful!
+    text: Thanks for letting me know!
     pointers: greeting
 
   quest_decline:
