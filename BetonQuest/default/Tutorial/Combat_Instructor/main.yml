@@ -2,6 +2,7 @@ npcs:
   '213': Combat_Instructor
 variables:
     QUESTER_NAME: "COMBAT_INSTRUCTOR"
+    QUESTER_NAME_LOWER: "Combat Instructor"
 
     FULL_INVENTORY_MESSAGE: "^notify &cYou must have at least one inventory slot available! sound:entity.experience_orb.pickup soundpitch:2"
 
@@ -15,4 +16,50 @@ variables:
     QUEST2_ID: "DAGGER_COMBAT"
     QUEST2_OBJ_MESSAGE: "&aSlay &fone of the &cDummies &finfront of the &aCombat Instructor &fwith the &aTutorial Dagger"
     QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Slay &0one of the &2Dummies &0infront of the &2Combat Instructor &0with the &2Tutorial Dagger"
+    QUEST2_DAGGER_MESSAGE: "&a$QUESTER_NAME_LOWER$&f: &7Daggers &7are able to &fpierce &7through and &cdamage enemies &7directly behind the initial &cenemy &7hit!"
     QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Swords"
+    QUEST3_ID: "SWORDS"
+    QUEST3_OBJ_MESSAGE: "&aGrab &fthe &aTutorial Sword &foff the wall behind the &aCombat Instructor"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Grab &0the &2Tutorial Sword &0off the wall behind the &2Combat Instructor"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_SWORD ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST4_NAME: "Sword Combat"
+    QUEST4_ID: "SWORD_COMBAT"
+    QUEST4_OBJ_MESSAGE: "&aSlay &fone of the &cDummies &finfront of the &aCombat Instructor &fwith the &aTutorial Sword"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Slay &0one of the &2Dummies &0infront of the &2Combat Instructor &0with the &2Tutorial Sword"
+    QUEST4_SWORD_MESSAGE: "&a$QUESTER_NAME_LOWER$&f: &7Swords &7can &fslash &7through and &cdamage enemies &7in a cone behind the initial &cenemy &7hit!"
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST5_NAME: "Axes"
+    QUEST5_ID: "AXES"
+    QUEST5_OBJ_MESSAGE: "&aGrab &fthe &aTutorial Axe &foff the wall behind the &aCombat Instructor"
+    QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Grab &0the &2Tutorial Axe &0off the wall behind the &2Combat Instructor"
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Axe Combat"
+    QUEST6_ID: "AXE_COMBAT"
+    QUEST6_OBJ_MESSAGE: "&aSlay &fone of the &cDummies &finfront of the &aCombat Instructor &fwith the &aTutorial Axe"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Slay &0one of the &2Dummies &0infront of the &2Combat Instructor &0with the &2Tutorial Axe"
+    QUEST6_AXE_MESSAGE: "&a$QUESTER_NAME_LOWER$&f: &7Axes &7can &cdamage enemies &7around the initial &cenemy &7hit!"
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST7_NAME: "Staffs"
+    QUEST7_ID: "STAFFS"
+    QUEST7_OBJ_MESSAGE: "&aGrab &fthe &aTutorial Staff &foff the wall behind the &aCombat Instructor"
+    QUEST7_JOU_MESSAGE: "&2$QUEST7_NAME$: \n&2Grab &0the &2Tutorial Staff &0off the wall behind the &2Combat Instructor"
+    QUEST7_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_HOE ^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST8_NAME: "Staff Combat"
+    QUEST8_ID: "STAFF_COMBAT"
+    QUEST8_OBJ_MESSAGE: "&aSlay &fone of the &cDummies &finfront of the &aCombat Instructor &fwith the &aTutorial Staff"
+    QUEST8_JOU_MESSAGE: "&2$QUEST8_NAME$: \n&2Slay &0one of the &2Dummies &0infront of the &2Combat Instructor &0with the &2Tutorial Staff"
+    QUEST8_STAFF_MESSAGE: "&a$QUESTER_NAME_LOWER$&f: &7Staffs &7shoot &fprojectiles &7at &cenemies&7!"
+    QUEST8_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST8_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST8_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST9_NAME: "Attributor"
+    QUEST9_ID: "ATTRIBUTOR"
+    QUEST9_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards the &6Attributor"
+    QUEST9_JOU_MESSAGE: "&2$QUEST9_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards the &6Attributor"
+    QUEST9_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ io:advancement frame:challenge icon:minecraft:CAULDRON ^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
