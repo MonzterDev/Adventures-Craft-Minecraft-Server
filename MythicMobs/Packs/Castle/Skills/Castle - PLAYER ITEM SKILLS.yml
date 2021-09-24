@@ -1,0 +1,27 @@
+# Puts enemy within a Grave dealing a +1 percentage of the enemies health for every 50 Damage you have
+GRAVE_DIGGER_PLAYER:
+  TargetConditions:
+  - distance{d=<5}
+  Skills:
+  - prison{material=STONE_BRICKS;duration=60;breakable=true} @target
+  - effect:sound{s=block.iron_door.open;pitch=-2} @self
+  - message{m="<stat.attack_damage>/50 + 1"} @self
+  - damagepercent{percent=."<stat.attack_damage>/50 + 1"}
+
+# Heals players for 25% of their HP
+HARPY_HEALER_PLAYER:
+  Skills:
+  - healpercent{m=0.25} @self
+  - effect:sound{s=item.bottle.fill;pitch=2} @self
+  - variableMath{var=caster.heal;equation="<caster.mhp>*.25"} @self
+  - message{m="&aYou were &6healed &afor &6<caster.var.heal> HP&a!"} @self
+  - missile{bulletType=MYTHICITEM;material=HARPY_HEAD1;onTick=HARPY_HEALER-Tick;onHit=HARPY_HEALER-Hit;v=8;i=1} @PIR{r=5}
+HARPY_HEALER-Tick:
+  Skills:
+  - effect:particles{p=heart;amount=1} @origin
+HARPY_HEALER-Hit:
+  Skills:
+  - healpercent{m=0.25}
+  - effect:sound{s=item.bottle.fill;pitch=2}
+  - variableMath{var=target.heal;equation="<target.mhp>*.25"}
+  - message{m="&aYou were &6healed &afor &6<target.var.heal> HP &aby &6<caster.name>&a!"}
