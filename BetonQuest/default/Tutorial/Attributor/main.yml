@@ -1,0 +1,16 @@
+npcs:
+  '214': Attributor
+variables:
+    QUESTER_NAME: "ATTRIBUTOR"
+
+    QUEST1_NAME: "Attributes"
+    QUEST1_ID: "ATTRIBUTES"
+    QUEST1_OBJ_MESSAGE: "&aUse &fthe &a/Attributes &fcommand to view the &aAttribute Trees"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Use &0the &2/Attributes &0command to view the &2Attribute Tree"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:CAULDRON ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Reese"
+    QUEST2_ID: "REESE"
+    QUEST2_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards &6Reese"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards &6Reese"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:WHEAT ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

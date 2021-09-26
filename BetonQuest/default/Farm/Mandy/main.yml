@@ -1,18 +1,25 @@
 npcs:
   '43': Mandy
 variables:
-    quest_name1: "Pesky Crop Stompers"
-    quest_objective1: "Slaughter 25 Pigs within the Farm!"
-    quest_reward1-1: "&d100 EXP"
-    quest_reward1-2: "&d100 Farming EXP"
-    quest_reward1-3: "&e50 Coins"
-    quest_objective_journal1: "&0Slaughter 25 Pigs within the Farm!"
-    quest_complete1: "&0Thanks, hopefully those smelly Pigs will stay away from our Crops!"
+    QUESTER_NAME: "MANDY"
 
-    quest_name2: "First Harvest"
-    quest_objective2: "Use a Hoe and harvest 128 Wheat from the Wheat Farm!"
-    quest_reward2-1: "&d100 EXP"
-    quest_reward2-2: "&d100 Farming EXP"
-    quest_reward2-3: "&e50 Coins"
-    quest_objective_journal2: "&0Use a Hoe and harvest 128 Wheat from the Wheat Farm!"
-    quest_complete2: "&0That was an excellent harvest, you could harvest that field countless times!"
+    QUEST1_NAME: "Pesky Crop Stompers"
+    QUEST1_ID: "PESKY_CROP_STOMPERS"
+    QUEST1_OBJ_MESSAGE: "&aSlaughter &f25 &aPigs &fusing the &lFarmer Rifle"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slaughter &025 &2Pigs &0using the &lFarmer Rifle"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlaughter &f%point.$QUEST1_ID$.left\:25% &aPigs &fusing the &lFarmer Rifle'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:PORKCHOP ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "The First Harvest"
+    QUEST2_ID: "THE_FIRST_HARVEST"
+    QUEST2_OBJ_MESSAGE: "&aHarvest &f320 &aWheat &fwith a &aWooden Hoe"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Harvest &0320 &2Wheat &0with a &2Wooden Hoe"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aHarvest &f%point.$QUEST2_ID$.left\:320% &aWheat &fwith a &aWooden Hoe'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:wheat ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Acorn Knocker"
+    QUEST3_ID: "ACORN_KNOCKER"
+    QUEST3_OBJ_MESSAGE: "&aKnock &f32 &aAcorns &foff the &aTrees"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Knock &032 &2Acorns &0off the &2Trees"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aKnock &f%point.$QUEST3_ID$.left\:32% &aAcorns &foff the &aTrees'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:cocoa_beans ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

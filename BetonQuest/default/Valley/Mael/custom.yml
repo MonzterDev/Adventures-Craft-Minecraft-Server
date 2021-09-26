@@ -1,22 +1,3 @@
-npc_effects:
-  check_interval: 100
-  disabled: false
-  default:
-    class: VortexEffect
-    iterations: 20
-    particle: crit_magic
-    helixes: 3
-    circles: 1
-    grow: 0.1
-    radius: 0.5
-    interval: 100
-hide_npcs:
-  114: 'q1_part3_completed'
-  120: '!q1_part3_completed'
-  115: 'q1_part6_completed'
-  119: '!q1_part6_completed'
-  116: 'q1_completed'
-  117: '!q1_completed'
 npc_holograms:
   check_interval: 100
   follow: false
@@ -24,7 +5,14 @@ npc_holograms:
   default:
     lines:
     - '&e&lTALK TO ME!'
-    vector: 0;2.68;0
-    conditions: "!q1_part1"
+    vector: 0;2.67;0
+    conditions: "!QUEST1_STARTED"
     npcs:
       - 42
+hide_npcs:
+  114: 'QUEST1_NPC_1'
+  120: '!QUEST1_NPC_1'
+  115: 'QUEST1_NPC_2'
+  119: '!QUEST1_NPC_2'
+  116: 'QUEST1_NPC_3'
+  117: '!QUEST1_NPC_3'

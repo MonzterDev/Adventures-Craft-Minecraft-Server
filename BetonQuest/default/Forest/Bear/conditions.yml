@@ -1,37 +1,20 @@
-q1_part1: tag q1_part1
-q1_completed: tag q1_completed
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+DONT_GET_STUNG: point $QUEST1_ID$ 14
 
-q2_part1: tag q2_part1
-q2_part1_completed: tag q2_part1_completed
-q2_part2: tag q2_part2
-q2_part2_completed: tag q2_part2_completed
-q2_part3: tag q2_part3
-q2_part3_completed: tag q2_part3_completed
-q2_part4: tag q2_part4
-q2_part4_completed: tag q2_part4_completed
-q2_part5: tag q2_part5
-q2_part5_completed: tag q2_part5_completed
-q2_part6: tag q2_part6
-q2_part6_completed: tag q2_part6_completed
-q2_part7: tag q2_part7
-q2_part7_completed: tag q2_part7_completed
-q2_part8: tag q2_part8
-q2_part8_completed: tag q2_part8_completed
-q2_part9: tag q2_part9
-q2_completed: tag q2_completed
-q2_rewards_unclaimed: tag q2_rewards_unclaimed
-q2_rewards_claimed: tag q2_rewards_claimed
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
+QUEST2_NPC_1: tag QUEST2_NPC_1
+QUEST2_NPC_2: tag QUEST2_NPC_2
+QUEST2_NPC_3: tag QUEST2_NPC_3
 
-q3_part1: tag q3_part1
-q3_completed: tag q3_completed
+QUEST3_STARTED: tag $QUEST3_ID$_STARTED
+QUEST3_COMPLETED: tag $QUEST3_ID$_COMPLETED
+HONEY_EXTRACTION: point $QUEST3_ID$ 31
 
-q4_part1: tag q4_part1
-q4_completed: tag q4_completed
+QUEST4_STARTED: tag $QUEST4_ID$_STARTED
+QUEST4_COMPLETED: tag $QUEST4_ID$_COMPLETED
+WASP_NEST: point $QUEST4_ID$ 14
 
-q5_part1: tag q5_part1
-q5_completed: tag q5_completed
-
-empty0: empty 0 equal
-
-#This checks inventory if player has one of the enchanted materials
-honey: 'item Honey:64'
+QUEST5_STARTED: tag $QUEST5_ID$_STARTED
+QUEST5_COMPLETED: tag $QUEST5_ID$_COMPLETED

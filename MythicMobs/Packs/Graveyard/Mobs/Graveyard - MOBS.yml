@@ -22,8 +22,6 @@ UNDEAD_SKELETON:
     PreventTransformation: true
   Equipment:
   - IRON_SWORD:0
-  - SKELETON_CHESTPLATE1:CHEST
-  - SKELETON_BOOTS1:FEET
   - SHIELD:5
   Drops:
   - EXP 0-5 100%
@@ -185,7 +183,7 @@ REAPER_MINION:
   Modules:
     ThreatTable: true
   Options:
-    KnockbackResistance: .7
+    KnockbackResistance: 0
     MaxCombatDistance: 50
     MovementSpeed: 0.42
     <<: *Options
@@ -195,7 +193,7 @@ REAPER_MINION:
   - 2 randomstroll
   Skills:
   - damage{amount=1;ignoreArmor=false} @target ~onAttack
-  - forcepull{spread=1} @EntitiesInRadius{r=5} .15
+  - forcepull{spread=1} @PIR{r=5} .15 ~onDamaged
   - remove{delay=400} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged  
   - effect:particleline{particle=portal;amount=5;fromOrigin=true} @MIR{r=50;t=REAPER} ~onSpawn

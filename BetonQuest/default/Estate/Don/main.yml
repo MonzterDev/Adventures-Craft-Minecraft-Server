@@ -1,0 +1,24 @@
+npcs:
+  '119': Don
+variables:
+    QUESTER_NAME: "DON"
+
+    QUEST1_NAME: "Plastic Picker"
+    QUEST1_ID: "PLASTIC_PICKER"
+    QUEST1_OBJ_MESSAGE: "&aPickup &f32 &aPlastic (Chains) &fwhich are &cpolluting &fthe &9pond"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Pickup &032 &2Plastic (Chains) &0which are &cpolluting &0the &9pond"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aPickup &f%point.$QUEST1_ID$.left\:32% &aPlastic (Chains) &fwhich are &cpolluting &fthe &9pond'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:CHAIN ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Coral Cleaner"
+    QUEST2_ID: "CORAL_CLEANER"
+    QUEST2_OBJ_MESSAGE: "&aCleanup &f128$ &aFire Coral &ffrom within the &9pond"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Cleanup &0128 &2Fire Coral &0from within the &9pond"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aCleanup &f%point.$QUEST2_ID$.left\:128% &aFire Coral &ffrom within the &9pond'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:FIRE_CORAL ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Sea Feeder"
+    QUEST3_ID: "SEA_FEEDER"
+    QUEST3_OBJ_MESSAGE: "&aFeed Leon &f192 &aSea Grass &ffrom within the &9pond"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Feed Leon &0192 &2Sea Grass &0from within the &9pond"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:SEAGRASS ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

@@ -1,60 +1,56 @@
 npcs:
   '170': Kassadin
 variables:
-    quest_name1: "Corrupt Land"
-    quest_objective1: "We're surrounded by some of the most corrupt land. The material is known as &lend stone &fand is extremely useful for increasing our efficiency when excavating! Please dig me up 512 end stone and bring it all back to me."
-    quest_objective1-2: "Bring back the 512 end stone!"
-    quest_reward1-1: "&d500 EXP"
-    quest_reward1-2: "&d500 Mining EXP"
-    quest_reward1-3: "§5500 Void Reputation"
-    quest_reward1-4: "&e450 Coins"
-    quest_reward1-5: "&9Hasty Void"
-    quest_objective_journal1: "&0Dig up 512 end stone&0!"
-    quest_objective_journal1-2: "&0Bring back the 512 end stone to &aKassadin&0!"
-    quest_complete1: "&0The end stone certainly increased our efficiency. Enjoy the &9Hasty Void&0!"
+    QUESTER_NAME: "KASSADIN"
 
-    quest_name2: "Increased Hardencity"
-    quest_objective2: "You’ve seen the dark material before, obsidian. By now you should know how incredibly strong it is, but when corrupted, it becomes even stronger! Bring me back 256 and I’ll make you a better tool!"
-    quest_objective2-2: "Bring me the 256 obsidian!"
-    quest_reward2-1: "&d500 EXP"
-    quest_reward2-2: "&d500 Mining EXP"
-    quest_reward2-3: "§5500 Void Reputation"
-    quest_reward2-4: "&e450 Coins"
-    quest_reward2-5: "&5Corrupt Pickaxe"
-    quest_objective_journal2: "&0You’ve seen the dark material before, obsidian. By now you should know how incredibly strong it is, but when corrupted, it becomes even stronger! Bring me back 256 and I’ll make you a better tool!"
-    quest_objective_journal2-2: "&0Bring me the 256 obsidian!"
-    quest_complete2: "&0Look at the mighty pickaxe forged from corruption and obsidian!"
+    QUEST1_NAME: "Corrupt Land"
+    QUEST1_ID: "CORRUPT_LAND"
+    QUEST1_OBJ_MESSAGE: "We're surrounded by some of the most corrupt land. The material is known as &lend stone &fand is extremely useful for increasing our efficiency when excavating! Please &agather &f512 End Stone and bring it all back to me."
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Mine &0512 &lEnd Stone &0within the &5Void"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aMine &f%point.$QUEST1_ID$.left\:512% &aEnd Stone &fwithin the &5Void'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:END_STONE ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name3: "Ring Around the Wither Roses"
-    quest_objective3: "Roses have surprisingly grown even in these horrid conditions. Near the top of each spire there are Wither Roses sprouting! Go pick me 320 Wither Roses and bring them back to me."
-    quest_objective3-2: "Bring me back the 320 Wither Roses!"
-    quest_reward3-1: "&d400 EXP"
-    quest_reward3-2: "&d400 Spellforging EXP"
-    quest_reward3-3: "§5400 Void Reputation"
-    quest_reward3-4: "&e350 Coins"
-    quest_reward3-5: "&9Void Ring"
-    quest_objective_journal3: "&0Roses have surprisingly grown even in these horrid conditions. Near the top of each spire there are Wither Roses sprouting! Go pick me 320 Wither Roses and bring them back to me."
-    quest_objective_journal3-2: "&0Bring me back the 320 Wither Roses!"
-    quest_complete3: "&0Keep this ring to help you through this corruption!"
+    QUEST2_NAME: "End Stone Delivery"
+    QUEST2_ID: "END_STONE_DELIVERY"
+    QUEST2_OBJ_MESSAGE: "&aDeliver &f512x End Stone, to &aKassadin"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Deliver &0512 &lEnd Stone &0to &2Kassadin"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:END_STONE ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name4: "Pop a Vein"
-    quest_objective4: "The corruption has expanded its veins all throughout the void by many spires! Look closely around the spires and slay 10 &cVoid Veins&f!"
-    quest_reward4-1: "&d750 EXP"
-    quest_reward4-2: "&d750 Slayer EXP"
-    quest_reward4-3: "§5750 Void Reputation"
-    quest_reward4-4: "&e500 Coins"
-    quest_reward4-5: "&5Femoral Artery"
-    quest_objective_journal4: "&0The corruption has expanded its veins all throughout the void, by many spires! Look closely around the spires and slay 10 &cVoid Veins&0!"
-    quest_complete4: "&0Those veins were vital arteries of the void! Slaying them massively decreases the corruption within the world."
+    QUEST3_NAME: "Increased Hardencity"
+    QUEST3_ID: "INCREASED_HARDENCITY"
+    QUEST3_OBJ_MESSAGE: "You’ve seen the dark material before, obsidian. By now you should know how incredibly strong it is, but when corrupted, it becomes even stronger! Bring me back 256 and I’ll make you a better tool!"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Mine &0256 &2Obsidian &0within the &5Void"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aMine &f%point.$QUEST3_ID$.left\:256% &aObsidian &fwithin the &5Void'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:OBSIDIAN ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_name5: "Find the Lurker"
-    quest_objective5: "An ally has been lurking in the dark the entire time. You might’ve even seen them walking around, but now they will speak with you. Go find and make contact with the &8Lurker&f!"
-    quest_reward5-1: "&d500 EXP"
-    quest_reward5-2: "&d500 Slayer EXP"
-    quest_reward5-3: "§5500 Void Reputation"
-    quest_reward5-4: "&e450 Coins"
-    quest_reward5-5: "§5Lurkers Card"
-    quest_objective_journal5: "&0An ally has been lurking in the dark the entire time. You might’ve even seen them walking around, but now they will speak with you. Go find and make contact with the &8Lurker&0!"
-    quest_complete5: "&0Enjoy your time in the &5Void&0! Don't forget to help the &8Lurker&0!"
+    QUEST4_NAME: "Obsidian Delivery"
+    QUEST4_ID: "OBSIDIAN_DELIVERY"
+    QUEST4_OBJ_MESSAGE: "&aDeliver &f256x Obsidian to &aKassadin &fto forge a &astronger tool"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Deliver &0256 &lObsidian &0to &2Kassadin"
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:OBSIDIAN ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
-    quest_objective6: "Enjoy your time in the &5Void&0! Don't forget to help the &8Lurker&f!"
+    QUEST5_NAME: "Ring Around The Wither Roses"
+    QUEST5_ID: "RING_AROUND_THE_WITHER_ROSES"
+    QUEST5_OBJ_MESSAGE: "Roses have surprisingly grown even in these horrid conditions. Near the top of each spire there are Wither Roses sprouting! Go &apick &fme 320 Wither Roses and bring them back to me."
+    QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Pick &0320 &lWither Roses &0atop the spirals within the &5Void"
+    QUEST5_MSG_REPEAT: '&a$QUEST5_NAME$&f: &aPick &f%point.$QUEST5_ID$.left\:320% &aWither Roses &fatop the spirals within the &5Void'
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:WITHER_ROSE ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Wither Rose Delivery"
+    QUEST6_ID: "WITHER_ROSE_DELIVERY"
+    QUEST6_OBJ_MESSAGE: "&aDeliver &f320x Wither Roses, to &aKassadin"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Deliver &0320 &lWither Roses &0to &2Kassadin"
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:WITHER_ROSE ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST7_NAME: "Pop a Vein"
+    QUEST7_ID: "POP_A_VEIN"
+    QUEST7_OBJ_MESSAGE: "The corruption has expanded its veins all throughout the void by many spires! Look closely around the spires and slay 10 &cVoid Veins&f!"
+    QUEST7_JOU_MESSAGE: "&2$QUEST7_NAME$: \n&2Slay &010 &cVoid Veins &0around the spirals within the &5Void"
+    QUEST7_MSG_REPEAT: '&a$QUEST7_NAME$&f: &aSlay &f%point.$QUEST7_ID$.left\:10% &cVoid Veins &faround the spires within the &5Void'
+    QUEST7_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ io:advancement frame:challenge icon:minecraft:BEDROCK ^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    # QUEST9_NAME: "Joining the Chorus"
+    # QUEST9_ID: "JOINING_THE_CHORUS"
+    # QUEST9_OBJ_MESSAGE: "Bring back 128x Chorus Seeds to me, so I can help you travel deeper into the &5Void&f!"
+    # QUEST9_JOU_MESSAGE: "&2$QUEST9_NAME$: \n&2Deliver &0128 &lChorus Seeds &0to &2Khazix"
+    # QUEST9_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ io:advancement frame:challenge icon:minecraft:CHORUS_FLOWER ^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

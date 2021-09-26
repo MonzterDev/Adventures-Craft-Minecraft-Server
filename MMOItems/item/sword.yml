@@ -1,3 +1,30 @@
+TUTORIAL_SWORD:
+  base:
+    material: WOODEN_SWORD
+    disable-crafting: true
+    attack-damage: 5.0
+    tier: COMMON
+    name: <tier-color-cleaned>Tutorial Sword
+    unbreakable: true
+    gem-sockets:
+    - Unused
+    revision-id: 2
+    custom-model-data: 300.0
+    lore:
+    - '&fSword &7can &fslash &7through'
+    - '&7and &cdamage enemies &7in a cone'
+    - '&7behind the intial &cenemy &7hit!'
+GOD:
+  base:
+    material: IRON_SWORD
+    attack-damage: 999999.0
+    ability:
+      ability1:
+        type: REAPER_CORRUPTION_PLAYER_B
+        mode: RIGHT_CLICK
+        damage: 20.0
+    revision-id: 2
+    unbreakable: true
 WOODENSWORD:
   base:
     material: WOODEN_SWORD
@@ -58,7 +85,6 @@ SILVER_SWORD:
       workbench: true
       max: 10
     faction-damage-undead: 5.0
-    durability: 1.0
     revision-id: 2
     custom-model-data: 101.0
 BASIC_SWORD:
@@ -90,13 +116,13 @@ BONE_SWORD3:
     - Unused
     revision-id: 2
     custom-model-data: 102.0
-BONE_SWORD5:
+BONE_SWORD4:
   base:
     material: GOLDEN_SWORD
     disable-interaction: false
     disable-crafting: true
     unbreakable: true
-    tier: EXOTIC
+    tier: LEGENDARY
     name: <tier-color-cleaned>Bone Sword
     faction-damage-undead: 75.0
     attack-damage: 125.0
@@ -107,21 +133,8 @@ BONE_SWORD5:
     gem-sockets:
     - Unused
     - Unused
-    durability: 1.0
     revision-id: 2
     custom-model-data: 1.0
-GOD:
-  base:
-    material: IRON_SWORD
-    attack-damage: 9999.0
-    ability:
-      ability1:
-        type: BLIZZARD
-        duration: 5.0
-        damage: 1000.0
-        cooldown: 0.0
-        mode: RIGHT_CLICK
-    revision-id: 2
 MAGMA_BLADE4:
   base:
     material: GOLDEN_SWORD

@@ -1,0 +1,48 @@
+quester: Berry
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "Have you ever wanted to be a miner &a%player%&7?"
+    pointers: Player_Response1, Player_Response2, Player_Response3, bye
+
+  NPC_Text1:
+    text: "&7Follow this gravel path up the hill and you'll see the &aLift Operator&7. Talk to him and he'll bring you down to the &aCoal Mine&7!"
+    pointers: goBack, bye
+
+  NPC_Text2:
+    text: "&7I actually have an extra pickaxe you can have. Enjoy!"
+    pointers: goBack, bye
+
+  NPC_Text3:
+    text: "&7Well...you can mine resources silly! Just be careful in there, because those mines aren't all friendly and even contain some dangerous creatures!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fWhere is the mine?"
+    pointers: NPC_Text1
+
+  Player_Response2:
+    text: "Can I have a pickaxe?"
+    pointers: NPC_Text2
+    conditions: "!PickaxeGiven"
+    events: GivePickaxe, Tag_PickaxeGiven
+
+  Player_Response3:
+    text: "&fWhat can I do in the mine?"
+    pointers: NPC_Text3
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

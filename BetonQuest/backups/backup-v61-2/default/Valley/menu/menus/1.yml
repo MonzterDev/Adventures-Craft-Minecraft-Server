@@ -1,0 +1,82 @@
+height: 4
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Valley-Mael.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lConquering the Valley'
+        - '&f&o'
+        - '&fBreach Orc Camps'
+        - '&fSlay Orcs'
+        - '&fRecure Prisoners'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Estate'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Farming EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Mael in the Valley'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Valley-Mael.q1_part1,!default-Valley-Mael.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lConquering the Valley'
+        - '&f&o'
+        - '&fBreach Orc Camps'
+        - '&fSlay Orcs'
+        - '&fRecure Prisoners'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Estate'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Farming EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven by Mael in the Valley'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Valley-Mael.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lConquering the Valley'
+        - '&f&o'
+        - '&fBreach Orc Camps'
+        - '&fSlay Orcs'
+        - '&fRecure Prisoners'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Estate'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Farming EXP'
+        - '&8&l» &e250 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-12: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  14-18: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  19-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass  
+  13: quest1_inactive,quest1_active,quest1_completed
+  31: back

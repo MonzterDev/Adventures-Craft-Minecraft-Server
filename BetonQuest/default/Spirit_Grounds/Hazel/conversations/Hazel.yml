@@ -1,0 +1,41 @@
+quester: Hazel
+first: greeting
+NPC_options:
+  greeting:
+    text: Welcome to my home &a%player%&7! Most &aAdventurers &7don't make it this far.
+    pointers: hey, quest, bye
+  town_info:
+    text: The &dSpirit Grounds &7is the most sacred place for all &dWitches &7like myself! &5Magic &7for thousands of years have been stored here, but we disguise it as a simple farm.
+    pointers: wow, bye
+  quests:
+    text: Since we disguise this as a farm, we've recently had some unwanted creatures make their home here. I could take them out myself, but I think you might be interested in that fun!
+    pointers: quest1, quest_decline
+    conditions: "default-Estate-Bowyer.QUEST3_COMPLETED"
+  no_quests:
+    text: You must help &aBowyer &7before I can give you any quests! 
+    conditions: '!default-Estate-Bowyer.QUEST3_COMPLETED'
+
+  quest1accept:
+    text: Go slaughter those pitiful &ccreatures &7making their homes here!
+
+player_options:
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+  quest:
+    text: Do you have any Quests?
+    pointers: quests,no_quests
+    conditions: '!QUEST1_STARTED'
+  bye:
+    text: I need to go, sorry.
+    
+  wow:
+    text: That sounds interesting!
+    pointers: greeting
+
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+  quest1:
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
+    pointers: quest1accept

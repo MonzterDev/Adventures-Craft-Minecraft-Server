@@ -1,93 +1,67 @@
-#FIRST QUEST The Great Harvest
-quest1_start: 'objective start GatherGrass'
-tag_q1_part1: 'tag add q1_part1'
-entry_q1_part1: 'journal add q1_part1'
-q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
-#FIRST QUEST P2
-quest1_part2_start: 'objective start FeedEpona'
-tag_q1_part2: 'tag add q1_part2'
-entry_q1_part2: 'journal add q1_part2'
-q1_part2_start_message: 'run ^notify \n&6&lObjectives Complete\:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1-2$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
-QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give MOUNT EPONA %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
-QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
-QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
-QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
-#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give MOUNT EPONA %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
-QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
-QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q1_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,entry_q1_part2_remove,tag_q1_completed,removeGrass'
-entry_q1_completed: 'journal add q1_completed'
-tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal delete q1_part1'
-entry_q1_part2_remove: 'journal delete q1_part2'
-removeGrass: take Grass:320
+Q1_START: 'folder Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START'
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE condition:$QUEST1_ID$'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
 
 
-quest2_starter: 'folder quest2_start,q2_start_message,tag_q2_part1,entry_q2_part1'
-quest2_start: 'folder FindCucco_Complete,FindCucco,FindCucco2,FindCucco3,FindCucco4,ShowCompass,CuccoCompass,CuccoCompass2,CuccoCompass3,CuccoCompass4'
-#FIRST QUEST The Great Harvest
-
-ShowCompass: 'run ^opsudo calcomp show'
-HideCompass: 'run ^opsudo calcomp hide'
-CuccoCompass: 'run ^opsudo calcomp toggle FindCucco enable'
-CuccoCompass2: 'run ^opsudo calcomp toggle FindCucco2 enable'
-CuccoCompass3: 'run ^opsudo calcomp toggle FindCucco3 enable'
-CuccoCompass4: 'run ^opsudo calcomp toggle FindCucco4 enable'
-
-CuccoCompassDisable: 'run ^opsudo calcomp toggle FindCucco disable'
-CuccoCompassDisable2: 'run ^opsudo calcomp toggle FindCucco2 disable'
-CuccoCompassDisable3: 'run ^opsudo calcomp toggle FindCucco3 disable'
-CuccoCompassDisable4: 'run ^opsudo calcomp toggle FindCucco4 disable'
+Q2_START: 'folder Q2_OBJ_START,Q2_TAG_START,Q2_JOU_START,Q2_MSG_START condition:$QUEST1_ID$'
+Q2_OBJ_START: 'objective start $QUEST2_ID$'
+Q2_TAG_START: 'tag add $QUEST2_ID$_STARTED'
+Q2_JOU_START: 'journal add QUEST2_JOU_MESSAGE'
+Q2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q2_COMPLETE: 'folder Q2_TAG_COMPLETE,Q2_JOU_DELETE,Q2_TAKE_ITEM,Q2_MSG_COMPLETE'
+Q2_TAG_COMPLETE: 'tag add $QUEST2_ID$_COMPLETED'
+Q2_JOU_DELETE: 'journal delete QUEST2_JOU_MESSAGE'
+Q2_TAKE_ITEM: 'take GRASS:320'
+Q2_MSG_COMPLETE: 'run $QUEST2_COMPLETE$'
 
 
-FindCucco: 'objective start FindCucco'
-FindCucco2: 'objective start FindCucco2'
-FindCucco3: 'objective start FindCucco3'
-FindCucco4: 'objective start FindCucco4'
-FindCucco_Complete: 'objective start FindCucco_Complete'
-
-Hide_Cucco_Start1: 'tag add hideCucco1'
-Hide_Cucco_Start2: 'tag add hideCucco2'
-Hide_Cucco_Start3: 'tag add hideCucco3'
-Hide_Cucco_Start4: 'tag add hideCucco4'
-
-
-CuccoPoint: point Cuccos 1
-CuccoFound: 'run ^notify &aPlease find &e%point.Cuccos.left\:4% &amore of my lost &eCuccos&a!'
-
-tag_q2_part1: 'tag add q2_part1'
-entry_q2_part1: 'journal add q2_part1'
-
-q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward2: 'if empty0 QuestReward2_Full else QuestReward2_Folder'
-QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
-QuestReward2_If_Not_Full: "run ^command mmoitems give MATERIAL GIANT_EGG %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
-QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
-QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
-QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
-#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
-Claim_QuestReward2: "run ^command mmoitems give MATERIAL GIANT_EGG %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
-QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
-QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q2_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,q2_completed_message,HideCompass,q2_completed_message2'
-entry_q2_completed: 'journal add q2_completed'
-tag_q2_completed: 'tag add q2_completed'
-entry_q2_part1_remove: 'journal delete q2_part1'
-q2_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4$ \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$'
-q2_completed_message2: 'run ^notify \n&fThanks for rescuing my &eCuccos &a%player%&f! You were lucky because one of them laid a &lGiant Egg&f, you can keep it!'
-
+Q3_START: 'folder Q3_TAG_START,Q3_1_START'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+#
+Q3_1_START: 'folder Q3_1_OBJ_START,Q3_1_JOU_START,Q3_1_GPS_START,Q3_1_MSG_START'
+Q3_1_OBJ_START: 'objective start $QUEST3_ID$_1'
+Q3_1_JOU_START: 'journal add QUEST3_1_JOU_MESSAGE'
+Q3_1_GPS_START: 'command gps:compass start Cucco1 %player%'
+Q3_1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q3_2_START: 'folder Q3_2_OBJ_START,Q3_1_TAG_FOUND,Q3_1_JOU_DELETE,Q3_2_JOU_START,Q3_2_GPS_START,Q3_2_MSG_START'
+Q3_2_OBJ_START: 'objective start $QUEST3_ID$_2'
+Q3_1_TAG_FOUND: 'tag add QUEST3_NPC_1'
+Q3_1_JOU_DELETE: 'journal delete QUEST3_1_JOU_MESSAGE'
+Q3_2_JOU_START: 'journal add QUEST3_2_JOU_MESSAGE'
+Q3_2_GPS_START: 'command gps:compass start Cucco2 %player%'
+Q3_2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q3_3_START: 'folder Q3_3_OBJ_START,Q3_2_TAG_FOUND,Q3_2_JOU_DELETE,Q3_3_JOU_START,Q3_3_GPS_START,Q3_3_MSG_START'
+Q3_3_OBJ_START: 'objective start $QUEST3_ID$_3'
+Q3_2_TAG_FOUND: 'tag add QUEST3_NPC_2'
+Q3_2_JOU_DELETE: 'journal delete QUEST3_2_JOU_MESSAGE'
+Q3_3_JOU_START: 'journal add QUEST3_3_JOU_MESSAGE'
+Q3_3_GPS_START: 'command gps:compass start Cucco3 %player%'
+Q3_3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q3_4_START: 'folder Q3_4_OBJ_START,Q3_3_TAG_FOUND,Q3_3_JOU_DELETE,Q3_4_JOU_START,Q3_4_GPS_START,Q3_4_MSG_START'
+Q3_4_OBJ_START: 'objective start $QUEST3_ID$_4'
+Q3_3_TAG_FOUND: 'tag add QUEST3_NPC_3'
+Q3_3_JOU_DELETE: 'journal delete QUEST3_3_JOU_MESSAGE'
+Q3_4_JOU_START: 'journal add QUEST3_4_JOU_MESSAGE'
+Q3_4_GPS_START: 'command gps:compass start Cucco4 %player%'
+Q3_4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q3_COMPLETE: 'folder Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED'
+Q3_JOU_DELETE: 'journal delete QUEST3_4_JOU_MESSAGE'
+Q3_MSG_COMPLETE: 'run $QUEST3_COMPLETE$'

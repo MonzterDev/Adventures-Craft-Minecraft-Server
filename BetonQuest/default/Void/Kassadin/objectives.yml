@@ -1,18 +1,29 @@
-#1
-endStone: mmocorebreakblock 512 block:END_STONE events:quest1_part2_starter notify:8
-endStone_Delivery: npcinteract 170 conditions:ENDSTONE events:entry_q1_complete,quest2_starter,QuestReward1 notify:1
+CORRUPT_LAND: mmocorebreakblock 1 block:END_STONE events:Q1_REPEAT,Q1_COMPLETE,Q2_START
+END_STONE_DELIVERY: npcinteract 170 events:Q2_COMPLETE,Q3_START conditions:$QUEST2_ID$
 
-#2
-obsidian: mmocorebreakblock 256 block:OBSIDIAN events:quest2_part2_starter notify:8
-obsidian_Deliver: npcinteract 170 conditions:OBSIDIAN events:entry_q2_complete,quest3_starter,QuestReward2 notify:1
+INCREASED_HARDENCITY: mmocorebreakblock 1 block:OBSIDIAN events:Q3_REPEAT,Q3_COMPLETE,Q4_START
+OBSIDIAN_DELIVERY: npcinteract 170 events:Q4_COMPLETE,Q5_START conditions:$QUEST4_ID$
 
-#3
-roses: mmocorebreakblock 320 block:WITHER_ROSE events:quest3_part2_starter notify:6
-roses_Deliver: npcinteract 170 conditions:WITHERROSES events:entry_q3_complete,quest4_starter,QuestReward3 notify:1
+RING_AROUND_THE_WITHER_ROSES: mmocorebreakblock 1 block:WITHER_ROSE events:Q5_REPEAT,Q5_COMPLETE,Q6_START
+WITHER_ROSE_DELIVERY: npcinteract 170 events:Q6_COMPLETE,Q7_START conditions:$QUEST5_ID$
 
-#4
-veins: mmobkill VOID_VEIN amount:10 events:entry_q4_complete,quest5_starter,QuestReward4 notify:1
+POP_A_VEIN: mmobkill VOID_VEIN amount:1 persistent events:Q7_REPEAT,Q7_COMPLETE
 
-#5
-lurker: npcinteract 136 events:entry_q5_complete,QuestReward5 notify:1
+# BULBLIN_AND_BULLBO: location -159;44;-1001;Spawn 500 events:Q6_COMPLETE,Q7_START conditions:VOID_BULLBO,VOID_BULBLIN
 
+# SPIRAL_CRYSTALS_1: npcinteract 158 events:Q7_2_START
+# SPIRAL_CRYSTALS_2: npcinteract 159 events:Q7_3_START
+# SPIRAL_CRYSTALS_3: npcinteract 160 events:Q7_4_START
+# SPIRAL_CRYSTALS_4: npcinteract 161 events:Q7_5_START
+# SPIRAL_CRYSTALS_5: npcinteract 162 events:Q7_6_START
+# SPIRAL_CRYSTALS_6: npcinteract 163 events:Q7_7_START
+# SPIRAL_CRYSTALS_7: npcinteract 164 events:Q7_8_START
+# SPIRAL_CRYSTALS_8: npcinteract 165 events:Q7_9_START
+# SPIRAL_CRYSTALS_9: npcinteract 166 events:Q7_10_START
+# SPIRAL_CRYSTALS_10: npcinteract 167 events:Q7_11_START
+# SPIRAL_CRYSTALS_11: npcinteract 168 events:Q7_12_START
+# SPIRAL_CRYSTALS_12: npcinteract 169 events:Q7_COMPLETE,Q8_START
+
+# CHORUS_PREPERATIONS: mmocorebreakblock 1 block:CHORUS_FLOWER events:Q8_REPEAT,Q8_COMPLETE,Q9_START
+
+# JOINING_THE_CHORUS: npcinteract 170 events:Q9_COMPLETE

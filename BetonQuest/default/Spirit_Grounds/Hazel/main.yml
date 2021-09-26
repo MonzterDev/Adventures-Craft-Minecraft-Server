@@ -1,0 +1,23 @@
+npcs:
+  '128': Hazel
+variables:
+    QUESTER_NAME: "HAZEL"
+
+    QUEST1_NAME: "Crop Protector"
+    QUEST1_ID: "CROP_PROTECTOR"
+    QUEST1_OBJ_MESSAGE: "&aSlay &f25 of the invading &cSpirit Bulls & Crop Spiders"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Slay &025 of the invading &cSpirit Bulls & Crop Spiders"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aSlay &f%point.$QUEST1_ID$.left\:25% &cSpirit Bulls & Crop Spiders'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:MOOSHROOM_SPAWN_EGG ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Witches Checklist"
+    QUEST2_ID: "WITCHES_CHECKLIST"
+    QUEST2_OBJ_MESSAGE: "&aDeliver &f128 &aBrown Mushrooms, Red Mushrooms, & Melon Slices &fto &aHazel"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Deliver &0128 &2Brown Mushrooms, Red Mushrooms, & Melon Slices &0to &2Hazel"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:MAP ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Spirit Witch"
+    QUEST3_ID: "SPIRIT_WITCH"
+    QUEST3_OBJ_MESSAGE: "&aSlay &fthe &cSpirit Witch &fwhich patrols the &dSpirit Grounds"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Slay &0the &cSpirit Witch &0which patrols the &5Spirit Grounds"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:GLASS_BOTTLE ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

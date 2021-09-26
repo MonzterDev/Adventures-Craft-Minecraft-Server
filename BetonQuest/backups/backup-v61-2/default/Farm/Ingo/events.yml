@@ -1,0 +1,93 @@
+#FIRST QUEST The Great Harvest
+quest1_start: 'objective start GatherGrass'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
+#FIRST QUEST P2
+quest1_part2_start: 'objective start FeedEpona'
+tag_q1_part2: 'tag add q1_part2'
+entry_q1_part2: 'journal add q1_part2'
+q1_part2_start_message: 'run ^notify \n&6&lObjectives Complete\:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1-2$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
+QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
+QuestReward1_If_Not_Full: "run ^command mmoitems give MOUNT EPONA %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
+QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
+QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
+#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
+Claim_QuestReward1: "run ^command mmoitems give MOUNT EPONA %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
+QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
+QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,entry_q1_part2_remove,tag_q1_completed,removeGrass'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal delete q1_part1'
+entry_q1_part2_remove: 'journal delete q1_part2'
+removeGrass: take Grass:320
+
+
+quest2_starter: 'folder quest2_start,q2_start_message,tag_q2_part1,entry_q2_part1'
+quest2_start: 'folder FindCucco_Complete,FindCucco,FindCucco2,FindCucco3,FindCucco4,ShowCompass,CuccoCompass,CuccoCompass2,CuccoCompass3,CuccoCompass4'
+#FIRST QUEST The Great Harvest
+
+ShowCompass: 'run ^opsudo calcomp show'
+HideCompass: 'run ^opsudo calcomp hide'
+CuccoCompass: 'run ^opsudo calcomp toggle FindCucco enable'
+CuccoCompass2: 'run ^opsudo calcomp toggle FindCucco2 enable'
+CuccoCompass3: 'run ^opsudo calcomp toggle FindCucco3 enable'
+CuccoCompass4: 'run ^opsudo calcomp toggle FindCucco4 enable'
+
+CuccoCompassDisable: 'run ^opsudo calcomp toggle FindCucco disable'
+CuccoCompassDisable2: 'run ^opsudo calcomp toggle FindCucco2 disable'
+CuccoCompassDisable3: 'run ^opsudo calcomp toggle FindCucco3 disable'
+CuccoCompassDisable4: 'run ^opsudo calcomp toggle FindCucco4 disable'
+
+
+FindCucco: 'objective start FindCucco'
+FindCucco2: 'objective start FindCucco2'
+FindCucco3: 'objective start FindCucco3'
+FindCucco4: 'objective start FindCucco4'
+FindCucco_Complete: 'objective start FindCucco_Complete'
+
+Hide_Cucco_Start1: 'tag add hideCucco1'
+Hide_Cucco_Start2: 'tag add hideCucco2'
+Hide_Cucco_Start3: 'tag add hideCucco3'
+Hide_Cucco_Start4: 'tag add hideCucco4'
+
+
+CuccoPoint: point Cuccos 1
+CuccoFound: 'run ^notify &aPlease find &e%point.Cuccos.left\:4% &amore of my lost &eCuccos&a!'
+
+tag_q2_part1: 'tag add q2_part1'
+entry_q2_part1: 'journal add q2_part1'
+
+q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward2: 'if empty0 QuestReward2_Full else QuestReward2_Folder'
+QuestReward2_Folder: 'folder QuestReward2_If_Not_Full,QuestReward2_Claimed_Tag'
+QuestReward2_If_Not_Full: "run ^command mmoitems give MATERIAL GIANT_EGG %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward2_Full: 'folder QuestReward2_Full_message,QuestReward2_Full_Tag'
+QuestReward2_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name2$ &cto redeem your rewards!'
+QuestReward2_Full_Tag: "tag add q2_rewards_unclaimed"
+#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward2_Claim: 'folder Claim_QuestReward2,QuestReward2_Claim_message,QuestReward2_Claimed_Tag,QuestReward2_del_Claimed_Tag'
+Claim_QuestReward2: "run ^command mmoitems give MATERIAL GIANT_EGG %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward2_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
+QuestReward2_Claimed_Tag: "tag add q2_rewards_claimed"
+QuestReward2_del_Claimed_Tag: "tag del q2_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q2_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,q2_completed_message,HideCompass,q2_completed_message2'
+entry_q2_completed: 'journal add q2_completed'
+tag_q2_completed: 'tag add q2_completed'
+entry_q2_part1_remove: 'journal delete q2_part1'
+q2_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-4$ \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$'
+q2_completed_message2: 'run ^notify \n&fThanks for rescuing my &eCuccos &a%player%&f! You were lucky because one of them laid a &lGiant Egg&f, you can keep it!'
+

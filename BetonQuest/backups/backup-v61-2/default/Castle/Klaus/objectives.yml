@@ -1,0 +1,5 @@
+KillUndead: mmobkill MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UNDEAD_CASTER,UNDEAD_WARRIOR
+  amount:100 events:entry_q1_complete,QuestReward1,spawnboss,warpplayer,default-Points.GiveMordenSummonPoint notify:1
+
+KillUndeadFirst: mmobkill MORDEN_THE_UNDEAD1,MORDEN_THE_UNDEAD2,MORDEN_THE_UNDEAD,UNDEAD_HARPY,UNDEAD_SPIDER,UNDEAD_SKELETON2,UNDEAD_ARCHER2,ALPHA_SOUL,UNDEAD_CASTER,UNDEAD_WARRIOR
+  amount:100 events:default-Points.GiveCastlePoint,default-Points.GiveQuestTotalPoint conditions:!Castle_Point

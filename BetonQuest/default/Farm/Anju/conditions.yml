@@ -1,57 +1,11 @@
-q1_part1: tag q1_part1
-Cuccos1: point Cucco 1
-hideCucco: tag hideCucco
-CompletedCuccos1: tag hideCucco
-hideCucco1: tag hideCucco1
-Cuccos2: point Cucco 2
-hideCucco2: tag hideCucco2
-CompletedCuccos2: tag CompletedCuccos2
-hideCucco3: tag hideCucco3
-Cuccos3: point Cucco 3
-hideCucco4: tag hideCucco4
-CompletedCuccos3: tag CompletedCuccos3
-Cuccos4: point Cucco 4
-CompletedCuccos4: tag CompletedCuccos4
-Cuccos5: point Cucco 5
-CompletedCuccos5: tag CompletedCuccos5
-Cuccos6: point Cucco 6
-CompletedCuccos6: tag CompletedCuccos6
-Cuccos7: point Cucco 7
-CompletedCuccos7: tag CompletedCuccos7
-Cuccos8: point Cucco 8
-CompletedCuccos8: tag CompletedCuccos8
-Cuccos9: point Cucco 9
-CompletedCuccos9: tag CompletedCuccos9
-Cuccos10: point Cucco 10
-CompletedCuccos10: tag CompletedCuccos10
-Cuccos11: point Cucco 11
-CompletedCuccos11: tag CompletedCuccos11
-Cuccos12: point Cucco 12
-CompletedCuccos12: tag CompletedCuccos12
-Cuccos13: point Cucco 13
-CompletedCuccos13: tag CompletedCuccos13
-Cuccos14: point Cucco 14
-CompletedCuccos14: tag CompletedCuccos14
-Cuccos15: point Cucco 15
-CompletedCuccos15: tag CompletedCuccos15
-Cuccos16: point Cucco 16
-CompletedCuccos16: tag CompletedCuccos16
-Cuccos17: point Cucco 17
-CompletedCuccos17: tag CompletedCuccos17
-Cuccos18: point Cucco 18
-CompletedCuccos18: tag CompletedCuccos18
-Cuccos19: point Cucco 19
-CompletedCuccos19: tag CompletedCuccos19
-Cuccos20: point Cucco 20
-CompletedCuccos20: tag CompletedCuccos20
-q1_completed: tag q1_completed
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+CUCCO_CATCH_1: point $QUEST1_ID$ 1
+CUCCO_CATCH_2: point $QUEST1_ID$ 5
+CUCCO_CATCH_3: point $QUEST1_ID$ 10
+CUCCO_CATCH_4: point $QUEST1_ID$ 15
+CUCCO_CATCH: point $QUEST1_ID$ 19
 
-
-q2_part1: tag q2_part1
-q2_completed: tag q2_completed
-q2_rewards_unclaimed: tag q2_rewards_unclaimed
-q2_rewards_claimed: tag q2_rewards_claimed
-
-empty0: empty 0 equal
-
-EGG: item EGG:25
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
+EGG_DELIVERY: item EGG:25

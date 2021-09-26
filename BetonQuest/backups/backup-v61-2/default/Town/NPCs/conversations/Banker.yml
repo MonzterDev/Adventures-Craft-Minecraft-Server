@@ -1,0 +1,50 @@
+quester: Banker
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "&7Hey &a%player%&7, I control the bank in our town!"
+    pointers: Player_Response1, Player_Response2, Player_Response3, bye
+
+  NPC_Text2:
+    text: "&7The &aBank &7is meant for you to store your items in, which you can easily access from anywhere and only you can access!"
+    pointers: goBack, bye
+
+  NPC_Text3:
+    text: "&7Your bank can be expanded by using a &eBank Token &7which can be obtained by purchasing it from our store, but there are other ways to get them without paying as well!"
+    pointers: Store, goBack, bye
+
+  store:
+    text: "&7You can visit our &eStore &7for in-game rewards! Check it out here &ahttps://store.adventurescraft.net/"
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fI want to access my &aBank&f!"
+    events: Banker
+
+  Player_Response2:
+    text: "What is the bank for?"
+    pointers: NPC_Text2
+
+  Player_Response3:
+    text: "How do I expand my bank?"
+    pointers: NPC_Text3
+
+  Store:
+    text: "Can I check out the &eStore&f?"
+    pointers: store
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

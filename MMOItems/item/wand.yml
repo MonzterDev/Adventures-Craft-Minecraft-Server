@@ -1,3 +1,29 @@
+HARPY_HEAL3:
+  base:
+    material: PLAYER_HEAD
+    name: <tier-color-cleaned>Harpy Heal
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    tier: RARE
+    ability:
+      ability1:
+        type: HARPY_HEALER_PLAYER
+        mode: RIGHT_CLICK
+        radius: 3
+        cooldown: 10
+        mana: 45.0
+    lore:
+    - §aHeal &7yourself and &aallies&7,
+    - §7within &a5 Blocks &7for &a25%
+    - §7of the respective &aMax HP&7!
+    revision-id: 2
+    skull-texture:
+      value: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIxYjc3YTY4NGJlNGZmYTIxMjE5YzNmYmZmMTYzZWFkYWFkY2M2MzA5Mzk5NjQ2YzE1ZDYxMWZmN2IyY2U0In19fQ==:'
+      uuid: 8f06d201-4899-477e-b7ad-cd66d1ba30c8
 CHIEF_JUKEBOX5:
   base:
     material: JUKEBOX

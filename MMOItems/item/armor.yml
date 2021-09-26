@@ -126,77 +126,73 @@ TURTLEHELMET:
     material: TURTLE_HELMET
     tier: COMMON
     revision-id: 2
-GOLDEN_SKULL4:
+TURTLE_HELMET2:
   base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFkMDQ3NmU4NjcxNjk2YWYzYTg5NDlhZmEyYTgxNGI5YmRkZTY1ZWNjZDFhOGI1OTNhZWVmZjVhMDMxOGQifX19
-      uuid: c7a7e131-0b05-47c7-9cb1-dd6350916a6b
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: UNCOMMON
     unbreakable: true
-    tier: LEGENDARY
-    faction-damage-undead: 10.0
-    disable-smelting: true
-    disable-interaction: false
-    max-health: 35.0
-    dodge-rating: 5.0
-    name: <tier-color-cleaned>Golden Skull
+    max-health: 15.0
+    defense: 10.0
+    revision-id: 2
+TURTLE_HELMET3:
+  base:
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: RARE
+    unbreakable: true
+    max-health: 25.0
+    defense: 15.0
+    revision-id: 2
+    enchants:
+      respiration: 1.0
+    hide-enchants: true
     lore:
-    - '&fExtremely valuable Skull'
-    - '&fripped from a rich Skeleton!'
-    ability:
-      ability1:
-        type: WEAKEN_TARGET
-        mode: WHEN_HIT
-        cooldown: 25.0
-        duration: 5.0
-        extra-damage: 50.0
+    - '&7Allows you to hold your breath'
+    - '&7for longer while underwater!'
+TURTLE_HELMET4:
+  base:
+    material: TURTLE_HELMET
+    name: <tier-color-cleaned>Turtle Helmet
+    tier: LEGENDARY
+    unbreakable: true
+    max-health: 30.0
     defense: 20.0
     revision-id: 2
-STEEL_HELMET:
+    enchants:
+      respiration: 3.0
+    hide-enchants: true
+    lore:
+    - '&7Allows you to hold your breath'
+    - '&7even longer while underwater!'
+DOLPHIN_BOOTS2:
   base:
-    material: IRON_HELMET
-    name: <tier-color-cleaned>Steel Helm
-    lore: []
-    tier: COMMON
-    set: STEEL
+    material: CHAINMAIL_BOOTS
+    name: <tier-color-cleaned>Dolphin Boots
+    tier: UNCOMMON
     unbreakable: true
-    max-health: 10.0
-    disable-interaction: false
-    defense: 3.0
+    max-health: 5.0
+    defense: 5.0
     revision-id: 2
-STEEL_CHESTPLATE:
+    enchants:
+      depth_strider: 1.0
+    hide-enchants: true
+    lore:
+    - '&7Move faster within water!'
+DOLPHIN_BOOTS3:
   base:
-    material: IRON_CHESTPLATE
-    name: <tier-color-cleaned>Steel Chestplate
-    lore: []
-    tier: COMMON
-    set: STEEL
-    max-health: 20.0
+    material: CHAINMAIL_BOOTS
+    name: <tier-color-cleaned>Dolphin Boots
+    tier: RARE
     unbreakable: true
-    defense: 9.0
+    max-health: 5.0
+    defense: 10.0
     revision-id: 2
-STEEL_LEGGINGS:
-  base:
-    material: IRON_LEGGINGS
-    name: <tier-color-cleaned>Steel Leggings
-    lore: []
-    tier: COMMON
-    set: STEEL
-    max-health: 20.0
-    unbreakable: true
-    defense: 7.5
-    revision-id: 2
-STEEL_BOOTS:
-  base:
-    material: IRON_BOOTS
-    name: <tier-color-cleaned>Steel Boots
-    lore: []
-    tier: COMMON
-    set: STEEL
-    unbreakable: true
-    max-health: 10.0
-    defense: 3.0
-    revision-id: 2
+    enchants:
+      depth_strider: 2.0
+    hide-enchants: true
+    lore:
+    - '&7Move even faster within water!'
 BONE_SKULL2:
   base:
     material: PLAYER_HEAD
@@ -246,29 +242,6 @@ BONE_FEET2:
     undead-damage: 5.0
     max-health: 20.0
     defense: 5.0
-    revision-id: 2
-BONE_CHESTPLATE3:
-  base:
-    material: GOLDEN_CHESTPLATE
-    unbreakable: true
-    tier: RARE
-    undead-damage: 20.0
-    disable-repairing: false
-    disable-smelting: true
-    max-health: 40.0
-    name: <tier-color-cleaned>Bone Chestplate
-    defense: 20.0
-    revision-id: 2
-BONE_FEET3:
-  base:
-    material: GOLDEN_BOOTS
-    disable-smelting: true
-    name: <tier-color-cleaned>Bone Feet
-    unbreakable: true
-    tier: RARE
-    undead-damage: 10
-    max-health: 30.0
-    defense: 7.5
     revision-id: 2
 SKELETON_SKULL3:
   base:
@@ -498,10 +471,6 @@ FARMER_HAT:
     movement-speed: 0.02
     disable-interaction: true
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     unstackable: true
     revision-id: 2
 FARMER_SHIRT:
@@ -515,10 +484,6 @@ FARMER_SHIRT:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 FARMER_PANTS:
   base:
@@ -531,10 +496,6 @@ FARMER_PANTS:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 FARMER_SHOES:
   base:
@@ -547,10 +508,6 @@ FARMER_SHOES:
     movement-speed: 0.02
     dye-color: 153 76 0
     set: FARMER
-    upgrade:
-      max: 10
-      template: farmer-set
-      workbench: false
     revision-id: 2
 BEE_WINGS2:
   base:
@@ -568,12 +525,10 @@ BEE_WINGS2:
     defense: 10.0
     ability:
       ability1:
-        type: FLYA
-        mode: SHIFT_RIGHT_CLICK
-        mana: 5.0
-        cooldown: 10.0
-    custom-nbt:
-    - MYTHIC_TYPE BEE_WINGS2
+        type: BEE_FLY_PLAYER
+        mode: SNEAK
+        mana: 15.0
+        cooldown: 15.0
     revision-id: 2
 BEE_WINGS3:
   base:
@@ -591,12 +546,10 @@ BEE_WINGS3:
     defense: 20.0
     ability:
       ability1:
-        type: FLYB
+        type: BEE_FLY_PLAYER_B
         mode: SHIFT_RIGHT_CLICK
-        mana: 15.0
-        cooldown: 10.0
-    custom-nbt:
-    - MYTHIC_TYPE BEE_WINGS3
+        mana: 25.0
+        cooldown: 20.0
     revision-id: 2
 PARROT_CHEST2:
   base:

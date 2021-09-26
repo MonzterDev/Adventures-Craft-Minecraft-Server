@@ -1,0 +1,36 @@
+quester: Auctioneer
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "&7Hey &a%player%&7, I'm the &7auctioneer &7of this town!"
+    pointers: Player_Response1, Player_Response2, bye
+
+  NPC_Text2:
+    text: "&7The auction house is where you and many others can sell your items easily! Everyone can easily access the auction house for both buying and selling items."
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fI want to access the &aAuction&f!"
+    events: Auction
+
+  Player_Response2:
+    text: "What is the auction?"
+    pointers: NPC_Text2
+
+
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

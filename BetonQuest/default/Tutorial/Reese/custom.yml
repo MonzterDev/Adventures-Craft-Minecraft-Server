@@ -1,0 +1,11 @@
+npc_holograms:
+  check_interval: 100
+  follow: false
+  disabled: false
+  default:
+    lines:
+    - '&e&lTALK TO ME!'
+    vector: 0;2.67;0
+    conditions: "!QUEST1_STARTED"
+    npcs:
+      - 215

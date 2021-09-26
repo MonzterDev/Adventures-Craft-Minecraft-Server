@@ -1,9 +1,14 @@
-q1_part1: tag q1_part1
-q1_completed: tag q1_completed
-q2_part1: tag q2_part1
-q2_completed: tag q2_completed
-q3_part1: tag q3_part1
-q3_completed: tag q3_completed
-q3_rewards_unclaimed: tag q3_rewards_unclaimed
-q3_rewards_claimed: tag q3_rewards_claimed
-empty0: empty 0 equal
+FULL_INVENTORY: empty 1
+WOODEN_HOE: hand WOODEN_HOE
+
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+BEET_THOSE_ROOTS: point $QUEST1_ID$ 127
+
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
+GOBLIN_PILLAGE: point $QUEST2_ID$ 24
+
+QUEST3_STARTED: tag $QUEST3_ID$_STARTED
+QUEST3_COMPLETED: tag $QUEST3_ID$_COMPLETED
+SACRED_CANE: point $QUEST3_ID$ 127

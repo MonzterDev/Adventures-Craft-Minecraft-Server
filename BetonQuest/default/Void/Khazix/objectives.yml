@@ -1,32 +1,26 @@
-#1
-q1Thrall: mmobkill VOID_THRALL amount:30 events:quest1_part2_starter notify:5
-q1Thrall_Delivery: npcinteract 157 conditions:Eggs events:entry_q1_complete,quest2_starter,QuestReward1 notify:1
+THRALL_THRASHING: mmobkill VOID_THRALL amount:1 persistent events:Q1_REPEAT,Q1_COMPLETE,Q2_START
+THRALL_EGG_DELIVERY: npcinteract 157 events:Q2_COMPLETE,Q3_START conditions:$QUEST2_ID$
 
-#2
-VoidWorshipers: mmobkill VOID_WORSHIPER amount:50 events:quest2_part2_starter notify:5
-DNA_Deliver: npcinteract 157 conditions:DNA events:entry_q2_complete,quest3_starter,QuestReward2 notify:1
+WORSHIPER_WONDERS: mmobkill VOID_WORSHIPER amount:1 persistent events:Q3_REPEAT,Q3_COMPLETE,Q4_START
+WORSHIPER_DNA_DELIVERY: npcinteract 157 events:Q4_COMPLETE,Q5_START conditions:$QUEST4_ID$
 
-#3
-Blinders: mmobkill VOID_SOURCE amount:20 events:entry_q3_complete,quest4_starter,QuestReward3 notify:5
+UNBLIGHTED: mmobkill VOID_SOURCE amount:1 persistent events:Q5_REPEAT,Q5_COMPLETE,Q6_START
 
-#4
-BULB3: location -159;44;-1001;Spawn 500 conditions:BULBLIN,BULLBO events:entry_q4_complete,quest5_starter,QuestReward4
+BULBLIN_AND_BULLBO: location -159;44;-1001;Spawn 500 events:Q6_COMPLETE,Q7_START conditions:VOID_BULLBO,VOID_BULBLIN
 
-#5
-SpiralCrystal1: npcinteract 158 events:CrystalPoint,Hide_Crystal_Start1,CrystalFound
-SpiralCrystal2: npcinteract 159 events:CrystalPoint,Hide_Crystal_Start2,CrystalFound
-SpiralCrystal3: npcinteract 160 events:CrystalPoint,Hide_Crystal_Start3,CrystalFound
-SpiralCrystal4: npcinteract 161 events:CrystalPoint,Hide_Crystal_Start4,CrystalFound
-SpiralCrystal5: npcinteract 162 events:CrystalPoint,Hide_Crystal_Start5,CrystalFound
-SpiralCrystal6: npcinteract 163 events:CrystalPoint,Hide_Crystal_Start6,CrystalFound
-SpiralCrystal7: npcinteract 164 events:CrystalPoint,Hide_Crystal_Start7,CrystalFound
-SpiralCrystal8: npcinteract 165 events:CrystalPoint,Hide_Crystal_Start8,CrystalFound
-SpiralCrystal9: npcinteract 166 events:CrystalPoint,Hide_Crystal_Start9,CrystalFound
-SpiralCrystal10: npcinteract 167 events:CrystalPoint,Hide_Crystal_Start10,CrystalFound
-SpiralCrystal11: npcinteract 168 events:CrystalPoint,Hide_Crystal_Start11,CrystalFound
-SpiralCrystal12: npcinteract 169 events:CrystalPoint,Hide_Crystal_Start12,CrystalFound
-SpiralCrystal_Complete: location -159;44;-1001;Spawn 500 conditions:Crystals events:entry_q5_complete,quest6_starter,QuestReward5
+SPIRAL_CRYSTALS_1: npcinteract 158 events:Q7_2_START
+SPIRAL_CRYSTALS_2: npcinteract 159 events:Q7_3_START
+SPIRAL_CRYSTALS_3: npcinteract 160 events:Q7_4_START
+SPIRAL_CRYSTALS_4: npcinteract 161 events:Q7_5_START
+SPIRAL_CRYSTALS_5: npcinteract 162 events:Q7_6_START
+SPIRAL_CRYSTALS_6: npcinteract 163 events:Q7_7_START
+SPIRAL_CRYSTALS_7: npcinteract 164 events:Q7_8_START
+SPIRAL_CRYSTALS_8: npcinteract 165 events:Q7_9_START
+SPIRAL_CRYSTALS_9: npcinteract 166 events:Q7_10_START
+SPIRAL_CRYSTALS_10: npcinteract 167 events:Q7_11_START
+SPIRAL_CRYSTALS_11: npcinteract 168 events:Q7_12_START
+SPIRAL_CRYSTALS_12: npcinteract 169 events:Q7_COMPLETE,Q8_START
 
-#6
-ChorusBreak: mmocorebreakblock 128 block:CHORUS_FLOWER events:quest6_part2_starter notify:8
-ChorusDelivery: npcinteract 157 conditions:Chorus events:QuestReward6,entry_q6_complete notify:1
+CHORUS_PREPERATIONS: mmocorebreakblock 1 block:CHORUS_FLOWER events:Q8_REPEAT,Q8_COMPLETE,Q9_START
+
+JOINING_THE_CHORUS: npcinteract 157 events:Q9_COMPLETE

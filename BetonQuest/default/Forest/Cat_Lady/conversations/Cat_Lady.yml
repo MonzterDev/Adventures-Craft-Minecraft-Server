@@ -1,0 +1,44 @@
+quester: Cat Lady
+first: greeting,completed
+NPC_options:
+  greeting:
+    text: Ohh, hey &a%player%&7 I'm waiting here for my runaway &acats &7to return! 
+    pointers: hey, quest, leads, bye
+    conditions: '!QUEST1_COMPLETED'        
+  completed:
+    text: Thank you so much &a%player%&7 for rescuing all my &acats&7! 
+    conditions: 'QUEST1_COMPLETED'
+  town_info:
+    text: Ohh, I have so many &acats &7I lost count. I've been having a problem recently, because many of my &acats &7keep running away. It seems like they never come back, making me very sad... 
+    pointers: wow, bye
+  quests:
+    text: Please &a%player%&7, help rescue my &acats&7!
+    pointers: quest1, quest_decline
+    
+  quest1accept:
+    text: My &acats &7have ran all accross the &aSpruce Forest&7, please use these leads to drag them back to me!
+
+player_options:
+  hey:
+    text: How many cats do you have?
+    pointers: town_info
+  quest:
+    text: Do you have any Quests?
+    pointers: quests
+    conditions: '!QUEST1_STARTED'
+  leads:
+    text: I want to buy &eLeads&f!
+    events: 'LEAD_SHOP'    
+  bye:
+    text: I need to go, sorry.
+    
+  wow:
+    text: You came a long way!
+    pointers: greeting
+
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+  quest1:
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
+    pointers: quest1accept

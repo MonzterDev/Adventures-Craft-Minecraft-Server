@@ -1,23 +1,29 @@
 npcs:
   '174': Ingo
 variables:
-    quest_name1: "Curing the Hunger"
-    quest_objective1: "Harvest &2320 Grass &fto feed &aEpona&f!"
-    quest_objective1-2: "Bring the &2320 Grass &fback and feed &aEpona&f!"
-    quest_reward1-1: "&d200 EXP"
-    quest_reward1-2: "&d200 Farming EXP"
-    quest_reward1-3: "&e150 Coins"
-    quest_reward1-4: "&fEpona Mount"
-    quest_objective_journal1: "&0Harvest &2320 Grass &0to feed &aEpona&0!"
-    quest_objective_journal1-2: "&0Bring the &2320 Grass &0back and feed &aEpona&0!"
-    quest_complete1: "&0I'm sad to give my &aEpona &0away, but happy it went to such an adventurer like yourself!"
+    QUESTER_NAME: "INGO"
 
-    quest_name2: "Cucco Search"
-    quest_objective2: "Find all my 4 lost &aCuccos&f, stuck atop of the Oak Trees in the &aFarm&f!"
-    quest_reward2-1: "&d200 EXP"
-    quest_reward2-2: "&d200 Farming EXP"
-    quest_reward2-3: "&e150 Coins"
-    quest_reward2-4: "&fGiant Egg"
-    quest_objective_journal2: "&0Find all my 4 lost &aCuccos&0, stuck atop of the Oak Trees in the &aFarm&0!"
-    quest_complete2: "&0You saved them! One of them was so happy they laid a &lGiant Egg&0!"
+    QUEST1_NAME: "Grass Gatherer"
+    QUEST1_ID: "GRASS_GATHERER"
+    QUEST1_OBJ_MESSAGE: "&aHarvest &f320 &aGrass &ffor &aEpona"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Harvest &0320 &aGrass &0for &aEpona"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aHarvest &f%point.$QUEST1_ID$.left\:320% &aGrass &ffor &aEpona'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:grass ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
+    QUEST2_NAME: "Curing the Hunger"
+    QUEST2_ID: "CURING_THE_HUNGER"
+    QUEST2_OBJ_MESSAGE: "&aFeed &f320 &aGrass &fto &aEpona"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Feed &0320 &aGrass &0to &aEpona"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:leather_horse_armor ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Cucco Search"
+    QUEST3_ID: "CUCCO_SEARCH"
+    QUEST3_1_OBJ_MESSAGE: "&aRescue &fthe &aCucco &ftrapped atop the &atree &fat (13, 77, -373)"
+    QUEST3_2_OBJ_MESSAGE: "&aRescue &fthe &aCucco &ftrapped atop the &atree &fat (-58, 77, -401)"
+    QUEST3_3_OBJ_MESSAGE: "&aRescue &fthe &aCucco &ftrapped atop the &atree &fat (-126, 77, -349)"
+    QUEST3_4_OBJ_MESSAGE: "&aRescue &fthe &aCucco &ftrapped atop the &atree &fat (-32, 77, -318)"
+    QUEST3_1_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Rescue &0the &2Cucco &0trapped atop the &2tree &0at (13, 77, -373)"
+    QUEST3_2_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Rescue &0the &2Cucco &0trapped atop the &2tree &0at (-58, 77, -401)"
+    QUEST3_3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Rescue &0the &2Cucco &0trapped atop the &2tree &0at (-126, 77, -349)"
+    QUEST3_4_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Rescue &0the &2Cucco &0trapped atop the &2tree &0at (-32, 77, -318)"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:feather ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

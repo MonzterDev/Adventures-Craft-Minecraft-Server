@@ -1,8 +1,8 @@
-GatherGrass: mmocorebreakblock 320 block:GRASS events:quest1_part2_start,tag_q1_part2,entry_q1_part2,q1_part2_start_message notify:8
-FeedEpona: npcinteract 173 conditions:Grass events:entry_q1_complete,QuestReward1,quest2_starter notify:1
+GRASS_GATHERER: mmocorebreakblock 1 block:GRASS events:Q1_REPEAT,Q1_COMPLETE,Q2_START
 
-FindCucco: npcinteract 175 events:CuccoPoint,Hide_Cucco_Start1,CuccoFound,CuccoCompassDisable
-FindCucco2: npcinteract 176 events:CuccoPoint,Hide_Cucco_Start2,CuccoFound,CuccoCompassDisable2
-FindCucco3: npcinteract 177 events:CuccoPoint,Hide_Cucco_Start3,CuccoFound,CuccoCompassDisable3
-FindCucco4: npcinteract 178 events:CuccoPoint,Hide_Cucco_Start4,CuccoFound,CuccoCompassDisable4
-FindCucco_Complete: location -90;44;-364;Spawn 5000 conditions:Cuccos events:entry_q2_complete,QuestReward2,HideCompass
+CURING_THE_HUNGER: npcinteract 173 events:Q2_COMPLETE,Q3_START condition:CURING_THE_HUNGER
+
+CUCCO_SEARCH_1: npcinteract 175 events:Q3_2_START
+CUCCO_SEARCH_2: npcinteract 176 events:Q3_3_START
+CUCCO_SEARCH_3: npcinteract 177 events:Q3_4_START
+CUCCO_SEARCH_4: npcinteract 178 events:Q3_COMPLETE

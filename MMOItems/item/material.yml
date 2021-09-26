@@ -12,6 +12,18 @@ LOST_SOUL:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkNWFiMjFkNjdlZWFkMTYzMzE3YzlhNWRjNTFkNDA5ZDg1ZGYyNTI3NjY3YTQyNGEyYWZmNjczOGI2ZmM5NyJ9fX0=
       uuid: 55a3f9d0-7ded-418e-b64b-10505f36bd08
     revision-id: 2
+ACORN:
+  base:
+    material: PLAYER_HEAD
+    name: <tier-color-cleaned>Acorn
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    disable-interaction: true
+    skull-texture:
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTk4OGVjNjVjNTFhODU3NzJjOGQ4NmQ3NGVhOGUwZTU3MjUyM2JmOGVkYzhjYmE1YWQxMTk1MmZiZWJlNjYwIn19fQ==
+      uuid: 55a3f9d0-7ded-418e-b64b-10505f36bd10
+    revision-id: 2
 BONE_FRAGMENT:
   base:
     material: STONE_BUTTON
@@ -24,6 +36,16 @@ BONE_FRAGMENT:
     tier: COMMON
     lore:
     - '&fFragments from the Undead!'
+    revision-id: 2
+DIRTY_SAND:
+  base:
+    material: BROWN_DYE
+    name: <tier-color-cleaned>Dirty Sand
+    unbreakable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-repairing: true
+    tier: COMMON
     revision-id: 2
 ALPHA_SOUL:
   base:
@@ -38,11 +60,12 @@ ALPHA_SOUL:
 'NULL':
   base:
     material: PAPER
-    name: <tier-color-cleaned>Null
+    name: <tier-color-cleaned>Null, Report To Admin
     lore:
     - §fYou most likely crafted
     - §fsomething which is disabled!
     disable-interaction: true
+    tier: COMMON
     revision-id: 2
 SMITHINGTABLE:
   base:
@@ -149,10 +172,10 @@ VOID_SHARD:
     name: <tier-color-cleaned>Void Shard
     tier: RARE
     revision-id: 2
-ENCHANTED_FISH:
+ENCHANTED_COD:
   base:
     material: COD
-    name: <tier-color-cleaned>Enchanted Fish
+    name: <tier-color-cleaned>Enchanted Cod
     hide-enchants: true
     disable-crafting: true
     disable-smelting: true
@@ -197,6 +220,14 @@ ENCHANTED_COBBLESTONE:
     tier: RARE
     disable-interaction: true
     revision-id: 2
+COAL_SHARD:
+  base:
+    material: BLACK_DYE
+    name: <tier-color-cleaned>Coal Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_COAL:
   base:
     material: COAL
@@ -208,6 +239,14 @@ ENCHANTED_COAL:
     disable-smelting: true
     tier: RARE
     revision-id: 2
+IRON_SHARD:
+  base:
+    material: WHITE_DYE
+    name: <tier-color-cleaned>Iron Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_IRON:
   base:
     material: IRON_INGOT
@@ -218,6 +257,14 @@ ENCHANTED_IRON:
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
+GOLD_SHARD:
+  base:
+    material: YELLOW_DYE
+    name: <tier-color-cleaned>Gold Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
     revision-id: 2
 ENCHANTED_GOLD:
   base:
@@ -252,6 +299,14 @@ ENCHANTED_LAPIS:
     disable-smelting: true
     tier: RARE
     revision-id: 2
+DIAMOND_SHARD:
+  base:
+    material: LIGHT_BLUE_DYE
+    name: <tier-color-cleaned>Diamond Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
+    revision-id: 2
 ENCHANTED_DIAMOND:
   base:
     material: DIAMOND
@@ -262,6 +317,14 @@ ENCHANTED_DIAMOND:
     disable-crafting: true
     disable-smelting: true
     tier: RARE
+    revision-id: 2
+EMERALD_SHARD:
+  base:
+    material: LIME_DYE
+    name: <tier-color-cleaned>Emerald Shard
+    disable-crafting: true
+    disable-smelting: true
+    tier: COMMON
     revision-id: 2
 ENCHANTED_EMERALD:
   base:
@@ -285,7 +348,7 @@ ENCHANTED_QUARTZ:
     disable-smelting: true
     tier: RARE
     revision-id: 2
-ENCHANTED_GLOWSTONEDUST:
+ENCHANTED_GLOWSTONE_DUST:
   base:
     material: GLOWSTONE_DUST
     enchants:
@@ -355,7 +418,7 @@ ENCHANTED_OBSIDIAN:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_ENDSTONE:
+ENCHANTED_END_STONE:
   base:
     material: END_STONE
     enchants:
@@ -376,6 +439,20 @@ ENCHANTED_BLAZE_ROD:
       unbreaking: 5
     hide-enchants: true
     name: <tier-color-cleaned>Enchanted Blaze Rod
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    revision-id: 2
+ENCHANTED_SCUTE:
+  base:
+    material: SCUTE
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    name: <tier-color-cleaned>Enchanted Scute
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -495,7 +572,7 @@ ENCHANTED_GUNPOWDER:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_ENDERPEARL:
+ENCHANTED_ENDER_PEARL:
   base:
     material: ENDER_PEARL
     enchants:
@@ -551,13 +628,13 @@ ENCHANTED_BEEF:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_STEAK:
+ENCHANTED_COOKED_BEEF:
   base:
     material: COOKED_BEEF
     enchants:
       unbreaking: 5
     hide-enchants: true
-    name: <tier-color-cleaned>Enchanted Steak
+    name: <tier-color-cleaned>Enchanted Cooked Beef
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true
@@ -733,7 +810,7 @@ ENCHANTED_COOKED_MUTTON:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_WOOL:
+ENCHANTED_WHITE_WOOL:
   base:
     material: WHITE_WOOL
     enchants:
@@ -747,7 +824,7 @@ ENCHANTED_WOOL:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_SEED:
+ENCHANTED_WHEAT_SEEDS:
   base:
     material: WHEAT_SEEDS
     enchants:
@@ -803,7 +880,7 @@ ENCHANTED_POTATO:
     disable-repairing: true
     tier: RARE
     revision-id: 2
-ENCHANTED_MELON:
+ENCHANTED_MELON_SLICE:
   base:
     material: MELON_SLICE
     enchants:
