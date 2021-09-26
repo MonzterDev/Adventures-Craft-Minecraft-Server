@@ -1,30 +1,27 @@
-q1_part1: tag q1_part1
-q1_completed: tag q1_completed
-q1_rewards_unclaimed: tag q1_rewards_unclaimed
-q1_rewards_claimed: tag q1_rewards_claimed
-q2_part1: tag q2_part1
-q2_completed: tag q2_completed
-q2_rewards_unclaimed: tag q2_rewards_unclaimed
-q2_rewards_claimed: tag q2_rewards_claimed
-q3_part1: tag q3_part1
-q3_completed: tag q3_completed
-q3_rewards_unclaimed: tag q3_rewards_unclaimed
-q3_rewards_claimed: tag q3_rewards_claimed
-q4_part1: tag q4_part1
-q4_completed: tag q4_completed
-q4_rewards_unclaimed: tag q4_rewards_unclaimed
-q4_rewards_claimed: tag q4_rewards_claimed
-q5_part1: tag q5_part1
-q5_part1_completed: tag q5_part1_completed
-q5_part2: tag q5_part2
-q5_part2_completed: tag q5_part2_completed
-q5_part3: tag q5_part3
-q5_part3_completed: tag q5_part3_completed
-q5_part4: tag q5_part4
-q5_part4_completed: tag q5_part4_completed
-q5_part5: tag q5_part5
-q5_part5_completed: tag q5_part5_completed
-q5_Ander: tag q5_Ander
-q5_completed: tag q5_completed
-empty0: empty 0 equal
 
+QUEST1_STARTED: tag $QUEST1_ID$_STARTED
+QUEST1_COMPLETED: tag $QUEST1_ID$_COMPLETED
+THE_UNDEAD_SLAYER: point $QUEST1_ID$ 49
+
+QUEST2_STARTED: tag $QUEST2_ID$_STARTED
+QUEST2_COMPLETED: tag $QUEST2_ID$_COMPLETED
+THE_MAGICAL_HUNT: item MAGICAL_FRAGMENT:8
+
+QUEST3_STARTED: tag $QUEST3_ID$_STARTED
+QUEST3_COMPLETED: tag $QUEST3_ID$_COMPLETED
+SPIDER_EXTERMINATOR: point $QUEST3_ID$ 19
+
+QUEST4_STARTED: tag $QUEST4_ID$_STARTED
+QUEST4_COMPLETED: tag $QUEST4_ID$_COMPLETED
+THE_ALPHAS: point $QUEST4_ID$ 1
+
+QUEST5_STARTED: tag $QUEST5_ID$_STARTED
+QUEST5_COMPLETED: tag $QUEST5_ID$_COMPLETED
+QUEST5_NPC_1: tag QUEST5_NPC_1
+QUEST5_NPC_2: tag QUEST5_NPC_2
+QUEST5_NPC_3: tag QUEST5_NPC_3
+QUEST5_NPC_4: tag QUEST5_NPC_4
+QUEST5_NPC_5: tag QUEST5_NPC_5
+
+QUEST6_STARTED: tag $QUEST6_ID$_STARTED
+QUEST6_COMPLETED: tag $QUEST6_ID$_COMPLETED

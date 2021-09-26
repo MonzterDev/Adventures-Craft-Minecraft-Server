@@ -1,2 +1,82 @@
 npcs:
   '32': Jenny
+variables:
+    QUESTER_NAME: "JENNY"
+
+    QUEST1_NAME: "Oak Timber"
+    QUEST1_ID: "OAK_TIMBER"
+    QUEST1_OBJ_MESSAGE: "&aChop &f64 &aOak Logs &fwith a &lWooden Axe"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Chop &064 &2Oak Logs &0with a &lWooden Axe"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aChop &f%point.$QUEST1_ID$.left\:64% &aOak Logs &fwith a &lWooden Axe'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:OAK_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Worst Axe"
+    QUEST2_ID: "WORST_AXE"
+    QUEST2_OBJ_MESSAGE: "&aSpeak &fwith the &aLumberjack &fto upgrade your &aAxe"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Speak &0with the &2Lumberjack &0to upgrade your &2Axe"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Spruce Timber"
+    QUEST3_ID: "SPRUCE_TIMBER"
+    QUEST3_OBJ_MESSAGE: "&aChop &f128 &aSpruce Logs &fwith a &lWooden Axe"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Chop &0128 &2Spruce Logs &0with a &lWooden Axe"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aChop &f%point.$QUEST3_ID$.left\:128% &aSpruce Logs &fwith a &lWooden Axe'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:SPRUCE_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST4_NAME: "Poor Axe"
+    QUEST4_ID: "POOR_AXE"
+    QUEST4_OBJ_MESSAGE: "&aSpeak &fwith the &aLumberjack &fto upgrade your &aAxe"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Speak &0with the &2Lumberjack &0to upgrade your &2Axe"
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:STONE_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST5_NAME: "Dark Oak Timber"
+    QUEST5_ID: "DARK_OAK_TIMBER"
+    QUEST5_OBJ_MESSAGE: "&aChop &f192 &aDark Oak Logs &fwith a &lStone Axe"
+    QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Chop &0192 &2Dark Oak Logs &0with a &lStone Axe"
+    QUEST5_MSG_REPEAT: '&a$QUEST5_NAME$&f: &aChop &f%point.$QUEST5_ID$.left\:192% &aDark Oak Logs &fwith a &lStone Axe'
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:DARK_OAK_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Decent Axe"
+    QUEST6_ID: "DECENT_AXE"
+    QUEST6_OBJ_MESSAGE: "&aSpeak &fwith the &aLumberjack &fto upgrade your &aAxe"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Speak &0with the &2Lumberjack &0to upgrade your &2Axe"
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:IRON_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST7_NAME: "Birch Timber"
+    QUEST7_ID: "BIRCH_TIMBER"
+    QUEST7_OBJ_MESSAGE: "&aChop &f256 &aBirch Logs &fwith a &lIron Axe"
+    QUEST7_JOU_MESSAGE: "&2$QUEST7_NAME$: \n&2Chop &0256 &2Birch Logs &0with a &lIron Axe"
+    QUEST7_MSG_REPEAT: '&a$QUEST7_NAME$&f: &aChop &f%point.$QUEST7_ID$.left\:256% &aBirch Logs &fwith a &lIron Axe'
+    QUEST7_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ io:advancement frame:challenge icon:minecraft:BIRCH_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST7_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST8_NAME: "Better Axe"
+    QUEST8_ID: "BETTER_AXE"
+    QUEST8_OBJ_MESSAGE: "&aSpeak &fwith the &aLumberjack &fto upgrade your &aAxe"
+    QUEST8_JOU_MESSAGE: "&2$QUEST8_NAME$: \n&2Speak &0with the &2Lumberjack &0to upgrade your &2Axe"
+    QUEST8_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST8_NAME$ io:advancement frame:challenge icon:minecraft:DIAMOND_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST8_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST9_NAME: "Acacia Timber"
+    QUEST9_ID: "ACACIA_TIMBER"
+    QUEST9_OBJ_MESSAGE: "&aChop &f320 &aAcacia Logs &fwith a &lDiamond Axe"
+    QUEST9_JOU_MESSAGE: "&2$QUEST9_NAME$: \n&2Chop &0320 &2Acacia Logs &0with a &lDiamond Axe"
+    QUEST9_MSG_REPEAT: '&a$QUEST9_NAME$&f: &aChop &f%point.$QUEST9_ID$.left\:320% &aAcacia Logs &fwith a &lDiamond Axe'
+    QUEST9_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ io:advancement frame:challenge icon:minecraft:ACACIA_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST10_NAME: "Best Axe"
+    QUEST10_ID: "BEST_AXE"
+    QUEST10_OBJ_MESSAGE: "&aSpeak &fwith the &aLumberjack &fto upgrade your &aAxe"
+    QUEST10_JOU_MESSAGE: "&2$QUEST10_NAME$: \n&2Speak &0with the &2Lumberjack &0to upgrade your &2Axe"
+    QUEST10_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST10_NAME$ io:advancement frame:challenge icon:minecraft:GOLDEN_AXE ^notify $default-Functions.QUEST_COMPLETE$$QUEST10_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST11_NAME: "Jungle Timber"
+    QUEST11_ID: "JUNGLE_TIMBER"
+    QUEST11_OBJ_MESSAGE: "&aChop &f384 &aJungle Logs &fwith a &lGolden Axe"
+    QUEST11_JOU_MESSAGE: "&2$QUEST11_NAME$: \n&2Chop &0384 &2Jungle Logs &0with a &lGolden Axe"
+    QUEST11_MSG_REPEAT: '&a$QUEST11_NAME$&f: &aChop &f%point.$QUEST11_ID$.left\:384% &aJungle Logs &fwith a &lGolden Axe'
+    QUEST11_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST11_NAME$ io:advancement frame:challenge icon:minecraft:JUNGLE_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST11_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST12_NAME: "Jacks Journey"
+    QUEST12_ID: "JACKS_JOURNEY"
+    QUEST12_OBJ_MESSAGE: "&aJourney &fup the &eHive &fto &arescue &aJack &fat (621, 119, -43)"
+    QUEST12_JOU_MESSAGE: "&2$QUEST12_NAME$: \n&2Journey &0up the &6Hive &0to &2rescue &aJack &fat (621, 119, -43)"
+    QUEST12_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST12_NAME$ io:advancement frame:challenge icon:minecraft:PLAYER_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST12_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

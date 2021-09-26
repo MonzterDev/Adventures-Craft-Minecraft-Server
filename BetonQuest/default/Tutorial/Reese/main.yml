@@ -1,0 +1,22 @@
+npcs:
+  '215': Reese
+variables:
+    QUESTER_NAME: "REESE"
+
+    QUEST1_NAME: "Collect a Resource"
+    QUEST1_ID: "COLLECT_A_RESOURCE"
+    QUEST1_OBJ_MESSAGE: "&aHarvest &fand &apickup &fa piece of &aWheat"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Harvest &0and &2pickup &0a piece of &2Wheat"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:WHEAT ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Resource Collector"
+    QUEST2_ID: "RESOURCE_COLLECTOR"
+    QUEST2_OBJ_MESSAGE: "&aUse &fthe &a/ResourceCollector &fcommand to view the &aCollector"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Use &0the &2/ResourceCollector &0command to view the &2Collector"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:CAULDRON ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Crafter"
+    QUEST3_ID: "CRAFTER"
+    QUEST3_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards &6Crafter"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards &6Crafter"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:WHEAT_SEEDS ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

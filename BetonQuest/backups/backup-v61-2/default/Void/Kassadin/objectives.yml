@@ -1,0 +1,18 @@
+#1
+endStone: mmocorebreakblock 512 block:END_STONE events:quest1_part2_starter notify:8
+endStone_Delivery: npcinteract 170 conditions:ENDSTONE events:entry_q1_complete,quest2_starter,QuestReward1 notify:1
+
+#2
+obsidian: mmocorebreakblock 256 block:OBSIDIAN events:quest2_part2_starter notify:8
+obsidian_Deliver: npcinteract 170 conditions:OBSIDIAN events:entry_q2_complete,quest3_starter,QuestReward2 notify:1
+
+#3
+roses: mmocorebreakblock 320 block:WITHER_ROSE events:quest3_part2_starter notify:6
+roses_Deliver: npcinteract 170 conditions:WITHERROSES events:entry_q3_complete,quest4_starter,QuestReward3 notify:1
+
+#4
+veins: mmobkill VOID_VEIN amount:10 events:entry_q4_complete,quest5_starter,QuestReward4 notify:1
+
+#5
+lurker: npcinteract 136 events:entry_q5_complete,QuestReward5 notify:1
+

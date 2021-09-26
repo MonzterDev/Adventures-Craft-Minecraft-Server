@@ -1,0 +1,21 @@
+config-version: 2
+debug: false
+ingame_update_notifications: true
+default_close: true
+messages:
+  en:
+    command_no_permission: '&7[&c&l!&7] No permission!'
+    menu_do_not_open: '&7[&c&l!&7] No permission!'
+    command_usage: '&cUsage:\n&7{1}'
+    command_info_reload: '&breloads all/one menu(s)'
+    command_info_list: '&bopens specific menu [for a player]'
+    command_info_open: '&blists all loaded menus'
+    command_invalid_menu: '&7[&c&l!&7] &c{1}&7 is not a loaded menu!'
+    command_no_player: '&7[&c&l!&7] Please specify a player!'
+    command_invalid_player: '&7[&c&l!&7] There is no player with the name &c{1}&7!'
+    command_no_menu: '&7[&c&l!&7] Please specify a menu!'
+    command_open_successful: '&7Quest menu opened!'
+    command_reload_successful: '&7[{1}&li&7]{1} Successfully reloaded &7{2}{1} menu(s)!'
+    command_reload_failed: '&7[&4&l!&7]&4 Reload failed!'
+    command_list: '&e----- &aRPGMenu &e-----\n&aLoaded menus:&e '
+    click_to_open: '&bclick to open menu'

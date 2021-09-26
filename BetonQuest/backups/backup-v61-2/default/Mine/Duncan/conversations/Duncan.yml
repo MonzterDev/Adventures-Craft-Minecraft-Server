@@ -1,0 +1,53 @@
+quester: Duncan
+first: goBack,greeting
+NPC_options:
+  goBack:
+    text:  Go back and finish &aCole's&7 quests before talking to me! 
+    conditions: '!default-Mine-Cole.q4_completed'        
+  greeting:
+    text: How many times have you died trying to reach me down this far, &a%player%&7?
+    pointers: hey, quest, bye
+    conditions: 'default-Mine-Cole.q4_completed'        
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: Well the glowing blue ores down here are actually &9Lapis&7! We use &9Lapis &7for many magical things, but food as well!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: We could use your help down here, if you care to offer any!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: First things first, slay those heinous &cVoid Vampires&7!
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: Magic & Soup, wow!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "$quest_name1$" Quest
+    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

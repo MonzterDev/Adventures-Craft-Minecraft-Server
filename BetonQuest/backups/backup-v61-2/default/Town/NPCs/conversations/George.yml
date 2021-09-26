@@ -1,0 +1,47 @@
+quester: George
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "&a%player%&7, I hope one day we can go explore the world together!"
+    pointers: Player_Response1, Player_Response2, Player_Response3, bye
+
+  NPC_Text1:
+    text: "&7Many adventures begin at the &cGraveyard&7! You can follow the gravel road there and begin slaying the &cundead&7!"
+    pointers: goBack, bye
+
+  NPC_Text2:
+    text: "&7You need a home? Talk to &aFlint&7, and he'll give you a quest to receive your first home!"
+    pointers: goBack, bye
+
+  NPC_Text3:
+    text: "&7You can use &a/map &7which pulls up the map from your menu. This map allows you to travel to most areas around the map, but some need to be unlocked!"
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fWhere should I start my adventure?"
+    pointers: NPC_Text1
+
+  Player_Response2:
+    text: "How do I get a home?"
+    pointers: NPC_Text2
+
+  Player_Response3:
+    text: "How can I travel quickly?"
+    pointers: NPC_Text3
+
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

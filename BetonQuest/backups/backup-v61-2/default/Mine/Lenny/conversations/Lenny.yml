@@ -1,0 +1,49 @@
+quester: Lenny
+first: greeting
+NPC_options:
+  greeting:
+    text: Welcome to the &aMine&7, &a%player%&7! 
+    pointers: hey, quest, bye
+#Selected from quest1 dialogue, which will start his first quest
+  town_info:
+    text: Our &aMine &7contains some of the most unique minerals within our world! These minerals are the key ingredients for creating many useful &atools&7, &agems&7, and other &aequipment&7!
+    pointers: wow, bye
+#This is the Quest offering menu basically
+  quests:
+    text: Sure, if you help me, I'll take you to the Gold Mine!
+    pointers: quest1, quest_decline
+    conditions: '!q1_part1'        
+#Selected from quest1 dialogue, which will start his first quest
+  quest1accept:
+    text: Take this &fMiners Pickaxe&7, and start mining! 
+
+#This is how a player responds and what options they have
+player_options:
+#Greeting > Hey
+  hey:
+    text: Hey, what can I do here?
+    pointers: town_info
+#Greeting > Quest    
+  quest:
+    text: Do you have any Quests?
+    pointers: quests    
+    conditions: '!q1_part1'        
+#Greeting > Bye    
+  bye:
+    text: I need to go, sorry.
+    
+#Town_Info > wow 
+  wow:
+    text: I can't wait to start mining!
+    pointers: greeting
+
+#quests > quest decline, when a reject taking a quest
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+  quest1:
+    text: Take "Wood Meets Stone" Quest
+    events: 'GivePickaxe,tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    pointers: quest1accept
+    conditions: '!q1_part1'
+

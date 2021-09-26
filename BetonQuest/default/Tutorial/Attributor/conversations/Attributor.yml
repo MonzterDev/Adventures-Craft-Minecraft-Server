@@ -1,0 +1,33 @@
+quester: Attributor
+first: greeting
+NPC_options:
+  greeting:
+    text: Hey &a%player%&7, are you familiar with &aAttributes&7? 
+    pointers: hey, quest, bye
+  town_info:
+    text: Each time you level up, you receive an &aAttribute Point&7, which can be redeemed by using &e/Attributes&7! Currently there are &a3 Attribute Trees &7you can put points into. &aAttributes &7enable you to further your desired playstyle. If you ever want to adjust your &aAttributes &7you can use a &6Reallocation Token&7!
+    pointers: wow, bye
+  quests:
+    text: I sure do!
+    pointers: quest1, quest_decline
+    
+player_options:
+  hey:
+    text: No, what are they?
+    pointers: town_info
+  quest:
+    text: Do you have any Quests?
+    pointers: quests
+    conditions: '!QUEST1_STARTED'
+  bye:
+    text: I need to go, sorry.
+    
+  wow:
+    text: Thanks for letting me know!
+    pointers: greeting
+
+  quest_decline:
+    text: Actually, I don't want to do your quests!
+  quest1:
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'

@@ -1,89 +1,124 @@
-#This will be started from talking to NPC or Menu, it'll randomly pick one of the Trees
-quest1_start: 'pickrandom 20%Oak,20%Spruce,20%DarkOak,20%Birch,20%Acacia,20%Jungle amount:1'
+DRYAD_SPAWN: 'run ^command mm mobs spawn DRYAD 1 Spawn,588,63,-45,90,0'
+TELEPORT_PLAYER: teleport 569;63;-46;Spawn;-90;0
 
-#Oak Tree section
-Oak: 'folder Oak_Start_Tag,Oak_Start_Message,Oak_Objective,Oak_Journal'
-Oak_Start_Tag: 'tag add Oak_Start'
-Oak_Objective: 'objective start OakLogs'
-Oak_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Oak Logs to summon the &cDryad&f!'
-Oak_Journal: 'journal add Oak'
-
-Spruce: 'folder Spruce_Start_Tag,Spruce_Start_Message,Spruce_Objective,Spruce_Journal'
-Spruce_Start_Tag: 'tag add Spruce_Start'
-Spruce_Objective: 'objective start SpruceLogs'
-Spruce_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Spruce Logs to summon the &cDryad&f!'
-Spruce_Journal: 'journal add Spruce'
-
-DarkOak: 'folder DarkOak_Start_Tag,DarkOak_Start_Message,DarkOak_Objective,DarkOak_Journal'
-DarkOak_Start_Tag: 'tag add DarkOak_Start'
-DarkOak_Objective: 'objective start DarkOakLogs'
-DarkOak_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Dark Oak Logs to summon the &cDryad&f!'
-DarkOak_Journal: 'journal add DarkOak'
-
-Birch: 'folder Birch_Start_Tag,Birch_Start_Message,Birch_Objective,Birch_Journal'
-Birch_Start_Tag: 'tag add Birch_Start'
-Birch_Objective: 'objective start BirchLogs'
-Birch_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Birch Logs to summon the &cDryad&f!'
-Birch_Journal: 'journal add Birch'
-
-Acacia: 'folder Acacia_Start_Tag,Acacia_Start_Message,Acacia_Objective,Acacia_Journal'
-Acacia_Start_Tag: 'tag add Acacia_Start'
-Acacia_Objective: 'objective start AcaciaLogs'
-Acacia_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Acacia Logs to summon the &cDryad&f!'
-Acacia_Journal: 'journal add Acacia'
-
-Jungle: 'folder Jungle_Start_Tag,Jungle_Start_Message,Jungle_Objective,Jungle_Journal'
-Jungle_Start_Tag: 'tag add Jungle_Start'
-Jungle_Objective: 'objective start JungleLogs'
-Jungle_Start_Message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f Chop down 320 Jungle Logs to summon the &cDryad&f!'
-Jungle_Journal: 'journal add Jungle'
-
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: 'folder reward_message,QuestRewards,RepeatEnabled,RepeatDisabled,Repeat'
-reward_message: 'run ^notify \n&6&lQuest Complete\:&f \nSearching for the &cDryad&f&f! \n \n \n &6&lRewards\: \n&8&l » &d 100 EXP \n&8&l » &d 100 Foraging EXP \n&8&l » &e 50 Coins'
-QuestRewards: "run ^command mmocore admin exp give %player% main 100 ^command mmocore admin exp give %player% foraging 100 ^command money give %player% 50"
-RepeatEnabled: "notify \n&a&lSearching for Dryad &ehas been automatically restarted! You can disable this by using &a/DryadRepeat&e! conditions:RepeatEnabled"
-RepeatDisabled: "notify \n&a&lSearching for Dryad &ecan be automatically restarted by using &a/DryadRepeat&e! conditions:!RepeatEnabled"
-Repeat: 'pickrandom 20%Oak,20%Spruce,20%DarkOak,20%Birch,20%Acacia,20%Jungle amount:1 conditions:RepeatEnabled'
-
-#Adds the Completed Journal Entry, Completed Tag, removes Started Tag, and Journal Entry
-entry_q1_complete: 'folder Completed_Journal,Completed_Tag,Oak_Journal_Remove,Spruce_Journal_Remove,DarkOak_Journal_Remove,Birch_Journal_Remove,Acacia_Journal_Remove,Jungle_Journal_Remove,Oak_Start_Tag_Remove,Spruce_Start_Tag_Remove,DarkOak_Start_Tag_Remove,Birch_Start_Tag_Remove,Acacia_Start_Tag_Remove,Jungle_Start_Tag_Remove'
-
-Oak_Start_Tag_Remove: 'tag del Oak_Start'
-Spruce_Start_Tag_Remove: 'tag del Spruce_Start'
-DarkOak_Start_Tag_Remove: 'tag del DarkOak_Start'
-Birch_Start_Tag_Remove: 'tag del Birch_Start'
-Acacia_Start_Tag_Remove: 'tag del Acacia_Start'
-Jungle_Start_Tag_Remove: 'tag del Jungle_Start'
-
-Oak_Journal_Remove: 'journal delete Oak'
-Spruce_Journal_Remove: 'journal delete Spruce'
-DarkOak_Journal_Remove: 'journal delete DarkOak'
-Birch_Journal_Remove: 'journal delete Birch'
-Acacia_Journal_Remove: 'journal delete Acacia'
-Jungle_Journal_Remove: 'journal delete Jungle'
-
-#Adds the Completed Journal & Tag once Objective is completed 
-Completed_Journal: 'journal add Completed'
-Completed_Tag: 'tag add Completed'
-
-#Removes the Completed Tag & Journal at start of Quest
-Completed_Journal_Remove: 'journal delete Completed'
-Completed_Tag_Remove: 'tag remove Completed'
-
-#Spawns Boss & TPs player once the Objective is completed
-BossSpawn: 'folder warpplayer,spawnboss period:3'
-spawnboss: 'run ^command mm mobs spawn DRYAD 1 Spawn,588,62,-44,93,3'
-warpplayer: 'run ^sudo warp Hive'
-
-#Gives the Forst & Total Quest points, and Jack Point, but will only occoure the first time the Quest is done
-Points: 'folder GiveJackPoint,default-Points.GiveForestPoint,default-Points.GiveQuestTotalPoint conditions:!Jack_Point'
-GiveJackPoint: 'point Jack 1 conditions:!Jack_Point'
+QUEST_START: 'pickrandom 16%Q1_START,16%Q2_START,16%Q3_START,16%Q4_START,16%Q4_START,16%Q5_START,16%Q6_START amount:1'
 
 
-#Commands
-DryadRewards: 'run ^command dm open Dryad %player%'
-questmenu: 'run ^command dm open Quests %player%'
-minequestmenu: 'run ^command dm open Minequests %player%'
+Q1_START: 'folder Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START condition:!QUEST1_STARTED'
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_COMPLETE_POINT_GIVE,Q1_TAG_START_REMOVE,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q1_POINT_CLEAR condition:$QUEST1_ID$'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_COMPLETE_POINT_GIVE: 'point $QUEST1_ID$_SUMMONED 1'
+Q1_TAG_START_REMOVE: 'tag delete $QUEST1_ID$_STARTED'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED condition:!QUEST1_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
+Q1_POINT_CLEAR: 'point $QUEST1_ID$ *0'
+
+
+Q2_START: 'folder Q2_OBJ_START,Q2_TAG_START,Q2_JOU_START,Q2_MSG_START condition:!QUEST2_STARTED'
+Q2_OBJ_START: 'objective start $QUEST2_ID$'
+Q2_TAG_START: 'tag add $QUEST2_ID$_STARTED'
+Q2_JOU_START: 'journal add QUEST2_JOU_MESSAGE'
+Q2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q2_REPEAT: 'folder Q2_POINT_GIVE,Q2_MSG_REPEAT,Q2_OBJ_START condition:!$QUEST2_ID$'
+Q2_POINT_GIVE: 'point $QUEST2_ID$ 1'
+Q2_MSG_REPEAT: 'run notify $QUEST2_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q2_COMPLETE: 'folder Q2_OBJ_STOP,Q2_COMPLETE_POINT_GIVE,Q2_TAG_START_REMOVE,Q2_TAG_COMPLETE,Q2_JOU_DELETE,Q2_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q2_POINT_CLEAR condition:$QUEST2_ID$'
+Q2_OBJ_STOP: 'objective delete $QUEST2_ID$'
+Q2_COMPLETE_POINT_GIVE: 'point $QUEST2_ID$_SUMMONED 1'
+Q2_TAG_START_REMOVE: 'tag delete $QUEST2_ID$_STARTED'
+Q2_TAG_COMPLETE: 'tag add $QUEST2_ID$_COMPLETED condition:!QUEST2_COMPLETED'
+Q2_JOU_DELETE: 'journal delete QUEST2_JOU_MESSAGE'
+Q2_MSG_COMPLETE: 'run $QUEST2_COMPLETE$'
+Q2_POINT_CLEAR: 'point $QUEST2_ID$ *0'
+
+
+Q3_START: 'folder Q3_OBJ_START,Q3_TAG_START,Q3_JOU_START,Q3_MSG_START condition:!QUEST3_STARTED'
+Q3_OBJ_START: 'objective start $QUEST3_ID$'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+Q3_JOU_START: 'journal add QUEST3_JOU_MESSAGE'
+Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q3_REPEAT: 'folder Q3_POINT_GIVE,Q3_MSG_REPEAT,Q3_OBJ_START condition:!$QUEST3_ID$'
+Q3_POINT_GIVE: 'point $QUEST3_ID$ 1'
+Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q3_COMPLETE: 'folder Q3_OBJ_STOP,Q3_COMPLETE_POINT_GIVE,Q3_TAG_START_REMOVE,Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q3_POINT_CLEAR condition:$QUEST3_ID$'
+Q3_OBJ_STOP: 'objective delete $QUEST3_ID$'
+Q3_COMPLETE_POINT_GIVE: 'point $QUEST3_ID$_SUMMONED 1'
+Q3_TAG_START_REMOVE: 'tag delete $QUEST3_ID$_STARTED'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED condition:!QUEST3_COMPLETED'
+Q3_JOU_DELETE: 'journal delete QUEST3_JOU_MESSAGE'
+Q3_MSG_COMPLETE: 'run $QUEST3_COMPLETE$'
+Q3_POINT_CLEAR: 'point $QUEST3_ID$ *0'
+
+
+Q4_START: 'folder Q4_OBJ_START,Q4_TAG_START,Q4_JOU_START,Q4_MSG_START condition:!QUEST4_STARTED'
+Q4_OBJ_START: 'objective start $QUEST4_ID$'
+Q4_TAG_START: 'tag add $QUEST4_ID$_STARTED'
+Q4_JOU_START: 'journal add QUEST4_JOU_MESSAGE'
+Q4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q4_REPEAT: 'folder Q4_POINT_GIVE,Q4_MSG_REPEAT,Q4_OBJ_START condition:!$QUEST4_ID$'
+Q4_POINT_GIVE: 'point $QUEST4_ID$ 1'
+Q4_MSG_REPEAT: 'run notify $QUEST4_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q4_COMPLETE: 'folder Q4_OBJ_STOP,Q4_COMPLETE_POINT_GIVE,Q4_TAG_START_REMOVE,Q4_TAG_COMPLETE,Q4_JOU_DELETE,Q4_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q4_POINT_CLEAR condition:$QUEST4_ID$'
+Q4_OBJ_STOP: 'objective delete $QUEST4_ID$'
+Q4_COMPLETE_POINT_GIVE: 'point $QUEST4_ID$_SUMMONED 1'
+Q4_TAG_START_REMOVE: 'tag delete $QUEST4_ID$_STARTED'
+Q4_TAG_COMPLETE: 'tag add $QUEST4_ID$_COMPLETED condition:!QUEST4_COMPLETED'
+Q4_JOU_DELETE: 'journal delete QUEST4_JOU_MESSAGE'
+Q4_MSG_COMPLETE: 'run $QUEST4_COMPLETE$'
+Q4_POINT_CLEAR: 'point $QUEST4_ID$ *0'
+
+
+Q5_START: 'folder Q5_OBJ_START,Q5_TAG_START,Q5_JOU_START,Q5_MSG_START condition:!QUEST5_STARTED'
+Q5_OBJ_START: 'objective start $QUEST5_ID$'
+Q5_TAG_START: 'tag add $QUEST5_ID$_STARTED'
+Q5_JOU_START: 'journal add QUEST5_JOU_MESSAGE'
+Q5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q5_REPEAT: 'folder Q5_POINT_GIVE,Q5_MSG_REPEAT,Q5_OBJ_START condition:!$QUEST5_ID$'
+Q5_POINT_GIVE: 'point $QUEST5_ID$ 1'
+Q5_MSG_REPEAT: 'run notify $QUEST5_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q5_COMPLETE: 'folder Q5_OBJ_STOP,Q5_COMPLETE_POINT_GIVE,Q5_TAG_START_REMOVE,Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q5_POINT_CLEAR condition:$QUEST5_ID$'
+Q5_OBJ_STOP: 'objective delete $QUEST5_ID$'
+Q5_COMPLETE_POINT_GIVE: 'point $QUEST5_ID$_SUMMONED 1'
+Q5_TAG_START_REMOVE: 'tag delete $QUEST5_ID$_STARTED'
+Q5_TAG_COMPLETE: 'tag add $QUEST5_ID$_COMPLETED condition:!QUEST5_COMPLETED'
+Q5_JOU_DELETE: 'journal delete QUEST5_JOU_MESSAGE'
+Q5_MSG_COMPLETE: 'run $QUEST5_COMPLETE$'
+Q5_POINT_CLEAR: 'point $QUEST5_ID$ *0'
+
+
+Q6_START: 'folder Q6_OBJ_START,Q6_TAG_START,Q6_JOU_START,Q6_MSG_START condition:!QUEST6_STARTED'
+Q6_OBJ_START: 'objective start $QUEST6_ID$'
+Q6_TAG_START: 'tag add $QUEST6_ID$_STARTED'
+Q6_JOU_START: 'journal add QUEST6_JOU_MESSAGE'
+Q6_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST6_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q6_REPEAT: 'folder Q6_POINT_GIVE,Q6_MSG_REPEAT,Q6_OBJ_START condition:!$QUEST6_ID$'
+Q6_POINT_GIVE: 'point $QUEST6_ID$ 1'
+Q6_MSG_REPEAT: 'run notify $QUEST6_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q6_COMPLETE: 'folder Q6_OBJ_STOP,Q6_COMPLETE_POINT_GIVE,Q6_TAG_START_REMOVE,Q6_TAG_COMPLETE,Q6_JOU_DELETE,Q6_MSG_COMPLETE,TELEPORT_PLAYER,DRYAD_SPAWN,Q6_POINT_CLEAR condition:$QUEST6_ID$'
+Q6_OBJ_STOP: 'objective delete $QUEST6_ID$'
+Q6_COMPLETE_POINT_GIVE: 'point $QUEST6_ID$_SUMMONED 1'
+Q6_TAG_START_REMOVE: 'tag delete $QUEST6_ID$_STARTED'
+Q6_TAG_COMPLETE: 'tag add $QUEST6_ID$_COMPLETED condition:!QUEST6_COMPLETED'
+Q6_JOU_DELETE: 'journal delete QUEST6_JOU_MESSAGE'
+Q6_MSG_COMPLETE: 'run $QUEST6_COMPLETE$'
+Q6_POINT_CLEAR: 'point $QUEST6_ID$ *0'

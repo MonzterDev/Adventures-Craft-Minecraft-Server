@@ -4,50 +4,34 @@ NPC_options:
   greeting:
     text: You like &eHorses&7, &a%player%&7?
     pointers: hey, quest, bye
-#Selected from quest1 dialogue, which will start his first quest
   town_info:
-    text: My wife and I own a ranch not too far from here! Once you help me out, I may decide to supply you with one.
-    pointers: like, bye
-#This is the Quest offering menu basically
+    text: My wife and I own an &6Estate &7not too far from here! Once you help me out, I may decide to supply you with one.
+    pointers: wow, bye
   quests:
-    text: It's incredibly important to feed a Horse to begin your relationship with it! Would you like to gather some food for &aEpona&7?
+    text: Our &aHorses &7are always hungry and love &agrass&7! Would you like to gather some food for &aEpona&7?
     pointers: quest1, quest_decline
-    conditions: '!q1_part1'        
-#Selected from quest1 dialogue, which will start his first quest
+    
   quest1accept:
-    text: Horses love grass, but they're big eaters! If you want to satisfy &aEpona's &7hunger, you'll need to gather at least &2320 Grass&7!
+    text: "&aHorses &7love &agrass&7, but they're big eaters! If you want to satisfy &aEpona's &7hunger, you'll need to gather at least &a320 Grass&7!"
 
-#This is how a player responds and what options they have
 player_options:
-#Greeting > Hey
   hey:
-    text: I love Horses!
+    text: Hey, what can I do here?
     pointers: town_info
-#Greeting > Quest    
   quest:
     text: Do you have any Quests?
-    pointers: quests    
-    conditions: '!q1_part1'        
-#Greeting > Bye    
+    pointers: quests
+    conditions: '!QUEST1_STARTED'
   bye:
     text: I need to go, sorry.
     
-#Town_Info > wow 
-  like:
-    text: I'd really like a Horsey!!
-    pointers: greeting
-#Town_Info > wow 
   wow:
-    text: Wow, you must be busy!
+    text: I'd really like a &aHorsey&f!!
     pointers: greeting
 
-#quests > quest decline, when a reject taking a quest
   quest_decline:
-    text: Actually, I don't want to help you!
-#quests > quest 1, when a player selects the dialogue of: Take "Exploring the Town" Quest, but dialogue will not be displayed once accepted    
+    text: Actually, I don't want to do your quests!
   quest1:
-    text: Take "$quest_name1$" Quest
-    events: 'tag_q1_part1,entry_q1_part1,quest1_start,q1_start_message'    
+    text: Take "&6$QUEST1_NAME$&f" Quest.
+    events: 'Q1_START'
     pointers: quest1accept
-    conditions: '!q1_part1'
-

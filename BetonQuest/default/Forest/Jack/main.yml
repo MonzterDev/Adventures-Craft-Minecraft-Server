@@ -1,2 +1,46 @@
 npcs:
   '139': Jack
+variables:
+    QUESTER_NAME: "JACK"
+
+    QUEST1_NAME: "Oak Dryad Destroyer"
+    QUEST1_ID: "OAK_DRYAD_DESTROYER"
+    QUEST1_OBJ_MESSAGE: "&aChop &f320 &aOak Logs &fwithin the &aForest"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Chop &0320 &2Oak Logs &0within the &2Forest"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aChop &f%point.$QUEST1_ID$.left\:320% &aOak Logs'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:OAK_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Spruce Dryad Destroyer"
+    QUEST2_ID: "SPRUCE_DRYAD_DESTROYER"
+    QUEST2_OBJ_MESSAGE: "&aChop &f320 &aSpruce Logs &fwithin the &aForest"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Chop &0320 &2Spruce Logs &0within the &2Forest"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aChop &f%point.$QUEST2_ID$.left\:320% &aSpruce Logs'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:SPRUCE_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Dark Oak Dryad Destroyer"
+    QUEST3_ID: "DARK_OAK_DRYAD_DESTROYER"
+    QUEST3_OBJ_MESSAGE: "&aChop &f320 &aDark Oak Logs &fwithin the &aForest"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Chop &0320 &2Dark Oak Logs &0within the &2Forest"
+    QUEST3_MSG_REPEAT: '&a$QUEST3_NAME$&f: &aChop &f%point.$QUEST3_ID$.left\:320% &aDark Oak Logs'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:DARK_OAK_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST4_NAME: "Birch Dryad Destroyer"
+    QUEST4_ID: "BIRCH_DRYAD_DESTROYER"
+    QUEST4_OBJ_MESSAGE: "&aChop &f320 &aBirch Logs &fwithin the &aForest"
+    QUEST4_JOU_MESSAGE: "&2$QUEST4_NAME$: \n&2Chop &0320 &2Birch Logs &0within the &2Forest"
+    QUEST4_MSG_REPEAT: '&a$QUEST4_NAME$&f: &aChop &f%point.$QUEST4_ID$.left\:320% &aBirch Logs'
+    QUEST4_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ io:advancement frame:challenge icon:minecraft:BIRCH_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST4_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST5_NAME: "Acacia Dryad Destroyer"
+    QUEST5_ID: "ACACIA_DRYAD_DESTROYER"
+    QUEST5_OBJ_MESSAGE: "&aChop &f320 &aAcacia Logs &fwithin the &aForest"
+    QUEST5_JOU_MESSAGE: "&2$QUEST5_NAME$: \n&2Chop &0320 &2Acacia Logs &0within the &2Forest"
+    QUEST5_MSG_REPEAT: '&a$QUEST5_NAME$&f: &aChop &f%point.$QUEST5_ID$.left\:320% &aAcacia Logs'
+    QUEST5_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ io:advancement frame:challenge icon:minecraft:ACACIA_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST5_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST6_NAME: "Jungle Dryad Destroyer"
+    QUEST6_ID: "JUNGLE_DRYAD_DESTROYER"
+    QUEST6_OBJ_MESSAGE: "&aChop &f320 &aJungle Logs &fwithin the &aForest"
+    QUEST6_JOU_MESSAGE: "&2$QUEST6_NAME$: \n&2Chop &0320 &2Jungle Logs &0within the &2Forest"
+    QUEST6_MSG_REPEAT: '&a$QUEST6_NAME$&f: &aChop &f%point.$QUEST6_ID$.left\:320% &aJungle Logs'
+    QUEST6_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ io:advancement frame:challenge icon:minecraft:JUNGLE_LOG ^notify $default-Functions.QUEST_COMPLETE$$QUEST6_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

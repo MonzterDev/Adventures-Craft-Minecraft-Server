@@ -1,0 +1,197 @@
+height: 4
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Estate-Bowyer.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBeet Those Roots'
+        - '&f&o'
+        - '&fHarvest 128 Beetroots'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q1_part1,!default-Estate-Bowyer.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBeet Those Roots'
+        - '&f&o'
+        - '&fHarvest 128 Beetroots'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBeet Those Roots'
+        - '&f&o'
+        - '&fHarvest 128 Beetroots'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Estate-Bowyer.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSacred Cane'
+        - '&f&o'
+        - '&fHarvest 64 Sugarcane'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Beet Those Roots'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q2_part1,!default-Estate-Bowyer.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSacred Cane'
+        - '&f&o'
+        - '&fHarvest 64 Sugarcane'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Beet Those Roots'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lSacred Cane'
+        - '&f&o'
+        - '&fHarvest 64 Sugarcane'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Farming EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Estate-Bowyer.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q3_part1,!default-Estate-Bowyer.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Bowyer in the Estate'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Estate-Bowyer.q3_rewards_unclaimed,!default-Estate-Bowyer.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGoblin Pillage'
+        - '&f&o'
+        - '&fPillage the Goblin Village'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Harming Staff'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Estate-Bowyer.QuestReward3_Claim
+      left: default-Estate-Bowyer.QuestReward3_Claim    
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu    
+slots:
+  0-11: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  15-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  20-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass  
+  12-14: quest1_inactive,quest1_active,quest1_completed,quest2_inactive,quest2_active,quest2_completed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed
+  31: back

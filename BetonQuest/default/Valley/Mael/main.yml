@@ -1,30 +1,21 @@
 npcs:
   '42': Mael
 variables:
-    quest_name1: "Conquering the Valley"
-    quest_objective1: "Reach the first Orc Camp at -375,19,-375!"
-    quest_objective2: "Slay 3 Goblin within the Orc Camp!"
-    quest_objective3: "Rescue &aPam &ffrom the Orc Camp!"
-    quest_objective4: "Reach the second Orc Camp at -445,20,-249!"
-    quest_objective5: "Slay 3 Goblin within the Orc Camp!"
-    quest_objective6: "Rescue &aDon &ffrom the Orc Camp!"
-    quest_objective7: "Reach the third Orc Camp at -560,23,-259!"
-    quest_objective8: "Slay 3 Goblin within the Orc Camp!"
-    quest_objective9: "Rescue &aSandrah &ffrom the Orc Camp!"
+    QUESTER_NAME: "MAEL"
 
-    quest_reward1-1: "&d300 EXP"
-    quest_reward1-2: "&d300 Farming EXP"
-    quest_reward1-3: "&e250 Coins"
-    quest_reward1-4: "&aAccess to the Estate"
-    
-    quest_objective_journal1: "&0Reach the first Orc Camp at -375,19,-375!"
-    quest_objective_journal2: "&0Slay 3 Goblin within the Orc Camp!"
-    quest_objective_journal3: "&0Rescue &aPam &0from the Orc Camp!"
-    quest_objective_journal4: "&0Reach the second Orc Camp at -445,20,-249!"
-    quest_objective_journal5: "&0Slay 3 Goblin within the Orc Camp!"
-    quest_objective_journal6: "&0Rescue &aDon &0from the Orc Camp!"
-    quest_objective_journal7: "&0Reach the third Orc Camp at -560,23,-259!"
-    quest_objective_journal8: "&0Slay 3 Goblin within the Orc Camp!"
-    quest_objective_journal9: "&0Rescue &aSandrah &0from the Orc Camp!"
-    quest_complete1: "&0You made it through the &aVelley&0! Now enjoy the &aEstate&0!"
+    QUEST1_NAME: "Rescue Valley Villagers"
+    QUEST1_ID: "RESCUE_VALLEY_VILLAGERS"
+    QUEST1_1_OBJ_MESSAGE: "&aRescue &aPam &ftrapped inside the &cGoblin Camps &fat (-375, 19, -367)"
+    QUEST1_2_OBJ_MESSAGE: "&aRescue &aDon &ftrapped inside the &cGoblin Camps &fat (-446, 20, -241)"
+    QUEST1_3_OBJ_MESSAGE: "&aRescue &aSandrah &ftrapped inside the &cGoblin Camps &fat (-553, 23, -263)"
+    QUEST1_1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Rescue &2Pam &0trapped inside the &cGoblin Camps &0at (-375, 19, -367)"
+    QUEST1_2_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Rescue &2Don &0trapped inside the &cGoblin Camps &0at (-446, 20, -241)"
+    QUEST1_3_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Rescue &2Sandrah &0trapped inside the &cGoblin Camps &0at (-553, 23, -263)"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:PLAYER_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 
+    QUEST2_NAME: "Valley Goblin Slaughter"
+    QUEST2_ID: "VALLEY_GOBLIN_SLAUGHTER"
+    QUEST2_OBJ_MESSAGE: "&aSlay &f25 &aGoblins &fwithin the &aValley"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Slay &025 &cGoblins &0within the &2Valley"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aSlay &f%point.$QUEST2_ID$.left\:25% &cGoblins &fwithin the &aValley'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:ZOMBIE_HEAD ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

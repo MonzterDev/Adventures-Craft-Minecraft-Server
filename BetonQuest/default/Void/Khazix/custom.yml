@@ -1,32 +1,3 @@
-npc_effects:
-  check_interval: 100
-  disabled: false
-  default:
-    class: VortexEffect
-    iterations: 20
-    particle: crit_magic
-    helixes: 3
-    circles: 1
-    grow: 0.1
-    radius: 0.5
-    interval: 100
-notifications:
-  info:
-    io: chat
-    sound: ENTITY_ARROW_HIT_PLAYER	
-hide_npcs:
-  158: 'Hide_Crystal_Start1'
-  159: 'Hide_Crystal_Start2'
-  160: 'Hide_Crystal_Start3'
-  161: 'Hide_Crystal_Start4'
-  162: 'Hide_Crystal_Start5'
-  163: 'Hide_Crystal_Start6'
-  164: 'Hide_Crystal_Start7'
-  165: 'Hide_Crystal_Start8'
-  166: 'Hide_Crystal_Start9'
-  167: 'Hide_Crystal_Start10'
-  168: 'Hide_Crystal_Start11'
-  169: 'Hide_Crystal_Start12'
 npc_holograms:
   check_interval: 100
   follow: false
@@ -34,7 +5,20 @@ npc_holograms:
   default:
     lines:
     - '&e&lTALK TO ME!'
-    vector: 0;2.68;0
-    conditions: "!q1_part1"
+    vector: 0;2.67;0
+    conditions: "!QUEST1_STARTED"
     npcs:
       - 157
+hide_npcs:
+  158: 'QUEST7_NPC_1'
+  159: 'QUEST7_NPC_2'
+  160: 'QUEST7_NPC_3'
+  161: 'QUEST7_NPC_4'
+  162: 'QUEST7_NPC_5'
+  163: 'QUEST7_NPC_6'
+  164: 'QUEST7_NPC_7'
+  165: 'QUEST7_NPC_8'
+  166: 'QUEST7_NPC_9'
+  167: 'QUEST7_NPC_10'
+  168: 'QUEST7_NPC_11'
+  169: 'QUEST7_NPC_12'

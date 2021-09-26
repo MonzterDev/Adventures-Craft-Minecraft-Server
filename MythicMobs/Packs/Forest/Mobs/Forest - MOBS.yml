@@ -119,10 +119,9 @@ CAT_LADY:
   - signal{s=CAPTURED} @MobsInRadius{r=5;t=WILD_CAT} ~onTimer:40
 
 WASP:
-  Type: MPET
-  MPet:
-    Type: Bees
-    Anchor: BEE
+  Type: BEE
+  Disguise:  
+    Type: WASP
     ShowName: true
   Display: '&7[&fLVL 5&7] &cWasp'
   Health: 250
@@ -150,10 +149,9 @@ WASP:
   - skill{s=BEE_STING2} @target ~onAttack
 
 QUEEN_BEE:
-  Type: MPET
-  MPet:
-    Type: Wasp
-    Anchor: BEE
+  Type: BEE
+  Disguise:  
+    Type: QUEEN_BEE
     ShowName: true
   Display: '&7[&fLVL 10&7] &cQueen Bee'
   Health: 500

@@ -1,208 +1,221 @@
-#Q2
-quest1_starter: 'folder quest1_start,tag_q1_part1,entry_q1_part1,q1_start_message'
-quest1_start: 'objective start q1Thrall'
-tag_q1_part1: 'tag add q1_part1'
-entry_q1_part1: 'journal add q1_part1'
-q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
-#p2
-quest1_part2_starter: 'folder quest1_part2_start,tag_q1_part2,entry_q1_part2,q1_part2_start_message,tag_q1_part1_completed'
-tag_q1_part1_completed: 'tag add q1_part1_completed'
-quest1_part2_start: 'objective start q1Thrall_Delivery'
-tag_q1_part2: 'tag add q1_part2'
-entry_q1_part2: 'journal add q1_part2'
-q1_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective1-2$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward1: "if empty0 QuestReward1_Full else QuestReward1_Folder"
-QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
-QuestReward1_If_Not_Full: "run ^command mmoitems give CONSUMABLE THRALL_BALL3 %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
-QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
-QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
-QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
-Claim_QuestReward1: "run ^command mmoitems give CONSUMABLE THRALL_BALL3 %player% 4 ^command mmocore admin exp give %player% main 300 ^command mmocore admin exp give %player% Slayer 300 ^command mmocore admin exp give %player% Void 300 ^command money give %player% 250"
-QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
-QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q1_complete: 'folder removeEggs,default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,tag_q1_completed,entry_q1_part2_remove'
-entry_q1_completed: 'journal add q1_completed'
-tag_q1_completed: 'tag add q1_completed'
-entry_q1_part1_remove: 'journal delete q1_part1'
-entry_q1_part2_remove: 'journal delete q1_part2'
-removeEggs: take ThrallEgg:15
-
-#Q2
-quest2_starter: 'folder quest2_start,tag_q2_part1,entry_q2_part1,q2_start_message'
-quest2_start: 'objective start VoidWorshipers'
-tag_q2_part1: 'tag add q2_part1'
-entry_q2_part1: 'journal add q2_part1'
-q2_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-5$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$ \n&8&l »  $quest_reward1-4$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
-#p2
-quest2_part2_starter: 'folder quest2_part2_start,tag_q2_part2,entry_q2_part2,q2_part2_start_message,tag_q2_part1_completed'
-tag_q2_part1_completed: 'tag add q2_part1_completed'
-quest2_part2_start: 'objective start DNA_Deliver'
-tag_q2_part2: 'tag add q2_part2'
-entry_q2_part2: 'journal add q2_part2'
-q2_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective2$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective2-2$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward2: "run ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q2_complete: 'folder removeDNA,default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q2_completed,entry_q2_part1_remove,tag_q2_completed,entry_q2_part2_remove'
-entry_q2_completed: 'journal add q2_completed'
-tag_q2_completed: 'tag add q2_completed'
-entry_q2_part1_remove: 'journal delete q2_part1'
-entry_q2_part2_remove: 'journal delete q2_part2'
-removeDNA: take DNA:50
+Q1_START: 'folder Q1_OBJ_START,Q1_TAG_START,Q1_JOU_START,Q1_MSG_START'
+Q1_OBJ_START: 'objective start $QUEST1_ID$'
+Q1_TAG_START: 'tag add $QUEST1_ID$_STARTED'
+Q1_JOU_START: 'journal add QUEST1_JOU_MESSAGE'
+Q1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q1_REPEAT: 'folder Q1_POINT_GIVE,Q1_MSG_REPEAT,Q1_OBJ_START condition:!$QUEST1_ID$'
+Q1_POINT_GIVE: 'point $QUEST1_ID$ 1'
+Q1_MSG_REPEAT: 'run notify $QUEST1_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q1_COMPLETE: 'folder Q1_OBJ_STOP,Q1_TAG_COMPLETE,Q1_JOU_DELETE,Q1_MSG_COMPLETE condition:$QUEST1_ID$'
+Q1_OBJ_STOP: 'objective delete $QUEST1_ID$'
+Q1_TAG_COMPLETE: 'tag add $QUEST1_ID$_COMPLETED'
+Q1_JOU_DELETE: 'journal delete QUEST1_JOU_MESSAGE'
+Q1_MSG_COMPLETE: 'run $QUEST1_COMPLETE$'
 
 
-
-quest3_starter: 'folder quest3_start,tag_q3_part1,entry_q3_part1,q3_start_message'
-quest3_start: 'objective start Blinders'
-tag_q3_part1: 'tag add q3_part1'
-entry_q3_part1: 'journal add q3_part1'
-q3_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name2$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward2-1$ \n&8&l »  $quest_reward2-2$ \n&8&l »  $quest_reward2-3$ \n&8&l »  $quest_reward2-4$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective3$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward3: "if empty0 QuestReward3_Full else QuestReward3_Folder"
-QuestReward3_Folder: 'folder QuestReward3_If_Not_Full,QuestReward3_Claimed_Tag'
-QuestReward3_If_Not_Full: "run ^command mmoitems give CATALYST UNBLINDER3 %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
-QuestReward3_Full: 'folder QuestReward3_Full_message,QuestReward3_Full_Tag'
-QuestReward3_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name3$ &cto redeem your rewards!'
-QuestReward3_Full_Tag: "tag add q3_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward3_Claim: 'folder Claim_QuestReward3,QuestReward3_Claim_message,QuestReward3_Claimed_Tag,QuestReward3_del_Claimed_Tag'
-Claim_QuestReward3: "run ^command mmoitems give CATALYST UNBLINDER3 %player% 1 ^command mmocore admin exp give %player% main 400 ^command mmocore admin exp give %player% Slayer 400 ^command mmocore admin exp give %player% Void 400 ^command money give %player% 350"
-QuestReward3_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward3_Claimed_Tag: "tag add q3_rewards_claimed"
-QuestReward3_del_Claimed_Tag: "tag del q3_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q3_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q3_completed,entry_q3_part1_remove,tag_q3_completed'
-entry_q3_completed: 'journal add q3_completed'
-tag_q3_completed: 'tag add q3_completed'
-entry_q3_part1_remove: 'journal delete q3_part1'
-
-quest4_starter: 'folder quest4_start,tag_q4_part1,entry_q4_part1,q4_start_message'
-quest4_start: 'objective start BULB3'
-tag_q4_part1: 'tag add q4_part1'
-entry_q4_part1: 'journal add q4_part1'
-q4_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name3$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward3-4$ \n&8&l »  $quest_reward3-1$ \n&8&l »  $quest_reward3-2$ \n&8&l »  $quest_reward3-3$ \n&8&l »  $quest_reward3-5$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective4$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward4: "if empty0 QuestReward4_Full else QuestReward4_Folder"
-QuestReward4_Folder: 'folder QuestReward4_If_Not_Full,QuestReward4_Claimed_Tag'
-QuestReward4_If_Not_Full: "run ^command mmoitems give MOUNT VOID_BULB %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command mmocore admin exp give %player% Void 1000 ^command money give %player% 750"
-QuestReward4_Full: 'folder QuestReward4_Full_message,QuestReward4_Full_Tag'
-QuestReward4_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name4$ &cto redeem your rewards!'
-QuestReward4_Full_Tag: "tag add q4_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward4_Claim: 'folder Claim_QuestReward4,QuestReward4_Claim_message,QuestReward4_Claimed_Tag,QuestReward4_del_Claimed_Tag'
-Claim_QuestReward4: "run ^command mmoitems give MOUNT VOID_BULB %player% 1 ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command mmocore admin exp give %player% Void 1000 ^command money give %player% 750"
-QuestReward4_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward4_Claimed_Tag: "tag add q4_rewards_claimed"
-QuestReward4_del_Claimed_Tag: "tag del q4_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q4_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q4_completed,entry_q4_part1_remove,tag_q4_completed'
-entry_q4_completed: 'journal add q4_completed'
-tag_q4_completed: 'tag add q4_completed'
-entry_q4_part1_remove: 'journal delete q4_part1'
-
-#5
-quest5_starter: 'folder quest5_start,tag_q5_part1,entry_q5_part1,q5_start_message'
-quest5_start: 'folder SpiralHide_Crystal_Complete,Crystal_Start1,Crystal_Start2,Crystal_Start3,Crystal_Start4,Crystal_Start5,Crystal_Start6,Crystal_Start7,Crystal_Start8,Crystal_Start9,Crystal_Start10,Crystal_Start11,Crystal_Start12'
-
-Crystal_Start1: 'objective start SpiralCrystal1'
-Crystal_Start2: 'objective start SpiralCrystal2'
-Crystal_Start3: 'objective start SpiralCrystal3'
-Crystal_Start4: 'objective start SpiralCrystal4'
-Crystal_Start5: 'objective start SpiralCrystal5'
-Crystal_Start6: 'objective start SpiralCrystal6'
-Crystal_Start7: 'objective start SpiralCrystal7'
-Crystal_Start8: 'objective start SpiralCrystal8'
-Crystal_Start9: 'objective start SpiralCrystal9'
-Crystal_Start10: 'objective start SpiralCrystal10'
-Crystal_Start11: 'objective start SpiralCrystal11'
-Crystal_Start12: 'objective start SpiralCrystal12'
-
-Hide_Crystal_Start1: 'tag add hideCrystal1'
-Hide_Crystal_Start2: 'tag add hideCrystal2'
-Hide_Crystal_Start3: 'tag add hideCrystal3'
-Hide_Crystal_Start4: 'tag add hideCrystal4'
-Hide_Crystal_Start5: 'tag add hideCrystal5'
-Hide_Crystal_Start6: 'tag add hideCrystal6'
-Hide_Crystal_Start7: 'tag add hideCrystal7'
-Hide_Crystal_Start8: 'tag add hideCrystal8'
-Hide_Crystal_Start9: 'tag add hideCrystal9'
-Hide_Crystal_Start10: 'tag add hideCrystal10'
-Hide_Crystal_Start11: 'tag add hideCrystal11'
-Hide_Crystal_Start12: 'tag add hideCrystal12'
-
-SpiralHide_Crystal_Complete: 'objective start SpiralCrystal_Complete'
-
-CrystalPoint: point Crystals 1
-CrystalFound: 'run ^notify &aYou must destroy &e%point.Crystals.left:12% &amore Crystals!'
-
-tag_q5_part1: 'tag add q5_part1'
-entry_q5_part1: 'journal add q5_part1'
-q5_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name4$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward4-4$ \n&8&l »  $quest_reward4-1$ \n&8&l »  $quest_reward4-2$ \n&8&l »  $quest_reward4-3$ \n&8&l »  $quest_reward4-5$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective5$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward5: "run ^command mmocore admin exp give %player% main 1000 ^command mmocore admin exp give %player% Slayer 1000 ^command mmocore admin exp give %player% Void 1000 ^command money give %player% 750"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q5_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,entry_q5_completed,entry_q5_part1_remove,tag_q5_completed'
-entry_q5_completed: 'journal add q5_completed'
-tag_q5_completed: 'tag add q5_completed'
-entry_q5_part1_remove: 'journal delete q5_part1'
+Q2_START: 'folder Q2_OBJ_START,Q2_TAG_START,Q2_JOU_START,Q2_MSG_START condition:$QUEST1_ID$'
+Q2_OBJ_START: 'objective start $QUEST2_ID$'
+Q2_TAG_START: 'tag add $QUEST2_ID$_STARTED'
+Q2_JOU_START: 'journal add QUEST2_JOU_MESSAGE'
+Q2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q2_COMPLETE: 'folder Q2_TAG_COMPLETE,Q2_JOU_DELETE,Q2_TAKE_ITEM,Q2_MSG_COMPLETE'
+Q2_TAG_COMPLETE: 'tag add $QUEST2_ID$_COMPLETED'
+Q2_JOU_DELETE: 'journal delete QUEST2_JOU_MESSAGE'
+Q2_TAKE_ITEM: 'take THRALL_EGG:16'
+Q2_MSG_COMPLETE: 'run $QUEST2_COMPLETE$'
 
 
+Q3_START: 'folder Q3_OBJ_START,Q3_TAG_START,Q3_JOU_START,Q3_MSG_START'
+Q3_OBJ_START: 'objective start $QUEST3_ID$'
+Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
+Q3_JOU_START: 'journal add QUEST3_JOU_MESSAGE'
+Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q3_REPEAT: 'folder Q3_POINT_GIVE,Q3_MSG_REPEAT,Q3_OBJ_START condition:!$QUEST3_ID$'
+Q3_POINT_GIVE: 'point $QUEST3_ID$ 1'
+Q3_MSG_REPEAT: 'run notify $QUEST3_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q3_COMPLETE: 'folder Q3_OBJ_STOP,Q3_TAG_COMPLETE,Q3_JOU_DELETE,Q3_MSG_COMPLETE condition:$QUEST3_ID$'
+Q3_OBJ_STOP: 'objective delete $QUEST3_ID$'
+Q3_TAG_COMPLETE: 'tag add $QUEST3_ID$_COMPLETED'
+Q3_JOU_DELETE: 'journal delete QUEST3_JOU_MESSAGE'
+Q3_MSG_COMPLETE: 'run $QUEST3_COMPLETE$'
 
 
-
-#6
-quest6_starter: 'folder quest6_start,tag_q6_part1,entry_q6_part1,q6_start_message'
-quest6_start: 'objective start ChorusBreak'
-tag_q6_part1: 'tag add q6_part1'
-entry_q6_part1: 'journal add q6_part1'
-q6_start_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name5$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward5-1$ \n&8&l »  $quest_reward5-2$ \n&8&l »  $quest_reward5-3$ \n&8&l »  $quest_reward5-4$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective6$'
-#p2
-quest6_part2_starter: 'folder quest6_part2_start,tag_q6_part2,entry_q6_part2,q6_part2_start_message,tag_q6_part1_completed'
-tag_q6_part1_completed: 'tag add q6_part1_completed'
-quest6_part2_start: 'objective start ChorusDelivery'
-tag_q6_part2: 'tag add q6_part2'
-entry_q6_part2: 'journal add q6_part2'
-q6_part2_start_message: 'run ^notify \n&6&lObjective Complete\:&f \n$quest_objective6$ \n \n \n &6&lNew Objectives\: \n&8&l » &f$quest_objective6-2$'
-#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
-#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
-#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
-QuestReward6: "if empty0 QuestReward6_Full else QuestReward6_Folder"
-QuestReward6_Folder: 'folder QuestReward6_If_Not_Full,QuestReward6_Claimed_Tag'
-QuestReward6_If_Not_Full: "run ^command mmoitems give CONSUMABLE CHORUS_LEAP %player% 2 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
-QuestReward6_Full: 'folder QuestReward6_Full_message,QuestReward6_Full_Tag'
-QuestReward6_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name6$ &cto redeem your rewards!'
-QuestReward6_Full_Tag: "tag add q6_rewards_unclaimed"
-#SECOND QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
-QuestReward6_Claim: 'folder Claim_QuestReward6,QuestReward6_Claim_message,QuestReward6_Claimed_Tag,QuestReward6_del_Claimed_Tag'
-Claim_QuestReward6: "run ^command mmoitems give CONSUMABLE CHORUS_LEAP %player% 2 ^command mmocore admin exp give %player% main 500 ^command mmocore admin exp give %player% Slayer 500 ^command mmocore admin exp give %player% Void 500 ^command money give %player% 450"
-QuestReward6_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
-QuestReward6_Claimed_Tag: "tag add q6_rewards_claimed"
-QuestReward6_del_Claimed_Tag: "tag del q6_rewards_unclaimed"
-#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
-entry_q6_complete: 'folder default-Points.GiveVoidPoint,default-Points.GiveQuestTotalPoint,q6_completed_message,removeChorus,entry_q6_completed,entry_q6_part1_remove,entry_q6_part2_remove,tag_q6_completed'
-entry_q6_completed: 'journal add q6_completed'
-tag_q6_completed: 'tag add q6_completed'
-entry_q6_part1_remove: 'journal delete q6_part1'
-entry_q6_part2_remove: 'journal delete q6_part2'
-q6_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name6$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward6-5$ \n&8&l »  $quest_reward6-1$ \n&8&l »  $quest_reward6-2$ \n&8&l »  $quest_reward6-3$ \n&8&l »  $quest_reward6-4$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective7$'
-removeChorus: take Chorus:128
+Q4_START: 'folder Q4_OBJ_START,Q4_TAG_START,Q4_JOU_START,Q4_MSG_START condition:$QUEST3_ID$'
+Q4_OBJ_START: 'objective start $QUEST4_ID$'
+Q4_TAG_START: 'tag add $QUEST4_ID$_STARTED'
+Q4_JOU_START: 'journal add QUEST4_JOU_MESSAGE'
+Q4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q4_COMPLETE: 'folder Q4_TAG_COMPLETE,Q4_JOU_DELETE,Q4_TAKE_ITEM,Q4_MSG_COMPLETE'
+Q4_TAG_COMPLETE: 'tag add $QUEST4_ID$_COMPLETED'
+Q4_JOU_DELETE: 'journal delete QUEST4_JOU_MESSAGE'
+Q4_TAKE_ITEM: 'take VOID_DNA:50'
+Q4_MSG_COMPLETE: 'run $QUEST4_COMPLETE$'
 
 
+Q5_START: 'folder Q5_OBJ_START,Q5_TAG_START,Q5_JOU_START,Q5_MSG_START'
+Q5_OBJ_START: 'objective start $QUEST5_ID$'
+Q5_TAG_START: 'tag add $QUEST5_ID$_STARTED'
+Q5_JOU_START: 'journal add QUEST5_JOU_MESSAGE'
+Q5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q5_REPEAT: 'folder Q5_POINT_GIVE,Q5_MSG_REPEAT,Q5_OBJ_START condition:!$QUEST5_ID$'
+Q5_POINT_GIVE: 'point $QUEST5_ID$ 1'
+Q5_MSG_REPEAT: 'run notify $QUEST5_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q5_COMPLETE: 'folder Q5_OBJ_STOP,Q5_TAG_COMPLETE,Q5_JOU_DELETE,Q5_MSG_COMPLETE condition:$QUEST5_ID$'
+Q5_OBJ_STOP: 'objective delete $QUEST5_ID$'
+Q5_TAG_COMPLETE: 'tag add $QUEST5_ID$_COMPLETED'
+Q5_JOU_DELETE: 'journal delete QUEST5_JOU_MESSAGE'
+Q5_MSG_COMPLETE: 'run $QUEST5_COMPLETE$'
+
+Q6_START: 'folder Q6_OBJ_START,Q6_TAG_START,Q6_JOU_START,Q6_GPS_START,Q6_MSG_START condition:$QUEST5_ID$'
+Q6_OBJ_START: 'objective start $QUEST6_ID$'
+Q6_TAG_START: 'tag add $QUEST6_ID$_STARTED'
+Q6_JOU_START: 'journal add QUEST6_JOU_MESSAGE'
+Q6_GPS_START: 'command gps:compass start Bullbo %player%'
+Q6_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST6_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q6_COMPLETE: 'folder Q6_TAG_COMPLETE,Q6_JOU_DELETE,Q6_MSG_COMPLETE'
+Q6_TAG_COMPLETE: 'tag add $QUEST6_ID$_COMPLETED'
+Q6_JOU_DELETE: 'journal delete QUEST6_JOU_MESSAGE'
+Q6_MSG_COMPLETE: 'run $QUEST6_COMPLETE$'
 
 
-ShopOpen: "run ^command mmoitems stations open void %player%"
+Q7_START: 'folder Q7_TAG_START,Q7_1_START'
+Q7_TAG_START: 'tag add $QUEST7_ID$_STARTED'
+#
+Q7_1_START: 'folder Q7_1_OBJ_START,Q7_1_JOU_START,Q7_1_GPS_START,Q7_1_MSG_START'
+Q7_1_OBJ_START: 'objective start $QUEST7_ID$_1'
+Q7_1_JOU_START: 'journal add QUEST7_1_JOU_MESSAGE'
+Q7_1_GPS_START: 'command gps:compass start VoidCrystal1 %player%'
+Q7_1_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_1_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_2_START: 'folder Q7_2_OBJ_START,Q7_2_TAG_FOUND,Q7_2_JOU_DELETE,Q7_2_JOU_START,Q7_2_GPS_START,Q7_2_MSG_START'
+Q7_2_OBJ_START: 'objective start $QUEST7_ID$_2'
+Q7_2_TAG_FOUND: 'tag add QUEST7_NPC_1'
+Q7_2_JOU_DELETE: 'journal delete QUEST7_1_JOU_MESSAGE'
+Q7_2_JOU_START: 'journal add QUEST7_2_JOU_MESSAGE'
+Q7_2_GPS_START: 'command gps:compass start VoidCrystal2 %player%'
+Q7_2_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_2_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_3_START: 'folder Q7_3_OBJ_START,Q7_3_TAG_FOUND,Q7_3_JOU_DELETE,Q7_3_JOU_START,Q7_3_GPS_START,Q7_3_MSG_START'
+Q7_3_OBJ_START: 'objective start $QUEST7_ID$_3'
+Q7_3_TAG_FOUND: 'tag add QUEST7_NPC_2'
+Q7_3_JOU_DELETE: 'journal delete QUEST7_2_JOU_MESSAGE'
+Q7_3_JOU_START: 'journal add QUEST7_3_JOU_MESSAGE'
+Q7_3_GPS_START: 'command gps:compass start VoidCrystal3 %player%'
+Q7_3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_4_START: 'folder Q7_4_OBJ_START,Q7_4_TAG_FOUND,Q7_4_JOU_DELETE,Q7_4_JOU_START,Q7_4_GPS_START,Q7_4_MSG_START'
+Q7_4_OBJ_START: 'objective start $QUEST7_ID$_4'
+Q7_4_TAG_FOUND: 'tag add QUEST7_NPC_4'
+Q7_4_JOU_DELETE: 'journal delete QUEST7_3_JOU_MESSAGE'
+Q7_4_JOU_START: 'journal add QUEST7_4_JOU_MESSAGE'
+Q7_4_GPS_START: 'command gps:compass start VoidCrystal4 %player%'
+Q7_4_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_4_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_5_START: 'folder Q7_5_OBJ_START,Q7_5_TAG_FOUND,Q7_5_JOU_DELETE,Q7_5_JOU_START,Q7_5_GPS_START,Q7_5_MSG_START'
+Q7_5_OBJ_START: 'objective start $QUEST7_ID$_5'
+Q7_5_TAG_FOUND: 'tag add QUEST7_NPC_5'
+Q7_5_JOU_DELETE: 'journal delete QUEST7_4_JOU_MESSAGE'
+Q7_5_JOU_START: 'journal add QUEST7_5_JOU_MESSAGE'
+Q7_5_GPS_START: 'command gps:compass start VoidCrystal5 %player%'
+Q7_5_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_5_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_6_START: 'folder Q7_6_OBJ_START,Q7_6_TAG_FOUND,Q7_6_JOU_DELETE,Q7_6_JOU_START,Q7_6_GPS_START,Q7_6_MSG_START'
+Q7_6_OBJ_START: 'objective start $QUEST7_ID$_6'
+Q7_6_TAG_FOUND: 'tag add QUEST7_NPC_6'
+Q7_6_JOU_DELETE: 'journal delete QUEST7_5_JOU_MESSAGE'
+Q7_6_JOU_START: 'journal add QUEST7_6_JOU_MESSAGE'
+Q7_6_GPS_START: 'command gps:compass start VoidCrystal6 %player%'
+Q7_6_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_6_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_7_START: 'folder Q7_7_OBJ_START,Q7_7_TAG_FOUND,Q7_7_JOU_DELETE,Q7_7_JOU_START,Q7_7_GPS_START,Q7_7_MSG_START'
+Q7_7_OBJ_START: 'objective start $QUEST7_ID$_7'
+Q7_7_TAG_FOUND: 'tag add QUEST7_NPC_7'
+Q7_7_JOU_DELETE: 'journal delete QUEST7_6_JOU_MESSAGE'
+Q7_7_JOU_START: 'journal add QUEST7_7_JOU_MESSAGE'
+Q7_7_GPS_START: 'command gps:compass start VoidCrystal7 %player%'
+Q7_7_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_7_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_8_START: 'folder Q7_8_OBJ_START,Q7_8_TAG_FOUND,Q7_8_JOU_DELETE,Q7_8_JOU_START,Q7_8_GPS_START,Q7_8_MSG_START'
+Q7_8_OBJ_START: 'objective start $QUEST7_ID$_8'
+Q7_8_TAG_FOUND: 'tag add QUEST7_NPC_8'
+Q7_8_JOU_DELETE: 'journal delete QUEST7_7_JOU_MESSAGE'
+Q7_8_JOU_START: 'journal add QUEST7_8_JOU_MESSAGE'
+Q7_8_GPS_START: 'command gps:compass start VoidCrystal8 %player%'
+Q7_8_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_8_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_9_START: 'folder Q7_9_OBJ_START,Q7_9_TAG_FOUND,Q7_9_JOU_DELETE,Q7_9_JOU_START,Q7_9_GPS_START,Q7_9_MSG_START'
+Q7_9_OBJ_START: 'objective start $QUEST7_ID$_9'
+Q7_9_TAG_FOUND: 'tag add QUEST7_NPC_9'
+Q7_9_JOU_DELETE: 'journal delete QUEST7_8_JOU_MESSAGE'
+Q7_9_JOU_START: 'journal add QUEST7_9_JOU_MESSAGE'
+Q7_9_GPS_START: 'command gps:compass start VoidCrystal9 %player%'
+Q7_9_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_9_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_10_START: 'folder Q7_10_OBJ_START,Q7_10_TAG_FOUND,Q7_10_JOU_DELETE,Q7_10_JOU_START,Q7_10_GPS_START,Q7_10_MSG_START'
+Q7_10_OBJ_START: 'objective start $QUEST7_ID$_10'
+Q7_10_TAG_FOUND: 'tag add QUEST7_NPC_10'
+Q7_10_JOU_DELETE: 'journal delete QUEST7_9_JOU_MESSAGE'
+Q7_10_JOU_START: 'journal add QUEST7_10_JOU_MESSAGE'
+Q7_10_GPS_START: 'command gps:compass start VoidCrystal10 %player%'
+Q7_10_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_10_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_11_START: 'folder Q7_11_OBJ_START,Q7_11_TAG_FOUND,Q7_11_JOU_DELETE,Q7_11_JOU_START,Q7_11_GPS_START,Q7_11_MSG_START'
+Q7_11_OBJ_START: 'objective start $QUEST7_ID$_11'
+Q7_11_TAG_FOUND: 'tag add QUEST7_NPC_11'
+Q7_11_JOU_DELETE: 'journal delete QUEST7_10_JOU_MESSAGE'
+Q7_11_JOU_START: 'journal add QUEST7_11_JOU_MESSAGE'
+Q7_11_GPS_START: 'command gps:compass start VoidCrystal11 %player%'
+Q7_11_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_11_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_12_START: 'folder Q7_12_OBJ_START,Q7_12_TAG_FOUND,Q7_12_JOU_DELETE,Q7_12_JOU_START,Q7_12_GPS_START,Q7_12_MSG_START'
+Q7_12_OBJ_START: 'objective start $QUEST7_ID$_12'
+Q7_12_TAG_FOUND: 'tag add QUEST7_NPC_12'
+Q7_12_JOU_DELETE: 'journal delete QUEST7_11_JOU_MESSAGE'
+Q7_12_JOU_START: 'journal add QUEST7_12_JOU_MESSAGE'
+Q7_12_GPS_START: 'command gps:compass start VoidCrystal12 %player%'
+Q7_12_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST7_12_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q7_COMPLETE: 'folder Q7_TAG_COMPLETE,Q7_JOU_DELETE,Q7_MSG_COMPLETE'
+Q7_TAG_COMPLETE: 'tag add $QUEST7_ID$_COMPLETED'
+Q7_JOU_DELETE: 'journal delete QUEST7_12_JOU_MESSAGE'
+Q7_MSG_COMPLETE: 'run $QUEST7_COMPLETE$'
+
+
+Q8_START: 'folder Q8_OBJ_START,Q8_TAG_START,Q8_JOU_START,Q8_MSG_START'
+Q8_OBJ_START: 'objective start $QUEST8_ID$'
+Q8_TAG_START: 'tag add $QUEST8_ID$_STARTED'
+Q8_JOU_START: 'journal add QUEST8_JOU_MESSAGE'
+Q8_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST8_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+#
+Q8_REPEAT: 'folder Q8_POINT_GIVE,Q8_MSG_REPEAT,Q8_OBJ_START condition:!$QUEST8_ID$'
+Q8_POINT_GIVE: 'point $QUEST8_ID$ 1'
+Q8_MSG_REPEAT: 'run notify $QUEST8_MSG_REPEAT$ $default-Functions.OBJ_POINT_SOUND$ condition:default-Functions.QUEST_NOTIFY'
+# 
+Q8_COMPLETE: 'folder Q8_OBJ_STOP,Q8_TAG_COMPLETE,Q8_JOU_DELETE,Q8_MSG_COMPLETE condition:$QUEST8_ID$'
+Q8_OBJ_STOP: 'objective delete $QUEST8_ID$'
+Q8_TAG_COMPLETE: 'tag add $QUEST8_ID$_COMPLETED'
+Q8_JOU_DELETE: 'journal delete QUEST8_JOU_MESSAGE'
+Q8_MSG_COMPLETE: 'run $QUEST8_COMPLETE$'
+
+
+Q9_START: 'folder Q9_OBJ_START,Q9_TAG_START,Q9_JOU_START,Q9_MSG_START condition:$QUEST8_ID$'
+Q9_OBJ_START: 'objective start $QUEST9_ID$'
+Q9_TAG_START: 'tag add $QUEST9_ID$_STARTED'
+Q9_JOU_START: 'journal add QUEST9_JOU_MESSAGE'
+Q9_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST9_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
+# 
+Q9_COMPLETE: 'folder Q9_TAG_COMPLETE,Q9_JOU_DELETE,Q9_TAKE_ITEM,Q9_GIVE_ITEM,Q9_MSG_COMPLETE'
+Q9_TAG_COMPLETE: 'tag add $QUEST9_ID$_COMPLETED'
+Q9_JOU_DELETE: 'journal delete QUEST9_JOU_MESSAGE'
+Q9_TAKE_ITEM: 'take CHORUS_SEED:128'
+Q9_GIVE_ITEM: 'mmoitemgive CONSUMABLE CHORUS_LEAP3 2'
+Q9_MSG_COMPLETE: 'run $QUEST9_COMPLETE$'

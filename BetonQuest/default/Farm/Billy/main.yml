@@ -1,17 +1,18 @@
 npcs:
   '44': Billy
 variables:
-    quest_name1: "Delicate Crops"
-    quest_objective1: "Use a Hoe to harvest 128 Carrots!"
-    quest_objective2: "Use a Hoe to harvest 256 Potatoes!"
-    quest_reward1-1: "&d200 EXP"
-    quest_reward1-2: "&d200 Farming EXP"
-    quest_reward1-3: "&e150 Coins"
-    quest_reward1-4: "&fFarmer Hat"
-    quest_reward1-5: "&fFarmer Shirt"
-    quest_reward1-6: "&fFarmer Pants"
-    quest_reward1-7: "&fFarmer Shoes"
-    quest_objective_journal1: "&0Use a Hoe to harvest 128 Carrots!"
-    quest_objective_journal2: "&0Use a Hoe to harvest 256 Potatoes!"
-    quest_complete1: "&0Great job harvesting all those crops! You're now a true farmer!"
+    QUESTER_NAME: "BILLY"
 
+    QUEST1_NAME: "Carrot Harvest"
+    QUEST1_ID: "CARROT_HARVEST"
+    QUEST1_OBJ_MESSAGE: "&aHarvest &f320 &aCarrots &fwith a &fWooden Hoe"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Harvest &0320 &2Carrots &0with a &lWooden Hoe"
+    QUEST1_MSG_REPEAT: '&a$QUEST1_NAME$&f: &aHarvest &f%point.$QUEST1_ID$.left\:320% &aCarrots &fwith a &fWooden Hoe'
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:CARROT ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Potato Harvest"
+    QUEST2_ID: "POTATO_HARVEST"
+    QUEST2_OBJ_MESSAGE: "&aHarvest &f320 &aPotatoes &fwith a &fWooden Hoe"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Harvest &0320 &2Potatoes &0with a &lWooden Hoe"
+    QUEST2_MSG_REPEAT: '&a$QUEST2_NAME$&f: &aHarvest &f%point.$QUEST2_ID$.left\:320% &aPotatoes &fwith a &fWooden Hoe'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:POTATO ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

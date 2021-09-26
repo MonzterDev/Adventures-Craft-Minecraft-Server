@@ -1,0 +1,46 @@
+DUMMY_ENEMY_FRONT: &Dummy
+  Type: ZOMBIE
+  Display: '&cZombie Dummy'
+  Health: 100
+  Faction: Dummy
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0
+    FollowRange: 0
+    Collidable: false
+    PreventOtherDrops: true
+    PreventTeleport: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  Skills:
+  - teleportto{location=-163.5,17,3252.5;y=110;p=2.2} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged
+
+DUMMY_ENEMY_LEFT:
+  <<: *Dummy
+  Type: SKELETON
+  Display: '&cSkeleton Dummy'
+  Skills:
+  - teleportto{location=-161.5,17,3250.5;y=110;p=2.2} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged
+
+DUMMY_ENEMY_RIGHT:
+  <<: *Dummy
+  Type: SPIDER
+  Display: '&cSpider Dummy'
+  Skills:
+  - teleportto{location=-161.5,17,3253.5;y=110;p=2.2} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged
+
+DUMMY_ENEMY_BEHIND:
+  <<: *Dummy
+  Type: CREEPER
+  Display: '&cCreeper Dummy'
+  Skills:
+  - teleportto{location=-161.5,17,3252.5;y=110;p=2.2} @self ~onSpawn
+  - skill{s=HPBAR} @self ~onDamaged

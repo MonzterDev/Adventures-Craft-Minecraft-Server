@@ -1,0 +1,36 @@
+quester: Broker
+first: greeting
+NPC_options:
+
+  greeting:
+    text: "&a%player%&7, I control all shops within our town!"
+    pointers: Player_Response1, Player_Response2, bye
+
+  NPC_Text2:
+    text: "&7You can use the &aCommunity Shops &7to easily sell and buy items in bulk! These are very similar to the Auction."
+    pointers: goBack, bye
+
+  bye:
+    text: "Take care!"
+
+
+#This is how a player responds and what options they have
+player_options:
+
+  Player_Response1:
+    text: "&fI want to access the &aCommunity Shop&f!"
+    events: Broker
+
+  Player_Response2:
+    text: "What are community shops?"
+    pointers: NPC_Text2
+
+
+
+  bye:
+    text: Thanks, but I gotta go!
+    pointers: bye
+  goBack:
+    text: I have another question!
+    pointers: greeting
+

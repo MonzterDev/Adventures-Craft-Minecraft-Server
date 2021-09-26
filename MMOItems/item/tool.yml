@@ -1,12 +1,10 @@
 JACKS_AXE:
   base:
     material: WOODEN_AXE
-    lore:
-    - '&fJack''s bad Axe!'
     tier: COMMON
     perm-effects:
       FAST_DIGGING: 1
-    name: <tier-color-cleaned>Jack's Worst Axe
+    name: <tier-color-cleaned>Jacks Axe
     attack-damage: 15.0
     enchants:
       efficiency: 2.0
@@ -15,12 +13,10 @@ JACKS_AXE:
 JACKS_AXE2:
   base:
     material: STONE_AXE
-    name: <tier-color-cleaned>Jack's Poor Axe
+    name: <tier-color-cleaned>Jacks Axe
     tier: UNCOMMON
     perm-effects:
       FAST_DIGGING: 1
-    lore:
-    - '&fJack''s first Axe!'
     attack-damage: 25.0
     enchants:
       efficiency: 2.0
@@ -36,11 +32,9 @@ JACKS_AXE3:
     disable-smelting: true
     hide-enchants: false
     tier: RARE
-    name: <tier-color-cleaned>Jack's Decent Axe
+    name: <tier-color-cleaned>Jacks Axe
     perm-effects:
       FAST_DIGGING: 1
-    lore:
-    - '&fJack''s upgraded Axe!'
     attack-damage: 35.0
     enchants:
       efficiency: 2.0
@@ -52,41 +46,85 @@ JACKS_AXE4:
     perm-effects:
       FAST_DIGGING: 1
     tier: LEGENDARY
-    name: <tier-color-cleaned>Jack's Better Axe
-    lore:
-    - '&fJack''s more upgraded Axe!'
+    name: <tier-color-cleaned>Jacks Axe
     attack-damage: 50.0
     enchants:
       efficiency: 2.0
-    gem-sockets:
-    - Unused
     revision-id: 2
 JACKS_AXE5:
   base:
     material: GOLDEN_AXE
-    lore:
-    - '&fJack''s upgradedest Axe!'
     tier: EXOTIC
     unbreakable: true
     perm-effects:
       FAST_DIGGING: 1
-    name: <tier-color-cleaned>Jack's Best Axe!
+    name: <tier-color-cleaned>Jacks Axe
     attack-damage: 65.0
     critical-strike-power: 15.0
     enchants:
       efficiency: 2.0
     revision-id: 2
-QUEST_COMPASS:
+    gem-sockets:
+    - Unused
+MINERS_PICKAXE:
   base:
-    material: COMPASS
-    name: <tier-color-cleaned>Quest Compass
-    lore:
-    - §fUse this to guide you on Quests!
-    disable-interaction: true
-    disable-repairing: true
-    disable-enchanting: true
+    material: STONE_PICKAXE
+    tier: COMMON
+    perm-effects:
+      FAST_DIGGING: 1
+    name: <tier-color-cleaned>Miners Pickaxe
+    attack-damage: 15.0
+    enchants:
+      efficiency: 2.0
+    unbreakable: true
+    revision-id: 2
+MINERS_PICKAXE2:
+  base:
+    material: IRON_PICKAXE
+    name: <tier-color-cleaned>Miners Pickaxe
+    tier: UNCOMMON
+    perm-effects:
+      FAST_DIGGING: 1
+    attack-damage: 25.0
+    enchants:
+      efficiency: 2.0
+    unbreakable: true
+    revision-id: 2
+MINERS_PICKAXE3:
+  base:
+    material: GOLDEN_PICKAXE
+    will-break: false
+    bouncing-crack: false
+    unbreakable: true
+    disable-repairing: false
     disable-smelting: true
-    disable-crafting: true
+    hide-enchants: false
+    tier: RARE
+    name: <tier-color-cleaned>Miners Pickaxe
+    perm-effects:
+      FAST_DIGGING: 1
+    attack-damage: 35.0
+    enchants:
+      efficiency: 2.0
+    revision-id: 2
+MINERS_PICKAXE4:
+  base:
+    material: DIAMOND_PICKAXE
+    unbreakable: true
+    perm-effects:
+      FAST_DIGGING: 1
+    tier: LEGENDARY
+    name: <tier-color-cleaned>Miners Pickaxe
+    attack-damage: 50.0
+    enchants:
+      efficiency: 2.0
+    revision-id: 2
+    gem-sockets:
+    - Unused
+SHEARS:
+  base:
+    material: SHEARS
+    name: <tier-color-cleaned>Shears
     unbreakable: true
     tier: COMMON
     revision-id: 2
@@ -229,97 +267,6 @@ DIAMOND_SHOVEL:
     name: <tier-color-cleaned>Diamond Shovel
     unbreakable: true
     tier: COMMON
-    revision-id: 2
-JACKS_BESTER_AXE5:
-  base:
-    material: GOLDEN_AXE
-    name: <tier-color-cleaned>Jack's Bester Axe
-    lore:
-    - §7Jack's Axe is even bester!
-    perm-effects:
-      FAST_DIGGING: 2
-    enchants:
-      efficiency: 5
-    unbreakable: true
-    tier: EXOTIC
-    revision-id: 2
-JACKS_BESTEST_AXE5:
-  base:
-    material: GOLDEN_AXE
-    name: <tier-color-cleaned>Jack's Bestest Axe
-    lore:
-    - §7Jack's got §aHaste 3§7!
-    unbreakable: true
-    tier: EXOTIC
-    perm-effects:
-      FAST_DIGGING: 3
-    revision-id: 2
-MINER_PICKAXE:
-  base:
-    material: WOODEN_PICKAXE
-    name: <tier-color-cleaned>Miners Pickaxe
-    unbreakable: true
-    tier: COMMON
-    lore:
-    - §7Grants §aHaste 1§7!
-    perm-effects:
-      FAST_DIGGING: 1
-    enchants:
-      efficiency: 2.0
-    revision-id: 2
-MINER_PICKAXE2:
-  base:
-    material: STONE_PICKAXE
-    name: <tier-color-cleaned>Miners Pickaxe
-    unbreakable: true
-    tier: UNCOMMON
-    lore:
-    - §7Grants §aHaste 1§7!
-    perm-effects:
-      FAST_DIGGING: 1
-    enchants:
-      efficiency: 2.0
-    revision-id: 2
-MINER_PICKAXE3:
-  base:
-    material: IRON_PICKAXE
-    name: <tier-color-cleaned>Miners Pickaxe
-    unbreakable: true
-    tier: RARE
-    lore:
-    - §7Grants §aHaste 1§7!
-    perm-effects:
-      FAST_DIGGING: 1
-    enchants:
-      efficiency: 2.0
-    revision-id: 2
-MINER_PICKAXE4:
-  base:
-    material: DIAMOND_PICKAXE
-    name: <tier-color-cleaned>Miners Pickaxe
-    unbreakable: true
-    tier: LEGENDARY
-    lore:
-    - §7Grants §aHaste 1§7!
-    perm-effects:
-      FAST_DIGGING: 1
-    enchants:
-      efficiency: 2.0
-    gem-sockets:
-    - Unused
-    revision-id: 2
-MINER_PICKAXE5:
-  base:
-    material: GOLDEN_PICKAXE
-    name: <tier-color-cleaned>Miners Pickaxe
-    unbreakable: true
-    tier: EXOTIC
-    lore:
-    - §7Grants §aHaste 1§7!
-    perm-effects:
-      FAST_DIGGING: 1
-    enchants:
-      efficiency: 2.0
     revision-id: 2
 CEMENTED_STONE_PICKAXE3:
   base:
@@ -539,4 +486,16 @@ DRACS_PICKAXE4:
     gem-sockets:
     - Unused
     defense: 10
+    revision-id: 2
+UNLIMITED_WATER:
+  base:
+    material: WATER_BUCKET
+    name: <tier-color-cleaned>Unlimited Water Bucket
+    unstackable: true
+    enchants:
+      unbreaking: 5
+    tier: RARE
+    lore:
+    - '&7The bucket which never runs out!'
+    hide-enchants: true
     revision-id: 2

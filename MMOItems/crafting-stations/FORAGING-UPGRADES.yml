@@ -1,0 +1,65 @@
+# 
+# Name which will be displayed
+# when opening the station
+name: §f§l»§7§l» §fForaging Upgrades §7§l«§f§l«
+max-queue-size: 10
+items:
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+  no-recipe:
+    material: GRAY_STAINED_GLASS_PANE
+  no-queue-item:
+    material: GRAY_STAINED_GLASS_PANE
+recipes:
+  log-helmet-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_HELMET4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=16}
+    conditions:
+    - profession{profession=Foraging,level=5}
+  log-chestplate-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_CHESTPLATE4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=32}
+    conditions:
+    - profession{profession=Foraging,level=5}
+  log-leggings-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_LEGGINGS4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=32}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=32}
+    conditions:
+    - profession{profession=Foraging,level=5}
+  log-boots-upgrade:
+    item:
+      type: ARMOR
+      id: LOG_BOOTS4
+    ingredients:
+    - mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG,amount=16}
+    - mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG,amount=16}
+    conditions:
+    - profession{profession=Foraging,level=5}

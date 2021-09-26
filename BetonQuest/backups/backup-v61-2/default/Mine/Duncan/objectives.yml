@@ -1,0 +1,5 @@
+VoidVampire: mmobkill VOID_VAMPIRE amount:5 events:entry_q1_complete,quest2_starter,tag_q2_part1,QuestReward1 notify:1
+DeliverMagic: location -73;17;-1029;Spawn 4 conditions:HoldingVoidFrag2,Frags2 events:entry_q2_complete,quest3_starer,tag_q3_part1,QuestReward2 notify:1
+VoidMonsters: mmobkill VOID_BOOMER,VOID_VAMPIRE,VOID_SPIDER amount:10 events:entry_q3_complete,quest4_starer,tag_q4_part1,QuestReward3 notify:1
+Lapis: mmocorebreakblock 192 block:LAPIS_ORE events:entry_q4_complete,quest5_starer,tag_q5_part1,QuestReward4 notify:8
+Duncan: npcinteract 19 events:entry_q5_complete,QuestReward5 notify:1

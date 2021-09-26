@@ -1,0 +1,487 @@
+height: 6
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Mandy.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lPesky Crop Stompers'
+        - '&f&o'
+        - '&fSlaughter 25 Pigs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Mandy in the Farm'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Mandy.q1_part1,!default-Farm-Mandy.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lPesky Crop Stompers'
+        - '&f&o'
+        - '&fSlaughter 25 Pigs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Mandy in the Farm'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Mandy.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lPesky Crop Stompers'
+        - '&f&o'
+        - '&fSlaughter 25 Pigs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Mandy.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lFirst Harvest'
+        - '&f&o'
+        - '&fHarvest 128 Wheat'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pesky Crop Stompers'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Mandy.q2_part1,!default-Farm-Mandy.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lFirst Harvest'
+        - '&f&o'
+        - '&fHarvest 128 Wheat'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Pesky Crop Stompers'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Mandy.q2_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lFirst Harvest'
+        - '&f&o'
+        - '&fHarvest 128 Wheat'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Billy.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Billy in the Farm'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Billy.q1_part1,!default-Farm-Billy.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven by Billy in the Farm'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Billy.q1_completed,default-Farm-Billy.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Billy.q1_rewards_unclaimed,!default-Farm-Billy.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDelicate Crops'
+        - '&f&o'
+        - '&fHarvest the Crop Fields within the Farm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fFarmer Set'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Billy.QuestReward1_Claim
+      left: default-Farm-Billy.QuestReward1_Claim    
+
+
+#THIRD QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Ingo.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_part1,!default-Farm-Ingo.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Ingo in the Farm'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_completed,default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q1_rewards_unclaimed,!default-Farm-Ingo.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCuring the Hunger'
+        - '&f&o'
+        - '&fHarvest &2320 Grass &fto feed &aEpona'
+        - '&fFeed &aEpona &2320 Grass'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fEpona Mount'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Farming EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward1_Claim
+      left: default-Farm-Ingo.QuestReward1_Claim    
+#THIRD QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Ingo.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_part1,!default-Farm-Ingo.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Curing the Hunger'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_completed,default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest5_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Ingo.q2_rewards_unclaimed,!default-Farm-Ingo.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCucco Search'
+        - '&f&o'
+        - '&fFind 4 lost &aCuccos&f, stuck atop'
+        - '&fOak Trees within the &aFarm'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fGiant Egg'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Farming EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Ingo.QuestReward2_Claim
+      left: default-Farm-Ingo.QuestReward2_Claim    
+
+
+#THIRD QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Anju.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_part1,!default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Anju in the Farm'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCucco Catch'
+        - '&f&o'
+        - '&fBring 20 Cuccos back to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+#THIRD QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Farm-Anju.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_part1,!default-Farm-Anju.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Cucco Catch'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_completed,default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest7_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Farm-Anju.q2_rewards_unclaimed,!default-Farm-Anju.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lEgg Delivery'
+        - '&f&o'
+        - '&fDeliver 20 Eggs from the Cuccos to &aAnju'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fScrambled Egg'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Farming EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Farm-Anju.QuestReward2_Claim
+      left: default-Farm-Anju.QuestReward2_Claim    
+
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu    
+slots:
+  0-11: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  12-13: quest1_inactive,quest1_active,quest1_completed,quest2_inactive,quest2_active,quest2_completed
+  14-21: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  22: quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed
+  23-29: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  30-31: quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed,quest5_unclaimed
+  39-40: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed
+  32-38: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  49: back

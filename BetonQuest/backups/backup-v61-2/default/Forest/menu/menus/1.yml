@@ -1,0 +1,1160 @@
+height: 6
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q1_part1,!default-Forest-Jenny.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q1_completed,!default-Forest-Jenny.q1_rewards_unclaimed,default-Forest-Jenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q1_rewards_unclaimed,!default-Forest-Jenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lOak Timber'
+        - '&f&o'
+        - '&fChop down 128 Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Jack Poor Axe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Foraging EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward1_Claim
+      left: default-Forest-Jenny.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Oak Timber'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q2_part1,!default-Forest-Jenny.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Oak Timber'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q2_completed,!default-Forest-Jenny.q2_rewards_unclaimed,default-Forest-Jenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+  quest2_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q2_rewards_unclaimed,!default-Forest-Jenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lSpruce Timber'
+        - '&f&o'
+        - '&fChop down 192 Spruce Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Spruce Forest'
+        - '&8&l» &9Jack Decent Axe'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward2_Claim
+      left: default-Forest-Jenny.QuestReward2_Claim
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spruce Timber'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q3_part1,!default-Forest-Jenny.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Spruce Timber'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q3_completed,!default-Forest-Jenny.q3_rewards_unclaimed,default-Forest-Jenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q3_rewards_unclaimed,!default-Forest-Jenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lDark Oak Timber'
+        - '&f&o'
+        - '&fChop down 256 Dark Oak Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Dark Oak Forest'
+        - '&8&l» &5Jack Better Axe'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward3_Claim
+      left: default-Forest-Jenny.QuestReward3_Claim
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Oak Timber'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q4_part1,!default-Forest-Jenny.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dark Oak Timber'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q4_completed,!default-Forest-Jenny.q4_rewards_unclaimed,default-Forest-Jenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q4_rewards_unclaimed,!default-Forest-Jenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBirch Timber'
+        - '&f&o'
+        - '&fChop down 320 Birch Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Birch Forest'
+        - '&8&l» &eJack Best Axe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward4_Claim
+      left: default-Forest-Jenny.QuestReward4_Claim
+#FIFTH QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Birch Timber'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q5_part1,!default-Forest-Jenny.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&aGiven after completing Birch Timber'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q5_completed,!default-Forest-Jenny.q5_rewards_unclaimed,default-Forest-Jenny.q5_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+    close: false
+  quest5_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q5_rewards_unclaimed,!default-Forest-Jenny.q5_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lAcacia Timber'
+        - '&f&o'
+        - '&fChop down 384 Acacia Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Acacia Forest'
+        - '&8&l» &2Foraging Boost'
+        - '&8&l» &d200 EXP'
+        - '&8&l» &d200 Foraging EXP'
+        - '&8&l» &e150 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward5_Claim
+      left: default-Forest-Jenny.QuestReward5_Claim
+#SIXTH QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q6_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Acacia Timber'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q6_part1,!default-Forest-Jenny.q6_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&aGiven after completing Acacia Timber'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q6_completed,!default-Forest-Jenny.q6_rewards_unclaimed,default-Forest-Jenny.q6_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+    close: false
+  quest6_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q6_rewards_unclaimed,!default-Forest-Jenny.q6_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lJungle Timber'
+        - '&f&o'
+        - '&fChop down 448 Jungle Logs'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to Jungle Forest'
+        - '&8&l» &fBee Wings'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e200 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Jenny.QuestReward6_Claim
+      left: default-Forest-Jenny.QuestReward6_Claim
+
+#FIFTH QUEST
+  questJack1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jenny.q7_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lRescue Jack'
+        - '&f&o'
+        - '&fRescue &aJack &fat the top of the Tree!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Hive'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest!'        
+    close: false
+  questJack1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jenny.q7_part1,!default-Forest-Jenny.q7_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lRescue Jack'
+        - '&f&o'
+        - '&fRescue &aJack &fat the top of the Tree!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Hive'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by Jenny in the Forest!'        
+    close: false
+  questJack1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jenny.q7_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lRescue Jack'
+        - '&f&o'
+        - '&fRescue &aJack &fat the top of the Tree!'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the Hive'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+
+
+#7th QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Bear.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lDont Get Stung'
+        - '&f&o'
+        - '&fSlay 10 Bees'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Bear in the Forest'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q1_part1,!default-Forest-Bear.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lDont Get Stung'
+        - '&f&o'
+        - '&fSlay 10 Bees'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven by Bear in the Forest'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lDont Get Stung'
+        - '&f&o'
+        - '&fSlay 10 Bees'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+    close: false    
+#7th QUEST
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Bear.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dont Get Stung'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q2_part1,!default-Forest-Bear.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Dont Get Stung'        
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q2_completed,!default-Forest-Bear.q2_rewards_unclaimed,default-Forest-Bear.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+    close: false    
+  quest8_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q2_rewards_unclaimed,!default-Forest-Bear.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lKiller Hare'
+        - '&f&o'
+        - '&fLocate &cHare &fburrows'
+        - '&fSlay &cHare'
+        - '&fRescure prisoned &aRabbits'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Tasty Honey'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-Bear.QuestReward2_Claim
+      left: default-Forest-Bear.QuestReward2_Claim    
+#7th QUEST
+  quest9_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Bear.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lHoney Extraction'
+        - '&f&o'
+        - '&fDeliver 64 Honeycombs to &aBear'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Killer Hare'        
+    close: false
+  quest9_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q3_part1,!default-Forest-Bear.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHoney Extraction'
+        - '&f&o'
+        - '&fDeliver 64 Honeycombs to &aBear'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Killer Hare'        
+    close: false
+  quest9_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q3_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lHoney Extraction'
+        - '&f&o'
+        - '&fDeliver 64 Honeycombs to &aBear'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+    close: false    
+#7th QUEST
+  quest10_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Bear.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lWasp Nest'
+        - '&f&o'
+        - '&fDefeat 10 &cWasps'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Honey Extraction'        
+    close: false
+  quest10_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q4_part1,!default-Forest-Bear.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWasp Nest'
+        - '&f&o'
+        - '&fDefeat 10 &cWasps'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Honey Extraction'        
+    close: false
+  quest10_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lWasp Nest'
+        - '&f&o'
+        - '&fDefeat 10 &cWasps'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Foraging EXP'
+        - '&8&l» &e75 Coins'
+    close: false    
+#7th QUEST
+  quest11_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Bear.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lQueen Bee'
+        - '&f&o'
+        - '&fDefeat 1 &cQueen Bee'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wasp Nest'        
+    close: false
+  quest11_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Bear.q5_part1,!default-Forest-Bear.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lQueen Bee'
+        - '&f&o'
+        - '&fDefeat 1 &cQueen Bee'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wasp Nest'        
+    close: false
+  quest11_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Bear.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lQueen Bee'
+        - '&f&o'
+        - '&fDefeat 1 &cQueen Bee'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d300 EXP'
+        - '&8&l» &d300 Foraging EXP'
+        - '&8&l» &e250 Coins'
+    close: false    
+
+#Jack's Quest
+  quest12_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start,!default-Forest-Jack.Completed,'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'    
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_oak:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Oak Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_spruce:
+    item: book
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Spruce Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_darkoak:
+    item: book
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Dark Oak Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_birch:
+    item: book
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Birch Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_acacia:
+    item: book
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Acacia Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_jungle:
+    item: book
+    amount: 1
+    conditions: '!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&a&l[Active] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Jungle Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'        
+        - '&aGiven by Jack in the Forest'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.DryadRewards    
+    close: true
+  quest12_repeat:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-Jack.Completed,!default-Forest-Jack.Oak_Start,!default-Forest-Jack.Spruce_Start,!default-Forest-Jack.DarkOak_Start,!default-Forest-Jack.Birch_Start,!default-Forest-Jack.Acacia_Start,!default-Forest-Jack.Jungle_Start'
+    text:
+      en:
+        - '&d&l[Repeat] &f&lSearching for Dryad'
+        - '&f&o'
+        - '&fChop down &a320 Logs &fto find the &cDryad'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Foraging EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Enchanted Logs &f100%'
+        - '&8&l» &5Dryad Weak Vine &f3%'
+        - '&8&l» &9Wood Catalyst &f3%'
+        - '&8&l» &5Carving Axe &f2%'
+        - '&8&l» &5Dryad Charm &f2%'
+        - '&8&l» &9Dryad Head &f1%'
+        - '&8&l» &eDryad Bark &f.9%'
+        - '&f&o'
+        - '&8&l» &eLeft-Click to Repeat Quest'
+        - '&8&l» &eRight-Click to View Rewards'
+    click:
+      right: default-Forest-Jack.DryadRewards    
+      left: default-Forest-Jack.quest1_start
+    close: true
+
+  quest13_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Forest-CatLady.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
+    close: false
+  quest13_active:
+    item: book
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_part1,!default-Forest-CatLady.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven by the Cat Lady in the Forest'        
+    close: false
+  quest13_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_completed,!default-Forest-CatLady.q1_rewards_unclaimed,default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest13_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Forest-CatLady.q1_rewards_unclaimed,!default-Forest-CatLady.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCat Capture'
+        - '&f&o'
+        - '&fRescue 10 of the Cat Ladies cats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Cat Claw'
+        - '&8&l» &d250 EXP'
+        - '&8&l» &d250 Foraging EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Forest-CatLady.QuestReward1_Claim
+      left: default-Forest-CatLady.QuestReward1_Claim
+
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu    
+slots:
+  0-9: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  17-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  25-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-48: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  50-53: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  10: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed
+  11: quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed
+  12: quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed
+  13: quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed
+  14: quest5_inactive,quest5_active,quest5_completed,quest5_unclaimed
+  15: quest6_inactive,quest6_active,quest6_completed,quest6_unclaimed
+  16: questJack1_inactive,questJack1_active,questJack1_completed
+  20-24: quest7_inactive,quest7_active,quest7_completed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed,quest9_inactive,quest9_active,quest9_completed,quest10_inactive,quest10_active,quest10_completed,quest11_inactive,quest11_active,quest11_completed
+  31: quest12_inactive,quest12_oak,quest12_birch,quest12_spruce,quest12_darkoak,quest12_jungle,quest12_acacia,quest12_repeat  
+  40: quest13_inactive,quest13_active,quest13_completed,quest13_unclaimed
+  49: back

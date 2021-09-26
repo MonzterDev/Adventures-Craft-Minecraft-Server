@@ -1,0 +1,625 @@
+height: 5
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Lenny.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Lenny in the Mine'        
+    close: false
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q1_part1,!default-Mine-Lenny.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven by Lenny in the Mine'        
+    close: false
+  quest1_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q1_completed,!default-Mine-Lenny.q1_rewards_unclaimed,default-Mine-Lenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+  quest1_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q1_rewards_unclaimed,!default-Mine-Lenny.q1_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lWood Meets Stone'
+        - '&f&o'
+        - '&fMine 32 Cobblestone'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &2Miners Pickaxe'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward1_Claim
+      left: default-Mine-Lenny.QuestReward1_Claim
+#SECOND QUEST
+  quest2_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Lenny.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wood Meets Stone'        
+    close: false
+  quest2_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q2_part1,!default-Mine-Lenny.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&aGiven after completing Wood Meets Stone'        
+    close: false
+  quest2_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q2_completed,!default-Mine-Lenny.q2_rewards_unclaimed,default-Mine-Lenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+    close: false
+  quest2_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q2_rewards_unclaimed,!default-Mine-Lenny.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lCoal Miner'
+        - '&f&o'
+        - '&fMine 64 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Dagger'
+        - '&8&l» &d75 EXP'
+        - '&8&l» &d75 Mining EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward2_Claim
+      left: default-Mine-Lenny.QuestReward2_Claim
+#THIRD QUEST
+  quest3_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Lenny.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven after completing Coal Miner'        
+    close: false
+  quest3_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q3_part1,!default-Mine-Lenny.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+
+        - '&f&o'
+        - '&aGiven after completing Coal Miner'        
+    close: false
+  quest3_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q3_completed,!default-Mine-Lenny.q3_rewards_unclaimed,default-Mine-Lenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+  quest3_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q3_rewards_unclaimed,!default-Mine-Lenny.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lBat Hunter'
+        - '&f&o'
+        - '&fSlay 10 &cAngry Bats'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSteel Helmet'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward3_Claim
+      left: default-Mine-Lenny.QuestReward3_Claim
+#FOURTH QUEST
+  quest4_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Lenny.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bat Hunter'        
+    close: false
+  quest4_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q4_part1,!default-Mine-Lenny.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Bat Hunter'        
+    close: false
+  quest4_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q4_completed,!default-Mine-Lenny.q4_rewards_unclaimed,default-Mine-Lenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest4_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q4_rewards_unclaimed,!default-Mine-Lenny.q4_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lHeavy Miner'
+        - '&f&o'
+        - '&fMine 96 Iron Ore'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &9Miners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Lenny.QuestReward4_Claim
+      left: default-Mine-Lenny.QuestReward4_Claim
+#FIFTH QUEST
+  quest5_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Lenny.q5_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMeet Morry'
+        - '&f&o'
+        - '&fSpeak with Morry'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &eGold Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Heavy Miner'        
+    close: false
+  quest5_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Lenny.q5_part1,!default-Mine-Lenny.q5_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMeet Morry'
+        - '&f&o'
+        - '&fSpeak with Morry'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &eGold Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Heavy Miner'        
+    close: false
+  quest5_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Lenny.q5_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMeet Morry'
+        - '&f&o'
+        - '&fSpeak with Morry'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &eGold Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+#SIXTH QUEST
+  quest6_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Morry.q1_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lUltimate Fuel'
+        - '&f&o'
+        - '&fMine 128 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven from Morry after completing Meet Morry'        
+    close: false
+  quest6_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q1_part1,!default-Mine-Morry.q1_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lUltimate Fuel'
+        - '&f&o'
+        - '&fMine 128 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+        - '&f&o'
+        - '&aGiven from Morry after completing Meet Morry'        
+    close: false
+  quest6_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q1_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lUltimate Fuel'
+        - '&f&o'
+        - '&fMine 128 Coal'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Mining EXP'
+        - '&8&l» &e75 Coins'
+    close: false
+#SIXTH QUEST
+  quest7_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Morry.q2_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lMine Spider Slayer'
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ultimate Fuel'        
+    close: false
+  quest7_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q2_part1,!default-Mine-Morry.q2_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lMine Spider Slayer'      
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Ultimate Fuel'        
+    close: false
+  quest7_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q2_completed,!default-Mine-Morry.q2_rewards_unclaimed,default-Mine-Morry.q2_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lMine Spider Slayer'
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest7_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q2_rewards_unclaimed,!default-Mine-Morry.q2_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lMine Spider Slayer'
+        - '&f&o'
+        - '&fSlay 10 Mine Spiders in the Gold Mine'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &fSilver Chestplate'
+        - '&8&l» &d125 EXP'
+        - '&8&l» &d125 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Morry.QuestReward2_Claim
+      left: default-Mine-Morry.QuestReward2_Claim
+#SIXTH QUEST
+  quest8_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Morry.q3_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lGold Finger'
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mine Spider Slayer'        
+    close: false
+  quest8_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q3_part1,!default-Mine-Morry.q3_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lGold Finger'      
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&aGiven after completing Mine Spider Slayer'        
+    close: false
+  quest8_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q3_completed,!default-Mine-Morry.q3_rewards_unclaimed,default-Mine-Morry.q3_rewards_claimed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lGold Finger'
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+    close: false
+  quest8_unclaimed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q3_rewards_unclaimed,!default-Mine-Morry.q3_rewards_claimed'
+    text:
+      en:
+        - '&6&l[Unclaimed] &f&lGold Finger'
+        - '&f&o'
+        - '&fMine 192 Gold Ores'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &eMiners Pickaxe'
+        - '&8&l» &d150 EXP'
+        - '&8&l» &d150 Mining EXP'
+        - '&8&l» &e100 Coins'
+        - '&f&o'
+        - '&8&l» &eClick to Claim Rewards'
+    close: true
+    click:
+      right: default-Mine-Morry.QuestReward3_Claim
+      left: default-Mine-Morry.QuestReward3_Claim
+#SIXTH QUEST
+  quest9_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Mine-Morry.q4_part1'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lTravel to Redstone'
+        - '&f&o'
+        - '&fTalk to the Gold Mine Lift Operator'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &cRedstone Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Gold Finger'        
+    close: false
+  quest9_active:
+    item: book
+    amount: 1
+    conditions: 'default-Mine-Morry.q4_part1,!default-Mine-Morry.q4_completed'
+    text:
+      en:
+        - '&a&l[Active] &f&lTravel to Redstone'      
+        - '&f&o'
+        - '&fTalk to the Gold Mine Lift Operator'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &cRedstone Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+        - '&f&o'
+        - '&aGiven after completing Gold Finger'        
+    close: false
+  quest9_completed:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Mine-Morry.q4_completed'
+    text:
+      en:
+        - '&e&l[Complete] &f&lTravel to Redstone'
+        - '&f&o'
+        - '&fTalk to the Gold Mine Lift Operator'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &aAccess to the &cRedstone Mine'
+        - '&8&l» &d50 EXP'
+        - '&8&l» &d50 Mining EXP'
+        - '&8&l» &e25 Coins'
+    close: false
+
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.minequestmenu
+      left: default-Castle-Klaus.minequestmenu
+slots:
+  0-10: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  16-19: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  24-39: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  41-44: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  11-15: quest1_inactive,quest1_active,quest1_completed,quest1_unclaimed,quest2_inactive,quest2_active,quest2_completed,quest2_unclaimed,quest3_inactive,quest3_active,quest3_completed,quest3_unclaimed,quest4_inactive,quest4_active,quest4_completed,quest4_unclaimed,quest5_inactive,quest5_active,quest5_completed
+  20-23: quest6_inactive,quest6_active,quest6_completed,quest7_inactive,quest7_active,quest7_completed,quest7_unclaimed,quest8_inactive,quest8_active,quest8_completed,quest8_unclaimed,quest9_inactive,quest9_active,quest9_completed
+  40: back

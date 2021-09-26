@@ -1,14 +1,3 @@
-##Seed Staff###
-SEEDSHOT:
-  Skills:
-  - shoot{type=EGG;velocity=5;damage=500} @target
-  - effect:explosion @target
-
-##Wheat Staff###
-SUPERSEED:
-  Skills:
-  - shoot{type=EGG;velocity=5;damage=1000} @target
-  - effect:explosion @target
 
 ##MACHETE3###
 ROOT:
@@ -240,50 +229,6 @@ FIREARROW:
   - delay 20
   - damage{amount=250;ignoreArmor=false} 
   
-BEEFLY:
-  Cooldown: 15
-  Conditions:
-  - region{r=forest}  
-  Skills:
-  - message{m="&aYou can now fly for 3 seconds!"} @self
-  - fly{duration=60} @trigger ~onInteract
-  - delay 60    
-  - message{m="&cYour wings are tired!"} @self
-BEEFLY2:
-  Cooldown: 7
-  Conditions:
-  - region{r=forest}  
-  Skills:
-  - message{m="&aYou can now fly for 5 seconds!"} @self
-  - fly{duration=100} @trigger ~onInteract
-  - delay 100    
-  - message{m="&cYour wings are tired!"} @self
-
-##PARROT CHESTPLATE
-Fly1:
-  Skills:
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&aYou can now fly for 2 seconds!"} @self
-  - delay 40
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&cYour wings are tired!"} @self
-
-Fly2:
-  Skills:
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&aYou can now fly for 7 seconds!"} @self
-  - delay 140
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&cYour wings are tired!"} @self
-
-Fly3:
-  Skills:
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&aYou can now fly for 5 seconds!"} @self
-  - delay 100
-  - command{c="fly <caster.name>"} @self 
-  - message{m="&cYour wings are tired!"} @self
-
 # HELL SET BONUS  
 MELONHEAL:
   Skills:

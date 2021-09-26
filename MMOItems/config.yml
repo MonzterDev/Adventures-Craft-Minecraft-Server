@@ -130,7 +130,7 @@ soulbound:
 # Weapon effects depend on the item type & type set.
 item-ability:
     staff:
-        enabled: true
+        enabled: false
         cooldown: 30
         power: 1
     gauntlet:
@@ -201,12 +201,12 @@ ability-player-damage: false
 # Can be used to reduce chat spam.
 # Might interfere with other action bar plugins.
 action-bar-display:
-    ability-cooldown: true
-    item-cooldown: true
-    not-enough-mana: true
+    ability-cooldown: false
+    item-cooldown: false
+    not-enough-mana: false
     not-enough-stamina: true
     two-handed: true
-    cant-use-item: true
+    cant-use-item: false
     mitigation: true
     item-break: false
 
@@ -234,7 +234,7 @@ recipes:
     
     # Enables the vanilla recipe book for MMOItem recipes!
     # THIS IS NOT COMPATIBLE WITH RECIPE AMOUNTS!
-    use-recipe-book: true
+    use-recipe-book: false
 
 # "repair" prevents players from repairing MMOItems.
 # "smelt" prevents players from smelting MMOItems.
@@ -319,7 +319,7 @@ item-revision:
 # only trigger with MythicMobs monsters.
 # Requires a SERVER reload when changed.
 lootsplosion:
-    enabled: true
+    enabled: false
     color: true
     offset: .2
     height: .6

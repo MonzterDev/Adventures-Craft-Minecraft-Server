@@ -1,0 +1,137 @@
+height: 4
+title: '&fQuests'
+items:
+#FIRST QUEST
+  quest1_inactive:
+    item: paper
+    amount: 1
+    conditions: '!default-Castle-Klaus.q1_part1,!default-Castle-Klaus.q1_part1_completed'
+    text:
+      en:
+        - '&c&l[Inactive] &f&lSummoning Morden'
+        - '&f&o'
+        - '&fSlay 100 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Morden Flesh &f100%'
+        - '&8&l» &eMorden Head &f.5%'
+        - '&8&l» &eMorden Chestplate &f.25%'
+        - '&8&l» &eMorden Leggings &f.25%'
+        - '&8&l» &eMorden Boots &f.5%'
+        - '&8&l» &5Undead Gem &f.5%'
+        - '&8&l» &9UnDead Catalyst &f1%'
+        - '&8&l» &5Undead Bow &f.1%'    
+        - '&8&l» &5Undead Bone Sword Skin &f2%'    
+        - '&8&l» &5Dead Catalyst &f1%'    
+        - '&8&l» &9Morden Head &f1%'    
+        - '&8&l» &eUndead Gem &f1%'    
+        - '&8&l» &eGrave Digger &f.5%'    
+        - '&8&l» &eBone Sword &f.25%'    
+        - '&8&l» &eMorden Companion &f.25%'            
+        - '&f&o'        
+        - '&aGiven by Klaus in the Castle'    
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Castle-Klaus.mordenrewards    
+      left: default-Castle-Klaus.mordenrewards        
+    close: true
+  quest1_active:
+    item: book
+    amount: 1
+    conditions: 'default-Castle-Klaus.q1_part1'
+    text:
+      en:
+        - '&a&l[Active] &f&lSummoning Morden'
+        - '&f&o'
+        - '&fSlay 100 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Morden Flesh &f100%'
+        - '&8&l» &eMorden Head &f.5%'
+        - '&8&l» &eMorden Chestplate &f.25%'
+        - '&8&l» &eMorden Leggings &f.25%'
+        - '&8&l» &eMorden Boots &f.5%'
+        - '&8&l» &5Undead Gem &f.5%'
+        - '&8&l» &9UnDead Catalyst &f1%'
+        - '&8&l» &5Undead Bow &f.1%'    
+        - '&8&l» &5Undead Bone Sword Skin &f2%'    
+        - '&8&l» &5Dead Catalyst &f1%'    
+        - '&8&l» &eUndead Gem &f1%'    
+        - '&8&l» &eGrave Digger &f.5%'    
+        - '&8&l» &eBone Sword &f.25%'    
+        - '&8&l» &eMorden Companion &f.05%'            
+        - '&f&o'        
+        - '&aGiven by Klaus in the Castle'       
+        - '&f&o'                
+        - '&8&l» &eClick to View Rewards'        
+    click:
+      right: default-Castle-Klaus.mordenrewards    
+      left: default-Castle-Klaus.mordenrewards
+    close: true
+  quest1_repeat:
+    item: enchantedbook
+    amount: 1
+    conditions: 'default-Castle-Klaus.q1_part1_completed,!default-Castle-Klaus.q1_part1'
+    text:
+      en:
+        - '&d&l[Repeat] &f&lSummoning Morden'
+        - '&f&o'
+        - '&fSlay 100 &cUndead &fwithin the &cCourtyard'
+        - '&f&o'
+        - '&e&lRewards:'
+        - '&8&l» &d100 EXP'
+        - '&8&l» &d100 Slayer EXP'
+        - '&8&l» &e50 Coins'
+        - '&f&o'
+        - '&e&lBoss Rewards:'
+        - '&8&l» &9Morden Flesh &f100%'
+        - '&8&l» &eMorden Head &f.5%'
+        - '&8&l» &eMorden Chestplate &f.25%'
+        - '&8&l» &eMorden Leggings &f.25%'
+        - '&8&l» &eMorden Boots &f.5%'
+        - '&8&l» &5Undead Gem &f.5%'
+        - '&8&l» &9UnDead Catalyst &f1%'
+        - '&8&l» &5Undead Bow &f.1%'    
+        - '&8&l» &5Undead Bone Sword Skin &f2%'    
+        - '&8&l» &5Dead Catalyst &f1%'    
+        - '&8&l» &eUndead Gem &f1%'    
+        - '&8&l» &eGrave Digger &f.5%'    
+        - '&8&l» &eBone Sword &f.25%'    
+        - '&8&l» &eMorden Companion &f.05%'    
+        - '&f&o'
+        - '&8&l» &eLeft-Click to Repeat Quest'
+        - '&8&l» &eRight-Click to View Rewards'
+    click:
+      right: default-Castle-Klaus.mordenrewards
+      left: default-Castle-Klaus.tag_q1_part1,default-Castle-Klaus.quest1_start,default-Castle-Klaus.q1_start_message,default-Castle-Klaus.entry_q1_part1
+    close: true
+#FILLER
+  glass:
+    item: glass
+    amount: 1
+    close: false
+  back:
+    item: back
+    amount: 1
+    close: false
+    click:
+      right: default-Castle-Klaus.questmenu
+      left: default-Castle-Klaus.questmenu
+slots:
+  0-12: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  14-21: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  22-30: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  32-35: glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass,glass
+  13: quest1_inactive,quest1_active,quest1_repeat
+  31: back

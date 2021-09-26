@@ -137,16 +137,14 @@ VOID_VEIN:
     Color: PURPLE
     Style: SEGMENTED_6
   DamageModifiers:
-  - SUFFOCATION -1
-  Modules:
-    ImmunityTable: false
-    ThreatTable: true
+  - SUFFOCATION 0
   Options:
     KnockbackResistance: 1
     MovementSpeed: 0.0001
     FollowRange: 0
     Collidable: false
     NoGravity: true
+    Silent: true
     ApplyInvisibility: true
     <<: *Options
   Drops:

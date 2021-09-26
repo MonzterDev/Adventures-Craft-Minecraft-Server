@@ -65,24 +65,6 @@ JOY_SOUP4:
     restore-food: 0.0
     restore-saturation: 0.0
     revision-id: 2
-LARGE_MANA_POTION:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg0NTlmM2I2NWIyM2NmYThjOWIxNDQzMjViOWJhODE0MDdiZTkzODJjZDg1OTkyZWY5NzljZjBlNzgzZjYifX19
-      uuid: 9d127b24-85df-4eab-b9fd-f419da0f2e2b
-    name: <tier-color-cleaned>Large Mana Potion
-    restore-mana:
-      base: 35.0
-      spread: 0.041666666666666664
-      max-spread: 0.125
-    item-cooldown: 15.0
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
-    revision-id: 2
 SOUL4:
   base:
     material: PLAYER_HEAD
@@ -103,26 +85,96 @@ SOUL4:
     item-cooldown: 30.0
     unstackable: true
     effects:
-      LEVITATION:
-        duration: 5.0
-        amplifier: 1.0
       SPEED:
-        duration: 180.0
-        amplifier: 5.0
-      ABSORPTION:
-        duration: 180.0
+        duration: 60.0
         amplifier: 5.0
       GLOWING:
         duration: 10.0
         amplifier: 5.0
       INCREASE_DAMAGE:
-        duration: 180.0
+        duration: 60.0
         amplifier: 5.0
       REGENERATION:
-        duration: 120.0
+        duration: 20.0
         amplifier: 3.0
     revision-id: 2
-MAGICAL_ESSENSE2:
+BALLOON:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg2OGU2YTVjNGE0NDVkNjBhMzA1MGI1YmVjMWQzN2FmMWIyNTk0Mzc0NWQyZDQ3OTgwMGM4NDM2NDg4MDY1YSJ9fX0=
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: <tier-color-cleaned>Balloon
+    item-cooldown: 2.5
+    tier: COMMON
+    revision-id: 2
+    max-consume: 2.0
+    sounds:
+      on-consume:
+        sound: entity.generic.drink
+        volume: 0.0
+        pitch: 0.0
+    ability:
+      ability1:
+        type: BALLOON_SUMMON_SMALL
+        mode: RIGHT_CLICK
+BALLOON2:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTJkZDExZGEwNDI1MmY3NmI2OTM0YmMyNjYxMmY1NGYyNjRmMzBlZWQ3NGRmODk5NDEyMDllMTkxYmViYzBhMiJ9fX0=
+      uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
+    name: <tier-color-cleaned>Balloon
+    item-cooldown: 2.5
+    tier: UNCOMMON
+    revision-id: 2
+    max-consume: 4.0
+    sounds:
+      on-consume:
+        sound: entity.generic.drink
+        volume: 0.0
+        pitch: 0.0
+    ability:
+      ability1:
+        type: BALLOON_SUMMON_LARGE
+        mode: RIGHT_CLICK
+MORDEN_SUMMONER2:
+  base:
+    material: BROWN_DYE
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    tier: UNCOMMON
+    lore:
+    - §7Allows you to repeat the §aSummoning
+    - §aMorden Quest §7from anywhere!
+    name: <tier-color-cleaned>Morden Summoner
+    revision-id: 2
+    commands:
+      cmd0:
+        format: MordenRepeat
+        delay: 0.0
+        op: true
+    max-consume: 1.0
+DRYAD_SUMMONER2:
+  base:
+    material: RED_TULIP
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    tier: UNCOMMON
+    lore:
+    - §7Allows you to repeat the §aDryad
+    - §aDestroyer Quest §7from anywhere!
+    name: <tier-color-cleaned>Dryad Summoner
+    revision-id: 2
+    commands:
+      cmd0:
+        format: DryadRepeat
+        delay: 0.0
+        op: true
+    max-consume: 1.0
+MAGICAL_ESSENCE2:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -132,9 +184,9 @@ MAGICAL_ESSENSE2:
     restore-mana: 25.0
     tier: UNCOMMON
     lore: []
-    name: <tier-color-cleaned>Magical Essense
+    name: <tier-color-cleaned>Magical Essence
     revision-id: 2
-MAGICAL_ESSENSE3:
+MAGICAL_ESSENCE3:
   base:
     material: PURPLE_DYE
     hide-enchants: true
@@ -144,42 +196,7 @@ MAGICAL_ESSENSE3:
     restore-mana: 50.0
     tier: RARE
     lore: []
-    name: <tier-color-cleaned>Magical Essense
-    revision-id: 2
-MINING_BOOSTEROP3:
-  base:
-    material: GLASS_BOTTLE
-    name: <tier-color-cleaned>Mining Skill EXP Booster
-    lore:
-    - §fBoosts §9Mining Skill §fEXP
-    - §fby §9100% §ffor §910 mins§f.
-    max-consume: 1.0
-    tier: RARE
-    commands:
-      cmd0:
-        format: mmocore booster create mining 1 600 %player%
-        delay: 0.0
-        op: true
-    disable-interaction: false
-    revision-id: 2
-FORAGING_BOOSTER2:
-  base:
-    material: GLASS_BOTTLE
-    name: <tier-color-cleaned>Foraging Skill EXP Booster
-    lore:
-    - §fBoosts §aForaging Skill §fEXP
-    - §fby §a20% §ffor §a10 mins§f.
-    max-consume: 1.0
-    tier: UNCOMMON
-    disable-crafting: true
-    disable-smelting: true
-    disable-enchanting: true
-    disable-repairing: true
-    commands:
-      cmd0:
-        format: mmocore booster create foraging .2 600 %player%
-        delay: 0.0
-        op: true
+    name: <tier-color-cleaned>Magical Essence
     revision-id: 2
 UNDEAD_FLESH3:
   base:
@@ -190,7 +207,7 @@ UNDEAD_FLESH3:
     item-cooldown: 60.0
     name: <tier-color-cleaned>Undead Flesh
     lore:
-    - §cHeals §ffor 100 §cHP§f, §fand §cincreases
+    - §cHeals §ffor 150 §cHP§f, §fand §cincreases
     - §cdamage 50x §ffor 5 seconds!
     effects:
       INCREASE_DAMAGE:
@@ -919,33 +936,4 @@ STABLE_WARP5:
         type: PORTAL_SUMMON
         mode: RIGHT_CLICK
         cooldown: 2.0
-    revision-id: 2
-ENEMY_SCANNER:
-  base:
-    material: CLOCK
-    name: <tier-color-cleaned>Enemy Scanner
-    disable-repairing: true
-    unstackable: true
-    disable-enchanting: true
-    disable-smelting: true
-    disable-crafting: true
-    disable-interaction: true
-    hide-enchants: true
-    enchants:
-      unbreaking: 5
-    tier: COMMON
-    sounds:
-      on-consume:
-        sound: entity.illusioner.cast_spell
-        volume: 1.0
-        pitch: 1.0
-    lore:
-    - §7Scan an enemy with this to gain
-    - §7more detailed information about them!
-    item-cooldown: 3.0
-    ability:
-      ability1:
-        type: ENEMY_SCANNER
-        mode: RIGHT_CLICK
-        cooldown: 3.0
     revision-id: 2

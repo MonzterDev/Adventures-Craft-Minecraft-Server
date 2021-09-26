@@ -1,7 +1,7 @@
 PIG1: &Dummy
   Type: PIG
   Display: '&7[&fLVL 1&7] &aPig'
-  Health: 25
+  Health: 19
   Faction: Animal
   Modules:
     ImmunityTable: false
@@ -27,6 +27,11 @@ SHEEP1:
   Type: SHEEP
   Display: '&7[&fLVL 1&7] &aSheep'
   Health: 25
+  Options:
+    Interactable: true
+  Skills:
+  - skill{s=SHEEP_COLOR_SELECT} @self ~onSpawn
+  - skill{s=SHEEP_COLOR_SELECT} @self ~onTimer:600
 PANDA1: 
   <<: *Dummy
   Type: PANDA
@@ -51,6 +56,16 @@ WOLF1:
   <<: *Dummy
   Type: WOLF
   Display: '&7[&fLVL 1&7] &aWolf'
+  Health: 25
+TURTLE1: 
+  <<: *Dummy
+  Type: TURTLE
+  Display: '&7[&fLVL 1&7] &aTurtle'
+  Health: 25
+SQUID1: 
+  <<: *Dummy
+  Type: SQUID
+  Display: '&7[&fLVL 1&7] &aSquid'
   Health: 25
 
 

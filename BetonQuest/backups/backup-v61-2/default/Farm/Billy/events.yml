@@ -1,0 +1,34 @@
+#FIRST QUEST The Great Harvest
+quest1_start: 'objective start HarvestCarrots'
+GiveRifle: 'command mmoitems give TOOL WOODEN_HOE %player% 1'
+tag_q1_part1: 'tag add q1_part1'
+entry_q1_part1: 'journal add q1_part1'
+q1_start_message: 'run ^notify \n &6&lNew Objectives\: \n&8&l » &f $quest_objective1$'
+#FIRST QUEST P2
+quest1_part2_start: 'objective start HarvestPotatoes'
+tag_q1_part2: 'tag add q1_part2'
+entry_q1_part2: 'journal add q1_part2'
+q1_part2_start_message: 'run ^notify \n&6&lObjectives Complete\:&f \n$quest_objective1$ \n \n \n &6&lNew Objectives\: \n&8&l » &f $quest_objective2$'
+#FINISHING THE FIRST QUEST WILL RUN QuestReward1 which will check if the players inventory is full
+#IF the inventory IS FULL, it'll run QuestReward1_Full which will send a message and add a tag so you can claim rewards from Quest Menu
+#IF the inventory is NOT FULL, it'll run QuestReward1_If_Not_Full and give rewards
+QuestReward1: 'if empty0 QuestReward1_Full else QuestReward1_Folder'
+QuestReward1_Folder: 'folder QuestReward1_If_Not_Full,QuestReward1_Claimed_Tag'
+QuestReward1_If_Not_Full: "run ^command mmoitems give ARMOR FARMER_HAT %player% 1 ^command mmoitems give ARMOR FARMER_SHIRT %player% 1 ^command mmoitems give ARMOR FARMER_PANTS %player% 1 ^command mmoitems give ARMOR FARMER_SHOES %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward1_Full: 'folder QuestReward1_Full_message,QuestReward1_Full_Tag'
+QuestReward1_Full_message: 'run ^notify &cYour inventory was full so we couldn''t deliver your reward! Do /questmenu and click on &a$quest_name1$ &cto redeem your rewards!'
+QuestReward1_Full_Tag: "tag add q1_rewards_unclaimed"
+#FIRST QUEST, this only applies to the QuestMenu, and ONLY if the rewards we not given because the inventory was full!
+QuestReward1_Claim: 'folder Claim_QuestReward1,QuestReward1_Claim_message,QuestReward1_Claimed_Tag,QuestReward1_del_Claimed_Tag'
+Claim_QuestReward1: "run ^command mmoitems give ARMOR FARMER_HAT %player% 1 ^command mmoitems give ARMOR FARMER_SHIRT %player% 1 ^command mmoitems give ARMOR FARMER_PANTS %player% 1 ^command mmoitems give ARMOR FARMER_SHOES %player% 1 ^command mmocore admin exp give %player% main 200 ^command mmocore admin exp give %player% farming 200 ^command money give %player% 150"
+QuestReward1_Claim_message: 'run ^notify \n&aYour Quest rewards have now been delivered!'
+QuestReward1_Claimed_Tag: "tag add q1_rewards_claimed"
+QuestReward1_del_Claimed_Tag: "tag del q1_rewards_unclaimed"
+#FIRST QUEST, Final part which will modify the Journal to remove the Steps and add the Completed page, and also add a Completed Tag
+entry_q1_complete: 'folder default-Points.GiveFarmPoint,default-Points.GiveQuestTotalPoint,entry_q1_completed,entry_q1_part1_remove,entry_q1_part2_remove,tag_q1_completed,q1_completed_message'
+entry_q1_completed: 'journal add q1_completed'
+tag_q1_completed: 'tag add q1_completed'
+entry_q1_part1_remove: 'journal delete q1_part1'
+entry_q1_part2_remove: 'journal delete q1_part2'
+q1_completed_message: 'run ^notify \n&6&lQuest Complete\:&f \n$quest_name1$ \n \n \n &6&lRewards\: \n&8&l »  $quest_reward1-4$ \n&8&l »  $quest_reward1-5$ \n&8&l »  $quest_reward1-6$ \n&8&l »  $quest_reward1-7$ \n&8&l »  $quest_reward1-1$ \n&8&l »  $quest_reward1-2$ \n&8&l »  $quest_reward1-3$'
+

@@ -1,0 +1,16 @@
+npcs:
+  '205': Guider
+variables:
+    QUESTER_NAME: "GUIDER"
+
+    QUEST1_NAME: "Menu Opener"
+    QUEST1_ID: "MENU_OPENER"
+    QUEST1_OBJ_MESSAGE: "&aClick &fwhile holding the &aMenu &fitem to open the &aMain Menu"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Click &0while holding the &2Menu &0item to open the &2Main Menu"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:CYAN_CONCRETE_POWDER ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Combat Instructor"
+    QUEST2_ID: "COMBAT_INSTRUCTOR"
+    QUEST2_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards the &6Combat Instructor"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards the &6Combat Instructor"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_SWORD ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
