@@ -1,7 +1,6 @@
 TUTORIAL_DAGGER:
   base:
     material: WOODEN_SWORD
-    disable-crafting: true
     attack-damage: 5.0
     tier: COMMON
     name: <tier-color-cleaned>Tutorial Dagger
@@ -26,88 +25,9 @@ STEEL_DAGGER:
     durability: 7.0
     revision-id: 2
     custom-model-data: 5.0
-STEAK2:
-  base:
-    material: WOODEN_SWORD
-    lore:
-    - '&fPut it through the Vampire''s hearts!'
-    attack-damage: 45.0
-    critical-strike-power: 15.0
-    tier: UNCOMMON
-    name: <tier-color-cleaned>Stake
-    unbreakable: true
-    durability: 1.0
-    revision-id: 2
-    custom-model-data: 3.0
-STEAK3:
-  base:
-    material: WOODEN_SWORD
-    lore:
-    - '&fPut it through the Vampire''s hearts!'
-    attack-damage: 65.0
-    critical-strike-power: 25.0
-    tier: RARE
-    unbreakable: true
-    name: <tier-color-cleaned>Stake
-    durability: 2.0
-    revision-id: 2
-    custom-model-data: 4.0
-DRACULA_DAGGER2:
-  base:
-    material: IRON_SWORD
-    tier: UNCOMMON
-    name: <tier-color-cleaned>Drac's Dagger
-    gem-sockets: []
-    ability:
-      ability1:
-        type: VAMPIRISM
-        mode: ON_HIT
-        drain: 10.0
-        cooldown: 10.0
-    lore:
-    - §7Every §c10§7sec, hitting an
-    - §7enemy §cdrains §7their health,
-    - §chealing §7you for §c50 HP§7.
-    hide-enchants: true
-    disable-smelting: true
-    unbreakable: true
-    upgrade: {}
-    attack-damage: 65.0
-    critical-strike-chance: 10.0
-    critical-strike-power: 5.0
-    durability: 3.0
-    revision-id: 2
-    custom-model-data: 1.0
-DRACULA_DAGGER3:
-  base:
-    material: IRON_SWORD
-    tier: RARE
-    name: <tier-color-cleaned>Drac's Dagger
-    gem-sockets: []
-    ability:
-      ability1:
-        type: VAMPIRISM
-        mode: ON_HIT
-        drain: 20.0
-        cooldown: 5.0
-    lore:
-    - §7Every §c10§7sec, hitting an
-    - §7enemy §cdrains §7their health,
-    - §chealing §7you for §c50 HP§7.
-    hide-enchants: true
-    disable-smelting: true
-    unbreakable: true
-    upgrade: {}
-    attack-damage: 100
-    critical-strike-chance: 25.0
-    critical-strike-power: 15.0
-    durability: 4.0
-    revision-id: 2
-    custom-model-data: 2.0
 REAPER_BLADE4:
   base:
     material: STONE_SWORD
-    disable-crafting: true
     unbreakable: true
     tier: LEGENDARY
     name: <tier-color-cleaned>Reaper Blade
@@ -118,21 +38,20 @@ REAPER_BLADE4:
     - Unused
     revision-id: 2
     custom-model-data: 102.0
-    ability:
-      ability1:
-        type: REAPER_CORRUPTION_PLAYER
-        mode: RIGHT_CLICK
-        damage: 25.0
-        cooldown: 7.5
-        mana: 50.0
     lore:
+    - '&4&lReaper Corruption&f: Right Click'
+    - '&f- &cDamage&f: 5'
+    - '&f- &bMana&f: 50'
+    - '&f- &6Cooldown&f: 7.5secs'
+    - ''
     - '&aHeal &7yourself for &a1% &7of your &amax HP'
     - '&7and &cdamage &7nearby &cenemies &7within'
-    - '&a3 blocks &7every &asecond &7for &a3 seconds&7!'
+    - '&a2 blocks &7every &asecond &7for &a3 seconds&7!'
+    custom-nbt:
+    - MYTHIC_TYPE REAPER_BLADE4
 REAPER_BLADE5:
   base:
     material: STONE_SWORD
-    disable-crafting: true
     unbreakable: true
     tier: EXOTIC
     name: <tier-color-cleaned>Reaper Blade
@@ -145,30 +64,17 @@ REAPER_BLADE5:
     - Unused
     revision-id: 2
     custom-model-data: 103.0
-    ability:
-      ability1:
-        type: REAPER_CORRUPTION_PLAYER_B
-        mode: RIGHT_CLICK
-        damage: 50.0
-        cooldown: 10
-        mana: 75.0
     lore:
+    - '&4&lReaper Corruption&f: Right Click'
+    - '&f- &cDamage&f: 10'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
     - '&aHeal &7yourself for &a2% &7of your &amax HP'
     - '&7and &cdamage &7nearby &cenemies &7within'
-    - '&a5 blocks &7every &asecond &7for &a5 seconds&7!'
-EMERALD_DAGGER2:
-  base:
-    material: IRON_SWORD
-    name: <tier-color-cleaned>Emerald Dagger
-    attack-damage: 75.0
-    unbreakable: true
-    tier: UNCOMMON
-    gem-sockets:
-    - Unused
-    will-break: false
-    durability: 6.0
-    revision-id: 2
-    custom-model-data: 4.0
+    - '&a3 blocks &7every &asecond &7for &a5 seconds&7!'
+    custom-nbt:
+    - MYTHIC_TYPE REAPER_BLADE5
 MACHETE3:
   base:
     material: IRON_SWORD
@@ -176,22 +82,20 @@ MACHETE3:
     attack-damage: 75.0
     unbreakable: true
     tier: RARE
-    ability:
-      ability1:
-        type: ROOT
-        mana: 15.0
-        cooldown: 10.0
-        mode: RIGHT_CLICK
     lore:
+    - '&4&lRoot&f: Right Click'
+    - '&f- &cDamage&f: 50'
+    - '&f- &bMana&f: 65'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
     - §cRoot §7enemies for 3 seconds!
-    durability: 5.0
-    revision-id: 2
     custom-model-data: 3.0
+    custom-nbt:
+    - MYTHIC_TYPE MACHETE3
 GOBLIN_CLUB3:
   base:
     material: WOODEN_SWORD
     name: <tier-color-cleaned>Goblin Club
-    displayed-type: Club
     attack-damage: 35.0
     critical-strike-chance: 25.0
     attack-speed: 3.0
@@ -201,24 +105,6 @@ GOBLIN_CLUB3:
     durability: 3.0
     revision-id: 2
     custom-model-data: 2.0
-BLAZE_ARM3:
-  base:
-    material: BLAZE_ROD
-    tier: RARE
-    name: <tier-color-cleaned>Blaze Arm
-    gem-sockets:
-    - Unused
-    lore:
-    - §7Not only did you break his arm...
-    - §7you're using it as a weapon too!
-    hide-enchants: true
-    disable-smelting: true
-    unbreakable: true
-    attack-damage: 95
-    critical-strike-chance: 5.0
-    critical-strike-power: 10.0
-    faction-damage-void: 25.0
-    revision-id: 2
 SHADOW_DAGGER3:
   base:
     material: STONE_SWORD
@@ -227,22 +113,18 @@ SHADOW_DAGGER3:
     gem-sockets:
     - Unused
     lore:
-    - §7Dash &c2 blocks §7head when blocking!
-    - §7
-    - §7Stolen from a sneaky §cVoid Assassin§7!
-    hide-enchants: true
-    disable-smelting: true
+    - '&5&lVoid Dash&f: Right Click'
+    - '&f- &bMana&f: 35'
+    - '&f- &6Cooldown&f: 5secs'
+    - ''
+    - §7Dash with the power of the &5Void
     unbreakable: true
     attack-damage: 115
     faction-damage-void: 25.0
     movement-speed: 0.05
-    ability:
-      ability1:
-        type: VOID_WARP
-        mode: RIGHT_CLICK
-        mana: 25.0
-        cooldown: 5.0
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE SHADOW_DAGGER3
 SHADOW_DAGGER4:
   base:
     material: NETHERITE_SWORD
@@ -252,21 +134,17 @@ SHADOW_DAGGER4:
     - Unused
     - Unused
     lore:
-    - §7Dash &c3 blocks §7head when blocking!
-    - §7
-    - §7Stolen from a sneaky §cVoid Assassin§7!
-    hide-enchants: true
-    disable-smelting: true
+    - '&5&lVoid Dash&f: Right Click'
+    - '&f- &bMana&f: 45'
+    - '&f- &6Cooldown&f: 7.5secs'
+    - ''
+    - §7Dash with the power of the &5Void
     unbreakable: true
     attack-damage: 150
     faction-damage-void: 50.0
     movement-speed: 0.1
     critical-strike-chance: 15.0
     critical-strike-power: 20.0
-    ability:
-      ability1:
-        type: VOID_WARPC
-        mana: 30.0
-        cooldown: 2.0
-        mode: RIGHT_CLICK
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE SHADOW_DAGGER4

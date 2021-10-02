@@ -75,3 +75,131 @@ GRAVE_DIGGER5:
         cooldown: 15.0
         mana: 75.0
         mode: RIGHT_CLICK
+CARVING_AXE4:
+  base:
+    material: IRON_AXE
+    unbreakable: true
+    tier: LEGENDARY
+    name: <tier-color-cleaned>Carving Axe
+    attack-damage: 85.0
+    critical-strike-power: 15.0
+    critical-strike-chance: 10.0
+    blunt-power: 3.0
+    blunt-rating: 30.0
+    gem-sockets:
+    - Unused
+    lore:
+    - '&7Carve into your foes!'
+    durability: 5.0
+    revision-id: 2
+CARVING_AXE5:
+  base:
+    material: GOLDEN_AXE
+    unbreakable: true
+    tier: EXOTIC
+    name: <tier-color-cleaned>Carving Axe
+    attack-damage: 145.0
+    critical-strike-power: 25.0
+    critical-strike-chance: 15.0
+    blunt-power: 4.0
+    blunt-rating: 60.0
+    gem-sockets:
+    - Unused
+    - Unused
+    lore:
+    - '&7Carve &cfear &7into your foes!'
+    durability: 6.0
+    revision-id: 2
+CHIEF_AXE3:
+  base:
+    material: IRON_AXE
+    name: <tier-color-cleaned>Chief Axe
+    unbreakable: true
+    tier: RARE
+    attack-damage: 40.0
+    critical-strike-power: 25.0
+    blunt-power: 2.0
+    blunt-rating: 25.0
+    lore:
+    - §7Stolen from the §cGoblin Chief§7!
+    gem-sockets:
+    - Unused
+    revision-id: 2
+    custom-model-data: 101.0
+CHIEF_AXE4:
+  base:
+    material: GOLDEN_AXE
+    name: <tier-color-cleaned>Chief Axe
+    attack-damage: 85.0
+    critical-strike-chance: 35.0
+    blunt-power: 3.0
+    blunt-rating: 50.0
+    unbreakable: true
+    tier: LEGENDARY
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 150.0
+        length: 0.1
+        mana: 25.0
+    lore:
+    - §aDash &7forward &cdamaing enemies &7hit!
+    - §7
+    - §7Stolen from the §cGoblin Chief§7!
+    gem-sockets:
+    - Unused
+    - Unused
+    revision-id: 2
+    custom-model-data: 101.0
+BULLBO_ARM3:
+  base:
+    material: IRON_AXE
+    name: <tier-color-cleaned>Bullbo Arm
+    attack-speed: 1.0
+    attack-damage: 150.0
+    critical-strike-chance: 50.0
+    faction-damage-void: 5.0
+    blunt-power: 2.0
+    blunt-rating: 60.0
+    unbreakable: true
+    tier: RARE
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 1000.0
+        length: 0.25
+        mana: 25.0
+        cooldown: 5.0
+    lore:
+    - §7Torn off a §cBullbo§7!
+    gem-sockets:
+    - Unused
+    revision-id: 2
+BULLBO_ARM4:
+  base:
+    material: GOLDEN_AXE
+    name: <tier-color-cleaned>Bullbo Arm
+    attack-damage: 215.0
+    attack-speed: 1.5
+    critical-strike-chance: 75.0
+    faction-damage-void: 15.0
+    blunt-power: 3.0
+    blunt-rating: 80.0
+    unbreakable: true
+    tier: LEGENDARY
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: RIGHT_CLICK
+        damage: 2500.0
+        length: 0.5
+        mana: 50.0
+        cooldown: 7.5
+    lore:
+    - §7Torn off a §cBullbo§7!
+    gem-sockets:
+    - Unused
+    - Unused
+    revision-id: 2
