@@ -1,0 +1,29 @@
+GRAVE_DIGGER5:
+  TargetConditions:
+  - distance{d=<5}
+  Conditions:
+  - SKILLCAST{m=100;c=25;s=GRAVE_DIGGER5}
+  Skills:
+  - prison{material=STONE_BRICKS;duration=60;breakable=true} @target
+  - GRAVEDIGGER{d=1} @target
+  - effect:sound{s=block.iron_door.open;pitch=-2} @self
+
+CHIEF_AXE4:
+  Conditions:
+  - SKILLCAST{m=55;c=5;s=CHIEF_AXE4}
+  Skills:
+  - lunge{velocity=3;velocityY=.20} @self
+  - CUSTOMDAMAGE{d=150;m=ATTACK_DAMAGE} @EIR{r=5;ignore=players}
+
+BULLBO_ARM3:
+  Conditions:
+  - SKILLCAST{m=75;c=10;s=BULLBO_ARM3}
+  Skills:
+  - lunge{velocity=4.5;velocityY=.25} @self
+  - CUSTOMDAMAGE{d=250;m=ATTACK_DAMAGE} @EIR{r=6;ignore=players}
+BULLBO_ARM4:
+  Conditions:
+  - SKILLCAST{m=100;c=15;s=BULLBO_ARM4}
+  Skills:
+  - lunge{velocity=6.5;velocityY=.35} @self
+  - CUSTOMDAMAGE{d=350;m=ATTACK_DAMAGE} @EIR{r=8;ignore=players}

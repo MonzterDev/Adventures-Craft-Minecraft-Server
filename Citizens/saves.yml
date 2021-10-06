@@ -11,13 +11,13 @@ npc:
     traits:
       type: PLAYER
       location:
-        bodyYaw: 101.524704
+        bodyYaw: -94.058304
         world: Spawn
         x: '18.8936'
         y: '16.0'
         z: '-0.4815'
-        yaw: '123.8981'
-        pitch: '11.886'
+        yaw: '-129.9903'
+        pitch: '0.0'
       spawned: true
       lookclose:
         range: '5.0'
@@ -58,7 +58,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -161,7 +161,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -241,7 +241,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -312,7 +312,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -371,7 +371,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -439,7 +439,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -488,7 +488,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -539,7 +539,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -673,7 +673,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -721,7 +721,7 @@ npc:
         sequential: false
         cost: -1.0
       npcdestinations:
-        enabledplugins: &id008 []
+        enabledplugins: &id003 []
         PauseForPlayers: 5
         PauseTimeout: 25
         blocksUnderSurface: 0
@@ -755,7 +755,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -890,7 +890,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -910,8 +910,8 @@ npc:
         x: '-31.4979'
         y: '15.0'
         z: '-17.4986'
-        yaw: '52.1661'
-        pitch: '-28.4571'
+        yaw: '62.1661'
+        pitch: '-25.3021'
       spawned: true
       lookclose:
         range: '5.0'
@@ -1004,7 +1004,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -1085,7 +1085,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1165,7 +1165,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1245,7 +1245,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1325,7 +1325,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1405,7 +1405,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1485,7 +1485,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1565,7 +1565,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1645,7 +1645,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1725,7 +1725,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1816,7 +1816,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1897,7 +1897,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1968,7 +1968,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2017,7 +2017,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,anchors,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2031,13 +2031,13 @@ npc:
     traits:
       type: PLAYER
       location:
-        bodyYaw: 103.3237
+        bodyYaw: 99.36424
         world: Spawn
         x: '-139.5907'
         y: '16.0'
         z: '51.4042'
-        yaw: '102.9116'
-        pitch: '-17.717'
+        yaw: '115.5589'
+        pitch: '-15.1649'
       spawned: true
       lookclose:
         range: '5.0'
@@ -2107,7 +2107,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2178,7 +2178,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2227,7 +2227,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2276,7 +2276,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2325,7 +2325,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2374,7 +2374,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2423,7 +2423,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2484,7 +2484,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2545,7 +2545,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2588,7 +2588,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,spawned,age,owner,wolfmodifiers,type,mounttrait,lookclose
+    traitnames: type,spawned,wolfmodifiers,age,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2631,7 +2631,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,spawned,age,owner,wolfmodifiers,type,mounttrait,lookclose
+    traitnames: type,spawned,wolfmodifiers,age,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2706,7 +2706,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2781,7 +2781,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2842,7 +2842,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2917,7 +2917,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -2966,7 +2966,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3055,7 +3055,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3136,7 +3136,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3216,7 +3216,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3300,7 +3300,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3358,7 +3358,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3416,7 +3416,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3475,7 +3475,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3546,7 +3546,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -3654,7 +3654,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -3799,7 +3799,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,sitting,commandtrait,mounttrait,equipment
+    traitnames: equipment,sitting,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -3908,7 +3908,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -4029,7 +4029,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -4152,7 +4152,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -4275,7 +4275,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -4410,7 +4410,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -4432,13 +4432,13 @@ npc:
         textureRaw: eyJ0aW1lc3RhbXAiOjE1MzIzNjYwMzUxMzYsInByb2ZpbGVJZCI6ImMxZWQ5N2Q0ZDE2NzQyYzI5OGI1ODFiZmRiODhhMjFmIiwicHJvZmlsZU5hbWUiOiJ5b2xvX21hdGlzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iMDYyMTU4ODM0NTUwMWNjMzY5MWJmOTI2MGFjYzc2ZWQ5ZTcxZTIxN2Q5M2IxY2NhYTdjYzg0Y2FlMGNiYWYwIn19fQ==
         updateSkins: false
       location:
-        bodyYaw: -99.62924
+        bodyYaw: -102.4693
         world: Spawn
         x: '-149.8695'
         y: '48.0'
         z: '-1151.9013'
-        yaw: '-139.6292'
-        pitch: '0.0'
+        yaw: '-142.4693'
+        pitch: '-8.962'
       lookclose:
         range: '5.0'
         enabled: true
@@ -4514,7 +4514,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -4778,7 +4778,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5007,7 +5007,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5231,7 +5231,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5437,7 +5437,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5486,7 +5486,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5566,7 +5566,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5646,7 +5646,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5726,7 +5726,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5832,7 +5832,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5881,7 +5881,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5916,12 +5916,12 @@ npc:
       gravity:
         enabled: true
       location:
-        bodyYaw: 36.260284
+        bodyYaw: 65.157295
         world: Spawn
         x: '-99.7916'
         y: '15.0'
         z: '248.3765'
-        yaw: '74.4643'
+        yaw: '105.1573'
         pitch: '0.0'
       spawned: true
       commandtrait:
@@ -5930,7 +5930,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -5979,7 +5979,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6028,7 +6028,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6077,7 +6077,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6126,7 +6126,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6166,8 +6166,8 @@ npc:
         x: '-102.0095'
         y: '15.0'
         z: '246.0431'
-        yaw: '73.3312'
-        pitch: '-17.8181'
+        yaw: '82.0521'
+        pitch: '0.0'
       spawned: true
       commandtrait:
         sequential: false
@@ -6175,7 +6175,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6224,7 +6224,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6259,12 +6259,12 @@ npc:
       gravity:
         enabled: true
       location:
-        bodyYaw: 48.527084
+        bodyYaw: 48.5409
         world: Spawn
         x: '-100.844'
         y: '15.0'
         z: '246.7253'
-        yaw: '78.5409'
+        yaw: '82.1179'
         pitch: '0.0'
       spawned: true
       commandtrait:
@@ -6273,7 +6273,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6322,7 +6322,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6370,7 +6370,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6418,7 +6418,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6470,7 +6470,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6518,7 +6518,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6566,7 +6566,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6614,7 +6614,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6666,7 +6666,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6714,7 +6714,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6766,7 +6766,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6818,7 +6818,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6866,7 +6866,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6918,7 +6918,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -6966,7 +6966,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7018,7 +7018,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7066,7 +7066,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7118,7 +7118,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7170,7 +7170,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7222,7 +7222,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7270,7 +7270,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7322,7 +7322,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7371,7 +7371,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7420,7 +7420,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7469,7 +7469,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7536,7 +7536,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,invisible,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,invisible,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7585,7 +7585,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7634,7 +7634,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7698,7 +7698,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,wolfmodifiers,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,wolfmodifiers,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7762,7 +7762,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,wolfmodifiers,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,wolfmodifiers,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7826,7 +7826,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,wolfmodifiers,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,wolfmodifiers,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7890,7 +7890,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,wolfmodifiers,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,wolfmodifiers,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -7948,7 +7948,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8006,7 +8006,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8065,7 +8065,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,text,speech,commandtrait,mounttrait,equipment
+    traitnames: equipment,text,spawned,skintrait,lookclose,gravity,type,inventory,speech,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8130,7 +8130,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8181,7 +8181,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,commandtrait,rabbittype,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,gravity,rabbittype,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8232,7 +8232,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,commandtrait,rabbittype,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,gravity,rabbittype,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8281,7 +8281,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8294,13 +8294,13 @@ npc:
     uuid: c1ba1dd0-003c-4b72-9784-b0bf1840cdf1
     traits:
       location:
-        bodyYaw: -84.9604
+        bodyYaw: -1.0842285
         world: Spawn
         x: '-95.5048'
         y: '15.0'
         z: '-54.4965'
-        yaw: '-74.9604'
-        pitch: '-20.2571'
+        yaw: '28.6032'
+        pitch: '-0.7368'
       npcdestinations:
         enabledplugins: []
         PauseForPlayers: 5
@@ -8427,7 +8427,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       distancemargin: '0.5'
       speedmodifier: '1.0'
@@ -8447,8 +8447,8 @@ npc:
         x: '-142.5318'
         y: '48.0'
         z: '-1154.2916'
-        yaw: '126.2041'
-        pitch: '-11.5533'
+        yaw: '113.9841'
+        pitch: '-13.5283'
       lookclose:
         range: '5.0'
         enabled: true
@@ -8513,7 +8513,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8816,7 +8816,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: true
@@ -8865,7 +8865,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8913,7 +8913,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8956,12 +8956,12 @@ npc:
         x: '28.988'
         y: '16.0'
         z: '-7.3'
-        yaw: '9.5938'
-        pitch: '-8.7134'
+        yaw: '33.3789'
+        pitch: '0.0'
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -8993,12 +8993,12 @@ npc:
           '1': 360.0
       spawned: true
       location:
-        bodyYaw: -12.524757
+        bodyYaw: -3.628563
         world: Spawn
         x: '31.0126'
         y: '16.0'
         z: '-7.359'
-        yaw: '11.7986'
+        yaw: '36.3714'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -9009,7 +9009,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9041,13 +9041,13 @@ npc:
           '1': 360.0
       spawned: true
       location:
-        bodyYaw: 126.63072
+        bodyYaw: -137.3143
         world: Spawn
         x: '29.0112'
         y: '16.0'
         z: '2.3'
-        yaw: '166.6307'
-        pitch: '-11.5968'
+        yaw: '-177.3143'
+        pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
         signature: UE4ATDG/qovFJ9u4WakrAQUZ/zjYoHNOwHZClaZvIphkmYdg6xI+0t4pyarfOI+rrPgmuyYcxly9meijQlY/o6nbEHrsJd+JBg2Cr3cJ1nNrPxIyZX8BV0zKLGy4Avzhu9TOjK65i0wvowJapFrjLo5djXg0O37i83hnMyT/SnAEmjPLnTebfY/nVkQCX35k52yUA0z16BAHB5oGrmutjTc32+L2XRkpcn2buyoXec2V3Eae2IriuHnnWy5MKBq9YhemmwqWlPHUwM7O5X/89l+Vodao6OkoV5oqMDP3TpRzpCZFfRwg/Ra36PCwiDkIPJ1VUN+6lmL0upPUtpxuGQZGFS+Q82+5VsTLfN7Te0mqTKnwqf2YbCBcggDoS5LVbAcjdHX5WDsqe0pflriJee7EYP6Kk+axzSUf2A5Sdvlo+Kt2EqT5+lVGkV0ldsLjOaqCzGetIj6yji8CocBL9j0impRHHsAeg30i+248wEoodBtU4mfCXwY/oNtawLk0uKzHGA6+uqUSnYgNVZy76SwKe9PE+5HlWBUVlVgjRLtSJqTP06oRFsxDMobako12rRo8LxzMei7CmTQbKbi3WPcGPnukwTTQIq0bJ6oY3lEpplCjU+1uuiAoa8zs7IpIAZZAVul06DKWCvBAt444GiH8gc4X5Hk8XHcsGxaHBFc=
@@ -9057,7 +9057,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9089,12 +9089,12 @@ npc:
           '1': 360.0
       spawned: true
       location:
-        bodyYaw: 143.64491
+        bodyYaw: -140.13052
         world: Spawn
         x: '31.0393'
         y: '16.0'
         z: '2.4809'
-        yaw: '-176.3551'
+        yaw: '179.8695'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -9105,7 +9105,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9118,12 +9118,12 @@ npc:
     uuid: 63f72269-2e42-4167-9523-e1b62776a9fe
     traits:
       location:
-        bodyYaw: 92.24271
+        bodyYaw: 98.2715
         world: Spawn
         x: '33.5675'
         y: '16.0'
         z: '-0.2874'
-        yaw: '116.6594'
+        yaw: '118.8418'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -9163,7 +9163,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9223,7 +9223,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9302,7 +9302,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9319,13 +9319,13 @@ npc:
       commandtrait:
         cost: -1.0
       location:
-        bodyYaw: 136.40086
+        bodyYaw: 97.739426
         world: Spawn
         x: '64.5568'
         y: '24.0'
         z: '-9.5988'
-        yaw: '176.4009'
-        pitch: '-13.723'
+        yaw: '83.809'
+        pitch: '0.0'
       gravity:
         enabled: true
       skintrait:
@@ -9384,7 +9384,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9436,7 +9436,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,saddle,spawned,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: saddle,type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9494,7 +9494,7 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYwNDg3NzM1MjgxMCwKICAicHJvZmlsZUlkIiA6ICI4MmM2MDZjNWM2NTI0Yjc5OGI5MWExMmQzYTYxNjk3NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb3ROb3RvcmlvdXNOZW1vIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZiMTkzMmNmN2Q2Y2UxZjU2N2FmYzYzNWJiN2YyYTk4MGYzZjYyN2ZhYzU1YTljYjM4MDg2ZDQzNjFkYzg2ZDQiCiAgICB9CiAgfQp9
         updateSkins: false
       npcdestinations:
-        enabledplugins: *id008
+        enabledplugins: *id003
         PauseForPlayers: 5
         PauseTimeout: 25
         blocksUnderSurface: 0
@@ -9566,7 +9566,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,poses,inventory,owner,type,lookclose,waypoints,commandtrait,mounttrait,equipment
+    traitnames: equipment,poses,spawned,skintrait,lookclose,waypoints,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       distancemargin: '0.5'
       speedmodifier: '5.0'
@@ -9621,7 +9621,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,age,controllable,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,controllable,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9676,7 +9676,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,saddle,anchors,spawned,horsemodifiers,age,controllable,owner,type,mounttrait,lookclose
+    traitnames: saddle,type,spawned,controllable,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9724,7 +9724,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9749,13 +9749,13 @@ npc:
       gravity:
         enabled: true
       location:
-        bodyYaw: 53.696274
+        bodyYaw: 76.275
         world: Spawn
         x: '-214.3266'
         y: '34.0'
         z: '-1103.5492'
-        yaw: '13.6963'
-        pitch: '23.7191'
+        yaw: '70.1095'
+        pitch: '-29.8788'
       lookclose:
         range: '5.0'
         enabled: true
@@ -9784,7 +9784,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9822,7 +9822,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9860,7 +9860,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9898,7 +9898,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9936,7 +9936,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -9974,7 +9974,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10012,7 +10012,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10050,7 +10050,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10088,7 +10088,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10129,7 +10129,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,scoreboardtrait,skintrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10167,7 +10167,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10205,7 +10205,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10243,7 +10243,7 @@ npc:
       owner:
         owner: server
         uuid: ''
-    traitnames: location,spawned,owner,type,mounttrait,lookclose
+    traitnames: type,spawned,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10307,7 +10307,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10371,7 +10371,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,shulkertrait,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,horsemodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,skintrait,lookclose,gravity,type,inventory,shulkertrait,location,scoreboardtrait,owner,mounttrait,commandtrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10431,7 +10431,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10482,7 +10482,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10535,7 +10535,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,gravity,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10588,7 +10588,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,gravity,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10641,7 +10641,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,gravity,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10694,7 +10694,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,gravity,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10738,13 +10738,13 @@ npc:
       type: PLAYER
       spawned: true
       location:
-        bodyYaw: 96.954956
+        bodyYaw: -99.2428
         world: Spawn
         x: '17.2726'
         y: '15.0'
         z: '-2.5651'
-        yaw: '91.0456'
-        pitch: '-14.975'
+        yaw: '-95.6722'
+        pitch: '-12.0631'
       inventory:
         '0':
           type_namespace: minecraft
@@ -10754,7 +10754,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10832,7 +10832,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,cattrait,ocelotmodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,cattrait,skintrait,lookclose,ocelotmodifiers,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10892,7 +10892,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -10969,7 +10969,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,cattrait,ocelotmodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,cattrait,skintrait,lookclose,ocelotmodifiers,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11046,7 +11046,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,cattrait,ocelotmodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,cattrait,spawned,skintrait,ocelotmodifiers,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11123,7 +11123,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,owner,type,lookclose,cattrait,ocelotmodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,cattrait,spawned,skintrait,ocelotmodifiers,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11200,7 +11200,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,owner,type,lookclose,cattrait,ocelotmodifiers,commandtrait,mounttrait,equipment
+    traitnames: equipment,spawned,cattrait,skintrait,lookclose,ocelotmodifiers,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11357,7 +11357,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11417,7 +11417,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11554,7 +11554,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11605,7 +11605,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,hologramtrait,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11656,7 +11656,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,hologramtrait,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11707,7 +11707,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,horsemodifiers,hologramtrait,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11758,7 +11758,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,lookclose,age,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11809,7 +11809,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,anchors,spawned,hologramtrait,horsemodifiers,age,owner,type,mounttrait,lookclose
+    traitnames: hologramtrait,type,spawned,age,lookclose,location,anchors,owner,mounttrait,horsemodifiers
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -11968,7 +11968,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,hologramtrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: hologramtrait,equipment,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12028,7 +12028,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12110,7 +12110,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12158,7 +12158,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,cattrait,spawned,age,owner,wolfmodifiers,type,mounttrait,lookclose
+    traitnames: type,cattrait,spawned,wolfmodifiers,age,lookclose,location,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12206,7 +12206,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12254,7 +12254,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12302,7 +12302,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12350,7 +12350,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,commandtrait,inventory,owner,type,mounttrait,equipment,lookclose
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12410,7 +12410,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,inventory,commandtrait,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12458,7 +12458,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,commandtrait,inventory,owner,type,mounttrait,lookclose,equipment
+    traitnames: equipment,type,inventory,spawned,skintrait,lookclose,location,scoreboardtrait,owner,mounttrait,commandtrait,gravity
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12531,7 +12531,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,hologramtrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: hologramtrait,equipment,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12594,7 +12594,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,scoreboardtrait,skintrait,hologramtrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: equipment,hologramtrait,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12657,7 +12657,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,hologramtrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: hologramtrait,equipment,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -12720,7 +12720,7 @@ npc:
       owner:
         owner: MonzterSlayer
         uuid: f9f9bc0a-f478-4567-9bfe-c4c78ae94e69
-    traitnames: location,gravity,spawned,skintrait,scoreboardtrait,hologramtrait,inventory,owner,type,lookclose,commandtrait,mounttrait,equipment
+    traitnames: hologramtrait,equipment,spawned,skintrait,lookclose,gravity,type,inventory,location,scoreboardtrait,owner,mounttrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

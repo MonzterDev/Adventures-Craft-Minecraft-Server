@@ -1,22 +1,3 @@
-BEE_FLY_PLAYER:
-  Conditions:
-  - region{r=forest}  
-  Skills:
-  - message{m="&aFly like a &eBee&a!"} @self
-  - sound{s=entity.bee.loop;pitch=2} @self
-  - fly{duration=100} @self
-  - sound{s=entity.bee.hurt;delay=100} @self
-BEE_FLY_PLAYER_B:
-  Conditions:
-  - region{r=forest}  
-  Skills:
-  - message{m="&aFly like a &eBee&a!"} @self
-  - sound{s=entity.bee.loop;pitch=2} @self
-  - fly{duration=200} @self
-  - sound{s=entity.bee.hurt;delay=200} @self
-
-
-  
 ##LOG SET###
 MEGAROOT:
   TargetConditions:

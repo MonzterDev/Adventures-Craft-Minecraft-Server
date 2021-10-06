@@ -19,19 +19,21 @@ SEED_STAFF3:
     range: 5.0
     tier: RARE
     name: <tier-color-cleaned>Seed Staff
-    ability:
-      ability1:
-        type: SEED_SHOT_PLAYER
-        mode: RIGHT_CLICK
-        mana: 15.0
-        cooldown: 5.0
-        damage: 15
     unbreakable: true
     gem-sockets:
     - Unused
     durability: 1.0
     revision-id: 2
     custom-model-data: 301.0
+    lore:
+    - '&5&lSeed Shot&f: Right Click'
+    - '&f- &cDamage&f: 50'
+    - '&f- &bMana&f: 15'
+    - '&f- &6Cooldown&f: 5secs'
+    - ''
+    - '&7Launch a &2Seed &7at the &cenemy&7!'
+    custom-nbt:
+    - MYTHIC_TYPE SEED_STAFF3
 WHEAT_STAFF3:
   base:
     material: STONE_HOE
@@ -40,18 +42,20 @@ WHEAT_STAFF3:
     range: 5.0
     tier: RARE
     name: <tier-color-cleaned>Wheat Staff
-    ability:
-      ability1:
-        type: SUPER_SEED_SHOT_PLAYER
-        mode: RIGHT_CLICK
-        mana: 20.0
-        cooldown: 7.5
-        damage: 25
     unbreakable: true
     gem-sockets:
     - Unused
     revision-id: 2
     custom-model-data: 303.0
+    lore:
+    - '&5&lSuper Seed Shot&f: Right Click'
+    - '&f- &cDamage&f: 150'
+    - '&f- &bMana&f: 20'
+    - '&f- &6Cooldown&f: 7.5secs'
+    - ''
+    - '&7Launch a &2Super Seed &7at the &cenemy&7!'
+    custom-nbt:
+    - MYTHIC_TYPE WHEAT_STAFF3
 HARMING_STAFF2:
   base:
     material: IRON_HOE
@@ -156,19 +160,20 @@ KHAZIX_STAFF4:
     range: 7.0
     magic-damage: 30
     faction-damage-void: 40.0
-    lore:
-    - §7Shoot forward two §5void spikes
-    - §7dealing §c2,000 damage §7each and
-    - §7temporarily §8slowing §7the enemy!
     gem-sockets:
     - Unused
-    ability:
-      ability1:
-        type: VOID_SPIKEB
-        mode: RIGHT_CLICK
-        mana: 100.0
-        cooldown: 10.0
     revision-id: 2
+    lore:
+    - '&5&lVoid Spikes&f: Right Click'
+    - '&f- &bMana&f: 100'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
+    - §7Shoot forward two §5void spikes
+    - §cdamaging enemies &7as they travel
+    - §7and &cexplodes &7on impact, &cdamaging
+    - §7and §8slowing §7nearby &cenemies&7!
+    custom-nbt:
+    - MYTHIC_TYPE KHAZIX_STAFF4
 ENCHANTRESS_STAFF4:
   base:
     material: DIAMOND_HOE

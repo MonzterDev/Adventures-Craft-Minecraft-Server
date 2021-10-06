@@ -6,33 +6,6 @@ PILLAGER_CROSSBOW2:
     unbreakable: true
     name: <tier-color-cleaned>Pillager Crossbow
     revision-id: 2
-MARKING_BOW3:
-  base:
-    material: BOW
-    hide-enchants: true
-    attack-damage: 125.0
-    arrow-particles:
-      particle: SMOKE_NORMAL
-      amount: 50
-      speed: 0.05
-    ability:
-      ability1:
-        type: WEAKEN_TARGET
-        mode: ON_HIT
-        extra-damage: 60.0
-        duration: 5.0
-        mana: 50.0
-    lore:
-    - §7Shoot a Mob to §cmark §7it. The
-    - §cmob §7will be weak for §c5secs§7,
-    - §7taking §c60% §7more damage!
-    critical-strike-power: 15.0
-    gem-sockets:
-    - Unused
-    tier: RARE
-    unbreakable: true
-    name: <tier-color-cleaned>Marking Bow
-    revision-id: 2
 BONE_BOW3:
   base:
     material: BOW
@@ -76,31 +49,6 @@ UNDEAD_BOW4:
     unbreakable: true
     critical-strike-chance: 15.0
     revision-id: 2
-FLAME_BOW4:
-  base:
-    material: BOW
-    attack-damage: 175.0
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Flame Bow
-    ability:
-      ability1:
-        type: FIREARROW
-        mode: ON_HIT
-        mana: 25.0
-        cooldown: 10.0
-    lore:
-    - §7Shoot a &cflame arrow&7, &cigniting
-    - §7and &churting &7the enemy
-    - §7for &c100 damage&7 per second!
-    unbreakable: true
-    critical-strike-power: 50.0
-    critical-strike-chance: 30.0
-    revision-id: 2
-ADMIN:
-  base:
-    material: BOW
-    attack-damage: 100000.0
-    revision-id: 2
 JOYS_BOW2:
   base:
     material: BOW
@@ -133,152 +81,6 @@ HEAVY_BOW3:
     lore:
     - '&7Gain &aStrength 3 &7while holding!'
     revision-id: 2
-LEGOLAS_BOW3:
-  base:
-    material: BOW
-    attack-damage:
-      base: 75
-      spread: 0.1
-      max-spread: 0.3
-    critical-strike-power:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    critical-strike-chance:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    movement-speed:
-      base: 0.025
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-hell: 25.0
-    tier: RARE
-    unbreakable: true
-    name: <tier-color-cleaned>Legolas Bow
-    revision-id: 2
-LEGOLAS_BOW4:
-  base:
-    material: BOW
-    attack-damage:
-      base: 100
-      spread: 0.1
-      max-spread: 0.3
-    critical-strike-power:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    critical-strike-chance:
-      base: 100
-      spread: 0.1
-      max-spread: 0.3
-    movement-speed:
-      base: 0.05
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-hell: 50.0
-    tier: LEGENDARY
-    unbreakable: true
-    name: <tier-color-cleaned>Legolas Bow
-    gem-sockets:
-    - Unused
-    revision-id: 2
-ROBIN_BOW3:
-  base:
-    material: BOW
-    attack-damage:
-      base: 100
-      spread: 0.1
-      max-spread: 0.3
-    arrow-velocity:
-      base: 5
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-void: 50.0
-    tier: RARE
-    unbreakable: true
-    name: <tier-color-cleaned>Robin Bow
-    arrow-potion-effects:
-      SLOW:
-        duration: 1.5
-        amplifier: 1
-    arrow-particles:
-      particle: CRIT
-      amount: 10
-      speed: 0.1
-      offset: 0.05
-    lore:
-    - '&cSlow &7enemies for &c1.5secs'
-    - '&7when hit with an arrow!'
-    revision-id: 2
-ROBIN_BOW4:
-  base:
-    material: BOW
-    attack-damage:
-      base: 125
-      spread: 0.1
-      max-spread: 0.3
-    arrow-velocity:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-void: 75.0
-    tier: LEGENDARY
-    unbreakable: true
-    name: <tier-color-cleaned>Robin Bow
-    arrow-potion-effects:
-      SLOW:
-        duration: 2.5
-        amplifier: 2
-    arrow-particles:
-      particle: CRIT
-      amount: 20
-      speed: 0.1
-      offset: 0.05
-    gem-sockets:
-    - Unused
-    lore:
-    - '&cSlow &7enemies for &c2.5secs'
-    - '&7when hit with an arrow!'
-    revision-id: 2
-DECEITFUL_BOW3:
-  base:
-    material: BOW
-    attack-damage: 175.0
-    tier: RARE
-    name: <tier-color-cleaned>Deceitful Bow
-    faction-damage-void: 25.0
-    lore:
-    - §7This bow may fool you.
-    unbreakable: true
-    critical-strike-power: 15.0
-    critical-strike-chance: 25.0
-    gem-sockets:
-    - Unused
-    arrow-particles:
-      particle: DRAGON_BREATH
-      amount: 5
-    revision-id: 2
-DECEITFUL_BOW4:
-  base:
-    material: BOW
-    attack-damage: 200.0
-    tier: LEGENDARY
-    name: <tier-color-cleaned>Deceitful Bow
-    faction-damage-void: 45.0
-    lore:
-    - §7This bow may fool you.
-    unbreakable: true
-    critical-strike-power: 25.0
-    critical-strike-chance: 45.0
-    gem-sockets:
-    - Unused
-    - Unused
-    arrow-particles:
-      particle: DRAGON_BREATH
-      amount: 10
-      speed: 0.05
-    revision-id: 2
 BULBLIN_BOW4:
   base:
     material: BOW
@@ -287,21 +89,12 @@ BULBLIN_BOW4:
     faction-damage-void: 40.0
     attack-damage: 215.0
     critical-strike-chance: 50.0
-    lore:
-    - §7Applies a random §8corruption
-    - §7hex onto any enemy in-sight!
     unbreakable: true
     gem-sockets:
     - Unused
     arrow-particles:
       particle: DRAGON_BREATH
       amount: 5
-    ability:
-      ability1:
-        type: CORRUPTION_CHOOSE
-        mode: ON_HIT
-        mana: 25.0
-        cooldown: 10.0
     revision-id: 2
 BULBLIN_BOW5:
   base:
@@ -313,6 +106,10 @@ BULBLIN_BOW5:
     critical-strike-power: 25.0
     critical-strike-chance: 75.0
     lore:
+    - '&5&lCorruption&f: Right Click'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 12.5secs'
+    - ''
     - §7Applies a powerful §8corruption
     - §7hex onto any enemy in-sight!
     unbreakable: true
@@ -322,10 +119,6 @@ BULBLIN_BOW5:
     arrow-particles:
       particle: DRAGON_BREATH
       amount: 5
-    ability:
-      ability1:
-        type: CORRUPTION_CHOOSEB
-        mode: ON_HIT
-        mana: 50.0
-        cooldown: 12.5
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BULBLIN_BOW5

@@ -69,12 +69,17 @@ GRAVE_DIGGER5:
     blunt-power: 5.0
     blunt-rating: 50.0
     revision-id: 2
-    ability:
-      ability1:
-        type: GRAVE_DIGGER_PLAYER
-        cooldown: 15.0
-        mana: 75.0
-        mode: RIGHT_CLICK
+    lore:
+    - '&4&lGrave Dig&f: Right Click'
+    - '&f- &bMana&f: 100'
+    - '&f- &6Cooldown&f: 25secs'
+    - ''
+    - §cImprison &7the enemy for
+    - §73 seconds and deal &c+1%
+    - §7of the enemies &aHP &7for
+    - §7every &c50 Damage &7you have
+    custom-nbt:
+    - MYTHIC_TYPE GRAVE_DIGGER5
 CARVING_AXE4:
   base:
     material: IRON_AXE
@@ -136,21 +141,19 @@ CHIEF_AXE4:
     blunt-rating: 50.0
     unbreakable: true
     tier: LEGENDARY
-    ability:
-      ability1:
-        type: LIGHT_DASH
-        mode: RIGHT_CLICK
-        damage: 150.0
-        length: 0.1
-        mana: 25.0
     lore:
-    - §aDash &7forward &cdamaing enemies &7hit!
-    - §7
-    - §7Stolen from the §cGoblin Chief§7!
+    - '&4&lChiefs Dash&f: Right Click'
+    - '&f- &bMana&f: 55'
+    - '&f- &6Cooldown&f: 5secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 5 blocks
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE CHIEF_AXE4
     gem-sockets:
     - Unused
     - Unused
-    revision-id: 2
     custom-model-data: 101.0
 BULLBO_ARM3:
   base:
@@ -164,19 +167,16 @@ BULLBO_ARM3:
     blunt-rating: 60.0
     unbreakable: true
     tier: RARE
-    ability:
-      ability1:
-        type: LIGHT_DASH
-        mode: RIGHT_CLICK
-        damage: 1000.0
-        length: 0.25
-        mana: 25.0
-        cooldown: 5.0
     lore:
-    - §7Torn off a §cBullbo§7!
-    gem-sockets:
-    - Unused
+    - '&4&lBullbo Dash&f: Right Click'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 6 blocks
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BULLBO_ARM3
 BULLBO_ARM4:
   base:
     material: GOLDEN_AXE
@@ -189,17 +189,16 @@ BULLBO_ARM4:
     blunt-rating: 80.0
     unbreakable: true
     tier: LEGENDARY
-    ability:
-      ability1:
-        type: LIGHT_DASH
-        mode: RIGHT_CLICK
-        damage: 2500.0
-        length: 0.5
-        mana: 50.0
-        cooldown: 7.5
-    lore:
-    - §7Torn off a §cBullbo§7!
     gem-sockets:
     - Unused
     - Unused
+    lore:
+    - '&4&lBullbo Dash&f: Right Click'
+    - '&f- &bMana&f: 100'
+    - '&f- &6Cooldown&f: 15secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 8 blocks
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BULLBO_ARM4
