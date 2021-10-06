@@ -1,0 +1,79 @@
+MAGMA_BLADE4:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - SKILLCAST{m=75;c=15;s=GRAVE_DIGGER5}
+  Skills:
+  - sound{s=item.firecharge.use;p=0.1} @target
+  - effect:particlering{p=flame;a=3;hs=0.1;vs=0.05;y=0.05;r=0.8;points=15} @target
+  - effect:particlering{p=flame;a=2;hs=0.05;vs=0.05;y=0.15;r=0.6;points=12} @target
+  - effect:particlering{p=flame;a=1;vs=0.05;y=0.25;r=0.55;points=10} @target
+  - skill{s=MAGMA_BLADE4_DAMAGE} @target
+  - skill{s=MAGMA_BLADE4_DOT} @target
+  
+MAGMA_BLADE4_DAMAGE:
+  TargetConditions:
+  - isburning{} true
+  Skills:
+  - effect:particles{p=crit;a=20;y=0.6;hs=0.3;vs=0.3;speed=0.2}
+  - sound{s=entity.player.attack.crit;p=0.1}
+  - damage{a=1500}
+MAGMA_BLADE4_DOT:
+  TargetConditions:
+  - isburning{} false
+  Skills:
+  - damage{a=100;repeat=5;repeatInterval=20}
+  - ignite{d=100}
+
+
+BULBLIN_SWORD5:
+  TargetConditions:
+  - mobsinradius_ext{mobtypes=ALL;a=1to100;r=10;action=TRUE}
+  Conditions:
+  - SKILLCAST{m=150;c=25;s=BULBLIN_SWORD5}
+  Skills:
+  - skill{skill=BULBLIN_SWORD5_1}
+  - skill{skill=BULBLIN_SWORD5_2}
+  - skill{skill=BULBLIN_SWORD5_3}
+  - skill{skill=BULBLIN_SWORD5_4}
+  - skill{skill=BULBLIN_SWORD5_5}
+BULBLIN_SWORD5_1:
+  Conditions:
+  - mobsinradius_ext{mobtypes=ALL;a=1;r=10;action=TRUE}
+  Skills:
+  - message{m="&7You &ahealed &7yourself for &a10% &7of your max HP!"} @self
+  - CUSTOMDAMAGE{d=10;m=ATTACK_DAMAGE;math=multiplicative} @EIR{r=10;ignore=players}
+  - healpercent{m=0.1} @self
+  - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
+BULBLIN_SWORD5_2:
+  Conditions:
+  - mobsinradius_ext{mobtypes=ALL;a=2;r=10;action=TRUE}
+  Skills:
+  - message{m="&7You &ahealed &7yourself for &a20% &7of your max HP!"} @self
+  - CUSTOMDAMAGE{d=20;m=ATTACK_DAMAGE;math=multiplicative} @EIR{r=10;ignore=players}
+  - healpercent{m=0.2} @self
+  - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
+BULBLIN_SWORD5_3:
+  Conditions:
+  - mobsinradius_ext{mobtypes=ALL;a=3;r=10;action=TRUE}
+  Skills:
+  - message{m="&7You &ahealed &7yourself for &a30% &7of your max HP!"} @self
+  - CUSTOMDAMAGE{d=30;m=ATTACK_DAMAGE;math=multiplicative} @EIR{r=10;ignore=players}
+  - healpercent{m=0.3} @self
+  - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
+BULBLIN_SWORD5_4:
+  Conditions:
+  - mobsinradius_ext{mobtypes=ALL;a=4;r=10;action=TRUE}
+  Skills:
+  - message{m="&7You &ahealed &7yourself for &a40% &7of your max HP!"} @self
+  - CUSTOMDAMAGE{d=40;m=ATTACK_DAMAGE;math=multiplicative} @EIR{r=10;ignore=players}
+  - healpercent{m=0.4} @self
+  - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}
+BULBLIN_SWORD5_5:
+  Conditions:
+  - mobsinradius_ext{mobtypes=ALL;a=5to100;r=10;action=TRUE}
+  Skills:
+  - message{m="&7You &ahealed &7yourself for &a50% &7of your max HP!"} @self
+  - CUSTOMDAMAGE{d=50;m=ATTACK_DAMAGE;math=multiplicative} @EIR{r=10;ignore=players}
+  - healpercent{m=0.5} @self
+  - effect:enderbeam{d=20;y=2;} @EIR{r=10;ignore=players}

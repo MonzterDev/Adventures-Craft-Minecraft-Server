@@ -21,7 +21,7 @@ PILLAGER1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - damage{amount=15;ignoreArmor=false} ~onAttack
   - skill{s=PillagerAgro8A} ~onTimer:20
   - skill{s=PillagerAgro8B} ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
@@ -52,7 +52,7 @@ VINDICATOR1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - damage{amount=10;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -79,7 +79,7 @@ EVOKER1:
   Skills:
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=EVOKER_SUMMON_VEX} ~onTimer:200
-  # - damage{amount=20;ignoreArmor=false} @target ~onShoot
+  # - damage{amount=20;ignoreArmor=false} ~onShoot
 
 VEX1:
   Type: VEX
@@ -105,7 +105,7 @@ VEX1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=20;ignoreArmor=false} @target ~onAttack
+  - damage{amount=20;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - remove{delay=1000} @self ~onSpawn
   # - skill{s=Agro8A} ~onTimer:20
@@ -162,7 +162,7 @@ DROWNED1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - damage{amount=15;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=DROWNED_CURE} ~onInteract
   - skill{s=RangedAgro8A} ~onTimer:20
@@ -217,7 +217,7 @@ WANDERING_TRADER1:
 #   - 0 players
 #   - 1 attacker
 #   Skills:
-#   - damage{amount=15;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=15;ignoreArmor=false} ~onAttack
 #   - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
 #   - damage{a=5;ignoreArmor=false} @PIR{r=2} ~onTimer:20
 #   - ignite{ticks=20} @PIR{r=2} ~onTimer:20
@@ -253,7 +253,7 @@ WANDERING_TRADER1:
 #   - 0 players
 #   - 1 attacker
 #   Skills:
-#   - damage{amount=20;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=20;ignoreArmor=false} ~onAttack
 #   - potion{type=SLOW;duration=60;level=5} @target ~onAttack
 #   - potion{type=POISON;duration=60;level=20} @target ~onAttack
 #   - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025

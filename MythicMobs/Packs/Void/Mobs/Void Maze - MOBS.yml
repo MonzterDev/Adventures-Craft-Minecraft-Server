@@ -33,7 +33,7 @@ VOID_MONITOR:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=200;ignoreArmor=false} @target ~onAttack
+  - damage{amount=200;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

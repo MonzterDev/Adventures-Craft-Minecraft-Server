@@ -38,7 +38,7 @@ UNDEAD_WARRIOR:
   - 1 attacker
   Skills:
   - skill{s=UNDEAD_WARRIOR_LEAP} ~onTimer:100
-  - damage{amount=30;ignoreArmor=false} @target ~onAttack
+  - damage{amount=30;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
@@ -91,7 +91,7 @@ MORDEN_THE_UNDEAD1:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack  
+  - damage{amount=50;ignoreArmor=false} ~onAttack  
   - skill{s=MORDEN_UNDEFEATED} ~onSpawn
   - skill{s=MORDEN_DEFEAT} ~onDeath
   - effect:sound{s=ambient.cave;v=1;p=1} @self ~onSpawn
@@ -149,7 +149,7 @@ MORDEN_THE_UNDEAD2:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=70;ignoreArmor=false} @target ~onAttack
+  - damage{amount=70;ignoreArmor=false} ~onAttack
   - potion{type=SLOW;duration=40;level=2} ~onAttack 
   - skill{s=MORDEN_UNDEFEATED} ~onSpawn
   - skill{s=MORDEN_DEFEAT} ~onDeath
@@ -209,7 +209,7 @@ MORDEN_THE_UNDEAD:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - damage{amount=50;ignoreArmor=false} ~onAttack
   - skill{s=MORDEN_UNDEFEATED} ~onSpawn
   - skill{s=MORDEN_DEFEAT} ~onDeath
   - skill{s=MORDEN_THE_UNDEAD_HEALING} <60%

@@ -36,7 +36,7 @@ UNDEAD_SKELETON:
   - skill{s=SUMMON_LOST_SOUL} ~onDeath .01
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
-  - damage{amount=10;ignoreArmor=false} @target ~onAttack
+  - damage{amount=10;ignoreArmor=false} ~onAttack
   - skill{s=Agro8A} @self ~onTimer:20
   - skill{s=Agro8B} @self ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
@@ -69,7 +69,7 @@ UNDEAD_ARCHER:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - damage{amount=15;ignoreArmor=false} ~onAttack
   - skill{s=SUMMON_LOST_SOUL} ~onDeath .01
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
@@ -102,8 +102,8 @@ LOST_SOUL:
   - 1 attacker
   Skills:
   - skill{s=LOST_SOUL_STEAL} ~onEnterCombat
-  - damage{amount=5;ignoreArmor=false} @target ~onAttack
-  - damage{amount=1;ignoreArmor=false} @target ~onTimer:20
+  - damage{amount=5;ignoreArmor=false} ~onAttack
+  - damage{amount=1;ignoreArmor=false} ~onTimer:20
   - potion{type=WITHER;duration=21;level=1} @target ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
@@ -192,7 +192,7 @@ REAPER_MINION:
   - 1 meleeattack
   - 2 randomstroll
   Skills:
-  - damage{amount=1;ignoreArmor=false} @target ~onAttack
+  - damage{amount=1;ignoreArmor=false} ~onAttack
   - forcepull{spread=1} @PIR{r=5} .15 ~onDamaged
   - remove{delay=400} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged  

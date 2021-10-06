@@ -1,0 +1,40 @@
+ENCHANTRESS_GEM5_1: &Options
+  Type: ENDERMAN 
+  Display: '&7'
+  Health: 10000
+  DamageModifiers:
+  - SUFFOCATION 0
+  Options:
+    PreventSunburn: true
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    MaxCombatDistance: 50
+    MovementSpeed: 0.001
+    PreventTeleport: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+  AIGoalSelectors:
+  - 1 clear
+  - 2 meleeattack
+  AITargetSelectors:
+  - clear
+  - OtherFaction
+  Skills:
+  - sudoskill{s=ENCHANTRESS_GEM5_MINION1_TELEPORT;cat=true} @Parent ~onTimer:1
+  - rally{types=ZOMBIE,SKELETON;radius=3} @self ~onTimer:30
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=ENCHANTRESS_GEM5_DAMAGE_CANCEL;sync=true} @self ~onDamaged
+  - healpercent{m=0.02} @Parent ~onDamaged
+  - damage{amount=10;ignoreArmor=false} ~onAttack
+  - remove{delay=400} @self ~onSpawn
+ENCHANTRESS_GEM5_2:
+  <<: *Options
+  Skills:
+  - sudoskill{s=ENCHANTRESS_GEM5_MINION2_TELEPORT;cat=true} @Parent ~onTimer:1
+  - rally{types=ZOMBIE,SKELETON;radius=3} @self ~onTimer:30
+  - skill{s=HPBAR} @self ~onDamaged
+  - skill{s=ENCHANTRESS_GEM5_DAMAGE_CANCEL;sync=true} @self ~onDamaged
+  - healpercent{m=0.02} @Parent ~onDamaged
+  - damage{amount=10;ignoreArmor=false} ~onAttack
+  - remove{delay=400} @self ~onSpawn

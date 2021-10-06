@@ -67,7 +67,7 @@ GOBLIN:
   - 1 attacker
     # <<: *AITargetSelectors
   Skills:
-  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - damage{amount=35;ignoreArmor=false} ~onAttack
   - skill{s=GOBLIN_MOUNT_HOUND} ~onTimer:300
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20

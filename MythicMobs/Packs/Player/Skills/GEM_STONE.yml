@@ -1,0 +1,83 @@
+ZOMBIE_MISSILE5:
+  TargetConditions:
+  - distance{d=<16}
+  Conditions:
+  - holding{m=PLAYER_HEAD} cancel
+  - SKILLCAST{m=150;c=10;s=ZOMBIE_MISSILE5}
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=ZOMBIE_MISSILE;i=1;onHit=ZOMBIE_MISSILE_HIT;onTick=ZOMBIE_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;Duration=200;Velocity=10;bulletSpin=0} @LivingInCone{a=120.0;r=16.0;rot=0.0}
+ZOMBIE_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} @origin
+ZOMBIE_MISSILE_HIT:
+  Skills:
+  - potion{type=POSION;duration=100;level=5} 
+  - damage{a=2000;ignoreArmor=false;repeat=5;repeatInterval=20} 
+  - effect:sound{s=entity.zombie.hurt;v=1.25;p=2;repeat=5;repeatInterval=20} 
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0;repeat=5;repeatInterval=20}
+
+CREEPER_MISSILE5:
+  Conditions:
+  - holding{m=PLAYER_HEAD} cancel
+  - SKILLCAST{m=200;c=15;s=CREEPER_MISSILE5}
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=CREEPER_MISSILE;i=10;onTick=CREEPER_MISSILE_TICK;hnp=false;MaxRange=5;sE=true;hp=false;MaxDuration=100;Velocity=1} @eyedirection{length=5}
+CREEPER_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#008000;amount=1;speed=1;hS=0.1;vS=0} @origin
+  - damage{a=1000;ignoreArmor=false} @EntitiesNearOrigin{r=5;ignore=players}
+  - effect:sound{s=entity.generic.explode;p=1} @origin
+  - effect:particlering{p=largeexplode;a=1;vs=0.5;hs=0.5;s=0;y=0.3;points=2;radius=0} @origin
+
+SLIME_MISSILE5:
+  TargetConditions:
+  - distance{d=<16}
+  Conditions:
+  - holding{m=PLAYER_HEAD} cancel
+  - SKILLCAST{m=200;c=15;s=SLIME_MISSILE5}
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=SLIME_MISSILE;i=1;onHit=SLIME_MISSILE_HIT;onTick=SLIME_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;MaxDuration=200;Velocity=10;bulletSpin=0} @target
+SLIME_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} @origin
+SLIME_MISSILE_HIT:
+  Skills:
+  - stun{d=100;f=false}
+  - damage{a=5000;ignoreArmor=false} 
+  - effect:sound{s=entity.SLIME.hurt;v=1.25;p=2} 
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} 
+
+ENDERMAN_MISSILE5:
+  Conditions:
+  - holding{m=PLAYER_HEAD} cancel
+  - SKILLCAST{m=100;c=7.5;s=ENDERMAN_MISSILE5}
+  Skills:
+  - missile{bulletType=MYTHICITEM;material=ENDERMAN_MISSILE;i=1;onEnd=ENDERMAN_MISSILE_HIT;onTick=ENDERMAN_MISSILE_TICK;hnp=true;MaxRange=15;sE=true;hp=false;MaxDuration=200;Velocity=20} @eyedirection{length=15}
+ENDERMAN_MISSILE_TICK:
+  Skills:
+  - effect:particles{particle=reddust;color=#22FF00;amount=1;speed=1;hS=0.1;vS=0} @origin
+  - healpercent{m=0.0005} @self
+ENDERMAN_MISSILE_HIT:
+  Skills:
+  - summon{type=ENDERMAN_MISSILE_MOB;amount=1;radius=2} @origin
+  - teleport{spreadh=1;spreadv=1} @MIR{r=100;t=ENDERMAN_MISSILE_MOB}
+
+ENCHANTRESS_GEM5:
+  Conditions:
+  - holding{m=YELLOW;_DYE} cancel
+  - SKILLCAST{m=250;c=35;s=ENCHANTRESS_GEM5}
+  Skills:
+  - summon{type=ENCHANTRESS_GEM5_1;amount=1;radius=1;sip=false} @self
+  - summon{type=ENCHANTRESS_GEM5_2;amount=1;radius=1;sip=false} @self
+ENCHANTRESS_GEM5_DAMAGE_CANCEL:
+  TriggerConditions:
+  - isPlayer{} true
+  Skills:
+  - CancelEvent
+
+ENCHANTRESS_GEM5_MINION1_TELEPORT:
+  Skills:
+  - teleportin{dir=0,-.5,2} @trigger
+ENCHANTRESS_GEM5_MINION2_TELEPORT:
+  Skills:
+  - teleportin{dir=0,-.5,-2} @trigger

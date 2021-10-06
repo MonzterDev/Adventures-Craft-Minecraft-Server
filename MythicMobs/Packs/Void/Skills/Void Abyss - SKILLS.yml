@@ -34,7 +34,7 @@ VOID_ENCHANTRESS_MISSILE_TICK:
 VOID_ENCHANTRESS_MISSILE_HIT:
   Skills:
   - potion{type=SLOW;duration=20;level=1} @target
-  - damage{a=75;ignoreArmor=false} @target
+  - damage{a=75;ignoreArmor=false}
 VOID_ENCHANTRESS_MISSILE_END:
   Skills:
   - effect:sound{s=entity.generic.explode;v=3;p=1} @origin

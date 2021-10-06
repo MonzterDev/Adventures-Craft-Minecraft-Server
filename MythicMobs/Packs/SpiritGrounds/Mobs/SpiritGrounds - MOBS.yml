@@ -82,7 +82,7 @@ SPIRIT_SPIDER:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=20;ignoreArmor=false} @Target ~onAttack
+  - damage{amount=20;ignoreArmor=false} ~onAttack
   - skill{s=SPIRIT_SPIDER_POISON} @Target ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
