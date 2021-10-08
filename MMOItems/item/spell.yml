@@ -1,3 +1,121 @@
+THRALL_BALL3:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMDFiOTUzYzg4ODU5NGE1N2EzNzY1YjA4YjU5NzIxNTcyNmM2NTkwYTJmNzMwZjA0N2NiOTU1YTI5ZmRmYWI2In19fQ==
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    name: <tier-color-cleaned>Thrall Ball
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - '&e&lThrall Bite&f: Right Click'
+    - '&f- &bMana&f: 5'
+    - '&f- &6Cooldown&f: 2secs'
+    - ''
+    - §7Throw a ball of &cVoid Thrall
+    - §eeggs §7at &cenemies&7, corrupting them!
+    item-cooldown: 2.0
+    max-consume: 1.0
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE THRALL_BALL3
+CHORUS_LEAP3:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU5MzM1ZDkxYmIzOWJhNjg1YmE1NjEyY2NmY2FlOGFhZGEzNDYxYTlkMDc4NjZjZDRlMGIyNjZjODY0ZTEwNyJ9fX0=
+      uuid: 4ae8e8b0-e186-4b41-90d9-c0efcd9fc52a
+    name: <tier-color-cleaned>Chorus Leap
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Use to traverse deeper into the §5Void§7!
+    - ''
+    - '&8&l» &eRight-Click to Use'
+    item-cooldown: 2.0
+    max-consume: 1.0
+    commands:
+      cmd0:
+        format: warp VoidMaze
+        delay: 0.0
+        op: true
+    revision-id: 2
+UNSTABLE_WARP4:
+  base:
+    material: ENDER_EYE
+    name: <tier-color-cleaned>Unstable Warp
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Consuming this will have a 50% chance of
+    - §7creating a portal to the §5Void Abyss§7!
+    - ''
+    - '&8&l» &eRight-Click to Consume'
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE UNSTABLE_WARP4
+    disable-right-click-consume: true
+STABLE_WARP5:
+  base:
+    material: ENDER_EYE
+    name: <tier-color-cleaned>Stable Warp
+    disable-repairing: true
+    unstackable: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    hide-enchants: true
+    enchants:
+      unbreaking: 5
+    tier: EXOTIC
+    sounds:
+      on-consume:
+        sound: entity.illusioner.cast_spell
+        volume: 1.0
+        pitch: 1.0
+    lore:
+    - §7Consuming this will have a 100% chance of
+    - §7creating a portal to the §5Void Abyss§7!
+    - ''
+    - '&8&l» &eRight-Click to Consume'
+    disable-right-click-consume: true
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE STABLE_WARP5
 RESOLVE2:
   base:
     material: AZURE_BLUET

@@ -1,13 +1,15 @@
 #Balloon
-BALLOON_SUMMON_SMALL:
-  Cooldown: 2.4
+BALLOON:
+  Conditions:
+  - SKILLCAST{m=0;c=2.5;s=BALLOON}
   Skills:
   - summon{type=BALLOON_SMALL;amount=1;radius=15;yRadius=10} @self
   - sound{s=entity.puffer_fish.blow_up} @self
   - potion{type=LEVITATION;duration=200;level=1;force=true} @self
   - potion{type=SLOW_FALLING;duration=100;level=1;force=true;delay=200} @self
-BALLOON_SUMMON_LARGE:
-  Cooldown: 2.4
+BALLOON2:
+  Conditions:
+  - SKILLCAST{m=0;c=2.5;s=BALLOON2}
   Skills:
   - summon{type=BALLOON_LARGE;amount=1;radius=15;yRadius=10} @self
   - sound{s=entity.puffer_fish.blow_up} @self
