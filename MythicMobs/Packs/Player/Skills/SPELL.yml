@@ -1,0 +1,38 @@
+GRAVE_DIGGER5:
+  TargetConditions:
+  - distance{d=<5}
+  Conditions:
+  - SKILLCAST{m=100;c=25;s=GRAVE_DIGGER5}
+  Skills:
+  - prison{material=STONE_BRICKS;duration=60;breakable=true} @target
+  - GRAVEDIGGER{d=1} @target
+  - effect:sound{s=block.iron_door.open;pitch=-2} @self
+
+THRALL_BALL3:
+  Conditions:
+  - SKILLCAST{m=5;c=2;s=THRALL_BALL3}
+  Skills:
+  - sound{s=entity.shulker.shoot;v=.5} @self
+  - projectile{bulletType=MYTHICITEM;material=THRALL_BALL;i=1;onHit=THRALL_BALL-HIT2;Speed=5;hnp=true;MaxRange=5;sE=true} @targetlocation
+THRALL_BALL-HIT2:
+  Skills:
+  - CUSTOMDAMAGE{d=100;m=ATTACK_DAMAGE;repeat=4;repeatInterval=20}
+  - potion{type=SLOW;level=2;duration=20;repeat=4;repeatInterval=20}}
+  - effect:particles{particle=reddust;color=#30004A;amount=200;hS=1;vS=1;speed=5;repeat=4;repeatInterval=20}
+
+#VOID PORTAL ITEM
+UNSTABLE_WARP4:
+  Conditions:
+  - SKILLCAST{m=0;c=2;s=UNSTABLE_WARP4}
+  Skills:
+  - VOIDWARP
+STABLE_WARP5:
+  Conditions:
+  - SKILLCAST{m=0;c=2;s=STABLE_WARP5}
+  Skills:
+  - VOIDWARP
+  
+PORTAL_SUMMON:
+  Skills:
+  - summon{type=VOID_PORTAL;amount=1;radius=1} @Forward{f=0;y=20}
+  - teleportto{location=-197.5,13,-812.5;y=-1;p=1.6} @self

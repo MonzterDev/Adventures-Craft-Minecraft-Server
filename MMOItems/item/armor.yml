@@ -695,18 +695,18 @@ MELON_HAT5:
     max-mana: 50.0
     name: <tier-color-cleaned>Melon Hat
     lore:
+    - '&e&lMelon Heal&f: Shift'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
     - '&aHeal &7yourself and allies within a'
     - '&710 block radius. &aHeals &7are improved'
-    - '&7with more people around you!'
+    - '&7with the more people around you!'
     gem-sockets:
     - Unused
-    ability:
-      ability1:
-        type: MELONHEAL
-        mode: SHIFT_RIGHT_CLICK
-        mana: 25.0
-        cooldown: 10.0
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE MELON_HAT5
 GEM_HELMET3:
   base:
     material: PLAYER_HEAD
