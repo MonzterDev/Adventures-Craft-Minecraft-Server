@@ -109,15 +109,17 @@ PORTAL_MESSAGE_END:
   - message{m="&2The portal to the &5Void Abyss &2has closed!"}
   - effect:sound{s=block.beacon.deactivate;v=10}
 
-PORTAL_TELEPORT_ACCEPT:
+PORTAL_TELEPORT:
   TargetConditions:
-  - stringequals{val1="%betonquest_default-Void-Kogmaw:condition.q5_completed%";val2="true"} true
+  - BQ_TAG{p=default-Void-Kogmaw;t=PORTAL_OPENER_COMPLETED} orElseCast PORTAL_TELEPORT_DENY
+  Skills:
+  - skill{s=PORTAL_TELEPORT_ACCEPT}
+
+PORTAL_TELEPORT_ACCEPT:
   Skills:
   - message{m="&aYou've been teleported!"}
   - teleportto{location=-71.5,26,-762.5;y=-90;p=.04}
 
 PORTAL_TELEPORT_DENY:
-  TargetConditions:
-  - stringequals{val1="%betonquest_default-Void-Kogmaw:condition.q5_completed%";val2="false"} true
   Skills:
   - message{m="&cYou must complete &aKogmaw's &eAscending &cquest before being able to enter!"}

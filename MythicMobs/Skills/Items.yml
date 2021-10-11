@@ -1,10 +1,4 @@
 
-FAH:
-  Conditions:
-  - region{r=hell}
-  Skills:
-  - potion{type=FAST_DIGGING;duration=200;level=5} 
-  
 # HELL SET BONUS  
 HELLSPLOSHION:
   Skills:
@@ -108,30 +102,6 @@ HELLSPLOSHION10:
   - damage{amount=10000;ignoreArmor=false} @EIR{r=15;ignore=players}
   - effect:geyser{type=LAVA;height=3;speed=20} @EIR{r=15;ignore=players}
   - potion{type=INCREASE_DAMAGE;duration=300;level=20} @self
-  
-FIREARROW:
-  Skills:
-  - effect:sound{s=block.fire.extinguish;v=1;p=1} @self
-  - effect:particleline{particle=flame;amount=1}
-  - ignite{ticks=100} 
-  - damage{amount=250;ignoreArmor=false} 
-  - delay 20
-  - damage{amount=250;ignoreArmor=false} 
-  - delay 20
-  - damage{amount=250;ignoreArmor=false} 
-  - delay 20
-  - damage{amount=250;ignoreArmor=false} 
-  - delay 20
-  - damage{amount=250;ignoreArmor=false} 
-  
-
-#VOID
-BLINDNESS_CLEAERER:
-  Conditions:
-  - haspotioneffect{type=Blindness;level=6} true
-  Skills:
-  - command{c="effect <caster.name> Blindness 1 1"} @self
-
 
 BLAZESHOT:
   Skills:
@@ -152,21 +122,6 @@ BLAZESHOT_DAMAGE:
   - damage{amount=187.5;ignoreArmor=false} 
   - delay 20
   - damage{amount=187.5;ignoreArmor=false} 
-
-
-
-
-#MMOCORE
-LEVEL_UP:
-  Skills:
-  - sound{s=entity.player.levelup;p=.5;v=.5} @self
-  - effect:particleline{particle=reddust;color=#FF00FF;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-  - effect:particleline{particle=reddust;color=#0DECAF;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-  - effect:particleline{particle=reddust;color=#B12600;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-  - effect:particleline{particle=reddust;color=#F9F9CB;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-  - effect:particleline{particle=reddust;color=#FFA500;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-  - effect:particleline{particle=reddust;color=#B12600;amount=1;fromOrigin=true} @Ring{radius=5;points=10}
-
 
 
 #VOID ITEMS
