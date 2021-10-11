@@ -141,7 +141,7 @@
 #   - 1 attacker
 #   - 2 SpecificFaction Guard
 #   Skills:
-#   - damage{amount=20;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=20;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -194,7 +194,7 @@
 #   - 1 attacker
 #   - 2 SpecificFaction Guard
 #   Skills:
-#   - damage{amount=30;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=30;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -243,7 +243,7 @@
 #   - 1 attacker
 #   - 2 SpecificFaction Guard
 #   Skills:
-#   - damage{amount=30;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=30;ignoreArmor=false} ~onAttack
 #   - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
 #   - damage{a=10;ignoreArmor=false} @PIR{r=2} ~onTimer:20
 #   - ignite{ticks=20} @PIR{r=2} ~onTimer:20
@@ -292,7 +292,7 @@
 #   - 1 attacker
 #   - 2 SpecificFaction Guard
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -337,7 +337,7 @@
 #   - 0 players
 #   - 1 attacker
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -379,7 +379,7 @@
 #   - 0 players
 #   - 1 attacker
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -430,7 +430,7 @@
 #   - 0 players
 #   - 1 attacker
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=anticheat;sync=true} ~onDamaged
 #   - skill{s=anticheat;sync=true} ~onInteract
 #   - skill{s=anticheatscoreplus;sync=true} @self ~onTimer:10
@@ -471,7 +471,7 @@
 #   AIGoalSelectors:
 #   - 1 clear
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=HPBAR} @self ~onDamaged
 #   - skill{s=TESTP} @self ~onTimer:1
 
@@ -507,7 +507,7 @@
 #   - 1 fleeplayers
 # #  - 1 gotolocation  x-136,y30,z-984
 #   Skills:
-#   - damage{amount=50;ignoreArmor=false} @target ~onAttack
+#   - damage{amount=50;ignoreArmor=false} ~onAttack
 #   - skill{s=HPBAR} @self ~onDamaged
 #   - effect:enderbeam{d=10;y=5;} @MIR{r=200;t=VOID_HEART} ~onTimer:10
 

@@ -69,9 +69,136 @@ GRAVE_DIGGER5:
     blunt-power: 5.0
     blunt-rating: 50.0
     revision-id: 2
-    ability:
-      ability1:
-        type: GRAVE_DIGGER_PLAYER
-        cooldown: 15.0
-        mana: 75.0
-        mode: RIGHT_CLICK
+    lore:
+    - '&4&lGrave Dig&f: Right Click'
+    - '&f- &bMana&f: 100'
+    - '&f- &6Cooldown&f: 25secs'
+    - ''
+    - §cImprison &7the enemy for
+    - §73 seconds and deal &c+1%
+    - §7of the enemies &aHP &7for
+    - §7every &c50 Damage &7you have
+    custom-nbt:
+    - MYTHIC_TYPE GRAVE_DIGGER5
+CARVING_AXE4:
+  base:
+    material: IRON_AXE
+    unbreakable: true
+    tier: LEGENDARY
+    name: <tier-color-cleaned>Carving Axe
+    attack-damage: 85.0
+    critical-strike-power: 15.0
+    critical-strike-chance: 10.0
+    blunt-power: 3.0
+    blunt-rating: 30.0
+    gem-sockets:
+    - Unused
+    lore:
+    - '&7Carve into your foes!'
+    durability: 5.0
+    revision-id: 2
+CARVING_AXE5:
+  base:
+    material: GOLDEN_AXE
+    unbreakable: true
+    tier: EXOTIC
+    name: <tier-color-cleaned>Carving Axe
+    attack-damage: 145.0
+    critical-strike-power: 25.0
+    critical-strike-chance: 15.0
+    blunt-power: 4.0
+    blunt-rating: 60.0
+    gem-sockets:
+    - Unused
+    - Unused
+    lore:
+    - '&7Carve &cfear &7into your foes!'
+    durability: 6.0
+    revision-id: 2
+CHIEF_AXE3:
+  base:
+    material: IRON_AXE
+    name: <tier-color-cleaned>Chief Axe
+    unbreakable: true
+    tier: RARE
+    attack-damage: 40.0
+    critical-strike-power: 25.0
+    blunt-power: 2.0
+    blunt-rating: 25.0
+    lore:
+    - §7Stolen from the §cGoblin Chief§7!
+    gem-sockets:
+    - Unused
+    revision-id: 2
+    custom-model-data: 101.0
+CHIEF_AXE4:
+  base:
+    material: GOLDEN_AXE
+    name: <tier-color-cleaned>Chief Axe
+    attack-damage: 85.0
+    critical-strike-chance: 35.0
+    blunt-power: 3.0
+    blunt-rating: 50.0
+    unbreakable: true
+    tier: LEGENDARY
+    lore:
+    - '&4&lChiefs Dash&f: Right Click'
+    - '&f- &bMana&f: 55'
+    - '&f- &6Cooldown&f: 5secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 5 blocks
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE CHIEF_AXE4
+    gem-sockets:
+    - Unused
+    - Unused
+    custom-model-data: 101.0
+BULLBO_ARM3:
+  base:
+    material: IRON_AXE
+    name: <tier-color-cleaned>Bullbo Arm
+    attack-speed: 1.0
+    attack-damage: 150.0
+    critical-strike-chance: 50.0
+    faction-damage-void: 5.0
+    blunt-power: 2.0
+    blunt-rating: 60.0
+    unbreakable: true
+    tier: RARE
+    lore:
+    - '&4&lBullbo Dash&f: Right Click'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 6 blocks
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BULLBO_ARM3
+BULLBO_ARM4:
+  base:
+    material: GOLDEN_AXE
+    name: <tier-color-cleaned>Bullbo Arm
+    attack-damage: 215.0
+    attack-speed: 1.5
+    critical-strike-chance: 75.0
+    faction-damage-void: 15.0
+    blunt-power: 3.0
+    blunt-rating: 80.0
+    unbreakable: true
+    tier: LEGENDARY
+    gem-sockets:
+    - Unused
+    - Unused
+    lore:
+    - '&4&lBullbo Dash&f: Right Click'
+    - '&f- &bMana&f: 100'
+    - '&f- &6Cooldown&f: 15secs'
+    - ''
+    - §4Dash&7 forward, damaging
+    - §7enemies within 8 blocks
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BULLBO_ARM4

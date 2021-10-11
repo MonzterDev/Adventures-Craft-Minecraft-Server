@@ -505,7 +505,7 @@ VOID_BOSS_DEFENDER:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=25;ignoreArmor=false} @target ~onAttack
+  - damage{amount=25;ignoreArmor=false} ~onAttack
   - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
   - skill{s=VOID_BOSS_DEFENDER_DEATH_EXPLOSION} ~onDeath
   - skill{s=HPBAR} @self ~onDamaged
@@ -546,7 +546,7 @@ VOID_BOSS_DEFENDER2:
   AITargetSelectors:
   - 0 players
   Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - damage{amount=50;ignoreArmor=false} ~onAttack
   - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
   - skill{s=VOID_BOSS_DEFENDER2_CHOSE} @self ~onSpawn
   - skill{s=VOID_BOSS_DEFENDER2_REMOVE_FEET} @self <75%
@@ -586,7 +586,7 @@ VOID_BOSS_DEFENDER3:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=75;ignoreArmor=false} @target ~onAttack
+  - damage{amount=75;ignoreArmor=false} ~onAttack
   - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
   - skill{s=VOID_BOSS_DEFENDER3_GROUND_POUND} ~onTimer:200  <50%
   - skill{s=HPBAR} @self ~onDamaged
@@ -623,7 +623,7 @@ VOID_BOSS_DEFENDER4:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - damage{amount=50;ignoreArmor=false} ~onAttack
   - skill{s=VOID_BOSS_DEFENDER_HEAL} @self ~onSpawn
   - skill{s=VOID_BOSS_DEFENDER4_ABDUCTION} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged

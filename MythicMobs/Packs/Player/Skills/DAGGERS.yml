@@ -1,0 +1,41 @@
+REAPER_BLADE4:
+  Conditions:
+  - SKILLCAST{m=50;c=7.5;s=REAPER_BLADE4}
+  Skills:
+  - healpercent{m=.01;repeat=2;repeatInterval=20} @self
+  - CUSTOMDAMAGE{d=5;m=ATTACK_DAMAGE;repeat=2;repeatInterval=20} @EIR{r=2;ignore=players}
+  - effect:bloodyScreen{d=15;repeat=2;repeatInterval=20} @self
+  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @EIR{r=2;ignore=players}
+  - effect:sound{s=entity.drowned.ambient;pitch=1.5} @self
+REAPER_BLADE5:
+  Conditions:
+  - SKILLCAST{m=75;c=10;s=REAPER_BLADE5}
+  Skills:
+  - healpercent{m=.02;repeat=5;repeatInterval=20} @self
+  - CUSTOMDAMAGE{d=10;m=ATTACK_DAMAGE;repeat=4;repeatInterval=20} @EIR{r=3;ignore=players}
+  - effect:bloodyScreen{d=15;repeat=5;repeatInterval=20} @self
+  - effect:particlesphere{particle=dragon_breath;amount=5;radius=1} @EIR{r=3;ignore=players}
+  - effect:sound{s=entity.drowned.ambient;pitch=1.5} @self
+
+MACHETE3:
+  TargetConditions:
+  - distance{d=<7}
+  Conditions:
+  - SKILLCAST{m=65;c=10;s=MACHETE3}
+  Skills:
+  - stun{d=60;f=true} @target
+  - CUSTOMDAMAGE{d=50;m=ATTACK_DAMAGE} @target
+  - effect:blockmask{m=vine;r=1;d=60;s=sphere} @target
+  - sound{s=block.vine.step;pitch=.5} @self
+  - message{m="&7The enemy has been &crooted &7for 3 seconds!"} @self
+
+SHADOW_DAGGER3:
+  Conditions:
+  - SKILLCAST{m=35;c=5;s=SHADOW_DAGGER3}
+  Skills:
+  - lunge{velocity=5;velocityY=.25} @self
+SHADOW_DAGGER4:
+  Conditions:
+  - SKILLCAST{m=45;c=7.5;s=SHADOW_DAGGER4}
+  Skills:
+  - lunge{velocity=7;velocityY=.5} @self

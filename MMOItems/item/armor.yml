@@ -1,127 +1,128 @@
-DIAMONDHELMET:
+DIAMOND_HELMET:
   base:
     material: DIAMOND_HELMET
     tier: COMMON
     unbreakable: true
     revision-id: 2
-DIAMONDCHESTPLATE:
+    movement-speed: 0.1
+DIAMOND_CHESTPLATE:
   base:
     material: DIAMOND_CHESTPLATE
     tier: COMMON
     unbreakable: true
     equip-priority: 4.0
     revision-id: 2
-DIAMONDLEGGINGS:
+DIAMOND_LEGGINGS:
   base:
     material: DIAMOND_LEGGINGS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-DIAMONDBOOTS:
+DIAMOND_BOOTS:
   base:
     material: DIAMOND_BOOTS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-IRONHELMET:
+IRON_HELMET:
   base:
     material: IRON_HELMET
     tier: COMMON
     unbreakable: true
     revision-id: 2
-IRONCHESTPLATE:
+IRON_CHESTPLATE:
   base:
     material: IRON_CHESTPLATE
     tier: COMMON
     unbreakable: true
     equip-priority: 4.0
     revision-id: 2
-IRONLEGGINGS:
+IRON_LEGGINGS:
   base:
     material: IRON_LEGGINGS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-IRONBOOTS:
+IRON_BOOTS:
   base:
     material: IRON_BOOTS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-GOLDENHELMET:
+GOLDEN_HELMET:
   base:
     material: GOLDEN_HELMET
     tier: COMMON
     unbreakable: true
     revision-id: 2
-GOLDENCHESTPLATE:
+GOLDEN_CHESTPLATE:
   base:
     material: GOLDEN_CHESTPLATE
     tier: COMMON
     unbreakable: true
     revision-id: 2
-GOLDENLEGGINGS:
+GOLDEN_LEGGINGS:
   base:
     material: GOLDEN_LEGGINGS
     tier: COMMON
     unbreakable: true
     equip-priority: 2.0
     revision-id: 2
-GOLDENBOOTS:
+GOLDEN_BOOTS:
   base:
     material: GOLDEN_BOOTS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-CHAINMAILHELMET:
+CHAINMAIL_HELMET:
   base:
     material: CHAINMAIL_HELMET
     tier: COMMON
     unbreakable: true
     revision-id: 2
-CHAINMAILCHESTPLATE:
+CHAINMAIL_CHESTPLATE:
   base:
     material: CHAINMAIL_CHESTPLATE
     tier: COMMON
     unbreakable: true
     revision-id: 2
-CHAINMAILLEGGINGS:
+CHAINMAIL_LEGGINGS:
   base:
     material: CHAINMAIL_LEGGINGS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-CHAINMAILBOOTS:
+CHAINMAIL_BOOTS:
   base:
     material: CHAINMAIL_BOOTS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-LEATHERHELMET:
+LEATHER_HELMET:
   base:
     material: LEATHER_HELMET
     tier: COMMON
     unbreakable: true
     revision-id: 2
-LEATHERCHESTPLATE:
+LEATHER_CHESTPLATE:
   base:
     material: LEATHER_CHESTPLATE
     tier: COMMON
     unbreakable: true
     revision-id: 2
-LEATHERLEGGINGS:
+LEATHER_LEGGINGS:
   base:
     material: LEATHER_LEGGINGS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-LEATHERBOOTS:
+LEATHER_BOOTS:
   base:
     material: LEATHER_BOOTS
     tier: COMMON
     unbreakable: true
     revision-id: 2
-TURTLEHELMET:
+TURTLE_HELMET:
   base:
     material: TURTLE_HELMET
     tier: COMMON
@@ -202,8 +203,6 @@ BONE_SKULL2:
     unbreakable: true
     tier: UNCOMMON
     undead-damage: 5.0
-    disable-smelting: true
-    disable-interaction: false
     max-health: 20.0
     name: <tier-color-cleaned>Bone Skull
     defense: 5.0
@@ -216,7 +215,6 @@ BONE_CHESTPLATE2:
     tier: UNCOMMON
     undead-damage: 10.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 25.0
     name: <tier-color-cleaned>Bone Chestplate
     defense: 15.0
@@ -225,7 +223,6 @@ BONE_LEGS2:
   base:
     material: IRON_LEGGINGS
     name: <tier-color-cleaned>Bone Legs
-    disable-smelting: true
     unbreakable: true
     undead-damage: 7.5
     tier: UNCOMMON
@@ -235,13 +232,30 @@ BONE_LEGS2:
 BONE_FEET2:
   base:
     material: IRON_BOOTS
-    disable-smelting: true
     name: <tier-color-cleaned>Bone Feet
     unbreakable: true
     tier: UNCOMMON
     undead-damage: 5.0
     max-health: 20.0
     defense: 5.0
+    revision-id: 2
+REAPER_HEAD5:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
+      uuid: c7a7e131-0b05-47c7-9cb1-dd6350916a6b
+    unbreakable: true
+    tier: EXOTIC
+    faction-damage-undead: 50.0
+    max-health: 30.0
+    attack-damage: 15
+    name: <tier-color-cleaned>Reaper Head
+    lore:
+    - '&7Wearing the &cReaper''s Head'
+    - '&7grants you his strength!'
+    defense: 20.0
+    unstackable: false
     revision-id: 2
 SKELETON_SKULL3:
   base:
@@ -252,8 +266,6 @@ SKELETON_SKULL3:
     unbreakable: true
     tier: RARE
     faction-damage-undead: 20.0
-    disable-smelting: true
-    disable-interaction: false
     max-health: 25.0
     defense: 5.0
     name: <tier-color-cleaned>Skeleton Skull
@@ -271,7 +283,6 @@ SKELETON_CHESTPLATE3:
     tier: RARE
     faction-damage-undead: 10.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 40.0
     name: <tier-color-cleaned>Skeleton Chestplate
     defense: 10.0
@@ -285,7 +296,6 @@ SKELETON_LEGS3:
   base:
     material: LEATHER_LEGGINGS
     name: <tier-color-cleaned>Skeleton Legs
-    disable-smelting: true
     unbreakable: true
     faction-damage-undead: 7.5
     tier: RARE
@@ -301,7 +311,6 @@ SKELETON_LEGS3:
 SKELETON_FEET3:
   base:
     material: LEATHER_BOOTS
-    disable-smelting: true
     name: <tier-color-cleaned>Skeleton Feet
     unbreakable: true
     tier: RARE
@@ -323,15 +332,9 @@ UNDEAD_HEAD3:
     unbreakable: true
     tier: RARE
     faction-damage-undead: 10.0
-    disable-smelting: true
-    disable-interaction: false
     max-health: 30.0
     defense: 10.0
     set: HATRED
-    upgrade:
-      template: undead-armor
-      max: 5
-      workbench: true
     name: <tier-color-cleaned>Undead Skull
     unstackable: true
     revision-id: 2
@@ -342,16 +345,11 @@ UNDEAD_CHEST3:
     tier: RARE
     faction-damage-undead: 15.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 40.0
     name: <tier-color-cleaned>Undead Chestplate
     defense: 20.0
     dye-color: 100 0 0
     set: HATRED
-    upgrade:
-      max: 5
-      template: undead-armor
-      workbench: true
     revision-id: 2
 UNDEAD_LEGS3:
   base:
@@ -360,16 +358,11 @@ UNDEAD_LEGS3:
     tier: RARE
     faction-damage-undead: 15.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 40.0
     name: <tier-color-cleaned>Undead Leggings
     defense: 20.0
     dye-color: 100 0 0
     set: HATRED
-    upgrade:
-      max: 5
-      template: undead-armor
-      workbench: true
     revision-id: 2
 UNDEAD_FEET3:
   base:
@@ -378,16 +371,11 @@ UNDEAD_FEET3:
     tier: RARE
     faction-damage-undead: 10.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 30.0
     name: <tier-color-cleaned>Undead Feet
     defense: 10.0
     dye-color: 100 0 0
     set: HATRED
-    upgrade:
-      workbench: true
-      max: 5
-      template: undead-armor
     revision-id: 2
 MORDEN_HEAD4:
   base:
@@ -397,8 +385,6 @@ MORDEN_HEAD4:
       uuid: c01e774a-b7e2-4de7-9c59-9b0864c3e149
     unbreakable: true
     tier: LEGENDARY
-    disable-smelting: true
-    disable-interaction: false
     max-health: 40.0
     defense: 20.0
     attack-damage: 10.0
@@ -415,7 +401,6 @@ MORDEN_CHEST4:
     unbreakable: true
     tier: LEGENDARY
     disable-repairing: false
-    disable-smelting: true
     max-health: 50.0
     attack-damage: 15.0
     name: <tier-color-cleaned>Morden Chestplate
@@ -432,7 +417,6 @@ MORDEN_LEGS4:
     tier: LEGENDARY
     attack-damage: 15.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 50.0
     name: <tier-color-cleaned>Morden Leggings
     defense: 30.0
@@ -448,7 +432,6 @@ MORDEN_FEET4:
     tier: LEGENDARY
     attack-damage: 10.0
     disable-repairing: false
-    disable-smelting: true
     max-health: 40.0
     name: <tier-color-cleaned>Morden Feet
     defense: 20.0
@@ -514,187 +497,35 @@ BEE_WINGS2:
     material: GOLDEN_CHESTPLATE
     name: <tier-color-cleaned>Bee Wings
     lore:
-    - '&eBuzz &7like a bee!'
-    hide-enchants: false
-    disable-interaction: false
-    disable-smelting: true
-    disable-enchanting: false
+    - '&e&lBee Fly&f: Shift'
+    - '&f- &bMana&f: 15'
+    - '&f- &6Cooldown&f: 15secs'
+    - ''
+    - '&aFly &7like a bee within the &2Forest!'
     unbreakable: true
     tier: UNCOMMON
     max-health: 25.0
     defense: 10.0
-    ability:
-      ability1:
-        type: BEE_FLY_PLAYER
-        mode: SNEAK
-        mana: 15.0
-        cooldown: 15.0
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BEE_WINGS2
 BEE_WINGS3:
   base:
     material: GOLDEN_CHESTPLATE
     name: <tier-color-cleaned>Bee Wings
     lore:
-    - '&eBuzz &7like a bee!'
-    hide-enchants: false
-    disable-interaction: false
-    disable-smelting: true
-    disable-enchanting: false
+    - '&e&lBee Fly&f: Shift'
+    - '&f- &bMana&f: 25'
+    - '&f- &6Cooldown&f: 17.5secs'
+    - ''
+    - '&aFly &7like a bee within the &2Forest!'
     unbreakable: true
     tier: RARE
     max-health: 35.0
     defense: 20.0
-    ability:
-      ability1:
-        type: BEE_FLY_PLAYER_B
-        mode: SHIFT_RIGHT_CLICK
-        mana: 25.0
-        cooldown: 20.0
     revision-id: 2
-PARROT_CHEST2:
-  base:
-    material: LEATHER_CHESTPLATE
-    name: <tier-color-cleaned>Parrot Wings
-    lore:
-    - '&fFly like a &cParrot&7!'
-    hide-enchants: false
-    disable-interaction: false
-    disable-smelting: true
-    disable-enchanting: false
-    unbreakable: true
-    tier: UNCOMMON
-    max-health: 25.0
-    defense: 20.0
-    dye-color: 145 0 0
-    ability:
-      ability1:
-        type: FLYA
-        mode: WHEN_HIT
-        mana: 5.0
-        cooldown: 20.0
-    revision-id: 2
-PARROT_CHEST3:
-  base:
-    material: LEATHER_CHESTPLATE
-    name: <tier-color-cleaned>Parrot Wings
-    lore:
-    - '&fFly like a &cParrot&7!'
-    hide-enchants: false
-    disable-interaction: false
-    disable-smelting: true
-    disable-enchanting: false
-    unbreakable: true
-    tier: RARE
-    max-health: 35.0
-    defense: 30.0
-    dye-color: 185 0 0
-    ability:
-      ability1:
-        type: FLYB
-        mode: WHEN_HIT
-        mana: 10.0
-        cooldown: 15.0
-    revision-id: 2
-PARROT_CHEST4:
-  base:
-    material: LEATHER_CHESTPLATE
-    name: <tier-color-cleaned>Parrot Wings
-    lore:
-    - '&fFly like a &cParrot&7!'
-    hide-enchants: false
-    disable-interaction: false
-    disable-smelting: true
-    disable-enchanting: false
-    unbreakable: true
-    tier: LEGENDARY
-    max-health: 45.0
-    defense: 40.0
-    dye-color: 253 0 0
-    ability:
-      ability1:
-        type: FLYC
-        mode: SHIFT_LEFT_CLICK
-        mana: 15.0
-        cooldown: 10.0
-    revision-id: 2
-DEMON_HEAD4:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMyOTc4NDRhNzIyY2M4MGM3NDcxNTJiMjk2Y2Q3NTEzMzhkMzYzMjcxOTQxZmI3ZmIzZWJiOTNjOWFjZjI3In19fQ==
-      uuid: ea56c7e8-2da6-4280-96e5-677c2513ebfd
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 20.0
-    max-health: 35.0
-    gem-sockets:
-    - Unused
-    name: <tier-color-cleaned>Demon Head
-    unstackable: true
-    faction-damage-hell: 25.0
-    revision-id: 2
-HEALER_HEAD4:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWY5MjgzZGY0OTI1YmYzNmJmNmZjZjVjMzU1Y2VkMjczYmIxN2Y5NDcyYWI3NjU3YmYxNTllMWI2YmI5NTI3In19fQ==
-      uuid: ea56c7e8-2da6-4280-96e5-677c2513ebfd
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 15.0
-    max-health: 50.0
-    gem-sockets:
-    - Unused
-    name: <tier-color-cleaned>Void Healer Head
-    ability:
-      ability1:
-        type: HEAL
-        mode: WHEN_HIT
-        heal: 20.0
-        cooldown: 5.0
-    unstackable: true
-    revision-id: 2
-PIGMAN_HEAD3:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRlOWM2ZTk4NTgyZmZkOGZmOGZlYjMzMjJjZDE4NDljNDNmYjE2YjE1OGFiYjExY2E3YjQyZWRhNzc0M2ViIn19fQ==
-      uuid: dbae6d47-f480-4393-a874-ce6d9db0bda2
-    tier: RARE
-    unbreakable: true
-    gem-sockets:
-    - Unused
-    name: <tier-color-cleaned>Pigman Head
-    defense: 15.0
-    max-health: 30.0
-    attack-damage: 25.0
-    unstackable: true
-    faction-damage-hell: 30.0
-    revision-id: 2
-BLAZE_CHEST4:
-  base:
-    material: GOLDEN_CHESTPLATE
-    tier: LEGENDARY
-    unbreakable: true
-    gem-sockets:
-    - Unused
-    name: <tier-color-cleaned>Blaze Chest
-    defense: 30.0
-    max-health: 50.0
-    attack-damage: 15.0
-    ability:
-      ability1:
-        type: BLAZESHOT
-        mode: SHIFT_LEFT_CLICK
-        mana: 25.0
-        cooldown: 7.5
-    lore:
-    - '&7Shoot &cfireballs &7out'
-    - '&cigniting &7all enemies within'
-    - '&c7.5 blocks &7dealing &c750'
-    - '&cdamage &7over &c5 seconds&7!'
-    faction-damage-hell: 40.0
-    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BEE_WINGS3
 DEVIL_HEAD5:
   base:
     material: PLAYER_HEAD
@@ -757,62 +588,6 @@ DEVIL_BOOTS5:
     attack-damage: 25.0
     set: HELL
     faction-damage-hell: 30.0
-    revision-id: 2
-CURSED_HELMET4:
-  base:
-    material: LEATHER_HELMET
-    dye-color: 153 0 204
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 5.0
-    max-health: 25.0
-    max-mana: 50.0
-    name: <tier-color-cleaned>Cursed Helmet
-    lore: []
-    set: CURSED
-    magic-damage: 15.0
-    revision-id: 2
-CURSED_CHESTPLATE4:
-  base:
-    material: LEATHER_CHESTPLATE
-    dye-color: 153 0 204
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 15.0
-    max-health: 30.0
-    max-mana: 75.0
-    name: <tier-color-cleaned>Cursed Chestplate
-    lore: []
-    set: CURSED
-    magic-damage: 25.0
-    revision-id: 2
-CURSED_LEGGINGS4:
-  base:
-    material: LEATHER_LEGGINGS
-    dye-color: 153 0 204
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 10.0
-    max-health: 30.0
-    max-mana: 75.0
-    name: <tier-color-cleaned>Cursed Leggings
-    lore: []
-    set: CURSED
-    magic-damage: 25.0
-    revision-id: 2
-CURSED_BOOTS4:
-  base:
-    material: LEATHER_BOOTS
-    dye-color: 153 0 204
-    unbreakable: true
-    tier: LEGENDARY
-    defense: 5.0
-    max-health: 25.0
-    max-mana: 50.0
-    name: <tier-color-cleaned>Cursed Boots
-    lore: []
-    set: CURSED
-    magic-damage: 15.0
     revision-id: 2
 LOG_HELMET4:
   base:
@@ -920,90 +695,18 @@ MELON_HAT5:
     max-mana: 50.0
     name: <tier-color-cleaned>Melon Hat
     lore:
+    - '&e&lMelon Heal&f: Shift'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
     - '&aHeal &7yourself and allies within a'
     - '&710 block radius. &aHeals &7are improved'
-    - '&7with more people around you!'
+    - '&7with the more people around you!'
     gem-sockets:
     - Unused
-    ability:
-      ability1:
-        type: MELONHEAL
-        mode: SHIFT_RIGHT_CLICK
-        mana: 25.0
-        cooldown: 10.0
     revision-id: 2
-REAPER_HEAD5:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0aW1lc3RhbXAiOjE1NzAzNzcwMTQ5OTcsInByb2ZpbGVJZCI6ImIwZDczMmZlMDBmNzQwN2U5ZTdmNzQ2MzAxY2Q5OGNhIiwicHJvZmlsZU5hbWUiOiJPUHBscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NjI5ODZjOWY0NzEyYzZlZWYzYjY4MGFmNTkzNTFkOTgxZDk4ZWI0YTBiMGEzY2ZhZWM2NjQyZjRiMjY3In19fQ==
-      uuid: c7a7e131-0b05-47c7-9cb1-dd6350916a6b
-    unbreakable: true
-    tier: EXOTIC
-    faction-damage-undead: 25.0
-    disable-smelting: true
-    disable-interaction: false
-    max-health: 50.0
-    attack-damage: 50
-    name: <tier-color-cleaned>Reaper Head
-    lore:
-    - '&7Wearing the &cReaper''s Head'
-    - '&7grants you his strength!'
-    defense: 20.0
-    unstackable: false
-    revision-id: 2
-HEAVY_HELMET3:
-  base:
-    material: GOLDEN_HELMET
-    name: <tier-color-cleaned>Heavy Helm
-    lore: []
-    tier: RARE
-    gem-sockets:
-    - Unused
-    set: HEAVY
-    unbreakable: true
-    max-health: 25.0
-    defense: 10.0
-    revision-id: 2
-HEAVY_CHESTPLATE3:
-  base:
-    material: GOLDEN_CHESTPLATE
-    name: <tier-color-cleaned>Heavy Chestplate
-    lore: []
-    tier: RARE
-    gem-sockets:
-    - Unused
-    set: HEAVY
-    max-health: 30.0
-    unbreakable: true
-    defense: 15.0
-    revision-id: 2
-HEAVY_LEGGINGS3:
-  base:
-    material: GOLDEN_LEGGINGS
-    name: <tier-color-cleaned>Heavy Leggings
-    lore: []
-    tier: RARE
-    gem-sockets:
-    - Unused
-    set: HEAVY
-    max-health: 30.0
-    unbreakable: true
-    defense: 15
-    revision-id: 2
-HEAVY_BOOTS3:
-  base:
-    material: GOLDEN_BOOTS
-    name: <tier-color-cleaned>Heavy Boots
-    lore: []
-    tier: RARE
-    gem-sockets:
-    - Unused
-    set: HEAVY
-    unbreakable: true
-    max-health: 25.0
-    defense: 10.0
-    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE MELON_HAT5
 GEM_HELMET3:
   base:
     material: PLAYER_HEAD
@@ -1016,7 +719,6 @@ GEM_HELMET3:
     - Unused
     - Universal
     unbreakable: true
-    disable-interaction: false
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBmOGRmYTVlZmM3NTYzMGNlMGRmNDBhNDliOGY1OWJjMjIyMTRkZTk3ZTNmYjQ0YjNjNTZlOGE5YzhhNTZiNiJ9fX0=
       uuid: 658c97e1-db9c-4563-88e3-cb889ea4daeb
@@ -1076,7 +778,6 @@ GEM_HELMET4:
     - Universal
     - Universal
     unbreakable: true
-    disable-interaction: false
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY0ZjI1Y2ZmZjc1NGYyODdhOTgzOGQ4ZWZlMDM5OTgwNzNjMjJkZjdhOWQzMDI1YzQyNWUzZWQ3ZmY1MmMyMCJ9fX0=
       uuid: 658c97e1-db9c-4563-88e3-cb889ea4daeb
@@ -1140,7 +841,6 @@ GEM_HELMET5:
     - Universal
     - Universal
     unbreakable: true
-    disable-interaction: false
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZhZGRiZDVkZWRhZDQwOTk5NDczYmU0YTdmNDhmNjIzNmE3OWEwZGNlOTcxYjVkYmQ3MzcyMDE0YWUzOTRkIn19fQ==
       uuid: 658c97e1-db9c-4563-88e3-cb889ea4daeb
@@ -1200,808 +900,6 @@ GEM_BOOTS5:
       height: 0.25
       y-speed: 0.5
       amount: 1.0
-    revision-id: 2
-ILLUSIONER_HEAD3:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjM0ZjVlNGQ1YWRlMzc4YmQ0NDA3YTBhYjk3NTk1ZDM0YWUyNTUyMjkyYzg2MGU0NDljNjM1NTgwYzFhNWI3MSJ9fX0=
-      uuid: c01e774a-b7e2-4de7-9c59-9b0864c3e149
-    unbreakable: true
-    name: <tier-color-cleaned>Illusioner Head
-    tier: RARE
-    disable-smelting: true
-    disable-interaction: false
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-undead: 15.0
-    perm-effects:
-      INCREASE_DAMAGE: 2.0
-    unstackable: true
-    lore:
-    - '&7Gain &cStrength 2 &7while wearing!'
-    revision-id: 2
-ILLUSIONER_HEAD4:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjM0ZjVlNGQ1YWRlMzc4YmQ0NDA3YTBhYjk3NTk1ZDM0YWUyNTUyMjkyYzg2MGU0NDljNjM1NTgwYzFhNWI3MSJ9fX0=
-      uuid: c01e774a-b7e2-4de7-9c59-9b0864c3e149
-    unbreakable: true
-    name: <tier-color-cleaned>Illusioner Head
-    tier: LEGENDARY
-    disable-smelting: true
-    disable-interaction: false
-    max-health:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    faction-damage-undead: 15.0
-    perm-effects:
-      INCREASE_DAMAGE: 4.0
-    unstackable: true
-    gem-sockets:
-    - Unused
-    lore:
-    - '&7Gain &cStrength 4 &7while wearing!'
-    revision-id: 2
-CASTER_HEAD3:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3OTY4ZGI3NWU0NzcyYWYyYmRlZDlhYWFkMGFlNmUwZjI1ODhiNWVkZjE5YjE3ZTJiZDk1NDViYzgxMWE4YSJ9fX0=
-      uuid: c01e774a-b7e2-4de7-9c59-9b0864c3e149
-    name: <tier-color-cleaned>Caster Head
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-CASTER_CHESTPLATE3:
-  base:
-    material: LEATHER_CHESTPLATE
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Chestplate
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 75
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-CASTER_LEGGINGS3:
-  base:
-    material: LEATHER_LEGGINGS
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Leggings
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 65
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-CASTER_BOOTS3:
-  base:
-    material: LEATHER_BOOTS
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Boots
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-CASTER_HEAD4:
-  base:
-    material: PLAYER_HEAD
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3OTY4ZGI3NWU0NzcyYWYyYmRlZDlhYWFkMGFlNmUwZjI1ODhiNWVkZjE5YjE3ZTJiZDk1NDViYzgxMWE4YSJ9fX0=
-      uuid: c01e774a-b7e2-4de7-9c59-9b0864c3e149
-    name: <tier-color-cleaned>Caster Head
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 65
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-CASTER_CHESTPLATE4:
-  base:
-    material: LEATHER_CHESTPLATE
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Chestplate
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 85
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-CASTER_LEGGINGS4:
-  base:
-    material: LEATHER_LEGGINGS
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Leggings
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 45
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 75
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-CASTER_BOOTS4:
-  base:
-    material: LEATHER_BOOTS
-    dye-color: 36 41 0
-    name: <tier-color-cleaned>Caster Boots
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    magic-damage:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    max-mana:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-SAI_HELMET3:
-  base:
-    material: CHAINMAIL_HELMET
-    name: <tier-color-cleaned>Sai Helmet
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 1
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 4
-SAI_CHESTPLATE3:
-  base:
-    material: CHAINMAIL_CHESTPLATE
-    name: <tier-color-cleaned>Sai Chestplate
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 2
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 4
-SAI_LEGGINGS3:
-  base:
-    material: CHAINMAIL_LEGGINGS
-    name: <tier-color-cleaned>Sai Leggings
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 1.5
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 4
-SAI_BOOTS3:
-  base:
-    material: CHAINMAIL_BOOTS
-    name: <tier-color-cleaned>Sai Boots
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 5
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 0.5
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 4
-SAI_HELMET4:
-  base:
-    material: CHAINMAIL_HELMET
-    name: <tier-color-cleaned>Sai Helmet
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 1
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 4
-SAI_CHESTPLATE4:
-  base:
-    material: CHAINMAIL_CHESTPLATE
-    name: <tier-color-cleaned>Sai Chestplate
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 2.5
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 65
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 4
-SAI_LEGGINGS4:
-  base:
-    material: CHAINMAIL_LEGGINGS
-    name: <tier-color-cleaned>Sai Leggings
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 2
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 45
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 4
-SAI_BOOTS4:
-  base:
-    material: CHAINMAIL_BOOTS
-    name: <tier-color-cleaned>Sai Boots
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    attack-speed:
-      base: 1
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 4
-LEGOLAS_HELMET3:
-  base:
-    material: LEATHER_HELMET
-    name: <tier-color-cleaned>Legolas Helmet
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-LEGOLAS_CHESTPLATE3:
-  base:
-    material: LEATHER_CHESTPLATE
-    name: <tier-color-cleaned>Legolas Chestplate
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-LEGOLAS_LEGGINGS3:
-  base:
-    material: LEATHER_LEGGINGS
-    name: <tier-color-cleaned>Legolas Leggings
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-LEGOLAS_BOOTS3:
-  base:
-    material: LEATHER_BOOTS
-    name: <tier-color-cleaned>Legolas Boots
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 5
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 10
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-LEGOLAS_HELMET4:
-  base:
-    material: LEATHER_HELMET
-    name: <tier-color-cleaned>Legolas Helmet
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-LEGOLAS_CHESTPLATE4:
-  base:
-    material: LEATHER_CHESTPLATE
-    name: <tier-color-cleaned>Legolas Chestplate
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-LEGOLAS_LEGGINGS4:
-  base:
-    material: LEATHER_LEGGINGS
-    name: <tier-color-cleaned>Legolas Leggings
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-LEGOLAS_BOOTS4:
-  base:
-    material: LEATHER_BOOTS
-    name: <tier-color-cleaned>Legolas Boots
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    projectile-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    attack-damage:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-DARUK_HELMET3:
-  base:
-    material: GOLDEN_HELMET
-    name: <tier-color-cleaned>Daruk Helmet
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-DARUK_CHESTPLATE3:
-  base:
-    material: GOLDEN_CHESTPLATE
-    name: <tier-color-cleaned>Daruk Chestplate
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-DARUK_LEGGINGS3:
-  base:
-    material: GOLDEN_LEGGINGS
-    name: <tier-color-cleaned>Daruk Leggings
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-DARUK_BOOTS3:
-  base:
-    material: GOLDEN_BOOTS
-    name: <tier-color-cleaned>Daruk Boots
-    lore: []
-    tier: RARE
-    unbreakable: true
-    max-health:
-      base: 20
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 15
-      spread: 0.1
-      max-spread: 0.3
-    revision-id: 2
-DARUK_HELMET4:
-  base:
-    material: GOLDEN_HELMET
-    name: <tier-color-cleaned>Daruk Helmet
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 40
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 35
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-DARUK_CHESTPLATE4:
-  base:
-    material: GOLDEN_CHESTPLATE
-    name: <tier-color-cleaned>Daruk Chestplate
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 65
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 55
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-DARUK_LEGGINGS4:
-  base:
-    material: GOLDEN_LEGGINGS
-    name: <tier-color-cleaned>Daruk Leggings
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 50
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 45
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
-    revision-id: 2
-DARUK_BOOTS4:
-  base:
-    material: GOLDEN_BOOTS
-    name: <tier-color-cleaned>Daruk Boots
-    lore: []
-    tier: LEGENDARY
-    unbreakable: true
-    max-health:
-      base: 30
-      spread: 0.1
-      max-spread: 0.3
-    defense:
-      base: 25
-      spread: 0.1
-      max-spread: 0.3
-    gem-sockets:
-    - Unused
     revision-id: 2
 BULLBO_HEAD5:
   base:
@@ -2117,12 +1015,17 @@ BOOMER_CHEST5:
     gem-sockets:
     - Unused
     - Unused
-    ability:
-      ability1:
-        type: MEGA_BOOM
-        mode: SHIFT_RIGHT_CLICK
-        cooldown: 5.0
+    lore:
+    - '&4&lMega Boom&f: Crouch'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
+    - ''
+    - §4Combust&7, damaging enemies
+    - §7within 7 blocks, but
+    - §7also &charm &7yourself!
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE BOOMER_CHEST5
 ENCHANTRESS_HEAD4:
   base:
     material: PLAYER_HEAD

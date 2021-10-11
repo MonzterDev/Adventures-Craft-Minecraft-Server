@@ -14,7 +14,7 @@ UNDEAD_CASTER_MISSILE:
   - playerwithin{d=8} true
   Skills:
   - effect:particleline{particle=reddust;color=#00000f;db=0.5;fromOrigin=true;syo=1;tyo=1}
-  - damage{a=5;ignoreArmor=false} @target
+  - damage{a=5;ignoreArmor=false}
   - signal{s=UNDEAD_CASTER_SIGNAL} @self
 UNDEAD_CASTER_LIGHTNING:
   Cooldown: 10

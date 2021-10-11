@@ -73,45 +73,6 @@ CHAMPION_DISGUISE7:
   Skills:
   - disguise{type=pillager}
 
-#VOID PORTAL ITEM
-PORTAL_CHOSE:
-  Conditions:
-  - stringequals{val1="%ac_Restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART
-  - mobsInRadius{types=VOID_ENCHANTRESS,VOID_PORTAL;amount=>0;radius=999999} castinstead PORTAL_BUSY
-  Skills:
-  - randomskill{skills=PORTAL_NOT_SUMMON,PORTAL_SUMMON}
-PORTAL_NOT_SUMMON:
-  Skills:
-  - message{m="&cUnlucky! The portal was not summoned."} @self
-  - effect:sound{s=item.shield.break;p=.1} @self
-PORTAL_SUMMON:
-  Skills:
-  - summon{type=VOID_PORTAL;amount=1;radius=1} @Forward{f=0;y=20}
-  - teleportto{location=-197.5,13,-812.5;y=-1;p=1.6} @self
-PORTAL_BUSY:
-  Skills:
-  - message{m="&cThere is already a &5Void Enchantress &calive! (%ac_Void_Timer%&c)"} @self
-  - command{c="mi give CONSUMABLE UNSTABLE_WARP4";op=true;ac=true} @self
-PORTAL_BUSY_RESTART:
-  Skills:
-  - message{m="&cThe server is too close to restarting! (%ac_Restart_Timer%&c)"} @self
-  - command{c="mi give CONSUMABLE UNSTABLE_WARP4";op=true;ac=true} @self
-
-PORTAL_SUMMON2:
-  Conditions:
-  - stringequals{val1="%ac_Restarting%";val2="true"} castinstead PORTAL_BUSY_RESTART2
-  - mobsInRadius{types=VOID_ENCHANTRESS,VOID_PORTAL;amount=>0;radius=999999} castinstead PORTAL_BUSY2
-  Skills:
-  - summon{type=VOID_PORTAL;amount=1;radius=1} @Forward{f=0;y=20}
-  - teleportto{location=-197.5,13,-812.5;y=-1;p=1.6} @self
-PORTAL_BUSY2:
-  Skills:
-  - message{m="&cThere is already a &5Void Enchantress &calive! (%ac_Void_Timer%&c)"} @self
-  - command{c="mi give CONSUMABLE STABLE_WARP5";op=true;ac=true} @self
-PORTAL_BUSY_RESTART2:
-  Skills:
-  - message{m="&cThe server is too close to restarting! (%ac_Restart_Timer%&c)"} @self
-  - command{c="mi give CONSUMABLE STABLE_WARP5";op=true;ac=true} @self
 
 PORTAL_ABILITY:
   Skills:
@@ -148,15 +109,17 @@ PORTAL_MESSAGE_END:
   - message{m="&2The portal to the &5Void Abyss &2has closed!"}
   - effect:sound{s=block.beacon.deactivate;v=10}
 
-PORTAL_TELEPORT_ACCEPT:
+PORTAL_TELEPORT:
   TargetConditions:
-  - stringequals{val1="%betonquest_default-Void-Kogmaw:condition.q5_completed%";val2="true"} true
+  - BQ_TAG{p=default-Void-Kogmaw;t=PORTAL_OPENER_COMPLETED} orElseCast PORTAL_TELEPORT_DENY
+  Skills:
+  - skill{s=PORTAL_TELEPORT_ACCEPT}
+
+PORTAL_TELEPORT_ACCEPT:
   Skills:
   - message{m="&aYou've been teleported!"}
   - teleportto{location=-71.5,26,-762.5;y=-90;p=.04}
 
 PORTAL_TELEPORT_DENY:
-  TargetConditions:
-  - stringequals{val1="%betonquest_default-Void-Kogmaw:condition.q5_completed%";val2="false"} true
   Skills:
   - message{m="&cYou must complete &aKogmaw's &eAscending &cquest before being able to enter!"}

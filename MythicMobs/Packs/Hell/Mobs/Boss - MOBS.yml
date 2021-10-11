@@ -126,7 +126,7 @@ DEVOTED_PIGMAN:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=75;ignoreArmor=false} @target ~onAttack
+  - damage{amount=75;ignoreArmor=false} ~onAttack
   - skill{s=DEVOTED_PIGMAN_WIPE} ~onDamaged
   - skill{s=MINION_BOSS_DMG} ~onDeath
   - skill{s=DEVOTED_PIGMAN_RAGE} <20%
@@ -213,7 +213,7 @@ DEVOTED_SKELETON:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=65;ignoreArmor=false} @target ~onAttack
+  - damage{amount=65;ignoreArmor=false} ~onAttack
   - skill{s=MINION_BOSS_DMG3} ~onDeath
   - effect:particlesphere{particle=flame;amount=1;radius=0;y=1.35} @self ~onTimer:20
   - skill{s=ANTILAVA} ~onTimer:20  
