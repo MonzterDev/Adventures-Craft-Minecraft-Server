@@ -1,0 +1,35 @@
+#Balloon
+BALLOON:
+  Conditions:
+  - SKILLCAST{m=0;c=2.5;s=BALLOON}
+  Skills:
+  - summon{type=BALLOON_SMALL;amount=1;radius=15;yRadius=10} @self
+  - sound{s=entity.puffer_fish.blow_up} @self
+  - potion{type=LEVITATION;duration=200;level=1;force=true} @self
+  - potion{type=SLOW_FALLING;duration=100;level=1;force=true;delay=200} @self
+BALLOON2:
+  Conditions:
+  - SKILLCAST{m=0;c=2.5;s=BALLOON2}
+  Skills:
+  - summon{type=BALLOON_LARGE;amount=1;radius=15;yRadius=10} @self
+  - sound{s=entity.puffer_fish.blow_up} @self
+  - potion{type=LEVITATION;duration=300;level=3;force=true} @self
+  - potion{type=SLOW_FALLING;duration=150;level=1;force=true;delay=300} @self
+
+BALLOON_FORCE_POP:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - potion{type=LEVITATION;duration=1;level=3;force=true} @Owner
+  - potion{type=SLOW_FALLING;duration=150;level=1;force=true} @Owner
+  - effect:smoke @self
+  - sound{s=entity.puffer_fish.blow_out} @self
+  - remove @self
+BALLOON_POP:
+  Skills:
+  - effect:smoke
+  - sound{s=entity.puffer_fish.blow_out}
+  - remove
+BALLOON_TP:
+  Skills:
+  - teleportin{dir=0,1.5,0} @trigger

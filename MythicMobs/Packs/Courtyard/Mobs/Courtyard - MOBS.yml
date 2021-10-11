@@ -38,7 +38,7 @@ UNDEAD_SKELETON2:
   - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_CHEST} @self ~onSpawn
   - skill{s=UNDEAD_SKELETON_ARMOR_EQUIP_BOOT} @self ~onSpawn
-  - damage{amount=35;ignoreArmor=false} @target ~onAttack
+  - damage{amount=35;ignoreArmor=false} ~onAttack
   - skill{s=Agro8A} @self ~onTimer:20
   - skill{s=Agro8B} @self ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
@@ -79,7 +79,7 @@ UNDEAD_ARCHER2:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=50;ignoreArmor=false} @target ~onAttack
+  - damage{amount=50;ignoreArmor=false} ~onAttack
   - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=RangedAgro8A} ~onTimer:20
@@ -118,7 +118,7 @@ ALPHA_SOUL:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=15;ignoreArmor=false} @target ~onAttack
+  - damage{amount=15;ignoreArmor=false} ~onAttack
   - effect:particletornado{p=flame;cp=largeexplode;mr=1;h=1;i=1;d=20;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:20
   - damage{a=5;ignoreArmor=false} @PIR{r=2} ~onTimer:20
   - ignite{ticks=20} @PIR{r=2} ~onTimer:20
@@ -154,7 +154,7 @@ UNDEAD_SPIDER:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=20;ignoreArmor=false} @target ~onAttack
+  - damage{amount=20;ignoreArmor=false} ~onAttack
   - potion{type=SLOW;duration=60;level=5} @target ~onAttack
   - potion{type=POISON;duration=60;level=20} @target ~onAttack
   - skill{s=SUMMON_ALPHA_SOUL} ~onDeath .025

@@ -33,12 +33,12 @@ VOID_MONITOR:
   - 0 players
   - 1 attacker
   Skills:
-  - damage{amount=200;ignoreArmor=false} @target ~onAttack
+  - damage{amount=200;ignoreArmor=false} ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20
   - skill{s=MONITOR_ALERT} ~onTimer:200
-  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.001
+  - command{c="mi give SPELL UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.001
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
 
 #Unmovable, constantly deals AOE damage, and does a massive explosion, possibly killself
@@ -71,7 +71,7 @@ VOID_MEGA_BOOMER:
   - skill{s=BOOMER_DAMAGE} ~onTimer:20
   - skill{s=BOOMER_MEGA} ~onTimer:200
   - skill{s=HPBAR} @self ~onDamaged
-  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0015
+  - command{c="mi give SPELL UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0015
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.0035
 
 VOID_CHAMPION:
@@ -109,7 +109,7 @@ VOID_CHAMPION:
   - potion{type=SLOW;duration=100;level=9} @target ~onAttack
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=CHAMPION_CHOSE} @self ~onSpawn
-  - command{c="mi give CONSUMABLE UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
+  - command{c="mi give SPELL UNSTABLE_WARP4 <target.name> 1"} @ThreatTablePlayers ~onDeath 0.002
   - command{c="mi give MATERIAL STABILIZER <target.name> 1"} @ThreatTablePlayers ~onDeath 0.004
 
 
@@ -126,6 +126,7 @@ VOID_PORTAL:
     NoGravity: true
     AlwaysShowName: false
     ApplyInvisibility: true
+    Collidable: false
     KnockbackResistance: 1
     MaxCombatDistance: 0
     MovementSpeed: 0.0001
@@ -137,6 +138,5 @@ VOID_PORTAL:
   Skills:
   - skill{s=PORTAL_ABILITY} ~onSpawn
   - effect:sound{s=block.beacon.ambient;v=10} @self ~onTimer:40
-  - skill{s=PORTAL_TELEPORT_ACCEPT} @PIR{r=1} ~onTimer:20
-  - skill{s=PORTAL_TELEPORT_DENY} @PIR{r=1} ~onTimer:20
+  - skill{s=PORTAL_TELEPORT} @PIR{r=1} ~onTimer:20
   - teleportto{location=-197.5,12,-810.5} @self ~onSpawn

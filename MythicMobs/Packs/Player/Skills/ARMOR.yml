@@ -1,0 +1,98 @@
+BEE_WINGS2:
+  Conditions:
+  - region{r=forest}
+  - SKILLCAST{m=15;c=15;s=BEE_WINGS2}
+  Skills:
+  - message{m="&aFly like a &eBee&a!"} @self
+  - sound{s=entity.bee.loop;pitch=2} @self
+  - fly{duration=100} @self
+  - sound{s=entity.bee.hurt;delay=100} @self
+BEE_WINGS3:
+  Conditions:
+  - region{r=forest}
+  - SKILLCAST{m=25;c=17.5;s=BEE_WINGS3}
+  Skills:
+  - message{m="&aFly like a &eBee&a!"} @self
+  - sound{s=entity.bee.loop;pitch=2} @self
+  - fly{duration=200} @self
+  - sound{s=entity.bee.hurt;delay=200} @self
+
+MELON_HAT5:
+  Conditions:
+  - SKILLCAST{m=75;c=10;s=BEE_WINGS2}
+  Skills:
+  - skill{skill=MELON_HAT5_1}
+  - skill{skill=MELON_HAT5_2}
+  - skill{skill=MELON_HAT5_3}
+  - skill{skill=MELON_HAT5_4}
+  - skill{skill=MELON_HAT5_5}
+MELON_HAT5_1:
+  Conditions:
+  - pir{amount=1;radius=10;action=true}
+  Skills:
+  - message{m="&fYou have used the mighty &aMelon Powers&f, to heal yourself and &a1 ally&f!"} @self
+  - healpercent{m=0.05} @self
+MELON_HAT5_2:
+  Conditions:
+  - pir{amount=2;radius=10;action=true}
+  Skills:
+  - message{m="&fYou have used the mighty &aMelon Powers&f, to heal yourself and &a2 allies&f!"} @self
+  - message{m="&fYou were healed by the &aMelon Powers&f!"} @PIR{r=10}
+  - healpercent{m=0.10} @PIR{r=10}
+  - healpercent{m=0.10} @self
+MELON_HAT5_3:
+  Conditions:
+  - pir{amount=3;radius=10;action=true}
+  Skills:
+  - message{m="&fYou have used the mighty &aMelon Powers&f, to heal yourself and &a3 allies&f!"} @self
+  - message{m="&fYou were healed by the &aMelon Powers&f!"} @PIR{r=10}
+  - healpercent{m=0.15} @PIR{r=10}
+  - healpercent{m=0.15} @self
+MELON_HAT5_4:
+  Conditions:
+  - pir{amount=4;radius=10;action=true}
+  Skills:
+  - message{m="&fYou have used the mighty &aMelon Powers&f, to heal yourself and &a4 allies&f!"} @self
+  - message{m="&fYou were healed by the &aMelon Powers&f!"} @PIR{r=10}
+  - healpercent{m=0.20} @PIR{r=10}
+  - healpercent{m=0.20} @self
+MELON_HAT5_5:
+  Conditions:
+  - pir{amount=5;radius=10;action=true}
+  Skills:
+  - message{m="&fYou have used the mighty &aMelon Powers&f, to heal yourself and &a5 allies&f!"} @self
+  - message{m="&fYou were healed by the &aMelon Powers&f!"} @PIR{r=10}
+  - healpercent{m=0.25} @PIR{r=10}
+  - healpercent{m=0.25} @self
+
+
+BOOMER_CHEST5:
+  Conditions:
+  - SKILLCAST{m=75;c=10;s=BOOMER_CHEST5}
+  Skills:
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.75} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.95} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 1
+  - effect:sound{s=entity.creeper.primed;v=10;p=0.5} @Self
+  - delay 20
+  - message{m="&cYou combusted!"} @self
+  - throw{velocity=5;velocityY=5} @EIR{r=7;ignore=players}
+  - CUSTOMDAMAGE{d=2000;m=ATTACK_DAMAGE} @EIR{r=7;ignore=players}
+  - damage{a=100;ignoreArmor=false} @self
+  - effect:sound{s=entity.generic.explode;v=3;p=1} @self
+  - effect:particlering{p=largeexplode;a=40;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=0} @Self
+  - delay 2
+  - effect:particlering{p=largeexplode;a=10;vs=0.5;hs=0.5;s=0;y=0.3;points=5;radius=1} @Self

@@ -1,0 +1,19 @@
+BULBLIN_BOW5:
+  Conditions:
+  - SKILLCAST{m=75;c=12.5;s=BULBLIN_BOW5}
+  Skills:
+  - randomskill{skills=BULBLIN_CORRUPTION_DAMAGE,BULBLIN_CORRUPTION_STUNNING,BULBLIN_CORRUPTION_SLOWING}
+BULBLIN_CORRUPTION_DAMAGE:
+  Skills:
+  - message{m="&7The enemy has been &ccursed &7with &cdamage&7!"} @self
+  - CUSTOMDAMAGE{d=1000;m=ATTACK_DAMAGE;ignoreArmor=false;repeat=5;repeatInterval=20}
+BULBLIN_CORRUPTION_STUNNING:
+  Skills:
+  - message{m="&7The enemy has been &ccursed &7with a &cstun&7!"} @self
+  - stun{d=100;f=true;ai=true} @target
+  - effect:particlesphere{particle=spell;amount=5;radius=0;y=1;repeat=5;repeatInterval=20}
+BULBLIN_CORRUPTION_SLOWING:
+  Skills:
+  - message{m="&7The enemy has been &ccursed &7with a &cslow&7!"} @self
+  - potion{type=SLOW;duration=120;level=2} @target 
+  - effect:particlesphere{particle=spell_instant;amount=5;radius=0;y=1;repeat=5;repeatInterval=20}

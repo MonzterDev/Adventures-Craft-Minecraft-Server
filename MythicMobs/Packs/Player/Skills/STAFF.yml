@@ -1,0 +1,72 @@
+SEED_STAFF3:
+  Conditions:
+  - SKILLCAST{m=15;c=5;s=SEED_STAFF3}
+  Skills:
+  - projectile{bulletType=MYTHICITEM;material=SEED_SHOT;onTick=SEED_SHOT_PLAYER_TICK;onHit=SEED_SHOT_PLAYER_HIT;interval=1;velocity=20;MaxRange=15;hnp=true;StartYOffset=1.5} @targetlocation
+SEED_SHOT_PLAYER_TICK:
+  Skills:
+  - effect:particles{p=villager_happy;amount=1;hS=0.1;vS=0.1} @origin
+SEED_SHOT_PLAYER_HIT:
+  Skills:
+  - damage{amount=50}
+  # - CUSTOMDAMAGE{d=50}
+
+
+WHEAT_STAFF3:
+  Conditions:
+  - SKILLCAST{m=20;c=7.5;s=WHEAT_STAFF3}
+  Skills:
+  - projectile{bulletType=MYTHICITEM;material=SUPER_SEED_SHOT;onTick=SUPER_SEED_SHOT_PLAYER_TICK;onHit=SUPER_SEED_SHOT_PLAYER_HIT;interval=1;velocity=20;MaxRange=15;hnp=true;StartYOffset=1.5} @targetlocation
+SUPER_SEED_SHOT_PLAYER_TICK:
+  Skills:
+  - effect:particles{p=villager_happy;amount=2;hS=0.2;vS=0.2} @origin
+SUPER_SEED_SHOT_PLAYER_HIT:
+  Skills:
+  - damage{amount=150}
+  # - CUSTOMDAMAGE{d=150;m=MAGIC_DAMAGE}
+
+CHIEF_JUKEBOX5:
+  - SKILLCAST{m=75;c=90;s=CHIEF_JUKEBOX5}
+  Skills:
+  - randomskill{skills=SPEEDY,STRONG,SLOW,SMITED}
+CHIEF_JUKEBOX5_SPEEDY:
+  Skills:
+  - potion{type=SPEED;duration=1200;level=5} @self
+  - message{m="&a&lSpeedy! &7You've been granted &aSpeed 5 &7for 1 minute!"} @self
+  - effect:sound{s=block.note_block.cow_bell;v=1;p=1} @self    
+CHIEF_JUKEBOX5_STRONG:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=600;level=10} @self
+  - message{m="&a&lStrong! &7You've been granted &aStrength 10 &7for 30 seconds!"} @self
+  - effect:sound{s=block.note_block.flute;v=1;p=1} @self    
+CHIEF_JUKEBOX5_SMITED:
+  Skills:
+  - damage{amount=500;ignoreArmor=false} @EIR{r=15;ignore=players}
+  - lightning @EIR{r=15;ignore=players}
+  - message{m="&c&lSmited! &7Mobs within 15 blocks have been damaged for &c500 damage&7!"} @self
+  - effect:sound{s=block.note_block.bell;v=1;p=1} @self  
+CHIEF_JUKEBOX5_SLOW:
+  Skills:
+  - potion{type=SLOW;duration=300;level=1} @self 
+  - message{m="&c&lSlow! &7You've been &cslowed &7for 15 seconds!"} @self
+  - effect:sound{s=block.note_block.bass;v=1;p=1} @self
+
+KHAZIX_STAFF4:
+  Conditions:
+  - SKILLCAST{m=100;c=10;s=KHAZIX_STAFF4}
+  Skills:
+  - sound{s=entity.shulker.shoot;v=.5} @self
+  - projectile{bulletType=ITEM;material=ENDER_PEARL;i=1;onHit=VOID_SPIKE-HIT2;onTick=VOID_SPIKE-TICK2;hnp=true;MaxRange=10;sE=true} @targetlocation
+  - delay 10
+  - sound{s=entity.shulker.shoot;v=.5} @self
+  - projectile{bulletType=ITEM;material=ENDER_PEARL;i=1;onHit=VOID_SPIKE-HIT2;onTick=VOID_SPIKE-TICK2;hnp=true;MaxRange=10;sE=true;} @targetlocation
+VOID_SPIKE-TICK2:
+  Skills:
+  - effect:particles{particle=redstone;amount=5;vSpread=0.2;hSpread=0.2;Speed=0;yoffset=0;c=#30004A} @origin
+  - effect:particles{particle=redstone;amount=5;vSpread=0.2;hSpread=0.2;Speed=0;yoffset=0;c=#30004A} @origin
+  - CUSTOMDAMAGE{d=100;m=MAGIC_DAMAGE;ignoreArmor=false} @EIR{r=5;ignore=players} 
+VOID_SPIKE-HIT2:
+  Skills:
+  - damage{amount=2000;ignoreArmor=false}
+  - potion{type=SLOW;level=2;duration=80}  
+  - effect:explosion

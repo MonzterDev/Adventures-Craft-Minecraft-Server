@@ -1,16 +1,68 @@
-BEE_FLY_PLAYER:
-  Conditions:
-  - region{r=forest}  
+##LOG SET###
+MEGAROOT:
+  TargetConditions:
+  - distance{d=<10}
   Skills:
-  - message{m="&aFly like a &eBee&a!"} @self
-  - sound{s=entity.bee.loop;pitch=2} @self
-  - fly{duration=100} @self
-  - sound{s=entity.bee.hurt;delay=100} @self
-BEE_FLY_PLAYER_B:
-  Conditions:
-  - region{r=forest}  
+  - stun{d=100;f=true} @EIR{r=10;ignore=players}
+  - damage{amount=250} @EIR{r=10;ignore=players}  
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted &7for 5 seconds!"} @self
+
+##LOG SET###
+MASSIVEROOT:
   Skills:
-  - message{m="&aFly like a &eBee&a!"} @self
-  - sound{s=entity.bee.loop;pitch=2} @self
-  - fly{duration=200} @self
-  - sound{s=entity.bee.hurt;delay=200} @self
+  - stun{d=20;f=true} @EIR{r=5;ignore=players}
+  - damage{amount=100;ignoreArmor=false} @EIR{r=5;ignore=players}    
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted!"} @self
+  - effect:particlesphere{particle=reddust;amount=20;radius=0;y=1;c=#2FF713} @self 
+  - delay 20
+  - stun{d=20;f=true} @EIR{r=5;ignore=players}
+  - damage{amount=100;ignoreArmor=false} @EIR{r=5;ignore=players}    
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted!"} @self
+  - effect:particlesphere{particle=reddust;amount=20;radius=0;y=1;c=#2FF713} @self 
+  - delay 20
+  - stun{d=20;f=true} @EIR{r=5;ignore=players}
+  - damage{amount=100;ignoreArmor=false} @EIR{r=5;ignore=players}    
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted!"} @self
+  - effect:particlesphere{particle=reddust;amount=20;radius=0;y=1;c=#F0FF00} @self 
+  - delay 20
+  - stun{d=20;f=true} @EIR{r=5;ignore=players}
+  - damage{amount=100;ignoreArmor=false} @EIR{r=5;ignore=players}    
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted!"} @self
+  - effect:particlesphere{particle=reddust;amount=20;radius=0;y=1;c=#F0FF00} @self 
+  - delay 20
+  - stun{d=20;f=true} @EIR{r=5;ignore=players}
+  - damage{amount=100;ignoreArmor=false} @EIR{r=5;ignore=players}    
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted!"} @self
+  - effect:particlesphere{particle=reddust;amount=20;radius=0;y=1;c=#FF0000} @self 
+
+##Dryad Vine 1###
+DRYAD_WEAK_VINE:
+  Skills:
+  - projectile{bulletType=ITEM;material=VINE;onEnd=DRYAD_WEAK_VINE_HIT;i=1;hnp=true;MaxRange=100;sE=false;v=25} @Forward{f=4;y=0.0}	
+DRYAD_WEAK_VINE_HIT:
+  Skills:
+  - effect:particlering{particle=villager_happy;radius=5;points=50;amount=1;s=10} @origin
+  - effect:blockmask{m=vine;r=1;d=60;s=sphere} @EntitiesNearOrigin{r=5;ignore=players}
+  - stun{d=60;f=true} @EntitiesNearOrigin{r=5;ignore=players}
+  - damage{amount=500;ignoreArmor=false} @EntitiesNearOrigin{r=5;ignore=players}    
+  - potion{type=SPEED;duration=60;level=5} @PlayersNearOrigin{r=5}    
+  - potion{type=SPEED;duration=60;level=5} @self    
+##Dryad Vine 2###
+DRYAD_STRONG_VINE:
+  Skills:
+  - projectile{bulletType=ITEM;material=VINE;onEnd=DRYAD_STRONG_VINE_HIT;i=1;hnp=true;MaxRange=100;sE=false;v=25} @Forward{f=4;y=0.0}	
+DRYAD_STRONG_VINE_HIT:
+  Skills:
+  - effect:particlering{particle=villager_happy;radius=10;points=100;amount=1;s=10} @origin
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EntitiesNearOrigin{r=10;ignore=players}
+  - stun{d=100;f=true} @EntitiesNearOrigin{r=10;ignore=players}
+  - damage{amount=1500;ignoreArmor=false} @EntitiesNearOrigin{r=10;ignore=players}    
+  - potion{type=SPEED;duration=100;level=10} @PlayersNearOrigin{r=10}    
+  - potion{type=SPEED;duration=100;level=10} @self    
+

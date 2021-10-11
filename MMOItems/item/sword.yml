@@ -18,11 +18,6 @@ GOD:
   base:
     material: IRON_SWORD
     attack-damage: 999999.0
-    ability:
-      ability1:
-        type: REAPER_CORRUPTION_PLAYER_B
-        mode: RIGHT_CLICK
-        damage: 20.0
     revision-id: 2
     unbreakable: true
 WOODENSWORD:
@@ -148,19 +143,19 @@ MAGMA_BLADE4:
     gem-sockets:
     - Unused
     lore:
+    - '&4&lHellfire&f: Right Click'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 15secs'
+    - ''
     - '&cIgnite &7enemy for &c5secs &7dealing &c100 damage'
     - '&7per second. If the enemy is already ignited,'
     - '&7they will be hit with an additional &c1500 damage&7!'
-    ability:
-      ability1:
-        type: HELLFIRE
-        mode: RIGHT_CLICK
-        mana: 20.0
-        cooldown: 2.5
+    revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE MAGMA_BLADE4
     critical-strike-power: 35.0
     faction-damage-void: 25.0
     durability: 2.0
-    revision-id: 2
     custom-model-data: 2.0
 BULBLIN_SWORD4:
   base:
@@ -191,9 +186,13 @@ BULBLIN_SWORD5:
     attack-damage: 250.0
     critical-strike-power: 75.0
     lore:
+    - '&4&l*Bulb Drain&f: Right Click'
+    - '&f- &bMana&f: 150'
+    - '&f- &6Cooldown&f: 25secs'
+    - ''
     - §aHeal §7yourself for up to §a50% §7of your §amax HP
-    - §7and deal up to §c10,000 damage §7to nearby enemies,
-    - §7based on how many enemies are around you!
+    - §7and §cdamage §7nearby enemies based on,
+    - §7how many enemies are around you!
     - §7
     - §7Forged deep in the §5Void §7from massive
     - §7amounts of darkness and §8corruption§7!
@@ -201,10 +200,6 @@ BULBLIN_SWORD5:
     - Unused
     - Unused
     - Unused
-    ability:
-      ability1:
-        type: DRAIN
-        mode: RIGHT_CLICK
-        mana: 100.0
-        cooldown: 10.0
+    custom-nbt:
+    - MYTHIC_TYPE BULBLIN_SWORD5
     revision-id: 2
