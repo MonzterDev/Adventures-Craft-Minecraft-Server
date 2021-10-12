@@ -1,16 +1,3 @@
-# Item sets let you create links betweens the different items you create.
-# By wearing multiple items from the same set, the player will benefit from
-# set bonuses which incites him to use items from the same type.
-# This is a very powerful system for RPG items.
-#
-# You can also use potion effects as set bonuses, e.g
-# - "potion-speed: 2" gives permanent Speed II
-# - "potion-increase_damage: 3" gives permanent Strength III
-# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
-#
-# You may also add abilities as full set bonuses. The ability ID
-# must start with 'ability-' but it is only used as reference.
-# You can configure the ability cast mode, type & modifiers as usual.
 FARMER:
     name: '&a&lFarmer Set'
     bonuses:
@@ -28,26 +15,6 @@ STEEL:
     lore-tag:
     - '&f&lSteel Set Bonus:'
     - '§fDamage Reduction §c+10%'
-    
-HELL:
-    name: '&4&lHell Set Bonus'
-    bonuses:
-        '4':
-            ability-1:
-                type: HELLSPLOSHION
-                cooldown: 30
-                mana: 50
-                mode: SHIFT_LEFT_CLICK
-                    
-    lore-tag:
-    - '&4&lHell Set Bonus:'
-    - '&e&lHellsploshion&f: Shift Left Click'
-    - '&7Cooldown: &c30'
-    - '&7Mana: &c50'
-    - '&e'
-    - '&7Give yourself &aStrength 20 &7for 15secs!'
-    - '&cDamage&7 all enemies within 15 blocks,'
-    - '&7dealing &cmore damage &7the more Mobs!'
 
 HATRED:
     name: '&2&lUndead Set'
@@ -76,28 +43,16 @@ LOG:
     name: '&6&lLog Set Bonus'
     bonuses:
         '4':
-            ability-1:
-                type: MEGAROOT
-                cooldown: 15
-                mana: 10
-                mode: WHEN_HIT
+            potion-INCREASE_DAMAGE: 0
     lore-tag:
-    - '&6&lLog Set Bonus:'
-    - '&e&lMegaroot&f: When Hit'
-    - '&7Cooldown: &c15'
-    - '&7Mana: &c510'
+    - '&6&lLog Set Bonus'
+    - '&4&lMega Root&f: Shift'
+    - '&f- &bMana&f: 75'
+    - '&f- &6Cooldown&f: 10secs'
     - '&e'
-    - '&7Stun enemies within a 5 block'
-    - '&7radius for 5 seconds when hit!'
-
-HEAVY:
-    name: '&8&lHeavy Set'
-    bonuses:
-        '4':
-            potion-INCREASE_DAMAGE: 10
-    lore-tag:
-    - '&8&lHeavy Set Bonus:'
-    - '&7Gain &aStrength 10 &7while wearing!'
+    - '&cDamage enemies &7for your &aMax HP'
+    - '&7and &eArmor &7and &cstun &7them for'
+    - '&c5 seconds &7which are within &c5 blocks&7!'
 
 MORDEN:
     name: '&2&lMorden Set Bonus'
