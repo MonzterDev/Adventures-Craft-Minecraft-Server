@@ -597,7 +597,6 @@ LOG_HELMET4:
     tier: LEGENDARY
     max-health: 50.0
     name: <tier-color-cleaned>Log Helmet
-    lore: []
     set: LOG
     gem-sockets:
     - Unused
@@ -607,6 +606,8 @@ LOG_HELMET4:
       workbench: true
       template: log-helmet
     revision-id: 2
+    custom-nbt:
+    - MYTHIC_TYPE LOG_HELMET4
 LOG_CHESTPLATE4:
   base:
     material: LEATHER_CHESTPLATE
@@ -615,7 +616,6 @@ LOG_CHESTPLATE4:
     tier: LEGENDARY
     max-health: 75.0
     name: <tier-color-cleaned>Log Chestplate
-    lore: []
     set: LOG
     gem-sockets:
     - Unused
@@ -633,7 +633,6 @@ LOG_LEGGINGS4:
     tier: LEGENDARY
     max-health: 75.0
     name: <tier-color-cleaned>Log Leggings
-    lore: []
     set: LOG
     gem-sockets:
     - Unused
@@ -651,7 +650,6 @@ LOG_BOOTS4:
     tier: LEGENDARY
     max-health: 50.0
     name: <tier-color-cleaned>Log Boots
-    lore: []
     set: LOG
     gem-sockets:
     - Unused

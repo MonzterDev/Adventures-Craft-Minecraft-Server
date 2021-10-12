@@ -17,9 +17,22 @@ BEE_WINGS3:
   - fly{duration=200} @self
   - sound{s=entity.bee.hurt;delay=200} @self
 
+LOG_HELMET4:
+  Conditions:
+  - wearing{slot=HEAD;m=mmoitems.ARMOR.LOG_HELMET4}
+  - wearing{slot=CHEST;m=mmoitems.ARMOR.LOG_CHESTPLATE4}
+  - wearing{slot=LEGS;m=mmoitems.ARMOR.LOG_LEGGINGS4}
+  - wearing{slot=FEET;m=mmoitems.ARMOR.LOG_BOOTS4}
+  - SKILLCAST{m=75;c=10;s=LOG_HELMET4}
+  Skills:
+  - stun{d=100;f=true} @EIR{r=5;ignore=players}
+  - LOGSET @EIR{r=5;ignore=players}
+  - effect:blockmask{m=vine;r=1;d=100;s=sphere} @EIR{r=5;ignore=players}
+  - message{m="&7Nearby enemies have been &crooted &7for 5 seconds!"} @self
+
 MELON_HAT5:
   Conditions:
-  - SKILLCAST{m=75;c=10;s=BEE_WINGS2}
+  - SKILLCAST{m=75;c=10;s=MELON_HAT5}
   Skills:
   - skill{skill=MELON_HAT5_1}
   - skill{skill=MELON_HAT5_2}
