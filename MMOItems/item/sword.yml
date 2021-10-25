@@ -2,33 +2,34 @@ TUTORIAL_SWORD:
   base:
     material: WOODEN_SWORD
     disable-crafting: true
-    attack-damage: 5.0
     tier: COMMON
     name: <tier-color-cleaned>Tutorial Sword
     unbreakable: true
     gem-sockets:
     - Unused
-    revision-id: 2
+    revision-id: 26
     custom-model-data: 300.0
     lore:
-    - '&fSword &7can &fslash &7through'
+    - '&fSwords &7can &fslash &7through'
     - '&7and &cdamage enemies &7in a cone'
     - '&7behind the intial &cenemy &7hit!'
+    attack-damage: 5.0
+    hide-enchants: true
 GOD:
   base:
     material: IRON_SWORD
     attack-damage: 999999.0
-    revision-id: 2
+    revision-id: 26
     unbreakable: true
 WOODENSWORD:
   base:
     material: WOODEN_SWORD
     name: <tier-color-cleaned>Wooden Sword
-    attack-damage: 4.0
+    attack-damage: 5.0
     will-break: true
     unbreakable: true
     tier: COMMON
-    revision-id: 2
+    revision-id: 20
 STONESWORD:
   base:
     material: STONE_SWORD
@@ -37,16 +38,16 @@ STONESWORD:
     will-break: true
     unbreakable: true
     tier: COMMON
-    revision-id: 2
+    revision-id: 26
 IRONSWORD:
   base:
     material: IRON_SWORD
     name: <tier-color-cleaned>Iron Sword
-    attack-damage: 6.0
+    attack-damage: 7.0
     will-break: true
     unbreakable: true
     tier: COMMON
-    revision-id: 2
+    revision-id: 26
 GOLDSWORD:
   base:
     material: GOLDEN_SWORD
@@ -55,7 +56,7 @@ GOLDSWORD:
     will-break: true
     unbreakable: true
     tier: COMMON
-    revision-id: 2
+    revision-id: 26
 DIAMONDSWORD:
   base:
     material: DIAMOND_SWORD
@@ -65,7 +66,7 @@ DIAMONDSWORD:
     unbreakable: true
     tier: COMMON
     custom-model-data: 0.0
-    revision-id: 2
+    revision-id: 26
 SILVER_SWORD:
   base:
     material: IRON_SWORD
@@ -80,7 +81,7 @@ SILVER_SWORD:
       workbench: true
       max: 10
     faction-damage-undead: 5.0
-    revision-id: 2
+    revision-id: 26
     custom-model-data: 101.0
 BASIC_SWORD:
   base:
@@ -95,7 +96,7 @@ BASIC_SWORD:
     - §rEnjoy your §lBasic Sword§r!
     disable-interaction: false
     tier: COMMON
-    revision-id: 2
+    revision-id: 26
 BONE_SWORD3:
   base:
     material: IRON_SWORD
@@ -109,8 +110,9 @@ BONE_SWORD3:
     critical-strike-power: 15.0
     gem-sockets:
     - Unused
-    revision-id: 2
+    revision-id: 26
     custom-model-data: 102.0
+    hide-enchants: true
 BONE_SWORD4:
   base:
     material: GOLDEN_SWORD
@@ -128,7 +130,7 @@ BONE_SWORD4:
     gem-sockets:
     - Unused
     - Unused
-    revision-id: 2
+    revision-id: 26
     custom-model-data: 1.0
 MAGMA_BLADE4:
   base:
@@ -150,7 +152,7 @@ MAGMA_BLADE4:
     - '&cIgnite &7enemy for &c5secs &7dealing &c100 damage'
     - '&7per second. If the enemy is already ignited,'
     - '&7they will be hit with an additional &c1500 damage&7!'
-    revision-id: 2
+    revision-id: 26
     custom-nbt:
     - MYTHIC_TYPE MAGMA_BLADE4
     critical-strike-power: 35.0
@@ -173,7 +175,7 @@ BULBLIN_SWORD4:
     - §7amounts of darkness and §8corruption§7!
     gem-sockets:
     - Unused
-    revision-id: 2
+    revision-id: 26
 BULBLIN_SWORD5:
   base:
     material: NETHERITE_SWORD
@@ -202,4 +204,4 @@ BULBLIN_SWORD5:
     - Unused
     custom-nbt:
     - MYTHIC_TYPE BULBLIN_SWORD5
-    revision-id: 2
+    revision-id: 26

@@ -16,16 +16,8 @@ JOY_SOUP:
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
     name: <tier-color-cleaned>Joy Soup
     item-cooldown: 2.5
-    lore: []
     tier: COMMON
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
     restore-health: 20.0
-    restore-food: 0.0
-    restore-saturation: 0.0
     revision-id: 2
 JOY_SOUP3:
   base:
@@ -35,16 +27,8 @@ JOY_SOUP3:
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
     name: <tier-color-cleaned>Joy Soup
     item-cooldown: 2
-    lore: []
     tier: RARE
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
     restore-health: 50.0
-    restore-food: 0.0
-    restore-saturation: 0.0
     revision-id: 2
 JOY_SOUP4:
   base:
@@ -54,31 +38,19 @@ JOY_SOUP4:
       uuid: c49fffff-6eeb-4c8c-a90c-e68d60276e40
     name: <tier-color-cleaned>Joy Soup
     item-cooldown: 1.5
-    lore: []
     tier: LEGENDARY
-    sounds:
-      on-consume:
-        sound: ENTITY_GENERIC_DRINK
-        volume: 1.0
-        pitch: 1.0
     restore-health: 75.0
-    restore-food: 0.0
-    restore-saturation: 0.0
     revision-id: 2
 SOUL4:
   base:
     material: PLAYER_HEAD
     name: <tier-color-cleaned>Soul
-    disable-smelting: true
-    disable-enchanting: true
-    disable-repairing: true
     disable-interaction: false
     lore:
     - '&fGives you a temporary boost'
     - '&ffrom the previous Soul owner!'
     unbreakable: true
     tier: LEGENDARY
-    vanilla-eating: false
     skull-texture:
       value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUyMDhhMDI1OGIxZWIxYTg2MDIxMjMzNDhjMjRjNWZjNjUzZDg0Njg1MjEzY2RkMzRjNjc5NTM1NDJkMGQ5MiJ9fX0=
       uuid: 5fd69b00-23f2-4702-b513-e653a32d9d51
@@ -206,18 +178,6 @@ UNDEAD_FLESH3:
     restore-health: 150.0
     restore-food: 0.0
     restore-saturation: 0.0
-    revision-id: 2
-DRAC_HEART3:
-  base:
-    material: PLAYER_HEAD
-    name: <tier-color-cleaned>Drac's Heart
-    skull-texture:
-      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ1ZjRkMTM5YzllODkyNjJlYzA2YjI3YWFhZDczZmE0ODhhYjQ5MjkwZDJjY2Q2ODVhMjU1NDcyNTM3M2M5YiJ9fX0=
-      uuid: 87428893-6272-4025-b021-a8da0aa6b1a5
-    restore-health: 150.0
-    restore-food: 0.0
-    restore-saturation: 0.0
-    tier: RARE
     revision-id: 2
 TASTY_HONEY3:
   base:

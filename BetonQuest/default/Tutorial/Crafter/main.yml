@@ -1,0 +1,22 @@
+npcs:
+  '216': Crafter
+variables:
+    QUESTER_NAME: "REESE"
+
+    QUEST1_NAME: "Material Shop"
+    QUEST1_ID: "MATERIAL_SHOP"
+    QUEST1_OBJ_MESSAGE: "&aAccess &fthe &aMaterial Shop &fby using &a/Materials &for &aShift-Right Clicking &fthe &aCrafting Table"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Access &0the &2Material Shop &0by using &2/Materials &0or &2Shift-Right Clicking &0the &2Crafting Table"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:CRAFTING_TABLE ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST2_NAME: "Enchanted Crafter"
+    QUEST2_ID: "ENCHANTED_CRAFTER"
+    QUEST2_OBJ_MESSAGE: "&aCombine &fthe &a288 Seeds &finto an &9Enchanted Seed &fwithin the &aMaterial Shop"
+    QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Combine &0the &2288 Seeds &0into an &9Enchanted Seed &0within the &2Material Shop"
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:WHEAT_SEEDS ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+
+    QUEST3_NAME: "Homer"
+    QUEST3_ID: "HOMER"
+    QUEST3_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards &6Homer"
+    QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards &6Homer"
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:BRICKS ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
