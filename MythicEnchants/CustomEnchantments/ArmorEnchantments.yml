@@ -1,0 +1,32 @@
+KAMIKAZE:
+  Display: 'Kamikaze'
+  MinLevel: 1
+  MaxLevel: 3
+  ItemType: ARMOR
+  Options: &Options
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  Skills:
+  - damage{a="<caster.mmo_stat_damage>*5"} @EIR{r=4;ignore=players} ~onDeath ?CHANCE{s=KAMIKAZE}
+
+REFLECT:
+  Display: 'Reflect'
+  MinLevel: 1
+  MaxLevel: 4
+  ItemType: ARMOR
+  Options:
+    <<: *Options
+  Skills:
+  - damage{a="<skill.var.damage-amount>*(<enchant.reflect>/100)"} @trigger ~onDamaged
+
+NEGATION:
+  Display: 'Negation'
+  MinLevel: 1
+  MaxLevel: 4
+  ItemType: ARMOR
+  Options:
+    <<: *Options
+  Skills:
+  - skill{skill=NEGATION_ENCHANT} @self ~onDamaged

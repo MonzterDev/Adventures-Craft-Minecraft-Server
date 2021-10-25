@@ -1,0 +1,24 @@
+# Gain +X EXP upon Slaying enemies & Mining Blocks
+EXPERIENCE:
+  Display: 'Experience'
+  MinLevel: 1
+  MaxLevel: 25
+  ItemType: WEAPON
+  Options: &Options
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  Skills:
+  - BQPoint{p=EXP.EXP;a=<skill.var.enchant-level> * 1;math=+} @self ~onKill
+
+# Gain +X coins upon slaying enemies
+COINED:
+  Display: 'Coined'
+  MinLevel: 1
+  MaxLevel: 25
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+  Skills:
+  - currencygive{amount=<skill.var.enchant-level> * .08} @self ~onKill

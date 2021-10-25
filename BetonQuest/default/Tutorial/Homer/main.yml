@@ -1,0 +1,11 @@
+npcs:
+  '217': Homer
+variables:
+    QUESTER_NAME: "HOMER"
+
+    QUEST1_NAME: "Going Home"
+    QUEST1_ID: "GOING_HOME"
+    QUEST1_OBJ_MESSAGE: "&aTravel &fto your &aHome &fby using &a/Home"
+    QUEST1_JOU_MESSAGE: "&2$QUEST1_NAME$: \n&2Travel &0to your &2Home &0by using &2/Home"
+    QUEST1_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ io:advancement frame:challenge icon:minecraft:BRICK ^notify $default-Functions.QUEST_COMPLETE$$QUEST1_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+    QUEST1_FINISH_MESSAGE: "&fYou have completed the &aTutorial&f! You can return back to the &6Town &fat any time by using &a/Town &f or &a/Spawn"
