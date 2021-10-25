@@ -103,8 +103,6 @@ LOST_SOUL:
   Skills:
   - skill{s=LOST_SOUL_STEAL} ~onEnterCombat
   - damage{amount=5;ignoreArmor=false} ~onAttack
-  - damage{amount=1;ignoreArmor=false} ~onTimer:20
-  - potion{type=WITHER;duration=21;level=1} @target ~onTimer:20
   - skill{s=HPBAR} @self ~onDamaged
   - skill{s=Agro8A} ~onTimer:20
   - skill{s=Agro8B} ~onTimer:20

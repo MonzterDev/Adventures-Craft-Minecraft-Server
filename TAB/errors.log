@@ -157,3 +157,15 @@
 14.09.2021 - 14:19:25 -        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 14.09.2021 - 14:19:25 -        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 14.09.2021 - 14:19:25 -        at java.base/java.lang.Thread.run(Thread.java:834)
+14.10.2021 - 17:55:45 - [TAB v2.8.11-pre4 Premium] Failed to download PlaceholderAPI expansions. PlaceholderAPI version: 2.10.9
+14.10.2021 - 17:55:45 - org.bukkit.plugin.IllegalPluginAccessException: Plugin attempted to register task while disabled
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.validate(CraftScheduler.java:537)
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:212)
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:197)
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncRepeatingTask(CraftScheduler.java:192)
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncDelayedTask(CraftScheduler.java:156)
+14.10.2021 - 17:55:45 -        at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftScheduler.scheduleSyncDelayedTask(CraftScheduler.java:125)
+14.10.2021 - 17:55:45 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.runSyncCommand(ExpansionDownloader.java:84)
+14.10.2021 - 17:55:45 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader.access$000(ExpansionDownloader.java:20)
+14.10.2021 - 17:55:45 -        at me.neznamy.tab.platforms.bukkit.features.ExpansionDownloader$1$1.run(ExpansionDownloader.java:60)
+14.10.2021 - 17:55:45 -        at java.base/java.lang.Thread.run(Thread.java:834)
