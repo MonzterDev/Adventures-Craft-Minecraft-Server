@@ -1,0 +1,80 @@
+# Damage enemies for % of their Max HP
+DRAIN:
+  Display: 'Drain'
+  MinLevel: 1
+  MaxLevel: 25
+  ItemType: WEAPON
+  Options: &Options
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  Skills:
+  - damage{a="<target.mhp> * (<skill.var.enchant-level> * .0004)"} ~onAttack
+
+# Heal for % of attack's damage
+LEECH:
+  Display: 'Leech'
+  MinLevel: 1
+  MaxLevel: 25
+  ItemType: WEAPON
+  Options: &Options
+    Cursed: FALSE
+    Treasure: FALSE
+    ShowInLore: TRUE
+    LevelAsPower: FALSE
+  Skills:
+  - heal{a="<caster.last_attack_damage> * (<skill.var.enchant-level> * .0009)"} @self ~onAttack
+
+# Damage enemies for % of your Damage
+SHARPNESS:
+  Display: 'Sharpness'
+  MinLevel: 1
+  MaxLevel: 5
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+  Skills:
+  - damage{a="<caster.mmo_stat_damage> * (<skill.var.enchant-level> * .08)"} ~onAttack
+
+# Increase the chance of enemy dropping their Gear
+LOOTING:
+  Display: 'Looting'
+  MinLevel: 1
+  MaxLevel: 5
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+
+# Chance to freeze enemy
+PARALYZE:
+  Display: 'Paralyze'
+  MinLevel: 1
+  MaxLevel: 2
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+  Skills:
+  - stun{d=30;f=true} ~onAttack ?CHANCE{s=PARALYZE}
+
+# Chance of gaining a special effect upon slaying an enemy
+POSTHUMOUS:
+  Display: 'Posthumous'
+  MinLevel: 1
+  MaxLevel: 3
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+  Skills:
+  - POSTHUMOUS{cd=5} @self ~onKill
+
+# Heal for % of enemies Max HP upon slaying them
+LIFE_STEAL:
+  Display: 'Life Steal'
+  MinLevel: 1
+  MaxLevel: 4
+  ItemType: WEAPON
+  Options:
+    <<: *Options
+  Skills:
+  - heal{a="<target.mhp> * (<skill.var.enchant-level> * .002)"} @self ~onKill

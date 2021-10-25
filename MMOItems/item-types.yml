@@ -239,6 +239,20 @@ ARMOR:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
+DURABLE_ARMOR:
+    display: LEATHER_CHESTPLATE
+    name: 'Durable Armor'
+    parent: 'ARMOR'
+    unident-item:
+        name: '&f#prefix#Unidentified Totem'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
 TOOL:
     display: IRON_PICKAXE
     name: 'Tool'

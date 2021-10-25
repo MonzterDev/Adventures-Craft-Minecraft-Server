@@ -11,7 +11,7 @@ variables:
 
     QUEST2_NAME: "Resource Collector"
     QUEST2_ID: "RESOURCE_COLLECTOR"
-    QUEST2_OBJ_MESSAGE: "&aUse &fthe &a/ResourceCollector &fcommand to view the &aCollector"
+    QUEST2_OBJ_MESSAGE: "&aUse &fthe &a/ResourceCollector &fcommand to view the &aCollector&f, then click the &aDiamond Hoe &fnamed &6Farming Resources &fto view your stored &aWheat"
     QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Use &0the &2/ResourceCollector &0command to view the &2Collector"
     QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:CAULDRON ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
 

@@ -25,7 +25,7 @@ Q2_MSG_COMPLETE: 'run notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $de
 
 Q3_START: 'folder Q3_OBJ_START,Q3_GPS_START,Q3_TAG_START,Q3_JOU_START,Q3_MSG_START'
 Q3_OBJ_START: 'objective start $QUEST3_ID$'
-Q3_GPS_START: 'command gps:compass start TutorialReese %player%'
+Q3_GPS_START: 'command gps:compass start TutorialCrafter %player%'
 Q3_TAG_START: 'tag add $QUEST3_ID$_STARTED'
 Q3_JOU_START: 'journal add QUEST3_JOU_MESSAGE'
 Q3_MSG_START: 'run notify $default-Functions.NEW_OBJECTIVES$$QUEST3_OBJ_MESSAGE$ $default-Functions.OBJ_START_SOUND$'
