@@ -1,11 +1,11 @@
 global:
   # Settings for the automatic version updater
   auto updater:
-    notify: true
+    notify: false
     download: false
     
     # Number of seconds to wait until a new update is downloaded
-    delay: 43200 # 12 hours
+    delay: 999999999 # 12 hours
  
   metrics: true
   

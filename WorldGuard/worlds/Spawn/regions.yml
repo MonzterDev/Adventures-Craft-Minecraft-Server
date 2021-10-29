@@ -232,9 +232,19 @@ regions:
         max: {x: -106, y: 261, z: 3326}
         members: {}
         flags:
+            allow-block-break: [ALLIUM, COCOA, NETHER_QUARTZ_ORE, JUNGLE_LOG, BIRCH_LEAVES,
+                WHEAT, END_STONE, EMERALD_BLOCK, DARK_OAK_LOG, EMERALD_ORE, ROSE_BUSH,
+                DARK_OAK_LEAVES, STONE, DIAMOND_BLOCK, LAPIS_BLOCK, REDSTONE_BLOCK,
+                GLOWSTONE, WITHER_ROSE, GOLD_ORE, IRON_ORE, OBSIDIAN, LAPIS_ORE, ACACIA_LEAVES,
+                SPRUCE_LOG, COAL_ORE, ACACIA_LOG, MELON, IRON_BLOCK, REDSTONE_ORE,
+                GOLD_BLOCK, JUNGLE_LEAVES, DIAMOND_ORE, TUBE_CORAL, PUMPKIN, NETHERRACK,
+                BEEHIVE, COBBLESTONE, COAL_BLOCK, OAK_LEAVES, CRIMSON_FUNGUS, SUGAR_CANE,
+                AZURE_BLUET, CORNFLOWER, BIRCH_LOG, QUARTZ_BLOCK, OAK_LOG, BEE_NEST,
+                NETHER_WART, POTATOES, CARROTS]
             spawn: {world: Spawn, x: -147.71833695805938, y: 16.0, z: 3198.490524770894,
                 pitch: 5.1177444, yaw: 90.074646}
             invincible: allow
+            block-break: allow
             region-display-name: §aTutorial Island
         owners: {}
         type: cuboid

@@ -1,9 +1,13 @@
 quester: Reese
-first: greeting
+first: completeQuest,greeting
 NPC_options:
+  completeQuest:
+    text: '&a%player%&7, you must complete &6Attributor''s &7quests first!'
+    conditions: '!default-Tutorial-Attributor.QUEST1_COMPLETED'
   greeting:
     text: Hey &a%player%&7, are you familiar with the &aResource Collector&7? 
     pointers: hey, quest, bye
+    conditions: 'default-Tutorial-Attributor.QUEST1_COMPLETED'
   town_info:
     text: Whenever you pickup most items off the ground, they will go into your &aResource Collector&7! The &aResource Collector &7is meant to help prevent your inventory from getting full when farming resources. You can think of it as a &aResource Bank&7! You can access it from anywhere using &a/ResourceCollector &7to withdraw resources from it!
     pointers: wow, bye

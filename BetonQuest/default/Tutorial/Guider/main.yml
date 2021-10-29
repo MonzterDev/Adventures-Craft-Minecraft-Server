@@ -13,4 +13,4 @@ variables:
     QUEST2_ID: "COMBAT_INSTRUCTOR"
     QUEST2_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards the &6Combat Instructor"
     QUEST2_JOU_MESSAGE: "&2$QUEST2_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards the &6Combat Instructor"
-    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:WOODEN_SWORD ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+    QUEST2_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ io:advancement frame:challenge icon:minecraft:ARROW ^notify $default-Functions.QUEST_COMPLETE$$QUEST2_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

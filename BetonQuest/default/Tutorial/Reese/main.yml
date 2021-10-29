@@ -19,4 +19,4 @@ variables:
     QUEST3_ID: "CRAFTER"
     QUEST3_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards &6Crafter"
     QUEST3_JOU_MESSAGE: "&2$QUEST3_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards &6Crafter"
-    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:WHEAT_SEEDS ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+    QUEST3_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ io:advancement frame:challenge icon:minecraft:ARROW ^notify $default-Functions.QUEST_COMPLETE$$QUEST3_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

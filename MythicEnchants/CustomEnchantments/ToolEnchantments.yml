@@ -1,6 +1,19 @@
-# Increase chance of getting double drops while mining by %
+# Increase chance of getting rare drops while mining by %
 FORTUNE:
     Display: 'Fortune'
+    MinLevel: 1
+    MaxLevel: 3
+    ItemType: WEAPON
+    Options: &Options
+      Cursed: FALSE
+      Treasure: FALSE
+      ShowInLore: TRUE
+      LevelAsPower: FALSE
+    Skills:
+
+# Increase chance of getting double drops while mining by %
+YIELD:
+    Display: 'Yield'
     MinLevel: 1
     MaxLevel: 3
     ItemType: WEAPON

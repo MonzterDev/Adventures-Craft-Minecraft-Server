@@ -1,9 +1,13 @@
 quester: Homer
-first: greeting
+first: completeQuest,greeting
 NPC_options:
+  completeQuest:
+    text: '&a%player%&7, you must complete the &6Crafter''s &7quests first!'
+    conditions: '!default-Tutorial-Crafter.QUEST2_COMPLETED'
   greeting:
     text: Hey &a%player%&7, I'm &aHomer, &7your landlord! 
     pointers: hey, quest, bye
+    conditions: 'default-Tutorial-Crafter.QUEST2_COMPLETED'
   town_info:
     text: You can use your &aHome &7to store items and express your &acreativity&7!
     pointers: wow, bye

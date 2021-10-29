@@ -13,12 +13,12 @@ DUMMY_ENEMY_FRONT: &Dummy
     FollowRange: 0
     Collidable: false
     PreventOtherDrops: true
-    PreventTeleport: true
+    NoAI: true
   AIGoalSelectors:
   - clear
   - lookatplayers
   Skills:
-  - teleportto{location=-163.5,17,3252.5;y=110;p=2.2} @self ~onSpawn
+  - teleportto{location=-163.5,17,3252.5;y=90;p=10} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged
 
 DUMMY_ENEMY_LEFT:
@@ -26,7 +26,7 @@ DUMMY_ENEMY_LEFT:
   Type: SKELETON
   Display: '&cSkeleton Dummy'
   Skills:
-  - teleportto{location=-161.5,17,3250.5;y=110;p=2.2} @self ~onSpawn
+  - teleportto{location=-161.5,17,3250.5;y=90;p=10} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged
 
 DUMMY_ENEMY_RIGHT:
@@ -34,7 +34,7 @@ DUMMY_ENEMY_RIGHT:
   Type: SPIDER
   Display: '&cSpider Dummy'
   Skills:
-  - teleportto{location=-161.5,17,3253.5;y=110;p=2.2} @self ~onSpawn
+  - teleportto{location=-161.5,17,3253.5;y=90;p=10} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged
 
 DUMMY_ENEMY_BEHIND:
@@ -42,5 +42,5 @@ DUMMY_ENEMY_BEHIND:
   Type: CREEPER
   Display: '&cCreeper Dummy'
   Skills:
-  - teleportto{location=-161.5,17,3252.5;y=110;p=2.2} @self ~onSpawn
+  - teleportto{location=-161.5,17,3252.5;y=90;p=10} @self ~onSpawn
   - skill{s=HPBAR} @self ~onDamaged
