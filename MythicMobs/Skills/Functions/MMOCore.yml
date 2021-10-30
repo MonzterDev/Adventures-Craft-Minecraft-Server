@@ -1,0 +1,10 @@
+MMOCORE_LEVEL_UP_MAIN:
+  Skills:
+  - sound{s=entity.player.levelup} @self
+  - effect:particlesphere{particle=mobSpell;color=#00f3ff;amount=25;radius=1;y=.5} @self
+  - holo{t=&e&lLEVEL UP!;time=25} @selflocation{y=2.25}
+
+MMOCORE_LEVEL_UP_PROFESSION:
+  Skills:
+  - sound{s=entity.player.levelup;p=2} @self
+  - effect:particlesphere{particle=mobSpell;color=#e4ff00;amount=25;radius=1;y=.5} @self
