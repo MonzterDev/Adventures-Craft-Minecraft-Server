@@ -2,36 +2,36 @@
 sample-region:
     
     # Region boundaries
-    bounds:
-        world: Spawn
-        x1: 32
-        x2: -15
-        z1: -419
-        z2: -375
+    # bounds:
+    #     world: Spawn
+    #     x1: 32
+    #     x2: -15
+    #     z1: -419
+    #     z2: -375
     
-    # Chest spawn period in seconds
-    spawn-period: 120
+    # # Chest spawn period in seconds
+    # spawn-period: 120
     
-    # Extra options for the random location algorithm
-    algorithm-options:
-        min-range: 8 # Min range from chest to player
-        max-range: 20 # Max range from chest to player
-        height: 15 # Maximum Y coord delta between the chest and player
-        iterations: 15 # Amount of random locations taken (tries) before canceling loot chest spawning
+    # # Extra options for the random location algorithm
+    # algorithm-options:
+    #     min-range: 8 # Min range from chest to player
+    #     max-range: 20 # Max range from chest to player
+    #     height: 15 # Maximum Y coord delta between the chest and player
+    #     iterations: 15 # Amount of random locations taken (tries) before canceling loot chest spawning
     
-    tiers:
+    # tiers:
     
-        # Some tier
-        normal:
+    #     # Some tier
+    #     normal:
         
-            # Particle effect played around a spawned loot chest
-            effect:
-                type: OFFSET # Type of particle effect used
-                particle: FLAME # Particle used to play the effect
-                period: 60 # Plays the effect every 60 ticks
+    #         # Particle effect played around a spawned loot chest
+    #         effect:
+    #             type: OFFSET # Type of particle effect used
+    #             particle: FLAME # Particle used to play the effect
+    #             period: 60 # Plays the effect every 60 ticks
             
-            capacity: 10
-            chance: 1
-            drops:
-                items:
-                - 'vanilla{type=DIAMOND}'
+    #         capacity: 10
+    #         chance: 1
+    #         drops:
+    #             items:
+    #             - 'vanilla{type=DIAMOND}'

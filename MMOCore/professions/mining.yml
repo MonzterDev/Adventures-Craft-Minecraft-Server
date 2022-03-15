@@ -20,460 +20,185 @@ max-level: 10
 exp-sources:
 
 on-mine:
-    STONE:
+    STONE: &Options
         material: vanilla{type=STONE}
         drop-table: 
             items:
-            - 'vanilla{type=STONE} 1 1'
+            - 'vanilla{type=AIR} 1 1'
         options:
             vanilla-drops: false
         regen:
             time: 300
             temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=1}'
     COBBLESTONE:
         material: vanilla{type=COBBLESTONE}
-        drop-table:
-            items:
-            - 'vanilla{type=COBBLESTONE} 1 1'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_COBBLESTONE} 0.00347222222 1'                        
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=1.5}'
+        <<: *Options
     NETHER:
         material: vanilla{type=NETHERRACK}
-        drop-table:
-            items:
-            - 'vanilla{type=NETHERRACK} 1 1'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_NETHERRACK} 0.00347222222 1'                        
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=.5}'
+        <<: *Options
     END_STONE:
         material: vanilla{type=END_STONE}
-        drop-table:
-            items:
-            - 'vanilla{type=END_STONE} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_ENDSTONE} 0.00347222222 1'                        
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=2}'
+        <<: *Options
     OBSIDIAN:
         material: vanilla{type=OBSIDIAN}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_OBSIDIAN} 0.00347222222 1'
-            - 'vanilla{type=OBSIDIAN} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     GLOWSTONE:
         material: vanilla{type=GLOWSTONE}
-        drop-table:
-            items:
-            - 'vanilla{type=GLOWSTONE_DUST} 1 2-5'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=3}'
+        <<: *Options
     COAL_ORE:
         material: vanilla{type=COAL_ORE}
-        drop-table:
-            items:
-            - 'vanilla{type=COAL} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_COAL} 0.00347222222 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=2}'
+        <<: *Options
     IRON_ORE:
         material: vanilla{type=IRON_ORE}
-        drop-table:
-            items:
-            - 'vanilla{type=IRON_INGOT} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_IRON} 0.00347222222 1'
-            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=2}'
+        <<: *Options
     GOLD_ORE:
         material: vanilla{type=GOLD_ORE}
-        drop-table:
-            items:
-            - 'vanilla{type=GOLD_INGOT} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_GOLD} 0.00347222222 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=3}'
+        <<: *Options
     REDSTONE_ORE:
         material: vanilla{type=REDSTONE_ORE}
-        drop-table:
-            items:
-            - 'vanilla{type=REDSTONE} 1 2-5'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE} 0.00347222222 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
+        <<: *Options
     LAPIS_ORE:
         material: vanilla{type=LAPIS_ORE}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS} 0.00347222222 1'            
-            - 'vanilla{type=LAPIS_LAZULI} 1 2-4'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
+        <<: *Options
     DIAMOND_ORE:
         material: vanilla{type=DIAMOND_ORE}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND} 0.00347222222 1'            
-            - 'vanilla{type=DIAMOND} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     EMERALD_ORE:
         material: vanilla{type=EMERALD_ORE}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD} 0.00347222222 1'            
-            - 'vanilla{type=EMERALD} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     NETHER_QUARTZ_ORE:
         material: vanilla{type=NETHER_QUARTZ_ORE}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ} 0.00347222222 1'                        
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_STAR_SHARD} 0.00347222222 1'                        
-            - 'mmoitem{type=MATERIAL,id=STAR_SHARD} 1 1-2'                        
-            - 'vanilla{type=QUARTZ} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     COAL_BLOCK:
         material: vanilla{type=COAL_BLOCK}
-        drop-table:
-            items:
-            - 'vanilla{type=COAL} 1 5-9'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_COAL} 0.00694444444 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
+        <<: *Options
     IRON_BLOCK:
         material: vanilla{type=IRON_BLOCK}
-        drop-table:
-            items:
-            - 'vanilla{type=IRON_INGOT} 1 5-9'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_IRON} 0.00694444444 1'
-            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
+        <<: *Options
     GOLD_BLOCK:
         material: vanilla{type=GOLD_BLOCK}
-        drop-table:
-            items:
-            - 'vanilla{type=GOLD_INGOT} 1 5-9'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_GOLD} 0.00694444444 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
+        <<: *Options
     REDSTONE_BLOCK:
         material: vanilla{type=REDSTONE_BLOCK}
-        drop-table:
-            items:
-            - 'vanilla{type=REDSTONE} 1 2-5'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_REDSTONE} 0.00694444444 1'            
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     LAPIS_BLOCK:
         material: vanilla{type=LAPIS_BLOCK}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_LAPIS} 0.00694444444 1'            
-            - 'vanilla{type=LAPIS_LAZULI} 1 2-4'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=5}'
+        <<: *Options
     DIAMOND_BLOCK:
         material: vanilla{type=DIAMOND_BLOCK}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_DIAMOND} 0.00694444444 1'            
-            - 'vanilla{type=DIAMOND} 1 5-9'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=6}'
+        <<: *Options
     EMERALD_BLOCK:
         material: vanilla{type=EMERALD_BLOCK}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_EMERALD} 0.00694444444 1'            
-            - 'vanilla{type=EMERALD} 1 5-9'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=6}'
-    QUARTZ_BLOCK:
-        material: vanilla{type=QUARTZ_BLOCK}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_QUARTZ} 0.00694444444 1'                                    
-            - 'vanilla{type=QUARTZ} 1 5-9'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=mining;amount=7}'
-    NETHER_WART:
-        material: vanilla{type=NETHER_WART}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART} 0.00347222222 1'                                    
-            - 'vanilla{type=NETHER_WART} 1 2-4'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=TRIPWIRE}
-        triggers:
-        - 'exp{profession=spellforging;amount=2}'
-    NETHER_WART_BLOCK:
-        material: vanilla{type=NETHER_WART_BLOCK}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_NETHER_WART} 0.00694444444 1'                                    
-            - 'vanilla{type=NETHER_WART} 1 5-9'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 1200
-            temp-block: vanilla{type=BLACK_CONCRETE}
-        triggers:
-        - 'exp{profession=spellforging;amount=5}'
-    VOID_SHROOM:
-        material: vanilla{type=BROWN_MUSHROOM}
-        conditions:
-        - 'region{name=lapis}'
-        drop-table:
-            items:
-            - 'mmoitem{type=QUEST,id=VOID_SHROOM} 1 1'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=mining;amount=4}'
-    IRON_BARS:
-        material: vanilla{type=IRON_BARS}
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
+        <<: *Options
 
 #Spellforging
-    ROSE_BUSH:
-        material: vanilla{type=ROSE_BUSH}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_ROSE_BUSH} 0.00347222222 1'                                    
-            - 'vanilla{type=ROSE_BUSH} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    WITHER_ROSE:
-        material: vanilla{type=WITHER_ROSE}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE} 0.00347222222 1'                                    
-            - 'vanilla{type=WITHER_ROSE} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    ALLIUM:
-        material: vanilla{type=ALLIUM}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_ALLIUM} 0.00347222222 1'                                    
-            - 'vanilla{type=ALLIUM} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    TUBE_CORAL:
-        material: vanilla{type=TUBE_CORAL}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_TUBE_CORAL} 0.00347222222 1'                                    
-            - 'vanilla{type=TUBE_CORAL} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    CRIMSON_FUNGUS:
-        material: vanilla{type=CRIMSON_FUNGUS}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_CRIMSON_FUNGUS} 0.00347222222 1'                                    
-            - 'vanilla{type=CRIMSON_FUNGUS} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    AZURE_BLUET:
-        material: vanilla{type=AZURE_BLUET}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_AZURE_BLUET} 0.00347222222 1'                                    
-            - 'vanilla{type=AZURE_BLUET} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    CORNFLOWER:
-        material: vanilla{type=CORNFLOWER}
-        drop-table:
-            items:
-            - 'vanilla{type=CORNFLOWER} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    DANDELION:
-        material: vanilla{type=DANDELION}
-        drop-table:
-            items:
-            - 'vanilla{type=DANDELION} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    POPPY:
-        material: vanilla{type=POPPY}
-        drop-table:
-            items:
-            - 'vanilla{type=POPPY} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
-    OXEYE_DAISY:
-        material: vanilla{type=OXEYE_DAISY}
-        drop-table:
-            items:
-            - 'vanilla{type=OXEYE_DAISY} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 150
-            temp-block: vanilla{type=AIR}
+    # ROSE_BUSH:
+    #     material: vanilla{type=ROSE_BUSH}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_ROSE_BUSH} 0.00347222222 1'                                    
+    #         - 'vanilla{type=ROSE_BUSH} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # WITHER_ROSE:
+    #     material: vanilla{type=WITHER_ROSE}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_WITHER_ROSE} 0.00347222222 1'                                    
+    #         - 'vanilla{type=WITHER_ROSE} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # ALLIUM:
+    #     material: vanilla{type=ALLIUM}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_ALLIUM} 0.00347222222 1'                                    
+    #         - 'vanilla{type=ALLIUM} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # TUBE_CORAL:
+    #     material: vanilla{type=TUBE_CORAL}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_TUBE_CORAL} 0.00347222222 1'                                    
+    #         - 'vanilla{type=TUBE_CORAL} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # CRIMSON_FUNGUS:
+    #     material: vanilla{type=CRIMSON_FUNGUS}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_CRIMSON_FUNGUS} 0.00347222222 1'                                    
+    #         - 'vanilla{type=CRIMSON_FUNGUS} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # AZURE_BLUET:
+    #     material: vanilla{type=AZURE_BLUET}
+    #     drop-table:
+    #         items:
+    #         - 'mmoitem{type=MATERIAL,id=ENCHANTED_AZURE_BLUET} 0.00347222222 1'                                    
+    #         - 'vanilla{type=AZURE_BLUET} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # CORNFLOWER:
+    #     material: vanilla{type=CORNFLOWER}
+    #     drop-table:
+    #         items:
+    #         - 'vanilla{type=CORNFLOWER} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # DANDELION:
+    #     material: vanilla{type=DANDELION}
+    #     drop-table:
+    #         items:
+    #         - 'vanilla{type=DANDELION} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # POPPY:
+    #     material: vanilla{type=POPPY}
+    #     drop-table:
+    #         items:
+    #         - 'vanilla{type=POPPY} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
+    # OXEYE_DAISY:
+    #     material: vanilla{type=OXEYE_DAISY}
+    #     drop-table:
+    #         items:
+    #         - 'vanilla{type=OXEYE_DAISY} 1 1-2'
+    #     options:
+    #         vanilla-drops: false
+    #     regen:
+    #         time: 150
+    #         temp-block: vanilla{type=AIR}
 #VOID
     CHORUS_FLOWER:
         material: vanilla{type=CHORUS_FLOWER}
-        drop-table:
-            items:
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_CHORUS_FRUIT} 0.00347222222 1'                                    
-            - 'mmoitem{type=MATERIAL,id=CHORUS_SEED} 1 2-3'                                    
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=spellforging;amount=4}'
+        <<: *Options

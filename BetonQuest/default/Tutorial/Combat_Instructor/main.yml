@@ -62,4 +62,4 @@ variables:
     QUEST9_ID: "ATTRIBUTOR"
     QUEST9_OBJ_MESSAGE: "&aFollow &fthe &aArrow &fguiding you towards the &6Attributor"
     QUEST9_JOU_MESSAGE: "&2$QUEST9_NAME$: \n&2Fllow &0the &2Arrow &0guiding you towards the &6Attributor"
-    QUEST9_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ io:advancement frame:challenge icon:minecraft:CAULDRON ^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'
+    QUEST9_COMPLETE: '^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ io:advancement frame:challenge icon:minecraft:ARROW ^notify $default-Functions.QUEST_COMPLETE$$QUEST9_NAME$ $default-Functions.OBJ_FINISH_SOUND$ io:title'

@@ -1,9 +1,13 @@
 quester: Guider
-first: greeting
+first: completeQuest,greeting
 NPC_options:
+  completeQuest:
+    text: '&a%player%&7, you must complete &6Tutor''s &7quests first!'
+    conditions: '!default-Tutorial-Tutor.QUEST3_COMPLETED'
   greeting:
     text: Hey &a%player%&7, do you see that cool thing in my hand? 
     pointers: hey, quest, bye
+    conditions: 'default-Tutorial-Tutor.QUEST3_COMPLETED'
   town_info:
     text: It's our &amenu item&7! Each &aAdventurer &7including yourself holds one within their &a9th inventory slot&7! You can use it to help navigate some core features of our wold.
     pointers: wow, bye

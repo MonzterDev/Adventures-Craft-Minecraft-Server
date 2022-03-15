@@ -1,9 +1,13 @@
 quester: Attributor
-first: greeting
+first: completeQuest,greeting
 NPC_options:
+  completeQuest:
+    text: '&a%player%&7, you must complete the &6Combat Instructor''s &7quests first!'
+    conditions: '!default-Tutorial-Combat_Instructor.QUEST8_COMPLETED'
   greeting:
     text: Hey &a%player%&7, are you familiar with &aAttributes&7? 
     pointers: hey, quest, bye
+    conditions: 'default-Tutorial-Combat_Instructor.QUEST8_COMPLETED'
   town_info:
     text: Each time you level up, you receive an &aAttribute Point&7, which can be redeemed by using &e/Attributes&7! Currently there are &a3 Attribute Trees &7you can put points into. &aAttributes &7enable you to further your desired playstyle. If you ever want to adjust your &aAttributes &7you can use a &6Reallocation Token&7!
     pointers: wow, bye

@@ -5,22 +5,22 @@
 # DON'T TRY to create recursive drop tables (drop tables
 # which call themselves to multiply items dropped).
 
-BorgBox:
-  MaxItems: 1
-  Drops:
-  - mmoitem{type=CONSUMABLE;id=BORGS_BOX5} 1 0.0002
+# BorgBox:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitem{type=CONSUMABLE;id=BORGS_BOX5} 1 0.0002
 
 
-#Farm
-WHEAT:
-  MaxItems: 1
-  Drops:
-  - mmoitem{type=STAFF;id=FARMER_STAFF} 1 .25%
-CANE:
-  MaxItems: 1
-  Drops:
-  - mmoitem{type=STAFF;id=CANE_STAFF} 1 1%
-MUSHROOM:
-  MaxItems: 1
-  Drops:
-  - mmoitem{type=STAFF;id=SHROOM_STAFF} 1 .5%
+# #Farm
+# WHEAT:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitem{type=STAFF;id=FARMER_STAFF} 1 .25%
+# CANE:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitem{type=STAFF;id=CANE_STAFF} 1 1%
+# MUSHROOM:
+#   MaxItems: 1
+#   Drops:
+#   - mmoitem{type=STAFF;id=SHROOM_STAFF} 1 .5%

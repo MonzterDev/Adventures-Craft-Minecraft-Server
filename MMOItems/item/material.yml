@@ -247,7 +247,7 @@ IRON_SHARD:
     disable-smelting: true
     tier: COMMON
     revision-id: 2
-ENCHANTED_IRON:
+ENCHANTED_IRON_INGOT:
   base:
     material: IRON_INGOT
     name: <tier-color-cleaned>Enchanted Iron
@@ -266,7 +266,7 @@ GOLD_SHARD:
     disable-smelting: true
     tier: COMMON
     revision-id: 2
-ENCHANTED_GOLD:
+ENCHANTED_GOLD_INGOT:
   base:
     material: GOLD_INGOT
     name: <tier-color-cleaned>Enchanted Gold
@@ -288,7 +288,7 @@ ENCHANTED_REDSTONE:
     disable-smelting: true
     tier: RARE
     revision-id: 2
-ENCHANTED_LAPIS:
+ENCHANTED_LAPIS_LAZULI:
   base:
     material: LAPIS_LAZULI
     name: <tier-color-cleaned>Enchanted Lapis
@@ -824,6 +824,20 @@ ENCHANTED_WHITE_WOOL:
     disable-repairing: true
     tier: RARE
     revision-id: 2
+ENCHANTED_GRASS:
+  base:
+    material: GRASS
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    name: <tier-color-cleaned>Enchanted Grass
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    revision-id: 2
 ENCHANTED_WHEAT_SEEDS:
   base:
     material: WHEAT_SEEDS
@@ -929,6 +943,20 @@ ENCHANTED_SUGAR:
       unbreaking: 5
     hide-enchants: true
     name: <tier-color-cleaned>Enchanted Sugar
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: RARE
+    revision-id: 2
+ENCHANTED_COCOA_BEANS:
+  base:
+    material: COCOA_BEANS
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    name: <tier-color-cleaned>Enchanted Cocoa
     disable-interaction: true
     disable-crafting: true
     disable-smelting: true

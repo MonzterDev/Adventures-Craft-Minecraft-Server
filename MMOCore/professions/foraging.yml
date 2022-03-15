@@ -18,187 +18,54 @@ max-level: 10
 # configure drop tables with MMOItems.
 # Block Regen is currently only possible using custom mining.
 exp-sources:
-- 'killmythicmob{type=Bees;amount=1}'
-- 'killmythicmob{type=Queen_Bee;amount=5}'
-- 'killmythicmob{type=Orc;amount=3}'
-- 'killmythicmob{type=Orc2;amount=4}'
-- 'killmythicmob{type=Orc3;amount=5}'
-- 'killmythicmob{type=Orc_Boss;amount=25}'
 
 on-mine:
-    OAK_LOG:
+    OAK_LOG: &Options
         material: vanilla{type=OAK_LOG}
-        drop-table:
+        drop-table: 
             items:
-            - 'vanilla{type=OAK_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_OAK_LOG} 0.00347222222 1'                        
+            - 'vanilla{type=AIR} 1 1'
         options:
             vanilla-drops: false
         regen:
             time: 300
             temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
     SPRUCE_LOG:
         material: vanilla{type=SPRUCE_LOG}
-        drop-table:
-            items:
-            - 'vanilla{type=SPRUCE_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_SPRUCE_LOG} 0.00347222222 1'                                    
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     DARK_OAK_LOG:
         material: vanilla{type=DARK_OAK_LOG}
-        drop-table:
-            items:
-            - 'vanilla{type=DARK_OAK_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_DARK_OAK_LOG} 0.00347222222 1'                        
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     BIRCH_LOG:
         material: vanilla{type=BIRCH_LOG}
-        drop-table:
-            items:
-            - 'vanilla{type=BIRCH_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_BIRCH_LOG} 0.00347222222 1'                                    
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
-    JUNGLE_LOG:
-        material: vanilla{type=JUNGLE_LOG}
-        drop-table:
-            items:
-            - 'vanilla{type=JUNGLE_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_JUNGLE_LOG} 0.00347222222 1'                                    
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     ACACIA_LOG:
         material: vanilla{type=ACACIA_LOG}
-        drop-table:
-            items:
-            - 'vanilla{type=ACACIA_LOG} 1 1-2'
-            - 'mmoitem{type=MATERIAL,id=ENCHANTED_ACACIA_LOG} 0.00347222222 1'                        
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
+    JUNGLE_LOG:
+        material: vanilla{type=JUNGLE_LOG}
+        <<: *Options
     OAK_LEAVES:
         material: vanilla{type=OAK_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=OAK_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     SPRUCE_LEAVES:
         material: vanilla{type=SPRUCE_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=SPRUCE_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     DARK_OAK_LEAVES:
         material: vanilla{type=DARK_OAK_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=DARK_OAK_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     BIRCH_LEAVES:
         material: vanilla{type=BIRCH_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=BIRCH_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
-    JUNGLE_LEAVES:
-        material: vanilla{type=JUNGLE_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=JUNGLE_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
     ACACIA_LEAVES:
         material: vanilla{type=ACACIA_LEAVES}
-        drop-table:
-            items:
-            - 'vanilla{type=ACACIA_LEAVES} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 300
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=3}'
+        <<: *Options
+    JUNGLE_LEAVES:
+        material: vanilla{type=JUNGLE_LEAVES}
+        <<: *Options
     BEE_NEST:
         material: vanilla{type=BEE_NEST}
-        drop-table:
-            items:
-            - 'vanilla{type=HONEYCOMB} 1 1-2'
-            - 'mmoitem{type=CONSUMABLE,id=TASTY_HONEY3} 0.00347222222 1-2'                                    
-        options:
-            vanilla-drops: false
-        regen:
-            time: 400
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=4}'
+        <<: *Options
     COCOA:
         material: vanilla{type=COCOA,age=2}
-        drop-table:
-            items:
-            - 'vanilla{type=COCOA_BEANS} 1 1-2'
-        options:
-            vanilla-drops: false
-        regen:
-            time: 400
-            temp-block: vanilla{type=AIR}
-        triggers:
-        - 'exp{profession=Foraging;amount=4}'
-        - 'exp{profession=Farming;amount=4}'
+        <<: *Options

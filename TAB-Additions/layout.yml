@@ -76,7 +76,7 @@ layouts:
       StatLevel:
         type: TEXT
         icon: mineskin:224445819
-        text: '    &rLevel: &7%mmocore_level% &8[&e%mmocore_experience%/%mmocore_next_level% EXP&8]'
+        text: '         &rLevel: &7%ac_Profession_Level_Main% &8[&e%%ac_Profession_NEXT_PERCENT_Main%%%&8]'
       StatCoin:
         type: TEXT
         icon: mineskin:224445819
@@ -85,31 +85,31 @@ layouts:
       ProfessionFarming:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &aFarming Level &l%mmocore_profession_Farming% &e%mmocore_profession_percent_Farming%&f/&e100%'
+        text: '      &aFarming Level &l%ac_Profession_Level_Farming% &e%ac_Profession_NEXT_PERCENT_Farming%%%'
       ProfessionForaging:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &2Foraging Level &l%mmocore_profession_Foraging% &e%mmocore_profession_percent_Foraging%&f/&e100%'
+        text: '      &2Foraging Level &l%ac_Profession_Level_Foraging% &e%ac_Profession_NEXT_PERCENT_Foraging%%%'
       ProfessionMining:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &3Mining Level &l%mmocore_profession_Mining% &e%mmocore_profession_percent_Mining%&f/&e100%'
+        text: '      &3Mining Level &l%ac_Profession_Level_Mining% &e%ac_Profession_NEXT_PERCENT_Mining%%%'
       ProfessionSlayer:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &4Slayer Level &l%mmocore_profession_Slayer% &e%mmocore_profession_percent_Slayer%&f/&e100%'
+        text: '      &4Slayer Level &l%ac_Profession_Level_Slayer% &e%ac_Profession_NEXT_PERCENT_Slayer%%%'
       ProfessionEnchanting:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &5Enchanting Level &l%mmocore_profession_Enchanting% &e%mmocore_profession_percent_Enchanting%&f/&e100%'
+        text: '      &5Enchanting Level &l%ac_Profession_Level_Enchanting% &e%ac_Profession_NEXT_PERCENT_Enchanting%%%'
       ProfessionCooking:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &6Cooking Level &l%mmocore_profession_Cooking% &e%mmocore_profession_percent_Cooking%&f/&e100%'
+        text: '      &6Cooking Level &l%ac_Profession_Level_Cooking% &e%ac_Profession_NEXT_PERCENT_Cooking%%%'
       ProfessionSpellforging:
         type: TEXT
         icon: mineskin:224445819
-        text: '      &dSpellforging Level &l%mmocore_profession_Spellforging% &e%mmocore_profession_percent_Spellforging%&f/&e100%'
+        text: '      &dSpellforging Level &l%ac_Profession_Level_Spellforging% &e%ac_Profession_NEXT_PERCENT_Spellforging%%%'
 
 
       # slot "-" 

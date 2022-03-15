@@ -1,9 +1,13 @@
 quester: Combat Instructor
-first: greeting
+first: completeQuest,greeting
 NPC_options:
+  completeQuest:
+    text: '&a%player%&7, you must complete &6Guider''s &7quests first!'
+    conditions: '!default-Tutorial-Guider.QUEST2_COMPLETED'
   greeting:
     text: Hey &a%player%&7, want to learn about &cCombat&7? 
     pointers: hey, quest, bye
+    conditions: 'default-Tutorial-Guider.QUEST2_COMPLETED'
   town_info:
     text: Currently we have &a4 unqiue weapon types &aSwords&7, &aAxes&7, &aDaggers&7, & &aStaffs&7. Each type is a bit different than the other in terms of the bonus damage they deal! We also have the basic &aBows &7& &aTridents&7, but you're likely already familiar with them. 
     pointers: wow, bye
