@@ -10,6 +10,10 @@ The project started in early 2020, where I started with no knowledge about hosti
 
 ![image](https://user-images.githubusercontent.com/36930553/158351562-4ecbd0db-7341-4cfa-86b8-c1bf949585cd.png)
 
+## Credits
+I am the only contributor to this entire project. I'm including this because people have already claimed this project as a their own, as a way of padding their resume, when trying to join other Server Projects.
+
+If someone does take credit, feel free to open an issue explaining it, or contact me through any means, my Discord is: Monzter#4951
 
 ## Benefits
 While working on this project I learned a lot! The files you're seeing now and even the oldest commit doesn't show the first year or maybe even longer of work I put into this. Why do I mention that? It's because I have made so many changes over time to **improve Server Performance**, **optimize Workflow**, **increase Scalability**, and much more!
